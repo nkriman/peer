@@ -55,6 +55,43 @@ The `Review` returned by `Agent.review` SHALL have `comments` (list[Comment]), o
 - **WHEN** the LLM returns no comments for a PR
 - **THEN** `review.comments` is empty AND `review.reason == "no issues found"`
 
+### Requirement: Agent assembles PR + codebase context for the LLM
+The Agent SHALL request the PR `Context` (`pr-context` capability) and the `CodebaseContext` (`codebase-context` capability) for every review, and SHALL include both in the LLM prompt structured so the LLM can distinguish them (e.g., labeled sections).
+
+#### Scenario: Both contexts flow to the LLM
+- **WHEN** `Agent.review(pr_url)` is called
+- **THEN** the underlying LLM prompt contains a labeled section for the diff + PR description + prior discussion (from `Context`) AND a labeled section for modified symbols + call sites + related tests + untested files signal (from `CodebaseContext`)
+
+#### Scenario: CodebaseContext extraction fails entirely
+- **WHEN** codebase-context gathering raises (e.g., tree-sitter grammar unavailable)
+- **THEN** the agent still proceeds with PR context only and logs a `WARNING` that codebase context was unavailable for this review
+
+### Requirement: Default system prompt explicitly directs use of codebase context
+The default system prompt (shipped in `src/peer/prompts.py`) SHALL explicitly instruct the LLM to consult `modified_symbols`, `call_sites`, `related_tests`, and `untested_files` when formulating each review comment. This requirement is informed by CodeCompass (arXiv 2602.20048, Feb 2026): without explicit prompt instruction to use structural context, agents ignored it in 58% of trials.
+
+#### Scenario: Default prompt names the codebase-context sections
+- **WHEN** an `Agent` is instantiated with no `system_prompt` override
+- **THEN** the loaded default prompt text contains explicit references to `modified_symbols`, `call_sites`, `related_tests`, and `untested_files` and directs the model to consult them when relevant
+
+#### Scenario: Custom prompt is preserved verbatim
+- **WHEN** an `Agent` is instantiated with a `system_prompt=` override (str or `system_prompt_file=` path)
+- **THEN** the custom prompt is used unmodified — it is the user's responsibility to direct context use; the framework does not splice or augment the override
+
+#### Scenario: Prompt loadable from file
+- **WHEN** an `Agent` is instantiated with `system_prompt_file=Path("./my_prompt.md")`
+- **THEN** the file contents are loaded as the system prompt; missing file raises a clear error
+
+### Requirement: Comments may reference cited codebase context (best-effort traceability)
+Each `Comment` MAY include a `references` field listing the codebase-context items (symbol names, call-site paths, test file paths) the agent consulted for that comment. The framework SHALL accept this field if the LLM produces it but SHALL NOT require it (LLMs do not reliably populate this kind of traceability field).
+
+#### Scenario: LLM populates references
+- **WHEN** the LLM produces a `Comment` about a behavior change that affects callers and includes `references=["foo", "src/bar.py:42"]`
+- **THEN** the `Comment` round-trips with `references` populated, useful for eval debugging
+
+#### Scenario: LLM omits references
+- **WHEN** the LLM omits the `references` field
+- **THEN** the `Comment` is accepted with `references=None`; no error, no warning
+
 ### Requirement: Invalid LLM output is dropped with warning
 If the LLM produces a `Comment` whose `path` or `line` does not exist in the PR diff, that comment SHALL be dropped from the final `Review` and a warning logged.
 

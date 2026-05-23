@@ -86,6 +86,48 @@ Comments whose `path` or `line` don't appear in the PR diff are dropped with a w
 
 **Why:** LLMs are good at filtering relevant from irrelevant; truncating loses audit-trail value. If a PR's discussion makes the assembled `Context` exceed the token budget, the existing `ContextTooLarge` check raises clearly so the user knows to address the specific PR rather than us silently dropping context. Resolved from v0.0 Open Question #3.
 
+### 10. Tree-sitter as the AST substrate (Python only in v0.1)
+
+`peer` uses `tree-sitter` via the `py-tree-sitter` bindings, shipped with the `tree-sitter-python` grammar in v0.1. A `LanguageGrammar` registry exposes a single-line registration seam so future changes add TypeScript / Go / Rust / etc. without touching the extraction pipeline.
+
+**Why:** tree-sitter is the de facto standard for AST extraction across leading AI coding tools (Aider, Codebase-Memory at 900+ stars in 4 weeks per arXiv 2603.27277, CodeRabbit). It covers 66+ languages. Python first because (a) `peer` is itself Python so dogfooding works immediately and (b) Python is the dominant language in our gold-standard dataset (Django + Pydantic).
+
+**Alternative considered:** ast-grep (semgrep-style AST queries). Rejected because tree-sitter ecosystem (grammars + bindings) is materially larger and the integration pattern is better-trodden for our use case.
+
+### 11. Call-site lookup via ripgrep + tree-sitter false-positive filter
+
+Call sites for modified symbols are found in two stages: (a) `ripgrep` (or Python fallback) for fast text-level candidate lines, (b) re-parse each candidate file with tree-sitter and confirm the match is an actual call expression referencing the symbol (not a string literal, comment, or unrelated identifier with the same name).
+
+**Why:** matches the 2026 academic consensus (Amazon Science arXiv 2605.15184: grep + structural validation outperforms pure vector retrieval). Two-stage filter gives high precision without building a full code graph. Significantly cheaper than persistent indexing while delivering most of the value per the Amazon paper.
+
+**Alternative considered:** build a persistent symbol-graph index (à la Sourcegraph). Rejected for v0.1 — too much infrastructure for the expected v0.1 use cases (single-PR ad-hoc reviews), and the index staleness problem (when does it re-index?) is a substantial design problem in its own right.
+
+### 12. Test-file discovery via configurable path conventions
+
+Related test files are discovered by mapping source paths to test paths via configurable conventions. Defaults cover Python pytest patterns (`tests/test_X.py`, `src/test_X.py`, `tests/X_test.py`, `test_X.py`).
+
+**Why:** convention-based discovery is fast, deterministic, and easy to reason about. Per CodeRabbit's published architecture, test inclusion is a Tier 1 context component. Default conventions cover ~95% of Python projects; the configurable hook covers the rest.
+
+**Alternative considered:** test-discovery via test runner integration (e.g., `pytest --collect-only`). Rejected for v0.1 — adds runtime dependencies and complexity disproportionate to value at v0.1.
+
+### 13. The default system prompt MUST explicitly direct use of codebase context
+
+The default system prompt (`src/peer/prompts.py`) explicitly names `modified_symbols`, `call_sites`, `related_tests`, `untested_files` and instructs the LLM to consult them when formulating each comment.
+
+**Why:** this is the most important single implementation lesson from CodeCompass (arXiv 2602.20048, Feb 2026). The paper measured that, with structural codebase context available via MCP tools, **58% of trials made zero tool calls** — the agent simply ignored the context. The fix the paper validates is explicit prompt-level instruction. Skipping this would silently erode most of the value of the codebase-context capability.
+
+**User override (Decision 7) still applies:** users can pass `system_prompt=` or `system_prompt_file=` to override. The framework does not splice or merge — overrides are the user's full responsibility, including any context-use directives.
+
+### 14. Graceful degradation, not hard failure
+
+The codebase-context capability degrades when optional dependencies are missing rather than blocking the whole review:
+
+- Missing `tree-sitter` / `tree-sitter-python` → log `ERROR`, return empty `CodebaseContext`, agent proceeds with PR context only
+- Missing `ripgrep` → fall back to Python file scanning with one-time `WARNING`
+- Tree-sitter parse failure on a specific file → skip that file, record under `parse_failures`, continue
+
+**Why:** if v0.1 makes any one dependency fatal, adoption stalls. The framework's primary contract is "produce a Review" — it should always do that, with the best context it can assemble. Diagnostics live in the `CodebaseContext` fields (`unsupported_files`, `parse_failures`, `truncations`) for the eval to surface.
+
 ## Risks / Trade-offs
 
 - **[Risk]** Structured-output reliability differs by model. **Mitigation:** ship Anthropic tool-calling first (proven), OpenAI structured outputs second; document any failure modes in `docs/`.
@@ -93,6 +135,12 @@ Comments whose `path` or `line` don't appear in the PR diff are dropped with a w
 - **[Risk]** `gh` CLI dependency limits production deployability. **Mitigation:** documented; PyGithub fallback in v0.2.
 - **[Risk]** LLM hallucinates file paths / line numbers. **Mitigation:** validate comments against the actual diff at parse time; drop invalid ones with a warning.
 - **[Risk]** Token cost of running on full repos for eval becomes prohibitive. **Mitigation:** v0.1 caps eval sample size; document expected cost ranges in the eval change proposal (separate).
+- **[Risk]** Agent ignores codebase context (CodeCompass adoption gap: 58% zero tool calls without explicit prompting). **Mitigation:** Decision 13 — default system prompt explicitly names every codebase-context field and instructs the LLM to consult them. Tracked in eval: if comments don't reference codebase-context items meaningfully, the prompt needs sharpening.
+- **[Risk]** tree-sitter grammar version drift or install issues block context extraction. **Mitigation:** pin `tree-sitter` and `tree-sitter-python` in `pyproject.toml`; graceful degradation per Decision 14 (review still completes with PR context only).
+- **[Risk]** Call-site lookup misses dynamic dispatch / monkey-patching / metaprogramming usages. **Mitigation:** documented limit. v0.1 catches static call sites only. The eval will surface where this matters; an upgrade path (LSP-style references, ast-grep patterns) lives in a v0.2+ change.
+- **[Risk]** False-positive call sites despite the tree-sitter filter stage (e.g., shadowed names, same-name unrelated functions in other modules). **Mitigation:** cap call sites per symbol (default 5); log the truncation; acceptable v0.1 limit.
+- **[Risk]** Multi-language repos get partial coverage in v0.1 (Python tree-sitter only). **Mitigation:** documented; non-Python files in PRs still see the diff in the LLM prompt — the `CodebaseContext` is empty for those files, recorded in `unsupported_files`. Language grammars are an additive-only extension per the `LanguageGrammar` registry.
+- **[Risk]** `CodebaseContext` token cost compounds with `Context` token cost on the same PR. **Mitigation:** separate, additive budget for codebase context (default `30_000` tokens vs `100_000` for PR context); prioritized drop order (modified_symbols > call_sites > related_tests) so the most important context is always kept.
 
 ## Open Questions
 
