@@ -5,12 +5,12 @@ OpenAIReviewer lands in Slice 3 alongside the eval scaffolding.
 
 from __future__ import annotations
 
-from typing import Protocol
+from typing import Optional, Protocol
 
 import anthropic
 
-from .prompts import DEFAULT_SYSTEM_PROMPT, format_context
-from .types import Comment, Context
+from .prompts import DEFAULT_SYSTEM_PROMPT, format_prompt
+from .types import CodebaseContext, Comment, Context
 
 _COMMENT_TOOL = {
     "name": "post_review_comments",
@@ -45,7 +45,11 @@ _COMMENT_TOOL = {
 
 
 class Reviewer(Protocol):
-    def review(self, context: Context) -> tuple[list[Comment], dict]: ...
+    def review(
+        self,
+        context: Context,
+        codebase_context: Optional[CodebaseContext] = None,
+    ) -> tuple[list[Comment], dict]: ...
 
 
 class ClaudeReviewer:
@@ -56,8 +60,12 @@ class ClaudeReviewer:
         self.system_prompt = system_prompt
         self.client = anthropic.Anthropic()
 
-    def review(self, context: Context) -> tuple[list[Comment], dict]:
-        user_msg = format_context(context)
+    def review(
+        self,
+        context: Context,
+        codebase_context: Optional[CodebaseContext] = None,
+    ) -> tuple[list[Comment], dict]:
+        user_msg = format_prompt(context, codebase_context)
         resp = self.client.messages.create(
             model=self.model,
             max_tokens=8192,

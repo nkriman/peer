@@ -5,6 +5,7 @@ See https://github.com/nkriman/peer
 
 from .agent import Agent
 from .exceptions import (
+    CodebaseContextTooLarge,
     ContextTooLarge,
     GHCLINotAuthenticated,
     GHCLINotAvailable,
@@ -13,17 +14,31 @@ from .exceptions import (
     PRNotAccessible,
     UnknownModelError,
 )
-from .types import Comment, Context, ContextHunk, Review, Severity
+from .types import (
+    CallSite,
+    CodebaseContext,
+    Comment,
+    Context,
+    ContextHunk,
+    Review,
+    Severity,
+    Symbol,
+    TestFile,
+)
 
 __version__ = "0.0.1"
 
 __all__ = [
     "Agent",
+    "CallSite",
+    "CodebaseContext",
     "Comment",
     "Context",
     "ContextHunk",
     "Review",
     "Severity",
+    "Symbol",
+    "TestFile",
     "PeerError",
     "UnknownModelError",
     "InvalidPRURL",
@@ -31,4 +46,5 @@ __all__ = [
     "GHCLINotAvailable",
     "GHCLINotAuthenticated",
     "ContextTooLarge",
+    "CodebaseContextTooLarge",
 ]

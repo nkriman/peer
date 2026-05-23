@@ -8,11 +8,12 @@ import logging
 from pathlib import Path
 from typing import Optional
 
+from .codebase_context import gather_codebase_context
 from .context import gather
-from .exceptions import UnknownModelError
+from .exceptions import CodebaseContextTooLarge, UnknownModelError
 from .prompts import DEFAULT_SYSTEM_PROMPT
 from .reviewers import ClaudeReviewer, Reviewer
-from .types import Comment, Context, Review
+from .types import CodebaseContext, Comment, Context, Review
 
 logger = logging.getLogger(__name__)
 
@@ -80,10 +81,30 @@ class Agent:
     def review(self, pr_url: str) -> Review:
         ctx = gather(pr_url)
         logger.info(
-            "Gathered context for %s: %d hunks, ~%d tokens",
+            "Gathered PR context for %s: %d hunks, ~%d tokens",
             pr_url, len(ctx.hunks), ctx.token_estimate,
         )
-        raw_comments, usage = self.reviewer.review(ctx)
+        cc: Optional[CodebaseContext] = None
+        try:
+            cc = gather_codebase_context(ctx)
+            logger.info(
+                "Gathered codebase context: %d symbols, %d call sites, "
+                "%d tests, %d untested, ~%d tokens",
+                len(cc.modified_symbols), len(cc.call_sites),
+                len(cc.related_tests), len(cc.untested_files),
+                cc.token_estimate,
+            )
+        except CodebaseContextTooLarge as e:
+            logger.warning("Codebase context too large, proceeding without: %s", e)
+            cc = None
+        except Exception as e:
+            logger.warning(
+                "Codebase context extraction failed (%s); proceeding with PR context only",
+                e,
+            )
+            cc = None
+
+        raw_comments, usage = self.reviewer.review(ctx, cc)
         valid = _validate_comments(raw_comments, ctx)
         dropped = len(raw_comments) - len(valid)
         if dropped:

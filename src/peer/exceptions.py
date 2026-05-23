@@ -30,3 +30,9 @@ class GHCLINotAuthenticated(PeerError):
 
 class ContextTooLarge(PeerError):
     """The assembled Context exceeds the configured token budget."""
+
+
+class CodebaseContextTooLarge(PeerError):
+    """The assembled CodebaseContext exceeds the configured token budget
+    even after dropping all trimmable categories. Raised when
+    modified_symbols alone exceed the budget."""
