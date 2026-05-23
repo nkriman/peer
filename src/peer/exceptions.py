@@ -36,3 +36,30 @@ class CodebaseContextTooLarge(PeerError):
     """The assembled CodebaseContext exceeds the configured token budget
     even after dropping all trimmable categories. Raised when
     modified_symbols alone exceed the budget."""
+
+
+# -- eval-v01 exceptions ----------------------------------------------------
+
+
+class InvalidGoldSample(PeerError):
+    """A line in a JSONL dataset file failed to validate against the
+    GoldSample schema. Includes line number and validation detail."""
+
+
+class EvalReportSchemaMismatch(PeerError):
+    """The loaded EvalReport's report_schema_version doesn't match the
+    current loader's supported version."""
+
+
+class DatasetNotFound(PeerError):
+    """The configured dataset path doesn't exist or isn't readable."""
+
+
+class CurationRejected(PeerError):
+    """The operator rejected a proposed GoldSample during an interactive
+    Curator.add session."""
+
+
+class UnknownCategoryError(PeerError):
+    """A Classification referenced a category not present in the active
+    Taxonomy."""
