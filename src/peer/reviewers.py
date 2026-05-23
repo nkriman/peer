@@ -1,24 +1,82 @@
-"""Pluggable reviewer interface — adapters for different LLM backends and,
-later, for commercial AI PR review tools so they can be scored on the same
-eval harness.
+"""Pluggable Reviewer backends. Slice 1 ships ClaudeReviewer only.
 
-v0.1 will ship: ClaudeReviewer, OpenAIReviewer.
-v0.3 may add: GreptileAdapter, CodeRabbitAdapter (BYO API keys).
+OpenAIReviewer lands in Slice 3 alongside the eval scaffolding.
 """
+
+from __future__ import annotations
 
 from typing import Protocol
 
+import anthropic
+
+from .prompts import DEFAULT_SYSTEM_PROMPT, format_context
+from .types import Comment, Context
+
+_COMMENT_TOOL = {
+    "name": "post_review_comments",
+    "description": (
+        "Post the list of inline review comments for this PR. "
+        "Pass an empty list if the PR has no issues worth flagging."
+    ),
+    "input_schema": {
+        "type": "object",
+        "properties": {
+            "comments": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "path": {"type": "string"},
+                        "line": {"type": ["integer", "null"]},
+                        "severity": {
+                            "type": "string",
+                            "enum": ["critical", "important", "minor", "nit"],
+                        },
+                        "body": {"type": "string"},
+                        "rationale": {"type": "string"},
+                    },
+                    "required": ["path", "severity", "body", "rationale"],
+                },
+            },
+        },
+        "required": ["comments"],
+    },
+}
+
 
 class Reviewer(Protocol):
-    """Anything that takes a Context and produces review comments."""
-
-    def review(self, context: "Context") -> list["Comment"]:  # type: ignore[name-defined]
-        ...
+    def review(self, context: Context) -> tuple[list[Comment], dict]: ...
 
 
-class Comment:
-    """A single review comment. Placeholder shape — defined in v0.1.
+class ClaudeReviewer:
+    def __init__(
+        self, model: str, system_prompt: str = DEFAULT_SYSTEM_PROMPT
+    ) -> None:
+        self.model = model
+        self.system_prompt = system_prompt
+        self.client = anthropic.Anthropic()
 
-    Expected fields: path, line, severity (critical/important/minor/nit),
-    body, rationale.
-    """
+    def review(self, context: Context) -> tuple[list[Comment], dict]:
+        user_msg = format_context(context)
+        resp = self.client.messages.create(
+            model=self.model,
+            max_tokens=8192,
+            system=self.system_prompt,
+            tools=[_COMMENT_TOOL],
+            tool_choice={"type": "tool", "name": "post_review_comments"},
+            messages=[{"role": "user", "content": user_msg}],
+        )
+        comments: list[Comment] = []
+        for block in resp.content:
+            if getattr(block, "type", None) != "tool_use":
+                continue
+            if getattr(block, "name", None) != "post_review_comments":
+                continue
+            for raw in block.input.get("comments", []):
+                comments.append(Comment(**raw))
+        usage = {
+            "input_tokens": resp.usage.input_tokens,
+            "output_tokens": resp.usage.output_tokens,
+            "model": self.model,
+        }
+        return comments, usage

@@ -25,6 +25,8 @@ dependencies = [
     "anthropic>=0.40",
     "openai>=1.0",
     "pydantic>=2.0",
+    "unidiff>=0.7",
+    "tiktoken>=0.7",
 ]
 
 [project.optional-dependencies]
