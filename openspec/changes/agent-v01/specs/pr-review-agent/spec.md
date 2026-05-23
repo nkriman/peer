@@ -44,6 +44,17 @@ Every `Comment` SHALL have `path` (str), optional `line` (int), `severity` ∈ `
 - **WHEN** `Agent.review` returns a `Review`
 - **THEN** every `Comment` in `review.comments` validates against the Pydantic `Comment` model
 
+### Requirement: Review schema with token usage
+The `Review` returned by `Agent.review` SHALL have `comments` (list[Comment]), optional `reason` (str), and `usage` (dict containing at minimum `input_tokens`, `output_tokens`, and `model`).
+
+#### Scenario: Review carries usage info from the LLM call
+- **WHEN** `Agent.review` returns a `Review`
+- **THEN** `review.usage` contains `input_tokens`, `output_tokens`, and the model identifier used
+
+#### Scenario: Review carries reason when no comments
+- **WHEN** the LLM returns no comments for a PR
+- **THEN** `review.comments` is empty AND `review.reason == "no issues found"`
+
 ### Requirement: Invalid LLM output is dropped with warning
 If the LLM produces a `Comment` whose `path` or `line` does not exist in the PR diff, that comment SHALL be dropped from the final `Review` and a warning logged.
 

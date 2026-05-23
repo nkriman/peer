@@ -68,6 +68,24 @@ Comments whose `path` or `line` don't appear in the PR diff are dropped with a w
 
 **Why:** LLMs occasionally hallucinate file paths or line numbers; surfacing those comments destroys user trust in the agent. Better to drop silently with a logged warning so it can be diagnosed in eval.
 
+### 7. Ship an opinionated default system prompt; allow override
+
+`peer` ships a default system prompt for PR review in `src/peer/prompts.py`. Users can override at `Agent` init via `Agent(system_prompt="...")` or `Agent(system_prompt_file=Path(...))`.
+
+**Why:** the default gives users a working agent out of the box (matches the "one-line first use" rule from scope research); the override seam respects teams with strong opinions about review style. Resolved from v0.0 Open Question #1.
+
+### 8. `Review.usage` captures per-call token cost
+
+`Review` includes a `usage` field — a dict with at minimum `input_tokens`, `output_tokens`, and `model`. Each Reviewer implementation populates it from its SDK response.
+
+**Why:** the v0.2 eval needs to report cost-per-review. Adding it now is one line per Reviewer impl and avoids a schema migration later. Per-Comment usage isn't a thing — usage is per LLM call, so it lives on `Review`, not `Comment`. Resolved from v0.0 Open Question #2.
+
+### 9. Discussion history: include all prior PR comments
+
+`Context` includes all prior issue and inline review comments on the PR, not a truncated subset.
+
+**Why:** LLMs are good at filtering relevant from irrelevant; truncating loses audit-trail value. If a PR's discussion makes the assembled `Context` exceed the token budget, the existing `ContextTooLarge` check raises clearly so the user knows to address the specific PR rather than us silently dropping context. Resolved from v0.0 Open Question #3.
+
 ## Risks / Trade-offs
 
 - **[Risk]** Structured-output reliability differs by model. **Mitigation:** ship Anthropic tool-calling first (proven), OpenAI structured outputs second; document any failure modes in `docs/`.
@@ -78,6 +96,4 @@ Comments whose `path` or `line` don't appear in the PR diff are dropped with a w
 
 ## Open Questions
 
-- Should `peer` ship with a default system prompt, or require the user to supply one? (Lean: ship with an opinionated default + allow override. Defer final call to implementation.)
-- Should the `Reviewer` protocol expose token usage for cost tracking? (Yes — even minimally, so the v0.2 eval can report cost-per-review. Add a simple `usage: dict` field to `Comment` or `Review`.)
-- For PRs with a long discussion history, do we include all prior comments or just the most recent? (Lean: include all; LLMs are good at filtering. Revisit if we hit context-window issues.)
+None remaining for v0.1 scope — the three v0.0 questions were resolved into Decisions 7–9 above. Future-version questions (chunking strategy for large PRs, response caching, severity taxonomy revision) will live in their own change proposals.

@@ -1,6 +1,6 @@
 ## 1. Type schemas (foundation)
 
-- [ ] 1.1 Create `src/peer/types.py` with Pydantic models: `Severity` literal (`critical`/`important`/`minor`/`nit`), `Comment`, `Review`, `ContextHunk`, `Context`
+- [ ] 1.1 Create `src/peer/types.py` with Pydantic models: `Severity` literal (`critical`/`important`/`minor`/`nit`), `Comment`, `Review` (including `usage: dict` field for token tracking), `ContextHunk`, `Context`
 - [ ] 1.2 Define exceptions module: `UnknownModelError`, `InvalidPRURL`, `PRNotAccessible`, `GHCLINotAvailable`, `GHCLINotAuthenticated`, `ContextTooLarge` in `src/peer/exceptions.py`
 - [ ] 1.3 Update `src/peer/__init__.py` to export the public schema names
 
@@ -20,13 +20,14 @@
 - [ ] 3.1 Replace stub `Reviewer` Protocol with real one: `review(context: Context) -> list[Comment]`
 - [ ] 3.2 Implement `ClaudeReviewer` using Anthropic SDK tool-calling with a tool schema derived from the `Comment` Pydantic model
 - [ ] 3.3 Implement `OpenAIReviewer` using OpenAI SDK structured outputs (`response_format=Comment`)
-- [ ] 3.4 Author the default system prompt for PR review and put it in `src/peer/prompts.py` (configurable override at `Agent` init time)
+- [ ] 3.4 Author the default system prompt for PR review and put it in `src/peer/prompts.py` (configurable override at `Agent` init via `system_prompt=` or `system_prompt_file=`)
+- [ ] 3.5 Each Reviewer implementation extracts usage info (`input_tokens`, `output_tokens`, `model`) from its SDK response and returns it alongside the comments
 
 ## 4. Agent dispatch + validation (`src/peer/agent.py`)
 
 - [ ] 4.1 Implement model-to-Reviewer dispatch (anthropic prefix → ClaudeReviewer; gpt prefix → OpenAIReviewer; else `UnknownModelError`)
 - [ ] 4.2 Implement `Agent.__init__(model, system_prompt=None)` storing the chosen Reviewer
-- [ ] 4.3 Implement `Agent.review(pr_url) -> Review`: gather context → call Reviewer → validate comments → return Review
+- [ ] 4.3 Implement `Agent.review(pr_url) -> Review`: gather context → call Reviewer → validate comments → attach `usage` from the Reviewer → return Review
 - [ ] 4.4 Implement comment-against-diff validation: drop any `Comment` whose `path` isn't in the diff or whose `line` falls outside any hunk; log warning per drop
 - [ ] 4.5 If the LLM produces no comments, return `Review(comments=[], reason="no issues found")`
 
