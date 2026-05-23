@@ -8,7 +8,7 @@ across all default and user-supplied implementations.
 
 from __future__ import annotations
 
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Literal, Optional
 
 from pydantic import BaseModel, Field
@@ -115,7 +115,7 @@ class GoldSample(BaseModel):
     merged_at: Optional[datetime] = None
     gold_defects: list[GoldDefect] = Field(default_factory=list)
     metadata: GoldSampleMetadata = Field(default_factory=GoldSampleMetadata)
-    curated_at: datetime = Field(default_factory=datetime.utcnow)
+    curated_at: datetime = Field(default_factory=lambda: datetime.now(tz=timezone.utc))
 
 
 class ProposedSample(BaseModel):

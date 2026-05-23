@@ -13,7 +13,7 @@ from __future__ import annotations
 import hashlib
 import logging
 import time
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Optional, Protocol
 
 import anthropic
@@ -86,8 +86,14 @@ class EvalRunner:
         self.metrics = metrics
         self.dataset_path = dataset_path or "in-memory"
         # One Anthropic client shared with metrics so judge calls reuse the
-        # same connection pool / api key.
-        self._client = anthropic.Anthropic()
+        # same connection pool / api key. Lazy-init so EvalRunner can be
+        # constructed without ANTHROPIC_API_KEY (e.g., in unit tests).
+        self._client: Optional[anthropic.Anthropic] = None
+
+    def _get_client(self) -> anthropic.Anthropic:
+        if self._client is None:
+            self._client = anthropic.Anthropic()
+        return self._client
 
     def run(self) -> EvalReport:
         agent_config = _infer_agent_config(self.reviewer)
@@ -144,7 +150,7 @@ class EvalRunner:
             # Run metrics
             for metric in self.metrics:
                 try:
-                    mr = metric.score(sample, review, client=self._client)
+                    mr = metric.score(sample, review, client=self._get_client())
                 except Exception as exc:  # noqa: BLE001
                     logger.warning(
                         "Metric %s failed on %s: %s",
@@ -185,12 +191,10 @@ class EvalRunner:
         n_failed = sum(1 for r in per_sample if r.error is not None)
         n_succeeded = len(per_sample) - n_failed
 
-        cost_total: Optional[float] = (
-            sum(sample_costs) if sample_costs and not any_cost_unavailable
-            else (sum(sample_costs) if sample_costs else None)
-        )
-        # If any sample had no pricing, total is still partial — report it
-        # alongside the unavailable_reason so users see what they have.
+        # When at least one sample had pricing, report the partial total
+        # (clearly flagged via cost_unavailable_reason so users see it's
+        # incomplete). Report None only if NO sample had pricing.
+        cost_total: Optional[float] = sum(sample_costs) if sample_costs else None
         summary = EvalSummary(
             metric_values=metric_values,
             metric_details=metric_details,
@@ -219,7 +223,7 @@ class EvalRunner:
             summary=summary,
             per_sample=per_sample,
             peer_version=_peer_version,
-            timestamp=datetime.utcnow(),
+            timestamp=datetime.now(tz=timezone.utc),
         )
 
 

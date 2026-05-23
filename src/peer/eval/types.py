@@ -6,7 +6,7 @@ schema so users can store reports in git for trend tracking.
 
 from __future__ import annotations
 
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Any, Optional
 from uuid import uuid4
 
@@ -59,7 +59,7 @@ class EvalReport(BaseModel):
     """A versioned, JSON-serializable evaluation report."""
     report_schema_version: str = REPORT_SCHEMA_VERSION
     run_id: str = Field(default_factory=lambda: uuid4().hex)
-    timestamp: datetime = Field(default_factory=datetime.utcnow)
+    timestamp: datetime = Field(default_factory=lambda: datetime.now(tz=timezone.utc))
     agent_config: AgentConfig
     dataset_path: Optional[str] = None  # filesystem path or "in-memory"
     dataset_size: int = 0
