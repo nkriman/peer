@@ -17,7 +17,9 @@ def main(argv: list[str] | None = None) -> int:
     )
     parser.add_argument("pr_url", help="GitHub PR URL")
     parser.add_argument(
-        "--model", default="claude-opus-4-7", help="Model id (default: claude-opus-4-7)"
+        "--model",
+        default="claude-sonnet-4-6",
+        help="Model id (default: claude-sonnet-4-6)",
     )
     parser.add_argument(
         "--system-prompt-file",

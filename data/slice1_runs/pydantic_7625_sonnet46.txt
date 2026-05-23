@@ -1,0 +1,17 @@
+
+=== Review for https://github.com/pydantic/pydantic/pull/7625 ===
+Model: claude-sonnet-4-6  |  in=6369  out=851
+
+3 comment(s)  (important=2, minor=1)
+
+[IMPORTANT] pydantic/_internal/_generate_schema.py:948
+  `to_jsonable_python(field_info.examples)` will return `None` when `field_info.examples` is `None`, so the subsequent filter `{k: v for k, v in json_schema_updates.items() if v is not None}` still correctly drops it. However, if `field_info.examples` is an empty list `[]`, `to_jsonable_python([])` returns `[]`, which is falsy but not `None`, so it won't be filtered out — this is the same behaviour as before, so no regression. But the real concern is: `to_jsonable_python(None)` returns `None`, meaning the key is still correctly excluded. This is fine, but it may be worth adding an explicit guard (`if field_info.examples is not None`) before calling `to_jsonable_python` to make the intent clearer and avoid the implicit reliance on `to_jsonable_python(None) == None`.
+  -- The filter only drops `None` values, and `to_jsonable_python(None)` happens to return `None`, so it works correctly today. But this is an implicit contract that could break if `to_jsonable_python`'s behaviour changes, and it's not obvious to readers.
+
+[IMPORTANT] pydantic/_internal/_generate_schema.py:957
+  Calling `to_jsonable_python(json_schema_extra)` when `json_schema_extra` is a `dict` performs a full deep serialization of the dict every time `json_schema_update_func` is called (i.e., once per schema generation). This could be expensive for large or deeply nested extras. Consider pre-computing `to_jsonable_python(json_schema_extra)` outside `json_schema_update_func` (alongside where `json_schema_extra` is captured), similar to how `json_schema_updates` is pre-computed. The same applies to the analogous code in `_apply_single_annotation_json_schema`.
+  -- The closure captures `json_schema_extra` and calls `to_jsonable_python` on it at call time rather than at definition time. Since `json_schema_extra` is a dict (immutable from the closure's perspective), this conversion is redundant on every invocation and should be done once.
+
+[MINOR] tests/test_json_schema.py:4706
+  The test only exercises `Annotated` field extras (the `_apply_single_annotation_json_schema` path). It does not cover the non-`Annotated` `Field(...)` path in `_common_field_schema` (lines 945–960). Consider adding a test case using `Field(examples=[...], json_schema_extra={...})` directly as a field default (i.e., `toys: List[Toy] = Field(...)`) to ensure both code paths are covered.
+  -- There are two separate code paths that were changed — both for `FieldInfo` from `Annotated` metadata and from `_common_field_schema`. The test only covers the `Annotated` path.

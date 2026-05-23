@@ -1,0 +1,15 @@
+
+=== Review for https://github.com/pydantic/pydantic/pull/7528 ===
+Model: claude-sonnet-4-6  |  in=2666  out=485
+
+2 comment(s)  (important=2)
+
+[IMPORTANT] pydantic/_internal/_core_utils.py:192
+  Removing `schema.copy()` here means the original schema dict passed to `walk()` may now be mutated in-place by the walker and the user-supplied `f` callback. Previously, `schema.copy()` provided a shallow-copy barrier so callers could be sure their input was not modified. Any caller that relies on the original schema object remaining unchanged after calling `walk()` will now silently get corrupted state.
+
+If the intent is to allow in-place mutation (which is the common fast-path pattern), that should be clearly documented, and all callers should be audited to confirm they no longer depend on the old copy-on-entry semantics.
+  -- The old code did `f(schema.copy(), self._walk)`, giving `f` a fresh shallow copy to mutate safely. After this change, `f` receives the exact same dict object that the caller passed in, so mutations inside `f` (or any handler it calls) will be visible to the caller — a breaking change in the contract of `walk()`.
+
+[IMPORTANT] pydantic/_internal/_core_utils.py:198
+  Similarly, removing `ser_schema.copy()` means the serialization sub-schema dict is mutated in-place. If the same `SerSchema` object is referenced from multiple places in the schema graph (e.g. via shared definitions), all references will observe the mutation, which can cause incorrect or non-deterministic behaviour. The shallow copy was the guard against this aliasing hazard.
+  -- The previous `self._handle_ser_schemas(ser_schema.copy(), f)` ensured that even if `ser_schema` was shared, each walk got its own copy to mutate. Without the copy, aliased `SerSchema` dicts will be mutated through all their references simultaneously.

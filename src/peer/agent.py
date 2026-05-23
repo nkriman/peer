@@ -63,7 +63,7 @@ def _validate_comments(
 class Agent:
     def __init__(
         self,
-        model: str = "claude-opus-4-7",
+        model: str = "claude-sonnet-4-6",
         system_prompt: Optional[str] = None,
         system_prompt_file: Optional[Path] = None,
     ) -> None:
