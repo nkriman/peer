@@ -1,0 +1,297 @@
+"""Unified `peer` CLI with subcommands: review, eval, dataset.
+
+Decision 10 (eval-v01/design.md): single entry point via argparse subparsers.
+Legacy `python -m peer.review <pr_url>` keeps working as a thin alias
+forwarder so existing scripts don't break.
+"""
+
+from __future__ import annotations
+
+import argparse
+import logging
+import sys
+from datetime import datetime
+from pathlib import Path
+from typing import Optional
+
+
+def _make_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(
+        prog="peer",
+        description="Build AI PR review agents with evaluation built in.",
+    )
+    parser.add_argument(
+        "-v", "--verbose", action="store_true",
+        help="Verbose (DEBUG) logging",
+    )
+    sub = parser.add_subparsers(dest="cmd", required=True, metavar="COMMAND")
+
+    # --- peer review --------------------------------------------------------
+    p_review = sub.add_parser(
+        "review",
+        help="Review a single PR",
+        description="Run the configured Agent on one GitHub PR URL.",
+    )
+    p_review.add_argument("pr_url", help="GitHub PR URL")
+    p_review.add_argument(
+        "--model", default="claude-sonnet-4-6",
+        help="Model id (default: claude-sonnet-4-6)",
+    )
+    p_review.add_argument(
+        "--system-prompt-file", type=Path, default=None,
+        help="Path to a custom system prompt",
+    )
+
+    # --- peer eval ----------------------------------------------------------
+    p_eval = sub.add_parser(
+        "eval",
+        help="Evaluate the configured agent against a gold dataset",
+        description=(
+            "Run EvalRunner on a dataset of GoldSamples and report metrics."
+        ),
+    )
+    p_eval.add_argument(
+        "--dataset", type=Path,
+        default=Path("dataset/reference/django_pydantic_v1.jsonl"),
+        help="Path to JSONL dataset (default: bundled reference dataset)",
+    )
+    p_eval.add_argument(
+        "--model", default="claude-sonnet-4-6",
+        help="Model id for the reviewer under test",
+    )
+    p_eval.add_argument(
+        "--baseline", type=Path, default=None,
+        help="Path to a prior EvalReport JSON for A/B diff",
+    )
+    p_eval.add_argument(
+        "--out", type=Path, default=None,
+        help="Where to write the new EvalReport JSON (default: data/eval_runs/<run_id>.json)",
+    )
+
+    # --- peer dataset (parent for subcommands) ------------------------------
+    p_ds = sub.add_parser(
+        "dataset",
+        help="Manage gold datasets",
+        description="Add / list / show gold samples.",
+    )
+    ds_sub = p_ds.add_subparsers(dest="ds_cmd", required=True, metavar="DS_COMMAND")
+
+    # peer dataset add
+    p_ds_add = ds_sub.add_parser(
+        "add",
+        help="Curate a PR and add it to the dataset",
+    )
+    p_ds_add.add_argument("pr_url", help="GitHub PR URL")
+    p_ds_add.add_argument(
+        "--dataset", type=Path,
+        default=Path("dataset/reference/django_pydantic_v1.jsonl"),
+        help="JSONL dataset to append to",
+    )
+    p_ds_add.add_argument(
+        "--auto-accept", action="store_true",
+        help="Skip interactive spot-check prompt",
+    )
+
+    # peer dataset list
+    p_ds_list = ds_sub.add_parser(
+        "list",
+        help="List the samples in a dataset",
+    )
+    p_ds_list.add_argument(
+        "--dataset", type=Path,
+        default=Path("dataset/reference/django_pydantic_v1.jsonl"),
+    )
+    p_ds_list.add_argument(
+        "--show-classifications", action="store_true",
+        help="Also show per-defect path/severity/category",
+    )
+
+    # peer dataset show
+    p_ds_show = ds_sub.add_parser(
+        "show",
+        help="Pretty-print one full sample",
+    )
+    p_ds_show.add_argument("pr_url", help="GitHub PR URL of the sample to show")
+    p_ds_show.add_argument(
+        "--dataset", type=Path,
+        default=Path("dataset/reference/django_pydantic_v1.jsonl"),
+    )
+
+    return parser
+
+
+# ---------------------------------------------------------------------------
+# Command handlers
+# ---------------------------------------------------------------------------
+
+
+def _cmd_review(args: argparse.Namespace) -> int:
+    from .agent import Agent
+
+    agent = Agent(model=args.model, system_prompt_file=args.system_prompt_file)
+    review = agent.review(args.pr_url)
+
+    print(f"\n=== Review for {args.pr_url} ===")
+    print(
+        f"Model: {review.usage.get('model')}  |  "
+        f"in={review.usage.get('input_tokens')}  out={review.usage.get('output_tokens')}"
+    )
+
+    if not review.comments:
+        print(f"\nNo comments. Reason: {review.reason or 'n/a'}")
+        return 0
+
+    counts: dict[str, int] = {}
+    for c in review.comments:
+        counts[c.severity] = counts.get(c.severity, 0) + 1
+    summary = ", ".join(f"{k}={v}" for k, v in counts.items())
+    print(f"\n{len(review.comments)} comment(s)  ({summary})")
+
+    for severity in ("critical", "important", "minor", "nit"):
+        for c in review.comments:
+            if c.severity != severity:
+                continue
+            line = f":{c.line}" if c.line is not None else ""
+            print(f"\n[{c.severity.upper()}] {c.path}{line}")
+            print(f"  {c.body}")
+            print(f"  -- {c.rationale}")
+    return 0
+
+
+def _cmd_eval(args: argparse.Namespace) -> int:
+    from .agent import Agent
+    from .dataset import JSONLStorage
+    from .eval import EvalRunner, EvalReport, render_diff, render_summary
+    from .exceptions import DatasetNotFound
+
+    if not args.dataset.exists():
+        raise DatasetNotFound(f"Dataset not found at {args.dataset}")
+
+    samples = JSONLStorage(args.dataset).load_all()
+    if not samples:
+        print(f"Dataset {args.dataset} is empty.", file=sys.stderr)
+        return 2
+
+    agent = Agent(model=args.model)
+    runner = EvalRunner(reviewer=agent, dataset=samples)
+    report = runner.run()
+
+    out_path = args.out
+    if out_path is None:
+        out_dir = Path("data/eval_runs")
+        out_dir.mkdir(parents=True, exist_ok=True)
+        out_path = out_dir / f"{report.run_id}.json"
+
+    report.to_json(out_path)
+    print(render_summary(report))
+    print(f"\nReport saved to {out_path}")
+
+    if args.baseline is not None:
+        if not args.baseline.exists():
+            print(f"Baseline {args.baseline} not found.", file=sys.stderr)
+            return 2
+        baseline = EvalReport.from_json(args.baseline)
+        print("\n=== A/B diff vs baseline ===")
+        print(render_diff(baseline, report))
+
+    return 0
+
+
+def _cmd_dataset_add(args: argparse.Namespace) -> int:
+    from .dataset import Curator, JSONLStorage
+
+    storage = JSONLStorage(args.dataset)
+    curator = Curator(storage=storage)
+    sample = curator.add(args.pr_url, auto_accept=args.auto_accept)
+    print(f"Added {sample.pr_url} ({len(sample.gold_defects)} defects)")
+    print(f"  spot_checked: {sample.metadata.spot_checked}")
+    print(f"  dataset: {args.dataset}")
+    return 0
+
+
+def _cmd_dataset_list(args: argparse.Namespace) -> int:
+    from .dataset import JSONLStorage
+    from .exceptions import DatasetNotFound
+
+    if not args.dataset.exists():
+        raise DatasetNotFound(f"Dataset not found at {args.dataset}")
+
+    samples = JSONLStorage(args.dataset).load_all()
+    print(f"Dataset {args.dataset}  —  {len(samples)} sample(s)\n")
+    for s in samples:
+        checked = "✓" if s.metadata.spot_checked else " "
+        curated = s.curated_at.strftime("%Y-%m-%d") if isinstance(s.curated_at, datetime) else str(s.curated_at)[:10]
+        print(
+            f"  [{checked}] {s.pr_url}  "
+            f"defects={len(s.gold_defects)}  curated={curated}"
+        )
+        if args.show_classifications:
+            for d in s.gold_defects:
+                line = f":{d.line}" if d.line is not None else ""
+                desc = d.description[:80].replace("\n", " ")
+                print(f"      - [{d.severity}] {d.category} @ {d.path}{line}")
+                print(f"          {desc}")
+    return 0
+
+
+def _cmd_dataset_show(args: argparse.Namespace) -> int:
+    from .dataset import JSONLStorage
+    from .exceptions import DatasetNotFound
+
+    if not args.dataset.exists():
+        raise DatasetNotFound(f"Dataset not found at {args.dataset}")
+
+    storage = JSONLStorage(args.dataset)
+    sample = storage.find(args.pr_url)
+    if sample is None:
+        print(f"Not found: {args.pr_url} in {args.dataset}", file=sys.stderr)
+        return 2
+
+    import json
+    print(json.dumps(sample.model_dump(mode="json"), indent=2, default=str))
+    return 0
+
+
+# ---------------------------------------------------------------------------
+# Entry point
+# ---------------------------------------------------------------------------
+
+
+_DISPATCH = {
+    ("review", None): _cmd_review,
+    ("eval", None): _cmd_eval,
+    ("dataset", "add"): _cmd_dataset_add,
+    ("dataset", "list"): _cmd_dataset_list,
+    ("dataset", "show"): _cmd_dataset_show,
+}
+
+
+def main(argv: Optional[list[str]] = None) -> int:
+    parser = _make_parser()
+    args = parser.parse_args(argv)
+
+    logging.basicConfig(
+        level=logging.DEBUG if args.verbose else logging.INFO,
+        format="%(levelname)s %(name)s: %(message)s",
+    )
+
+    key = (args.cmd, getattr(args, "ds_cmd", None))
+    handler = _DISPATCH.get(key)
+    if handler is None:
+        parser.print_help()
+        return 1
+
+    try:
+        return handler(args)
+    except KeyboardInterrupt:
+        print("\nInterrupted.", file=sys.stderr)
+        return 130
+    except Exception as e:
+        print(f"Error: {e}", file=sys.stderr)
+        if args.verbose:
+            raise
+        return 2
+
+
+if __name__ == "__main__":
+    sys.exit(main())

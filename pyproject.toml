@@ -38,6 +38,9 @@ dev = [
     "ruff>=0.1",
 ]
 
+[project.scripts]
+peer = "peer.cli:main"
+
 [project.urls]
 Repository = "https://github.com/nkriman/peer"
 Issues = "https://github.com/nkriman/peer/issues"
