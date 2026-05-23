@@ -67,15 +67,37 @@ class Agent:
         model: str = "claude-sonnet-4-6",
         system_prompt: Optional[str] = None,
         system_prompt_file: Optional[Path] = None,
+        team_conventions: Optional[str] = None,
+        team_conventions_file: Optional[Path] = None,
     ) -> None:
         if system_prompt and system_prompt_file:
             raise ValueError(
                 "Pass system_prompt OR system_prompt_file, not both."
             )
+        if team_conventions and team_conventions_file:
+            raise ValueError(
+                "Pass team_conventions OR team_conventions_file, not both."
+            )
         if system_prompt_file:
             system_prompt = Path(system_prompt_file).read_text()
+        if team_conventions_file:
+            team_conventions = Path(team_conventions_file).read_text()
+
+        base_prompt = system_prompt or DEFAULT_SYSTEM_PROMPT
+        if team_conventions:
+            base_prompt = (
+                base_prompt
+                + "\n\n# TEAM CONVENTIONS\n\n"
+                + "The following document captures style and review conventions "
+                "this team consistently applies. When reviewing the PR below, "
+                "treat departures from these conventions as defects "
+                "(at appropriate severity — usually nit or minor for pure style). "
+                "Cite the convention by name when flagging a related issue.\n\n"
+                + team_conventions.strip()
+                + "\n"
+            )
         self.model = model
-        self.system_prompt = system_prompt or DEFAULT_SYSTEM_PROMPT
+        self.system_prompt = base_prompt
         self.reviewer = _select_reviewer(model, self.system_prompt)
 
     def review(self, pr_url: str) -> Review:
