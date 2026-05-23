@@ -182,12 +182,13 @@ def _edit_in_editor(sample: GoldSample) -> GoldSample:
 
 
 class Curator:
-    """Composes source -> classifier -> enrichment -> storage. Storage MUST
-    be passed explicitly; there is no global default dataset path."""
+    """Composes source -> classifier -> enrichment -> storage. Storage is
+    only required for `add()` / `add_batch()`; `preview()` works without it
+    (no global default dataset path is assumed)."""
 
     def __init__(
         self,
-        storage: GoldSampleStorage,
+        storage: Optional[GoldSampleStorage] = None,
         source: Optional[RawSampleSource] = None,
         classifier: Optional[CommentClassifier] = None,
         enrichment: Optional[EnrichmentStep] = None,
@@ -240,6 +241,12 @@ class Curator:
     # ------------------------------------------------------------------ add
 
     def add(self, pr_url: str, auto_accept: bool = False) -> GoldSample:
+        if self.storage is None:
+            raise ValueError(
+                "Curator.add requires storage to be set at construction. "
+                "Use Curator.preview(pr_url) if you only want to inspect "
+                "without writing."
+            )
         proposed = self.preview(pr_url)
         sample = proposed.proposed
 
