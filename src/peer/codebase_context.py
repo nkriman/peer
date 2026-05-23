@@ -311,15 +311,110 @@ def _find_call_sites_ast_grep(
 # -- Test discovery ----------------------------------------------------------
 
 
+def _source_to_module(source_rel: str) -> Optional[str]:
+    """Convert 'pydantic/_internal/_generate_schema.py' -> 'pydantic._internal._generate_schema'."""
+    p = Path(source_rel)
+    if p.suffix != ".py":
+        return None
+    parts = list(p.parts)
+    if parts[-1] == "__init__.py":
+        parts = parts[:-1]
+    else:
+        parts[-1] = parts[-1].removesuffix(".py")
+    if not parts:
+        return None
+    return ".".join(parts)
+
+
+def _find_tests_by_import(
+    repo_path: Path, source_rel: str, max_results: int
+) -> list[str]:
+    """Find test files in the repo that import from the source module."""
+    module = _source_to_module(source_rel)
+    if not module:
+        return []
+    if not _have_ripgrep():
+        return []
+    # Determine test roots
+    test_roots: list[Path] = []
+    for cand in ("tests", "test"):
+        p = repo_path / cand
+        if p.is_dir():
+            test_roots.append(p)
+    if not test_roots:
+        # Fall back to whole-repo scan
+        test_roots = [repo_path]
+
+    patterns = [
+        f"from {re.escape(module)} import",
+        f"from {re.escape(module)}.",
+        f"import {re.escape(module)}\\b",
+    ]
+    candidates: set[str] = set()
+    for pat in patterns:
+        for root in test_roots:
+            result = subprocess.run(
+                ["rg", "--type", "py", "-l", "--no-messages", pat, str(root)],
+                capture_output=True, text=True, check=False,
+            )
+            for line in result.stdout.splitlines():
+                try:
+                    rel = Path(line).resolve().relative_to(repo_path.resolve())
+                except ValueError:
+                    continue
+                # Require "test" in the path (filename or parent dir) to avoid
+                # picking up the source module itself if it self-imports
+                if "test" not in str(rel).lower():
+                    continue
+                # Skip the source file itself
+                if str(rel) == source_rel:
+                    continue
+                candidates.add(str(rel))
+    return sorted(candidates)[:max_results]
+
+
 def _find_related_tests(
     repo_path: Path,
     modified_paths: list[str],
     conventions: list[str],
     max_chars: int,
+    max_tests_per_source: int = 3,
 ) -> tuple[list[TestFile], list[str]]:
+    """Discover tests related to each modified source file.
+
+    Strategy:
+      1. Try configurable path conventions (fast, deterministic)
+      2. Fall back to import-graph discovery: ripgrep for files that
+         `from <module> import` or `import <module>`, scoped to test dirs
+    """
     found: list[TestFile] = []
     untested: list[str] = []
     seen_test_paths: set[str] = set()
+
+    def _add_test_file(test_rel: str, source_rel: str) -> bool:
+        if test_rel in seen_test_paths:
+            return True
+        candidate = repo_path / test_rel
+        if not candidate.exists():
+            return False
+        try:
+            content = candidate.read_text(errors="ignore")
+        except Exception:
+            return False
+        truncated = False
+        if len(content) > max_chars:
+            content = (
+                content[:max_chars]
+                + f"\n... (truncated, {len(content) - max_chars} chars)"
+            )
+            truncated = True
+        found.append(TestFile(
+            path=test_rel, source_file=source_rel,
+            content=content, truncated=truncated,
+        ))
+        seen_test_paths.add(test_rel)
+        return True
+
     for src in modified_paths:
         if not src.endswith(".py"):
             continue
@@ -327,36 +422,26 @@ def _find_related_tests(
         if stem.startswith("test_") or stem.endswith("_test"):
             continue
         name = Path(src).name
+
+        # Strategy 1: convention-based
         matched = False
         for conv in conventions:
             try:
                 test_rel = conv.format(stem=stem, name=name, path=src)
             except (KeyError, IndexError):
                 continue
-            candidate = repo_path / test_rel
-            if not candidate.exists():
-                continue
-            if test_rel in seen_test_paths:
+            if _add_test_file(test_rel, src):
                 matched = True
                 break
-            try:
-                content = candidate.read_text(errors="ignore")
-            except Exception:
-                continue
-            truncated = False
-            if len(content) > max_chars:
-                content = (
-                    content[:max_chars]
-                    + f"\n... (truncated, {len(content) - max_chars} chars)"
-                )
-                truncated = True
-            found.append(TestFile(
-                path=test_rel, source_file=src, content=content,
-                truncated=truncated,
-            ))
-            seen_test_paths.add(test_rel)
-            matched = True
-            break
+
+        # Strategy 2: import-graph fallback
+        if not matched:
+            for test_rel in _find_tests_by_import(
+                repo_path, src, max_tests_per_source
+            ):
+                if _add_test_file(test_rel, src):
+                    matched = True
+
         if not matched:
             untested.append(src)
     return found, untested
