@@ -1,0 +1,1379 @@
+{
+  "summary": {
+    "n_prs": 14,
+    "n_prs_with_human_comments": 8,
+    "total_peer_comments": 35,
+    "total_human_comments": 46,
+    "total_matches": 6,
+    "aggregate_hit_rate": 0.13043478260869565,
+    "mean_per_pr_hit_rate": 0.11577380952380953,
+    "novel_comments": 29,
+    "judge_calls": 64
+  },
+  "results": [
+    {
+      "pr_url": "https://github.com/pydantic/pydantic/pull/7625",
+      "peer_comments": [
+        {
+          "path": "pydantic/_internal/_generate_schema.py",
+          "line": 948,
+          "severity": "minor",
+          "body": "`to_jsonable_python(field_info.examples)` is called unconditionally before the `if v is not None` filter. When `field_info.examples` is `None`, `to_jsonable_python(None)` returns `None`, which is then correctly filtered out \u2014 so the behaviour is correct. However, it's a slightly wasteful call on the common path where `examples` is `None`. A simple `to_jsonable_python(field_info.examples) if field_info.examples is not None else None` (or restructuring like the `title`/`description` checks) would avoid the redundant call. Not a bug, but worth noting for consistency with how the other two fields are handled.",
+          "rationale": "The surrounding diff shows `title` and `description` are left as-is (plain values, never transformed), while `examples` is now wrapped. All three values are then filtered with `{k: v for k, v in ... if v is not None}`. Calling `to_jsonable_python(None)` is harmless but needlessly diverges from the pattern.",
+          "references": null
+        },
+        {
+          "path": "pydantic/_internal/_generate_schema.py",
+          "line": 957,
+          "severity": "important",
+          "body": "`to_jsonable_python(json_schema_extra)` is called inside `json_schema_update_func`, which is invoked every time a JSON schema is generated for this field. Since `json_schema_extra` is a dict that is captured by closure and never mutated, consider computing `to_jsonable_python(json_schema_extra)` once (outside the closure, at definition time) and storing the result, rather than re-running the conversion on every schema generation call.",
+          "rationale": "The same pattern exists at line 1661 in `_apply_single_annotation_json_schema`. Both closures capture `json_schema_extra` at definition time; the dict cannot change, so repeating the conversion on every call is wasteful. By contrast, `json_schema_updates` (which already includes the converted `examples`) is computed once before the closure. Consistency would put the `json_schema_extra` conversion there too.",
+          "references": null
+        },
+        {
+          "path": "tests/test_json_schema.py",
+          "line": 4713,
+          "severity": "minor",
+          "body": "The test only covers the `Annotated[..., Field(...)]` path (i.e. `_apply_single_annotation_json_schema`). The parallel path through `_common_field_schema` (a regular `Field(...)` on a class attribute without `Annotated`) is not exercised. Consider adding a second model using `class Cat(BaseModel): toys: List[Toy] = Field(examples=[[Toy(name='mouse')]], json_schema_extra={'special': Toy(name='bird')})` to cover both code paths.",
+          "rationale": "Both `_common_field_schema` (lines 945\u2013960) and `_apply_single_annotation_json_schema` (lines 1647\u20131664) were changed, but the test only exercises the `Annotated` variant. A bug reintroduced in the `_common_field_schema` path would not be caught by this test.",
+          "references": null
+        }
+      ],
+      "human_comments": [],
+      "matches": [],
+      "peer_unmatched": [
+        {
+          "path": "pydantic/_internal/_generate_schema.py",
+          "line": 948,
+          "severity": "minor",
+          "body": "`to_jsonable_python(field_info.examples)` is called unconditionally before the `if v is not None` filter. When `field_info.examples` is `None`, `to_jsonable_python(None)` returns `None`, which is then correctly filtered out \u2014 so the behaviour is correct. However, it's a slightly wasteful call on the common path where `examples` is `None`. A simple `to_jsonable_python(field_info.examples) if field_info.examples is not None else None` (or restructuring like the `title`/`description` checks) would avoid the redundant call. Not a bug, but worth noting for consistency with how the other two fields are handled.",
+          "rationale": "The surrounding diff shows `title` and `description` are left as-is (plain values, never transformed), while `examples` is now wrapped. All three values are then filtered with `{k: v for k, v in ... if v is not None}`. Calling `to_jsonable_python(None)` is harmless but needlessly diverges from the pattern.",
+          "references": null
+        },
+        {
+          "path": "pydantic/_internal/_generate_schema.py",
+          "line": 957,
+          "severity": "important",
+          "body": "`to_jsonable_python(json_schema_extra)` is called inside `json_schema_update_func`, which is invoked every time a JSON schema is generated for this field. Since `json_schema_extra` is a dict that is captured by closure and never mutated, consider computing `to_jsonable_python(json_schema_extra)` once (outside the closure, at definition time) and storing the result, rather than re-running the conversion on every schema generation call.",
+          "rationale": "The same pattern exists at line 1661 in `_apply_single_annotation_json_schema`. Both closures capture `json_schema_extra` at definition time; the dict cannot change, so repeating the conversion on every call is wasteful. By contrast, `json_schema_updates` (which already includes the converted `examples`) is computed once before the closure. Consistency would put the `json_schema_extra` conversion there too.",
+          "references": null
+        },
+        {
+          "path": "tests/test_json_schema.py",
+          "line": 4713,
+          "severity": "minor",
+          "body": "The test only covers the `Annotated[..., Field(...)]` path (i.e. `_apply_single_annotation_json_schema`). The parallel path through `_common_field_schema` (a regular `Field(...)` on a class attribute without `Annotated`) is not exercised. Consider adding a second model using `class Cat(BaseModel): toys: List[Toy] = Field(examples=[[Toy(name='mouse')]], json_schema_extra={'special': Toy(name='bird')})` to cover both code paths.",
+          "rationale": "Both `_common_field_schema` (lines 945\u2013960) and `_apply_single_annotation_json_schema` (lines 1647\u20131664) were changed, but the test only exercises the `Annotated` variant. A bug reintroduced in the `_common_field_schema` path would not be caught by this test.",
+          "references": null
+        }
+      ],
+      "human_unmatched": [],
+      "usage": {
+        "input_tokens": 8194,
+        "output_tokens": 845,
+        "model": "claude-sonnet-4-6"
+      },
+      "judge_calls": 0
+    },
+    {
+      "pr_url": "https://github.com/pydantic/pydantic/pull/7528",
+      "peer_comments": [
+        {
+          "path": "pydantic/_internal/_core_utils.py",
+          "line": 193,
+          "severity": "important",
+          "body": "Removing the `.copy()` before passing the schema to `f` means that the user-supplied walk function `f` now receives and may mutate the original schema object in place. Previously, the copy acted as a defensive barrier so that mutations inside `f` did not affect the original schema dict. Any caller that relies on the original schema being unmodified after calling `walk()` will now see side effects.\n\nSimilarly for the `ser_schema.copy()` removal on line 199 \u2014 `_handle_ser_schemas` can now mutate the live `serialization` sub-dict of the schema being walked.\n\nIf the intent is to make mutation the accepted contract, the public API (the `Walk` type alias and any docstrings) should document this explicitly, and callers should be audited to confirm they don't depend on the originals being preserved.",
+          "rationale": "The old code passed `schema.copy()` to `f`, giving the walk function a shallow copy to mutate freely. Removing this means in-place mutations inside `f` now directly modify the original schema dict. Existing call sites in tests/test_utils.py (e.g. lines 565, 598, 631, 650) do `s['type'] = 'str'` inside the walk function \u2014 with the old code this only touched the copy; with the new code it touches the original. Whether this is a bug or intentional depends on usage patterns, but the change in mutation semantics is significant and undocumented.",
+          "references": null
+        },
+        {
+          "path": "pydantic/_internal/_core_utils.py",
+          "line": 193,
+          "severity": "important",
+          "body": "The `.copy()` that was removed was a *shallow* copy of the TypedDict. Because `CoreSchema` dicts can contain nested dicts/lists (e.g. `items_schema`, `fields`, etc.), even the old copy did not protect nested structures. Removing it entirely removes even the shallow protection. If the motivation is correctness (avoid confusing callers with a copy), that is reasonable, but if the motivation is performance, the savings may be negligible compared to the deeper allocations that still occur during walking. Please document which goal is intended.",
+          "rationale": "The PR title says 'Remove unused copies', implying the copies were believed to be redundant. However shallow copies of TypedDicts with mutable nested values still have observable effects on mutation semantics for top-level keys (like `type`, `schema`, `serialization`), so they are not entirely 'unused'.",
+          "references": null
+        }
+      ],
+      "human_comments": [],
+      "matches": [],
+      "peer_unmatched": [
+        {
+          "path": "pydantic/_internal/_core_utils.py",
+          "line": 193,
+          "severity": "important",
+          "body": "Removing the `.copy()` before passing the schema to `f` means that the user-supplied walk function `f` now receives and may mutate the original schema object in place. Previously, the copy acted as a defensive barrier so that mutations inside `f` did not affect the original schema dict. Any caller that relies on the original schema being unmodified after calling `walk()` will now see side effects.\n\nSimilarly for the `ser_schema.copy()` removal on line 199 \u2014 `_handle_ser_schemas` can now mutate the live `serialization` sub-dict of the schema being walked.\n\nIf the intent is to make mutation the accepted contract, the public API (the `Walk` type alias and any docstrings) should document this explicitly, and callers should be audited to confirm they don't depend on the originals being preserved.",
+          "rationale": "The old code passed `schema.copy()` to `f`, giving the walk function a shallow copy to mutate freely. Removing this means in-place mutations inside `f` now directly modify the original schema dict. Existing call sites in tests/test_utils.py (e.g. lines 565, 598, 631, 650) do `s['type'] = 'str'` inside the walk function \u2014 with the old code this only touched the copy; with the new code it touches the original. Whether this is a bug or intentional depends on usage patterns, but the change in mutation semantics is significant and undocumented.",
+          "references": null
+        },
+        {
+          "path": "pydantic/_internal/_core_utils.py",
+          "line": 193,
+          "severity": "important",
+          "body": "The `.copy()` that was removed was a *shallow* copy of the TypedDict. Because `CoreSchema` dicts can contain nested dicts/lists (e.g. `items_schema`, `fields`, etc.), even the old copy did not protect nested structures. Removing it entirely removes even the shallow protection. If the motivation is correctness (avoid confusing callers with a copy), that is reasonable, but if the motivation is performance, the savings may be negligible compared to the deeper allocations that still occur during walking. Please document which goal is intended.",
+          "rationale": "The PR title says 'Remove unused copies', implying the copies were believed to be redundant. However shallow copies of TypedDicts with mutable nested values still have observable effects on mutation semantics for top-level keys (like `type`, `schema`, `serialization`), so they are not entirely 'unused'.",
+          "references": null
+        }
+      ],
+      "human_unmatched": [],
+      "usage": {
+        "input_tokens": 3824,
+        "output_tokens": 633,
+        "model": "claude-sonnet-4-6"
+      },
+      "judge_calls": 0
+    },
+    {
+      "pr_url": "https://github.com/pydantic/pydantic/pull/7677",
+      "peer_comments": [
+        {
+          "path": "pydantic/mypy.py",
+          "line": 433,
+          "severity": "important",
+          "body": "The `is_root_model` check uses `ROOT_MODEL_FULLNAME in base.fullname` (substring match) instead of `== ROOT_MODEL_FULLNAME` (exact match). This means any class whose fully-qualified name merely *contains* the string `'pydantic.root_model.RootModel'` (e.g., a hypothetical `my_pydantic.root_model.RootModel`) would be treated as a root model. Use an exact equality check for consistency with how `is_settings` is determined on the very next line:\n\n```python\nis_root_model = any(base.fullname == ROOT_MODEL_FULLNAME for base in info.mro[:-1])\n```",
+          "rationale": "The same file uses exact equality (`== BASESETTINGS_FULLNAME`) for the analogous `is_settings` check on line 442. The substring `in` check is inconsistent and fragile \u2014 any class path that contains 'pydantic.root_model.RootModel' as a substring would be a false positive.",
+          "references": null
+        },
+        {
+          "path": "pydantic/mypy.py",
+          "line": 809,
+          "severity": "critical",
+          "body": "If `is_root_model` is `True` but `args` is empty (e.g., a `RootModel` subclass that somehow produces no fields), `args[0]` will raise an `IndexError`, crashing the mypy plugin. This can happen if the `root` field has no default and isn't picked up for some reason, or if a subclass re-declares `root` but the field isn't collected. Add a guard:\n\n```python\nif is_root_model and args:\n    args[0].kind = ARG_POS if args[0].kind == ARG_NAMED else ARG_OPT\n```",
+          "rationale": "There is no bounds check on `args` before indexing `args[0]`. A `RootModel` subclass with no collectable fields (e.g. all fields filtered out by `error_extra_fields_on_root_model`) would produce an empty `args` list, causing an uncaught `IndexError`.",
+          "references": null
+        },
+        {
+          "path": "pydantic/mypy.py",
+          "line": 1099,
+          "severity": "important",
+          "body": "`error_extra_fields_on_root_model` declares its `api` parameter as `CheckerPluginInterface`, but it is called from `collect_fields` where `self._api` is a `SemanticAnalyzerPluginInterface` (the transformer runs during semantic analysis, not type-checking). All other similar error functions called from `collect_fields` and `collect_config` accept `SemanticAnalyzerPluginInterface`. This type mismatch may cause a runtime `AttributeError` if `CheckerPluginInterface`-specific methods are called, and it is an incorrect annotation. Change the signature to `api: SemanticAnalyzerPluginInterface`.",
+          "rationale": "Compare with `error_untyped_fields` (line 1094) and `error_required_dynamic_aliases` which both accept `SemanticAnalyzerPluginInterface` and are likewise called during semantic analysis. `error_default_and_default_factory_specified` uses `CheckerPluginInterface` and is called from the type-checker phase. The call site here is `collect_fields`, which runs in `transform`, which runs as a `ClassDefContext` callback \u2014 that is semantic analysis, not type-checking.",
+          "references": null
+        },
+        {
+          "path": "tests/mypy/modules/root_models.py",
+          "line": 19,
+          "severity": "minor",
+          "body": "The test module is missing a case that validates the original bug fix: a `RootModel` subclass instantiated without any argument (i.e. `Pets1()`) should now be valid instead of producing a mypy error. Without such a test, the core regression case from issue #7463 is not directly exercised.",
+          "rationale": "The PR description states the fix allows subclasses of `RootModel` to be instantiated without a `root` keyword argument. The test module only tests positional-argument instantiation (`Pets1(['dog', 'cat'])`), not the no-argument case that was the original problem.",
+          "references": null
+        },
+        {
+          "path": "tests/mypy/outputs/1.0.1/mypy-plugin_ini/root_models.py",
+          "line": 1,
+          "severity": "minor",
+          "body": "Only a single mypy version output directory (`1.0.1`) is provided. Other mypy version outputs (e.g. for `0.971`, `1.0.0`) are missing. Compare with `custom_constructor.py` and `generics.py` which are also in the one-off test list and typically have outputs for multiple mypy versions. If this test is only expected to work with mypy 1.0.1+, that should be documented or the test should be marked with a version skip condition.",
+          "rationale": "Other one-off test cases (`('mypy-plugin.ini', 'custom_constructor.py')` and `('mypy-plugin.ini', 'generics.py')`) have output files for multiple mypy versions. This new case only adds `1.0.1`, which may cause test failures on other mypy versions tested in CI.",
+          "references": null
+        }
+      ],
+      "human_comments": [
+        {
+          "author": "sydney-runkle",
+          "path": "pydantic/mypy.py",
+          "line": 808,
+          "body": "What information should I pass as context here to this custom error func?"
+        },
+        {
+          "author": "sydney-runkle",
+          "path": "tests/mypy/test_mypy.py",
+          "line": 101,
+          "body": "How do I generate an output file for this example?"
+        },
+        {
+          "author": "dmontagu",
+          "path": "tests/mypy/test_mypy.py",
+          "line": 101,
+          "body": "You can run `make test-mypy-update-all` \u2014 note that it will take a while as it clears cache, and runs all mypy tests (which already aren't fast) for all versions of mypy one at a time.\r\n\r\nYou could probably get it to run faster by commenting out everything but the `root_models.py` file here and dropping the `rm -rf tests/mypy/outputs` from the command (or just reverting all the deletions it will do)."
+        },
+        {
+          "author": "dmontagu",
+          "path": "pydantic/mypy.py",
+          "line": 808,
+          "body": "Try `self._cls.info`"
+        },
+        {
+          "author": "dmontagu",
+          "path": "pydantic/mypy.py",
+          "line": 811,
+          "body": "Might need to check if there's a default, I'm looking more closely.."
+        }
+      ],
+      "matches": [
+        {
+          "peer_comment": {
+            "path": "pydantic/mypy.py",
+            "line": 809,
+            "severity": "critical",
+            "body": "If `is_root_model` is `True` but `args` is empty (e.g., a `RootModel` subclass that somehow produces no fields), `args[0]` will raise an `IndexError`, crashing the mypy plugin. This can happen if the `root` field has no default and isn't picked up for some reason, or if a subclass re-declares `root` but the field isn't collected. Add a guard:\n\n```python\nif is_root_model and args:\n    args[0].kind = ARG_POS if args[0].kind == ARG_NAMED else ARG_OPT\n```",
+            "rationale": "There is no bounds check on `args` before indexing `args[0]`. A `RootModel` subclass with no collectable fields (e.g. all fields filtered out by `error_extra_fields_on_root_model`) would produce an empty `args` list, causing an uncaught `IndexError`.",
+            "references": null
+          },
+          "human_comment": {
+            "author": "dmontagu",
+            "path": "pydantic/mypy.py",
+            "line": 811,
+            "body": "Might need to check if there's a default, I'm looking more closely.."
+          }
+        }
+      ],
+      "peer_unmatched": [
+        {
+          "path": "pydantic/mypy.py",
+          "line": 433,
+          "severity": "important",
+          "body": "The `is_root_model` check uses `ROOT_MODEL_FULLNAME in base.fullname` (substring match) instead of `== ROOT_MODEL_FULLNAME` (exact match). This means any class whose fully-qualified name merely *contains* the string `'pydantic.root_model.RootModel'` (e.g., a hypothetical `my_pydantic.root_model.RootModel`) would be treated as a root model. Use an exact equality check for consistency with how `is_settings` is determined on the very next line:\n\n```python\nis_root_model = any(base.fullname == ROOT_MODEL_FULLNAME for base in info.mro[:-1])\n```",
+          "rationale": "The same file uses exact equality (`== BASESETTINGS_FULLNAME`) for the analogous `is_settings` check on line 442. The substring `in` check is inconsistent and fragile \u2014 any class path that contains 'pydantic.root_model.RootModel' as a substring would be a false positive.",
+          "references": null
+        },
+        {
+          "path": "pydantic/mypy.py",
+          "line": 1099,
+          "severity": "important",
+          "body": "`error_extra_fields_on_root_model` declares its `api` parameter as `CheckerPluginInterface`, but it is called from `collect_fields` where `self._api` is a `SemanticAnalyzerPluginInterface` (the transformer runs during semantic analysis, not type-checking). All other similar error functions called from `collect_fields` and `collect_config` accept `SemanticAnalyzerPluginInterface`. This type mismatch may cause a runtime `AttributeError` if `CheckerPluginInterface`-specific methods are called, and it is an incorrect annotation. Change the signature to `api: SemanticAnalyzerPluginInterface`.",
+          "rationale": "Compare with `error_untyped_fields` (line 1094) and `error_required_dynamic_aliases` which both accept `SemanticAnalyzerPluginInterface` and are likewise called during semantic analysis. `error_default_and_default_factory_specified` uses `CheckerPluginInterface` and is called from the type-checker phase. The call site here is `collect_fields`, which runs in `transform`, which runs as a `ClassDefContext` callback \u2014 that is semantic analysis, not type-checking.",
+          "references": null
+        },
+        {
+          "path": "tests/mypy/modules/root_models.py",
+          "line": 19,
+          "severity": "minor",
+          "body": "The test module is missing a case that validates the original bug fix: a `RootModel` subclass instantiated without any argument (i.e. `Pets1()`) should now be valid instead of producing a mypy error. Without such a test, the core regression case from issue #7463 is not directly exercised.",
+          "rationale": "The PR description states the fix allows subclasses of `RootModel` to be instantiated without a `root` keyword argument. The test module only tests positional-argument instantiation (`Pets1(['dog', 'cat'])`), not the no-argument case that was the original problem.",
+          "references": null
+        },
+        {
+          "path": "tests/mypy/outputs/1.0.1/mypy-plugin_ini/root_models.py",
+          "line": 1,
+          "severity": "minor",
+          "body": "Only a single mypy version output directory (`1.0.1`) is provided. Other mypy version outputs (e.g. for `0.971`, `1.0.0`) are missing. Compare with `custom_constructor.py` and `generics.py` which are also in the one-off test list and typically have outputs for multiple mypy versions. If this test is only expected to work with mypy 1.0.1+, that should be documented or the test should be marked with a version skip condition.",
+          "rationale": "Other one-off test cases (`('mypy-plugin.ini', 'custom_constructor.py')` and `('mypy-plugin.ini', 'generics.py')`) have output files for multiple mypy versions. This new case only adds `1.0.1`, which may cause test failures on other mypy versions tested in CI.",
+          "references": null
+        }
+      ],
+      "human_unmatched": [
+        {
+          "author": "sydney-runkle",
+          "path": "pydantic/mypy.py",
+          "line": 808,
+          "body": "What information should I pass as context here to this custom error func?"
+        },
+        {
+          "author": "sydney-runkle",
+          "path": "tests/mypy/test_mypy.py",
+          "line": 101,
+          "body": "How do I generate an output file for this example?"
+        },
+        {
+          "author": "dmontagu",
+          "path": "tests/mypy/test_mypy.py",
+          "line": 101,
+          "body": "You can run `make test-mypy-update-all` \u2014 note that it will take a while as it clears cache, and runs all mypy tests (which already aren't fast) for all versions of mypy one at a time.\r\n\r\nYou could probably get it to run faster by commenting out everything but the `root_models.py` file here and dropping the `rm -rf tests/mypy/outputs` from the command (or just reverting all the deletions it will do)."
+        },
+        {
+          "author": "dmontagu",
+          "path": "pydantic/mypy.py",
+          "line": 808,
+          "body": "Try `self._cls.info`"
+        }
+      ],
+      "usage": {
+        "input_tokens": 13537,
+        "output_tokens": 1371,
+        "model": "claude-sonnet-4-6"
+      },
+      "judge_calls": 8
+    },
+    {
+      "pr_url": "https://github.com/pydantic/pydantic/pull/7527",
+      "peer_comments": [
+        {
+          "path": "pydantic/_internal/_core_utils.py",
+          "line": 122,
+          "severity": "critical",
+          "body": "The cache is used but never populated. The code reads from `_DEFINITIONS_CACHE_METADATA_KEY` in `collect_definitions`, but there is no corresponding code in this diff that writes the cache into a schema's metadata after the first traversal. As a result, the cache will always be a miss on every call, meaning this is dead code at best. At worst, if the key _is_ set by some other path that isn't shown in this diff, the early-return `return s` skips the `recurse(s, _record_valid_refs)` call, so any definitions nested *inside* this schema node that aren't captured in `definitions_cache` would be silently missed \u2014 producing an incomplete `defs` dict for callers like `apply_discriminators` and `ApplyInferredDiscriminator.definitions.update(...)` (see call sites in `_discriminated_union.py:22` and `_discriminated_union.py:157`).",
+          "rationale": "The diff only adds the read-side of the cache. There is no write-side visible anywhere in this diff (no code sets `_DEFINITIONS_CACHE_METADATA_KEY` in any schema's metadata). If the write side exists elsewhere and only captures a subset of definitions, the early return on line 122 would silently drop definitions that are nested deeper \u2014 breaking the two call sites in `_discriminated_union.py`.",
+          "references": null
+        },
+        {
+          "path": "pydantic/_internal/_core_utils.py",
+          "line": 119,
+          "severity": "important",
+          "body": "`s['metadata']` is accessed without a guard that it is actually a `dict`. The `CoreSchema` metadata field can be any arbitrary object; if it is not a `dict`, calling `.get(...)` on it will raise `AttributeError`. There should be an `isinstance(s['metadata'], dict)` check before calling `.get()`.",
+          "rationale": "The `metadata` field in `CoreSchema` is typed as `Any`, so it is not guaranteed to be a mapping. The surrounding code only checks `'metadata' in s` (line 119), not the type of `s['metadata']`.",
+          "references": null
+        }
+      ],
+      "human_comments": [
+        {
+          "author": "davidhewitt",
+          "path": "pydantic/_internal/_core_utils.py",
+          "line": 180,
+          "body": "Can you elaborate on the motivation of this change? Maybe needs a comment, it's quite winding logic."
+        },
+        {
+          "author": "adriangb",
+          "path": "pydantic/_internal/_core_utils.py",
+          "line": 180,
+          "body": "The `invalid` thing already existed. What this is doing is marking a schema as \"there are no invalid schemas in this subtree\" (which is the most common case) so that we can skip recursing into it after the first time we recurse through it."
+        },
+        {
+          "author": "adriangb",
+          "path": "pydantic/_internal/_core_utils.py",
+          "line": 180,
+          "body": "But now that I think of it we *should* be able to do something similar to https://github.com/pydantic/pydantic/pull/7529/files#diff-2ebfa892ec1d09440eefd4b22f488ec38c1cde365394e5a4cea6edb484827ba5 and do this from within `GenerateSchema` during our first recursion through the CoreSchema (we build it recursively)."
+        },
+        {
+          "author": "adriangb",
+          "path": "pydantic/_internal/_core_utils.py",
+          "line": 180,
+          "body": "I'll wait to make that change until #7529 is merged so I can re-use `post_process_schema` and such"
+        }
+      ],
+      "matches": [
+        {
+          "peer_comment": {
+            "path": "pydantic/_internal/_core_utils.py",
+            "line": 122,
+            "severity": "critical",
+            "body": "The cache is used but never populated. The code reads from `_DEFINITIONS_CACHE_METADATA_KEY` in `collect_definitions`, but there is no corresponding code in this diff that writes the cache into a schema's metadata after the first traversal. As a result, the cache will always be a miss on every call, meaning this is dead code at best. At worst, if the key _is_ set by some other path that isn't shown in this diff, the early-return `return s` skips the `recurse(s, _record_valid_refs)` call, so any definitions nested *inside* this schema node that aren't captured in `definitions_cache` would be silently missed \u2014 producing an incomplete `defs` dict for callers like `apply_discriminators` and `ApplyInferredDiscriminator.definitions.update(...)` (see call sites in `_discriminated_union.py:22` and `_discriminated_union.py:157`).",
+            "rationale": "The diff only adds the read-side of the cache. There is no write-side visible anywhere in this diff (no code sets `_DEFINITIONS_CACHE_METADATA_KEY` in any schema's metadata). If the write side exists elsewhere and only captures a subset of definitions, the early return on line 122 would silently drop definitions that are nested deeper \u2014 breaking the two call sites in `_discriminated_union.py`.",
+            "references": null
+          },
+          "human_comment": {
+            "author": "adriangb",
+            "path": "pydantic/_internal/_core_utils.py",
+            "line": 180,
+            "body": "But now that I think of it we *should* be able to do something similar to https://github.com/pydantic/pydantic/pull/7529/files#diff-2ebfa892ec1d09440eefd4b22f488ec38c1cde365394e5a4cea6edb484827ba5 and do this from within `GenerateSchema` during our first recursion through the CoreSchema (we build it recursively)."
+          }
+        }
+      ],
+      "peer_unmatched": [
+        {
+          "path": "pydantic/_internal/_core_utils.py",
+          "line": 119,
+          "severity": "important",
+          "body": "`s['metadata']` is accessed without a guard that it is actually a `dict`. The `CoreSchema` metadata field can be any arbitrary object; if it is not a `dict`, calling `.get(...)` on it will raise `AttributeError`. There should be an `isinstance(s['metadata'], dict)` check before calling `.get()`.",
+          "rationale": "The `metadata` field in `CoreSchema` is typed as `Any`, so it is not guaranteed to be a mapping. The surrounding code only checks `'metadata' in s` (line 119), not the type of `s['metadata']`.",
+          "references": null
+        }
+      ],
+      "human_unmatched": [
+        {
+          "author": "davidhewitt",
+          "path": "pydantic/_internal/_core_utils.py",
+          "line": 180,
+          "body": "Can you elaborate on the motivation of this change? Maybe needs a comment, it's quite winding logic."
+        },
+        {
+          "author": "adriangb",
+          "path": "pydantic/_internal/_core_utils.py",
+          "line": 180,
+          "body": "The `invalid` thing already existed. What this is doing is marking a schema as \"there are no invalid schemas in this subtree\" (which is the most common case) so that we can skip recursing into it after the first time we recurse through it."
+        },
+        {
+          "author": "adriangb",
+          "path": "pydantic/_internal/_core_utils.py",
+          "line": 180,
+          "body": "I'll wait to make that change until #7529 is merged so I can re-use `post_process_schema` and such"
+        }
+      ],
+      "usage": {
+        "input_tokens": 3407,
+        "output_tokens": 583,
+        "model": "claude-sonnet-4-6"
+      },
+      "judge_calls": 6
+    },
+    {
+      "pr_url": "https://github.com/pydantic/pydantic/pull/7415",
+      "peer_comments": [],
+      "human_comments": [
+        {
+          "author": "kludex",
+          "path": "pydantic/networks.py",
+          "line": 366,
+          "body": "Are those needed in this file?"
+        },
+        {
+          "author": "hramezani",
+          "path": "pydantic/networks.py",
+          "line": 366,
+          "body": "Actually, not needed because they are working without them. This is just to make all the `__get_pydantic_core_schema__` signature similar."
+        },
+        {
+          "author": "kludex",
+          "path": "pydantic/networks.py",
+          "line": 366,
+          "body": "I see why you changed the other files, but since this is optional here, I would leave without it.\r\n\r\nAnyway, not a blocker. Do as you think is more appropriate. \ud83d\ude4f"
+        }
+      ],
+      "matches": [],
+      "peer_unmatched": [],
+      "human_unmatched": [
+        {
+          "author": "kludex",
+          "path": "pydantic/networks.py",
+          "line": 366,
+          "body": "Are those needed in this file?"
+        },
+        {
+          "author": "hramezani",
+          "path": "pydantic/networks.py",
+          "line": 366,
+          "body": "Actually, not needed because they are working without them. This is just to make all the `__get_pydantic_core_schema__` signature similar."
+        },
+        {
+          "author": "kludex",
+          "path": "pydantic/networks.py",
+          "line": 366,
+          "body": "I see why you changed the other files, but since this is optional here, I would leave without it.\r\n\r\nAnyway, not a blocker. Do as you think is more appropriate. \ud83d\ude4f"
+        }
+      ],
+      "usage": {
+        "input_tokens": 16721,
+        "output_tokens": 33,
+        "model": "claude-sonnet-4-6"
+      },
+      "judge_calls": 0
+    },
+    {
+      "pr_url": "https://github.com/pydantic/pydantic/pull/7566",
+      "peer_comments": [
+        {
+          "path": "tests/test_types.py",
+          "line": 2806,
+          "severity": "important",
+          "body": "The test only validates that a UUID with `version=None` fails version-specific fields (UUID1/3/4/5), but there is no test that validates the fix itself: namely that a UUID with `version=None` is **accepted** when the field type is the plain `UUID` (i.e., `UUIDModel(e=e)` succeeds). The existing `m = UUIDModel(a=a, b=b, c=c, d=d, e=e)` covers this indirectly, but there's no isolated test or comment making it clear this is the regression test for issue #7355. Consider adding a targeted assertion or a separate test function that specifically demonstrates the bug is fixed (e.g., a model with only `v: UUID` and asserting that `UUID('{00000000-7fff-4000-7fff-000000000000}')` is accepted).",
+          "rationale": "The diff adds `e: UUID` to the existing `UUIDModel` and validates it alongside the versioned UUID fields, but the actual fix (allowing `UUID.version=None` for the plain `UUID` type) is only covered implicitly. A reader of the test suite cannot immediately identify which part of the test guards against regression of #7355. Additionally, there is no corresponding change shown to the source/validator code in the diff \u2014 only test changes \u2014 making it unclear what source code was actually fixed, and whether it handles all edge cases (e.g., string input `'00000000-7fff-4000-7fff-000000000000'` that gets coerced to a UUID with `version=None`).",
+          "references": null
+        }
+      ],
+      "human_comments": [],
+      "matches": [],
+      "peer_unmatched": [
+        {
+          "path": "tests/test_types.py",
+          "line": 2806,
+          "severity": "important",
+          "body": "The test only validates that a UUID with `version=None` fails version-specific fields (UUID1/3/4/5), but there is no test that validates the fix itself: namely that a UUID with `version=None` is **accepted** when the field type is the plain `UUID` (i.e., `UUIDModel(e=e)` succeeds). The existing `m = UUIDModel(a=a, b=b, c=c, d=d, e=e)` covers this indirectly, but there's no isolated test or comment making it clear this is the regression test for issue #7355. Consider adding a targeted assertion or a separate test function that specifically demonstrates the bug is fixed (e.g., a model with only `v: UUID` and asserting that `UUID('{00000000-7fff-4000-7fff-000000000000}')` is accepted).",
+          "rationale": "The diff adds `e: UUID` to the existing `UUIDModel` and validates it alongside the versioned UUID fields, but the actual fix (allowing `UUID.version=None` for the plain `UUID` type) is only covered implicitly. A reader of the test suite cannot immediately identify which part of the test guards against regression of #7355. Additionally, there is no corresponding change shown to the source/validator code in the diff \u2014 only test changes \u2014 making it unclear what source code was actually fixed, and whether it handles all edge cases (e.g., string input `'00000000-7fff-4000-7fff-000000000000'` that gets coerced to a UUID with `version=None`).",
+          "references": null
+        }
+      ],
+      "human_unmatched": [],
+      "usage": {
+        "input_tokens": 4528,
+        "output_tokens": 431,
+        "model": "claude-sonnet-4-6"
+      },
+      "judge_calls": 0
+    },
+    {
+      "pr_url": "https://github.com/pydantic/pydantic/pull/7435",
+      "peer_comments": [
+        {
+          "path": "pydantic/_internal/_core_utils.py",
+          "line": 11,
+          "severity": "important",
+          "body": "`typing._GenericAlias` is a private, undocumented CPython implementation detail. It is not available in PyPy, and its name/location can change across Python versions (e.g., it was internal in 3.7 and has no stability guarantees going forward). The `# type: ignore` comment already signals that this is fragile. Consider using the public API instead: `typing.get_args(type_)` already returns an empty tuple for non-generic types, so you can simply write `args = args_override or get_args(type_)`, which accomplishes the same thing without relying on a private class.",
+          "rationale": "The diff imports `typing._GenericAlias` with a `type: ignore` comment. The logic in the new `get_type_ref` is `get_args(type_) if isinstance(type_, _GenericAlias) else (args_override or ())`. Since `get_args` returns `()` for non-generic types, `args_override or get_args(type_)` is semantically equivalent but avoids the private import entirely.",
+          "references": null
+        },
+        {
+          "path": "pydantic/_internal/_core_utils.py",
+          "line": 77,
+          "severity": "important",
+          "body": "The new logic `get_args(type_) if isinstance(type_, _GenericAlias) else (args_override or ())` silently drops `args_override` when `type_` is a `_GenericAlias`. The original contract of `get_type_ref` allowed callers to pass `args_override` to explicitly control the ref (used for recursive generic models in `_generics.py`). If a `_GenericAlias` is ever passed together with a non-None `args_override`, the override will be silently ignored. This may not happen today, but the contract change is unguarded. At minimum, an assertion or comment should make the mutual-exclusion assumption explicit.",
+          "rationale": "Call site in `pydantic/_internal/_generics.py:408` calls `get_type_ref(origin, args_override=args)`. If `origin` happened to be a `_GenericAlias`, `args_override` would be ignored. The original code always preferred `args_override` over auto-detected args.",
+          "references": null
+        },
+        {
+          "path": "tests/test_dataclasses.py",
+          "line": 2073,
+          "severity": "minor",
+          "body": "The assertion `'[int:' in validator1.core_schema['schema']['schema_ref']` tests an internal implementation detail of the schema structure. If the schema format changes (e.g., the ref format or the nesting level of `'schema'`), this assertion will fail even if the bug fix is still correct. Consider either removing this internal-detail check or marking it clearly as a fragile internal test (the comment already hints at this). The functional validation tests below are the important correctness checks.",
+          "rationale": "The test comment itself says 'this can probably be removed if the schema changes in some way that makes this part of the test fail', acknowledging its fragility.",
+          "references": null
+        }
+      ],
+      "human_comments": [
+        {
+          "author": "sydney-runkle",
+          "path": "pydantic/_internal/_core_utils.py",
+          "line": 68,
+          "body": "@dmontagu, could you please explain why we changed this line?\r\n\r\nI understand the value of the `deepcopy` on the model's fields in `_generate_schema.py`, but I don't quite understand the purpose of this line here."
+        },
+        {
+          "author": "dmontagu",
+          "path": "pydantic/_internal/_core_utils.py",
+          "line": 68,
+          "body": "I just noticed this misbehavior \u2014 right now, it's not producing a type ref that reflects the generic parameters like it is supposed to. In particular, this means that in principle you could get two different schemas with the same ref but that should have different parameters. I don't know why that doesn't seem to be affecting the validation behavior, but I do think this is an improvement either way."
+        }
+      ],
+      "matches": [],
+      "peer_unmatched": [
+        {
+          "path": "pydantic/_internal/_core_utils.py",
+          "line": 11,
+          "severity": "important",
+          "body": "`typing._GenericAlias` is a private, undocumented CPython implementation detail. It is not available in PyPy, and its name/location can change across Python versions (e.g., it was internal in 3.7 and has no stability guarantees going forward). The `# type: ignore` comment already signals that this is fragile. Consider using the public API instead: `typing.get_args(type_)` already returns an empty tuple for non-generic types, so you can simply write `args = args_override or get_args(type_)`, which accomplishes the same thing without relying on a private class.",
+          "rationale": "The diff imports `typing._GenericAlias` with a `type: ignore` comment. The logic in the new `get_type_ref` is `get_args(type_) if isinstance(type_, _GenericAlias) else (args_override or ())`. Since `get_args` returns `()` for non-generic types, `args_override or get_args(type_)` is semantically equivalent but avoids the private import entirely.",
+          "references": null
+        },
+        {
+          "path": "pydantic/_internal/_core_utils.py",
+          "line": 77,
+          "severity": "important",
+          "body": "The new logic `get_args(type_) if isinstance(type_, _GenericAlias) else (args_override or ())` silently drops `args_override` when `type_` is a `_GenericAlias`. The original contract of `get_type_ref` allowed callers to pass `args_override` to explicitly control the ref (used for recursive generic models in `_generics.py`). If a `_GenericAlias` is ever passed together with a non-None `args_override`, the override will be silently ignored. This may not happen today, but the contract change is unguarded. At minimum, an assertion or comment should make the mutual-exclusion assumption explicit.",
+          "rationale": "Call site in `pydantic/_internal/_generics.py:408` calls `get_type_ref(origin, args_override=args)`. If `origin` happened to be a `_GenericAlias`, `args_override` would be ignored. The original code always preferred `args_override` over auto-detected args.",
+          "references": null
+        },
+        {
+          "path": "tests/test_dataclasses.py",
+          "line": 2073,
+          "severity": "minor",
+          "body": "The assertion `'[int:' in validator1.core_schema['schema']['schema_ref']` tests an internal implementation detail of the schema structure. If the schema format changes (e.g., the ref format or the nesting level of `'schema'`), this assertion will fail even if the bug fix is still correct. Consider either removing this internal-detail check or marking it clearly as a fragile internal test (the comment already hints at this). The functional validation tests below are the important correctness checks.",
+          "rationale": "The test comment itself says 'this can probably be removed if the schema changes in some way that makes this part of the test fail', acknowledging its fragility.",
+          "references": null
+        }
+      ],
+      "human_unmatched": [
+        {
+          "author": "sydney-runkle",
+          "path": "pydantic/_internal/_core_utils.py",
+          "line": 68,
+          "body": "@dmontagu, could you please explain why we changed this line?\r\n\r\nI understand the value of the `deepcopy` on the model's fields in `_generate_schema.py`, but I don't quite understand the purpose of this line here."
+        },
+        {
+          "author": "dmontagu",
+          "path": "pydantic/_internal/_core_utils.py",
+          "line": 68,
+          "body": "I just noticed this misbehavior \u2014 right now, it's not producing a type ref that reflects the generic parameters like it is supposed to. In particular, this means that in principle you could get two different schemas with the same ref but that should have different parameters. I don't know why that doesn't seem to be affecting the validation behavior, but I do think this is an improvement either way."
+        }
+      ],
+      "usage": {
+        "input_tokens": 7257,
+        "output_tokens": 811,
+        "model": "claude-sonnet-4-6"
+      },
+      "judge_calls": 4
+    },
+    {
+      "pr_url": "https://github.com/pydantic/pydantic/pull/7589",
+      "peer_comments": [
+        {
+          "path": "pydantic/plugin/_loader.py",
+          "line": 22,
+          "severity": "minor",
+          "body": "The comment on line 22 is incomplete: `# this means that if plugins use pydantic` \u2014 it trails off without finishing the thought. It should say something like: `# this means that if plugins use pydantic, they will not trigger recursive plugin loading`.",
+          "rationale": "The comment reads 'this means that if plugins use pydantic' and stops, leaving the intent unclear. The original PR discussion also noted this comment was being worked on.",
+          "references": null
+        },
+        {
+          "path": "pydantic/plugin/_loader.py",
+          "line": 58,
+          "severity": "important",
+          "body": "If an exception other than `ImportError`/`AttributeError` is raised during the distribution scan (e.g. a `RuntimeError` from `importlib_metadata`), the `finally` block correctly resets `_loading_plugins = False`, but `_plugins` is left as an empty `{}` rather than `None`. On the next call to `get_plugins()`, the `elif _plugins is None` branch won't be entered, so the scan won't be retried \u2014 all plugins will silently be skipped. Consider resetting `_plugins = None` in the `finally` block (or in an `except` clause) when the scan did not complete successfully.",
+          "rationale": "In the diff, `_plugins` is set to `{}` before the `try` block begins. If the outer `for dist in importlib_metadata.distributions()` raises, `_plugins` stays as `{}`. Subsequent calls see a non-None `_plugins` and return its (empty) `.values()` without retrying. The old code would retry on every call (though that had its own performance problems). The new code should at minimum document this behaviour, or reset `_plugins = None` on unexpected error.",
+          "references": null
+        },
+        {
+          "path": "pydantic/plugin/_loader.py",
+          "line": 44,
+          "severity": "minor",
+          "body": "The warning message no longer mentions the previous advice about circular imports or that pydantic will try again on the next validator creation (which is no longer true). It now says 'this plugin will not be installed' which accurately reflects the new behaviour (plugins that fail to load are permanently skipped), but it might be helpful to also hint at the likely cause (e.g. circular import) to aid debugging.",
+          "rationale": "The old warning message explicitly mentioned circular import as a likely cause. The new message only reports the error class and repr, dropping that diagnostic context that would help users understand why their plugin failed to load.",
+          "references": null
+        }
+      ],
+      "human_comments": [
+        {
+          "author": "lig",
+          "path": "pydantic/plugin/_loader.py",
+          "line": 36,
+          "body": "Just an empty tuple should be enough as `Iterable`"
+        },
+        {
+          "author": "lig",
+          "path": "tests/plugin/example_plugin.py",
+          "line": 10,
+          "body": "`assert` ?"
+        },
+        {
+          "author": "samuelcolvin",
+          "path": "pydantic/plugin/_loader.py",
+          "line": 36,
+          "body": "yes, but I wanted to keep the type exactly the same."
+        },
+        {
+          "author": "samuelcolvin",
+          "path": "tests/plugin/example_plugin.py",
+          "line": 10,
+          "body": "I didn't want any confusion from pytest's assert rewriting logic."
+        },
+        {
+          "author": "samuelcolvin",
+          "path": "pydantic/plugin/_loader.py",
+          "line": 36,
+          "body": "I'll add a comment."
+        },
+        {
+          "author": "samuelcolvin",
+          "path": "pydantic/plugin/_loader.py",
+          "line": 36,
+          "body": "I think you're right, it doesn't need to be dict values."
+        }
+      ],
+      "matches": [],
+      "peer_unmatched": [
+        {
+          "path": "pydantic/plugin/_loader.py",
+          "line": 22,
+          "severity": "minor",
+          "body": "The comment on line 22 is incomplete: `# this means that if plugins use pydantic` \u2014 it trails off without finishing the thought. It should say something like: `# this means that if plugins use pydantic, they will not trigger recursive plugin loading`.",
+          "rationale": "The comment reads 'this means that if plugins use pydantic' and stops, leaving the intent unclear. The original PR discussion also noted this comment was being worked on.",
+          "references": null
+        },
+        {
+          "path": "pydantic/plugin/_loader.py",
+          "line": 58,
+          "severity": "important",
+          "body": "If an exception other than `ImportError`/`AttributeError` is raised during the distribution scan (e.g. a `RuntimeError` from `importlib_metadata`), the `finally` block correctly resets `_loading_plugins = False`, but `_plugins` is left as an empty `{}` rather than `None`. On the next call to `get_plugins()`, the `elif _plugins is None` branch won't be entered, so the scan won't be retried \u2014 all plugins will silently be skipped. Consider resetting `_plugins = None` in the `finally` block (or in an `except` clause) when the scan did not complete successfully.",
+          "rationale": "In the diff, `_plugins` is set to `{}` before the `try` block begins. If the outer `for dist in importlib_metadata.distributions()` raises, `_plugins` stays as `{}`. Subsequent calls see a non-None `_plugins` and return its (empty) `.values()` without retrying. The old code would retry on every call (though that had its own performance problems). The new code should at minimum document this behaviour, or reset `_plugins = None` on unexpected error.",
+          "references": null
+        },
+        {
+          "path": "pydantic/plugin/_loader.py",
+          "line": 44,
+          "severity": "minor",
+          "body": "The warning message no longer mentions the previous advice about circular imports or that pydantic will try again on the next validator creation (which is no longer true). It now says 'this plugin will not be installed' which accurately reflects the new behaviour (plugins that fail to load are permanently skipped), but it might be helpful to also hint at the likely cause (e.g. circular import) to aid debugging.",
+          "rationale": "The old warning message explicitly mentioned circular import as a likely cause. The new message only reports the error class and repr, dropping that diagnostic context that would help users understand why their plugin failed to load.",
+          "references": null
+        }
+      ],
+      "human_unmatched": [
+        {
+          "author": "lig",
+          "path": "pydantic/plugin/_loader.py",
+          "line": 36,
+          "body": "Just an empty tuple should be enough as `Iterable`"
+        },
+        {
+          "author": "lig",
+          "path": "tests/plugin/example_plugin.py",
+          "line": 10,
+          "body": "`assert` ?"
+        },
+        {
+          "author": "samuelcolvin",
+          "path": "pydantic/plugin/_loader.py",
+          "line": 36,
+          "body": "yes, but I wanted to keep the type exactly the same."
+        },
+        {
+          "author": "samuelcolvin",
+          "path": "tests/plugin/example_plugin.py",
+          "line": 10,
+          "body": "I didn't want any confusion from pytest's assert rewriting logic."
+        },
+        {
+          "author": "samuelcolvin",
+          "path": "pydantic/plugin/_loader.py",
+          "line": 36,
+          "body": "I'll add a comment."
+        },
+        {
+          "author": "samuelcolvin",
+          "path": "pydantic/plugin/_loader.py",
+          "line": 36,
+          "body": "I think you're right, it doesn't need to be dict values."
+        }
+      ],
+      "usage": {
+        "input_tokens": 5395,
+        "output_tokens": 668,
+        "model": "claude-sonnet-4-6"
+      },
+      "judge_calls": 12
+    },
+    {
+      "pr_url": "https://github.com/django/django/pull/17280",
+      "peer_comments": [],
+      "human_comments": [],
+      "matches": [],
+      "peer_unmatched": [],
+      "human_unmatched": [],
+      "usage": {
+        "input_tokens": 4147,
+        "output_tokens": 33,
+        "model": "claude-sonnet-4-6"
+      },
+      "judge_calls": 0
+    },
+    {
+      "pr_url": "https://github.com/django/django/pull/17223",
+      "peer_comments": [
+        {
+          "path": "django/utils/choices.py",
+          "line": 6,
+          "severity": "important",
+          "body": "The old name `ChoiceIterator` should be kept as a deprecated alias for backward compatibility. Third-party packages (like `django-filter`) and user code that imports or subclasses `ChoiceIterator` from `django.utils.choices` will break without a deprecation shim. A typical pattern would be:\n\n```python\nimport warnings\n\nclass ChoiceIterator(BaseChoiceIterator):\n    def __init_subclass__(cls, **kwargs):\n        warnings.warn(\n            \"ChoiceIterator is deprecated. Use BaseChoiceIterator instead.\",\n            RemovedInDjangoXXWarning,\n        )\n        super().__init_subclass__(**kwargs)\n```\n\nWithout this, any code doing `from django.utils.choices import ChoiceIterator` or `class MyIterator(ChoiceIterator)` will get an `ImportError`/`NameError` immediately upon upgrading.",
+          "rationale": "The PR description itself mentions that `django-filter` already defines its own `ChoiceIterator` and references a django-filter PR \u2014 this signals active use of the old name in the ecosystem. Django's deprecation policy requires a compatibility shim before hard-removing a public symbol.",
+          "references": null
+        }
+      ],
+      "human_comments": [],
+      "matches": [],
+      "peer_unmatched": [
+        {
+          "path": "django/utils/choices.py",
+          "line": 6,
+          "severity": "important",
+          "body": "The old name `ChoiceIterator` should be kept as a deprecated alias for backward compatibility. Third-party packages (like `django-filter`) and user code that imports or subclasses `ChoiceIterator` from `django.utils.choices` will break without a deprecation shim. A typical pattern would be:\n\n```python\nimport warnings\n\nclass ChoiceIterator(BaseChoiceIterator):\n    def __init_subclass__(cls, **kwargs):\n        warnings.warn(\n            \"ChoiceIterator is deprecated. Use BaseChoiceIterator instead.\",\n            RemovedInDjangoXXWarning,\n        )\n        super().__init_subclass__(**kwargs)\n```\n\nWithout this, any code doing `from django.utils.choices import ChoiceIterator` or `class MyIterator(ChoiceIterator)` will get an `ImportError`/`NameError` immediately upon upgrading.",
+          "rationale": "The PR description itself mentions that `django-filter` already defines its own `ChoiceIterator` and references a django-filter PR \u2014 this signals active use of the old name in the ecosystem. Django's deprecation policy requires a compatibility shim before hard-removing a public symbol.",
+          "references": null
+        }
+      ],
+      "human_unmatched": [],
+      "usage": {
+        "input_tokens": 6026,
+        "output_tokens": 359,
+        "model": "claude-sonnet-4-6"
+      },
+      "judge_calls": 0
+    },
+    {
+      "pr_url": "https://github.com/django/django/pull/17314",
+      "peer_comments": [
+        {
+          "path": "tests/schema/tests.py",
+          "line": 848,
+          "severity": "minor",
+          "body": "The test creates the model but doesn't assert anything about the result (e.g. that the table was actually created, or that the generated column has the correct type). At a minimum, consider checking that the table exists or that no `\"None\"` appears in the generated SQL (similar to `test_add_generated_field_with_kt_model`). Without an assertion the test only proves the call doesn't crash, which is useful but fragile.",
+          "rationale": "Comparing to the adjacent `test_add_generated_field_with_kt_model` (lines 817-831), which wraps the `schema_editor` call in `CaptureQueriesContext` and asserts no `\"None\"` in the SQL \u2014 that was precisely the original bug symptom. The new test skips that verification entirely, so a regression where `None` creeps back into the SQL would not be caught.",
+          "references": null
+        }
+      ],
+      "human_comments": [
+        {
+          "author": "felixxm",
+          "path": "tests/model_fields/test_generatedfield.py",
+          "line": 202,
+          "body": "I moved test for adding this field to the `schema/tests.py`."
+        },
+        {
+          "author": "felixxm",
+          "path": "tests/model_fields/test_generatedfield.py",
+          "line": 207,
+          "body": "You can reuse existing model, e.g.:\r\n```python\r\n    def test_db_type_parameters(self):\r\n        db_type_parameters = self.output_field_model._meta.get_field(\"lower_name\").db_type_parameters(\r\n            connection\r\n        )   \r\n        self.assertEqual(db_type_parameters[\"max_length\"], 11)\r\n```"
+        }
+      ],
+      "matches": [],
+      "peer_unmatched": [
+        {
+          "path": "tests/schema/tests.py",
+          "line": 848,
+          "severity": "minor",
+          "body": "The test creates the model but doesn't assert anything about the result (e.g. that the table was actually created, or that the generated column has the correct type). At a minimum, consider checking that the table exists or that no `\"None\"` appears in the generated SQL (similar to `test_add_generated_field_with_kt_model`). Without an assertion the test only proves the call doesn't crash, which is useful but fragile.",
+          "rationale": "Comparing to the adjacent `test_add_generated_field_with_kt_model` (lines 817-831), which wraps the `schema_editor` call in `CaptureQueriesContext` and asserts no `\"None\"` in the SQL \u2014 that was precisely the original bug symptom. The new test skips that verification entirely, so a regression where `None` creeps back into the SQL would not be caught.",
+          "references": null
+        }
+      ],
+      "human_unmatched": [
+        {
+          "author": "felixxm",
+          "path": "tests/model_fields/test_generatedfield.py",
+          "line": 202,
+          "body": "I moved test for adding this field to the `schema/tests.py`."
+        },
+        {
+          "author": "felixxm",
+          "path": "tests/model_fields/test_generatedfield.py",
+          "line": 207,
+          "body": "You can reuse existing model, e.g.:\r\n```python\r\n    def test_db_type_parameters(self):\r\n        db_type_parameters = self.output_field_model._meta.get_field(\"lower_name\").db_type_parameters(\r\n            connection\r\n        )   \r\n        self.assertEqual(db_type_parameters[\"max_length\"], 11)\r\n```"
+        }
+      ],
+      "usage": {
+        "input_tokens": 6715,
+        "output_tokens": 261,
+        "model": "claude-sonnet-4-6"
+      },
+      "judge_calls": 0
+    },
+    {
+      "pr_url": "https://github.com/django/django/pull/17171",
+      "peer_comments": [
+        {
+          "path": "django/db/backends/base/operations.py",
+          "line": 228,
+          "severity": "important",
+          "body": "The deprecation warning is raised by `BaseDatabaseOperations.field_cast_sql()` itself, but `BuiltinLookup.process_lhs()` already calls `connection.ops.field_cast_sql(...)` when a third-party backend overrides it (after emitting its own separate warning). That means the base implementation's warning fires *again* inside the overriding call chain only when `super().field_cast_sql()` is invoked \u2014 but it also fires if someone calls the base class method directly, which is the intended use case for that test. That's fine in isolation. However, the double-warning scenario (both the `lookups.py` site warning and this base-class warning) will fire together for any third-party backend that still calls `super().field_cast_sql()`. Consider documenting this or suppressing the base-class warning in that path to avoid confusing users who see two distinct deprecation messages for a single lookup.",
+          "rationale": "In `lookups.py` lines 227-231 a `RemovedInDjango60Warning` is issued before calling `connection.ops.field_cast_sql(...)`. If the third-party backend's override calls `super().field_cast_sql()`, the base implementation at `operations.py:222-230` will issue a *second* `RemovedInDjango60Warning` with a different message during the same lookup resolution, leading to two warnings for one operation.",
+          "references": null
+        },
+        {
+          "path": "django/db/models/lookups.py",
+          "line": 222,
+          "severity": "minor",
+          "body": "`hasattr(connection.ops.__class__, \"field_cast_sql\")` is always `True` because `BaseDatabaseOperations` defines `field_cast_sql`, so `hasattr` on any subclass will always return `True`. The `hasattr` guard is therefore redundant and misleading \u2014 the real check is entirely the `is not` identity comparison on the next two lines. The `hasattr(...)` condition should be removed for clarity.",
+          "rationale": "Every concrete `DatabaseOperations` class inherits from `BaseDatabaseOperations`, which unconditionally defines `field_cast_sql`. `hasattr` will therefore always be `True` for any connection's ops class, making it a no-op guard. Only the `is not BaseDatabaseOperations.field_cast_sql` check is doing real work.",
+          "references": null
+        },
+        {
+          "path": "tests/backends/base/test_operations.py",
+          "line": 248,
+          "severity": "minor",
+          "body": "`assertRaisesMessage` checks for an exception (which implies `stacklevel` doesn't matter here), but the deprecation warning in `BaseDatabaseOperations.field_cast_sql()` is issued with `warnings.warn(...)` without an explicit `stacklevel`. This means the warning will point to the `field_cast_sql` implementation rather than the call-site. Consider adding `stacklevel=2` to the `warnings.warn()` call in `field_cast_sql()` so the warning points to the caller, consistent with Django's convention for deprecation warnings.",
+          "rationale": "Django's deprecation warnings conventionally use `stacklevel=2` so the warning message points at the caller's line (see e.g. other `RemovedInDjangoXXWarning` usages in the codebase). The `field_cast_sql` warning at `operations.py:222` omits `stacklevel`, so tools and `-W error` users will see the deprecation attributed to `operations.py` internals rather than the offending call-site.",
+          "references": null
+        },
+        {
+          "path": "django/db/models/lookups.py",
+          "line": 227,
+          "severity": "minor",
+          "body": "The `warnings.warn()` call in `process_lhs()` is also missing an explicit `stacklevel`. For a warning that fires per-query during normal Django operation, it should have `stacklevel` set appropriately (likely `stacklevel=2` or higher) to point at the user's code rather than Django internals, consistent with Django's deprecation warning convention.",
+          "rationale": "Same rationale as the `field_cast_sql` warning \u2014 without `stacklevel`, warnings will be attributed to `lookups.py` rather than the third-party backend's code or the query call-site, making it harder for backend maintainers to locate the source.",
+          "references": null
+        }
+      ],
+      "human_comments": [
+        {
+          "author": "felixxm",
+          "path": "django/db/models/lookups.py",
+          "line": 221,
+          "body": "We should still call `field_cast_sql()` when it's implemented in the 3rd-party database backends and add a deprecation warning here, e.g.\r\n```python\r\n# RemovedInDjango60Warning.\r\nif connection.ops.field_cast_sql is not BaseDatabaseOperations.field_cast_sql:\r\n    warnings.warn(...)\r\n    db_type = self.lhs.output_field.db_type(connection=connection)\r\n    lhs_sql = connection.ops.field_cast_sql(db_type, field_internal_type) % lhs_sql\r\n```"
+        },
+        {
+          "author": "felixxm",
+          "path": "django/db/models/lookups.py",
+          "line": 221,
+          "body": "@smithdc1 I can add an extra warning if you're busy :point_up:"
+        },
+        {
+          "author": "smithdc1",
+          "path": "django/db/models/lookups.py",
+          "line": 221,
+          "body": "Yes please. \ud83c\udf81"
+        }
+      ],
+      "matches": [
+        {
+          "peer_comment": {
+            "path": "django/db/models/lookups.py",
+            "line": 222,
+            "severity": "minor",
+            "body": "`hasattr(connection.ops.__class__, \"field_cast_sql\")` is always `True` because `BaseDatabaseOperations` defines `field_cast_sql`, so `hasattr` on any subclass will always return `True`. The `hasattr` guard is therefore redundant and misleading \u2014 the real check is entirely the `is not` identity comparison on the next two lines. The `hasattr(...)` condition should be removed for clarity.",
+            "rationale": "Every concrete `DatabaseOperations` class inherits from `BaseDatabaseOperations`, which unconditionally defines `field_cast_sql`. `hasattr` will therefore always be `True` for any connection's ops class, making it a no-op guard. Only the `is not BaseDatabaseOperations.field_cast_sql` check is doing real work.",
+            "references": null
+          },
+          "human_comment": {
+            "author": "smithdc1",
+            "path": "django/db/models/lookups.py",
+            "line": 221,
+            "body": "Yes please. \ud83c\udf81"
+          }
+        }
+      ],
+      "peer_unmatched": [
+        {
+          "path": "django/db/backends/base/operations.py",
+          "line": 228,
+          "severity": "important",
+          "body": "The deprecation warning is raised by `BaseDatabaseOperations.field_cast_sql()` itself, but `BuiltinLookup.process_lhs()` already calls `connection.ops.field_cast_sql(...)` when a third-party backend overrides it (after emitting its own separate warning). That means the base implementation's warning fires *again* inside the overriding call chain only when `super().field_cast_sql()` is invoked \u2014 but it also fires if someone calls the base class method directly, which is the intended use case for that test. That's fine in isolation. However, the double-warning scenario (both the `lookups.py` site warning and this base-class warning) will fire together for any third-party backend that still calls `super().field_cast_sql()`. Consider documenting this or suppressing the base-class warning in that path to avoid confusing users who see two distinct deprecation messages for a single lookup.",
+          "rationale": "In `lookups.py` lines 227-231 a `RemovedInDjango60Warning` is issued before calling `connection.ops.field_cast_sql(...)`. If the third-party backend's override calls `super().field_cast_sql()`, the base implementation at `operations.py:222-230` will issue a *second* `RemovedInDjango60Warning` with a different message during the same lookup resolution, leading to two warnings for one operation.",
+          "references": null
+        },
+        {
+          "path": "tests/backends/base/test_operations.py",
+          "line": 248,
+          "severity": "minor",
+          "body": "`assertRaisesMessage` checks for an exception (which implies `stacklevel` doesn't matter here), but the deprecation warning in `BaseDatabaseOperations.field_cast_sql()` is issued with `warnings.warn(...)` without an explicit `stacklevel`. This means the warning will point to the `field_cast_sql` implementation rather than the call-site. Consider adding `stacklevel=2` to the `warnings.warn()` call in `field_cast_sql()` so the warning points to the caller, consistent with Django's convention for deprecation warnings.",
+          "rationale": "Django's deprecation warnings conventionally use `stacklevel=2` so the warning message points at the caller's line (see e.g. other `RemovedInDjangoXXWarning` usages in the codebase). The `field_cast_sql` warning at `operations.py:222` omits `stacklevel`, so tools and `-W error` users will see the deprecation attributed to `operations.py` internals rather than the offending call-site.",
+          "references": null
+        },
+        {
+          "path": "django/db/models/lookups.py",
+          "line": 227,
+          "severity": "minor",
+          "body": "The `warnings.warn()` call in `process_lhs()` is also missing an explicit `stacklevel`. For a warning that fires per-query during normal Django operation, it should have `stacklevel` set appropriately (likely `stacklevel=2` or higher) to point at the user's code rather than Django internals, consistent with Django's deprecation warning convention.",
+          "rationale": "Same rationale as the `field_cast_sql` warning \u2014 without `stacklevel`, warnings will be attributed to `lookups.py` rather than the third-party backend's code or the query call-site, making it harder for backend maintainers to locate the source.",
+          "references": null
+        }
+      ],
+      "human_unmatched": [
+        {
+          "author": "felixxm",
+          "path": "django/db/models/lookups.py",
+          "line": 221,
+          "body": "We should still call `field_cast_sql()` when it's implemented in the 3rd-party database backends and add a deprecation warning here, e.g.\r\n```python\r\n# RemovedInDjango60Warning.\r\nif connection.ops.field_cast_sql is not BaseDatabaseOperations.field_cast_sql:\r\n    warnings.warn(...)\r\n    db_type = self.lhs.output_field.db_type(connection=connection)\r\n    lhs_sql = connection.ops.field_cast_sql(db_type, field_internal_type) % lhs_sql\r\n```"
+        },
+        {
+          "author": "felixxm",
+          "path": "django/db/models/lookups.py",
+          "line": 221,
+          "body": "@smithdc1 I can add an extra warning if you're busy :point_up:"
+        }
+      ],
+      "usage": {
+        "input_tokens": 10205,
+        "output_tokens": 1130,
+        "model": "claude-sonnet-4-6"
+      },
+      "judge_calls": 5
+    },
+    {
+      "pr_url": "https://github.com/django/django/pull/17182",
+      "peer_comments": [
+        {
+          "path": "django/test/client.py",
+          "line": 942,
+          "severity": "important",
+          "body": "`_ensure_redirects_not_cyclic` assumes `response.redirect_chain` is non-empty (it accesses `redirect_chain[-1]`), but in `_handle_redirects` the redirect_chain is reassigned to the outer `redirect_chain` reference *after* `_follow_redirect` returns. Since `_follow_redirect` appends to the chain, the `response.redirect_chain` seen by `_ensure_redirects_not_cyclic` will always have at least one entry \u2014 however, note that `_follow_redirect` appends to the chain object passed in (`response.redirect_chain` at call time), while `_handle_redirects` then reassigns `response.redirect_chain = redirect_chain`. This works correctly only because both `redirect_chain` and the object mutated inside `_follow_redirect` are the same object. If `_ensure_redirects_not_cyclic` were ever called with a response whose `redirect_chain` hadn't been populated (e.g., called standalone on a fresh response), it would raise an `IndexError`. Consider adding a guard or documenting the precondition.",
+          "rationale": "Inside `_ensure_redirects_not_cyclic`, line `redirect_chain[-1] in redirect_chain[:-1]` will raise `IndexError` if `redirect_chain` is empty. The method is only called from `_handle_redirects` where the chain is guaranteed to have entries, but as a standalone public-ish method on `ClientMixin` (intended to be reused by `AsyncClient` too), callers could invoke it on a response without a populated `redirect_chain`.",
+          "references": null
+        },
+        {
+          "path": "django/test/client.py",
+          "line": 923,
+          "severity": "important",
+          "body": "For 307/308 responses where the original request method is not GET/HEAD, the `QUERY_STRING` is set in `extra` but then the next iteration of the `while` loop in `_handle_redirects` passes the *original* `extra` dict back to `_follow_redirect`. This means `QUERY_STRING` set during one redirect hop could leak into subsequent hops if they are not 307/308 redirects. This bug existed before this PR, but the refactor makes it more subtle since `extra` is mutated inside `_follow_redirect` and that mutation persists across loop iterations in the caller.",
+          "rationale": "In `_follow_redirect`, `extra[\"QUERY_STRING\"] = url.query` mutates the `**extra` dict that was passed in from `_handle_redirects`. On the next iteration, that same (now-mutated) `extra` is passed again, carrying over the stale `QUERY_STRING` from the previous redirect hop.",
+          "references": null
+        },
+        {
+          "path": "django/test/client.py",
+          "line": 956,
+          "severity": "minor",
+          "body": "The `_follow_redirect` and `_ensure_redirects_not_cyclic` methods are added to `ClientMixin` but the `AsyncClient` still has a comment saying it \"Does not currently support 'follow' on its methods.\" If the intent of this PR is to enable follow-redirect support in `AsyncClient` (per the PR description), the async implementation using these methods is missing. If it's purely preparatory, that should be noted in the docstring or a TODO, so it's clear these methods are unused by `AsyncClient` for now.",
+          "rationale": "The PR description says the logic is moved to `ClientMixin` \"so that it can be used as well for the AsyncClient\", but there is no `_handle_redirects` or usage of `_follow_redirect`/`_ensure_redirects_not_cyclic` in the `AsyncClient` class in the diff or surrounding code.",
+          "references": null
+        }
+      ],
+      "human_comments": [],
+      "matches": [],
+      "peer_unmatched": [
+        {
+          "path": "django/test/client.py",
+          "line": 942,
+          "severity": "important",
+          "body": "`_ensure_redirects_not_cyclic` assumes `response.redirect_chain` is non-empty (it accesses `redirect_chain[-1]`), but in `_handle_redirects` the redirect_chain is reassigned to the outer `redirect_chain` reference *after* `_follow_redirect` returns. Since `_follow_redirect` appends to the chain, the `response.redirect_chain` seen by `_ensure_redirects_not_cyclic` will always have at least one entry \u2014 however, note that `_follow_redirect` appends to the chain object passed in (`response.redirect_chain` at call time), while `_handle_redirects` then reassigns `response.redirect_chain = redirect_chain`. This works correctly only because both `redirect_chain` and the object mutated inside `_follow_redirect` are the same object. If `_ensure_redirects_not_cyclic` were ever called with a response whose `redirect_chain` hadn't been populated (e.g., called standalone on a fresh response), it would raise an `IndexError`. Consider adding a guard or documenting the precondition.",
+          "rationale": "Inside `_ensure_redirects_not_cyclic`, line `redirect_chain[-1] in redirect_chain[:-1]` will raise `IndexError` if `redirect_chain` is empty. The method is only called from `_handle_redirects` where the chain is guaranteed to have entries, but as a standalone public-ish method on `ClientMixin` (intended to be reused by `AsyncClient` too), callers could invoke it on a response without a populated `redirect_chain`.",
+          "references": null
+        },
+        {
+          "path": "django/test/client.py",
+          "line": 923,
+          "severity": "important",
+          "body": "For 307/308 responses where the original request method is not GET/HEAD, the `QUERY_STRING` is set in `extra` but then the next iteration of the `while` loop in `_handle_redirects` passes the *original* `extra` dict back to `_follow_redirect`. This means `QUERY_STRING` set during one redirect hop could leak into subsequent hops if they are not 307/308 redirects. This bug existed before this PR, but the refactor makes it more subtle since `extra` is mutated inside `_follow_redirect` and that mutation persists across loop iterations in the caller.",
+          "rationale": "In `_follow_redirect`, `extra[\"QUERY_STRING\"] = url.query` mutates the `**extra` dict that was passed in from `_handle_redirects`. On the next iteration, that same (now-mutated) `extra` is passed again, carrying over the stale `QUERY_STRING` from the previous redirect hop.",
+          "references": null
+        },
+        {
+          "path": "django/test/client.py",
+          "line": 956,
+          "severity": "minor",
+          "body": "The `_follow_redirect` and `_ensure_redirects_not_cyclic` methods are added to `ClientMixin` but the `AsyncClient` still has a comment saying it \"Does not currently support 'follow' on its methods.\" If the intent of this PR is to enable follow-redirect support in `AsyncClient` (per the PR description), the async implementation using these methods is missing. If it's purely preparatory, that should be noted in the docstring or a TODO, so it's clear these methods are unused by `AsyncClient` for now.",
+          "rationale": "The PR description says the logic is moved to `ClientMixin` \"so that it can be used as well for the AsyncClient\", but there is no `_handle_redirects` or usage of `_follow_redirect`/`_ensure_redirects_not_cyclic` in the `AsyncClient` class in the diff or surrounding code.",
+          "references": null
+        }
+      ],
+      "human_unmatched": [],
+      "usage": {
+        "input_tokens": 6444,
+        "output_tokens": 967,
+        "model": "claude-sonnet-4-6"
+      },
+      "judge_calls": 0
+    },
+    {
+      "pr_url": "https://github.com/django/django/pull/17147",
+      "peer_comments": [
+        {
+          "path": "django/core/handlers/asgi.py",
+          "line": 207,
+          "severity": "critical",
+          "body": "When `listen_for_disconnect` raises `AssertionError`, `body_file.close()` is called and the exception is re-raised \u2014 but `process_request` (the second task) is still running in the background and is never cancelled. This leaks the task. The `process_request` task should be explicitly cancelled and awaited before re-raising the `AssertionError`.",
+          "rationale": "The loop iterates over `tasks` in order: `listen_for_disconnect` first, `process_request` second. If `listen_for_disconnect` is done and raises `AssertionError`, the `raise` inside the `if task.done()` branch exits the `for` loop immediately, so the second task (`process_request`) is never reached, never cancelled, and never awaited. The leaked task will continue running in the background.",
+          "references": null
+        },
+        {
+          "path": "django/core/handlers/asgi.py",
+          "line": 207,
+          "severity": "important",
+          "body": "If `process_request` raises an unexpected exception (anything other than `RequestAborted` or `AssertionError`), that exception is silently swallowed \u2014 `task.result()` re-raises it, but it is not caught, so it propagates up. However, if `listen_for_disconnect` is still pending at that point it will be left uncancelled and un-awaited, leaking the task. Consider ensuring all remaining tasks are always cancelled/awaited before propagating errors.",
+          "rationale": "In the `for task in tasks` loop, if `task.result()` raises an unanticipated exception for the first completed task, the loop exits via the uncaught exception. Any task still in the `else` branch (not yet visited) is never cancelled.",
+          "references": null
+        },
+        {
+          "path": "django/core/handlers/asgi.py",
+          "line": 220,
+          "severity": "important",
+          "body": "`await task` after `task.cancel()` may suppress a genuine application exception. If the cancelled task caught `CancelledError` internally and then raised a different exception, this `except asyncio.CancelledError` block would not catch it, which is correct \u2014 but `await task` with no broader `except` means that any non-`CancelledError` exception from the view during cancellation would propagate out of the loop and leave the other task uncancelled/un-awaited (same leak issue as above).",
+          "rationale": "This is a narrow but real edge case: a view generator that suppresses `CancelledError` and raises something else would cause task cleanup to be incomplete.",
+          "references": null
+        },
+        {
+          "path": "django/core/handlers/asgi.py",
+          "line": 191,
+          "severity": "minor",
+          "body": "`process_request` is defined as a nested function inside `handle`, but the codebase context registers it as `ASGIHandler.process_request`. This naming could cause confusion with other `process_request` middleware methods in Django (see call_sites in `tests/middleware/test_security.py`). Since it's a local closure, it doesn't actually shadow the middleware method, but a clearer name like `_send_response` or simply inlining the two lines would be cleaner.",
+          "rationale": "The call_sites for `process_request` in the codebase context show middleware tests relying on a `process_request` convention. While the nested function is scoped and doesn't conflict at runtime, the shared name adds unnecessary cognitive overhead.",
+          "references": null
+        },
+        {
+          "path": "docs/ref/request-response.txt",
+          "line": 1307,
+          "severity": "minor",
+          "body": "The documentation example shows `asyncio.CancelledError` being caught in the streaming generator, but the import of `asyncio` is not shown. Since this is a code snippet intended to be copy-pasted, it should either include `import asyncio` at the top or use a fully-qualified reference in an `import asyncio` note.",
+          "rationale": "The docs example uses `asyncio.CancelledError` directly without showing the necessary `import asyncio` statement, which could confuse readers trying to use this snippet as a guide.",
+          "references": null
+        },
+        {
+          "path": "tests/asgi/tests.py",
+          "line": 499,
+          "severity": "minor",
+          "body": "In `test_streaming`, after fetching the two body chunks (`first` and `last`), the comment says \"Fetch the rest of the response so that coroutines are cleaned up\" \u2014 but `second_response` is actually the `last` chunk (a `StreamingHttpResponse` ends with a final chunk with `more_body=False`). The extra `receive_output()` call may be fetching an unexpected extra message or just timing out. It's worth asserting what that extra message actually is to make the test more robust.",
+          "rationale": "The test fetches a third body message after already receiving `first\\n` and `last\\n`. For a two-chunk streaming response, the ASGI protocol normally sends a terminal `http.response.body` with `more_body=False` as the last chunk \u2014 it's unclear whether this is a third body chunk or the terminal message, and the lack of assertion makes the test brittle.",
+          "references": null
+        },
+        {
+          "path": "tests/asgi/urls.py",
+          "line": 55,
+          "severity": "minor",
+          "body": "`request.GET[\"sleep\"]` will raise a `KeyError` (resulting in a 500 error) if the `sleep` query parameter is missing, rather than a user-friendly 400 error. Consider using `request.GET.get(\"sleep\", \"0\")` with a sensible default, or explicitly handle the missing parameter.",
+          "rationale": "The view is a test utility, but `test_streaming` and `test_streaming_disconnect` both pass the `sleep` parameter \u2014 however, if another test or developer hits `/streaming/` without the parameter, it will 500 silently. A default value would be safer.",
+          "references": null
+        }
+      ],
+      "human_comments": [
+        {
+          "author": "carltongibson",
+          "path": "django/core/handlers/asgi.py",
+          "line": 219,
+          "body": "If we're doing this in a single pass[*], I think I might prefer defining a local function, \r\nrather than another method on self. Something like... \r\n\r\n```\r\nasync def process_request(request, send):\r\n    response = await self.run_get_response(request)\r\n    await self.send_response(response, send)\r\n    \r\ntasks = [\r\n    asyncio.create_task(self.listen_for_disconnect(receive)),\r\n    asyncio.create_task(process_request(request, send)),\r\n]     \r\n```\r\n\r\n*: I initially thought we might want to have two separate task groups, one for `run_get_response`, the other for `send_response`, but I don't think that's necessary (ATM)"
+        },
+        {
+          "author": "carltongibson",
+          "path": "django/core/handlers/asgi.py",
+          "line": 181,
+          "body": "This might be a worthwhile refactoring (or not) but it would be nice to have it as a separate change to not obscure the diff here."
+        },
+        {
+          "author": "carltongibson",
+          "path": "django/core/handlers/asgi.py",
+          "line": 201,
+          "body": "@qxcv Can I ask what motivates this change? (Thanks!)"
+        },
+        {
+          "author": "qxcv",
+          "path": "django/core/handlers/asgi.py",
+          "line": 201,
+          "body": "Assuming you mean the change from\r\n\r\n```\r\ndone, pending = await asyncio.wait(tasks, return_when=asyncio.FIRST_COMPLETED)\r\ndone, pending = done.pop(), pending.pop()\r\n# some conditionals to handle done and pending\r\n```\r\n\r\nto\r\n\r\n```\r\nawait asyncio.wait(tasks, return_when=asyncio.FIRST_COMPLETED)\r\n# a loop through tasks\r\n```\r\n\r\nThe answer is that both tasks can finish at the same time, which means that both tasks end up in `done` and the `pending.pop()` errors out. I only observed this behavior when serving an app with Daphne, not in the existing unit tests. I tried to write a test for it last week but my asyncio-foo wasn't up to the task of forcing both tasks to finish at once. I'll try again later this week (I found [this great overview of asyncio](https://tenthousandmeters.com/blog/python-behind-the-scenes-12-how-asyncawait-works-in-python/) that cleared up a lot of things for me)."
+        },
+        {
+          "author": "qxcv",
+          "path": "django/core/handlers/asgi.py",
+          "line": 181,
+          "body": "Yep, I can remove it.\r\n\r\nAlso, do you know why `body_file` was being closed manually before? It didn't seem to get closed on all paths (e.g. if there was an unhandled exception). I couldn't see an obvious reason for that, but I might have missed something subtle (e.g. `body_file` somehow being used after this function returns),"
+        },
+        {
+          "author": "carltongibson",
+          "path": "django/core/handlers/asgi.py",
+          "line": 181,
+          "body": "That's just how it was written\u2026\u00a0\u2014 it's less indented for one \u2014 and it _shouldn't be_ that there are unexpected code paths...\r\n\r\nNonetheless, moving with the `with` block may be work doing. (I'll defer to @felixxm and @nessita on that.)"
+        },
+        {
+          "author": "carltongibson",
+          "path": "django/core/handlers/asgi.py",
+          "line": 201,
+          "body": "> The answer is that both tasks can finish at the same time, which means that both tasks end up in done and the pending.pop() errors out. I only observed this behavior when serving an app with Daphne, not in the existing unit tests. I tried to write a test for it last week but my asyncio-foo wasn't up to the task of forcing both tasks to finish at once.\r\n\r\nOK... that's really interesting \ud83e\udd14 Since only a single task gets run on the event loop at a time, how they finish simultaneously is a curious one\u2026 \u2014 but **yes** if that's happening that change make sense. \r\n\r\nIf you can't come up with a test, maybe a minimal project that demonstrates would be good to see (if you can \ud83d\ude4f)"
+        },
+        {
+          "author": "felixxm",
+          "path": "tests/asgi/tests.py",
+          "line": 520,
+          "body": "I can see `ResourceWarning` when running `asgi` tests on Python 3.12:\r\n```\r\n$ python -Wall ./runtests.py asgi.tests.ASGITest --parallel=1\r\nTesting against Django installed in '/django/django'\r\nFound 20 test(s).\r\nSystem check identified no issues (0 silenced).\r\n....................\r\n----------------------------------------------------------------------\r\nRan 20 tests in 8.087s\r\n\r\nOK\r\nException ignored in: <function SpooledTemporaryFile.__del__ at 0x7f66ad4b8540>\r\nTraceback (most recent call last):\r\n  File \"/usr/local/lib/python3.12/tempfile.py\", line 736, in __del__\r\n    _warnings.warn(\r\nResourceWarning: Unclosed file <tempfile.SpooledTemporaryFile object at 0x7f66ab688cd0>\r\n```"
+        },
+        {
+          "author": "felixxm",
+          "path": "tests/asgi/tests.py",
+          "line": 240,
+          "body": "`test_disconnect_both_return()` and `test_streaming()` work without this patch. Extra test coverage is welcome but we should move it to a separate commit/PR."
+        },
+        {
+          "author": "felixxm",
+          "path": "tests/asgi/tests.py",
+          "line": 242,
+          "body": "Typo\r\n```suggestion\r\n        # This test forces both the disconnect listener and the task that sends\r\n        # the response to finish at the same time.\r\n```"
+        },
+        {
+          "author": "felixxm",
+          "path": "tests/asgi/tests.py",
+          "line": 241,
+          "body": "Try to omit prefixes like `This test`, `Ensure`, `Test`, etc."
+        },
+        {
+          "author": "felixxm",
+          "path": "docs/ref/request-response.txt",
+          "line": 1285,
+          "body": "```suggestion\r\n```"
+        },
+        {
+          "author": "felixxm",
+          "path": "docs/ref/request-response.txt",
+          "line": 1312,
+          "body": "Wrap at 79 chars."
+        },
+        {
+          "author": "felixxm",
+          "path": "docs/topics/async.txt",
+          "line": 200,
+          "body": "Try to omit `;` in docs."
+        },
+        {
+          "author": "felixxm",
+          "path": "django/core/handlers/asgi.py",
+          "line": 197,
+          "body": "Please omit `We` in comments\r\n```suggestion\r\n            # Check the status of these tasks and (optionally) ...\r\n```"
+        },
+        {
+          "author": "ngnpope",
+          "path": "tests/asgi/tests.py",
+          "line": 520,
+          "body": "There is no typing in Django, so this suppression comment can be removed.\r\n\r\n```suggestion\r\n            await communicator.receive_output(timeout=0.2)\r\n```"
+        },
+        {
+          "author": "carltongibson",
+          "path": "django/core/handlers/asgi.py",
+          "line": 201,
+          "body": "I think this is resolved by the discussion below https://github.com/django/django/pull/17147#issuecomment-1689393302 \r\n\r\nIf someone has a strategy to test it then super, but checking both tasks (in a loop) can't hurt... \u2014\u00a0it's just that the initial implementation **assumed** one task would be still pending."
+        },
+        {
+          "author": "felixxm",
+          "path": "tests/asgi/tests.py",
+          "line": 282,
+          "body": "This causes `ResourceWarning` on Python 3.12+:\r\n```\r\n./runtests.py asgi.tests.ASGITest.test_assert_in_listen_for_disconnect --parallel=1\r\nTesting against Django installed in '/django/django'\r\nFound 1 test(s).\r\nSystem check identified no issues (0 silenced).\r\n.\r\n----------------------------------------------------------------------\r\nRan 1 test in 0.004s\r\n\r\nOK\r\nException ignored in: <function SpooledTemporaryFile.__del__ at 0x7ff588dc09a0>\r\nTraceback (most recent call last):\r\n  File \"/usr/local/lib/python3.12/tempfile.py\", line 736, in __del__\r\n    _warnings.warn(\r\nResourceWarning: Unclosed file <tempfile.SpooledTemporaryFile object at 0x7ff586f9da50>\r\n```\r\nAny ideas?"
+        },
+        {
+          "author": "felixxm",
+          "path": "tests/asgi/tests.py",
+          "line": 282,
+          "body": "I added a possible fix. Can anyone take a look?"
+        },
+        {
+          "author": "carltongibson",
+          "path": "tests/asgi/tests.py",
+          "line": 282,
+          "body": "@felixxm The fix in  08e72a6413bbd66e4d39a89b5b9c31c38408289f looks correct: it's restoring the behaviour from [before this change](https://github.com/django/django/blob/a7c73b944f51d6c92ec876fd7e0a171e7c01657d/django/core/handlers/asgi.py#L209-L211). (Note the same `except` block in the previous version.) The test exercises the `assert` for the (protocol server programming error) invalid message type in `listen_for_disconnect()`. \r\n\r\nIt would have been dropped here because @qxcv proposed moving to use a context manager block for the body file here. See https://github.com/django/django/pull/17147#pullrequestreview-1564929017 \r\n\r\nThat may be (likely is?) worth it, if you think, as an improvement \u2014\u00a0but a part of me thinks there **really should** only be a small finite set of ways out of this block and I'd rather blow up if we've missed one... \ud83e\udd14 (Except maybe folks don't spot a potential resource warning in the wild...)\r\n\r\n\ud83d\udc4d"
+        },
+        {
+          "author": "felixxm",
+          "path": "tests/asgi/tests.py",
+          "line": 282,
+          "body": "Thanks for checking :+1: \r\n\r\n> That may be worth it, if you think, as an improvement \u2014 but a part of me thinks there **really should** only be a small finite set of ways out of this block and I'd rather blow up if we've missed one... \ud83e\udd14\r\n\r\nYeah, we can leave it for a separate discussion/PR."
+        }
+      ],
+      "matches": [
+        {
+          "peer_comment": {
+            "path": "django/core/handlers/asgi.py",
+            "line": 207,
+            "severity": "critical",
+            "body": "When `listen_for_disconnect` raises `AssertionError`, `body_file.close()` is called and the exception is re-raised \u2014 but `process_request` (the second task) is still running in the background and is never cancelled. This leaks the task. The `process_request` task should be explicitly cancelled and awaited before re-raising the `AssertionError`.",
+            "rationale": "The loop iterates over `tasks` in order: `listen_for_disconnect` first, `process_request` second. If `listen_for_disconnect` is done and raises `AssertionError`, the `raise` inside the `if task.done()` branch exits the `for` loop immediately, so the second task (`process_request`) is never reached, never cancelled, and never awaited. The leaked task will continue running in the background.",
+            "references": null
+          },
+          "human_comment": {
+            "author": "carltongibson",
+            "path": "django/core/handlers/asgi.py",
+            "line": 201,
+            "body": "I think this is resolved by the discussion below https://github.com/django/django/pull/17147#issuecomment-1689393302 \r\n\r\nIf someone has a strategy to test it then super, but checking both tasks (in a loop) can't hurt... \u2014\u00a0it's just that the initial implementation **assumed** one task would be still pending."
+          }
+        },
+        {
+          "peer_comment": {
+            "path": "django/core/handlers/asgi.py",
+            "line": 191,
+            "severity": "minor",
+            "body": "`process_request` is defined as a nested function inside `handle`, but the codebase context registers it as `ASGIHandler.process_request`. This naming could cause confusion with other `process_request` middleware methods in Django (see call_sites in `tests/middleware/test_security.py`). Since it's a local closure, it doesn't actually shadow the middleware method, but a clearer name like `_send_response` or simply inlining the two lines would be cleaner.",
+            "rationale": "The call_sites for `process_request` in the codebase context show middleware tests relying on a `process_request` convention. While the nested function is scoped and doesn't conflict at runtime, the shared name adds unnecessary cognitive overhead.",
+            "references": null
+          },
+          "human_comment": {
+            "author": "carltongibson",
+            "path": "django/core/handlers/asgi.py",
+            "line": 219,
+            "body": "If we're doing this in a single pass[*], I think I might prefer defining a local function, \r\nrather than another method on self. Something like... \r\n\r\n```\r\nasync def process_request(request, send):\r\n    response = await self.run_get_response(request)\r\n    await self.send_response(response, send)\r\n    \r\ntasks = [\r\n    asyncio.create_task(self.listen_for_disconnect(receive)),\r\n    asyncio.create_task(process_request(request, send)),\r\n]     \r\n```\r\n\r\n*: I initially thought we might want to have two separate task groups, one for `run_get_response`, the other for `send_response`, but I don't think that's necessary (ATM)"
+          }
+        },
+        {
+          "peer_comment": {
+            "path": "tests/asgi/tests.py",
+            "line": 499,
+            "severity": "minor",
+            "body": "In `test_streaming`, after fetching the two body chunks (`first` and `last`), the comment says \"Fetch the rest of the response so that coroutines are cleaned up\" \u2014 but `second_response` is actually the `last` chunk (a `StreamingHttpResponse` ends with a final chunk with `more_body=False`). The extra `receive_output()` call may be fetching an unexpected extra message or just timing out. It's worth asserting what that extra message actually is to make the test more robust.",
+            "rationale": "The test fetches a third body message after already receiving `first\\n` and `last\\n`. For a two-chunk streaming response, the ASGI protocol normally sends a terminal `http.response.body` with `more_body=False` as the last chunk \u2014 it's unclear whether this is a third body chunk or the terminal message, and the lack of assertion makes the test brittle.",
+            "references": null
+          },
+          "human_comment": {
+            "author": "felixxm",
+            "path": "tests/asgi/tests.py",
+            "line": 520,
+            "body": "I can see `ResourceWarning` when running `asgi` tests on Python 3.12:\r\n```\r\n$ python -Wall ./runtests.py asgi.tests.ASGITest --parallel=1\r\nTesting against Django installed in '/django/django'\r\nFound 20 test(s).\r\nSystem check identified no issues (0 silenced).\r\n....................\r\n----------------------------------------------------------------------\r\nRan 20 tests in 8.087s\r\n\r\nOK\r\nException ignored in: <function SpooledTemporaryFile.__del__ at 0x7f66ad4b8540>\r\nTraceback (most recent call last):\r\n  File \"/usr/local/lib/python3.12/tempfile.py\", line 736, in __del__\r\n    _warnings.warn(\r\nResourceWarning: Unclosed file <tempfile.SpooledTemporaryFile object at 0x7f66ab688cd0>\r\n```"
+          }
+        }
+      ],
+      "peer_unmatched": [
+        {
+          "path": "django/core/handlers/asgi.py",
+          "line": 207,
+          "severity": "important",
+          "body": "If `process_request` raises an unexpected exception (anything other than `RequestAborted` or `AssertionError`), that exception is silently swallowed \u2014 `task.result()` re-raises it, but it is not caught, so it propagates up. However, if `listen_for_disconnect` is still pending at that point it will be left uncancelled and un-awaited, leaking the task. Consider ensuring all remaining tasks are always cancelled/awaited before propagating errors.",
+          "rationale": "In the `for task in tasks` loop, if `task.result()` raises an unanticipated exception for the first completed task, the loop exits via the uncaught exception. Any task still in the `else` branch (not yet visited) is never cancelled.",
+          "references": null
+        },
+        {
+          "path": "django/core/handlers/asgi.py",
+          "line": 220,
+          "severity": "important",
+          "body": "`await task` after `task.cancel()` may suppress a genuine application exception. If the cancelled task caught `CancelledError` internally and then raised a different exception, this `except asyncio.CancelledError` block would not catch it, which is correct \u2014 but `await task` with no broader `except` means that any non-`CancelledError` exception from the view during cancellation would propagate out of the loop and leave the other task uncancelled/un-awaited (same leak issue as above).",
+          "rationale": "This is a narrow but real edge case: a view generator that suppresses `CancelledError` and raises something else would cause task cleanup to be incomplete.",
+          "references": null
+        },
+        {
+          "path": "docs/ref/request-response.txt",
+          "line": 1307,
+          "severity": "minor",
+          "body": "The documentation example shows `asyncio.CancelledError` being caught in the streaming generator, but the import of `asyncio` is not shown. Since this is a code snippet intended to be copy-pasted, it should either include `import asyncio` at the top or use a fully-qualified reference in an `import asyncio` note.",
+          "rationale": "The docs example uses `asyncio.CancelledError` directly without showing the necessary `import asyncio` statement, which could confuse readers trying to use this snippet as a guide.",
+          "references": null
+        },
+        {
+          "path": "tests/asgi/urls.py",
+          "line": 55,
+          "severity": "minor",
+          "body": "`request.GET[\"sleep\"]` will raise a `KeyError` (resulting in a 500 error) if the `sleep` query parameter is missing, rather than a user-friendly 400 error. Consider using `request.GET.get(\"sleep\", \"0\")` with a sensible default, or explicitly handle the missing parameter.",
+          "rationale": "The view is a test utility, but `test_streaming` and `test_streaming_disconnect` both pass the `sleep` parameter \u2014 however, if another test or developer hits `/streaming/` without the parameter, it will 500 silently. A default value would be safer.",
+          "references": null
+        }
+      ],
+      "human_unmatched": [
+        {
+          "author": "carltongibson",
+          "path": "django/core/handlers/asgi.py",
+          "line": 181,
+          "body": "This might be a worthwhile refactoring (or not) but it would be nice to have it as a separate change to not obscure the diff here."
+        },
+        {
+          "author": "carltongibson",
+          "path": "django/core/handlers/asgi.py",
+          "line": 201,
+          "body": "@qxcv Can I ask what motivates this change? (Thanks!)"
+        },
+        {
+          "author": "qxcv",
+          "path": "django/core/handlers/asgi.py",
+          "line": 201,
+          "body": "Assuming you mean the change from\r\n\r\n```\r\ndone, pending = await asyncio.wait(tasks, return_when=asyncio.FIRST_COMPLETED)\r\ndone, pending = done.pop(), pending.pop()\r\n# some conditionals to handle done and pending\r\n```\r\n\r\nto\r\n\r\n```\r\nawait asyncio.wait(tasks, return_when=asyncio.FIRST_COMPLETED)\r\n# a loop through tasks\r\n```\r\n\r\nThe answer is that both tasks can finish at the same time, which means that both tasks end up in `done` and the `pending.pop()` errors out. I only observed this behavior when serving an app with Daphne, not in the existing unit tests. I tried to write a test for it last week but my asyncio-foo wasn't up to the task of forcing both tasks to finish at once. I'll try again later this week (I found [this great overview of asyncio](https://tenthousandmeters.com/blog/python-behind-the-scenes-12-how-asyncawait-works-in-python/) that cleared up a lot of things for me)."
+        },
+        {
+          "author": "qxcv",
+          "path": "django/core/handlers/asgi.py",
+          "line": 181,
+          "body": "Yep, I can remove it.\r\n\r\nAlso, do you know why `body_file` was being closed manually before? It didn't seem to get closed on all paths (e.g. if there was an unhandled exception). I couldn't see an obvious reason for that, but I might have missed something subtle (e.g. `body_file` somehow being used after this function returns),"
+        },
+        {
+          "author": "carltongibson",
+          "path": "django/core/handlers/asgi.py",
+          "line": 181,
+          "body": "That's just how it was written\u2026\u00a0\u2014 it's less indented for one \u2014 and it _shouldn't be_ that there are unexpected code paths...\r\n\r\nNonetheless, moving with the `with` block may be work doing. (I'll defer to @felixxm and @nessita on that.)"
+        },
+        {
+          "author": "carltongibson",
+          "path": "django/core/handlers/asgi.py",
+          "line": 201,
+          "body": "> The answer is that both tasks can finish at the same time, which means that both tasks end up in done and the pending.pop() errors out. I only observed this behavior when serving an app with Daphne, not in the existing unit tests. I tried to write a test for it last week but my asyncio-foo wasn't up to the task of forcing both tasks to finish at once.\r\n\r\nOK... that's really interesting \ud83e\udd14 Since only a single task gets run on the event loop at a time, how they finish simultaneously is a curious one\u2026 \u2014 but **yes** if that's happening that change make sense. \r\n\r\nIf you can't come up with a test, maybe a minimal project that demonstrates would be good to see (if you can \ud83d\ude4f)"
+        },
+        {
+          "author": "felixxm",
+          "path": "tests/asgi/tests.py",
+          "line": 240,
+          "body": "`test_disconnect_both_return()` and `test_streaming()` work without this patch. Extra test coverage is welcome but we should move it to a separate commit/PR."
+        },
+        {
+          "author": "felixxm",
+          "path": "tests/asgi/tests.py",
+          "line": 242,
+          "body": "Typo\r\n```suggestion\r\n        # This test forces both the disconnect listener and the task that sends\r\n        # the response to finish at the same time.\r\n```"
+        },
+        {
+          "author": "felixxm",
+          "path": "tests/asgi/tests.py",
+          "line": 241,
+          "body": "Try to omit prefixes like `This test`, `Ensure`, `Test`, etc."
+        },
+        {
+          "author": "felixxm",
+          "path": "docs/ref/request-response.txt",
+          "line": 1285,
+          "body": "```suggestion\r\n```"
+        },
+        {
+          "author": "felixxm",
+          "path": "docs/ref/request-response.txt",
+          "line": 1312,
+          "body": "Wrap at 79 chars."
+        },
+        {
+          "author": "felixxm",
+          "path": "docs/topics/async.txt",
+          "line": 200,
+          "body": "Try to omit `;` in docs."
+        },
+        {
+          "author": "felixxm",
+          "path": "django/core/handlers/asgi.py",
+          "line": 197,
+          "body": "Please omit `We` in comments\r\n```suggestion\r\n            # Check the status of these tasks and (optionally) ...\r\n```"
+        },
+        {
+          "author": "ngnpope",
+          "path": "tests/asgi/tests.py",
+          "line": 520,
+          "body": "There is no typing in Django, so this suppression comment can be removed.\r\n\r\n```suggestion\r\n            await communicator.receive_output(timeout=0.2)\r\n```"
+        },
+        {
+          "author": "felixxm",
+          "path": "tests/asgi/tests.py",
+          "line": 282,
+          "body": "This causes `ResourceWarning` on Python 3.12+:\r\n```\r\n./runtests.py asgi.tests.ASGITest.test_assert_in_listen_for_disconnect --parallel=1\r\nTesting against Django installed in '/django/django'\r\nFound 1 test(s).\r\nSystem check identified no issues (0 silenced).\r\n.\r\n----------------------------------------------------------------------\r\nRan 1 test in 0.004s\r\n\r\nOK\r\nException ignored in: <function SpooledTemporaryFile.__del__ at 0x7ff588dc09a0>\r\nTraceback (most recent call last):\r\n  File \"/usr/local/lib/python3.12/tempfile.py\", line 736, in __del__\r\n    _warnings.warn(\r\nResourceWarning: Unclosed file <tempfile.SpooledTemporaryFile object at 0x7ff586f9da50>\r\n```\r\nAny ideas?"
+        },
+        {
+          "author": "felixxm",
+          "path": "tests/asgi/tests.py",
+          "line": 282,
+          "body": "I added a possible fix. Can anyone take a look?"
+        },
+        {
+          "author": "carltongibson",
+          "path": "tests/asgi/tests.py",
+          "line": 282,
+          "body": "@felixxm The fix in  08e72a6413bbd66e4d39a89b5b9c31c38408289f looks correct: it's restoring the behaviour from [before this change](https://github.com/django/django/blob/a7c73b944f51d6c92ec876fd7e0a171e7c01657d/django/core/handlers/asgi.py#L209-L211). (Note the same `except` block in the previous version.) The test exercises the `assert` for the (protocol server programming error) invalid message type in `listen_for_disconnect()`. \r\n\r\nIt would have been dropped here because @qxcv proposed moving to use a context manager block for the body file here. See https://github.com/django/django/pull/17147#pullrequestreview-1564929017 \r\n\r\nThat may be (likely is?) worth it, if you think, as an improvement \u2014\u00a0but a part of me thinks there **really should** only be a small finite set of ways out of this block and I'd rather blow up if we've missed one... \ud83e\udd14 (Except maybe folks don't spot a potential resource warning in the wild...)\r\n\r\n\ud83d\udc4d"
+        },
+        {
+          "author": "felixxm",
+          "path": "tests/asgi/tests.py",
+          "line": 282,
+          "body": "Thanks for checking :+1: \r\n\r\n> That may be worth it, if you think, as an improvement \u2014 but a part of me thinks there **really should** only be a small finite set of ways out of this block and I'd rather blow up if we've missed one... \ud83e\udd14\r\n\r\nYeah, we can leave it for a separate discussion/PR."
+        }
+      ],
+      "usage": {
+        "input_tokens": 17595,
+        "output_tokens": 1510,
+        "model": "claude-sonnet-4-6"
+      },
+      "judge_calls": 29
+    }
+  ]
+}

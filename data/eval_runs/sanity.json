@@ -1,0 +1,157 @@
+{
+  "summary": {
+    "n_prs": 1,
+    "n_prs_with_human_comments": 1,
+    "total_peer_comments": 4,
+    "total_human_comments": 5,
+    "total_matches": 0,
+    "aggregate_hit_rate": 0.0,
+    "mean_per_pr_hit_rate": 0.0,
+    "novel_comments": 4,
+    "judge_calls": 9
+  },
+  "results": [
+    {
+      "pr_url": "https://github.com/pydantic/pydantic/pull/7677",
+      "peer_comments": [
+        {
+          "path": "pydantic/mypy.py",
+          "line": 433,
+          "severity": "important",
+          "body": "The `is_root_model` check uses `in` substring matching (`ROOT_MODEL_FULLNAME in base.fullname`) rather than exact equality (`base.fullname == ROOT_MODEL_FULLNAME`). This could produce false positives if a class exists whose fully-qualified name contains `'pydantic.root_model.RootModel'` as a substring (e.g. `'some.pydantic.root_model.RootModel'`). All other similar checks in this file use `==` for exact matching (e.g. `base.fullname == BASESETTINGS_FULLNAME`). Change to `base.fullname == ROOT_MODEL_FULLNAME`.",
+          "rationale": "Compare with the `is_settings` check on the very next line: `any(base.fullname == BASESETTINGS_FULLNAME for base in info.mro[:-1])`. The inconsistency is clear in the diff at line 433.",
+          "references": null
+        },
+        {
+          "path": "pydantic/mypy.py",
+          "line": 808,
+          "severity": "critical",
+          "body": "If `args` is empty (i.e. the RootModel subclass has no fields at all), `args[0]` will raise an `IndexError`. This can happen when the plugin processes a bare `class Pets1(RootModel[List[str]]): pass` \u2014 after the `is_root_model and lhs.name != 'root'` guard in `collect_fields`, the inherited `root` field should be present, but if `found_fields` is empty for any reason, this line will crash. Add an `if args` guard before accessing `args[0]`.",
+          "rationale": "The test module `Pets1` (lines 6-7 of `tests/mypy/modules/root_models.py`) has `pass` and relies entirely on the inherited `root` field being propagated into `args`. If that inheritance path ever yields no fields, this code will raise.",
+          "references": null
+        },
+        {
+          "path": "pydantic/mypy.py",
+          "line": 1099,
+          "severity": "important",
+          "body": "`error_extra_fields_on_root_model` takes `api: CheckerPluginInterface`, but `collect_fields` (the only caller) receives `self._api` which is typed as `SemanticAnalyzerPluginInterface`. These are different interfaces \u2014 `CheckerPluginInterface` is for the type-checking phase, while `SemanticAnalyzerPluginInterface` is for the semantic analysis phase. This type mismatch may cause a runtime `AttributeError`. The other similar functions called from `collect_fields` (e.g. `error_untyped_fields` at line 1094) correctly accept `SemanticAnalyzerPluginInterface`. Change the parameter type to `SemanticAnalyzerPluginInterface`.",
+          "rationale": "All other `error_*` functions called from semantic-analysis-phase methods (like `collect_fields`) use `SemanticAnalyzerPluginInterface` (e.g. `error_untyped_fields`, `error_invalid_config_value`, `error_required_dynamic_aliases`). The `CheckerPluginInterface` is used by checker-phase functions like `error_from_attributes`.",
+          "references": null
+        },
+        {
+          "path": "tests/mypy/outputs/1.0.1/mypy-plugin_ini/root_models.py",
+          "line": null,
+          "severity": "minor",
+          "body": "There is only one output file (for mypy 1.0.1 with `mypy-plugin.ini`). Looking at other test cases (e.g. `custom_constructor.py`, `generics.py`), each has output files for multiple mypy versions. If outputs differ between versions, missing output files will cause tests to fail or silently skip version-specific behavior. Confirm whether output files for other mypy versions (e.g. 0.971, 1.1.1) are intentionally omitted.",
+          "rationale": "Other modules in the test suite have counterpart output directories for each supported mypy version. Only a single version directory is added in this PR.",
+          "references": null
+        }
+      ],
+      "human_comments": [
+        {
+          "author": "sydney-runkle",
+          "path": "pydantic/mypy.py",
+          "line": 808,
+          "body": "What information should I pass as context here to this custom error func?"
+        },
+        {
+          "author": "sydney-runkle",
+          "path": "tests/mypy/test_mypy.py",
+          "line": 101,
+          "body": "How do I generate an output file for this example?"
+        },
+        {
+          "author": "dmontagu",
+          "path": "tests/mypy/test_mypy.py",
+          "line": 101,
+          "body": "You can run `make test-mypy-update-all` \u2014 note that it will take a while as it clears cache, and runs all mypy tests (which already aren't fast) for all versions of mypy one at a time.\r\n\r\nYou could probably get it to run faster by commenting out everything but the `root_models.py` file here and dropping the `rm -rf tests/mypy/outputs` from the command (or just reverting all the deletions it will do)."
+        },
+        {
+          "author": "dmontagu",
+          "path": "pydantic/mypy.py",
+          "line": 808,
+          "body": "Try `self._cls.info`"
+        },
+        {
+          "author": "dmontagu",
+          "path": "pydantic/mypy.py",
+          "line": 811,
+          "body": "Might need to check if there's a default, I'm looking more closely.."
+        }
+      ],
+      "matches": [],
+      "peer_unmatched": [
+        {
+          "path": "pydantic/mypy.py",
+          "line": 433,
+          "severity": "important",
+          "body": "The `is_root_model` check uses `in` substring matching (`ROOT_MODEL_FULLNAME in base.fullname`) rather than exact equality (`base.fullname == ROOT_MODEL_FULLNAME`). This could produce false positives if a class exists whose fully-qualified name contains `'pydantic.root_model.RootModel'` as a substring (e.g. `'some.pydantic.root_model.RootModel'`). All other similar checks in this file use `==` for exact matching (e.g. `base.fullname == BASESETTINGS_FULLNAME`). Change to `base.fullname == ROOT_MODEL_FULLNAME`.",
+          "rationale": "Compare with the `is_settings` check on the very next line: `any(base.fullname == BASESETTINGS_FULLNAME for base in info.mro[:-1])`. The inconsistency is clear in the diff at line 433.",
+          "references": null
+        },
+        {
+          "path": "pydantic/mypy.py",
+          "line": 808,
+          "severity": "critical",
+          "body": "If `args` is empty (i.e. the RootModel subclass has no fields at all), `args[0]` will raise an `IndexError`. This can happen when the plugin processes a bare `class Pets1(RootModel[List[str]]): pass` \u2014 after the `is_root_model and lhs.name != 'root'` guard in `collect_fields`, the inherited `root` field should be present, but if `found_fields` is empty for any reason, this line will crash. Add an `if args` guard before accessing `args[0]`.",
+          "rationale": "The test module `Pets1` (lines 6-7 of `tests/mypy/modules/root_models.py`) has `pass` and relies entirely on the inherited `root` field being propagated into `args`. If that inheritance path ever yields no fields, this code will raise.",
+          "references": null
+        },
+        {
+          "path": "pydantic/mypy.py",
+          "line": 1099,
+          "severity": "important",
+          "body": "`error_extra_fields_on_root_model` takes `api: CheckerPluginInterface`, but `collect_fields` (the only caller) receives `self._api` which is typed as `SemanticAnalyzerPluginInterface`. These are different interfaces \u2014 `CheckerPluginInterface` is for the type-checking phase, while `SemanticAnalyzerPluginInterface` is for the semantic analysis phase. This type mismatch may cause a runtime `AttributeError`. The other similar functions called from `collect_fields` (e.g. `error_untyped_fields` at line 1094) correctly accept `SemanticAnalyzerPluginInterface`. Change the parameter type to `SemanticAnalyzerPluginInterface`.",
+          "rationale": "All other `error_*` functions called from semantic-analysis-phase methods (like `collect_fields`) use `SemanticAnalyzerPluginInterface` (e.g. `error_untyped_fields`, `error_invalid_config_value`, `error_required_dynamic_aliases`). The `CheckerPluginInterface` is used by checker-phase functions like `error_from_attributes`.",
+          "references": null
+        },
+        {
+          "path": "tests/mypy/outputs/1.0.1/mypy-plugin_ini/root_models.py",
+          "line": null,
+          "severity": "minor",
+          "body": "There is only one output file (for mypy 1.0.1 with `mypy-plugin.ini`). Looking at other test cases (e.g. `custom_constructor.py`, `generics.py`), each has output files for multiple mypy versions. If outputs differ between versions, missing output files will cause tests to fail or silently skip version-specific behavior. Confirm whether output files for other mypy versions (e.g. 0.971, 1.1.1) are intentionally omitted.",
+          "rationale": "Other modules in the test suite have counterpart output directories for each supported mypy version. Only a single version directory is added in this PR.",
+          "references": null
+        }
+      ],
+      "human_unmatched": [
+        {
+          "author": "sydney-runkle",
+          "path": "pydantic/mypy.py",
+          "line": 808,
+          "body": "What information should I pass as context here to this custom error func?"
+        },
+        {
+          "author": "sydney-runkle",
+          "path": "tests/mypy/test_mypy.py",
+          "line": 101,
+          "body": "How do I generate an output file for this example?"
+        },
+        {
+          "author": "dmontagu",
+          "path": "tests/mypy/test_mypy.py",
+          "line": 101,
+          "body": "You can run `make test-mypy-update-all` \u2014 note that it will take a while as it clears cache, and runs all mypy tests (which already aren't fast) for all versions of mypy one at a time.\r\n\r\nYou could probably get it to run faster by commenting out everything but the `root_models.py` file here and dropping the `rm -rf tests/mypy/outputs` from the command (or just reverting all the deletions it will do)."
+        },
+        {
+          "author": "dmontagu",
+          "path": "pydantic/mypy.py",
+          "line": 808,
+          "body": "Try `self._cls.info`"
+        },
+        {
+          "author": "dmontagu",
+          "path": "pydantic/mypy.py",
+          "line": 811,
+          "body": "Might need to check if there's a default, I'm looking more closely.."
+        }
+      ],
+      "usage": {
+        "input_tokens": 13537,
+        "output_tokens": 1073,
+        "model": "claude-sonnet-4-6"
+      },
+      "judge_calls": 9
+    }
+  ]
+}
