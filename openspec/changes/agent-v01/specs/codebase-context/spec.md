@@ -44,11 +44,11 @@ For each modified `Symbol`, the framework SHALL locate call sites elsewhere in t
 
 #### Scenario: Symbol name collides with unrelated identifiers
 - **WHEN** a symbol's name matches text in unrelated contexts (e.g., a string literal or a comment)
-- **THEN** the framework filters out false positives by re-parsing the candidate file with tree-sitter and confirming the match is an actual call expression referencing the symbol
+- **THEN** the framework filters out false positives via AST-aware matching; the returned `CallSite` records refer only to actual call expressions on the symbol
 
-#### Scenario: Ripgrep unavailable, fall back to Python scan
-- **WHEN** `rg` (ripgrep) is not on `PATH`
-- **THEN** the framework falls back to a Python-based file scan with a single one-time `WARNING` log; behaviour is the same, only slower
+#### Scenario: Call-site engine fallback chain
+- **WHEN** the primary call-site engine is unavailable on the host (e.g., `ast-grep` not installed) and a fallback engine is available (`ripgrep`, then pure-Python scan)
+- **THEN** the framework transparently uses the next available engine, logs a one-time `WARNING` per fallback rung, and produces functionally identical `CallSite` results (only speed differs)
 
 #### Scenario: Cap on call sites per symbol
 - **WHEN** a modified symbol has more than `max_call_sites_per_symbol` call sites (default 5)
@@ -127,6 +127,6 @@ The codebase-context capability SHALL detect missing optional dependencies and d
 - **WHEN** `tree-sitter-python` cannot be imported at runtime (e.g., install issue)
 - **THEN** the framework logs an `ERROR` with the install fix and returns a `CodebaseContext` with empty `modified_symbols`/`call_sites`; the review still proceeds with PR context only
 
-#### Scenario: Ripgrep missing
-- **WHEN** `rg` is not on `PATH`
-- **THEN** call-site lookup falls back to Python file scanning with a one-time `WARNING`; functionality is preserved
+#### Scenario: Primary call-site engine missing, fallbacks available
+- **WHEN** the primary call-site engine is unavailable (e.g., `ast-grep` not installed) but at least one fallback engine is (`ripgrep` and/or Python-only)
+- **THEN** call-site lookup uses the next available engine with a one-time `WARNING`; functionality is preserved

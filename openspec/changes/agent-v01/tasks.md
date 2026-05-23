@@ -10,10 +10,10 @@
 - [ ] 2.1 Add a `gh` CLI helper wrapper (shared with `curate.py` if possible) that runs commands, parses JSON, and raises `GHCLINotAvailable` / `GHCLINotAuthenticated` cleanly
 - [ ] 2.2 Implement PR URL parsing: extract `owner`, `repo`, `number` from a GitHub PR URL or raise `InvalidPRURL`
 - [ ] 2.3 Fetch PR metadata (title, body, head SHA) and the unified diff via `gh` CLI; raise `PRNotAccessible` on 403/404
-- [ ] 2.4 Implement diff hunk parser: produce per-file hunks with their original/new line ranges
+- [ ] 2.4 Implement diff hunk parser using `unidiff`: parse the raw unified-diff string into `PatchSet` → `PatchedFile` → `Hunk`, then project into our per-file `ContextHunk` records with original/new line ranges (Decision 15)
 - [ ] 2.5 Implement surrounding-code extractor: for each hunk, fetch the file at the head SHA and include ±N lines (default 20, configurable)
 - [ ] 2.6 Fetch prior issue + inline review comments via `gh api`
-- [ ] 2.7 Implement token-budget check: estimate assembled `Context` size; raise `ContextTooLarge` if it exceeds `max_tokens` (default 100,000)
+- [ ] 2.7 Implement token-budget check using `tiktoken` (Decision 16): estimate assembled `Context` size via `tiktoken.get_encoding("cl100k_base").encode()` length; raise `ContextTooLarge` if it exceeds `max_tokens` (default 100,000)
 - [ ] 2.8 Implement top-level `gather(pr_url, context_lines=20, max_tokens=100_000) -> Context`
 
 ## 3. Reviewer implementations (`src/peer/reviewers.py`)
@@ -49,23 +49,23 @@
 ## 7. Docs + repo polish
 
 - [ ] 7.1 Update README quickstart with real `python -m peer.review` usage
-- [ ] 7.2 Add a "Requirements" section to README noting `gh` CLI, `rg` (ripgrep) recommended, and `ANTHROPIC_API_KEY` / `OPENAI_API_KEY`
+- [ ] 7.2 Add a "Requirements" section to README: `gh` CLI (required for PR fetch); Python deps installed via `pip install peer` cover `ast-grep-py`, `tree-sitter`, `tree-sitter-python`, `unidiff`, `tiktoken`; `ripgrep` is an optional fallback (used only if `ast-grep` is unavailable); `ANTHROPIC_API_KEY` and/or `OPENAI_API_KEY` for the chosen backend
 - [ ] 7.3 Add a short `examples/single_pr.py` showing programmatic use
 - [ ] 7.4 Note known limits in README: Python-only tree-sitter coverage in v0.1; no chunking for large PRs (v0.2); GitHub only (v0.2); no caching (v0.2); no team-standards file or repo-map yet (v0.2 `codebase-context` extension); no vectors/embeddings (deferred indefinitely per Amazon Science 2026)
 
 ## 8. Codebase context (`src/peer/codebase_context.py`)
 
-- [ ] 8.1 Add `tree-sitter` and `tree-sitter-python` to `pyproject.toml` dependencies; pin versions
+- [ ] 8.1 Add to `pyproject.toml` dependencies (pin versions): `tree-sitter`, `tree-sitter-python`, `ast-grep-py`, `unidiff`, `tiktoken`. `ripgrep` documented as optional fallback in README "Requirements" (task 7.2)
 - [ ] 8.2 Define a `LanguageGrammar` registry pattern: maps file extension → tree-sitter `Language` + symbol-extraction queries; Python grammar registered for v0.1
 - [ ] 8.3 Implement modified-symbol extraction: for each modified file in the PR diff, parse with tree-sitter, walk the AST, extract `Symbol`s for any function/method/class whose source span overlaps any diff hunk; capture `kind`, `signature`, `enclosing_qualifier`, `start_line`, `end_line`
 - [ ] 8.4 Handle deleted-symbol case: when a function/class is removed in the PR, source the `Symbol` from the parent commit (via `git show HEAD~1:path` or `gh api`) and mark `deleted=True`
-- [ ] 8.5 Implement call-site lookup stage 1 (candidate generation): shell out to `ripgrep` with a `\b<symbol>\b` regex across the repo; collect file:line candidates
-- [ ] 8.6 Implement call-site lookup stage 2 (false-positive filter): re-parse each candidate file with tree-sitter, confirm the matched location is an actual call expression referencing the symbol (not a string literal, comment, or unrelated identifier)
-- [ ] 8.7 Implement ripgrep-missing fallback: when `rg` not on `PATH`, walk repo with Python (`pathlib.Path.rglob`) and per-file scan with `re`; one-time `WARNING` log
+- [ ] 8.5 Implement call-site lookup via `ast-grep` (Decision 11, primary path): use the `ast-grep-py` Python API with structural patterns per kind (e.g., `Symbol` of kind `function` → `$NAME($$$ARGS)`; `method` → `$RECV.$NAME($$$ARGS)`; `class` → `$NAME($$$ARGS)` or `class $X($NAME)`); pattern selection lives in the `LanguageGrammar` registry alongside symbol-extraction queries. Subprocess fallback to `ast-grep` CLI if `ast-grep-py` import fails
+- [ ] 8.6 Implement fallback chain when `ast-grep` is unavailable (Decision 14): (a) `ripgrep` candidate generation + tree-sitter post-filter to confirm call expressions; (b) pure-Python `pathlib.Path.rglob` + `re` candidate generation + tree-sitter post-filter. One-time `WARNING` log per fallback rung
+- [ ] 8.7 _(consolidated into 8.5/8.6 above)_
 - [ ] 8.8 Implement test-file discovery: configurable `test_path_conventions` list with `{stem}`, `{name}`, `{path}` substitutions; defaults `["tests/test_{stem}.py", "src/test_{stem}.py", "tests/{stem}_test.py", "test_{stem}.py"]`; first existing match wins
 - [ ] 8.9 Implement test-file content inclusion with `max_test_file_chars` cap (default 5000), trailing `... (truncated, N chars)` marker, `truncated=True` flag
-- [ ] 8.10 Implement token-budget enforcement: estimate `CodebaseContext` size (approx via char-count / 4 heuristic OR `tiktoken` if available); apply priority-order trimming (`modified_symbols` always kept; `call_sites` trimmed by `max_call_sites_per_symbol` default 5; `related_tests` truncated then dropped); raise `CodebaseContextTooLarge` if even `modified_symbols` alone exceed budget
+- [ ] 8.10 Implement token-budget enforcement using `tiktoken` (Decision 16): estimate `CodebaseContext` size via `tiktoken.get_encoding("cl100k_base").encode()` length; apply priority-order trimming (`modified_symbols` always kept; `call_sites` trimmed by `max_call_sites_per_symbol` default 5; `related_tests` truncated then dropped); raise `CodebaseContextTooLarge` if even `modified_symbols` alone exceed budget
 - [ ] 8.11 Implement graceful degradation: missing `tree-sitter-python` → log `ERROR`, return empty `CodebaseContext` with `parse_failures` populated; per-file parse failure → log `WARNING`, add to `parse_failures`, continue
 - [ ] 8.12 Implement top-level `gather_codebase_context(pr_context: Context, max_tokens: int = 30_000, max_call_sites_per_symbol: int = 5, max_test_file_chars: int = 5000, test_path_conventions: list[str] | None = None) -> CodebaseContext`
-- [ ] 8.13 Unit tests: symbol extraction (function/method/class, added/deleted, multi-hunk file); call-site lookup (true positive across files, false-positive filtered out, capped at max); test-discovery (default convention hits, custom convention, no match); budget enforcement (under-budget no drops, over-budget priority order, modified-symbols-alone overflow raises)
+- [ ] 8.13 Unit tests: symbol extraction (function/method/class, added/deleted, multi-hunk file); call-site lookup via `ast-grep` (true positive across files, no false positive on string-literal match, capped at max); fallback-chain unit test (ast-grep unavailable → ripgrep path produces same results; ripgrep also unavailable → Python-scan path produces same results); test-discovery (default convention hits, custom convention, no match); budget enforcement using `tiktoken` (under-budget no drops, over-budget priority order, modified-symbols-alone overflow raises)
 - [ ] 8.14 Integration test: end-to-end on a small fixture repo with a known PR diff; assert returned `CodebaseContext` matches expected `modified_symbols` + `call_sites` + `related_tests`

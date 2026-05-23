@@ -94,13 +94,15 @@ Comments whose `path` or `line` don't appear in the PR diff are dropped with a w
 
 **Alternative considered:** ast-grep (semgrep-style AST queries). Rejected because tree-sitter ecosystem (grammars + bindings) is materially larger and the integration pattern is better-trodden for our use case.
 
-### 11. Call-site lookup via ripgrep + tree-sitter false-positive filter
+### 11. Call-site lookup via `ast-grep` (AST-native), with ripgrep-then-Python fallback chain
 
-Call sites for modified symbols are found in two stages: (a) `ripgrep` (or Python fallback) for fast text-level candidate lines, (b) re-parse each candidate file with tree-sitter and confirm the match is an actual call expression referencing the symbol (not a string literal, comment, or unrelated identifier with the same name).
+Call sites for modified symbols are found via `ast-grep` (14.1k stars, Rust-backed, uses tree-sitter under the hood) using structural patterns (e.g., `$VAR.foo($ARGS)`, `foo($ARGS)`). The Python API (`ast-grep-py`) is preferred to stay in-process; CLI subprocess is the fallback. When `ast-grep` is unavailable on a host, the framework falls back to (a) ripgrep candidate generation + tree-sitter post-filter, then (b) pure-Python file scanning + tree-sitter post-filter. Behaviour is identical in all three modes; only speed differs.
 
-**Why:** matches the 2026 academic consensus (Amazon Science arXiv 2605.15184: grep + structural validation outperforms pure vector retrieval). Two-stage filter gives high precision without building a full code graph. Significantly cheaper than persistent indexing while delivering most of the value per the Amazon paper.
+**Why:** matches the 2026 academic consensus (Amazon Science arXiv 2605.15184: grep + structural validation outperforms pure vector retrieval) while leveraging an off-the-shelf tool that already does the combined operation. `ast-grep` is AST-native by construction — it never produces text-level false positives (string literals, comments) — so the explicit two-stage filter step in our prior design becomes unnecessary at the primary path. Per `docs/oss_leverage_research.md`: switching to `ast-grep` collapses ~80–120 LOC of candidate-gen-then-filter code into ~20–30 LOC and eliminates a class of maintenance burden.
 
 **Alternative considered:** build a persistent symbol-graph index (à la Sourcegraph). Rejected for v0.1 — too much infrastructure for the expected v0.1 use cases (single-PR ad-hoc reviews), and the index staleness problem (when does it re-index?) is a substantial design problem in its own right.
+
+**Alternative considered:** stay with ripgrep + tree-sitter filter (the v0.0 plan). Rejected because `ast-grep` covers exactly this use case more directly and is maintained as a first-class tool (14.1k stars, 4,102 commits, 176 releases). Kept as the first-rung fallback so reviews still work on hosts without `ast-grep` installed.
 
 ### 12. Test-file discovery via configurable path conventions
 
@@ -123,7 +125,7 @@ The default system prompt (`src/peer/prompts.py`) explicitly names `modified_sym
 The codebase-context capability degrades when optional dependencies are missing rather than blocking the whole review:
 
 - Missing `tree-sitter` / `tree-sitter-python` → log `ERROR`, return empty `CodebaseContext`, agent proceeds with PR context only
-- Missing `ripgrep` → fall back to Python file scanning with one-time `WARNING`
+- Missing `ast-grep` (`ast-grep-py` import fails AND `ast-grep` CLI not on `PATH`) → fall back to ripgrep + tree-sitter filter with a one-time `WARNING`; if `ripgrep` also missing, fall back to pure-Python file scan + tree-sitter filter with a second `WARNING`
 - Tree-sitter parse failure on a specific file → skip that file, record under `parse_failures`, continue
 
 **Why:** if v0.1 makes any one dependency fatal, adoption stalls. The framework's primary contract is "produce a Review" — it should always do that, with the best context it can assemble. Diagnostics live in the `CodebaseContext` fields (`unsupported_files`, `parse_failures`, `truncations`) for the eval to surface.
@@ -142,6 +144,22 @@ The codebase-context capability degrades when optional dependencies are missing 
 - **[Risk]** Multi-language repos get partial coverage in v0.1 (Python tree-sitter only). **Mitigation:** documented; non-Python files in PRs still see the diff in the LLM prompt — the `CodebaseContext` is empty for those files, recorded in `unsupported_files`. Language grammars are an additive-only extension per the `LanguageGrammar` registry.
 - **[Risk]** `CodebaseContext` token cost compounds with `Context` token cost on the same PR. **Mitigation:** separate, additive budget for codebase context (default `30_000` tokens vs `100_000` for PR context); prioritized drop order (modified_symbols > call_sites > related_tests) so the most important context is always kept.
 
+### 15. Diff parsing via `unidiff`
+
+Diff hunk parsing in `src/peer/context.py` uses the `unidiff` library (matiasb/python-unidiff): `PatchSet` → `PatchedFile` → `Hunk` hierarchy maps directly onto the per-file, per-hunk shape `Context` needs.
+
+**Why:** unidiff is a mature, narrowly-scoped diff parser used widely in the Python ecosystem. Rolling our own diff parser would re-introduce edge cases the library already handles (file renames, mode changes, no-newline-at-EOF markers, binary diffs). Per `docs/oss_leverage_research.md`.
+
+**Alternative considered:** `whatthepatch`. Rejected because its flatter `Change`-per-line structure is a worse fit for our per-hunk processing than unidiff's hierarchical layout.
+
+### 16. Token-budget estimation via `tiktoken`
+
+Token-budget estimation for both `Context` (Decision none — `max_tokens=100_000`) and `CodebaseContext` (Decision 14 — `max_tokens=30_000`) uses `tiktoken` (OpenAI's tokenizer) rather than a char-count/4 heuristic.
+
+**Why:** `tiktoken` is fast (Rust-backed), pinpoint-accurate for OpenAI models, and within ~10% for Claude models — accurate enough for budget decisions without adding the Anthropic SDK's `count_tokens` round-trip (which would add latency and cost per check). Char/4 heuristics drift by 20–40% depending on language and code style and would force conservative budget caps that throw away usable context.
+
+**Alternative considered:** call each provider's official tokenizer per check. Rejected because budget checks happen many times per review and the per-provider round-trip would compound latency; `tiktoken` close-enough is the right trade-off.
+
 ## Open Questions
 
-None remaining for v0.1 scope — the three v0.0 questions were resolved into Decisions 7–9 above. Future-version questions (chunking strategy for large PRs, response caching, severity taxonomy revision) will live in their own change proposals.
+None remaining for v0.1 scope — the three v0.0 questions were resolved into Decisions 7–9 above; the three v0.1 implementation-primitive questions were resolved into Decisions 11, 15, 16 (per `docs/oss_leverage_research.md`). Future-version questions (chunking strategy for large PRs, response caching, severity taxonomy revision) will live in their own change proposals.
