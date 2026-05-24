@@ -94,7 +94,10 @@ def step_resolve(context, name: str) -> None:
 
 @then("the returned class is {name}")
 def step_returned_class(context, name: str) -> None:
+    from peer.strategies import AgenticReviewer
+
     expected = {
+        "AgenticReviewer": AgenticReviewer,
         "DraftCritiqueReviewer": DraftCritiqueReviewer,
         "TwoModelPipelineReviewer": TwoModelPipelineReviewer,
         "SelfFilterReviewer": SelfFilterReviewer,
