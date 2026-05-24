@@ -7,19 +7,45 @@ schema so users can store reports in git for trend tracking.
 from __future__ import annotations
 
 from datetime import datetime, timezone
+from enum import Enum
 from typing import Any
 from uuid import uuid4
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, ConfigDict, Field
 
 REPORT_SCHEMA_VERSION = "1.0"
+
+
+class AggregateKind(str, Enum):
+    """How EvalRunner should aggregate per-sample MetricResults into the
+    report-level number. Each metric declares its own kind; the runner
+    dispatches on the kind rather than hard-coding metric names.
+
+    Per eval-v02 design.md Decision 1 — replaces the name-switching in
+    eval-metrics-v01's `_aggregate_metrics`.
+    """
+
+    MEAN = "mean"  # mean of non-None per-sample values
+    SUM_OF_SUMS = "sum_of_sums"  # total_matches / total_gold (DetectionRate)
+    PASS_RATE = "pass_rate"  # fraction of True per-sample bool values
+    PER_TIER = "per_tier"  # per-severity / per-category aggregation
+    LATENCY_PERCENTILE = "latency_percentile"  # p50/p95 etc.
+
+
+# Allowed types for MetricResult.value. `bool` is included separately for
+# clarity even though bool is a subclass of int — Pydantic preserves the
+# distinction. Per eval-v02 design.md Decision 1 / adversarial-review item
+# 5.1: removes the awkward "value+per_sample_detail" split.
+MetricValue = bool | int | float | str | dict | None
 
 
 class MetricResult(BaseModel):
     """One metric's result for one sample (or aggregate)."""
 
+    model_config = ConfigDict(arbitrary_types_allowed=True)
+
     name: str
-    value: float | None = None  # the headline number; None if not computable
+    value: MetricValue = None  # widened in eval-v02 from `float | None`
     per_sample_detail: dict[str, Any] = Field(default_factory=dict)
     notes: str | None = None  # e.g., "no gold defects on this sample"
 

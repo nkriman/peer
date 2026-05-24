@@ -312,11 +312,17 @@ def render_diff(report_a: EvalReport, report_b: EvalReport) -> str:
             a_mr = a_s.metrics.get(name)
             if a_mr is None:
                 continue
-            if a_mr.value is None or b_mr.value is None:
+            a_v, b_v = a_mr.value, b_mr.value
+            # Only compare numerics; eval-v02 widens MetricResult.value to
+            # include bool/str/dict, but regression-vs-improvement only
+            # makes sense for ordered numeric values.
+            if not isinstance(a_v, (int, float)) or not isinstance(b_v, (int, float)):
                 continue
-            if b_mr.value < a_mr.value:
+            if isinstance(a_v, bool) or isinstance(b_v, bool):
+                continue
+            if b_v < a_v:
                 sample_regressed = True
-            elif b_mr.value > a_mr.value:
+            elif b_v > a_v:
                 sample_improved = True
         if sample_regressed:
             regressions += 1
