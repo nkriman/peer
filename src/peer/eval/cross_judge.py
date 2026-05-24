@@ -14,7 +14,6 @@ import logging
 import statistics
 from typing import Any
 
-import anthropic
 from pydantic import BaseModel, ConfigDict, Field
 
 from ..dataset.types import GoldSample
@@ -97,16 +96,18 @@ def compute_variance_bands(reports: list[EvalReport]) -> dict[str, MetricBand]:
 
 
 def _judge_client_for(model: str) -> Any:
-    """Build an Anthropic client pinned to a specific judge model.
+    """Build a client pinned to a specific judge model.
 
-    Today we use anthropic.Anthropic() and let callers know the model is
-    enforced inside the metric — that requires plumbing model into each
-    metric.score call. Workaround: wrap the client so its messages.create
-    overrides the `model` kwarg. Drop-in shim.
+    Routes through `peer.claude_code_client.make_client()` so when
+    `PEER_USE_CLAUDE_CODE=1` the judge calls go through the CLI (free under
+    subscription). Wraps the resulting client so .messages.create overrides
+    the model kwarg with the pinned judge model — metrics that pass their
+    own `model=` to the SDK get re-routed transparently.
     """
+    from ..claude_code_client import make_client
 
     class _PinnedModelClient:
-        def __init__(self, base: anthropic.Anthropic, model: str) -> None:
+        def __init__(self, base: Any, model: str) -> None:
             self._base = base
             self._pinned_model = model
             self.messages = _PinnedMessages(base.messages, model)
@@ -120,7 +121,7 @@ def _judge_client_for(model: str) -> Any:
             kwargs["model"] = self._pinned_model
             return self._base.create(**kwargs)
 
-    return _PinnedModelClient(anthropic.Anthropic(), model)
+    return _PinnedModelClient(make_client(), model)
 
 
 class _CachedReviewer:
