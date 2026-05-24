@@ -6,7 +6,7 @@ Slice 2: Symbol, CallSite, TestFile, CodebaseContext.
 
 from typing import Literal
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, model_validator
 
 SymbolKind = Literal["function", "method", "class"]
 
@@ -16,10 +16,19 @@ Severity = Literal["critical", "important", "minor", "nit"]
 class Comment(BaseModel):
     path: str
     line: int | None = None
+    end_line: int | None = None  # patch-suggestions-v01: line range upper bound
     severity: Severity
     body: str
     rationale: str
     references: list[str] | None = None
+    suggestion: str | None = None  # patch-suggestions-v01: optional replacement block
+    issue_header: str | None = None  # patch-suggestions-v01: short categorical label
+
+    @model_validator(mode="after")
+    def _validate_end_line(self) -> "Comment":
+        if self.end_line is not None and self.line is not None and self.end_line < self.line:
+            raise ValueError(f"end_line ({self.end_line}) must be >= line ({self.line})")
+        return self
 
 
 class ContextHunk(BaseModel):

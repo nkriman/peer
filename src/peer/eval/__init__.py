@@ -18,6 +18,7 @@ from .metrics import (
     NoveltyRate,
     PrecisionPerSeverity,
     SeverityCalibration,
+    SuggestionRate,
 )
 from .pricing import cost_unavailable_reason, estimate_cost
 from .report import render_diff, render_summary
@@ -49,6 +50,7 @@ __all__ = [
     "NoveltyRate",
     "PrecisionPerSeverity",
     "SeverityCalibration",
+    "SuggestionRate",
     "cost_unavailable_reason",
     "estimate_cost",
     "judge_match",

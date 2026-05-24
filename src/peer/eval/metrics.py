@@ -416,3 +416,37 @@ def _build_defect_recall_alias():
 
 
 DefectRecall = _build_defect_recall_alias()
+
+
+class SuggestionRate:
+    """Fraction of peer comments that include a `suggestion` field.
+
+    Per patch-suggestions-v01: tracks how often the agent emits actionable
+    ````suggestion` blocks. Aggregator does sum-of-sums via runner
+    special-casing on the metric name (see runner._aggregate_metrics).
+
+    Per-sample value: n_with_suggestion / n_total, or None when n_total == 0.
+    """
+
+    name = "suggestion_rate"
+
+    def score(
+        self,
+        sample: GoldSample,
+        review: Review,
+        client: anthropic.Anthropic | None = None,
+    ) -> MetricResult:
+        n_total = len(review.comments)
+        if n_total == 0:
+            return MetricResult(
+                name=self.name,
+                value=None,
+                notes="reviewer produced 0 comments on this sample",
+                per_sample_detail={"n_with_suggestion": 0, "n_total": 0},
+            )
+        n_with = sum(1 for c in review.comments if c.suggestion is not None)
+        return MetricResult(
+            name=self.name,
+            value=n_with / n_total,
+            per_sample_detail={"n_with_suggestion": n_with, "n_total": n_total},
+        )
