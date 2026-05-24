@@ -59,7 +59,9 @@ rules:
 
 Pydantic schema validation rejects unknown keys, invalid glob patterns, severities not in `{critical, important, minor, nit}`, etc. The "version: 1" header lets us evolve the schema later without ambiguity.
 
-**Why first-matching-glob wins (not best-matching):** simpler mental model; users put more-specific rules first. Matches the pattern from `.gitignore`, `.gitattributes`, CodeRabbit's `.coderabbit.yaml` `path_instructions` list. Best-matching-glob has corner cases that are hard to debug.
+**Why first-matching-glob wins for CONVENTIONS (not best-matching):** simpler mental model; users put more-specific rules first. Matches the pattern from `.gitignore`, `.gitattributes`, CodeRabbit's `.coderabbit.yaml` `path_instructions` list.
+
+**EXCEPTION for severity bounds (per adversarial review 2.4):** severity `floor`/`cap` rules use "most-restrictive across all matching rules" semantics, NOT first-match. A file matching both `tests/**` (severity_cap=minor) AND `**` (severity_floor=important) gets the cap applied (minor wins — the more-restrictive bound). User mental model is "more specific rules tighten the constraint." Separated from conventions matching because the failure modes are different: a missed convention is a quality regression; a missed severity bound is a calibration regression. The order of evaluation: collect all matching rules' floors → pick the most restrictive (highest floor); collect all matching rules' caps → pick the most restrictive (lowest cap); apply floor first, then cap.
 
 ### 3. Severity floors/caps applied at comment-validation time
 
@@ -90,6 +92,19 @@ CLI commands accept `--config PATH` for explicit override at the CLI layer.
 ### 6. Empty / missing config is the safe default
 
 A repo without `.peer.yaml` runs peer with no rules, no severity bounds, the default reviewer model and the default system prompt. Identical behavior to peer v0.1. The config file is **purely additive**.
+
+### 6b. Consolidate conventions-injection mechanisms (per adversarial review 5.6)
+
+Before this change there were FOUR places conventions/instructions text could be injected into the system prompt: (1) `Agent.system_prompt` (full replace), (2) `Agent.team_conventions` (legacy single blob), (3) `PeerConfig.agent.extra_instructions`, (4) `PeerConfig.rules[*].conventions_file` (per-path).
+
+**Resolved (this change locks in):**
+
+- `Agent.system_prompt` — full prompt override (existing). KEEPS.
+- `Agent.team_conventions` — legacy, emits DeprecationWarning, equivalent to a single-rule PeerConfig. KEEPS for back-compat; removal in v1.0.
+- `PeerConfig.agent.extra_instructions` — NEW, short ad-hoc tweak. KEEPS.
+- `PeerConfig.rules[*].conventions_file` — per-path conventions docs. KEEPS.
+
+There are now THREE viable mechanisms (system_prompt as full replace, extra_instructions as short global addition, per-path conventions for path-scoped additions) + 1 deprecated path (team_conventions). The CLI's `peer config validate` (future) will warn when a user combines `system_prompt` (full replace) with conventions (additive) — semantically these are independent levels, but in practice combining them is confusing. Documentation makes the precedence clear: `system_prompt` (if set) REPLACES the default; `extra_instructions` + `conventions_file` are APPENDED. Same prompt-construction order: `[system_prompt OR default] + extra_instructions + conventions for matched paths`.
 
 ### 7. PyYAML is the right dep
 

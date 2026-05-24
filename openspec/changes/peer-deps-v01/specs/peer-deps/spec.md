@@ -16,7 +16,7 @@ The framework SHALL define a `PeerDeps` dataclass in `peer.deps` with the follow
 
 ### Requirement: RunContext is a typed Pydantic model carrying deps + run metadata
 
-The framework SHALL define `RunContext[T]` as a generic Pydantic model with fields: `deps: T`, `pr_url: str`, `attempt: int = 0`, `metadata: dict = {}`. The model SHALL allow arbitrary types in `deps` so non-Pydantic dependencies (functions, callables, stateful objects) round-trip.
+The framework SHALL define `RunContext[T]` as a generic Pydantic model with fields: `deps: T`, `pr_url: str`, `attempt: int = 0`. The model SHALL allow arbitrary types in `deps` so non-Pydantic dependencies (functions, callables, stateful objects) round-trip. NO untyped `metadata` field is included (per adversarial review 5.4 — typed escape hatches go on user-supplied PeerDeps subclasses).
 
 #### Scenario: RunContext carries typed deps
 
@@ -27,6 +27,11 @@ The framework SHALL define `RunContext[T]` as a generic Pydantic model with fiel
 
 - **WHEN** `RunContext` is constructed inside an Agent retry loop
 - **THEN** `ctx.attempt` is `0` for the first call, `1` for the first retry, etc., available to Reviewers + Evaluators for adaptive behavior
+
+#### Scenario: No metadata escape hatch
+
+- **WHEN** a user attempts `RunContext(deps=..., pr_url=..., metadata={"x": 1})`
+- **THEN** validation rejects `metadata` (no such field); typed extension lives on user-supplied `PeerDeps` subclasses, not on `RunContext`
 
 ### Requirement: ALLOW_LLM_CALLS module-level flag prevents accidental LLM calls
 
@@ -73,6 +78,8 @@ The framework SHALL provide `peer.reviewers.TestReviewer` that satisfies the `Re
 
 The framework SHALL provide `peer.context.capture_run_messages()` as a context manager that returns a list-shaped recorder accumulating `CapturedMessage` records for each `Agent.run` call inside the `with` block. Each `CapturedMessage` SHALL contain: `system_prompt`, `user_prompt`, `raw_response` (the LLM provider's full response object, serializable), `usage` (dict), `latency_ms` (float).
 
+**Implementation note (concurrency-safe):** The recorder is held in a `contextvars.ContextVar` that EvalRunner SHALL set INSIDE each per-sample task (in `_eval_sample`, not at the outer `run_async` boundary). Each concurrent task gets its OWN list-shaped recorder; on task completion, its list is attached to that sample's `EvalSampleResult.captured_messages`. Under `peer eval --capture-messages --concurrency N`, samples do NOT interleave — each sample's capture is isolated.
+
 #### Scenario: Capture within block
 
 - **WHEN** `with capture_run_messages() as msgs: agent.run(pr_url, deps=...)` executes
@@ -87,6 +94,43 @@ The framework SHALL provide `peer.context.capture_run_messages()` as a context m
 
 - **WHEN** `Agent(capture_messages=True)` is constructed and a subsequent `run` is made
 - **THEN** `agent.last_messages` contains the captured messages from the most recent run (overwritten by subsequent runs)
+
+#### Scenario: Async per-task capture isolation
+
+- **WHEN** `EvalRunner(reviewer, dataset, concurrency=5).run_async()` is invoked inside a `with capture_run_messages() as msgs:` block AND the dataset has 5+ samples
+- **THEN** each `EvalSampleResult.captured_messages` contains exactly that sample's prompt + response — captures do NOT cross-leak across concurrent tasks
+
+### Requirement: EvalReport.from_json is forward-compatible (additive fields)
+
+Per adversarial review 3.7 — multiple in-flight changes touch the `EvalReport` schema additively (peer-deps-v01 adds `captured_messages`; eval-metrics-v01 adds new metrics; patch-suggestions-v01 extends Comment). `EvalReport.from_json` SHALL accept unknown fields when the major schema version matches (e.g., loading a v1.5 report with v1.2 loader). Pydantic's `model_config = ConfigDict(extra="ignore")` on EvalReport + EvalSampleResult + EvalSummary applied. Only on MAJOR-version mismatch (e.g., 1.x → 2.x) does the loader raise.
+
+#### Scenario: Newer minor-version report loads under older loader
+
+- **GIVEN** a v1.5 report file containing fields the v1.2 loader doesn't recognize (e.g., `captured_messages`)
+- **WHEN** `EvalReport.from_json(path)` is called by the v1.2 loader
+- **THEN** the report loads successfully; unknown fields are silently dropped from the in-memory model
+
+#### Scenario: Major-version mismatch raises
+
+- **GIVEN** a v2.0 report file
+- **WHEN** `EvalReport.from_json(path)` is called by the v1.x loader
+- **THEN** `EvalReportSchemaMismatch` is raised with migration guidance
+
+### Requirement: Reviewers handle rate-limit (429) responses with backoff
+
+Per adversarial review 4.1 — at concurrency=5 + benchmark-v01 (118 reviews back-to-back), Anthropic per-minute rate limits become the most common failure mode. Each shipped Reviewer SHALL detect HTTP 429 / Anthropic rate-limit errors and retry with exponential backoff (1s, 2s, 4s, 8s, max 4 retries). On final failure after retries, the Reviewer raises `ReviewerRateLimited` (new exception in `peer.exceptions`); EvalRunner catches and marks the sample as `error="rate_limited"` rather than abort the entire run.
+
+#### Scenario: 429 triggers backoff retry
+
+- **GIVEN** ClaudeReviewer receiving HTTP 429 on the first attempt and HTTP 200 on the second
+- **WHEN** `review()` is called
+- **THEN** the reviewer waits ~1s, retries, succeeds, and the returned Review's usage records `n_rate_limit_retries=1`
+
+#### Scenario: 4 retries exhausted
+
+- **GIVEN** ClaudeReviewer receiving HTTP 429 on 5 consecutive attempts
+- **WHEN** `review()` is called
+- **THEN** `ReviewerRateLimited` is raised after the 4th retry; the exception carries the cumulative wait time + the underlying error
 
 ### Requirement: LLMCallsDisabled exception
 

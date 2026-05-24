@@ -123,14 +123,14 @@ When a Comment has `suggestion` and the newline count exceeds the hunk's new-fil
 - **WHEN** the reviewer returns a Comment with a 10-line suggestion attached to a 2-line hunk on the first call, and a corrected 2-line suggestion on retry
 - **THEN** the final Review contains the Comment with the corrected suggestion; `Review.usage.n_retries == 1`
 
-### Requirement: IssueHeaderDistribution metric
+### Requirement: issue_header distribution is a derived stat in render_summary (NOT an EvalMetric)
 
-The framework SHALL ship `IssueHeaderDistribution` as a default metric. Returns a dict aggregate of how many peer comments fall under each `issue_header` value across the dataset. Useful for understanding what categories of issues peer flags vs misses.
+Per adversarial review 5.5, the distribution of `issue_header` values across peer comments is INFORMATIONAL — it doesn't gate any decision, doesn't have a value field, and doesn't fit the `EvalMetric` shape. The `render_summary` function SHALL derive this distribution from `per_sample` data on-the-fly and render it as a footer line in the report; it is NOT a separate `EvalMetric` class.
 
-#### Scenario: Distribution reported
+#### Scenario: Distribution rendered as footer
 
-- **WHEN** EvalRunner runs over 10 samples and peer produces 25 comments total — 8 with `issue_header="Possible Bug"`, 12 with "Style Nit", 5 with "Performance"
-- **THEN** `metric_values["issue_header_distribution"]` is None but `metric_details["issue_header_distribution"]` contains `{"Possible Bug": 8, "Style Nit": 12, "Performance": 5, "(none)": 0}`
+- **WHEN** `render_summary(report)` is called on a report where peer produced 25 comments — 8 with `issue_header="Possible Bug"`, 12 with "Style Nit", 5 with "Performance", 0 without
+- **THEN** the rendered summary's footer includes a line like `Issue headers: Possible Bug=8, Style Nit=12, Performance=5`
 
 ### Requirement: SuggestionRate added to default metric set
 

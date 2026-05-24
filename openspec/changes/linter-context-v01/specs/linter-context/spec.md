@@ -1,18 +1,19 @@
 ## ADDED Requirements
 
-### Requirement: Linter Protocol with two default Python implementations
+### Requirement: Linter Protocol with one default Python implementation
 
-The framework SHALL define a `Linter` Protocol with `lint(repo_path: Path, target_files: list[str]) -> list[LinterFinding]` and provide two default implementations: `RuffLinter` and `MypyLinter`. Both SHALL shell out to their respective CLI, parse output, project into `LinterFinding` records.
+The framework SHALL define a `Linter` Protocol with `lint(repo_path: Path, target_files: list[str]) -> list[LinterFinding]` and provide ONE default implementation: `RuffLinter`. It SHALL shell out to the `ruff` CLI, parse JSON output, project into `LinterFinding` records. A second example impl (`MypyLinter`) ships in `examples/mypy_linter.py` (NOT in the default-shipped path) per adversarial review 5.3 — mypy needs per-project config to be useful and shouldn't be a silent default.
 
 #### Scenario: Ruff produces findings for modified files
 
 - **WHEN** `RuffLinter().lint(repo_path, ["src/foo.py"])` is called and ruff finds two issues (one `E501 line too long`, one `F401 unused import`)
 - **THEN** the returned list contains two `LinterFinding` records with `linter="ruff"`, the correct `rule_id`, `path`, `line`, `severity` (normalized), and message
 
-#### Scenario: Mypy produces findings for modified files
+#### Scenario: Example MypyLinter (in examples/, not default)
 
+- **GIVEN** the user has copied `examples/mypy_linter.py` into their project and configured it for their codebase
 - **WHEN** `MypyLinter().lint(repo_path, ["src/foo.py"])` is called and mypy reports one type error
-- **THEN** the returned list contains a `LinterFinding` with `linter="mypy"`, the error code, path/line/column, `severity="important"`, and the type-error message
+- **THEN** the returned list contains a `LinterFinding` with `linter="mypy"`, the error code, path/line/column, `severity="important"`, and the type-error message — and this only works because the user has set up mypy's project config correctly
 
 #### Scenario: Custom Linter satisfies Protocol
 
@@ -116,9 +117,11 @@ The `format_prompt(context, codebase_context)` helper SHALL render a `## LINTER 
 - **WHEN** `codebase_context.linter_findings` is empty
 - **THEN** the rendered prompt does NOT contain a `## LINTER FINDINGS` section
 
-### Requirement: Config integration for enabled linters
+### Requirement: PeerDeps.linters is the single source of truth for active linters
 
-`.peer.yaml` SHALL accept a `linters:` top-level section that lists which linters are enabled and per-linter overrides (severity_map, etc.). When loaded by `Agent`, the configured linters are passed into `gather_codebase_context`.
+Per adversarial review 3.4 — `PeerDeps.linters` SHALL be the SOLE source of truth for which linters run. `.peer.yaml`'s `linters:` section is a HELPER that, when an Agent auto-loads config (per peer-config-v01), populates `_default_deps.linters` with the resolved instances. Users passing `PeerDeps(linters=[...])` explicitly SHALL always bypass config-derived linters entirely. There SHALL NOT be a separate `PeerConfig.enabled_linters()` accessor that returns linters independently of `PeerDeps.linters`.
+
+`.peer.yaml` SHALL accept a `linters:` top-level section that lists which linters are enabled and per-linter overrides (severity_map, etc.). The resolver builds a `list[Linter]` of instances and assigns to `_default_deps.linters`.
 
 #### Scenario: Linters configured in .peer.yaml
 

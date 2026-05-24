@@ -13,7 +13,9 @@ But the deepest insight is from their LLM-as-judge guide:
 
 > "If you could write a single evaluator rubric that perfectly captured your requirements across all cases, you'd just incorporate that rubric into your agent's instructions."
 
-This reframes peer's eval entirely. Three categories of measurement: (1) things the agent can self-check (encode in prompt), (2) things the agent can't self-check (needs ground truth — current eval's territory), and (3) meta-judgment (is the rationale grounded? is the comment substantive?). **peer is missing category 3 entirely.** Adding it via a new `RationaleGrounding` LLMJudge would have caught the hallucinated-line-number issue in PR 7677 directly.
+This reframes peer's eval entirely. Three categories of measurement: (1) things the agent can self-check (encode in prompt), (2) things the agent can't self-check (needs ground truth — current eval's territory), and (3) meta-judgment (is the rationale grounded? is the comment substantive?). **peer is missing category 3 entirely.** Adding it via a new `RationaleGrounding` LLMJudge would let users measure whether their reviewer's rationales actually cite real code — a class of failure that the existing metrics cannot detect.
+
+**Honest note on motivation:** an earlier draft of this proposal cited "the hallucinated-line-number issue in PR 7677" as the motivating example. On re-reading `data/eval_runs/diagnosis_reference_v1.md`, that case turned out to be a misremembering — peer correctly cited line 432 with the `in`/`==` reasoning. The v1 reference dataset shows ~0% hallucinated rationale across 30 peer comments. So `RationaleGrounding` ships as an OPT-IN metric (default off in the default metric set); users with reviewer configurations more prone to hallucination (weaker models, different prompts, larger context) can enable it. Default-on would be ~$0.09 of Haiku calls per 30-PR run for a metric that may never fire on a well-behaved reviewer.
 
 This change refactors peer's eval framework to adopt the patterns + adds the missing meta-judgment metric, without depending on `pydantic-evals` itself.
 
@@ -43,10 +45,10 @@ This change refactors peer's eval framework to adopt the patterns + adds the mis
 - Per-sample reviewer + judge calls run in parallel via `asyncio.gather` with a semaphore.
 - Configurable `concurrency` keyword on `EvalRunner.__init__` (default 5).
 
-### pass_rate aggregate
+### pass_rate aggregate (deferred to a follow-on)
 
-- `EvalSummary.pass_rate: Optional[float]` reports the fraction of samples that passed all boolean assertions across all evaluators.
-- Top-level field; rendered in CLI summary.
+- ~~`EvalSummary.pass_rate: Optional[float]` reports the fraction of samples that passed all boolean assertions across all evaluators.~~
+- **Removed from eval-v02 scope.** All default metrics in eval-metrics-v01 + this change return float (DetectionRate, CommentsPerPR, RationaleGrounding) or dict (PrecisionPerSeverity). None return bool. `pass_rate` would always be `None` → noise in the report. When/if peer ships a boolean default metric (e.g., a "well-formed output" check), `pass_rate` can be added in that change's scope.
 
 ### Layered eval
 

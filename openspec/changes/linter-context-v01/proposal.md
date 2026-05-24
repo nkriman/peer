@@ -7,7 +7,7 @@ The cost is low: ruff and mypy run in seconds, are widely installed, and produce
 ## What Changes
 
 - Add `Linter` Protocol with `lint(repo_path: Path, target_files: list[str]) -> list[LinterFinding]`.
-- Ship two default implementations: `RuffLinter` (general Python linting) and `MypyLinter` (type checking). Both shell out to the tool when on `PATH`; degrade gracefully when absent.
+- Ship `RuffLinter` (general Python linting) as the default implementation; shells out to the tool when on `PATH`; degrades gracefully when absent. **MypyLinter is NOT shipped as a default** — per adversarial review 5.3, mypy requires per-project config (`mypy.ini`, `python_version`, `mypy --install-types`, etc.) to give useful output, and a default-shipped MypyLinter that silently produces noise (or worse, false negatives because deps aren't installed) is a footgun. An `examples/mypy_linter.py` ships the implementation pattern; users who want mypy integration adapt it to their project.
 - Extend `CodebaseContext` to include a `linter_findings: list[LinterFinding]` field, populated per modified Python file by the configured Linters.
 - Update `gather_codebase_context` to run the configured linters on the modified Python files.
 - Extend the prompt formatter to include a labeled `## LINTER FINDINGS` section so the agent sees the linter output explicitly.

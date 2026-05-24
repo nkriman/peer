@@ -46,10 +46,11 @@ class RunContext(BaseModel, Generic[T]):
     deps: T
     pr_url: str
     attempt: int = 0           # retry attempt (0-indexed)
-    metadata: dict = Field(default_factory=dict)
 
     model_config = ConfigDict(arbitrary_types_allowed=True)
 ```
+
+**Dropped from this version:** the `metadata: dict` escape hatch (per adversarial-review item 5.4). A `dict` field defeats the type-safety pitch RunContext exists to deliver. If users need adaptive per-attempt data, they should subclass PeerDeps or carry a typed Pydantic model on their custom deps. Re-introduce as a typed `attempt_metadata: AttemptMetadata` field if a real use case emerges.
 
 Generic over `T` so type checkers see `RunContext[PeerDeps]` correctly.
 
@@ -64,9 +65,8 @@ class Agent(Generic[T]):
         model: str = "anthropic:claude-sonnet-4-6",
         *,
         deps_type: Type[T] = PeerDeps,         # type-only; for type checkers
-        system_prompt: Optional[str] = None,    # static prompt (back-compat)
-        instructions: Optional[str] = None,     # regenerated per-run (Pydantic-AI pattern)
-        retries: dict = field(default_factory=lambda: {"output": 1}),
+        system_prompt: Optional[str] = None,    # full prompt override
+        retries: dict = field(default_factory=lambda: {"output": 0}),  # opt-in retries
         capture_messages: bool = False,
         # Legacy back-compat kwargs (emit DeprecationWarning, fold into PeerDeps):
         system_prompt_file: Optional[Path] = None,
@@ -76,6 +76,10 @@ class Agent(Generic[T]):
         config_file: Optional[Path] = None,
     ): ...
 ```
+
+**Removed from this version:** the `instructions: Optional[str]` parameter (per adversarial-review item 5.2). peer has no multi-turn message-history concept that would distinguish "static prompt" from "regenerated per-run" — adding two parallel knobs that do the same thing creates confusion. Re-introduce when/if peer adds multi-turn agent flows.
+
+**Default retries=`{"output": 0}` (opt-in)** per adversarial-review item 2.2. The v1 reference diagnosis shows validation drops are not a dominant failure mode; retries would add 30–50% LLM cost for a class of fixes that may not exist on well-calibrated reviewers. Users who see validation drops in their own data set `retries={"output": 1}` explicitly.
 
 The constructor accepts the model + the type of deps it expects. Behavior knobs (retries, capture_messages) are kwargs. Capability-carrying fields (config, linters, conventions, classifier, ...) move into PeerDeps and are passed at run-time.
 
@@ -208,6 +212,8 @@ Agent(model="gpt-4o")              # warns: use 'openai:gpt-4o'
 `_parse_model_id(s) -> tuple[str, str]` returns `(provider, model_id)`. Bare names get the legacy shim — looks at the prefix and infers (`claude*` → anthropic, `gpt*`/`o[1-9]` → openai). `UnknownModelError` for anything that doesn't match.
 
 **Dispatch:** `_select_reviewer(provider, model_id, ...)` replaces the current `if model.startswith("claude"): ...` chain.
+
+**Canonical `Reviewer.model` form:** Reviewer instances SHALL store the FULL `provider:model_id` string as their `.model` attribute (e.g., `self.model = "anthropic:claude-sonnet-4-6"`, not bare `"claude-sonnet-4-6"`). `_infer_agent_config(reviewer)` in `eval/runner.py` reads this as-is and writes it into `EvalReport.agent_config.model` — every saved report carries the canonical provider:model string. Pre-v01 reports with bare model names load via `from_json` with a one-time deprecation log; A/B diffs across the boundary normalize both sides to canonical via `_canonicalize_model(s)` before comparison.
 
 ### 11. Reviewer Protocol gains an optional `ctx: RunContext` parameter
 

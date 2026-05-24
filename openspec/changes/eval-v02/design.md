@@ -169,7 +169,7 @@ Runs once per peer comment (not per sample). Reports mean grounding score across
 
 - `--concurrency N` (default 5)
 - `--metrics FILE` (Python module providing custom metrics)
-- `--with-rationale-grounding/--no-rationale-grounding` (default on)
+- `--with-rationale-grounding` (default OFF — opt-in; metric is expensive and the v1 reference dataset shows ~0% hallucination, so it's not worth running by default. Users with weaker reviewer models / less constrained prompts should opt in.)
 
 ## Risks / Trade-offs
 

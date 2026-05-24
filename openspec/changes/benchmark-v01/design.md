@@ -21,6 +21,33 @@ We piggyback on the published Macroscope dataset rather than building our own. T
 
 ## Decisions
 
+### 0. Unit of review + line-number coordinate system (PREREQUISITE)
+
+Before the rest of the design holds, the benchmark must nail down two coordinate-system questions the original v1 spec left open:
+
+**Q1: What does peer review for a bug?**
+- The PR that *introduced* the bug (so peer "should have caught it pre-merge")?
+- The commit that contains the bug (post-mortem review)?
+- A synthetic PR derived from the bug's commit?
+
+**Decision:** for Macroscope's dataset, each `BugSample` carries `pr_url` (the introducing PR, where known) AND `commit_sha` (the buggy commit). Peer reviews `pr_url` when present; falls back to a synthetic PR from `commit_sha` (using `gh api compare/<parent>...<commit>` to produce a diff that `Agent.run` can consume). Samples lacking both `pr_url` and a valid parent commit are SKIPPED from the run with an explicit "skipped: no reviewable diff" entry in the per-bug breakdown.
+
+**Q2: How do `BugLocation.line` and `peer_comment.line` line up?**
+
+`BugLocation.start_line` / `end_line` are line numbers in the FILE at the BUGGY COMMIT. `peer_comment.line` is the new-file line number in the PR DIFF that peer reviewed. For the same logical bug, these may differ if the PR's diff has unrelated changes above the bug location.
+
+**Decision:** the matching uses TWO line-number maps:
+1. For comments on files that were modified in the PR diff: line numbers map directly (PR's new-file line = file-at-PR-head line).
+2. For comments referencing lines OUTSIDE the PR diff (rare for peer, common for benchmarks): SKIP the match — peer cannot "catch" a bug it never saw in the diff.
+
+`BugLocation.line` numbers are translated from "buggy commit" to "PR head" via `git blame --reverse` only if a PR-context exists. Otherwise they're assumed to be in the synthetic PR's diff coordinates (which we just constructed).
+
+`BugLocation` schema extended (vs the v1 spec): `start_line`, `end_line`, AND `line_coordinate_system: Literal["bug_commit", "pr_head", "synthetic"]` so the runner knows what frame each location is in.
+
+**Decision:** for the v1 Macroscope vendoring, ALL `BugLocation`s are tagged `line_coordinate_system="bug_commit"`; the loader translates to `pr_head` when peer reviews the PR introducing the bug, or uses them as-is when the run is on a synthetic PR derived from the bug commit. Documented in `MACROSCOPE_PROVENANCE.md`.
+
+If a particular bug cannot be reliably translated (no PR, no parent commit), it's SKIPPED from the run with an explicit reason — better to exclude than to falsely report "missed".
+
 ### 1. Use the Macroscope MIT-licensed dataset as the default
 
 We vendor a snapshot of `github.com/vlad-ko/pr-review-bench` into `dataset/benchmark/macroscope_v1.jsonl`. Provenance file (`dataset/benchmark/MACROSCOPE_PROVENANCE.md`) records: upstream commit SHA, fetch date, license (MIT), schema mapping notes.

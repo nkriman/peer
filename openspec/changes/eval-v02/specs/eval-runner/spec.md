@@ -66,19 +66,14 @@ The framework SHALL provide `peer.eval.LLMJudge` as a configurable `Evaluator` d
 - **WHEN** existing call to `judge_match(peer, human, client=None)` is made
 - **THEN** it returns a bool identical to prior behavior (wrapper around `LLMJudge(rubric="Same issue?")`)
 
-### Requirement: pass_rate is a top-level summary
+### Requirement: pass_rate is NOT introduced by eval-v02
 
-`EvalSummary` SHALL gain `pass_rate: Optional[float]`. Computed as the fraction of samples where all boolean-returning evaluators returned `True`. None if no boolean evaluators exist.
+Per adversarial review 5.1 — `pass_rate` SHALL NOT be added to `EvalSummary` in this change. All default metrics return float or dict, so `pass_rate` would always be `None`. The framework MUST defer introducing this field until a change ships a boolean default metric whose pass/fail aggregate is meaningful.
 
-#### Scenario: Pass rate computed when boolean evaluators exist
+#### Scenario: No pass_rate field on EvalSummary
 
-- **WHEN** a dataset has 10 samples and 7 of them pass all boolean assertions across all evaluators
-- **THEN** `report.summary.pass_rate == 0.7`
-
-#### Scenario: Pass rate is None when no boolean evaluators
-
-- **WHEN** no evaluator returns a bool (default float-only metrics, e.g. detection_rate + comments_per_pr)
-- **THEN** `report.summary.pass_rate is None`
+- **WHEN** an `EvalReport` is constructed
+- **THEN** the EvalSummary does NOT have a `pass_rate` field — it can be added in a future change without breaking schema compat (additive field)
 
 ### Requirement: Layered eval via priority + SkipLater
 
@@ -95,14 +90,19 @@ Each `EvalMetric` SHALL expose `priority: int = 0`. EvalRunner SHALL run metrics
 - **WHEN** a priority-0 metric raises `SkipLater("output malformed")` for a sample
 - **THEN** all higher-priority metrics for that sample are skipped; their absence is recorded in `sample_result.skipped_metrics`; INFO log "skipped N metrics due to SkipLater from <metric>: output malformed"
 
-### Requirement: RationaleGrounding default metric
+### Requirement: RationaleGrounding metric (opt-in)
 
-The framework SHALL ship `peer.eval.RationaleGrounding` as a default metric (an `LLMJudge` subclass with a specific rubric). It SHALL be included in the default metric set after `PrecisionPerSeverity`. The rubric checks whether each peer Comment's rationale accurately references the code it cites (line numbers, function names, "consistent with X" claims). Returns a per-comment dict `{score: 0..1, reason: str}`, aggregated to a per-sample mean score.
+The framework SHALL ship `peer.eval.RationaleGrounding` as an `LLMJudge` subclass with a specific rubric. It SHALL be available for users to opt into but is NOT in the default metric set (cost: ~$0.09/30-PR-run that may not catch anything on well-calibrated reviewers — see eval-v02 proposal.md "Honest note on motivation"). The rubric checks whether each peer Comment's rationale accurately references the code it cites. Returns a per-comment dict `{score: 0..1, reason: str}`, aggregated to a per-sample mean score.
 
-#### Scenario: RationaleGrounding in defaults
+#### Scenario: RationaleGrounding NOT in defaults
 
 - **WHEN** `EvalRunner(reviewer, dataset).run()` is called with no `metrics=` override
-- **THEN** `report.summary.metric_values` includes the key `"rationale_grounding"`
+- **THEN** `report.summary.metric_values` does NOT contain the key `"rationale_grounding"` — users must opt in by passing `metrics=[..., RationaleGrounding(), ...]` or via `peer eval --with-rationale-grounding`
+
+#### Scenario: RationaleGrounding opt-in via CLI
+
+- **WHEN** `peer eval --with-rationale-grounding --dataset ...` is invoked
+- **THEN** the default metric list is extended with `RationaleGrounding()` and the resulting report includes `rationale_grounding` aggregate
 
 #### Scenario: RationaleGrounding penalizes hallucinated citation
 
@@ -144,6 +144,28 @@ The framework SHALL provide a `MetricSpec` Pydantic model with `class_name: str`
 - **THEN** load raises `InvalidGoldSample` with a clear message naming the unresolvable class
 
 ## ADDED Requirements
+
+### Requirement: EvalMetric.score signature back-compat
+
+The existing `EvalMetric.score(self, sample, review, client: Optional[anthropic.Anthropic] = None) -> MetricResult` signature SHALL continue to work in `eval-v02` via introspection. The Runner SHALL inspect the metric's `score` signature: if it accepts `client=`, the legacy Anthropic client is passed; if it accepts `ctx=`, a `RunContext` is passed; metrics that accept neither receive the call without optional params. NEW metrics SHOULD prefer `ctx=` (typed access to deps); legacy metrics keep working unchanged.
+
+#### Scenario: Legacy metric with `client=` keyword still runs
+
+- **GIVEN** a custom `LegacyMetric` whose `score(self, sample, review, client=None)` matches the pre-v02 signature
+- **WHEN** the Runner invokes `LegacyMetric().score(...)` during a run
+- **THEN** the runner inspects the signature, sees `client` parameter, and passes the shared Anthropic client; no `ctx` is passed
+
+#### Scenario: New metric with `ctx=` keyword
+
+- **GIVEN** a custom `NewMetric` whose `score(self, sample, review, ctx=None)` uses the new signature
+- **WHEN** the Runner invokes `NewMetric().score(...)`
+- **THEN** the runner passes a `RunContext` with the sample's deps; no `client` is passed
+
+#### Scenario: Bare-signature metric
+
+- **GIVEN** a metric whose `score(self, sample, review)` accepts neither
+- **WHEN** the Runner invokes it
+- **THEN** the call succeeds with only sample + review; no client or ctx parameter is passed
 
 ### Requirement: AggregateKind drives report-level aggregation
 
