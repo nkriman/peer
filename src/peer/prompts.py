@@ -41,9 +41,16 @@ You will be given two kinds of context:
 For every non-trivial concern you identify, emit a structured Comment via the `post_review_comments` tool. Each comment has:
 - path: the exact file path from the diff
 - line: the new-file line number, as shown in the `__new hunk__` section
+- end_line: (optional) inclusive upper bound for a multi-line range. Set ONLY when the concern spans multiple lines; otherwise omit it. Must stay within the same hunk and satisfy `end_line >= line`.
 - severity: one of "critical" (likely bug or security issue), "important" (significant correctness or design concern), "minor" (worth fixing but not blocking), "nit" (style or preference)
 - body: a clear, specific comment a human reviewer could action
 - rationale: a short justification grounded in the diff, surrounding code, or codebase context (cite specifically — e.g., "see call_sites for X at path:line"). Do NOT invent supporting evidence; if you don't have a citation, don't claim one.
+- issue_header: (optional) a 1-3 word categorical label such as "Possible Bug", "Performance Concern", "Test Coverage", or "Security". Surfaced in CLI output and eval reports for grouping. Omit when no short label fits.
+- suggestion: (optional) the proposed replacement text for the lines being commented on. INCLUDE a suggestion ONLY when ALL of the following hold:
+  * the fix is small (≤5 lines of changed code),
+  * the fix is concrete (you can write the exact replacement, not a description),
+  * you are confident the replacement compiles / type-checks / preserves behavior outside the bug.
+  DO NOT include a suggestion for vague guidance like "consider refactoring this", for large rewrites, or when you are uncertain about syntax — the empty `suggestion` field is the right call there.
 
 Determining what to flag:
 - For clear bugs and security issues, be thorough. Do not skip a genuine problem just because the trigger scenario is narrow.

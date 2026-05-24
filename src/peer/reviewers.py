@@ -35,12 +35,39 @@ _COMMENT_TOOL = {
                     "properties": {
                         "path": {"type": "string"},
                         "line": {"type": ["integer", "null"]},
+                        "end_line": {
+                            "type": ["integer", "null"],
+                            "description": (
+                                "Optional upper bound for a multi-line comment "
+                                "range. When set, must satisfy end_line >= line "
+                                "and stay within the same hunk."
+                            ),
+                        },
                         "severity": {
                             "type": "string",
                             "enum": ["critical", "important", "minor", "nit"],
                         },
                         "body": {"type": "string"},
                         "rationale": {"type": "string"},
+                        "issue_header": {
+                            "type": ["string", "null"],
+                            "description": (
+                                "Short 1-3 word categorical label (e.g. "
+                                "'Possible Bug', 'Performance Concern', "
+                                "'Test Coverage'). Surfaced in CLI + reports."
+                            ),
+                        },
+                        "suggestion": {
+                            "type": ["string", "null"],
+                            "description": (
+                                "Optional replacement text for the lines being "
+                                "commented on. Rendered as a GitHub "
+                                "```suggestion``` block. Include ONLY when the "
+                                "fix is small (<=5 lines), concrete, and "
+                                "high-confidence — never for 'consider "
+                                "refactoring' style nudges."
+                            ),
+                        },
                     },
                     "required": ["path", "severity", "body", "rationale"],
                 },

@@ -12,6 +12,10 @@ import logging
 import sys
 from datetime import datetime
 from pathlib import Path
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from .types import Review
 
 
 def _make_parser() -> argparse.ArgumentParser:
@@ -138,36 +142,55 @@ def _make_parser() -> argparse.ArgumentParser:
 # ---------------------------------------------------------------------------
 
 
-def _cmd_review(args: argparse.Namespace) -> int:
-    from .agent import Agent
-
-    agent = Agent(model=args.model, system_prompt_file=args.system_prompt_file)
-    review = agent.review(args.pr_url)
-
-    print(f"\n=== Review for {args.pr_url} ===")
-    print(
+def _format_review_output(review: Review, pr_url: str) -> str:
+    """Pure formatter for `peer review` output — returns the full string the
+    CLI prints. Extracted so BDD scenarios can assert on rendering without
+    spawning a subprocess.
+    """
+    lines: list[str] = []
+    lines.append(f"\n=== Review for {pr_url} ===")
+    lines.append(
         f"Model: {review.usage.get('model')}  |  "
         f"in={review.usage.get('input_tokens')}  out={review.usage.get('output_tokens')}"
     )
 
     if not review.comments:
-        print(f"\nNo comments. Reason: {review.reason or 'n/a'}")
-        return 0
+        lines.append(f"\nNo comments. Reason: {review.reason or 'n/a'}")
+        return "\n".join(lines)
 
     counts: dict[str, int] = {}
     for c in review.comments:
         counts[c.severity] = counts.get(c.severity, 0) + 1
     summary = ", ".join(f"{k}={v}" for k, v in counts.items())
-    print(f"\n{len(review.comments)} comment(s)  ({summary})")
+    lines.append(f"\n{len(review.comments)} comment(s)  ({summary})")
 
     for severity in ("critical", "important", "minor", "nit"):
         for c in review.comments:
             if c.severity != severity:
                 continue
-            line = f":{c.line}" if c.line is not None else ""
-            print(f"\n[{c.severity.upper()}] {c.path}{line}")
-            print(f"  {c.body}")
-            print(f"  -- {c.rationale}")
+            anchor = f":{c.line}" if c.line is not None else ""
+            if getattr(c, "end_line", None) is not None and c.end_line != c.line:
+                anchor = f":{c.line}-{c.end_line}"
+            header_prefix = ""
+            if getattr(c, "issue_header", None):
+                header_prefix = f"{c.issue_header} · "
+            lines.append(f"\n[{c.severity.upper()}] {header_prefix}{c.path}{anchor}")
+            lines.append(f"  {c.body}")
+            lines.append(f"  -- {c.rationale}")
+            if c.suggestion:
+                lines.append("  --- suggested change ---")
+                for sline in c.suggestion.splitlines():
+                    lines.append(f"  {sline}")
+                lines.append("  -------------------------")
+    return "\n".join(lines)
+
+
+def _cmd_review(args: argparse.Namespace) -> int:
+    from .agent import Agent
+
+    agent = Agent(model=args.model, system_prompt_file=args.system_prompt_file)
+    review = agent.review(args.pr_url)
+    print(_format_review_output(review, args.pr_url))
     return 0
 
 

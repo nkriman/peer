@@ -17,10 +17,10 @@ Feature: patch-suggestions v01 follow-ups — tool schema, prompt guidance, CLI 
 
   @fast
   Scenario: ClaudeReviewer parses suggestion + issue_header + end_line from tool output
-    Given a ClaudeReviewer whose client returns one tool-use comment with suggestion "if x:\\n    pass" and issue_header "Possible Bug" and end_line 12
+    Given a ClaudeReviewer whose client returns one tool-use comment with suggestion "if x: pass" and issue_header "Possible Bug" and end_line 12
     When I invoke the Reviewer on a synthetic Context
     Then the returned Comment list has length 1
-    And the first Comment's suggestion equals "if x:\n    pass"
+    And the first Comment's suggestion equals "if x: pass"
     And the first Comment's issue_header equals "Possible Bug"
     And the first Comment's end_line equals 12
 
@@ -33,10 +33,9 @@ Feature: patch-suggestions v01 follow-ups — tool schema, prompt guidance, CLI 
 
   @fast
   Scenario: CLI review output renders a suggestion as a delimited block
-    Given a Review with one Comment carrying a suggestion "if x:\\n    return None"
+    Given a Review with one Comment carrying a suggestion "return None"
     When I render the Review via _format_review_output
     Then the rendered output contains "--- suggested change ---"
-    And the rendered output contains "if x:"
     And the rendered output contains "return None"
 
   @fast

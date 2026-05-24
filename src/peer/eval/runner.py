@@ -30,6 +30,7 @@ from .metrics import (
     NoveltyRate,
     PrecisionPerSeverity,
     SeverityCalibration,
+    SuggestionRate,
 )
 from .pricing import cost_unavailable_reason, estimate_cost
 from .types import (
@@ -176,6 +177,7 @@ class EvalRunner:
                 MeanPerPRRecall(),
                 NoveltyRate(),
                 SeverityCalibration(),
+                SuggestionRate(),
             ]
         self.metrics = metrics
         self.dataset_path = dataset_path or "in-memory"
