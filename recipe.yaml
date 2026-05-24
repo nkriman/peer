@@ -5,7 +5,7 @@ max_tokens: 8192
 model: anthropic:claude-sonnet-4-6
 post_processing_drop_paths: []
 post_processing_max_comments_per_pr: null
-post_processing_severity_floor: null
+post_processing_severity_floor: minor
 retries:
   output: 1
 reviewer_dotted_path: null
@@ -14,4 +14,3 @@ system_prompt_path: prompts/default_system_prompt.md
 team_conventions_path: null
 temperature: 0.0
 use_claude_code: true
-

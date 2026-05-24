@@ -153,6 +153,9 @@ class ClaudeCodeShimClient:
         binary = shutil.which(self.claude_bin) or self.claude_bin
         user_prompt = _flatten_messages(messages)
 
+        # --disallowedTools uses argparse nargs='*' which would swallow the
+        # prompt positional arg. The `=` form pins the value to one token,
+        # so the prompt argv at the end is preserved.
         argv: list[str] = [
             binary,
             "--print",
@@ -161,15 +164,7 @@ class ClaudeCodeShimClient:
             "--model",
             model,
             "--disable-slash-commands",
-            "--disallowedTools",
-            "Bash",
-            "Edit",
-            "Write",
-            "Read",
-            "Grep",
-            "Glob",
-            "WebFetch",
-            "WebSearch",
+            "--disallowedTools=Bash,Edit,Write,Read,Grep,Glob,WebFetch,WebSearch",
         ]
         if system:
             argv.extend(["--system-prompt", system])

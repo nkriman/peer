@@ -370,15 +370,9 @@ class ClaudeCodeCLIReviewer:
             "--system-prompt",
             self.system_prompt,
             "--disable-slash-commands",
-            "--disallowedTools",
-            "Bash",
-            "Edit",
-            "Write",
-            "Read",
-            "Grep",
-            "Glob",
-            "WebFetch",
-            "WebSearch",
+            # `=` form pins value to one token (nargs='*' would otherwise
+            # swallow the prompt positional arg). See claude_code_client.py.
+            "--disallowedTools=Bash,Edit,Write,Read,Grep,Glob,WebFetch,WebSearch",
             "--json-schema",
             json.dumps(_CLI_OUTPUT_SCHEMA),
             user_msg,

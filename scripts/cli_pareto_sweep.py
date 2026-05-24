@@ -10,7 +10,7 @@ cost_usd ↓) and write a Markdown report.
 Usage:
     unset ANTHROPIC_API_KEY  # proves zero API spend
     uv run python3 scripts/cli_pareto_sweep.py [--max-iters N]
-"""
+"""  # noqa: RUF002
 
 from __future__ import annotations
 
@@ -37,7 +37,7 @@ DATASET_PATH = ROOT / "dataset/reference/django_pydantic_v2_hard.jsonl"
 LEADERBOARD_PATH = ROOT / "data/eval_runs/leaderboard.tsv"
 FRONTIER_OUT = ROOT / "data/autoresearch/may24/pareto_frontier.md"
 
-# Sweep grid. Cardinality: temp × sev_floor × max_comments = 5 × 4 × 3 = 60.
+# Sweep grid. Cardinality: temp × sev_floor × max_comments = 5 × 4 × 3 = 60.  # noqa: RUF003
 # Take the first N depending on --max-iters.
 _TEMPERATURES = [0.0, 0.2, 0.4, 0.6, 0.8]
 _SEVERITY_FLOORS: list[str | None] = [None, "nit", "minor", "important"]
@@ -50,9 +50,7 @@ def _grid() -> list[tuple[float, str | None, int | None]]:
     return list(product(_TEMPERATURES, _SEVERITY_FLOORS, _MAX_COMMENTS))
 
 
-def _mutate_recipe(
-    temperature: float, severity_floor: str | None, max_comments: int | None
-) -> str:
+def _mutate_recipe(temperature: float, severity_floor: str | None, max_comments: int | None) -> str:
     """Mutate recipe.yaml to the next sweep point. Returns a one-line description."""
     recipe = Recipe.from_file(RECIPE_PATH)
     recipe.temperature = temperature
@@ -60,9 +58,7 @@ def _mutate_recipe(
     recipe.post_processing_severity_floor = severity_floor  # type: ignore[assignment]
     recipe.post_processing_max_comments_per_pr = max_comments
     RECIPE_PATH.write_text(recipe.to_yaml())
-    return (
-        f"sweep[T={temperature},sev_floor={severity_floor},max_comments={max_comments}]"
-    )
+    return f"sweep[T={temperature},sev_floor={severity_floor},max_comments={max_comments}]"
 
 
 def _compute_pareto(rows: list[dict]) -> list[dict]:
@@ -142,8 +138,10 @@ def _write_frontier_report(rows: list[dict], frontier: list[dict]) -> None:
     lines: list[str] = []
     lines.append("# Pareto frontier — CLI-only sweep")
     lines.append("")
-    lines.append("All metrics are from runs through the `claude` CLI on `dataset/reference/django_pydantic_v2_hard.jsonl`.")
-    lines.append(f"Cost is Claude Code's *would-be* SDK billing — real API spend was $0.")
+    lines.append(
+        "All metrics are from runs through the `claude` CLI on `dataset/reference/django_pydantic_v2_hard.jsonl`."
+    )
+    lines.append("Cost is Claude Code's *would-be* SDK billing — real API spend was $0.")
     lines.append("")
     lines.append(f"- total rows in TSV: {len(rows)}")
     lines.append(f"- successful rows: {n_ok}")
