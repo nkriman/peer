@@ -1,0 +1,4464 @@
+{
+  "report_schema_version": "1.0",
+  "run_id": "69080b05bb914ef291a125248e8c610d",
+  "timestamp": "2026-05-24T12:38:33.787727Z",
+  "agent_config": {
+    "model": "anthropic:claude-sonnet-4-6",
+    "system_prompt_hash": "09a2f4c1fd7d9487",
+    "reviewer_class": "Agent"
+  },
+  "dataset_path": "in-memory",
+  "dataset_size": 30,
+  "summary": {
+    "metric_values": {
+      "detection_rate": 0.015873015873015872,
+      "comments_per_pr": 1.8,
+      "precision_per_severity": null,
+      "mean_per_pr_recall": 0.0024154589371980675,
+      "novelty_rate": 0.9927536231884058,
+      "severity_calibration": -1.0,
+      "suggestion_rate": 0.25869565217391305
+    },
+    "metric_details": {
+      "detection_rate": {
+        "total_matches": 1,
+        "total_gold": 63,
+        "n_samples_with_gold": 18
+      },
+      "comments_per_pr": {
+        "mean": 1.8,
+        "median": 1.0,
+        "min": 0,
+        "max": 6,
+        "n_samples": 30
+      },
+      "precision_per_severity": {},
+      "mean_per_pr_recall": {
+        "n_samples_with_value": 18,
+        "n_samples_skipped": 12
+      },
+      "novelty_rate": {
+        "n_samples_with_value": 23,
+        "n_samples_skipped": 7
+      },
+      "severity_calibration": {
+        "n_samples_with_value": 1,
+        "n_samples_skipped": 29
+      },
+      "suggestion_rate": {
+        "n_samples_with_value": 23,
+        "n_samples_skipped": 7
+      }
+    },
+    "n_samples_total": 30,
+    "n_samples_succeeded": 30,
+    "n_samples_failed": 0,
+    "cost_usd_total": null,
+    "cost_usd_p50": null,
+    "cost_usd_p95": null,
+    "cost_unavailable_reason": "model 'anthropic:claude-sonnet-4-6' not in pricing table (last updated 2026-05-23)",
+    "latency_seconds_p50": 15.19187491654884,
+    "latency_seconds_p95": 36.695521600043854
+  },
+  "per_sample": [
+    {
+      "pr_url": "https://github.com/pydantic/pydantic/pull/7625",
+      "metrics": {
+        "detection_rate": {
+          "name": "detection_rate",
+          "value": null,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 0
+          },
+          "notes": "no gold defects on this sample"
+        },
+        "comments_per_pr": {
+          "name": "comments_per_pr",
+          "value": 2.0,
+          "per_sample_detail": {
+            "n_comments": 2
+          },
+          "notes": null
+        },
+        "precision_per_severity": {
+          "name": "precision_per_severity",
+          "value": null,
+          "per_sample_detail": {
+            "important": {
+              "precision": 0.0,
+              "n": 1,
+              "matched": 0
+            },
+            "minor": {
+              "precision": 0.0,
+              "n": 1,
+              "matched": 0
+            }
+          },
+          "notes": null
+        },
+        "mean_per_pr_recall": {
+          "name": "mean_per_pr_recall",
+          "value": null,
+          "per_sample_detail": {
+            "matched_pairs": [],
+            "unmatched_gold": []
+          },
+          "notes": "no gold defects on this sample"
+        },
+        "novelty_rate": {
+          "name": "novelty_rate",
+          "value": 1.0,
+          "per_sample_detail": {
+            "unmatched_peer": [
+              {
+                "path": "pydantic/_internal/_generate_schema.py",
+                "line": 948,
+                "end_line": null,
+                "severity": "important",
+                "body": "`to_jsonable_python(field_info.examples)` is called at schema-generation time (eagerly), whereas `to_jsonable_python(json_schema_extra)` is called lazily inside `json_schema_update_func`. This means `examples` is serialized once and reused, which is fine for immutable data, but it also means `examples` is evaluated before the closure captures it. More critically, the filter `{k: v for k, v in json_schema_updates.items() if v is not None}` on line 950 will keep `examples` only if `field_info.examples` is not `None` \u2014 but `to_jsonable_python(None)` returns `None`, so that part is safe. However, `to_jsonable_python([])` returns `[]`, which is falsy but not `None`, so an empty examples list would be correctly included. The real concern: if `field_info.examples` contains objects that are not JSON-serializable by `to_jsonable_python` (e.g., custom types without a `__get_pydantic_serializer__`), the error will be raised at class definition time rather than at schema-generation time, potentially surprising users. This is a minor behavioral change from before (where the raw value was just passed through). Not necessarily wrong, but worth documenting.",
+                "rationale": "Previously `field_info.examples` was passed through as-is; now `to_jsonable_python` is called eagerly at model class body evaluation. Any serialization error will surface at class-definition time rather than at `model_json_schema()` call time.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Possible Bug"
+              },
+              {
+                "path": "tests/test_json_schema.py",
+                "line": 4704,
+                "end_line": 4715,
+                "severity": "minor",
+                "body": "The new test only covers the `Annotated[..., Field(...)]` path (which goes through `_apply_single_annotation_json_schema`). The other changed code path \u2014 `_common_field_schema` (used when `Field(...)` is the default value of a model field, not inside `Annotated`) \u2014 is not tested. A test like `class Cat(BaseModel): toys: List[Toy] = Field(examples=[[Toy(name='mouse')]], json_schema_extra={'special': Toy(name='bird')})` should also be added.",
+                "rationale": "The diff changes two separate code paths: `_common_field_schema` (lines 945\u2013957) and `_apply_single_annotation_json_schema` (lines 1647\u20131661). The test only exercises the `Annotated` form, leaving the plain `Field(...)` form untested.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Test Coverage"
+              }
+            ],
+            "peer_total": 2,
+            "peer_unmatched_count": 2
+          },
+          "notes": null
+        },
+        "severity_calibration": {
+          "name": "severity_calibration",
+          "value": null,
+          "per_sample_detail": {
+            "pairs": [],
+            "confusion": {}
+          },
+          "notes": "no matched pairs to calibrate against"
+        },
+        "suggestion_rate": {
+          "name": "suggestion_rate",
+          "value": 0.0,
+          "per_sample_detail": {
+            "n_with_suggestion": 0,
+            "n_total": 2
+          },
+          "notes": null
+        }
+      },
+      "cost_usd": null,
+      "latency_seconds": 19.747136374935508,
+      "review_summary": {
+        "n_comments": 2,
+        "severity_distribution": {
+          "important": 1,
+          "minor": 1
+        },
+        "usage": {
+          "input_tokens": 11065,
+          "output_tokens": 737,
+          "model": "anthropic:claude-sonnet-4-6",
+          "n_retries_used": 0
+        }
+      },
+      "error": null
+    },
+    {
+      "pr_url": "https://github.com/pydantic/pydantic/pull/7528",
+      "metrics": {
+        "detection_rate": {
+          "name": "detection_rate",
+          "value": null,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 0
+          },
+          "notes": "no gold defects on this sample"
+        },
+        "comments_per_pr": {
+          "name": "comments_per_pr",
+          "value": 2.0,
+          "per_sample_detail": {
+            "n_comments": 2
+          },
+          "notes": null
+        },
+        "precision_per_severity": {
+          "name": "precision_per_severity",
+          "value": null,
+          "per_sample_detail": {
+            "important": {
+              "precision": 0.0,
+              "n": 2,
+              "matched": 0
+            }
+          },
+          "notes": null
+        },
+        "mean_per_pr_recall": {
+          "name": "mean_per_pr_recall",
+          "value": null,
+          "per_sample_detail": {
+            "matched_pairs": [],
+            "unmatched_gold": []
+          },
+          "notes": "no gold defects on this sample"
+        },
+        "novelty_rate": {
+          "name": "novelty_rate",
+          "value": 1.0,
+          "per_sample_detail": {
+            "unmatched_peer": [
+              {
+                "path": "pydantic/_internal/_core_utils.py",
+                "line": 193,
+                "end_line": null,
+                "severity": "important",
+                "body": "Removing `schema.copy()` means the original schema dict is now mutated in-place by the walk. Any caller that passes a schema and expects the original to remain unchanged will silently get a mutated object. The old `.copy()` was a shallow defensive copy that prevented this. If any call site reuses the same schema object after calling `walk(...)`, it will now see the modifications made during the walk.",
+                "rationale": "The old code was `return f(schema.copy(), self._walk)`, which created a shallow copy before passing to `f`. Since `_walk` and the per-schema handlers mutate the dict in place (e.g. `schema['schema'] = ...`, `schema['serialization'] = ...`), removing the copy means the input schema is now mutated. The test in `test_internal.py` does `s = s.copy()` inside the walk callback precisely to handle this, suggesting callers have historically relied on the walker providing isolation \u2014 but now the contract has changed without documentation or updating all callers.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Possible Bug"
+              },
+              {
+                "path": "pydantic/_internal/_core_utils.py",
+                "line": 199,
+                "end_line": null,
+                "severity": "important",
+                "body": "Similarly, removing `ser_schema.copy()` means the serialization schema dict is mutated in-place. The `_handle_ser_schemas` method writes back into `ser_schema['schema']` and `ser_schema['return_schema']`, so calling `walk` on a schema with a serialization sub-schema will now mutate the original `ser_schema` dict.",
+                "rationale": "The old code was `self._handle_ser_schemas(ser_schema.copy(), f)`, which ensured the original serialization schema was not mutated. Without the copy, the original dict passed to `walk` is modified in-place, which is a semantic change that may break callers relying on the original schema being preserved.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Possible Bug"
+              }
+            ],
+            "peer_total": 2,
+            "peer_unmatched_count": 2
+          },
+          "notes": null
+        },
+        "severity_calibration": {
+          "name": "severity_calibration",
+          "value": null,
+          "per_sample_detail": {
+            "pairs": [],
+            "confusion": {}
+          },
+          "notes": "no matched pairs to calibrate against"
+        },
+        "suggestion_rate": {
+          "name": "suggestion_rate",
+          "value": 0.0,
+          "per_sample_detail": {
+            "n_with_suggestion": 0,
+            "n_total": 2
+          },
+          "notes": null
+        }
+      },
+      "cost_usd": null,
+      "latency_seconds": 18.148128083208576,
+      "review_summary": {
+        "n_comments": 2,
+        "severity_distribution": {
+          "important": 2
+        },
+        "usage": {
+          "input_tokens": 9109,
+          "output_tokens": 544,
+          "model": "anthropic:claude-sonnet-4-6",
+          "n_retries_used": 0
+        }
+      },
+      "error": null
+    },
+    {
+      "pr_url": "https://github.com/pydantic/pydantic/pull/7677",
+      "metrics": {
+        "detection_rate": {
+          "name": "detection_rate",
+          "value": 0.0,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 1
+          },
+          "notes": null
+        },
+        "comments_per_pr": {
+          "name": "comments_per_pr",
+          "value": 4.0,
+          "per_sample_detail": {
+            "n_comments": 4
+          },
+          "notes": null
+        },
+        "precision_per_severity": {
+          "name": "precision_per_severity",
+          "value": null,
+          "per_sample_detail": {
+            "critical": {
+              "precision": 0.0,
+              "n": 1,
+              "matched": 0
+            },
+            "minor": {
+              "precision": 0.0,
+              "n": 3,
+              "matched": 0
+            }
+          },
+          "notes": null
+        },
+        "mean_per_pr_recall": {
+          "name": "mean_per_pr_recall",
+          "value": 0.0,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 1,
+            "per_severity": {
+              "critical": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              },
+              "important": {
+                "hit": 0,
+                "miss": 1,
+                "total": 1
+              },
+              "minor": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              },
+              "nit": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              }
+            },
+            "matched_pairs": [],
+            "unmatched_gold": [
+              {
+                "path": "pydantic/mypy.py",
+                "line": 811,
+                "line_range": null,
+                "category": "defect-correctness",
+                "severity": "important",
+                "description": "Reviewer suggests adding a check for whether the root field has a default value; the current logic may not handle the no-default case correctly.",
+                "source": "human_reviewer:dmontagu",
+                "confidence": "high",
+                "original_comment_excerpt": "Might need to check if there's a default, I'm looking more closely.."
+              }
+            ]
+          },
+          "notes": null
+        },
+        "novelty_rate": {
+          "name": "novelty_rate",
+          "value": 1.0,
+          "per_sample_detail": {
+            "unmatched_peer": [
+              {
+                "path": "pydantic/mypy.py",
+                "line": 809,
+                "end_line": 811,
+                "severity": "critical",
+                "body": "`args[0]` is accessed without checking whether `args` is non-empty. If a `RootModel` subclass has no fields at all (e.g. `class Pets1(RootModel[List[str]]): pass`), `get_field_arguments` will return an empty list and `args[0]` will raise an `IndexError`, crashing the mypy plugin for valid user code.",
+                "rationale": "The test module includes `class Pets1(RootModel[List[str]]): pass` which has no fields. When `is_root_model=True` and `fields=[]`, `args` will be empty but the code still tries to index `args[0]`. This would surface as a mypy plugin crash rather than a type error.",
+                "references": null,
+                "suggestion": "            if is_root_model and args:\n                # convert root argument to positional argument\n                args[0].kind = ARG_POS if args[0].kind == ARG_NAMED else ARG_OPT",
+                "issue_header": "Possible Bug"
+              },
+              {
+                "path": "pydantic/mypy.py",
+                "line": 434,
+                "end_line": null,
+                "severity": "minor",
+                "body": "The `is_root_model` check uses `ROOT_MODEL_FULLNAME in base.fullname` (substring match) rather than `base.fullname == ROOT_MODEL_FULLNAME` (exact match). This could incorrectly match a user-defined class whose fully-qualified name happens to contain the string `'pydantic.root_model.RootModel'` as a substring (e.g., `mypkg.pydantic.root_model.RootModel`).",
+                "rationale": "All other similar checks in this file use `==` for fullname comparison (e.g., `base.fullname == BASESETTINGS_FULLNAME` on line 444). Using `in` for substring matching is inconsistent and risks false positives.",
+                "references": null,
+                "suggestion": "        is_root_model = any(base.fullname == ROOT_MODEL_FULLNAME for base in info.mro[:-1])",
+                "issue_header": "Fragile Check"
+              },
+              {
+                "path": "pydantic/mypy.py",
+                "line": 1099,
+                "end_line": null,
+                "severity": "minor",
+                "body": "`error_extra_fields_on_root_model` is typed to accept `CheckerPluginInterface`, but it is called from `collect_fields` where `self._api` is a `SemanticAnalyzerPluginInterface`. These are different interfaces \u2014 the semantic analysis phase uses `SemanticAnalyzerPluginInterface`, not `CheckerPluginInterface`.",
+                "rationale": "The function signature uses `CheckerPluginInterface` (same pattern as `error_from_attributes` and `error_default_and_default_factory_specified`), but those functions are called during type-checking. `collect_fields` is called during the semantic analysis phase via `transform()`, where `self._api` is a `SemanticAnalyzerPluginInterface`. Compare with `error_untyped_fields` which correctly uses `SemanticAnalyzerPluginInterface` and is also called during semantic analysis.",
+                "references": null,
+                "suggestion": "def error_extra_fields_on_root_model(api: SemanticAnalyzerPluginInterface, context: Context) -> None:",
+                "issue_header": "Wrong API Type"
+              },
+              {
+                "path": "tests/mypy/outputs/1.0.1/mypy-plugin_ini/root_models.py",
+                "line": 18,
+                "end_line": 20,
+                "severity": "minor",
+                "body": "The test output file only covers mypy 1.0.1 with `mypy-plugin.ini`. There are no output files for other mypy versions or config variants (e.g., `mypy-plugin-strict.ini`, `pyproject-plugin.toml`). The test case is also only added for `mypy-plugin.ini` in `test_mypy.py`. The behavior of `Pets1`, `Pets2`, and `Pets3` instantiations (which should be error-free) is not explicitly verified in the output \u2014 only the `Pets4` error is captured. Consider adding output entries confirming the no-error cases work correctly for other mypy versions.",
+                "rationale": "The test matrix in `test_mypy.py` adds `root_models.py` only under `mypy-plugin.ini`. Given that this is fixing a mypy plugin behavior regression, coverage across config variants would increase confidence in the fix.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Test Coverage"
+              }
+            ],
+            "peer_total": 4,
+            "peer_unmatched_count": 4
+          },
+          "notes": null
+        },
+        "severity_calibration": {
+          "name": "severity_calibration",
+          "value": null,
+          "per_sample_detail": {
+            "pairs": [],
+            "confusion": {}
+          },
+          "notes": "no matched pairs to calibrate against"
+        },
+        "suggestion_rate": {
+          "name": "suggestion_rate",
+          "value": 0.75,
+          "per_sample_detail": {
+            "n_with_suggestion": 3,
+            "n_total": 4
+          },
+          "notes": null
+        }
+      },
+      "cost_usd": null,
+      "latency_seconds": 29.23971104202792,
+      "review_summary": {
+        "n_comments": 4,
+        "severity_distribution": {
+          "critical": 1,
+          "minor": 3
+        },
+        "usage": {
+          "input_tokens": 14772,
+          "output_tokens": 1201,
+          "model": "anthropic:claude-sonnet-4-6",
+          "n_retries_used": 0
+        }
+      },
+      "error": null
+    },
+    {
+      "pr_url": "https://github.com/pydantic/pydantic/pull/7527",
+      "metrics": {
+        "detection_rate": {
+          "name": "detection_rate",
+          "value": 0.0,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 1
+          },
+          "notes": null
+        },
+        "comments_per_pr": {
+          "name": "comments_per_pr",
+          "value": 2.0,
+          "per_sample_detail": {
+            "n_comments": 2
+          },
+          "notes": null
+        },
+        "precision_per_severity": {
+          "name": "precision_per_severity",
+          "value": null,
+          "per_sample_detail": {
+            "important": {
+              "precision": 0.0,
+              "n": 2,
+              "matched": 0
+            }
+          },
+          "notes": null
+        },
+        "mean_per_pr_recall": {
+          "name": "mean_per_pr_recall",
+          "value": 0.0,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 1,
+            "per_severity": {
+              "critical": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              },
+              "important": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              },
+              "minor": {
+                "hit": 0,
+                "miss": 1,
+                "total": 1
+              },
+              "nit": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              }
+            },
+            "matched_pairs": [],
+            "unmatched_gold": [
+              {
+                "path": "pydantic/_internal/_core_utils.py",
+                "line": 180,
+                "line_range": null,
+                "category": "defect-doc-gap",
+                "severity": "minor",
+                "description": "Reviewer requests an explanatory comment for the winding logic so future readers can follow the motivation.",
+                "source": "human_reviewer:davidhewitt",
+                "confidence": "high",
+                "original_comment_excerpt": "Can you elaborate on the motivation of this change? Maybe needs a comment, it's quite winding logic."
+              }
+            ]
+          },
+          "notes": null
+        },
+        "novelty_rate": {
+          "name": "novelty_rate",
+          "value": 1.0,
+          "per_sample_detail": {
+            "unmatched_peer": [
+              {
+                "path": "pydantic/_internal/_core_utils.py",
+                "line": 120,
+                "end_line": null,
+                "severity": "important",
+                "body": "The cache lookup calls `s['metadata'].get(...)` without checking whether `s['metadata']` is actually a dict (or dict-like). CoreSchema metadata can be any object, and if it's not a dict, this will raise an `AttributeError`. The surrounding code only checks `'metadata' in s`, not the type of the metadata value.",
+                "rationale": "The check at line 119 (`if 'metadata' in s`) only guards that the key exists, but not that its value supports `.get()`. Metadata can be an arbitrary object; if a schema has metadata that isn't a mapping, `s['metadata'].get(_DEFINITIONS_CACHE_METADATA_KEY, None)` will throw.",
+                "references": null,
+                "suggestion": "        if 'metadata' in s and isinstance(s['metadata'], dict):\n            definitions_cache: _DefinitionsState | None = s['metadata'].get(_DEFINITIONS_CACHE_METADATA_KEY, None)\n            if definitions_cache is not None:\n                defs.update(definitions_cache['definitions'])\n                return s",
+                "issue_header": "Possible Bug"
+              },
+              {
+                "path": "pydantic/_internal/_core_utils.py",
+                "line": 122,
+                "end_line": null,
+                "severity": "important",
+                "body": "When the cache is hit, the function returns `s` without adding the current schema's own `ref` (if it has one) to `defs`. If the cached subtree already includes the definitions for all descendant schemas but the schema `s` itself has a `ref`, that ref will be silently omitted from the result.\n\nCompare with the non-cached path at lines 125-127: it always calls `get_ref(s)` and adds `s` itself before recursing. The early-return on cache hit skips this step.",
+                "rationale": "The cached path (lines 119-123) returns early before executing `ref = get_ref(s); if ref: defs[ref] = s` (lines 125-127). If a schema with a `ref` has a cached `_DEFINITIONS_CACHE_METADATA_KEY`, its own `ref` entry is never added to `defs`.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Possible Bug"
+              }
+            ],
+            "peer_total": 2,
+            "peer_unmatched_count": 2
+          },
+          "notes": null
+        },
+        "severity_calibration": {
+          "name": "severity_calibration",
+          "value": null,
+          "per_sample_detail": {
+            "pairs": [],
+            "confusion": {}
+          },
+          "notes": "no matched pairs to calibrate against"
+        },
+        "suggestion_rate": {
+          "name": "suggestion_rate",
+          "value": 0.5,
+          "per_sample_detail": {
+            "n_with_suggestion": 1,
+            "n_total": 2
+          },
+          "notes": null
+        }
+      },
+      "cost_usd": null,
+      "latency_seconds": 16.3152823750861,
+      "review_summary": {
+        "n_comments": 2,
+        "severity_distribution": {
+          "important": 2
+        },
+        "usage": {
+          "input_tokens": 8527,
+          "output_tokens": 606,
+          "model": "anthropic:claude-sonnet-4-6",
+          "n_retries_used": 0
+        }
+      },
+      "error": null
+    },
+    {
+      "pr_url": "https://github.com/pydantic/pydantic/pull/7415",
+      "metrics": {
+        "detection_rate": {
+          "name": "detection_rate",
+          "value": null,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 0
+          },
+          "notes": "no gold defects on this sample"
+        },
+        "comments_per_pr": {
+          "name": "comments_per_pr",
+          "value": 0.0,
+          "per_sample_detail": {
+            "n_comments": 0
+          },
+          "notes": null
+        },
+        "precision_per_severity": {
+          "name": "precision_per_severity",
+          "value": null,
+          "per_sample_detail": {},
+          "notes": "reviewer produced 0 comments on this sample"
+        },
+        "mean_per_pr_recall": {
+          "name": "mean_per_pr_recall",
+          "value": null,
+          "per_sample_detail": {
+            "matched_pairs": [],
+            "unmatched_gold": []
+          },
+          "notes": "no gold defects on this sample"
+        },
+        "novelty_rate": {
+          "name": "novelty_rate",
+          "value": null,
+          "per_sample_detail": {
+            "unmatched_peer": [],
+            "peer_total": 0
+          },
+          "notes": "reviewer produced 0 comments on this sample"
+        },
+        "severity_calibration": {
+          "name": "severity_calibration",
+          "value": null,
+          "per_sample_detail": {
+            "pairs": [],
+            "confusion": {}
+          },
+          "notes": "no matched pairs to calibrate against"
+        },
+        "suggestion_rate": {
+          "name": "suggestion_rate",
+          "value": null,
+          "per_sample_detail": {
+            "n_with_suggestion": 0,
+            "n_total": 0
+          },
+          "notes": "reviewer produced 0 comments on this sample"
+        }
+      },
+      "cost_usd": null,
+      "latency_seconds": 8.577206999994814,
+      "review_summary": {
+        "n_comments": 0,
+        "severity_distribution": {},
+        "usage": {
+          "input_tokens": 17993,
+          "output_tokens": 33,
+          "model": "anthropic:claude-sonnet-4-6",
+          "n_retries_used": 0
+        }
+      },
+      "error": null
+    },
+    {
+      "pr_url": "https://github.com/pydantic/pydantic/pull/7566",
+      "metrics": {
+        "detection_rate": {
+          "name": "detection_rate",
+          "value": null,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 0
+          },
+          "notes": "no gold defects on this sample"
+        },
+        "comments_per_pr": {
+          "name": "comments_per_pr",
+          "value": 0.0,
+          "per_sample_detail": {
+            "n_comments": 0
+          },
+          "notes": null
+        },
+        "precision_per_severity": {
+          "name": "precision_per_severity",
+          "value": null,
+          "per_sample_detail": {},
+          "notes": "reviewer produced 0 comments on this sample"
+        },
+        "mean_per_pr_recall": {
+          "name": "mean_per_pr_recall",
+          "value": null,
+          "per_sample_detail": {
+            "matched_pairs": [],
+            "unmatched_gold": []
+          },
+          "notes": "no gold defects on this sample"
+        },
+        "novelty_rate": {
+          "name": "novelty_rate",
+          "value": null,
+          "per_sample_detail": {
+            "unmatched_peer": [],
+            "peer_total": 0
+          },
+          "notes": "reviewer produced 0 comments on this sample"
+        },
+        "severity_calibration": {
+          "name": "severity_calibration",
+          "value": null,
+          "per_sample_detail": {
+            "pairs": [],
+            "confusion": {}
+          },
+          "notes": "no matched pairs to calibrate against"
+        },
+        "suggestion_rate": {
+          "name": "suggestion_rate",
+          "value": null,
+          "per_sample_detail": {
+            "n_with_suggestion": 0,
+            "n_total": 0
+          },
+          "notes": "reviewer produced 0 comments on this sample"
+        }
+      },
+      "cost_usd": null,
+      "latency_seconds": 5.324674042174593,
+      "review_summary": {
+        "n_comments": 0,
+        "severity_distribution": {},
+        "usage": {
+          "input_tokens": 5554,
+          "output_tokens": 33,
+          "model": "anthropic:claude-sonnet-4-6",
+          "n_retries_used": 0
+        }
+      },
+      "error": null
+    },
+    {
+      "pr_url": "https://github.com/pydantic/pydantic/pull/7435",
+      "metrics": {
+        "detection_rate": {
+          "name": "detection_rate",
+          "value": 0.0,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 1
+          },
+          "notes": null
+        },
+        "comments_per_pr": {
+          "name": "comments_per_pr",
+          "value": 3.0,
+          "per_sample_detail": {
+            "n_comments": 3
+          },
+          "notes": null
+        },
+        "precision_per_severity": {
+          "name": "precision_per_severity",
+          "value": null,
+          "per_sample_detail": {
+            "important": {
+              "precision": 0.0,
+              "n": 2,
+              "matched": 0
+            },
+            "minor": {
+              "precision": 0.0,
+              "n": 1,
+              "matched": 0
+            }
+          },
+          "notes": null
+        },
+        "mean_per_pr_recall": {
+          "name": "mean_per_pr_recall",
+          "value": 0.0,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 1,
+            "per_severity": {
+              "critical": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              },
+              "important": {
+                "hit": 0,
+                "miss": 1,
+                "total": 1
+              },
+              "minor": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              },
+              "nit": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              }
+            },
+            "matched_pairs": [],
+            "unmatched_gold": [
+              {
+                "path": "pydantic/_internal/_core_utils.py",
+                "line": 68,
+                "line_range": null,
+                "category": "defect-correctness",
+                "severity": "important",
+                "description": "Type refs do not reflect generic parameters, so two different schemas can share the same ref and produce incorrect parameter resolution.",
+                "source": "human_reviewer:dmontagu",
+                "confidence": "high",
+                "original_comment_excerpt": "I just noticed this misbehavior \u2014 right now, it's not producing a type ref that reflects the generic parameters like it is supposed to. In particular, this means that in principle you could get two different schemas with the same ref but that should have different parameters. I don't know why that d"
+              }
+            ]
+          },
+          "notes": null
+        },
+        "novelty_rate": {
+          "name": "novelty_rate",
+          "value": 1.0,
+          "per_sample_detail": {
+            "unmatched_peer": [
+              {
+                "path": "pydantic/_internal/_core_utils.py",
+                "line": 11,
+                "end_line": null,
+                "severity": "important",
+                "body": "`typing._GenericAlias` is a private, undocumented CPython implementation detail. Importing it directly (`from typing import _GenericAlias`) can break on alternative Python implementations (PyPy, etc.) and may silently disappear or change in a future CPython release. The `# type: ignore` comment already signals that this is known to be unofficial.\n\nConsider using `typing.get_args` plus a check against `typing.get_origin` returning non-None (which is public API) to detect parameterised generics, instead of an `isinstance` check against the private class.",
+                "rationale": "The diff explicitly imports `_GenericAlias` from `typing` with a `# type: ignore` suppression. The check at line 77 (`isinstance(type_, _GenericAlias)`) will silently fail (returning `False`) on any Python runtime where this private class does not exist or has a different name, causing `args` to always be `()` for parameterised types\u2014effectively reverting the fix on those runtimes.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Portability Concern"
+              },
+              {
+                "path": "pydantic/_internal/_core_utils.py",
+                "line": 77,
+                "end_line": null,
+                "severity": "important",
+                "body": "When `args_override` is provided to `get_type_ref`, the new logic ignores it entirely for `_GenericAlias` instances: it always picks `get_args(type_)` instead of `args_override`. The original code was `args = args_override or ()`, giving `args_override` priority. If a caller (e.g. `generic_recursion_self_type` at `_generics.py:408`) passes an `args_override` for a type that is also a `_GenericAlias`, the override will be silently discarded and the ref will be computed from the type's own args instead.",
+                "rationale": "See call site in `pydantic/_internal/_generics.py:408` where `get_type_ref(origin, args_override=args)` is called. If `origin` happens to be a `_GenericAlias` (which is the case for parameterised generics in some code paths), the new line `get_args(type_) if isinstance(type_, _GenericAlias) else (args_override or ())` will use `get_args(origin)` rather than the explicitly supplied `args_override`, potentially generating an incorrect or conflicting type ref.",
+                "references": null,
+                "suggestion": "args = (args_override or get_args(type_)) if isinstance(type_, _GenericAlias) else (args_override or ())",
+                "issue_header": "Possible Bug"
+              },
+              {
+                "path": "tests/test_dataclasses.py",
+                "line": 2073,
+                "end_line": null,
+                "severity": "minor",
+                "body": "The assertions on `schema_ref` format (`'[int:'` / `'[str:'`) are testing an internal implementation detail that the comment itself acknowledges may change. If this assertion is here only to document expected behavior, it should at least be wrapped in a try/except or marked `xfail` to avoid a false CI failure when the schema format evolves. Alternatively, consider removing these lines entirely and relying solely on the functional validation assertions below.",
+                "rationale": "The comment on lines 2071-2072 says explicitly: 'this can probably be removed if the schema changes in some way that makes this part of the test fail', which indicates the authors are aware the assertion is fragile. Brittle structural assertions on internal schema representations can cause unrelated failures in future PRs.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Brittle Test"
+              }
+            ],
+            "peer_total": 3,
+            "peer_unmatched_count": 3
+          },
+          "notes": null
+        },
+        "severity_calibration": {
+          "name": "severity_calibration",
+          "value": null,
+          "per_sample_detail": {
+            "pairs": [],
+            "confusion": {}
+          },
+          "notes": "no matched pairs to calibrate against"
+        },
+        "suggestion_rate": {
+          "name": "suggestion_rate",
+          "value": 0.3333333333333333,
+          "per_sample_detail": {
+            "n_with_suggestion": 1,
+            "n_total": 3
+          },
+          "notes": null
+        }
+      },
+      "cost_usd": null,
+      "latency_seconds": 25.769341042032465,
+      "review_summary": {
+        "n_comments": 3,
+        "severity_distribution": {
+          "important": 2,
+          "minor": 1
+        },
+        "usage": {
+          "input_tokens": 14502,
+          "output_tokens": 956,
+          "model": "anthropic:claude-sonnet-4-6",
+          "n_retries_used": 0
+        }
+      },
+      "error": null
+    },
+    {
+      "pr_url": "https://github.com/pydantic/pydantic/pull/7589",
+      "metrics": {
+        "detection_rate": {
+          "name": "detection_rate",
+          "value": 0.0,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 1
+          },
+          "notes": null
+        },
+        "comments_per_pr": {
+          "name": "comments_per_pr",
+          "value": 3.0,
+          "per_sample_detail": {
+            "n_comments": 3
+          },
+          "notes": null
+        },
+        "precision_per_severity": {
+          "name": "precision_per_severity",
+          "value": null,
+          "per_sample_detail": {
+            "important": {
+              "precision": 0.0,
+              "n": 1,
+              "matched": 0
+            },
+            "minor": {
+              "precision": 0.0,
+              "n": 1,
+              "matched": 0
+            },
+            "nit": {
+              "precision": 0.0,
+              "n": 1,
+              "matched": 0
+            }
+          },
+          "notes": null
+        },
+        "mean_per_pr_recall": {
+          "name": "mean_per_pr_recall",
+          "value": 0.0,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 1,
+            "per_severity": {
+              "critical": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              },
+              "important": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              },
+              "minor": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              },
+              "nit": {
+                "hit": 0,
+                "miss": 1,
+                "total": 1
+              }
+            },
+            "matched_pairs": [],
+            "unmatched_gold": [
+              {
+                "path": "pydantic/plugin/_loader.py",
+                "line": 36,
+                "line_range": null,
+                "category": "style-nit",
+                "severity": "nit",
+                "description": "Use an empty tuple in place of the current Iterable initialization for clarity / minimal overhead.",
+                "source": "human_reviewer:lig",
+                "confidence": "high",
+                "original_comment_excerpt": "Just an empty tuple should be enough as `Iterable`"
+              }
+            ]
+          },
+          "notes": null
+        },
+        "novelty_rate": {
+          "name": "novelty_rate",
+          "value": 1.0,
+          "per_sample_detail": {
+            "unmatched_peer": [
+              {
+                "path": "pydantic/plugin/_loader.py",
+                "line": 58,
+                "end_line": null,
+                "severity": "important",
+                "body": "If an exception other than `ImportError`/`AttributeError` is raised during plugin loading (e.g. a `ModuleNotFoundError` subclass is fine, but something like `SystemExit` or any unexpected error), the `finally` block correctly resets `_loading_plugins`, but `_plugins` will already have been set to `{}` (line 38). On the next call, `_plugins is None` will be `False`, so no retry will ever occur \u2014 the plugin scan is silently skipped forever. This was the old behaviour (intentionally retried each time), and the PR comment says \"only look for plugins if we haven't looked before, **or loading plugins previously failed**\" \u2014 but there is no path that resets `_plugins` back to `None` on failure.",
+                "rationale": "At line 38, `_plugins` is set to `{}` before the try block. If the loop throws an unexpected exception (not caught by the inner try/except), the finally block sets `_loading_plugins = False` but `_plugins` stays `{}`. Subsequent calls reach `return _plugins.values()` immediately and return nothing, contradicting the stated design goal of retrying on failure.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Possible Bug"
+              },
+              {
+                "path": "pydantic/plugin/_loader.py",
+                "line": 23,
+                "end_line": null,
+                "severity": "nit",
+                "body": "The comment on line 23 is truncated: `# this means that if plugins use pydantic` \u2014 it reads as an incomplete sentence. It should say something like \"this means that if plugins use pydantic, they will not themselves trigger plugin loading (avoiding recursion).\"",
+                "rationale": "The comment ends abruptly mid-sentence in the diff and the surrounding code context.",
+                "references": null,
+                "suggestion": "# return no plugins while loading plugins to avoid recursion and errors while importing plugins\n# this means that if plugins use pydantic, they will not themselves trigger plugin loading",
+                "issue_header": "Incomplete Comment"
+              },
+              {
+                "path": "tests/plugin/test_plugin.py",
+                "line": 11,
+                "end_line": null,
+                "severity": "minor",
+                "body": "The test no longer asserts that plugins are actually invoked on the model defined inside `test_plugin_usage`. The `example_plugin.py` module creates a `MyModel` at import time (now the plugin-loaded model), but the `log` assertion at the end of the test checks entries produced by the `MyModel` defined inside the test function. It's worth verifying that the plugin's `new_schema_validator` is indeed called for the in-test `MyModel`, and that the removal of `pytest.warns` isn't hiding a situation where the plugin is never installed properly.",
+                "rationale": "The old test wrapped model creation in `pytest.warns`, confirming plugin loading happened with an error. The new test silently creates the model and relies on `log` entries. If plugin loading silently fails (e.g. due to the `_plugins` already-set-to-`{}` issue described above), the test would still pass if `log` happens to be populated from the module-level `MyModel` instantiation in `example_plugin.py`, masking the failure.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Test Coverage"
+              }
+            ],
+            "peer_total": 3,
+            "peer_unmatched_count": 3
+          },
+          "notes": null
+        },
+        "severity_calibration": {
+          "name": "severity_calibration",
+          "value": null,
+          "per_sample_detail": {
+            "pairs": [],
+            "confusion": {}
+          },
+          "notes": "no matched pairs to calibrate against"
+        },
+        "suggestion_rate": {
+          "name": "suggestion_rate",
+          "value": 0.3333333333333333,
+          "per_sample_detail": {
+            "n_with_suggestion": 1,
+            "n_total": 3
+          },
+          "notes": null
+        }
+      },
+      "cost_usd": null,
+      "latency_seconds": 23.362405416788533,
+      "review_summary": {
+        "n_comments": 3,
+        "severity_distribution": {
+          "important": 1,
+          "nit": 1,
+          "minor": 1
+        },
+        "usage": {
+          "input_tokens": 7834,
+          "output_tokens": 854,
+          "model": "anthropic:claude-sonnet-4-6",
+          "n_retries_used": 0
+        }
+      },
+      "error": null
+    },
+    {
+      "pr_url": "https://github.com/pydantic/pydantic/pull/7979",
+      "metrics": {
+        "detection_rate": {
+          "name": "detection_rate",
+          "value": null,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 0
+          },
+          "notes": "no gold defects on this sample"
+        },
+        "comments_per_pr": {
+          "name": "comments_per_pr",
+          "value": 0.0,
+          "per_sample_detail": {
+            "n_comments": 0
+          },
+          "notes": null
+        },
+        "precision_per_severity": {
+          "name": "precision_per_severity",
+          "value": null,
+          "per_sample_detail": {},
+          "notes": "reviewer produced 0 comments on this sample"
+        },
+        "mean_per_pr_recall": {
+          "name": "mean_per_pr_recall",
+          "value": null,
+          "per_sample_detail": {
+            "matched_pairs": [],
+            "unmatched_gold": []
+          },
+          "notes": "no gold defects on this sample"
+        },
+        "novelty_rate": {
+          "name": "novelty_rate",
+          "value": null,
+          "per_sample_detail": {
+            "unmatched_peer": [],
+            "peer_total": 0
+          },
+          "notes": "reviewer produced 0 comments on this sample"
+        },
+        "severity_calibration": {
+          "name": "severity_calibration",
+          "value": null,
+          "per_sample_detail": {
+            "pairs": [],
+            "confusion": {}
+          },
+          "notes": "no matched pairs to calibrate against"
+        },
+        "suggestion_rate": {
+          "name": "suggestion_rate",
+          "value": null,
+          "per_sample_detail": {
+            "n_with_suggestion": 0,
+            "n_total": 0
+          },
+          "notes": "reviewer produced 0 comments on this sample"
+        }
+      },
+      "cost_usd": null,
+      "latency_seconds": 5.405346042010933,
+      "review_summary": {
+        "n_comments": 0,
+        "severity_distribution": {},
+        "usage": {
+          "input_tokens": 7973,
+          "output_tokens": 33,
+          "model": "anthropic:claude-sonnet-4-6",
+          "n_retries_used": 0
+        }
+      },
+      "error": null
+    },
+    {
+      "pr_url": "https://github.com/pydantic/pydantic/pull/8190",
+      "metrics": {
+        "detection_rate": {
+          "name": "detection_rate",
+          "value": null,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 0
+          },
+          "notes": "no gold defects on this sample"
+        },
+        "comments_per_pr": {
+          "name": "comments_per_pr",
+          "value": 1.0,
+          "per_sample_detail": {
+            "n_comments": 1
+          },
+          "notes": null
+        },
+        "precision_per_severity": {
+          "name": "precision_per_severity",
+          "value": null,
+          "per_sample_detail": {
+            "minor": {
+              "precision": 0.0,
+              "n": 1,
+              "matched": 0
+            }
+          },
+          "notes": null
+        },
+        "mean_per_pr_recall": {
+          "name": "mean_per_pr_recall",
+          "value": null,
+          "per_sample_detail": {
+            "matched_pairs": [],
+            "unmatched_gold": []
+          },
+          "notes": "no gold defects on this sample"
+        },
+        "novelty_rate": {
+          "name": "novelty_rate",
+          "value": 1.0,
+          "per_sample_detail": {
+            "unmatched_peer": [
+              {
+                "path": "tests/test_types.py",
+                "line": 6128,
+                "end_line": null,
+                "severity": "minor",
+                "body": "The test only covers `Union[str, JsonValue]` with a `bool` value. Consider also testing `JsonValue` directly (i.e., `TypeAdapter(JsonValue).dump_json(True)`) and values like `False`, as well as verifying that plain `int` serialisation isn't regressed (since `bool` was moved before `int` in the discriminated union).",
+                "rationale": "The fix moves `bool` before `int` in the `Annotated[Union[...], Discriminator(...)]` to ensure booleans are matched before integers. The test only exercises one path (`True` via `Union[str, JsonValue]`). There is no test for `False`, and no test checking that integers still serialize correctly as integers rather than being misclassified. Adding a few more assertions would make the intent and coverage of the fix clearer.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Test Coverage"
+              }
+            ],
+            "peer_total": 1,
+            "peer_unmatched_count": 1
+          },
+          "notes": null
+        },
+        "severity_calibration": {
+          "name": "severity_calibration",
+          "value": null,
+          "per_sample_detail": {
+            "pairs": [],
+            "confusion": {}
+          },
+          "notes": "no matched pairs to calibrate against"
+        },
+        "suggestion_rate": {
+          "name": "suggestion_rate",
+          "value": 0.0,
+          "per_sample_detail": {
+            "n_with_suggestion": 0,
+            "n_total": 1
+          },
+          "notes": null
+        }
+      },
+      "cost_usd": null,
+      "latency_seconds": 15.167934000026435,
+      "review_summary": {
+        "n_comments": 1,
+        "severity_distribution": {
+          "minor": 1
+        },
+        "usage": {
+          "input_tokens": 7784,
+          "output_tokens": 266,
+          "model": "anthropic:claude-sonnet-4-6",
+          "n_retries_used": 0
+        }
+      },
+      "error": null
+    },
+    {
+      "pr_url": "https://github.com/pydantic/pydantic/pull/7626",
+      "metrics": {
+        "detection_rate": {
+          "name": "detection_rate",
+          "value": 0.0,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 1
+          },
+          "notes": null
+        },
+        "comments_per_pr": {
+          "name": "comments_per_pr",
+          "value": 3.0,
+          "per_sample_detail": {
+            "n_comments": 3
+          },
+          "notes": null
+        },
+        "precision_per_severity": {
+          "name": "precision_per_severity",
+          "value": null,
+          "per_sample_detail": {
+            "important": {
+              "precision": 0.0,
+              "n": 1,
+              "matched": 0
+            },
+            "minor": {
+              "precision": 0.0,
+              "n": 1,
+              "matched": 0
+            },
+            "nit": {
+              "precision": 0.0,
+              "n": 1,
+              "matched": 0
+            }
+          },
+          "notes": null
+        },
+        "mean_per_pr_recall": {
+          "name": "mean_per_pr_recall",
+          "value": 0.0,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 1,
+            "per_severity": {
+              "critical": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              },
+              "important": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              },
+              "minor": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              },
+              "nit": {
+                "hit": 0,
+                "miss": 1,
+                "total": 1
+              }
+            },
+            "matched_pairs": [],
+            "unmatched_gold": [
+              {
+                "path": "(pr-metadata)",
+                "line": null,
+                "line_range": null,
+                "category": "defect-doc-gap",
+                "severity": "nit",
+                "description": "PR description should reference the fixed issue with `Fix #6498` so the issue auto-closes on merge.",
+                "source": "human_reviewer:sydney-runkle",
+                "confidence": "high",
+                "original_comment_excerpt": "@zakstucke, do you want to change the description of this PR to have Fix #6498? instead of just the issue reference?"
+              }
+            ]
+          },
+          "notes": null
+        },
+        "novelty_rate": {
+          "name": "novelty_rate",
+          "value": 1.0,
+          "per_sample_detail": {
+            "unmatched_peer": [
+              {
+                "path": "tests/test_config.py",
+                "line": 556,
+                "end_line": null,
+                "severity": "important",
+                "body": "Mutating `Foo.model_config` directly on the class definition (which is defined inside the test function but shared across the two test halves) is fine here, but `model_rebuild(force=True)` is called on a class whose schema has already been compiled. More importantly, if the test is run in isolation vs. together with other tests, the class is re-created fresh each time, so state bleed between the two halves of this test is contained. However, the pattern of mutating `model_config` on a model class in-place (rather than defining a separate model class with the desired config) is fragile and can cause unexpected interactions if the test is ever refactored. Consider defining a separate model class with `validation_error_cause=True` instead of mutating the first one.",
+                "rationale": "Mutating class-level config (`Foo.model_config = ConfigDict(validation_error_cause=True)`) mid-test is unusual; defining a second class with the desired config would be cleaner and less error-prone.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Test Isolation"
+              },
+              {
+                "path": "tests/test_config.py",
+                "line": 565,
+                "end_line": null,
+                "severity": "minor",
+                "body": "The assertion `repr(src_exc) == \"AssertionError('Must be greater than 5\\\\nassert 4 > 5')\"` relies on the internal formatting of `AssertionError` by pytest's assertion rewriting. This repr is produced by pytest's assertion introspection and may differ across pytest versions or when pytest assertion rewriting is disabled (e.g., in certain CI environments or if the test file is imported directly). Consider asserting only on `str(src_exc)` or the message part, not the full `repr`.",
+                "rationale": "The `assert v > 5, 'Must be greater than 5'` statement is rewritten by pytest to append `\\nassert 4 > 5` to the message, but this is a pytest implementation detail. The repr format can vary.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Brittle Assertion"
+              },
+              {
+                "path": "pydantic/config.py",
+                "line": 865,
+                "end_line": null,
+                "severity": "nit",
+                "body": "The note says \"Python 3.10 and older don't support exception groups natively. <=3.10, backport must be installed\". Exception groups were introduced in Python 3.11, so the correct boundary is `< 3.11` (i.e., Python 3.10 and older). The wording is slightly ambiguous \u2014 consider rewording to: \"Python 3.10 and earlier do not support exception groups natively; on these versions, the `exceptiongroup` backport must be installed: `pip install exceptiongroup`.\"",
+                "rationale": "The current phrasing '<=3.10' is technically correct but `Python 3.10 and older` followed by `<=3.10` is redundant. The test skip condition uses `sys.version_info < (3, 11)` which confirms 3.11 is the boundary. Minor clarity improvement.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Documentation Accuracy"
+              }
+            ],
+            "peer_total": 3,
+            "peer_unmatched_count": 3
+          },
+          "notes": null
+        },
+        "severity_calibration": {
+          "name": "severity_calibration",
+          "value": null,
+          "per_sample_detail": {
+            "pairs": [],
+            "confusion": {}
+          },
+          "notes": "no matched pairs to calibrate against"
+        },
+        "suggestion_rate": {
+          "name": "suggestion_rate",
+          "value": 0.0,
+          "per_sample_detail": {
+            "n_with_suggestion": 0,
+            "n_total": 3
+          },
+          "notes": null
+        }
+      },
+      "cost_usd": null,
+      "latency_seconds": 23.55134104192257,
+      "review_summary": {
+        "n_comments": 3,
+        "severity_distribution": {
+          "important": 1,
+          "minor": 1,
+          "nit": 1
+        },
+        "usage": {
+          "input_tokens": 13800,
+          "output_tokens": 838,
+          "model": "anthropic:claude-sonnet-4-6",
+          "n_retries_used": 0
+        }
+      },
+      "error": null
+    },
+    {
+      "pr_url": "https://github.com/pydantic/pydantic/pull/7900",
+      "metrics": {
+        "detection_rate": {
+          "name": "detection_rate",
+          "value": 0.0,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 2
+          },
+          "notes": null
+        },
+        "comments_per_pr": {
+          "name": "comments_per_pr",
+          "value": 2.0,
+          "per_sample_detail": {
+            "n_comments": 2
+          },
+          "notes": null
+        },
+        "precision_per_severity": {
+          "name": "precision_per_severity",
+          "value": null,
+          "per_sample_detail": {
+            "minor": {
+              "precision": 0.0,
+              "n": 2,
+              "matched": 0
+            }
+          },
+          "notes": null
+        },
+        "mean_per_pr_recall": {
+          "name": "mean_per_pr_recall",
+          "value": 0.0,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 2,
+            "per_severity": {
+              "critical": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              },
+              "important": {
+                "hit": 0,
+                "miss": 2,
+                "total": 2
+              },
+              "minor": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              },
+              "nit": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              }
+            },
+            "matched_pairs": [],
+            "unmatched_gold": [
+              {
+                "path": "pydantic/type_adapter.py",
+                "line": 222,
+                "line_range": null,
+                "category": "defect-doc-gap",
+                "severity": "important",
+                "description": "Docstring describes the `type` parameter as a Python type but TypeAdapter also accepts pydantic models, TypedDicts, etc. Docstring should reflect that.",
+                "source": "human_reviewer:hramezani",
+                "confidence": "high",
+                "original_comment_excerpt": "I think the `type` is not only a `Python type`. It can be pydantic model, TypedDict, ..."
+              },
+              {
+                "path": "pydantic/type_adapter.py",
+                "line": 223,
+                "line_range": null,
+                "category": "defect-doc-gap",
+                "severity": "important",
+                "description": "Docstring should mention that `config` cannot be used when the type already has its own config (e.g. a BaseModel).",
+                "source": "human_reviewer:hramezani",
+                "confidence": "high",
+                "original_comment_excerpt": "Probably worth mentioning here that the `config` cannot be used with a model with config.\r\nhttps://docs.pydantic.dev/latest/errors/usage_errors/#type-adapter-config-unused"
+              }
+            ]
+          },
+          "notes": null
+        },
+        "novelty_rate": {
+          "name": "novelty_rate",
+          "value": 1.0,
+          "per_sample_detail": {
+            "unmatched_peer": [
+              {
+                "path": "pydantic/type_adapter.py",
+                "line": 236,
+                "end_line": null,
+                "severity": "minor",
+                "body": "The `Returns:` section says \"A type adapter configured for the specified `type`\", but `__init__` returns `None` by convention. The actual object creation happens in `__new__`. This section should either be removed or replaced with a note about the initialized state of the object.",
+                "rationale": "Python `__init__` methods always return `None`. Documenting a return value here is incorrect and could confuse users reading the generated API docs. The object is constructed by `__new__`, not `__init__`.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Misleading Docstring"
+              },
+              {
+                "path": "docs/concepts/json_schema.md",
+                "line": 547,
+                "end_line": null,
+                "severity": "minor",
+                "body": "The type hint for `source_type` is `Type[BaseModel]`, but when `Metadata` is used as `Annotated[int, Metadata()]`, `source_type` will actually be `int` (not a subclass of `BaseModel`). The hint should be `Any` or simply `type` to accurately reflect what is passed in the no-op path.",
+                "rationale": "When `__get_pydantic_core_schema__` is called for `Annotated[int, Metadata()]`, `source_type` is `int`, which is not a `BaseModel`. Using `Type[BaseModel]` as the annotation is misleading and technically incorrect for the documented use case.",
+                "references": null,
+                "suggestion": "        cls, source_type: Any, handler: GetCoreSchemaHandler\n",
+                "issue_header": "Incorrect Type Hint"
+              }
+            ],
+            "peer_total": 2,
+            "peer_unmatched_count": 2
+          },
+          "notes": null
+        },
+        "severity_calibration": {
+          "name": "severity_calibration",
+          "value": null,
+          "per_sample_detail": {
+            "pairs": [],
+            "confusion": {}
+          },
+          "notes": "no matched pairs to calibrate against"
+        },
+        "suggestion_rate": {
+          "name": "suggestion_rate",
+          "value": 0.5,
+          "per_sample_detail": {
+            "n_with_suggestion": 1,
+            "n_total": 2
+          },
+          "notes": null
+        }
+      },
+      "cost_usd": null,
+      "latency_seconds": 14.616507707862183,
+      "review_summary": {
+        "n_comments": 2,
+        "severity_distribution": {
+          "minor": 2
+        },
+        "usage": {
+          "input_tokens": 9442,
+          "output_tokens": 462,
+          "model": "anthropic:claude-sonnet-4-6",
+          "n_retries_used": 0
+        }
+      },
+      "error": null
+    },
+    {
+      "pr_url": "https://github.com/pydantic/pydantic/pull/8059",
+      "metrics": {
+        "detection_rate": {
+          "name": "detection_rate",
+          "value": 0.0,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 5
+          },
+          "notes": null
+        },
+        "comments_per_pr": {
+          "name": "comments_per_pr",
+          "value": 1.0,
+          "per_sample_detail": {
+            "n_comments": 1
+          },
+          "notes": null
+        },
+        "precision_per_severity": {
+          "name": "precision_per_severity",
+          "value": null,
+          "per_sample_detail": {
+            "minor": {
+              "precision": 0.0,
+              "n": 1,
+              "matched": 0
+            }
+          },
+          "notes": null
+        },
+        "mean_per_pr_recall": {
+          "name": "mean_per_pr_recall",
+          "value": 0.0,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 5,
+            "per_severity": {
+              "critical": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              },
+              "important": {
+                "hit": 0,
+                "miss": 2,
+                "total": 2
+              },
+              "minor": {
+                "hit": 0,
+                "miss": 1,
+                "total": 1
+              },
+              "nit": {
+                "hit": 0,
+                "miss": 2,
+                "total": 2
+              }
+            },
+            "matched_pairs": [],
+            "unmatched_gold": [
+              {
+                "path": "docs/concepts/type_adapter.md",
+                "line": 8,
+                "line_range": null,
+                "category": "style-nit",
+                "severity": "nit",
+                "description": "Grammar fix: remove the 'needing to create a' fragment for cleaner sentence flow.",
+                "source": "human_reviewer:dmontagu",
+                "confidence": "high",
+                "original_comment_excerpt": "```suggestion\r\nwhich can be used for validation, serialization, and JSON schema generation without needing to create a\r\n```"
+              },
+              {
+                "path": "docs/concepts/type_adapter.md",
+                "line": 26,
+                "line_range": null,
+                "category": "defect-doc-gap",
+                "severity": "minor",
+                "description": "Rename example variable from `UserListValidator` to `UserListAdapter` so the docs convey TypeAdapter's broader capability beyond validation.",
+                "source": "human_reviewer:dmontagu",
+                "confidence": "high",
+                "original_comment_excerpt": "```suggestion\r\nUserListAdapter = TypeAdapter(List[User])\r\n```\r\n(and below).\r\n\r\nI think better to use `Adapter` than `Validator` to help people realize it's able to do more than validation, also I just think it's a better naming convention and would want to push people toward using it as they read th"
+              },
+              {
+                "path": "docs/concepts/type_adapter.md",
+                "line": 46,
+                "line_range": null,
+                "category": "defect-doc-gap",
+                "severity": "important",
+                "description": "Add a !!! note clarifying that TypeAdapter should not be used as a type annotation for BaseModel fields, to avoid misuse.",
+                "source": "human_reviewer:Kludex",
+                "confidence": "high",
+                "original_comment_excerpt": "```suggestion\r\n!!! note\r\n    Despite some overlap in use cases with [`RootModel`][pydantic.root_model.RootModel],\r\n    [`TypeAdapter`][pydantic.type_adapter.TypeAdapter] should not be used as a type annotation for\r\n    specifying fields of a `BaseModel`, etc.\r\n```"
+              },
+              {
+                "path": "mkdocs.yml",
+                "line": 70,
+                "line_range": null,
+                "category": "style-nit",
+                "severity": "nit",
+                "description": "Capitalization: 'Type Adapter' (with space) for nav consistency.",
+                "source": "human_reviewer:Kludex",
+                "confidence": "high",
+                "original_comment_excerpt": "Maybe?\r\n```suggestion\r\n  - Type Adapter: concepts/type_adapter.md\r\n```"
+              },
+              {
+                "path": "docs/concepts/type_adapter.md",
+                "line": 81,
+                "line_range": null,
+                "category": "defect-doc-gap",
+                "severity": "important",
+                "description": "Add a !!! info block on performance considerations: TypeAdapter construction is expensive, callers should reuse instances.",
+                "source": "human_reviewer:dmontagu",
+                "confidence": "high",
+                "original_comment_excerpt": "```suggestion\r\n\r\n!!! info \"Performance considerations\"\r\n    When creating an instance of `TypeAdapter`, the provided type must be analyzed and converted into a pydantic-core\r\n    schema. This comes with some non-trivial overhead, so it is recommended to create a `TypeAdapter` for a given type\r\n    j"
+              }
+            ]
+          },
+          "notes": null
+        },
+        "novelty_rate": {
+          "name": "novelty_rate",
+          "value": 1.0,
+          "per_sample_detail": {
+            "unmatched_peer": [
+              {
+                "path": "docs/concepts/type_adapter.md",
+                "line": 75,
+                "end_line": null,
+                "severity": "minor",
+                "body": "In the 'Parsing data into a specified type' example, `TypeAdapter(List[Item])` is constructed inline (i.e., a new `TypeAdapter` is instantiated every time the code runs) rather than at the module level. This contradicts the performance guidance given just a few lines later (lines 83\u201386) that explicitly recommends creating a `TypeAdapter` once and reusing it. The example should be updated to assign the adapter to a variable (e.g., `ItemListAdapter = TypeAdapter(List[Item])`) to be consistent with the advice and the first example.",
+                "rationale": "The performance note on lines 83-86 says to avoid creating `TypeAdapter` in loops or other hot paths, yet the very example above it constructs `TypeAdapter(List[Item]).validate_python(item_data)` as a throwaway object. This is an inconsistency in the docs that could mislead readers.",
+                "references": null,
+                "suggestion": "ItemListAdapter = TypeAdapter(List[Item])\nitems = ItemListAdapter.validate_python(item_data)\nprint(items)\n#> [Item(id=1, name='My Item')]",
+                "issue_header": "Performance Concern"
+              }
+            ],
+            "peer_total": 1,
+            "peer_unmatched_count": 1
+          },
+          "notes": null
+        },
+        "severity_calibration": {
+          "name": "severity_calibration",
+          "value": null,
+          "per_sample_detail": {
+            "pairs": [],
+            "confusion": {}
+          },
+          "notes": "no matched pairs to calibrate against"
+        },
+        "suggestion_rate": {
+          "name": "suggestion_rate",
+          "value": 1.0,
+          "per_sample_detail": {
+            "n_with_suggestion": 1,
+            "n_total": 1
+          },
+          "notes": null
+        }
+      },
+      "cost_usd": null,
+      "latency_seconds": 13.973525625187904,
+      "review_summary": {
+        "n_comments": 1,
+        "severity_distribution": {
+          "minor": 1
+        },
+        "usage": {
+          "input_tokens": 10681,
+          "output_tokens": 331,
+          "model": "anthropic:claude-sonnet-4-6",
+          "n_retries_used": 0
+        }
+      },
+      "error": null
+    },
+    {
+      "pr_url": "https://github.com/pydantic/pydantic/pull/7889",
+      "metrics": {
+        "detection_rate": {
+          "name": "detection_rate",
+          "value": null,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 0
+          },
+          "notes": "no gold defects on this sample"
+        },
+        "comments_per_pr": {
+          "name": "comments_per_pr",
+          "value": 1.0,
+          "per_sample_detail": {
+            "n_comments": 1
+          },
+          "notes": null
+        },
+        "precision_per_severity": {
+          "name": "precision_per_severity",
+          "value": null,
+          "per_sample_detail": {
+            "important": {
+              "precision": 0.0,
+              "n": 1,
+              "matched": 0
+            }
+          },
+          "notes": null
+        },
+        "mean_per_pr_recall": {
+          "name": "mean_per_pr_recall",
+          "value": null,
+          "per_sample_detail": {
+            "matched_pairs": [],
+            "unmatched_gold": []
+          },
+          "notes": "no gold defects on this sample"
+        },
+        "novelty_rate": {
+          "name": "novelty_rate",
+          "value": 1.0,
+          "per_sample_detail": {
+            "unmatched_peer": [
+              {
+                "path": "pydantic/_internal/_generate_schema.py",
+                "line": 1514,
+                "end_line": null,
+                "severity": "important",
+                "body": "Mutating `d.info` on the shared `Decorator` object means that schema generation for one type parametrization permanently overwrites `return_type` for all future parametrizations that share the same `Decorator` instance.\n\nFor example, if `A[int]` is built first, `d.info.return_type` becomes `int`. When `A[str]` is built next, `get_function_return_type` is called with `d.info.return_type == int` (already resolved), so it returns `int` again instead of picking up `T` and resolving it to `str`. This means the second parametrization silently gets the wrong return type.\n\nThe fix should preserve the original `return_type` on the shared `Decorator` and only store the resolved type elsewhere (or restore it from the annotation each time). Since `dataclasses.replace` already creates a new `ComputedFieldInfo`, perhaps the resolved info should be stored per-model rather than written back into `d.info`.",
+                "rationale": "The `Decorator[ComputedFieldInfo]` object for a class-level descriptor is shared across all parametrizations of a generic model. Writing the resolved `return_type` back into `d.info` via `dataclasses.replace` after schema generation will corrupt subsequent parametrizations, because `get_function_return_type` (called at the top of the same method) uses `d.info.return_type` as a hint and will now see the first-resolved concrete type instead of `PydanticUndefined`/`T`.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Possible Bug"
+              }
+            ],
+            "peer_total": 1,
+            "peer_unmatched_count": 1
+          },
+          "notes": null
+        },
+        "severity_calibration": {
+          "name": "severity_calibration",
+          "value": null,
+          "per_sample_detail": {
+            "pairs": [],
+            "confusion": {}
+          },
+          "notes": "no matched pairs to calibrate against"
+        },
+        "suggestion_rate": {
+          "name": "suggestion_rate",
+          "value": 0.0,
+          "per_sample_detail": {
+            "n_with_suggestion": 0,
+            "n_total": 1
+          },
+          "notes": null
+        }
+      },
+      "cost_usd": null,
+      "latency_seconds": 14.46077762497589,
+      "review_summary": {
+        "n_comments": 1,
+        "severity_distribution": {
+          "important": 1
+        },
+        "usage": {
+          "input_tokens": 6877,
+          "output_tokens": 457,
+          "model": "anthropic:claude-sonnet-4-6",
+          "n_retries_used": 0
+        }
+      },
+      "error": null
+    },
+    {
+      "pr_url": "https://github.com/pydantic/pydantic/pull/8012",
+      "metrics": {
+        "detection_rate": {
+          "name": "detection_rate",
+          "value": 0.0,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 1
+          },
+          "notes": null
+        },
+        "comments_per_pr": {
+          "name": "comments_per_pr",
+          "value": 0.0,
+          "per_sample_detail": {
+            "n_comments": 0
+          },
+          "notes": null
+        },
+        "precision_per_severity": {
+          "name": "precision_per_severity",
+          "value": null,
+          "per_sample_detail": {},
+          "notes": "reviewer produced 0 comments on this sample"
+        },
+        "mean_per_pr_recall": {
+          "name": "mean_per_pr_recall",
+          "value": 0.0,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 1,
+            "per_severity": {
+              "critical": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              },
+              "important": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              },
+              "minor": {
+                "hit": 0,
+                "miss": 1,
+                "total": 1
+              },
+              "nit": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              }
+            },
+            "matched_pairs": [],
+            "unmatched_gold": [
+              {
+                "path": "(pr-metadata)",
+                "line": null,
+                "line_range": null,
+                "category": "defect-doc-gap",
+                "severity": "minor",
+                "description": "Add a small release-note entry for this bug fix.",
+                "source": "human_reviewer:adriangb",
+                "confidence": "high",
+                "original_comment_excerpt": "Mind adding a small release note as a bug fix?"
+              }
+            ]
+          },
+          "notes": null
+        },
+        "novelty_rate": {
+          "name": "novelty_rate",
+          "value": null,
+          "per_sample_detail": {
+            "unmatched_peer": [],
+            "peer_total": 0
+          },
+          "notes": "reviewer produced 0 comments on this sample"
+        },
+        "severity_calibration": {
+          "name": "severity_calibration",
+          "value": null,
+          "per_sample_detail": {
+            "pairs": [],
+            "confusion": {}
+          },
+          "notes": "no matched pairs to calibrate against"
+        },
+        "suggestion_rate": {
+          "name": "suggestion_rate",
+          "value": null,
+          "per_sample_detail": {
+            "n_with_suggestion": 0,
+            "n_total": 0
+          },
+          "notes": "reviewer produced 0 comments on this sample"
+        }
+      },
+      "cost_usd": null,
+      "latency_seconds": 6.375780083006248,
+      "review_summary": {
+        "n_comments": 0,
+        "severity_distribution": {},
+        "usage": {
+          "input_tokens": 7564,
+          "output_tokens": 33,
+          "model": "anthropic:claude-sonnet-4-6",
+          "n_retries_used": 0
+        }
+      },
+      "error": null
+    },
+    {
+      "pr_url": "https://github.com/pydantic/pydantic/pull/8442",
+      "metrics": {
+        "detection_rate": {
+          "name": "detection_rate",
+          "value": 0.0,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 1
+          },
+          "notes": null
+        },
+        "comments_per_pr": {
+          "name": "comments_per_pr",
+          "value": 1.0,
+          "per_sample_detail": {
+            "n_comments": 1
+          },
+          "notes": null
+        },
+        "precision_per_severity": {
+          "name": "precision_per_severity",
+          "value": null,
+          "per_sample_detail": {
+            "minor": {
+              "precision": 0.0,
+              "n": 1,
+              "matched": 0
+            }
+          },
+          "notes": null
+        },
+        "mean_per_pr_recall": {
+          "name": "mean_per_pr_recall",
+          "value": 0.0,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 1,
+            "per_severity": {
+              "critical": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              },
+              "important": {
+                "hit": 0,
+                "miss": 1,
+                "total": 1
+              },
+              "minor": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              },
+              "nit": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              }
+            },
+            "matched_pairs": [],
+            "unmatched_gold": [
+              {
+                "path": "pydantic/types.py",
+                "line": 1555,
+                "line_range": null,
+                "category": "defect-correctness",
+                "severity": "important",
+                "description": "Behavior issue: SecretStr('') prints as '' rather than being masked. Reviewer's suggested example documents this, but the underlying redaction behavior for empty secrets should be verified or fixed.",
+                "source": "human_reviewer:Kludex",
+                "confidence": "high",
+                "original_comment_excerpt": "```suggestion\r\n    print((SecretStr('password'), SecretStr('')))\r\n    #> ('**********', '')\r\n```"
+              }
+            ]
+          },
+          "notes": null
+        },
+        "novelty_rate": {
+          "name": "novelty_rate",
+          "value": 1.0,
+          "per_sample_detail": {
+            "unmatched_peer": [
+              {
+                "path": "pydantic/types.py",
+                "line": 1566,
+                "end_line": 1568,
+                "severity": "minor",
+                "body": "The `SecretBytes` docstring now contains two contradictory sentences. The old line (`It displays \\`b'**********'\\` instead of the string value on \\`repr()\\` and \\`str()\\` calls.`) was not removed and now appears directly before the new replacement text, making the docstring redundant and slightly misleading.",
+                "rationale": "The `SecretStr` hunk correctly replaced the old sentence with the new one (the old line was removed via the diff). In the `SecretBytes` hunk, the old sentence (`It displays \\`b'**********'\\` ...`) is still present at line 1566 alongside the new text at lines 1567-1568. Looking at the surrounding code context, both sentences appear in the rendered docstring.",
+                "references": null,
+                "suggestion": "    When the secret value is nonempty, it is displayed as `b'**********'` instead of the underlying value in\n    calls to `repr()` and `str()`. If the value _is_ empty, it is displayed as `b''`.",
+                "issue_header": "Duplicate/Conflicting Docstring"
+              }
+            ],
+            "peer_total": 1,
+            "peer_unmatched_count": 1
+          },
+          "notes": null
+        },
+        "severity_calibration": {
+          "name": "severity_calibration",
+          "value": null,
+          "per_sample_detail": {
+            "pairs": [],
+            "confusion": {}
+          },
+          "notes": "no matched pairs to calibrate against"
+        },
+        "suggestion_rate": {
+          "name": "suggestion_rate",
+          "value": 1.0,
+          "per_sample_detail": {
+            "n_with_suggestion": 1,
+            "n_total": 1
+          },
+          "notes": null
+        }
+      },
+      "cost_usd": null,
+      "latency_seconds": 18.616581042064354,
+      "review_summary": {
+        "n_comments": 1,
+        "severity_distribution": {
+          "minor": 1
+        },
+        "usage": {
+          "input_tokens": 8414,
+          "output_tokens": 328,
+          "model": "anthropic:claude-sonnet-4-6",
+          "n_retries_used": 0
+        }
+      },
+      "error": null
+    },
+    {
+      "pr_url": "https://github.com/django/django/pull/17280",
+      "metrics": {
+        "detection_rate": {
+          "name": "detection_rate",
+          "value": null,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 0
+          },
+          "notes": "no gold defects on this sample"
+        },
+        "comments_per_pr": {
+          "name": "comments_per_pr",
+          "value": 0.0,
+          "per_sample_detail": {
+            "n_comments": 0
+          },
+          "notes": null
+        },
+        "precision_per_severity": {
+          "name": "precision_per_severity",
+          "value": null,
+          "per_sample_detail": {},
+          "notes": "reviewer produced 0 comments on this sample"
+        },
+        "mean_per_pr_recall": {
+          "name": "mean_per_pr_recall",
+          "value": null,
+          "per_sample_detail": {
+            "matched_pairs": [],
+            "unmatched_gold": []
+          },
+          "notes": "no gold defects on this sample"
+        },
+        "novelty_rate": {
+          "name": "novelty_rate",
+          "value": null,
+          "per_sample_detail": {
+            "unmatched_peer": [],
+            "peer_total": 0
+          },
+          "notes": "reviewer produced 0 comments on this sample"
+        },
+        "severity_calibration": {
+          "name": "severity_calibration",
+          "value": null,
+          "per_sample_detail": {
+            "pairs": [],
+            "confusion": {}
+          },
+          "notes": "no matched pairs to calibrate against"
+        },
+        "suggestion_rate": {
+          "name": "suggestion_rate",
+          "value": null,
+          "per_sample_detail": {
+            "n_with_suggestion": 0,
+            "n_total": 0
+          },
+          "notes": "reviewer produced 0 comments on this sample"
+        }
+      },
+      "cost_usd": null,
+      "latency_seconds": 12.78428804106079,
+      "review_summary": {
+        "n_comments": 0,
+        "severity_distribution": {},
+        "usage": {
+          "input_tokens": 4889,
+          "output_tokens": 33,
+          "model": "anthropic:claude-sonnet-4-6",
+          "n_retries_used": 0
+        }
+      },
+      "error": null
+    },
+    {
+      "pr_url": "https://github.com/django/django/pull/17223",
+      "metrics": {
+        "detection_rate": {
+          "name": "detection_rate",
+          "value": null,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 0
+          },
+          "notes": "no gold defects on this sample"
+        },
+        "comments_per_pr": {
+          "name": "comments_per_pr",
+          "value": 1.0,
+          "per_sample_detail": {
+            "n_comments": 1
+          },
+          "notes": null
+        },
+        "precision_per_severity": {
+          "name": "precision_per_severity",
+          "value": null,
+          "per_sample_detail": {
+            "important": {
+              "precision": 0.0,
+              "n": 1,
+              "matched": 0
+            }
+          },
+          "notes": null
+        },
+        "mean_per_pr_recall": {
+          "name": "mean_per_pr_recall",
+          "value": null,
+          "per_sample_detail": {
+            "matched_pairs": [],
+            "unmatched_gold": []
+          },
+          "notes": "no gold defects on this sample"
+        },
+        "novelty_rate": {
+          "name": "novelty_rate",
+          "value": 1.0,
+          "per_sample_detail": {
+            "unmatched_peer": [
+              {
+                "path": "django/utils/choices.py",
+                "line": 6,
+                "end_line": null,
+                "severity": "important",
+                "body": "The old `ChoiceIterator` name is removed without a deprecation alias. Third-party code (e.g. `django-filter`) that imports `from django.utils.choices import ChoiceIterator` will get an `ImportError` immediately after upgrading, with no deprecation warning period. Consider keeping `ChoiceIterator = BaseChoiceIterator` with a `RemovedInDjangoXXWarning` shim to ease migration.",
+                "rationale": "The PR description explicitly calls out `django-filter` as a known user of the `ChoiceIterator` name. Django's deprecation policy normally requires a two-release deprecation cycle rather than an immediate breaking rename. Without a backward-compat alias, any third-party code that does `from django.utils.choices import ChoiceIterator` or `isinstance(x, ChoiceIterator)` will break on the next release.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Backwards Compatibility"
+              }
+            ],
+            "peer_total": 1,
+            "peer_unmatched_count": 1
+          },
+          "notes": null
+        },
+        "severity_calibration": {
+          "name": "severity_calibration",
+          "value": null,
+          "per_sample_detail": {
+            "pairs": [],
+            "confusion": {}
+          },
+          "notes": "no matched pairs to calibrate against"
+        },
+        "suggestion_rate": {
+          "name": "suggestion_rate",
+          "value": 0.0,
+          "per_sample_detail": {
+            "n_with_suggestion": 0,
+            "n_total": 1
+          },
+          "notes": null
+        }
+      },
+      "cost_usd": null,
+      "latency_seconds": 14.831883875187486,
+      "review_summary": {
+        "n_comments": 1,
+        "severity_distribution": {
+          "important": 1
+        },
+        "usage": {
+          "input_tokens": 14671,
+          "output_tokens": 278,
+          "model": "anthropic:claude-sonnet-4-6",
+          "n_retries_used": 0
+        }
+      },
+      "error": null
+    },
+    {
+      "pr_url": "https://github.com/django/django/pull/17314",
+      "metrics": {
+        "detection_rate": {
+          "name": "detection_rate",
+          "value": 0.0,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 1
+          },
+          "notes": null
+        },
+        "comments_per_pr": {
+          "name": "comments_per_pr",
+          "value": 1.0,
+          "per_sample_detail": {
+            "n_comments": 1
+          },
+          "notes": null
+        },
+        "precision_per_severity": {
+          "name": "precision_per_severity",
+          "value": null,
+          "per_sample_detail": {
+            "minor": {
+              "precision": 0.0,
+              "n": 1,
+              "matched": 0
+            }
+          },
+          "notes": null
+        },
+        "mean_per_pr_recall": {
+          "name": "mean_per_pr_recall",
+          "value": 0.0,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 1,
+            "per_severity": {
+              "critical": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              },
+              "important": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              },
+              "minor": {
+                "hit": 0,
+                "miss": 1,
+                "total": 1
+              },
+              "nit": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              }
+            },
+            "matched_pairs": [],
+            "unmatched_gold": [
+              {
+                "path": "tests/model_fields/test_generatedfield.py",
+                "line": 207,
+                "line_range": null,
+                "category": "defect-test-gap",
+                "severity": "minor",
+                "description": "Reviewer suggests reusing the existing model in the test for `test_db_type_parameters` rather than creating a new fixture, reducing test redundancy.",
+                "source": "human_reviewer:felixxm",
+                "confidence": "high",
+                "original_comment_excerpt": "You can reuse existing model, e.g.:\r\n```python\r\n    def test_db_type_parameters(self):\r\n        db_type_parameters = self.output_field_model._meta.get_field(\"lower_name\").db_type_parameters(\r\n            connection\r\n        )   \r\n        self.assertEqual(db_type_parameters[\"max_length\"], 11)\r\n```"
+              }
+            ]
+          },
+          "notes": null
+        },
+        "novelty_rate": {
+          "name": "novelty_rate",
+          "value": 1.0,
+          "per_sample_detail": {
+            "unmatched_peer": [
+              {
+                "path": "tests/schema/tests.py",
+                "line": 847,
+                "end_line": null,
+                "severity": "minor",
+                "body": "The test only verifies that `create_model` does not crash \u2014 it doesn't assert any observable outcome (e.g., that the column was actually created with the expected type, or that a schema introspection call returns the right type). Compare this with `test_add_generated_field_with_kt_model`, which at least asserts that no `\"None\"` appears in the generated SQL. Consider adding a basic assertion here, such as checking that `\"vat_price\"` appears in the table's column list or that the SQL doesn't contain `\"None\"`, to make the test meaningful as a regression guard.",
+                "rationale": "The test body (lines 847-848) contains only `editor.create_model(...)` with no assertions. A crash in the underlying code would be caught, but a silent regression where the generated column type is wrong (e.g., missing `decimal_places`/`max_digits` in the DDL) would not be detected.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Test Coverage"
+              }
+            ],
+            "peer_total": 1,
+            "peer_unmatched_count": 1
+          },
+          "notes": null
+        },
+        "severity_calibration": {
+          "name": "severity_calibration",
+          "value": null,
+          "per_sample_detail": {
+            "pairs": [],
+            "confusion": {}
+          },
+          "notes": "no matched pairs to calibrate against"
+        },
+        "suggestion_rate": {
+          "name": "suggestion_rate",
+          "value": 0.0,
+          "per_sample_detail": {
+            "n_with_suggestion": 0,
+            "n_total": 1
+          },
+          "notes": null
+        }
+      },
+      "cost_usd": null,
+      "latency_seconds": 15.215815833071247,
+      "review_summary": {
+        "n_comments": 1,
+        "severity_distribution": {
+          "minor": 1
+        },
+        "usage": {
+          "input_tokens": 7639,
+          "output_tokens": 285,
+          "model": "anthropic:claude-sonnet-4-6",
+          "n_retries_used": 0
+        }
+      },
+      "error": null
+    },
+    {
+      "pr_url": "https://github.com/django/django/pull/17171",
+      "metrics": {
+        "detection_rate": {
+          "name": "detection_rate",
+          "value": 0.0,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 1
+          },
+          "notes": null
+        },
+        "comments_per_pr": {
+          "name": "comments_per_pr",
+          "value": 5.0,
+          "per_sample_detail": {
+            "n_comments": 5
+          },
+          "notes": null
+        },
+        "precision_per_severity": {
+          "name": "precision_per_severity",
+          "value": null,
+          "per_sample_detail": {
+            "important": {
+              "precision": 0.0,
+              "n": 2,
+              "matched": 0
+            },
+            "minor": {
+              "precision": 0.0,
+              "n": 2,
+              "matched": 0
+            },
+            "nit": {
+              "precision": 0.0,
+              "n": 1,
+              "matched": 0
+            }
+          },
+          "notes": null
+        },
+        "mean_per_pr_recall": {
+          "name": "mean_per_pr_recall",
+          "value": 0.0,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 1,
+            "per_severity": {
+              "critical": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              },
+              "important": {
+                "hit": 0,
+                "miss": 1,
+                "total": 1
+              },
+              "minor": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              },
+              "nit": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              }
+            },
+            "matched_pairs": [],
+            "unmatched_gold": [
+              {
+                "path": "django/db/models/lookups.py",
+                "line": 221,
+                "line_range": null,
+                "category": "defect-correctness",
+                "severity": "important",
+                "description": "Third-party DB backends may still implement field_cast_sql(); the code should call it when present and emit a deprecation warning instead of unconditionally skipping it.",
+                "source": "human_reviewer:felixxm",
+                "confidence": "high",
+                "original_comment_excerpt": "We should still call `field_cast_sql()` when it's implemented in the 3rd-party database backends and add a deprecation warning here, e.g.\r\n```python\r\n# RemovedInDjango60Warning.\r\nif connection.ops.field_cast_sql is not BaseDatabaseOperations.field_cast_sql:\r\n    warnings.warn(...)\r\n    db_type = sel"
+              }
+            ]
+          },
+          "notes": null
+        },
+        "novelty_rate": {
+          "name": "novelty_rate",
+          "value": 1.0,
+          "per_sample_detail": {
+            "unmatched_peer": [
+              {
+                "path": "django/db/backends/base/operations.py",
+                "line": 225,
+                "end_line": 231,
+                "severity": "important",
+                "body": "The deprecation warning is placed inside the base `field_cast_sql()` implementation itself. This means it fires when a third-party backend calls `super().field_cast_sql(...)` as part of their own override, even though that backend has legitimately overridden the method. The intent is to warn backends that *still rely on the old hook*, but a backend that has already started migrating and calls super will get a spurious warning. More critically, it also fires via the call in `lookups.py` line 237 (`connection.ops.field_cast_sql(...)`), meaning the warning is emitted **twice** for every affected lookup: once from `process_lhs` and once from inside the base class method.",
+                "rationale": "In `lookups.py` lines 228-237, the warning is already emitted before `field_cast_sql` is called. Then the base implementation at operations.py:225-231 emits a second warning. Any third-party backend that hasn't overridden `field_cast_sql` (i.e., still uses the base) will also silently trigger the warning from the base for every lookup, even though the check in `lookups.py` lines 223-226 is specifically guarding against calling the base. If the backend *has* overridden it but delegates to `super()`, the base will still fire. The net effect is duplicate (or incorrect) warnings.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Possible Bug"
+              },
+              {
+                "path": "django/db/models/lookups.py",
+                "line": 237,
+                "end_line": null,
+                "severity": "important",
+                "body": "`field_cast_sql()` returns a format string containing `%s` (e.g. `\"CAST(%s AS VARCHAR)\"`) and the code uses `% lhs_sql` to interpolate it. However, `lhs_sql` may itself contain `%s` placeholders (for query parameters). Using Python's `%` string formatting here can corrupt those placeholders or raise a `TypeError`/`ValueError` if `lhs_sql` contains percent signs. The same pattern existed in the old code, but since this is a deprecation shim it is worth calling out so the replacement path (`lookup_cast`) is confirmed to handle this safely.",
+                "rationale": "The old code at the removed hunk also did `connection.ops.field_cast_sql(db_type, field_internal_type) % lhs_sql`, so this is a pre-existing issue carried forward into the shim. The `lookup_cast` path on line 240 does the same thing, so this is consistent \u2014 but it is still worth noting in the context of the migration guide.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Possible Bug"
+              },
+              {
+                "path": "django/db/backends/base/operations.py",
+                "line": 227,
+                "end_line": null,
+                "severity": "nit",
+                "body": "Missing comma in deprecation message: `\"DatabaseOperations.field_cast_sql() is deprecated use\"` should read `\"DatabaseOperations.field_cast_sql() is deprecated, use\"`. The test at `test_operations.py:247-248` already encodes the broken message, so both the message and the test would need updating together.",
+                "rationale": "The string on line 227 reads `\"is deprecated use\"` \u2014 missing the comma. The corresponding test at `tests/backends/base/test_operations.py:246-248` asserts against this exact string, so it would need to be updated in sync.",
+                "references": null,
+                "suggestion": "                \"DatabaseOperations.field_cast_sql() is deprecated, use \"\n                \"DatabaseOperations.lookup_cast() instead.\"",
+                "issue_header": "Documentation"
+              },
+              {
+                "path": "tests/backends/base/test_operations.py",
+                "line": 250,
+                "end_line": null,
+                "severity": "minor",
+                "body": "`assertRaisesMessage` is used instead of `assertWarnsMessage` (or `assertWarns`). A `RemovedInDjango60Warning` is a `DeprecationWarning` subclass, not an exception \u2014 it should not *raise* unless warnings are configured to raise errors. In a test environment Django typically converts them to errors, so this may work incidentally, but the semantically correct assertion is `self.assertWarnsMessage(RemovedInDjango60Warning, msg)`. Using `assertRaisesMessage` conflates warnings with exceptions and may mask cases where the warning is emitted differently.",
+                "rationale": "The same pattern is used for the other deprecation test on line 260. Django's own test suite typically uses `assertWarnsMessage` for deprecation warnings (e.g., in `tests/utils_tests/test_deprecation.py`). Using `assertRaisesMessage` works only because `simplefilter('error')` is applied in the test runner, which is an implementation detail.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Test Coverage"
+              },
+              {
+                "path": "tests/backends/base/test_operations.py",
+                "line": 260,
+                "end_line": null,
+                "severity": "minor",
+                "body": "Same `assertRaisesMessage` vs `assertWarnsMessage` issue as line 250. Additionally, `mock.patch.object(connection.ops.__class__, \"field_cast_sql\")` replaces the method with a `MagicMock`, which is not callable in the way the code expects: `connection.ops.field_cast_sql(db_type, field_internal_type) % lhs_sql` will call the mock (fine) but `% lhs_sql` on a `MagicMock` return value may not raise the deprecation warning \u2014 the code path that actually emits the warning in `process_lhs` fires *before* calling `field_cast_sql`, so this is okay, but the mock return value `MagicMock() % lhs_sql` could raise a `TypeError` or produce nonsense SQL rather than reaching the warning assertion cleanly.",
+                "rationale": "The check `connection.ops.__class__.field_cast_sql is not BaseDatabaseOperations.field_cast_sql` (lines 224-226) fires before calling `field_cast_sql`, so the warning will be emitted. But then line 237 calls `connection.ops.field_cast_sql(db_type, field_internal_type) % lhs_sql` where the mock returns a `MagicMock`, and `MagicMock() % str` may raise `TypeError`. The test relying on the exception path (via `assertRaisesMessage`) may be masking this secondary failure.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Test Coverage"
+              }
+            ],
+            "peer_total": 5,
+            "peer_unmatched_count": 5
+          },
+          "notes": null
+        },
+        "severity_calibration": {
+          "name": "severity_calibration",
+          "value": null,
+          "per_sample_detail": {
+            "pairs": [],
+            "confusion": {}
+          },
+          "notes": "no matched pairs to calibrate against"
+        },
+        "suggestion_rate": {
+          "name": "suggestion_rate",
+          "value": 0.2,
+          "per_sample_detail": {
+            "n_with_suggestion": 1,
+            "n_total": 5
+          },
+          "notes": null
+        }
+      },
+      "cost_usd": null,
+      "latency_seconds": 39.19440625002608,
+      "review_summary": {
+        "n_comments": 5,
+        "severity_distribution": {
+          "important": 2,
+          "nit": 1,
+          "minor": 2
+        },
+        "usage": {
+          "input_tokens": 15825,
+          "output_tokens": 1650,
+          "model": "anthropic:claude-sonnet-4-6",
+          "n_retries_used": 0
+        }
+      },
+      "error": null
+    },
+    {
+      "pr_url": "https://github.com/django/django/pull/17182",
+      "metrics": {
+        "detection_rate": {
+          "name": "detection_rate",
+          "value": null,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 0
+          },
+          "notes": "no gold defects on this sample"
+        },
+        "comments_per_pr": {
+          "name": "comments_per_pr",
+          "value": 3.0,
+          "per_sample_detail": {
+            "n_comments": 3
+          },
+          "notes": null
+        },
+        "precision_per_severity": {
+          "name": "precision_per_severity",
+          "value": null,
+          "per_sample_detail": {
+            "important": {
+              "precision": 0.0,
+              "n": 2,
+              "matched": 0
+            },
+            "minor": {
+              "precision": 0.0,
+              "n": 1,
+              "matched": 0
+            }
+          },
+          "notes": null
+        },
+        "mean_per_pr_recall": {
+          "name": "mean_per_pr_recall",
+          "value": null,
+          "per_sample_detail": {
+            "matched_pairs": [],
+            "unmatched_gold": []
+          },
+          "notes": "no gold defects on this sample"
+        },
+        "novelty_rate": {
+          "name": "novelty_rate",
+          "value": 1.0,
+          "per_sample_detail": {
+            "unmatched_peer": [
+              {
+                "path": "django/test/client.py",
+                "line": 904,
+                "end_line": null,
+                "severity": "important",
+                "body": "`wsgi.url_scheme` is a WSGI-specific key. When `_follow_redirect` is called from `AsyncClient` (which uses ASGI), the key should be `asgi.url_scheme` (or the equivalent ASGI scope key). Unconditionally setting `extra[\"wsgi.url_scheme\"]` in `ClientMixin` will silently have no effect for `AsyncClient`, meaning scheme-aware redirects (e.g., `https://`) won't be honoured in async tests.",
+                "rationale": "The whole motivation of this PR is to share the redirect logic with `AsyncClient`. WSGI uses `wsgi.url_scheme`; ASGI uses a different mechanism. Setting a WSGI-specific key in a mixin intended to work for both clients is incorrect for the async code path.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Possible Bug"
+              },
+              {
+                "path": "django/test/client.py",
+                "line": 925,
+                "end_line": null,
+                "severity": "important",
+                "body": "For 307/308 redirects where the original method is not GET/HEAD, `extra[\"QUERY_STRING\"]` is set but `data` retains the original (non-GET) request body. However, `content_type` is also left as-is from the original call. If `content_type` was `None` or `\"\"` for a POST with form data, the subsequent `request_method(path, data=data, content_type=content_type, ...)` call may mismatch its expected body encoding. This logic was already present before the refactor but is now more visible as a shared concern for both sync and async clients.",
+                "rationale": "In the old `_handle_redirects`, `data` and `content_type` were passed in from the caller and similarly reused. This is a pre-existing issue now exposed at the mixin level.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Possible Bug"
+              },
+              {
+                "path": "django/test/client.py",
+                "line": 894,
+                "end_line": null,
+                "severity": "minor",
+                "body": "`_follow_redirect` calls `self.get` / `getattr(self, request_method)` synchronously and returns their result directly. When this method is eventually used from `AsyncClient`, the returned value will be a coroutine rather than a response object, causing the `while` loop in `_handle_redirects` to break (checking `status_code` on a coroutine). An `async def _follow_redirect` override (or an `await` mechanism) will be needed before `AsyncClient` can actually use this mixin method. The PR description says this is the goal, but the current implementation isn't usable from `AsyncClient` as-is.",
+                "rationale": "The PR description states the motivation is to allow `AsyncClient` to use this logic, but `AsyncClient` methods are all async and returning a coroutine from `_follow_redirect` will break `_handle_redirects` without additional wiring.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Async Incompatibility"
+              }
+            ],
+            "peer_total": 3,
+            "peer_unmatched_count": 3
+          },
+          "notes": null
+        },
+        "severity_calibration": {
+          "name": "severity_calibration",
+          "value": null,
+          "per_sample_detail": {
+            "pairs": [],
+            "confusion": {}
+          },
+          "notes": "no matched pairs to calibrate against"
+        },
+        "suggestion_rate": {
+          "name": "suggestion_rate",
+          "value": 0.0,
+          "per_sample_detail": {
+            "n_with_suggestion": 0,
+            "n_total": 3
+          },
+          "notes": null
+        }
+      },
+      "cost_usd": null,
+      "latency_seconds": 21.777353749843314,
+      "review_summary": {
+        "n_comments": 3,
+        "severity_distribution": {
+          "important": 2,
+          "minor": 1
+        },
+        "usage": {
+          "input_tokens": 11428,
+          "output_tokens": 796,
+          "model": "anthropic:claude-sonnet-4-6",
+          "n_retries_used": 0
+        }
+      },
+      "error": null
+    },
+    {
+      "pr_url": "https://github.com/django/django/pull/17147",
+      "metrics": {
+        "detection_rate": {
+          "name": "detection_rate",
+          "value": 0.0,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 11
+          },
+          "notes": null
+        },
+        "comments_per_pr": {
+          "name": "comments_per_pr",
+          "value": 5.0,
+          "per_sample_detail": {
+            "n_comments": 5
+          },
+          "notes": null
+        },
+        "precision_per_severity": {
+          "name": "precision_per_severity",
+          "value": null,
+          "per_sample_detail": {
+            "important": {
+              "precision": 0.0,
+              "n": 2,
+              "matched": 0
+            },
+            "minor": {
+              "precision": 0.0,
+              "n": 3,
+              "matched": 0
+            }
+          },
+          "notes": null
+        },
+        "mean_per_pr_recall": {
+          "name": "mean_per_pr_recall",
+          "value": 0.0,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 11,
+            "per_severity": {
+              "critical": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              },
+              "important": {
+                "hit": 0,
+                "miss": 2,
+                "total": 2
+              },
+              "minor": {
+                "hit": 0,
+                "miss": 2,
+                "total": 2
+              },
+              "nit": {
+                "hit": 0,
+                "miss": 7,
+                "total": 7
+              }
+            },
+            "matched_pairs": [],
+            "unmatched_gold": [
+              {
+                "path": "django/core/handlers/asgi.py",
+                "line": 219,
+                "line_range": null,
+                "category": "defect-api-design",
+                "severity": "minor",
+                "description": "If this is a single-pass design, prefer defining a local async function over adding another method on self.",
+                "source": "human_reviewer:carltongibson",
+                "confidence": "high",
+                "original_comment_excerpt": "If we're doing this in a single pass[*], I think I might prefer defining a local function, \r\nrather than another method on self. Something like... \r\n\r\n```\r\nasync def process_request(request, send):\r\n    response = await self.run_get_response(request)\r\n    await self.send_response(response, send)\r\n  "
+              },
+              {
+                "path": "tests/asgi/tests.py",
+                "line": 520,
+                "line_range": null,
+                "category": "defect-correctness",
+                "severity": "important",
+                "description": "ResourceWarning: unclosed SpooledTemporaryFile in asgi tests on Python 3.12. The test infrastructure is leaking the temporary body file.",
+                "source": "human_reviewer:felixxm",
+                "confidence": "high",
+                "original_comment_excerpt": "I can see `ResourceWarning` when running `asgi` tests on Python 3.12:\r\n```\r\n$ python -Wall ./runtests.py asgi.tests.ASGITest --parallel=1\r\nTesting against Django installed in '/django/django'\r\nFound 20 test(s).\r\nSystem check identified no issues (0 silenced).\r\n....................\r\n-----------------"
+              },
+              {
+                "path": "tests/asgi/tests.py",
+                "line": 240,
+                "line_range": null,
+                "category": "defect-test-gap",
+                "severity": "minor",
+                "description": "Added tests pass without the patch under review; extra test coverage should land as a separate commit/PR.",
+                "source": "human_reviewer:felixxm",
+                "confidence": "high",
+                "original_comment_excerpt": "`test_disconnect_both_return()` and `test_streaming()` work without this patch. Extra test coverage is welcome but we should move it to a separate commit/PR."
+              },
+              {
+                "path": "tests/asgi/tests.py",
+                "line": 242,
+                "line_range": null,
+                "category": "style-nit",
+                "severity": "nit",
+                "description": "Typo in test comment \u2014 'forces' should be 'force' to match the plural subject.",
+                "source": "human_reviewer:felixxm",
+                "confidence": "high",
+                "original_comment_excerpt": "Typo\r\n```suggestion\r\n        # This test forces both the disconnect listener and the task that sends\r\n        # the response to finish at the same time.\r\n```"
+              },
+              {
+                "path": "tests/asgi/tests.py",
+                "line": 241,
+                "line_range": null,
+                "category": "style-nit",
+                "severity": "nit",
+                "description": "Django style: omit prefixes like 'This test', 'Ensure', 'Test' in test docstrings.",
+                "source": "human_reviewer:felixxm",
+                "confidence": "high",
+                "original_comment_excerpt": "Try to omit prefixes like `This test`, `Ensure`, `Test`, etc."
+              },
+              {
+                "path": "docs/ref/request-response.txt",
+                "line": 1285,
+                "line_range": null,
+                "category": "style-nit",
+                "severity": "nit",
+                "description": "Remove the orphan documentation code block.",
+                "source": "human_reviewer:felixxm",
+                "confidence": "high",
+                "original_comment_excerpt": "```suggestion\r\n```"
+              },
+              {
+                "path": "docs/ref/request-response.txt",
+                "line": 1312,
+                "line_range": null,
+                "category": "style-nit",
+                "severity": "nit",
+                "description": "Wrap documentation text at 79 characters per project convention.",
+                "source": "human_reviewer:felixxm",
+                "confidence": "high",
+                "original_comment_excerpt": "Wrap at 79 chars."
+              },
+              {
+                "path": "docs/topics/async.txt",
+                "line": 200,
+                "line_range": null,
+                "category": "style-nit",
+                "severity": "nit",
+                "description": "Django docs convention: omit semicolons.",
+                "source": "human_reviewer:felixxm",
+                "confidence": "high",
+                "original_comment_excerpt": "Try to omit `;` in docs."
+              },
+              {
+                "path": "django/core/handlers/asgi.py",
+                "line": 197,
+                "line_range": null,
+                "category": "style-nit",
+                "severity": "nit",
+                "description": "Django comment style: omit 'We' in comments.",
+                "source": "human_reviewer:felixxm",
+                "confidence": "high",
+                "original_comment_excerpt": "Please omit `We` in comments\r\n```suggestion\r\n            # Check the status of these tasks and (optionally) ...\r\n```"
+              },
+              {
+                "path": "tests/asgi/tests.py",
+                "line": 520,
+                "line_range": null,
+                "category": "style-nit",
+                "severity": "nit",
+                "description": "Django doesn't use typing annotations, so the type-ignore suppression comment can be removed.",
+                "source": "human_reviewer:ngnpope",
+                "confidence": "high",
+                "original_comment_excerpt": "There is no typing in Django, so this suppression comment can be removed.\r\n\r\n```suggestion\r\n            await communicator.receive_output(timeout=0.2)\r\n```"
+              },
+              {
+                "path": "tests/asgi/tests.py",
+                "line": 282,
+                "line_range": null,
+                "category": "defect-correctness",
+                "severity": "important",
+                "description": "ResourceWarning: unclosed SpooledTemporaryFile in `test_assert_in_listen_for_disconnect` on Python 3.12. Same root cause as the other ResourceWarning above.",
+                "source": "human_reviewer:felixxm",
+                "confidence": "high",
+                "original_comment_excerpt": "This causes `ResourceWarning` on Python 3.12+:\r\n```\r\n./runtests.py asgi.tests.ASGITest.test_assert_in_listen_for_disconnect --parallel=1\r\nTesting against Django installed in '/django/django'\r\nFound 1 test(s).\r\nSystem check identified no issues (0 silenced).\r\n.\r\n--------------------------------------"
+              }
+            ]
+          },
+          "notes": null
+        },
+        "novelty_rate": {
+          "name": "novelty_rate",
+          "value": 1.0,
+          "per_sample_detail": {
+            "unmatched_peer": [
+              {
+                "path": "django/core/handlers/asgi.py",
+                "line": 208,
+                "end_line": 215,
+                "severity": "important",
+                "body": "Exceptions raised by a done `process_request` task (other than `RequestAborted` and `AssertionError`) are silently swallowed. For example, if `run_get_response` or `send_response` raises an unexpected exception (e.g. `ValueError`, `RuntimeError`), `task.result()` will re-raise it here but it is not caught \u2014 causing it to propagate up, skipping the final `body_file.close()` on line 224. The `body_file` is only closed in the `AssertionError` branch and at the end (line 224), so any other exception leaks the file handle.",
+                "rationale": "The `except` clauses only handle `RequestAborted` and `AssertionError`. Any other exception from `task.result()` will bypass `body_file.close()` on line 224, leaking the SpooledTemporaryFile. The prior discussion already notes a ResourceWarning about unclosed SpooledTemporaryFile objects (see @felixxm's inline review at tests/asgi/tests.py:282), which is a related symptom.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Possible Bug"
+              },
+              {
+                "path": "django/core/handlers/asgi.py",
+                "line": 216,
+                "end_line": 223,
+                "severity": "important",
+                "body": "When a pending task is cancelled (`task.cancel()`) and then awaited, any exception other than `CancelledError` raised by the task during cancellation handling is not caught \u2014 it would propagate up and skip `body_file.close()` on line 224. Additionally, if `task.cancel()` returns `False` (the task finished between the `done()` check and the `cancel()` call \u2014 a TOCTOU race), the subsequent `await task` will re-raise its stored exception rather than raising `CancelledError`, and that exception is also unhandled here.",
+                "rationale": "Between checking `task.done()` (line 207) and calling `task.cancel()` (line 218), the task could complete. `task.cancel()` would then return `False`, and `await task` would raise the task's result exception instead of `CancelledError`. The `except asyncio.CancelledError` on line 221 would not catch it, and `body_file.close()` would be skipped.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Possible Bug"
+              },
+              {
+                "path": "django/core/handlers/asgi.py",
+                "line": 197,
+                "end_line": 203,
+                "severity": "minor",
+                "body": "The comment says tasks are checked and terminated \"in this order\" with `listen_for_disconnect()` going first, but the ordering guarantee only applies to the loop iteration over the list. The comment would be clearer if it explicitly mentioned that the list order determines the iteration order in the `for task in tasks` loop below.",
+                "rationale": "The comment implies a meaningful ordering guarantee but the actual enforcement comes from the list ordering combined with the sequential `for task in tasks` loop. This is subtle enough that it could mislead a future reader into thinking some other ordering mechanism is at play.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Misleading Comment"
+              },
+              {
+                "path": "tests/asgi/tests.py",
+                "line": 503,
+                "end_line": 505,
+                "severity": "minor",
+                "body": "In `test_streaming`, the comment says \"Fetch the rest of the response so that coroutines are cleaned up\", but the test does not assert anything about the third `receive_output` response. Consider asserting that it is the final body chunk (e.g. `more_body=False`) to make the test more self-documenting and to catch regressions where the response structure changes.",
+                "rationale": "The other receive_output calls in nearby tests check the type and body. This one is silent, which could mask a behavior change in how the final streaming chunk is signalled.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Test Coverage"
+              },
+              {
+                "path": "docs/ref/request-response.txt",
+                "line": 1301,
+                "end_line": 1304,
+                "severity": "minor",
+                "body": "The documentation example uses `...` as the cleanup placeholder inside `except asyncio.CancelledError`, but does not clearly state that re-raising `CancelledError` is **required** (not optional). A reader might omit the `raise` and inadvertently suppress the cancellation, causing the coroutine to continue streaming after a disconnect.",
+                "rationale": "Suppressing `CancelledError` in a generator-based streaming response would prevent the `process_request` task from being properly cancelled, defeating the disconnect handling. The re-raise is critical but is presented as just another line of code without emphasis.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Docs Clarity"
+              }
+            ],
+            "peer_total": 5,
+            "peer_unmatched_count": 5
+          },
+          "notes": null
+        },
+        "severity_calibration": {
+          "name": "severity_calibration",
+          "value": null,
+          "per_sample_detail": {
+            "pairs": [],
+            "confusion": {}
+          },
+          "notes": "no matched pairs to calibrate against"
+        },
+        "suggestion_rate": {
+          "name": "suggestion_rate",
+          "value": 0.0,
+          "per_sample_detail": {
+            "n_with_suggestion": 0,
+            "n_total": 5
+          },
+          "notes": null
+        }
+      },
+      "cost_usd": null,
+      "latency_seconds": 33.64132925006561,
+      "review_summary": {
+        "n_comments": 5,
+        "severity_distribution": {
+          "important": 2,
+          "minor": 3
+        },
+        "usage": {
+          "input_tokens": 21080,
+          "output_tokens": 1254,
+          "model": "anthropic:claude-sonnet-4-6",
+          "n_retries_used": 0
+        }
+      },
+      "error": null
+    },
+    {
+      "pr_url": "https://github.com/django/django/pull/17637",
+      "metrics": {
+        "detection_rate": {
+          "name": "detection_rate",
+          "value": 0.0,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 2
+          },
+          "notes": null
+        },
+        "comments_per_pr": {
+          "name": "comments_per_pr",
+          "value": 1.0,
+          "per_sample_detail": {
+            "n_comments": 1
+          },
+          "notes": null
+        },
+        "precision_per_severity": {
+          "name": "precision_per_severity",
+          "value": null,
+          "per_sample_detail": {
+            "minor": {
+              "precision": 0.0,
+              "n": 1,
+              "matched": 0
+            }
+          },
+          "notes": null
+        },
+        "mean_per_pr_recall": {
+          "name": "mean_per_pr_recall",
+          "value": 0.0,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 2,
+            "per_severity": {
+              "critical": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              },
+              "important": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              },
+              "minor": {
+                "hit": 0,
+                "miss": 1,
+                "total": 1
+              },
+              "nit": {
+                "hit": 0,
+                "miss": 1,
+                "total": 1
+              }
+            },
+            "matched_pairs": [],
+            "unmatched_gold": [
+              {
+                "path": "tests/gis_tests/gdal_tests/test_geom.py",
+                "line": 62,
+                "line_range": null,
+                "category": "defect-test-gap",
+                "severity": "minor",
+                "description": "Test should assert `repr(OGRGeomType('point')) == '<OGRGeomType: Point>'` to verify the actual output format being added.",
+                "source": "human_reviewer:felixxm",
+                "confidence": "high",
+                "original_comment_excerpt": "```suggestion\r\n        self.assertEqual(repr(OGRGeomType(\"point\")), \"<OGRGeomType: Point>\")\r\n```"
+              },
+              {
+                "path": "django/contrib/gis/gdal/geomtype.py",
+                "line": 59,
+                "line_range": null,
+                "category": "style-nit",
+                "severity": "nit",
+                "description": "Use `self.__class__.__qualname__` instead of `__name__` for more precise class representation in __repr__.",
+                "source": "human_reviewer:felixxm",
+                "confidence": "high",
+                "original_comment_excerpt": "```suggestion\r\n        return f\"<{self.__class__.__qualname__}: {self.name}>\"\r\n```"
+              }
+            ]
+          },
+          "notes": null
+        },
+        "novelty_rate": {
+          "name": "novelty_rate",
+          "value": 1.0,
+          "per_sample_detail": {
+            "unmatched_peer": [
+              {
+                "path": "tests/gis_tests/gdal_tests/test_geom.py",
+                "line": 62,
+                "end_line": null,
+                "severity": "minor",
+                "body": "The `test_geom_type_repr` test only covers a single geometry type (`\"point\"`). Consider adding a couple more cases, such as a 25D type (e.g. `OGRGeomType(\"Point25D\")`) and the `\"Unknown\"/\"Geometry\"` type, to ensure the `__repr__` output is correct across different name values.",
+                "rationale": "The implementation uses `self.name` which can produce values like `\"Point25D\"` or `\"Unknown\"`. A single test case provides limited coverage of the range of possible outputs.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Test Coverage"
+              }
+            ],
+            "peer_total": 1,
+            "peer_unmatched_count": 1
+          },
+          "notes": null
+        },
+        "severity_calibration": {
+          "name": "severity_calibration",
+          "value": null,
+          "per_sample_detail": {
+            "pairs": [],
+            "confusion": {}
+          },
+          "notes": "no matched pairs to calibrate against"
+        },
+        "suggestion_rate": {
+          "name": "suggestion_rate",
+          "value": 0.0,
+          "per_sample_detail": {
+            "n_with_suggestion": 0,
+            "n_total": 1
+          },
+          "notes": null
+        }
+      },
+      "cost_usd": null,
+      "latency_seconds": 10.94461370818317,
+      "review_summary": {
+        "n_comments": 1,
+        "severity_distribution": {
+          "minor": 1
+        },
+        "usage": {
+          "input_tokens": 6397,
+          "output_tokens": 220,
+          "model": "anthropic:claude-sonnet-4-6",
+          "n_retries_used": 0
+        }
+      },
+      "error": null
+    },
+    {
+      "pr_url": "https://github.com/django/django/pull/17312",
+      "metrics": {
+        "detection_rate": {
+          "name": "detection_rate",
+          "value": null,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 0
+          },
+          "notes": "no gold defects on this sample"
+        },
+        "comments_per_pr": {
+          "name": "comments_per_pr",
+          "value": 0.0,
+          "per_sample_detail": {
+            "n_comments": 0
+          },
+          "notes": null
+        },
+        "precision_per_severity": {
+          "name": "precision_per_severity",
+          "value": null,
+          "per_sample_detail": {},
+          "notes": "reviewer produced 0 comments on this sample"
+        },
+        "mean_per_pr_recall": {
+          "name": "mean_per_pr_recall",
+          "value": null,
+          "per_sample_detail": {
+            "matched_pairs": [],
+            "unmatched_gold": []
+          },
+          "notes": "no gold defects on this sample"
+        },
+        "novelty_rate": {
+          "name": "novelty_rate",
+          "value": null,
+          "per_sample_detail": {
+            "unmatched_peer": [],
+            "peer_total": 0
+          },
+          "notes": "reviewer produced 0 comments on this sample"
+        },
+        "severity_calibration": {
+          "name": "severity_calibration",
+          "value": null,
+          "per_sample_detail": {
+            "pairs": [],
+            "confusion": {}
+          },
+          "notes": "no matched pairs to calibrate against"
+        },
+        "suggestion_rate": {
+          "name": "suggestion_rate",
+          "value": null,
+          "per_sample_detail": {
+            "n_with_suggestion": 0,
+            "n_total": 0
+          },
+          "notes": "reviewer produced 0 comments on this sample"
+        }
+      },
+      "cost_usd": null,
+      "latency_seconds": 5.32598187495023,
+      "review_summary": {
+        "n_comments": 0,
+        "severity_distribution": {},
+        "usage": {
+          "input_tokens": 4465,
+          "output_tokens": 33,
+          "model": "anthropic:claude-sonnet-4-6",
+          "n_retries_used": 0
+        }
+      },
+      "error": null
+    },
+    {
+      "pr_url": "https://github.com/django/django/pull/17256",
+      "metrics": {
+        "detection_rate": {
+          "name": "detection_rate",
+          "value": 0.0,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 5
+          },
+          "notes": null
+        },
+        "comments_per_pr": {
+          "name": "comments_per_pr",
+          "value": 2.0,
+          "per_sample_detail": {
+            "n_comments": 2
+          },
+          "notes": null
+        },
+        "precision_per_severity": {
+          "name": "precision_per_severity",
+          "value": null,
+          "per_sample_detail": {
+            "important": {
+              "precision": 0.0,
+              "n": 1,
+              "matched": 0
+            },
+            "minor": {
+              "precision": 0.0,
+              "n": 1,
+              "matched": 0
+            }
+          },
+          "notes": null
+        },
+        "mean_per_pr_recall": {
+          "name": "mean_per_pr_recall",
+          "value": 0.0,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 5,
+            "per_severity": {
+              "critical": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              },
+              "important": {
+                "hit": 0,
+                "miss": 1,
+                "total": 1
+              },
+              "minor": {
+                "hit": 0,
+                "miss": 2,
+                "total": 2
+              },
+              "nit": {
+                "hit": 0,
+                "miss": 2,
+                "total": 2
+              }
+            },
+            "matched_pairs": [],
+            "unmatched_gold": [
+              {
+                "path": "docs/topics/migrations.txt",
+                "line": 788,
+                "line_range": null,
+                "category": "defect-doc-gap",
+                "severity": "minor",
+                "description": "Docs should make it explicit that functools.cache decorator support is intentionally supported, not implicit, to help readers understand the design intent.",
+                "source": "human_reviewer:nessita",
+                "confidence": "high",
+                "original_comment_excerpt": "I'm not sure about this suggestion but I feel it would be a good idea to make it explicit that this support is not a \"natural consequence\" or implicit:\r\n```suggestion\r\n  - The :func:`functools.cache` and :func:`functools.lru_cache` decorators are explicitly supported\r\n```"
+              },
+              {
+                "path": "docs/releases/5.0.txt",
+                "line": 404,
+                "line_range": null,
+                "category": "style-nit",
+                "severity": "nit",
+                "description": "Release-notes wording: drop the redundant 'Migrations now' prefix since the section title already specifies Migrations context.",
+                "source": "human_reviewer:nessita",
+                "confidence": "high",
+                "original_comment_excerpt": "On a second thought, I think it would be a good idea to remove \"Migrations now\" since the section title is specific about Migrations. So:\r\n\r\n```suggestion\r\n* Support for serialization of functions decorated with... was added.\r\n```"
+              },
+              {
+                "path": "docs/topics/migrations.txt",
+                "line": 788,
+                "line_range": null,
+                "category": "defect-doc-gap",
+                "severity": "important",
+                "description": "Nested items in the migrations docs are rendering incorrectly (visible in the linked screenshot). Fix the RST nesting.",
+                "source": "human_reviewer:nessita",
+                "confidence": "high",
+                "original_comment_excerpt": "Also this nested items seem to be rendering incorrectly:\r\n![image](https://github.com/django/django/assets/124304/1748e92d-52e4-48ff-8ad5-2accf7238953)"
+              },
+              {
+                "path": "docs/releases/5.0.txt",
+                "line": 404,
+                "line_range": null,
+                "category": "defect-doc-gap",
+                "severity": "minor",
+                "description": "Release-notes line has malformed markdown \u2014 unclosed backtick in 'Migrations now support serialization of functions...'.",
+                "source": "human_reviewer:felixxm",
+                "confidence": "high",
+                "original_comment_excerpt": "```\r\n`* Migrations now support serialization of functions ...\r\n```"
+              },
+              {
+                "path": "docs/releases/5.0.txt",
+                "line": 404,
+                "line_range": null,
+                "category": "style-nit",
+                "severity": "nit",
+                "description": "Django release-notes convention: use present tense, not past tense.",
+                "source": "human_reviewer:felixxm",
+                "confidence": "high",
+                "original_comment_excerpt": "There is nothing to fight, we use present tenses in release notes."
+              }
+            ]
+          },
+          "notes": null
+        },
+        "novelty_rate": {
+          "name": "novelty_rate",
+          "value": 1.0,
+          "per_sample_detail": {
+            "unmatched_peer": [
+              {
+                "path": "django/db/migrations/serializer.py",
+                "line": 353,
+                "end_line": null,
+                "severity": "important",
+                "body": "`functools._lru_cache_wrapper` is a private CPython implementation detail, not part of the public API. It could be renamed or removed in a future Python version without notice.\n\nA more robust approach would be to obtain the type dynamically via `type(functools.lru_cache(lambda: None))`, or check `hasattr(value, '__wrapped__')` combined with callable check in a custom serializer. Alternatively, you can derive it at module load time:\n\n```python\n_LRUCACHE_WRAPPER_TYPE = type(functools.lru_cache(lambda: None))\n```\n\nand then use `_LRUCACHE_WRAPPER_TYPE` in the registry.",
+                "rationale": "The class `functools._lru_cache_wrapper` is prefixed with an underscore indicating it is private. `functools.cache` also returns a `functools._lru_cache_wrapper` instance (since `functools.cache` is just `lru_cache(maxsize=None)`), so this covers both, but the reliance on a private name is fragile.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Private API Usage"
+              },
+              {
+                "path": "tests/migrations/test_writer.py",
+                "line": 592,
+                "end_line": 595,
+                "severity": "minor",
+                "body": "The new test `test_serialize_decorated_functions` only calls `assertSerializedEqual` which checks round-trip equality. It would be more valuable to also assert the exact serialized string for `function_with_cache` and `function_with_lru_cache` \u2014 e.g. verifying that the output is `'tests.migrations.test_writer.function_with_cache'` (the wrapped function's qualified name) rather than something unexpected. This would catch a regression where the serialized form changes.",
+                "rationale": "Looking at the existing `test_serialize_functions` test, it uses both `assertSerializedEqual` and checks explicit string output (e.g. `self.assertEqual(string, 'models.SET(42)')`). The new tests don't verify that the `__wrapped__` attribute is followed correctly to get the right module path.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Test Coverage"
+              }
+            ],
+            "peer_total": 2,
+            "peer_unmatched_count": 2
+          },
+          "notes": null
+        },
+        "severity_calibration": {
+          "name": "severity_calibration",
+          "value": null,
+          "per_sample_detail": {
+            "pairs": [],
+            "confusion": {}
+          },
+          "notes": "no matched pairs to calibrate against"
+        },
+        "suggestion_rate": {
+          "name": "suggestion_rate",
+          "value": 0.0,
+          "per_sample_detail": {
+            "n_with_suggestion": 0,
+            "n_total": 2
+          },
+          "notes": null
+        }
+      },
+      "cost_usd": null,
+      "latency_seconds": 19.596135166939348,
+      "review_summary": {
+        "n_comments": 2,
+        "severity_distribution": {
+          "important": 1,
+          "minor": 1
+        },
+        "usage": {
+          "input_tokens": 11397,
+          "output_tokens": 610,
+          "model": "anthropic:claude-sonnet-4-6",
+          "n_retries_used": 0
+        }
+      },
+      "error": null
+    },
+    {
+      "pr_url": "https://github.com/django/django/pull/16746",
+      "metrics": {
+        "detection_rate": {
+          "name": "detection_rate",
+          "value": 0.0,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 4
+          },
+          "notes": null
+        },
+        "comments_per_pr": {
+          "name": "comments_per_pr",
+          "value": 3.0,
+          "per_sample_detail": {
+            "n_comments": 3
+          },
+          "notes": null
+        },
+        "precision_per_severity": {
+          "name": "precision_per_severity",
+          "value": null,
+          "per_sample_detail": {
+            "minor": {
+              "precision": 0.0,
+              "n": 2,
+              "matched": 0
+            },
+            "nit": {
+              "precision": 0.0,
+              "n": 1,
+              "matched": 0
+            }
+          },
+          "notes": null
+        },
+        "mean_per_pr_recall": {
+          "name": "mean_per_pr_recall",
+          "value": 0.0,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 4,
+            "per_severity": {
+              "critical": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              },
+              "important": {
+                "hit": 0,
+                "miss": 1,
+                "total": 1
+              },
+              "minor": {
+                "hit": 0,
+                "miss": 1,
+                "total": 1
+              },
+              "nit": {
+                "hit": 0,
+                "miss": 2,
+                "total": 2
+              }
+            },
+            "matched_pairs": [],
+            "unmatched_gold": [
+              {
+                "path": "docs/ref/paginator.txt",
+                "line": 59,
+                "line_range": null,
+                "category": "defect-doc-gap",
+                "severity": "minor",
+                "description": "New docs are nearly identical to the existing forms-fields error-messages docs; reduce duplication or unify.",
+                "source": "human_reviewer:mgaligniana",
+                "confidence": "high",
+                "original_comment_excerpt": "Almost the same documentation as https://docs.djangoproject.com/en/4.1/ref/forms/fields/#error-messages"
+              },
+              {
+                "path": "django/core/paginator.py",
+                "line": 35,
+                "line_range": null,
+                "category": "style-nit",
+                "severity": "nit",
+                "description": "Use shorter dict keys (e.g. 'invalid_page') for cleaner, more maintainable code.",
+                "source": "human_reviewer:felixxm",
+                "confidence": "high",
+                "original_comment_excerpt": "I'd use shorter keys, e.g.\r\n```suggestion\r\n    default_error_messages = {\r\n        \"invalid_page\": _(\"That page number is not an integer\"),\r\n        \"min_page\": _(\"That page number is less than 1\"),\r\n        \"no_results\": _(\"That page contains no results\"),\r\n    }\r\n```"
+              },
+              {
+                "path": "docs/ref/paginator.txt",
+                "line": 59,
+                "line_range": null,
+                "category": "defect-doc-gap",
+                "severity": "important",
+                "description": "Missing `versionadded:: 5.0` annotation. Also document the available error_messages keys and add release notes for the new customization feature.",
+                "source": "human_reviewer:felixxm",
+                "confidence": "high",
+                "original_comment_excerpt": "`versionadded:: 5.0` annotation is missing. I'd also document available keys and add release notes."
+              },
+              {
+                "path": "tests/pagination/tests.py",
+                "line": 140,
+                "line_range": null,
+                "category": "style-nit",
+                "severity": "nit",
+                "description": "Test refactor: extract the expected error message into a variable for readability.",
+                "source": "human_reviewer:felixxm",
+                "confidence": "high",
+                "original_comment_excerpt": "```suggestion\r\n        msg = \"...\"\r\n        with self.assertRaisesMessage(PageNotAnInteger, msg):\r\n```"
+              }
+            ]
+          },
+          "notes": null
+        },
+        "novelty_rate": {
+          "name": "novelty_rate",
+          "value": 1.0,
+          "per_sample_detail": {
+            "unmatched_peer": [
+              {
+                "path": "django/core/paginator.py",
+                "line": 50,
+                "end_line": 54,
+                "severity": "minor",
+                "body": "When `error_messages=None`, `self.error_messages` is assigned the class-level `default_error_messages` dict directly (no copy). This means mutations to a paginator instance's `self.error_messages` would modify the shared class attribute, potentially affecting all other `Paginator` instances that also use the default. Consider always producing a new dict.",
+                "rationale": "The branch `self.default_error_messages if error_messages is None` returns the class dict object itself, not a copy. The merge branch (`self.default_error_messages | error_messages`) already creates a new dict, so the two branches are inconsistent.",
+                "references": null,
+                "suggestion": "        self.error_messages = self.default_error_messages | (error_messages or {})",
+                "issue_header": "Possible Bug"
+              },
+              {
+                "path": "docs/ref/paginator.txt",
+                "line": 59,
+                "end_line": null,
+                "severity": "nit",
+                "body": "`error_messages` is documented as an `.. attribute::` but it is actually an `__init__` parameter (not a class/instance attribute in the traditional sense \u2014 it does become an instance attribute, but the primary entry point is the constructor argument). The existing attributes like `object_list`, `per_page`, `orphans`, and `allow_empty_first_page` follow the same pattern, so this is consistent with existing docs style and is low severity, but worth noting that the parameter description under `.. attribute::` is slightly misleading since it says \"The `error_messages` argument lets you override\u2026\" \u2014 mixing parameter and attribute terminology.",
+                "rationale": "The doc says `.. attribute:: Paginator.error_messages` but describes it as an \"argument\". Other parameters in this file have the same pattern, so this is a pre-existing style choice, but may cause slight reader confusion.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Docs Accuracy"
+              },
+              {
+                "path": "tests/pagination/tests.py",
+                "line": 131,
+                "end_line": null,
+                "severity": "minor",
+                "body": "The test doesn't cover the case where `error_messages={}` (empty dict) is passed. With an empty dict, `self.default_error_messages | {}` still returns a copy of the defaults, which is correct, but is worth a quick assertion. More importantly, there is no test for passing an unknown/extra key in `error_messages` \u2014 the dict merge silently accepts it, which could mask typos (e.g. `\"invalid_pages\"` instead of `\"invalid_page\"`). A warning or validation for unknown keys might be worth considering.",
+                "rationale": "The implementation uses `self.default_error_messages | error_messages` which accepts arbitrary extra keys without complaint. A user typo-ing a key name would silently fall back to the default with no indication of the mistake.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Test Coverage"
+              }
+            ],
+            "peer_total": 3,
+            "peer_unmatched_count": 3
+          },
+          "notes": null
+        },
+        "severity_calibration": {
+          "name": "severity_calibration",
+          "value": null,
+          "per_sample_detail": {
+            "pairs": [],
+            "confusion": {}
+          },
+          "notes": "no matched pairs to calibrate against"
+        },
+        "suggestion_rate": {
+          "name": "suggestion_rate",
+          "value": 0.3333333333333333,
+          "per_sample_detail": {
+            "n_with_suggestion": 1,
+            "n_total": 3
+          },
+          "notes": null
+        }
+      },
+      "cost_usd": null,
+      "latency_seconds": 23.196513041853905,
+      "review_summary": {
+        "n_comments": 3,
+        "severity_distribution": {
+          "minor": 2,
+          "nit": 1
+        },
+        "usage": {
+          "input_tokens": 14802,
+          "output_tokens": 761,
+          "model": "anthropic:claude-sonnet-4-6",
+          "n_retries_used": 0
+        }
+      },
+      "error": null
+    },
+    {
+      "pr_url": "https://github.com/django/django/pull/16603",
+      "metrics": {
+        "detection_rate": {
+          "name": "detection_rate",
+          "value": 0.043478260869565216,
+          "per_sample_detail": {
+            "matched_count": 1,
+            "total_gold": 23
+          },
+          "notes": null
+        },
+        "comments_per_pr": {
+          "name": "comments_per_pr",
+          "value": 6.0,
+          "per_sample_detail": {
+            "n_comments": 6
+          },
+          "notes": null
+        },
+        "precision_per_severity": {
+          "name": "precision_per_severity",
+          "value": null,
+          "per_sample_detail": {
+            "important": {
+              "precision": 0.3333333333333333,
+              "n": 3,
+              "matched": 1
+            },
+            "minor": {
+              "precision": 0.0,
+              "n": 3,
+              "matched": 0
+            }
+          },
+          "notes": null
+        },
+        "mean_per_pr_recall": {
+          "name": "mean_per_pr_recall",
+          "value": 0.043478260869565216,
+          "per_sample_detail": {
+            "matched_count": 1,
+            "total_gold": 23,
+            "per_severity": {
+              "critical": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              },
+              "important": {
+                "hit": 0,
+                "miss": 12,
+                "total": 12
+              },
+              "minor": {
+                "hit": 1,
+                "miss": 3,
+                "total": 4
+              },
+              "nit": {
+                "hit": 0,
+                "miss": 7,
+                "total": 7
+              }
+            },
+            "matched_pairs": [
+              {
+                "peer": {
+                  "path": "django/core/handlers/asgi.py",
+                  "line": 200,
+                  "end_line": 202,
+                  "severity": "important",
+                  "body": "Catching `AssertionError` from `done.result()` assumes that only `listen_for_disconnect` raises `AssertionError`. However, `done` could also be the `run_get_response` task if the view completes before the disconnect. An `AssertionError` raised inside a view (e.g. from a failing `assert` statement) would be caught here, the `body_file` would be closed, and the assertion would be re-raised \u2014 bypassing any exception-handling middleware and preventing a 500 response from being sent to the client. This silently breaks standard Django error-handling for views that use `assert`.",
+                  "rationale": "The `done` task can be either `run_get_response` or `listen_for_disconnect` depending on which completes first. The `AssertionError` catch was intended only for the protocol-error case in `listen_for_disconnect` (line 212), but the code does not distinguish which task is `done`.",
+                  "references": null,
+                  "suggestion": null,
+                  "issue_header": "Possible Bug"
+                },
+                "gold": {
+                  "path": "django/core/handlers/asgi.py",
+                  "line": 202,
+                  "line_range": null,
+                  "category": "defect-api-design",
+                  "severity": "minor",
+                  "description": "Design choice: prefer letting the assertion-style programming error propagate uncaught (re-raised) rather than catching it as RequestAborted, since this would only happen on a buggy protocol server.",
+                  "source": "human_reviewer:carltongibson",
+                  "confidence": "high",
+                  "original_comment_excerpt": "We **could** handle this with `RequestAborted` above but it would be a programming error in the protocol server (e.g. Daphne/Uvicorn) and I'd just want to be uncaught/re-raised. (It's a genuine _should **never** happen_, so an assertion is the right option.) \r\n\r\n(We could drop it entirely... equally"
+                }
+              }
+            ],
+            "unmatched_gold": [
+              {
+                "path": "django/core/handlers/asgi.py",
+                "line": 220,
+                "line_range": null,
+                "category": "defect-correctness",
+                "severity": "minor",
+                "description": "Reviewer indicates this line does not appear to be needed.",
+                "source": "human_reviewer:carltongibson",
+                "confidence": "high",
+                "original_comment_excerpt": "This doesn't look needed."
+              },
+              {
+                "path": "django/core/handlers/asgi.py",
+                "line": 262,
+                "line_range": null,
+                "category": "defect-api-design",
+                "severity": "minor",
+                "description": "Simplify control flow: prefer a `pass` and falling through to the next code rather than nesting everything under the except block.",
+                "source": "human_reviewer:carltongibson",
+                "confidence": "high",
+                "original_comment_excerpt": "Can we merely `pass` here, and then move on to the following code, without needing to nest it all under the except block?"
+              },
+              {
+                "path": "django/core/handlers/asgi.py",
+                "line": 259,
+                "line_range": null,
+                "category": "defect-performance",
+                "severity": "important",
+                "description": "Pausing 0.05s on every request adds significant latency to the happy path (no disconnect) to detect the deviant case. Prefer get_nowait() or restructure so the pause only happens on the disconnect branch.",
+                "source": "human_reviewer:carltongibson",
+                "confidence": "high",
+                "original_comment_excerpt": "I don't think pausing here is the way forward. The happy path is no disconnect, and we're adding a quite big delay to check for the deviant case. \r\n\r\nWe should be able to use [get_nowait](https://docs.python.org/3.11/library/asyncio-queue.html#asyncio.Queue.get_nowait) in this context no? \ud83e\udd14\r\n\r\n(But "
+              },
+              {
+                "path": "django/core/handlers/asgi.py",
+                "line": 197,
+                "line_range": null,
+                "category": "defect-correctness",
+                "severity": "important",
+                "description": "RequestAborted is raised and the function returns None, but the expected TimeoutError is never raised \u2014 the send_response task is still pending when RequestAborted fires, so the test does not actually exercise the timeout path.",
+                "source": "human_reviewer:ntachukwu",
+                "confidence": "high",
+                "original_comment_excerpt": "@carltongibson This exception is raised and the function returns None but TimeoutError is not raised to pass the test. The send_response task is pending when the RequestAborted exception is raised but the Timeout Error is never raised even though no response is sent to the client."
+              },
+              {
+                "path": "django/core/handlers/asgi.py",
+                "line": 197,
+                "line_range": null,
+                "category": "defect-api-design",
+                "severity": "important",
+                "description": "Architectural redirection: the current structure still runs the view synchronously and only checks for disconnect before sending. The reviewer wants the view itself wrapped in a concurrent task so disconnects can interrupt a long-running request.",
+                "source": "human_reviewer:carltongibson",
+                "confidence": "high",
+                "original_comment_excerpt": "Hey @Th3nn3ss \u2014 This isn't quite what I'm suggesting. Here you're still running the view, and only checking the disconnect before sending it. \r\n\r\nRather if you wrap everything from \u2248ln172 in to just before the `send_response` call in a `get_response()` or `run_view()` method, then you can run **that"
+              },
+              {
+                "path": "django/core/handlers/asgi.py",
+                "line": 220,
+                "line_range": null,
+                "category": "defect-correctness",
+                "severity": "important",
+                "description": "asyncio.wait() is non-deterministic about which task runs first; forcing signal_to_start_request to await sleep is being used as a workaround. The race condition needs a proper fix, not a sleep-based workaround.",
+                "source": "human_reviewer:ntachukwu",
+                "confidence": "high",
+                "original_comment_excerpt": "asyncio.wait is inconsistent with the task it runs first. forcing signal_to_start_request to await sleep allows listen_for_disconnect to run first (at least once)."
+              },
+              {
+                "path": "django/core/handlers/asgi.py",
+                "line": 185,
+                "line_range": null,
+                "category": "defect-api-design",
+                "severity": "minor",
+                "description": "`disconnect_and_get_response` can just be inlined here \u2014 it's not reused elsewhere and the extra function obscures the flow.",
+                "source": "human_reviewer:carltongibson",
+                "confidence": "high",
+                "original_comment_excerpt": "I think the `disconnect_and_get_response` code can just be inlined here."
+              },
+              {
+                "path": "django/core/handlers/asgi.py",
+                "line": 197,
+                "line_range": null,
+                "category": "defect-correctness",
+                "severity": "important",
+                "description": "Loop is unnecessary per ASGI spec: only a single http.disconnect event is allowed after body processing, so at most one event will arrive. Simplify to a single receive.",
+                "source": "human_reviewer:carltongibson",
+                "confidence": "high",
+                "original_comment_excerpt": "I'm not sure we need the loop here. \ud83e\udd14 The spec doesn't allow any `receive` events except `http.disconnect` once the body processing is completed. \r\n\r\nSo we should get at most one event, and we can `assert message[\"type\"] == \"http.disconnect\"` for that event, erroring loudly for anything else."
+              },
+              {
+                "path": "django/core/handlers/asgi.py",
+                "line": 210,
+                "line_range": null,
+                "category": "defect-api-design",
+                "severity": "important",
+                "description": "Code structure is too complex: the `zip(...)` is overkill. Use `asyncio.create_task(...)` instead of `ensure_future(...)`, and write the tasks list directly without the zip.",
+                "source": "human_reviewer:carltongibson",
+                "confidence": "high",
+                "original_comment_excerpt": "This structure is too complex. The `zip` is overkill. \r\nWhy `ensure_future` rather than `create_task`? \r\n\r\n```\r\ntasks = [\r\n    asyncio.create_task(self.listen_for_disconnect(receive)),\r\n    asyncio.create_task(self.run_get_response(request)),\r\n]\r\n```"
+              },
+              {
+                "path": "django/core/handlers/asgi.py",
+                "line": 213,
+                "line_range": null,
+                "category": "defect-test-gap",
+                "severity": "important",
+                "description": "Pending task may need to be cancelled. There should be a test that exercises a view cleaning up after itself on disconnect; this is also user-facing documentation material.",
+                "source": "human_reviewer:carltongibson",
+                "confidence": "high",
+                "original_comment_excerpt": "Does the `pending` task needs to be cancelled? \r\n\r\nThere should be a test for a view cleaning up after itself. (This will feed into docs for this... \u2014 _\"If you have a long running request, you may need to clean up in case the client disconnects before you're finished...\"_)"
+              },
+              {
+                "path": "tests/asgi/tests.py",
+                "line": 253,
+                "line_range": null,
+                "category": "defect-test-gap",
+                "severity": "important",
+                "description": "Refactor the test: put the slow `time.sleep(...)` inside a view function in urls.py, not inline in the test, so the test can send the disconnect before the view finishes (matching the real disconnect-during-long-view scenario).",
+                "source": "human_reviewer:carltongibson",
+                "confidence": "high",
+                "original_comment_excerpt": "Create a view function that has this delay in it, rather than in the test, so that we can send the disconnect before the view finishes. See the `urls.py` sibling to this file."
+              },
+              {
+                "path": "django/core/handlers/asgi.py",
+                "line": 207,
+                "line_range": null,
+                "category": "style-nit",
+                "severity": "nit",
+                "description": "Format the docstring on a single line per Django style.",
+                "source": "human_reviewer:felixxm",
+                "confidence": "high",
+                "original_comment_excerpt": "```suggestion\r\n        \"\"\"Listen for disconnect from the client.\"\"\"\r\n```"
+              },
+              {
+                "path": "django/core/handlers/asgi.py",
+                "line": 212,
+                "line_range": null,
+                "category": "defect-correctness",
+                "severity": "important",
+                "description": "Use a proper exception (ProgrammingError / ValueError) for runtime validation rather than `assert`, which is stripped when Python runs with -O.",
+                "source": "human_reviewer:felixxm",
+                "confidence": "high",
+                "original_comment_excerpt": "We should raise a proper exception instead of using `assert` e.g. `ProgrammingError`~`ValueError`~ (see ticket-32508)."
+              },
+              {
+                "path": "django/core/handlers/asgi.py",
+                "line": 212,
+                "line_range": null,
+                "category": "style-nit",
+                "severity": "nit",
+                "description": "Django style guideline: f-strings should use only plain variable and property access, not complex expressions.",
+                "source": "human_reviewer:felixxm",
+                "confidence": "high",
+                "original_comment_excerpt": "Also, f-strings should use only plain variable and property access. This guideline is from [Python coding style](https://docs.djangoproject.com/en/dev/internals/contributing/writing-code/coding-style/#python-style)."
+              },
+              {
+                "path": "django/core/handlers/asgi.py",
+                "line": 217,
+                "line_range": null,
+                "category": "style-nit",
+                "severity": "nit",
+                "description": "Comment wording fix per Django style.",
+                "source": "human_reviewer:felixxm",
+                "confidence": "high",
+                "original_comment_excerpt": "```suggestion\r\n        # Use the async mode of BaseHandler.\r\n```"
+              },
+              {
+                "path": "docs/topics/async.txt",
+                "line": 139,
+                "line_range": null,
+                "category": "style-nit",
+                "severity": "nit",
+                "description": "Section heading: use 'Handling disconnects' per project convention.",
+                "source": "human_reviewer:felixxm",
+                "confidence": "high",
+                "original_comment_excerpt": "```suggestion\r\nHandling disconnects\r\n```"
+              },
+              {
+                "path": "docs/topics/async.txt",
+                "line": 143,
+                "line_range": null,
+                "category": "defect-doc-gap",
+                "severity": "important",
+                "description": "Documentation missing `versionadded:: 5.0` directive for the new feature.",
+                "source": "human_reviewer:felixxm",
+                "confidence": "high",
+                "original_comment_excerpt": "`versionadded:: 5.0` is missing."
+              },
+              {
+                "path": "docs/topics/async.txt",
+                "line": 144,
+                "line_range": null,
+                "category": "style-nit",
+                "severity": "nit",
+                "description": "Docs wording fix to improve flow.",
+                "source": "human_reviewer:felixxm",
+                "confidence": "high",
+                "original_comment_excerpt": "```suggestion\r\nview. You can catch this error and handle it if you need to perform any\r\n```"
+              },
+              {
+                "path": "docs/topics/async.txt",
+                "line": 142,
+                "line_range": null,
+                "category": "defect-doc-gap",
+                "severity": "important",
+                "description": "Release notes should reference this docs section so readers can find the full explanation.",
+                "source": "human_reviewer:felixxm",
+                "confidence": "high",
+                "original_comment_excerpt": "We should reference this section in release notes."
+              },
+              {
+                "path": "tests/asgi/tests.py",
+                "line": 376,
+                "line_range": null,
+                "category": "style-nit",
+                "severity": "nit",
+                "description": "Test docstring convention: state the expected behavior, omit prefixes like 'Test a' / 'Check'.",
+                "source": "human_reviewer:felixxm",
+                "confidence": "high",
+                "original_comment_excerpt": "To add more explanation, comments should state the expected behavior and omit prefixes like \"Test a \"/\"Check\" since all tests test/check things. This guideline is from [Python coding style](https://docs.djangoproject.com/en/dev/internals/contributing/writing-code/coding-style/#python-style)."
+              },
+              {
+                "path": "tests/asgi/urls.py",
+                "line": 17,
+                "line_range": null,
+                "category": "style-nit",
+                "severity": "nit",
+                "description": "Use an f-string for the response string per Django style.",
+                "source": "human_reviewer:felixxm",
+                "confidence": "high",
+                "original_comment_excerpt": "```suggestion\r\n    return HttpResponse(f\"Hello {name}!\")\r\n```"
+              },
+              {
+                "path": "docs/topics/async.txt",
+                "line": 142,
+                "line_range": null,
+                "category": "defect-doc-gap",
+                "severity": "important",
+                "description": "Add an explicit RST anchor (`.. _async-handling-disconnect:`) to this section and reference it via `:ref:` in the release notes.",
+                "source": "human_reviewer:felixxm",
+                "confidence": "high",
+                "original_comment_excerpt": "Add an anchor to this section:\r\n```\r\n.. _async-handling-disconnect:\r\n\r\nHandling Disconnects\r\n--------------------\r\n```\r\nand use it in release notes via `:ref:`."
+              }
+            ]
+          },
+          "notes": null
+        },
+        "novelty_rate": {
+          "name": "novelty_rate",
+          "value": 0.8333333333333334,
+          "per_sample_detail": {
+            "unmatched_peer": [
+              {
+                "path": "django/core/handlers/asgi.py",
+                "line": 190,
+                "end_line": 194,
+                "severity": "important",
+                "body": "If the `pending` task (e.g. `listen_for_disconnect`) suppresses `CancelledError` instead of re-raising it, `await pending` will return normally here and execution falls through correctly. However, if `pending` is the `run_get_response` task and the view itself suppresses `CancelledError` (which is valid user code), the cancellation is silently eaten and the handler continues to `done.result()` \u2014 which may be `None` or raise an unrelated error because the response was never fully generated. \n\nMore critically: if `run_get_response` finishes first (no disconnect) and `listen_for_disconnect` is cancelled, that's fine. But if `listen_for_disconnect` finishes first (disconnect detected), `run_get_response` is cancelled. A view that catches `CancelledError` and returns a response (rather than re-raising) will cause `done.result()` to be a `RequestAborted` exception while the view task is still running in the background \u2014 the `await pending` only waits for cancellation acknowledgement, not for the view to actually finish. This is a subtle contract issue that the docs should address more explicitly.",
+                "rationale": "The comment in docs says views must re-raise `CancelledError`, and the example shows `raise` after catching it. But the handler code has no guard for views that swallow `CancelledError`. If `run_get_response` is the pending task and it doesn't re-raise, `await pending` returns normally without error, and then `done.result()` (from `listen_for_disconnect`) raises `RequestAborted` which is caught correctly \u2014 so that path is actually fine. The real concern is: a view that catches `CancelledError` and returns a `HttpResponse` anyway would cause `run_get_response` to complete, becoming the `done` task, while `listen_for_disconnect` is pending. In that scenario the response would still be sent even though a disconnect was received \u2014 but only if `run_get_response` somehow races ahead. This is an edge case worth documenting clearly.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Possible Bug"
+              },
+              {
+                "path": "django/core/handlers/asgi.py",
+                "line": 186,
+                "end_line": 187,
+                "severity": "minor",
+                "body": "`done.pop()` and `pending.pop()` assume exactly one task in each set. `asyncio.wait` with `return_when=FIRST_COMPLETED` guarantees at least one done task, but if both tasks complete simultaneously (a race condition possible under high load or in tests), both will be in `done` and `pending` will be empty. Calling `pending.pop()` on an empty set raises `KeyError`, crashing the handler instead of proceeding gracefully.",
+                "rationale": "The `asyncio.wait` docs state that `done` contains all tasks that completed before the wait returned \u2014 if both `run_get_response` and `listen_for_disconnect` finish at the same instant, both land in `done`. The code as written will raise `KeyError` on `pending.pop()` in that case.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Robustness"
+              },
+              {
+                "path": "tests/asgi/urls.py",
+                "line": 16,
+                "end_line": null,
+                "severity": "important",
+                "body": "`hello_with_delay` uses `time.sleep(1)` \u2014 a blocking synchronous sleep \u2014 which will block the event loop thread when called from an async ASGI context. This is fine for a *synchronous* Django view dispatched via `sync_to_async`, but any test that relies on this view running *concurrently* with other async tasks (e.g. `test_delayed_disconnect_with_body`) may exhibit flaky timing behaviour or unexpectedly block the event loop. Consider using an async view with `await asyncio.sleep(...)` instead for test reliability in an ASGI context.",
+                "rationale": "The `test_delayed_disconnect_with_body` test sends a disconnect immediately after the request body and expects no response (TimeoutError). Since `hello_with_delay` blocks for 1 second synchronously, the event loop is blocked during that time and cannot process the disconnect message, which could cause the test to behave differently than intended.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Blocking Event Loop"
+              },
+              {
+                "path": "docs/topics/async.txt",
+                "line": 147,
+                "end_line": 158,
+                "severity": "minor",
+                "body": "The documentation states that `asyncio.CancelledError` will be raised \"in the view\", but this only applies to *async* views. Synchronous views running under ASGI via `sync_to_async` will not receive `CancelledError` in user code \u2014 the cancellation propagates through the `sync_to_async` wrapper at the asyncio level, not inside the sync view function. The docs should clarify that this behaviour applies to async views only.",
+                "rationale": "The `run_get_response` task wraps `get_response_async` which, for sync views, uses `sync_to_async`. The `CancelledError` would be raised in the async wrapper, not inside the synchronous view function itself. The existing example only shows an `async def` view, but the text does not explicitly restrict the statement to async views.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Docs Accuracy"
+              },
+              {
+                "path": "tests/asgi/tests.py",
+                "line": 397,
+                "end_line": null,
+                "severity": "minor",
+                "body": "The test uses `await asyncio.sleep(0.1)` to \"let the view actually start\" before sending the disconnect. The view itself sleeps for `0.2` seconds. This 100ms window is tight and may be flaky in slow CI environments. If the view completes before the disconnect is sent (or the scheduler doesn't yield to the view task within 100ms), the test will fail or produce a false positive. Consider using a synchronization primitive (e.g. an `asyncio.Event`) to signal when the view has actually started executing.",
+                "rationale": "The test view at line 361 does `await asyncio.sleep(0.2)`. The test sleeps 0.1s before sending the disconnect. On a heavily loaded system, the 0.1s sleep may not be enough time for the view task to actually start and enter its own sleep, making this test timing-dependent.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Timing Fragility"
+              }
+            ],
+            "peer_total": 6,
+            "peer_unmatched_count": 5
+          },
+          "notes": null
+        },
+        "severity_calibration": {
+          "name": "severity_calibration",
+          "value": -1.0,
+          "per_sample_detail": {
+            "pairs": [
+              {
+                "peer_severity": "important",
+                "gold_severity": "minor",
+                "delta": -1,
+                "path": "django/core/handlers/asgi.py",
+                "line": 200
+              }
+            ],
+            "confusion": {
+              "critical": {
+                "critical": 0,
+                "important": 0,
+                "minor": 0,
+                "nit": 0
+              },
+              "important": {
+                "critical": 0,
+                "important": 0,
+                "minor": 0,
+                "nit": 0
+              },
+              "minor": {
+                "critical": 0,
+                "important": 1,
+                "minor": 0,
+                "nit": 0
+              },
+              "nit": {
+                "critical": 0,
+                "important": 0,
+                "minor": 0,
+                "nit": 0
+              }
+            },
+            "n_pairs": 1
+          },
+          "notes": null
+        },
+        "suggestion_rate": {
+          "name": "suggestion_rate",
+          "value": 0.0,
+          "per_sample_detail": {
+            "n_with_suggestion": 0,
+            "n_total": 6
+          },
+          "notes": null
+        }
+      },
+      "cost_usd": null,
+      "latency_seconds": 46.60790075012483,
+      "review_summary": {
+        "n_comments": 6,
+        "severity_distribution": {
+          "important": 3,
+          "minor": 3
+        },
+        "usage": {
+          "input_tokens": 18420,
+          "output_tokens": 1916,
+          "model": "anthropic:claude-sonnet-4-6",
+          "n_retries_used": 0
+        }
+      },
+      "error": null
+    },
+    {
+      "pr_url": "https://github.com/django/django/pull/16637",
+      "metrics": {
+        "detection_rate": {
+          "name": "detection_rate",
+          "value": null,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 0
+          },
+          "notes": "no gold defects on this sample"
+        },
+        "comments_per_pr": {
+          "name": "comments_per_pr",
+          "value": 1.0,
+          "per_sample_detail": {
+            "n_comments": 1
+          },
+          "notes": null
+        },
+        "precision_per_severity": {
+          "name": "precision_per_severity",
+          "value": null,
+          "per_sample_detail": {
+            "important": {
+              "precision": 0.0,
+              "n": 1,
+              "matched": 0
+            }
+          },
+          "notes": null
+        },
+        "mean_per_pr_recall": {
+          "name": "mean_per_pr_recall",
+          "value": null,
+          "per_sample_detail": {
+            "matched_pairs": [],
+            "unmatched_gold": []
+          },
+          "notes": "no gold defects on this sample"
+        },
+        "novelty_rate": {
+          "name": "novelty_rate",
+          "value": 1.0,
+          "per_sample_detail": {
+            "unmatched_peer": [
+              {
+                "path": "tests/signals/tests.py",
+                "line": 550,
+                "end_line": null,
+                "severity": "important",
+                "body": "`markcoroutinefunction(self)` marks the instance but not the class. Since `AsyncHandler.__call__` is an `async def`, Django's signal dispatch likely checks `iscoroutinefunction` on the handler object. `markcoroutinefunction` sets `_is_coroutine` on the object passed to it \u2014 here that is the *instance* \u2014 but `asyncio.iscoroutinefunction` (and `asgiref.sync.iscoroutinefunction`) will also inspect the *class* method, so this should still work in practice. However, calling `markcoroutinefunction(self)` in `__init__` means every *instance* gets the attribute set individually, and new instances created after the first one won't inherit it from the class. More importantly, the class-level `_is_coroutine = asyncio.coroutines._is_coroutine` that was removed from the old code was a class attribute shared by all instances, whereas the new approach sets an instance attribute in `__init__`. Because `__call__` is already `async def`, `asgiref.sync.iscoroutinefunction` will return `True` for it regardless \u2014 so `markcoroutinefunction(self)` in `__init__` is unnecessary and potentially misleading. If the intent is to mark the callable class itself (not an instance), `markcoroutinefunction` should be called on the *class* at class definition time (e.g., `markcoroutinefunction(AsyncHandler)`) rather than in `__init__`.",
+                "rationale": "The old code used a class-level attribute `_is_coroutine = asyncio.coroutines._is_coroutine`. The new code moves this to an instance-level call in `__init__`, which is inconsistent: each instance gets its own attribute set, but it's never set on the class. Calling `markcoroutinefunction` on the class at class definition time (or relying on `async def __call__` directly) would be the correct approach.",
+                "references": null,
+                "suggestion": null,
+                "issue_header": "Possible Bug"
+              }
+            ],
+            "peer_total": 1,
+            "peer_unmatched_count": 1
+          },
+          "notes": null
+        },
+        "severity_calibration": {
+          "name": "severity_calibration",
+          "value": null,
+          "per_sample_detail": {
+            "pairs": [],
+            "confusion": {}
+          },
+          "notes": "no matched pairs to calibrate against"
+        },
+        "suggestion_rate": {
+          "name": "suggestion_rate",
+          "value": 0.0,
+          "per_sample_detail": {
+            "n_with_suggestion": 0,
+            "n_total": 1
+          },
+          "notes": null
+        }
+      },
+      "cost_usd": null,
+      "latency_seconds": 15.015807249816135,
+      "review_summary": {
+        "n_comments": 1,
+        "severity_distribution": {
+          "important": 1
+        },
+        "usage": {
+          "input_tokens": 4485,
+          "output_tokens": 543,
+          "model": "anthropic:claude-sonnet-4-6",
+          "n_retries_used": 0
+        }
+      },
+      "error": null
+    },
+    {
+      "pr_url": "https://github.com/django/django/pull/17218",
+      "metrics": {
+        "detection_rate": {
+          "name": "detection_rate",
+          "value": 0.0,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 1
+          },
+          "notes": null
+        },
+        "comments_per_pr": {
+          "name": "comments_per_pr",
+          "value": 1.0,
+          "per_sample_detail": {
+            "n_comments": 1
+          },
+          "notes": null
+        },
+        "precision_per_severity": {
+          "name": "precision_per_severity",
+          "value": null,
+          "per_sample_detail": {
+            "nit": {
+              "precision": 0.0,
+              "n": 1,
+              "matched": 0
+            }
+          },
+          "notes": null
+        },
+        "mean_per_pr_recall": {
+          "name": "mean_per_pr_recall",
+          "value": 0.0,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 1,
+            "per_severity": {
+              "critical": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              },
+              "important": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              },
+              "minor": {
+                "hit": 0,
+                "miss": 1,
+                "total": 1
+              },
+              "nit": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              }
+            },
+            "matched_pairs": [],
+            "unmatched_gold": [
+              {
+                "path": "django/core/management/color.py",
+                "line": 21,
+                "line_range": null,
+                "category": "defect-correctness",
+                "severity": "minor",
+                "description": "Reviewer confirms OSError handling is still relevant (per linked colorama source and Django ticket #32740), implying the current code's broader exception handling shouldn't be narrowed.",
+                "source": "human_reviewer:timgraham",
+                "confidence": "high",
+                "original_comment_excerpt": "I confirmed that `OSError` still seems relevant.\r\nhttps://code.djangoproject.com/ticket/32740\r\nhttps://github.com/tartley/colorama/blob/7f1a5933851363abbdc24a51e76829bb23a2793b/colorama/initialise.py#L86\r\n\r\nadd comment: `# If just_fix_windows_console() accesses sys.stdout with WSGIRestrictedStdout.`"
+              }
+            ]
+          },
+          "notes": null
+        },
+        "novelty_rate": {
+          "name": "novelty_rate",
+          "value": 1.0,
+          "per_sample_detail": {
+            "unmatched_peer": [
+              {
+                "path": "django/core/management/color.py",
+                "line": 17,
+                "end_line": null,
+                "severity": "nit",
+                "body": "The comment says `colorama <= 0.4.6` but `just_fix_windows_console()` was added in colorama **0.4.6**, so versions **older than** (i.e. `< 0.4.6`) lack it, not `<= 0.4.6`. Version 0.4.6 itself has the function and should not raise `AttributeError`.",
+                "rationale": "The PR description references ticket #34768 comment:9 which clarifies this is about colorama < 0.4.6 (the function was introduced in 0.4.6). The comment `# colorama <= 0.4.6` is misleading because 0.4.6 is the version that *added* `just_fix_windows_console()`, so the `AttributeError` only applies to versions strictly older than 0.4.6.",
+                "references": null,
+                "suggestion": "    AttributeError,  # colorama < 0.4.6.",
+                "issue_header": "Incorrect Comment"
+              }
+            ],
+            "peer_total": 1,
+            "peer_unmatched_count": 1
+          },
+          "notes": null
+        },
+        "severity_calibration": {
+          "name": "severity_calibration",
+          "value": null,
+          "per_sample_detail": {
+            "pairs": [],
+            "confusion": {}
+          },
+          "notes": "no matched pairs to calibrate against"
+        },
+        "suggestion_rate": {
+          "name": "suggestion_rate",
+          "value": 1.0,
+          "per_sample_detail": {
+            "n_with_suggestion": 1,
+            "n_total": 1
+          },
+          "notes": null
+        }
+      },
+      "cost_usd": null,
+      "latency_seconds": 10.629667999921367,
+      "review_summary": {
+        "n_comments": 1,
+        "severity_distribution": {
+          "nit": 1
+        },
+        "usage": {
+          "input_tokens": 6524,
+          "output_tokens": 300,
+          "model": "anthropic:claude-sonnet-4-6",
+          "n_retries_used": 0
+        }
+      },
+      "error": null
+    },
+    {
+      "pr_url": "https://github.com/django/django/pull/16870",
+      "metrics": {
+        "detection_rate": {
+          "name": "detection_rate",
+          "value": 0.0,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 1
+          },
+          "notes": null
+        },
+        "comments_per_pr": {
+          "name": "comments_per_pr",
+          "value": 0.0,
+          "per_sample_detail": {
+            "n_comments": 0
+          },
+          "notes": null
+        },
+        "precision_per_severity": {
+          "name": "precision_per_severity",
+          "value": null,
+          "per_sample_detail": {},
+          "notes": "reviewer produced 0 comments on this sample"
+        },
+        "mean_per_pr_recall": {
+          "name": "mean_per_pr_recall",
+          "value": 0.0,
+          "per_sample_detail": {
+            "matched_count": 0,
+            "total_gold": 1,
+            "per_severity": {
+              "critical": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              },
+              "important": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              },
+              "minor": {
+                "hit": 0,
+                "miss": 0,
+                "total": 0
+              },
+              "nit": {
+                "hit": 0,
+                "miss": 1,
+                "total": 1
+              }
+            },
+            "matched_pairs": [],
+            "unmatched_gold": [
+              {
+                "path": "(pr-metadata)",
+                "line": null,
+                "line_range": null,
+                "category": "defect-doc-gap",
+                "severity": "nit",
+                "description": "Commit message is missing the `#` prefix on the issue reference; convention is `Refs #34343 -- ...`.",
+                "source": "human_reviewer:felixxm",
+                "confidence": "high",
+                "original_comment_excerpt": "`#` is missing in the commit message `Refs #34343 -- ...`"
+              }
+            ]
+          },
+          "notes": null
+        },
+        "novelty_rate": {
+          "name": "novelty_rate",
+          "value": null,
+          "per_sample_detail": {
+            "unmatched_peer": [],
+            "peer_total": 0
+          },
+          "notes": "reviewer produced 0 comments on this sample"
+        },
+        "severity_calibration": {
+          "name": "severity_calibration",
+          "value": null,
+          "per_sample_detail": {
+            "pairs": [],
+            "confusion": {}
+          },
+          "notes": "no matched pairs to calibrate against"
+        },
+        "suggestion_rate": {
+          "name": "suggestion_rate",
+          "value": null,
+          "per_sample_detail": {
+            "n_with_suggestion": 0,
+            "n_total": 0
+          },
+          "notes": "reviewer produced 0 comments on this sample"
+        }
+      },
+      "cost_usd": null,
+      "latency_seconds": 6.779327417025343,
+      "review_summary": {
+        "n_comments": 0,
+        "severity_distribution": {},
+        "usage": {
+          "input_tokens": 4203,
+          "output_tokens": 33,
+          "model": "anthropic:claude-sonnet-4-6",
+          "n_retries_used": 0
+        }
+      },
+      "error": null
+    }
+  ],
+  "peer_version": "0.0.1"
+}
