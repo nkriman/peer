@@ -524,12 +524,19 @@ def gather_codebase_context(
     max_call_sites_per_symbol: int = 5,
     max_test_file_chars: int = 5000,
     test_path_conventions: list[str] | None = None,
+    linters: list | None = None,
 ) -> CodebaseContext:
     """Assemble the CodebaseContext for a PR. Graceful: returns empty if
-    optional deps are unavailable."""
+    optional deps are unavailable.
+
+    `linters` (linter-context-v01): list of Linter instances run against
+    modified Python files. Findings populate `cc.linter_findings`.
+    """
     cc = CodebaseContext()
 
     if not _have_tree_sitter():
+        # Even without tree-sitter we can still run linters if the repo is
+        # checked out — but we need the checkout helper, so defer.
         return cc
 
     repo_path = _ensure_repo_checkout(
@@ -545,6 +552,22 @@ def gather_codebase_context(
         return cc
 
     _extract_modified_symbols(repo_path, pr_context, cc)
+
+    # linter-context-v01: run each configured linter on the modified
+    # Python files. Errors per-linter are swallowed (graceful degradation).
+    if linters:
+        python_files = [h.path for h in pr_context.hunks if h.path.endswith(".py")]
+        if python_files:
+            for linter in linters:
+                try:
+                    findings = linter.lint(repo_path, python_files)
+                    cc.linter_findings.extend(findings)
+                except Exception as e:
+                    logger.warning(
+                        "linter %s failed: %s",
+                        getattr(linter, "name", type(linter).__name__),
+                        e,
+                    )
 
     if cc.modified_symbols:
         if _have_ast_grep():

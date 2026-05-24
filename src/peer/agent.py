@@ -212,11 +212,15 @@ class Agent:
     def run(self, pr_url: str, deps: PeerDeps | None = None) -> Review:
         """Canonical entry point. `deps` carries per-run dependencies.
 
-        For peer-deps-v01 deps is plumbed but not yet consumed by downstream
-        capabilities (config / linters / enrichment slot in via later changes).
-        Reviewer dispatch + validation behavior is unchanged.
+        When `deps.config` is set (peer-config-v01): ignore-filter the
+        Context's hunks pre-review, and apply per-path severity bounds to
+        every returned Comment post-validation.
+
+        When `deps.linters` is non-empty (linter-context-v01): pass them
+        into `gather_codebase_context` so cc.linter_findings is populated.
         """
-        _ = deps  # parking ground for future per-deps customization
+        from .config import PeerConfig, apply_severity_bounds  # local import
+
         ctx = gather(pr_url)
         logger.info(
             "Gathered PR context for %s: %d hunks, ~%d tokens",
@@ -224,16 +228,32 @@ class Agent:
             len(ctx.hunks),
             ctx.token_estimate,
         )
+
+        # peer-config-v01: drop ignored hunks before any downstream work.
+        config: PeerConfig | None = (
+            deps.config if deps and isinstance(deps.config, PeerConfig) else None
+        )
+        if config is not None:
+            before = len(ctx.hunks)
+            ctx = config.filter_context(ctx)
+            after = len(ctx.hunks)
+            if after < before:
+                logger.info("Ignore filter dropped %d hunk(s)", before - after)
+
+        # linter-context-v01: pass linters through to codebase-context gather.
+        linters = list(deps.linters) if deps and deps.linters else []
+
         cc: CodebaseContext | None = None
         try:
-            cc = gather_codebase_context(ctx)
+            cc = gather_codebase_context(ctx, linters=linters)
             logger.info(
                 "Gathered codebase context: %d symbols, %d call sites, "
-                "%d tests, %d untested, ~%d tokens",
+                "%d tests, %d untested, %d linter findings, ~%d tokens",
                 len(cc.modified_symbols),
                 len(cc.call_sites),
                 len(cc.related_tests),
                 len(cc.untested_files),
+                len(cc.linter_findings),
                 cc.token_estimate,
             )
         except CodebaseContextTooLarge as e:
@@ -251,6 +271,11 @@ class Agent:
         dropped = len(raw_comments) - len(valid)
         if dropped:
             logger.info("Dropped %d invalid comment(s)", dropped)
+
+        # peer-config-v01: apply per-path severity bounds AFTER validation.
+        if config is not None:
+            valid = [apply_severity_bounds(c, config.for_path(c.path)) for c in valid]
+
         if not valid:
             return Review(comments=[], reason="no issues found", usage=usage)
         return Review(comments=valid, usage=usage)

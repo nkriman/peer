@@ -196,7 +196,11 @@ def format_prompt(ctx: Context, cc: CodebaseContext | None = None) -> str:
         parts.append("")
 
     if cc is not None and (
-        cc.modified_symbols or cc.call_sites or cc.related_tests or cc.untested_files
+        cc.modified_symbols
+        or cc.call_sites
+        or cc.related_tests
+        or cc.untested_files
+        or cc.linter_findings
     ):
         parts.append("## Codebase context")
         parts.append("")
@@ -248,6 +252,21 @@ def format_prompt(ctx: Context, cc: CodebaseContext | None = None) -> str:
             )
             for f in cc.unsupported_files:
                 parts.append(f"- `{f}`")
+            parts.append("")
+
+        if cc.linter_findings:
+            parts.append("## LINTER FINDINGS")
+            parts.append(
+                "Pre-computed by linters running on the modified files. CITE the "
+                "rule_id and message when surfacing a related issue; do NOT re-discover "
+                "and post a duplicate Comment for something the linter already caught."
+            )
+            for lf in cc.linter_findings:
+                parts.append(
+                    f"- [{lf.linter} {lf.rule_id} {lf.severity}] {lf.path}:{lf.line} — {lf.message}"
+                )
+                if lf.fix_suggestion:
+                    parts.append(f"  fix: {lf.fix_suggestion}")
             parts.append("")
 
     return "\n".join(parts)
