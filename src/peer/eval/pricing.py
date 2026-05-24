@@ -21,8 +21,15 @@ PRICING: dict[str, tuple[float, float]] = {
 
 
 def estimate_cost(model: str, input_tokens: int, output_tokens: int) -> float | None:
-    """Estimate USD cost for a single LLM call, or None if model unknown."""
-    entry = PRICING.get(model)
+    """Estimate USD cost for a single LLM call, or None if model unknown.
+
+    Accepts both the canonical provider:model_id form (e.g.
+    "anthropic:claude-sonnet-4-6") introduced in peer-deps-v01 and the
+    legacy bare model_id form. The provider prefix is stripped before
+    looking up the pricing table.
+    """
+    key = model.split(":", 1)[1] if ":" in model else model
+    entry = PRICING.get(key)
     if entry is None:
         return None
     in_per_mtok, out_per_mtok = entry
