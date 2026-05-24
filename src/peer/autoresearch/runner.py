@@ -93,6 +93,7 @@ def run_one_iteration(
     leaderboard_path: Path | str,
     description: str = "",
     program_md_path: Path | str = "program.md",
+    report_out: Path | str | None = None,
 ) -> dict[str, Any]:
     """Run one autoresearch iteration. Returns the row dict that was appended.
 
@@ -148,6 +149,14 @@ def run_one_iteration(
         }
         _append_row(leaderboard_path, row)
         return row
+
+    # Persist the EvalReport so `peer autoresearch diagnose` (or the loop's
+    # post-iter hypothesis writer) can find this iteration's failure modes.
+    out_path = Path(report_out) if report_out else (
+        Path("data/eval_runs") / f"autoresearch_{recipe_hash}_{commit_sha}.json"
+    )
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_text(report.model_dump_json(indent=2))
 
     metric_values = report.summary.metric_values or {}
     detection = metric_values.get("detection_rate")
