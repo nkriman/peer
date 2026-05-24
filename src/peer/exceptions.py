@@ -68,6 +68,11 @@ class UnknownCategoryError(PeerError):
 # -- peer-deps-v01 exceptions ----------------------------------------------
 
 
+class InvalidBugSample(PeerError):
+    """A line in a bug-benchmark JSONL file failed to validate against
+    the BugSample schema. Includes line number and field name."""
+
+
 class LLMCallsDisabled(PeerError):
     """A Reviewer attempted an LLM call while peer.deps.ALLOW_LLM_CALLS=False.
 
