@@ -178,6 +178,7 @@ class Agent:
         team_conventions: str | None = None,
         team_conventions_file: Path | None = None,
         retries: dict | None = None,
+        recipe: Any | None = None,
     ) -> None:
         if system_prompt and system_prompt_file:
             raise ValueError("Pass system_prompt OR system_prompt_file, not both.")
@@ -215,6 +216,11 @@ class Agent:
         # `retries={'output': N, 'tool_call': M}` shape; today we only
         # consume `output` (validation-failure retries).
         self.retries: dict[str, int] = dict(retries) if retries is not None else {"output": 1}
+
+        # Recipe overrides any explicit kwargs above (the recipe wins).
+        # See autoresearch-recipe-v01.
+        if recipe is not None:
+            recipe.apply_to_agent(self)
 
     # ----- override -----------------------------------------------------------
 

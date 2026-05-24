@@ -112,6 +112,8 @@ class ClaudeReviewer:
         system_prompt: str = DEFAULT_SYSTEM_PROMPT,
         *,
         model_id: str | None = None,
+        temperature: float = 0.0,
+        max_tokens: int = 8192,
         rate_limit_max_retries: int = 4,
         rate_limit_base_backoff: float = 1.0,
         _sleep: object | None = None,
@@ -123,6 +125,11 @@ class ClaudeReviewer:
         self.model = model
         self._model_id = model_id or model.split(":", 1)[-1]
         self.system_prompt = system_prompt
+        # Default temperature is 0.0 — eliminates the stochastic-noise floor
+        # that drowned out small recipe deltas during autoresearch iteration
+        # (peer-o4v). Users tuning recipes can override via Recipe.temperature.
+        self.temperature = temperature
+        self.max_tokens = max_tokens
         self.client = anthropic.Anthropic()
         # 429 backoff: total attempts = rate_limit_max_retries + 1.
         self.rate_limit_max_retries = rate_limit_max_retries
@@ -178,7 +185,8 @@ class ClaudeReviewer:
                 # than wrestle the SDK.
                 return self.client.messages.create(  # type: ignore[call-overload]
                     model=self._model_id,
-                    max_tokens=8192,
+                    max_tokens=self.max_tokens,
+                    temperature=self.temperature,
                     system=self.system_prompt,
                     tools=[_COMMENT_TOOL],
                     tool_choice={"type": "tool", "name": "post_review_comments"},

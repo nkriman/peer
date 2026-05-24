@@ -40,6 +40,7 @@ from .exceptions import (
     UnknownModelError,
 )
 from .linters import Linter, RuffLinter
+from .recipe import Recipe
 from .reviewers import ClaudeCodeCLIReviewer, ClaudeReviewer, Reviewer, TestReviewer
 from .runtime import CapturedMessage, RunContext, capture_run_messages
 from .types import (
@@ -97,6 +98,7 @@ __all__ = [
     "PeerDeps",
     # Exceptions
     "PeerError",
+    "Recipe",
     "Review",
     "Reviewer",
     "ReviewerRateLimited",

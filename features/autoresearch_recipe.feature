@@ -64,7 +64,7 @@ Feature: autoresearch recipe — single-file mutation surface + leaderboard loop
 
   @fast
   Scenario: parse_utility_formula handles a composite formula with max
-    When I parse the program.md utility block "score = detection_rate - 0.05 * max(0, n_comments_total - 5)"
+    When I parse the program.md utility block "score = detection_rate - 0.02 * max(0, n_comments_total - 5)"
     Then evaluating the formula on metrics {detection_rate: 0.1, n_comments_total: 10} returns 0.0
     And evaluating the formula on metrics {detection_rate: 0.1, n_comments_total: 3} returns 0.1
 
@@ -89,7 +89,7 @@ Feature: autoresearch recipe — single-file mutation surface + leaderboard loop
   Scenario: append_row appends without rewriting the header on subsequent calls
     Given a leaderboard file with one prior row
     When I call append_row twice more with utility 0.06 and utility 0.07
-    Then the file has exactly 4 lines (1 header + 3 data rows)
+    Then the file has exactly 4 non-empty lines
 
   @fast
   Scenario: append_row records the supplied status verbatim

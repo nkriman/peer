@@ -199,6 +199,35 @@ def _make_parser() -> argparse.ArgumentParser:
         help="Filter the dataset by language (default: python)",
     )
 
+    # --- peer autoresearch (parent for subcommands) -------------------------
+    p_ar = sub.add_parser(
+        "autoresearch",
+        help="Autonomous recipe experimentation loop",
+        description=(
+            "Edit recipe.yaml + prompts/default_system_prompt.md, evaluate, "
+            "keep-or-revert. See program.md at the repo root."
+        ),
+    )
+    ar_sub = p_ar.add_subparsers(dest="ds_cmd", required=True, metavar="AR_COMMAND")
+
+    p_ar_run = ar_sub.add_parser(
+        "run",
+        help="Run one autoresearch iteration; append one TSV row",
+    )
+    p_ar_run.add_argument("--recipe", type=Path, default=Path("recipe.yaml"))
+    p_ar_run.add_argument(
+        "--dataset",
+        type=Path,
+        default=Path("dataset/reference/django_pydantic_v2_hard.jsonl"),
+    )
+    p_ar_run.add_argument(
+        "--leaderboard", type=Path, default=Path("data/eval_runs/leaderboard.tsv")
+    )
+    p_ar_run.add_argument("--description", default="", help="One-line description of this mutation")
+    p_ar_run.add_argument(
+        "--program-md", type=Path, default=Path("program.md"), help="Path to program.md"
+    )
+
     return parser
 
 
@@ -385,6 +414,31 @@ def _cmd_dataset_show(args: argparse.Namespace) -> int:
     return 0
 
 
+def _cmd_autoresearch_run(args: argparse.Namespace) -> int:
+    from .autoresearch import run_one_iteration
+
+    row = run_one_iteration(
+        recipe_path=args.recipe,
+        dataset_path=args.dataset,
+        leaderboard_path=args.leaderboard,
+        description=args.description,
+        program_md_path=args.program_md,
+    )
+    status = row.get("status")
+    print(
+        f"\n=== autoresearch iter ===\n"
+        f"  status:        {status}\n"
+        f"  utility:       {row.get('utility')}\n"
+        f"  detection:     {row.get('detection_rate')}\n"
+        f"  precision:     minor={row.get('precision_minor')} "
+        f"important={row.get('precision_important')} critical={row.get('precision_critical')}\n"
+        f"  cost_usd:      {row.get('cost_usd')}\n"
+        f"  n_comments:    {row.get('n_comments_total')}\n"
+        f"  description:   {row.get('description')}"
+    )
+    return 0 if status == "ok" else 1
+
+
 def _cmd_benchmark_run(args: argparse.Namespace) -> int:
     from .agent import Agent
     from .benchmark import BugBenchmarkRunner, MacroscopeLoader
@@ -466,6 +520,7 @@ _DISPATCH = {
     ("dataset", "list"): _cmd_dataset_list,
     ("dataset", "show"): _cmd_dataset_show,
     ("benchmark", "run"): _cmd_benchmark_run,
+    ("autoresearch", "run"): lambda args: _cmd_autoresearch_run(args),
 }
 
 
