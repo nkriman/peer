@@ -63,3 +63,24 @@ class CurationRejected(PeerError):
 class UnknownCategoryError(PeerError):
     """A Classification referenced a category not present in the active
     Taxonomy."""
+
+
+# -- peer-deps-v01 exceptions ----------------------------------------------
+
+
+class LLMCallsDisabled(PeerError):
+    """A Reviewer attempted an LLM call while peer.deps.ALLOW_LLM_CALLS=False.
+
+    This is the safety gate against accidental real LLM calls in CI / tests.
+    Use `with agent.override(reviewer=TestReviewer()):` for unit tests that
+    should not invoke a real model.
+    """
+
+    DEFAULT_MESSAGE = (
+        "LLM calls are disabled (peer.deps.ALLOW_LLM_CALLS=False). "
+        "Use Agent.override(reviewer=TestReviewer()) for tests that should "
+        "not invoke a real LLM."
+    )
+
+    def __init__(self, message: str | None = None) -> None:
+        super().__init__(message or self.DEFAULT_MESSAGE)

@@ -12,6 +12,7 @@ from .dataset import (
     JSONLStorage,
     Taxonomy,
 )
+from .deps import PeerDeps
 from .eval import (
     DefectRecall,
     EvalMetric,
@@ -31,11 +32,13 @@ from .exceptions import (
     GHCLINotAvailable,
     InvalidGoldSample,
     InvalidPRURL,
+    LLMCallsDisabled,
     PeerError,
     PRNotAccessible,
     UnknownCategoryError,
     UnknownModelError,
 )
+from .reviewers import ClaudeReviewer, Reviewer, TestReviewer
 from .types import (
     CallSite,
     CodebaseContext,
@@ -55,6 +58,7 @@ __all__ = [
     "Agent",
     # Existing types
     "CallSite",
+    "ClaudeReviewer",
     "CodebaseContext",
     "CodebaseContextTooLarge",
     "Comment",
@@ -79,16 +83,20 @@ __all__ = [
     "InvalidGoldSample",
     "InvalidPRURL",
     "JSONLStorage",
+    "LLMCallsDisabled",
     "NoveltyRate",
     "PRNotAccessible",
+    "PeerDeps",
     # Exceptions
     "PeerError",
     "Review",
+    "Reviewer",
     "Severity",
     "SeverityCalibration",
     "Symbol",
     "Taxonomy",
     "TestFile",
+    "TestReviewer",
     "UnknownCategoryError",
     "UnknownModelError",
     "render_summary",
