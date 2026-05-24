@@ -76,6 +76,23 @@ class TestFile(BaseModel):
     truncated: bool = False
 
 
+class LinterFinding(BaseModel):
+    """One finding from a Linter (ruff, mypy, semgrep, ...).
+
+    Carries enough information for the agent to cite the rule_id + message
+    and decide whether to surface it as-is or supplement with reasoning.
+    """
+
+    linter: str
+    path: str
+    line: int
+    column: int | None = None
+    rule_id: str
+    severity: Severity
+    message: str
+    fix_suggestion: str | None = None
+
+
 class CodebaseContext(BaseModel):
     modified_symbols: list[Symbol] = Field(default_factory=list)
     call_sites: list[CallSite] = Field(default_factory=list)
@@ -83,5 +100,6 @@ class CodebaseContext(BaseModel):
     untested_files: list[str] = Field(default_factory=list)
     unsupported_files: list[str] = Field(default_factory=list)
     parse_failures: list[str] = Field(default_factory=list)
+    linter_findings: list[LinterFinding] = Field(default_factory=list)
     token_estimate: int = 0
     truncations: dict[str, int] = Field(default_factory=dict)

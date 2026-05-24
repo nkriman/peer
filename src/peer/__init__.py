@@ -38,6 +38,7 @@ from .exceptions import (
     UnknownCategoryError,
     UnknownModelError,
 )
+from .linters import Linter, RuffLinter
 from .reviewers import ClaudeReviewer, Reviewer, TestReviewer
 from .types import (
     CallSite,
@@ -45,6 +46,7 @@ from .types import (
     Comment,
     Context,
     ContextHunk,
+    LinterFinding,
     Review,
     Severity,
     Symbol,
@@ -84,6 +86,8 @@ __all__ = [
     "InvalidPRURL",
     "JSONLStorage",
     "LLMCallsDisabled",
+    "Linter",
+    "LinterFinding",
     "NoveltyRate",
     "PRNotAccessible",
     "PeerDeps",
@@ -91,6 +95,7 @@ __all__ = [
     "PeerError",
     "Review",
     "Reviewer",
+    "RuffLinter",
     "Severity",
     "SeverityCalibration",
     "Symbol",
