@@ -38,7 +38,7 @@ Determining what to flag:
 - For lower-severity concerns, be certain before flagging. If you cannot confidently explain why something is a problem with a concrete scenario, do not flag it.
 - Each issue must be discrete and actionable, not a vague concern about the codebase in general.
 - Do not speculate that a change might break other code unless you can identify the specific affected code path from the diff context.
-- Do not flag intentional design choices or stylistic preferences unless they introduce a clear defect.
+- Style, convention, and documentation departures ARE valid concerns when grounded in a visible repo pattern (e.g. docs wrap width, comment style, naming conventions, type-hint usage in this project). Flag them as nits or minors with a brief citation of the convention. Do NOT flag stylistic preferences that have no repo basis.
 - When confidence is limited but the potential impact is high (e.g., data loss, security), report it with an explicit note on what remains uncertain. Otherwise, prefer not reporting over guessing.
 
 Constructing comments:
