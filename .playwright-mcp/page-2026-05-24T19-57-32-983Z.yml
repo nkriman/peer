@@ -1,0 +1,900 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: leche proteina chocolate
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 5 productos Monto total $12.700" [ref=e1314]:
+              - generic [ref=e42]: 
+              - generic [ref=e1315]: "5"
+              - generic [ref=e43]: $12.700
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e1316]:
+          - generic [ref=e1317]:
+            - button "Despacho a Domicilio MARTIN DE ZAMORA 5595" [ref=e1318] [cursor=pointer]:
+              - generic [ref=e1320]:
+                - img [ref=e1321]
+                - generic [ref=e1322]: Despacho a Domicilio
+                - generic [ref=e1323]: 
+                - generic [ref=e1324]: "|"
+                - generic [ref=e1326]:
+                  - img [ref=e1327]
+                  - generic [ref=e1328]: MARTIN DE ZAMORA 5595
+              - text: 
+            - generic:   
+            - navigation "Secundario" [ref=e1331]:
+              - list [ref=e1332]:
+                - listitem [ref=e1333]:
+                  - link "Tarjeta Lider Bci" [ref=e1335] [cursor=pointer]:
+                    - /url: https://tarjetadigital.liderbciserviciosfinancieros.cl/ingreso-de-datos?utm_source=Lidercl_sod_header&utm_medium=lidercl
+                - listitem [ref=e1336]:
+                  - link "Mi Club" [ref=e1338] [cursor=pointer]:
+                    - /url: https://www.miclublider.cl/
+                - listitem [ref=e1339]:
+                  - link "Centro de ayuda" [ref=e1341] [cursor=pointer]:
+                    - /url: /ayuda
+          - img [ref=e1344]
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e80]:
+            - generic [ref=e1345]:
+              - generic [ref=e1348]:
+                - generic [ref=e1349]:
+                  - button "Precio" [ref=e1352]:
+                    - generic [ref=e1353]: Precio
+                    - img [ref=e1354]: 
+                  - separator [ref=e1355]
+                - generic [ref=e1356]:
+                  - button "Campaña" [ref=e1359]:
+                    - generic [ref=e1360]: Campaña
+                    - img [ref=e1361]: 
+                  - separator [ref=e1362]
+                - generic [ref=e1363]:
+                  - button "Marca" [ref=e1366]:
+                    - generic [ref=e1367]: Marca
+                    - img [ref=e1368]: 
+                  - separator [ref=e1369]
+                - generic [ref=e1370]:
+                  - button "Categoría" [ref=e1373]:
+                    - generic [ref=e1374]: Categoría
+                    - img [ref=e1375]: 
+                  - separator [ref=e1376]
+              - generic [ref=e1379]:
+                - heading "Resultados para leche proteina chocolate (283)" [level=2] [ref=e1387]: Resultados para leche proteina chocolate(283)
+                - generic [ref=e1388]:
+                  - group [ref=e1391]:
+                    - link "Leche Proteína Chocolate con cacao, 1 L" [ref=e1392] [cursor=pointer]:
+                      - /url: /ip/leche/00780290000142?from=/search
+                      - generic [ref=e1393]: Leche Proteína Chocolate con cacao, 1 L
+                    - generic [ref=e1395]:
+                      - generic [ref=e1398]:
+                        - img "Leche Proteína Chocolate con cacao, 1 L" [ref=e1400]
+                        - button "Agregar al carro - Leche Proteína Chocolate con cacao, 1 L" [ref=e1403] [cursor=pointer]:
+                          - generic "agregar" [ref=e1404]: 
+                          - generic [ref=e1405]: Agregar
+                      - generic [ref=e1407]:
+                        - generic [ref=e1409]:
+                          - generic [ref=e1410]: $2.750
+                          - generic [ref=e1411]: precio actual $2.750
+                          - generic [ref=e1412]: $2.750 x lt
+                        - generic [ref=e1413]: Soprole
+                        - generic [ref=e1414]: Leche Proteína Chocolate con cacao, 1 L
+                  - group [ref=e1417]:
+                    - link "Leche Proteína Natural 1 l, 1 L" [ref=e1418] [cursor=pointer]:
+                      - /url: /ip/leche/00780290000238?from=/search
+                      - generic [ref=e1419]: Leche Proteína Natural 1 l, 1 L
+                    - generic [ref=e1421]:
+                      - generic [ref=e1424]:
+                        - img "Leche Proteína Natural 1 l, 1 L" [ref=e1426]
+                        - button "Agregar al carro - Leche Proteína Natural 1 l, 1 L" [ref=e1429] [cursor=pointer]:
+                          - generic "agregar" [ref=e1430]: 
+                          - generic [ref=e1431]: Agregar
+                      - generic [ref=e1433]:
+                        - generic [ref=e1435]:
+                          - generic [ref=e1436]: $2.750
+                          - generic [ref=e1437]: precio actual $2.750
+                          - generic [ref=e1438]: $2.750 x lt
+                        - generic [ref=e1439]: Soprole
+                        - generic [ref=e1440]: Leche Proteína Natural 1 l, 1 L
+                  - group [ref=e1443]:
+                    - link "Leche Entera Proteína A2, 1 L" [ref=e1444] [cursor=pointer]:
+                      - /url: /ip/leche/00780292001064?from=/search
+                      - generic [ref=e1445]: Leche Entera Proteína A2, 1 L
+                    - generic [ref=e1447]:
+                      - generic [ref=e1450]:
+                        - img "Leche Entera Proteína A2, 1 L" [ref=e1452]
+                        - button "Agregar al carro - Leche Entera Proteína A2, 1 L" [ref=e1455] [cursor=pointer]:
+                          - generic "agregar" [ref=e1456]: 
+                          - generic [ref=e1457]: Agregar
+                      - generic [ref=e1459]:
+                        - generic [ref=e1461]:
+                          - generic [ref=e1462]: $2.750
+                          - generic [ref=e1463]: precio actual $2.750
+                          - generic [ref=e1464]: $2.750 x lt
+                        - generic [ref=e1465]: Colun
+                        - generic [ref=e1466]: Leche Entera Proteína A2, 1 L
+                  - group [ref=e1469]:
+                    - link "Leche Proteína Chocolate, 200 ml" [ref=e1470] [cursor=pointer]:
+                      - /url: /ip/leche/00780290000152?from=/search
+                      - generic [ref=e1471]: Leche Proteína Chocolate, 200 ml
+                    - generic [ref=e1473]:
+                      - generic [ref=e1474]:
+                        - generic [ref=e1476]:
+                          - generic [ref=e1478]: 
+                          - text: Rebaja
+                        - generic [ref=e1479]:
+                          - img "Leche Proteína Chocolate, 200 ml" [ref=e1481]
+                          - button "Agregar al carro - Leche Proteína Chocolate, 200 ml" [ref=e1484] [cursor=pointer]:
+                            - generic "agregar" [ref=e1485]: 
+                            - generic [ref=e1486]: Agregar
+                      - generic [ref=e1488]:
+                        - generic [ref=e1490]:
+                          - generic [ref=e1491]: $610
+                          - generic [ref=e1492]: precio actual $610, Costaba $680
+                          - generic [ref=e1493]: $3.050 x lt
+                          - generic [ref=e1494]: $680
+                          - generic [ref=e1495]: Ahorra $70
+                        - generic [ref=e1496]: Soprole
+                        - generic [ref=e1497]: Leche Proteína Chocolate, 200 ml
+                  - group [ref=e1500]:
+                    - link "Leche Proteína Capuccino, 1 L" [ref=e1501] [cursor=pointer]:
+                      - /url: /ip/leche/00780290000460?from=/search
+                      - generic [ref=e1502]: Leche Proteína Capuccino, 1 L
+                    - generic [ref=e1504]:
+                      - generic [ref=e1507]:
+                        - img "Leche Proteína Capuccino, 1 L" [ref=e1509]
+                        - button "Agregar al carro - Leche Proteína Capuccino, 1 L" [ref=e1512] [cursor=pointer]:
+                          - generic "agregar" [ref=e1513]: 
+                          - generic [ref=e1514]: Agregar
+                      - generic [ref=e1516]:
+                        - generic [ref=e1518]:
+                          - generic [ref=e1519]: $2.750
+                          - generic [ref=e1520]: precio actual $2.750
+                          - generic [ref=e1521]: $2.750 x lt
+                        - generic [ref=e1522]: Soprole
+                        - generic [ref=e1523]: Leche Proteína Capuccino, 1 L
+                  - group [ref=e1526]:
+                    - link "Leche Proteína Nitro Sabor Vainilla, 1 L" [ref=e1527] [cursor=pointer]:
+                      - /url: /ip/leche/00780290000379?from=/search
+                      - generic [ref=e1528]: Leche Proteína Nitro Sabor Vainilla, 1 L
+                    - generic [ref=e1530]:
+                      - generic [ref=e1533]:
+                        - img "Leche Proteína Nitro Sabor Vainilla, 1 L" [ref=e1535]
+                        - button "Agregar al carro - Leche Proteína Nitro Sabor Vainilla, 1 L" [ref=e1538] [cursor=pointer]:
+                          - generic "agregar" [ref=e1539]: 
+                          - generic [ref=e1540]: Agregar
+                      - generic [ref=e1542]:
+                        - generic [ref=e1544]:
+                          - generic [ref=e1545]: $2.750
+                          - generic [ref=e1546]: precio actual $2.750
+                          - generic [ref=e1547]: $2.750 x lt
+                        - generic [ref=e1548]: Soprole
+                        - generic [ref=e1549]: Leche Proteína Nitro Sabor Vainilla, 1 L
+                  - group [ref=e1552]:
+                    - link "Leche Proteína Sabor Vainilla, 200 ml" [ref=e1553] [cursor=pointer]:
+                      - /url: /ip/leches-colacion/00780290000380?from=/search
+                      - generic [ref=e1554]: Leche Proteína Sabor Vainilla, 200 ml
+                    - generic [ref=e1556]:
+                      - generic [ref=e1557]:
+                        - generic [ref=e1559]:
+                          - generic [ref=e1561]: 
+                          - text: Rebaja
+                        - generic [ref=e1562]:
+                          - img "Leche Proteína Sabor Vainilla, 200 ml" [ref=e1564]
+                          - button "Agregar al carro - Leche Proteína Sabor Vainilla, 200 ml" [ref=e1567] [cursor=pointer]:
+                            - generic "agregar" [ref=e1568]: 
+                            - generic [ref=e1569]: Agregar
+                      - generic [ref=e1571]:
+                        - generic [ref=e1573]:
+                          - generic [ref=e1574]: $610
+                          - generic [ref=e1575]: precio actual $610, Costaba $680
+                          - generic [ref=e1576]: $3.050 x lt
+                          - generic [ref=e1577]: $680
+                          - generic [ref=e1578]: Ahorra $70
+                        - generic [ref=e1579]: Soprole
+                        - generic [ref=e1580]: Leche Proteína Sabor Vainilla, 200 ml
+                  - group [ref=e1583]:
+                    - link "Leche Proteína Natural, 1 L" [ref=e1584] [cursor=pointer]:
+                      - /url: /ip/leche/00780870950534?from=/search
+                      - generic [ref=e1585]: Leche Proteína Natural, 1 L
+                    - generic [ref=e1587]:
+                      - generic [ref=e1588]:
+                        - generic [ref=e1590]:
+                          - generic [ref=e1592]: 
+                          - text: Rebaja
+                        - generic [ref=e1593]:
+                          - img "Leche Proteína Natural, 1 L" [ref=e1595]
+                          - button "Agregar al carro - Leche Proteína Natural, 1 L" [ref=e1598] [cursor=pointer]:
+                            - generic "agregar" [ref=e1599]: 
+                            - generic [ref=e1600]: Agregar
+                      - generic [ref=e1602]:
+                        - generic [ref=e1604]:
+                          - generic [ref=e1605]: $2.450
+                          - generic [ref=e1606]: precio actual $2.450, Costaba $2.890
+                          - generic [ref=e1607]: $2.450 x lt
+                          - generic [ref=e1608]: $2.890
+                          - generic [ref=e1609]: Ahorra $440
+                        - generic [ref=e1610]: Surlat
+                        - generic [ref=e1611]: Leche Proteína Natural, 1 L
+                  - group [ref=e1614]:
+                    - link "Leche Chocolate Origen, 1 L" [ref=e1615] [cursor=pointer]:
+                      - /url: /ip/leche/00780292001153?from=/search
+                      - generic [ref=e1616]: Leche Chocolate Origen, 1 L
+                    - generic [ref=e1618]:
+                      - generic [ref=e1621]:
+                        - img "Leche Chocolate Origen, 1 L" [ref=e1623]
+                        - button "Agregar al carro - Leche Chocolate Origen, 1 L" [ref=e1626] [cursor=pointer]:
+                          - generic "agregar" [ref=e1627]: 
+                          - generic [ref=e1628]: Agregar
+                      - generic [ref=e1630]:
+                        - generic [ref=e1632]:
+                          - generic [ref=e1633]: $1.850
+                          - generic [ref=e1634]: precio actual $1.850
+                          - generic [ref=e1635]: $1.850 x lt
+                        - generic [ref=e1636]: Colun
+                        - generic [ref=e1637]: Leche Chocolate Origen, 1 L
+                  - group [ref=e1640]:
+                    - link "Leche con Chocolate Protein Up, 330 ml" [ref=e1641] [cursor=pointer]:
+                      - /url: /ip/leche/00761328750639?from=/search
+                      - generic [ref=e1642]: Leche con Chocolate Protein Up, 330 ml
+                    - generic [ref=e1644]:
+                      - generic [ref=e1647]:
+                        - img "Leche con Chocolate Protein Up, 330 ml" [ref=e1649]
+                        - button "Agregar al carro - Leche con Chocolate Protein Up, 330 ml" [ref=e1652] [cursor=pointer]:
+                          - generic "agregar" [ref=e1653]: 
+                          - generic [ref=e1654]: Agregar
+                      - generic [ref=e1656]:
+                        - generic [ref=e1658]:
+                          - generic [ref=e1659]: $1.590
+                          - generic [ref=e1660]: precio actual $1.590
+                        - generic [ref=e1661]: Milo
+                        - generic [ref=e1662]: Leche con Chocolate Protein Up, 330 ml
+                  - group [ref=e1665]:
+                    - link "Leche chocolate simple, 200 ml" [ref=e1666] [cursor=pointer]:
+                      - /url: /ip/leche/00780290000502?from=/search
+                      - generic [ref=e1667]: Leche chocolate simple, 200 ml
+                    - generic [ref=e1669]:
+                      - generic [ref=e1672]:
+                        - img "Leche chocolate simple, 200 ml" [ref=e1674]
+                        - button "Agregar al carro - Leche chocolate simple, 200 ml" [ref=e1677] [cursor=pointer]:
+                          - generic "agregar" [ref=e1678]: 
+                          - generic [ref=e1679]: Agregar
+                      - generic [ref=e1681]:
+                        - generic [ref=e1683]:
+                          - generic [ref=e1684]: $560
+                          - generic [ref=e1685]: precio actual $560
+                          - generic [ref=e1686]: $2.800 x lt
+                        - generic [ref=e1687]: Soprole
+                        - generic [ref=e1688]: Leche chocolate simple, 200 ml
+                  - group [ref=e1691]:
+                    - link "Leche Sin lactosa Proteinas Sabor Chocolate, 1 L" [ref=e1692] [cursor=pointer]:
+                      - /url: /ip/leche/00780870950386?from=/search
+                      - generic [ref=e1693]: Leche Sin lactosa Proteinas Sabor Chocolate, 1 L
+                    - generic [ref=e1695]:
+                      - generic [ref=e1698]:
+                        - img "Leche Sin lactosa Proteinas Sabor Chocolate, 1 L" [ref=e1700]
+                        - button "Agregar al carro - Leche Sin lactosa Proteinas Sabor Chocolate, 1 L" [ref=e1703] [cursor=pointer]:
+                          - generic "agregar" [ref=e1704]: 
+                          - generic [ref=e1705]: Agregar
+                      - generic [ref=e1707]:
+                        - generic [ref=e1709]:
+                          - generic [ref=e1710]: $2.550
+                          - generic [ref=e1711]: precio actual $2.550
+                          - generic [ref=e1712]: $2.550 x kg
+                        - generic [ref=e1713]: Surlat
+                        - generic [ref=e1714]: Leche Sin lactosa Proteinas Sabor Chocolate, 1 L
+                  - group [ref=e1717]:
+                    - link "Leche Descremada Whey Proteína Chocolate, 1 L" [ref=e1718] [cursor=pointer]:
+                      - /url: /ip/leche/00780870950513?from=/search
+                      - generic [ref=e1719]: Leche Descremada Whey Proteína Chocolate, 1 L
+                    - generic [ref=e1721]:
+                      - generic [ref=e1722]:
+                        - generic [ref=e1724]:
+                          - generic [ref=e1726]: 
+                          - text: Rebaja
+                        - generic [ref=e1727]:
+                          - img "Leche Descremada Whey Proteína Chocolate, 1 L" [ref=e1729]
+                          - button "Agregar al carro - Leche Descremada Whey Proteína Chocolate, 1 L" [ref=e1732] [cursor=pointer]:
+                            - generic "agregar" [ref=e1733]: 
+                            - generic [ref=e1734]: Agregar
+                      - generic [ref=e1736]:
+                        - generic [ref=e1738]:
+                          - generic [ref=e1739]: $2.450
+                          - generic [ref=e1740]: precio actual $2.450, Costaba $2.890
+                          - generic [ref=e1741]: $2.450 x lt
+                          - generic [ref=e1742]: $2.890
+                          - generic [ref=e1743]: Ahorra $440
+                        - generic [ref=e1744]: Surlat
+                        - generic [ref=e1745]: Leche Descremada Whey Proteína Chocolate, 1 L
+                  - group [ref=e1748]:
+                    - link "Leche descremada sin lactosa Proteína Chocolate Caja, 200 ml" [ref=e1749] [cursor=pointer]:
+                      - /url: /ip/leche/00780870950442?from=/search
+                      - generic [ref=e1750]: Leche descremada sin lactosa Proteína Chocolate Caja, 200 ml
+                    - generic [ref=e1752]:
+                      - generic [ref=e1755]:
+                        - img "Leche descremada sin lactosa Proteína Chocolate Caja, 200 ml" [ref=e1757]
+                        - button "Agregar al carro - Leche descremada sin lactosa Proteína Chocolate Caja, 200 ml" [ref=e1760] [cursor=pointer]:
+                          - generic "agregar" [ref=e1761]: 
+                          - generic [ref=e1762]: Agregar
+                      - generic [ref=e1764]:
+                        - generic [ref=e1766]:
+                          - generic [ref=e1767]: $650
+                          - generic [ref=e1768]: precio actual $650
+                          - generic [ref=e1769]: $3.250 x lt
+                        - generic [ref=e1770]: Surlat
+                        - generic [ref=e1771]: Leche descremada sin lactosa Proteína Chocolate Caja, 200 ml
+                  - group [ref=e1774]:
+                    - link "Leche Cultivada Proteína Chirimoya, 510 ml" [ref=e1775] [cursor=pointer]:
+                      - /url: /ip/leche/00780290000493?from=/search
+                      - generic [ref=e1776]: Leche Cultivada Proteína Chirimoya, 510 ml
+                    - generic [ref=e1778]:
+                      - generic [ref=e1781]:
+                        - img "Leche Cultivada Proteína Chirimoya, 510 ml" [ref=e1783]
+                        - button "Agregar al carro - Leche Cultivada Proteína Chirimoya, 510 ml" [ref=e1786] [cursor=pointer]:
+                          - generic "agregar" [ref=e1787]: 
+                          - generic [ref=e1788]: Agregar
+                      - generic [ref=e1790]:
+                        - generic [ref=e1792]:
+                          - generic [ref=e1793]: $2.150
+                          - generic [ref=e1794]: precio actual $2.150
+                          - generic [ref=e1795]: $4.216 x lt
+                        - generic [ref=e1796]: Soprole
+                        - generic [ref=e1797]: Leche Cultivada Proteína Chirimoya, 510 ml
+                  - group [ref=e1800]:
+                    - link "Leche Cultivada Proteína Frutilla, 510 ml" [ref=e1801] [cursor=pointer]:
+                      - /url: /ip/leche/00780290000492?from=/search
+                      - generic [ref=e1802]: Leche Cultivada Proteína Frutilla, 510 ml
+                    - generic [ref=e1804]:
+                      - generic [ref=e1807]:
+                        - img "Leche Cultivada Proteína Frutilla, 510 ml" [ref=e1809]
+                        - button "Agregar al carro - Leche Cultivada Proteína Frutilla, 510 ml" [ref=e1812] [cursor=pointer]:
+                          - generic "agregar" [ref=e1813]: 
+                          - generic [ref=e1814]: Agregar
+                      - generic [ref=e1816]:
+                        - generic [ref=e1818]:
+                          - generic [ref=e1819]: $2.050
+                          - generic [ref=e1820]: precio actual $2.050
+                          - generic [ref=e1821]: $4.020 x lt
+                        - generic [ref=e1822]: Soprole
+                        - generic [ref=e1823]: Leche Cultivada Proteína Frutilla, 510 ml
+                  - group [ref=e1826]:
+                    - link "Leche Extra Proteína Caja, 1 L" [ref=e1827] [cursor=pointer]:
+                      - /url: /ip/leche/00780291000669?from=/search
+                      - generic [ref=e1828]: Leche Extra Proteína Caja, 1 L
+                    - generic [ref=e1830]:
+                      - generic [ref=e1831]:
+                        - generic [ref=e1833]:
+                          - generic [ref=e1835]: 
+                          - text: Rebaja
+                        - generic [ref=e1836]:
+                          - generic [ref=e1837]:
+                            - img "Leche Extra Proteína Caja, 1 L"
+                          - button "Agregar al carro - Leche Extra Proteína Caja, 1 L" [ref=e1840] [cursor=pointer]:
+                            - generic "agregar" [ref=e1841]: 
+                            - generic [ref=e1842]: Agregar
+                      - generic [ref=e1844]:
+                        - generic [ref=e1846]:
+                          - generic [ref=e1847]: $1.950
+                          - generic [ref=e1848]: precio actual $1.950, Costaba $2.390
+                          - generic [ref=e1849]: $1.950 x lt
+                          - generic [ref=e1850]: $2.390
+                          - generic [ref=e1851]: Ahorra $440
+                        - generic [ref=e1852]: Loncoleche
+                        - generic [ref=e1853]: Leche Extra Proteína Caja, 1 L
+                  - group [ref=e1856]:
+                    - link "Leche Sin Lactosa Proteinas, 1 L" [ref=e1857] [cursor=pointer]:
+                      - /url: /ip/leche/00780870950396?from=/search
+                      - generic [ref=e1858]: Leche Sin Lactosa Proteinas, 1 L
+                    - generic [ref=e1860]:
+                      - generic [ref=e1863]:
+                        - generic [ref=e1864]:
+                          - img "Leche Sin Lactosa Proteinas, 1 L"
+                        - button "Agregar al carro - Leche Sin Lactosa Proteinas, 1 L" [ref=e1867] [cursor=pointer]:
+                          - generic "agregar" [ref=e1868]: 
+                          - generic [ref=e1869]: Agregar
+                      - generic [ref=e1871]:
+                        - generic [ref=e1873]:
+                          - generic [ref=e1874]: $2.350
+                          - generic [ref=e1875]: precio actual $2.350
+                          - generic [ref=e1876]: $2.350 x kg
+                        - generic [ref=e1877]: Surlat
+                        - generic [ref=e1878]: Leche Sin Lactosa Proteinas, 1 L
+                  - group [ref=e1881]:
+                    - link "Leche Cultivada Proteína Chirimoya, 1 L" [ref=e1882] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780290000232?from=/search
+                      - generic [ref=e1883]: Leche Cultivada Proteína Chirimoya, 1 L
+                    - generic [ref=e1885]:
+                      - generic [ref=e1888]:
+                        - img "Leche Cultivada Proteína Chirimoya, 1 L" [ref=e1890]
+                        - button "Agregar al carro - Leche Cultivada Proteína Chirimoya, 1 L" [ref=e1893] [cursor=pointer]:
+                          - generic "agregar" [ref=e1894]: 
+                          - generic [ref=e1895]: Agregar
+                      - generic [ref=e1897]:
+                        - generic [ref=e1899]:
+                          - generic [ref=e1900]: $3.450
+                          - generic [ref=e1901]: precio actual $3.450
+                          - generic [ref=e1902]: $3.450 x lt
+                        - generic [ref=e1903]: Soprole
+                        - generic [ref=e1904]: Leche Cultivada Proteína Chirimoya, 1 L
+                  - group [ref=e1907]:
+                    - link "Leche Full Proteina Cappuccino, 250 g" [ref=e1908] [cursor=pointer]:
+                      - /url: /ip/leche/00780291000890?from=/search
+                      - generic [ref=e1909]: Leche Full Proteina Cappuccino, 250 g
+                    - generic [ref=e1911]:
+                      - generic [ref=e1912]:
+                        - generic [ref=e1914]:
+                          - generic [ref=e1916]: 
+                          - text: Rebaja
+                        - generic [ref=e1917]:
+                          - generic [ref=e1918]:
+                            - img "Leche Full Proteina Cappuccino, 250 g"
+                          - button "Agregar al carro - Leche Full Proteina Cappuccino, 250 g" [ref=e1921] [cursor=pointer]:
+                            - generic "agregar" [ref=e1922]: 
+                            - generic [ref=e1923]: Agregar
+                      - generic [ref=e1925]:
+                        - generic [ref=e1927]:
+                          - generic [ref=e1928]: $1.390
+                          - generic [ref=e1929]: precio actual $1.390, Costaba $1.690
+                          - generic [ref=e1930]: $5.560 x lt
+                          - generic [ref=e1931]: $1.690
+                          - generic [ref=e1932]: Ahorra $300
+                        - generic [ref=e1933]: Loncoleche
+                        - generic [ref=e1934]: Leche Full Proteina Cappuccino, 250 g
+                  - group [ref=e1937]:
+                    - link "Leche Cultivada Proteína Frutilla, 1 L" [ref=e1938] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780290000231?from=/search
+                      - generic [ref=e1939]: Leche Cultivada Proteína Frutilla, 1 L
+                    - generic [ref=e1941]:
+                      - generic [ref=e1944]:
+                        - generic [ref=e1945]:
+                          - img "Leche Cultivada Proteína Frutilla, 1 L"
+                        - button "Agregar al carro - Leche Cultivada Proteína Frutilla, 1 L" [ref=e1948] [cursor=pointer]:
+                          - generic "agregar" [ref=e1949]: 
+                          - generic [ref=e1950]: Agregar
+                      - generic [ref=e1952]:
+                        - generic [ref=e1954]:
+                          - generic [ref=e1955]: $3.450
+                          - generic [ref=e1956]: precio actual $3.450
+                          - generic [ref=e1957]: $3.450 x kg
+                        - generic [ref=e1958]: Soprole
+                        - generic [ref=e1959]: Leche Cultivada Proteína Frutilla, 1 L
+                  - group [ref=e1962]:
+                    - link "Leche Descremada Whey Proteína Caramelo Salado, 1 L" [ref=e1963] [cursor=pointer]:
+                      - /url: /ip/leche/00780870950514?from=/search
+                      - generic [ref=e1964]: Leche Descremada Whey Proteína Caramelo Salado, 1 L
+                    - generic [ref=e1966]:
+                      - generic [ref=e1967]:
+                        - generic [ref=e1969]:
+                          - generic [ref=e1971]: 
+                          - text: Rebaja
+                        - generic [ref=e1972]:
+                          - generic [ref=e1973]:
+                            - img "Leche Descremada Whey Proteína Caramelo Salado, 1 L"
+                          - button "Agregar al carro - Leche Descremada Whey Proteína Caramelo Salado, 1 L" [ref=e1976] [cursor=pointer]:
+                            - generic "agregar" [ref=e1977]: 
+                            - generic [ref=e1978]: Agregar
+                      - generic [ref=e1980]:
+                        - generic [ref=e1982]:
+                          - generic [ref=e1983]: $2.450
+                          - generic [ref=e1984]: precio actual $2.450, Costaba $2.890
+                          - generic [ref=e1985]: $2.450 x lt
+                          - generic [ref=e1986]: $2.890
+                          - generic [ref=e1987]: Ahorra $440
+                        - generic [ref=e1988]: Surlat
+                        - generic [ref=e1989]: Leche Descremada Whey Proteína Caramelo Salado, 1 L
+                  - group [ref=e1992]:
+                    - link "Saborizante de Leche Proteína, 144 g" [ref=e1993] [cursor=pointer]:
+                      - /url: /ip/leche/00844529179055?from=/search
+                      - generic [ref=e1994]: Saborizante de Leche Proteína, 144 g
+                    - generic [ref=e1996]:
+                      - generic [ref=e1999]:
+                        - generic [ref=e2000]:
+                          - img "Saborizante de Leche Proteína, 144 g"
+                        - button "Agregar al carro - Saborizante de Leche Proteína, 144 g" [ref=e2003] [cursor=pointer]:
+                          - generic "agregar" [ref=e2004]: 
+                          - generic [ref=e2005]: Agregar
+                      - generic [ref=e2007]:
+                        - generic [ref=e2009]:
+                          - generic [ref=e2010]: $2.890
+                          - generic [ref=e2011]: precio actual $2.890
+                          - generic [ref=e2012]: $20.069 x kg
+                        - generic [ref=e2013]: Milo
+                        - generic [ref=e2014]: Saborizante de Leche Proteína, 144 g
+                  - group [ref=e2017]:
+                    - link "Leche en Polvo Semidescremada Sin Lactosa Extra Proteína Bolsa, 550 g" [ref=e2018] [cursor=pointer]:
+                      - /url: /ip/leche/00780291000761?from=/search
+                      - generic [ref=e2019]: Leche en Polvo Semidescremada Sin Lactosa Extra Proteína Bolsa, 550 g
+                    - generic [ref=e2021]:
+                      - generic [ref=e2024]:
+                        - generic [ref=e2025]:
+                          - img "Leche en Polvo Semidescremada Sin Lactosa Extra Proteína Bolsa, 550 g"
+                        - button "Agregar al carro - Leche en Polvo Semidescremada Sin Lactosa Extra Proteína Bolsa, 550 g" [ref=e2028] [cursor=pointer]:
+                          - generic "agregar" [ref=e2029]: 
+                          - generic [ref=e2030]: Agregar
+                      - generic [ref=e2032]:
+                        - generic [ref=e2034]:
+                          - generic [ref=e2035]: $11.490
+                          - generic [ref=e2036]: precio actual $11.490
+                          - generic [ref=e2037]: $20.891 x kg
+                        - generic [ref=e2038]: Loncoleche
+                        - generic [ref=e2039]: Leche en Polvo Semidescremada Sin Lactosa Extra Proteína Bolsa, 550 g
+                  - group [ref=e2042]:
+                    - link "Saborizante de Leche Proteína, 380 g" [ref=e2043] [cursor=pointer]:
+                      - /url: /ip/leche/00844529196510?from=/search
+                      - generic [ref=e2044]: Saborizante de Leche Proteína, 380 g
+                    - generic [ref=e2046]:
+                      - generic [ref=e2049]:
+                        - generic [ref=e2050]:
+                          - img "Saborizante de Leche Proteína, 380 g"
+                        - button "Agregar al carro - Saborizante de Leche Proteína, 380 g" [ref=e2053] [cursor=pointer]:
+                          - generic "agregar" [ref=e2054]: 
+                          - generic [ref=e2055]: Agregar
+                      - generic [ref=e2057]:
+                        - generic [ref=e2059]:
+                          - generic [ref=e2060]: $7.190
+                          - generic [ref=e2061]: precio actual $7.190
+                          - generic [ref=e2062]: $18.921 x kg
+                        - generic [ref=e2063]: Milo
+                        - generic [ref=e2064]: Saborizante de Leche Proteína, 380 g
+                  - group [ref=e2067]:
+                    - link "Leche Semidescremada Chocolate Requetepatitas, 200 ml" [ref=e2068] [cursor=pointer]:
+                      - /url: /ip/leche/00780290002847?from=/search
+                      - generic [ref=e2069]: Leche Semidescremada Chocolate Requetepatitas, 200 ml
+                    - generic [ref=e2071]:
+                      - generic [ref=e2074]:
+                        - generic [ref=e2075]:
+                          - img "Leche Semidescremada Chocolate Requetepatitas, 200 ml"
+                        - button "Agregar al carro - Leche Semidescremada Chocolate Requetepatitas, 200 ml" [ref=e2078] [cursor=pointer]:
+                          - generic "agregar" [ref=e2079]: 
+                          - generic [ref=e2080]: Agregar
+                      - generic [ref=e2082]:
+                        - generic [ref=e2084]:
+                          - generic [ref=e2085]: $580
+                          - generic [ref=e2086]: precio actual $580
+                          - generic [ref=e2087]: $2.900 x lt
+                        - generic [ref=e2088]: Soprole
+                        - generic [ref=e2089]: Leche Semidescremada Chocolate Requetepatitas, 200 ml
+                  - group [ref=e2092]:
+                    - link "Leche Sin Lactosa Chocolate, 200 ml" [ref=e2093] [cursor=pointer]:
+                      - /url: /ip/leche/00780290019707?from=/search
+                      - generic [ref=e2094]: Leche Sin Lactosa Chocolate, 200 ml
+                    - generic [ref=e2096]:
+                      - generic [ref=e2099]:
+                        - generic [ref=e2100]:
+                          - img "Leche Sin Lactosa Chocolate, 200 ml"
+                        - button "Agregar al carro - Leche Sin Lactosa Chocolate, 200 ml" [ref=e2103] [cursor=pointer]:
+                          - generic "agregar" [ref=e2104]: 
+                          - generic [ref=e2105]: Agregar
+                      - generic [ref=e2107]:
+                        - generic [ref=e2109]:
+                          - generic [ref=e2110]: $560
+                          - generic [ref=e2111]: precio actual $560
+                          - generic [ref=e2112]: $2.800 x lt
+                        - generic [ref=e2113]: Soprole
+                        - generic [ref=e2114]: Leche Sin Lactosa Chocolate, 200 ml
+                  - generic [ref=e2116]:
+                    - group [ref=e2117]:
+                      - link "Leche Light Chocolate, 200 ml" [ref=e2118] [cursor=pointer]:
+                        - /url: /ip/leche/00780292000221?from=/search
+                        - generic [ref=e2119]: Leche Light Chocolate, 200 ml
+                      - generic [ref=e2121]:
+                        - generic [ref=e2122]:
+                          - generic [ref=e2124]:
+                            - generic [ref=e2126]: 
+                            - text: Rebaja
+                          - generic [ref=e2128]:
+                            - img "Leche Light Chocolate, 200 ml"
+                        - generic [ref=e2130]:
+                          - generic [ref=e2132]:
+                            - generic [ref=e2133]: $490
+                            - generic [ref=e2134]: precio actual $490, Costaba $620
+                            - generic [ref=e2135]: $2.450 x lt
+                            - generic [ref=e2136]: $620
+                          - generic [ref=e2137]: Colun
+                          - generic [ref=e2138]: Leche Light Chocolate, 200 ml
+                          - generic [ref=e2139]: Agotado
+                    - button "Revisar productos similares - Leche Light Chocolate, 200 ml" [ref=e2141]: Revisar productos similares
+                  - group [ref=e2144]:
+                    - link "Leche Descremada Protein Chocolate, 1 L" [ref=e2145] [cursor=pointer]:
+                      - /url: /ip/leche/00780291000712?from=/search
+                      - generic [ref=e2146]: Leche Descremada Protein Chocolate, 1 L
+                    - generic [ref=e2148]:
+                      - generic [ref=e2149]:
+                        - generic [ref=e2151]:
+                          - generic [ref=e2153]: 
+                          - text: Rebaja
+                        - generic [ref=e2154]:
+                          - generic [ref=e2155]:
+                            - img "Leche Descremada Protein Chocolate, 1 L"
+                          - button "Agregar al carro - Leche Descremada Protein Chocolate, 1 L" [ref=e2158] [cursor=pointer]:
+                            - generic "agregar" [ref=e2159]: 
+                            - generic [ref=e2160]: Agregar
+                      - generic [ref=e2162]:
+                        - generic [ref=e2164]:
+                          - generic [ref=e2165]: $2.090
+                          - generic [ref=e2166]: precio actual $2.090, Costaba $2.490
+                          - generic [ref=e2167]: $2.090 x lt
+                          - generic [ref=e2168]: $2.490
+                          - generic [ref=e2169]: Ahorra $400
+                        - generic [ref=e2170]: Loncoleche
+                        - generic [ref=e2171]: Leche Descremada Protein Chocolate, 1 L
+                  - group [ref=e2174]:
+                    - link "Leche Semidescremada Sin Lactosa Chocolate Caja, 200 g" [ref=e2175] [cursor=pointer]:
+                      - /url: /ip/leche/00780291000079?from=/search
+                      - generic [ref=e2176]: Leche Semidescremada Sin Lactosa Chocolate Caja, 200 g
+                    - generic [ref=e2178]:
+                      - generic [ref=e2181]:
+                        - generic [ref=e2182]:
+                          - img "Leche Semidescremada Sin Lactosa Chocolate Caja, 200 g"
+                        - button "Agregar al carro - Leche Semidescremada Sin Lactosa Chocolate Caja, 200 g" [ref=e2185] [cursor=pointer]:
+                          - generic "agregar" [ref=e2186]: 
+                          - generic [ref=e2187]: Agregar
+                      - generic [ref=e2189]:
+                        - generic [ref=e2191]:
+                          - generic [ref=e2192]: $570
+                          - generic [ref=e2193]: precio actual $570
+                          - generic [ref=e2194]: $2.850 x lt
+                        - generic [ref=e2195]: Loncoleche
+                        - generic [ref=e2196]: Leche Semidescremada Sin Lactosa Chocolate Caja, 200 g
+                  - group [ref=e2199]:
+                    - link "Leche Larga Vida Chocolate Caja, 200 g" [ref=e2200] [cursor=pointer]:
+                      - /url: /ip/leche/00780292077721?from=/search
+                      - generic [ref=e2201]: Leche Larga Vida Chocolate Caja, 200 g
+                    - generic [ref=e2203]:
+                      - generic [ref=e2206]:
+                        - generic [ref=e2207]:
+                          - img "Leche Larga Vida Chocolate Caja, 200 g"
+                        - button "Agregar al carro - Leche Larga Vida Chocolate Caja, 200 g" [ref=e2210] [cursor=pointer]:
+                          - generic "agregar" [ref=e2211]: 
+                          - generic [ref=e2212]: Agregar
+                      - generic [ref=e2214]:
+                        - generic [ref=e2216]:
+                          - generic [ref=e2217]: $620
+                          - generic [ref=e2218]: precio actual $620
+                          - generic [ref=e2219]: $3.100 x kg
+                        - generic [ref=e2220]: Colun
+                        - generic [ref=e2221]: Leche Larga Vida Chocolate Caja, 200 g
+                  - group [ref=e2224]:
+                    - link "Leche Semidescremada Original Sabor Chocolate, 200 ml" [ref=e2225] [cursor=pointer]:
+                      - /url: /ip/leche/00780292000718?from=/search
+                      - generic [ref=e2226]: Leche Semidescremada Original Sabor Chocolate, 200 ml
+                    - generic [ref=e2228]:
+                      - generic [ref=e2231]:
+                        - generic [ref=e2232]:
+                          - img "Leche Semidescremada Original Sabor Chocolate, 200 ml"
+                        - button "Agregar al carro - Leche Semidescremada Original Sabor Chocolate, 200 ml" [ref=e2235] [cursor=pointer]:
+                          - generic "agregar" [ref=e2236]: 
+                          - generic [ref=e2237]: Agregar
+                      - generic [ref=e2239]:
+                        - generic [ref=e2241]:
+                          - generic [ref=e2242]: $620
+                          - generic [ref=e2243]: precio actual $620
+                          - generic [ref=e2244]: $3.100 x lt
+                        - generic [ref=e2245]: Colun
+                        - generic [ref=e2246]: Leche Semidescremada Original Sabor Chocolate, 200 ml
+                  - group [ref=e2249]:
+                    - link "Leche Origen Chocolate, 200 ml" [ref=e2250] [cursor=pointer]:
+                      - /url: /ip/leche/00780292001160?from=/search
+                      - generic [ref=e2251]: Leche Origen Chocolate, 200 ml
+                    - generic [ref=e2253]:
+                      - generic [ref=e2256]:
+                        - generic [ref=e2257]:
+                          - img "Leche Origen Chocolate, 200 ml"
+                        - button "Agregar al carro - Leche Origen Chocolate, 200 ml" [ref=e2260] [cursor=pointer]:
+                          - generic "agregar" [ref=e2261]: 
+                          - generic [ref=e2262]: Agregar
+                      - generic [ref=e2264]:
+                        - generic [ref=e2266]:
+                          - generic [ref=e2267]: $610
+                          - generic [ref=e2268]: precio actual $610
+                          - generic [ref=e2269]: $3.050 x lt
+                        - generic [ref=e2270]: Colun
+                        - generic [ref=e2271]: Leche Origen Chocolate, 200 ml
+                  - group [ref=e2274]:
+                    - link "Saborizante de Leche Chocolate, 450 g" [ref=e2275] [cursor=pointer]:
+                      - /url: /ip/leche/00780263500019?from=/search
+                      - generic [ref=e2276]: Saborizante de Leche Chocolate, 450 g
+                    - generic [ref=e2278]:
+                      - generic [ref=e2281]:
+                        - generic [ref=e2282]:
+                          - img "Saborizante de Leche Chocolate, 450 g"
+                        - button "Agregar al carro - Saborizante de Leche Chocolate, 450 g" [ref=e2285] [cursor=pointer]:
+                          - generic "agregar" [ref=e2286]: 
+                          - generic [ref=e2287]: Agregar
+                      - generic [ref=e2289]:
+                        - generic [ref=e2291]:
+                          - generic [ref=e2292]: $3.790
+                          - generic [ref=e2293]: precio actual $3.790
+                          - generic [ref=e2294]: $8.422 x kg
+                        - generic [ref=e2295]: Cola Cao
+                        - generic [ref=e2296]: Saborizante de Leche Chocolate, 450 g
+                  - group [ref=e2299]:
+                    - link "Leche Semidescremada Chocolate, 200 ml" [ref=e2300] [cursor=pointer]:
+                      - /url: /ip/leche/00780290005607?from=/search
+                      - generic [ref=e2301]: Leche Semidescremada Chocolate, 200 ml
+                    - generic [ref=e2303]:
+                      - generic [ref=e2306]:
+                        - generic [ref=e2307]:
+                          - img "Leche Semidescremada Chocolate, 200 ml"
+                        - button "Agregar al carro - Leche Semidescremada Chocolate, 200 ml" [ref=e2310] [cursor=pointer]:
+                          - generic "agregar" [ref=e2311]: 
+                          - generic [ref=e2312]: Agregar
+                      - generic [ref=e2314]:
+                        - generic [ref=e2316]:
+                          - generic [ref=e2317]: $580
+                          - generic [ref=e2318]: precio actual $580
+                          - generic [ref=e2319]: $2.900 x lt
+                        - generic [ref=e2320]: Soprole
+                        - generic [ref=e2321]: Leche Semidescremada Chocolate, 200 ml
+                  - group [ref=e2324]:
+                    - link "Saborizante de Leche Chocolate ActivGo Bolsa, 300 g" [ref=e2325] [cursor=pointer]:
+                      - /url: /ip/leche/00761303012104?from=/search
+                      - generic [ref=e2326]: Saborizante de Leche Chocolate ActivGo Bolsa, 300 g
+                    - generic [ref=e2328]:
+                      - generic [ref=e2331]:
+                        - generic [ref=e2332]:
+                          - img "Saborizante de Leche Chocolate ActivGo Bolsa, 300 g"
+                        - button "Agregar al carro - Saborizante de Leche Chocolate ActivGo Bolsa, 300 g" [ref=e2335] [cursor=pointer]:
+                          - generic "agregar" [ref=e2336]: 
+                          - generic [ref=e2337]: Agregar
+                      - generic [ref=e2339]:
+                        - generic [ref=e2341]:
+                          - generic [ref=e2342]: $3.590
+                          - generic [ref=e2343]: precio actual $3.590
+                          - generic [ref=e2344]: $11.967 x kg
+                        - generic [ref=e2345]: Nestle
+                        - generic [ref=e2346]: Saborizante de Leche Chocolate ActivGo Bolsa, 300 g
+                  - group [ref=e2349]:
+                    - link "Saborizante de Leche Chocolate, 250 g" [ref=e2350] [cursor=pointer]:
+                      - /url: /ip/leche/00780263500018?from=/search
+                      - generic [ref=e2351]: Saborizante de Leche Chocolate, 250 g
+                    - generic [ref=e2353]:
+                      - generic [ref=e2356]:
+                        - generic [ref=e2357]:
+                          - img "Saborizante de Leche Chocolate, 250 g"
+                        - button "Agregar al carro - Saborizante de Leche Chocolate, 250 g" [ref=e2360] [cursor=pointer]:
+                          - generic "agregar" [ref=e2361]: 
+                          - generic [ref=e2362]: Agregar
+                      - generic [ref=e2364]:
+                        - generic [ref=e2366]:
+                          - generic [ref=e2367]: $2.350
+                          - generic [ref=e2368]: precio actual $2.350
+                          - generic [ref=e2369]: $9.400 x kg
+                        - generic [ref=e2370]: Cola Cao
+                        - generic [ref=e2371]: Saborizante de Leche Chocolate, 250 g
+                  - group [ref=e2374]:
+                    - link "Leche Semidescremada Chocolate, 1 L" [ref=e2375] [cursor=pointer]:
+                      - /url: /ip/leche/00780292080108?from=/search
+                      - generic [ref=e2376]: Leche Semidescremada Chocolate, 1 L
+                    - generic [ref=e2378]:
+                      - generic [ref=e2379]:
+                        - generic [ref=e2381]:
+                          - generic [ref=e2383]: 
+                          - text: Rebaja
+                        - generic [ref=e2384]:
+                          - generic [ref=e2385]:
+                            - img "Leche Semidescremada Chocolate, 1 L"
+                          - button "Agregar al carro - Leche Semidescremada Chocolate, 1 L" [ref=e2388] [cursor=pointer]:
+                            - generic "agregar" [ref=e2389]: 
+                            - generic [ref=e2390]: Agregar
+                      - generic [ref=e2392]:
+                        - generic [ref=e2394]:
+                          - generic [ref=e2395]: $1.590
+                          - generic [ref=e2396]: precio actual $1.590, Costaba $1.750
+                          - generic [ref=e2397]: $1.590 x lt
+                          - generic [ref=e2398]: $1.750
+                          - generic [ref=e2399]: Ahorra $160
+                        - generic [ref=e2400]: Colun
+                        - generic [ref=e2401]: Leche Semidescremada Chocolate, 1 L
+                  - group [ref=e2404]:
+                    - link "Leche Semidescremada Chocolate, 1 L" [ref=e2405] [cursor=pointer]:
+                      - /url: /ip/leche/00780290005007?from=/search
+                      - generic [ref=e2406]: Leche Semidescremada Chocolate, 1 L
+                    - generic [ref=e2408]:
+                      - generic [ref=e2411]:
+                        - generic [ref=e2412]:
+                          - img "Leche Semidescremada Chocolate, 1 L"
+                        - button "Agregar al carro - Leche Semidescremada Chocolate, 1 L" [ref=e2415] [cursor=pointer]:
+                          - generic "agregar" [ref=e2416]: 
+                          - generic [ref=e2417]: Agregar
+                      - generic [ref=e2419]:
+                        - generic [ref=e2421]:
+                          - generic [ref=e2422]: $1.750
+                          - generic [ref=e2423]: precio actual $1.750
+                          - generic [ref=e2424]: $1.750 x lt
+                        - generic [ref=e2425]: Soprole
+                        - generic [ref=e2426]: Leche Semidescremada Chocolate, 1 L
+                  - group [ref=e2429]:
+                    - link "Leche Semidescremada Avena Chocolate Caja, 200 ml" [ref=e2430] [cursor=pointer]:
+                      - /url: /ip/leche/00780290000434?from=/search
+                      - generic [ref=e2431]: Leche Semidescremada Avena Chocolate Caja, 200 ml
+                    - generic [ref=e2433]:
+                      - generic [ref=e2436]:
+                        - generic [ref=e2437]:
+                          - img "Leche Semidescremada Avena Chocolate Caja, 200 ml"
+                        - button "Agregar al carro - Leche Semidescremada Avena Chocolate Caja, 200 ml" [ref=e2440] [cursor=pointer]:
+                          - generic "agregar" [ref=e2441]: 
+                          - generic [ref=e2442]: Agregar
+                      - generic [ref=e2444]:
+                        - generic [ref=e2446]:
+                          - generic [ref=e2447]: $560
+                          - generic [ref=e2448]: precio actual $560
+                          - generic [ref=e2449]: $2.800 x lt
+                        - generic [ref=e2450]: Soprole
+                        - generic [ref=e2451]: Leche Semidescremada Avena Chocolate Caja, 200 ml
+            - navigation "paginación" [ref=e2454]:
+              - list [ref=e2455]:
+                - listitem [ref=e2456]
+                - listitem [ref=e2458]:
+                  - link "1" [ref=e2459] [cursor=pointer]:
+                    - /url: /search?q=leche+proteina+chocolate&facet=fulfillment_method%3ADelivery
+                - listitem [ref=e2460]:
+                  - link "Ir a la página 2" [ref=e2461] [cursor=pointer]:
+                    - /url: /search?q=leche+proteina+chocolate&facet=fulfillment_method%3ADelivery&page=2
+                    - text: "2"
+                - listitem [ref=e2462]:
+                  - link "Ir a la página 3" [ref=e2463] [cursor=pointer]:
+                    - /url: /search?q=leche+proteina+chocolate&facet=fulfillment_method%3ADelivery&page=3
+                    - text: "3"
+                - listitem [ref=e2464]:
+                  - generic [ref=e2465]: ...
+                - listitem [ref=e2466]:
+                  - generic [ref=e2467]: "8"
+                - listitem [ref=e2468]:
+                  - link "Página siguiente" [ref=e2469] [cursor=pointer]:
+                    - /url: /search?q=leche+proteina+chocolate&facet=fulfillment_method%3ADelivery&page=2
+                    - generic [ref=e2470]: 
+  - alert [ref=e1313]: Supermercado

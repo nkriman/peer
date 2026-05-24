@@ -218,7 +218,9 @@ class Agent:
         self.retries: dict[str, int] = dict(retries) if retries is not None else {"output": 1}
 
         # Recipe overrides any explicit kwargs above (the recipe wins).
-        # See autoresearch-recipe-v01.
+        # See autoresearch-recipe-v01. Store on the agent so Agent.run can
+        # consult per-recipe runtime flags (e.g. include_git_history).
+        self._recipe: Any | None = recipe
         if recipe is not None:
             recipe.apply_to_agent(self)
 
@@ -300,7 +302,10 @@ class Agent:
 
         cc: CodebaseContext | None = None
         try:
-            cc = gather_codebase_context(ctx, linters=linters)
+            include_git_history = bool(getattr(self._recipe, "include_git_history", False))
+            cc = gather_codebase_context(
+                ctx, linters=linters, include_git_history=include_git_history
+            )
             logger.info(
                 "Gathered codebase context: %d symbols, %d call sites, "
                 "%d tests, %d untested, %d linter findings, ~%d tokens",

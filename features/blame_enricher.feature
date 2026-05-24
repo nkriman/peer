@@ -47,14 +47,14 @@ Feature: blame enricher — git history as a context section
   Scenario: format_prompt renders GIT HISTORY section when populated
     Given a Context with one hunk and a CodebaseContext with git_history "fake blame content"
     When I call format_prompt with both
-    Then the rendered prompt contains "## GIT HISTORY"
-    And the rendered prompt contains "fake blame content"
+    Then the rendered prompt contains the literal "## GIT HISTORY"
+    And the rendered prompt contains the literal "fake blame content"
 
   @fast
   Scenario: format_prompt omits GIT HISTORY section when git_history is empty
     Given a Context with one hunk and a CodebaseContext with empty git_history
     When I call format_prompt with both
-    Then the rendered prompt does NOT contain "## GIT HISTORY"
+    Then the rendered prompt does NOT contain the literal "## GIT HISTORY"
 
   @fast
   Scenario: Recipe defaults preserve back-compat

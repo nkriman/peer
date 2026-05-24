@@ -110,5 +110,9 @@ class CodebaseContext(BaseModel):
     unsupported_files: list[str] = Field(default_factory=list)
     parse_failures: list[str] = Field(default_factory=list)
     linter_findings: list[LinterFinding] = Field(default_factory=list)
+    # blame-enricher-v01: empty string = git history not gathered (default
+    # for back-compat). Non-empty = markdown ready to drop into the prompt's
+    # `## GIT HISTORY` section.
+    git_history: str = ""
     token_estimate: int = 0
     truncations: dict[str, int] = Field(default_factory=dict)

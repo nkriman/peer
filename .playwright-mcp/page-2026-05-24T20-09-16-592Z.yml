@@ -1,0 +1,937 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: mizo galletas chocolate
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e80]:
+            - generic [ref=e81]:
+              - generic [ref=e84]:
+                - generic [ref=e85]:
+                  - button "Precio" [ref=e88]:
+                    - generic [ref=e89]: Precio
+                    - img [ref=e90]: 
+                  - separator [ref=e91]
+                - generic [ref=e92]:
+                  - button "Campaña" [ref=e95]:
+                    - generic [ref=e96]: Campaña
+                    - img [ref=e97]: 
+                  - separator [ref=e98]
+                - generic [ref=e99]:
+                  - button "Marca" [ref=e102]:
+                    - generic [ref=e103]: Marca
+                    - img [ref=e104]: 
+                  - separator [ref=e105]
+                - generic [ref=e106]:
+                  - button "Categoría" [ref=e109]:
+                    - generic [ref=e110]: Categoría
+                    - img [ref=e111]: 
+                  - separator [ref=e112]
+              - generic [ref=e115]:
+                - heading "Resultados para mizo galletas chocolate (160)" [level=2] [ref=e123]: Resultados para mizo galletas chocolate(160)
+                - generic [ref=e124]:
+                  - group [ref=e127]:
+                    - link "Chocolate Relleno con galleta, 87 g" [ref=e128] [cursor=pointer]:
+                      - /url: https://super.lider.cl/wapcrs/track?bt=1&eventST=click&plmt=sp-search-middle~desktop~&pos=1&tax=&rdf=1&rd=https%3A%2F%2Fsuper.lider.cl%2Fip%2Fvariedad%2F00762221028506&adUid=bc3c18ed-a507-49dc-a7aa-940d59467e1c&mloc=sp-search-middle&pltfm=desktop&pgId=mizo%20galletas%20chocolate&pt=search&spQs=3PXs4I9UoICHerKlZNvAQnjTd5rD7KZB1iJ7kxgeFbI8-6uyxe7rXwn4WxniPwLEx3ikYjGqnRSIsiCcdCm4U0UiZQR7eR5h6Ko1w6smpqCIUv4ckee_C91GDCtRpx4gnozz6fG1gvaa0wHkCx96N9FXeWIbj4zo54wao4REHkfqdfZlKM_hgKsx97MP5VPr5bhdFvjKvt2JJJzRm3RUsstoyyO2jsTz6Av7GwFHDosHZ0YnprGQx1QBeTklzVArb6fOI22j5pRBlbcoqeNDeP9CW0sfUJZnqA0mzTgxc4I&storeId=0000000088&tn=WCL_GR&wtn=kltzop&bkt=ace1_default%7Cace2_default%7Cace3_default%7Csearch_default&/ip/variedad/00762221028506
+                      - generic [ref=e129]: Chocolate Relleno con galleta, 87 g
+                    - generic [ref=e131]:
+                      - generic [ref=e132]:
+                        - generic [ref=e134]:
+                          - img "Chocolate Relleno con galleta, 87 g" [ref=e136]
+                          - button "Agregar al carro - Chocolate Relleno con galleta, 87 g" [ref=e139] [cursor=pointer]:
+                            - generic "agregar" [ref=e140]: 
+                            - generic [ref=e141]: Agregar
+                        - generic [ref=e145]: Patrocinado
+                      - generic [ref=e146]:
+                        - generic [ref=e148]:
+                          - generic [ref=e149]: $2.750
+                          - generic [ref=e150]: precio actual $2.750
+                          - generic [ref=e151]: $31.609 x kg
+                        - generic [ref=e152]: Milka
+                        - generic [ref=e153]: Chocolate Relleno con galleta, 87 g
+                  - group [ref=e156]:
+                    - link "Chocolate de Leche Con Galleta Oreo, 92 g" [ref=e157] [cursor=pointer]:
+                      - /url: https://super.lider.cl/wapcrs/track?bt=1&eventST=click&plmt=sp-search-middle~desktop~&pos=2&tax=&rdf=1&rd=https%3A%2F%2Fsuper.lider.cl%2Fip%2Fvariedad%2F00762221082472&adUid=bc3c18ed-a507-49dc-a7aa-940d59467e1c&mloc=sp-search-middle&pltfm=desktop&pgId=mizo%20galletas%20chocolate&pt=search&spQs=3PXs4I9UoICHerKlZNvAQnQO0mxTyjMT3_XYkROqQX2BABxszqQGz151nBQvFfoCx3ikYjGqnRSIsiCcdCm4U0UiZQR7eR5h6Ko1w6smpqCIUv4ckee_C91GDCtRpx4gnozz6fG1gvaa0wHkCx96N_3HzBWPpKZZcJAX0fBUCXyHLy26TWWq2os2wewo4xqx5bhdFvjKvt2JJJzRm3RUsstoyyO2jsTz6Av7GwFHDosHZ0YnprGQx1QBeTklzVArb6fOI22j5pRBlbcoqeNDeP9CW0sfUJZnqA0mzTgxc4I&storeId=0000000088&tn=WCL_GR&wtn=kltzop&bkt=ace1_default%7Cace2_default%7Cace3_default%7Csearch_default&/ip/variedad/00762221082472
+                      - generic [ref=e158]: Chocolate de Leche Con Galleta Oreo, 92 g
+                    - generic [ref=e160]:
+                      - generic [ref=e161]:
+                        - generic [ref=e163]:
+                          - img "Chocolate de Leche Con Galleta Oreo, 92 g" [ref=e165]
+                          - button "Agregar al carro - Chocolate de Leche Con Galleta Oreo, 92 g" [ref=e168] [cursor=pointer]:
+                            - generic "agregar" [ref=e169]: 
+                            - generic [ref=e170]: Agregar
+                        - generic [ref=e174]: Patrocinado
+                      - generic [ref=e175]:
+                        - generic [ref=e177]:
+                          - generic [ref=e178]: $2.000
+                          - generic [ref=e179]: precio actual $2.000
+                          - generic [ref=e180]: $21.739 x kg
+                        - generic [ref=e181]: Milka
+                        - generic [ref=e182]: Chocolate de Leche Con Galleta Oreo, 92 g
+                  - group [ref=e185]:
+                    - link "Galletas Chocolate Bolsa, 140 g" [ref=e186] [cursor=pointer]:
+                      - /url: /ip/galletas-y-colaciones-dulces/00780221550528?from=/search
+                      - generic [ref=e187]: Galletas Chocolate Bolsa, 140 g
+                    - generic [ref=e189]:
+                      - generic [ref=e190]:
+                        - generic [ref=e191]:
+                          - generic [ref=e193]: Combina 3 x $2.000
+                          - button "Combina 3 x $2.000. Ver combinaciones aceptadas y coincidir productos." [ref=e194] [cursor=pointer]: Combinar
+                        - generic [ref=e195]:
+                          - img "Galletas Chocolate Bolsa, 140 g" [ref=e197]
+                          - button "Agregar al carro - Galletas Chocolate Bolsa, 140 g" [ref=e200] [cursor=pointer]:
+                            - generic "agregar" [ref=e201]: 
+                            - generic [ref=e202]: Agregar
+                      - generic [ref=e204]:
+                        - generic [ref=e206]:
+                          - generic [ref=e207]: $890
+                          - generic [ref=e208]: precio actual $890
+                          - generic [ref=e209]: $6.357 x kg
+                        - generic [ref=e210]: Costa
+                        - generic [ref=e211]: Galletas Chocolate Bolsa, 140 g
+                  - group [ref=e214]:
+                    - link "Galleta Chocolate Crema Vainilla, 108 g" [ref=e215] [cursor=pointer]:
+                      - /url: /ip/galletas-y-colaciones-dulces/00762220169309?from=/search
+                      - generic [ref=e216]: Galleta Chocolate Crema Vainilla, 108 g
+                    - generic [ref=e218]:
+                      - generic [ref=e221]:
+                        - img "Galleta Chocolate Crema Vainilla, 108 g" [ref=e223]
+                        - button "Agregar al carro - Galleta Chocolate Crema Vainilla, 108 g" [ref=e226] [cursor=pointer]:
+                          - generic "agregar" [ref=e227]: 
+                          - generic [ref=e228]: Agregar
+                      - generic [ref=e230]:
+                        - generic [ref=e232]:
+                          - generic [ref=e233]: $850
+                          - generic [ref=e234]: precio actual $850
+                          - generic [ref=e235]: $7.870 x kg
+                        - generic [ref=e236]: Oreo
+                        - generic [ref=e237]: Galleta Chocolate Crema Vainilla, 108 g
+                  - group [ref=e240]:
+                    - link "Galleta Chocolate Crema Cookies And Cream, 108 g" [ref=e241] [cursor=pointer]:
+                      - /url: /ip/galletas-y-colaciones-dulces/00762220169311?from=/search
+                      - generic [ref=e242]: Galleta Chocolate Crema Cookies And Cream, 108 g
+                    - generic [ref=e244]:
+                      - generic [ref=e247]:
+                        - img "Galleta Chocolate Crema Cookies And Cream, 108 g" [ref=e249]
+                        - button "Agregar al carro - Galleta Chocolate Crema Cookies And Cream, 108 g" [ref=e252] [cursor=pointer]:
+                          - generic "agregar" [ref=e253]: 
+                          - generic [ref=e254]: Agregar
+                      - generic [ref=e256]:
+                        - generic [ref=e258]:
+                          - generic [ref=e259]: $850
+                          - generic [ref=e260]: precio actual $850
+                          - generic [ref=e261]: $6.746 x kg
+                        - generic [ref=e262]: Oreo
+                        - generic [ref=e263]: Galleta Chocolate Crema Cookies And Cream, 108 g
+                  - group [ref=e266]:
+                    - link "Galleta Chocolate Crema de Chocolate, 108 g" [ref=e267] [cursor=pointer]:
+                      - /url: /ip/galletas-y-colaciones-dulces/00762220169315?from=/search
+                      - generic [ref=e268]: Galleta Chocolate Crema de Chocolate, 108 g
+                    - generic [ref=e270]:
+                      - generic [ref=e273]:
+                        - img "Galleta Chocolate Crema de Chocolate, 108 g" [ref=e275]
+                        - button "Agregar al carro - Galleta Chocolate Crema de Chocolate, 108 g" [ref=e278] [cursor=pointer]:
+                          - generic "agregar" [ref=e279]: 
+                          - generic [ref=e280]: Agregar
+                      - generic [ref=e282]:
+                        - generic [ref=e284]:
+                          - generic [ref=e285]: $850
+                          - generic [ref=e286]: precio actual $850
+                          - generic [ref=e287]: $7.870 x kg
+                        - generic [ref=e288]: Oreo
+                        - generic [ref=e289]: Galleta Chocolate Crema de Chocolate, 108 g
+                  - group [ref=e292]:
+                    - link "Galleta Chocolate Sin Gluten Caja, 200 g" [ref=e293] [cursor=pointer]:
+                      - /url: /ip/sin-gluten/00841037601734?from=/search
+                      - generic [ref=e294]: Galleta Chocolate Sin Gluten Caja, 200 g
+                    - generic [ref=e296]:
+                      - generic [ref=e299]:
+                        - img "Galleta Chocolate Sin Gluten Caja, 200 g" [ref=e301]
+                        - button "Agregar al carro - Galleta Chocolate Sin Gluten Caja, 200 g" [ref=e304] [cursor=pointer]:
+                          - generic "agregar" [ref=e305]: 
+                          - generic [ref=e306]: Agregar
+                      - generic [ref=e308]:
+                        - generic [ref=e310]:
+                          - generic [ref=e311]: $3.390
+                          - generic [ref=e312]: precio actual $3.390
+                          - generic [ref=e313]: $16.950 x kg
+                        - generic [ref=e314]: Gullon
+                        - generic [ref=e315]: Galleta Chocolate Sin Gluten Caja, 200 g
+                  - group [ref=e318]:
+                    - link "Galleta de Chocolate Bolsa, 10 Un x 300 g" [ref=e319] [cursor=pointer]:
+                      - /url: /ip/galletas-y-snack-colacion/00761328775580?from=/search
+                      - generic [ref=e320]: Galleta de Chocolate Bolsa, 10 Un x 300 g
+                    - generic [ref=e322]:
+                      - generic [ref=e325]:
+                        - img "Galleta de Chocolate Bolsa, 10 Un x 300 g" [ref=e327]
+                        - button "Agregar al carro - Galleta de Chocolate Bolsa, 10 Un x 300 g" [ref=e330] [cursor=pointer]:
+                          - generic "agregar" [ref=e331]: 
+                          - generic [ref=e332]: Agregar
+                      - generic [ref=e334]:
+                        - generic [ref=e336]:
+                          - generic [ref=e337]: $4.290
+                          - generic [ref=e338]: precio actual $4.290
+                          - generic [ref=e339]: $14.300 x kg
+                        - generic [ref=e340]: Chokita
+                        - generic [ref=e341]: Galleta de Chocolate Bolsa, 10 Un x 300 g
+                  - group [ref=e344]:
+                    - link "Galletas Chocolate con Frutillas Zero Azúcar, 225 g" [ref=e345] [cursor=pointer]:
+                      - /url: /ip/sin-azucar/00780352000238?from=/search
+                      - generic [ref=e346]: Galletas Chocolate con Frutillas Zero Azúcar, 225 g
+                    - generic [ref=e348]:
+                      - generic [ref=e349]:
+                        - generic [ref=e351]:
+                          - generic [ref=e353]: 
+                          - text: Rebaja
+                        - generic [ref=e354]:
+                          - img "Galletas Chocolate con Frutillas Zero Azúcar, 225 g" [ref=e356]
+                          - button "Agregar al carro - Galletas Chocolate con Frutillas Zero Azúcar, 225 g" [ref=e359] [cursor=pointer]:
+                            - generic "agregar" [ref=e360]: 
+                            - generic [ref=e361]: Agregar
+                      - generic [ref=e363]:
+                        - generic [ref=e365]:
+                          - generic [ref=e366]: $1.850
+                          - generic [ref=e367]: precio actual $1.850, Costaba $2.150
+                          - generic [ref=e368]: $8.222 x kg
+                          - generic [ref=e369]: $2.150
+                          - generic [ref=e370]: Ahorra $300
+                        - generic [ref=e371]: Ecovida
+                        - generic [ref=e372]: Galletas Chocolate con Frutillas Zero Azúcar, 225 g
+                  - group [ref=e375]:
+                    - link "Galleta Chocolate Blanco Con Frambuesa, 2 Un" [ref=e376] [cursor=pointer]:
+                      - /url: /ip/galletas-y-colaciones-dulces/00842446589363?from=/search
+                      - generic [ref=e377]: Galleta Chocolate Blanco Con Frambuesa, 2 Un
+                    - generic [ref=e379]:
+                      - generic [ref=e382]:
+                        - img "Galleta Chocolate Blanco Con Frambuesa, 2 Un" [ref=e384]
+                        - button "Agregar al carro - Galleta Chocolate Blanco Con Frambuesa, 2 Un" [ref=e387] [cursor=pointer]:
+                          - generic "agregar" [ref=e388]: 
+                          - generic [ref=e389]: Agregar
+                      - generic [ref=e391]:
+                        - generic [ref=e393]:
+                          - generic [ref=e394]: $2.790
+                          - generic [ref=e395]: precio actual $2.790
+                          - generic [ref=e396]: $1.395 x un
+                        - generic [ref=e397]: Europastry
+                        - generic [ref=e398]: Galleta Chocolate Blanco Con Frambuesa, 2 Un
+                  - group [ref=e401]:
+                    - link "Chocolate Con Galleta Bon O Bon, 90 g" [ref=e402] [cursor=pointer]:
+                      - /url: /ip/variedad/00780222559042?from=/search
+                      - generic [ref=e403]: Chocolate Con Galleta Bon O Bon, 90 g
+                    - generic [ref=e405]:
+                      - generic [ref=e408]:
+                        - img "Chocolate Con Galleta Bon O Bon, 90 g" [ref=e410]
+                        - button "Agregar al carro - Chocolate Con Galleta Bon O Bon, 90 g" [ref=e413] [cursor=pointer]:
+                          - generic "agregar" [ref=e414]: 
+                          - generic [ref=e415]: Agregar
+                      - generic [ref=e417]:
+                        - generic [ref=e419]:
+                          - generic [ref=e420]: $1.590
+                          - generic [ref=e421]: precio actual $1.590
+                          - generic [ref=e422]: $1.767 x kg
+                        - generic [ref=e423]: Arcor
+                        - generic [ref=e424]: Chocolate Con Galleta Bon O Bon, 90 g
+                  - group [ref=e427]:
+                    - link "Galleta Chocolate y Coco, 175 g" [ref=e428] [cursor=pointer]:
+                      - /url: /ip/galletas-y-colaciones-dulces/00040000109412?from=/search
+                      - generic [ref=e429]: Galleta Chocolate y Coco, 175 g
+                    - generic [ref=e431]:
+                      - generic [ref=e434]:
+                        - img "Galleta Chocolate y Coco, 175 g" [ref=e436]
+                        - button "Agregar al carro - Galleta Chocolate y Coco, 175 g" [ref=e439] [cursor=pointer]:
+                          - generic "agregar" [ref=e440]: 
+                          - generic [ref=e441]: Agregar
+                      - generic [ref=e443]:
+                        - generic [ref=e445]:
+                          - generic [ref=e446]: $2.990
+                          - generic [ref=e447]: precio actual $2.990
+                          - generic [ref=e448]: $17.086 x kg
+                        - generic [ref=e449]: Selección
+                        - generic [ref=e450]: Galleta Chocolate y Coco, 175 g
+                  - group [ref=e453]:
+                    - link "Galleta Chocolate Cookie, 32 g" [ref=e454] [cursor=pointer]:
+                      - /url: /ip/galletas-y-colaciones-dulces/00880106264126?from=/search
+                      - generic [ref=e455]: Galleta Chocolate Cookie, 32 g
+                    - generic [ref=e457]:
+                      - generic [ref=e460]:
+                        - img "Galleta Chocolate Cookie, 32 g" [ref=e462]
+                        - button "Agregar al carro - Galleta Chocolate Cookie, 32 g" [ref=e465] [cursor=pointer]:
+                          - generic "agregar" [ref=e466]: 
+                          - generic [ref=e467]: Agregar
+                      - generic [ref=e469]:
+                        - generic [ref=e471]:
+                          - generic [ref=e472]: $1.890
+                          - generic [ref=e473]: precio actual $1.890
+                          - generic [ref=e474]: $591 x 10g
+                        - generic [ref=e475]: Pepero
+                        - generic [ref=e476]: Galleta Chocolate Cookie, 32 g
+                  - group [ref=e479]:
+                    - link "Galleta Chocolate Blanco, 32 g" [ref=e480] [cursor=pointer]:
+                      - /url: /ip/galletas-y-colaciones-dulces/00880106263635?from=/search
+                      - generic [ref=e481]: Galleta Chocolate Blanco, 32 g
+                    - generic [ref=e483]:
+                      - generic [ref=e486]:
+                        - img "Galleta Chocolate Blanco, 32 g" [ref=e488]
+                        - button "Agregar al carro - Galleta Chocolate Blanco, 32 g" [ref=e491] [cursor=pointer]:
+                          - generic "agregar" [ref=e492]: 
+                          - generic [ref=e493]: Agregar
+                      - generic [ref=e495]:
+                        - generic [ref=e497]:
+                          - generic [ref=e498]: $1.890
+                          - generic [ref=e499]: precio actual $1.890
+                          - generic [ref=e500]: $591 x 10g
+                        - generic [ref=e501]: Pepero
+                        - generic [ref=e502]: Galleta Chocolate Blanco, 32 g
+                  - group [ref=e505]:
+                    - link "Barra de Chocolate con Galleta Bon o Bon, 41 g" [ref=e506] [cursor=pointer]:
+                      - /url: /ip/variedad/00780222559045?from=/search
+                      - generic [ref=e507]: Barra de Chocolate con Galleta Bon o Bon, 41 g
+                    - generic [ref=e509]:
+                      - generic [ref=e512]:
+                        - img "Barra de Chocolate con Galleta Bon o Bon, 41 g" [ref=e514]
+                        - button "Agregar al carro - Barra de Chocolate con Galleta Bon o Bon, 41 g" [ref=e517] [cursor=pointer]:
+                          - generic "agregar" [ref=e518]: 
+                          - generic [ref=e519]: Agregar
+                      - generic [ref=e521]:
+                        - generic [ref=e523]:
+                          - generic [ref=e524]: $970
+                          - generic [ref=e525]: precio actual $970
+                        - generic [ref=e526]: Arcor
+                        - generic [ref=e527]: Barra de Chocolate con Galleta Bon o Bon, 41 g
+                  - group [ref=e530]:
+                    - link "Barra De Chocolate Con Galletas Y Caramelo, 51 g" [ref=e531] [cursor=pointer]:
+                      - /url: /ip/barritas-y-cereales/00019434609769?from=/search
+                      - generic [ref=e532]: Barra De Chocolate Con Galletas Y Caramelo, 51 g
+                    - generic [ref=e534]:
+                      - generic [ref=e537]:
+                        - img "Barra De Chocolate Con Galletas Y Caramelo, 51 g" [ref=e539]
+                        - button "Agregar al carro - Barra De Chocolate Con Galletas Y Caramelo, 51 g" [ref=e542] [cursor=pointer]:
+                          - generic "agregar" [ref=e543]: 
+                          - generic [ref=e544]: Agregar
+                      - generic [ref=e546]:
+                        - generic [ref=e548]:
+                          - generic [ref=e549]: $990
+                          - generic [ref=e550]: precio actual $990
+                          - generic [ref=e551]: $19.412 x kg
+                        - generic [ref=e552]: Great Value
+                        - generic [ref=e553]: Barra De Chocolate Con Galletas Y Caramelo, 51 g
+                  - group [ref=e556]:
+                    - link "Chocolate Kisses Galleta y Crema Bolsa, 74 g" [ref=e557] [cursor=pointer]:
+                      - /url: /ip/tipos/00780242000206?from=/search
+                      - generic [ref=e558]: Chocolate Kisses Galleta y Crema Bolsa, 74 g
+                    - generic [ref=e560]:
+                      - generic [ref=e563]:
+                        - generic [ref=e564]:
+                          - img "Chocolate Kisses Galleta y Crema Bolsa, 74 g"
+                        - button "Agregar al carro - Chocolate Kisses Galleta y Crema Bolsa, 74 g" [ref=e567] [cursor=pointer]:
+                          - generic "agregar" [ref=e568]: 
+                          - generic [ref=e569]: Agregar
+                      - generic [ref=e571]:
+                        - generic [ref=e573]:
+                          - generic [ref=e574]: $3.350
+                          - generic [ref=e575]: precio actual $3.350
+                          - generic [ref=e576]: $45.270 x kg
+                        - generic [ref=e577]: Hershey's
+                        - generic [ref=e578]: Chocolate Kisses Galleta y Crema Bolsa, 74 g
+                  - group [ref=e581]:
+                    - link "Tableta de Chocolate bob galleta pistacho, 90 g" [ref=e582] [cursor=pointer]:
+                      - /url: /ip/connect/00780222559073?from=/search
+                      - generic [ref=e583]: Tableta de Chocolate bob galleta pistacho, 90 g
+                    - generic [ref=e585]:
+                      - generic [ref=e588]:
+                        - generic [ref=e589]:
+                          - img "Tableta de Chocolate bob galleta pistacho, 90 g"
+                        - button "Agregar al carro - Tableta de Chocolate bob galleta pistacho, 90 g" [ref=e592] [cursor=pointer]:
+                          - generic "agregar" [ref=e593]: 
+                          - generic [ref=e594]: Agregar
+                      - generic [ref=e596]:
+                        - generic [ref=e598]:
+                          - generic [ref=e599]: $3.000
+                          - generic [ref=e600]: precio actual $3.000
+                          - generic [ref=e601]: $33.333 x kg
+                        - generic [ref=e602]: Arcor
+                        - generic [ref=e603]: Tableta de Chocolate bob galleta pistacho, 90 g
+                  - group [ref=e606]:
+                    - link "Galletas Gretel Chocolate Bolsa, 85 g" [ref=e607] [cursor=pointer]:
+                      - /url: /ip/galletas-y-colaciones-dulces/00780221551501?from=/search
+                      - generic [ref=e608]: Galletas Gretel Chocolate Bolsa, 85 g
+                    - generic [ref=e610]:
+                      - generic [ref=e613]:
+                        - generic [ref=e614]:
+                          - img "Galletas Gretel Chocolate Bolsa, 85 g"
+                        - button "Agregar al carro - Galletas Gretel Chocolate Bolsa, 85 g" [ref=e617] [cursor=pointer]:
+                          - generic "agregar" [ref=e618]: 
+                          - generic [ref=e619]: Agregar
+                      - generic [ref=e621]:
+                        - generic [ref=e623]:
+                          - generic [ref=e624]: $1.250
+                          - generic [ref=e625]: precio actual $1.250
+                          - generic [ref=e626]: $14.706 x kg
+                        - generic [ref=e627]: Costa
+                        - generic [ref=e628]: Galletas Gretel Chocolate Bolsa, 85 g
+                  - group [ref=e631]:
+                    - link "Galleta Frac Chocolate, 110 g" [ref=e632] [cursor=pointer]:
+                      - /url: /ip/galletas-y-colaciones-dulces/00780221551238?from=/search
+                      - generic [ref=e633]: Galleta Frac Chocolate, 110 g
+                    - generic [ref=e635]:
+                      - generic [ref=e638]:
+                        - generic [ref=e639]:
+                          - img "Galleta Frac Chocolate, 110 g"
+                        - button "Agregar al carro - Galleta Frac Chocolate, 110 g" [ref=e642] [cursor=pointer]:
+                          - generic "agregar" [ref=e643]: 
+                          - generic [ref=e644]: Agregar
+                      - generic [ref=e646]:
+                        - generic [ref=e648]:
+                          - generic [ref=e649]: $750
+                          - generic [ref=e650]: precio actual $750
+                          - generic [ref=e651]: $6.818 x kg
+                        - generic [ref=e652]: Costa
+                        - generic [ref=e653]: Galleta Frac Chocolate, 110 g
+                  - group [ref=e656]:
+                    - link "Galleta Mini Chips de Chocolate Sin Azúcar, 30 g" [ref=e657] [cursor=pointer]:
+                      - /url: /ip/sin-gluten/00780352000247?from=/search
+                      - generic [ref=e658]: Galleta Mini Chips de Chocolate Sin Azúcar, 30 g
+                    - generic [ref=e660]:
+                      - generic [ref=e663]:
+                        - generic [ref=e664]:
+                          - img "Galleta Mini Chips de Chocolate Sin Azúcar, 30 g"
+                        - button "Agregar al carro - Galleta Mini Chips de Chocolate Sin Azúcar, 30 g" [ref=e667] [cursor=pointer]:
+                          - generic "agregar" [ref=e668]: 
+                          - generic [ref=e669]: Agregar
+                      - generic [ref=e671]:
+                        - generic [ref=e673]:
+                          - generic [ref=e674]: $430
+                          - generic [ref=e675]: precio actual $430
+                          - generic [ref=e676]: $14.333 x kg
+                        - generic [ref=e677]: Ecovida
+                        - generic [ref=e678]: Galleta Mini Chips de Chocolate Sin Azúcar, 30 g
+                  - group [ref=e681]:
+                    - link "Galleta Triton Chocolate, 116 g" [ref=e682] [cursor=pointer]:
+                      - /url: /ip/galletas-y-colaciones-dulces/00844529171973?from=/search
+                      - generic [ref=e683]: Galleta Triton Chocolate, 116 g
+                    - generic [ref=e685]:
+                      - generic [ref=e686]:
+                        - generic [ref=e687]:
+                          - generic [ref=e689]: Combina 3 x $1.850
+                          - button "Combina 3 x $1.850. Ver combinaciones aceptadas y coincidir productos." [ref=e690] [cursor=pointer]: Combinar
+                        - generic [ref=e691]:
+                          - generic [ref=e692]:
+                            - img "Galleta Triton Chocolate, 116 g"
+                          - button "Agregar al carro - Galleta Triton Chocolate, 116 g" [ref=e695] [cursor=pointer]:
+                            - generic "agregar" [ref=e696]: 
+                            - generic [ref=e697]: Agregar
+                      - generic [ref=e699]:
+                        - generic [ref=e701]:
+                          - generic [ref=e702]: $820
+                          - generic [ref=e703]: precio actual $820
+                          - generic [ref=e704]: $7.069 x kg
+                        - generic [ref=e705]: Mckay
+                        - generic [ref=e706]: Galleta Triton Chocolate, 116 g
+                  - group [ref=e709]:
+                    - link "Galleta Oblea Waffer Chocolate, 120 g" [ref=e710] [cursor=pointer]:
+                      - /url: /ip/galletas-y-colaciones-dulces/00780221550452?from=/search
+                      - generic [ref=e711]: Galleta Oblea Waffer Chocolate, 120 g
+                    - generic [ref=e713]:
+                      - generic [ref=e716]:
+                        - generic [ref=e717]:
+                          - img "Galleta Oblea Waffer Chocolate, 120 g"
+                        - button "Agregar al carro - Galleta Oblea Waffer Chocolate, 120 g" [ref=e720] [cursor=pointer]:
+                          - generic "agregar" [ref=e721]: 
+                          - generic [ref=e722]: Agregar
+                      - generic [ref=e724]:
+                        - generic [ref=e726]:
+                          - generic [ref=e727]: $1.290
+                          - generic [ref=e728]: precio actual $1.290
+                          - generic [ref=e729]: $10.750 x kg
+                        - generic [ref=e730]: Costa
+                        - generic [ref=e731]: Galleta Oblea Waffer Chocolate, 120 g
+                  - group [ref=e734]:
+                    - link "Galleta Bañada Rigochoc Chocolate, 113 g" [ref=e735] [cursor=pointer]:
+                      - /url: /ip/galletas-y-colaciones-dulces/00780222564055?from=/search
+                      - generic [ref=e736]: Galleta Bañada Rigochoc Chocolate, 113 g
+                    - generic [ref=e738]:
+                      - generic [ref=e739]:
+                        - generic [ref=e741]:
+                          - generic [ref=e743]: 
+                          - text: Rebaja
+                        - generic [ref=e744]:
+                          - generic [ref=e745]:
+                            - img "Galleta Bañada Rigochoc Chocolate, 113 g"
+                          - button "Agregar al carro - Galleta Bañada Rigochoc Chocolate, 113 g" [ref=e748] [cursor=pointer]:
+                            - generic "agregar" [ref=e749]: 
+                            - generic [ref=e750]: Agregar
+                      - generic [ref=e752]:
+                        - generic [ref=e754]:
+                          - generic [ref=e755]: $1.050
+                          - generic [ref=e756]: precio actual $1.050, Costaba $1.290
+                          - generic [ref=e757]: $9.292 x kg
+                          - generic [ref=e758]: $1.290
+                          - generic [ref=e759]: Ahorra $240
+                        - generic [ref=e760]: Dos En Uno
+                        - generic [ref=e761]: Galleta Bañada Rigochoc Chocolate, 113 g
+                  - group [ref=e764]:
+                    - link "Galletas Maná chocolate, 393 g" [ref=e765] [cursor=pointer]:
+                      - /url: /ip/galletas-y-colaciones-dulces/00779004042417?from=/search
+                      - generic [ref=e766]: Galletas Maná chocolate, 393 g
+                    - generic [ref=e768]:
+                      - generic [ref=e769]:
+                        - generic [ref=e771]:
+                          - generic [ref=e773]: 
+                          - text: Rebaja
+                        - generic [ref=e774]:
+                          - generic [ref=e775]:
+                            - img "Galletas Maná chocolate, 393 g"
+                          - button "Agregar al carro - Galletas Maná chocolate, 393 g" [ref=e778] [cursor=pointer]:
+                            - generic "agregar" [ref=e779]: 
+                            - generic [ref=e780]: Agregar
+                      - generic [ref=e782]:
+                        - generic [ref=e784]:
+                          - generic [ref=e785]: $2.000
+                          - generic [ref=e786]: precio actual $2.000, Costaba $2.450
+                          - generic [ref=e787]: $4.902 x kg
+                          - generic [ref=e788]: $2.450
+                          - generic [ref=e789]: Ahorra $450
+                        - generic [ref=e790]: Arcor
+                        - generic [ref=e791]: Galletas Maná chocolate, 393 g
+                  - group [ref=e794]:
+                    - link "Paquete Galletas Frac Bi Chocolate y Frutilla, 110 g" [ref=e795] [cursor=pointer]:
+                      - /url: /ip/galletas-y-colaciones-dulces/00780221551237?from=/search
+                      - generic [ref=e796]: Paquete Galletas Frac Bi Chocolate y Frutilla, 110 g
+                    - generic [ref=e798]:
+                      - generic [ref=e801]:
+                        - generic [ref=e802]:
+                          - img "Paquete Galletas Frac Bi Chocolate y Frutilla, 110 g"
+                        - button "Agregar al carro - Paquete Galletas Frac Bi Chocolate y Frutilla, 110 g" [ref=e805] [cursor=pointer]:
+                          - generic "agregar" [ref=e806]: 
+                          - generic [ref=e807]: Agregar
+                      - generic [ref=e809]:
+                        - generic [ref=e811]:
+                          - generic [ref=e812]: $750
+                          - generic [ref=e813]: precio actual $750
+                          - generic [ref=e814]: $5.769 x kg
+                        - generic [ref=e815]: Costa
+                        - generic [ref=e816]: Paquete Galletas Frac Bi Chocolate y Frutilla, 110 g
+                  - group [ref=e819]:
+                    - link "Galletas Gretel Chocolate blanco, 85 g" [ref=e820] [cursor=pointer]:
+                      - /url: /ip/galletas-y-colaciones-dulces/00780221551502?from=/search
+                      - generic [ref=e821]: Galletas Gretel Chocolate blanco, 85 g
+                    - generic [ref=e823]:
+                      - generic [ref=e826]:
+                        - generic [ref=e827]:
+                          - img "Galletas Gretel Chocolate blanco, 85 g"
+                        - button "Agregar al carro - Galletas Gretel Chocolate blanco, 85 g" [ref=e830] [cursor=pointer]:
+                          - generic "agregar" [ref=e831]: 
+                          - generic [ref=e832]: Agregar
+                      - generic [ref=e834]:
+                        - generic [ref=e836]:
+                          - generic [ref=e837]: $1.250
+                          - generic [ref=e838]: precio actual $1.250
+                          - generic [ref=e839]: $14.706 x kg
+                        - generic [ref=e840]: Costa
+                        - generic [ref=e841]: Galletas Gretel Chocolate blanco, 85 g
+                  - group [ref=e844]:
+                    - link "Galletas de arroz Chocolate-Naranja, 25 g" [ref=e845] [cursor=pointer]:
+                      - /url: /ip/sin-gluten/00780464645009?from=/search
+                      - generic [ref=e846]: Galletas de arroz Chocolate-Naranja, 25 g
+                    - generic [ref=e848]:
+                      - generic [ref=e851]:
+                        - generic [ref=e852]:
+                          - img "Galletas de arroz Chocolate-Naranja, 25 g"
+                        - button "Agregar al carro - Galletas de arroz Chocolate-Naranja, 25 g" [ref=e855] [cursor=pointer]:
+                          - generic "agregar" [ref=e856]: 
+                          - generic [ref=e857]: Agregar
+                      - generic [ref=e859]:
+                        - generic [ref=e861]:
+                          - generic [ref=e862]: $580
+                          - generic [ref=e863]: precio actual $580
+                          - generic [ref=e864]: $29.000 x kg
+                        - generic [ref=e865]: Mizos
+                        - generic [ref=e866]: Galletas de arroz Chocolate-Naranja, 25 g
+                  - group [ref=e869]:
+                    - link "Galletas Obsesión Clásica Chocolate, 85 g" [ref=e870] [cursor=pointer]:
+                      - /url: /ip/galletas-y-colaciones-dulces/00780221550502?from=/search
+                      - generic [ref=e871]: Galletas Obsesión Clásica Chocolate, 85 g
+                    - generic [ref=e873]:
+                      - generic [ref=e876]:
+                        - generic [ref=e877]:
+                          - img "Galletas Obsesión Clásica Chocolate, 85 g"
+                        - button "Agregar al carro - Galletas Obsesión Clásica Chocolate, 85 g" [ref=e880] [cursor=pointer]:
+                          - generic "agregar" [ref=e881]: 
+                          - generic [ref=e882]: Agregar
+                      - generic [ref=e884]:
+                        - generic [ref=e886]:
+                          - generic [ref=e887]: $1.250
+                          - generic [ref=e888]: precio actual $1.250
+                          - generic [ref=e889]: $14.706 x kg
+                        - generic [ref=e890]: Costa
+                        - generic [ref=e891]: Galletas Obsesión Clásica Chocolate, 85 g
+                  - group [ref=e894]:
+                    - link "Galleta Bañada Super Chocolate, 95 g" [ref=e895] [cursor=pointer]:
+                      - /url: /ip/galletas-y-colaciones-dulces/00780222564095?from=/search
+                      - generic [ref=e896]: Galleta Bañada Super Chocolate, 95 g
+                    - generic [ref=e898]:
+                      - generic [ref=e901]:
+                        - generic [ref=e902]:
+                          - img "Galleta Bañada Super Chocolate, 95 g"
+                        - button "Agregar al carro - Galleta Bañada Super Chocolate, 95 g" [ref=e905] [cursor=pointer]:
+                          - generic "agregar" [ref=e906]: 
+                          - generic [ref=e907]: Agregar
+                      - generic [ref=e909]:
+                        - generic [ref=e911]:
+                          - generic [ref=e912]: $1.490
+                          - generic [ref=e913]: precio actual $1.490
+                          - generic [ref=e914]: $15.684 x kg
+                        - generic [ref=e915]: Bon Bon
+                        - generic [ref=e916]: Galleta Bañada Super Chocolate, 95 g
+                  - group [ref=e919]:
+                    - link "Galleta Rellena Sabor Chocolate Triton Chocowhite, 116 g" [ref=e920] [cursor=pointer]:
+                      - /url: /ip/galletas-y-colaciones-dulces/00844529180408?from=/search
+                      - generic [ref=e921]: Galleta Rellena Sabor Chocolate Triton Chocowhite, 116 g
+                    - generic [ref=e923]:
+                      - generic [ref=e924]:
+                        - generic [ref=e925]:
+                          - generic [ref=e927]: Combina 3 x $1.850
+                          - button "Combina 3 x $1.850. Ver combinaciones aceptadas y coincidir productos." [ref=e928] [cursor=pointer]: Combinar
+                        - generic [ref=e929]:
+                          - generic [ref=e930]:
+                            - img "Galleta Rellena Sabor Chocolate Triton Chocowhite, 116 g"
+                          - button "Agregar al carro - Galleta Rellena Sabor Chocolate Triton Chocowhite, 116 g" [ref=e933] [cursor=pointer]:
+                            - generic "agregar" [ref=e934]: 
+                            - generic [ref=e935]: Agregar
+                      - generic [ref=e937]:
+                        - generic [ref=e939]:
+                          - generic [ref=e940]: $820
+                          - generic [ref=e941]: precio actual $820
+                          - generic [ref=e942]: $7.069 x kg
+                        - generic [ref=e943]: Triton
+                        - generic [ref=e944]: Galleta Rellena Sabor Chocolate Triton Chocowhite, 116 g
+                  - group [ref=e947]:
+                    - link "Galletas de arroz Mizos chocolate, 20 g" [ref=e948] [cursor=pointer]:
+                      - /url: /ip/arroz-y-legumbres/00780464645002?from=/search
+                      - generic [ref=e949]: Galletas de arroz Mizos chocolate, 20 g
+                    - generic [ref=e951]:
+                      - generic [ref=e954]:
+                        - generic [ref=e955]:
+                          - img "Galletas de arroz Mizos chocolate, 20 g"
+                        - button "Agregar al carro - Galletas de arroz Mizos chocolate, 20 g" [ref=e958] [cursor=pointer]:
+                          - generic "agregar" [ref=e959]: 
+                          - generic [ref=e960]: Agregar
+                      - generic [ref=e962]:
+                        - generic [ref=e964]:
+                          - generic [ref=e965]: $540
+                          - generic [ref=e966]: precio actual $540
+                          - generic [ref=e967]: $27.000 x kg
+                        - generic [ref=e968]: Mizos
+                        - generic [ref=e969]: Galletas de arroz Mizos chocolate, 20 g
+                  - group [ref=e972]:
+                    - link "Galleta Mini Triton Chocolate, 40 g" [ref=e973] [cursor=pointer]:
+                      - /url: /ip/galletas-y-snack-colacion/00761303663755?from=/search
+                      - generic [ref=e974]: Galleta Mini Triton Chocolate, 40 g
+                    - generic [ref=e976]:
+                      - generic [ref=e979]:
+                        - generic [ref=e980]:
+                          - img "Galleta Mini Triton Chocolate, 40 g"
+                        - button "Agregar al carro - Galleta Mini Triton Chocolate, 40 g" [ref=e983] [cursor=pointer]:
+                          - generic "agregar" [ref=e984]: 
+                          - generic [ref=e985]: Agregar
+                      - generic [ref=e987]:
+                        - generic [ref=e989]:
+                          - generic [ref=e990]: $450
+                          - generic [ref=e991]: precio actual $450
+                          - generic [ref=e992]: $11.250 x kg
+                        - generic [ref=e993]: Mckay
+                        - generic [ref=e994]: Galleta Mini Triton Chocolate, 40 g
+                  - group [ref=e997]:
+                    - link "Galletas de Arroz con Chocolate, 150 g" [ref=e998] [cursor=pointer]:
+                      - /url: /ip/sin-gluten/00780463593161?from=/search
+                      - generic [ref=e999]: Galletas de Arroz con Chocolate, 150 g
+                    - generic [ref=e1001]:
+                      - generic [ref=e1004]:
+                        - generic [ref=e1005]:
+                          - img "Galletas de Arroz con Chocolate, 150 g"
+                        - button "Agregar al carro - Galletas de Arroz con Chocolate, 150 g" [ref=e1008] [cursor=pointer]:
+                          - generic "agregar" [ref=e1009]: 
+                          - generic [ref=e1010]: Agregar
+                      - generic [ref=e1012]:
+                        - generic [ref=e1014]:
+                          - generic [ref=e1015]: $1.950
+                          - generic [ref=e1016]: precio actual $1.950
+                          - generic [ref=e1017]: $1.300 x kg
+                        - generic [ref=e1018]: Lider
+                        - generic [ref=e1019]: Galletas de Arroz con Chocolate, 150 g
+                  - group [ref=e1022]:
+                    - link "Galleta Cobertura Chocolate Morocha Crunchy, 40 g" [ref=e1023] [cursor=pointer]:
+                      - /url: /ip/galletas-y-snack-colacion/00844529090625?from=/search
+                      - generic [ref=e1024]: Galleta Cobertura Chocolate Morocha Crunchy, 40 g
+                    - generic [ref=e1026]:
+                      - generic [ref=e1029]:
+                        - generic [ref=e1030]:
+                          - img "Galleta Cobertura Chocolate Morocha Crunchy, 40 g"
+                        - button "Agregar al carro - Galleta Cobertura Chocolate Morocha Crunchy, 40 g" [ref=e1033] [cursor=pointer]:
+                          - generic "agregar" [ref=e1034]: 
+                          - generic [ref=e1035]: Agregar
+                      - generic [ref=e1037]:
+                        - generic [ref=e1039]:
+                          - generic [ref=e1040]: $450
+                          - generic [ref=e1041]: precio actual $450
+                          - generic [ref=e1042]: $11.250 x kg
+                        - generic [ref=e1043]: Morocha
+                        - generic [ref=e1044]: Galleta Cobertura Chocolate Morocha Crunchy, 40 g
+                  - group [ref=e1047]:
+                    - link "Galletas Donuts Chocolate, 100 g" [ref=e1048] [cursor=pointer]:
+                      - /url: /ip/galletas-y-colaciones-dulces/00780221550852?from=/search
+                      - generic [ref=e1049]: Galletas Donuts Chocolate, 100 g
+                    - generic [ref=e1051]:
+                      - generic [ref=e1054]:
+                        - generic [ref=e1055]:
+                          - img "Galletas Donuts Chocolate, 100 g"
+                        - button "Agregar al carro - Galletas Donuts Chocolate, 100 g" [ref=e1058] [cursor=pointer]:
+                          - generic "agregar" [ref=e1059]: 
+                          - generic [ref=e1060]: Agregar
+                      - generic [ref=e1062]:
+                        - generic [ref=e1064]:
+                          - generic [ref=e1065]: $1.250
+                          - generic [ref=e1066]: precio actual $1.250
+                          - generic [ref=e1067]: $12.500 x kg
+                        - generic [ref=e1068]: Costa
+                        - generic [ref=e1069]: Galletas Donuts Chocolate, 100 g
+                  - group [ref=e1072]:
+                    - link "Galleta Oblea Alteza Chocolate Vainilla Bolsa, 140 g" [ref=e1073] [cursor=pointer]:
+                      - /url: /ip/galletas-y-colaciones-dulces/00844529195637?from=/search
+                      - generic [ref=e1074]: Galleta Oblea Alteza Chocolate Vainilla Bolsa, 140 g
+                    - generic [ref=e1076]:
+                      - generic [ref=e1077]:
+                        - generic [ref=e1079]:
+                          - generic [ref=e1081]: 
+                          - text: Rebaja
+                        - generic [ref=e1082]:
+                          - generic [ref=e1083]:
+                            - img "Galleta Oblea Alteza Chocolate Vainilla Bolsa, 140 g"
+                          - button "Agregar al carro - Galleta Oblea Alteza Chocolate Vainilla Bolsa, 140 g" [ref=e1086] [cursor=pointer]:
+                            - generic "agregar" [ref=e1087]: 
+                            - generic [ref=e1088]: Agregar
+                      - generic [ref=e1090]:
+                        - generic [ref=e1092]:
+                          - generic [ref=e1093]: $1.250
+                          - generic [ref=e1094]: precio actual $1.250, Costaba $1.550
+                          - generic [ref=e1095]: $8.929 x kg
+                          - generic [ref=e1096]: $1.550
+                          - generic [ref=e1097]: Ahorra $300
+                        - generic [ref=e1098]: Mckay
+                        - generic [ref=e1099]: Galleta Oblea Alteza Chocolate Vainilla Bolsa, 140 g
+                  - group [ref=e1102]:
+                    - link "Galletas Granjeritas Sabor Chocolate, 115 g" [ref=e1103] [cursor=pointer]:
+                      - /url: /ip/alimentacion-y-lactancia/00780465097025?from=/search
+                      - generic [ref=e1104]: Galletas Granjeritas Sabor Chocolate, 115 g
+                    - generic [ref=e1106]:
+                      - generic [ref=e1109]:
+                        - generic [ref=e1110]:
+                          - img "Galletas Granjeritas Sabor Chocolate, 115 g"
+                        - button "Agregar al carro - Galletas Granjeritas Sabor Chocolate, 115 g" [ref=e1113] [cursor=pointer]:
+                          - generic "agregar" [ref=e1114]: 
+                          - generic [ref=e1115]: Agregar
+                      - generic [ref=e1117]:
+                        - generic [ref=e1119]:
+                          - generic [ref=e1120]: $2.050
+                          - generic [ref=e1121]: precio actual $2.050
+                          - generic [ref=e1122]: $13.667 x kg
+                        - generic [ref=e1123]: Smiley Kids
+                        - generic [ref=e1124]: Galletas Granjeritas Sabor Chocolate, 115 g
+                  - group [ref=e1127]:
+                    - link "Galleta Chip Chocolate Tira, 3 Un" [ref=e1128] [cursor=pointer]:
+                      - /url: /ip/galletas-y-snack-colacion/00780463593078?from=/search
+                      - generic [ref=e1129]: Galleta Chip Chocolate Tira, 3 Un
+                    - generic [ref=e1131]:
+                      - generic [ref=e1134]:
+                        - generic [ref=e1135]:
+                          - img "Galleta Chip Chocolate Tira, 3 Un"
+                        - button "Agregar al carro - Galleta Chip Chocolate Tira, 3 Un" [ref=e1138] [cursor=pointer]:
+                          - generic "agregar" [ref=e1139]: 
+                          - generic [ref=e1140]: Agregar
+                      - generic [ref=e1142]:
+                        - generic [ref=e1144]:
+                          - generic [ref=e1145]: $1.790
+                          - generic [ref=e1146]: precio actual $1.790
+                          - generic [ref=e1147]: $1.790 x un
+                        - generic [ref=e1148]: Be Cookies
+                        - generic [ref=e1149]: Galleta Chip Chocolate Tira, 3 Un
+                  - group [ref=e1152]:
+                    - link "Galleta Bañada Donuts Chocolate Blanco, 100 g" [ref=e1153] [cursor=pointer]:
+                      - /url: /ip/galletas-y-colaciones-dulces/00780221550853?from=/search
+                      - generic [ref=e1154]: Galleta Bañada Donuts Chocolate Blanco, 100 g
+                    - generic [ref=e1156]:
+                      - generic [ref=e1159]:
+                        - generic [ref=e1160]:
+                          - img "Galleta Bañada Donuts Chocolate Blanco, 100 g"
+                        - button "Agregar al carro - Galleta Bañada Donuts Chocolate Blanco, 100 g" [ref=e1163] [cursor=pointer]:
+                          - generic "agregar" [ref=e1164]: 
+                          - generic [ref=e1165]: Agregar
+                      - generic [ref=e1167]:
+                        - generic [ref=e1169]:
+                          - generic [ref=e1170]: $1.250
+                          - generic [ref=e1171]: precio actual $1.250
+                          - generic [ref=e1172]: $12.500 x kg
+                        - generic [ref=e1173]: Costa
+                        - generic [ref=e1174]: Galleta Bañada Donuts Chocolate Blanco, 100 g
+                  - group [ref=e1177]:
+                    - link "Galleta Mini Ecokids Chocolate, 30 g" [ref=e1178] [cursor=pointer]:
+                      - /url: /ip/sin-azucar/00780352000284?from=/search
+                      - generic [ref=e1179]: Galleta Mini Ecokids Chocolate, 30 g
+                    - generic [ref=e1181]:
+                      - generic [ref=e1182]:
+                        - generic [ref=e1184]:
+                          - generic [ref=e1186]: 
+                          - text: Rebaja
+                        - generic [ref=e1187]:
+                          - generic [ref=e1188]:
+                            - img "Galleta Mini Ecokids Chocolate, 30 g"
+                          - button "Agregar al carro - Galleta Mini Ecokids Chocolate, 30 g" [ref=e1191] [cursor=pointer]:
+                            - generic "agregar" [ref=e1192]: 
+                            - generic [ref=e1193]: Agregar
+                      - generic [ref=e1195]:
+                        - generic [ref=e1197]:
+                          - generic [ref=e1198]: $590
+                          - generic [ref=e1199]: precio actual $590, Costaba $690
+                          - generic [ref=e1200]: $19.667 x kg
+                          - generic [ref=e1201]: $690
+                          - generic [ref=e1202]: Ahorra $100
+                        - generic [ref=e1203]: Ecovida
+                        - generic [ref=e1204]: Galleta Mini Ecokids Chocolate, 30 g
+                  - group [ref=e1207]:
+                    - link "Galletas de arroz Chocolate-Naranja formato familiar, 150 g" [ref=e1208] [cursor=pointer]:
+                      - /url: /ip/sin-gluten/00780464645027?from=/search
+                      - generic [ref=e1209]: Galletas de arroz Chocolate-Naranja formato familiar, 150 g
+                    - generic [ref=e1211]:
+                      - generic [ref=e1214]:
+                        - generic [ref=e1215]:
+                          - img "Galletas de arroz Chocolate-Naranja formato familiar, 150 g"
+                        - button "Agregar al carro - Galletas de arroz Chocolate-Naranja formato familiar, 150 g" [ref=e1218] [cursor=pointer]:
+                          - generic "agregar" [ref=e1219]: 
+                          - generic [ref=e1220]: Agregar
+                      - generic [ref=e1222]:
+                        - generic [ref=e1224]:
+                          - generic [ref=e1225]: $3.590
+                          - generic [ref=e1226]: precio actual $3.590
+                        - generic [ref=e1227]: Mizos
+                        - generic [ref=e1228]: Galletas de arroz Chocolate-Naranja formato familiar, 150 g
+                  - group [ref=e1231]:
+                    - link "Galletas Integrales Biscuit Chips Chocolate sin Azúcar, 100 g" [ref=e1232] [cursor=pointer]:
+                      - /url: /ip/sin-azucar/00780352000323?from=/search
+                      - generic [ref=e1233]: Galletas Integrales Biscuit Chips Chocolate sin Azúcar, 100 g
+                    - generic [ref=e1235]:
+                      - generic [ref=e1238]:
+                        - generic [ref=e1239]:
+                          - img "Galletas Integrales Biscuit Chips Chocolate sin Azúcar, 100 g"
+                        - button "Agregar al carro - Galletas Integrales Biscuit Chips Chocolate sin Azúcar, 100 g" [ref=e1242] [cursor=pointer]:
+                          - generic "agregar" [ref=e1243]: 
+                          - generic [ref=e1244]: Agregar
+                      - generic [ref=e1246]:
+                        - generic [ref=e1248]:
+                          - generic [ref=e1249]: $1.590
+                          - generic [ref=e1250]: precio actual $1.590
+                          - generic [ref=e1251]: $10.600 x kg
+                        - generic [ref=e1252]: Ecovida
+                        - generic [ref=e1253]: Galletas Integrales Biscuit Chips Chocolate sin Azúcar, 100 g
+                  - group [ref=e1256]:
+                    - link "Galletas Horneadas de Arroz Inflado Sabor Chocolate y Avellanas, 22 g" [ref=e1257] [cursor=pointer]:
+                      - /url: /ip/galletas-y-colaciones-dulces/00780463001079?from=/search
+                      - generic [ref=e1258]: Galletas Horneadas de Arroz Inflado Sabor Chocolate y Avellanas, 22 g
+                    - generic [ref=e1260]:
+                      - generic [ref=e1263]:
+                        - generic [ref=e1264]:
+                          - img "Galletas Horneadas de Arroz Inflado Sabor Chocolate y Avellanas, 22 g"
+                        - button "Agregar al carro - Galletas Horneadas de Arroz Inflado Sabor Chocolate y Avellanas, 22 g" [ref=e1267] [cursor=pointer]:
+                          - generic "agregar" [ref=e1268]: 
+                          - generic [ref=e1269]: Agregar
+                      - generic [ref=e1271]:
+                        - generic [ref=e1273]:
+                          - generic [ref=e1274]: $560
+                          - generic [ref=e1275]: precio actual $560
+                          - generic [ref=e1276]: $25.455 x kg
+                        - generic [ref=e1277]: Tika
+                        - generic [ref=e1278]: Galletas Horneadas de Arroz Inflado Sabor Chocolate y Avellanas, 22 g
+            - navigation "paginación" [ref=e1281]:
+              - list [ref=e1282]:
+                - listitem [ref=e1283]
+                - listitem [ref=e1285]:
+                  - link "1" [ref=e1286] [cursor=pointer]:
+                    - /url: /search?q=mizo+galletas+chocolate
+                - listitem [ref=e1287]:
+                  - link "Ir a la página 2" [ref=e1288] [cursor=pointer]:
+                    - /url: /search?q=mizo+galletas+chocolate&page=2
+                    - text: "2"
+                - listitem [ref=e1289]:
+                  - link "Ir a la página 3" [ref=e1290] [cursor=pointer]:
+                    - /url: /search?q=mizo+galletas+chocolate&page=3
+                    - text: "3"
+                - listitem [ref=e1291]:
+                  - link "Ir a la página 4" [ref=e1292] [cursor=pointer]:
+                    - /url: /search?q=mizo+galletas+chocolate&page=4
+                    - text: "4"
+                - listitem [ref=e1293]:
+                  - link "Página siguiente" [ref=e1294] [cursor=pointer]:
+                    - /url: /search?q=mizo+galletas+chocolate&page=2
+                    - generic [ref=e1295]: 
+  - alert [ref=e1303]

@@ -1,0 +1,940 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: cilantro fresco
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e80]:
+            - generic [ref=e81]:
+              - generic [ref=e84]:
+                - generic [ref=e85]:
+                  - button "Precio" [ref=e88]:
+                    - generic [ref=e89]: Precio
+                    - img [ref=e90]: 
+                  - separator [ref=e91]
+                - generic [ref=e92]:
+                  - button "Campaña" [ref=e95]:
+                    - generic [ref=e96]: Campaña
+                    - img [ref=e97]: 
+                  - separator [ref=e98]
+                - generic [ref=e99]:
+                  - button "Marca" [ref=e102]:
+                    - generic [ref=e103]: Marca
+                    - img [ref=e104]: 
+                  - separator [ref=e105]
+                - generic [ref=e106]:
+                  - button "Categoría" [ref=e109]:
+                    - generic [ref=e110]: Categoría
+                    - img [ref=e111]: 
+                  - separator [ref=e112]
+              - generic [ref=e115]:
+                - heading "Resultados para cilantro fresco (694)" [level=2] [ref=e123]: Resultados para cilantro fresco(694)
+                - generic [ref=e124]:
+                  - group [ref=e127]:
+                    - link "Cilantro Baby Pote, 60 gr" [ref=e128] [cursor=pointer]:
+                      - /url: /ip/verduras/00780394600094?from=/search
+                      - generic [ref=e129]: Cilantro Baby Pote, 60 gr
+                    - generic [ref=e131]:
+                      - generic [ref=e134]:
+                        - img "Cilantro Baby Pote, 60 gr" [ref=e136]
+                        - button "Agregar al carro - Cilantro Baby Pote, 60 gr" [ref=e139] [cursor=pointer]:
+                          - generic "agregar" [ref=e140]: 
+                          - generic [ref=e141]: Agregar
+                      - generic [ref=e143]:
+                        - generic [ref=e145]:
+                          - generic [ref=e146]: $1.390
+                          - generic [ref=e147]: precio actual $1.390
+                        - generic [ref=e148]: Agrosano
+                        - generic [ref=e149]: Cilantro Baby Pote, 60 gr
+                  - generic [ref=e151]:
+                    - group [ref=e152]:
+                      - link "Salsa Cilantro Y Perejil Botella, 250 ml" [ref=e153] [cursor=pointer]:
+                        - /url: /ip/salsas/00780394600189?from=/search
+                        - generic [ref=e154]: Salsa Cilantro Y Perejil Botella, 250 ml
+                      - generic [ref=e156]:
+                        - generic [ref=e157]:
+                          - generic [ref=e159]:
+                            - generic [ref=e161]: 
+                            - text: Rebaja
+                          - img "Salsa Cilantro Y Perejil Botella, 250 ml" [ref=e164]
+                        - generic [ref=e166]:
+                          - generic [ref=e168]:
+                            - generic [ref=e169]: $3.890
+                            - generic [ref=e170]: precio actual $3.890, Costaba $4.190
+                            - generic [ref=e171]: $15.560 x lt
+                            - generic [ref=e172]: $4.190
+                          - generic [ref=e173]: Agrosano
+                          - generic [ref=e174]: Salsa Cilantro Y Perejil Botella, 250 ml
+                          - generic [ref=e175]: Agotado
+                    - button "Revisar productos similares - Salsa Cilantro Y Perejil Botella, 250 ml" [ref=e177]: Revisar productos similares
+                  - group [ref=e180]:
+                    - link "Quesillo Fresco tradicional Bolsa, 320 g" [ref=e181] [cursor=pointer]:
+                      - /url: /ip/quesos/00780292000074?from=/search
+                      - generic [ref=e182]: Quesillo Fresco tradicional Bolsa, 320 g
+                    - generic [ref=e184]:
+                      - generic [ref=e187]:
+                        - img "Quesillo Fresco tradicional Bolsa, 320 g" [ref=e189]
+                        - button "Agregar al carro - Quesillo Fresco tradicional Bolsa, 320 g" [ref=e192] [cursor=pointer]:
+                          - generic "agregar" [ref=e193]: 
+                          - generic [ref=e194]: Agregar
+                      - generic [ref=e196]:
+                        - generic [ref=e198]:
+                          - generic [ref=e199]: $2.550
+                          - generic [ref=e200]: precio actual $2.550
+                          - generic [ref=e201]: $7.969 x kg
+                        - generic [ref=e202]: Colun
+                        - generic [ref=e203]: Quesillo Fresco tradicional Bolsa, 320 g
+                  - group [ref=e206]:
+                    - link "Quesillo Fresco Sin lactosa Pote, 300 g" [ref=e207] [cursor=pointer]:
+                      - /url: /ip/quesos/00780290014901?from=/search
+                      - generic [ref=e208]: Quesillo Fresco Sin lactosa Pote, 300 g
+                    - generic [ref=e210]:
+                      - generic [ref=e213]:
+                        - img "Quesillo Fresco Sin lactosa Pote, 300 g" [ref=e215]
+                        - button "Agregar al carro - Quesillo Fresco Sin lactosa Pote, 300 g" [ref=e218] [cursor=pointer]:
+                          - generic "agregar" [ref=e219]: 
+                          - generic [ref=e220]: Agregar
+                      - generic [ref=e222]:
+                        - generic [ref=e224]:
+                          - generic [ref=e225]: $2.590
+                          - generic [ref=e226]: precio actual $2.590
+                          - generic [ref=e227]: $8.633 x kg
+                        - generic [ref=e228]: Soprole
+                        - generic [ref=e229]: Quesillo Fresco Sin lactosa Pote, 300 g
+                  - group [ref=e232]:
+                    - link "Quesillo Fresco Light Bolsa, 320 g" [ref=e233] [cursor=pointer]:
+                      - /url: /ip/quesos/00780292000113?from=/search
+                      - generic [ref=e234]: Quesillo Fresco Light Bolsa, 320 g
+                    - generic [ref=e236]:
+                      - generic [ref=e237]:
+                        - generic [ref=e239]:
+                          - generic [ref=e241]: 
+                          - text: Rebaja
+                        - generic [ref=e242]:
+                          - img "Quesillo Fresco Light Bolsa, 320 g" [ref=e244]
+                          - button "Agregar al carro - Quesillo Fresco Light Bolsa, 320 g" [ref=e247] [cursor=pointer]:
+                            - generic "agregar" [ref=e248]: 
+                            - generic [ref=e249]: Agregar
+                      - generic [ref=e251]:
+                        - generic [ref=e253]:
+                          - generic [ref=e254]: $2.290
+                          - generic [ref=e255]: precio actual $2.290, Costaba $2.650
+                          - generic [ref=e256]: $7.156 x kg
+                          - generic [ref=e257]: $2.650
+                          - generic [ref=e258]: Ahorra $360
+                        - generic [ref=e259]: Colun
+                        - generic [ref=e260]: Quesillo Fresco Light Bolsa, 320 g
+                  - group [ref=e263]:
+                    - link "Queso Fresco Light Sin Lactosa, 400 g" [ref=e264] [cursor=pointer]:
+                      - /url: /ip/quesos/00780292000863?from=/search
+                      - generic [ref=e265]: Queso Fresco Light Sin Lactosa, 400 g
+                    - generic [ref=e267]:
+                      - generic [ref=e270]:
+                        - img "Queso Fresco Light Sin Lactosa, 400 g" [ref=e272]
+                        - button "Agregar al carro - Queso Fresco Light Sin Lactosa, 400 g" [ref=e275] [cursor=pointer]:
+                          - generic "agregar" [ref=e276]: 
+                          - generic [ref=e277]: Agregar
+                      - generic [ref=e279]:
+                        - generic [ref=e281]:
+                          - generic [ref=e282]: $2.950
+                          - generic [ref=e283]: precio actual $2.950
+                          - generic [ref=e284]: $7.375 x kg
+                        - generic [ref=e285]: Colun
+                        - generic [ref=e286]: Queso Fresco Light Sin Lactosa, 400 g
+                  - group [ref=e289]:
+                    - link "Quesillo Fresco Trozo, 300 g" [ref=e290] [cursor=pointer]:
+                      - /url: /ip/quesos/00780290016500?from=/search
+                      - generic [ref=e291]: Quesillo Fresco Trozo, 300 g
+                    - generic [ref=e293]:
+                      - generic [ref=e294]:
+                        - generic [ref=e296]:
+                          - generic [ref=e298]: 
+                          - text: Rebaja
+                        - generic [ref=e299]:
+                          - img "Quesillo Fresco Trozo, 300 g" [ref=e301]
+                          - button "Agregar al carro - Quesillo Fresco Trozo, 300 g" [ref=e304] [cursor=pointer]:
+                            - generic "agregar" [ref=e305]: 
+                            - generic [ref=e306]: Agregar
+                      - generic [ref=e308]:
+                        - generic [ref=e310]:
+                          - generic [ref=e311]: $1.950
+                          - generic [ref=e312]: precio actual $1.950, Costaba $2.350
+                          - generic [ref=e313]: $6.500 x kg
+                          - generic [ref=e314]: $2.350
+                          - generic [ref=e315]: Ahorra $400
+                        - generic [ref=e316]: Soprole
+                        - generic [ref=e317]: Quesillo Fresco Trozo, 300 g
+                  - group [ref=e320]:
+                    - link "Quesillo Fresco Bolsa, 350 g" [ref=e321] [cursor=pointer]:
+                      - /url: /ip/quesos/00780292000229?from=/search
+                      - generic [ref=e322]: Quesillo Fresco Bolsa, 350 g
+                    - generic [ref=e324]:
+                      - generic [ref=e327]:
+                        - img "Quesillo Fresco Bolsa, 350 g" [ref=e329]
+                        - button "Agregar al carro - Quesillo Fresco Bolsa, 350 g" [ref=e332] [cursor=pointer]:
+                          - generic "agregar" [ref=e333]: 
+                          - generic [ref=e334]: Agregar
+                      - generic [ref=e336]:
+                        - generic [ref=e338]:
+                          - generic [ref=e339]: $2.650
+                          - generic [ref=e340]: precio actual $2.650
+                          - generic [ref=e341]: $7.571 x kg
+                        - generic [ref=e342]: Colun
+                        - generic [ref=e343]: Quesillo Fresco Bolsa, 350 g
+                  - group [ref=e346]:
+                    - link "Queso Fresco Trozo, 400 g" [ref=e347] [cursor=pointer]:
+                      - /url: /ip/quesos/00780461339053?from=/search
+                      - generic [ref=e348]: Queso Fresco Trozo, 400 g
+                    - generic [ref=e350]:
+                      - generic [ref=e351]:
+                        - generic [ref=e353]:
+                          - generic [ref=e355]: 
+                          - text: Rebaja
+                        - generic [ref=e356]:
+                          - generic [ref=e357]:
+                            - img "Queso Fresco Trozo, 400 g"
+                          - button "Agregar al carro - Queso Fresco Trozo, 400 g" [ref=e360] [cursor=pointer]:
+                            - generic "agregar" [ref=e361]: 
+                            - generic [ref=e362]: Agregar
+                      - generic [ref=e364]:
+                        - generic [ref=e366]:
+                          - generic [ref=e367]: $2.990
+                          - generic [ref=e368]: precio actual $2.990, Costaba $3.550
+                          - generic [ref=e369]: $7.475 x kg
+                          - generic [ref=e370]: $3.550
+                          - generic [ref=e371]: Ahorra $560
+                        - generic [ref=e372]: La Vaquita
+                        - generic [ref=e373]: Queso Fresco Trozo, 400 g
+                  - group [ref=e376]:
+                    - link "Queso Fresco Chacra, 450 g" [ref=e377] [cursor=pointer]:
+                      - /url: /ip/quesos/00780208000012?from=/search
+                      - generic [ref=e378]: Queso Fresco Chacra, 450 g
+                    - generic [ref=e380]:
+                      - generic [ref=e383]:
+                        - img "Queso Fresco Chacra, 450 g" [ref=e385]
+                        - button "Agregar al carro - Queso Fresco Chacra, 450 g" [ref=e388] [cursor=pointer]:
+                          - generic "agregar" [ref=e389]: 
+                          - generic [ref=e390]: Agregar
+                      - generic [ref=e392]:
+                        - generic [ref=e394]:
+                          - generic [ref=e395]: $3.890
+                          - generic [ref=e396]: precio actual $3.890
+                          - generic [ref=e397]: $8.644 x kg
+                        - generic [ref=e398]: El Roble
+                        - generic [ref=e399]: Queso Fresco Chacra, 450 g
+                  - group [ref=e402]:
+                    - link "Quesillo Fresco Sin lactosa, 320 g" [ref=e403] [cursor=pointer]:
+                      - /url: /ip/quesos/00780292000807?from=/search
+                      - generic [ref=e404]: Quesillo Fresco Sin lactosa, 320 g
+                    - generic [ref=e406]:
+                      - generic [ref=e409]:
+                        - img "Quesillo Fresco Sin lactosa, 320 g" [ref=e411]
+                        - button "Agregar al carro - Quesillo Fresco Sin lactosa, 320 g" [ref=e414] [cursor=pointer]:
+                          - generic "agregar" [ref=e415]: 
+                          - generic [ref=e416]: Agregar
+                      - generic [ref=e418]:
+                        - generic [ref=e420]:
+                          - generic [ref=e421]: $2.790
+                          - generic [ref=e422]: precio actual $2.790
+                          - generic [ref=e423]: $8.719 x kg
+                        - generic [ref=e424]: Colun
+                        - generic [ref=e425]: Quesillo Fresco Sin lactosa, 320 g
+                  - group [ref=e428]:
+                    - link "Queso Fresco Trozo, 350 g" [ref=e429] [cursor=pointer]:
+                      - /url: /ip/quesos/00780208000014?from=/search
+                      - generic [ref=e430]: Queso Fresco Trozo, 350 g
+                    - generic [ref=e432]:
+                      - generic [ref=e435]:
+                        - img "Queso Fresco Trozo, 350 g" [ref=e437]
+                        - button "Agregar al carro - Queso Fresco Trozo, 350 g" [ref=e440] [cursor=pointer]:
+                          - generic "agregar" [ref=e441]: 
+                          - generic [ref=e442]: Agregar
+                      - generic [ref=e444]:
+                        - generic [ref=e446]:
+                          - generic [ref=e447]: $3.190
+                          - generic [ref=e448]: precio actual $3.190
+                          - generic [ref=e449]: $9.114 x kg
+                        - generic [ref=e450]: Los Tilos
+                        - generic [ref=e451]: Queso Fresco Trozo, 350 g
+                  - group [ref=e454]:
+                    - link "Queso Fresco Trozo, 450 g" [ref=e455] [cursor=pointer]:
+                      - /url: /ip/quesos/00780292000837?from=/search
+                      - generic [ref=e456]: Queso Fresco Trozo, 450 g
+                    - generic [ref=e458]:
+                      - generic [ref=e459]:
+                        - generic [ref=e461]:
+                          - generic [ref=e463]: 
+                          - text: Rebaja
+                        - generic [ref=e464]:
+                          - img "Queso Fresco Trozo, 450 g" [ref=e466]
+                          - button "Agregar al carro - Queso Fresco Trozo, 450 g" [ref=e469] [cursor=pointer]:
+                            - generic "agregar" [ref=e470]: 
+                            - generic [ref=e471]: Agregar
+                      - generic [ref=e473]:
+                        - generic [ref=e475]:
+                          - generic [ref=e476]: $2.790
+                          - generic [ref=e477]: precio actual $2.790, Costaba $2.990
+                          - generic [ref=e478]: $6.200 x kg
+                          - generic [ref=e479]: $2.990
+                          - generic [ref=e480]: Ahorra $200
+                        - generic [ref=e481]: Colun
+                        - generic [ref=e482]: Queso Fresco Trozo, 450 g
+                  - group [ref=e485]:
+                    - link "Queso Fresco Sin Lactosa Trozo, 400 g" [ref=e486] [cursor=pointer]:
+                      - /url: /ip/quesos/00780461339161?from=/search
+                      - generic [ref=e487]: Queso Fresco Sin Lactosa Trozo, 400 g
+                    - generic [ref=e489]:
+                      - generic [ref=e490]:
+                        - generic [ref=e492]:
+                          - generic [ref=e494]: 
+                          - text: Rebaja
+                        - generic [ref=e495]:
+                          - img "Queso Fresco Sin Lactosa Trozo, 400 g" [ref=e497]
+                          - button "Agregar al carro - Queso Fresco Sin Lactosa Trozo, 400 g" [ref=e500] [cursor=pointer]:
+                            - generic "agregar" [ref=e501]: 
+                            - generic [ref=e502]: Agregar
+                      - generic [ref=e504]:
+                        - generic [ref=e506]:
+                          - generic [ref=e507]: $2.850
+                          - generic [ref=e508]: precio actual $2.850, Costaba $3.390
+                          - generic [ref=e509]: $7.125 x kg
+                          - generic [ref=e510]: $3.390
+                          - generic [ref=e511]: Ahorra $540
+                        - generic [ref=e512]: La Vaquita
+                        - generic [ref=e513]: Queso Fresco Sin Lactosa Trozo, 400 g
+                  - group [ref=e516]:
+                    - link "Queso Fresco Light Mini Pote, 195 g" [ref=e517] [cursor=pointer]:
+                      - /url: /ip/quesos/00780296000032?from=/search
+                      - generic [ref=e518]: Queso Fresco Light Mini Pote, 195 g
+                    - generic [ref=e520]:
+                      - generic [ref=e523]:
+                        - img "Queso Fresco Light Mini Pote, 195 g" [ref=e525]
+                        - button "Agregar al carro - Queso Fresco Light Mini Pote, 195 g" [ref=e528] [cursor=pointer]:
+                          - generic "agregar" [ref=e529]: 
+                          - generic [ref=e530]: Agregar
+                      - generic [ref=e532]:
+                        - generic [ref=e534]:
+                          - generic [ref=e535]: $3.690
+                          - generic [ref=e536]: precio actual $3.690
+                          - generic [ref=e537]: $18.923 x kg
+                        - generic [ref=e538]: Santa Rosa
+                        - generic [ref=e539]: Queso Fresco Light Mini Pote, 195 g
+                  - group [ref=e542]:
+                    - link "Queso Fresco Light, 500 g" [ref=e543] [cursor=pointer]:
+                      - /url: /ip/quesos/00780296000921?from=/search
+                      - generic [ref=e544]: Queso Fresco Light, 500 g
+                    - generic [ref=e546]:
+                      - generic [ref=e549]:
+                        - img "Queso Fresco Light, 500 g" [ref=e551]
+                        - button "Agregar al carro - Queso Fresco Light, 500 g" [ref=e554] [cursor=pointer]:
+                          - generic "agregar" [ref=e555]: 
+                          - generic [ref=e556]: Agregar
+                      - generic [ref=e558]:
+                        - generic [ref=e560]:
+                          - generic [ref=e561]: $7.490
+                          - generic [ref=e562]: precio actual $7.490
+                          - generic [ref=e563]: $14.980 x kg
+                        - generic [ref=e564]: Santa Rosa
+                        - generic [ref=e565]: Queso Fresco Light, 500 g
+                  - generic [ref=e567]:
+                    - group [ref=e568]:
+                      - link "Quesillo Fresco Sin Lactosa Pote, 150 g" [ref=e569] [cursor=pointer]:
+                        - /url: /ip/quesos/00780293000429?from=/search
+                        - generic [ref=e570]: Quesillo Fresco Sin Lactosa Pote, 150 g
+                      - generic [ref=e572]:
+                        - generic [ref=e576]:
+                          - img "Quesillo Fresco Sin Lactosa Pote, 150 g"
+                        - generic [ref=e578]:
+                          - generic [ref=e580]:
+                            - generic [ref=e581]: $1.290
+                            - generic [ref=e582]: precio actual $1.290
+                            - generic [ref=e583]: $6.450 x kg
+                          - generic [ref=e584]: Quillayes
+                          - generic [ref=e585]: Quesillo Fresco Sin Lactosa Pote, 150 g
+                          - generic [ref=e586]: Agotado
+                    - button "Revisar productos similares - Quesillo Fresco Sin Lactosa Pote, 150 g" [ref=e588]: Revisar productos similares
+                  - group [ref=e591]:
+                    - link "Jugo Fresco Naranja 100% Caja, 1,6 L" [ref=e592] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00780281001031?from=/search
+                      - generic [ref=e593]: Jugo Fresco Naranja 100% Caja, 1,6 L
+                    - generic [ref=e595]:
+                      - generic [ref=e598]:
+                        - generic [ref=e599]:
+                          - img "Jugo Fresco Naranja 100% Caja, 1,6 L"
+                        - button "Agregar al carro - Jugo Fresco Naranja 100% Caja, 1,6 L" [ref=e602] [cursor=pointer]:
+                          - generic "agregar" [ref=e603]: 
+                          - generic [ref=e604]: Agregar
+                      - generic [ref=e606]:
+                        - generic [ref=e608]:
+                          - generic [ref=e609]: $6.990
+                          - generic [ref=e610]: precio actual $6.990
+                          - generic [ref=e611]: $4.369 x lt
+                        - generic [ref=e612]: Watt's
+                        - generic [ref=e613]: Jugo Fresco Naranja 100% Caja, 1,6 L
+                  - group [ref=e616]:
+                    - link "Queso Fresco Light Sin Lactosa Bolsa, 350 g" [ref=e617] [cursor=pointer]:
+                      - /url: /ip/quesos/00780208000112?from=/search
+                      - generic [ref=e618]: Queso Fresco Light Sin Lactosa Bolsa, 350 g
+                    - generic [ref=e620]:
+                      - generic [ref=e621]:
+                        - generic [ref=e623]:
+                          - generic [ref=e625]: 
+                          - text: Rebaja
+                        - generic [ref=e626]:
+                          - generic [ref=e627]:
+                            - img "Queso Fresco Light Sin Lactosa Bolsa, 350 g"
+                          - button "Agregar al carro - Queso Fresco Light Sin Lactosa Bolsa, 350 g" [ref=e630] [cursor=pointer]:
+                            - generic "agregar" [ref=e631]: 
+                            - generic [ref=e632]: Agregar
+                      - generic [ref=e634]:
+                        - generic [ref=e636]:
+                          - generic [ref=e637]: $2.650
+                          - generic [ref=e638]: precio actual $2.650, Costaba $3.150
+                          - generic [ref=e639]: $7.571 x kg
+                          - generic [ref=e640]: $3.150
+                          - generic [ref=e641]: Ahorra $500
+                        - generic [ref=e642]: Los Tilos
+                        - generic [ref=e643]: Queso Fresco Light Sin Lactosa Bolsa, 350 g
+                  - group [ref=e646]:
+                    - link "Sandwich Miga Ave Pimentón, 1 Un" [ref=e647] [cursor=pointer]:
+                      - /url: /ip/platos-preparados/00780462509212?from=/search
+                      - generic [ref=e648]: Sandwich Miga Ave Pimentón, 1 Un
+                    - generic [ref=e650]:
+                      - generic [ref=e653]:
+                        - generic [ref=e654]:
+                          - img "Sandwich Miga Ave Pimentón, 1 Un"
+                        - button "Agregar al carro - Sandwich Miga Ave Pimentón, 1 Un" [ref=e657] [cursor=pointer]:
+                          - generic "agregar" [ref=e658]: 
+                          - generic [ref=e659]: Agregar
+                      - generic [ref=e661]:
+                        - generic [ref=e663]:
+                          - generic [ref=e664]: $2.790
+                          - generic [ref=e665]: precio actual $2.790
+                          - generic [ref=e666]: $2.790 x un
+                        - generic [ref=e667]: Fresco
+                        - generic [ref=e668]: Sandwich Miga Ave Pimentón, 1 Un
+                  - group [ref=e671]:
+                    - link "Sandwich Miga Retail Ave Mayo, 1 Un" [ref=e672] [cursor=pointer]:
+                      - /url: /ip/platos-preparados/00780462509210?from=/search
+                      - generic [ref=e673]: Sandwich Miga Retail Ave Mayo, 1 Un
+                    - generic [ref=e675]:
+                      - generic [ref=e678]:
+                        - generic [ref=e679]:
+                          - img "Sandwich Miga Retail Ave Mayo, 1 Un"
+                        - button "Agregar al carro - Sandwich Miga Retail Ave Mayo, 1 Un" [ref=e682] [cursor=pointer]:
+                          - generic "agregar" [ref=e683]: 
+                          - generic [ref=e684]: Agregar
+                      - generic [ref=e686]:
+                        - generic [ref=e688]:
+                          - generic [ref=e689]: $2.790
+                          - generic [ref=e690]: precio actual $2.790
+                          - generic [ref=e691]: $2.790 x un
+                        - generic [ref=e692]: Fresco
+                        - generic [ref=e693]: Sandwich Miga Retail Ave Mayo, 1 Un
+                  - group [ref=e696]:
+                    - link "Sandwich Miga Barros Jarpa, 1 Un" [ref=e697] [cursor=pointer]:
+                      - /url: /ip/platos-preparados/00780462509214?from=/search
+                      - generic [ref=e698]: Sandwich Miga Barros Jarpa, 1 Un
+                    - generic [ref=e700]:
+                      - generic [ref=e703]:
+                        - generic [ref=e704]:
+                          - img "Sandwich Miga Barros Jarpa, 1 Un"
+                        - button "Agregar al carro - Sandwich Miga Barros Jarpa, 1 Un" [ref=e707] [cursor=pointer]:
+                          - generic "agregar" [ref=e708]: 
+                          - generic [ref=e709]: Agregar
+                      - generic [ref=e711]:
+                        - generic [ref=e713]:
+                          - generic [ref=e714]: $2.790
+                          - generic [ref=e715]: precio actual $2.790
+                          - generic [ref=e716]: $2.790 x un
+                        - generic [ref=e717]: Fresco
+                        - generic [ref=e718]: Sandwich Miga Barros Jarpa, 1 Un
+                  - group [ref=e721]:
+                    - link "Hamburguesa De Vacuno Con Queso Cheddar, 159 g" [ref=e722] [cursor=pointer]:
+                      - /url: /ip/hamburguesas-y-churrascos/00780462509108?from=/search
+                      - generic [ref=e723]: Hamburguesa De Vacuno Con Queso Cheddar, 159 g
+                    - generic [ref=e725]:
+                      - generic [ref=e728]:
+                        - generic [ref=e729]:
+                          - img "Hamburguesa De Vacuno Con Queso Cheddar, 159 g"
+                        - button "Agregar al carro - Hamburguesa De Vacuno Con Queso Cheddar, 159 g" [ref=e732] [cursor=pointer]:
+                          - generic "agregar" [ref=e733]: 
+                          - generic [ref=e734]: Agregar
+                      - generic [ref=e736]:
+                        - generic [ref=e738]:
+                          - generic [ref=e739]: $3.190
+                          - generic [ref=e740]: precio actual $3.190
+                        - generic [ref=e741]: Fresco
+                        - generic [ref=e742]: Hamburguesa De Vacuno Con Queso Cheddar, 159 g
+                  - group [ref=e745]:
+                    - link "Cilantro Bolsa, 120 g" [ref=e746] [cursor=pointer]:
+                      - /url: /ip/verduras/00780394600113?from=/search
+                      - generic [ref=e747]: Cilantro Bolsa, 120 g
+                    - generic [ref=e749]:
+                      - generic [ref=e752]:
+                        - generic [ref=e753]:
+                          - img "Cilantro Bolsa, 120 g"
+                        - button "Agregar al carro - Cilantro Bolsa, 120 g" [ref=e756] [cursor=pointer]:
+                          - generic "agregar" [ref=e757]: 
+                          - generic [ref=e758]: Agregar
+                      - generic [ref=e760]:
+                        - generic [ref=e762]:
+                          - generic [ref=e763]: $950
+                          - generic [ref=e764]: precio actual $950
+                          - generic [ref=e765]: $7.917 x kg
+                        - generic [ref=e766]: Multi Marca
+                        - generic [ref=e767]: Cilantro Bolsa, 120 g
+                  - group [ref=e770]:
+                    - link "Salsa Tomate Cilantro, 250 ml" [ref=e771] [cursor=pointer]:
+                      - /url: /ip/salsas/00780394600190?from=/search
+                      - generic [ref=e772]: Salsa Tomate Cilantro, 250 ml
+                    - generic [ref=e774]:
+                      - generic [ref=e775]:
+                        - generic [ref=e777]:
+                          - generic [ref=e779]: 
+                          - text: Rebaja
+                        - generic [ref=e780]:
+                          - generic [ref=e781]:
+                            - img "Salsa Tomate Cilantro, 250 ml"
+                          - button "Agregar al carro - Salsa Tomate Cilantro, 250 ml" [ref=e784] [cursor=pointer]:
+                            - generic "agregar" [ref=e785]: 
+                            - generic [ref=e786]: Agregar
+                      - generic [ref=e788]:
+                        - generic [ref=e790]:
+                          - generic [ref=e791]: $3.890
+                          - generic [ref=e792]: precio actual $3.890, Costaba $4.190
+                          - generic [ref=e793]: $15.560 x lt
+                          - generic [ref=e794]: $4.190
+                          - generic [ref=e795]: Ahorra $300
+                        - generic [ref=e796]: Agrosano
+                        - generic [ref=e797]: Salsa Tomate Cilantro, 250 ml
+                  - group [ref=e800]:
+                    - link "Aderezo Palta Cilantro, 250 g" [ref=e801] [cursor=pointer]:
+                      - /url: /ip/aceites-y-aderezos/00780241000493?from=/search
+                      - generic [ref=e802]: Aderezo Palta Cilantro, 250 g
+                    - generic [ref=e804]:
+                      - generic [ref=e807]:
+                        - generic [ref=e808]:
+                          - img "Aderezo Palta Cilantro, 250 g"
+                        - button "Agregar al carro - Aderezo Palta Cilantro, 250 g" [ref=e811] [cursor=pointer]:
+                          - generic "agregar" [ref=e812]: 
+                          - generic [ref=e813]: Agregar
+                      - generic [ref=e815]:
+                        - generic [ref=e817]:
+                          - generic [ref=e818]: $2.590
+                          - generic [ref=e819]: precio actual $2.590
+                          - generic [ref=e820]: $10.360 x kg
+                        - generic [ref=e821]: Gourmet
+                        - generic [ref=e822]: Aderezo Palta Cilantro, 250 g
+                  - group [ref=e825]:
+                    - link "Hummus Poroto Negro Cilantro Frasco, 220 ml" [ref=e826] [cursor=pointer]:
+                      - /url: /ip/coctel/00061414341544?from=/search
+                      - generic [ref=e827]: Hummus Poroto Negro Cilantro Frasco, 220 ml
+                    - generic [ref=e829]:
+                      - generic [ref=e832]:
+                        - generic [ref=e833]:
+                          - img "Hummus Poroto Negro Cilantro Frasco, 220 ml"
+                        - button "Agregar al carro - Hummus Poroto Negro Cilantro Frasco, 220 ml" [ref=e836] [cursor=pointer]:
+                          - generic "agregar" [ref=e837]: 
+                          - generic [ref=e838]: Agregar
+                      - generic [ref=e840]:
+                        - generic [ref=e842]:
+                          - generic [ref=e843]: $4.790
+                          - generic [ref=e844]: precio actual $4.790
+                          - generic [ref=e845]: $21.773 x kg
+                        - generic [ref=e846]: Love Co
+                        - generic [ref=e847]: Hummus Poroto Negro Cilantro Frasco, 220 ml
+                  - group [ref=e850]:
+                    - link "Salmón Filete Fresco, 400 g" [ref=e851] [cursor=pointer]:
+                      - /url: /ip/pescados-y-mariscos/00780461741109?from=/search
+                      - generic [ref=e852]: Salmón Filete Fresco, 400 g
+                    - generic [ref=e854]:
+                      - generic [ref=e857]:
+                        - generic [ref=e858]:
+                          - img "Salmón Filete Fresco, 400 g"
+                        - button "Agregar al carro - Salmón Filete Fresco, 400 g" [ref=e861] [cursor=pointer]:
+                          - generic "agregar" [ref=e862]: 
+                          - generic [ref=e863]: Agregar
+                      - generic [ref=e865]:
+                        - generic [ref=e867]:
+                          - generic [ref=e868]: $10.990
+                          - generic [ref=e869]: precio actual $10.990
+                          - generic [ref=e870]: $27.475 x kg
+                        - generic [ref=e871]: Pesca Austral
+                        - generic [ref=e872]: Salmón Filete Fresco, 400 g
+                  - group [ref=e875]:
+                    - link "Queso Crema Untable Fresco Sabor Natural, 140 g" [ref=e876] [cursor=pointer]:
+                      - /url: /ip/quesos/00780293000387?from=/search
+                      - generic [ref=e877]: Queso Crema Untable Fresco Sabor Natural, 140 g
+                    - generic [ref=e879]:
+                      - generic [ref=e882]:
+                        - generic [ref=e883]:
+                          - img "Queso Crema Untable Fresco Sabor Natural, 140 g"
+                        - button "Agregar al carro - Queso Crema Untable Fresco Sabor Natural, 140 g" [ref=e886] [cursor=pointer]:
+                          - generic "agregar" [ref=e887]: 
+                          - generic [ref=e888]: Agregar
+                      - generic [ref=e890]:
+                        - generic [ref=e892]:
+                          - generic [ref=e893]: $1.350
+                          - generic [ref=e894]: precio actual $1.350
+                          - generic [ref=e895]: $9.643 x kg
+                        - generic [ref=e896]: Quillayes
+                        - generic [ref=e897]: Queso Crema Untable Fresco Sabor Natural, 140 g
+                  - generic [ref=e899]:
+                    - group [ref=e900]:
+                      - link "Puré de Tomate - Salsa Tomate Fresco Triturado Botella, 475 g" [ref=e901] [cursor=pointer]:
+                        - /url: /ip/pastas-y-salsas/00780963180009?from=/search
+                        - generic [ref=e902]: Puré de Tomate - Salsa Tomate Fresco Triturado Botella, 475 g
+                      - generic [ref=e904]:
+                        - generic [ref=e908]:
+                          - img "Puré de Tomate - Salsa Tomate Fresco Triturado Botella, 475 g"
+                        - generic [ref=e910]:
+                          - generic [ref=e912]:
+                            - generic [ref=e913]: $3.390
+                            - generic [ref=e914]: precio actual $3.390
+                            - generic [ref=e915]: $7.137 x lt
+                          - generic [ref=e916]: Negroni
+                          - generic [ref=e917]: Puré de Tomate - Salsa Tomate Fresco Triturado Botella, 475 g
+                          - generic [ref=e918]: Agotado
+                    - button "Revisar productos similares - Puré de Tomate - Salsa Tomate Fresco Triturado Botella, 475 g" [ref=e920]: Revisar productos similares
+                  - group [ref=e923]:
+                    - link "Salmón Filete Fresco, 300 gr" [ref=e924] [cursor=pointer]:
+                      - /url: /ip/pescados-y-mariscos/00780461741240?from=/search
+                      - generic [ref=e925]: Salmón Filete Fresco, 300 gr
+                    - generic [ref=e927]:
+                      - generic [ref=e930]:
+                        - generic [ref=e931]:
+                          - img "Salmón Filete Fresco, 300 gr"
+                        - button "Agregar al carro - Salmón Filete Fresco, 300 gr" [ref=e934] [cursor=pointer]:
+                          - generic "agregar" [ref=e935]: 
+                          - generic [ref=e936]: Agregar
+                      - generic [ref=e938]:
+                        - generic [ref=e940]:
+                          - generic [ref=e941]: $8.590
+                          - generic [ref=e942]: precio actual $8.590
+                          - generic [ref=e943]: $28.633 x kg
+                        - generic [ref=e944]: Pesca Austral
+                        - generic [ref=e945]: Salmón Filete Fresco, 300 gr
+                  - group [ref=e948]:
+                    - link "Desinfectante Aerosol Expert Fresco Lata, 332 ml" [ref=e949] [cursor=pointer]:
+                      - /url: /ip/desinfeccion/00779325347170?from=/search
+                      - generic [ref=e950]: Desinfectante Aerosol Expert Fresco Lata, 332 ml
+                    - generic [ref=e952]:
+                      - generic [ref=e955]:
+                        - generic [ref=e956]:
+                          - img "Desinfectante Aerosol Expert Fresco Lata, 332 ml"
+                        - button "Agregar al carro - Desinfectante Aerosol Expert Fresco Lata, 332 ml" [ref=e959] [cursor=pointer]:
+                          - generic "agregar" [ref=e960]: 
+                          - generic [ref=e961]: Agregar
+                      - generic [ref=e963]:
+                        - generic [ref=e965]:
+                          - generic [ref=e966]: $3.290
+                          - generic [ref=e967]: precio actual $3.290
+                          - generic [ref=e968]: $9.909 x lt
+                        - generic [ref=e969]: Clorox
+                        - generic [ref=e970]: Desinfectante Aerosol Expert Fresco Lata, 332 ml
+                  - group [ref=e973]:
+                    - link "Toallitas Desinfectantes Expert Fresco FlowPack, 30 Un" [ref=e974] [cursor=pointer]:
+                      - /url: /ip/desinfeccion/00750107190755?from=/search
+                      - generic [ref=e975]: Toallitas Desinfectantes Expert Fresco FlowPack, 30 Un
+                    - generic [ref=e977]:
+                      - generic [ref=e980]:
+                        - generic [ref=e981]:
+                          - img "Toallitas Desinfectantes Expert Fresco FlowPack, 30 Un"
+                        - button "Agregar al carro - Toallitas Desinfectantes Expert Fresco FlowPack, 30 Un" [ref=e984] [cursor=pointer]:
+                          - generic "agregar" [ref=e985]: 
+                          - generic [ref=e986]: Agregar
+                      - generic [ref=e988]:
+                        - generic [ref=e990]:
+                          - generic [ref=e991]: $2.250
+                          - generic [ref=e992]: precio actual $2.250
+                          - generic [ref=e993]: $75 x un
+                        - generic [ref=e994]: Clorox
+                        - generic [ref=e995]: Toallitas Desinfectantes Expert Fresco FlowPack, 30 Un
+                  - group [ref=e998]:
+                    - link "Queso Fresco, 320 g" [ref=e999] [cursor=pointer]:
+                      - /url: /ip/quesos/00780292000073?from=/search
+                      - generic [ref=e1000]: Queso Fresco, 320 g
+                    - generic [ref=e1002]:
+                      - generic [ref=e1005]:
+                        - generic [ref=e1006]:
+                          - img "Queso Fresco, 320 g"
+                        - button "Agregar al carro - Queso Fresco, 320 g" [ref=e1009] [cursor=pointer]:
+                          - generic "agregar" [ref=e1010]: 
+                          - generic [ref=e1011]: Agregar
+                      - generic [ref=e1013]:
+                        - generic [ref=e1015]:
+                          - generic [ref=e1016]: $2.750
+                          - generic [ref=e1017]: precio actual $2.750
+                          - generic [ref=e1018]: $8.594 x kg
+                        - generic [ref=e1019]: Colun
+                        - generic [ref=e1020]: Queso Fresco, 320 g
+                  - group [ref=e1023]:
+                    - link "Queso Chacra Fresco Sin Lactosa, 350 g" [ref=e1024] [cursor=pointer]:
+                      - /url: /ip/quesos/00780208000084?from=/search
+                      - generic [ref=e1025]: Queso Chacra Fresco Sin Lactosa, 350 g
+                    - generic [ref=e1027]:
+                      - generic [ref=e1030]:
+                        - generic [ref=e1031]:
+                          - img "Queso Chacra Fresco Sin Lactosa, 350 g"
+                        - button "Agregar al carro - Queso Chacra Fresco Sin Lactosa, 350 g" [ref=e1034] [cursor=pointer]:
+                          - generic "agregar" [ref=e1035]: 
+                          - generic [ref=e1036]: Agregar
+                      - generic [ref=e1038]:
+                        - generic [ref=e1040]:
+                          - generic [ref=e1041]: $3.190
+                          - generic [ref=e1042]: precio actual $3.190
+                          - generic [ref=e1043]: $9.114 x kg
+                        - generic [ref=e1044]: El Roble
+                        - generic [ref=e1045]: Queso Chacra Fresco Sin Lactosa, 350 g
+                  - group [ref=e1048]:
+                    - link "Limpiador Piso Fresco Despertar Botella, 1800 ml" [ref=e1049] [cursor=pointer]:
+                      - /url: /ip/pisos-y-muebles/00780502569841?from=/search
+                      - generic [ref=e1050]: Limpiador Piso Fresco Despertar Botella, 1800 ml
+                    - generic [ref=e1052]:
+                      - generic [ref=e1055]:
+                        - generic [ref=e1056]:
+                          - img "Limpiador Piso Fresco Despertar Botella, 1800 ml"
+                        - button "Agregar al carro - Limpiador Piso Fresco Despertar Botella, 1800 ml" [ref=e1059] [cursor=pointer]:
+                          - generic "agregar" [ref=e1060]: 
+                          - generic [ref=e1061]: Agregar
+                      - generic [ref=e1063]:
+                        - generic [ref=e1065]:
+                          - generic [ref=e1066]: $2.850
+                          - generic [ref=e1067]: precio actual $2.850
+                          - generic [ref=e1068]: $1.583 x lt
+                        - generic [ref=e1069]: Poett
+                        - generic [ref=e1070]: Limpiador Piso Fresco Despertar Botella, 1800 ml
+                  - group [ref=e1073]:
+                    - link "Queso Mozzarella Fresco Burrata, 125 g" [ref=e1074] [cursor=pointer]:
+                      - /url: /ip/quesos/00770736354076?from=/search
+                      - generic [ref=e1075]: Queso Mozzarella Fresco Burrata, 125 g
+                    - generic [ref=e1077]:
+                      - generic [ref=e1080]:
+                        - generic [ref=e1081]:
+                          - img "Queso Mozzarella Fresco Burrata, 125 g"
+                        - button "Agregar al carro - Queso Mozzarella Fresco Burrata, 125 g" [ref=e1084] [cursor=pointer]:
+                          - generic "agregar" [ref=e1085]: 
+                          - generic [ref=e1086]: Agregar
+                      - generic [ref=e1088]:
+                        - generic [ref=e1090]:
+                          - generic [ref=e1091]: $8.190
+                          - generic [ref=e1092]: precio actual $8.190
+                          - generic [ref=e1093]: $65.520 x kg
+                        - generic [ref=e1094]: Dibufala
+                        - generic [ref=e1095]: Queso Mozzarella Fresco Burrata, 125 g
+                  - group [ref=e1098]:
+                    - link "Jugo Natural Fresco Piña, 1 L" [ref=e1099] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00780281005312?from=/search
+                      - generic [ref=e1100]: Jugo Natural Fresco Piña, 1 L
+                    - generic [ref=e1102]:
+                      - generic [ref=e1105]:
+                        - generic [ref=e1106]:
+                          - img "Jugo Natural Fresco Piña, 1 L"
+                        - button "Agregar al carro - Jugo Natural Fresco Piña, 1 L" [ref=e1109] [cursor=pointer]:
+                          - generic "agregar" [ref=e1110]: 
+                          - generic [ref=e1111]: Agregar
+                      - generic [ref=e1113]:
+                        - generic [ref=e1115]:
+                          - generic [ref=e1116]: $4.690
+                          - generic [ref=e1117]: precio actual $4.690
+                          - generic [ref=e1118]: $4.690 x lt
+                        - generic [ref=e1119]: Watts
+                        - generic [ref=e1120]: Jugo Natural Fresco Piña, 1 L
+                  - group [ref=e1123]:
+                    - link "Aromatizante Ambiental Perlas Aroma Fresco Frasco, 422 g" [ref=e1124] [cursor=pointer]:
+                      - /url: /ip/detergentes/00062773501434?from=/search
+                      - generic [ref=e1125]: Aromatizante Ambiental Perlas Aroma Fresco Frasco, 422 g
+                    - generic [ref=e1127]:
+                      - generic [ref=e1130]:
+                        - generic [ref=e1131]:
+                          - img "Aromatizante Ambiental Perlas Aroma Fresco Frasco, 422 g"
+                        - button "Agregar al carro - Aromatizante Ambiental Perlas Aroma Fresco Frasco, 422 g" [ref=e1134] [cursor=pointer]:
+                          - generic "agregar" [ref=e1135]: 
+                          - generic [ref=e1136]: Agregar
+                      - generic [ref=e1138]:
+                        - generic [ref=e1140]:
+                          - generic [ref=e1141]: $10.850
+                          - generic [ref=e1142]: precio actual $10.850
+                          - generic [ref=e1143]: $25.711 x kg
+                        - generic [ref=e1144]: Great Value
+                        - generic [ref=e1145]: Aromatizante Ambiental Perlas Aroma Fresco Frasco, 422 g
+                  - group [ref=e1148]:
+                    - link "Limpiador Piso Fresco Despertar Botella, 900 ml" [ref=e1149] [cursor=pointer]:
+                      - /url: /ip/pisos-y-muebles/00780502569842?from=/search
+                      - generic [ref=e1150]: Limpiador Piso Fresco Despertar Botella, 900 ml
+                    - generic [ref=e1152]:
+                      - generic [ref=e1153]:
+                        - generic [ref=e1154]:
+                          - generic [ref=e1156]: Combina 2 x $2.690
+                          - button "Combina 2 x $2.690. Ver combinaciones aceptadas y coincidir productos." [ref=e1157] [cursor=pointer]: Combinar
+                        - generic [ref=e1158]:
+                          - generic [ref=e1159]:
+                            - img "Limpiador Piso Fresco Despertar Botella, 900 ml"
+                          - button "Agregar al carro - Limpiador Piso Fresco Despertar Botella, 900 ml" [ref=e1162] [cursor=pointer]:
+                            - generic "agregar" [ref=e1163]: 
+                            - generic [ref=e1164]: Agregar
+                      - generic [ref=e1166]:
+                        - generic [ref=e1168]:
+                          - generic [ref=e1169]: $1.650
+                          - generic [ref=e1170]: precio actual $1.650
+                          - generic [ref=e1171]: $1.833 x lt
+                        - generic [ref=e1172]: Poett
+                        - generic [ref=e1173]: Limpiador Piso Fresco Despertar Botella, 900 ml
+                  - group [ref=e1176]:
+                    - link "Queso de cabra Fresco Cremoso Trozo, 200 g" [ref=e1177] [cursor=pointer]:
+                      - /url: /ip/quesos/00780466147016?from=/search
+                      - generic [ref=e1178]: Queso de cabra Fresco Cremoso Trozo, 200 g
+                    - generic [ref=e1180]:
+                      - generic [ref=e1183]:
+                        - generic [ref=e1184]:
+                          - img "Queso de cabra Fresco Cremoso Trozo, 200 g"
+                        - button "Agregar al carro - Queso de cabra Fresco Cremoso Trozo, 200 g" [ref=e1187] [cursor=pointer]:
+                          - generic "agregar" [ref=e1188]: 
+                          - generic [ref=e1189]: Agregar
+                      - generic [ref=e1191]:
+                        - generic [ref=e1193]:
+                          - generic [ref=e1194]: $6.390
+                          - generic [ref=e1195]: precio actual $6.390
+                          - generic [ref=e1196]: $31.950 x kg
+                        - generic [ref=e1197]: La Cabresa
+                        - generic [ref=e1198]: Queso de cabra Fresco Cremoso Trozo, 200 g
+                  - group [ref=e1201]:
+                    - link "Longanicilla de Campo 14 Un, 280 g" [ref=e1202] [cursor=pointer]:
+                      - /url: /ip/fiambres-y-embutidos/00780191603639?from=/search
+                      - generic [ref=e1203]: Longanicilla de Campo 14 Un, 280 g
+                    - generic [ref=e1205]:
+                      - generic [ref=e1208]:
+                        - generic [ref=e1209]:
+                          - img "Longanicilla de Campo 14 Un, 280 g"
+                        - button "Agregar al carro - Longanicilla de Campo 14 Un, 280 g" [ref=e1212] [cursor=pointer]:
+                          - generic "agregar" [ref=e1213]: 
+                          - generic [ref=e1214]: Agregar
+                      - generic [ref=e1216]:
+                        - generic [ref=e1218]:
+                          - generic [ref=e1219]: $3.190
+                          - generic [ref=e1220]: precio actual $3.190
+                          - generic [ref=e1221]: $10.633 x kg
+                        - generic [ref=e1222]: La Preferida
+                        - generic [ref=e1223]: Longanicilla de Campo 14 Un, 280 g
+                  - group [ref=e1226]:
+                    - link "Longanicilla Sureña 14 Un, 280 g" [ref=e1227] [cursor=pointer]:
+                      - /url: /ip/fiambres-y-embutidos/00780191603638?from=/search
+                      - generic [ref=e1228]: Longanicilla Sureña 14 Un, 280 g
+                    - generic [ref=e1230]:
+                      - generic [ref=e1233]:
+                        - generic [ref=e1234]:
+                          - img "Longanicilla Sureña 14 Un, 280 g"
+                        - button "Agregar al carro - Longanicilla Sureña 14 Un, 280 g" [ref=e1237] [cursor=pointer]:
+                          - generic "agregar" [ref=e1238]: 
+                          - generic [ref=e1239]: Agregar
+                      - generic [ref=e1241]:
+                        - generic [ref=e1243]:
+                          - generic [ref=e1244]: $3.190
+                          - generic [ref=e1245]: precio actual $3.190
+                          - generic [ref=e1246]: $11.393 x kg
+                        - generic [ref=e1247]: La Preferida
+                        - generic [ref=e1248]: Longanicilla Sureña 14 Un, 280 g
+                  - group [ref=e1251]:
+                    - link "Limpiador Antigrasa Líquido Doypack, 450 ml" [ref=e1252] [cursor=pointer]:
+                      - /url: /ip/bano-y-cocina/00779052099889?from=/search
+                      - generic [ref=e1253]: Limpiador Antigrasa Líquido Doypack, 450 ml
+                    - generic [ref=e1255]:
+                      - generic [ref=e1258]:
+                        - generic [ref=e1259]:
+                          - img "Limpiador Antigrasa Líquido Doypack, 450 ml"
+                        - button "Agregar al carro - Limpiador Antigrasa Líquido Doypack, 450 ml" [ref=e1262] [cursor=pointer]:
+                          - generic "agregar" [ref=e1263]: 
+                          - generic [ref=e1264]: Agregar
+                      - generic [ref=e1266]:
+                        - generic [ref=e1268]:
+                          - generic [ref=e1269]: $2.350
+                          - generic [ref=e1270]: precio actual $2.350
+                          - generic [ref=e1271]: $5.222 x lt
+                        - generic [ref=e1272]: Mr. Músculo
+                        - generic [ref=e1273]: Limpiador Antigrasa Líquido Doypack, 450 ml
+            - navigation "paginación" [ref=e1276]:
+              - list [ref=e1277]:
+                - listitem [ref=e1278]
+                - listitem [ref=e1280]:
+                  - link "1" [ref=e1281] [cursor=pointer]:
+                    - /url: /search?q=cilantro+fresco
+                - listitem [ref=e1282]:
+                  - link "Ir a la página 2" [ref=e1283] [cursor=pointer]:
+                    - /url: /search?q=cilantro+fresco&page=2
+                    - text: "2"
+                - listitem [ref=e1284]:
+                  - link "Ir a la página 3" [ref=e1285] [cursor=pointer]:
+                    - /url: /search?q=cilantro+fresco&page=3
+                    - text: "3"
+                - listitem [ref=e1286]:
+                  - generic [ref=e1287]: ...
+                - listitem [ref=e1288]:
+                  - generic [ref=e1289]: "16"
+                - listitem [ref=e1290]:
+                  - link "Página siguiente" [ref=e1291] [cursor=pointer]:
+                    - /url: /search?q=cilantro+fresco&page=2
+                    - generic [ref=e1292]: 
+  - alert [ref=e1300]

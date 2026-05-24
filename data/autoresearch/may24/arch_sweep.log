@@ -1,0 +1,179 @@
+2026-05-24 14:06:57,644 INFO cli_architecture_sweep: [1/7] arch[baseline: sonnet, ctx=30K, call_sites=5, no strategy] (elapsed=0s)
+[eval] 1/7 https://github.com/django/django/pull/16603
+[eval] 2/7 https://github.com/django/django/pull/17147
+[eval] 3/7 https://github.com/pydantic/pydantic/pull/8059
+[eval] 4/7 https://github.com/pydantic/pydantic/pull/7900
+[eval] 5/7 https://github.com/django/django/pull/17256
+2026-05-24 14:07:02,721 INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7900: 3 hunks, ~3046 tokens
+2026-05-24 14:07:03,252 INFO peer.agent: Gathered codebase context: 3 symbols, 10 call sites, 1 tests, 0 untested, 0 linter findings, ~2761 tokens
+2026-05-24 14:07:04,687 INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17256: 6 hunks, ~3687 tokens
+2026-05-24 14:07:05,323 INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/8059: 5 hunks, ~4741 tokens
+2026-05-24 14:07:05,333 INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/16603: 11 hunks, ~9192 tokens
+2026-05-24 14:07:05,404 INFO peer.agent: Gathered codebase context: 0 symbols, 0 call sites, 1 tests, 0 untested, 0 linter findings, ~1812 tokens
+2026-05-24 14:07:05,898 INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17147: 10 hunks, ~10572 tokens
+2026-05-24 14:07:11,115 INFO peer.agent: Gathered codebase context: 13 symbols, 7 call sites, 2 tests, 0 untested, 0 linter findings, ~3383 tokens
+2026-05-24 14:07:12,235 INFO peer.agent: Gathered codebase context: 20 symbols, 11 call sites, 2 tests, 7 untested, 0 linter findings, ~3398 tokens
+2026-05-24 14:07:12,405 INFO peer.agent: Gathered codebase context: 19 symbols, 6 call sites, 2 tests, 7 untested, 0 linter findings, ~2870 tokens
+[eval] 6/7 https://github.com/django/django/pull/16746
+2026-05-24 14:10:01,382 INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/16746: 6 hunks, ~4698 tokens
+2026-05-24 14:10:05,411 INFO peer.agent: Gathered codebase context: 9 symbols, 10 call sites, 3 tests, 1 untested, 0 linter findings, ~5213 tokens
+[eval] 7/7 https://github.com/pydantic/pydantic/pull/7677
+2026-05-24 14:10:42,790 INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7677: 12 hunks, ~7226 tokens
+2026-05-24 14:10:43,587 INFO peer.agent: Gathered codebase context: 16 symbols, 7 call sites, 0 tests, 11 untested, 0 linter findings, ~1467 tokens
+2026-05-24 14:22:02,569 INFO peer.autoresearch.runner: autoresearch run: utility=0.0784313725490196 detection_rate=0.0784313725490196 cost=0.749517 comments=31
+2026-05-24 14:22:02,570 INFO cli_architecture_sweep:   -> status=ok DR=0.0784313725490196 comments=31 cost=0.749517
+2026-05-24 14:22:02,571 INFO cli_architecture_sweep: [2/7] arch[narrower context: ctx=10K, call_sites=2] (elapsed=905s)
+[eval] 1/7 https://github.com/django/django/pull/16603
+[eval] 2/7 https://github.com/django/django/pull/17147
+[eval] 3/7 https://github.com/pydantic/pydantic/pull/8059
+[eval] 4/7 https://github.com/pydantic/pydantic/pull/7900
+[eval] 5/7 https://github.com/django/django/pull/17256
+2026-05-24 14:22:07,096 INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7900: 3 hunks, ~3046 tokens
+2026-05-24 14:22:07,623 INFO peer.agent: Gathered codebase context: 3 symbols, 10 call sites, 1 tests, 0 untested, 0 linter findings, ~2761 tokens
+2026-05-24 14:22:07,833 INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17256: 6 hunks, ~3687 tokens
+2026-05-24 14:22:08,168 INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/8059: 5 hunks, ~4741 tokens
+2026-05-24 14:22:08,249 INFO peer.agent: Gathered codebase context: 0 symbols, 0 call sites, 1 tests, 0 untested, 0 linter findings, ~1812 tokens
+2026-05-24 14:22:09,013 INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/16603: 11 hunks, ~9192 tokens
+2026-05-24 14:22:09,023 INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17147: 10 hunks, ~10572 tokens
+2026-05-24 14:22:14,619 INFO peer.agent: Gathered codebase context: 13 symbols, 7 call sites, 2 tests, 0 untested, 0 linter findings, ~3383 tokens
+2026-05-24 14:22:15,806 INFO peer.agent: Gathered codebase context: 19 symbols, 6 call sites, 2 tests, 7 untested, 0 linter findings, ~2870 tokens
+2026-05-24 14:22:17,965 INFO peer.agent: Gathered codebase context: 20 symbols, 11 call sites, 2 tests, 7 untested, 0 linter findings, ~3398 tokens
+[eval] 6/7 https://github.com/django/django/pull/16746
+2026-05-24 14:24:35,088 INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/16746: 6 hunks, ~4698 tokens
+2026-05-24 14:24:37,807 INFO peer.agent: Gathered codebase context: 9 symbols, 10 call sites, 3 tests, 1 untested, 0 linter findings, ~5213 tokens
+[eval] 7/7 https://github.com/pydantic/pydantic/pull/7677
+2026-05-24 14:25:39,393 INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7677: 12 hunks, ~7226 tokens
+2026-05-24 14:25:40,183 INFO peer.agent: Gathered codebase context: 16 symbols, 7 call sites, 0 tests, 11 untested, 0 linter findings, ~1467 tokens
+2026-05-24 14:27:18,558 WARNING peer.agent: Dropping comment tests/asgi/tests.py:222 (sev=nit) — line 222 on 'tests/asgi/tests.py' is outside the modified hunks — valid lines for this file: [10, 11, 12, 13, 14, 15, 16, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 279, 280, 281, 282, 283, 284, 285, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521]
+2026-05-24 14:44:41,493 INFO peer.autoresearch.runner: autoresearch run: utility=0.09803921568627451 detection_rate=0.09803921568627451 cost=0.832839 comments=29
+2026-05-24 14:44:41,494 INFO cli_architecture_sweep:   -> status=ok DR=0.09803921568627451 comments=29 cost=0.832839
+2026-05-24 14:44:41,495 INFO cli_architecture_sweep: [3/7] arch[wider context: ctx=60K, call_sites=15] (elapsed=2264s)
+[eval] 1/7 https://github.com/django/django/pull/16603
+[eval] 2/7 https://github.com/django/django/pull/17147
+[eval] 3/7 https://github.com/pydantic/pydantic/pull/8059
+[eval] 4/7 https://github.com/pydantic/pydantic/pull/7900
+[eval] 5/7 https://github.com/django/django/pull/17256
+2026-05-24 14:44:45,799 INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7900: 3 hunks, ~3046 tokens
+2026-05-24 14:44:46,314 INFO peer.agent: Gathered codebase context: 3 symbols, 10 call sites, 1 tests, 0 untested, 0 linter findings, ~2761 tokens
+2026-05-24 14:44:46,566 INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/8059: 5 hunks, ~4741 tokens
+2026-05-24 14:44:46,629 INFO peer.agent: Gathered codebase context: 0 symbols, 0 call sites, 1 tests, 0 untested, 0 linter findings, ~1812 tokens
+2026-05-24 14:44:46,767 INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17256: 6 hunks, ~3687 tokens
+2026-05-24 14:44:47,727 INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/16603: 11 hunks, ~9192 tokens
+2026-05-24 14:44:48,415 INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17147: 10 hunks, ~10572 tokens
+2026-05-24 14:44:54,290 INFO peer.agent: Gathered codebase context: 13 symbols, 7 call sites, 2 tests, 0 untested, 0 linter findings, ~3383 tokens
+2026-05-24 14:44:55,345 INFO peer.agent: Gathered codebase context: 20 symbols, 11 call sites, 2 tests, 7 untested, 0 linter findings, ~3398 tokens
+2026-05-24 14:44:55,473 INFO peer.agent: Gathered codebase context: 19 symbols, 6 call sites, 2 tests, 7 untested, 0 linter findings, ~2870 tokens
+[eval] 6/7 https://github.com/django/django/pull/16746
+2026-05-24 14:46:50,983 INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/16746: 6 hunks, ~4698 tokens
+2026-05-24 14:46:53,952 INFO peer.agent: Gathered codebase context: 9 symbols, 10 call sites, 3 tests, 1 untested, 0 linter findings, ~5213 tokens
+[eval] 7/7 https://github.com/pydantic/pydantic/pull/7677
+2026-05-24 14:47:38,341 INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7677: 12 hunks, ~7226 tokens
+2026-05-24 14:47:39,037 INFO peer.agent: Gathered codebase context: 16 symbols, 7 call sites, 0 tests, 11 untested, 0 linter findings, ~1467 tokens
+2026-05-24 15:08:29,478 INFO peer.autoresearch.runner: autoresearch run: utility=0.0392156862745098 detection_rate=0.0392156862745098 cost=0.7721070000000001 comments=29
+2026-05-24 15:08:29,482 INFO cli_architecture_sweep:   -> status=ok DR=0.0392156862745098 comments=29 cost=0.7721070000000001
+2026-05-24 15:08:29,488 INFO cli_architecture_sweep: [4/7] arch[model=haiku] (elapsed=3692s)
+[eval] 1/7 https://github.com/django/django/pull/16603
+[eval] 2/7 https://github.com/django/django/pull/17147
+[eval] 3/7 https://github.com/pydantic/pydantic/pull/8059
+[eval] 4/7 https://github.com/pydantic/pydantic/pull/7900
+[eval] 5/7 https://github.com/django/django/pull/17256
+2026-05-24 15:08:34,380 INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7900: 3 hunks, ~3046 tokens
+2026-05-24 15:08:34,764 INFO peer.agent: Gathered codebase context: 3 symbols, 10 call sites, 1 tests, 0 untested, 0 linter findings, ~2761 tokens
+2026-05-24 15:08:34,788 INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/8059: 5 hunks, ~4741 tokens
+2026-05-24 15:08:34,840 INFO peer.agent: Gathered codebase context: 0 symbols, 0 call sites, 1 tests, 0 untested, 0 linter findings, ~1812 tokens
+2026-05-24 15:08:35,017 INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17256: 6 hunks, ~3687 tokens
+2026-05-24 15:08:36,199 INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17147: 10 hunks, ~10572 tokens
+2026-05-24 15:08:37,081 INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/16603: 11 hunks, ~9192 tokens
+2026-05-24 15:08:41,796 INFO peer.agent: Gathered codebase context: 13 symbols, 7 call sites, 2 tests, 0 untested, 0 linter findings, ~3381 tokens
+2026-05-24 15:08:42,676 INFO peer.agent: Gathered codebase context: 20 symbols, 11 call sites, 2 tests, 7 untested, 0 linter findings, ~3402 tokens
+2026-05-24 15:08:42,791 INFO peer.agent: Gathered codebase context: 19 symbols, 6 call sites, 2 tests, 7 untested, 0 linter findings, ~2874 tokens
+[eval] 6/7 https://github.com/django/django/pull/16746
+2026-05-24 15:09:22,380 INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/16746: 6 hunks, ~4698 tokens
+2026-05-24 15:09:24,319 INFO peer.agent: Gathered codebase context: 9 symbols, 10 call sites, 3 tests, 1 untested, 0 linter findings, ~5213 tokens
+[eval] 7/7 https://github.com/pydantic/pydantic/pull/7677
+2026-05-24 15:10:12,664 INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7677: 12 hunks, ~7226 tokens
+2026-05-24 15:10:13,911 INFO peer.agent: Gathered codebase context: 16 symbols, 7 call sites, 0 tests, 11 untested, 0 linter findings, ~1467 tokens
+2026-05-24 15:13:25,355 INFO peer.autoresearch.runner: autoresearch run: utility=0.0196078431372549 detection_rate=0.0196078431372549 cost=0.237871 comments=7
+2026-05-24 15:13:25,361 INFO cli_architecture_sweep:   -> status=ok DR=0.0196078431372549 comments=7 cost=0.237871
+2026-05-24 15:13:25,385 INFO cli_architecture_sweep: [5/7] arch[model=opus] (elapsed=3988s)
+[eval] 1/7 https://github.com/django/django/pull/16603
+[eval] 2/7 https://github.com/django/django/pull/17147
+[eval] 3/7 https://github.com/pydantic/pydantic/pull/8059
+[eval] 4/7 https://github.com/pydantic/pydantic/pull/7900
+[eval] 5/7 https://github.com/django/django/pull/17256
+2026-05-24 15:13:29,977 INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7900: 3 hunks, ~3046 tokens
+2026-05-24 15:13:30,349 INFO peer.agent: Gathered codebase context: 3 symbols, 10 call sites, 1 tests, 0 untested, 0 linter findings, ~2761 tokens
+2026-05-24 15:13:30,594 INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/8059: 5 hunks, ~4741 tokens
+2026-05-24 15:13:30,657 INFO peer.agent: Gathered codebase context: 0 symbols, 0 call sites, 1 tests, 0 untested, 0 linter findings, ~1812 tokens
+2026-05-24 15:13:31,010 INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17256: 6 hunks, ~3687 tokens
+2026-05-24 15:13:31,601 INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17147: 10 hunks, ~10572 tokens
+2026-05-24 15:13:31,949 INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/16603: 11 hunks, ~9192 tokens
+2026-05-24 15:13:35,673 INFO peer.agent: Gathered codebase context: 13 symbols, 7 call sites, 2 tests, 0 untested, 0 linter findings, ~3381 tokens
+2026-05-24 15:13:36,218 INFO peer.agent: Gathered codebase context: 19 symbols, 6 call sites, 2 tests, 7 untested, 0 linter findings, ~2874 tokens
+2026-05-24 15:13:44,648 INFO peer.agent: Gathered codebase context: 20 symbols, 11 call sites, 2 tests, 7 untested, 0 linter findings, ~3398 tokens
+[eval] 6/7 https://github.com/django/django/pull/16746
+2026-05-24 15:14:00,731 INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/16746: 6 hunks, ~4698 tokens
+2026-05-24 15:14:02,525 INFO peer.agent: Gathered codebase context: 9 symbols, 10 call sites, 3 tests, 1 untested, 0 linter findings, ~5213 tokens
+[eval] 7/7 https://github.com/pydantic/pydantic/pull/7677
+2026-05-24 15:15:40,582 INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7677: 12 hunks, ~7226 tokens
+2026-05-24 15:15:41,780 INFO peer.agent: Gathered codebase context: 16 symbols, 7 call sites, 0 tests, 11 untested, 0 linter findings, ~1467 tokens
+2026-05-24 15:33:55,565 INFO peer.autoresearch.runner: autoresearch run: utility=0.0392156862745098 detection_rate=0.0392156862745098 cost=1.82355 comments=30
+2026-05-24 15:33:55,570 INFO cli_architecture_sweep:   -> status=ok DR=0.0392156862745098 comments=30 cost=1.82355
+2026-05-24 15:33:55,577 INFO cli_architecture_sweep: [6/7] arch[strategy=draft_critique (CLI inner + CLI critique)] (elapsed=5218s)
+[eval] 1/7 https://github.com/django/django/pull/16603
+[eval] 2/7 https://github.com/django/django/pull/17147
+[eval] 3/7 https://github.com/pydantic/pydantic/pull/8059
+[eval] 4/7 https://github.com/pydantic/pydantic/pull/7900
+[eval] 5/7 https://github.com/django/django/pull/17256
+2026-05-24 15:34:00,263 INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7900: 3 hunks, ~3046 tokens
+2026-05-24 15:34:00,811 INFO peer.agent: Gathered codebase context: 3 symbols, 10 call sites, 1 tests, 0 untested, 0 linter findings, ~2761 tokens
+2026-05-24 15:34:00,992 INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17256: 6 hunks, ~3687 tokens
+2026-05-24 15:34:01,004 INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/8059: 5 hunks, ~4741 tokens
+2026-05-24 15:34:01,103 INFO peer.agent: Gathered codebase context: 0 symbols, 0 call sites, 1 tests, 0 untested, 0 linter findings, ~1812 tokens
+2026-05-24 15:34:01,836 INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17147: 10 hunks, ~10572 tokens
+2026-05-24 15:34:02,563 INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/16603: 11 hunks, ~9192 tokens
+2026-05-24 15:34:10,317 INFO peer.agent: Gathered codebase context: 13 symbols, 7 call sites, 2 tests, 0 untested, 0 linter findings, ~3381 tokens
+2026-05-24 15:34:11,936 INFO peer.agent: Gathered codebase context: 20 symbols, 11 call sites, 2 tests, 7 untested, 0 linter findings, ~3402 tokens
+2026-05-24 15:34:12,244 INFO peer.agent: Gathered codebase context: 19 symbols, 6 call sites, 2 tests, 7 untested, 0 linter findings, ~2874 tokens
+2026-05-24 15:38:51,731 WARNING peer.reviewers: claude CLI exited 1; stderr=(empty)
+[eval] 6/7 https://github.com/django/django/pull/16746
+[eval] 7/7 https://github.com/pydantic/pydantic/pull/7677
+2026-05-24 15:38:57,262 INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/16746: 6 hunks, ~4698 tokens
+2026-05-24 15:38:57,264 INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7677: 12 hunks, ~7226 tokens
+2026-05-24 15:38:59,174 INFO peer.agent: Gathered codebase context: 16 symbols, 7 call sites, 0 tests, 11 untested, 0 linter findings, ~1467 tokens
+2026-05-24 15:39:04,037 INFO peer.agent: Gathered codebase context: 9 symbols, 10 call sites, 3 tests, 1 untested, 0 linter findings, ~5213 tokens
+2026-05-24 15:51:02,224 INFO peer.autoresearch.runner: autoresearch run: utility=0.0392156862745098 detection_rate=0.0392156862745098 cost=None comments=22
+2026-05-24 15:51:02,226 INFO cli_architecture_sweep:   -> status=ok DR=0.0392156862745098 comments=22 cost=None
+2026-05-24 15:51:02,231 INFO cli_architecture_sweep: [7/7] arch[strategy=self_filter (CLI inner)] (elapsed=6245s)
+[eval] 1/7 https://github.com/django/django/pull/16603
+[eval] 2/7 https://github.com/django/django/pull/17147
+[eval] 3/7 https://github.com/pydantic/pydantic/pull/8059
+[eval] 4/7 https://github.com/pydantic/pydantic/pull/7900
+[eval] 5/7 https://github.com/django/django/pull/17256
+2026-05-24 15:51:06,879 INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7900: 3 hunks, ~3046 tokens
+2026-05-24 15:51:07,431 INFO peer.agent: Gathered codebase context: 3 symbols, 10 call sites, 1 tests, 0 untested, 0 linter findings, ~2761 tokens
+2026-05-24 15:51:07,431 WARNING peer.eval.runner: Reviewer failed on https://github.com/pydantic/pydantic/pull/7900: SelfFilterReviewer requires a `inner_judge` callable (Comment, Context) -> float in [0, 1].
+2026-05-24 15:51:07,433 INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/8059: 5 hunks, ~4741 tokens
+[eval] 6/7 https://github.com/django/django/pull/16746
+2026-05-24 15:51:07,503 INFO peer.agent: Gathered codebase context: 0 symbols, 0 call sites, 1 tests, 0 untested, 0 linter findings, ~1812 tokens
+2026-05-24 15:51:07,503 WARNING peer.eval.runner: Reviewer failed on https://github.com/pydantic/pydantic/pull/8059: SelfFilterReviewer requires a `inner_judge` callable (Comment, Context) -> float in [0, 1].
+[eval] 7/7 https://github.com/pydantic/pydantic/pull/7677
+2026-05-24 15:51:07,725 INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17256: 6 hunks, ~3687 tokens
+2026-05-24 15:51:08,687 INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17147: 10 hunks, ~10572 tokens
+2026-05-24 15:51:08,900 INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/16603: 11 hunks, ~9192 tokens
+2026-05-24 15:51:12,789 INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/16746: 6 hunks, ~4698 tokens
+2026-05-24 15:51:12,839 INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7677: 12 hunks, ~7226 tokens
+2026-05-24 15:51:14,075 INFO peer.agent: Gathered codebase context: 16 symbols, 7 call sites, 0 tests, 11 untested, 0 linter findings, ~1467 tokens
+2026-05-24 15:51:14,075 WARNING peer.eval.runner: Reviewer failed on https://github.com/pydantic/pydantic/pull/7677: SelfFilterReviewer requires a `inner_judge` callable (Comment, Context) -> float in [0, 1].
+2026-05-24 15:51:15,060 INFO peer.agent: Gathered codebase context: 13 symbols, 7 call sites, 2 tests, 0 untested, 0 linter findings, ~3381 tokens
+2026-05-24 15:51:15,061 WARNING peer.eval.runner: Reviewer failed on https://github.com/django/django/pull/17256: SelfFilterReviewer requires a `inner_judge` callable (Comment, Context) -> float in [0, 1].
+2026-05-24 15:51:16,091 INFO peer.agent: Gathered codebase context: 20 symbols, 11 call sites, 2 tests, 7 untested, 0 linter findings, ~3402 tokens
+2026-05-24 15:51:16,091 WARNING peer.eval.runner: Reviewer failed on https://github.com/django/django/pull/17147: SelfFilterReviewer requires a `inner_judge` callable (Comment, Context) -> float in [0, 1].
+2026-05-24 15:51:16,231 INFO peer.agent: Gathered codebase context: 19 symbols, 6 call sites, 2 tests, 7 untested, 0 linter findings, ~2874 tokens
+2026-05-24 15:51:16,232 WARNING peer.eval.runner: Reviewer failed on https://github.com/django/django/pull/16603: SelfFilterReviewer requires a `inner_judge` callable (Comment, Context) -> float in [0, 1].
+2026-05-24 15:51:16,903 INFO peer.agent: Gathered codebase context: 9 symbols, 10 call sites, 3 tests, 1 untested, 0 linter findings, ~5213 tokens
+2026-05-24 15:51:16,903 WARNING peer.eval.runner: Reviewer failed on https://github.com/django/django/pull/16746: SelfFilterReviewer requires a `inner_judge` callable (Comment, Context) -> float in [0, 1].
+2026-05-24 15:51:16,906 INFO peer.autoresearch.runner: autoresearch run: utility=0.0 detection_rate=None cost=None comments=0
+2026-05-24 15:51:16,907 INFO cli_architecture_sweep:   -> status=ok DR=None comments=0 cost=None
+2026-05-24 15:51:16,907 INFO cli_architecture_sweep: wrote frontier report to /Users/krilet/peer/data/autoresearch/may24/pareto_frontier.md
+2026-05-24 15:51:16,909 INFO cli_architecture_sweep: DONE — total elapsed 6259s (104.3 min); frontier=7

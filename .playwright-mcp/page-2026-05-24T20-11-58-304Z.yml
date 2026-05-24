@@ -1,0 +1,504 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: ciboulette
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e81]:
+            - generic [ref=e84]:
+              - generic [ref=e85]:
+                - button "Precio" [ref=e88]:
+                  - generic [ref=e89]: Precio
+                  - img [ref=e90]: 
+                - separator [ref=e91]
+              - generic [ref=e92]:
+                - button "Marca" [ref=e95]:
+                  - generic [ref=e96]: Marca
+                  - img [ref=e97]: 
+                - separator [ref=e98]
+              - generic [ref=e99]:
+                - button "Categoría" [ref=e102]:
+                  - generic [ref=e103]: Categoría
+                  - img [ref=e104]: 
+                - separator [ref=e105]
+            - generic [ref=e108]:
+              - heading "Resultados para ciboulette (24)" [level=2] [ref=e116]: Resultados para ciboulette(24)
+              - generic [ref=e117]:
+                - group [ref=e120]:
+                  - link "Cebollín Pack Bolsa, 6 Un" [ref=e121] [cursor=pointer]:
+                    - /url: /ip/verduras/00780394600001?from=/search
+                    - generic [ref=e122]: Cebollín Pack Bolsa, 6 Un
+                  - generic [ref=e124]:
+                    - generic [ref=e127]:
+                      - img "Cebollín Pack Bolsa, 6 Un" [ref=e129]
+                      - button "Agregar al carro - Cebollín Pack Bolsa, 6 Un" [ref=e132] [cursor=pointer]:
+                        - generic "agregar" [ref=e133]: 
+                        - generic [ref=e134]: Agregar
+                    - generic [ref=e136]:
+                      - generic [ref=e138]:
+                        - generic [ref=e139]: $1.550
+                        - generic [ref=e140]: precio actual $1.550
+                        - generic [ref=e141]: $258 x un
+                      - generic [ref=e142]: Multi Marca
+                      - generic [ref=e143]: Cebollín Pack Bolsa, 6 Un
+                - group [ref=e146]:
+                  - link "Ciboulette Oriental Bolsa, 50 g" [ref=e147] [cursor=pointer]:
+                    - /url: /ip/verduras/00780403300006?from=/search
+                    - generic [ref=e148]: Ciboulette Oriental Bolsa, 50 g
+                  - generic [ref=e150]:
+                    - generic [ref=e153]:
+                      - img "Ciboulette Oriental Bolsa, 50 g" [ref=e155]
+                      - button "Agregar al carro - Ciboulette Oriental Bolsa, 50 g" [ref=e158] [cursor=pointer]:
+                        - generic "agregar" [ref=e159]: 
+                        - generic [ref=e160]: Agregar
+                    - generic [ref=e162]:
+                      - generic [ref=e164]:
+                        - generic [ref=e165]: $990
+                        - generic [ref=e166]: precio actual $990
+                        - generic [ref=e167]: $990 x un
+                      - generic [ref=e168]: Más Vida
+                      - generic [ref=e169]: Ciboulette Oriental Bolsa, 50 g
+                - group [ref=e172]:
+                  - link "Ciboulette Deshidratado Vegetales, 2 g" [ref=e173] [cursor=pointer]:
+                    - /url: /ip/aceites-y-aderezos/00780241000339?from=/search
+                    - generic [ref=e174]: Ciboulette Deshidratado Vegetales, 2 g
+                  - generic [ref=e176]:
+                    - generic [ref=e179]:
+                      - img "Ciboulette Deshidratado Vegetales, 2 g" [ref=e181]
+                      - button "Agregar al carro - Ciboulette Deshidratado Vegetales, 2 g" [ref=e184] [cursor=pointer]:
+                        - generic "agregar" [ref=e185]: 
+                        - generic [ref=e186]: Agregar
+                    - generic [ref=e188]:
+                      - generic [ref=e190]:
+                        - generic [ref=e191]: $520
+                        - generic [ref=e192]: precio actual $520
+                        - generic [ref=e193]: $2.600 x 10g
+                      - generic [ref=e194]: Lider
+                      - generic [ref=e195]: Ciboulette Deshidratado Vegetales, 2 g
+                - group [ref=e198]:
+                  - link "Ciboulette Cebollín Deshidratado, 2 g" [ref=e199] [cursor=pointer]:
+                    - /url: /ip/aceites-y-aderezos/00780241010154?from=/search
+                    - generic [ref=e200]: Ciboulette Cebollín Deshidratado, 2 g
+                  - generic [ref=e202]:
+                    - generic [ref=e205]:
+                      - img "Ciboulette Cebollín Deshidratado, 2 g" [ref=e207]
+                      - button "Agregar al carro - Ciboulette Cebollín Deshidratado, 2 g" [ref=e210] [cursor=pointer]:
+                        - generic "agregar" [ref=e211]: 
+                        - generic [ref=e212]: Agregar
+                    - generic [ref=e214]:
+                      - generic [ref=e216]:
+                        - generic [ref=e217]: $630
+                        - generic [ref=e218]: precio actual $630
+                        - generic [ref=e219]: $3.150 x 10g
+                      - generic [ref=e220]: Gourmet
+                      - generic [ref=e221]: Ciboulette Cebollín Deshidratado, 2 g
+                - group [ref=e224]:
+                  - link "Grisines Con Ciboulette Sabor Mantequilla 1 Un, 120 gr" [ref=e225] [cursor=pointer]:
+                    - /url: /ip/panaderia-envasada/00784013100383?from=/search
+                    - generic [ref=e226]: Grisines Con Ciboulette Sabor Mantequilla 1 Un, 120 gr
+                  - generic [ref=e228]:
+                    - generic [ref=e231]:
+                      - img "Grisines Con Ciboulette Sabor Mantequilla 1 Un, 120 gr" [ref=e233]
+                      - button "Agregar al carro - Grisines Con Ciboulette Sabor Mantequilla 1 Un, 120 gr" [ref=e236] [cursor=pointer]:
+                        - generic "agregar" [ref=e237]: 
+                        - generic [ref=e238]: Agregar
+                    - generic [ref=e240]:
+                      - generic [ref=e242]:
+                        - generic [ref=e243]: $1.990
+                        - generic [ref=e244]: precio actual $1.990
+                        - generic [ref=e245]: $16.583 x kg
+                      - generic [ref=e246]: Ideal
+                      - generic [ref=e247]: Grisines Con Ciboulette Sabor Mantequilla 1 Un, 120 gr
+                - group [ref=e250]:
+                  - link "Pasta Pollo Ciboulette, 125 g" [ref=e251] [cursor=pointer]:
+                    - /url: /ip/fiambres-y-embutidos/00780191602970?from=/search
+                    - generic [ref=e252]: Pasta Pollo Ciboulette, 125 g
+                  - generic [ref=e254]:
+                    - generic [ref=e257]:
+                      - img "Pasta Pollo Ciboulette, 125 g" [ref=e259]
+                      - button "Agregar al carro - Pasta Pollo Ciboulette, 125 g" [ref=e262] [cursor=pointer]:
+                        - generic "agregar" [ref=e263]: 
+                        - generic [ref=e264]: Agregar
+                    - generic [ref=e266]:
+                      - generic [ref=e268]:
+                        - generic [ref=e269]: $1.150
+                        - generic [ref=e270]: precio actual $1.150
+                        - generic [ref=e271]: $9.200 x kg
+                      - generic [ref=e272]: La Preferida
+                      - generic [ref=e273]: Pasta Pollo Ciboulette, 125 g
+                - group [ref=e276]:
+                  - link "Queso De Cabra Trozo Suave Ciboulette, 200 g" [ref=e277] [cursor=pointer]:
+                    - /url: /ip/quesos/00780466896005?from=/search
+                    - generic [ref=e278]: Queso De Cabra Trozo Suave Ciboulette, 200 g
+                  - generic [ref=e280]:
+                    - generic [ref=e283]:
+                      - img "Queso De Cabra Trozo Suave Ciboulette, 200 g" [ref=e285]
+                      - button "Agregar al carro - Queso De Cabra Trozo Suave Ciboulette, 200 g" [ref=e288] [cursor=pointer]:
+                        - generic "agregar" [ref=e289]: 
+                        - generic [ref=e290]: Agregar
+                    - generic [ref=e292]:
+                      - generic [ref=e294]:
+                        - generic [ref=e295]: $6.490
+                        - generic [ref=e296]: precio actual $6.490
+                        - generic [ref=e297]: $32.450 x kg
+                      - generic [ref=e298]: Callaqui
+                      - generic [ref=e299]: Queso De Cabra Trozo Suave Ciboulette, 200 g
+                - group [ref=e302]:
+                  - link "Queso Cabra Untable Ciboulette, 150 g" [ref=e303] [cursor=pointer]:
+                    - /url: /ip/quesos/00780466896017?from=/search
+                    - generic [ref=e304]: Queso Cabra Untable Ciboulette, 150 g
+                  - generic [ref=e306]:
+                    - generic [ref=e309]:
+                      - img "Queso Cabra Untable Ciboulette, 150 g" [ref=e311]
+                      - button "Agregar al carro - Queso Cabra Untable Ciboulette, 150 g" [ref=e314] [cursor=pointer]:
+                        - generic "agregar" [ref=e315]: 
+                        - generic [ref=e316]: Agregar
+                    - generic [ref=e318]:
+                      - generic [ref=e320]:
+                        - generic [ref=e321]: $4.690
+                        - generic [ref=e322]: precio actual $4.690
+                        - generic [ref=e323]: $23.450 x kg
+                      - generic [ref=e324]: Callaqui
+                      - generic [ref=e325]: Queso Cabra Untable Ciboulette, 150 g
+                - group [ref=e328]:
+                  - link "Salsa Dip Yoghurt Ciboulette, 220 g" [ref=e329] [cursor=pointer]:
+                    - /url: /ip/salsas/00780462765046?from=/search
+                    - generic [ref=e330]: Salsa Dip Yoghurt Ciboulette, 220 g
+                  - generic [ref=e332]:
+                    - generic [ref=e335]:
+                      - img "Salsa Dip Yoghurt Ciboulette, 220 g" [ref=e337]
+                      - button "Agregar al carro - Salsa Dip Yoghurt Ciboulette, 220 g" [ref=e340] [cursor=pointer]:
+                        - generic "agregar" [ref=e341]: 
+                        - generic [ref=e342]: Agregar
+                    - generic [ref=e344]:
+                      - generic [ref=e346]:
+                        - generic [ref=e347]: $2.490
+                        - generic [ref=e348]: precio actual $2.490
+                        - generic [ref=e349]: $11.318 x kg
+                      - generic [ref=e350]: Buka
+                      - generic [ref=e351]: Salsa Dip Yoghurt Ciboulette, 220 g
+                - group [ref=e354]:
+                  - link "Papas Fritas Nativas Crema Ciboulette, 150 g" [ref=e355] [cursor=pointer]:
+                    - /url: /ip/snacks-y-picoteo/00780463001135?from=/search
+                    - generic [ref=e356]: Papas Fritas Nativas Crema Ciboulette, 150 g
+                  - generic [ref=e358]:
+                    - generic [ref=e361]:
+                      - img "Papas Fritas Nativas Crema Ciboulette, 150 g" [ref=e363]
+                      - button "Agregar al carro - Papas Fritas Nativas Crema Ciboulette, 150 g" [ref=e366] [cursor=pointer]:
+                        - generic "agregar" [ref=e367]: 
+                        - generic [ref=e368]: Agregar
+                    - generic [ref=e370]:
+                      - generic [ref=e372]:
+                        - generic [ref=e373]: $2.290
+                        - generic [ref=e374]: precio actual $2.290
+                        - generic [ref=e375]: $15.267 x kg
+                      - generic [ref=e376]: Tika
+                      - generic [ref=e377]: Papas Fritas Nativas Crema Ciboulette, 150 g
+                - group [ref=e380]:
+                  - link "Salsa de Yogurt Ciboulette Light Doypack, 200 g" [ref=e381] [cursor=pointer]:
+                    - /url: /ip/salsas/00780241045203?from=/search
+                    - generic [ref=e382]: Salsa de Yogurt Ciboulette Light Doypack, 200 g
+                  - generic [ref=e384]:
+                    - generic [ref=e387]:
+                      - img "Salsa de Yogurt Ciboulette Light Doypack, 200 g" [ref=e389]
+                      - button "Agregar al carro - Salsa de Yogurt Ciboulette Light Doypack, 200 g" [ref=e392] [cursor=pointer]:
+                        - generic "agregar" [ref=e393]: 
+                        - generic [ref=e394]: Agregar
+                    - generic [ref=e396]:
+                      - generic [ref=e398]:
+                        - generic [ref=e399]: $2.050
+                        - generic [ref=e400]: precio actual $2.050
+                        - generic [ref=e401]: $10.250 x kg
+                      - generic [ref=e402]: Gourmet
+                      - generic [ref=e403]: Salsa de Yogurt Ciboulette Light Doypack, 200 g
+                - group [ref=e406]:
+                  - link "Aderezo Ajo Ciboulette Light Botella, 250 g" [ref=e407] [cursor=pointer]:
+                    - /url: /ip/salsas/00780241000143?from=/search
+                    - generic [ref=e408]: Aderezo Ajo Ciboulette Light Botella, 250 g
+                  - generic [ref=e410]:
+                    - generic [ref=e413]:
+                      - img "Aderezo Ajo Ciboulette Light Botella, 250 g" [ref=e415]
+                      - button "Agregar al carro - Aderezo Ajo Ciboulette Light Botella, 250 g" [ref=e418] [cursor=pointer]:
+                        - generic "agregar" [ref=e419]: 
+                        - generic [ref=e420]: Agregar
+                    - generic [ref=e422]:
+                      - generic [ref=e424]:
+                        - generic [ref=e425]: $2.590
+                        - generic [ref=e426]: precio actual $2.590
+                        - generic [ref=e427]: $10.360 x kg
+                      - generic [ref=e428]: Gourmet
+                      - generic [ref=e429]: Aderezo Ajo Ciboulette Light Botella, 250 g
+                - group [ref=e432]:
+                  - link "Papas Fritas Crema y Ciboulette, 180 g" [ref=e433] [cursor=pointer]:
+                    - /url: /ip/snacks-y-picoteo/00780242001020?from=/search
+                    - generic [ref=e434]: Papas Fritas Crema y Ciboulette, 180 g
+                  - generic [ref=e436]:
+                    - generic [ref=e439]:
+                      - img "Papas Fritas Crema y Ciboulette, 180 g" [ref=e441]
+                      - button "Agregar al carro - Papas Fritas Crema y Ciboulette, 180 g" [ref=e444] [cursor=pointer]:
+                        - generic "agregar" [ref=e445]: 
+                        - generic [ref=e446]: Agregar
+                    - generic [ref=e448]:
+                      - generic [ref=e450]:
+                        - generic [ref=e451]: $1.950
+                        - generic [ref=e452]: precio actual $1.950
+                        - generic [ref=e453]: $10.833 x kg
+                      - generic [ref=e454]: Marco Polo
+                      - generic [ref=e455]: Papas Fritas Crema y Ciboulette, 180 g
+                - group [ref=e458]:
+                  - link "Suflés Bombas Queso Crema & Ciboulette Individual, 20 g" [ref=e459] [cursor=pointer]:
+                    - /url: /ip/f/00074585384293?from=/search
+                    - generic [ref=e460]: Suflés Bombas Queso Crema & Ciboulette Individual, 20 g
+                  - generic [ref=e462]:
+                    - generic [ref=e465]:
+                      - img "Suflés Bombas Queso Crema & Ciboulette Individual, 20 g" [ref=e467]
+                      - button "Agregar al carro - Suflés Bombas Queso Crema & Ciboulette Individual, 20 g" [ref=e470] [cursor=pointer]:
+                        - generic "agregar" [ref=e471]: 
+                        - generic [ref=e472]: Agregar
+                    - generic [ref=e474]:
+                      - generic [ref=e476]:
+                        - generic [ref=e477]: $950
+                        - generic [ref=e478]: precio actual $950
+                        - generic [ref=e479]: $47.500 x kg
+                      - generic [ref=e480]: Kuna Foods
+                      - generic [ref=e481]: Suflés Bombas Queso Crema & Ciboulette Individual, 20 g
+                - group [ref=e484]:
+                  - link "Queso Untables Cebollín Fundido, 226 g" [ref=e485] [cursor=pointer]:
+                    - /url: /ip/quesos/00780462863072?from=/search
+                    - generic [ref=e486]: Queso Untables Cebollín Fundido, 226 g
+                  - generic [ref=e488]:
+                    - generic [ref=e491]:
+                      - img "Queso Untables Cebollín Fundido, 226 g" [ref=e493]
+                      - button "Agregar al carro - Queso Untables Cebollín Fundido, 226 g" [ref=e496] [cursor=pointer]:
+                        - generic "agregar" [ref=e497]: 
+                        - generic [ref=e498]: Agregar
+                    - generic [ref=e500]:
+                      - generic [ref=e502]:
+                        - generic [ref=e503]: $3.290
+                        - generic [ref=e504]: precio actual $3.290
+                        - generic [ref=e505]: $14.557 x kg
+                      - generic [ref=e506]: Great Value
+                      - generic [ref=e507]: Queso Untables Cebollín Fundido, 226 g
+                - group [ref=e510]:
+                  - link "Queso De Cabra Untar Ciboulette Trozo, 100 g" [ref=e511] [cursor=pointer]:
+                    - /url: /ip/quesos/00780463298071?from=/search
+                    - generic [ref=e512]: Queso De Cabra Untar Ciboulette Trozo, 100 g
+                  - generic [ref=e514]:
+                    - generic [ref=e517]:
+                      - img "Queso De Cabra Untar Ciboulette Trozo, 100 g" [ref=e519]
+                      - button "Agregar al carro - Queso De Cabra Untar Ciboulette Trozo, 100 g" [ref=e522] [cursor=pointer]:
+                        - generic "agregar" [ref=e523]: 
+                        - generic [ref=e524]: Agregar
+                    - generic [ref=e526]:
+                      - generic [ref=e528]:
+                        - generic [ref=e529]: $3.390
+                        - generic [ref=e530]: precio actual $3.390
+                        - generic [ref=e531]: $33.900 x kg
+                      - generic [ref=e532]: Artisan
+                      - generic [ref=e533]: Queso De Cabra Untar Ciboulette Trozo, 100 g
+                - generic [ref=e535]:
+                  - group [ref=e536]:
+                    - link "Suflito Protein Sticks Ciboulette, 140 g" [ref=e537] [cursor=pointer]:
+                      - /url: /ip/snacks-y-picoteo/00780462717333?from=/search
+                      - generic [ref=e538]: Suflito Protein Sticks Ciboulette, 140 g
+                    - generic [ref=e540]:
+                      - generic [ref=e544]:
+                        - img "Suflito Protein Sticks Ciboulette, 140 g"
+                      - generic [ref=e546]:
+                        - generic [ref=e548]:
+                          - generic [ref=e549]: $2.490
+                          - generic [ref=e550]: precio actual $2.490
+                          - generic [ref=e551]: $17.786 x kg
+                        - generic [ref=e552]: Tribu
+                        - generic [ref=e553]: Suflito Protein Sticks Ciboulette, 140 g
+                        - generic [ref=e554]: Agotado
+                  - button "Revisar productos similares - Suflito Protein Sticks Ciboulette, 140 g" [ref=e556]: Revisar productos similares
+                - group [ref=e559]:
+                  - link "Papas Fritas de crema Ciboulette, 140 g" [ref=e560] [cursor=pointer]:
+                    - /url: /ip/snacks-y-picoteo/00780123500469?from=/search
+                    - generic [ref=e561]: Papas Fritas de crema Ciboulette, 140 g
+                  - generic [ref=e563]:
+                    - generic [ref=e566]:
+                      - generic [ref=e567]:
+                        - img "Papas Fritas de crema Ciboulette, 140 g"
+                      - button "Agregar al carro - Papas Fritas de crema Ciboulette, 140 g" [ref=e570] [cursor=pointer]:
+                        - generic "agregar" [ref=e571]: 
+                        - generic [ref=e572]: Agregar
+                    - generic [ref=e574]:
+                      - generic [ref=e576]:
+                        - generic [ref=e577]: $2.790
+                        - generic [ref=e578]: precio actual $2.790
+                        - generic [ref=e579]: $19.929 x kg
+                      - generic [ref=e580]: Flip
+                      - generic [ref=e581]: Papas Fritas de crema Ciboulette, 140 g
+                - group [ref=e584]:
+                  - link "Eneldo Bolsa, 8 g" [ref=e585] [cursor=pointer]:
+                    - /url: /ip/aceites-y-aderezos/00780241059538?from=/search
+                    - generic [ref=e586]: Eneldo Bolsa, 8 g
+                  - generic [ref=e588]:
+                    - generic [ref=e591]:
+                      - generic [ref=e592]:
+                        - img "Eneldo Bolsa, 8 g"
+                      - button "Agregar al carro - Eneldo Bolsa, 8 g" [ref=e595] [cursor=pointer]:
+                        - generic "agregar" [ref=e596]: 
+                        - generic [ref=e597]: Agregar
+                    - generic [ref=e599]:
+                      - generic [ref=e601]:
+                        - generic [ref=e602]: $660
+                        - generic [ref=e603]: precio actual $660
+                        - generic [ref=e604]: $825 x 10g
+                      - generic [ref=e605]: Gourmet
+                      - generic [ref=e606]: Eneldo Bolsa, 8 g
+                - group [ref=e609]:
+                  - link "Merengue, 180 g" [ref=e610] [cursor=pointer]:
+                    - /url: /ip/f/00780241000131?from=/search
+                    - generic [ref=e611]: Merengue, 180 g
+                  - generic [ref=e613]:
+                    - generic [ref=e616]:
+                      - generic [ref=e617]:
+                        - img "Merengue, 180 g"
+                      - button "Agregar al carro - Merengue, 180 g" [ref=e620] [cursor=pointer]:
+                        - generic "agregar" [ref=e621]: 
+                        - generic [ref=e622]: Agregar
+                    - generic [ref=e624]:
+                      - generic [ref=e626]:
+                        - generic [ref=e627]: $1.890
+                        - generic [ref=e628]: precio actual $1.890
+                        - generic [ref=e629]: $10.500 x kg
+                      - generic [ref=e630]: Gourmet
+                      - generic [ref=e631]: Merengue, 180 g
+                - group [ref=e634]:
+                  - link "Base para Carne Mongoliana (5 Porciones) Sobre, 30 g" [ref=e635] [cursor=pointer]:
+                    - /url: /ip/alimentos-instantaneos/00780241000097?from=/search
+                    - generic [ref=e636]: Base para Carne Mongoliana (5 Porciones) Sobre, 30 g
+                  - generic [ref=e638]:
+                    - generic [ref=e641]:
+                      - generic [ref=e642]:
+                        - img "Base para Carne Mongoliana (5 Porciones) Sobre, 30 g"
+                      - button "Agregar al carro - Base para Carne Mongoliana (5 Porciones) Sobre, 30 g" [ref=e645] [cursor=pointer]:
+                        - generic "agregar" [ref=e646]: 
+                        - generic [ref=e647]: Agregar
+                    - generic [ref=e649]:
+                      - generic [ref=e651]:
+                        - generic [ref=e652]: $830
+                        - generic [ref=e653]: precio actual $830
+                        - generic [ref=e654]: $277 x 10g
+                      - generic [ref=e655]: Gourmet
+                      - generic [ref=e656]: Base para Carne Mongoliana (5 Porciones) Sobre, 30 g
+                - group [ref=e659]:
+                  - link "Salsa Blanca (5 Porciones) Sobre, 36 g" [ref=e660] [cursor=pointer]:
+                    - /url: /ip/pastas-y-salsas/00780241000092?from=/search
+                    - generic [ref=e661]: Salsa Blanca (5 Porciones) Sobre, 36 g
+                  - generic [ref=e663]:
+                    - generic [ref=e666]:
+                      - generic [ref=e667]:
+                        - img "Salsa Blanca (5 Porciones) Sobre, 36 g"
+                      - button "Agregar al carro - Salsa Blanca (5 Porciones) Sobre, 36 g" [ref=e670] [cursor=pointer]:
+                        - generic "agregar" [ref=e671]: 
+                        - generic [ref=e672]: Agregar
+                    - generic [ref=e674]:
+                      - generic [ref=e676]:
+                        - generic [ref=e677]: $810
+                        - generic [ref=e678]: precio actual $810
+                        - generic [ref=e679]: $225 x 10g
+                      - generic [ref=e680]: Gourmet
+                      - generic [ref=e681]: Salsa Blanca (5 Porciones) Sobre, 36 g
+                - group [ref=e684]:
+                  - link "Glaseado Vainilla Bolsa, 170 g" [ref=e685] [cursor=pointer]:
+                    - /url: /ip/f/00780241000121?from=/search
+                    - generic [ref=e686]: Glaseado Vainilla Bolsa, 170 g
+                  - generic [ref=e688]:
+                    - generic [ref=e691]:
+                      - generic [ref=e692]:
+                        - img "Glaseado Vainilla Bolsa, 170 g"
+                      - button "Agregar al carro - Glaseado Vainilla Bolsa, 170 g" [ref=e695] [cursor=pointer]:
+                        - generic "agregar" [ref=e696]: 
+                        - generic [ref=e697]: Agregar
+                    - generic [ref=e699]:
+                      - generic [ref=e701]:
+                        - generic [ref=e702]: $1.450
+                        - generic [ref=e703]: precio actual $1.450
+                        - generic [ref=e704]: $8.529 x kg
+                      - generic [ref=e705]: Gourmet
+                      - generic [ref=e706]: Glaseado Vainilla Bolsa, 170 g
+                - group [ref=e709]:
+                  - link "Crema Individual de Zapallo Sobre, 20 g" [ref=e710] [cursor=pointer]:
+                    - /url: /ip/alimentos-instantaneos/00780241000087?from=/search
+                    - generic [ref=e711]: Crema Individual de Zapallo Sobre, 20 g
+                  - generic [ref=e713]:
+                    - generic [ref=e716]:
+                      - generic [ref=e717]:
+                        - img "Crema Individual de Zapallo Sobre, 20 g"
+                      - button "Agregar al carro - Crema Individual de Zapallo Sobre, 20 g" [ref=e720] [cursor=pointer]:
+                        - generic "agregar" [ref=e721]: 
+                        - generic [ref=e722]: Agregar
+                    - generic [ref=e724]:
+                      - generic [ref=e726]:
+                        - generic [ref=e727]: $480
+                        - generic [ref=e728]: precio actual $480
+                        - generic [ref=e729]: $240 x 10g
+                      - generic [ref=e730]: Gourmet
+                      - generic [ref=e731]: Crema Individual de Zapallo Sobre, 20 g
+  - alert [ref=e740]

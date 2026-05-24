@@ -1,0 +1,572 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: mantequilla con sal 250g
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 13 productos Monto total $38.360" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: "13"
+              - generic [ref=e44]: $38.360
+    - generic [ref=e45]:
+      - generic [ref=e46]:
+        - separator [ref=e47]
+        - generic [ref=e48]:
+          - generic [ref=e49]:
+            - button "Despacho a Domicilio MARTIN DE ZAMORA 5595" [ref=e50] [cursor=pointer]:
+              - generic [ref=e52]:
+                - img [ref=e53]
+                - generic [ref=e54]: Despacho a Domicilio
+                - generic [ref=e55]: 
+                - generic [ref=e56]: "|"
+                - generic [ref=e58]:
+                  - img [ref=e59]
+                  - generic [ref=e60]: MARTIN DE ZAMORA 5595
+              - text: 
+            - generic:   
+            - navigation "Secundario" [ref=e63]:
+              - list [ref=e64]:
+                - listitem [ref=e65]:
+                  - link "Tarjeta Lider Bci" [ref=e67] [cursor=pointer]:
+                    - /url: https://tarjetadigital.liderbciserviciosfinancieros.cl/ingreso-de-datos?utm_source=Lidercl_sod_header&utm_medium=lidercl
+                - listitem [ref=e68]:
+                  - link "Mi Club" [ref=e70] [cursor=pointer]:
+                    - /url: https://www.miclublider.cl/
+                - listitem [ref=e71]:
+                  - link "Centro de ayuda" [ref=e73] [cursor=pointer]:
+                    - /url: /ayuda
+          - img [ref=e76]
+      - main [ref=e79]:
+        - generic [ref=e80]:
+          - generic [ref=e83]:
+            - region "Sección de ordenar y filtrar" [ref=e85]:
+              - button "Precio" [ref=e88]:
+                - generic [ref=e90]: 
+                - generic [ref=e91]: Precio
+                - generic [ref=e92]: 
+              - button "Marca" [ref=e95]:
+                - generic [ref=e96]: Marca
+                - generic [ref=e97]: 
+              - generic [ref=e98]:
+                - generic [ref=e99]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e101]:
+                  - text: Más relevantes
+                  - generic [ref=e102]: 
+            - separator [ref=e103]
+          - generic [ref=e107]:
+            - generic [ref=e110]:
+              - generic [ref=e111]:
+                - button "Precio" [ref=e114]:
+                  - generic [ref=e115]: Precio
+                  - img [ref=e116]: 
+                - separator [ref=e117]
+              - generic [ref=e118]:
+                - button "Campaña" [ref=e121]:
+                  - generic [ref=e122]: Campaña
+                  - img [ref=e123]: 
+                - separator [ref=e124]
+              - generic [ref=e125]:
+                - button "Marca" [ref=e128]:
+                  - generic [ref=e129]: Marca
+                  - img [ref=e130]: 
+                - separator [ref=e131]
+              - generic [ref=e132]:
+                - button "Categoría" [ref=e135]:
+                  - generic [ref=e136]: Categoría
+                  - img [ref=e137]: 
+                - separator [ref=e138]
+            - generic [ref=e141]:
+              - heading "Resultados para mantequilla con sal 250g (23)" [level=2] [ref=e149]: Resultados para mantequilla con sal 250g(23)
+              - generic [ref=e150]:
+                - group [ref=e153]:
+                  - link "Mantequilla Con sal, 250 g" [ref=e154] [cursor=pointer]:
+                    - /url: /ip/mantequillas-y-margarinas/00780292020330?from=/search
+                    - generic [ref=e155]: Mantequilla Con sal, 250 g
+                  - generic [ref=e157]:
+                    - generic [ref=e160]:
+                      - generic [ref=e161]:
+                        - img "Mantequilla Con sal, 250 g"
+                      - button "Agregar al carro - Mantequilla Con sal, 250 g" [ref=e164] [cursor=pointer]:
+                        - generic "agregar" [ref=e165]: 
+                        - generic [ref=e166]: Agregar
+                    - generic [ref=e168]:
+                      - generic [ref=e170]:
+                        - generic [ref=e171]: $3.290
+                        - generic [ref=e172]: precio actual $3.290
+                        - generic [ref=e173]: $13.160 x kg
+                      - generic [ref=e174]: Colun
+                      - generic [ref=e175]: Mantequilla Con sal, 250 g
+                - group [ref=e178]:
+                  - link "Mantequilla Con Sal Tradicional, 250 g" [ref=e179] [cursor=pointer]:
+                    - /url: /ip/mantequillas-y-margarinas/00780870950262?from=/search
+                    - generic [ref=e180]: Mantequilla Con Sal Tradicional, 250 g
+                  - generic [ref=e182]:
+                    - generic [ref=e185]:
+                      - generic [ref=e186]:
+                        - img "Mantequilla Con Sal Tradicional, 250 g"
+                      - button "Agregar al carro - Mantequilla Con Sal Tradicional, 250 g" [ref=e189] [cursor=pointer]:
+                        - generic "agregar" [ref=e190]: 
+                        - generic [ref=e191]: Agregar
+                    - generic [ref=e193]:
+                      - generic [ref=e195]:
+                        - generic [ref=e196]: $2.690
+                        - generic [ref=e197]: precio actual $2.690
+                        - generic [ref=e198]: $10.760 x kg
+                      - generic [ref=e199]: Lider
+                      - generic [ref=e200]: Mantequilla Con Sal Tradicional, 250 g
+                - group [ref=e203]:
+                  - link "Mantequilla con Sal, 250 g" [ref=e204] [cursor=pointer]:
+                    - /url: /ip/mantequillas-y-margarinas/00780290012101?from=/search
+                    - generic [ref=e205]: Mantequilla con Sal, 250 g
+                  - generic [ref=e207]:
+                    - generic [ref=e208]:
+                      - generic [ref=e210]:
+                        - generic [ref=e212]: 
+                        - text: Rebaja
+                      - generic [ref=e213]:
+                        - generic [ref=e214]:
+                          - img "Mantequilla con Sal, 250 g"
+                        - button "Agregar al carro - Mantequilla con Sal, 250 g" [ref=e217] [cursor=pointer]:
+                          - generic "agregar" [ref=e218]: 
+                          - generic [ref=e219]: Agregar
+                    - generic [ref=e221]:
+                      - generic [ref=e223]:
+                        - generic [ref=e224]: $2.790
+                        - generic [ref=e225]: precio actual $2.790, Costaba $3.090
+                        - generic [ref=e226]: $11.160 x kg
+                        - generic [ref=e227]: $3.090
+                        - generic [ref=e228]: Ahorra $300
+                      - generic [ref=e229]: Soprole
+                      - generic [ref=e230]: Mantequilla con Sal, 250 g
+                - group [ref=e233]:
+                  - link "Mantequilla Con sal, 125 g" [ref=e234] [cursor=pointer]:
+                    - /url: /ip/mantequillas-y-margarinas/00780292020210?from=/search
+                    - generic [ref=e235]: Mantequilla Con sal, 125 g
+                  - generic [ref=e237]:
+                    - generic [ref=e240]:
+                      - generic [ref=e241]:
+                        - img "Mantequilla Con sal, 125 g"
+                      - button "Agregar al carro - Mantequilla Con sal, 125 g" [ref=e244] [cursor=pointer]:
+                        - generic "agregar" [ref=e245]: 
+                        - generic [ref=e246]: Agregar
+                    - generic [ref=e248]:
+                      - generic [ref=e250]:
+                        - generic [ref=e251]: $1.790
+                        - generic [ref=e252]: precio actual $1.790
+                        - generic [ref=e253]: $14.320 x kg
+                      - generic [ref=e254]: Colun
+                      - generic [ref=e255]: Mantequilla Con sal, 125 g
+                - group [ref=e258]:
+                  - link "Mantequilla Con Sal Tradicional, 125 g" [ref=e259] [cursor=pointer]:
+                    - /url: /ip/mantequillas-y-margarinas/00780292020220?from=/search
+                    - generic [ref=e260]: Mantequilla Con Sal Tradicional, 125 g
+                  - generic [ref=e262]:
+                    - generic [ref=e265]:
+                      - generic [ref=e266]:
+                        - img "Mantequilla Con Sal Tradicional, 125 g"
+                      - button "Agregar al carro - Mantequilla Con Sal Tradicional, 125 g" [ref=e269] [cursor=pointer]:
+                        - generic "agregar" [ref=e270]: 
+                        - generic [ref=e271]: Agregar
+                    - generic [ref=e273]:
+                      - generic [ref=e275]:
+                        - generic [ref=e276]: $1.650
+                        - generic [ref=e277]: precio actual $1.650
+                        - generic [ref=e278]: $13.200 x kg
+                      - generic [ref=e279]: Los Alerces
+                      - generic [ref=e280]: Mantequilla Con Sal Tradicional, 125 g
+                - group [ref=e283]:
+                  - link "Mantequilla Con Sal Tradicional, 125 g" [ref=e284] [cursor=pointer]:
+                    - /url: /ip/mantequillas-y-margarinas/00780461747093?from=/search
+                    - generic [ref=e285]: Mantequilla Con Sal Tradicional, 125 g
+                  - generic [ref=e287]:
+                    - generic [ref=e290]:
+                      - generic [ref=e291]:
+                        - img "Mantequilla Con Sal Tradicional, 125 g"
+                      - button "Agregar al carro - Mantequilla Con Sal Tradicional, 125 g" [ref=e294] [cursor=pointer]:
+                        - generic "agregar" [ref=e295]: 
+                        - generic [ref=e296]: Agregar
+                    - generic [ref=e298]:
+                      - generic [ref=e300]:
+                        - generic [ref=e301]: $1.490
+                        - generic [ref=e302]: precio actual $1.490
+                        - generic [ref=e303]: $11.920 x kg
+                      - generic [ref=e304]: Lider
+                      - generic [ref=e305]: Mantequilla Con Sal Tradicional, 125 g
+                - group [ref=e308]:
+                  - link "Mantequilla Con Sal Tradicional, 250 g" [ref=e309] [cursor=pointer]:
+                    - /url: /ip/mantequillas-y-margarinas/00780291015060?from=/search
+                    - generic [ref=e310]: Mantequilla Con Sal Tradicional, 250 g
+                  - generic [ref=e312]:
+                    - generic [ref=e313]:
+                      - generic [ref=e315]:
+                        - generic [ref=e317]: 
+                        - text: Rebaja
+                      - generic [ref=e318]:
+                        - generic [ref=e319]:
+                          - img "Mantequilla Con Sal Tradicional, 250 g"
+                        - button "Agregar al carro - Mantequilla Con Sal Tradicional, 250 g" [ref=e322] [cursor=pointer]:
+                          - generic "agregar" [ref=e323]: 
+                          - generic [ref=e324]: Agregar
+                    - generic [ref=e326]:
+                      - generic [ref=e328]:
+                        - generic [ref=e329]: $2.490
+                        - generic [ref=e330]: precio actual $2.490, Costaba $2.790
+                        - generic [ref=e331]: $9.960 x kg
+                        - generic [ref=e332]: $2.790
+                        - generic [ref=e333]: Ahorra $300
+                      - generic [ref=e334]: Calo
+                      - generic [ref=e335]: Mantequilla Con Sal Tradicional, 250 g
+                - group [ref=e338]:
+                  - link "Mantequilla Con Sal Tradicional, 250 g" [ref=e339] [cursor=pointer]:
+                    - /url: /ip/mantequillas-y-margarinas/00780292077616?from=/search
+                    - generic [ref=e340]: Mantequilla Con Sal Tradicional, 250 g
+                  - generic [ref=e342]:
+                    - generic [ref=e343]:
+                      - generic [ref=e345]:
+                        - generic [ref=e347]: 
+                        - text: Rebaja
+                      - generic [ref=e348]:
+                        - generic [ref=e349]:
+                          - img "Mantequilla Con Sal Tradicional, 250 g"
+                        - button "Agregar al carro - Mantequilla Con Sal Tradicional, 250 g" [ref=e352] [cursor=pointer]:
+                          - generic "agregar" [ref=e353]: 
+                          - generic [ref=e354]: Agregar
+                    - generic [ref=e356]:
+                      - generic [ref=e358]:
+                        - generic [ref=e359]: $2.550
+                        - generic [ref=e360]: precio actual $2.550, Costaba $2.850
+                        - generic [ref=e361]: $10.200 x kg
+                        - generic [ref=e362]: $2.850
+                        - generic [ref=e363]: Ahorra $300
+                      - generic [ref=e364]: Los Alerces
+                      - generic [ref=e365]: Mantequilla Con Sal Tradicional, 250 g
+                - group [ref=e368]:
+                  - link "Mantequilla Sal De Mar Tradicional, 230 g" [ref=e369] [cursor=pointer]:
+                    - /url: /ip/mantequillas-y-margarinas/00780290300057?from=/search
+                    - generic [ref=e370]: Mantequilla Sal De Mar Tradicional, 230 g
+                  - generic [ref=e372]:
+                    - generic [ref=e375]:
+                      - generic [ref=e376]:
+                        - img "Mantequilla Sal De Mar Tradicional, 230 g"
+                      - button "Agregar al carro - Mantequilla Sal De Mar Tradicional, 230 g" [ref=e379] [cursor=pointer]:
+                        - generic "agregar" [ref=e380]: 
+                        - generic [ref=e381]: Agregar
+                    - generic [ref=e383]:
+                      - generic [ref=e385]:
+                        - generic [ref=e386]: $3.890
+                        - generic [ref=e387]: precio actual $3.890
+                        - generic [ref=e388]: $16.913 x kg
+                      - generic [ref=e389]: San Ignacio
+                      - generic [ref=e390]: Mantequilla Sal De Mar Tradicional, 230 g
+                - group [ref=e393]:
+                  - link "Mantequilla Con Sal Tradicional, 125 g" [ref=e394] [cursor=pointer]:
+                    - /url: /ip/mantequillas-y-margarinas/00780461339222?from=/search
+                    - generic [ref=e395]: Mantequilla Con Sal Tradicional, 125 g
+                  - generic [ref=e397]:
+                    - generic [ref=e398]:
+                      - generic [ref=e400]:
+                        - generic [ref=e402]: 
+                        - text: Rebaja
+                      - generic [ref=e403]:
+                        - generic [ref=e404]:
+                          - img "Mantequilla Con Sal Tradicional, 125 g"
+                        - button "Agregar al carro - Mantequilla Con Sal Tradicional, 125 g" [ref=e407] [cursor=pointer]:
+                          - generic "agregar" [ref=e408]: 
+                          - generic [ref=e409]: Agregar
+                    - generic [ref=e411]:
+                      - generic [ref=e413]:
+                        - generic [ref=e414]: $1.390
+                        - generic [ref=e415]: precio actual $1.390, Costaba $1.590
+                        - generic [ref=e416]: $11.120 x kg
+                        - generic [ref=e417]: $1.590
+                        - generic [ref=e418]: Ahorra $200
+                      - generic [ref=e419]: Kumey
+                      - generic [ref=e420]: Mantequilla Con Sal Tradicional, 125 g
+                - group [ref=e423]:
+                  - link "Mantequilla Con Sal Tradicional, 200 g" [ref=e424] [cursor=pointer]:
+                    - /url: /ip/mantequillas-y-margarinas/00322802035574?from=/search
+                    - generic [ref=e425]: Mantequilla Con Sal Tradicional, 200 g
+                  - generic [ref=e427]:
+                    - generic [ref=e430]:
+                      - generic [ref=e431]:
+                        - img "Mantequilla Con Sal Tradicional, 200 g"
+                      - button "Agregar al carro - Mantequilla Con Sal Tradicional, 200 g" [ref=e434] [cursor=pointer]:
+                        - generic "agregar" [ref=e435]: 
+                        - generic [ref=e436]: Agregar
+                    - generic [ref=e438]:
+                      - generic [ref=e440]:
+                        - generic [ref=e441]: $2.890
+                        - generic [ref=e442]: precio actual $2.890
+                        - generic [ref=e443]: $14.450 x kg
+                      - generic [ref=e444]: Président
+                      - generic [ref=e445]: Mantequilla Con Sal Tradicional, 200 g
+                - group [ref=e448]:
+                  - link "Mantequilla Con Sal Tradicional, 200 g" [ref=e449] [cursor=pointer]:
+                    - /url: /ip/mantequillas-y-margarinas/00780463440050?from=/search
+                    - generic [ref=e450]: Mantequilla Con Sal Tradicional, 200 g
+                  - generic [ref=e452]:
+                    - generic [ref=e453]:
+                      - generic [ref=e455]:
+                        - generic [ref=e457]: 
+                        - text: Rebaja
+                      - generic [ref=e458]:
+                        - generic [ref=e459]:
+                          - img "Mantequilla Con Sal Tradicional, 200 g"
+                        - button "Agregar al carro - Mantequilla Con Sal Tradicional, 200 g" [ref=e462] [cursor=pointer]:
+                          - generic "agregar" [ref=e463]: 
+                          - generic [ref=e464]: Agregar
+                    - generic [ref=e466]:
+                      - generic [ref=e468]:
+                        - generic [ref=e469]: $2.550
+                        - generic [ref=e470]: precio actual $2.550, Costaba $2.990
+                        - generic [ref=e471]: $12.750 x kg
+                        - generic [ref=e472]: $2.990
+                        - generic [ref=e473]: Ahorra $440
+                      - generic [ref=e474]: Rumay
+                      - generic [ref=e475]: Mantequilla Con Sal Tradicional, 200 g
+                - group [ref=e478]:
+                  - link "Mantequilla Con sal, 200 g" [ref=e479] [cursor=pointer]:
+                    - /url: /ip/mantequillas-y-margarinas/00780293000571?from=/search
+                    - generic [ref=e480]: Mantequilla Con sal, 200 g
+                  - generic [ref=e482]:
+                    - generic [ref=e483]:
+                      - generic [ref=e485]:
+                        - generic [ref=e487]: 
+                        - text: Rebaja
+                      - generic [ref=e488]:
+                        - generic [ref=e489]:
+                          - img "Mantequilla Con sal, 200 g"
+                        - button "Agregar al carro - Mantequilla Con sal, 200 g" [ref=e492] [cursor=pointer]:
+                          - generic "agregar" [ref=e493]: 
+                          - generic [ref=e494]: Agregar
+                    - generic [ref=e496]:
+                      - generic [ref=e498]:
+                        - generic [ref=e499]: $2.390
+                        - generic [ref=e500]: precio actual $2.390, Costaba $2.850
+                        - generic [ref=e501]: $11.950 x kg
+                        - generic [ref=e502]: $2.850
+                        - generic [ref=e503]: Ahorra $460
+                      - generic [ref=e504]: Quillayes
+                      - generic [ref=e505]: Mantequilla Con sal, 200 g
+                - group [ref=e508]:
+                  - link "Mantequilla Con sal, 125 g" [ref=e509] [cursor=pointer]:
+                    - /url: /ip/mantequillas-y-margarinas/00780290012001?from=/search
+                    - generic [ref=e510]: Mantequilla Con sal, 125 g
+                  - generic [ref=e512]:
+                    - generic [ref=e515]:
+                      - generic [ref=e516]:
+                        - img "Mantequilla Con sal, 125 g"
+                      - button "Agregar al carro - Mantequilla Con sal, 125 g" [ref=e519] [cursor=pointer]:
+                        - generic "agregar" [ref=e520]: 
+                        - generic [ref=e521]: Agregar
+                    - generic [ref=e523]:
+                      - generic [ref=e525]:
+                        - generic [ref=e526]: $1.850
+                        - generic [ref=e527]: precio actual $1.850
+                        - generic [ref=e528]: $14.800 x kg
+                      - generic [ref=e529]: Soprole
+                      - generic [ref=e530]: Mantequilla Con sal, 125 g
+                - group [ref=e533]:
+                  - link "Mantequilla con Sal de Mar Tradicional, 250 g" [ref=e534] [cursor=pointer]:
+                    - /url: /ip/mantequillas-y-margarinas/00780290002658?from=/search
+                    - generic [ref=e535]: Mantequilla con Sal de Mar Tradicional, 250 g
+                  - generic [ref=e537]:
+                    - generic [ref=e540]:
+                      - generic [ref=e541]:
+                        - img "Mantequilla con Sal de Mar Tradicional, 250 g"
+                      - button "Agregar al carro - Mantequilla con Sal de Mar Tradicional, 250 g" [ref=e544] [cursor=pointer]:
+                        - generic "agregar" [ref=e545]: 
+                        - generic [ref=e546]: Agregar
+                    - generic [ref=e548]:
+                      - generic [ref=e550]:
+                        - generic [ref=e551]: $3.850
+                        - generic [ref=e552]: precio actual $3.850
+                        - generic [ref=e553]: $15.400 x kg
+                      - generic [ref=e554]: Soprole
+                      - generic [ref=e555]: Mantequilla con Sal de Mar Tradicional, 250 g
+                - group [ref=e558]:
+                  - link "Mantequilla Con Sal Tradicional, 200 g" [ref=e559] [cursor=pointer]:
+                    - /url: /ip/mantequillas-y-margarinas/00780870950003?from=/search
+                    - generic [ref=e560]: Mantequilla Con Sal Tradicional, 200 g
+                  - generic [ref=e562]:
+                    - generic [ref=e565]:
+                      - generic [ref=e566]:
+                        - img "Mantequilla Con Sal Tradicional, 200 g"
+                      - button "Agregar al carro - Mantequilla Con Sal Tradicional, 200 g" [ref=e569] [cursor=pointer]:
+                        - generic "agregar" [ref=e570]: 
+                        - generic [ref=e571]: Agregar
+                    - generic [ref=e573]:
+                      - generic [ref=e575]:
+                        - generic [ref=e576]: $2.650
+                        - generic [ref=e577]: precio actual $2.650
+                        - generic [ref=e578]: $13.250 x kg
+                      - generic [ref=e579]: Surlat
+                      - generic [ref=e580]: Mantequilla Con Sal Tradicional, 200 g
+                - group [ref=e583]:
+                  - link "Mantequilla Con Sal Tradicional, 125 g" [ref=e584] [cursor=pointer]:
+                    - /url: /ip/mantequillas-y-margarinas/00780291015050?from=/search
+                    - generic [ref=e585]: Mantequilla Con Sal Tradicional, 125 g
+                  - generic [ref=e587]:
+                    - generic [ref=e590]:
+                      - generic [ref=e591]:
+                        - img "Mantequilla Con Sal Tradicional, 125 g"
+                      - button "Agregar al carro - Mantequilla Con Sal Tradicional, 125 g" [ref=e594] [cursor=pointer]:
+                        - generic "agregar" [ref=e595]: 
+                        - generic [ref=e596]: Agregar
+                    - generic [ref=e598]:
+                      - generic [ref=e600]:
+                        - generic [ref=e601]: $1.850
+                        - generic [ref=e602]: precio actual $1.850
+                        - generic [ref=e603]: $14.800 x kg
+                      - generic [ref=e604]: Calo
+                      - generic [ref=e605]: Mantequilla Con Sal Tradicional, 125 g
+                - group [ref=e608]:
+                  - link "Mantequilla Con sal, 100 g" [ref=e609] [cursor=pointer]:
+                    - /url: /ip/mantequillas-y-margarinas/00780293000561?from=/search
+                    - generic [ref=e610]: Mantequilla Con sal, 100 g
+                  - generic [ref=e612]:
+                    - generic [ref=e615]:
+                      - generic [ref=e616]:
+                        - img "Mantequilla Con sal, 100 g"
+                      - button "Agregar al carro - Mantequilla Con sal, 100 g" [ref=e619] [cursor=pointer]:
+                        - generic "agregar" [ref=e620]: 
+                        - generic [ref=e621]: Agregar
+                    - generic [ref=e623]:
+                      - generic [ref=e625]:
+                        - generic [ref=e626]: $2.090
+                        - generic [ref=e627]: precio actual $2.090
+                        - generic [ref=e628]: $20.900 x kg
+                      - generic [ref=e629]: Quillayes
+                      - generic [ref=e630]: Mantequilla Con sal, 100 g
+                - group [ref=e633]:
+                  - link "Mantequilla Con Sal Pote Tradicional, 200 g" [ref=e634] [cursor=pointer]:
+                    - /url: /ip/mantequillas-y-margarinas/00789109700133?from=/search
+                    - generic [ref=e635]: Mantequilla Con Sal Pote Tradicional, 200 g
+                  - generic [ref=e637]:
+                    - generic [ref=e640]:
+                      - generic [ref=e641]:
+                        - img "Mantequilla Con Sal Pote Tradicional, 200 g"
+                      - button "Agregar al carro - Mantequilla Con Sal Pote Tradicional, 200 g" [ref=e644] [cursor=pointer]:
+                        - generic "agregar" [ref=e645]: 
+                        - generic [ref=e646]: Agregar
+                    - generic [ref=e648]:
+                      - generic [ref=e650]:
+                        - generic [ref=e651]: $3.690
+                        - generic [ref=e652]: precio actual $3.690
+                        - generic [ref=e653]: $18.450 x kg
+                      - generic [ref=e654]: Président
+                      - generic [ref=e655]: Mantequilla Con Sal Pote Tradicional, 200 g
+                - group [ref=e658]:
+                  - link "Mantequilla Sin sal, 250 g" [ref=e659] [cursor=pointer]:
+                    - /url: /ip/mantequillas-y-margarinas/00780290011101?from=/search
+                    - generic [ref=e660]: Mantequilla Sin sal, 250 g
+                  - generic [ref=e662]:
+                    - generic [ref=e663]:
+                      - generic [ref=e665]:
+                        - generic [ref=e667]: 
+                        - text: Rebaja
+                      - generic [ref=e668]:
+                        - generic [ref=e669]:
+                          - img "Mantequilla Sin sal, 250 g"
+                        - button "Agregar al carro - Mantequilla Sin sal, 250 g" [ref=e672] [cursor=pointer]:
+                          - generic "agregar" [ref=e673]: 
+                          - generic [ref=e674]: Agregar
+                    - generic [ref=e676]:
+                      - generic [ref=e678]:
+                        - generic [ref=e679]: $2.690
+                        - generic [ref=e680]: precio actual $2.690, Costaba $3.190
+                        - generic [ref=e681]: $10.760 x un
+                        - generic [ref=e682]: $3.190
+                        - generic [ref=e683]: Ahorra $500
+                      - generic [ref=e684]: Soprole
+                      - generic [ref=e685]: Mantequilla Sin sal, 250 g
+                - group [ref=e688]:
+                  - link "Mantequilla Sin lactosa con Sal de Mar, 200 g" [ref=e689] [cursor=pointer]:
+                    - /url: /ip/mantequillas-y-margarinas/00780293000418?from=/search
+                    - generic [ref=e690]: Mantequilla Sin lactosa con Sal de Mar, 200 g
+                  - generic [ref=e692]:
+                    - generic [ref=e695]:
+                      - generic [ref=e696]:
+                        - img "Mantequilla Sin lactosa con Sal de Mar, 200 g"
+                      - button "Agregar al carro - Mantequilla Sin lactosa con Sal de Mar, 200 g" [ref=e699] [cursor=pointer]:
+                        - generic "agregar" [ref=e700]: 
+                        - generic [ref=e701]: Agregar
+                    - generic [ref=e703]:
+                      - generic [ref=e705]:
+                        - generic [ref=e706]: $3.990
+                        - generic [ref=e707]: precio actual $3.990
+                        - generic [ref=e708]: $19.950 x kg
+                      - generic [ref=e709]: Quillayes
+                      - generic [ref=e710]: Mantequilla Sin lactosa con Sal de Mar, 200 g
+                - generic [ref=e712]:
+                  - group [ref=e713]:
+                    - link "Mantequilla Untable Con Sal Tradicional, 200 g" [ref=e714] [cursor=pointer]:
+                      - /url: /ip/mantequillas-y-margarinas/00780464826091?from=/search
+                      - generic [ref=e715]: Mantequilla Untable Con Sal Tradicional, 200 g
+                    - generic [ref=e717]:
+                      - generic [ref=e721]:
+                        - img "Mantequilla Untable Con Sal Tradicional, 200 g"
+                      - generic [ref=e723]:
+                        - generic [ref=e725]:
+                          - generic [ref=e726]: $2.790
+                          - generic [ref=e727]: precio actual $2.790
+                          - generic [ref=e728]: $13.950 x kg
+                        - generic [ref=e729]: Lacteos Futaleufú
+                        - generic [ref=e730]: Mantequilla Untable Con Sal Tradicional, 200 g
+                        - generic [ref=e731]: Agotado
+                  - button "Revisar productos similares - Mantequilla Untable Con Sal Tradicional, 200 g" [ref=e733]: Revisar productos similares
+                - group [ref=e736]:
+                  - link "Mantequilla Sin sal, 250 g" [ref=e737] [cursor=pointer]:
+                    - /url: /ip/mantequillas-y-margarinas/00780292020340?from=/search
+                    - generic [ref=e738]: Mantequilla Sin sal, 250 g
+                  - generic [ref=e740]:
+                    - generic [ref=e743]:
+                      - generic [ref=e744]:
+                        - img "Mantequilla Sin sal, 250 g"
+                      - button "Agregar al carro - Mantequilla Sin sal, 250 g" [ref=e747] [cursor=pointer]:
+                        - generic "agregar" [ref=e748]: 
+                        - generic [ref=e749]: Agregar
+                    - generic [ref=e751]:
+                      - generic [ref=e753]:
+                        - generic [ref=e754]: $3.890
+                        - generic [ref=e755]: precio actual $3.890
+                        - generic [ref=e756]: $15.560 x kg
+                      - generic [ref=e757]: Colun
+                      - generic [ref=e758]: Mantequilla Sin sal, 250 g
+  - alert [ref=e767]: Supermercado

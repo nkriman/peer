@@ -1,0 +1,957 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 1 producto Monto total $2.990" [ref=e224]:
+              - generic [ref=e42]: 
+              - generic [ref=e225]: "1"
+              - generic [ref=e43]: $2.990
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e226]:
+          - generic [ref=e227]:
+            - button "Despacho a Domicilio MARTIN DE ZAMORA 5595" [ref=e228] [cursor=pointer]:
+              - generic [ref=e230]:
+                - img [ref=e231]
+                - generic [ref=e232]: Despacho a Domicilio
+                - generic [ref=e233]: 
+                - generic [ref=e234]: "|"
+                - generic [ref=e236]:
+                  - img [ref=e237]
+                  - generic [ref=e238]: MARTIN DE ZAMORA 5595
+              - text: 
+            - generic:   
+            - navigation "Secundario" [ref=e241]:
+              - list [ref=e242]:
+                - listitem [ref=e243]:
+                  - link "Tarjeta Lider Bci" [ref=e245] [cursor=pointer]:
+                    - /url: https://tarjetadigital.liderbciserviciosfinancieros.cl/ingreso-de-datos?utm_source=Lidercl_sod_header&utm_medium=lidercl
+                - listitem [ref=e246]:
+                  - link "Mi Club" [ref=e248] [cursor=pointer]:
+                    - /url: https://www.miclublider.cl/
+                - listitem [ref=e249]:
+                  - link "Centro de ayuda" [ref=e251] [cursor=pointer]:
+                    - /url: /ayuda
+          - img [ref=e254]
+      - main [ref=e255]:
+        - heading "Tus productos" [level=1] [ref=e260]
+        - generic [ref=e262]:
+          - generic [ref=e264]:
+            - text: 
+            - list [ref=e265]:
+              - listitem [ref=e266]:
+                - button "Solo se puede elegir un filtro a la vez, Todos, filtrar" [pressed] [ref=e267] [cursor=pointer]: Todos
+              - listitem [ref=e268]:
+                - button "Soy Pyme, filtrar" [ref=e269] [cursor=pointer]: Soy Pyme
+              - listitem [ref=e270]:
+                - button "Librería y Cumpleaños, filtrar" [ref=e271] [cursor=pointer]: Librería y Cumpleaños
+              - listitem [ref=e272]:
+                - button "Marcas Americanas, filtrar" [ref=e273] [cursor=pointer]: Marcas Americanas
+              - listitem [ref=e274]:
+                - button "Desayunos y Dulces, filtrar" [ref=e275] [cursor=pointer]: Desayunos y Dulces
+              - listitem [ref=e276]:
+                - button "Panadería y Pastelería, filtrar" [ref=e277] [cursor=pointer]: Panadería y Pastelería
+              - listitem [ref=e278]:
+                - button "Mundo Bebé y Juguetería, filtrar" [ref=e279] [cursor=pointer]: Mundo Bebé y Juguetería
+              - listitem [ref=e280]:
+                - button "Carnes y Pescados, filtrar" [ref=e281] [cursor=pointer]: Carnes y Pescados
+              - listitem [ref=e282]:
+                - button "Chocolates, filtrar" [ref=e283] [cursor=pointer]: Chocolates
+              - listitem [ref=e284]:
+                - button "Despensa, filtrar" [ref=e285] [cursor=pointer]: Despensa
+              - listitem [ref=e286]:
+                - button "La Boti, filtrar" [ref=e287] [cursor=pointer]: La Boti
+              - listitem [ref=e288]:
+                - button "Limpieza y Aseo, filtrar" [ref=e289] [cursor=pointer]: Limpieza y Aseo
+              - listitem [ref=e290]:
+                - button "Marcas Propias, filtrar" [ref=e291] [cursor=pointer]: Marcas Propias
+              - listitem [ref=e292]:
+                - button "Bebidas y Snacks, filtrar" [ref=e293] [cursor=pointer]: Bebidas y Snacks
+              - listitem [ref=e294]:
+                - button "Colaciones, filtrar" [ref=e295] [cursor=pointer]: Colaciones
+              - listitem [ref=e296]:
+                - button "Frutas y Verduras, filtrar" [ref=e297] [cursor=pointer]: Frutas y Verduras
+              - listitem [ref=e298]:
+                - button "Frescos y Lácteos, filtrar" [ref=e299] [cursor=pointer]: Frescos y Lácteos
+              - listitem [ref=e300]:
+                - button "Salud y Estilos De Vida, filtrar" [ref=e301] [cursor=pointer]: Salud y Estilos De Vida
+              - listitem [ref=e302]:
+                - button "Congelados, filtrar" [ref=e303] [cursor=pointer]: Congelados
+            - button "Siguiente diapositiva para la lista Department Filter" [ref=e304]:
+              - generic [ref=e305]: 
+          - generic [ref=e310]:
+            - generic [ref=e311]:
+              - generic [ref=e312]: 150 productos
+              - button " Eliminar productos" [ref=e314]:
+                - generic [ref=e315]: 
+                - text: Eliminar productos
+            - group [ref=e317]:
+              - generic [ref=e318]:
+                - group [ref=e322]:
+                  - link "Carne de Vacuno Escalopa Posta, 400 g $6.990 $17.475 x kg" [ref=e323] [cursor=pointer]:
+                    - /url: /ip/hamburguesas-y-churrascos/00400050658181
+                    - generic [ref=e324]: Carne de Vacuno Escalopa Posta, 400 g $6.990 $17.475 x kg
+                  - generic [ref=e326]:
+                    - generic [ref=e327]: Combina 2 x $12.500
+                    - button "Combina 2 x $12.500. Ver combinaciones aceptadas y coincidir productos." [ref=e328] [cursor=pointer]: Combinar
+                  - button "Agregar al carro - Carne de Vacuno Escalopa Posta, 400 g" [ref=e333] [cursor=pointer]:
+                    - generic "agregar" [ref=e334]: 
+                    - generic [ref=e335]: Agregar
+                  - generic [ref=e336]:
+                    - generic [ref=e339]:
+                      - generic [ref=e340]: $6.990
+                      - generic [ref=e341]: precio actual $6.990
+                      - generic [ref=e342]: $17.475 x kg
+                    - generic [ref=e343]: Carne de Vacuno Escalopa Posta, 400 g
+                    - generic [ref=e345]: Comprado 3 veces
+                - group [ref=e349]:
+                  - link "Yoghurt Proteína Sabor Frutilla Pote, 140 g $610 $4.357 x kg" [ref=e350] [cursor=pointer]:
+                    - /url: /ip/yoghurt/00844529128563
+                    - generic [ref=e351]: Yoghurt Proteína Sabor Frutilla Pote, 140 g $610 $4.357 x kg
+                  - button "Agregar al carro - Yoghurt Proteína Sabor Frutilla Pote, 140 g" [ref=e357] [cursor=pointer]:
+                    - generic "agregar" [ref=e358]: 
+                    - generic [ref=e359]: Agregar
+                  - generic [ref=e360]:
+                    - generic [ref=e363]:
+                      - generic [ref=e364]: $610
+                      - generic [ref=e365]: precio actual $610
+                      - generic [ref=e366]: $4.357 x kg
+                    - generic [ref=e367]: Yoghurt Proteína Sabor Frutilla Pote, 140 g
+                    - generic [ref=e369]: Comprado 5+ veces
+                - group [ref=e373]:
+                  - link "Leche Proteína Chocolate con cacao, 1 L $2.750 $2.750 x lt" [ref=e374] [cursor=pointer]:
+                    - /url: /ip/leche/00780290000142
+                    - generic [ref=e375]: Leche Proteína Chocolate con cacao, 1 L $2.750 $2.750 x lt
+                  - button "Agregar al carro - Leche Proteína Chocolate con cacao, 1 L" [ref=e381] [cursor=pointer]:
+                    - generic "agregar" [ref=e382]: 
+                    - generic [ref=e383]: Agregar
+                  - generic [ref=e384]:
+                    - generic [ref=e387]:
+                      - generic [ref=e388]: $2.750
+                      - generic [ref=e389]: precio actual $2.750
+                      - generic [ref=e390]: $2.750 x lt
+                    - generic [ref=e391]: Leche Proteína Chocolate con cacao, 1 L
+                    - generic [ref=e393]: Comprado 5+ veces
+                - group [ref=e397]:
+                  - link "Queso Gauda Laminado, 500 g $5.290 Costaba $6.590 $10.580 x kg" [ref=e398] [cursor=pointer]:
+                    - /url: /ip/quesos/00780290000247
+                    - generic [ref=e399]: Queso Gauda Laminado, 500 g $5.290 Costaba $6.590 $10.580 x kg
+                  - button "Agregar al carro - Queso Gauda Laminado, 500 g" [ref=e405] [cursor=pointer]:
+                    - generic "agregar" [ref=e406]: 
+                    - generic [ref=e407]: Agregar
+                  - generic [ref=e408]:
+                    - generic [ref=e411]:
+                      - generic [ref=e412]: $5.290
+                      - generic [ref=e413]: precio actual $5.290, Costaba $6.590
+                      - generic [ref=e414]: $10.580 x kg
+                      - generic [ref=e415]: $6.590
+                    - generic [ref=e416]: Queso Gauda Laminado, 500 g
+                    - generic [ref=e418]: Comprado 3 veces
+                - group [ref=e422]:
+                  - link "Tomate Larga Vida Granel $1.990/kg $1.990 x kg" [ref=e423] [cursor=pointer]:
+                    - /url: /ip/verduras/00200001000000
+                    - generic [ref=e424]: Tomate Larga Vida Granel $1.990/kg $1.990 x kg
+                  - button "Agregar al carro - Tomate Larga Vida Granel" [ref=e430] [cursor=pointer]:
+                    - generic "agregar" [ref=e431]: 
+                    - generic [ref=e432]: Agregar
+                  - generic [ref=e433]:
+                    - generic [ref=e436]:
+                      - generic [ref=e437]: $1.990/kg
+                      - generic [ref=e438]: precio actual $1.990/kg
+                      - generic [ref=e439]: $1.990 x kg
+                    - generic [ref=e440]: Tomate Larga Vida Granel
+                    - generic [ref=e442]: Comprado 4 veces
+                - group [ref=e446]:
+                  - link "Toallitas Húmedas WaterWipes 99,9% Agua, 60 un $3.050 Costaba $3.590 $5.083 x un" [ref=e447] [cursor=pointer]:
+                    - /url: /ip/panales-y-toallas-humedas/00509951400143
+                    - generic [ref=e448]: Toallitas Húmedas WaterWipes 99,9% Agua, 60 un $3.050 Costaba $3.590 $5.083 x un
+                  - button "Agregar al carro - Toallitas Húmedas WaterWipes 99,9% Agua, 60 un" [ref=e454] [cursor=pointer]:
+                    - generic "agregar" [ref=e455]: 
+                    - generic [ref=e456]: Agregar
+                  - generic [ref=e457]:
+                    - generic [ref=e460]:
+                      - generic [ref=e461]: $3.050
+                      - generic [ref=e462]: precio actual $3.050, Costaba $3.590
+                      - generic [ref=e463]: $5.083 x un
+                      - generic [ref=e464]: $3.590
+                    - generic [ref=e465]: Toallitas Húmedas WaterWipes 99,9% Agua, 60 un
+                    - generic [ref=e467]: Comprado 4 veces
+                - group [ref=e471]:
+                  - link "Postre Leche Asada Pote, 120 g $640 $5.333 x kg" [ref=e472] [cursor=pointer]:
+                    - /url: /ip/postres-refrigerados/00780290020201
+                    - generic [ref=e473]: Postre Leche Asada Pote, 120 g $640 $5.333 x kg
+                  - button "Agregar al carro - Postre Leche Asada Pote, 120 g" [ref=e479] [cursor=pointer]:
+                    - generic "agregar" [ref=e480]: 
+                    - generic [ref=e481]: Agregar
+                  - generic [ref=e482]:
+                    - generic [ref=e485]:
+                      - generic [ref=e486]: $640
+                      - generic [ref=e487]: precio actual $640
+                      - generic [ref=e488]: $5.333 x kg
+                    - generic [ref=e489]: Postre Leche Asada Pote, 120 g
+                    - generic [ref=e491]: Comprado 1 vez
+                - group [ref=e495]:
+                  - link "Manzana Royal Bolsa, 1 kg $1.990 $1.990 x kg" [ref=e496] [cursor=pointer]:
+                    - /url: /ip/frutas/00346448981000
+                    - generic [ref=e497]: Manzana Royal Bolsa, 1 kg $1.990 $1.990 x kg
+                  - generic [ref=e499]:
+                    - generic [ref=e500]: Combina 2 x $3.000
+                    - button "Combina 2 x $3.000. Ver combinaciones aceptadas y coincidir productos." [ref=e501] [cursor=pointer]: Combinar
+                  - button "Agregar al carro - Manzana Royal Bolsa, 1 kg" [ref=e506] [cursor=pointer]:
+                    - generic "agregar" [ref=e507]: 
+                    - generic [ref=e508]: Agregar
+                  - generic [ref=e509]:
+                    - generic [ref=e512]:
+                      - generic [ref=e513]: $1.990
+                      - generic [ref=e514]: precio actual $1.990
+                      - generic [ref=e515]: $1.990 x kg
+                    - generic [ref=e516]: Manzana Royal Bolsa, 1 kg
+                    - generic [ref=e518]: Comprado 1 vez
+                - group [ref=e522]:
+                  - link "Limón Granel $1.950/kg $1.950 x kg" [ref=e523] [cursor=pointer]:
+                    - /url: /ip/frutas/00202105000000
+                    - generic [ref=e524]: Limón Granel $1.950/kg $1.950 x kg
+                  - button "Agregar al carro - Limón Granel" [ref=e530] [cursor=pointer]:
+                    - generic "agregar" [ref=e531]: 
+                    - generic [ref=e532]: Agregar
+                  - generic [ref=e533]:
+                    - generic [ref=e536]:
+                      - generic [ref=e537]: $1.950/kg
+                      - generic [ref=e538]: precio actual $1.950/kg
+                      - generic [ref=e539]: $1.950 x kg
+                    - generic [ref=e540]: Limón Granel
+                    - generic [ref=e542]: Comprado 1 vez
+                - group [ref=e546]:
+                  - link "Agua Purificada Con Gas Botella, 2 L" [ref=e547] [cursor=pointer]:
+                    - /url: /ip/aguas/00780282044180
+                    - generic [ref=e548]: Agua Purificada Con Gas Botella, 2 L
+                  - generic [ref=e551]:
+                    - generic [ref=e553]: Agua Purificada Con Gas Botella, 2 L
+                    - generic [ref=e554]: Agotado
+                - group [ref=e558]:
+                  - link "Bicarbonato, 250 g $2.490 $9.960 x kg" [ref=e559] [cursor=pointer]:
+                    - /url: /ip/aceites-y-aderezos/00780241000404
+                    - generic [ref=e560]: Bicarbonato, 250 g $2.490 $9.960 x kg
+                  - button "Agregar al carro - Bicarbonato, 250 g" [ref=e566] [cursor=pointer]:
+                    - generic "agregar" [ref=e567]: 
+                    - generic [ref=e568]: Agregar
+                  - generic [ref=e569]:
+                    - generic [ref=e572]:
+                      - generic [ref=e573]: $2.490
+                      - generic [ref=e574]: precio actual $2.490
+                      - generic [ref=e575]: $9.960 x kg
+                    - generic [ref=e576]: Bicarbonato, 250 g
+                    - generic [ref=e578]: Comprado 2 veces
+                - group [ref=e582]:
+                  - link "Prietas Al Vacío 2 Un, 250 g $2.590 $10.360 x kg" [ref=e583] [cursor=pointer]:
+                    - /url: /ip/todas-las-carnes/00780197002625
+                    - generic [ref=e584]: Prietas Al Vacío 2 Un, 250 g $2.590 $10.360 x kg
+                  - button "Agregar al carro - Prietas Al Vacío 2 Un, 250 g" [ref=e590] [cursor=pointer]:
+                    - generic "agregar" [ref=e591]: 
+                    - generic [ref=e592]: Agregar
+                  - generic [ref=e593]:
+                    - generic [ref=e596]:
+                      - generic [ref=e597]: $2.590
+                      - generic [ref=e598]: precio actual $2.590
+                      - generic [ref=e599]: $10.360 x kg
+                    - generic [ref=e600]: Prietas Al Vacío 2 Un, 250 g
+                    - generic [ref=e602]: Comprado 2 veces
+                - group [ref=e606]:
+                  - link "Pan Marraqueta Granel $2.090/kg $2.090 x kg" [ref=e607] [cursor=pointer]:
+                    - /url: /ip/panaderia-granel/00228610000000
+                    - generic [ref=e608]: Pan Marraqueta Granel $2.090/kg $2.090 x kg
+                  - button "Agregar al carro - Pan Marraqueta Granel" [ref=e614] [cursor=pointer]:
+                    - generic "agregar" [ref=e615]: 
+                    - generic [ref=e616]: Agregar
+                  - generic [ref=e617]:
+                    - generic [ref=e620]:
+                      - generic [ref=e621]: $2.090/kg
+                      - generic [ref=e622]: precio actual $2.090/kg
+                      - generic [ref=e623]: $2.090 x kg
+                    - generic [ref=e624]: Pan Marraqueta Granel
+                    - generic [ref=e626]: Comprado 2 veces
+                - group [ref=e630]:
+                  - link "Kefir Natural, 1 L $2.690 $2.612 x lt" [ref=e631] [cursor=pointer]:
+                    - /url: /ip/yoghurt/00780290000335
+                    - generic [ref=e632]: Kefir Natural, 1 L $2.690 $2.612 x lt
+                  - button "Agregar al carro - Kefir Natural, 1 L" [ref=e638] [cursor=pointer]:
+                    - generic "agregar" [ref=e639]: 
+                    - generic [ref=e640]: Agregar
+                  - generic [ref=e641]:
+                    - generic [ref=e644]:
+                      - generic [ref=e645]: $2.690
+                      - generic [ref=e646]: precio actual $2.690
+                      - generic [ref=e647]: $2.612 x lt
+                    - generic [ref=e648]: Kefir Natural, 1 L
+                    - generic [ref=e650]: Comprado 5+ veces
+                - group [ref=e654]:
+                  - link "Huevos Tradicionales Extra Grande Blanco, 20 Un $6.490 $325 x un" [ref=e655] [cursor=pointer]:
+                    - /url: /ip/huevos/00780414400048
+                    - generic [ref=e656]: Huevos Tradicionales Extra Grande Blanco, 20 Un $6.490 $325 x un
+                  - button "Agregar al carro - Huevos Tradicionales Extra Grande Blanco, 20 Un" [ref=e662] [cursor=pointer]:
+                    - generic "agregar" [ref=e663]: 
+                    - generic [ref=e664]: Agregar
+                  - generic [ref=e665]:
+                    - generic [ref=e668]:
+                      - generic [ref=e669]: $6.490
+                      - generic [ref=e670]: precio actual $6.490
+                      - generic [ref=e671]: $325 x un
+                    - generic [ref=e672]: Huevos Tradicionales Extra Grande Blanco, 20 Un
+                    - generic [ref=e674]: Comprado 5+ veces
+                - group [ref=e678]:
+                  - link "Agua Bidón purificada sin gas sin Gas, 6.5 L $2.150 $331 x lt" [ref=e679] [cursor=pointer]:
+                    - /url: /ip/aguas/00780282065001
+                    - generic [ref=e680]: Agua Bidón purificada sin gas sin Gas, 6.5 L $2.150 $331 x lt
+                  - button "Agregar al carro - Agua Bidón purificada sin gas sin Gas, 6.5 L" [ref=e686] [cursor=pointer]:
+                    - generic "agregar" [ref=e687]: 
+                    - generic [ref=e688]: Agregar
+                  - generic [ref=e689]:
+                    - generic [ref=e692]:
+                      - generic [ref=e693]: $2.150
+                      - generic [ref=e694]: precio actual $2.150
+                      - generic [ref=e695]: $331 x lt
+                    - generic [ref=e696]: Agua Bidón purificada sin gas sin Gas, 6.5 L
+                    - generic [ref=e698]: Comprado 5+ veces
+                - group [ref=e702]:
+                  - link "Pack de Braunichoc 4 un., 140 gr" [ref=e703] [cursor=pointer]:
+                    - /url: /ip/pasteleria/00780352500108
+                    - generic [ref=e704]: Pack de Braunichoc 4 un., 140 gr
+                  - generic [ref=e707]:
+                    - generic [ref=e709]: Pack de Braunichoc 4 un., 140 gr
+                    - generic [ref=e710]: Agotado
+                - group [ref=e714]:
+                  - link "Leche Entera Natural Caja 1 l, 1 L $1.350 $1.350 x lt" [ref=e715] [cursor=pointer]:
+                    - /url: /ip/leche/00780292077754
+                    - generic [ref=e716]: Leche Entera Natural Caja 1 l, 1 L $1.350 $1.350 x lt
+                  - button "Agregar al carro - Leche Entera Natural Caja 1 l, 1 L" [ref=e722] [cursor=pointer]:
+                    - generic "agregar" [ref=e723]: 
+                    - generic [ref=e724]: Agregar
+                  - generic [ref=e725]:
+                    - generic [ref=e728]:
+                      - generic [ref=e729]: $1.350
+                      - generic [ref=e730]: precio actual $1.350
+                      - generic [ref=e731]: $1.350 x lt
+                    - generic [ref=e732]: Leche Entera Natural Caja 1 l, 1 L
+                    - generic [ref=e734]: Comprado 5+ veces
+                - group [ref=e738]:
+                  - link "Agua Mineral Con Gas Botella, 1,6 L $1.090 $681 x lt" [ref=e739] [cursor=pointer]:
+                    - /url: /ip/aguas/00780162085295
+                    - generic [ref=e740]: Agua Mineral Con Gas Botella, 1,6 L $1.090 $681 x lt
+                  - generic [ref=e742]:
+                    - generic [ref=e743]: Combina 3 x $2.290
+                    - button "Combina 3 x $2.290. Ver combinaciones aceptadas y coincidir productos." [ref=e744] [cursor=pointer]: Combinar
+                  - button "Agregar al carro - Agua Mineral Con Gas Botella, 1,6 L" [ref=e749] [cursor=pointer]:
+                    - generic "agregar" [ref=e750]: 
+                    - generic [ref=e751]: Agregar
+                  - generic [ref=e752]:
+                    - generic [ref=e755]:
+                      - generic [ref=e756]: $1.090
+                      - generic [ref=e757]: precio actual $1.090
+                      - generic [ref=e758]: $681 x lt
+                    - generic [ref=e759]: Agua Mineral Con Gas Botella, 1,6 L
+                    - generic [ref=e761]: Comprado 5+ veces
+                - group [ref=e765]:
+                  - link "Atún Lomitos Agua Lata, Drenado 104 g - Neto 160 g $1.350 $12.981 x kg" [ref=e766] [cursor=pointer]:
+                    - /url: /ip/conservas/00885846300345
+                    - generic [ref=e767]: Atún Lomitos Agua Lata, Drenado 104 g - Neto 160 g $1.350 $12.981 x kg
+                  - button "Agregar al carro - Atún Lomitos Agua Lata, Drenado 104 g - Neto 160 g" [ref=e773] [cursor=pointer]:
+                    - generic "agregar" [ref=e774]: 
+                    - generic [ref=e775]: Agregar
+                  - generic [ref=e776]:
+                    - generic [ref=e779]:
+                      - generic [ref=e780]: $1.350
+                      - generic [ref=e781]: precio actual $1.350
+                      - generic [ref=e782]: $12.981 x kg
+                    - generic [ref=e783]: Atún Lomitos Agua Lata, Drenado 104 g - Neto 160 g
+                    - generic [ref=e785]: Comprado 5+ veces
+                - group [ref=e789]:
+                  - link "Jamón Artesanal Granel $11.800/kg Costaba $13.800/kg $11.800 x kg" [ref=e790] [cursor=pointer]:
+                    - /url: /ip/fiambres-y-embutidos/00207074000000
+                    - generic [ref=e791]: Jamón Artesanal Granel $11.800/kg Costaba $13.800/kg $11.800 x kg
+                  - button "Agregar al carro - Jamón Artesanal Granel" [ref=e797] [cursor=pointer]:
+                    - generic "agregar" [ref=e798]: 
+                    - generic [ref=e799]: Agregar
+                  - generic [ref=e800]:
+                    - generic [ref=e803]:
+                      - generic [ref=e804]: $11.800/kg
+                      - generic [ref=e805]: precio actual $11.800/kg, Costaba $13.800/kg
+                      - generic [ref=e806]: $11.800 x kg
+                      - generic [ref=e807]: $13.800/kg
+                    - generic [ref=e808]: Jamón Artesanal Granel
+                    - generic [ref=e810]: Comprado 5+ veces
+                - group [ref=e814]:
+                  - link "Bolsa de Basura Mediana 70x90 cm, 10 Un $1.190 $119 x un" [ref=e815] [cursor=pointer]:
+                    - /url: /ip/mas-sustentables/00780681080044
+                    - generic [ref=e816]: Bolsa de Basura Mediana 70x90 cm, 10 Un $1.190 $119 x un
+                  - button "Agregar al carro - Bolsa de Basura Mediana 70x90 cm, 10 Un" [ref=e822] [cursor=pointer]:
+                    - generic "agregar" [ref=e823]: 
+                    - generic [ref=e824]: Agregar
+                  - generic [ref=e825]:
+                    - generic [ref=e828]:
+                      - generic [ref=e829]: $1.190
+                      - generic [ref=e830]: precio actual $1.190
+                      - generic [ref=e831]: $119 x un
+                    - generic [ref=e832]: Bolsa de Basura Mediana 70x90 cm, 10 Un
+                    - generic [ref=e834]: Comprado 5+ veces
+                - group [ref=e838]:
+                  - link "Queso Rallado Sobre, 40 g $1.090 $27.250 x kg" [ref=e839] [cursor=pointer]:
+                    - /url: /ip/quesos/00780292042360
+                    - generic [ref=e840]: Queso Rallado Sobre, 40 g $1.090 $27.250 x kg
+                  - button "Agregar al carro - Queso Rallado Sobre, 40 g" [ref=e846] [cursor=pointer]:
+                    - generic "agregar" [ref=e847]: 
+                    - generic [ref=e848]: Agregar
+                  - generic [ref=e849]:
+                    - generic [ref=e852]:
+                      - generic [ref=e853]: $1.090
+                      - generic [ref=e854]: precio actual $1.090
+                      - generic [ref=e855]: $27.250 x kg
+                    - generic [ref=e856]: Queso Rallado Sobre, 40 g
+                    - generic [ref=e858]: Comprado 5+ veces
+                - group [ref=e862]:
+                  - link "Mango Granel $2.890/kg $2.890 x kg" [ref=e863] [cursor=pointer]:
+                    - /url: /ip/frutas/00200835000000
+                    - generic [ref=e864]: Mango Granel $2.890/kg $2.890 x kg
+                  - button "Agregar al carro - Mango Granel" [ref=e870] [cursor=pointer]:
+                    - generic "agregar" [ref=e871]: 
+                    - generic [ref=e872]: Agregar
+                  - generic [ref=e873]:
+                    - generic [ref=e876]:
+                      - generic [ref=e877]: $2.890/kg
+                      - generic [ref=e878]: precio actual $2.890/kg
+                      - generic [ref=e879]: $2.890 x kg
+                    - generic [ref=e880]: Mango Granel
+                    - generic [ref=e882]: Comprado 5+ veces
+                - group [ref=e886]:
+                  - link "Néctar Manzana Botella, 1,5 L $1.650 $1.100 x lt" [ref=e887] [cursor=pointer]:
+                    - /url: /ip/jugos/00780282070043
+                    - generic [ref=e888]: Néctar Manzana Botella, 1,5 L $1.650 $1.100 x lt
+                  - generic [ref=e891]:
+                    - generic [ref=e894]:
+                      - generic [ref=e895]: $1.650
+                      - generic [ref=e896]: precio actual $1.650
+                      - generic [ref=e897]: $1.100 x lt
+                    - generic [ref=e898]: Néctar Manzana Botella, 1,5 L
+                    - generic [ref=e899]: Agotado
+                - group [ref=e903]:
+                  - link "Arroz Grado 1 Grano Largo Bolsa, 1 kg $2.350 $2.350 x kg" [ref=e904] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780142025014
+                    - generic [ref=e905]: Arroz Grado 1 Grano Largo Bolsa, 1 kg $2.350 $2.350 x kg
+                  - button "Agregar al carro - Arroz Grado 1 Grano Largo Bolsa, 1 kg" [ref=e911] [cursor=pointer]:
+                    - generic "agregar" [ref=e912]: 
+                    - generic [ref=e913]: Agregar
+                  - generic [ref=e914]:
+                    - generic [ref=e917]:
+                      - generic [ref=e918]: $2.350
+                      - generic [ref=e919]: precio actual $2.350
+                      - generic [ref=e920]: $2.350 x kg
+                    - generic [ref=e921]: Arroz Grado 1 Grano Largo Bolsa, 1 kg
+                    - generic [ref=e923]: Comprado 5 veces
+                - group [ref=e927]:
+                  - link "Postre Manjarate Chocolate Receta Original Pote, 80 g $750 $9.375 x kg" [ref=e928] [cursor=pointer]:
+                    - /url: /ip/postres-refrigerados/00780290040101
+                    - generic [ref=e929]: Postre Manjarate Chocolate Receta Original Pote, 80 g $750 $9.375 x kg
+                  - button "Agregar al carro - Postre Manjarate Chocolate Receta Original Pote, 80 g" [ref=e935] [cursor=pointer]:
+                    - generic "agregar" [ref=e936]: 
+                    - generic [ref=e937]: Agregar
+                  - generic [ref=e938]:
+                    - generic [ref=e941]:
+                      - generic [ref=e942]: $750
+                      - generic [ref=e943]: precio actual $750
+                      - generic [ref=e944]: $9.375 x kg
+                    - generic [ref=e945]: Postre Manjarate Chocolate Receta Original Pote, 80 g
+                    - generic [ref=e947]: Comprado 5 veces
+                - group [ref=e951]:
+                  - link "Snack Mini Salamín, 60 g" [ref=e952] [cursor=pointer]:
+                    - /url: /ip/fiambres-y-embutidos/00780193002121
+                    - generic [ref=e953]: Snack Mini Salamín, 60 g
+                  - generic [ref=e956]:
+                    - generic [ref=e958]: Snack Mini Salamín, 60 g
+                    - generic [ref=e959]: Agotado
+                - group [ref=e963]:
+                  - link "Postre Sémola con Leche Sabor Frambuesa Pote, 140 g $710 $5.071 x kg" [ref=e964] [cursor=pointer]:
+                    - /url: /ip/postres-refrigerados/00780290022008
+                    - generic [ref=e965]: Postre Sémola con Leche Sabor Frambuesa Pote, 140 g $710 $5.071 x kg
+                  - button "Agregar al carro - Postre Sémola con Leche Sabor Frambuesa Pote, 140 g" [ref=e971] [cursor=pointer]:
+                    - generic "agregar" [ref=e972]: 
+                    - generic [ref=e973]: Agregar
+                  - generic [ref=e974]:
+                    - generic [ref=e977]:
+                      - generic [ref=e978]: $710
+                      - generic [ref=e979]: precio actual $710
+                      - generic [ref=e980]: $5.071 x kg
+                    - generic [ref=e981]: Postre Sémola con Leche Sabor Frambuesa Pote, 140 g
+                    - generic [ref=e983]: Comprado 4 veces
+                - group [ref=e987]:
+                  - link "Jalea Sabor Frambuesa Pote, 110 g $340 $3.400 x kg" [ref=e988] [cursor=pointer]:
+                    - /url: /ip/postres-refrigerados/00780290029508
+                    - generic [ref=e989]: Jalea Sabor Frambuesa Pote, 110 g $340 $3.400 x kg
+                  - button "Agregar al carro - Jalea Sabor Frambuesa Pote, 110 g" [ref=e995] [cursor=pointer]:
+                    - generic "agregar" [ref=e996]: 
+                    - generic [ref=e997]: Agregar
+                  - generic [ref=e998]:
+                    - generic [ref=e1001]:
+                      - generic [ref=e1002]: $340
+                      - generic [ref=e1003]: precio actual $340
+                      - generic [ref=e1004]: $3.400 x kg
+                    - generic [ref=e1005]: Jalea Sabor Frambuesa Pote, 110 g
+                    - generic [ref=e1007]: Comprado 3 veces
+                - group [ref=e1011]:
+                  - link "Néctar Tetra Pack De Naranja, 1,5 L $1.650 $1.100 x lt" [ref=e1012] [cursor=pointer]:
+                    - /url: /ip/jugos/00780282070005
+                    - generic [ref=e1013]: Néctar Tetra Pack De Naranja, 1,5 L $1.650 $1.100 x lt
+                  - generic [ref=e1016]:
+                    - generic [ref=e1019]:
+                      - generic [ref=e1020]: $1.650
+                      - generic [ref=e1021]: precio actual $1.650
+                      - generic [ref=e1022]: $1.100 x lt
+                    - generic [ref=e1023]: Néctar Tetra Pack De Naranja, 1,5 L
+                    - generic [ref=e1024]: Agotado
+                - group [ref=e1028]:
+                  - link "Galleta Pack Original, 216 g" [ref=e1029] [cursor=pointer]:
+                    - /url: /ip/galletas-y-snack-colacion/00775016800195
+                    - generic [ref=e1030]: Galleta Pack Original, 216 g
+                  - generic [ref=e1033]:
+                    - generic [ref=e1035]: Galleta Pack Original, 216 g
+                    - generic [ref=e1036]: Agotado
+                - group [ref=e1040]:
+                  - link "Galletas de arroz Mizos chocolate, 20 g $540 $27.000 x kg" [ref=e1041] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780464645002
+                    - generic [ref=e1042]: Galletas de arroz Mizos chocolate, 20 g $540 $27.000 x kg
+                  - button "Agregar al carro - Galletas de arroz Mizos chocolate, 20 g" [ref=e1048] [cursor=pointer]:
+                    - generic "agregar" [ref=e1049]: 
+                    - generic [ref=e1050]: Agregar
+                  - generic [ref=e1051]:
+                    - generic [ref=e1054]:
+                      - generic [ref=e1055]: $540
+                      - generic [ref=e1056]: precio actual $540
+                      - generic [ref=e1057]: $27.000 x kg
+                    - generic [ref=e1058]: Galletas de arroz Mizos chocolate, 20 g
+                    - generic [ref=e1060]: Comprado 3 veces
+                - group [ref=e1064]:
+                  - link "Galleta Morocha Bolsa, 50 g $450 $9.000 x kg" [ref=e1065] [cursor=pointer]:
+                    - /url: /ip/galletas-y-snack-colacion/00761303244322
+                    - generic [ref=e1066]: Galleta Morocha Bolsa, 50 g $450 $9.000 x kg
+                  - button "Agregar al carro - Galleta Morocha Bolsa, 50 g" [ref=e1072] [cursor=pointer]:
+                    - generic "agregar" [ref=e1073]: 
+                    - generic [ref=e1074]: Agregar
+                  - generic [ref=e1075]:
+                    - generic [ref=e1078]:
+                      - generic [ref=e1079]: $450
+                      - generic [ref=e1080]: precio actual $450
+                      - generic [ref=e1081]: $9.000 x kg
+                    - generic [ref=e1082]: Galleta Morocha Bolsa, 50 g
+                    - generic [ref=e1084]: Comprado 3 veces
+                - group [ref=e1088]:
+                  - link "Galleta Mini Kuky Bolsa, 40 g $450 $11.250 x kg" [ref=e1089] [cursor=pointer]:
+                    - /url: /ip/galletas-y-snack-colacion/00780295008882
+                    - generic [ref=e1090]: Galleta Mini Kuky Bolsa, 40 g $450 $11.250 x kg
+                  - button "Agregar al carro - Galleta Mini Kuky Bolsa, 40 g" [ref=e1096] [cursor=pointer]:
+                    - generic "agregar" [ref=e1097]: 
+                    - generic [ref=e1098]: Agregar
+                  - generic [ref=e1099]:
+                    - generic [ref=e1102]:
+                      - generic [ref=e1103]: $450
+                      - generic [ref=e1104]: precio actual $450
+                      - generic [ref=e1105]: $11.250 x kg
+                    - generic [ref=e1106]: Galleta Mini Kuky Bolsa, 40 g
+                    - generic [ref=e1108]: Comprado 3 veces
+                - group [ref=e1112]:
+                  - link "Néctar Piña Botella, 1,75 L $1.790 $1.023 x lt" [ref=e1113] [cursor=pointer]:
+                    - /url: /ip/refrigerados/00780282017505
+                    - generic [ref=e1114]: Néctar Piña Botella, 1,75 L $1.790 $1.023 x lt
+                  - generic [ref=e1116]:
+                    - generic [ref=e1117]: Combina 2 x $3.000
+                    - button "Combina 2 x $3.000. Ver combinaciones aceptadas y coincidir productos." [ref=e1118] [cursor=pointer]: Combinar
+                  - button "Agregar al carro - Néctar Piña Botella, 1,75 L" [ref=e1123] [cursor=pointer]:
+                    - generic "agregar" [ref=e1124]: 
+                    - generic [ref=e1125]: Agregar
+                  - generic [ref=e1126]:
+                    - generic [ref=e1129]:
+                      - generic [ref=e1130]: $1.790
+                      - generic [ref=e1131]: precio actual $1.790
+                      - generic [ref=e1132]: $1.023 x lt
+                    - generic [ref=e1133]: Néctar Piña Botella, 1,75 L
+                    - generic [ref=e1135]: Comprado 4 veces
+                - group [ref=e1139]:
+                  - link "Galletas Alteza bocado, 140 g $1.250 Costaba $1.550 $8.929 x kg" [ref=e1140] [cursor=pointer]:
+                    - /url: /ip/galletas-y-colaciones-dulces/00780223008250
+                    - generic [ref=e1141]: Galletas Alteza bocado, 140 g $1.250 Costaba $1.550 $8.929 x kg
+                  - button "Agregar al carro - Galletas Alteza bocado, 140 g" [ref=e1146] [cursor=pointer]:
+                    - generic "agregar" [ref=e1147]: 
+                    - generic [ref=e1148]: Agregar
+                  - generic [ref=e1149]:
+                    - generic [ref=e1152]:
+                      - generic [ref=e1153]: $1.250
+                      - generic [ref=e1154]: precio actual $1.250, Costaba $1.550
+                      - generic [ref=e1155]: $8.929 x kg
+                      - generic [ref=e1156]: $1.550
+                    - generic [ref=e1157]: Galletas Alteza bocado, 140 g
+                    - generic [ref=e1159]: Comprado 2 veces
+                - group [ref=e1163]:
+                  - link "Galleta Salvado, 600 g $2.890 $4.817 x kg" [ref=e1164] [cursor=pointer]:
+                    - /url: /ip/mas-estilos-de-vida/00780222568101
+                    - generic [ref=e1165]: Galleta Salvado, 600 g $2.890 $4.817 x kg
+                  - button "Agregar al carro - Galleta Salvado, 600 g" [ref=e1170] [cursor=pointer]:
+                    - generic "agregar" [ref=e1171]: 
+                    - generic [ref=e1172]: Agregar
+                  - generic [ref=e1173]:
+                    - generic [ref=e1176]:
+                      - generic [ref=e1177]: $2.890
+                      - generic [ref=e1178]: precio actual $2.890
+                      - generic [ref=e1179]: $4.817 x kg
+                    - generic [ref=e1180]: Galleta Salvado, 600 g
+                    - generic [ref=e1182]: Comprado 2 veces
+                - group [ref=e1186]:
+                  - link "Granola Vivo Miel y Almendras, 330 g $2.450 $7.424 x kg" [ref=e1187] [cursor=pointer]:
+                    - /url: /ip/cereales/00780012016318
+                    - generic [ref=e1188]: Granola Vivo Miel y Almendras, 330 g $2.450 $7.424 x kg
+                  - button "Agregar al carro - Granola Vivo Miel y Almendras, 330 g" [ref=e1193] [cursor=pointer]:
+                    - generic "agregar" [ref=e1194]: 
+                    - generic [ref=e1195]: Agregar
+                  - generic [ref=e1196]:
+                    - generic [ref=e1199]:
+                      - generic [ref=e1200]: $2.450
+                      - generic [ref=e1201]: precio actual $2.450
+                      - generic [ref=e1202]: $7.424 x kg
+                    - generic [ref=e1203]: Granola Vivo Miel y Almendras, 330 g
+                    - generic [ref=e1205]: Comprado 2 veces
+                - group [ref=e1209]:
+                  - link "Pera Forelle Granel." [ref=e1210] [cursor=pointer]:
+                    - /url: /ip/frutas/00200328000000
+                    - generic [ref=e1211]: Pera Forelle Granel.
+                  - generic [ref=e1213]:
+                    - generic [ref=e1215]: Pera Forelle Granel.
+                    - generic [ref=e1216]: Agotado
+                - group [ref=e1220]:
+                  - link "Ají Verde Granel $5.390/kg $5.390 x kg" [ref=e1221] [cursor=pointer]:
+                    - /url: /ip/verduras/00200907000000
+                    - generic [ref=e1222]: Ají Verde Granel $5.390/kg $5.390 x kg
+                  - button "Agregar al carro - Ají Verde Granel" [ref=e1227] [cursor=pointer]:
+                    - generic "agregar" [ref=e1228]: 
+                    - generic [ref=e1229]: Agregar
+                  - generic [ref=e1230]:
+                    - generic [ref=e1233]:
+                      - generic [ref=e1234]: $5.390/kg
+                      - generic [ref=e1235]: precio actual $5.390/kg
+                      - generic [ref=e1236]: $5.390 x kg
+                    - generic [ref=e1237]: Ají Verde Granel
+                    - generic [ref=e1239]: Comprado 4 veces
+                - group [ref=e1243]:
+                  - link "Cilantro Bolsa, 120 g $950 $7.917 x kg" [ref=e1244] [cursor=pointer]:
+                    - /url: /ip/verduras/00780394600113
+                    - generic [ref=e1245]: Cilantro Bolsa, 120 g $950 $7.917 x kg
+                  - button "Agregar al carro - Cilantro Bolsa, 120 g" [ref=e1250] [cursor=pointer]:
+                    - generic "agregar" [ref=e1251]: 
+                    - generic [ref=e1252]: Agregar
+                  - generic [ref=e1253]:
+                    - generic [ref=e1256]:
+                      - generic [ref=e1257]: $950
+                      - generic [ref=e1258]: precio actual $950
+                      - generic [ref=e1259]: $7.917 x kg
+                    - generic [ref=e1260]: Cilantro Bolsa, 120 g
+                    - generic [ref=e1262]: Comprado 2 veces
+                - group [ref=e1266]:
+                  - link "Manzana Fuji Granel. $2.490/kg $2.490 x kg" [ref=e1267] [cursor=pointer]:
+                    - /url: /ip/frutas/00200274000000
+                    - generic [ref=e1268]: Manzana Fuji Granel. $2.490/kg $2.490 x kg
+                  - button "Agregar al carro - Manzana Fuji Granel." [ref=e1274] [cursor=pointer]:
+                    - generic "agregar" [ref=e1275]: 
+                    - generic [ref=e1276]: Agregar
+                  - generic [ref=e1277]:
+                    - generic [ref=e1280]:
+                      - generic [ref=e1281]: $2.490/kg
+                      - generic [ref=e1282]: precio actual $2.490/kg
+                      - generic [ref=e1283]: $2.490 x kg
+                    - generic [ref=e1284]: Manzana Fuji Granel.
+                    - generic [ref=e1286]: Comprado 3 veces
+                - group [ref=e1290]:
+                  - link "Pollo Pechuga Entera Envasada $4.590/kg Costaba $5.790/kg $4.590 x kg" [ref=e1291] [cursor=pointer]:
+                    - /url: /ip/pollo/00216365000000
+                    - generic [ref=e1292]: Pollo Pechuga Entera Envasada $4.590/kg Costaba $5.790/kg $4.590 x kg
+                  - button "Agregar al carro - Pollo Pechuga Entera Envasada" [ref=e1298] [cursor=pointer]:
+                    - generic "agregar" [ref=e1299]: 
+                    - generic [ref=e1300]: Agregar
+                  - generic [ref=e1301]:
+                    - generic [ref=e1304]:
+                      - generic [ref=e1305]: $4.590/kg
+                      - generic [ref=e1306]: precio actual $4.590/kg, Costaba $5.790/kg
+                      - generic [ref=e1307]: $4.590 x kg
+                      - generic [ref=e1308]: $5.790/kg
+                    - generic [ref=e1309]: Pollo Pechuga Entera Envasada
+                    - generic [ref=e1311]: Comprado 2 veces
+                - group [ref=e1315]:
+                  - link "Jurel Natural Lata, Drenado 300 g - Neto 425 g $2.150 $7.167 x kg" [ref=e1316] [cursor=pointer]:
+                    - /url: /ip/conservas/00780123513111
+                    - generic [ref=e1317]: Jurel Natural Lata, Drenado 300 g - Neto 425 g $2.150 $7.167 x kg
+                  - generic [ref=e1320]:
+                    - generic [ref=e1323]:
+                      - generic [ref=e1324]: $2.150
+                      - generic [ref=e1325]: precio actual $2.150
+                      - generic [ref=e1326]: $7.167 x kg
+                    - generic [ref=e1327]: Jurel Natural Lata, Drenado 300 g - Neto 425 g
+                    - generic [ref=e1328]: Agotado
+                - group [ref=e1332]:
+                  - link "Galleta Mini Tritón Vainilla Bolsa, 40 g $450 $11.250 x kg" [ref=e1333] [cursor=pointer]:
+                    - /url: /ip/galletas-y-snack-colacion/00761303246404
+                    - generic [ref=e1334]: Galleta Mini Tritón Vainilla Bolsa, 40 g $450 $11.250 x kg
+                  - button "Agregar al carro - Galleta Mini Tritón Vainilla Bolsa, 40 g" [ref=e1340] [cursor=pointer]:
+                    - generic "agregar" [ref=e1341]: 
+                    - generic [ref=e1342]: Agregar
+                  - generic [ref=e1343]:
+                    - generic [ref=e1346]:
+                      - generic [ref=e1347]: $450
+                      - generic [ref=e1348]: precio actual $450
+                      - generic [ref=e1349]: $11.250 x kg
+                    - generic [ref=e1350]: Galleta Mini Tritón Vainilla Bolsa, 40 g
+                    - generic [ref=e1352]: Comprado 2 veces
+                - group [ref=e1356]:
+                  - link "Yoghurt 1+1 Con cereal Sin Lactosa Choco Krispis, 140 g $810 $5.786 x kg" [ref=e1357] [cursor=pointer]:
+                    - /url: /ip/yoghurt/00780290000388
+                    - generic [ref=e1358]: Yoghurt 1+1 Con cereal Sin Lactosa Choco Krispis, 140 g $810 $5.786 x kg
+                  - button "Agregar al carro - Yoghurt 1+1 Con cereal Sin Lactosa Choco Krispis, 140 g" [ref=e1364] [cursor=pointer]:
+                    - generic "agregar" [ref=e1365]: 
+                    - generic [ref=e1366]: Agregar
+                  - generic [ref=e1367]:
+                    - generic [ref=e1370]:
+                      - generic [ref=e1371]: $810
+                      - generic [ref=e1372]: precio actual $810
+                      - generic [ref=e1373]: $5.786 x kg
+                    - generic [ref=e1374]: Yoghurt 1+1 Con cereal Sin Lactosa Choco Krispis, 140 g
+                    - generic [ref=e1376]: Comprado 2 veces
+                - group [ref=e1380]:
+                  - link "Galleta Minidino, 35 g $260 $7.429 x kg" [ref=e1381] [cursor=pointer]:
+                    - /url: /ip/galletas-y-snack-colacion/00780222561449
+                    - generic [ref=e1382]: Galleta Minidino, 35 g $260 $7.429 x kg
+                  - button "Agregar al carro - Galleta Minidino, 35 g" [ref=e1388] [cursor=pointer]:
+                    - generic "agregar" [ref=e1389]: 
+                    - generic [ref=e1390]: Agregar
+                  - generic [ref=e1391]:
+                    - generic [ref=e1394]:
+                      - generic [ref=e1395]: $260
+                      - generic [ref=e1396]: precio actual $260
+                      - generic [ref=e1397]: $7.429 x kg
+                    - generic [ref=e1398]: Galleta Minidino, 35 g
+                    - generic [ref=e1400]: Comprado 2 veces
+                - group [ref=e1404]:
+                  - link "Papel Higiénico Doble Hoja 20 Metros, 4 Un $1.590 $20 x m" [ref=e1405] [cursor=pointer]:
+                    - /url: /ip/papeles/00780650050694
+                    - generic [ref=e1406]: Papel Higiénico Doble Hoja 20 Metros, 4 Un $1.590 $20 x m
+                  - button "Agregar al carro - Papel Higiénico Doble Hoja 20 Metros, 4 Un" [ref=e1412] [cursor=pointer]:
+                    - generic "agregar" [ref=e1413]: 
+                    - generic [ref=e1414]: Agregar
+                  - generic [ref=e1415]:
+                    - generic [ref=e1418]:
+                      - generic [ref=e1419]: $1.590
+                      - generic [ref=e1420]: precio actual $1.590
+                      - generic [ref=e1421]: $20 x m
+                    - generic [ref=e1422]: Papel Higiénico Doble Hoja 20 Metros, 4 Un
+                    - generic [ref=e1424]: Comprado 2 veces
+                - group [ref=e1428]:
+                  - link "Leche Semidescremada Avena Chocolate Caja, 200 ml $560 $2.800 x lt" [ref=e1429] [cursor=pointer]:
+                    - /url: /ip/leche/00780290000434
+                    - generic [ref=e1430]: Leche Semidescremada Avena Chocolate Caja, 200 ml $560 $2.800 x lt
+                  - button "Agregar al carro - Leche Semidescremada Avena Chocolate Caja, 200 ml" [ref=e1436] [cursor=pointer]:
+                    - generic "agregar" [ref=e1437]: 
+                    - generic [ref=e1438]: Agregar
+                  - generic [ref=e1439]:
+                    - generic [ref=e1442]:
+                      - generic [ref=e1443]: $560
+                      - generic [ref=e1444]: precio actual $560
+                      - generic [ref=e1445]: $2.800 x lt
+                    - generic [ref=e1446]: Leche Semidescremada Avena Chocolate Caja, 200 ml
+                    - generic [ref=e1448]: Comprado 2 veces
+                - group [ref=e1452]:
+                  - link "Yoghurt Probiótico Frutilla Multipack, 80ml $2.590 $5.396 x lt" [ref=e1453] [cursor=pointer]:
+                    - /url: /ip/yoghurt/00761303137032
+                    - generic [ref=e1454]: Yoghurt Probiótico Frutilla Multipack, 80ml $2.590 $5.396 x lt
+                  - button "Agregar al carro - Yoghurt Probiótico Frutilla Multipack, 80ml" [ref=e1460] [cursor=pointer]:
+                    - generic "agregar" [ref=e1461]: 
+                    - generic [ref=e1462]: Agregar
+                  - generic [ref=e1463]:
+                    - generic [ref=e1466]:
+                      - generic [ref=e1467]: $2.590
+                      - generic [ref=e1468]: precio actual $2.590
+                      - generic [ref=e1469]: $5.396 x lt
+                    - generic [ref=e1470]: Yoghurt Probiótico Frutilla Multipack, 80ml
+                    - generic [ref=e1472]: Comprado 2 veces
+                - group [ref=e1476]:
+                  - link "Carne Molida de Vacuno 10% grasa Bandeja, 500 gr $5.190 $10.380 x kg" [ref=e1477] [cursor=pointer]:
+                    - /url: /ip/vacuno/00040000518707
+                    - generic [ref=e1478]: Carne Molida de Vacuno 10% grasa Bandeja, 500 gr $5.190 $10.380 x kg
+                  - button "Agregar al carro - Carne Molida de Vacuno 10% grasa Bandeja, 500 gr" [ref=e1484] [cursor=pointer]:
+                    - generic "agregar" [ref=e1485]: 
+                    - generic [ref=e1486]: Agregar
+                  - generic [ref=e1487]:
+                    - generic [ref=e1490]:
+                      - generic [ref=e1491]: $5.190
+                      - generic [ref=e1492]: precio actual $5.190
+                      - generic [ref=e1493]: $10.380 x kg
+                    - generic [ref=e1494]: Carne Molida de Vacuno 10% grasa Bandeja, 500 gr
+                    - generic [ref=e1496]: Comprado 2 veces
+                - group [ref=e1500]:
+                  - link "Néctar Naranja Botella, 1,75 L $1.790 $1.023 x lt" [ref=e1501] [cursor=pointer]:
+                    - /url: /ip/refrigerados/00780282017501
+                    - generic [ref=e1502]: Néctar Naranja Botella, 1,75 L $1.790 $1.023 x lt
+                  - generic [ref=e1504]:
+                    - generic [ref=e1505]: Combina 2 x $3.000
+                    - button "Combina 2 x $3.000. Ver combinaciones aceptadas y coincidir productos." [ref=e1506] [cursor=pointer]: Combinar
+                  - button "Agregar al carro - Néctar Naranja Botella, 1,75 L" [ref=e1511] [cursor=pointer]:
+                    - generic "agregar" [ref=e1512]: 
+                    - generic [ref=e1513]: Agregar
+                  - generic [ref=e1514]:
+                    - generic [ref=e1517]:
+                      - generic [ref=e1518]: $1.790
+                      - generic [ref=e1519]: precio actual $1.790
+                      - generic [ref=e1520]: $1.023 x lt
+                    - generic [ref=e1521]: Néctar Naranja Botella, 1,75 L
+                    - generic [ref=e1523]: Comprado 2 veces
+                - group [ref=e1527]:
+                  - link "Galleta Oblea Alteza Chocolate Vainilla Bolsa, 140 g $1.250 Costaba $1.550 $8.929 x kg" [ref=e1528] [cursor=pointer]:
+                    - /url: /ip/galletas-y-colaciones-dulces/00844529195637
+                    - generic [ref=e1529]: Galleta Oblea Alteza Chocolate Vainilla Bolsa, 140 g $1.250 Costaba $1.550 $8.929 x kg
+                  - button "Agregar al carro - Galleta Oblea Alteza Chocolate Vainilla Bolsa, 140 g" [ref=e1535] [cursor=pointer]:
+                    - generic "agregar" [ref=e1536]: 
+                    - generic [ref=e1537]: Agregar
+                  - generic [ref=e1538]:
+                    - generic [ref=e1541]:
+                      - generic [ref=e1542]: $1.250
+                      - generic [ref=e1543]: precio actual $1.250, Costaba $1.550
+                      - generic [ref=e1544]: $8.929 x kg
+                      - generic [ref=e1545]: $1.550
+                    - generic [ref=e1546]: Galleta Oblea Alteza Chocolate Vainilla Bolsa, 140 g
+                    - generic [ref=e1548]: Comprado 1 vez
+                - group [ref=e1552]:
+                  - link "Granola Crunchy Proteína, 300 g $5.390 $17.967 x kg" [ref=e1553] [cursor=pointer]:
+                    - /url: /ip/a-base-de-plantas/00780467391126
+                    - generic [ref=e1554]: Granola Crunchy Proteína, 300 g $5.390 $17.967 x kg
+                  - button "Agregar al carro - Granola Crunchy Proteína, 300 g" [ref=e1560] [cursor=pointer]:
+                    - generic "agregar" [ref=e1561]: 
+                    - generic [ref=e1562]: Agregar
+                  - generic [ref=e1563]:
+                    - generic [ref=e1566]:
+                      - generic [ref=e1567]: $5.390
+                      - generic [ref=e1568]: precio actual $5.390
+                      - generic [ref=e1569]: $17.967 x kg
+                    - generic [ref=e1570]: Granola Crunchy Proteína, 300 g
+                    - generic [ref=e1572]: Comprado 1 vez
+                - group [ref=e1576]:
+                  - link "Galletas de arroz Manzana, 16 g $540" [ref=e1577] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780464645000
+                    - generic [ref=e1578]: Galletas de arroz Manzana, 16 g $540
+                  - button "Agregar al carro - Galletas de arroz Manzana, 16 g" [ref=e1584] [cursor=pointer]:
+                    - generic "agregar" [ref=e1585]: 
+                    - generic [ref=e1586]: Agregar
+                  - generic [ref=e1587]:
+                    - generic [ref=e1590]:
+                      - generic [ref=e1591]: $540
+                      - generic [ref=e1592]: precio actual $540
+                    - generic [ref=e1593]: Galletas de arroz Manzana, 16 g
+                    - generic [ref=e1595]: Comprado 1 vez
+                - group [ref=e1599]:
+                  - link "Galleta Oblea Alteza Helado, 140 g $1.250 Costaba $1.550 $8.929 x kg" [ref=e1600] [cursor=pointer]:
+                    - /url: /ip/galletas-y-colaciones-dulces/00780223008253
+                    - generic [ref=e1601]: Galleta Oblea Alteza Helado, 140 g $1.250 Costaba $1.550 $8.929 x kg
+                  - button "Agregar al carro - Galleta Oblea Alteza Helado, 140 g" [ref=e1607] [cursor=pointer]:
+                    - generic "agregar" [ref=e1608]: 
+                    - generic [ref=e1609]: Agregar
+                  - generic [ref=e1610]:
+                    - generic [ref=e1613]:
+                      - generic [ref=e1614]: $1.250
+                      - generic [ref=e1615]: precio actual $1.250, Costaba $1.550
+                      - generic [ref=e1616]: $8.929 x kg
+                      - generic [ref=e1617]: $1.550
+                    - generic [ref=e1618]: Galleta Oblea Alteza Helado, 140 g
+                    - generic [ref=e1620]: Comprado 1 vez
+                - group [ref=e1624]:
+                  - link "Bizcocho Chocman, 33 g $350 $10.606 x un" [ref=e1625] [cursor=pointer]:
+                    - /url: /ip/galletas-y-colaciones-dulces/00780221530340
+                    - generic [ref=e1626]: Bizcocho Chocman, 33 g $350 $10.606 x un
+                  - button "Agregar al carro - Bizcocho Chocman, 33 g" [ref=e1632] [cursor=pointer]:
+                    - generic "agregar" [ref=e1633]: 
+                    - generic [ref=e1634]: Agregar
+                  - generic [ref=e1635]:
+                    - generic [ref=e1638]:
+                      - generic [ref=e1639]: $350
+                      - generic [ref=e1640]: precio actual $350
+                      - generic [ref=e1641]: $10.606 x un
+                    - generic [ref=e1642]: Bizcocho Chocman, 33 g
+                    - generic [ref=e1644]: Comprado 1 vez
+                - group [ref=e1648]:
+                  - link "Salchicha Vienesa Tradicional 10 Un, 500 g $5.690 Costaba $6.350 $11.380 x kg" [ref=e1649] [cursor=pointer]:
+                    - /url: /ip/fiambres-y-embutidos/00780197000478
+                    - generic [ref=e1650]: Salchicha Vienesa Tradicional 10 Un, 500 g $5.690 Costaba $6.350 $11.380 x kg
+                  - button "Agregar al carro - Salchicha Vienesa Tradicional 10 Un, 500 g" [ref=e1656] [cursor=pointer]:
+                    - generic "agregar" [ref=e1657]: 
+                    - generic [ref=e1658]: Agregar
+                  - generic [ref=e1659]:
+                    - generic [ref=e1662]:
+                      - generic [ref=e1663]: $5.690
+                      - generic [ref=e1664]: precio actual $5.690, Costaba $6.350
+                      - generic [ref=e1665]: $11.380 x kg
+                      - generic [ref=e1666]: $6.350
+                    - generic [ref=e1667]: Salchicha Vienesa Tradicional 10 Un, 500 g
+                    - generic [ref=e1669]: Comprado 1 vez
+                - group [ref=e1673]:
+                  - link "Mini Snack Salami, 50 g" [ref=e1674] [cursor=pointer]:
+                    - /url: /ip/snacks-y-picoteo/00780193002569
+                    - generic [ref=e1675]: Mini Snack Salami, 50 g
+                  - generic [ref=e1678]:
+                    - generic [ref=e1680]: Mini Snack Salami, 50 g
+                    - generic [ref=e1681]: Agotado
+        - navigation "paginación" [ref=e1682]:
+          - list [ref=e1683]:
+            - listitem [ref=e1684]
+            - listitem [ref=e1686]:
+              - link "1" [ref=e1687] [cursor=pointer]:
+                - /url: /my-items
+            - listitem [ref=e1688]:
+              - link "Ir a la página 2" [ref=e1689] [cursor=pointer]:
+                - /url: /my-items?page=2
+                - text: "2"
+            - listitem [ref=e1690]:
+              - link "Ir a la página 3" [ref=e1691] [cursor=pointer]:
+                - /url: /my-items?page=3
+                - text: "3"
+            - listitem [ref=e1692]:
+              - link "Página siguiente" [ref=e1693] [cursor=pointer]:
+                - /url: /my-items?page=2
+                - generic [ref=e1694]: 
+  - alert [ref=e223]

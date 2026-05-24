@@ -1,0 +1,498 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: mizos arroz chocolate
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e81]:
+            - generic [ref=e84]:
+              - generic [ref=e85]:
+                - button "Precio" [ref=e88]:
+                  - generic [ref=e89]: Precio
+                  - img [ref=e90]: 
+                - separator [ref=e91]
+              - generic [ref=e92]:
+                - button "Marca" [ref=e95]:
+                  - generic [ref=e96]: Marca
+                  - img [ref=e97]: 
+                - separator [ref=e98]
+              - generic [ref=e99]:
+                - button "Categoría" [ref=e102]:
+                  - generic [ref=e103]: Categoría
+                  - img [ref=e104]: 
+                - separator [ref=e105]
+            - generic [ref=e108]:
+              - heading "Resultados para mizos arroz chocolate (24)" [level=2] [ref=e116]: Resultados para mizos arroz chocolate(24)
+              - generic [ref=e117]:
+                - group [ref=e120]:
+                  - link "Galletas de arroz Chocolate-Naranja, 25 g" [ref=e121] [cursor=pointer]:
+                    - /url: /ip/sin-gluten/00780464645009?from=/search
+                    - generic [ref=e122]: Galletas de arroz Chocolate-Naranja, 25 g
+                  - generic [ref=e124]:
+                    - generic [ref=e127]:
+                      - img "Galletas de arroz Chocolate-Naranja, 25 g" [ref=e129]
+                      - button "Agregar al carro - Galletas de arroz Chocolate-Naranja, 25 g" [ref=e132] [cursor=pointer]:
+                        - generic "agregar" [ref=e133]: 
+                        - generic [ref=e134]: Agregar
+                    - generic [ref=e136]:
+                      - generic [ref=e138]:
+                        - generic [ref=e139]: $580
+                        - generic [ref=e140]: precio actual $580
+                        - generic [ref=e141]: $29.000 x kg
+                      - generic [ref=e142]: Mizos
+                      - generic [ref=e143]: Galletas de arroz Chocolate-Naranja, 25 g
+                - group [ref=e146]:
+                  - link "Galletas de arroz Mizos chocolate, 20 g" [ref=e147] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780464645002?from=/search
+                    - generic [ref=e148]: Galletas de arroz Mizos chocolate, 20 g
+                  - generic [ref=e150]:
+                    - generic [ref=e153]:
+                      - img "Galletas de arroz Mizos chocolate, 20 g" [ref=e155]
+                      - button "Agregar al carro - Galletas de arroz Mizos chocolate, 20 g" [ref=e158] [cursor=pointer]:
+                        - generic "agregar" [ref=e159]: 
+                        - generic [ref=e160]: Agregar
+                    - generic [ref=e162]:
+                      - generic [ref=e164]:
+                        - generic [ref=e165]: $540
+                        - generic [ref=e166]: precio actual $540
+                        - generic [ref=e167]: $27.000 x kg
+                      - generic [ref=e168]: Mizos
+                      - generic [ref=e169]: Galletas de arroz Mizos chocolate, 20 g
+                - group [ref=e172]:
+                  - link "Galletas de arroz Chocolate-Naranja formato familiar, 150 g" [ref=e173] [cursor=pointer]:
+                    - /url: /ip/sin-gluten/00780464645027?from=/search
+                    - generic [ref=e174]: Galletas de arroz Chocolate-Naranja formato familiar, 150 g
+                  - generic [ref=e176]:
+                    - generic [ref=e179]:
+                      - img "Galletas de arroz Chocolate-Naranja formato familiar, 150 g" [ref=e181]
+                      - button "Agregar al carro - Galletas de arroz Chocolate-Naranja formato familiar, 150 g" [ref=e184] [cursor=pointer]:
+                        - generic "agregar" [ref=e185]: 
+                        - generic [ref=e186]: Agregar
+                    - generic [ref=e188]:
+                      - generic [ref=e190]:
+                        - generic [ref=e191]: $3.590
+                        - generic [ref=e192]: precio actual $3.590
+                      - generic [ref=e193]: Mizos
+                      - generic [ref=e194]: Galletas de arroz Chocolate-Naranja formato familiar, 150 g
+                - group [ref=e197]:
+                  - link "Galletas De Arroz Mizos Chocolate Avellana 25G., 25 g" [ref=e198] [cursor=pointer]:
+                    - /url: /ip/galletas-y-colaciones-dulces/00780464645086?from=/search
+                    - generic [ref=e199]: Galletas De Arroz Mizos Chocolate Avellana 25G., 25 g
+                  - generic [ref=e201]:
+                    - generic [ref=e204]:
+                      - img "Galletas De Arroz Mizos Chocolate Avellana 25G., 25 g" [ref=e206]
+                      - button "Agregar al carro - Galletas De Arroz Mizos Chocolate Avellana 25G., 25 g" [ref=e209] [cursor=pointer]:
+                        - generic "agregar" [ref=e210]: 
+                        - generic [ref=e211]: Agregar
+                    - generic [ref=e213]:
+                      - generic [ref=e215]:
+                        - generic [ref=e216]: $560
+                        - generic [ref=e217]: precio actual $560
+                        - generic [ref=e218]: $22.400 x kg
+                      - generic [ref=e219]: Mizos
+                      - generic [ref=e220]: Galletas De Arroz Mizos Chocolate Avellana 25G., 25 g
+                - group [ref=e223]:
+                  - link "Galletas de arroz chocolate formato familiar, 120 gr" [ref=e224] [cursor=pointer]:
+                    - /url: /ip/sin-gluten/00780464645026?from=/search
+                    - generic [ref=e225]: Galletas de arroz chocolate formato familiar, 120 gr
+                  - generic [ref=e227]:
+                    - generic [ref=e230]:
+                      - img "Galletas de arroz chocolate formato familiar, 120 gr" [ref=e232]
+                      - button "Agregar al carro - Galletas de arroz chocolate formato familiar, 120 gr" [ref=e235] [cursor=pointer]:
+                        - generic "agregar" [ref=e236]: 
+                        - generic [ref=e237]: Agregar
+                    - generic [ref=e239]:
+                      - generic [ref=e241]:
+                        - generic [ref=e242]: $3.290
+                        - generic [ref=e243]: precio actual $3.290
+                      - generic [ref=e244]: Mizos
+                      - generic [ref=e245]: Galletas de arroz chocolate formato familiar, 120 gr
+                - group [ref=e248]:
+                  - link "Galletas De Arroz Mizos Chocolate Avellana 150G., 150 g" [ref=e249] [cursor=pointer]:
+                    - /url: /ip/galletas-y-colaciones-dulces/00780464645087?from=/search
+                    - generic [ref=e250]: Galletas De Arroz Mizos Chocolate Avellana 150G., 150 g
+                  - generic [ref=e252]:
+                    - generic [ref=e255]:
+                      - img "Galletas De Arroz Mizos Chocolate Avellana 150G., 150 g" [ref=e257]
+                      - button "Agregar al carro - Galletas De Arroz Mizos Chocolate Avellana 150G., 150 g" [ref=e260] [cursor=pointer]:
+                        - generic "agregar" [ref=e261]: 
+                        - generic [ref=e262]: Agregar
+                    - generic [ref=e264]:
+                      - generic [ref=e266]:
+                        - generic [ref=e267]: $3.290
+                        - generic [ref=e268]: precio actual $3.290
+                        - generic [ref=e269]: $21.933 x kg
+                      - generic [ref=e270]: Mizos
+                      - generic [ref=e271]: Galletas De Arroz Mizos Chocolate Avellana 150G., 150 g
+                - group [ref=e274]:
+                  - link "Galletas de arroz Yoghurt-Limón, 25 g" [ref=e275] [cursor=pointer]:
+                    - /url: /ip/sin-gluten/00780464645010?from=/search
+                    - generic [ref=e276]: Galletas de arroz Yoghurt-Limón, 25 g
+                  - generic [ref=e278]:
+                    - generic [ref=e281]:
+                      - img "Galletas de arroz Yoghurt-Limón, 25 g" [ref=e283]
+                      - button "Agregar al carro - Galletas de arroz Yoghurt-Limón, 25 g" [ref=e286] [cursor=pointer]:
+                        - generic "agregar" [ref=e287]: 
+                        - generic [ref=e288]: Agregar
+                    - generic [ref=e290]:
+                      - generic [ref=e292]:
+                        - generic [ref=e293]: $580
+                        - generic [ref=e294]: precio actual $580
+                        - generic [ref=e295]: $29.000 x kg
+                      - generic [ref=e296]: Mizos
+                      - generic [ref=e297]: Galletas de arroz Yoghurt-Limón, 25 g
+                - group [ref=e300]:
+                  - link "Galleta de Arroz Mizos Yogurt Frutilla, 25 g" [ref=e301] [cursor=pointer]:
+                    - /url: /ip/galletas-y-colaciones-dulces/00780464645042?from=/search
+                    - generic [ref=e302]: Galleta de Arroz Mizos Yogurt Frutilla, 25 g
+                  - generic [ref=e304]:
+                    - generic [ref=e307]:
+                      - img "Galleta de Arroz Mizos Yogurt Frutilla, 25 g" [ref=e309]
+                      - button "Agregar al carro - Galleta de Arroz Mizos Yogurt Frutilla, 25 g" [ref=e312] [cursor=pointer]:
+                        - generic "agregar" [ref=e313]: 
+                        - generic [ref=e314]: Agregar
+                    - generic [ref=e316]:
+                      - generic [ref=e318]:
+                        - generic [ref=e319]: $520
+                        - generic [ref=e320]: precio actual $520
+                      - generic [ref=e321]: Mizos
+                      - generic [ref=e322]: Galleta de Arroz Mizos Yogurt Frutilla, 25 g
+                - group [ref=e325]:
+                  - link "Galletas de arroz Manzana, 16 g" [ref=e326] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780464645000?from=/search
+                    - generic [ref=e327]: Galletas de arroz Manzana, 16 g
+                  - generic [ref=e329]:
+                    - generic [ref=e332]:
+                      - img "Galletas de arroz Manzana, 16 g" [ref=e334]
+                      - button "Agregar al carro - Galletas de arroz Manzana, 16 g" [ref=e337] [cursor=pointer]:
+                        - generic "agregar" [ref=e338]: 
+                        - generic [ref=e339]: Agregar
+                    - generic [ref=e341]:
+                      - generic [ref=e343]:
+                        - generic [ref=e344]: $540
+                        - generic [ref=e345]: precio actual $540
+                      - generic [ref=e346]: Mizos
+                      - generic [ref=e347]: Galletas de arroz Manzana, 16 g
+                - group [ref=e350]:
+                  - link "Galleta de Arroz Mizos Yogur Frutilla, 150 g" [ref=e351] [cursor=pointer]:
+                    - /url: /ip/galletas-y-colaciones-dulces/00780464645043?from=/search
+                    - generic [ref=e352]: Galleta de Arroz Mizos Yogur Frutilla, 150 g
+                  - generic [ref=e354]:
+                    - generic [ref=e357]:
+                      - img "Galleta de Arroz Mizos Yogur Frutilla, 150 g" [ref=e359]
+                      - button "Agregar al carro - Galleta de Arroz Mizos Yogur Frutilla, 150 g" [ref=e362] [cursor=pointer]:
+                        - generic "agregar" [ref=e363]: 
+                        - generic [ref=e364]: Agregar
+                    - generic [ref=e366]:
+                      - generic [ref=e368]:
+                        - generic [ref=e369]: $3.390
+                        - generic [ref=e370]: precio actual $3.390
+                      - generic [ref=e371]: Mizos
+                      - generic [ref=e372]: Galleta de Arroz Mizos Yogur Frutilla, 150 g
+                - group [ref=e375]:
+                  - link "Galletas de arroz arándano y granada, 16 gr" [ref=e376] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780464645001?from=/search
+                    - generic [ref=e377]: Galletas de arroz arándano y granada, 16 gr
+                  - generic [ref=e379]:
+                    - generic [ref=e382]:
+                      - img "Galletas de arroz arándano y granada, 16 gr" [ref=e384]
+                      - button "Agregar al carro - Galletas de arroz arándano y granada, 16 gr" [ref=e387] [cursor=pointer]:
+                        - generic "agregar" [ref=e388]: 
+                        - generic [ref=e389]: Agregar
+                    - generic [ref=e391]:
+                      - generic [ref=e393]:
+                        - generic [ref=e394]: $540
+                        - generic [ref=e395]: precio actual $540
+                      - generic [ref=e396]: Mizos
+                      - generic [ref=e397]: Galletas de arroz arándano y granada, 16 gr
+                - group [ref=e400]:
+                  - link "Galleta Arroz Yogurt Limon 150G, 150 g" [ref=e401] [cursor=pointer]:
+                    - /url: /ip/f/00780464645040?from=/search
+                    - generic [ref=e402]: Galleta Arroz Yogurt Limon 150G, 150 g
+                  - generic [ref=e404]:
+                    - generic [ref=e407]:
+                      - img "Galleta Arroz Yogurt Limon 150G, 150 g" [ref=e409]
+                      - button "Agregar al carro - Galleta Arroz Yogurt Limon 150G, 150 g" [ref=e412] [cursor=pointer]:
+                        - generic "agregar" [ref=e413]: 
+                        - generic [ref=e414]: Agregar
+                    - generic [ref=e416]:
+                      - generic [ref=e418]:
+                        - generic [ref=e419]: $3.290
+                        - generic [ref=e420]: precio actual $3.290
+                        - generic [ref=e421]: $21.933 x kg
+                      - generic [ref=e422]: Mizos
+                      - generic [ref=e423]: Galleta Arroz Yogurt Limon 150G, 150 g
+                - group [ref=e426]:
+                  - link "Mizos Naranja Plátano - 16 gr" [ref=e427] [cursor=pointer]:
+                    - /url: /ip/galletas-y-colaciones-dulces/00780464645072?from=/search
+                    - generic [ref=e428]: Mizos Naranja Plátano - 16 gr
+                  - generic [ref=e430]:
+                    - generic [ref=e433]:
+                      - img "Mizos Naranja Plátano - 16 gr" [ref=e435]
+                      - button "Agregar al carro - Mizos Naranja Plátano - 16 gr" [ref=e438] [cursor=pointer]:
+                        - generic "agregar" [ref=e439]: 
+                        - generic [ref=e440]: Agregar
+                    - generic [ref=e442]:
+                      - generic [ref=e444]:
+                        - generic [ref=e445]: $540
+                        - generic [ref=e446]: precio actual $540
+                        - generic [ref=e447]: $33.750 x kg
+                      - generic [ref=e448]: Mizos
+                      - generic [ref=e449]: Mizos Naranja Plátano - 16 gr
+                - group [ref=e452]:
+                  - link "Mizos Frutilla Murta - 16 gr" [ref=e453] [cursor=pointer]:
+                    - /url: /ip/galletas-y-colaciones-dulces/00780464645073?from=/search
+                    - generic [ref=e454]: Mizos Frutilla Murta - 16 gr
+                  - generic [ref=e456]:
+                    - generic [ref=e459]:
+                      - img "Mizos Frutilla Murta - 16 gr" [ref=e461]
+                      - button "Agregar al carro - Mizos Frutilla Murta - 16 gr" [ref=e464] [cursor=pointer]:
+                        - generic "agregar" [ref=e465]: 
+                        - generic [ref=e466]: Agregar
+                    - generic [ref=e468]:
+                      - generic [ref=e470]:
+                        - generic [ref=e471]: $540
+                        - generic [ref=e472]: precio actual $540
+                        - generic [ref=e473]: $33.750 x kg
+                      - generic [ref=e474]: Mizos
+                      - generic [ref=e475]: Mizos Frutilla Murta - 16 gr
+                - group [ref=e478]:
+                  - link "Galletas de Arroz con Chocolate, 150 g" [ref=e479] [cursor=pointer]:
+                    - /url: /ip/sin-gluten/00780463593161?from=/search
+                    - generic [ref=e480]: Galletas de Arroz con Chocolate, 150 g
+                  - generic [ref=e482]:
+                    - generic [ref=e485]:
+                      - img "Galletas de Arroz con Chocolate, 150 g" [ref=e487]
+                      - button "Agregar al carro - Galletas de Arroz con Chocolate, 150 g" [ref=e490] [cursor=pointer]:
+                        - generic "agregar" [ref=e491]: 
+                        - generic [ref=e492]: Agregar
+                    - generic [ref=e494]:
+                      - generic [ref=e496]:
+                        - generic [ref=e497]: $1.950
+                        - generic [ref=e498]: precio actual $1.950
+                        - generic [ref=e499]: $1.300 x kg
+                      - generic [ref=e500]: Lider
+                      - generic [ref=e501]: Galletas de Arroz con Chocolate, 150 g
+                - group [ref=e504]:
+                  - link "Galletitas De Arroz Chocolate Y Naranja, 25 g" [ref=e505] [cursor=pointer]:
+                    - /url: /ip/sin-gluten/00780463593155?from=/search
+                    - generic [ref=e506]: Galletitas De Arroz Chocolate Y Naranja, 25 g
+                  - generic [ref=e508]:
+                    - generic [ref=e511]:
+                      - img "Galletitas De Arroz Chocolate Y Naranja, 25 g" [ref=e513]
+                      - button "Agregar al carro - Galletitas De Arroz Chocolate Y Naranja, 25 g" [ref=e516] [cursor=pointer]:
+                        - generic "agregar" [ref=e517]: 
+                        - generic [ref=e518]: Agregar
+                    - generic [ref=e520]:
+                      - generic [ref=e522]:
+                        - generic [ref=e523]: $470
+                        - generic [ref=e524]: precio actual $470
+                        - generic [ref=e525]: $18.800 x kg
+                      - generic [ref=e526]: Lider
+                      - generic [ref=e527]: Galletitas De Arroz Chocolate Y Naranja, 25 g
+                - group [ref=e530]:
+                  - link "Galletitas De Arroz Cubierta Sabor Chocolate, 20 g" [ref=e531] [cursor=pointer]:
+                    - /url: /ip/sin-gluten/00780463593154?from=/search
+                    - generic [ref=e532]: Galletitas De Arroz Cubierta Sabor Chocolate, 20 g
+                  - generic [ref=e534]:
+                    - generic [ref=e537]:
+                      - generic [ref=e538]:
+                        - img "Galletitas De Arroz Cubierta Sabor Chocolate, 20 g"
+                      - button "Agregar al carro - Galletitas De Arroz Cubierta Sabor Chocolate, 20 g" [ref=e541] [cursor=pointer]:
+                        - generic "agregar" [ref=e542]: 
+                        - generic [ref=e543]: Agregar
+                    - generic [ref=e545]:
+                      - generic [ref=e547]:
+                        - generic [ref=e548]: $470
+                        - generic [ref=e549]: precio actual $470
+                        - generic [ref=e550]: $2.350 x kg
+                      - generic [ref=e551]: Lider
+                      - generic [ref=e552]: Galletitas De Arroz Cubierta Sabor Chocolate, 20 g
+                - group [ref=e555]:
+                  - link "Galletas de Arroz Cubiertas de Chocolate Negro, 66 g" [ref=e556] [cursor=pointer]:
+                    - /url: /ip/galletas-y-colaciones-dulces/00780463593204?from=/search
+                    - generic [ref=e557]: Galletas de Arroz Cubiertas de Chocolate Negro, 66 g
+                  - generic [ref=e559]:
+                    - generic [ref=e562]:
+                      - generic [ref=e563]:
+                        - img "Galletas de Arroz Cubiertas de Chocolate Negro, 66 g"
+                      - button "Agregar al carro - Galletas de Arroz Cubiertas de Chocolate Negro, 66 g" [ref=e566] [cursor=pointer]:
+                        - generic "agregar" [ref=e567]: 
+                        - generic [ref=e568]: Agregar
+                    - generic [ref=e570]:
+                      - generic [ref=e572]:
+                        - generic [ref=e573]: $1.450
+                        - generic [ref=e574]: precio actual $1.450
+                        - generic [ref=e575]: $21.970 x kg
+                      - generic [ref=e576]: Be Cookies
+                      - generic [ref=e577]: Galletas de Arroz Cubiertas de Chocolate Negro, 66 g
+                - group [ref=e580]:
+                  - link "Bebida De Arroz Sabor Chocolate, 200 ml" [ref=e581] [cursor=pointer]:
+                    - /url: /ip/bebidas-vegetales/00780467193034?from=/search
+                    - generic [ref=e582]: Bebida De Arroz Sabor Chocolate, 200 ml
+                  - generic [ref=e584]:
+                    - generic [ref=e587]:
+                      - generic [ref=e588]:
+                        - img "Bebida De Arroz Sabor Chocolate, 200 ml"
+                      - button "Agregar al carro - Bebida De Arroz Sabor Chocolate, 200 ml" [ref=e591] [cursor=pointer]:
+                        - generic "agregar" [ref=e592]: 
+                        - generic [ref=e593]: Agregar
+                    - generic [ref=e595]:
+                      - generic [ref=e597]:
+                        - generic [ref=e598]: $860
+                        - generic [ref=e599]: precio actual $860
+                        - generic [ref=e600]: $4.300 x lt
+                      - generic [ref=e601]: Vilay
+                      - generic [ref=e602]: Bebida De Arroz Sabor Chocolate, 200 ml
+                - group [ref=e605]:
+                  - link "Cereal Chocolate, 280 g" [ref=e606] [cursor=pointer]:
+                    - /url: /ip/galletas-y-colaciones-dulces/00780464645061?from=/search
+                    - generic [ref=e607]: Cereal Chocolate, 280 g
+                  - generic [ref=e609]:
+                    - generic [ref=e612]:
+                      - generic [ref=e613]:
+                        - img "Cereal Chocolate, 280 g"
+                      - button "Agregar al carro - Cereal Chocolate, 280 g" [ref=e616] [cursor=pointer]:
+                        - generic "agregar" [ref=e617]: 
+                        - generic [ref=e618]: Agregar
+                    - generic [ref=e620]:
+                      - generic [ref=e622]:
+                        - generic [ref=e623]: $4.990
+                        - generic [ref=e624]: precio actual $4.990
+                      - generic [ref=e625]: Mizos
+                      - generic [ref=e626]: Cereal Chocolate, 280 g
+                - group [ref=e629]:
+                  - link "Galletas Horneadas de Arroz Inflado Sabor Chocolate y Avellanas, 22 g" [ref=e630] [cursor=pointer]:
+                    - /url: /ip/galletas-y-colaciones-dulces/00780463001079?from=/search
+                    - generic [ref=e631]: Galletas Horneadas de Arroz Inflado Sabor Chocolate y Avellanas, 22 g
+                  - generic [ref=e633]:
+                    - generic [ref=e636]:
+                      - generic [ref=e637]:
+                        - img "Galletas Horneadas de Arroz Inflado Sabor Chocolate y Avellanas, 22 g"
+                      - button "Agregar al carro - Galletas Horneadas de Arroz Inflado Sabor Chocolate y Avellanas, 22 g" [ref=e640] [cursor=pointer]:
+                        - generic "agregar" [ref=e641]: 
+                        - generic [ref=e642]: Agregar
+                    - generic [ref=e644]:
+                      - generic [ref=e646]:
+                        - generic [ref=e647]: $560
+                        - generic [ref=e648]: precio actual $560
+                        - generic [ref=e649]: $25.455 x kg
+                      - generic [ref=e650]: Tika
+                      - generic [ref=e651]: Galletas Horneadas de Arroz Inflado Sabor Chocolate y Avellanas, 22 g
+                - group [ref=e654]:
+                  - link "Galletas Horneadas de Arroz Inflado Sabor Chocolate y Berries, 22 g" [ref=e655] [cursor=pointer]:
+                    - /url: /ip/galletas-y-colaciones-dulces/00780463001080?from=/search
+                    - generic [ref=e656]: Galletas Horneadas de Arroz Inflado Sabor Chocolate y Berries, 22 g
+                  - generic [ref=e658]:
+                    - generic [ref=e661]:
+                      - generic [ref=e662]:
+                        - img "Galletas Horneadas de Arroz Inflado Sabor Chocolate y Berries, 22 g"
+                      - button "Agregar al carro - Galletas Horneadas de Arroz Inflado Sabor Chocolate y Berries, 22 g" [ref=e665] [cursor=pointer]:
+                        - generic "agregar" [ref=e666]: 
+                        - generic [ref=e667]: Agregar
+                    - generic [ref=e669]:
+                      - generic [ref=e671]:
+                        - generic [ref=e672]: $560
+                        - generic [ref=e673]: precio actual $560
+                        - generic [ref=e674]: $25.455 x kg
+                      - generic [ref=e675]: Tika
+                      - generic [ref=e676]: Galletas Horneadas de Arroz Inflado Sabor Chocolate y Berries, 22 g
+                - group [ref=e679]:
+                  - link "Bebida Vegetal Arroz Chocolate, 1 L" [ref=e680] [cursor=pointer]:
+                    - /url: /ip/bebidas-vegetales/00780467193028?from=/search
+                    - generic [ref=e681]: Bebida Vegetal Arroz Chocolate, 1 L
+                  - generic [ref=e683]:
+                    - generic [ref=e686]:
+                      - generic [ref=e687]:
+                        - img "Bebida Vegetal Arroz Chocolate, 1 L"
+                      - button "Agregar al carro - Bebida Vegetal Arroz Chocolate, 1 L" [ref=e690] [cursor=pointer]:
+                        - generic "agregar" [ref=e691]: 
+                        - generic [ref=e692]: Agregar
+                    - generic [ref=e694]:
+                      - generic [ref=e696]:
+                        - generic [ref=e697]: $2.390
+                        - generic [ref=e698]: precio actual $2.390
+                        - generic [ref=e699]: $2.390 x kg
+                      - generic [ref=e700]: Vilay
+                      - generic [ref=e701]: Bebida Vegetal Arroz Chocolate, 1 L
+                - group [ref=e704]:
+                  - link "Galleta Con Chip De Chocolate Diet Bolsa, 150 g" [ref=e705] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00841037600941?from=/search
+                    - generic [ref=e706]: Galleta Con Chip De Chocolate Diet Bolsa, 150 g
+                  - generic [ref=e708]:
+                    - generic [ref=e711]:
+                      - generic [ref=e712]:
+                        - img "Galleta Con Chip De Chocolate Diet Bolsa, 150 g"
+                      - button "Agregar al carro - Galleta Con Chip De Chocolate Diet Bolsa, 150 g" [ref=e715] [cursor=pointer]:
+                        - generic "agregar" [ref=e716]: 
+                        - generic [ref=e717]: Agregar
+                    - generic [ref=e719]:
+                      - generic [ref=e721]:
+                        - generic [ref=e722]: $2.750
+                        - generic [ref=e723]: precio actual $2.750
+                        - generic [ref=e724]: $18.333 x kg
+                      - generic [ref=e725]: Gullon
+                      - generic [ref=e726]: Galleta Con Chip De Chocolate Diet Bolsa, 150 g
+  - alert [ref=e735]

@@ -1,0 +1,210 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+        - text: Saltar al contenido principal
+      - text: 
+      - link [ref=e7] [cursor=pointer]:
+        - /url: /inicio
+        - img [ref=e9]
+      - button [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox [ref=e16]
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/supermercado
+          - generic [ref=e23]: 
+          - text: Ir a Supermercado
+      - navigation [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Ingresar
+                - generic [ref=e31]: Cuenta
+            - text:  
+          - listitem [ref=e32]:
+            - button [ref=e35]:
+              - generic [ref=e36]: 
+              - generic [ref=e37]: $0
+    - generic [ref=e38]:
+      - navigation [ref=e42]:
+        - list [ref=e43]:
+          - listitem [ref=e44]:
+            - link [ref=e46] [cursor=pointer]:
+              - /url: https://marketplace.walmart.cl/s/
+              - text: Vende con nosotros
+          - listitem [ref=e47]:
+            - link [ref=e49] [cursor=pointer]:
+              - /url: https://tarjetadigital.liderbciserviciosfinancieros.cl/ingreso-de-datos?utm_source=Lidercl&utm_medium=lidercl&utm_campaign=Refer
+              - text: Tarjeta Lider Bci
+          - listitem [ref=e50]:
+            - link [ref=e52] [cursor=pointer]:
+              - /url: https://www.miclublider.cl/
+              - text: Mi Club
+          - listitem [ref=e53]:
+            - link [ref=e55] [cursor=pointer]:
+              - /url: /ayuda
+              - text: Centro de ayuda
+      - main [ref=e58]:
+        - heading [level=1] [ref=e60]: Mundo Lider
+        - generic [ref=e61]:
+          - article [ref=e69]:
+            - generic [ref=e72]:
+              - list [ref=e73]:
+                - listitem [ref=e74]:
+                  - generic [ref=e80]:
+                    - heading [level=2] [ref=e81]:
+                      - link [ref=e82] [cursor=pointer]:
+                        - /url: /browse/celulares/telefonia/34388900_60412644?contentZone2&co_ty=heropov&co_nm=BANNER_SLIDE_W21&co_id=21052026_Telefonia&co_or=1
+                        - generic [ref=e83]: Renueva tu smartphone
+                      - text: Renueva tu smartphone
+                    - generic [ref=e84]: Equipos Honor y Samsung con gran rendimiento para toda ocasión
+                    - link [ref=e85] [cursor=pointer]:
+                      - /url: /browse/celulares/telefonia/34388900_60412644?contentZone2&co_ty=heropov&co_nm=BANNER_SLIDE_W21&co_id=21052026_Telefonia&co_or=1
+                      - text: Descubre más
+                - listitem [ref=e86]:
+                  - generic [ref=e92]:
+                    - heading [level=2] [ref=e93]:
+                      - link [ref=e94] [cursor=pointer]:
+                        - /url: /browse/dormitorio/55198662?contentZone2&co_ty=heropov&co_nm=BANNER_SLIDE_W21&co_id=21052026_Dormitorio&co_or=2
+                        - generic [ref=e95]: Todo para tu descanso ideal
+                      - text: Todo para tu descanso ideal
+                    - generic [ref=e96]: Camas de 1,5 y 2 plazas para tu hogar
+                    - link [ref=e97] [cursor=pointer]:
+                      - /url: /browse/dormitorio/55198662?contentZone2&co_ty=heropov&co_nm=BANNER_SLIDE_W21&co_id=21052026_Dormitorio&co_or=2
+                      - text: Descubre más
+                - listitem [ref=e98]:
+                  - generic [ref=e104]:
+                    - heading [level=2] [ref=e105]:
+                      - link [ref=e106] [cursor=pointer]:
+                        - /url: /browse/tecno/tv/smart-tv/66849718_44699651_73841472?contentZone2&co_ty=heropov&co_nm=BANNER_SLIDE_W21&co_id=21052026_TV&co_or=3
+                        - generic [ref=e107]: Vive cada partido en grande
+                      - text: Vive cada partido en grande
+                    - generic [ref=e108]: Smart TV 4K Hisense y LG para disfrutar series y deportes con gran calidad de imagen
+                    - link [ref=e109] [cursor=pointer]:
+                      - /url: /browse/tecno/tv/smart-tv/66849718_44699651_73841472?contentZone2&co_ty=heropov&co_nm=BANNER_SLIDE_W21&co_id=21052026_TV&co_or=3
+                      - text: Descubre más
+                - listitem [ref=e110]:
+                  - generic [ref=e116]:
+                    - heading [level=2] [ref=e117]:
+                      - link [ref=e118] [cursor=pointer]:
+                        - /url: /browse/destacados-mundo-lider/linea-blanca/66644329_60524623?contentZone2&co_ty=heropov&co_nm=BANNER_SLIDE_W21&co_id=21052026_LB_Semana_Midea&co_or=4
+                        - generic [ref=e119]: Soluciones para tu lavado
+                      - text: Soluciones para tu lavado
+                    - generic [ref=e120]: Lavadoras y secadoras para cuidar tu ropa y simplificar tu rutina diaria
+                    - link [ref=e121] [cursor=pointer]:
+                      - /url: /browse/destacados-mundo-lider/linea-blanca/66644329_60524623?contentZone2&co_ty=heropov&co_nm=BANNER_SLIDE_W21&co_id=21052026_LB_Semana_Midea&co_or=4
+                      - text: Descubre más
+                - listitem [ref=e122]:
+                  - generic [ref=e128]:
+                    - heading [level=2] [ref=e129]:
+                      - link [ref=e130] [cursor=pointer]:
+                        - /url: /browse/belleza-y-cuidado-personal/59721722?contentZone2&co_ty=heropov&co_nm=BANNER_SLIDE_W21&co_id=21052026_Belleza&co_or=5
+                        - generic [ref=e131]: Tu esencia, cada día
+                      - text: Tu esencia, cada día
+                    - generic [ref=e132]: Perfumes y productos de belleza para acompañar tu rutina con estilo
+                    - link [ref=e133] [cursor=pointer]:
+                      - /url: /browse/belleza-y-cuidado-personal/59721722?contentZone2&co_ty=heropov&co_nm=BANNER_SLIDE_W21&co_id=21052026_Belleza&co_or=5
+                      - text: Descubre más
+                - listitem [ref=e134]:
+                  - generic [ref=e140]:
+                    - heading [level=2] [ref=e141]:
+                      - link [ref=e142] [cursor=pointer]:
+                        - /url: /browse/climatizacion/calefaccion/64746275_22669626?contentZone2&co_ty=heropov&co_nm=BANNER_SLIDE_W21&co_id=21052026_Calefaccion&co_or=6
+                        - generic [ref=e143]: Calor para tu invierno
+                      - text: Calor para tu invierno
+                    - generic [ref=e144]: Estufas a gas y parafina para mantener tu hogar cálido en los días fríos
+                    - link [ref=e145] [cursor=pointer]:
+                      - /url: /browse/climatizacion/calefaccion/64746275_22669626?contentZone2&co_ty=heropov&co_nm=BANNER_SLIDE_W21&co_id=21052026_Calefaccion&co_or=6
+                      - text: Descubre más
+                - listitem [ref=e146]:
+                  - generic [ref=e152]:
+                    - heading [level=2] [ref=e153]:
+                      - link [ref=e154] [cursor=pointer]:
+                        - /url: /browse/95310315?contentZone2&co_ty=heropov&co_nm=BANNER_SLIDE_W21&co_id=21052026_Muebles&co_or=7
+                        - generic [ref=e155]: Todo para tu hogar
+                      - text: Todo para tu hogar
+                    - generic [ref=e156]: Productos pensados para equipar tu casa con comodidad
+                    - link [ref=e157] [cursor=pointer]:
+                      - /url: /browse/95310315?contentZone2&co_ty=heropov&co_nm=BANNER_SLIDE_W21&co_id=21052026_Muebles&co_or=7
+                      - text: Descubre más
+                - listitem [ref=e158]:
+                  - generic [ref=e164]:
+                    - heading [level=2] [ref=e165]:
+                      - link [ref=e166] [cursor=pointer]:
+                        - /url: /browse/dormitorio/ropa-y-accesorios-de-cama/55198662_90158868?contentZone2&co_ty=heropov&co_nm=BANNER_SLIDE_W21&co_id=21052026_Ropa_de_Cama&co_or=8
+                        - generic [ref=e167]: Frazadas Sherpa y Cubrecolchones de 2 Plazas
+                      - text: Frazadas Sherpa y Cubrecolchones de 2 Plazas
+                    - generic [ref=e168]: Prepárate para las noches frías
+                    - link [ref=e169] [cursor=pointer]:
+                      - /url: /browse/dormitorio/ropa-y-accesorios-de-cama/55198662_90158868?contentZone2&co_ty=heropov&co_nm=BANNER_SLIDE_W21&co_id=21052026_Ropa_de_Cama&co_or=8
+                      - text: Descubre más
+              - navigation [ref=e170]:
+                - button [ref=e171]
+                - generic [ref=e173]:
+                  - generic [ref=e176]: Diapositiva actual del carrusel 1 de 8
+                  - button [disabled] [ref=e177]
+                  - button [ref=e178]
+          - generic [ref=e181]:
+            - link [ref=e184] [cursor=pointer]:
+              - /url: https://tarjetadigital.liderbciserviciosfinancieros.cl/ingreso-de-datos?utm_source=Lidercl_catex_rompefilas&utm_medium=lidercl
+            - link [ref=e188] [cursor=pointer]:
+              - /url: /browse/computacion/computadores/89057520_72573679?ContentZone16&co_ty=Skinnybanner&co_nm=skinnybannerW21&co_id=21052026_Computacion&co_or=1
+            - link [ref=e192] [cursor=pointer]:
+              - /url: /browse/deportes-y-aire-libre/fitness/57049927_89648039?ContentZone29&co_ty=Skinnybanner&co_nm=skinnybannerW21&co_id=21052026_Deportes&co_or=2
+            - link [ref=e196] [cursor=pointer]:
+              - /url: /browse/decohogar/menaje-cocina/94694600_50625112?ContentZone29&co_ty=Skinnybanner&co_nm=skinnybannerW21&co_id=21052026_Hogar&co_or=3
+              - img [ref=e198]
+            - link [ref=e201] [cursor=pointer]:
+              - /url: /content/deportes-y-aire-libre/hincha-de-los-precios-bajos/57049927_06325852?ContentZone29&co_ty=Skinnybanner&co_nm=skinnybannerW21&co_id=21052026_Mundial_cross_category&co_or=4
+            - generic [ref=e204]:
+              - heading [level=2] [ref=e206]: Beneficios adicionales
+              - list [ref=e207]:
+                - listitem [ref=e208]:
+                  - link [ref=e209] [cursor=pointer]:
+                    - /url: https://www.miclublider.cl/login
+                    - img [ref=e210]
+                    - generic [ref=e212]: Ingresa y revisa tus Pesos Mi Club
+                - listitem [ref=e213]:
+                  - link [ref=e214] [cursor=pointer]:
+                    - /url: https://www.lider.cl/supermercado
+                    - img [ref=e215]
+                    - generic [ref=e217]: Acumula, canjea y ahorra en todas tus compras
+                - listitem [ref=e218]:
+                  - link [ref=e219] [cursor=pointer]:
+                    - /url: https://tarjetadigital.liderbciserviciosfinancieros.cl/ingreso-de-datos? source=Lidercl_catex_caluga_beneficios_2&utm_medium=lidercl&utm_content=cuotas_sin_interes
+                    - img [ref=e220]
+                    - generic [ref=e222]: 3 y 6 Cuotas sin Interés
+                - listitem [ref=e223]:
+                  - link [ref=e224] [cursor=pointer]:
+                    - /url: https://tarjetadigital.liderbciserviciosfinancieros.cl/ingreso-de-datos?utm_source=Lidercl_catex_caluga_beneficios_3&utm_medium=lidercl&utm_content=10porciento_primera_compra
+                    - img [ref=e225]
+                    - generic [ref=e227]: Te devolvemos el 6%
+  - alert [ref=e234]
+  - iframe [ref=e235]:
+    - generic [active]:
+      - generic [ref=f2e2]:
+        - generic [ref=f2e3]: Before we continue...
+        - generic [ref=f2e4]:
+          - text: Press & Hold to confirm you are
+          - text: a human (and not a bot).
+        - generic [ref=f2e6]: Reference ID 8b551210-57a3-11f1-9983-6560a7d81a73
+      - generic:
+        - generic [ref=f2e7]: mmmmmmmmmmlli
+        - generic [ref=f2e8]: mmmmmmmmmmlli
+  - dialog "¿Robot o humano?" [ref=e239]:
+    - generic [ref=e240]:
+      - button "Cerrar" [active] [ref=e241] [cursor=pointer]:
+        - img [ref=e242]
+      - heading "¿Robot o humano?" [level=2] [ref=e244]
+    - paragraph [ref=e248]: Marca y mantén presionado el botón para confirmar que eres un ser humano. ¡Gracias!

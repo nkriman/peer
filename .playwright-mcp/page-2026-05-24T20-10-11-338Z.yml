@@ -1,0 +1,447 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: mango fruta
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e81]:
+            - generic [ref=e84]:
+              - generic [ref=e85]:
+                - button "Precio" [ref=e88]:
+                  - generic [ref=e89]: Precio
+                  - img [ref=e90]: 
+                - separator [ref=e91]
+              - generic [ref=e92]:
+                - button "Campaña" [ref=e95]:
+                  - generic [ref=e96]: Campaña
+                  - img [ref=e97]: 
+                - separator [ref=e98]
+              - generic [ref=e99]:
+                - button "Marca" [ref=e102]:
+                  - generic [ref=e103]: Marca
+                  - img [ref=e104]: 
+                - separator [ref=e105]
+              - generic [ref=e106]:
+                - button "Categoría" [ref=e109]:
+                  - generic [ref=e110]: Categoría
+                  - img [ref=e111]: 
+                - separator [ref=e112]
+            - generic [ref=e115]:
+              - heading "Resultados para mango fruta (20)" [level=2] [ref=e123]: Resultados para mango fruta(20)
+              - generic [ref=e124]:
+                - group [ref=e127]:
+                  - link "Batido de Frutas Mango Mambo, 340 g" [ref=e128] [cursor=pointer]:
+                    - /url: /ip/verduras-y-frutas-congeladas/00005252540494?from=/search
+                    - generic [ref=e129]: Batido de Frutas Mango Mambo, 340 g
+                  - generic [ref=e131]:
+                    - generic [ref=e134]:
+                      - img "Batido de Frutas Mango Mambo, 340 g" [ref=e136]
+                      - button "Agregar al carro - Batido de Frutas Mango Mambo, 340 g" [ref=e139] [cursor=pointer]:
+                        - generic "agregar" [ref=e140]: 
+                        - generic [ref=e141]: Agregar
+                    - generic [ref=e143]:
+                      - generic [ref=e145]:
+                        - generic [ref=e146]: $3.990
+                        - generic [ref=e147]: precio actual $3.990
+                        - generic [ref=e148]: $11.735 x kg
+                      - generic [ref=e149]: Campo Verde
+                      - generic [ref=e150]: Batido de Frutas Mango Mambo, 340 g
+                - generic [ref=e152]:
+                  - group [ref=e153]:
+                    - link "Compota Fruta Mango Maracuyá, 120 g" [ref=e154] [cursor=pointer]:
+                      - /url: /ip/fruta-colacion/00780220027029?from=/search
+                      - generic [ref=e155]: Compota Fruta Mango Maracuyá, 120 g
+                    - generic [ref=e157]:
+                      - img "Compota Fruta Mango Maracuyá, 120 g" [ref=e162]
+                      - generic [ref=e164]:
+                        - generic [ref=e166]:
+                          - generic [ref=e167]: $910
+                          - generic [ref=e168]: precio actual $910
+                          - generic [ref=e169]: $7.583 x kg
+                        - generic [ref=e170]: Vivo
+                        - generic [ref=e171]: Compota Fruta Mango Maracuyá, 120 g
+                        - generic [ref=e172]: Agotado
+                  - button "Revisar productos similares - Compota Fruta Mango Maracuyá, 120 g" [ref=e174]: Revisar productos similares
+                - group [ref=e177]:
+                  - link "Colado de Frutas Sabor Coco, Pera, Mango, Arándano y Avena con Chía, g" [ref=e178] [cursor=pointer]:
+                    - /url: /ip/alimentacion-y-lactancia/00780465097064?from=/search
+                    - generic [ref=e179]: Colado de Frutas Sabor Coco, Pera, Mango, Arándano y Avena con Chía, g
+                  - generic [ref=e181]:
+                    - generic [ref=e184]:
+                      - img "Colado de Frutas Sabor Coco, Pera, Mango, Arándano y Avena con Chía, g" [ref=e186]
+                      - button "Agregar al carro - Colado de Frutas Sabor Coco, Pera, Mango, Arándano y Avena con Chía, g" [ref=e189] [cursor=pointer]:
+                        - generic "agregar" [ref=e190]: 
+                        - generic [ref=e191]: Agregar
+                    - generic [ref=e193]:
+                      - generic [ref=e195]:
+                        - generic [ref=e196]: $1.990
+                        - generic [ref=e197]: precio actual $1.990
+                        - generic [ref=e198]: $22.111 x kg
+                      - generic [ref=e199]: Smiley Kids
+                      - generic [ref=e200]: Colado de Frutas Sabor Coco, Pera, Mango, Arándano y Avena con Chía, g
+                - group [ref=e203]:
+                  - link "Rollos de fruta mango, 125 g" [ref=e204] [cursor=pointer]:
+                    - /url: /ip/cereales/00780467002009?from=/search
+                    - generic [ref=e205]: Rollos de fruta mango, 125 g
+                  - generic [ref=e207]:
+                    - generic [ref=e210]:
+                      - img "Rollos de fruta mango, 125 g" [ref=e212]
+                      - button "Agregar al carro - Rollos de fruta mango, 125 g" [ref=e215] [cursor=pointer]:
+                        - generic "agregar" [ref=e216]: 
+                        - generic [ref=e217]: Agregar
+                    - generic [ref=e219]:
+                      - generic [ref=e221]:
+                        - generic [ref=e222]: $4.290
+                        - generic [ref=e223]: precio actual $4.290
+                        - generic [ref=e224]: $34.320 x kg
+                      - generic [ref=e225]: Bigu
+                      - generic [ref=e226]: Rollos de fruta mango, 125 g
+                - group [ref=e229]:
+                  - link "Mango en Trozos Bolsa, 500 g" [ref=e230] [cursor=pointer]:
+                    - /url: /ip/verduras-y-frutas-congeladas/00780122000352?from=/search
+                    - generic [ref=e231]: Mango en Trozos Bolsa, 500 g
+                  - generic [ref=e233]:
+                    - generic [ref=e234]:
+                      - generic [ref=e236]:
+                        - generic [ref=e238]: 
+                        - text: Rebaja
+                      - generic [ref=e239]:
+                        - img "Mango en Trozos Bolsa, 500 g" [ref=e241]
+                        - button "Agregar al carro - Mango en Trozos Bolsa, 500 g" [ref=e244] [cursor=pointer]:
+                          - generic "agregar" [ref=e245]: 
+                          - generic [ref=e246]: Agregar
+                    - generic [ref=e248]:
+                      - generic [ref=e250]:
+                        - generic [ref=e251]: $3.690
+                        - generic [ref=e252]: precio actual $3.690, Costaba $4.250
+                        - generic [ref=e253]: $7.380 x kg
+                        - generic [ref=e254]: $4.250
+                        - generic [ref=e255]: Ahorra $560
+                      - generic [ref=e256]: Minuto Verde
+                      - generic [ref=e257]: Mango en Trozos Bolsa, 500 g
+                - generic [ref=e259]:
+                  - group [ref=e260]:
+                    - link "Mango Picado Pote, 400 g" [ref=e261] [cursor=pointer]:
+                      - /url: /ip/frutas/00780467073008?from=/search
+                      - generic [ref=e262]: Mango Picado Pote, 400 g
+                    - generic [ref=e264]:
+                      - img "Mango Picado Pote, 400 g" [ref=e269]
+                      - generic [ref=e271]:
+                        - generic [ref=e273]:
+                          - generic [ref=e274]: $3.850
+                          - generic [ref=e275]: precio actual $3.850
+                          - generic [ref=e276]: $9.625 x kg
+                        - generic [ref=e277]: IZI
+                        - generic [ref=e278]: Mango Picado Pote, 400 g
+                        - generic [ref=e279]: Agotado
+                  - button "Revisar productos similares - Mango Picado Pote, 400 g" [ref=e281]: Revisar productos similares
+                - group [ref=e284]:
+                  - link "Pulpa de Mango Maracuyá, 335 g" [ref=e285] [cursor=pointer]:
+                    - /url: /ip/verduras-y-frutas-congeladas/00780122000572?from=/search
+                    - generic [ref=e286]: Pulpa de Mango Maracuyá, 335 g
+                  - generic [ref=e288]:
+                    - generic [ref=e291]:
+                      - img "Pulpa de Mango Maracuyá, 335 g" [ref=e293]
+                      - button "Agregar al carro - Pulpa de Mango Maracuyá, 335 g" [ref=e296] [cursor=pointer]:
+                        - generic "agregar" [ref=e297]: 
+                        - generic [ref=e298]: Agregar
+                    - generic [ref=e300]:
+                      - generic [ref=e302]:
+                        - generic [ref=e303]: $4.190
+                        - generic [ref=e304]: precio actual $4.190
+                        - generic [ref=e305]: $12.507 x kg
+                      - generic [ref=e306]: Minuto Verde
+                      - generic [ref=e307]: Pulpa de Mango Maracuyá, 335 g
+                - group [ref=e310]:
+                  - link "Mango en Trozos Congelados, 454 g" [ref=e311] [cursor=pointer]:
+                    - /url: /ip/verduras-y-frutas-congeladas/00007874202550?from=/search
+                    - generic [ref=e312]: Mango en Trozos Congelados, 454 g
+                  - generic [ref=e314]:
+                    - generic [ref=e317]:
+                      - img "Mango en Trozos Congelados, 454 g" [ref=e319]
+                      - button "Agregar al carro - Mango en Trozos Congelados, 454 g" [ref=e322] [cursor=pointer]:
+                        - generic "agregar" [ref=e323]: 
+                        - generic [ref=e324]: Agregar
+                    - generic [ref=e326]:
+                      - generic [ref=e328]:
+                        - generic [ref=e329]: $3.990
+                        - generic [ref=e330]: precio actual $3.990
+                        - generic [ref=e331]: $8.789 x un
+                      - generic [ref=e332]: Great Value
+                      - generic [ref=e333]: Mango en Trozos Congelados, 454 g
+                - group [ref=e336]:
+                  - link "Pouch Compota Pura Fruta Mango y Manzana, 90 g" [ref=e337] [cursor=pointer]:
+                    - /url: /ip/fruta-colacion/00780280070966?from=/search
+                    - generic [ref=e338]: Pouch Compota Pura Fruta Mango y Manzana, 90 g
+                  - generic [ref=e340]:
+                    - generic [ref=e343]:
+                      - img "Pouch Compota Pura Fruta Mango y Manzana, 90 g" [ref=e345]
+                      - button "Agregar al carro - Pouch Compota Pura Fruta Mango y Manzana, 90 g" [ref=e348] [cursor=pointer]:
+                        - generic "agregar" [ref=e349]: 
+                        - generic [ref=e350]: Agregar
+                    - generic [ref=e352]:
+                      - generic [ref=e354]:
+                        - generic [ref=e355]: $540
+                        - generic [ref=e356]: precio actual $540
+                        - generic [ref=e357]: $6.000 x kg
+                      - generic [ref=e358]: Livean
+                      - generic [ref=e359]: Pouch Compota Pura Fruta Mango y Manzana, 90 g
+                - group [ref=e362]:
+                  - link "Helado Barra de Fruta Mango Caja, 6 Un 60 ml c/u" [ref=e363] [cursor=pointer]:
+                    - /url: /ip/helados/00780390800132?from=/search
+                    - generic [ref=e364]: Helado Barra de Fruta Mango Caja, 6 Un 60 ml c/u
+                  - generic [ref=e366]:
+                    - generic [ref=e369]:
+                      - img "Helado Barra de Fruta Mango Caja, 6 Un 60 ml c/u" [ref=e371]
+                      - button "Agregar al carro - Helado Barra de Fruta Mango Caja, 6 Un 60 ml c/u" [ref=e374] [cursor=pointer]:
+                        - generic "agregar" [ref=e375]: 
+                        - generic [ref=e376]: Agregar
+                    - generic [ref=e378]:
+                      - generic [ref=e380]:
+                        - generic [ref=e381]: $4.990
+                        - generic [ref=e382]: precio actual $4.990
+                        - generic [ref=e383]: $13.861 x un
+                      - generic [ref=e384]: Guallarauco
+                      - generic [ref=e385]: Helado Barra de Fruta Mango Caja, 6 Un 60 ml c/u
+                - group [ref=e388]:
+                  - link "Compota Orgánica de Mango y Manzana, 90 g" [ref=e389] [cursor=pointer]:
+                    - /url: /ip/fruta-colacion/00780465506157?from=/search
+                    - generic [ref=e390]: Compota Orgánica de Mango y Manzana, 90 g
+                  - generic [ref=e392]:
+                    - generic [ref=e395]:
+                      - img "Compota Orgánica de Mango y Manzana, 90 g" [ref=e397]
+                      - button "Agregar al carro - Compota Orgánica de Mango y Manzana, 90 g" [ref=e400] [cursor=pointer]:
+                        - generic "agregar" [ref=e401]: 
+                        - generic [ref=e402]: Agregar
+                    - generic [ref=e404]:
+                      - generic [ref=e406]:
+                        - generic [ref=e407]: $680
+                        - generic [ref=e408]: precio actual $680
+                        - generic [ref=e409]: $7.556 x kg
+                      - generic [ref=e410]: Lider
+                      - generic [ref=e411]: Compota Orgánica de Mango y Manzana, 90 g
+                - group [ref=e414]:
+                  - link "Compota Orgánica de Plátano y Mango, 90 g" [ref=e415] [cursor=pointer]:
+                    - /url: /ip/fruta-colacion/00780465506156?from=/search
+                    - generic [ref=e416]: Compota Orgánica de Plátano y Mango, 90 g
+                  - generic [ref=e418]:
+                    - generic [ref=e421]:
+                      - img "Compota Orgánica de Plátano y Mango, 90 g" [ref=e423]
+                      - button "Agregar al carro - Compota Orgánica de Plátano y Mango, 90 g" [ref=e426] [cursor=pointer]:
+                        - generic "agregar" [ref=e427]: 
+                        - generic [ref=e428]: Agregar
+                    - generic [ref=e430]:
+                      - generic [ref=e432]:
+                        - generic [ref=e433]: $680
+                        - generic [ref=e434]: precio actual $680
+                        - generic [ref=e435]: $7.556 x kg
+                      - generic [ref=e436]: Lider
+                      - generic [ref=e437]: Compota Orgánica de Plátano y Mango, 90 g
+                - group [ref=e440]:
+                  - link "Mango Granel" [ref=e441] [cursor=pointer]:
+                    - /url: /ip/frutas/00200835000000?from=/search
+                    - generic [ref=e442]: Mango Granel
+                  - generic [ref=e444]:
+                    - generic [ref=e447]:
+                      - img "Mango Granel" [ref=e449]
+                      - button "Agregar al carro - Mango Granel" [ref=e452] [cursor=pointer]:
+                        - generic "agregar" [ref=e453]: 
+                        - generic [ref=e454]: Agregar
+                    - generic [ref=e456]:
+                      - generic [ref=e458]:
+                        - generic [ref=e459]: $2.890/kg
+                        - generic [ref=e460]: precio actual $2.890/kg
+                        - generic [ref=e461]: $2.890 x kg
+                      - generic [ref=e462]: Multi Marca
+                      - generic [ref=e463]: Mango Granel
+                - group [ref=e466]:
+                  - link "Mango, 400 g" [ref=e467] [cursor=pointer]:
+                    - /url: /ip/verduras-y-frutas-congeladas/00780130000370?from=/search
+                    - generic [ref=e468]: Mango, 400 g
+                  - generic [ref=e470]:
+                    - generic [ref=e471]:
+                      - generic [ref=e473]:
+                        - generic [ref=e475]: 
+                        - text: Rebaja
+                      - generic [ref=e476]:
+                        - img "Mango, 400 g" [ref=e478]
+                        - button "Agregar al carro - Mango, 400 g" [ref=e481] [cursor=pointer]:
+                          - generic "agregar" [ref=e482]: 
+                          - generic [ref=e483]: Agregar
+                    - generic [ref=e485]:
+                      - generic [ref=e487]:
+                        - generic [ref=e488]: $3.190
+                        - generic [ref=e489]: precio actual $3.190, Costaba $3.790
+                        - generic [ref=e490]: $7.975 x kg
+                        - generic [ref=e491]: $3.790
+                        - generic [ref=e492]: Ahorra $600
+                      - generic [ref=e493]: Frutos Del Maipo
+                      - generic [ref=e494]: Mango, 400 g
+                - group [ref=e497]:
+                  - link "Puré de Manzana Plátano Mango Orgánico, 90 g" [ref=e498] [cursor=pointer]:
+                    - /url: /ip/alimentacion-y-lactancia/00780465802123?from=/search
+                    - generic [ref=e499]: Puré de Manzana Plátano Mango Orgánico, 90 g
+                  - generic [ref=e501]:
+                    - generic [ref=e504]:
+                      - img "Puré de Manzana Plátano Mango Orgánico, 90 g" [ref=e506]
+                      - button "Agregar al carro - Puré de Manzana Plátano Mango Orgánico, 90 g" [ref=e509] [cursor=pointer]:
+                        - generic "agregar" [ref=e510]: 
+                        - generic [ref=e511]: Agregar
+                    - generic [ref=e513]:
+                      - generic [ref=e515]:
+                        - generic [ref=e516]: $1.150
+                        - generic [ref=e517]: precio actual $1.150
+                        - generic [ref=e518]: $12.778 x kg
+                      - generic [ref=e519]: AMA
+                      - generic [ref=e520]: Puré de Manzana Plátano Mango Orgánico, 90 g
+                - group [ref=e523]:
+                  - link "Puré Manzana y Mango Orgánico, 90 g" [ref=e524] [cursor=pointer]:
+                    - /url: /ip/alimentacion-y-lactancia/00780465802168?from=/search
+                    - generic [ref=e525]: Puré Manzana y Mango Orgánico, 90 g
+                  - generic [ref=e527]:
+                    - generic [ref=e530]:
+                      - img "Puré Manzana y Mango Orgánico, 90 g" [ref=e532]
+                      - button "Agregar al carro - Puré Manzana y Mango Orgánico, 90 g" [ref=e535] [cursor=pointer]:
+                        - generic "agregar" [ref=e536]: 
+                        - generic [ref=e537]: Agregar
+                    - generic [ref=e539]:
+                      - generic [ref=e541]:
+                        - generic [ref=e542]: $1.150
+                        - generic [ref=e543]: precio actual $1.150
+                        - generic [ref=e544]: $12.778 x kg
+                      - generic [ref=e545]: AMA
+                      - generic [ref=e546]: Puré Manzana y Mango Orgánico, 90 g
+                - group [ref=e549]:
+                  - link "Compota Orgánica Manzana Plátano Mango, 90 g" [ref=e550] [cursor=pointer]:
+                    - /url: /ip/alimentacion-y-lactancia/00780220027048?from=/search
+                    - generic [ref=e551]: Compota Orgánica Manzana Plátano Mango, 90 g
+                  - generic [ref=e553]:
+                    - generic [ref=e556]:
+                      - generic [ref=e557]:
+                        - img "Compota Orgánica Manzana Plátano Mango, 90 g"
+                      - button "Agregar al carro - Compota Orgánica Manzana Plátano Mango, 90 g" [ref=e560] [cursor=pointer]:
+                        - generic "agregar" [ref=e561]: 
+                        - generic [ref=e562]: Agregar
+                    - generic [ref=e564]:
+                      - generic [ref=e566]:
+                        - generic [ref=e567]: $870
+                        - generic [ref=e568]: precio actual $870
+                        - generic [ref=e569]: $9.667 x un
+                      - generic [ref=e570]: Vivo
+                      - generic [ref=e571]: Compota Orgánica Manzana Plátano Mango, 90 g
+                - group [ref=e574]:
+                  - link "Smoothie Ecoterra Mango Pera 90 g, 90 g" [ref=e575] [cursor=pointer]:
+                    - /url: /ip/verduras-y-frutas-congeladas/00780464445133?from=/search
+                    - generic [ref=e576]: Smoothie Ecoterra Mango Pera 90 g, 90 g
+                  - generic [ref=e578]:
+                    - generic [ref=e581]:
+                      - generic [ref=e582]:
+                        - img "Smoothie Ecoterra Mango Pera 90 g, 90 g"
+                      - button "Agregar al carro - Smoothie Ecoterra Mango Pera 90 g, 90 g" [ref=e585] [cursor=pointer]:
+                        - generic "agregar" [ref=e586]: 
+                        - generic [ref=e587]: Agregar
+                    - generic [ref=e589]:
+                      - generic [ref=e591]:
+                        - generic [ref=e592]: $990
+                        - generic [ref=e593]: precio actual $990
+                        - generic [ref=e594]: $10.999 x kg
+                      - generic [ref=e595]: Ecoterra
+                      - generic [ref=e596]: Smoothie Ecoterra Mango Pera 90 g, 90 g
+                - generic [ref=e598]:
+                  - group [ref=e599]:
+                    - link "Mango Pote, 250 g" [ref=e600] [cursor=pointer]:
+                      - /url: /ip/frutas/00780467073120?from=/search
+                      - generic [ref=e601]: Mango Pote, 250 g
+                    - generic [ref=e603]:
+                      - generic [ref=e607]:
+                        - img "Mango Pote, 250 g"
+                      - generic [ref=e609]:
+                        - generic [ref=e611]:
+                          - generic [ref=e612]: $3.390
+                          - generic [ref=e613]: precio actual $3.390
+                          - generic [ref=e614]: $13.560 x kg
+                        - generic [ref=e615]: IZI
+                        - generic [ref=e616]: Mango Pote, 250 g
+                        - generic [ref=e617]: Agotado
+                  - button "Revisar productos similares - Mango Pote, 250 g" [ref=e619]: Revisar productos similares
+                - group [ref=e622]:
+                  - link "Pulpa de Frutilla Mango Naranja, 335 g" [ref=e623] [cursor=pointer]:
+                    - /url: /ip/verduras-y-frutas-congeladas/00780122000575?from=/search
+                    - generic [ref=e624]: Pulpa de Frutilla Mango Naranja, 335 g
+                  - generic [ref=e626]:
+                    - generic [ref=e629]:
+                      - generic [ref=e630]:
+                        - img "Pulpa de Frutilla Mango Naranja, 335 g"
+                      - button "Agregar al carro - Pulpa de Frutilla Mango Naranja, 335 g" [ref=e633] [cursor=pointer]:
+                        - generic "agregar" [ref=e634]: 
+                        - generic [ref=e635]: Agregar
+                    - generic [ref=e637]:
+                      - generic [ref=e639]:
+                        - generic [ref=e640]: $4.190
+                        - generic [ref=e641]: precio actual $4.190
+                        - generic [ref=e642]: $12.507 x kg
+                      - generic [ref=e643]: Minuto Verde
+                      - generic [ref=e644]: Pulpa de Frutilla Mango Naranja, 335 g
+  - alert [ref=e653]

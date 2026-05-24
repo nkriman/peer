@@ -1,0 +1,833 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: huevos 12 unidades
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 7 productos Monto total $16.800" [ref=e1258]:
+              - generic [ref=e42]: 
+              - generic [ref=e1259]: "7"
+              - generic [ref=e43]: $16.800
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e1260]:
+          - generic [ref=e1261]:
+            - button "Despacho a Domicilio MARTIN DE ZAMORA 5595" [ref=e1262] [cursor=pointer]:
+              - generic [ref=e1264]:
+                - img [ref=e1265]
+                - generic [ref=e1266]: Despacho a Domicilio
+                - generic [ref=e1267]: 
+                - generic [ref=e1268]: "|"
+                - generic [ref=e1270]:
+                  - img [ref=e1271]
+                  - generic [ref=e1272]: MARTIN DE ZAMORA 5595
+              - text: 
+            - generic:   
+            - navigation "Secundario" [ref=e1275]:
+              - list [ref=e1276]:
+                - listitem [ref=e1277]:
+                  - link "Tarjeta Lider Bci" [ref=e1279] [cursor=pointer]:
+                    - /url: https://tarjetadigital.liderbciserviciosfinancieros.cl/ingreso-de-datos?utm_source=Lidercl_sod_header&utm_medium=lidercl
+                - listitem [ref=e1280]:
+                  - link "Mi Club" [ref=e1282] [cursor=pointer]:
+                    - /url: https://www.miclublider.cl/
+                - listitem [ref=e1283]:
+                  - link "Centro de ayuda" [ref=e1285] [cursor=pointer]:
+                    - /url: /ayuda
+          - img [ref=e1288]
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e80]:
+            - generic [ref=e1289]:
+              - generic [ref=e1292]:
+                - generic [ref=e1293]:
+                  - button "Precio" [ref=e1296]:
+                    - generic [ref=e1297]: Precio
+                    - img [ref=e1298]: 
+                  - separator [ref=e1299]
+                - generic [ref=e1300]:
+                  - button "Campaña" [ref=e1303]:
+                    - generic [ref=e1304]: Campaña
+                    - img [ref=e1305]: 
+                  - separator [ref=e1306]
+                - generic [ref=e1307]:
+                  - button "Marca" [ref=e1310]:
+                    - generic [ref=e1311]: Marca
+                    - img [ref=e1312]: 
+                  - separator [ref=e1313]
+                - generic [ref=e1314]:
+                  - button "Categoría" [ref=e1317]:
+                    - generic [ref=e1318]: Categoría
+                    - img [ref=e1319]: 
+                  - separator [ref=e1320]
+              - generic [ref=e1323]:
+                - heading "Resultados para huevos 12 unidades (54)" [level=2] [ref=e1331]: Resultados para huevos 12 unidades(54)
+                - generic [ref=e1332]:
+                  - group [ref=e1335]:
+                    - link "Huevos Tradicionales Extra Grande Blanco, 12 Un" [ref=e1336] [cursor=pointer]:
+                      - /url: /ip/huevos/00780413300502?from=/search
+                      - generic [ref=e1337]: Huevos Tradicionales Extra Grande Blanco, 12 Un
+                    - generic [ref=e1339]:
+                      - generic [ref=e1342]:
+                        - img "Huevos Tradicionales Extra Grande Blanco, 12 Un" [ref=e1344]
+                        - button "Agregar al carro - Huevos Tradicionales Extra Grande Blanco, 12 Un" [ref=e1347] [cursor=pointer]:
+                          - generic "agregar" [ref=e1348]: 
+                          - generic [ref=e1349]: Agregar
+                      - generic [ref=e1351]:
+                        - generic [ref=e1353]:
+                          - generic [ref=e1354]: $4.790
+                          - generic [ref=e1355]: precio actual $4.790
+                          - generic [ref=e1356]: $399 x un
+                        - generic [ref=e1357]: Cintazul
+                        - generic [ref=e1358]: Huevos Tradicionales Extra Grande Blanco, 12 Un
+                  - group [ref=e1361]:
+                    - link "Huevos de Campo y Gallina Libre Grande Color, 12 Un" [ref=e1362] [cursor=pointer]:
+                      - /url: /ip/huevos/00780414000003?from=/search
+                      - generic [ref=e1363]: Huevos de Campo y Gallina Libre Grande Color, 12 Un
+                    - generic [ref=e1365]:
+                      - generic [ref=e1368]:
+                        - img "Huevos de Campo y Gallina Libre Grande Color, 12 Un" [ref=e1370]
+                        - button "Agregar al carro - Huevos de Campo y Gallina Libre Grande Color, 12 Un" [ref=e1373] [cursor=pointer]:
+                          - generic "agregar" [ref=e1374]: 
+                          - generic [ref=e1375]: Agregar
+                      - generic [ref=e1377]:
+                        - generic [ref=e1379]:
+                          - generic [ref=e1380]: $5.190
+                          - generic [ref=e1381]: precio actual $5.190
+                          - generic [ref=e1382]: $433 x un
+                        - generic [ref=e1383]: La Granja
+                        - generic [ref=e1384]: Huevos de Campo y Gallina Libre Grande Color, 12 Un
+                  - group [ref=e1387]:
+                    - link "Huevos Tradicionales Extra Grande Blanco, 12 Un" [ref=e1388] [cursor=pointer]:
+                      - /url: /ip/huevos/00780414400057?from=/search
+                      - generic [ref=e1389]: Huevos Tradicionales Extra Grande Blanco, 12 Un
+                    - generic [ref=e1391]:
+                      - generic [ref=e1394]:
+                        - img "Huevos Tradicionales Extra Grande Blanco, 12 Un" [ref=e1396]
+                        - button "Agregar al carro - Huevos Tradicionales Extra Grande Blanco, 12 Un" [ref=e1399] [cursor=pointer]:
+                          - generic "agregar" [ref=e1400]: 
+                          - generic [ref=e1401]: Agregar
+                      - generic [ref=e1403]:
+                        - generic [ref=e1405]:
+                          - generic [ref=e1406]: $4.190
+                          - generic [ref=e1407]: precio actual $4.190
+                          - generic [ref=e1408]: $349 x un
+                        - generic [ref=e1409]: Lider
+                        - generic [ref=e1410]: Huevos Tradicionales Extra Grande Blanco, 12 Un
+                  - group [ref=e1413]:
+                    - link "Huevos de Campo y Gallina Libre Mediano Color, 18 Un" [ref=e1414] [cursor=pointer]:
+                      - /url: /ip/huevos/00780410000277?from=/search
+                      - generic [ref=e1415]: Huevos de Campo y Gallina Libre Mediano Color, 18 Un
+                    - generic [ref=e1417]:
+                      - generic [ref=e1420]:
+                        - img "Huevos de Campo y Gallina Libre Mediano Color, 18 Un" [ref=e1422]
+                        - button "Agregar al carro - Huevos de Campo y Gallina Libre Mediano Color, 18 Un" [ref=e1425] [cursor=pointer]:
+                          - generic "agregar" [ref=e1426]: 
+                          - generic [ref=e1427]: Agregar
+                      - generic [ref=e1429]:
+                        - generic [ref=e1431]:
+                          - generic [ref=e1432]: $5.890
+                          - generic [ref=e1433]: precio actual $5.890
+                          - generic [ref=e1434]: $327 x un
+                        - generic [ref=e1435]: La Granja
+                        - generic [ref=e1436]: Huevos de Campo y Gallina Libre Mediano Color, 18 Un
+                  - group [ref=e1439]:
+                    - link "Huevos Tradicionales Grande Blanco, 12 Un" [ref=e1440] [cursor=pointer]:
+                      - /url: /ip/huevos/00780414400046?from=/search
+                      - generic [ref=e1441]: Huevos Tradicionales Grande Blanco, 12 Un
+                    - generic [ref=e1443]:
+                      - generic [ref=e1446]:
+                        - img "Huevos Tradicionales Grande Blanco, 12 Un" [ref=e1448]
+                        - button "Agregar al carro - Huevos Tradicionales Grande Blanco, 12 Un" [ref=e1451] [cursor=pointer]:
+                          - generic "agregar" [ref=e1452]: 
+                          - generic [ref=e1453]: Agregar
+                      - generic [ref=e1455]:
+                        - generic [ref=e1457]:
+                          - generic [ref=e1458]: $3.790
+                          - generic [ref=e1459]: precio actual $3.790
+                          - generic [ref=e1460]: $316 x un
+                        - generic [ref=e1461]: Lider
+                        - generic [ref=e1462]: Huevos Tradicionales Grande Blanco, 12 Un
+                  - group [ref=e1465]:
+                    - link "Huevos Tradicionales Extra Grande Blanco, 12 Un" [ref=e1466] [cursor=pointer]:
+                      - /url: /ip/huevos/00780410010110?from=/search
+                      - generic [ref=e1467]: Huevos Tradicionales Extra Grande Blanco, 12 Un
+                    - generic [ref=e1469]:
+                      - generic [ref=e1472]:
+                        - img "Huevos Tradicionales Extra Grande Blanco, 12 Un" [ref=e1474]
+                        - button "Agregar al carro - Huevos Tradicionales Extra Grande Blanco, 12 Un" [ref=e1477] [cursor=pointer]:
+                          - generic "agregar" [ref=e1478]: 
+                          - generic [ref=e1479]: Agregar
+                      - generic [ref=e1481]:
+                        - generic [ref=e1483]:
+                          - generic [ref=e1484]: $4.690
+                          - generic [ref=e1485]: precio actual $4.690
+                          - generic [ref=e1486]: $391 x un
+                        - generic [ref=e1487]: Yemita
+                        - generic [ref=e1488]: Huevos Tradicionales Extra Grande Blanco, 12 Un
+                  - group [ref=e1491]:
+                    - link "Huevos Tradicionales Grande Color, 12 Un" [ref=e1492] [cursor=pointer]:
+                      - /url: /ip/huevos/00780410010220?from=/search
+                      - generic [ref=e1493]: Huevos Tradicionales Grande Color, 12 Un
+                    - generic [ref=e1495]:
+                      - generic [ref=e1498]:
+                        - img "Huevos Tradicionales Grande Color, 12 Un" [ref=e1500]
+                        - button "Agregar al carro - Huevos Tradicionales Grande Color, 12 Un" [ref=e1503] [cursor=pointer]:
+                          - generic "agregar" [ref=e1504]: 
+                          - generic [ref=e1505]: Agregar
+                      - generic [ref=e1507]:
+                        - generic [ref=e1509]:
+                          - generic [ref=e1510]: $4.690
+                          - generic [ref=e1511]: precio actual $4.690
+                          - generic [ref=e1512]: $391 x un
+                        - generic [ref=e1513]: Yemita
+                        - generic [ref=e1514]: Huevos Tradicionales Grande Color, 12 Un
+                  - group [ref=e1517]:
+                    - link "Huevos Tradicionales Grande Blanco, 12 Un" [ref=e1518] [cursor=pointer]:
+                      - /url: /ip/huevos/00780410010210?from=/search
+                      - generic [ref=e1519]: Huevos Tradicionales Grande Blanco, 12 Un
+                    - generic [ref=e1521]:
+                      - generic [ref=e1524]:
+                        - img "Huevos Tradicionales Grande Blanco, 12 Un" [ref=e1526]
+                        - button "Agregar al carro - Huevos Tradicionales Grande Blanco, 12 Un" [ref=e1529] [cursor=pointer]:
+                          - generic "agregar" [ref=e1530]: 
+                          - generic [ref=e1531]: Agregar
+                      - generic [ref=e1533]:
+                        - generic [ref=e1535]:
+                          - generic [ref=e1536]: $4.590
+                          - generic [ref=e1537]: precio actual $4.590
+                          - generic [ref=e1538]: $383 x un
+                        - generic [ref=e1539]: Yemita
+                        - generic [ref=e1540]: Huevos Tradicionales Grande Blanco, 12 Un
+                  - group [ref=e1543]:
+                    - link "Huevos Tradicionales Grande Color, 12 Un" [ref=e1544] [cursor=pointer]:
+                      - /url: /ip/huevos/00780414400047?from=/search
+                      - generic [ref=e1545]: Huevos Tradicionales Grande Color, 12 Un
+                    - generic [ref=e1547]:
+                      - generic [ref=e1550]:
+                        - img "Huevos Tradicionales Grande Color, 12 Un" [ref=e1552]
+                        - button "Agregar al carro - Huevos Tradicionales Grande Color, 12 Un" [ref=e1555] [cursor=pointer]:
+                          - generic "agregar" [ref=e1556]: 
+                          - generic [ref=e1557]: Agregar
+                      - generic [ref=e1559]:
+                        - generic [ref=e1561]:
+                          - generic [ref=e1562]: $4.090
+                          - generic [ref=e1563]: precio actual $4.090
+                          - generic [ref=e1564]: $341 x un
+                        - generic [ref=e1565]: Lider
+                        - generic [ref=e1566]: Huevos Tradicionales Grande Color, 12 Un
+                  - group [ref=e1569]:
+                    - link "Huevos Tradicionales Mediano Color, 12 Un" [ref=e1570] [cursor=pointer]:
+                      - /url: /ip/huevos/00780413300603?from=/search
+                      - generic [ref=e1571]: Huevos Tradicionales Mediano Color, 12 Un
+                    - generic [ref=e1573]:
+                      - generic [ref=e1576]:
+                        - img "Huevos Tradicionales Mediano Color, 12 Un" [ref=e1578]
+                        - button "Agregar al carro - Huevos Tradicionales Mediano Color, 12 Un" [ref=e1581] [cursor=pointer]:
+                          - generic "agregar" [ref=e1582]: 
+                          - generic [ref=e1583]: Agregar
+                      - generic [ref=e1585]:
+                        - generic [ref=e1587]:
+                          - generic [ref=e1588]: $4.390
+                          - generic [ref=e1589]: precio actual $4.390
+                          - generic [ref=e1590]: $366 x un
+                        - generic [ref=e1591]: Cintazul
+                        - generic [ref=e1592]: Huevos Tradicionales Mediano Color, 12 Un
+                  - group [ref=e1595]:
+                    - link "Huevos Tradicionales Grande Blanco, 12 Un" [ref=e1596] [cursor=pointer]:
+                      - /url: /ip/huevos/00780413300503?from=/search
+                      - generic [ref=e1597]: Huevos Tradicionales Grande Blanco, 12 Un
+                    - generic [ref=e1599]:
+                      - generic [ref=e1602]:
+                        - img "Huevos Tradicionales Grande Blanco, 12 Un" [ref=e1604]
+                        - button "Agregar al carro - Huevos Tradicionales Grande Blanco, 12 Un" [ref=e1607] [cursor=pointer]:
+                          - generic "agregar" [ref=e1608]: 
+                          - generic [ref=e1609]: Agregar
+                      - generic [ref=e1611]:
+                        - generic [ref=e1613]:
+                          - generic [ref=e1614]: $4.490
+                          - generic [ref=e1615]: precio actual $4.490
+                          - generic [ref=e1616]: $374 x un
+                        - generic [ref=e1617]: Cintazul
+                        - generic [ref=e1618]: Huevos Tradicionales Grande Blanco, 12 Un
+                  - group [ref=e1621]:
+                    - link "Huevos Tradicionales Grande Color, 12 Un" [ref=e1622] [cursor=pointer]:
+                      - /url: /ip/huevos/00780414400004?from=/search
+                      - generic [ref=e1623]: Huevos Tradicionales Grande Color, 12 Un
+                    - generic [ref=e1625]:
+                      - generic [ref=e1628]:
+                        - img "Huevos Tradicionales Grande Color, 12 Un" [ref=e1630]
+                        - button "Agregar al carro - Huevos Tradicionales Grande Color, 12 Un" [ref=e1633] [cursor=pointer]:
+                          - generic "agregar" [ref=e1634]: 
+                          - generic [ref=e1635]: Agregar
+                      - generic [ref=e1637]:
+                        - generic [ref=e1639]:
+                          - generic [ref=e1640]: $4.690
+                          - generic [ref=e1641]: precio actual $4.690
+                          - generic [ref=e1642]: $391 x un
+                        - generic [ref=e1643]: Huevos De Talca
+                        - generic [ref=e1644]: Huevos Tradicionales Grande Color, 12 Un
+                  - group [ref=e1647]:
+                    - link "Huevos Tradicionales Grande Color, 12 Un" [ref=e1648] [cursor=pointer]:
+                      - /url: /ip/huevos/00780414400002?from=/search
+                      - generic [ref=e1649]: Huevos Tradicionales Grande Color, 12 Un
+                    - generic [ref=e1651]:
+                      - generic [ref=e1654]:
+                        - img "Huevos Tradicionales Grande Color, 12 Un" [ref=e1656]
+                        - button "Agregar al carro - Huevos Tradicionales Grande Color, 12 Un" [ref=e1659] [cursor=pointer]:
+                          - generic "agregar" [ref=e1660]: 
+                          - generic [ref=e1661]: Agregar
+                      - generic [ref=e1663]:
+                        - generic [ref=e1665]:
+                          - generic [ref=e1666]: $4.590
+                          - generic [ref=e1667]: precio actual $4.590
+                          - generic [ref=e1668]: $383 x un
+                        - generic [ref=e1669]: Huevos De Talca
+                        - generic [ref=e1670]: Huevos Tradicionales Grande Color, 12 Un
+                  - group [ref=e1673]:
+                    - link "Huevos Tradicionales Grande Blanco, 12 Un" [ref=e1674] [cursor=pointer]:
+                      - /url: /ip/huevos/00780412200002?from=/search
+                      - generic [ref=e1675]: Huevos Tradicionales Grande Blanco, 12 Un
+                    - generic [ref=e1677]:
+                      - generic [ref=e1680]:
+                        - img "Huevos Tradicionales Grande Blanco, 12 Un" [ref=e1682]
+                        - button "Agregar al carro - Huevos Tradicionales Grande Blanco, 12 Un" [ref=e1685] [cursor=pointer]:
+                          - generic "agregar" [ref=e1686]: 
+                          - generic [ref=e1687]: Agregar
+                      - generic [ref=e1689]:
+                        - generic [ref=e1691]:
+                          - generic [ref=e1692]: $4.690
+                          - generic [ref=e1693]: precio actual $4.690
+                          - generic [ref=e1694]: $391 x un
+                        - generic [ref=e1695]: Santa Marta
+                        - generic [ref=e1696]: Huevos Tradicionales Grande Blanco, 12 Un
+                  - group [ref=e1699]:
+                    - link "Huevos Tradicionales Extra Grande Color, 12 Un" [ref=e1700] [cursor=pointer]:
+                      - /url: /ip/huevos/00780412200003?from=/search
+                      - generic [ref=e1701]: Huevos Tradicionales Extra Grande Color, 12 Un
+                    - generic [ref=e1703]:
+                      - generic [ref=e1706]:
+                        - img "Huevos Tradicionales Extra Grande Color, 12 Un" [ref=e1708]
+                        - button "Agregar al carro - Huevos Tradicionales Extra Grande Color, 12 Un" [ref=e1711] [cursor=pointer]:
+                          - generic "agregar" [ref=e1712]: 
+                          - generic [ref=e1713]: Agregar
+                      - generic [ref=e1715]:
+                        - generic [ref=e1717]:
+                          - generic [ref=e1718]: $4.790
+                          - generic [ref=e1719]: precio actual $4.790
+                          - generic [ref=e1720]: $399 x un
+                        - generic [ref=e1721]: Santa Marta
+                        - generic [ref=e1722]: Huevos Tradicionales Extra Grande Color, 12 Un
+                  - group [ref=e1725]:
+                    - link "Huevos Tradicionales Extra Grande Blanco, 12 Un" [ref=e1726] [cursor=pointer]:
+                      - /url: /ip/huevos/00780412200001?from=/search
+                      - generic [ref=e1727]: Huevos Tradicionales Extra Grande Blanco, 12 Un
+                    - generic [ref=e1729]:
+                      - generic [ref=e1732]:
+                        - img "Huevos Tradicionales Extra Grande Blanco, 12 Un" [ref=e1734]
+                        - button "Agregar al carro - Huevos Tradicionales Extra Grande Blanco, 12 Un" [ref=e1737] [cursor=pointer]:
+                          - generic "agregar" [ref=e1738]: 
+                          - generic [ref=e1739]: Agregar
+                      - generic [ref=e1741]:
+                        - generic [ref=e1743]:
+                          - generic [ref=e1744]: $4.690
+                          - generic [ref=e1745]: precio actual $4.690
+                          - generic [ref=e1746]: $391 x un
+                        - generic [ref=e1747]: Santa Marta
+                        - generic [ref=e1748]: Huevos Tradicionales Extra Grande Blanco, 12 Un
+                  - group [ref=e1751]:
+                    - link "Huevos Tradicionales Grande Color, 12 Un" [ref=e1752] [cursor=pointer]:
+                      - /url: /ip/huevos/00780412200004?from=/search
+                      - generic [ref=e1753]: Huevos Tradicionales Grande Color, 12 Un
+                    - generic [ref=e1755]:
+                      - generic [ref=e1758]:
+                        - generic [ref=e1759]:
+                          - img "Huevos Tradicionales Grande Color, 12 Un"
+                        - button "Agregar al carro - Huevos Tradicionales Grande Color, 12 Un" [ref=e1762] [cursor=pointer]:
+                          - generic "agregar" [ref=e1763]: 
+                          - generic [ref=e1764]: Agregar
+                      - generic [ref=e1766]:
+                        - generic [ref=e1768]:
+                          - generic [ref=e1769]: $4.690
+                          - generic [ref=e1770]: precio actual $4.690
+                          - generic [ref=e1771]: $391 x un
+                        - generic [ref=e1772]: Santa Marta
+                        - generic [ref=e1773]: Huevos Tradicionales Grande Color, 12 Un
+                  - group [ref=e1776]:
+                    - link "Huevos Tradicionales Extra Grande Blanco, 20 Un" [ref=e1777] [cursor=pointer]:
+                      - /url: /ip/huevos/00780414400048?from=/search
+                      - generic [ref=e1778]: Huevos Tradicionales Extra Grande Blanco, 20 Un
+                    - generic [ref=e1780]:
+                      - generic [ref=e1783]:
+                        - generic [ref=e1784]:
+                          - img "Huevos Tradicionales Extra Grande Blanco, 20 Un"
+                        - button "Agregar al carro - Huevos Tradicionales Extra Grande Blanco, 20 Un" [ref=e1787] [cursor=pointer]:
+                          - generic "agregar" [ref=e1788]: 
+                          - generic [ref=e1789]: Agregar
+                      - generic [ref=e1791]:
+                        - generic [ref=e1793]:
+                          - generic [ref=e1794]: $6.490
+                          - generic [ref=e1795]: precio actual $6.490
+                          - generic [ref=e1796]: $325 x un
+                        - generic [ref=e1797]: Lider
+                        - generic [ref=e1798]: Huevos Tradicionales Extra Grande Blanco, 20 Un
+                  - group [ref=e1801]:
+                    - link "Huevos Tradicionales Mediano Blanco, 30 Un" [ref=e1802] [cursor=pointer]:
+                      - /url: /ip/huevos/00780413300634?from=/search
+                      - generic [ref=e1803]: Huevos Tradicionales Mediano Blanco, 30 Un
+                    - generic [ref=e1805]:
+                      - generic [ref=e1808]:
+                        - generic [ref=e1809]:
+                          - img "Huevos Tradicionales Mediano Blanco, 30 Un"
+                        - button "Agregar al carro - Huevos Tradicionales Mediano Blanco, 30 Un" [ref=e1812] [cursor=pointer]:
+                          - generic "agregar" [ref=e1813]: 
+                          - generic [ref=e1814]: Agregar
+                      - generic [ref=e1816]:
+                        - generic [ref=e1818]:
+                          - generic [ref=e1819]: $9.490
+                          - generic [ref=e1820]: precio actual $9.490
+                          - generic [ref=e1821]: $316 x un
+                        - generic [ref=e1822]: Cintazul
+                        - generic [ref=e1823]: Huevos Tradicionales Mediano Blanco, 30 Un
+                  - group [ref=e1826]:
+                    - link "Huevos Tradicionales Grande Blanco, 30 Un" [ref=e1827] [cursor=pointer]:
+                      - /url: /ip/huevos/00780953180115?from=/search
+                      - generic [ref=e1828]: Huevos Tradicionales Grande Blanco, 30 Un
+                    - generic [ref=e1830]:
+                      - generic [ref=e1833]:
+                        - generic [ref=e1834]:
+                          - img "Huevos Tradicionales Grande Blanco, 30 Un"
+                        - button "Agregar al carro - Huevos Tradicionales Grande Blanco, 30 Un" [ref=e1837] [cursor=pointer]:
+                          - generic "agregar" [ref=e1838]: 
+                          - generic [ref=e1839]: Agregar
+                      - generic [ref=e1841]:
+                        - generic [ref=e1843]:
+                          - generic [ref=e1844]: $9.990
+                          - generic [ref=e1845]: precio actual $9.990
+                          - generic [ref=e1846]: $333 x un
+                        - generic [ref=e1847]: Coliumo
+                        - generic [ref=e1848]: Huevos Tradicionales Grande Blanco, 30 Un
+                  - group [ref=e1851]:
+                    - link "Huevos de Campo y Gallina Libre Extra Grande Color, 20 Un" [ref=e1852] [cursor=pointer]:
+                      - /url: /ip/huevos/00780953180005?from=/search
+                      - generic [ref=e1853]: Huevos de Campo y Gallina Libre Extra Grande Color, 20 Un
+                    - generic [ref=e1855]:
+                      - generic [ref=e1858]:
+                        - generic [ref=e1859]:
+                          - img "Huevos de Campo y Gallina Libre Extra Grande Color, 20 Un"
+                        - button "Agregar al carro - Huevos de Campo y Gallina Libre Extra Grande Color, 20 Un" [ref=e1862] [cursor=pointer]:
+                          - generic "agregar" [ref=e1863]: 
+                          - generic [ref=e1864]: Agregar
+                      - generic [ref=e1866]:
+                        - generic [ref=e1868]:
+                          - generic [ref=e1869]: $8.790
+                          - generic [ref=e1870]: precio actual $8.790
+                          - generic [ref=e1871]: $440 x un
+                        - generic [ref=e1872]: La Castellana
+                        - generic [ref=e1873]: Huevos de Campo y Gallina Libre Extra Grande Color, 20 Un
+                  - group [ref=e1876]:
+                    - link "Huevos Tradicionales Grande Blanco, 30 Un" [ref=e1877] [cursor=pointer]:
+                      - /url: /ip/huevos/00780412200009?from=/search
+                      - generic [ref=e1878]: Huevos Tradicionales Grande Blanco, 30 Un
+                    - generic [ref=e1880]:
+                      - generic [ref=e1883]:
+                        - generic [ref=e1884]:
+                          - img "Huevos Tradicionales Grande Blanco, 30 Un"
+                        - button "Agregar al carro - Huevos Tradicionales Grande Blanco, 30 Un" [ref=e1887] [cursor=pointer]:
+                          - generic "agregar" [ref=e1888]: 
+                          - generic [ref=e1889]: Agregar
+                      - generic [ref=e1891]:
+                        - generic [ref=e1893]:
+                          - generic [ref=e1894]: $9.690
+                          - generic [ref=e1895]: precio actual $9.690
+                          - generic [ref=e1896]: $323 x un
+                        - generic [ref=e1897]: Santa Marta
+                        - generic [ref=e1898]: Huevos Tradicionales Grande Blanco, 30 Un
+                  - group [ref=e1901]:
+                    - link "Huevos Tradicionales Grande Blanco, 6 Un" [ref=e1902] [cursor=pointer]:
+                      - /url: /ip/huevos/00780414400049?from=/search
+                      - generic [ref=e1903]: Huevos Tradicionales Grande Blanco, 6 Un
+                    - generic [ref=e1905]:
+                      - generic [ref=e1908]:
+                        - generic [ref=e1909]:
+                          - img "Huevos Tradicionales Grande Blanco, 6 Un"
+                        - button "Agregar al carro - Huevos Tradicionales Grande Blanco, 6 Un" [ref=e1912] [cursor=pointer]:
+                          - generic "agregar" [ref=e1913]: 
+                          - generic [ref=e1914]: Agregar
+                      - generic [ref=e1916]:
+                        - generic [ref=e1918]:
+                          - generic [ref=e1919]: $1.990
+                          - generic [ref=e1920]: precio actual $1.990
+                          - generic [ref=e1921]: $332 x un
+                        - generic [ref=e1922]: Lider
+                        - generic [ref=e1923]: Huevos Tradicionales Grande Blanco, 6 Un
+                  - group [ref=e1926]:
+                    - link "Huevos Tradicionales Grande Color, 30 Un" [ref=e1927] [cursor=pointer]:
+                      - /url: /ip/huevos/00780953180114?from=/search
+                      - generic [ref=e1928]: Huevos Tradicionales Grande Color, 30 Un
+                    - generic [ref=e1930]:
+                      - generic [ref=e1933]:
+                        - generic [ref=e1934]:
+                          - img "Huevos Tradicionales Grande Color, 30 Un"
+                        - button "Agregar al carro - Huevos Tradicionales Grande Color, 30 Un" [ref=e1937] [cursor=pointer]:
+                          - generic "agregar" [ref=e1938]: 
+                          - generic [ref=e1939]: Agregar
+                      - generic [ref=e1941]:
+                        - generic [ref=e1943]:
+                          - generic [ref=e1944]: $9.990
+                          - generic [ref=e1945]: precio actual $9.990
+                          - generic [ref=e1946]: $333 x un
+                        - generic [ref=e1947]: Coliumo
+                        - generic [ref=e1948]: Huevos Tradicionales Grande Color, 30 Un
+                  - group [ref=e1951]:
+                    - link "Huevos Tradicionales Extra Grande Blanco, 18 Un" [ref=e1952] [cursor=pointer]:
+                      - /url: /ip/huevos/00780410000278?from=/search
+                      - generic [ref=e1953]: Huevos Tradicionales Extra Grande Blanco, 18 Un
+                    - generic [ref=e1955]:
+                      - generic [ref=e1958]:
+                        - generic [ref=e1959]:
+                          - img "Huevos Tradicionales Extra Grande Blanco, 18 Un"
+                        - button "Agregar al carro - Huevos Tradicionales Extra Grande Blanco, 18 Un" [ref=e1962] [cursor=pointer]:
+                          - generic "agregar" [ref=e1963]: 
+                          - generic [ref=e1964]: Agregar
+                      - generic [ref=e1966]:
+                        - generic [ref=e1968]:
+                          - generic [ref=e1969]: $6.890
+                          - generic [ref=e1970]: precio actual $6.890
+                          - generic [ref=e1971]: $383 x un
+                        - generic [ref=e1972]: Yemita
+                        - generic [ref=e1973]: Huevos Tradicionales Extra Grande Blanco, 18 Un
+                  - group [ref=e1976]:
+                    - link "Huevos Tradicionales Extra Grande Color, 20 Un" [ref=e1977] [cursor=pointer]:
+                      - /url: /ip/huevos/00780953180027?from=/search
+                      - generic [ref=e1978]: Huevos Tradicionales Extra Grande Color, 20 Un
+                    - generic [ref=e1980]:
+                      - generic [ref=e1983]:
+                        - generic [ref=e1984]:
+                          - img "Huevos Tradicionales Extra Grande Color, 20 Un"
+                        - button "Agregar al carro - Huevos Tradicionales Extra Grande Color, 20 Un" [ref=e1987] [cursor=pointer]:
+                          - generic "agregar" [ref=e1988]: 
+                          - generic [ref=e1989]: Agregar
+                      - generic [ref=e1991]:
+                        - generic [ref=e1993]:
+                          - generic [ref=e1994]: $7.590
+                          - generic [ref=e1995]: precio actual $7.590
+                          - generic [ref=e1996]: $380 x un
+                        - generic [ref=e1997]: Coliumo
+                        - generic [ref=e1998]: Huevos Tradicionales Extra Grande Color, 20 Un
+                  - generic [ref=e2000]:
+                    - group [ref=e2001]:
+                      - link "Huevos de Codorniz Chicos Manchado, 24 Un" [ref=e2002] [cursor=pointer]:
+                        - /url: /ip/huevos/00780462480000?from=/search
+                        - generic [ref=e2003]: Huevos de Codorniz Chicos Manchado, 24 Un
+                      - generic [ref=e2005]:
+                        - generic [ref=e2009]:
+                          - img "Huevos de Codorniz Chicos Manchado, 24 Un"
+                        - generic [ref=e2011]:
+                          - generic [ref=e2013]:
+                            - generic [ref=e2014]: $3.690
+                            - generic [ref=e2015]: precio actual $3.690
+                          - generic [ref=e2016]: Los Espinos
+                          - generic [ref=e2017]: Huevos de Codorniz Chicos Manchado, 24 Un
+                          - generic [ref=e2018]: Agotado
+                    - button "Revisar productos similares - Huevos de Codorniz Chicos Manchado, 24 Un" [ref=e2020]: Revisar productos similares
+                  - group [ref=e2023]:
+                    - link "Huevos Tradicionales Extra Grande Blanco, 20 Un" [ref=e2024] [cursor=pointer]:
+                      - /url: /ip/huevos/00780410010213?from=/search
+                      - generic [ref=e2025]: Huevos Tradicionales Extra Grande Blanco, 20 Un
+                    - generic [ref=e2027]:
+                      - generic [ref=e2030]:
+                        - generic [ref=e2031]:
+                          - img "Huevos Tradicionales Extra Grande Blanco, 20 Un"
+                        - button "Agregar al carro - Huevos Tradicionales Extra Grande Blanco, 20 Un" [ref=e2034] [cursor=pointer]:
+                          - generic "agregar" [ref=e2035]: 
+                          - generic [ref=e2036]: Agregar
+                      - generic [ref=e2038]:
+                        - generic [ref=e2040]:
+                          - generic [ref=e2041]: $7.390
+                          - generic [ref=e2042]: precio actual $7.390
+                          - generic [ref=e2043]: $370 x un
+                        - generic [ref=e2044]: Yemita
+                        - generic [ref=e2045]: Huevos Tradicionales Extra Grande Blanco, 20 Un
+                  - group [ref=e2048]:
+                    - link "Huevos Tradicionales Extra Grande Blanco, 20 Un" [ref=e2049] [cursor=pointer]:
+                      - /url: /ip/huevos/00780414400022?from=/search
+                      - generic [ref=e2050]: Huevos Tradicionales Extra Grande Blanco, 20 Un
+                    - generic [ref=e2052]:
+                      - generic [ref=e2055]:
+                        - generic [ref=e2056]:
+                          - img "Huevos Tradicionales Extra Grande Blanco, 20 Un"
+                        - button "Agregar al carro - Huevos Tradicionales Extra Grande Blanco, 20 Un" [ref=e2059] [cursor=pointer]:
+                          - generic "agregar" [ref=e2060]: 
+                          - generic [ref=e2061]: Agregar
+                      - generic [ref=e2063]:
+                        - generic [ref=e2065]:
+                          - generic [ref=e2066]: $6.790
+                          - generic [ref=e2067]: precio actual $6.790
+                          - generic [ref=e2068]: $340 x un
+                        - generic [ref=e2069]: Huevos De Talca
+                        - generic [ref=e2070]: Huevos Tradicionales Extra Grande Blanco, 20 Un
+                  - group [ref=e2073]:
+                    - link "Huevos Tradicionales Mediano Blanco, 30 Un" [ref=e2074] [cursor=pointer]:
+                      - /url: /ip/huevos/00780410010315?from=/search
+                      - generic [ref=e2075]: Huevos Tradicionales Mediano Blanco, 30 Un
+                    - generic [ref=e2077]:
+                      - generic [ref=e2080]:
+                        - generic [ref=e2081]:
+                          - img "Huevos Tradicionales Mediano Blanco, 30 Un"
+                        - button "Agregar al carro - Huevos Tradicionales Mediano Blanco, 30 Un" [ref=e2084] [cursor=pointer]:
+                          - generic "agregar" [ref=e2085]: 
+                          - generic [ref=e2086]: Agregar
+                      - generic [ref=e2088]:
+                        - generic [ref=e2090]:
+                          - generic [ref=e2091]: $9.290
+                          - generic [ref=e2092]: precio actual $9.290
+                          - generic [ref=e2093]: $310 x un
+                        - generic [ref=e2094]: Yemita
+                        - generic [ref=e2095]: Huevos Tradicionales Mediano Blanco, 30 Un
+                  - group [ref=e2098]:
+                    - link "Huevos Tradicionales Grande Blanco, 30 Un" [ref=e2099] [cursor=pointer]:
+                      - /url: /ip/huevos/00780413300632?from=/search
+                      - generic [ref=e2100]: Huevos Tradicionales Grande Blanco, 30 Un
+                    - generic [ref=e2102]:
+                      - generic [ref=e2105]:
+                        - generic [ref=e2106]:
+                          - img "Huevos Tradicionales Grande Blanco, 30 Un"
+                        - button "Agregar al carro - Huevos Tradicionales Grande Blanco, 30 Un" [ref=e2109] [cursor=pointer]:
+                          - generic "agregar" [ref=e2110]: 
+                          - generic [ref=e2111]: Agregar
+                      - generic [ref=e2113]:
+                        - generic [ref=e2115]:
+                          - generic [ref=e2116]: $10.190
+                          - generic [ref=e2117]: precio actual $10.190
+                          - generic [ref=e2118]: $340 x un
+                        - generic [ref=e2119]: Cinta Azul
+                        - generic [ref=e2120]: Huevos Tradicionales Grande Blanco, 30 Un
+                  - group [ref=e2123]:
+                    - link "Huevos Tradicionales Extra Grande Blanco, 20 Un" [ref=e2124] [cursor=pointer]:
+                      - /url: /ip/huevos/00780413300003?from=/search
+                      - generic [ref=e2125]: Huevos Tradicionales Extra Grande Blanco, 20 Un
+                    - generic [ref=e2127]:
+                      - generic [ref=e2130]:
+                        - generic [ref=e2131]:
+                          - img "Huevos Tradicionales Extra Grande Blanco, 20 Un"
+                        - button "Agregar al carro - Huevos Tradicionales Extra Grande Blanco, 20 Un" [ref=e2134] [cursor=pointer]:
+                          - generic "agregar" [ref=e2135]: 
+                          - generic [ref=e2136]: Agregar
+                      - generic [ref=e2138]:
+                        - generic [ref=e2140]:
+                          - generic [ref=e2141]: $7.590
+                          - generic [ref=e2142]: precio actual $7.590
+                          - generic [ref=e2143]: $380 x un
+                        - generic [ref=e2144]: Cintazul
+                        - generic [ref=e2145]: Huevos Tradicionales Extra Grande Blanco, 20 Un
+                  - group [ref=e2148]:
+                    - link "Huevos Tradicionales Mediano Blanco, 30 Un" [ref=e2149] [cursor=pointer]:
+                      - /url: /ip/huevos/00780414400045?from=/search
+                      - generic [ref=e2150]: Huevos Tradicionales Mediano Blanco, 30 Un
+                    - generic [ref=e2152]:
+                      - generic [ref=e2155]:
+                        - generic [ref=e2156]:
+                          - img "Huevos Tradicionales Mediano Blanco, 30 Un"
+                        - button "Agregar al carro - Huevos Tradicionales Mediano Blanco, 30 Un" [ref=e2159] [cursor=pointer]:
+                          - generic "agregar" [ref=e2160]: 
+                          - generic [ref=e2161]: Agregar
+                      - generic [ref=e2163]:
+                        - generic [ref=e2165]:
+                          - generic [ref=e2166]: $8.390
+                          - generic [ref=e2167]: precio actual $8.390
+                          - generic [ref=e2168]: $279 x un
+                        - generic [ref=e2169]: Lider
+                        - generic [ref=e2170]: Huevos Tradicionales Mediano Blanco, 30 Un
+                  - generic [ref=e2172]:
+                    - group [ref=e2173]:
+                      - link "Huevos Tradicionales Grande Color, 30 Un" [ref=e2174] [cursor=pointer]:
+                        - /url: /ip/huevos/00780412200043?from=/search
+                        - generic [ref=e2175]: Huevos Tradicionales Grande Color, 30 Un
+                      - generic [ref=e2177]:
+                        - generic [ref=e2181]:
+                          - img "Huevos Tradicionales Grande Color, 30 Un"
+                        - generic [ref=e2183]:
+                          - generic [ref=e2185]:
+                            - generic [ref=e2186]: $10.490
+                            - generic [ref=e2187]: precio actual $10.490
+                            - generic [ref=e2188]: $350 x un
+                          - generic [ref=e2189]: Santa Marta
+                          - generic [ref=e2190]: Huevos Tradicionales Grande Color, 30 Un
+                          - generic [ref=e2191]: Agotado
+                    - button "Revisar productos similares - Huevos Tradicionales Grande Color, 30 Un" [ref=e2193]: Revisar productos similares
+                  - group [ref=e2196]:
+                    - link "Huevos de Campo y Gallina Libre Grande Color, 10 Un" [ref=e2197] [cursor=pointer]:
+                      - /url: /ip/huevos/00780464445000?from=/search
+                      - generic [ref=e2198]: Huevos de Campo y Gallina Libre Grande Color, 10 Un
+                    - generic [ref=e2200]:
+                      - generic [ref=e2203]:
+                        - generic [ref=e2204]:
+                          - img "Huevos de Campo y Gallina Libre Grande Color, 10 Un"
+                        - button "Agregar al carro - Huevos de Campo y Gallina Libre Grande Color, 10 Un" [ref=e2207] [cursor=pointer]:
+                          - generic "agregar" [ref=e2208]: 
+                          - generic [ref=e2209]: Agregar
+                      - generic [ref=e2211]:
+                        - generic [ref=e2213]:
+                          - generic [ref=e2214]: $5.590
+                          - generic [ref=e2215]: precio actual $5.590
+                          - generic [ref=e2216]: $559 x un
+                        - generic [ref=e2217]: Ecoterra
+                        - generic [ref=e2218]: Huevos de Campo y Gallina Libre Grande Color, 10 Un
+                  - group [ref=e2221]:
+                    - link "Huevos Tradicionales Grande Blanco, 30 Un" [ref=e2222] [cursor=pointer]:
+                      - /url: /ip/huevos/00780414400012?from=/search
+                      - generic [ref=e2223]: Huevos Tradicionales Grande Blanco, 30 Un
+                    - generic [ref=e2225]:
+                      - generic [ref=e2228]:
+                        - generic [ref=e2229]:
+                          - img "Huevos Tradicionales Grande Blanco, 30 Un"
+                        - button "Agregar al carro - Huevos Tradicionales Grande Blanco, 30 Un" [ref=e2232] [cursor=pointer]:
+                          - generic "agregar" [ref=e2233]: 
+                          - generic [ref=e2234]: Agregar
+                      - generic [ref=e2236]:
+                        - generic [ref=e2238]:
+                          - generic [ref=e2239]: $10.490
+                          - generic [ref=e2240]: precio actual $10.490
+                          - generic [ref=e2241]: $350 x un
+                        - generic [ref=e2242]: Huevos De Talca
+                        - generic [ref=e2243]: Huevos Tradicionales Grande Blanco, 30 Un
+                  - group [ref=e2246]:
+                    - link "Globo latex 12 unidades niño" [ref=e2247] [cursor=pointer]:
+                      - /url: /ip/cumpleanos-y-cotillon/00780465603547?from=/search
+                      - generic [ref=e2248]: Globo latex 12 unidades niño
+                    - generic [ref=e2250]:
+                      - generic [ref=e2253]:
+                        - generic [ref=e2254]:
+                          - img "Globo latex 12 unidades niño"
+                        - button "Agregar al carro - Globo latex 12 unidades niño" [ref=e2257] [cursor=pointer]:
+                          - generic "agregar" [ref=e2258]: 
+                          - generic [ref=e2259]: Agregar
+                      - generic [ref=e2261]:
+                        - generic [ref=e2263]:
+                          - generic [ref=e2264]: $1.290
+                          - generic [ref=e2265]: precio actual $1.290
+                          - generic [ref=e2266]: $430 x un
+                        - generic [ref=e2267]: Palms
+                        - generic [ref=e2268]: Globo latex 12 unidades niño
+                  - group [ref=e2271]:
+                    - link "Plato mediano carton 12 unidades" [ref=e2272] [cursor=pointer]:
+                      - /url: /ip/cumpleanos-y-cotillon/00780547500982?from=/search
+                      - generic [ref=e2273]: Plato mediano carton 12 unidades
+                    - generic [ref=e2275]:
+                      - generic [ref=e2278]:
+                        - generic [ref=e2279]:
+                          - img "Plato mediano carton 12 unidades"
+                        - button "Agregar al carro - Plato mediano carton 12 unidades" [ref=e2282] [cursor=pointer]:
+                          - generic "agregar" [ref=e2283]: 
+                          - generic [ref=e2284]: Agregar
+                      - generic [ref=e2286]:
+                        - generic [ref=e2288]:
+                          - generic [ref=e2289]: $1.290
+                          - generic [ref=e2290]: precio actual $1.290
+                          - generic [ref=e2291]: $108 x un
+                        - generic [ref=e2292]: Lider
+                        - generic [ref=e2293]: Plato mediano carton 12 unidades
+                  - group [ref=e2296]:
+                    - link "Lápices de Cera Jumbo 12 Unidades Caja" [ref=e2297] [cursor=pointer]:
+                      - /url: /ip/libreria/00780726501061?from=/search
+                      - generic [ref=e2298]: Lápices de Cera Jumbo 12 Unidades Caja
+                    - generic [ref=e2300]:
+                      - generic [ref=e2303]:
+                        - generic [ref=e2304]:
+                          - img "Lápices de Cera Jumbo 12 Unidades Caja"
+                        - button "Agregar al carro - Lápices de Cera Jumbo 12 Unidades Caja" [ref=e2307] [cursor=pointer]:
+                          - generic "agregar" [ref=e2308]: 
+                          - generic [ref=e2309]: Agregar
+                      - generic [ref=e2311]:
+                        - generic [ref=e2313]:
+                          - generic [ref=e2314]: $1.990
+                          - generic [ref=e2315]: precio actual $1.990
+                          - generic [ref=e2316]: $1.990 x un
+                        - generic [ref=e2317]: Proarte
+                        - generic [ref=e2318]: Lápices de Cera Jumbo 12 Unidades Caja
+                  - group [ref=e2321]:
+                    - link "Plato grande carton 12 unidades" [ref=e2322] [cursor=pointer]:
+                      - /url: /ip/cumpleanos-y-cotillon/00780547500983?from=/search
+                      - generic [ref=e2323]: Plato grande carton 12 unidades
+                    - generic [ref=e2325]:
+                      - generic [ref=e2328]:
+                        - generic [ref=e2329]:
+                          - img "Plato grande carton 12 unidades"
+                        - button "Agregar al carro - Plato grande carton 12 unidades" [ref=e2332] [cursor=pointer]:
+                          - generic "agregar" [ref=e2333]: 
+                          - generic [ref=e2334]: Agregar
+                      - generic [ref=e2336]:
+                        - generic [ref=e2338]:
+                          - generic [ref=e2339]: $1.790
+                          - generic [ref=e2340]: precio actual $1.790
+                          - generic [ref=e2341]: $149 x un
+                        - generic [ref=e2342]: Lider
+                        - generic [ref=e2343]: Plato grande carton 12 unidades
+            - navigation "paginación" [ref=e2346]:
+              - list [ref=e2347]:
+                - listitem [ref=e2348]
+                - listitem [ref=e2350]:
+                  - link "1" [ref=e2351] [cursor=pointer]:
+                    - /url: /search?q=huevos+12+unidades&facet=fulfillment_method%3ADelivery
+                - listitem [ref=e2352]:
+                  - link "Ir a la página 2" [ref=e2353] [cursor=pointer]:
+                    - /url: /search?q=huevos+12+unidades&facet=fulfillment_method%3ADelivery&page=2
+                    - text: "2"
+                - listitem [ref=e2354]:
+                  - link "Página siguiente" [ref=e2355] [cursor=pointer]:
+                    - /url: /search?q=huevos+12+unidades&facet=fulfillment_method%3ADelivery&page=2
+                    - generic [ref=e2356]: 
+  - alert [ref=e1257]: Supermercado

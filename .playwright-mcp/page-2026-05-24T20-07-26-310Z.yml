@@ -1,0 +1,348 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: jamon artesanal
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e81]:
+            - generic [ref=e84]:
+              - generic [ref=e85]:
+                - button "Precio" [ref=e88]:
+                  - generic [ref=e89]: Precio
+                  - img [ref=e90]: 
+                - separator [ref=e91]
+              - generic [ref=e92]:
+                - button "Campaña" [ref=e95]:
+                  - generic [ref=e96]: Campaña
+                  - img [ref=e97]: 
+                - separator [ref=e98]
+              - generic [ref=e99]:
+                - button "Marca" [ref=e102]:
+                  - generic [ref=e103]: Marca
+                  - img [ref=e104]: 
+                - separator [ref=e105]
+              - generic [ref=e106]:
+                - button "Categoría" [ref=e109]:
+                  - generic [ref=e110]: Categoría
+                  - img [ref=e111]: 
+                - separator [ref=e112]
+            - generic [ref=e115]:
+              - heading "Resultados para jamon artesanal (14)" [level=2] [ref=e123]: Resultados para jamon artesanal(14)
+              - generic [ref=e124]:
+                - group [ref=e127]:
+                  - link "Jamón Artesanal Granel" [ref=e128] [cursor=pointer]:
+                    - /url: /ip/fiambres-y-embutidos/00207074000000?from=/search
+                    - generic [ref=e129]: Jamón Artesanal Granel
+                  - generic [ref=e131]:
+                    - generic [ref=e132]:
+                      - generic [ref=e134]:
+                        - generic [ref=e136]: 
+                        - text: Rebaja
+                      - generic [ref=e137]:
+                        - img "Jamón Artesanal Granel" [ref=e139]
+                        - button "Agregar al carro - Jamón Artesanal Granel" [ref=e142] [cursor=pointer]:
+                          - generic "agregar" [ref=e143]: 
+                          - generic [ref=e144]: Agregar
+                    - generic [ref=e146]:
+                      - generic [ref=e148]:
+                        - generic [ref=e149]: $11.800/kg
+                        - generic [ref=e150]: precio actual $11.800/kg, Costaba $13.800/kg
+                        - generic [ref=e151]: $11.800 x kg
+                        - generic [ref=e152]: $13.800/kg
+                        - generic [ref=e153]: Ahorra $2.000
+                      - generic [ref=e154]: Receta Del Abuelo
+                      - generic [ref=e155]: Jamón Artesanal Granel
+                - group [ref=e158]:
+                  - link "Jamón Artesanal Granel" [ref=e159] [cursor=pointer]:
+                    - /url: /ip/fiambres-y-embutidos/00206921000000?from=/search
+                    - generic [ref=e160]: Jamón Artesanal Granel
+                  - generic [ref=e162]:
+                    - generic [ref=e165]:
+                      - img "Jamón Artesanal Granel" [ref=e167]
+                      - button "Agregar al carro - Jamón Artesanal Granel" [ref=e170] [cursor=pointer]:
+                        - generic "agregar" [ref=e171]: 
+                        - generic [ref=e172]: Agregar
+                    - generic [ref=e174]:
+                      - generic [ref=e176]:
+                        - generic [ref=e177]: $8.600/kg
+                        - generic [ref=e178]: precio actual $8.600/kg
+                        - generic [ref=e179]: $8.600 x kg
+                      - generic [ref=e180]: PF
+                      - generic [ref=e181]: Jamón Artesanal Granel
+                - generic [ref=e183]:
+                  - group [ref=e184]:
+                    - link "Jamón Pierna Artesanal Granel" [ref=e185] [cursor=pointer]:
+                      - /url: /ip/fiambres-y-embutidos/00232586000000?from=/search
+                      - generic [ref=e186]: Jamón Pierna Artesanal Granel
+                    - generic [ref=e188]:
+                      - img "Jamón Pierna Artesanal Granel" [ref=e193]
+                      - generic [ref=e195]:
+                        - generic [ref=e197]:
+                          - generic [ref=e198]: $7.000/kg
+                          - generic [ref=e199]: precio actual $7.000/kg
+                          - generic [ref=e200]: $7.000 x kg
+                        - generic [ref=e201]: Winter
+                        - generic [ref=e202]: Jamón Pierna Artesanal Granel
+                        - generic [ref=e203]: Agotado
+                  - button "Revisar productos similares - Jamón Pierna Artesanal Granel" [ref=e205]: Revisar productos similares
+                - group [ref=e208]:
+                  - link "Jamón Pierna Artesanal, 200 gr" [ref=e209] [cursor=pointer]:
+                    - /url: /ip/fiambres-y-embutidos/00780190700178?from=/search
+                    - generic [ref=e210]: Jamón Pierna Artesanal, 200 gr
+                  - generic [ref=e212]:
+                    - generic [ref=e215]:
+                      - img "Jamón Pierna Artesanal, 200 gr" [ref=e217]
+                      - button "Agregar al carro - Jamón Pierna Artesanal, 200 gr" [ref=e220] [cursor=pointer]:
+                        - generic "agregar" [ref=e221]: 
+                        - generic [ref=e222]: Agregar
+                    - generic [ref=e224]:
+                      - generic [ref=e226]:
+                        - generic [ref=e227]: $2.290
+                        - generic [ref=e228]: precio actual $2.290
+                        - generic [ref=e229]: $11.450 x kg
+                      - generic [ref=e230]: San Jorge
+                      - generic [ref=e231]: Jamón Pierna Artesanal, 200 gr
+                - group [ref=e234]:
+                  - link "Jamón Pierna Artesanal Corte Pluma, 125 g" [ref=e235] [cursor=pointer]:
+                    - /url: /ip/fiambres-y-embutidos/00780193001188?from=/search
+                    - generic [ref=e236]: Jamón Pierna Artesanal Corte Pluma, 125 g
+                  - generic [ref=e238]:
+                    - generic [ref=e239]:
+                      - generic [ref=e241]:
+                        - generic [ref=e243]: 
+                        - text: Rebaja
+                      - generic [ref=e244]:
+                        - img "Jamón Pierna Artesanal Corte Pluma, 125 g" [ref=e246]
+                        - button "Agregar al carro - Jamón Pierna Artesanal Corte Pluma, 125 g" [ref=e249] [cursor=pointer]:
+                          - generic "agregar" [ref=e250]: 
+                          - generic [ref=e251]: Agregar
+                    - generic [ref=e253]:
+                      - generic [ref=e255]:
+                        - generic [ref=e256]: $1.950
+                        - generic [ref=e257]: precio actual $1.950, Costaba $2.250
+                        - generic [ref=e258]: $15.600 x kg
+                        - generic [ref=e259]: $2.250
+                        - generic [ref=e260]: Ahorra $300
+                      - generic [ref=e261]: Receta Del Abuelo
+                      - generic [ref=e262]: Jamón Pierna Artesanal Corte Pluma, 125 g
+                - group [ref=e265]:
+                  - link "Jamón Pierna Artesanal, 400 gr" [ref=e266] [cursor=pointer]:
+                    - /url: /ip/fiambres-y-embutidos/00780193002071?from=/search
+                    - generic [ref=e267]: Jamón Pierna Artesanal, 400 gr
+                  - generic [ref=e269]:
+                    - generic [ref=e272]:
+                      - img "Jamón Pierna Artesanal, 400 gr" [ref=e274]
+                      - button "Agregar al carro - Jamón Pierna Artesanal, 400 gr" [ref=e277] [cursor=pointer]:
+                        - generic "agregar" [ref=e278]: 
+                        - generic [ref=e279]: Agregar
+                    - generic [ref=e281]:
+                      - generic [ref=e283]:
+                        - generic [ref=e284]: $4.790
+                        - generic [ref=e285]: precio actual $4.790
+                        - generic [ref=e286]: $11.975 x kg
+                      - generic [ref=e287]: Receta Del Abuelo
+                      - generic [ref=e288]: Jamón Pierna Artesanal, 400 gr
+                - group [ref=e291]:
+                  - link "Jamón Pierna Artesanal Bolsa, 200 g" [ref=e292] [cursor=pointer]:
+                    - /url: /ip/fiambres-y-embutidos/00780193001827?from=/search
+                    - generic [ref=e293]: Jamón Pierna Artesanal Bolsa, 200 g
+                  - generic [ref=e295]:
+                    - generic [ref=e296]:
+                      - generic [ref=e298]:
+                        - generic [ref=e300]: 
+                        - text: Rebaja
+                      - generic [ref=e301]:
+                        - img "Jamón Pierna Artesanal Bolsa, 200 g" [ref=e303]
+                        - button "Agregar al carro - Jamón Pierna Artesanal Bolsa, 200 g" [ref=e306] [cursor=pointer]:
+                          - generic "agregar" [ref=e307]: 
+                          - generic [ref=e308]: Agregar
+                    - generic [ref=e310]:
+                      - generic [ref=e312]:
+                        - generic [ref=e313]: $2.490
+                        - generic [ref=e314]: precio actual $2.490, Costaba $2.890
+                        - generic [ref=e315]: $12.450 x kg
+                        - generic [ref=e316]: $2.890
+                        - generic [ref=e317]: Ahorra $400
+                      - generic [ref=e318]: Receta Del Abuelo
+                      - generic [ref=e319]: Jamón Pierna Artesanal Bolsa, 200 g
+                - group [ref=e322]:
+                  - link "Jamón Pierna Artesanal" [ref=e323] [cursor=pointer]:
+                    - /url: /ip/fiambres-y-embutidos/00231058000000?from=/search
+                    - generic [ref=e324]: Jamón Pierna Artesanal
+                  - generic [ref=e326]:
+                    - generic [ref=e329]:
+                      - img "Jamón Pierna Artesanal" [ref=e331]
+                      - button "Agregar al carro - Jamón Pierna Artesanal" [ref=e334] [cursor=pointer]:
+                        - generic "agregar" [ref=e335]: 
+                        - generic [ref=e336]: Agregar
+                    - generic [ref=e338]:
+                      - generic [ref=e340]:
+                        - generic [ref=e341]: $11.000/kg
+                        - generic [ref=e342]: precio actual $11.000/kg
+                        - generic [ref=e343]: $11.000 x kg
+                      - generic [ref=e344]: Super Cerdo
+                      - generic [ref=e345]: Jamón Pierna Artesanal
+                - group [ref=e348]:
+                  - link "Jamón Artesanal, 75 g" [ref=e349] [cursor=pointer]:
+                    - /url: /ip/fiambres-y-embutidos/00780193000196?from=/search
+                    - generic [ref=e350]: Jamón Artesanal, 75 g
+                  - generic [ref=e352]:
+                    - generic [ref=e355]:
+                      - img "Jamón Artesanal, 75 g" [ref=e357]
+                      - button "Agregar al carro - Jamón Artesanal, 75 g" [ref=e360] [cursor=pointer]:
+                        - generic "agregar" [ref=e361]: 
+                        - generic [ref=e362]: Agregar
+                    - generic [ref=e364]:
+                      - generic [ref=e366]:
+                        - generic [ref=e367]: $1.000
+                        - generic [ref=e368]: precio actual $1.000
+                        - generic [ref=e369]: $13.333 x kg
+                      - generic [ref=e370]: PF
+                      - generic [ref=e371]: Jamón Artesanal, 75 g
+                - group [ref=e374]:
+                  - link "Jamón Artesanal" [ref=e375] [cursor=pointer]:
+                    - /url: /ip/fiambres-y-embutidos/00206041000000?from=/search
+                    - generic [ref=e376]: Jamón Artesanal
+                  - generic [ref=e378]:
+                    - generic [ref=e381]:
+                      - img "Jamón Artesanal" [ref=e383]
+                      - button "Agregar al carro - Jamón Artesanal" [ref=e386] [cursor=pointer]:
+                        - generic "agregar" [ref=e387]: 
+                        - generic [ref=e388]: Agregar
+                    - generic [ref=e390]:
+                      - generic [ref=e392]:
+                        - generic [ref=e393]: $8.200/kg
+                        - generic [ref=e394]: precio actual $8.200/kg
+                        - generic [ref=e395]: $8.200 x kg
+                      - generic [ref=e396]: San Jorge
+                      - generic [ref=e397]: Jamón Artesanal
+                - group [ref=e400]:
+                  - link "Jamón Artesanal" [ref=e401] [cursor=pointer]:
+                    - /url: /ip/fiambres-y-embutidos/00206042000000?from=/search
+                    - generic [ref=e402]: Jamón Artesanal
+                  - generic [ref=e404]:
+                    - generic [ref=e407]:
+                      - img "Jamón Artesanal" [ref=e409]
+                      - button "Agregar al carro - Jamón Artesanal" [ref=e412] [cursor=pointer]:
+                        - generic "agregar" [ref=e413]: 
+                        - generic [ref=e414]: Agregar
+                    - generic [ref=e416]:
+                      - generic [ref=e418]:
+                        - generic [ref=e419]: $17.960/kg
+                        - generic [ref=e420]: precio actual $17.960/kg
+                        - generic [ref=e421]: $17.960 x kg
+                      - generic [ref=e422]: Llanquihue
+                      - generic [ref=e423]: Jamón Artesanal
+                - group [ref=e426]:
+                  - link "Jamón Campestre Ahumado Laminado Artesanal, 200 g" [ref=e427] [cursor=pointer]:
+                    - /url: /ip/fiambres-y-embutidos/00780961171450?from=/search
+                    - generic [ref=e428]: Jamón Campestre Ahumado Laminado Artesanal, 200 g
+                  - generic [ref=e430]:
+                    - generic [ref=e433]:
+                      - img "Jamón Campestre Ahumado Laminado Artesanal, 200 g" [ref=e435]
+                      - button "Agregar al carro - Jamón Campestre Ahumado Laminado Artesanal, 200 g" [ref=e438] [cursor=pointer]:
+                        - generic "agregar" [ref=e439]: 
+                        - generic [ref=e440]: Agregar
+                    - generic [ref=e442]:
+                      - generic [ref=e444]:
+                        - generic [ref=e445]: $2.550
+                        - generic [ref=e446]: precio actual $2.550
+                        - generic [ref=e447]: $12.750 x kg
+                      - generic [ref=e448]: La Crianza
+                      - generic [ref=e449]: Jamón Campestre Ahumado Laminado Artesanal, 200 g
+                - generic [ref=e451]:
+                  - group [ref=e452]:
+                    - link "Jamón Ibérico Cebo Artesanal, 70 g" [ref=e453] [cursor=pointer]:
+                      - /url: /ip/fiambres-y-embutidos/00780192600362?from=/search
+                      - generic [ref=e454]: Jamón Ibérico Cebo Artesanal, 70 g
+                    - generic [ref=e456]:
+                      - img "Jamón Ibérico Cebo Artesanal, 70 g" [ref=e461]
+                      - generic [ref=e463]:
+                        - generic [ref=e465]:
+                          - generic [ref=e466]: $10.690
+                          - generic [ref=e467]: precio actual $10.690
+                          - generic [ref=e468]: $152.714 x kg
+                        - generic [ref=e469]: Trujillo
+                        - generic [ref=e470]: Jamón Ibérico Cebo Artesanal, 70 g
+                        - generic [ref=e471]: Agotado
+                  - button "Revisar productos similares - Jamón Ibérico Cebo Artesanal, 70 g" [ref=e473]: Revisar productos similares
+                - group [ref=e476]:
+                  - link "Jamón Paleta Cebo Artesanal, 70 g" [ref=e477] [cursor=pointer]:
+                    - /url: /ip/fiambres-y-embutidos/00780192600367?from=/search
+                    - generic [ref=e478]: Jamón Paleta Cebo Artesanal, 70 g
+                  - generic [ref=e480]:
+                    - generic [ref=e483]:
+                      - img "Jamón Paleta Cebo Artesanal, 70 g" [ref=e485]
+                      - button "Agregar al carro - Jamón Paleta Cebo Artesanal, 70 g" [ref=e488] [cursor=pointer]:
+                        - generic "agregar" [ref=e489]: 
+                        - generic [ref=e490]: Agregar
+                    - generic [ref=e492]:
+                      - generic [ref=e494]:
+                        - generic [ref=e495]: $9.790
+                        - generic [ref=e496]: precio actual $9.790
+                        - generic [ref=e497]: $139.857 x kg
+                      - generic [ref=e498]: Trujillo
+                      - generic [ref=e499]: Jamón Paleta Cebo Artesanal, 70 g
+  - alert [ref=e508]

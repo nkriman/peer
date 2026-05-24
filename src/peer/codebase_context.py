@@ -525,12 +525,17 @@ def gather_codebase_context(
     max_test_file_chars: int = 5000,
     test_path_conventions: list[str] | None = None,
     linters: list | None = None,
+    include_git_history: bool = False,
 ) -> CodebaseContext:
     """Assemble the CodebaseContext for a PR. Graceful: returns empty if
     optional deps are unavailable.
 
     `linters` (linter-context-v01): list of Linter instances run against
     modified Python files. Findings populate `cc.linter_findings`.
+
+    `include_git_history` (blame-enricher-v01): when True and the repo
+    was successfully checked out, populate `cc.git_history` via
+    `gather_git_history`. Runs independently of tree-sitter availability.
     """
     cc = CodebaseContext()
 
@@ -550,6 +555,16 @@ def gather_codebase_context(
             pr_context.head_sha,
         )
         return cc
+
+    # blame-enricher-v01: gather git history independently of symbol parsing.
+    if include_git_history:
+        from .context_git import gather_git_history
+
+        try:
+            cc.git_history = gather_git_history(repo_path, pr_context.hunks)
+        except Exception as e:
+            logger.warning("gather_git_history failed: %s", e)
+            cc.git_history = ""
 
     _extract_modified_symbols(repo_path, pr_context, cc)
 

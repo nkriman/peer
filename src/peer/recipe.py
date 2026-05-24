@@ -62,6 +62,12 @@ class Recipe(BaseModel):
     # Lets the autoresearch loop run with zero ANTHROPIC_API_KEY spend.
     use_claude_code: bool = False
 
+    # ----- blame-enricher-v01 -----
+    # When true: Agent.run passes include_git_history=True into
+    # gather_codebase_context, which populates cc.git_history. format_prompt
+    # then renders a `## GIT HISTORY` section. Default off until measured.
+    include_git_history: bool = False
+
     # -------------------------------------------------------------------
     # YAML round-trip
     # -------------------------------------------------------------------

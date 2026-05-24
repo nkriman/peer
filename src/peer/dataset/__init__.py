@@ -15,6 +15,7 @@ from .enrichment import (
     PostMergeBugfixCorrelation,
 )
 from .sources import GitHubInlineCommentSource, RawSampleSource
+from .split import load_split
 from .storage import GoldSampleStorage, JSONLStorage
 from .taxonomy import DefaultTaxonomy, Taxonomy
 from .types import (
@@ -52,4 +53,5 @@ __all__ = [
     "RawSample",
     "RawSampleSource",
     "Taxonomy",
+    "load_split",
 ]

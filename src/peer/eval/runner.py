@@ -16,7 +16,7 @@ import logging
 import time
 from datetime import datetime, timezone
 from statistics import mean, median
-from typing import Protocol
+from typing import Any, Protocol
 
 import anthropic
 
@@ -168,6 +168,7 @@ class EvalRunner:
         metrics: list[EvalMetric] | None = None,
         dataset_path: str | None = None,
         concurrency: int = 5,
+        judge_client_override: Any | None = None,
     ) -> None:
         self.reviewer = reviewer
         self.dataset = list(dataset)
@@ -189,8 +190,15 @@ class EvalRunner:
         # same connection pool / api key. Lazy-init so EvalRunner can be
         # constructed without ANTHROPIC_API_KEY (e.g., in unit tests).
         self._client: anthropic.Anthropic | None = None
+        # eval-cross-judge-v01: when set, _get_client returns this directly
+        # (skipping make_client). Used by CrossJudgeRunner to swap judges.
+        self._judge_client_override: Any | None = judge_client_override
 
-    def _get_client(self) -> anthropic.Anthropic:
+    def _get_client(self) -> Any:
+        # Return type widened to Any because the override may be a
+        # CrossJudgeRunner pinned-model shim (not strictly anthropic.Anthropic).
+        if self._judge_client_override is not None:
+            return self._judge_client_override
         if self._client is None:
             from ..claude_code_client import make_client
 

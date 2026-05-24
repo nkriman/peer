@@ -163,6 +163,7 @@ def format_prompt(ctx: Context, cc: CodebaseContext | None = None) -> str:
         or cc.related_tests
         or cc.untested_files
         or cc.linter_findings
+        or cc.git_history
     ):
         parts.append("## Codebase context")
         parts.append("")
@@ -214,6 +215,16 @@ def format_prompt(ctx: Context, cc: CodebaseContext | None = None) -> str:
             )
             for f in cc.unsupported_files:
                 parts.append(f"- `{f}`")
+            parts.append("")
+
+        if cc.git_history:
+            parts.append("## GIT HISTORY")
+            parts.append(
+                "Recent commits and blame for files touched by this PR. Use this "
+                "to weigh authorship + recency signals — old battle-tested code vs "
+                "recent code in flux, same-author-as-surrounding-code vs not."
+            )
+            parts.append(cc.git_history)
             parts.append("")
 
         if cc.linter_findings:

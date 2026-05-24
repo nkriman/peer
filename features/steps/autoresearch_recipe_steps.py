@@ -201,11 +201,17 @@ def step_agent_with_recipe_kwarg(context, model: str, recipe_model: str) -> None
 
 @given("the file prompts/default_system_prompt.md exists with a known marker")
 def step_prompt_file_with_marker(context) -> None:
-    # Mark the live file with a unique sentinel; restore after the scenario.
+    # Mark the live file with a unique sentinel; the environment.py
+    # after_scenario hook is the safety net for restoration so corrupted
+    # state can't leak across scenarios.
     pfile = Path(__file__).resolve().parents[2] / "prompts" / "default_system_prompt.md"
-    context.fixtures["_orig_prompt"] = pfile.read_text()
+    raw = pfile.read_text()
     marker = "AUTORESEARCH_RECIPE_MARKER_42"
-    pfile.write_text(context.fixtures["_orig_prompt"] + "\n\n" + marker + "\n")
+    # Strip any leftover marker from a prior (potentially-crashed) run before
+    # snapshotting "original" — protects against marker accretion.
+    orig = "\n".join(line for line in raw.splitlines() if line.strip() != marker).rstrip() + "\n"
+    context.fixtures["_orig_prompt"] = orig
+    pfile.write_text(orig + "\n" + marker + "\n")
     context.fixtures["_marker"] = marker
     context.fixtures["_pfile"] = pfile
 

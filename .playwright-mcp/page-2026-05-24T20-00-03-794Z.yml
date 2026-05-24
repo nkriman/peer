@@ -1,0 +1,889 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: queso gauda laminado
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 10 productos Monto total $30.070" [ref=e1310]:
+              - generic [ref=e42]: 
+              - generic [ref=e1311]: "10"
+              - generic [ref=e43]: $30.070
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e1312]:
+          - generic [ref=e1313]:
+            - button "Despacho a Domicilio MARTIN DE ZAMORA 5595" [ref=e1314] [cursor=pointer]:
+              - generic [ref=e1316]:
+                - img [ref=e1317]
+                - generic [ref=e1318]: Despacho a Domicilio
+                - generic [ref=e1319]: 
+                - generic [ref=e1320]: "|"
+                - generic [ref=e1322]:
+                  - img [ref=e1323]
+                  - generic [ref=e1324]: MARTIN DE ZAMORA 5595
+              - text: 
+            - generic:   
+            - navigation "Secundario" [ref=e1327]:
+              - list [ref=e1328]:
+                - listitem [ref=e1329]:
+                  - link "Tarjeta Lider Bci" [ref=e1331] [cursor=pointer]:
+                    - /url: https://tarjetadigital.liderbciserviciosfinancieros.cl/ingreso-de-datos?utm_source=Lidercl_sod_header&utm_medium=lidercl
+                - listitem [ref=e1332]:
+                  - link "Mi Club" [ref=e1334] [cursor=pointer]:
+                    - /url: https://www.miclublider.cl/
+                - listitem [ref=e1335]:
+                  - link "Centro de ayuda" [ref=e1337] [cursor=pointer]:
+                    - /url: /ayuda
+          - img [ref=e1340]
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e80]:
+            - generic [ref=e1341]:
+              - generic [ref=e1344]:
+                - generic [ref=e1345]:
+                  - button "Precio" [ref=e1348]:
+                    - generic [ref=e1349]: Precio
+                    - img [ref=e1350]: 
+                  - separator [ref=e1351]
+                - generic [ref=e1352]:
+                  - button "Campaña" [ref=e1355]:
+                    - generic [ref=e1356]: Campaña
+                    - img [ref=e1357]: 
+                  - separator [ref=e1358]
+                - generic [ref=e1359]:
+                  - button "Marca" [ref=e1362]:
+                    - generic [ref=e1363]: Marca
+                    - img [ref=e1364]: 
+                  - separator [ref=e1365]
+                - generic [ref=e1366]:
+                  - button "Categoría" [ref=e1369]:
+                    - generic [ref=e1370]: Categoría
+                    - img [ref=e1371]: 
+                  - separator [ref=e1372]
+              - generic [ref=e1375]:
+                - heading "Resultados para queso gauda laminado (78)" [level=2] [ref=e1383]: Resultados para queso gauda laminado(78)
+                - generic [ref=e1384]:
+                  - group [ref=e1387]:
+                    - link "Queso Gauda Laminado, 500 g" [ref=e1388] [cursor=pointer]:
+                      - /url: /ip/quesos/00780290000117?from=/search
+                      - generic [ref=e1389]: Queso Gauda Laminado, 500 g
+                    - generic [ref=e1391]:
+                      - generic [ref=e1394]:
+                        - img "Queso Gauda Laminado, 500 g" [ref=e1396]
+                        - button "Agregar al carro - Queso Gauda Laminado, 500 g" [ref=e1399] [cursor=pointer]:
+                          - generic "agregar" [ref=e1400]: 
+                          - generic [ref=e1401]: Agregar
+                      - generic [ref=e1403]:
+                        - generic [ref=e1405]:
+                          - generic [ref=e1406]: $5.990
+                          - generic [ref=e1407]: precio actual $5.990
+                          - generic [ref=e1408]: $11.980 x kg
+                        - generic [ref=e1409]: Soprole
+                        - generic [ref=e1410]: Queso Gauda Laminado, 500 g
+                  - group [ref=e1413]:
+                    - link "Queso Gauda Laminado, 500 g" [ref=e1414] [cursor=pointer]:
+                      - /url: /ip/quesos/00780461339022?from=/search
+                      - generic [ref=e1415]: Queso Gauda Laminado, 500 g
+                    - generic [ref=e1417]:
+                      - generic [ref=e1420]:
+                        - img "Queso Gauda Laminado, 500 g" [ref=e1422]
+                        - button "Agregar al carro - Queso Gauda Laminado, 500 g" [ref=e1425] [cursor=pointer]:
+                          - generic "agregar" [ref=e1426]: 
+                          - generic [ref=e1427]: Agregar
+                      - generic [ref=e1429]:
+                        - generic [ref=e1431]:
+                          - generic [ref=e1432]: $4.890
+                          - generic [ref=e1433]: precio actual $4.890
+                          - generic [ref=e1434]: $9.780 x kg
+                        - generic [ref=e1435]: Lider
+                        - generic [ref=e1436]: Queso Gauda Laminado, 500 g
+                  - group [ref=e1439]:
+                    - link "Queso Gauda Laminado, 500 g" [ref=e1440] [cursor=pointer]:
+                      - /url: /ip/quesos/00780292077749?from=/search
+                      - generic [ref=e1441]: Queso Gauda Laminado, 500 g
+                    - generic [ref=e1443]:
+                      - generic [ref=e1446]:
+                        - img "Queso Gauda Laminado, 500 g" [ref=e1448]
+                        - button "Agregar al carro - Queso Gauda Laminado, 500 g" [ref=e1451] [cursor=pointer]:
+                          - generic "agregar" [ref=e1452]: 
+                          - generic [ref=e1453]: Agregar
+                      - generic [ref=e1455]:
+                        - generic [ref=e1457]:
+                          - generic [ref=e1458]: $6.890
+                          - generic [ref=e1459]: precio actual $6.890
+                          - generic [ref=e1460]: $13.780 x kg
+                        - generic [ref=e1461]: Colun
+                        - generic [ref=e1462]: Queso Gauda Laminado, 500 g
+                  - group [ref=e1465]:
+                    - link "Queso Ranco Laminado, 500 g" [ref=e1466] [cursor=pointer]:
+                      - /url: /ip/quesos/00780292077725?from=/search
+                      - generic [ref=e1467]: Queso Ranco Laminado, 500 g
+                    - generic [ref=e1469]:
+                      - generic [ref=e1470]:
+                        - generic [ref=e1472]:
+                          - generic [ref=e1474]: 
+                          - text: Rebaja
+                        - generic [ref=e1475]:
+                          - img "Queso Ranco Laminado, 500 g" [ref=e1477]
+                          - button "Agregar al carro - Queso Ranco Laminado, 500 g" [ref=e1480] [cursor=pointer]:
+                            - generic "agregar" [ref=e1481]: 
+                            - generic [ref=e1482]: Agregar
+                      - generic [ref=e1484]:
+                        - generic [ref=e1486]:
+                          - generic [ref=e1487]: $5.890
+                          - generic [ref=e1488]: precio actual $5.890, Costaba $6.590
+                          - generic [ref=e1489]: $11.780 x kg
+                          - generic [ref=e1490]: $6.590
+                          - generic [ref=e1491]: Ahorra $700
+                        - generic [ref=e1492]: Colun
+                        - generic [ref=e1493]: Queso Ranco Laminado, 500 g
+                  - group [ref=e1496]:
+                    - link "Queso Ranco Laminado, 250 g" [ref=e1497] [cursor=pointer]:
+                      - /url: /ip/quesos/00780292000411?from=/search
+                      - generic [ref=e1498]: Queso Ranco Laminado, 250 g
+                    - generic [ref=e1500]:
+                      - generic [ref=e1503]:
+                        - img "Queso Ranco Laminado, 250 g" [ref=e1505]
+                        - button "Agregar al carro - Queso Ranco Laminado, 250 g" [ref=e1508] [cursor=pointer]:
+                          - generic "agregar" [ref=e1509]: 
+                          - generic [ref=e1510]: Agregar
+                      - generic [ref=e1512]:
+                        - generic [ref=e1514]:
+                          - generic [ref=e1515]: $3.890
+                          - generic [ref=e1516]: precio actual $3.890
+                          - generic [ref=e1517]: $15.560 x kg
+                        - generic [ref=e1518]: Colun
+                        - generic [ref=e1519]: Queso Ranco Laminado, 250 g
+                  - group [ref=e1522]:
+                    - link "Queso Gauda Laminado, 250 g" [ref=e1523] [cursor=pointer]:
+                      - /url: /ip/quesos/00780290000246?from=/search
+                      - generic [ref=e1524]: Queso Gauda Laminado, 250 g
+                    - generic [ref=e1526]:
+                      - generic [ref=e1529]:
+                        - img "Queso Gauda Laminado, 250 g" [ref=e1531]
+                        - button "Agregar al carro - Queso Gauda Laminado, 250 g" [ref=e1534] [cursor=pointer]:
+                          - generic "agregar" [ref=e1535]: 
+                          - generic [ref=e1536]: Agregar
+                      - generic [ref=e1538]:
+                        - generic [ref=e1540]:
+                          - generic [ref=e1541]: $3.690
+                          - generic [ref=e1542]: precio actual $3.690
+                          - generic [ref=e1543]: $14.760 x kg
+                        - generic [ref=e1544]: Soprole
+                        - generic [ref=e1545]: Queso Gauda Laminado, 250 g
+                  - group [ref=e1548]:
+                    - link "Queso Gauda Laminado, 250 g" [ref=e1549] [cursor=pointer]:
+                      - /url: /ip/quesos/00780290000116?from=/search
+                      - generic [ref=e1550]: Queso Gauda Laminado, 250 g
+                    - generic [ref=e1552]:
+                      - generic [ref=e1555]:
+                        - img "Queso Gauda Laminado, 250 g" [ref=e1557]
+                        - button "Agregar al carro - Queso Gauda Laminado, 250 g" [ref=e1560] [cursor=pointer]:
+                          - generic "agregar" [ref=e1561]: 
+                          - generic [ref=e1562]: Agregar
+                      - generic [ref=e1564]:
+                        - generic [ref=e1566]:
+                          - generic [ref=e1567]: $3.690
+                          - generic [ref=e1568]: precio actual $3.690
+                          - generic [ref=e1569]: $14.760 x kg
+                        - generic [ref=e1570]: Soprole
+                        - generic [ref=e1571]: Queso Gauda Laminado, 250 g
+                  - group [ref=e1574]:
+                    - link "Queso Gauda Laminado, 500 g" [ref=e1575] [cursor=pointer]:
+                      - /url: /ip/quesos/00780290000247?from=/search
+                      - generic [ref=e1576]: Queso Gauda Laminado, 500 g
+                    - generic [ref=e1578]:
+                      - generic [ref=e1579]:
+                        - generic [ref=e1581]:
+                          - generic [ref=e1583]: 
+                          - text: Rebaja
+                        - generic [ref=e1584]:
+                          - img "Queso Gauda Laminado, 500 g" [ref=e1586]
+                          - button "Agregar al carro - Queso Gauda Laminado, 500 g" [ref=e1589] [cursor=pointer]:
+                            - generic "agregar" [ref=e1590]: 
+                            - generic [ref=e1591]: Agregar
+                      - generic [ref=e1593]:
+                        - generic [ref=e1595]:
+                          - generic [ref=e1596]: $5.290
+                          - generic [ref=e1597]: precio actual $5.290, Costaba $6.590
+                          - generic [ref=e1598]: $10.580 x kg
+                          - generic [ref=e1599]: $6.590
+                          - generic [ref=e1600]: Ahorra $1.300
+                        - generic [ref=e1601]: Soprole
+                        - generic [ref=e1602]: Queso Gauda Laminado, 500 g
+                  - group [ref=e1605]:
+                    - link "Queso Gauda Laminado, 250 g" [ref=e1606] [cursor=pointer]:
+                      - /url: /ip/quesos/00780461339021?from=/search
+                      - generic [ref=e1607]: Queso Gauda Laminado, 250 g
+                    - generic [ref=e1609]:
+                      - generic [ref=e1612]:
+                        - img "Queso Gauda Laminado, 250 g" [ref=e1614]
+                        - button "Agregar al carro - Queso Gauda Laminado, 250 g" [ref=e1617] [cursor=pointer]:
+                          - generic "agregar" [ref=e1618]: 
+                          - generic [ref=e1619]: Agregar
+                      - generic [ref=e1621]:
+                        - generic [ref=e1623]:
+                          - generic [ref=e1624]: $2.950
+                          - generic [ref=e1625]: precio actual $2.950
+                          - generic [ref=e1626]: $11.800 x kg
+                        - generic [ref=e1627]: Lider
+                        - generic [ref=e1628]: Queso Gauda Laminado, 250 g
+                  - group [ref=e1631]:
+                    - link "Queso Gauda Laminado, 400 g" [ref=e1632] [cursor=pointer]:
+                      - /url: /ip/quesos/00780464757065?from=/search
+                      - generic [ref=e1633]: Queso Gauda Laminado, 400 g
+                    - generic [ref=e1635]:
+                      - generic [ref=e1636]:
+                        - generic [ref=e1638]:
+                          - generic [ref=e1640]: 
+                          - text: Rebaja
+                        - generic [ref=e1641]:
+                          - img "Queso Gauda Laminado, 400 g" [ref=e1643]
+                          - button "Agregar al carro - Queso Gauda Laminado, 400 g" [ref=e1646] [cursor=pointer]:
+                            - generic "agregar" [ref=e1647]: 
+                            - generic [ref=e1648]: Agregar
+                      - generic [ref=e1650]:
+                        - generic [ref=e1652]:
+                          - generic [ref=e1653]: $3.990
+                          - generic [ref=e1654]: precio actual $3.990, Costaba $4.790
+                          - generic [ref=e1655]: $9.975 x kg
+                          - generic [ref=e1656]: $4.790
+                          - generic [ref=e1657]: Ahorra $800
+                        - generic [ref=e1658]: Huilco
+                        - generic [ref=e1659]: Queso Gauda Laminado, 400 g
+                  - group [ref=e1662]:
+                    - link "Queso Ranco Laminado Colun, 75 g" [ref=e1663] [cursor=pointer]:
+                      - /url: /ip/quesos/00780292001089?from=/search
+                      - generic [ref=e1664]: Queso Ranco Laminado Colun, 75 g
+                    - generic [ref=e1666]:
+                      - generic [ref=e1669]:
+                        - img "Queso Ranco Laminado Colun, 75 g" [ref=e1671]
+                        - button "Agregar al carro - Queso Ranco Laminado Colun, 75 g" [ref=e1674] [cursor=pointer]:
+                          - generic "agregar" [ref=e1675]: 
+                          - generic [ref=e1676]: Agregar
+                      - generic [ref=e1678]:
+                        - generic [ref=e1680]:
+                          - generic [ref=e1681]: $1.190
+                          - generic [ref=e1682]: precio actual $1.190
+                          - generic [ref=e1683]: $15.867 x kg
+                        - generic [ref=e1684]: Colun
+                        - generic [ref=e1685]: Queso Ranco Laminado Colun, 75 g
+                  - group [ref=e1688]:
+                    - link "Queso Ranco Laminado, 500 g" [ref=e1689] [cursor=pointer]:
+                      - /url: /ip/quesos/00780292000410?from=/search
+                      - generic [ref=e1690]: Queso Ranco Laminado, 500 g
+                    - generic [ref=e1692]:
+                      - generic [ref=e1693]:
+                        - generic [ref=e1695]:
+                          - generic [ref=e1697]: 
+                          - text: Rebaja
+                        - generic [ref=e1698]:
+                          - img "Queso Ranco Laminado, 500 g" [ref=e1700]
+                          - button "Agregar al carro - Queso Ranco Laminado, 500 g" [ref=e1703] [cursor=pointer]:
+                            - generic "agregar" [ref=e1704]: 
+                            - generic [ref=e1705]: Agregar
+                      - generic [ref=e1707]:
+                        - generic [ref=e1709]:
+                          - generic [ref=e1710]: $5.390
+                          - generic [ref=e1711]: precio actual $5.390, Costaba $6.990
+                          - generic [ref=e1712]: $10.780 x kg
+                          - generic [ref=e1713]: $6.990
+                          - generic [ref=e1714]: Ahorra $1.600
+                        - generic [ref=e1715]: Colun
+                        - generic [ref=e1716]: Queso Ranco Laminado, 500 g
+                  - group [ref=e1719]:
+                    - link "Queso Gauda Laminado Sin lactosa, 400 g" [ref=e1720] [cursor=pointer]:
+                      - /url: /ip/sin-lactosa/00780870950231?from=/search
+                      - generic [ref=e1721]: Queso Gauda Laminado Sin lactosa, 400 g
+                    - generic [ref=e1723]:
+                      - generic [ref=e1724]:
+                        - generic [ref=e1726]:
+                          - generic [ref=e1728]: 
+                          - text: Rebaja
+                        - generic [ref=e1729]:
+                          - img "Queso Gauda Laminado Sin lactosa, 400 g" [ref=e1731]
+                          - button "Agregar al carro - Queso Gauda Laminado Sin lactosa, 400 g" [ref=e1734] [cursor=pointer]:
+                            - generic "agregar" [ref=e1735]: 
+                            - generic [ref=e1736]: Agregar
+                      - generic [ref=e1738]:
+                        - generic [ref=e1740]:
+                          - generic [ref=e1741]: $4.990
+                          - generic [ref=e1742]: precio actual $4.990, Costaba $5.690
+                          - generic [ref=e1743]: $12.475 x kg
+                          - generic [ref=e1744]: $5.690
+                          - generic [ref=e1745]: Ahorra $700
+                        - generic [ref=e1746]: Surlat
+                        - generic [ref=e1747]: Queso Gauda Laminado Sin lactosa, 400 g
+                  - group [ref=e1750]:
+                    - link "Queso Gauda Laminado, 467 g" [ref=e1751] [cursor=pointer]:
+                      - /url: /ip/quesos/00780291000365?from=/search
+                      - generic [ref=e1752]: Queso Gauda Laminado, 467 g
+                    - generic [ref=e1754]:
+                      - generic [ref=e1757]:
+                        - img "Queso Gauda Laminado, 467 g" [ref=e1759]
+                        - button "Agregar al carro - Queso Gauda Laminado, 467 g" [ref=e1762] [cursor=pointer]:
+                          - generic "agregar" [ref=e1763]: 
+                          - generic [ref=e1764]: Agregar
+                      - generic [ref=e1766]:
+                        - generic [ref=e1768]:
+                          - generic [ref=e1769]: $5.990
+                          - generic [ref=e1770]: precio actual $5.990
+                          - generic [ref=e1771]: $12.827 x kg
+                        - generic [ref=e1772]: Calo
+                        - generic [ref=e1773]: Queso Gauda Laminado, 467 g
+                  - group [ref=e1776]:
+                    - link "Queso Gauda Laminado, 90 g" [ref=e1777] [cursor=pointer]:
+                      - /url: /ip/quesos/00780467219025?from=/search
+                      - generic [ref=e1778]: Queso Gauda Laminado, 90 g
+                    - generic [ref=e1780]:
+                      - generic [ref=e1783]:
+                        - img "Queso Gauda Laminado, 90 g" [ref=e1785]
+                        - button "Agregar al carro - Queso Gauda Laminado, 90 g" [ref=e1788] [cursor=pointer]:
+                          - generic "agregar" [ref=e1789]: 
+                          - generic [ref=e1790]: Agregar
+                      - generic [ref=e1792]:
+                        - generic [ref=e1794]:
+                          - generic [ref=e1795]: $1.190
+                          - generic [ref=e1796]: precio actual $1.190
+                          - generic [ref=e1797]: $13.222 x kg
+                        - generic [ref=e1798]: Doña Paula
+                        - generic [ref=e1799]: Queso Gauda Laminado, 90 g
+                  - group [ref=e1802]:
+                    - link "Queso Gauda Laminado, 150 g" [ref=e1803] [cursor=pointer]:
+                      - /url: /ip/quesos/00780290000406?from=/search
+                      - generic [ref=e1804]: Queso Gauda Laminado, 150 g
+                    - generic [ref=e1806]:
+                      - generic [ref=e1809]:
+                        - img "Queso Gauda Laminado, 150 g" [ref=e1811]
+                        - button "Agregar al carro - Queso Gauda Laminado, 150 g" [ref=e1814] [cursor=pointer]:
+                          - generic "agregar" [ref=e1815]: 
+                          - generic [ref=e1816]: Agregar
+                      - generic [ref=e1818]:
+                        - generic [ref=e1820]:
+                          - generic [ref=e1821]: $2.450
+                          - generic [ref=e1822]: precio actual $2.450
+                          - generic [ref=e1823]: $16.333 x kg
+                        - generic [ref=e1824]: Soprole
+                        - generic [ref=e1825]: Queso Gauda Laminado, 150 g
+                  - group [ref=e1828]:
+                    - link "Queso Gauda Laminado, 75 g" [ref=e1829] [cursor=pointer]:
+                      - /url: /ip/quesos/00780461339307?from=/search
+                      - generic [ref=e1830]: Queso Gauda Laminado, 75 g
+                    - generic [ref=e1832]:
+                      - generic [ref=e1835]:
+                        - generic [ref=e1836]:
+                          - img "Queso Gauda Laminado, 75 g"
+                        - button "Agregar al carro - Queso Gauda Laminado, 75 g" [ref=e1839] [cursor=pointer]:
+                          - generic "agregar" [ref=e1840]: 
+                          - generic [ref=e1841]: Agregar
+                      - generic [ref=e1843]:
+                        - generic [ref=e1845]:
+                          - generic [ref=e1846]: $1.150
+                          - generic [ref=e1847]: precio actual $1.150
+                          - generic [ref=e1848]: $15.333 x kg
+                        - generic [ref=e1849]: Kraft
+                        - generic [ref=e1850]: Queso Gauda Laminado, 75 g
+                  - group [ref=e1853]:
+                    - link "Queso Gauda Laminado, 150 g" [ref=e1854] [cursor=pointer]:
+                      - /url: /ip/quesos/00780292011565?from=/search
+                      - generic [ref=e1855]: Queso Gauda Laminado, 150 g
+                    - generic [ref=e1857]:
+                      - generic [ref=e1860]:
+                        - generic [ref=e1861]:
+                          - img "Queso Gauda Laminado, 150 g"
+                        - button "Agregar al carro - Queso Gauda Laminado, 150 g" [ref=e1864] [cursor=pointer]:
+                          - generic "agregar" [ref=e1865]: 
+                          - generic [ref=e1866]: Agregar
+                      - generic [ref=e1868]:
+                        - generic [ref=e1870]:
+                          - generic [ref=e1871]: $2.350
+                          - generic [ref=e1872]: precio actual $2.350
+                          - generic [ref=e1873]: $15.667 x kg
+                        - generic [ref=e1874]: Colun
+                        - generic [ref=e1875]: Queso Gauda Laminado, 150 g
+                  - group [ref=e1878]:
+                    - link "Queso Gauda Laminado, 200 g" [ref=e1879] [cursor=pointer]:
+                      - /url: /ip/quesos/00780464757156?from=/search
+                      - generic [ref=e1880]: Queso Gauda Laminado, 200 g
+                    - generic [ref=e1882]:
+                      - generic [ref=e1885]:
+                        - generic [ref=e1886]:
+                          - img "Queso Gauda Laminado, 200 g"
+                        - button "Agregar al carro - Queso Gauda Laminado, 200 g" [ref=e1889] [cursor=pointer]:
+                          - generic "agregar" [ref=e1890]: 
+                          - generic [ref=e1891]: Agregar
+                      - generic [ref=e1893]:
+                        - generic [ref=e1895]:
+                          - generic [ref=e1896]: $2.000
+                          - generic [ref=e1897]: precio actual $2.000
+                          - generic [ref=e1898]: $10.000 x kg
+                        - generic [ref=e1899]: Huilco
+                        - generic [ref=e1900]: Queso Gauda Laminado, 200 g
+                  - group [ref=e1903]:
+                    - link "Queso Gauda Laminado, 150 g" [ref=e1904] [cursor=pointer]:
+                      - /url: /ip/quesos/00780461339020?from=/search
+                      - generic [ref=e1905]: Queso Gauda Laminado, 150 g
+                    - generic [ref=e1907]:
+                      - generic [ref=e1910]:
+                        - generic [ref=e1911]:
+                          - img "Queso Gauda Laminado, 150 g"
+                        - button "Agregar al carro - Queso Gauda Laminado, 150 g" [ref=e1914] [cursor=pointer]:
+                          - generic "agregar" [ref=e1915]: 
+                          - generic [ref=e1916]: Agregar
+                      - generic [ref=e1918]:
+                        - generic [ref=e1920]:
+                          - generic [ref=e1921]: $1.890
+                          - generic [ref=e1922]: precio actual $1.890
+                          - generic [ref=e1923]: $12.600 x kg
+                        - generic [ref=e1924]: Lider
+                        - generic [ref=e1925]: Queso Gauda Laminado, 150 g
+                  - group [ref=e1928]:
+                    - link "Queso Tipo Gauda Laminado, 500 g" [ref=e1929] [cursor=pointer]:
+                      - /url: /ip/quesos/00780461339285?from=/search
+                      - generic [ref=e1930]: Queso Tipo Gauda Laminado, 500 g
+                    - generic [ref=e1932]:
+                      - generic [ref=e1935]:
+                        - generic [ref=e1936]:
+                          - img "Queso Tipo Gauda Laminado, 500 g"
+                        - button "Agregar al carro - Queso Tipo Gauda Laminado, 500 g" [ref=e1939] [cursor=pointer]:
+                          - generic "agregar" [ref=e1940]: 
+                          - generic [ref=e1941]: Agregar
+                      - generic [ref=e1943]:
+                        - generic [ref=e1945]:
+                          - generic [ref=e1946]: $4.390
+                          - generic [ref=e1947]: precio actual $4.390
+                          - generic [ref=e1948]: $8.780 x kg
+                        - generic [ref=e1949]: Acuenta
+                        - generic [ref=e1950]: Queso Tipo Gauda Laminado, 500 g
+                  - group [ref=e1953]:
+                    - link "Queso Gauda Sin lactosa Laminado, 200 g" [ref=e1954] [cursor=pointer]:
+                      - /url: /ip/quesos/00780870950230?from=/search
+                      - generic [ref=e1955]: Queso Gauda Sin lactosa Laminado, 200 g
+                    - generic [ref=e1957]:
+                      - generic [ref=e1958]:
+                        - generic [ref=e1960]:
+                          - generic [ref=e1962]: 
+                          - text: Rebaja
+                        - generic [ref=e1963]:
+                          - generic [ref=e1964]:
+                            - img "Queso Gauda Sin lactosa Laminado, 200 g"
+                          - button "Agregar al carro - Queso Gauda Sin lactosa Laminado, 200 g" [ref=e1967] [cursor=pointer]:
+                            - generic "agregar" [ref=e1968]: 
+                            - generic [ref=e1969]: Agregar
+                      - generic [ref=e1971]:
+                        - generic [ref=e1973]:
+                          - generic [ref=e1974]: $2.690
+                          - generic [ref=e1975]: precio actual $2.690, Costaba $3.050
+                          - generic [ref=e1976]: $13.450 x kg
+                          - generic [ref=e1977]: $3.050
+                          - generic [ref=e1978]: Ahorra $360
+                        - generic [ref=e1979]: Surlat
+                        - generic [ref=e1980]: Queso Gauda Sin lactosa Laminado, 200 g
+                  - group [ref=e1983]:
+                    - link "Queso Gauda Granulado, 400 g" [ref=e1984] [cursor=pointer]:
+                      - /url: /ip/quesos/00780290000259?from=/search
+                      - generic [ref=e1985]: Queso Gauda Granulado, 400 g
+                    - generic [ref=e1987]:
+                      - generic [ref=e1990]:
+                        - generic [ref=e1991]:
+                          - img "Queso Gauda Granulado, 400 g"
+                        - button "Agregar al carro - Queso Gauda Granulado, 400 g" [ref=e1994] [cursor=pointer]:
+                          - generic "agregar" [ref=e1995]: 
+                          - generic [ref=e1996]: Agregar
+                      - generic [ref=e1998]:
+                        - generic [ref=e2000]:
+                          - generic [ref=e2001]: $4.690
+                          - generic [ref=e2002]: precio actual $4.690
+                          - generic [ref=e2003]: $11.725 x kg
+                        - generic [ref=e2004]: Soprole
+                        - generic [ref=e2005]: Queso Gauda Granulado, 400 g
+                  - group [ref=e2008]:
+                    - link "Queso Ranco Trozo, 200 g" [ref=e2009] [cursor=pointer]:
+                      - /url: /ip/quesos/00780292001120?from=/search
+                      - generic [ref=e2010]: Queso Ranco Trozo, 200 g
+                    - generic [ref=e2012]:
+                      - generic [ref=e2015]:
+                        - generic [ref=e2016]:
+                          - img "Queso Ranco Trozo, 200 g"
+                        - button "Agregar al carro - Queso Ranco Trozo, 200 g" [ref=e2019] [cursor=pointer]:
+                          - generic "agregar" [ref=e2020]: 
+                          - generic [ref=e2021]: Agregar
+                      - generic [ref=e2023]:
+                        - generic [ref=e2025]:
+                          - generic [ref=e2026]: $3.690
+                          - generic [ref=e2027]: precio actual $3.690
+                          - generic [ref=e2028]: $18.450 x kg
+                        - generic [ref=e2029]: Colun
+                        - generic [ref=e2030]: Queso Ranco Trozo, 200 g
+                  - group [ref=e2033]:
+                    - link "Queso Gauda Trozo, 200 g" [ref=e2034] [cursor=pointer]:
+                      - /url: /ip/quesos/00780467219032?from=/search
+                      - generic [ref=e2035]: Queso Gauda Trozo, 200 g
+                    - generic [ref=e2037]:
+                      - generic [ref=e2040]:
+                        - generic [ref=e2041]:
+                          - img "Queso Gauda Trozo, 200 g"
+                        - button "Agregar al carro - Queso Gauda Trozo, 200 g" [ref=e2044] [cursor=pointer]:
+                          - generic "agregar" [ref=e2045]: 
+                          - generic [ref=e2046]: Agregar
+                      - generic [ref=e2048]:
+                        - generic [ref=e2050]:
+                          - generic [ref=e2051]: $2.650
+                          - generic [ref=e2052]: precio actual $2.650
+                          - generic [ref=e2053]: $13.250 x kg
+                        - generic [ref=e2054]: Doña Paula
+                        - generic [ref=e2055]: Queso Gauda Trozo, 200 g
+                  - group [ref=e2058]:
+                    - link "Queso Gauda Granulado, 250 g" [ref=e2059] [cursor=pointer]:
+                      - /url: /ip/quesos/00780461339051?from=/search
+                      - generic [ref=e2060]: Queso Gauda Granulado, 250 g
+                    - generic [ref=e2062]:
+                      - generic [ref=e2063]:
+                        - generic [ref=e2065]:
+                          - generic [ref=e2067]: 
+                          - text: Rebaja
+                        - generic [ref=e2068]:
+                          - generic [ref=e2069]:
+                            - img "Queso Gauda Granulado, 250 g"
+                          - button "Agregar al carro - Queso Gauda Granulado, 250 g" [ref=e2072] [cursor=pointer]:
+                            - generic "agregar" [ref=e2073]: 
+                            - generic [ref=e2074]: Agregar
+                      - generic [ref=e2076]:
+                        - generic [ref=e2078]:
+                          - generic [ref=e2079]: $2.690
+                          - generic [ref=e2080]: precio actual $2.690, Costaba $3.190
+                          - generic [ref=e2081]: $10.760 x kg
+                          - generic [ref=e2082]: $3.190
+                          - generic [ref=e2083]: Ahorra $500
+                        - generic [ref=e2084]: La Vaquita
+                        - generic [ref=e2085]: Queso Gauda Granulado, 250 g
+                  - group [ref=e2088]:
+                    - link "Queso Gauda Granulado, 160 g" [ref=e2089] [cursor=pointer]:
+                      - /url: /ip/quesos/00780467219029?from=/search
+                      - generic [ref=e2090]: Queso Gauda Granulado, 160 g
+                    - generic [ref=e2092]:
+                      - generic [ref=e2093]:
+                        - generic [ref=e2095]:
+                          - generic [ref=e2097]: 
+                          - text: Rebaja
+                        - generic [ref=e2098]:
+                          - generic [ref=e2099]:
+                            - img "Queso Gauda Granulado, 160 g"
+                          - button "Agregar al carro - Queso Gauda Granulado, 160 g" [ref=e2102] [cursor=pointer]:
+                            - generic "agregar" [ref=e2103]: 
+                            - generic [ref=e2104]: Agregar
+                      - generic [ref=e2106]:
+                        - generic [ref=e2108]:
+                          - generic [ref=e2109]: $1.750
+                          - generic [ref=e2110]: precio actual $1.750, Costaba $2.050
+                          - generic [ref=e2111]: $10.938 x kg
+                          - generic [ref=e2112]: $2.050
+                          - generic [ref=e2113]: Ahorra $300
+                        - generic [ref=e2114]: Doña Paula
+                        - generic [ref=e2115]: Queso Gauda Granulado, 160 g
+                  - group [ref=e2118]:
+                    - link "Queso Gauda Granulado, 320 g" [ref=e2119] [cursor=pointer]:
+                      - /url: /ip/quesos/00780467219028?from=/search
+                      - generic [ref=e2120]: Queso Gauda Granulado, 320 g
+                    - generic [ref=e2122]:
+                      - generic [ref=e2125]:
+                        - generic [ref=e2126]:
+                          - img "Queso Gauda Granulado, 320 g"
+                        - button "Agregar al carro - Queso Gauda Granulado, 320 g" [ref=e2129] [cursor=pointer]:
+                          - generic "agregar" [ref=e2130]: 
+                          - generic [ref=e2131]: Agregar
+                      - generic [ref=e2133]:
+                        - generic [ref=e2135]:
+                          - generic [ref=e2136]: $3.890
+                          - generic [ref=e2137]: precio actual $3.890
+                          - generic [ref=e2138]: $12.156 x kg
+                        - generic [ref=e2139]: Doña Paula
+                        - generic [ref=e2140]: Queso Gauda Granulado, 320 g
+                  - group [ref=e2143]:
+                    - link "Queso Mantecoso Laminado, 250 g" [ref=e2144] [cursor=pointer]:
+                      - /url: /ip/quesos/00780461339100?from=/search
+                      - generic [ref=e2145]: Queso Mantecoso Laminado, 250 g
+                    - generic [ref=e2147]:
+                      - generic [ref=e2150]:
+                        - generic [ref=e2151]:
+                          - img "Queso Mantecoso Laminado, 250 g"
+                        - button "Agregar al carro - Queso Mantecoso Laminado, 250 g" [ref=e2154] [cursor=pointer]:
+                          - generic "agregar" [ref=e2155]: 
+                          - generic [ref=e2156]: Agregar
+                      - generic [ref=e2158]:
+                        - generic [ref=e2160]:
+                          - generic [ref=e2161]: $3.290
+                          - generic [ref=e2162]: precio actual $3.290
+                          - generic [ref=e2163]: $13.160 x kg
+                        - generic [ref=e2164]: Lider
+                        - generic [ref=e2165]: Queso Mantecoso Laminado, 250 g
+                  - group [ref=e2168]:
+                    - link "Queso Chanco Laminado, 250 g" [ref=e2169] [cursor=pointer]:
+                      - /url: /ip/quesos/00780461339064?from=/search
+                      - generic [ref=e2170]: Queso Chanco Laminado, 250 g
+                    - generic [ref=e2172]:
+                      - generic [ref=e2175]:
+                        - generic [ref=e2176]:
+                          - img "Queso Chanco Laminado, 250 g"
+                        - button "Agregar al carro - Queso Chanco Laminado, 250 g" [ref=e2179] [cursor=pointer]:
+                          - generic "agregar" [ref=e2180]: 
+                          - generic [ref=e2181]: Agregar
+                      - generic [ref=e2183]:
+                        - generic [ref=e2185]:
+                          - generic [ref=e2186]: $2.850
+                          - generic [ref=e2187]: precio actual $2.850
+                          - generic [ref=e2188]: $9.500 x kg
+                        - generic [ref=e2189]: Lider
+                        - generic [ref=e2190]: Queso Chanco Laminado, 250 g
+                  - group [ref=e2193]:
+                    - link "Sucedáneo De Queso Tipo Gauda (Vegano), 200 g" [ref=e2194] [cursor=pointer]:
+                      - /url: /ip/quesos/00780293000491?from=/search
+                      - generic [ref=e2195]: Sucedáneo De Queso Tipo Gauda (Vegano), 200 g
+                    - generic [ref=e2197]:
+                      - generic [ref=e2200]:
+                        - generic [ref=e2201]:
+                          - img "Sucedáneo De Queso Tipo Gauda (Vegano), 200 g"
+                        - button "Agregar al carro - Sucedáneo De Queso Tipo Gauda (Vegano), 200 g" [ref=e2204] [cursor=pointer]:
+                          - generic "agregar" [ref=e2205]: 
+                          - generic [ref=e2206]: Agregar
+                      - generic [ref=e2208]:
+                        - generic [ref=e2210]:
+                          - generic [ref=e2211]: $3.990
+                          - generic [ref=e2212]: precio actual $3.990
+                          - generic [ref=e2213]: $19.950 x kg
+                        - generic [ref=e2214]: Quillayes
+                        - generic [ref=e2215]: Sucedáneo De Queso Tipo Gauda (Vegano), 200 g
+                  - group [ref=e2218]:
+                    - link "Queso Mantecoso Laminado, 500 g" [ref=e2219] [cursor=pointer]:
+                      - /url: /ip/quesos/00780461339101?from=/search
+                      - generic [ref=e2220]: Queso Mantecoso Laminado, 500 g
+                    - generic [ref=e2222]:
+                      - generic [ref=e2225]:
+                        - generic [ref=e2226]:
+                          - img "Queso Mantecoso Laminado, 500 g"
+                        - button "Agregar al carro - Queso Mantecoso Laminado, 500 g" [ref=e2229] [cursor=pointer]:
+                          - generic "agregar" [ref=e2230]: 
+                          - generic [ref=e2231]: Agregar
+                      - generic [ref=e2233]:
+                        - generic [ref=e2235]:
+                          - generic [ref=e2236]: $5.890
+                          - generic [ref=e2237]: precio actual $5.890
+                          - generic [ref=e2238]: $11.780 x kg
+                        - generic [ref=e2239]: Lider
+                        - generic [ref=e2240]: Queso Mantecoso Laminado, 500 g
+                  - group [ref=e2243]:
+                    - link "Queso Proteína Sin Lactosa Laminado, 200 g" [ref=e2244] [cursor=pointer]:
+                      - /url: /ip/quesos/00780461747072?from=/search
+                      - generic [ref=e2245]: Queso Proteína Sin Lactosa Laminado, 200 g
+                    - generic [ref=e2247]:
+                      - generic [ref=e2248]:
+                        - generic [ref=e2250]:
+                          - generic [ref=e2252]: 
+                          - text: Rebaja
+                        - generic [ref=e2253]:
+                          - generic [ref=e2254]:
+                            - img "Queso Proteína Sin Lactosa Laminado, 200 g"
+                          - button "Agregar al carro - Queso Proteína Sin Lactosa Laminado, 200 g" [ref=e2257] [cursor=pointer]:
+                            - generic "agregar" [ref=e2258]: 
+                            - generic [ref=e2259]: Agregar
+                      - generic [ref=e2261]:
+                        - generic [ref=e2263]:
+                          - generic [ref=e2264]: $3.550
+                          - generic [ref=e2265]: precio actual $3.550, Costaba $4.190
+                          - generic [ref=e2266]: $17.750 x kg
+                          - generic [ref=e2267]: $4.190
+                          - generic [ref=e2268]: Ahorra $640
+                        - generic [ref=e2269]: Surlat
+                        - generic [ref=e2270]: Queso Proteína Sin Lactosa Laminado, 200 g
+                  - group [ref=e2273]:
+                    - link "Queso Chanco Laminado, 500 g" [ref=e2274] [cursor=pointer]:
+                      - /url: /ip/quesos/00780461339063?from=/search
+                      - generic [ref=e2275]: Queso Chanco Laminado, 500 g
+                    - generic [ref=e2277]:
+                      - generic [ref=e2280]:
+                        - generic [ref=e2281]:
+                          - img "Queso Chanco Laminado, 500 g"
+                        - button "Agregar al carro - Queso Chanco Laminado, 500 g" [ref=e2284] [cursor=pointer]:
+                          - generic "agregar" [ref=e2285]: 
+                          - generic [ref=e2286]: Agregar
+                      - generic [ref=e2288]:
+                        - generic [ref=e2290]:
+                          - generic [ref=e2291]: $5.690
+                          - generic [ref=e2292]: precio actual $5.690
+                          - generic [ref=e2293]: $11.380 x kg
+                        - generic [ref=e2294]: Lider
+                        - generic [ref=e2295]: Queso Chanco Laminado, 500 g
+                  - group [ref=e2298]:
+                    - link "Queso Chanco Laminado, 100 g" [ref=e2299] [cursor=pointer]:
+                      - /url: /ip/quesos/00780293000521?from=/search
+                      - generic [ref=e2300]: Queso Chanco Laminado, 100 g
+                    - generic [ref=e2302]:
+                      - generic [ref=e2305]:
+                        - generic [ref=e2306]:
+                          - img "Queso Chanco Laminado, 100 g"
+                        - button "Agregar al carro - Queso Chanco Laminado, 100 g" [ref=e2309] [cursor=pointer]:
+                          - generic "agregar" [ref=e2310]: 
+                          - generic [ref=e2311]: Agregar
+                      - generic [ref=e2313]:
+                        - generic [ref=e2315]:
+                          - generic [ref=e2316]: $1.450
+                          - generic [ref=e2317]: precio actual $1.450
+                          - generic [ref=e2318]: $14.500 x kg
+                        - generic [ref=e2319]: Quillayes
+                        - generic [ref=e2320]: Queso Chanco Laminado, 100 g
+                  - group [ref=e2323]:
+                    - link "Queso Mantecoso Río Bueno Laminado, 500 g" [ref=e2324] [cursor=pointer]:
+                      - /url: /ip/quesos/00780292000674?from=/search
+                      - generic [ref=e2325]: Queso Mantecoso Río Bueno Laminado, 500 g
+                    - generic [ref=e2327]:
+                      - generic [ref=e2330]:
+                        - generic [ref=e2331]:
+                          - img "Queso Mantecoso Río Bueno Laminado, 500 g"
+                        - button "Agregar al carro - Queso Mantecoso Río Bueno Laminado, 500 g" [ref=e2334] [cursor=pointer]:
+                          - generic "agregar" [ref=e2335]: 
+                          - generic [ref=e2336]: Agregar
+                      - generic [ref=e2338]:
+                        - generic [ref=e2340]:
+                          - generic [ref=e2341]: $7.390
+                          - generic [ref=e2342]: precio actual $7.390
+                          - generic [ref=e2343]: $14.780 x kg
+                        - generic [ref=e2344]: Colun
+                        - generic [ref=e2345]: Queso Mantecoso Río Bueno Laminado, 500 g
+                  - group [ref=e2348]:
+                    - link "Queso Mantecoso Quilque Laminado, 500 g" [ref=e2349] [cursor=pointer]:
+                      - /url: /ip/quesos/00780290000119?from=/search
+                      - generic [ref=e2350]: Queso Mantecoso Quilque Laminado, 500 g
+                    - generic [ref=e2352]:
+                      - generic [ref=e2355]:
+                        - generic [ref=e2356]:
+                          - img "Queso Mantecoso Quilque Laminado, 500 g"
+                        - button "Agregar al carro - Queso Mantecoso Quilque Laminado, 500 g" [ref=e2359] [cursor=pointer]:
+                          - generic "agregar" [ref=e2360]: 
+                          - generic [ref=e2361]: Agregar
+                      - generic [ref=e2363]:
+                        - generic [ref=e2365]:
+                          - generic [ref=e2366]: $6.990
+                          - generic [ref=e2367]: precio actual $6.990
+                          - generic [ref=e2368]: $13.980 x un
+                        - generic [ref=e2369]: Soprole
+                        - generic [ref=e2370]: Queso Mantecoso Quilque Laminado, 500 g
+                  - generic [ref=e2372]:
+                    - group [ref=e2373]:
+                      - link "Queso Mantecoso Laminado, 470 g" [ref=e2374] [cursor=pointer]:
+                        - /url: /ip/quesos/00780461957011?from=/search
+                        - generic [ref=e2375]: Queso Mantecoso Laminado, 470 g
+                      - generic [ref=e2377]:
+                        - generic [ref=e2381]:
+                          - img "Queso Mantecoso Laminado, 470 g"
+                        - generic [ref=e2383]:
+                          - generic [ref=e2385]:
+                            - generic [ref=e2386]: $7.790
+                            - generic [ref=e2387]: precio actual $7.790
+                            - generic [ref=e2388]: $16.574 x kg
+                          - generic [ref=e2389]: Las Parcelas De Valdivia
+                          - generic [ref=e2390]: Queso Mantecoso Laminado, 470 g
+                          - generic [ref=e2391]: Agotado
+                    - button "Revisar productos similares - Queso Mantecoso Laminado, 470 g" [ref=e2393]: Revisar productos similares
+                  - group [ref=e2396]:
+                    - link "Queso Mantecoso Laminado, 250 g" [ref=e2397] [cursor=pointer]:
+                      - /url: /ip/quesos/00780292000635?from=/search
+                      - generic [ref=e2398]: Queso Mantecoso Laminado, 250 g
+                    - generic [ref=e2400]:
+                      - generic [ref=e2403]:
+                        - generic [ref=e2404]:
+                          - img "Queso Mantecoso Laminado, 250 g"
+                        - button "Agregar al carro - Queso Mantecoso Laminado, 250 g" [ref=e2407] [cursor=pointer]:
+                          - generic "agregar" [ref=e2408]: 
+                          - generic [ref=e2409]: Agregar
+                      - generic [ref=e2411]:
+                        - generic [ref=e2413]:
+                          - generic [ref=e2414]: $3.990
+                          - generic [ref=e2415]: precio actual $3.990
+                          - generic [ref=e2416]: $15.960 x kg
+                        - generic [ref=e2417]: Colun
+                        - generic [ref=e2418]: Queso Mantecoso Laminado, 250 g
+                  - group [ref=e2421]:
+                    - link "Queso Chanco Laminado, 233 g" [ref=e2422] [cursor=pointer]:
+                      - /url: /ip/quesos/00780461957017?from=/search
+                      - generic [ref=e2423]: Queso Chanco Laminado, 233 g
+                    - generic [ref=e2425]:
+                      - generic [ref=e2428]:
+                        - generic [ref=e2429]:
+                          - img "Queso Chanco Laminado, 233 g"
+                        - button "Agregar al carro - Queso Chanco Laminado, 233 g" [ref=e2432] [cursor=pointer]:
+                          - generic "agregar" [ref=e2433]: 
+                          - generic [ref=e2434]: Agregar
+                      - generic [ref=e2436]:
+                        - generic [ref=e2438]:
+                          - generic [ref=e2439]: $3.590
+                          - generic [ref=e2440]: precio actual $3.590
+                          - generic [ref=e2441]: $15.408 x kg
+                        - generic [ref=e2442]: Las Parcelas De Valdivia
+                        - generic [ref=e2443]: Queso Chanco Laminado, 233 g
+            - navigation "paginación" [ref=e2446]:
+              - list [ref=e2447]:
+                - listitem [ref=e2448]
+                - listitem [ref=e2450]:
+                  - link "1" [ref=e2451] [cursor=pointer]:
+                    - /url: /search?q=queso+gauda+laminado&facet=fulfillment_method%3ADelivery
+                - listitem [ref=e2452]:
+                  - link "Ir a la página 2" [ref=e2453] [cursor=pointer]:
+                    - /url: /search?q=queso+gauda+laminado&facet=fulfillment_method%3ADelivery&page=2
+                    - text: "2"
+                - listitem [ref=e2454]:
+                  - link "Página siguiente" [ref=e2455] [cursor=pointer]:
+                    - /url: /search?q=queso+gauda+laminado&facet=fulfillment_method%3ADelivery&page=2
+                    - generic [ref=e2456]: 
+  - alert [ref=e1309]: Supermercado

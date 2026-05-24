@@ -1,0 +1,894 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: cebolla kg
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e80]:
+            - generic [ref=e81]:
+              - generic [ref=e84]:
+                - generic [ref=e85]:
+                  - button "Precio" [ref=e88]:
+                    - generic [ref=e89]: Precio
+                    - img [ref=e90]: 
+                  - separator [ref=e91]
+                - generic [ref=e92]:
+                  - button "Campaña" [ref=e95]:
+                    - generic [ref=e96]: Campaña
+                    - img [ref=e97]: 
+                  - separator [ref=e98]
+                - generic [ref=e99]:
+                  - button "Marca" [ref=e102]:
+                    - generic [ref=e103]: Marca
+                    - img [ref=e104]: 
+                  - separator [ref=e105]
+                - generic [ref=e106]:
+                  - button "Categoría" [ref=e109]:
+                    - generic [ref=e110]: Categoría
+                    - img [ref=e111]: 
+                  - separator [ref=e112]
+              - generic [ref=e115]:
+                - heading "Resultados para cebolla kg (74)" [level=2] [ref=e123]: Resultados para cebolla kg(74)
+                - generic [ref=e124]:
+                  - group [ref=e127]:
+                    - link "Cebolla Morada Malla, 1 Kg" [ref=e128] [cursor=pointer]:
+                      - /url: /ip/verduras/00780460020017?from=/search
+                      - generic [ref=e129]: Cebolla Morada Malla, 1 Kg
+                    - generic [ref=e131]:
+                      - generic [ref=e134]:
+                        - img "Cebolla Morada Malla, 1 Kg" [ref=e136]
+                        - button "Agregar al carro - Cebolla Morada Malla, 1 Kg" [ref=e139] [cursor=pointer]:
+                          - generic "agregar" [ref=e140]: 
+                          - generic [ref=e141]: Agregar
+                      - generic [ref=e143]:
+                        - generic [ref=e145]:
+                          - generic [ref=e146]: $1.990
+                          - generic [ref=e147]: precio actual $1.990
+                          - generic [ref=e148]: $1.990 x kg
+                        - generic [ref=e149]: Multi Marca
+                        - generic [ref=e150]: Cebolla Morada Malla, 1 Kg
+                  - group [ref=e153]:
+                    - link "Cebolla Tubular Malla, 3 Un" [ref=e154] [cursor=pointer]:
+                      - /url: /ip/verduras/00780460020037?from=/search
+                      - generic [ref=e155]: Cebolla Tubular Malla, 3 Un
+                    - generic [ref=e157]:
+                      - generic [ref=e160]:
+                        - img "Cebolla Tubular Malla, 3 Un" [ref=e162]
+                        - button "Agregar al carro - Cebolla Tubular Malla, 3 Un" [ref=e165] [cursor=pointer]:
+                          - generic "agregar" [ref=e166]: 
+                          - generic [ref=e167]: Agregar
+                      - generic [ref=e169]:
+                        - generic [ref=e171]:
+                          - generic [ref=e172]: $1.590
+                          - generic [ref=e173]: precio actual $1.590
+                          - generic [ref=e174]: $530 x un
+                        - generic [ref=e175]: Multi Marca
+                        - generic [ref=e176]: Cebolla Tubular Malla, 3 Un
+                  - group [ref=e179]:
+                    - link "Cebolla en Polvo Bolsa, 15 g" [ref=e180] [cursor=pointer]:
+                      - /url: /ip/aceites-y-aderezos/00780241000330?from=/search
+                      - generic [ref=e181]: Cebolla en Polvo Bolsa, 15 g
+                    - generic [ref=e183]:
+                      - generic [ref=e186]:
+                        - img "Cebolla en Polvo Bolsa, 15 g" [ref=e188]
+                        - button "Agregar al carro - Cebolla en Polvo Bolsa, 15 g" [ref=e191] [cursor=pointer]:
+                          - generic "agregar" [ref=e192]: 
+                          - generic [ref=e193]: Agregar
+                      - generic [ref=e195]:
+                        - generic [ref=e197]:
+                          - generic [ref=e198]: $410
+                          - generic [ref=e199]: precio actual $410
+                          - generic [ref=e200]: $273 x 10g
+                        - generic [ref=e201]: Lider
+                        - generic [ref=e202]: Cebolla en Polvo Bolsa, 15 g
+                  - group [ref=e205]:
+                    - link "Mermelada Cebolla Doypack, 110 g" [ref=e206] [cursor=pointer]:
+                      - /url: /ip/snacks-y-picoteo/00780220040202?from=/search
+                      - generic [ref=e207]: Mermelada Cebolla Doypack, 110 g
+                    - generic [ref=e209]:
+                      - generic [ref=e212]:
+                        - img "Mermelada Cebolla Doypack, 110 g" [ref=e214]
+                        - button "Agregar al carro - Mermelada Cebolla Doypack, 110 g" [ref=e217] [cursor=pointer]:
+                          - generic "agregar" [ref=e218]: 
+                          - generic [ref=e219]: Agregar
+                      - generic [ref=e221]:
+                        - generic [ref=e223]:
+                          - generic [ref=e224]: $1.290
+                          - generic [ref=e225]: precio actual $1.290
+                          - generic [ref=e226]: $11.727 x kg
+                        - generic [ref=e227]: Crackelet
+                        - generic [ref=e228]: Mermelada Cebolla Doypack, 110 g
+                  - group [ref=e231]:
+                    - link "Cebolla Tubular Trío Malla, 3 Un" [ref=e232] [cursor=pointer]:
+                      - /url: /ip/verduras/00340007748000?from=/search
+                      - generic [ref=e233]: Cebolla Tubular Trío Malla, 3 Un
+                    - generic [ref=e235]:
+                      - generic [ref=e238]:
+                        - img "Cebolla Tubular Trío Malla, 3 Un" [ref=e240]
+                        - button "Agregar al carro - Cebolla Tubular Trío Malla, 3 Un" [ref=e243] [cursor=pointer]:
+                          - generic "agregar" [ref=e244]: 
+                          - generic [ref=e245]: Agregar
+                      - generic [ref=e247]:
+                        - generic [ref=e249]:
+                          - generic [ref=e250]: $1.690
+                          - generic [ref=e251]: precio actual $1.690
+                          - generic [ref=e252]: $563 x un
+                        - generic [ref=e253]: Multi Marca
+                        - generic [ref=e254]: Cebolla Tubular Trío Malla, 3 Un
+                  - group [ref=e257]:
+                    - link "Grisines Con Cebolla Morada 1 Un, 120 gr" [ref=e258] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00784013100382?from=/search
+                      - generic [ref=e259]: Grisines Con Cebolla Morada 1 Un, 120 gr
+                    - generic [ref=e261]:
+                      - generic [ref=e264]:
+                        - img "Grisines Con Cebolla Morada 1 Un, 120 gr" [ref=e266]
+                        - button "Agregar al carro - Grisines Con Cebolla Morada 1 Un, 120 gr" [ref=e269] [cursor=pointer]:
+                          - generic "agregar" [ref=e270]: 
+                          - generic [ref=e271]: Agregar
+                      - generic [ref=e273]:
+                        - generic [ref=e275]:
+                          - generic [ref=e276]: $1.950
+                          - generic [ref=e277]: precio actual $1.950
+                          - generic [ref=e278]: $16.250 x kg
+                        - generic [ref=e279]: Ideal
+                        - generic [ref=e280]: Grisines Con Cebolla Morada 1 Un, 120 gr
+                  - group [ref=e283]:
+                    - link "Cebolla Crujientes Ligeramente Saladas Bolsa, 80 g" [ref=e284] [cursor=pointer]:
+                      - /url: /ip/verduras/00078735917612?from=/search
+                      - generic [ref=e285]: Cebolla Crujientes Ligeramente Saladas Bolsa, 80 g
+                    - generic [ref=e287]:
+                      - generic [ref=e290]:
+                        - img "Cebolla Crujientes Ligeramente Saladas Bolsa, 80 g" [ref=e292]
+                        - button "Agregar al carro - Cebolla Crujientes Ligeramente Saladas Bolsa, 80 g" [ref=e295] [cursor=pointer]:
+                          - generic "agregar" [ref=e296]: 
+                          - generic [ref=e297]: Agregar
+                      - generic [ref=e299]:
+                        - generic [ref=e301]:
+                          - generic [ref=e302]: $1.890
+                          - generic [ref=e303]: precio actual $1.890
+                        - generic [ref=e304]: Multi Marca
+                        - generic [ref=e305]: Cebolla Crujientes Ligeramente Saladas Bolsa, 80 g
+                  - group [ref=e308]:
+                    - link "Aros De Cebolla, 100 g" [ref=e309] [cursor=pointer]:
+                      - /url: /ip/f/00780352000303?from=/search
+                      - generic [ref=e310]: Aros De Cebolla, 100 g
+                    - generic [ref=e312]:
+                      - generic [ref=e315]:
+                        - img "Aros De Cebolla, 100 g" [ref=e317]
+                        - button "Agregar al carro - Aros De Cebolla, 100 g" [ref=e320] [cursor=pointer]:
+                          - generic "agregar" [ref=e321]: 
+                          - generic [ref=e322]: Agregar
+                      - generic [ref=e324]:
+                        - generic [ref=e326]:
+                          - generic [ref=e327]: $2.450
+                          - generic [ref=e328]: precio actual $2.450
+                          - generic [ref=e329]: $24.499 x kg
+                        - generic [ref=e330]: Ecovida
+                        - generic [ref=e331]: Aros De Cebolla, 100 g
+                  - group [ref=e334]:
+                    - link "Cebolla en Polvo Bolsa, 15 g" [ref=e335] [cursor=pointer]:
+                      - /url: /ip/aceites-y-aderezos/00780241010147?from=/search
+                      - generic [ref=e336]: Cebolla en Polvo Bolsa, 15 g
+                    - generic [ref=e338]:
+                      - generic [ref=e341]:
+                        - img "Cebolla en Polvo Bolsa, 15 g" [ref=e343]
+                        - button "Agregar al carro - Cebolla en Polvo Bolsa, 15 g" [ref=e346] [cursor=pointer]:
+                          - generic "agregar" [ref=e347]: 
+                          - generic [ref=e348]: Agregar
+                      - generic [ref=e350]:
+                        - generic [ref=e352]:
+                          - generic [ref=e353]: $470
+                          - generic [ref=e354]: precio actual $470
+                          - generic [ref=e355]: $313 x 10g
+                        - generic [ref=e356]: Gourmet
+                        - generic [ref=e357]: Cebolla en Polvo Bolsa, 15 g
+                  - group [ref=e360]:
+                    - link "Cebolla Crispy Apanada Bolsa, 100 g" [ref=e361] [cursor=pointer]:
+                      - /url: /ip/aceites-y-aderezos/00780465534135?from=/search
+                      - generic [ref=e362]: Cebolla Crispy Apanada Bolsa, 100 g
+                    - generic [ref=e364]:
+                      - generic [ref=e367]:
+                        - img "Cebolla Crispy Apanada Bolsa, 100 g" [ref=e369]
+                        - button "Agregar al carro - Cebolla Crispy Apanada Bolsa, 100 g" [ref=e372] [cursor=pointer]:
+                          - generic "agregar" [ref=e373]: 
+                          - generic [ref=e374]: Agregar
+                      - generic [ref=e376]:
+                        - generic [ref=e378]:
+                          - generic [ref=e379]: $1.550
+                          - generic [ref=e380]: precio actual $1.550
+                          - generic [ref=e381]: $15.499 x kg
+                        - generic [ref=e382]: Winkler
+                        - generic [ref=e383]: Cebolla Crispy Apanada Bolsa, 100 g
+                  - group [ref=e386]:
+                    - link "Cebolla Cubo Pote, 200 gr" [ref=e387] [cursor=pointer]:
+                      - /url: /ip/verduras/00780409700055?from=/search
+                      - generic [ref=e388]: Cebolla Cubo Pote, 200 gr
+                    - generic [ref=e390]:
+                      - generic [ref=e393]:
+                        - generic [ref=e394]:
+                          - img "Cebolla Cubo Pote, 200 gr"
+                        - button "Agregar al carro - Cebolla Cubo Pote, 200 gr" [ref=e397] [cursor=pointer]:
+                          - generic "agregar" [ref=e398]: 
+                          - generic [ref=e399]: Agregar
+                      - generic [ref=e401]:
+                        - generic [ref=e403]:
+                          - generic [ref=e404]: $1.890
+                          - generic [ref=e405]: precio actual $1.890
+                          - generic [ref=e406]: $9.450 x kg
+                        - generic [ref=e407]: Genial
+                        - generic [ref=e408]: Cebolla Cubo Pote, 200 gr
+                  - group [ref=e411]:
+                    - link "Cebolla Crispy Sabor Tocino, 100 g" [ref=e412] [cursor=pointer]:
+                      - /url: /ip/aceites-y-aderezos/00780465534133?from=/search
+                      - generic [ref=e413]: Cebolla Crispy Sabor Tocino, 100 g
+                    - generic [ref=e415]:
+                      - generic [ref=e418]:
+                        - img "Cebolla Crispy Sabor Tocino, 100 g" [ref=e420]
+                        - button "Agregar al carro - Cebolla Crispy Sabor Tocino, 100 g" [ref=e423] [cursor=pointer]:
+                          - generic "agregar" [ref=e424]: 
+                          - generic [ref=e425]: Agregar
+                      - generic [ref=e427]:
+                        - generic [ref=e429]:
+                          - generic [ref=e430]: $1.550
+                          - generic [ref=e431]: precio actual $1.550
+                          - generic [ref=e432]: $15.499 x kg
+                        - generic [ref=e433]: Winkler
+                        - generic [ref=e434]: Cebolla Crispy Sabor Tocino, 100 g
+                  - group [ref=e437]:
+                    - link "Sopa de Cebolla Premium (2 Porciones) Sobre, 34 g" [ref=e438] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00780241000510?from=/search
+                      - generic [ref=e439]: Sopa de Cebolla Premium (2 Porciones) Sobre, 34 g
+                    - generic [ref=e441]:
+                      - generic [ref=e442]:
+                        - generic [ref=e444]: 2 x $1.490
+                        - generic [ref=e445]:
+                          - img "Sopa de Cebolla Premium (2 Porciones) Sobre, 34 g" [ref=e447]
+                          - button "Agregar al carro - Sopa de Cebolla Premium (2 Porciones) Sobre, 34 g" [ref=e450] [cursor=pointer]:
+                            - generic "agregar" [ref=e451]: 
+                            - generic [ref=e452]: Agregar
+                      - generic [ref=e454]:
+                        - generic [ref=e456]:
+                          - generic [ref=e457]: $950
+                          - generic [ref=e458]: precio actual $950
+                          - generic [ref=e459]: $279 x 10g
+                        - generic [ref=e460]: Gourmet
+                        - generic [ref=e461]: Sopa de Cebolla Premium (2 Porciones) Sobre, 34 g
+                  - group [ref=e464]:
+                    - link "Cebolla Blanca Malla, 1 Kg" [ref=e465] [cursor=pointer]:
+                      - /url: /ip/verduras/00340007720000?from=/search
+                      - generic [ref=e466]: Cebolla Blanca Malla, 1 Kg
+                    - generic [ref=e468]:
+                      - generic [ref=e471]:
+                        - img "Cebolla Blanca Malla, 1 Kg" [ref=e473]
+                        - button "Agregar al carro - Cebolla Blanca Malla, 1 Kg" [ref=e476] [cursor=pointer]:
+                          - generic "agregar" [ref=e477]: 
+                          - generic [ref=e478]: Agregar
+                      - generic [ref=e480]:
+                        - generic [ref=e482]:
+                          - generic [ref=e483]: $1.650
+                          - generic [ref=e484]: precio actual $1.650
+                          - generic [ref=e485]: $1.650 x kg
+                        - generic [ref=e486]: Multi Marca
+                        - generic [ref=e487]: Cebolla Blanca Malla, 1 Kg
+                  - group [ref=e490]:
+                    - link "Mermelada Cebolla Frasco, 160 g" [ref=e491] [cursor=pointer]:
+                      - /url: /ip/despensa/00780462765033?from=/search
+                      - generic [ref=e492]: Mermelada Cebolla Frasco, 160 g
+                    - generic [ref=e494]:
+                      - generic [ref=e497]:
+                        - img "Mermelada Cebolla Frasco, 160 g" [ref=e499]
+                        - button "Agregar al carro - Mermelada Cebolla Frasco, 160 g" [ref=e502] [cursor=pointer]:
+                          - generic "agregar" [ref=e503]: 
+                          - generic [ref=e504]: Agregar
+                      - generic [ref=e506]:
+                        - generic [ref=e508]:
+                          - generic [ref=e509]: $2.950
+                          - generic [ref=e510]: precio actual $2.950
+                          - generic [ref=e511]: $15.526 x kg
+                        - generic [ref=e512]: Buka
+                        - generic [ref=e513]: Mermelada Cebolla Frasco, 160 g
+                  - group [ref=e516]:
+                    - link "Focaccia Cebolla 1 Un, 180 g" [ref=e517] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00978020138896?from=/search
+                      - generic [ref=e518]: Focaccia Cebolla 1 Un, 180 g
+                    - generic [ref=e520]:
+                      - generic [ref=e523]:
+                        - img "Focaccia Cebolla 1 Un, 180 g" [ref=e525]
+                        - button "Agregar al carro - Focaccia Cebolla 1 Un, 180 g" [ref=e528] [cursor=pointer]:
+                          - generic "agregar" [ref=e529]: 
+                          - generic [ref=e530]: Agregar
+                      - generic [ref=e532]:
+                        - generic [ref=e534]:
+                          - generic [ref=e535]: $3.290
+                          - generic [ref=e536]: precio actual $3.290
+                        - generic [ref=e537]: Frozen
+                        - generic [ref=e538]: Focaccia Cebolla 1 Un, 180 g
+                  - group [ref=e541]:
+                    - link "Cebolla Orgánica Malla, 3 Un" [ref=e542] [cursor=pointer]:
+                      - /url: /ip/verduras/00780462348027?from=/search
+                      - generic [ref=e543]: Cebolla Orgánica Malla, 3 Un
+                    - generic [ref=e545]:
+                      - generic [ref=e548]:
+                        - generic [ref=e549]:
+                          - img "Cebolla Orgánica Malla, 3 Un"
+                        - button "Agregar al carro - Cebolla Orgánica Malla, 3 Un" [ref=e552] [cursor=pointer]:
+                          - generic "agregar" [ref=e553]: 
+                          - generic [ref=e554]: Agregar
+                      - generic [ref=e556]:
+                        - generic [ref=e558]:
+                          - generic [ref=e559]: $1.990
+                          - generic [ref=e560]: precio actual $1.990
+                          - generic [ref=e561]: $663 x un
+                        - generic [ref=e562]: Multi Marca
+                        - generic [ref=e563]: Cebolla Orgánica Malla, 3 Un
+                  - group [ref=e566]:
+                    - link "Cebolla Malla, 1 Kg" [ref=e567] [cursor=pointer]:
+                      - /url: /ip/verduras/00780460020020?from=/search
+                      - generic [ref=e568]: Cebolla Malla, 1 Kg
+                    - generic [ref=e570]:
+                      - generic [ref=e573]:
+                        - generic [ref=e574]:
+                          - img "Cebolla Malla, 1 Kg"
+                        - button "Agregar al carro - Cebolla Malla, 1 Kg" [ref=e577] [cursor=pointer]:
+                          - generic "agregar" [ref=e578]: 
+                          - generic [ref=e579]: Agregar
+                      - generic [ref=e581]:
+                        - generic [ref=e583]:
+                          - generic [ref=e584]: $1.690
+                          - generic [ref=e585]: precio actual $1.690
+                          - generic [ref=e586]: $1.690 x kg
+                        - generic [ref=e587]: Multi Marca
+                        - generic [ref=e588]: Cebolla Malla, 1 Kg
+                  - group [ref=e591]:
+                    - link "Cebolla Granel." [ref=e592] [cursor=pointer]:
+                      - /url: /ip/verduras/00200004000000?from=/search
+                      - generic [ref=e593]: Cebolla Granel.
+                    - generic [ref=e595]:
+                      - generic [ref=e598]:
+                        - generic [ref=e599]:
+                          - img "Cebolla Granel."
+                        - button "Agregar al carro - Cebolla Granel." [ref=e602] [cursor=pointer]:
+                          - generic "agregar" [ref=e603]: 
+                          - generic [ref=e604]: Agregar
+                      - generic [ref=e606]:
+                        - generic [ref=e608]:
+                          - generic [ref=e609]: $1.550/kg
+                          - generic [ref=e610]: precio actual $1.550/kg
+                          - generic [ref=e611]: $1.550 x kg
+                        - generic [ref=e612]: Multi Marca
+                        - generic [ref=e613]: Cebolla Granel.
+                  - group [ref=e616]:
+                    - link "Cebolla Cubo, 150 g" [ref=e617] [cursor=pointer]:
+                      - /url: /ip/verduras-y-frutas-congeladas/00780130000275?from=/search
+                      - generic [ref=e618]: Cebolla Cubo, 150 g
+                    - generic [ref=e620]:
+                      - generic [ref=e623]:
+                        - generic [ref=e624]:
+                          - img "Cebolla Cubo, 150 g"
+                        - button "Agregar al carro - Cebolla Cubo, 150 g" [ref=e627] [cursor=pointer]:
+                          - generic "agregar" [ref=e628]: 
+                          - generic [ref=e629]: Agregar
+                      - generic [ref=e631]:
+                        - generic [ref=e633]:
+                          - generic [ref=e634]: $940
+                          - generic [ref=e635]: precio actual $940
+                          - generic [ref=e636]: $6.267 x kg
+                        - generic [ref=e637]: Frutos Del Maipo
+                        - generic [ref=e638]: Cebolla Cubo, 150 g
+                  - group [ref=e641]:
+                    - link "Papas Fritas Tarro Stax Crema y Cebolla, 134 g" [ref=e642] [cursor=pointer]:
+                      - /url: /ip/snacks-y-picoteo/00780200001362?from=/search
+                      - generic [ref=e643]: Papas Fritas Tarro Stax Crema y Cebolla, 134 g
+                    - generic [ref=e645]:
+                      - generic [ref=e648]:
+                        - generic [ref=e649]:
+                          - img "Papas Fritas Tarro Stax Crema y Cebolla, 134 g"
+                        - button "Agregar al carro - Papas Fritas Tarro Stax Crema y Cebolla, 134 g" [ref=e652] [cursor=pointer]:
+                          - generic "agregar" [ref=e653]: 
+                          - generic [ref=e654]: Agregar
+                      - generic [ref=e656]:
+                        - generic [ref=e658]:
+                          - generic [ref=e659]: $2.290
+                          - generic [ref=e660]: precio actual $2.290
+                          - generic [ref=e661]: $2.290 x kg
+                        - generic [ref=e662]: Lay's
+                        - generic [ref=e663]: Papas Fritas Tarro Stax Crema y Cebolla, 134 g
+                  - group [ref=e666]:
+                    - link "Cebolla Picada, 250 gr" [ref=e667] [cursor=pointer]:
+                      - /url: /ip/verduras-y-frutas-congeladas/00780122080126?from=/search
+                      - generic [ref=e668]: Cebolla Picada, 250 gr
+                    - generic [ref=e670]:
+                      - generic [ref=e673]:
+                        - generic [ref=e674]:
+                          - img "Cebolla Picada, 250 gr"
+                        - button "Agregar al carro - Cebolla Picada, 250 gr" [ref=e677] [cursor=pointer]:
+                          - generic "agregar" [ref=e678]: 
+                          - generic [ref=e679]: Agregar
+                      - generic [ref=e681]:
+                        - generic [ref=e683]:
+                          - generic [ref=e684]: $1.490
+                          - generic [ref=e685]: precio actual $1.490
+                          - generic [ref=e686]: $5.960 x kg
+                        - generic [ref=e687]: Minuto Verde
+                        - generic [ref=e688]: Cebolla Picada, 250 gr
+                  - group [ref=e691]:
+                    - link "Cebolla Morada, 150 g" [ref=e692] [cursor=pointer]:
+                      - /url: /ip/verduras-y-frutas-congeladas/00780130000367?from=/search
+                      - generic [ref=e693]: Cebolla Morada, 150 g
+                    - generic [ref=e695]:
+                      - generic [ref=e698]:
+                        - generic [ref=e699]:
+                          - img "Cebolla Morada, 150 g"
+                        - button "Agregar al carro - Cebolla Morada, 150 g" [ref=e702] [cursor=pointer]:
+                          - generic "agregar" [ref=e703]: 
+                          - generic [ref=e704]: Agregar
+                      - generic [ref=e706]:
+                        - generic [ref=e708]:
+                          - generic [ref=e709]: $790
+                          - generic [ref=e710]: precio actual $790
+                          - generic [ref=e711]: $5.267 x kg
+                        - generic [ref=e712]: Frutos Del Maipo
+                        - generic [ref=e713]: Cebolla Morada, 150 g
+                  - group [ref=e716]:
+                    - link "Papas Fritas Artesanales Cebolla Caramelizada, 150 g" [ref=e717] [cursor=pointer]:
+                      - /url: /ip/sin-gluten/00780462765111?from=/search
+                      - generic [ref=e718]: Papas Fritas Artesanales Cebolla Caramelizada, 150 g
+                    - generic [ref=e720]:
+                      - generic [ref=e723]:
+                        - generic [ref=e724]:
+                          - img "Papas Fritas Artesanales Cebolla Caramelizada, 150 g"
+                        - button "Agregar al carro - Papas Fritas Artesanales Cebolla Caramelizada, 150 g" [ref=e727] [cursor=pointer]:
+                          - generic "agregar" [ref=e728]: 
+                          - generic [ref=e729]: Agregar
+                      - generic [ref=e731]:
+                        - generic [ref=e733]:
+                          - generic [ref=e734]: $2.190
+                          - generic [ref=e735]: precio actual $2.190
+                          - generic [ref=e736]: $11.838 x kg
+                        - generic [ref=e737]: Buka
+                        - generic [ref=e738]: Papas Fritas Artesanales Cebolla Caramelizada, 150 g
+                  - group [ref=e741]:
+                    - link "Papas Fritas Crema & Cebolla Perejil, 135" [ref=e742] [cursor=pointer]:
+                      - /url: /ip/snacks-y-picoteo/00780463001153?from=/search
+                      - generic [ref=e743]: Papas Fritas Crema & Cebolla Perejil, 135
+                    - generic [ref=e745]:
+                      - generic [ref=e748]:
+                        - generic [ref=e749]:
+                          - img "Papas Fritas Crema & Cebolla Perejil, 135"
+                        - button "Agregar al carro - Papas Fritas Crema & Cebolla Perejil, 135" [ref=e752] [cursor=pointer]:
+                          - generic "agregar" [ref=e753]: 
+                          - generic [ref=e754]: Agregar
+                      - generic [ref=e756]:
+                        - generic [ref=e758]:
+                          - generic [ref=e759]: $2.650
+                          - generic [ref=e760]: precio actual $2.650
+                          - generic [ref=e761]: $19.630 x kg
+                        - generic [ref=e762]: Tika
+                        - generic [ref=e763]: Papas Fritas Crema & Cebolla Perejil, 135
+                  - group [ref=e766]:
+                    - link "Papas Fritas Tarro Crema y Cebolla, 130 g" [ref=e767] [cursor=pointer]:
+                      - /url: /ip/snacks-y-picoteo/00780280053358?from=/search
+                      - generic [ref=e768]: Papas Fritas Tarro Crema y Cebolla, 130 g
+                    - generic [ref=e770]:
+                      - generic [ref=e773]:
+                        - generic [ref=e774]:
+                          - img "Papas Fritas Tarro Crema y Cebolla, 130 g"
+                        - button "Agregar al carro - Papas Fritas Tarro Crema y Cebolla, 130 g" [ref=e777] [cursor=pointer]:
+                          - generic "agregar" [ref=e778]: 
+                          - generic [ref=e779]: Agregar
+                      - generic [ref=e781]:
+                        - generic [ref=e783]:
+                          - generic [ref=e784]: $2.190
+                          - generic [ref=e785]: precio actual $2.190
+                          - generic [ref=e786]: $2.190 x kg
+                        - generic [ref=e787]: Kryzpo
+                        - generic [ref=e788]: Papas Fritas Tarro Crema y Cebolla, 130 g
+                  - group [ref=e791]:
+                    - link "Caldo en polvo Sabor Tocino Ajo y Cebolla, 48 g" [ref=e792] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00780241000278?from=/search
+                      - generic [ref=e793]: Caldo en polvo Sabor Tocino Ajo y Cebolla, 48 g
+                    - generic [ref=e795]:
+                      - generic [ref=e798]:
+                        - generic [ref=e799]:
+                          - img "Caldo en polvo Sabor Tocino Ajo y Cebolla, 48 g"
+                        - button "Agregar al carro - Caldo en polvo Sabor Tocino Ajo y Cebolla, 48 g" [ref=e802] [cursor=pointer]:
+                          - generic "agregar" [ref=e803]: 
+                          - generic [ref=e804]: Agregar
+                      - generic [ref=e806]:
+                        - generic [ref=e808]:
+                          - generic [ref=e809]: $800
+                          - generic [ref=e810]: precio actual $800
+                          - generic [ref=e811]: $167 x 10g
+                        - generic [ref=e812]: Gourmet
+                        - generic [ref=e813]: Caldo en polvo Sabor Tocino Ajo y Cebolla, 48 g
+                  - group [ref=e816]:
+                    - link "Cebolla Picada, 250 g" [ref=e817] [cursor=pointer]:
+                      - /url: /ip/verduras-y-frutas-congeladas/00040000730849?from=/search
+                      - generic [ref=e818]: Cebolla Picada, 250 g
+                    - generic [ref=e820]:
+                      - generic [ref=e823]:
+                        - generic [ref=e824]:
+                          - img "Cebolla Picada, 250 g"
+                        - button "Agregar al carro - Cebolla Picada, 250 g" [ref=e827] [cursor=pointer]:
+                          - generic "agregar" [ref=e828]: 
+                          - generic [ref=e829]: Agregar
+                      - generic [ref=e831]:
+                        - generic [ref=e833]:
+                          - generic [ref=e834]: $1.390
+                          - generic [ref=e835]: precio actual $1.390
+                          - generic [ref=e836]: $5.560 x kg
+                        - generic [ref=e837]: Lider
+                        - generic [ref=e838]: Cebolla Picada, 250 g
+                  - group [ref=e841]:
+                    - link "Suflés Aritos Cebolla BBQ, 200 g" [ref=e842] [cursor=pointer]:
+                      - /url: /ip/snacks-y-picoteo/00780462765115?from=/search
+                      - generic [ref=e843]: Suflés Aritos Cebolla BBQ, 200 g
+                    - generic [ref=e845]:
+                      - generic [ref=e848]:
+                        - generic [ref=e849]:
+                          - img "Suflés Aritos Cebolla BBQ, 200 g"
+                        - button "Agregar al carro - Suflés Aritos Cebolla BBQ, 200 g" [ref=e852] [cursor=pointer]:
+                          - generic "agregar" [ref=e853]: 
+                          - generic [ref=e854]: Agregar
+                      - generic [ref=e856]:
+                        - generic [ref=e858]:
+                          - generic [ref=e859]: $1.990
+                          - generic [ref=e860]: precio actual $1.990
+                        - generic [ref=e861]: Buka
+                        - generic [ref=e862]: Suflés Aritos Cebolla BBQ, 200 g
+                  - group [ref=e865]:
+                    - link "Pan Focaccia Cebolla Granel" [ref=e866] [cursor=pointer]:
+                      - /url: /ip/panaderia-granel/00228757000000?from=/search
+                      - generic [ref=e867]: Pan Focaccia Cebolla Granel
+                    - generic [ref=e869]:
+                      - generic [ref=e872]:
+                        - generic [ref=e873]:
+                          - img "Pan Focaccia Cebolla Granel"
+                        - button "Agregar al carro - Pan Focaccia Cebolla Granel" [ref=e876] [cursor=pointer]:
+                          - generic "agregar" [ref=e877]: 
+                          - generic [ref=e878]: Agregar
+                      - generic [ref=e880]:
+                        - generic [ref=e882]:
+                          - generic [ref=e883]: $3.990/kg
+                          - generic [ref=e884]: precio actual $3.990/kg
+                          - generic [ref=e885]: $3.990 x kg
+                        - generic [ref=e886]: Pulmahue
+                        - generic [ref=e887]: Pan Focaccia Cebolla Granel
+                  - group [ref=e890]:
+                    - link "Masas Para Pizza Toques De Cebolla 2 Un, 500 g" [ref=e891] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780347300160?from=/search
+                      - generic [ref=e892]: Masas Para Pizza Toques De Cebolla 2 Un, 500 g
+                    - generic [ref=e894]:
+                      - generic [ref=e897]:
+                        - generic [ref=e898]:
+                          - img "Masas Para Pizza Toques De Cebolla 2 Un, 500 g"
+                        - button "Agregar al carro - Masas Para Pizza Toques De Cebolla 2 Un, 500 g" [ref=e901] [cursor=pointer]:
+                          - generic "agregar" [ref=e902]: 
+                          - generic [ref=e903]: Agregar
+                      - generic [ref=e905]:
+                        - generic [ref=e907]:
+                          - generic [ref=e908]: $2.490
+                          - generic [ref=e909]: precio actual $2.490
+                          - generic [ref=e910]: $9.960 x kg
+                        - generic [ref=e911]: Ideal
+                        - generic [ref=e912]: Masas Para Pizza Toques De Cebolla 2 Un, 500 g
+                  - group [ref=e915]:
+                    - link "Papas Fritas Rústicas Cebolla Caramelizada, 185 g" [ref=e916] [cursor=pointer]:
+                      - /url: /ip/snacks-y-picoteo/00780242000823?from=/search
+                      - generic [ref=e917]: Papas Fritas Rústicas Cebolla Caramelizada, 185 g
+                    - generic [ref=e919]:
+                      - generic [ref=e920]:
+                        - generic [ref=e922]:
+                          - generic [ref=e924]: 
+                          - text: Rebaja
+                        - generic [ref=e925]:
+                          - generic [ref=e926]:
+                            - img "Papas Fritas Rústicas Cebolla Caramelizada, 185 g"
+                          - button "Agregar al carro - Papas Fritas Rústicas Cebolla Caramelizada, 185 g" [ref=e929] [cursor=pointer]:
+                            - generic "agregar" [ref=e930]: 
+                            - generic [ref=e931]: Agregar
+                      - generic [ref=e933]:
+                        - generic [ref=e935]:
+                          - generic [ref=e936]: $2.000
+                          - generic [ref=e937]: precio actual $2.000, Costaba $2.650
+                          - generic [ref=e938]: $10.811 x kg
+                          - generic [ref=e939]: $2.650
+                          - generic [ref=e940]: Ahorra $650
+                        - generic [ref=e941]: Marco Polo
+                        - generic [ref=e942]: Papas Fritas Rústicas Cebolla Caramelizada, 185 g
+                  - group [ref=e945]:
+                    - link "Snack Multigrano Crema & Cebolla, 50 g" [ref=e946] [cursor=pointer]:
+                      - /url: /ip/sin-gluten/00780463593162?from=/search
+                      - generic [ref=e947]: Snack Multigrano Crema & Cebolla, 50 g
+                    - generic [ref=e949]:
+                      - generic [ref=e952]:
+                        - generic [ref=e953]:
+                          - img "Snack Multigrano Crema & Cebolla, 50 g"
+                        - button "Agregar al carro - Snack Multigrano Crema & Cebolla, 50 g" [ref=e956] [cursor=pointer]:
+                          - generic "agregar" [ref=e957]: 
+                          - generic [ref=e958]: Agregar
+                      - generic [ref=e960]:
+                        - generic [ref=e962]:
+                          - generic [ref=e963]: $1.490
+                          - generic [ref=e964]: precio actual $1.490
+                          - generic [ref=e965]: $2.980 x kg
+                        - generic [ref=e966]: Lider
+                        - generic [ref=e967]: Snack Multigrano Crema & Cebolla, 50 g
+                  - group [ref=e970]:
+                    - link "Masa Para Pizza Toques De Cebolla Rectangular 2 Un, 500 gr" [ref=e971] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780340300227?from=/search
+                      - generic [ref=e972]: Masa Para Pizza Toques De Cebolla Rectangular 2 Un, 500 gr
+                    - generic [ref=e974]:
+                      - generic [ref=e977]:
+                        - generic [ref=e978]:
+                          - img "Masa Para Pizza Toques De Cebolla Rectangular 2 Un, 500 gr"
+                        - button "Agregar al carro - Masa Para Pizza Toques De Cebolla Rectangular 2 Un, 500 gr" [ref=e981] [cursor=pointer]:
+                          - generic "agregar" [ref=e982]: 
+                          - generic [ref=e983]: Agregar
+                      - generic [ref=e985]:
+                        - generic [ref=e987]:
+                          - generic [ref=e988]: $2.590
+                          - generic [ref=e989]: precio actual $2.590
+                          - generic [ref=e990]: $5.180 x kg
+                        - generic [ref=e991]: Ideal
+                        - generic [ref=e992]: Masa Para Pizza Toques De Cebolla Rectangular 2 Un, 500 gr
+                  - group [ref=e995]:
+                    - link "Mix De Vegetales Congelados Cebolla y Pimentón, 567 g" [ref=e996] [cursor=pointer]:
+                      - /url: /ip/verduras-y-frutas-congeladas/00007874224971?from=/search
+                      - generic [ref=e997]: Mix De Vegetales Congelados Cebolla y Pimentón, 567 g
+                    - generic [ref=e999]:
+                      - generic [ref=e1002]:
+                        - generic [ref=e1003]:
+                          - img "Mix De Vegetales Congelados Cebolla y Pimentón, 567 g"
+                        - button "Agregar al carro - Mix De Vegetales Congelados Cebolla y Pimentón, 567 g" [ref=e1006] [cursor=pointer]:
+                          - generic "agregar" [ref=e1007]: 
+                          - generic [ref=e1008]: Agregar
+                      - generic [ref=e1010]:
+                        - generic [ref=e1012]:
+                          - generic [ref=e1013]: $5.490
+                          - generic [ref=e1014]: precio actual $5.490
+                          - generic [ref=e1015]: $9.683 x kg
+                        - generic [ref=e1016]: Great Value
+                        - generic [ref=e1017]: Mix De Vegetales Congelados Cebolla y Pimentón, 567 g
+                  - group [ref=e1020]:
+                    - link "Pan Bagel De Cebolla Artesanal 12 Un, 650 g" [ref=e1021] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780466706013?from=/search
+                      - generic [ref=e1022]: Pan Bagel De Cebolla Artesanal 12 Un, 650 g
+                    - generic [ref=e1024]:
+                      - generic [ref=e1027]:
+                        - generic [ref=e1028]:
+                          - img "Pan Bagel De Cebolla Artesanal 12 Un, 650 g"
+                        - button "Agregar al carro - Pan Bagel De Cebolla Artesanal 12 Un, 650 g" [ref=e1031] [cursor=pointer]:
+                          - generic "agregar" [ref=e1032]: 
+                          - generic [ref=e1033]: Agregar
+                      - generic [ref=e1035]:
+                        - generic [ref=e1037]:
+                          - generic [ref=e1038]: $3.290
+                          - generic [ref=e1039]: precio actual $3.290
+                        - generic [ref=e1040]: Bagels & Co
+                        - generic [ref=e1041]: Pan Bagel De Cebolla Artesanal 12 Un, 650 g
+                  - group [ref=e1044]:
+                    - link "Ramitas Sabor a Crema y Cebolla, 250 g" [ref=e1045] [cursor=pointer]:
+                      - /url: /ip/snacks-y-picoteo/00780200002090?from=/search
+                      - generic [ref=e1046]: Ramitas Sabor a Crema y Cebolla, 250 g
+                    - generic [ref=e1048]:
+                      - generic [ref=e1051]:
+                        - generic [ref=e1052]:
+                          - img "Ramitas Sabor a Crema y Cebolla, 250 g"
+                        - button "Agregar al carro - Ramitas Sabor a Crema y Cebolla, 250 g" [ref=e1055] [cursor=pointer]:
+                          - generic "agregar" [ref=e1056]: 
+                          - generic [ref=e1057]: Agregar
+                      - generic [ref=e1059]:
+                        - generic [ref=e1061]:
+                          - generic [ref=e1062]: $1.590
+                          - generic [ref=e1063]: precio actual $1.590
+                          - generic [ref=e1064]: $6.360 x kg
+                        - generic [ref=e1065]: Evercrisp
+                        - generic [ref=e1066]: Ramitas Sabor a Crema y Cebolla, 250 g
+                  - group [ref=e1069]:
+                    - link "Papas Fritas Crema Cebolla, 37 ML" [ref=e1070] [cursor=pointer]:
+                      - /url: /ip/snacks-y-picoteo/00780280053558?from=/search
+                      - generic [ref=e1071]: Papas Fritas Crema Cebolla, 37 ML
+                    - generic [ref=e1073]:
+                      - generic [ref=e1076]:
+                        - generic [ref=e1077]:
+                          - img "Papas Fritas Crema Cebolla, 37 ML"
+                        - button "Agregar al carro - Papas Fritas Crema Cebolla, 37 ML" [ref=e1080] [cursor=pointer]:
+                          - generic "agregar" [ref=e1081]: 
+                          - generic [ref=e1082]: Agregar
+                      - generic [ref=e1084]:
+                        - generic [ref=e1086]:
+                          - generic [ref=e1087]: $790
+                          - generic [ref=e1088]: precio actual $790
+                          - generic [ref=e1089]: $2.135 x kg
+                        - generic [ref=e1090]: Kryzpo
+                        - generic [ref=e1091]: Papas Fritas Crema Cebolla, 37 ML
+                  - group [ref=e1094]:
+                    - link "Masa Para Pizza Orégano Cebolla Y Aceite De Oliva Rectangular 2 Un, 500 g" [ref=e1095] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780346800122?from=/search
+                      - generic [ref=e1096]: Masa Para Pizza Orégano Cebolla Y Aceite De Oliva Rectangular 2 Un, 500 g
+                    - generic [ref=e1098]:
+                      - generic [ref=e1101]:
+                        - generic [ref=e1102]:
+                          - img "Masa Para Pizza Orégano Cebolla Y Aceite De Oliva Rectangular 2 Un, 500 g"
+                        - button "Agregar al carro - Masa Para Pizza Orégano Cebolla Y Aceite De Oliva Rectangular 2 Un, 500 g" [ref=e1105] [cursor=pointer]:
+                          - generic "agregar" [ref=e1106]: 
+                          - generic [ref=e1107]: Agregar
+                      - generic [ref=e1109]:
+                        - generic [ref=e1111]:
+                          - generic [ref=e1112]: $2.590
+                          - generic [ref=e1113]: precio actual $2.590
+                          - generic [ref=e1114]: $2.590 x un
+                        - generic [ref=e1115]: Castaño
+                        - generic [ref=e1116]: Masa Para Pizza Orégano Cebolla Y Aceite De Oliva Rectangular 2 Un, 500 g
+                  - generic [ref=e1118]:
+                    - group [ref=e1119]:
+                      - link "Ravioli Calabaza y Cebollas Tostadas, 250 ml" [ref=e1120] [cursor=pointer]:
+                        - /url: /ip/pastas-y-salsas/00800166571027?from=/search
+                        - generic [ref=e1121]: Ravioli Calabaza y Cebollas Tostadas, 250 ml
+                      - generic [ref=e1123]:
+                        - generic [ref=e1124]:
+                          - generic [ref=e1126]:
+                            - generic [ref=e1128]: 
+                            - text: Rebaja
+                          - generic [ref=e1130]:
+                            - img "Ravioli Calabaza y Cebollas Tostadas, 250 ml"
+                        - generic [ref=e1132]:
+                          - generic [ref=e1134]:
+                            - generic [ref=e1135]: $4.200
+                            - generic [ref=e1136]: precio actual $4.200, Costaba $5.390
+                            - generic [ref=e1137]: $1.680 x un
+                            - generic [ref=e1138]: $5.390
+                          - generic [ref=e1139]: Rana
+                          - generic [ref=e1140]: Ravioli Calabaza y Cebollas Tostadas, 250 ml
+                          - generic [ref=e1141]: Agotado
+                    - button "Revisar productos similares - Ravioli Calabaza y Cebollas Tostadas, 250 ml" [ref=e1143]: Revisar productos similares
+                  - group [ref=e1146]:
+                    - link "Papas Fritas tipo americano crema y cebolla, 170 g" [ref=e1147] [cursor=pointer]:
+                      - /url: /ip/snacks-y-picoteo/00780200002177?from=/search
+                      - generic [ref=e1148]: Papas Fritas tipo americano crema y cebolla, 170 g
+                    - generic [ref=e1150]:
+                      - generic [ref=e1153]:
+                        - generic [ref=e1154]:
+                          - img "Papas Fritas tipo americano crema y cebolla, 170 g"
+                        - button "Agregar al carro - Papas Fritas tipo americano crema y cebolla, 170 g" [ref=e1157] [cursor=pointer]:
+                          - generic "agregar" [ref=e1158]: 
+                          - generic [ref=e1159]: Agregar
+                      - generic [ref=e1161]:
+                        - generic [ref=e1163]:
+                          - generic [ref=e1164]: $2.290
+                          - generic [ref=e1165]: precio actual $2.290
+                          - generic [ref=e1166]: $13.471 x kg
+                        - generic [ref=e1167]: Lay's
+                        - generic [ref=e1168]: Papas Fritas tipo americano crema y cebolla, 170 g
+                  - group [ref=e1171]:
+                    - link "Greda para escolar y profesional 1 Kg" [ref=e1172] [cursor=pointer]:
+                      - /url: /ip/libreria/00780671400034?from=/search
+                      - generic [ref=e1173]: Greda para escolar y profesional 1 Kg
+                    - generic [ref=e1175]:
+                      - generic [ref=e1178]:
+                        - generic [ref=e1179]:
+                          - img "Greda para escolar y profesional 1 Kg"
+                        - button "Agregar al carro - Greda para escolar y profesional 1 Kg" [ref=e1182] [cursor=pointer]:
+                          - generic "agregar" [ref=e1183]: 
+                          - generic [ref=e1184]: Agregar
+                      - generic [ref=e1186]:
+                        - generic [ref=e1188]:
+                          - generic [ref=e1189]: $1.090
+                          - generic [ref=e1190]: precio actual $1.090
+                          - generic [ref=e1191]: $1.090 x un
+                        - generic [ref=e1192]: Marzú
+                        - generic [ref=e1193]: Greda para escolar y profesional 1 Kg
+                  - group [ref=e1196]:
+                    - link "Arcilla Profesional Blanca Bolsa 1 Kg, 1 Un" [ref=e1197] [cursor=pointer]:
+                      - /url: /ip/libreria/00780671400226?from=/search
+                      - generic [ref=e1198]: Arcilla Profesional Blanca Bolsa 1 Kg, 1 Un
+                    - generic [ref=e1200]:
+                      - generic [ref=e1203]:
+                        - generic [ref=e1204]:
+                          - img "Arcilla Profesional Blanca Bolsa 1 Kg, 1 Un"
+                        - button "Agregar al carro - Arcilla Profesional Blanca Bolsa 1 Kg, 1 Un" [ref=e1207] [cursor=pointer]:
+                          - generic "agregar" [ref=e1208]: 
+                          - generic [ref=e1209]: Agregar
+                      - generic [ref=e1211]:
+                        - generic [ref=e1213]:
+                          - generic [ref=e1214]: $2.490
+                          - generic [ref=e1215]: precio actual $2.490
+                          - generic [ref=e1216]: $2.490 x un
+                        - generic [ref=e1217]: Marzú
+                        - generic [ref=e1218]: Arcilla Profesional Blanca Bolsa 1 Kg, 1 Un
+                  - group [ref=e1221]:
+                    - link "Cloro Piscina líquido 10 kg, 1 Un" [ref=e1222] [cursor=pointer]:
+                      - /url: /ip/mantenimiento-de-piscina/00040000666752?from=/search
+                      - generic [ref=e1223]: Cloro Piscina líquido 10 kg, 1 Un
+                    - generic [ref=e1225]:
+                      - generic [ref=e1228]:
+                        - generic [ref=e1229]:
+                          - img "Cloro Piscina líquido 10 kg, 1 Un"
+                        - button "Agregar al carro - Cloro Piscina líquido 10 kg, 1 Un" [ref=e1232] [cursor=pointer]:
+                          - generic "agregar" [ref=e1233]: 
+                          - generic [ref=e1234]: Agregar
+                      - generic [ref=e1236]:
+                        - generic [ref=e1238]:
+                          - generic [ref=e1239]: $7.890
+                          - generic [ref=e1240]: precio actual $7.890
+                          - generic [ref=e1241]: $789 x kg
+                        - generic [ref=e1242]: Lider
+                        - generic [ref=e1243]: Cloro Piscina líquido 10 kg, 1 Un
+            - navigation "paginación" [ref=e1246]:
+              - list [ref=e1247]:
+                - listitem [ref=e1248]
+                - listitem [ref=e1250]:
+                  - link "1" [ref=e1251] [cursor=pointer]:
+                    - /url: /search?q=cebolla+kg
+                - listitem [ref=e1252]:
+                  - link "Ir a la página 2" [ref=e1253] [cursor=pointer]:
+                    - /url: /search?q=cebolla+kg&page=2
+                    - text: "2"
+                - listitem [ref=e1254]:
+                  - link "Página siguiente" [ref=e1255] [cursor=pointer]:
+                    - /url: /search?q=cebolla+kg&page=2
+                    - generic [ref=e1256]: 
+  - alert [ref=e1264]

@@ -1,0 +1,118 @@
+{
+  "report_schema_version": "1.0",
+  "run_id": "0e7daf4792bb4e32926f553351a9b233",
+  "timestamp": "2026-05-24T19:51:16.904399Z",
+  "agent_config": {
+    "model": "anthropic:claude-sonnet-4-6",
+    "system_prompt_hash": "bc387f84fd4942ba",
+    "reviewer_class": "Agent"
+  },
+  "dataset_path": "in-memory",
+  "dataset_size": 7,
+  "summary": {
+    "metric_values": {
+      "detection_rate": null,
+      "comments_per_pr": null,
+      "precision_per_severity": null,
+      "mean_per_pr_recall": null,
+      "novelty_rate": null,
+      "severity_calibration": null,
+      "suggestion_rate": null
+    },
+    "metric_details": {
+      "detection_rate": {
+        "total_matches": 0,
+        "total_gold": 0,
+        "n_samples_with_gold": 0
+      },
+      "comments_per_pr": {
+        "n_samples": 0
+      },
+      "precision_per_severity": {},
+      "mean_per_pr_recall": {
+        "n_samples_with_value": 0,
+        "n_samples_skipped": 7
+      },
+      "novelty_rate": {
+        "n_samples_with_value": 0,
+        "n_samples_skipped": 7
+      },
+      "severity_calibration": {
+        "n_samples_with_value": 0,
+        "n_samples_skipped": 7
+      },
+      "suggestion_rate": {
+        "n_samples_with_value": 0,
+        "n_samples_skipped": 7
+      }
+    },
+    "n_samples_total": 7,
+    "n_samples_succeeded": 0,
+    "n_samples_failed": 7,
+    "cost_usd_total": null,
+    "cost_usd_p50": null,
+    "cost_usd_p95": null,
+    "cost_unavailable_reason": null,
+    "latency_seconds_p50": null,
+    "latency_seconds_p95": null
+  },
+  "per_sample": [
+    {
+      "pr_url": "https://github.com/django/django/pull/16603",
+      "metrics": {},
+      "cost_usd": null,
+      "latency_seconds": 13.973204208072275,
+      "review_summary": {},
+      "error": "SelfFilterReviewer requires a `inner_judge` callable (Comment, Context) -> float in [0, 1]."
+    },
+    {
+      "pr_url": "https://github.com/django/django/pull/17147",
+      "metrics": {},
+      "cost_usd": null,
+      "latency_seconds": 13.832346000010148,
+      "review_summary": {},
+      "error": "SelfFilterReviewer requires a `inner_judge` callable (Comment, Context) -> float in [0, 1]."
+    },
+    {
+      "pr_url": "https://github.com/pydantic/pydantic/pull/8059",
+      "metrics": {},
+      "cost_usd": null,
+      "latency_seconds": 5.2435342078097165,
+      "review_summary": {},
+      "error": "SelfFilterReviewer requires a `inner_judge` callable (Comment, Context) -> float in [0, 1]."
+    },
+    {
+      "pr_url": "https://github.com/pydantic/pydantic/pull/7900",
+      "metrics": {},
+      "cost_usd": null,
+      "latency_seconds": 5.171664166962728,
+      "review_summary": {},
+      "error": "SelfFilterReviewer requires a `inner_judge` callable (Comment, Context) -> float in [0, 1]."
+    },
+    {
+      "pr_url": "https://github.com/django/django/pull/17256",
+      "metrics": {},
+      "cost_usd": null,
+      "latency_seconds": 12.800965042086318,
+      "review_summary": {},
+      "error": "SelfFilterReviewer requires a `inner_judge` callable (Comment, Context) -> float in [0, 1]."
+    },
+    {
+      "pr_url": "https://github.com/django/django/pull/16746",
+      "metrics": {},
+      "cost_usd": null,
+      "latency_seconds": 9.47025554208085,
+      "review_summary": {},
+      "error": "SelfFilterReviewer requires a `inner_judge` callable (Comment, Context) -> float in [0, 1]."
+    },
+    {
+      "pr_url": "https://github.com/pydantic/pydantic/pull/7677",
+      "metrics": {},
+      "cost_usd": null,
+      "latency_seconds": 6.571729209041223,
+      "review_summary": {},
+      "error": "SelfFilterReviewer requires a `inner_judge` callable (Comment, Context) -> float in [0, 1]."
+    }
+  ],
+  "peer_version": "0.0.1"
+}

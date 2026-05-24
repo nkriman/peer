@@ -8,6 +8,13 @@ and `openspec/changes/eval-v01/design.md` for rationale.
 # Import report.py for its side effect: it attaches to_json / from_json
 # methods to EvalReport. Other importers depend on those methods being present.
 from . import report  # noqa: F401
+from .cross_judge import (
+    CrossJudgeReport,
+    CrossJudgeRunner,
+    MetricBand,
+    compute_variance_bands,
+    render_cross_judge_summary,
+)
 from .judging import JUDGE_MODEL, JUDGE_PROMPT, LLMJudge, RationaleGrounding, judge_match
 from .metrics import (
     CommentsPerPR,
@@ -40,6 +47,8 @@ __all__ = [
     "AgentConfig",
     "AggregateKind",
     "CommentsPerPR",
+    "CrossJudgeReport",
+    "CrossJudgeRunner",
     "DefectRecall",  # deprecated alias
     "DetectionRate",
     "EvalMetric",
@@ -49,15 +58,18 @@ __all__ = [
     "EvalSummary",
     "LLMJudge",
     "MeanPerPRRecall",
+    "MetricBand",
     "MetricResult",
     "NoveltyRate",
     "PrecisionPerSeverity",
     "RationaleGrounding",
     "SeverityCalibration",
     "SuggestionRate",
+    "compute_variance_bands",
     "cost_unavailable_reason",
     "estimate_cost",
     "judge_match",
+    "render_cross_judge_summary",
     "render_diff",
     "render_summary",
 ]

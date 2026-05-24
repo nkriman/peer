@@ -15,7 +15,7 @@ cost ↓) and writes a Markdown report.
 Usage:
     unset ANTHROPIC_API_KEY  # proves zero API spend
     uv run python3 scripts/cli_architecture_sweep.py
-"""  # noqa: RUF002
+"""
 
 from __future__ import annotations
 
@@ -118,7 +118,7 @@ _VARIANTS = [
     variant_wider_context,
     variant_haiku,  # smaller model → faster
     variant_opus,  # bigger model → slower
-    variant_draft_critique,  # 2× passes → slowest
+    variant_draft_critique,  # 2× passes → slowest  # noqa: RUF003
     variant_self_filter,
 ]
 
@@ -164,7 +164,7 @@ def _read_leaderboard() -> list[dict]:
 
 
 def _compute_pareto(rows: list[dict]) -> list[dict]:
-    """Non-dominated set over (DR ↑, comments ↓, cost ↓)."""  # noqa: RUF002
+    """Non-dominated set over (DR ↑, comments ↓, cost ↓)."""
 
     def _strictly_better(a: dict, b: dict) -> bool:
         a_dr = a.get("detection_rate") or 0.0

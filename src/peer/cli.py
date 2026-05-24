@@ -106,6 +106,15 @@ def _make_parser() -> argparse.ArgumentParser:
         default=False,
         help="Route every model call through the claude CLI (free, no ANTHROPIC_API_KEY). See claude-code-everywhere-v01.",
     )
+    p_eval.add_argument(
+        "--cross-judge",
+        default=None,
+        help=(
+            "Comma-separated judge model names (e.g. 'sonnet,haiku,opus'). "
+            "When set, runs CrossJudgeRunner instead of EvalRunner and emits a "
+            "CrossJudgeReport with per-metric variance bands."
+        ),
+    )
 
     # --- peer dataset (parent for subcommands) ------------------------------
     p_ds = sub.add_parser(
@@ -367,6 +376,17 @@ def _cmd_eval(args: argparse.Namespace) -> int:
     from .eval import EvalReport, EvalRunner, render_diff, render_summary
     from .exceptions import DatasetNotFound
 
+    # eval-cross-judge-v01: --cross-judge cannot be combined with --baseline
+    # (cross-judge produces a different report shape; A/B vs single-judge
+    # baseline is not meaningful today).
+    if getattr(args, "cross_judge", None) and args.baseline is not None:
+        print(
+            "--cross-judge and --baseline cannot be combined "
+            "(cross-judge reports don't A/B against single-judge baselines).",
+            file=sys.stderr,
+        )
+        return 2
+
     if not args.dataset.exists():
         raise DatasetNotFound(f"Dataset not found at {args.dataset}")
 
@@ -400,6 +420,30 @@ def _cmd_eval(args: argparse.Namespace) -> int:
             SuggestionRate(),
             RationaleGrounding(),
         ]
+
+    # eval-cross-judge-v01: when --cross-judge is set, swap the runner.
+    cross_judge_models = getattr(args, "cross_judge", None)
+    if cross_judge_models:
+        from .eval import CrossJudgeRunner, render_cross_judge_summary
+
+        judge_models = [m.strip() for m in cross_judge_models.split(",") if m.strip()]
+        cj_runner = CrossJudgeRunner(
+            reviewer=agent,
+            dataset=samples,
+            judge_models=judge_models,
+            concurrency=getattr(args, "concurrency", 5),
+        )
+        cj_report = cj_runner.run()
+        out_path = args.out
+        if out_path is None:
+            out_dir = Path("data/eval_runs")
+            out_dir.mkdir(parents=True, exist_ok=True)
+            # Use a run-id-less name since CrossJudgeReport doesn't carry one
+            out_path = out_dir / "cross_judge_report.json"
+        out_path.write_text(cj_report.model_dump_json(indent=2))
+        print(render_cross_judge_summary(cj_report))
+        print(f"\nCross-judge report saved to {out_path}")
+        return 0
 
     runner = EvalRunner(
         reviewer=agent,

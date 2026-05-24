@@ -1,0 +1,913 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: tomate kg
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 21 productos Monto total $54.350" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: "21"
+              - generic [ref=e44]: $54.350
+    - generic [ref=e45]:
+      - generic [ref=e46]:
+        - separator [ref=e47]
+        - generic [ref=e49]:
+          - img "Icono de título de banner" [ref=e50]
+          - generic [ref=e51]: ¿Cómo quieres tus productos?
+      - main [ref=e54]:
+        - generic [ref=e55]:
+          - generic [ref=e58]:
+            - region "Sección de ordenar y filtrar" [ref=e60]:
+              - button "Precio" [ref=e63]:
+                - generic [ref=e65]: 
+                - generic [ref=e66]: Precio
+                - generic [ref=e67]: 
+              - button "Marca" [ref=e70]:
+                - generic [ref=e71]: Marca
+                - generic [ref=e72]: 
+              - generic [ref=e73]:
+                - generic [ref=e74]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e76]:
+                  - text: Más relevantes
+                  - generic [ref=e77]: 
+            - separator [ref=e78]
+          - generic [ref=e81]:
+            - generic [ref=e82]:
+              - generic [ref=e85]:
+                - generic [ref=e86]:
+                  - button "Precio" [ref=e89]:
+                    - generic [ref=e90]: Precio
+                    - img [ref=e91]: 
+                  - separator [ref=e92]
+                - generic [ref=e93]:
+                  - button "Campaña" [ref=e96]:
+                    - generic [ref=e97]: Campaña
+                    - img [ref=e98]: 
+                  - separator [ref=e99]
+                - generic [ref=e100]:
+                  - button "Marca" [ref=e103]:
+                    - generic [ref=e104]: Marca
+                    - img [ref=e105]: 
+                  - separator [ref=e106]
+                - generic [ref=e107]:
+                  - button "Categoría" [ref=e110]:
+                    - generic [ref=e111]: Categoría
+                    - img [ref=e112]: 
+                  - separator [ref=e113]
+              - generic [ref=e116]:
+                - heading "Resultados para tomate kg (123)" [level=2] [ref=e124]: Resultados para tomate kg(123)
+                - generic [ref=e125]:
+                  - group [ref=e128]:
+                    - link "Tomate Deshidratado Pote, 100 g" [ref=e129] [cursor=pointer]:
+                      - /url: /ip/verduras/00780462106145?from=/search
+                      - generic [ref=e130]: Tomate Deshidratado Pote, 100 g
+                    - generic [ref=e132]:
+                      - generic [ref=e135]:
+                        - img "Tomate Deshidratado Pote, 100 g" [ref=e137]
+                        - button "Agregar al carro - Tomate Deshidratado Pote, 100 g" [ref=e140] [cursor=pointer]:
+                          - generic "agregar" [ref=e141]: 
+                          - generic [ref=e142]: Agregar
+                      - generic [ref=e144]:
+                        - generic [ref=e146]:
+                          - generic [ref=e147]: $2.690
+                          - generic [ref=e148]: precio actual $2.690
+                          - generic [ref=e149]: $26.899 x kg
+                        - generic [ref=e150]: Tomate
+                        - generic [ref=e151]: Tomate Deshidratado Pote, 100 g
+                  - group [ref=e154]:
+                    - link "Tomate Larga Vida Granel" [ref=e155] [cursor=pointer]:
+                      - /url: /ip/verduras/00200001000000?from=/search
+                      - generic [ref=e156]: Tomate Larga Vida Granel
+                    - generic [ref=e158]:
+                      - generic [ref=e161]:
+                        - img "Tomate Larga Vida Granel" [ref=e163]
+                        - button "Agregar al carro - Tomate Larga Vida Granel" [ref=e166] [cursor=pointer]:
+                          - generic "agregar" [ref=e167]: 
+                          - generic [ref=e168]: Agregar
+                      - generic [ref=e170]:
+                        - generic [ref=e172]:
+                          - generic [ref=e173]: $1.990/kg
+                          - generic [ref=e174]: precio actual $1.990/kg
+                          - generic [ref=e175]: $1.990 x kg
+                        - generic [ref=e176]: Multi Marca
+                        - generic [ref=e177]: Tomate Larga Vida Granel
+                  - group [ref=e180]:
+                    - link "Tomate Larga Vida Malla, 1 Kg" [ref=e181] [cursor=pointer]:
+                      - /url: /ip/verduras/00780465037000?from=/search
+                      - generic [ref=e182]: Tomate Larga Vida Malla, 1 Kg
+                    - generic [ref=e184]:
+                      - generic [ref=e187]:
+                        - img "Tomate Larga Vida Malla, 1 Kg" [ref=e189]
+                        - button "Agregar al carro - Tomate Larga Vida Malla, 1 Kg" [ref=e192] [cursor=pointer]:
+                          - generic "agregar" [ref=e193]: 
+                          - generic [ref=e194]: Agregar
+                      - generic [ref=e196]:
+                        - generic [ref=e198]:
+                          - generic [ref=e199]: $1.990
+                          - generic [ref=e200]: precio actual $1.990
+                          - generic [ref=e201]: $1.990 x kg
+                        - generic [ref=e202]: Multi Marca
+                        - generic [ref=e203]: Tomate Larga Vida Malla, 1 Kg
+                  - group [ref=e206]:
+                    - link "Tomate Cocktail Pote, 250 gr" [ref=e207] [cursor=pointer]:
+                      - /url: /ip/verduras/00040000106102?from=/search
+                      - generic [ref=e208]: Tomate Cocktail Pote, 250 gr
+                    - generic [ref=e210]:
+                      - generic [ref=e213]:
+                        - img "Tomate Cocktail Pote, 250 gr" [ref=e215]
+                        - button "Agregar al carro - Tomate Cocktail Pote, 250 gr" [ref=e218] [cursor=pointer]:
+                          - generic "agregar" [ref=e219]: 
+                          - generic [ref=e220]: Agregar
+                      - generic [ref=e222]:
+                        - generic [ref=e224]:
+                          - generic [ref=e225]: $1.790
+                          - generic [ref=e226]: precio actual $1.790
+                          - generic [ref=e227]: $1.790 x kg
+                        - generic [ref=e228]: Multi Marca
+                        - generic [ref=e229]: Tomate Cocktail Pote, 250 gr
+                  - group [ref=e232]:
+                    - link "Tomate Cocktail Mix Pote, 250 g" [ref=e233] [cursor=pointer]:
+                      - /url: /ip/verduras/00780467599007?from=/search
+                      - generic [ref=e234]: Tomate Cocktail Mix Pote, 250 g
+                    - generic [ref=e236]:
+                      - generic [ref=e239]:
+                        - img "Tomate Cocktail Mix Pote, 250 g" [ref=e241]
+                        - button "Agregar al carro - Tomate Cocktail Mix Pote, 250 g" [ref=e244] [cursor=pointer]:
+                          - generic "agregar" [ref=e245]: 
+                          - generic [ref=e246]: Agregar
+                      - generic [ref=e248]:
+                        - generic [ref=e250]:
+                          - generic [ref=e251]: $1.690
+                          - generic [ref=e252]: precio actual $1.690
+                          - generic [ref=e253]: $6.760 x kg
+                        - generic [ref=e254]: Multi Marca
+                        - generic [ref=e255]: Tomate Cocktail Mix Pote, 250 g
+                  - group [ref=e258]:
+                    - link "Tomate Cocktail Pote, 500 gr" [ref=e259] [cursor=pointer]:
+                      - /url: /ip/verduras/00780463617032?from=/search
+                      - generic [ref=e260]: Tomate Cocktail Pote, 500 gr
+                    - generic [ref=e262]:
+                      - generic [ref=e265]:
+                        - img "Tomate Cocktail Pote, 500 gr" [ref=e267]
+                        - button "Agregar al carro - Tomate Cocktail Pote, 500 gr" [ref=e270] [cursor=pointer]:
+                          - generic "agregar" [ref=e271]: 
+                          - generic [ref=e272]: Agregar
+                      - generic [ref=e274]:
+                        - generic [ref=e276]:
+                          - generic [ref=e277]: $3.390
+                          - generic [ref=e278]: precio actual $3.390
+                        - generic [ref=e279]: Multi Marca
+                        - generic [ref=e280]: Tomate Cocktail Pote, 500 gr
+                  - group [ref=e283]:
+                    - link "Tomate San Marzano Granel" [ref=e284] [cursor=pointer]:
+                      - /url: /ip/verduras/00200017000000?from=/search
+                      - generic [ref=e285]: Tomate San Marzano Granel
+                    - generic [ref=e287]:
+                      - generic [ref=e290]:
+                        - img "Tomate San Marzano Granel" [ref=e292]
+                        - button "Agregar al carro - Tomate San Marzano Granel" [ref=e295] [cursor=pointer]:
+                          - generic "agregar" [ref=e296]: 
+                          - generic [ref=e297]: Agregar
+                      - generic [ref=e299]:
+                        - generic [ref=e301]:
+                          - generic [ref=e302]: $2.490/kg
+                          - generic [ref=e303]: precio actual $2.490/kg
+                          - generic [ref=e304]: $2.490 x kg
+                        - generic [ref=e305]: Multi Marca
+                        - generic [ref=e306]: Tomate San Marzano Granel
+                  - group [ref=e309]:
+                    - link "Tomate Romanita Cocktail Pote, 340 gr" [ref=e310] [cursor=pointer]:
+                      - /url: /ip/verduras/00780460076028?from=/search
+                      - generic [ref=e311]: Tomate Romanita Cocktail Pote, 340 gr
+                    - generic [ref=e313]:
+                      - generic [ref=e314]:
+                        - generic [ref=e316]:
+                          - generic [ref=e318]: 
+                          - text: Rebaja
+                        - generic [ref=e319]:
+                          - img "Tomate Romanita Cocktail Pote, 340 gr" [ref=e321]
+                          - button "Agregar al carro - Tomate Romanita Cocktail Pote, 340 gr" [ref=e324] [cursor=pointer]:
+                            - generic "agregar" [ref=e325]: 
+                            - generic [ref=e326]: Agregar
+                      - generic [ref=e328]:
+                        - generic [ref=e330]:
+                          - generic [ref=e331]: $2.690
+                          - generic [ref=e332]: precio actual $2.690, Costaba $3.290
+                          - generic [ref=e333]: $7.912 x kg
+                          - generic [ref=e334]: $3.290
+                          - generic [ref=e335]: Ahorra $600
+                        - generic [ref=e336]: Multi Marca
+                        - generic [ref=e337]: Tomate Romanita Cocktail Pote, 340 gr
+                  - group [ref=e340]:
+                    - link "Tomate Mix Cóctel Granel" [ref=e341] [cursor=pointer]:
+                      - /url: /ip/verduras/00200051000000?from=/search
+                      - generic [ref=e342]: Tomate Mix Cóctel Granel
+                    - generic [ref=e344]:
+                      - generic [ref=e347]:
+                        - img "Tomate Mix Cóctel Granel" [ref=e349]
+                        - button "Agregar al carro - Tomate Mix Cóctel Granel" [ref=e352] [cursor=pointer]:
+                          - generic "agregar" [ref=e353]: 
+                          - generic [ref=e354]: Agregar
+                      - generic [ref=e356]:
+                        - generic [ref=e358]:
+                          - generic [ref=e359]: $5.990/kg
+                          - generic [ref=e360]: precio actual $5.990/kg
+                          - generic [ref=e361]: $5.990 x kg
+                        - generic [ref=e362]: Multi Marca
+                        - generic [ref=e363]: Tomate Mix Cóctel Granel
+                  - group [ref=e366]:
+                    - link "Tomate Beef Granel" [ref=e367] [cursor=pointer]:
+                      - /url: /ip/verduras/00200029000000?from=/search
+                      - generic [ref=e368]: Tomate Beef Granel
+                    - generic [ref=e370]:
+                      - generic [ref=e373]:
+                        - img "Tomate Beef Granel" [ref=e375]
+                        - button "Agregar al carro - Tomate Beef Granel" [ref=e378] [cursor=pointer]:
+                          - generic "agregar" [ref=e379]: 
+                          - generic [ref=e380]: Agregar
+                      - generic [ref=e382]:
+                        - generic [ref=e384]:
+                          - generic [ref=e385]: $2.490/kg
+                          - generic [ref=e386]: precio actual $2.490/kg
+                          - generic [ref=e387]: $2.490 x kg
+                        - generic [ref=e388]: Multi Marca
+                        - generic [ref=e389]: Tomate Beef Granel
+                  - group [ref=e392]:
+                    - link "Tomate dulce Pote, 100 g" [ref=e393] [cursor=pointer]:
+                      - /url: /ip/verduras/00780460076065?from=/search
+                      - generic [ref=e394]: Tomate dulce Pote, 100 g
+                    - generic [ref=e396]:
+                      - generic [ref=e399]:
+                        - img "Tomate dulce Pote, 100 g" [ref=e401]
+                        - button "Agregar al carro - Tomate dulce Pote, 100 g" [ref=e404] [cursor=pointer]:
+                          - generic "agregar" [ref=e405]: 
+                          - generic [ref=e406]: Agregar
+                      - generic [ref=e408]:
+                        - generic [ref=e410]:
+                          - generic [ref=e411]: $1.190
+                          - generic [ref=e412]: precio actual $1.190
+                          - generic [ref=e413]: $11.900 x kg
+                        - generic [ref=e414]: Tomateens
+                        - generic [ref=e415]: Tomate dulce Pote, 100 g
+                  - group [ref=e418]:
+                    - link "Tomate Regy Cocktail Pote, 250 gr" [ref=e419] [cursor=pointer]:
+                      - /url: /ip/verduras/00780460076030?from=/search
+                      - generic [ref=e420]: Tomate Regy Cocktail Pote, 250 gr
+                    - generic [ref=e422]:
+                      - generic [ref=e425]:
+                        - img "Tomate Regy Cocktail Pote, 250 gr" [ref=e427]
+                        - button "Agregar al carro - Tomate Regy Cocktail Pote, 250 gr" [ref=e430] [cursor=pointer]:
+                          - generic "agregar" [ref=e431]: 
+                          - generic [ref=e432]: Agregar
+                      - generic [ref=e434]:
+                        - generic [ref=e436]:
+                          - generic [ref=e437]: $1.890
+                          - generic [ref=e438]: precio actual $1.890
+                          - generic [ref=e439]: $7.000 x kg
+                        - generic [ref=e440]: Multi Marca
+                        - generic [ref=e441]: Tomate Regy Cocktail Pote, 250 gr
+                  - group [ref=e444]:
+                    - link "Tomate Triple Tasty Cocktail Pote, 500 gr" [ref=e445] [cursor=pointer]:
+                      - /url: /ip/verduras/00780460076027?from=/search
+                      - generic [ref=e446]: Tomate Triple Tasty Cocktail Pote, 500 gr
+                    - generic [ref=e448]:
+                      - generic [ref=e451]:
+                        - img "Tomate Triple Tasty Cocktail Pote, 500 gr" [ref=e453]
+                        - button "Agregar al carro - Tomate Triple Tasty Cocktail Pote, 500 gr" [ref=e456] [cursor=pointer]:
+                          - generic "agregar" [ref=e457]: 
+                          - generic [ref=e458]: Agregar
+                      - generic [ref=e460]:
+                        - generic [ref=e462]:
+                          - generic [ref=e463]: $4.190
+                          - generic [ref=e464]: precio actual $4.190
+                        - generic [ref=e465]: Multi Marca
+                        - generic [ref=e466]: Tomate Triple Tasty Cocktail Pote, 500 gr
+                  - group [ref=e469]:
+                    - link "Tomate Berry Cocktail Pote, 250 g" [ref=e470] [cursor=pointer]:
+                      - /url: /ip/verduras/00340311298000?from=/search
+                      - generic [ref=e471]: Tomate Berry Cocktail Pote, 250 g
+                    - generic [ref=e473]:
+                      - generic [ref=e476]:
+                        - img "Tomate Berry Cocktail Pote, 250 g" [ref=e478]
+                        - button "Agregar al carro - Tomate Berry Cocktail Pote, 250 g" [ref=e481] [cursor=pointer]:
+                          - generic "agregar" [ref=e482]: 
+                          - generic [ref=e483]: Agregar
+                      - generic [ref=e485]:
+                        - generic [ref=e487]:
+                          - generic [ref=e488]: $2.390
+                          - generic [ref=e489]: precio actual $2.390
+                          - generic [ref=e490]: $9.560 x kg
+                        - generic [ref=e491]: Rocky
+                        - generic [ref=e492]: Tomate Berry Cocktail Pote, 250 g
+                  - group [ref=e495]:
+                    - link "Salsa de Tomate Italiana Pack 6 Un Bolsa, 200 g" [ref=e496] [cursor=pointer]:
+                      - /url: /ip/pastas-y-salsas/00780230078589?from=/search
+                      - generic [ref=e497]: Salsa de Tomate Italiana Pack 6 Un Bolsa, 200 g
+                    - generic [ref=e499]:
+                      - generic [ref=e502]:
+                        - img "Salsa de Tomate Italiana Pack 6 Un Bolsa, 200 g" [ref=e504]
+                        - button "Agregar al carro - Salsa de Tomate Italiana Pack 6 Un Bolsa, 200 g" [ref=e507] [cursor=pointer]:
+                          - generic "agregar" [ref=e508]: 
+                          - generic [ref=e509]: Agregar
+                      - generic [ref=e511]:
+                        - generic [ref=e513]:
+                          - generic [ref=e514]: $4.190
+                          - generic [ref=e515]: precio actual $4.190
+                          - generic [ref=e516]: $3.492 x kg
+                        - generic [ref=e517]: Malloa
+                        - generic [ref=e518]: Salsa de Tomate Italiana Pack 6 Un Bolsa, 200 g
+                  - group [ref=e521]:
+                    - link "Puré de Tomate - Concentrado de Tomate Caja, 520 g" [ref=e522] [cursor=pointer]:
+                      - /url: /ip/pastas-y-salsas/00773097682292?from=/search
+                      - generic [ref=e523]: Puré de Tomate - Concentrado de Tomate Caja, 520 g
+                    - generic [ref=e525]:
+                      - generic [ref=e528]:
+                        - img "Puré de Tomate - Concentrado de Tomate Caja, 520 g" [ref=e530]
+                        - button "Agregar al carro - Puré de Tomate - Concentrado de Tomate Caja, 520 g" [ref=e533] [cursor=pointer]:
+                          - generic "agregar" [ref=e534]: 
+                          - generic [ref=e535]: Agregar
+                      - generic [ref=e537]:
+                        - generic [ref=e539]:
+                          - generic [ref=e540]: $1.390
+                          - generic [ref=e541]: precio actual $1.390
+                          - generic [ref=e542]: $2.673 x kg
+                        - generic [ref=e543]: Pontevedra
+                        - generic [ref=e544]: Puré de Tomate - Concentrado de Tomate Caja, 520 g
+                  - group [ref=e547]:
+                    - link "Puré de Tomate - Passata Sieved Tomatoes Botella, 700 g" [ref=e548] [cursor=pointer]:
+                      - /url: /ip/pastas-y-salsas/00800032001009?from=/search
+                      - generic [ref=e549]: Puré de Tomate - Passata Sieved Tomatoes Botella, 700 g
+                    - generic [ref=e551]:
+                      - generic [ref=e554]:
+                        - generic [ref=e555]:
+                          - img "Puré de Tomate - Passata Sieved Tomatoes Botella, 700 g"
+                        - button "Agregar al carro - Puré de Tomate - Passata Sieved Tomatoes Botella, 700 g" [ref=e558] [cursor=pointer]:
+                          - generic "agregar" [ref=e559]: 
+                          - generic [ref=e560]: Agregar
+                      - generic [ref=e562]:
+                        - generic [ref=e564]:
+                          - generic [ref=e565]: $3.050
+                          - generic [ref=e566]: precio actual $3.050
+                          - generic [ref=e567]: $4.357 x kg
+                        - generic [ref=e568]: Cirio
+                        - generic [ref=e569]: Puré de Tomate - Passata Sieved Tomatoes Botella, 700 g
+                  - group [ref=e572]:
+                    - link "Puré de Tomate - Concentrado de Tomate Caja, 208 g" [ref=e573] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00773097682257?from=/search
+                      - generic [ref=e574]: Puré de Tomate - Concentrado de Tomate Caja, 208 g
+                    - generic [ref=e576]:
+                      - generic [ref=e579]:
+                        - generic [ref=e580]:
+                          - img "Puré de Tomate - Concentrado de Tomate Caja, 208 g"
+                        - button "Agregar al carro - Puré de Tomate - Concentrado de Tomate Caja, 208 g" [ref=e583] [cursor=pointer]:
+                          - generic "agregar" [ref=e584]: 
+                          - generic [ref=e585]: Agregar
+                      - generic [ref=e587]:
+                        - generic [ref=e589]:
+                          - generic [ref=e590]: $690
+                          - generic [ref=e591]: precio actual $690
+                          - generic [ref=e592]: $3.317 x kg
+                        - generic [ref=e593]: Pontevedra
+                        - generic [ref=e594]: Puré de Tomate - Concentrado de Tomate Caja, 208 g
+                  - group [ref=e597]:
+                    - link "Salsa de Tomate Italiana Pack 6 Un Bolsa, 200 g" [ref=e598] [cursor=pointer]:
+                      - /url: /ip/pastas-y-salsas/00780257535517?from=/search
+                      - generic [ref=e599]: Salsa de Tomate Italiana Pack 6 Un Bolsa, 200 g
+                    - generic [ref=e601]:
+                      - generic [ref=e604]:
+                        - generic [ref=e605]:
+                          - img "Salsa de Tomate Italiana Pack 6 Un Bolsa, 200 g"
+                        - button "Agregar al carro - Salsa de Tomate Italiana Pack 6 Un Bolsa, 200 g" [ref=e608] [cursor=pointer]:
+                          - generic "agregar" [ref=e609]: 
+                          - generic [ref=e610]: Agregar
+                      - generic [ref=e612]:
+                        - generic [ref=e614]:
+                          - generic [ref=e615]: $3.890
+                          - generic [ref=e616]: precio actual $3.890
+                          - generic [ref=e617]: $3.242 x kg
+                        - generic [ref=e618]: Pomarola
+                        - generic [ref=e619]: Salsa de Tomate Italiana Pack 6 Un Bolsa, 200 g
+                  - group [ref=e622]:
+                    - link "Puré de Tomate - Concentrado de Tomate Caja, 1030 g" [ref=e623] [cursor=pointer]:
+                      - /url: /ip/pastas-y-salsas/00773097682238?from=/search
+                      - generic [ref=e624]: Puré de Tomate - Concentrado de Tomate Caja, 1030 g
+                    - generic [ref=e626]:
+                      - generic [ref=e629]:
+                        - generic [ref=e630]:
+                          - img "Puré de Tomate - Concentrado de Tomate Caja, 1030 g"
+                        - button "Agregar al carro - Puré de Tomate - Concentrado de Tomate Caja, 1030 g" [ref=e633] [cursor=pointer]:
+                          - generic "agregar" [ref=e634]: 
+                          - generic [ref=e635]: Agregar
+                      - generic [ref=e637]:
+                        - generic [ref=e639]:
+                          - generic [ref=e640]: $2.390
+                          - generic [ref=e641]: precio actual $2.390
+                          - generic [ref=e642]: $2.390 x kg
+                        - generic [ref=e643]: Pontevedra
+                        - generic [ref=e644]: Puré de Tomate - Concentrado de Tomate Caja, 1030 g
+                  - group [ref=e647]:
+                    - link "Salsa de Tomate Italiana Pack 6 Un Bolsa, 1200 g" [ref=e648] [cursor=pointer]:
+                      - /url: /ip/pastas-y-salsas/00780180010287?from=/search
+                      - generic [ref=e649]: Salsa de Tomate Italiana Pack 6 Un Bolsa, 1200 g
+                    - generic [ref=e651]:
+                      - generic [ref=e654]:
+                        - generic [ref=e655]:
+                          - img "Salsa de Tomate Italiana Pack 6 Un Bolsa, 1200 g"
+                        - button "Agregar al carro - Salsa de Tomate Italiana Pack 6 Un Bolsa, 1200 g" [ref=e658] [cursor=pointer]:
+                          - generic "agregar" [ref=e659]: 
+                          - generic [ref=e660]: Agregar
+                      - generic [ref=e662]:
+                        - generic [ref=e664]:
+                          - generic [ref=e665]: $2.950
+                          - generic [ref=e666]: precio actual $2.950
+                          - generic [ref=e667]: $2.458 x kg
+                        - generic [ref=e668]: Lider
+                        - generic [ref=e669]: Salsa de Tomate Italiana Pack 6 Un Bolsa, 1200 g
+                  - group [ref=e672]:
+                    - link "Salsa de Tomate Italiana Bolsa, 200 g" [ref=e673] [cursor=pointer]:
+                      - /url: /ip/pastas-y-salsas/00780250003705?from=/search
+                      - generic [ref=e674]: Salsa de Tomate Italiana Bolsa, 200 g
+                    - generic [ref=e676]:
+                      - generic [ref=e679]:
+                        - generic [ref=e680]:
+                          - img "Salsa de Tomate Italiana Bolsa, 200 g"
+                        - button "Agregar al carro - Salsa de Tomate Italiana Bolsa, 200 g" [ref=e683] [cursor=pointer]:
+                          - generic "agregar" [ref=e684]: 
+                          - generic [ref=e685]: Agregar
+                      - generic [ref=e687]:
+                        - generic [ref=e689]:
+                          - generic [ref=e690]: $780
+                          - generic [ref=e691]: precio actual $780
+                          - generic [ref=e692]: $3.900 x kg
+                        - generic [ref=e693]: Lucchetti
+                        - generic [ref=e694]: Salsa de Tomate Italiana Bolsa, 200 g
+                  - group [ref=e697]:
+                    - link "Puré de Tomate - Concentrado de Tomate Caja, 530 g" [ref=e698] [cursor=pointer]:
+                      - /url: /ip/pastas-y-salsas/00779003656744?from=/search
+                      - generic [ref=e699]: Puré de Tomate - Concentrado de Tomate Caja, 530 g
+                    - generic [ref=e701]:
+                      - generic [ref=e704]:
+                        - generic [ref=e705]:
+                          - img "Puré de Tomate - Concentrado de Tomate Caja, 530 g"
+                        - button "Agregar al carro - Puré de Tomate - Concentrado de Tomate Caja, 530 g" [ref=e708] [cursor=pointer]:
+                          - generic "agregar" [ref=e709]: 
+                          - generic [ref=e710]: Agregar
+                      - generic [ref=e712]:
+                        - generic [ref=e714]:
+                          - generic [ref=e715]: $1.550
+                          - generic [ref=e716]: precio actual $1.550
+                          - generic [ref=e717]: $2.925 x kg
+                        - generic [ref=e718]: De La Huerta
+                        - generic [ref=e719]: Puré de Tomate - Concentrado de Tomate Caja, 530 g
+                  - group [ref=e722]:
+                    - link "Salsa de Tomate Natural Bolsa, 200 g" [ref=e723] [cursor=pointer]:
+                      - /url: /ip/pastas-y-salsas/00780250003707?from=/search
+                      - generic [ref=e724]: Salsa de Tomate Natural Bolsa, 200 g
+                    - generic [ref=e726]:
+                      - generic [ref=e729]:
+                        - generic [ref=e730]:
+                          - img "Salsa de Tomate Natural Bolsa, 200 g"
+                        - button "Agregar al carro - Salsa de Tomate Natural Bolsa, 200 g" [ref=e733] [cursor=pointer]:
+                          - generic "agregar" [ref=e734]: 
+                          - generic [ref=e735]: Agregar
+                      - generic [ref=e737]:
+                        - generic [ref=e739]:
+                          - generic [ref=e740]: $780
+                          - generic [ref=e741]: precio actual $780
+                          - generic [ref=e742]: $3.900 x kg
+                        - generic [ref=e743]: Lucchetti
+                        - generic [ref=e744]: Salsa de Tomate Natural Bolsa, 200 g
+                  - group [ref=e747]:
+                    - link "Salsa de Tomate Natural Doypack, 200 g" [ref=e748] [cursor=pointer]:
+                      - /url: /ip/pastas-y-salsas/00780015908140?from=/search
+                      - generic [ref=e749]: Salsa de Tomate Natural Doypack, 200 g
+                    - generic [ref=e751]:
+                      - generic [ref=e754]:
+                        - generic [ref=e755]:
+                          - img "Salsa de Tomate Natural Doypack, 200 g"
+                        - button "Agregar al carro - Salsa de Tomate Natural Doypack, 200 g" [ref=e758] [cursor=pointer]:
+                          - generic "agregar" [ref=e759]: 
+                          - generic [ref=e760]: Agregar
+                      - generic [ref=e762]:
+                        - generic [ref=e764]:
+                          - generic [ref=e765]: $880
+                          - generic [ref=e766]: precio actual $880
+                          - generic [ref=e767]: $4.400 x kg
+                        - generic [ref=e768]: Heinz
+                        - generic [ref=e769]: Salsa de Tomate Natural Doypack, 200 g
+                  - generic [ref=e771]:
+                    - group [ref=e772]:
+                      - link "Puré de Tomate - Passata Sieved Tomatoes Caja, 500 g" [ref=e773] [cursor=pointer]:
+                        - /url: /ip/pastas-y-salsas/00800032099011?from=/search
+                        - generic [ref=e774]: Puré de Tomate - Passata Sieved Tomatoes Caja, 500 g
+                      - generic [ref=e776]:
+                        - generic [ref=e780]:
+                          - img "Puré de Tomate - Passata Sieved Tomatoes Caja, 500 g"
+                        - generic [ref=e782]:
+                          - generic [ref=e784]:
+                            - generic [ref=e785]: $2.250
+                            - generic [ref=e786]: precio actual $2.250
+                          - generic [ref=e787]: Cirio
+                          - generic [ref=e788]: Puré de Tomate - Passata Sieved Tomatoes Caja, 500 g
+                          - generic [ref=e789]: Agotado
+                    - button "Revisar productos similares - Puré de Tomate - Passata Sieved Tomatoes Caja, 500 g" [ref=e791]: Revisar productos similares
+                  - group [ref=e794]:
+                    - link "Puré de Tomate - Passata di Pomodoro Botella, 700 g" [ref=e795] [cursor=pointer]:
+                      - /url: /ip/pastas-y-salsas/00801394593020?from=/search
+                      - generic [ref=e796]: Puré de Tomate - Passata di Pomodoro Botella, 700 g
+                    - generic [ref=e798]:
+                      - generic [ref=e801]:
+                        - generic [ref=e802]:
+                          - img "Puré de Tomate - Passata di Pomodoro Botella, 700 g"
+                        - button "Agregar al carro - Puré de Tomate - Passata di Pomodoro Botella, 700 g" [ref=e805] [cursor=pointer]:
+                          - generic "agregar" [ref=e806]: 
+                          - generic [ref=e807]: Agregar
+                      - generic [ref=e809]:
+                        - generic [ref=e811]:
+                          - generic [ref=e812]: $2.990
+                          - generic [ref=e813]: precio actual $2.990
+                          - generic [ref=e814]: $4.333 x kg
+                        - generic [ref=e815]: Passatta Tostani
+                        - generic [ref=e816]: Puré de Tomate - Passata di Pomodoro Botella, 700 g
+                  - group [ref=e819]:
+                    - link "Salsa de Tomate Toscana Bolognesa Doypack, 200 g" [ref=e820] [cursor=pointer]:
+                      - /url: /ip/pastas-y-salsas/00780257534113?from=/search
+                      - generic [ref=e821]: Salsa de Tomate Toscana Bolognesa Doypack, 200 g
+                    - generic [ref=e823]:
+                      - generic [ref=e826]:
+                        - generic [ref=e827]:
+                          - img "Salsa de Tomate Toscana Bolognesa Doypack, 200 g"
+                        - button "Agregar al carro - Salsa de Tomate Toscana Bolognesa Doypack, 200 g" [ref=e830] [cursor=pointer]:
+                          - generic "agregar" [ref=e831]: 
+                          - generic [ref=e832]: Agregar
+                      - generic [ref=e834]:
+                        - generic [ref=e836]:
+                          - generic [ref=e837]: $950
+                          - generic [ref=e838]: precio actual $950
+                          - generic [ref=e839]: $4.750 x kg
+                        - generic [ref=e840]: Carozzi
+                        - generic [ref=e841]: Salsa de Tomate Toscana Bolognesa Doypack, 200 g
+                  - group [ref=e844]:
+                    - link "Pulpa de Tomate Caja, 510 g" [ref=e845] [cursor=pointer]:
+                      - /url: /ip/pastas-y-salsas/00773097682282?from=/search
+                      - generic [ref=e846]: Pulpa de Tomate Caja, 510 g
+                    - generic [ref=e848]:
+                      - generic [ref=e851]:
+                        - generic [ref=e852]:
+                          - img "Pulpa de Tomate Caja, 510 g"
+                        - button "Agregar al carro - Pulpa de Tomate Caja, 510 g" [ref=e855] [cursor=pointer]:
+                          - generic "agregar" [ref=e856]: 
+                          - generic [ref=e857]: Agregar
+                      - generic [ref=e859]:
+                        - generic [ref=e861]:
+                          - generic [ref=e862]: $1.390
+                          - generic [ref=e863]: precio actual $1.390
+                          - generic [ref=e864]: $2.725 x kg
+                        - generic [ref=e865]: Pontevedra
+                        - generic [ref=e866]: Pulpa de Tomate Caja, 510 g
+                  - group [ref=e869]:
+                    - link "Salsa de Tomate Italiana Doypack, 200 g" [ref=e870] [cursor=pointer]:
+                      - /url: /ip/pastas-y-salsas/00780015908139?from=/search
+                      - generic [ref=e871]: Salsa de Tomate Italiana Doypack, 200 g
+                    - generic [ref=e873]:
+                      - generic [ref=e876]:
+                        - generic [ref=e877]:
+                          - img "Salsa de Tomate Italiana Doypack, 200 g"
+                        - button "Agregar al carro - Salsa de Tomate Italiana Doypack, 200 g" [ref=e880] [cursor=pointer]:
+                          - generic "agregar" [ref=e881]: 
+                          - generic [ref=e882]: Agregar
+                      - generic [ref=e884]:
+                        - generic [ref=e886]:
+                          - generic [ref=e887]: $880
+                          - generic [ref=e888]: precio actual $880
+                          - generic [ref=e889]: $4.400 x kg
+                        - generic [ref=e890]: Heinz
+                        - generic [ref=e891]: Salsa de Tomate Italiana Doypack, 200 g
+                  - group [ref=e894]:
+                    - link "Salsa de Tomate Italiana Pack 6 Un Bolsa, 200 g" [ref=e895] [cursor=pointer]:
+                      - /url: /ip/pastas-y-salsas/00780015908141?from=/search
+                      - generic [ref=e896]: Salsa de Tomate Italiana Pack 6 Un Bolsa, 200 g
+                    - generic [ref=e898]:
+                      - generic [ref=e899]:
+                        - generic [ref=e901]:
+                          - generic [ref=e903]: 
+                          - text: Rebaja
+                        - generic [ref=e904]:
+                          - generic [ref=e905]:
+                            - img "Salsa de Tomate Italiana Pack 6 Un Bolsa, 200 g"
+                          - button "Agregar al carro - Salsa de Tomate Italiana Pack 6 Un Bolsa, 200 g" [ref=e908] [cursor=pointer]:
+                            - generic "agregar" [ref=e909]: 
+                            - generic [ref=e910]: Agregar
+                      - generic [ref=e912]:
+                        - generic [ref=e914]:
+                          - generic [ref=e915]: $3.590
+                          - generic [ref=e916]: precio actual $3.590, Costaba $4.250
+                          - generic [ref=e917]: $2.992 x kg
+                          - generic [ref=e918]: $4.250
+                          - generic [ref=e919]: Ahorra $660
+                        - generic [ref=e920]: Heinz
+                        - generic [ref=e921]: Salsa de Tomate Italiana Pack 6 Un Bolsa, 200 g
+                  - generic [ref=e923]:
+                    - group [ref=e924]:
+                      - link "Puré de Tomate - Salsa Tomate Fresco Triturado Botella, 475 g" [ref=e925] [cursor=pointer]:
+                        - /url: /ip/pastas-y-salsas/00780963180009?from=/search
+                        - generic [ref=e926]: Puré de Tomate - Salsa Tomate Fresco Triturado Botella, 475 g
+                      - generic [ref=e928]:
+                        - generic [ref=e932]:
+                          - img "Puré de Tomate - Salsa Tomate Fresco Triturado Botella, 475 g"
+                        - generic [ref=e934]:
+                          - generic [ref=e936]:
+                            - generic [ref=e937]: $3.390
+                            - generic [ref=e938]: precio actual $3.390
+                            - generic [ref=e939]: $7.137 x lt
+                          - generic [ref=e940]: Negroni
+                          - generic [ref=e941]: Puré de Tomate - Salsa Tomate Fresco Triturado Botella, 475 g
+                          - generic [ref=e942]: Agotado
+                    - button "Revisar productos similares - Puré de Tomate - Salsa Tomate Fresco Triturado Botella, 475 g" [ref=e944]: Revisar productos similares
+                  - group [ref=e947]:
+                    - link "Salsa de Tomate Toscana Arrabbiata Doypack, 200 g" [ref=e948] [cursor=pointer]:
+                      - /url: /ip/pastas-y-salsas/00780257534115?from=/search
+                      - generic [ref=e949]: Salsa de Tomate Toscana Arrabbiata Doypack, 200 g
+                    - generic [ref=e951]:
+                      - generic [ref=e954]:
+                        - generic [ref=e955]:
+                          - img "Salsa de Tomate Toscana Arrabbiata Doypack, 200 g"
+                        - button "Agregar al carro - Salsa de Tomate Toscana Arrabbiata Doypack, 200 g" [ref=e958] [cursor=pointer]:
+                          - generic "agregar" [ref=e959]: 
+                          - generic [ref=e960]: Agregar
+                      - generic [ref=e962]:
+                        - generic [ref=e964]:
+                          - generic [ref=e965]: $950
+                          - generic [ref=e966]: precio actual $950
+                          - generic [ref=e967]: $4.750 x kg
+                        - generic [ref=e968]: Carozzi
+                        - generic [ref=e969]: Salsa de Tomate Toscana Arrabbiata Doypack, 200 g
+                  - group [ref=e972]:
+                    - link "Salsa de Tomate Albahaca Frasco, 515 g" [ref=e973] [cursor=pointer]:
+                      - /url: /ip/pastas-y-salsas/00780462765069?from=/search
+                      - generic [ref=e974]: Salsa de Tomate Albahaca Frasco, 515 g
+                    - generic [ref=e976]:
+                      - generic [ref=e979]:
+                        - generic [ref=e980]:
+                          - img "Salsa de Tomate Albahaca Frasco, 515 g"
+                        - button "Agregar al carro - Salsa de Tomate Albahaca Frasco, 515 g" [ref=e983] [cursor=pointer]:
+                          - generic "agregar" [ref=e984]: 
+                          - generic [ref=e985]: Agregar
+                      - generic [ref=e987]:
+                        - generic [ref=e989]:
+                          - generic [ref=e990]: $2.690
+                          - generic [ref=e991]: precio actual $2.690
+                          - generic [ref=e992]: $5.380 x kg
+                        - generic [ref=e993]: Buka
+                        - generic [ref=e994]: Salsa de Tomate Albahaca Frasco, 515 g
+                  - group [ref=e997]:
+                    - link "Salsa de Tomate Toscana al Pesto Doypack, 200 g" [ref=e998] [cursor=pointer]:
+                      - /url: /ip/pastas-y-salsas/00780257534114?from=/search
+                      - generic [ref=e999]: Salsa de Tomate Toscana al Pesto Doypack, 200 g
+                    - generic [ref=e1001]:
+                      - generic [ref=e1004]:
+                        - generic [ref=e1005]:
+                          - img "Salsa de Tomate Toscana al Pesto Doypack, 200 g"
+                        - button "Agregar al carro - Salsa de Tomate Toscana al Pesto Doypack, 200 g" [ref=e1008] [cursor=pointer]:
+                          - generic "agregar" [ref=e1009]: 
+                          - generic [ref=e1010]: Agregar
+                      - generic [ref=e1012]:
+                        - generic [ref=e1014]:
+                          - generic [ref=e1015]: $950
+                          - generic [ref=e1016]: precio actual $950
+                          - generic [ref=e1017]: $4.750 x kg
+                        - generic [ref=e1018]: Carozzi
+                        - generic [ref=e1019]: Salsa de Tomate Toscana al Pesto Doypack, 200 g
+                  - group [ref=e1022]:
+                    - link "Crema de Tomate (5 Porciones) Sobre, 45 g" [ref=e1023] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00844529084685?from=/search
+                      - generic [ref=e1024]: Crema de Tomate (5 Porciones) Sobre, 45 g
+                    - generic [ref=e1026]:
+                      - generic [ref=e1029]:
+                        - generic [ref=e1030]:
+                          - img "Crema de Tomate (5 Porciones) Sobre, 45 g"
+                        - button "Agregar al carro - Crema de Tomate (5 Porciones) Sobre, 45 g" [ref=e1033] [cursor=pointer]:
+                          - generic "agregar" [ref=e1034]: 
+                          - generic [ref=e1035]: Agregar
+                      - generic [ref=e1037]:
+                        - generic [ref=e1039]:
+                          - generic [ref=e1040]: $670
+                          - generic [ref=e1041]: precio actual $670
+                          - generic [ref=e1042]: $86 x 10g
+                        - generic [ref=e1043]: Maggi
+                        - generic [ref=e1044]: Crema de Tomate (5 Porciones) Sobre, 45 g
+                  - group [ref=e1047]:
+                    - link "Salsa de Tomate Casera Doypack, 200 g" [ref=e1048] [cursor=pointer]:
+                      - /url: /ip/pastas-y-salsas/00780257535308?from=/search
+                      - generic [ref=e1049]: Salsa de Tomate Casera Doypack, 200 g
+                    - generic [ref=e1051]:
+                      - generic [ref=e1054]:
+                        - generic [ref=e1055]:
+                          - img "Salsa de Tomate Casera Doypack, 200 g"
+                        - button "Agregar al carro - Salsa de Tomate Casera Doypack, 200 g" [ref=e1058] [cursor=pointer]:
+                          - generic "agregar" [ref=e1059]: 
+                          - generic [ref=e1060]: Agregar
+                      - generic [ref=e1062]:
+                        - generic [ref=e1064]:
+                          - generic [ref=e1065]: $920
+                          - generic [ref=e1066]: precio actual $920
+                          - generic [ref=e1067]: $4.600 x kg
+                        - generic [ref=e1068]: Pomarola
+                        - generic [ref=e1069]: Salsa de Tomate Casera Doypack, 200 g
+                  - group [ref=e1072]:
+                    - link "Salsa de Tomate Natural Bolsa, 200 g" [ref=e1073] [cursor=pointer]:
+                      - /url: /ip/pastas-y-salsas/00780257535305?from=/search
+                      - generic [ref=e1074]: Salsa de Tomate Natural Bolsa, 200 g
+                    - generic [ref=e1076]:
+                      - generic [ref=e1077]:
+                        - generic [ref=e1078]:
+                          - generic [ref=e1080]: Combina 2 x $1.290
+                          - button "Combina 2 x $1.290. Ver combinaciones aceptadas y coincidir productos." [ref=e1081] [cursor=pointer]: Combinar
+                        - generic [ref=e1082]:
+                          - generic [ref=e1083]:
+                            - img "Salsa de Tomate Natural Bolsa, 200 g"
+                          - button "Agregar al carro - Salsa de Tomate Natural Bolsa, 200 g" [ref=e1086] [cursor=pointer]:
+                            - generic "agregar" [ref=e1087]: 
+                            - generic [ref=e1088]: Agregar
+                      - generic [ref=e1090]:
+                        - generic [ref=e1092]:
+                          - generic [ref=e1093]: $820
+                          - generic [ref=e1094]: precio actual $820
+                          - generic [ref=e1095]: $4.100 x kg
+                        - generic [ref=e1096]: Pomarola
+                        - generic [ref=e1097]: Salsa de Tomate Natural Bolsa, 200 g
+                  - group [ref=e1100]:
+                    - link "Puré de Tomate - Passata Clasica Botella, 515 g" [ref=e1101] [cursor=pointer]:
+                      - /url: /ip/pastas-y-salsas/00780462765067?from=/search
+                      - generic [ref=e1102]: Puré de Tomate - Passata Clasica Botella, 515 g
+                    - generic [ref=e1104]:
+                      - generic [ref=e1107]:
+                        - generic [ref=e1108]:
+                          - img "Puré de Tomate - Passata Clasica Botella, 515 g"
+                        - button "Agregar al carro - Puré de Tomate - Passata Clasica Botella, 515 g" [ref=e1111] [cursor=pointer]:
+                          - generic "agregar" [ref=e1112]: 
+                          - generic [ref=e1113]: Agregar
+                      - generic [ref=e1115]:
+                        - generic [ref=e1117]:
+                          - generic [ref=e1118]: $2.590
+                          - generic [ref=e1119]: precio actual $2.590
+                          - generic [ref=e1120]: $5.180 x kg
+                        - generic [ref=e1121]: Buka
+                        - generic [ref=e1122]: Puré de Tomate - Passata Clasica Botella, 515 g
+                  - group [ref=e1125]:
+                    - link "Crema de Tomate Caja, 380 g" [ref=e1126] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00780130500488?from=/search
+                      - generic [ref=e1127]: Crema de Tomate Caja, 380 g
+                    - generic [ref=e1129]:
+                      - generic [ref=e1130]:
+                        - generic [ref=e1132]:
+                          - generic [ref=e1134]: 
+                          - text: Rebaja
+                        - generic [ref=e1135]:
+                          - generic [ref=e1136]:
+                            - img "Crema de Tomate Caja, 380 g"
+                          - button "Agregar al carro - Crema de Tomate Caja, 380 g" [ref=e1139] [cursor=pointer]:
+                            - generic "agregar" [ref=e1140]: 
+                            - generic [ref=e1141]: Agregar
+                      - generic [ref=e1143]:
+                        - generic [ref=e1145]:
+                          - generic [ref=e1146]: $1.950
+                          - generic [ref=e1147]: precio actual $1.950, Costaba $2.350
+                          - generic [ref=e1148]: $5.132 x kg
+                          - generic [ref=e1149]: $2.350
+                          - generic [ref=e1150]: Ahorra $400
+                        - generic [ref=e1151]: Wasil
+                        - generic [ref=e1152]: Crema de Tomate Caja, 380 g
+                  - group [ref=e1155]:
+                    - link "Salsa de Tomate Mamma Mia Bolognesa Doypack, 200 g" [ref=e1156] [cursor=pointer]:
+                      - /url: /ip/pastas-y-salsas/00780250003802?from=/search
+                      - generic [ref=e1157]: Salsa de Tomate Mamma Mia Bolognesa Doypack, 200 g
+                    - generic [ref=e1159]:
+                      - generic [ref=e1162]:
+                        - generic [ref=e1163]:
+                          - img "Salsa de Tomate Mamma Mia Bolognesa Doypack, 200 g"
+                        - button "Agregar al carro - Salsa de Tomate Mamma Mia Bolognesa Doypack, 200 g" [ref=e1166] [cursor=pointer]:
+                          - generic "agregar" [ref=e1167]: 
+                          - generic [ref=e1168]: Agregar
+                      - generic [ref=e1170]:
+                        - generic [ref=e1172]:
+                          - generic [ref=e1173]: $930
+                          - generic [ref=e1174]: precio actual $930
+                          - generic [ref=e1175]: $4.650 x kg
+                        - generic [ref=e1176]: Lucchetti
+                        - generic [ref=e1177]: Salsa de Tomate Mamma Mia Bolognesa Doypack, 200 g
+                  - group [ref=e1180]:
+                    - link "Salsa de Tomate Italiana Bolsa, 200 g" [ref=e1181] [cursor=pointer]:
+                      - /url: /ip/pastas-y-salsas/00780180010101?from=/search
+                      - generic [ref=e1182]: Salsa de Tomate Italiana Bolsa, 200 g
+                    - generic [ref=e1184]:
+                      - generic [ref=e1187]:
+                        - generic [ref=e1188]:
+                          - img "Salsa de Tomate Italiana Bolsa, 200 g"
+                        - button "Agregar al carro - Salsa de Tomate Italiana Bolsa, 200 g" [ref=e1191] [cursor=pointer]:
+                          - generic "agregar" [ref=e1192]: 
+                          - generic [ref=e1193]: Agregar
+                      - generic [ref=e1195]:
+                        - generic [ref=e1197]:
+                          - generic [ref=e1198]: $550
+                          - generic [ref=e1199]: precio actual $550
+                          - generic [ref=e1200]: $2.750 x kg
+                        - generic [ref=e1201]: Lider
+                        - generic [ref=e1202]: Salsa de Tomate Italiana Bolsa, 200 g
+                  - group [ref=e1205]:
+                    - link "Salsa de Tomate Carne Bolsa, 200 g" [ref=e1206] [cursor=pointer]:
+                      - /url: /ip/pastas-y-salsas/00780180023201?from=/search
+                      - generic [ref=e1207]: Salsa de Tomate Carne Bolsa, 200 g
+                    - generic [ref=e1209]:
+                      - generic [ref=e1212]:
+                        - generic [ref=e1213]:
+                          - img "Salsa de Tomate Carne Bolsa, 200 g"
+                        - button "Agregar al carro - Salsa de Tomate Carne Bolsa, 200 g" [ref=e1216] [cursor=pointer]:
+                          - generic "agregar" [ref=e1217]: 
+                          - generic [ref=e1218]: Agregar
+                      - generic [ref=e1220]:
+                        - generic [ref=e1222]:
+                          - generic [ref=e1223]: $550
+                          - generic [ref=e1224]: precio actual $550
+                          - generic [ref=e1225]: $2.750 x kg
+                        - generic [ref=e1226]: Lider
+                        - generic [ref=e1227]: Salsa de Tomate Carne Bolsa, 200 g
+                  - group [ref=e1230]:
+                    - link "Salsa de Tomate Tuco con Carne Lata, 245g" [ref=e1231] [cursor=pointer]:
+                      - /url: /ip/pastas-y-salsas/00780295001231?from=/search
+                      - generic [ref=e1232]: Salsa de Tomate Tuco con Carne Lata, 245g
+                    - generic [ref=e1234]:
+                      - generic [ref=e1235]:
+                        - generic [ref=e1237]:
+                          - generic [ref=e1239]: 
+                          - text: Rebaja
+                        - generic [ref=e1240]:
+                          - generic [ref=e1241]:
+                            - img "Salsa de Tomate Tuco con Carne Lata, 245g"
+                          - button "Agregar al carro - Salsa de Tomate Tuco con Carne Lata, 245g" [ref=e1244] [cursor=pointer]:
+                            - generic "agregar" [ref=e1245]: 
+                            - generic [ref=e1246]: Agregar
+                      - generic [ref=e1248]:
+                        - generic [ref=e1250]:
+                          - generic [ref=e1251]: $1.290
+                          - generic [ref=e1252]: precio actual $1.290, Costaba $1.650
+                          - generic [ref=e1253]: $5.265 x kg
+                          - generic [ref=e1254]: $1.650
+                          - generic [ref=e1255]: Ahorra $360
+                        - generic [ref=e1256]: Maggi
+                        - generic [ref=e1257]: Salsa de Tomate Tuco con Carne Lata, 245g
+            - navigation "paginación" [ref=e1260]:
+              - list [ref=e1261]:
+                - listitem [ref=e1262]
+                - listitem [ref=e1264]:
+                  - link "1" [ref=e1265] [cursor=pointer]:
+                    - /url: /search?q=tomate+kg
+                - listitem [ref=e1266]:
+                  - link "Ir a la página 2" [ref=e1267] [cursor=pointer]:
+                    - /url: /search?q=tomate+kg&page=2
+                    - text: "2"
+                - listitem [ref=e1268]:
+                  - link "Ir a la página 3" [ref=e1269] [cursor=pointer]:
+                    - /url: /search?q=tomate+kg&page=3
+                    - text: "3"
+                - listitem [ref=e1270]:
+                  - link "Página siguiente" [ref=e1271] [cursor=pointer]:
+                    - /url: /search?q=tomate+kg&page=2
+                    - generic [ref=e1272]: 
+  - alert [ref=e1280]

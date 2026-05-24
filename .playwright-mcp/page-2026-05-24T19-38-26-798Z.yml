@@ -1,0 +1,179 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e48]:
+        - heading "Lo sentimos" [level=1] [ref=e49]
+        - generic [ref=e50]: Esta página no se encontró.
+        - link "Volver al inicio" [ref=e51] [cursor=pointer]:
+          - /url: /
+      - generic [ref=e55]:
+        - region "Dejar comentarios" [ref=e59]:
+          - paragraph [ref=e60]: ¡Nos encantaría saber tu opinión!
+          - button "Dejar comentarios" [ref=e61] [cursor=pointer]
+        - generic [ref=e62]:
+          - generic [ref=e64]:
+            - generic [ref=e67]:
+              - navigation "¿Necesitas Ayuda?" [ref=e69]:
+                - text: 
+                - heading "¿Necesitas Ayuda?" [level=2] [ref=e70]
+                - list [ref=e71]:
+                  - listitem [ref=e72]:
+                    - link "Centro de ayuda" [ref=e73] [cursor=pointer]:
+                      - /url: /help
+                  - listitem [ref=e74]:
+                    - link "Servicio técnico" [ref=e75] [cursor=pointer]:
+                      - /url: https://www.lider.cl/supermercado/help/servicio-tecnico
+                  - listitem [ref=e76]:
+                    - link "Consulta tu boleta" [ref=e77] [cursor=pointer]:
+                      - /url: https://wa.me/56957211492?text=Necesito%20mi%20boleta
+                  - listitem [ref=e78]:
+                    - link "Devoluciones y cambios" [ref=e79] [cursor=pointer]:
+                      - /url: https://www.lider.cl/ayuda/channel/cambios-devoluciones-y-cancelaciones/cf4618fecc534a0c99a5b2a5be1ef818
+              - navigation "Infórmate" [ref=e81]:
+                - text: 
+                - heading "Infórmate" [level=2] [ref=e82]
+                - list [ref=e83]:
+                  - listitem [ref=e84]:
+                    - link "Medios de pago" [ref=e85] [cursor=pointer]:
+                      - /url: https://www.lider.cl/ayuda/articulo/cuales-son-los-medios-de-pago-disponibles/d0220a595ddd4d18a8fc8e51881ffe42
+                  - listitem [ref=e86]:
+                    - link "Pago 100% seguro" [ref=e87] [cursor=pointer]:
+                      - /url: https://www.lider.cl/supermercado/info/seguro
+                  - listitem [ref=e88]:
+                    - link "Beneficios Lider.cl" [ref=e89] [cursor=pointer]:
+                      - /url: https://www.lider.cl/supermercado/info/beneficios
+                  - listitem [ref=e90]:
+                    - link "Tarjeta de regalo" [ref=e91] [cursor=pointer]:
+                      - /url: https://super.lider.cl/content/tarjeta-de-regalo/02251411
+                  - listitem [ref=e92]:
+                    - link "Recetas Lider" [ref=e93] [cursor=pointer]:
+                      - /url: https://www.recetaslider.cl/
+                  - listitem [ref=e94]:
+                    - link "Servifácil" [ref=e95] [cursor=pointer]:
+                      - /url: https://www.servifacil.cl/
+                  - listitem [ref=e96]:
+                    - link "Tarjeta de Alimentación" [ref=e97] [cursor=pointer]:
+                      - /url: https://super.lider.cl/content/tarjeta-de-alimentacion/63809060
+              - navigation "Encuéntranos" [ref=e99]:
+                - text: 
+                - heading "Encuéntranos" [level=2] [ref=e100]
+                - list [ref=e101]:
+                  - listitem [ref=e102]:
+                    - link "Nuestros locales" [ref=e103] [cursor=pointer]:
+                      - /url: https://www.lider.cl/tiendas
+                  - listitem [ref=e104]:
+                    - link "Cobertura supermercado" [ref=e105] [cursor=pointer]:
+                      - /url: https://www.lider.cl/ayuda/articulo/cuales-son-los-canales-de-compra-disponibles/8f47f783c7fe4fe780fab5779a063055
+              - navigation "Acerca de Lider" [ref=e107]:
+                - text: 
+                - heading "Acerca de Lider" [level=2] [ref=e108]
+                - list [ref=e109]:
+                  - listitem [ref=e110]:
+                    - link "Acerca de nosotros" [ref=e111] [cursor=pointer]:
+                      - /url: https://www.lider.cl/ayuda/articulo/acerca-de-nosotros/150ba20eed064b94849b7596d6b74cf5
+                  - listitem [ref=e112]:
+                    - link "Términos y condiciones" [ref=e113] [cursor=pointer]:
+                      - /url: https://www.lider.cl/ayuda/articulo/terminos-y-condiciones/94565deaa82842389a0665f0706f6b8f
+                  - listitem [ref=e114]:
+                    - link "Política de privacidad" [ref=e115] [cursor=pointer]:
+                      - /url: https://www.lider.cl/ayuda/articulo/politicas-de-privacidad/b7331045956d4b5298f1436343afebdd
+                  - listitem [ref=e116]:
+                    - link "Información legal" [ref=e117] [cursor=pointer]:
+                      - /url: https://www.lider.cl/ayuda/channel/informacion-legal-y-concursos/4a2cb35c74ad40548100a2e84b4267f2
+                  - listitem [ref=e118]:
+                    - link "Trabaja en Lider" [ref=e119] [cursor=pointer]:
+                      - /url: http://www.empleoswalmartchile.cl/
+                  - listitem [ref=e120]:
+                    - link "Vende con nosotros" [ref=e121] [cursor=pointer]:
+                      - /url: https://marketplace.walmart.cl/s/
+                  - listitem [ref=e122]:
+                    - link "Propiedad Intelectual" [ref=e123] [cursor=pointer]:
+                      - /url: https://www.lider.cl/catalogo/info/propiedad-intelectual
+                  - listitem [ref=e124]:
+                    - link "Inscríbete en Mi Club" [ref=e125] [cursor=pointer]:
+                      - /url: https://www.lider.cl/supermercado/signup
+            - list [ref=e127]:
+              - listitem [ref=e128]:
+                - link "X" [ref=e129] [cursor=pointer]:
+                  - /url: https://www.x.com/lidercl
+                  - generic [ref=e130]: 
+              - listitem [ref=e131]:
+                - link "Facebook" [ref=e132] [cursor=pointer]:
+                  - /url: https://www.facebook.com/lidercl
+                  - generic [ref=e133]: 
+              - listitem [ref=e134]:
+                - link "YouTube" [ref=e135] [cursor=pointer]:
+                  - /url: https://www.youtube.com/user/supermercadoslider
+                  - generic [ref=e136]: 
+              - listitem [ref=e137]:
+                - link "Instagram" [ref=e138] [cursor=pointer]:
+                  - /url: https://www.instagram.com/lider_cl
+                  - generic [ref=e139]: 
+              - listitem [ref=e140]:
+                - link "WhatsApp" [ref=e141] [cursor=pointer]:
+                  - /url: https://wa.me/56957211492?text=Hola,%20tengo%20una%20consulta
+                  - generic [ref=e142]: 
+              - listitem [ref=e143]:
+                - link "TikTok" [ref=e144] [cursor=pointer]:
+                  - /url: https://www.tiktok.com/@lider_cl
+                  - generic [ref=e145]: 
+          - generic [ref=e149]:
+            - generic [ref=e150]:
+              - generic [ref=e152]:
+                - generic [ref=e154]:
+                  - paragraph [ref=e155]: Nuestras marcas
+                  - img "walmartChile" [ref=e156]
+                  - img "walmartChile" [ref=e157]
+                  - img "walmartChile" [ref=e158]
+                  - img "walmartChile" [ref=e159]
+                  - img "walmartChile" [ref=e160]
+                  - img "walmartChile" [ref=e161]
+                - paragraph [ref=e162]: "Lider.cl - Razón Social: Administradora de Supermercados Hiper Limitada, RUT: 76.134.941-4, es administrada y representada por Sermob Limitada, la que a su vez es representada por Eli Senerman. Dirección: Avda. Presidente Eduardo Frei Montalva 8301, comuna de Quilicura, Región Metropolitana, Chile."
+              - link "Política privacidad" [ref=e164] [cursor=pointer]:
+                - /url: https://www.lider.cl/supermercado/info/privacidad
+            - generic [ref=e165]:
+              - generic [ref=e166]: 
+              - button "Volver arriba" [ref=e167]
+  - alert [ref=e172]

@@ -1,0 +1,260 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: merluza congelada
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 8 productos Monto total $21.590" [ref=e353]:
+              - generic [ref=e42]: 
+              - generic [ref=e354]: "8"
+              - generic [ref=e43]: $21.590
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e355]:
+          - generic [ref=e356]:
+            - button "Despacho a Domicilio MARTIN DE ZAMORA 5595" [ref=e357] [cursor=pointer]:
+              - generic [ref=e359]:
+                - img [ref=e360]
+                - generic [ref=e361]: Despacho a Domicilio
+                - generic [ref=e362]: 
+                - generic [ref=e363]: "|"
+                - generic [ref=e365]:
+                  - img [ref=e366]
+                  - generic [ref=e367]: MARTIN DE ZAMORA 5595
+              - text: 
+            - generic:   
+            - navigation "Secundario" [ref=e370]:
+              - list [ref=e371]:
+                - listitem [ref=e372]:
+                  - link "Tarjeta Lider Bci" [ref=e374] [cursor=pointer]:
+                    - /url: https://tarjetadigital.liderbciserviciosfinancieros.cl/ingreso-de-datos?utm_source=Lidercl_sod_header&utm_medium=lidercl
+                - listitem [ref=e375]:
+                  - link "Mi Club" [ref=e377] [cursor=pointer]:
+                    - /url: https://www.miclublider.cl/
+                - listitem [ref=e378]:
+                  - link "Centro de ayuda" [ref=e380] [cursor=pointer]:
+                    - /url: /ayuda
+          - img [ref=e383]
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e384]:
+            - generic [ref=e387]:
+              - generic [ref=e388]:
+                - button "Precio" [ref=e391]:
+                  - generic [ref=e392]: Precio
+                  - img [ref=e393]: 
+                - separator [ref=e394]
+              - generic [ref=e395]:
+                - button "Marca" [ref=e398]:
+                  - generic [ref=e399]: Marca
+                  - img [ref=e400]: 
+                - separator [ref=e401]
+              - generic [ref=e402]:
+                - button "Categoría" [ref=e405]:
+                  - generic [ref=e406]: Categoría
+                  - img [ref=e407]: 
+                - separator [ref=e408]
+            - generic [ref=e411]:
+              - heading "Resultados para merluza congelado (2)" [level=2] [ref=e419]: Resultados para merluza congelado(2)
+              - generic [ref=e420]:
+                - group [ref=e423]:
+                  - link "Merluza Filete Tempura, 500 g" [ref=e424] [cursor=pointer]:
+                    - /url: https://super.lider.cl/wapcrs/track?bt=1&eventST=click&plmt=sp-search-middle~desktop~&pos=1&tax=21856785_89519682_86937463&rdf=1&rd=https%3A%2F%2Fsuper.lider.cl%2Fip%2Fpescados-y-mariscos%2F00780132300069&adUid=60fe86ee-152a-41f8-a8b4-7506dec74d68&mloc=sp-search-middle&pltfm=desktop&pgId=merluza%20congelada&pt=search&spQs=1JQDO0EscoQ_TyW8GI8xRtqpFkL8259AH_88xkgwYfYKHQmGehTjKH7IYP8LhCifpplLCRNniKsJfbhNodNQZwlhUBf_1OWWz5JLSgwBqy8Y9LBeHiDYg4eNvRLYP4PeQJ8zMQpm_dBmB36jaqygjOuFEtV0b7eZdjUX88Yo3uvNyqxSH8bvis2oMoRMTDETQAwhplrM0DaWXvp8ZOKPeOrSRPJ_TqPG5pV0s60rVWb2uAN3uvecPFxlBeXUAuk0rFStnDFmE4yvL64KqG5JvtjoH7Fkas0-NjJ6XSfDXVk&storeId=0000000088&tn=WCL_GR&wtn=kltzop&bkt=ace1_default%7Cace2_default%7Cace3_default%7Csearch_default&/ip/pescados-y-mariscos/00780132300069
+                    - generic [ref=e425]: Merluza Filete Tempura, 500 g
+                  - generic [ref=e427]:
+                    - generic [ref=e428]:
+                      - generic [ref=e430]:
+                        - img "Merluza Filete Tempura, 500 g" [ref=e432]
+                        - button "Agregar al carro - Merluza Filete Tempura, 500 g" [ref=e435] [cursor=pointer]:
+                          - generic "agregar" [ref=e436]: 
+                          - generic [ref=e437]: Agregar
+                      - generic [ref=e441]: Patrocinado
+                    - generic [ref=e442]:
+                      - generic [ref=e444]:
+                        - generic [ref=e445]: $6.190
+                        - generic [ref=e446]: precio actual $6.190
+                        - generic [ref=e447]: $12.380 x kg
+                      - generic [ref=e448]: El Golfo
+                      - generic [ref=e449]: Merluza Filete Tempura, 500 g
+                - group [ref=e452]:
+                  - link "Nuggets De Merluza, 400 g" [ref=e453] [cursor=pointer]:
+                    - /url: https://super.lider.cl/wapcrs/track?bt=1&eventST=click&plmt=sp-search-middle~desktop~&pos=2&tax=21856785_89519682_86937463&rdf=1&rd=https%3A%2F%2Fsuper.lider.cl%2Fip%2Fpescados-y-mariscos%2F00780132300068&adUid=60fe86ee-152a-41f8-a8b4-7506dec74d68&mloc=sp-search-middle&pltfm=desktop&pgId=merluza%20congelada&pt=search&spQs=1JQDO0EscoQ_TyW8GI8xRp2jYflzV6_je9vKqUzLUCpvk2ihdQF392RWF9TkDwO9pplLCRNniKsJfbhNodNQZwlhUBf_1OWWz5JLSgwBqy8Y9LBeHiDYg4eNvRLYP4PeQJ8zMQpm_dBmB36jaqygjOuFEtV0b7eZdjUX88Yo3uvNyqxSH8bvis2oMoRMTDETQAwhplrM0DaWXvp8ZOKPeOrSRPJ_TqPG5pV0s60rVWb2uAN3uvecPFxlBeXUAuk0rFStnDFmE4yvL64KqG5JvtjoH7Fkas0-NjJ6XSfDXVk&storeId=0000000088&tn=WCL_GR&wtn=kltzop&bkt=ace1_default%7Cace2_default%7Cace3_default%7Csearch_default&/ip/pescados-y-mariscos/00780132300068
+                    - generic [ref=e454]: Nuggets De Merluza, 400 g
+                  - generic [ref=e456]:
+                    - generic [ref=e457]:
+                      - generic [ref=e459]:
+                        - img "Nuggets De Merluza, 400 g" [ref=e461]
+                        - button "Agregar al carro - Nuggets De Merluza, 400 g" [ref=e464] [cursor=pointer]:
+                          - generic "agregar" [ref=e465]: 
+                          - generic [ref=e466]: Agregar
+                      - generic [ref=e470]: Patrocinado
+                    - generic [ref=e471]:
+                      - generic [ref=e473]:
+                        - generic [ref=e474]: $3.090
+                        - generic [ref=e475]: precio actual $3.090
+                        - generic [ref=e476]: $7.725 x kg
+                      - generic [ref=e477]: El Golfo
+                      - generic [ref=e478]: Nuggets De Merluza, 400 g
+                - group [ref=e481]:
+                  - link "Merluza Filete Con Piel Bolsa, 500 g" [ref=e482] [cursor=pointer]:
+                    - /url: https://super.lider.cl/wapcrs/track?bt=1&eventST=click&plmt=sp-search-middle~desktop~&pos=3&tax=21856785_89519682_86937463&rdf=1&rd=https%3A%2F%2Fsuper.lider.cl%2Fip%2Fpescados-y-mariscos%2F00780132300402&adUid=60fe86ee-152a-41f8-a8b4-7506dec74d68&mloc=sp-search-middle&pltfm=desktop&pgId=merluza%20congelada&pt=search&spQs=1JQDO0EscoQ_TyW8GI8xRh-xwzEsh3QgpSCGuNRW0uw3Q-kyazEdDskjkMXNAg_NpplLCRNniKsJfbhNodNQZwlhUBf_1OWWz5JLSgwBqy8Y9LBeHiDYg4eNvRLYP4PeQJ8zMQpm_dBmB36jaqygjOuFEtV0b7eZdjUX88Yo3uvNyqxSH8bvis2oMoRMTDETQAwhplrM0DaWXvp8ZOKPeOrSRPJ_TqPG5pV0s60rVWb2uAN3uvecPFxlBeXUAuk0rFStnDFmE4yvL64KqG5JvtjoH7Fkas0-NjJ6XSfDXVk&storeId=0000000088&tn=WCL_GR&wtn=kltzop&bkt=ace1_default%7Cace2_default%7Cace3_default%7Csearch_default&/ip/pescados-y-mariscos/00780132300402
+                    - generic [ref=e483]: Merluza Filete Con Piel Bolsa, 500 g
+                  - generic [ref=e485]:
+                    - generic [ref=e486]:
+                      - generic [ref=e488]:
+                        - img "Merluza Filete Con Piel Bolsa, 500 g" [ref=e490]
+                        - button "Agregar al carro - Merluza Filete Con Piel Bolsa, 500 g" [ref=e493] [cursor=pointer]:
+                          - generic "agregar" [ref=e494]: 
+                          - generic [ref=e495]: Agregar
+                      - generic [ref=e499]: Patrocinado
+                    - generic [ref=e500]:
+                      - generic [ref=e502]:
+                        - generic [ref=e503]: $5.390
+                        - generic [ref=e504]: precio actual $5.390
+                        - generic [ref=e505]: $10.780 x kg
+                      - generic [ref=e506]: El Golfo
+                      - generic [ref=e507]: Merluza Filete Con Piel Bolsa, 500 g
+                - group [ref=e510]:
+                  - link "Varitas De Merluza, 500 g" [ref=e511] [cursor=pointer]:
+                    - /url: https://super.lider.cl/wapcrs/track?bt=1&eventST=click&plmt=sp-search-middle~desktop~&pos=4&tax=21856785_89519682_86937463&rdf=1&rd=https%3A%2F%2Fsuper.lider.cl%2Fip%2Fpescados-y-mariscos%2F00780132300155&adUid=60fe86ee-152a-41f8-a8b4-7506dec74d68&mloc=sp-search-middle&pltfm=desktop&pgId=merluza%20congelada&pt=search&spQs=1JQDO0EscoQ_TyW8GI8xRtOTq979H8Axx_qToO3yqoJeBPXyVVlXZqGt1FBYNnuDpplLCRNniKsJfbhNodNQZwlhUBf_1OWWz5JLSgwBqy8Y9LBeHiDYg4eNvRLYP4PeQJ8zMQpm_dBmB36jaqygjOuFEtV0b7eZdjUX88Yo3uvNyqxSH8bvis2oMoRMTDETQAwhplrM0DaWXvp8ZOKPeOrSRPJ_TqPG5pV0s60rVWb2uAN3uvecPFxlBeXUAuk0rFStnDFmE4yvL64KqG5JvtjoH7Fkas0-NjJ6XSfDXVk&storeId=0000000088&tn=WCL_GR&wtn=kltzop&bkt=ace1_default%7Cace2_default%7Cace3_default%7Csearch_default&/ip/pescados-y-mariscos/00780132300155
+                    - generic [ref=e512]: Varitas De Merluza, 500 g
+                  - generic [ref=e514]:
+                    - generic [ref=e515]:
+                      - generic [ref=e517]:
+                        - img "Varitas De Merluza, 500 g" [ref=e519]
+                        - button "Agregar al carro - Varitas De Merluza, 500 g" [ref=e522] [cursor=pointer]:
+                          - generic "agregar" [ref=e523]: 
+                          - generic [ref=e524]: Agregar
+                      - generic [ref=e528]: Patrocinado
+                    - generic [ref=e529]:
+                      - generic [ref=e531]:
+                        - generic [ref=e532]: $5.790
+                        - generic [ref=e533]: precio actual $5.790
+                        - generic [ref=e534]: $11.580 x kg
+                      - generic [ref=e535]: El Golfo
+                      - generic [ref=e536]: Varitas De Merluza, 500 g
+                - group [ref=e539]:
+                  - link "Croqueta De Merluza, 100 g" [ref=e540] [cursor=pointer]:
+                    - /url: https://super.lider.cl/wapcrs/track?bt=1&eventST=click&plmt=sp-search-middle~desktop~&pos=5&tax=21856785_89519682_86937463&rdf=1&rd=https%3A%2F%2Fsuper.lider.cl%2Fip%2Fpescados-y-mariscos%2F00780132300067&adUid=60fe86ee-152a-41f8-a8b4-7506dec74d68&mloc=sp-search-middle&pltfm=desktop&pgId=merluza%20congelada&pt=search&spQs=1JQDO0EscoQ_TyW8GI8xRuInKRV7CUxAo2GXM3Hsa4AkV637IEfoHIwy1Ku_XkVRpplLCRNniKsJfbhNodNQZwlhUBf_1OWWz5JLSgwBqy8Y9LBeHiDYg4eNvRLYP4PeQJ8zMQpm_dBmB36jaqygjL9OiPOd9hkV3O5nVpYrFXYIIjYsuZkKR-Z8gXIljQYxQAwhplrM0DaWXvp8ZOKPeOrSRPJ_TqPG5pV0s60rVWb2uAN3uvecPFxlBeXUAuk0rFStnDFmE4yvL64KqG5JvtjoH7Fkas0-NjJ6XSfDXVk&storeId=0000000088&tn=WCL_GR&wtn=kltzop&bkt=ace1_default%7Cace2_default%7Cace3_default%7Csearch_default&/ip/pescados-y-mariscos/00780132300067
+                    - generic [ref=e541]: Croqueta De Merluza, 100 g
+                  - generic [ref=e543]:
+                    - generic [ref=e544]:
+                      - generic [ref=e546]:
+                        - img "Croqueta De Merluza, 100 g" [ref=e548]
+                        - button "Agregar al carro - Croqueta De Merluza, 100 g" [ref=e551] [cursor=pointer]:
+                          - generic "agregar" [ref=e552]: 
+                          - generic [ref=e553]: Agregar
+                      - generic [ref=e557]: Patrocinado
+                    - generic [ref=e558]:
+                      - generic [ref=e560]:
+                        - generic [ref=e561]: $1.290
+                        - generic [ref=e562]: precio actual $1.290
+                        - generic [ref=e563]: $12.900 x kg
+                      - generic [ref=e564]: El Golfo
+                      - generic [ref=e565]: Croqueta De Merluza, 100 g
+                - group [ref=e568]:
+                  - link "Merluza Filete Apanado Bolsa, 500 g" [ref=e569] [cursor=pointer]:
+                    - /url: https://super.lider.cl/wapcrs/track?bt=1&eventST=click&plmt=sp-search-middle~desktop~&pos=6&tax=21856785_89519682_86937463&rdf=1&rd=https%3A%2F%2Fsuper.lider.cl%2Fip%2Fpescados-y-mariscos%2F00780132300012&adUid=60fe86ee-152a-41f8-a8b4-7506dec74d68&mloc=sp-search-middle&pltfm=desktop&pgId=merluza%20congelada&pt=search&spQs=1JQDO0EscoQ_TyW8GI8xRk4m6SB-lmuARtWvjucK20jWLzFWs6n7MQniRMp4ZIiXpplLCRNniKsJfbhNodNQZwlhUBf_1OWWz5JLSgwBqy8Y9LBeHiDYg4eNvRLYP4PeQJ8zMQpm_dBmB36jaqygjBWzEoQZzIYRTHy370e4c9SZvN3OxYdl8XVaegyZGWc9QAwhplrM0DaWXvp8ZOKPeOrSRPJ_TqPG5pV0s60rVWb2uAN3uvecPFxlBeXUAuk0rFStnDFmE4yvL64KqG5JvtjoH7Fkas0-NjJ6XSfDXVk&storeId=0000000088&tn=WCL_GR&wtn=kltzop&bkt=ace1_default%7Cace2_default%7Cace3_default%7Csearch_default&/ip/pescados-y-mariscos/00780132300012
+                    - generic [ref=e570]: Merluza Filete Apanado Bolsa, 500 g
+                  - generic [ref=e572]:
+                    - generic [ref=e573]:
+                      - generic [ref=e575]:
+                        - img "Merluza Filete Apanado Bolsa, 500 g" [ref=e577]
+                        - button "Agregar al carro - Merluza Filete Apanado Bolsa, 500 g" [ref=e580] [cursor=pointer]:
+                          - generic "agregar" [ref=e581]: 
+                          - generic [ref=e582]: Agregar
+                      - generic [ref=e586]: Patrocinado
+                    - generic [ref=e587]:
+                      - generic [ref=e589]:
+                        - generic [ref=e590]: $6.490
+                        - generic [ref=e591]: precio actual $6.490
+                        - generic [ref=e592]: $12.980 x kg
+                      - generic [ref=e593]: El Golfo
+                      - generic [ref=e594]: Merluza Filete Apanado Bolsa, 500 g
+                - group [ref=e597]:
+                  - link "Hamburguesa de Merluza, 100 g" [ref=e598] [cursor=pointer]:
+                    - /url: /ip/hamburguesas-y-churrascos/00780132300153?from=/search
+                    - generic [ref=e599]: Hamburguesa de Merluza, 100 g
+                  - generic [ref=e601]:
+                    - generic [ref=e604]:
+                      - img "Hamburguesa de Merluza, 100 g" [ref=e606]
+                      - button "Agregar al carro - Hamburguesa de Merluza, 100 g" [ref=e609] [cursor=pointer]:
+                        - generic "agregar" [ref=e610]: 
+                        - generic [ref=e611]: Agregar
+                    - generic [ref=e613]:
+                      - generic [ref=e615]:
+                        - generic [ref=e616]: $970
+                        - generic [ref=e617]: precio actual $970
+                        - generic [ref=e618]: $9.700 x kg
+                      - generic [ref=e619]: El Golfo
+                      - generic [ref=e620]: Hamburguesa de Merluza, 100 g
+                - group [ref=e623]:
+                  - link "Nuggets de Merlurza, 400 g" [ref=e624] [cursor=pointer]:
+                    - /url: /ip/congelados/00780462831046?from=/search
+                    - generic [ref=e625]: Nuggets de Merlurza, 400 g
+                  - generic [ref=e627]:
+                    - generic [ref=e630]:
+                      - img "Nuggets de Merlurza, 400 g" [ref=e632]
+                      - button "Agregar al carro - Nuggets de Merlurza, 400 g" [ref=e635] [cursor=pointer]:
+                        - generic "agregar" [ref=e636]: 
+                        - generic [ref=e637]: Agregar
+                    - generic [ref=e639]:
+                      - generic [ref=e641]:
+                        - generic [ref=e642]: $2.690
+                        - generic [ref=e643]: precio actual $2.690
+                        - generic [ref=e644]: $6.725 x kg
+                      - generic [ref=e645]: Lider
+                      - generic [ref=e646]: Nuggets de Merlurza, 400 g
+  - alert [ref=e352]: Supermercado

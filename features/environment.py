@@ -47,3 +47,18 @@ def after_scenario(context: Any, scenario: Any) -> None:
     import os as _os
 
     _os.environ.pop("PEER_USE_CLAUDE_CODE", None)
+
+    # autoresearch-recipe-v01 marker-test corrupts prompts/default_system_prompt.md.
+    # Safety net: when fixtures recorded the original, always restore — protects
+    # against the Then-step crashing before its own finally clause runs.
+    pfile = getattr(context, "fixtures", {}).get("_pfile") if hasattr(context, "fixtures") else None
+    orig = (
+        getattr(context, "fixtures", {}).get("_orig_prompt")
+        if hasattr(context, "fixtures")
+        else None
+    )
+    if pfile is not None and orig is not None:
+        import contextlib
+
+        with contextlib.suppress(Exception):
+            pfile.write_text(orig)

@@ -1,0 +1,271 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: salame italiano
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e81]:
+            - generic [ref=e84]:
+              - generic [ref=e85]:
+                - button "Precio" [ref=e88]:
+                  - generic [ref=e89]: Precio
+                  - img [ref=e90]: 
+                - separator [ref=e91]
+              - generic [ref=e92]:
+                - button "Campaña" [ref=e95]:
+                  - generic [ref=e96]: Campaña
+                  - img [ref=e97]: 
+                - separator [ref=e98]
+              - generic [ref=e99]:
+                - button "Marca" [ref=e102]:
+                  - generic [ref=e103]: Marca
+                  - img [ref=e104]: 
+                - separator [ref=e105]
+              - generic [ref=e106]:
+                - button "Categoría" [ref=e109]:
+                  - generic [ref=e110]: Categoría
+                  - img [ref=e111]: 
+                - separator [ref=e112]
+            - generic [ref=e115]:
+              - heading "Resultados para salame italiano (9)" [level=2] [ref=e123]: Resultados para salame italiano(9)
+              - generic [ref=e124]:
+                - group [ref=e127]:
+                  - link "Salame Italiano Granel" [ref=e128] [cursor=pointer]:
+                    - /url: /ip/fiambres-y-embutidos/00207433000000?from=/search
+                    - generic [ref=e129]: Salame Italiano Granel
+                  - generic [ref=e131]:
+                    - generic [ref=e132]:
+                      - generic [ref=e134]:
+                        - generic [ref=e136]: 
+                        - text: Rebaja
+                      - generic [ref=e137]:
+                        - img "Salame Italiano Granel" [ref=e139]
+                        - button "Agregar al carro - Salame Italiano Granel" [ref=e142] [cursor=pointer]:
+                          - generic "agregar" [ref=e143]: 
+                          - generic [ref=e144]: Agregar
+                    - generic [ref=e146]:
+                      - generic [ref=e148]:
+                        - generic [ref=e149]: $12.900/kg
+                        - generic [ref=e150]: precio actual $12.900/kg, Costaba $14.900/kg
+                        - generic [ref=e151]: $12.900 x kg
+                        - generic [ref=e152]: $14.900/kg
+                        - generic [ref=e153]: Ahorra $2.000
+                      - generic [ref=e154]: PF
+                      - generic [ref=e155]: Salame Italiano Granel
+                - group [ref=e158]:
+                  - link "Salame Italiano sachet, 100 g" [ref=e159] [cursor=pointer]:
+                    - /url: /ip/fiambres-y-embutidos/00780193001797?from=/search
+                    - generic [ref=e160]: Salame Italiano sachet, 100 g
+                  - generic [ref=e162]:
+                    - generic [ref=e165]:
+                      - img "Salame Italiano sachet, 100 g" [ref=e167]
+                      - button "Agregar al carro - Salame Italiano sachet, 100 g" [ref=e170] [cursor=pointer]:
+                        - generic "agregar" [ref=e171]: 
+                        - generic [ref=e172]: Agregar
+                    - generic [ref=e174]:
+                      - generic [ref=e176]:
+                        - generic [ref=e177]: $1.890
+                        - generic [ref=e178]: precio actual $1.890
+                        - generic [ref=e179]: $18.900 x kg
+                      - generic [ref=e180]: PF
+                      - generic [ref=e181]: Salame Italiano sachet, 100 g
+                - group [ref=e184]:
+                  - link "Salame Italiano Maduro, 130 g" [ref=e185] [cursor=pointer]:
+                    - /url: /ip/fiambres-y-embutidos/00040000685365?from=/search
+                    - generic [ref=e186]: Salame Italiano Maduro, 130 g
+                  - generic [ref=e188]:
+                    - generic [ref=e191]:
+                      - img "Salame Italiano Maduro, 130 g" [ref=e193]
+                      - button "Agregar al carro - Salame Italiano Maduro, 130 g" [ref=e196] [cursor=pointer]:
+                        - generic "agregar" [ref=e197]: 
+                        - generic [ref=e198]: Agregar
+                    - generic [ref=e200]:
+                      - generic [ref=e202]:
+                        - generic [ref=e203]: $2.190
+                        - generic [ref=e204]: precio actual $2.190
+                        - generic [ref=e205]: $16.846 x kg
+                      - generic [ref=e206]: Selección
+                      - generic [ref=e207]: Salame Italiano Maduro, 130 g
+                - group [ref=e210]:
+                  - link "Salame Tipo Italiano, 75 gr" [ref=e211] [cursor=pointer]:
+                    - /url: /ip/fiambres-y-embutidos/00780193001878?from=/search
+                    - generic [ref=e212]: Salame Tipo Italiano, 75 gr
+                  - generic [ref=e214]:
+                    - generic [ref=e215]:
+                      - generic [ref=e217]:
+                        - generic [ref=e219]: 
+                        - text: Rebaja
+                      - generic [ref=e220]:
+                        - img "Salame Tipo Italiano, 75 gr" [ref=e222]
+                        - button "Agregar al carro - Salame Tipo Italiano, 75 gr" [ref=e225] [cursor=pointer]:
+                          - generic "agregar" [ref=e226]: 
+                          - generic [ref=e227]: Agregar
+                    - generic [ref=e229]:
+                      - generic [ref=e231]:
+                        - generic [ref=e232]: $1.000
+                        - generic [ref=e233]: precio actual $1.000, Costaba $1.150
+                        - generic [ref=e234]: $13.333 x kg
+                        - generic [ref=e235]: $1.150
+                        - generic [ref=e236]: Ahorra $150
+                      - generic [ref=e237]: PF
+                      - generic [ref=e238]: Salame Tipo Italiano, 75 gr
+                - group [ref=e241]:
+                  - link "Salame Tipo Italiano, 100 g" [ref=e242] [cursor=pointer]:
+                    - /url: /ip/fiambres-y-embutidos/00780193001811?from=/search
+                    - generic [ref=e243]: Salame Tipo Italiano, 100 g
+                  - generic [ref=e245]:
+                    - generic [ref=e248]:
+                      - img "Salame Tipo Italiano, 100 g" [ref=e250]
+                      - button "Agregar al carro - Salame Tipo Italiano, 100 g" [ref=e253] [cursor=pointer]:
+                        - generic "agregar" [ref=e254]: 
+                        - generic [ref=e255]: Agregar
+                    - generic [ref=e257]:
+                      - generic [ref=e259]:
+                        - generic [ref=e260]: $1.790
+                        - generic [ref=e261]: precio actual $1.790
+                        - generic [ref=e262]: $11.933 x kg
+                      - generic [ref=e263]: Lider
+                      - generic [ref=e264]: Salame Tipo Italiano, 100 g
+                - group [ref=e267]:
+                  - link "Salame Italiano, 100 gr" [ref=e268] [cursor=pointer]:
+                    - /url: /ip/fiambres-y-embutidos/00780190700172?from=/search
+                    - generic [ref=e269]: Salame Italiano, 100 gr
+                  - generic [ref=e271]:
+                    - generic [ref=e272]:
+                      - generic [ref=e274]:
+                        - generic [ref=e276]: 
+                        - text: Rebaja
+                      - generic [ref=e277]:
+                        - img "Salame Italiano, 100 gr" [ref=e279]
+                        - button "Agregar al carro - Salame Italiano, 100 gr" [ref=e282] [cursor=pointer]:
+                          - generic "agregar" [ref=e283]: 
+                          - generic [ref=e284]: Agregar
+                    - generic [ref=e286]:
+                      - generic [ref=e288]:
+                        - generic [ref=e289]: $1.490
+                        - generic [ref=e290]: precio actual $1.490, Costaba $1.690
+                        - generic [ref=e291]: $14.900 x kg
+                        - generic [ref=e292]: $1.690
+                        - generic [ref=e293]: Ahorra $200
+                      - generic [ref=e294]: San Jorge
+                      - generic [ref=e295]: Salame Italiano, 100 gr
+                - group [ref=e298]:
+                  - link "Salame italiano, 70 g" [ref=e299] [cursor=pointer]:
+                    - /url: /ip/fiambres-y-embutidos/00780190700621?from=/search
+                    - generic [ref=e300]: Salame italiano, 70 g
+                  - generic [ref=e302]:
+                    - generic [ref=e305]:
+                      - img "Salame italiano, 70 g" [ref=e307]
+                      - button "Agregar al carro - Salame italiano, 70 g" [ref=e310] [cursor=pointer]:
+                        - generic "agregar" [ref=e311]: 
+                        - generic [ref=e312]: Agregar
+                    - generic [ref=e314]:
+                      - generic [ref=e316]:
+                        - generic [ref=e317]: $1.190
+                        - generic [ref=e318]: precio actual $1.190
+                        - generic [ref=e319]: $17.000 x kg
+                      - generic [ref=e320]: San Jorge
+                      - generic [ref=e321]: Salame italiano, 70 g
+                - group [ref=e324]:
+                  - link "Snackin Pepperoni Italiano, 50 g" [ref=e325] [cursor=pointer]:
+                    - /url: /ip/fiambres-y-embutidos/00780191603984?from=/search
+                    - generic [ref=e326]: Snackin Pepperoni Italiano, 50 g
+                  - generic [ref=e328]:
+                    - generic [ref=e329]:
+                      - generic [ref=e331]:
+                        - generic [ref=e333]: 
+                        - text: Rebaja
+                      - generic [ref=e334]:
+                        - img "Snackin Pepperoni Italiano, 50 g" [ref=e336]
+                        - button "Agregar al carro - Snackin Pepperoni Italiano, 50 g" [ref=e339] [cursor=pointer]:
+                          - generic "agregar" [ref=e340]: 
+                          - generic [ref=e341]: Agregar
+                    - generic [ref=e343]:
+                      - generic [ref=e345]:
+                        - generic [ref=e346]: $1.000
+                        - generic [ref=e347]: precio actual $1.000, Costaba $1.290
+                        - generic [ref=e348]: $20.000 x kg
+                        - generic [ref=e349]: $1.290
+                        - generic [ref=e350]: Ahorra $290
+                      - generic [ref=e351]: La Preferida
+                      - generic [ref=e352]: Snackin Pepperoni Italiano, 50 g
+                - group [ref=e355]:
+                  - link "Salamín Snack Italiano, 100 gr" [ref=e356] [cursor=pointer]:
+                    - /url: /ip/fiambres-y-embutidos/00780193001724?from=/search
+                    - generic [ref=e357]: Salamín Snack Italiano, 100 gr
+                  - generic [ref=e359]:
+                    - generic [ref=e362]:
+                      - img "Salamín Snack Italiano, 100 gr" [ref=e364]
+                      - button "Agregar al carro - Salamín Snack Italiano, 100 gr" [ref=e367] [cursor=pointer]:
+                        - generic "agregar" [ref=e368]: 
+                        - generic [ref=e369]: Agregar
+                    - generic [ref=e371]:
+                      - generic [ref=e373]:
+                        - generic [ref=e374]: $2.550
+                        - generic [ref=e375]: precio actual $2.550
+                        - generic [ref=e376]: $25.500 x kg
+                      - generic [ref=e377]: Receta Del Abuelo
+                      - generic [ref=e378]: Salamín Snack Italiano, 100 gr
+  - alert [ref=e387]

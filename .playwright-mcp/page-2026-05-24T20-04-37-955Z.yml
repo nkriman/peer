@@ -1,0 +1,675 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: queso rallado
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 12 productos Monto total $37.410" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: "12"
+              - generic [ref=e44]: $37.410
+    - generic [ref=e45]:
+      - generic [ref=e46]:
+        - separator [ref=e47]
+        - generic [ref=e48]:
+          - generic [ref=e49]:
+            - button "Despacho a Domicilio MARTIN DE ZAMORA 5595" [ref=e50] [cursor=pointer]:
+              - generic [ref=e52]:
+                - img [ref=e53]
+                - generic [ref=e54]: Despacho a Domicilio
+                - generic [ref=e55]: 
+                - generic [ref=e56]: "|"
+                - generic [ref=e58]:
+                  - img [ref=e59]
+                  - generic [ref=e60]: MARTIN DE ZAMORA 5595
+              - text: 
+            - generic:   
+            - navigation "Secundario" [ref=e63]:
+              - list [ref=e64]:
+                - listitem [ref=e65]:
+                  - link "Tarjeta Lider Bci" [ref=e67] [cursor=pointer]:
+                    - /url: https://tarjetadigital.liderbciserviciosfinancieros.cl/ingreso-de-datos?utm_source=Lidercl_sod_header&utm_medium=lidercl
+                - listitem [ref=e68]:
+                  - link "Mi Club" [ref=e70] [cursor=pointer]:
+                    - /url: https://www.miclublider.cl/
+                - listitem [ref=e71]:
+                  - link "Centro de ayuda" [ref=e73] [cursor=pointer]:
+                    - /url: /ayuda
+          - img [ref=e76]
+      - main [ref=e79]:
+        - generic [ref=e80]:
+          - generic [ref=e83]:
+            - region "Sección de ordenar y filtrar" [ref=e85]:
+              - button "Precio" [ref=e88]:
+                - generic [ref=e90]: 
+                - generic [ref=e91]: Precio
+                - generic [ref=e92]: 
+              - button "Marca" [ref=e95]:
+                - generic [ref=e96]: Marca
+                - generic [ref=e97]: 
+              - generic [ref=e98]:
+                - generic [ref=e99]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e101]:
+                  - text: Más relevantes
+                  - generic [ref=e102]: 
+            - separator [ref=e103]
+          - generic [ref=e107]:
+            - generic [ref=e110]:
+              - generic [ref=e111]:
+                - button "Precio" [ref=e114]:
+                  - generic [ref=e115]: Precio
+                  - img [ref=e116]: 
+                - separator [ref=e117]
+              - generic [ref=e118]:
+                - button "Campaña" [ref=e121]:
+                  - generic [ref=e122]: Campaña
+                  - img [ref=e123]: 
+                - separator [ref=e124]
+              - generic [ref=e125]:
+                - button "Marca" [ref=e128]:
+                  - generic [ref=e129]: Marca
+                  - img [ref=e130]: 
+                - separator [ref=e131]
+              - generic [ref=e132]:
+                - button "Categoría" [ref=e135]:
+                  - generic [ref=e136]: Categoría
+                  - img [ref=e137]: 
+                - separator [ref=e138]
+            - generic [ref=e141]:
+              - heading "Resultados para queso rallado (30)" [level=2] [ref=e149]: Resultados para queso rallado(30)
+              - generic [ref=e150]:
+                - group [ref=e153]:
+                  - link "Queso Rallado Sobre, 40 g" [ref=e154] [cursor=pointer]:
+                    - /url: /ip/quesos/00780292042360?from=/search
+                    - generic [ref=e155]: Queso Rallado Sobre, 40 g
+                  - generic [ref=e157]:
+                    - generic [ref=e160]:
+                      - img "Queso Rallado Sobre, 40 g" [ref=e162]
+                      - button "Agregar al carro - Queso Rallado Sobre, 40 g" [ref=e165] [cursor=pointer]:
+                        - generic "agregar" [ref=e166]: 
+                        - generic [ref=e167]: Agregar
+                    - generic [ref=e169]:
+                      - generic [ref=e171]:
+                        - generic [ref=e172]: $1.090
+                        - generic [ref=e173]: precio actual $1.090
+                        - generic [ref=e174]: $27.250 x kg
+                      - generic [ref=e175]: Colun
+                      - generic [ref=e176]: Queso Rallado Sobre, 40 g
+                - group [ref=e179]:
+                  - link "Queso Rallado Reggianito, 80 g" [ref=e180] [cursor=pointer]:
+                    - /url: /ip/quesos/00780292042381?from=/search
+                    - generic [ref=e181]: Queso Rallado Reggianito, 80 g
+                  - generic [ref=e183]:
+                    - generic [ref=e184]:
+                      - generic [ref=e186]:
+                        - generic [ref=e188]: 
+                        - text: Rebaja
+                      - generic [ref=e189]:
+                        - img "Queso Rallado Reggianito, 80 g" [ref=e191]
+                        - button "Agregar al carro - Queso Rallado Reggianito, 80 g" [ref=e194] [cursor=pointer]:
+                          - generic "agregar" [ref=e195]: 
+                          - generic [ref=e196]: Agregar
+                    - generic [ref=e198]:
+                      - generic [ref=e200]:
+                        - generic [ref=e201]: $1.750
+                        - generic [ref=e202]: precio actual $1.750, Costaba $1.990
+                        - generic [ref=e203]: $21.875 x kg
+                        - generic [ref=e204]: $1.990
+                        - generic [ref=e205]: Ahorra $240
+                      - generic [ref=e206]: Colun
+                      - generic [ref=e207]: Queso Rallado Reggianito, 80 g
+                - group [ref=e210]:
+                  - link "Queso Parmesano Rallado, 40 g" [ref=e211] [cursor=pointer]:
+                    - /url: /ip/quesos/00780292011601?from=/search
+                    - generic [ref=e212]: Queso Parmesano Rallado, 40 g
+                  - generic [ref=e214]:
+                    - generic [ref=e215]:
+                      - generic [ref=e217]:
+                        - generic [ref=e219]: 
+                        - text: Rebaja
+                      - generic [ref=e220]:
+                        - img "Queso Parmesano Rallado, 40 g" [ref=e222]
+                        - button "Agregar al carro - Queso Parmesano Rallado, 40 g" [ref=e225] [cursor=pointer]:
+                          - generic "agregar" [ref=e226]: 
+                          - generic [ref=e227]: Agregar
+                    - generic [ref=e229]:
+                      - generic [ref=e231]:
+                        - generic [ref=e232]: $950
+                        - generic [ref=e233]: precio actual $950, Costaba $1.050
+                        - generic [ref=e234]: $23.750 x kg
+                        - generic [ref=e235]: $1.050
+                        - generic [ref=e236]: Ahorra $100
+                      - generic [ref=e237]: Colun
+                      - generic [ref=e238]: Queso Parmesano Rallado, 40 g
+                - generic [ref=e240]:
+                  - group [ref=e241]:
+                    - link "Queso Parmesano Rallado, 40 g" [ref=e242] [cursor=pointer]:
+                      - /url: /ip/quesos/00780461339009?from=/search
+                      - generic [ref=e243]: Queso Parmesano Rallado, 40 g
+                    - generic [ref=e245]:
+                      - img "Queso Parmesano Rallado, 40 g" [ref=e250]
+                      - generic [ref=e252]:
+                        - generic [ref=e254]:
+                          - generic [ref=e255]: $840
+                          - generic [ref=e256]: precio actual $840
+                          - generic [ref=e257]: $21.000 x kg
+                        - generic [ref=e258]: Lider
+                        - generic [ref=e259]: Queso Parmesano Rallado, 40 g
+                        - generic [ref=e260]: Agotado
+                  - button "Revisar productos similares - Queso Parmesano Rallado, 40 g" [ref=e262]: Revisar productos similares
+                - group [ref=e265]:
+                  - link "Queso Parmesano Rallado, 80 g" [ref=e266] [cursor=pointer]:
+                    - /url: /ip/quesos/00780292011600?from=/search
+                    - generic [ref=e267]: Queso Parmesano Rallado, 80 g
+                  - generic [ref=e269]:
+                    - generic [ref=e272]:
+                      - img "Queso Parmesano Rallado, 80 g" [ref=e274]
+                      - button "Agregar al carro - Queso Parmesano Rallado, 80 g" [ref=e277] [cursor=pointer]:
+                        - generic "agregar" [ref=e278]: 
+                        - generic [ref=e279]: Agregar
+                    - generic [ref=e281]:
+                      - generic [ref=e283]:
+                        - generic [ref=e284]: $1.990
+                        - generic [ref=e285]: precio actual $1.990
+                        - generic [ref=e286]: $24.875 x kg
+                      - generic [ref=e287]: Colun
+                      - generic [ref=e288]: Queso Parmesano Rallado, 80 g
+                - group [ref=e291]:
+                  - link "Queso Parmesano Rallado, 80 g" [ref=e292] [cursor=pointer]:
+                    - /url: /ip/quesos/00780461339038?from=/search
+                    - generic [ref=e293]: Queso Parmesano Rallado, 80 g
+                  - generic [ref=e295]:
+                    - generic [ref=e298]:
+                      - img "Queso Parmesano Rallado, 80 g" [ref=e300]
+                      - button "Agregar al carro - Queso Parmesano Rallado, 80 g" [ref=e303] [cursor=pointer]:
+                        - generic "agregar" [ref=e304]: 
+                        - generic [ref=e305]: Agregar
+                    - generic [ref=e307]:
+                      - generic [ref=e309]:
+                        - generic [ref=e310]: $1.690
+                        - generic [ref=e311]: precio actual $1.690
+                        - generic [ref=e312]: $21.125 x kg
+                      - generic [ref=e313]: Lider
+                      - generic [ref=e314]: Queso Parmesano Rallado, 80 g
+                - group [ref=e317]:
+                  - link "Queso Rallado Parmesano, 80 g" [ref=e318] [cursor=pointer]:
+                    - /url: /ip/quesos/00780290000136?from=/search
+                    - generic [ref=e319]: Queso Rallado Parmesano, 80 g
+                  - generic [ref=e321]:
+                    - generic [ref=e324]:
+                      - img "Queso Rallado Parmesano, 80 g" [ref=e326]
+                      - button "Agregar al carro - Queso Rallado Parmesano, 80 g" [ref=e329] [cursor=pointer]:
+                        - generic "agregar" [ref=e330]: 
+                        - generic [ref=e331]: Agregar
+                    - generic [ref=e333]:
+                      - generic [ref=e335]:
+                        - generic [ref=e336]: $2.050
+                        - generic [ref=e337]: precio actual $2.050
+                        - generic [ref=e338]: $25.625 x kg
+                      - generic [ref=e339]: Soprole
+                      - generic [ref=e340]: Queso Rallado Parmesano, 80 g
+                - group [ref=e343]:
+                  - link "Queso Gauda Granulado, 400 g" [ref=e344] [cursor=pointer]:
+                    - /url: /ip/quesos/00780290000259?from=/search
+                    - generic [ref=e345]: Queso Gauda Granulado, 400 g
+                  - generic [ref=e347]:
+                    - generic [ref=e350]:
+                      - img "Queso Gauda Granulado, 400 g" [ref=e352]
+                      - button "Agregar al carro - Queso Gauda Granulado, 400 g" [ref=e355] [cursor=pointer]:
+                        - generic "agregar" [ref=e356]: 
+                        - generic [ref=e357]: Agregar
+                    - generic [ref=e359]:
+                      - generic [ref=e361]:
+                        - generic [ref=e362]: $4.690
+                        - generic [ref=e363]: precio actual $4.690
+                        - generic [ref=e364]: $11.725 x kg
+                      - generic [ref=e365]: Soprole
+                      - generic [ref=e366]: Queso Gauda Granulado, 400 g
+                - group [ref=e369]:
+                  - link "Queso Parmesano Rallado, 226 g" [ref=e370] [cursor=pointer]:
+                    - /url: /ip/quesos/00007874235322?from=/search
+                    - generic [ref=e371]: Queso Parmesano Rallado, 226 g
+                  - generic [ref=e373]:
+                    - generic [ref=e376]:
+                      - img "Queso Parmesano Rallado, 226 g" [ref=e378]
+                      - button "Agregar al carro - Queso Parmesano Rallado, 226 g" [ref=e381] [cursor=pointer]:
+                        - generic "agregar" [ref=e382]: 
+                        - generic [ref=e383]: Agregar
+                    - generic [ref=e385]:
+                      - generic [ref=e387]:
+                        - generic [ref=e388]: $4.590
+                        - generic [ref=e389]: precio actual $4.590
+                      - generic [ref=e390]: Great Value
+                      - generic [ref=e391]: Queso Parmesano Rallado, 226 g
+                - group [ref=e394]:
+                  - link "Queso Parmesano Rallado, 40 g" [ref=e395] [cursor=pointer]:
+                    - /url: /ip/quesos/00780293000033?from=/search
+                    - generic [ref=e396]: Queso Parmesano Rallado, 40 g
+                  - generic [ref=e398]:
+                    - generic [ref=e399]:
+                      - generic [ref=e401]:
+                        - generic [ref=e403]: 
+                        - text: Rebaja
+                      - generic [ref=e404]:
+                        - img "Queso Parmesano Rallado, 40 g" [ref=e406]
+                        - button "Agregar al carro - Queso Parmesano Rallado, 40 g" [ref=e409] [cursor=pointer]:
+                          - generic "agregar" [ref=e410]: 
+                          - generic [ref=e411]: Agregar
+                    - generic [ref=e413]:
+                      - generic [ref=e415]:
+                        - generic [ref=e416]: $850
+                        - generic [ref=e417]: precio actual $850, Costaba $970
+                        - generic [ref=e418]: $21.250 x kg
+                        - generic [ref=e419]: $970
+                        - generic [ref=e420]: Ahorra $120
+                      - generic [ref=e421]: Quillayes
+                      - generic [ref=e422]: Queso Parmesano Rallado, 40 g
+                - group [ref=e425]:
+                  - link "Queso Rallado Parmesano, 40 g" [ref=e426] [cursor=pointer]:
+                    - /url: /ip/quesos/00780290000127?from=/search
+                    - generic [ref=e427]: Queso Rallado Parmesano, 40 g
+                  - generic [ref=e429]:
+                    - generic [ref=e432]:
+                      - img "Queso Rallado Parmesano, 40 g" [ref=e434]
+                      - button "Agregar al carro - Queso Rallado Parmesano, 40 g" [ref=e437] [cursor=pointer]:
+                        - generic "agregar" [ref=e438]: 
+                        - generic [ref=e439]: Agregar
+                    - generic [ref=e441]:
+                      - generic [ref=e443]:
+                        - generic [ref=e444]: $1.050
+                        - generic [ref=e445]: precio actual $1.050
+                        - generic [ref=e446]: $26.250 x kg
+                      - generic [ref=e447]: Soprole
+                      - generic [ref=e448]: Queso Rallado Parmesano, 40 g
+                - group [ref=e451]:
+                  - link "Queso Rallado Selección Parmesano, 100 g" [ref=e452] [cursor=pointer]:
+                    - /url: /ip/quesos/00780293000250?from=/search
+                    - generic [ref=e453]: Queso Rallado Selección Parmesano, 100 g
+                  - generic [ref=e455]:
+                    - generic [ref=e458]:
+                      - img "Queso Rallado Selección Parmesano, 100 g" [ref=e460]
+                      - button "Agregar al carro - Queso Rallado Selección Parmesano, 100 g" [ref=e463] [cursor=pointer]:
+                        - generic "agregar" [ref=e464]: 
+                        - generic [ref=e465]: Agregar
+                    - generic [ref=e467]:
+                      - generic [ref=e469]:
+                        - generic [ref=e470]: $2.990
+                        - generic [ref=e471]: precio actual $2.990
+                        - generic [ref=e472]: $29.900 x kg
+                      - generic [ref=e473]: Quillayes
+                      - generic [ref=e474]: Queso Rallado Selección Parmesano, 100 g
+                - group [ref=e477]:
+                  - link "Queso Parmesano En Hebras, 100 g" [ref=e478] [cursor=pointer]:
+                    - /url: /ip/quesos/00780461339328?from=/search
+                    - generic [ref=e479]: Queso Parmesano En Hebras, 100 g
+                  - generic [ref=e481]:
+                    - generic [ref=e484]:
+                      - img "Queso Parmesano En Hebras, 100 g" [ref=e486]
+                      - button "Agregar al carro - Queso Parmesano En Hebras, 100 g" [ref=e489] [cursor=pointer]:
+                        - generic "agregar" [ref=e490]: 
+                        - generic [ref=e491]: Agregar
+                    - generic [ref=e493]:
+                      - generic [ref=e495]:
+                        - generic [ref=e496]: $2.550
+                        - generic [ref=e497]: precio actual $2.550
+                        - generic [ref=e498]: $25.500 x kg
+                      - generic [ref=e499]: Lider
+                      - generic [ref=e500]: Queso Parmesano En Hebras, 100 g
+                - group [ref=e503]:
+                  - link "Queso Mantecoso en Hebras, 400 g" [ref=e504] [cursor=pointer]:
+                    - /url: /ip/quesos/00780290000260?from=/search
+                    - generic [ref=e505]: Queso Mantecoso en Hebras, 400 g
+                  - generic [ref=e507]:
+                    - generic [ref=e510]:
+                      - img "Queso Mantecoso en Hebras, 400 g" [ref=e512]
+                      - button "Agregar al carro - Queso Mantecoso en Hebras, 400 g" [ref=e515] [cursor=pointer]:
+                        - generic "agregar" [ref=e516]: 
+                        - generic [ref=e517]: Agregar
+                    - generic [ref=e519]:
+                      - generic [ref=e521]:
+                        - generic [ref=e522]: $5.490
+                        - generic [ref=e523]: precio actual $5.490
+                        - generic [ref=e524]: $13.725 x kg
+                      - generic [ref=e525]: Quilque
+                      - generic [ref=e526]: Queso Mantecoso en Hebras, 400 g
+                - group [ref=e529]:
+                  - link "Queso Rallado Selección Gruyere Y Mozzarella, 100 g" [ref=e530] [cursor=pointer]:
+                    - /url: /ip/quesos/00780293000248?from=/search
+                    - generic [ref=e531]: Queso Rallado Selección Gruyere Y Mozzarella, 100 g
+                  - generic [ref=e533]:
+                    - generic [ref=e536]:
+                      - img "Queso Rallado Selección Gruyere Y Mozzarella, 100 g" [ref=e538]
+                      - button "Agregar al carro - Queso Rallado Selección Gruyere Y Mozzarella, 100 g" [ref=e541] [cursor=pointer]:
+                        - generic "agregar" [ref=e542]: 
+                        - generic [ref=e543]: Agregar
+                    - generic [ref=e545]:
+                      - generic [ref=e547]:
+                        - generic [ref=e548]: $2.850
+                        - generic [ref=e549]: precio actual $2.850
+                        - generic [ref=e550]: $28.500 x kg
+                      - generic [ref=e551]: Quillayes
+                      - generic [ref=e552]: Queso Rallado Selección Gruyere Y Mozzarella, 100 g
+                - group [ref=e555]:
+                  - link "Queso Parmesano Rallado, 85 g" [ref=e556] [cursor=pointer]:
+                    - /url: /ip/quesos/00002100061542?from=/search
+                    - generic [ref=e557]: Queso Parmesano Rallado, 85 g
+                  - generic [ref=e559]:
+                    - generic [ref=e562]:
+                      - img "Queso Parmesano Rallado, 85 g" [ref=e564]
+                      - button "Agregar al carro - Queso Parmesano Rallado, 85 g" [ref=e567] [cursor=pointer]:
+                        - generic "agregar" [ref=e568]: 
+                        - generic [ref=e569]: Agregar
+                    - generic [ref=e571]:
+                      - generic [ref=e573]:
+                        - generic [ref=e574]: $3.190
+                        - generic [ref=e575]: precio actual $3.190
+                        - generic [ref=e576]: $31.900 x kg
+                      - generic [ref=e577]: Kraft
+                      - generic [ref=e578]: Queso Parmesano Rallado, 85 g
+                - group [ref=e581]:
+                  - link "Queso Rallado Vegetal, 40 g" [ref=e582] [cursor=pointer]:
+                    - /url: /ip/quesos/00780293000552?from=/search
+                    - generic [ref=e583]: Queso Rallado Vegetal, 40 g
+                  - generic [ref=e585]:
+                    - generic [ref=e588]:
+                      - generic [ref=e589]:
+                        - img "Queso Rallado Vegetal, 40 g"
+                      - button "Agregar al carro - Queso Rallado Vegetal, 40 g" [ref=e592] [cursor=pointer]:
+                        - generic "agregar" [ref=e593]: 
+                        - generic [ref=e594]: Agregar
+                    - generic [ref=e596]:
+                      - generic [ref=e598]:
+                        - generic [ref=e599]: $1.190
+                        - generic [ref=e600]: precio actual $1.190
+                        - generic [ref=e601]: $29.750 x kg
+                      - generic [ref=e602]: Quillayes
+                      - generic [ref=e603]: Queso Rallado Vegetal, 40 g
+                - group [ref=e606]:
+                  - link "Queso Granulado Mantecoso, 200 g" [ref=e607] [cursor=pointer]:
+                    - /url: /ip/quesos/00780461339271?from=/search
+                    - generic [ref=e608]: Queso Granulado Mantecoso, 200 g
+                  - generic [ref=e610]:
+                    - generic [ref=e613]:
+                      - generic [ref=e614]:
+                        - img "Queso Granulado Mantecoso, 200 g"
+                      - button "Agregar al carro - Queso Granulado Mantecoso, 200 g" [ref=e617] [cursor=pointer]:
+                        - generic "agregar" [ref=e618]: 
+                        - generic [ref=e619]: Agregar
+                    - generic [ref=e621]:
+                      - generic [ref=e623]:
+                        - generic [ref=e624]: $2.290
+                        - generic [ref=e625]: precio actual $2.290
+                        - generic [ref=e626]: $11.450 x kg
+                      - generic [ref=e627]: Lider
+                      - generic [ref=e628]: Queso Granulado Mantecoso, 200 g
+                - group [ref=e631]:
+                  - link "Queso Granulado Mantecoso, 400 g" [ref=e632] [cursor=pointer]:
+                    - /url: /ip/quesos/00780461339270?from=/search
+                    - generic [ref=e633]: Queso Granulado Mantecoso, 400 g
+                  - generic [ref=e635]:
+                    - generic [ref=e638]:
+                      - generic [ref=e639]:
+                        - img "Queso Granulado Mantecoso, 400 g"
+                      - button "Agregar al carro - Queso Granulado Mantecoso, 400 g" [ref=e642] [cursor=pointer]:
+                        - generic "agregar" [ref=e643]: 
+                        - generic [ref=e644]: Agregar
+                    - generic [ref=e646]:
+                      - generic [ref=e648]:
+                        - generic [ref=e649]: $4.490
+                        - generic [ref=e650]: precio actual $4.490
+                        - generic [ref=e651]: $11.225 x kg
+                      - generic [ref=e652]: Lider
+                      - generic [ref=e653]: Queso Granulado Mantecoso, 400 g
+                - group [ref=e656]:
+                  - link "Queso Mozzarella Granulado, 400 g" [ref=e657] [cursor=pointer]:
+                    - /url: /ip/quesos/00780461339269?from=/search
+                    - generic [ref=e658]: Queso Mozzarella Granulado, 400 g
+                  - generic [ref=e660]:
+                    - generic [ref=e663]:
+                      - generic [ref=e664]:
+                        - img "Queso Mozzarella Granulado, 400 g"
+                      - button "Agregar al carro - Queso Mozzarella Granulado, 400 g" [ref=e667] [cursor=pointer]:
+                        - generic "agregar" [ref=e668]: 
+                        - generic [ref=e669]: Agregar
+                    - generic [ref=e671]:
+                      - generic [ref=e673]:
+                        - generic [ref=e674]: $5.390
+                        - generic [ref=e675]: precio actual $5.390
+                        - generic [ref=e676]: $13.475 x kg
+                      - generic [ref=e677]: Lider
+                      - generic [ref=e678]: Queso Mozzarella Granulado, 400 g
+                - group [ref=e681]:
+                  - link "Queso Mozzarella Granulado, 400 g" [ref=e682] [cursor=pointer]:
+                    - /url: /ip/quesos/00780293000415?from=/search
+                    - generic [ref=e683]: Queso Mozzarella Granulado, 400 g
+                  - generic [ref=e685]:
+                    - generic [ref=e688]:
+                      - generic [ref=e689]:
+                        - img "Queso Mozzarella Granulado, 400 g"
+                      - button "Agregar al carro - Queso Mozzarella Granulado, 400 g" [ref=e692] [cursor=pointer]:
+                        - generic "agregar" [ref=e693]: 
+                        - generic [ref=e694]: Agregar
+                    - generic [ref=e696]:
+                      - generic [ref=e698]:
+                        - generic [ref=e699]: $5.990
+                        - generic [ref=e700]: precio actual $5.990
+                        - generic [ref=e701]: $14.975 x kg
+                      - generic [ref=e702]: Quillayes
+                      - generic [ref=e703]: Queso Mozzarella Granulado, 400 g
+                - group [ref=e706]:
+                  - link "Queso Gauda Granulado, 250 g" [ref=e707] [cursor=pointer]:
+                    - /url: /ip/quesos/00780461339051?from=/search
+                    - generic [ref=e708]: Queso Gauda Granulado, 250 g
+                  - generic [ref=e710]:
+                    - generic [ref=e711]:
+                      - generic [ref=e713]:
+                        - generic [ref=e715]: 
+                        - text: Rebaja
+                      - generic [ref=e716]:
+                        - generic [ref=e717]:
+                          - img "Queso Gauda Granulado, 250 g"
+                        - button "Agregar al carro - Queso Gauda Granulado, 250 g" [ref=e720] [cursor=pointer]:
+                          - generic "agregar" [ref=e721]: 
+                          - generic [ref=e722]: Agregar
+                    - generic [ref=e724]:
+                      - generic [ref=e726]:
+                        - generic [ref=e727]: $2.690
+                        - generic [ref=e728]: precio actual $2.690, Costaba $3.190
+                        - generic [ref=e729]: $10.760 x kg
+                        - generic [ref=e730]: $3.190
+                        - generic [ref=e731]: Ahorra $500
+                      - generic [ref=e732]: La Vaquita
+                      - generic [ref=e733]: Queso Gauda Granulado, 250 g
+                - group [ref=e736]:
+                  - link "Queso Mozzarella Granulado, 200 g" [ref=e737] [cursor=pointer]:
+                    - /url: /ip/quesos/00780293000438?from=/search
+                    - generic [ref=e738]: Queso Mozzarella Granulado, 200 g
+                  - generic [ref=e740]:
+                    - generic [ref=e743]:
+                      - generic [ref=e744]:
+                        - img "Queso Mozzarella Granulado, 200 g"
+                      - button "Agregar al carro - Queso Mozzarella Granulado, 200 g" [ref=e747] [cursor=pointer]:
+                        - generic "agregar" [ref=e748]: 
+                        - generic [ref=e749]: Agregar
+                    - generic [ref=e751]:
+                      - generic [ref=e753]:
+                        - generic [ref=e754]: $3.590
+                        - generic [ref=e755]: precio actual $3.590
+                        - generic [ref=e756]: $17.950 x kg
+                      - generic [ref=e757]: Quillayes
+                      - generic [ref=e758]: Queso Mozzarella Granulado, 200 g
+                - group [ref=e761]:
+                  - link "Queso Mantecoso Granulado, 400 g" [ref=e762] [cursor=pointer]:
+                    - /url: /ip/quesos/00780293000453?from=/search
+                    - generic [ref=e763]: Queso Mantecoso Granulado, 400 g
+                  - generic [ref=e765]:
+                    - generic [ref=e766]:
+                      - generic [ref=e768]:
+                        - generic [ref=e770]: 
+                        - text: Rebaja
+                      - generic [ref=e771]:
+                        - generic [ref=e772]:
+                          - img "Queso Mantecoso Granulado, 400 g"
+                        - button "Agregar al carro - Queso Mantecoso Granulado, 400 g" [ref=e775] [cursor=pointer]:
+                          - generic "agregar" [ref=e776]: 
+                          - generic [ref=e777]: Agregar
+                    - generic [ref=e779]:
+                      - generic [ref=e781]:
+                        - generic [ref=e782]: $4.890
+                        - generic [ref=e783]: precio actual $4.890, Costaba $5.750
+                        - generic [ref=e784]: $12.225 x kg
+                        - generic [ref=e785]: $5.750
+                        - generic [ref=e786]: Ahorra $860
+                      - generic [ref=e787]: Quillayes
+                      - generic [ref=e788]: Queso Mantecoso Granulado, 400 g
+                - group [ref=e791]:
+                  - link "Queso Mozzarella Granulado, 125 g" [ref=e792] [cursor=pointer]:
+                    - /url: /ip/quesos/00800267000886?from=/search
+                    - generic [ref=e793]: Queso Mozzarella Granulado, 125 g
+                  - generic [ref=e795]:
+                    - generic [ref=e798]:
+                      - generic [ref=e799]:
+                        - img "Queso Mozzarella Granulado, 125 g"
+                      - button "Agregar al carro - Queso Mozzarella Granulado, 125 g" [ref=e802] [cursor=pointer]:
+                        - generic "agregar" [ref=e803]: 
+                        - generic [ref=e804]: Agregar
+                    - generic [ref=e806]:
+                      - generic [ref=e808]:
+                        - generic [ref=e809]: $2.650
+                        - generic [ref=e810]: precio actual $2.650
+                        - generic [ref=e811]: $21.200 x kg
+                      - generic [ref=e812]: Granaloro
+                      - generic [ref=e813]: Queso Mozzarella Granulado, 125 g
+                - group [ref=e816]:
+                  - link "Sucedáneo De Queso Granulado Para Pizza Vegetal, 200 g" [ref=e817] [cursor=pointer]:
+                    - /url: /ip/quesos/00780293000494?from=/search
+                    - generic [ref=e818]: Sucedáneo De Queso Granulado Para Pizza Vegetal, 200 g
+                  - generic [ref=e820]:
+                    - generic [ref=e823]:
+                      - generic [ref=e824]:
+                        - img "Sucedáneo De Queso Granulado Para Pizza Vegetal, 200 g"
+                      - button "Agregar al carro - Sucedáneo De Queso Granulado Para Pizza Vegetal, 200 g" [ref=e827] [cursor=pointer]:
+                        - generic "agregar" [ref=e828]: 
+                        - generic [ref=e829]: Agregar
+                    - generic [ref=e831]:
+                      - generic [ref=e833]:
+                        - generic [ref=e834]: $3.450
+                        - generic [ref=e835]: precio actual $3.450
+                        - generic [ref=e836]: $17.250 x kg
+                      - generic [ref=e837]: Quillayes
+                      - generic [ref=e838]: Sucedáneo De Queso Granulado Para Pizza Vegetal, 200 g
+                - group [ref=e841]:
+                  - link "Queso Mantecoso Granulado, 250 g" [ref=e842] [cursor=pointer]:
+                    - /url: /ip/quesos/00780290100085?from=/search
+                    - generic [ref=e843]: Queso Mantecoso Granulado, 250 g
+                  - generic [ref=e845]:
+                    - generic [ref=e848]:
+                      - generic [ref=e849]:
+                        - img "Queso Mantecoso Granulado, 250 g"
+                      - button "Agregar al carro - Queso Mantecoso Granulado, 250 g" [ref=e852] [cursor=pointer]:
+                        - generic "agregar" [ref=e853]: 
+                        - generic [ref=e854]: Agregar
+                    - generic [ref=e856]:
+                      - generic [ref=e858]:
+                        - generic [ref=e859]: $3.590
+                        - generic [ref=e860]: precio actual $3.590
+                        - generic [ref=e861]: $14.360 x kg
+                      - generic [ref=e862]: Matthei
+                      - generic [ref=e863]: Queso Mantecoso Granulado, 250 g
+                - group [ref=e866]:
+                  - link "Queso Mozzarella Granulado, 500 g" [ref=e867] [cursor=pointer]:
+                    - /url: /ip/quesos/00780208000067?from=/search
+                    - generic [ref=e868]: Queso Mozzarella Granulado, 500 g
+                  - generic [ref=e870]:
+                    - generic [ref=e873]:
+                      - generic [ref=e874]:
+                        - img "Queso Mozzarella Granulado, 500 g"
+                      - button "Agregar al carro - Queso Mozzarella Granulado, 500 g" [ref=e877] [cursor=pointer]:
+                        - generic "agregar" [ref=e878]: 
+                        - generic [ref=e879]: Agregar
+                    - generic [ref=e881]:
+                      - generic [ref=e883]:
+                        - generic [ref=e884]: $9.290
+                        - generic [ref=e885]: precio actual $9.290
+                        - generic [ref=e886]: $18.580 x kg
+                      - generic [ref=e887]: Los Tilos
+                      - generic [ref=e888]: Queso Mozzarella Granulado, 500 g
+                - group [ref=e891]:
+                  - link "Queso Gauda Granulado, 160 g" [ref=e892] [cursor=pointer]:
+                    - /url: /ip/quesos/00780467219029?from=/search
+                    - generic [ref=e893]: Queso Gauda Granulado, 160 g
+                  - generic [ref=e895]:
+                    - generic [ref=e896]:
+                      - generic [ref=e898]:
+                        - generic [ref=e900]: 
+                        - text: Rebaja
+                      - generic [ref=e901]:
+                        - generic [ref=e902]:
+                          - img "Queso Gauda Granulado, 160 g"
+                        - button "Agregar al carro - Queso Gauda Granulado, 160 g" [ref=e905] [cursor=pointer]:
+                          - generic "agregar" [ref=e906]: 
+                          - generic [ref=e907]: Agregar
+                    - generic [ref=e909]:
+                      - generic [ref=e911]:
+                        - generic [ref=e912]: $1.750
+                        - generic [ref=e913]: precio actual $1.750, Costaba $2.050
+                        - generic [ref=e914]: $10.938 x kg
+                        - generic [ref=e915]: $2.050
+                        - generic [ref=e916]: Ahorra $300
+                      - generic [ref=e917]: Doña Paula
+                      - generic [ref=e918]: Queso Gauda Granulado, 160 g
+                - group [ref=e921]:
+                  - link "Queso Gauda Granulado, 320 g" [ref=e922] [cursor=pointer]:
+                    - /url: /ip/quesos/00780467219028?from=/search
+                    - generic [ref=e923]: Queso Gauda Granulado, 320 g
+                  - generic [ref=e925]:
+                    - generic [ref=e928]:
+                      - generic [ref=e929]:
+                        - img "Queso Gauda Granulado, 320 g"
+                      - button "Agregar al carro - Queso Gauda Granulado, 320 g" [ref=e932] [cursor=pointer]:
+                        - generic "agregar" [ref=e933]: 
+                        - generic [ref=e934]: Agregar
+                    - generic [ref=e936]:
+                      - generic [ref=e938]:
+                        - generic [ref=e939]: $3.890
+                        - generic [ref=e940]: precio actual $3.890
+                        - generic [ref=e941]: $12.156 x kg
+                      - generic [ref=e942]: Doña Paula
+                      - generic [ref=e943]: Queso Gauda Granulado, 320 g
+  - alert [ref=e952]: Supermercado

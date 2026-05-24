@@ -1,0 +1,203 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: pan molde
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 16 productos Monto total $44.780" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: "16"
+              - generic [ref=e44]: $44.780
+    - generic [ref=e45]:
+      - generic [ref=e46]:
+        - separator [ref=e47]
+        - generic [ref=e48]:
+          - generic [ref=e49]:
+            - button "Despacho a Domicilio MARTIN DE ZAMORA 5595" [ref=e50] [cursor=pointer]:
+              - generic [ref=e52]:
+                - img [ref=e53]
+                - generic [ref=e54]: Despacho a Domicilio
+                - generic [ref=e55]: 
+                - generic [ref=e56]: "|"
+                - generic [ref=e58]:
+                  - img [ref=e59]
+                  - generic [ref=e60]: MARTIN DE ZAMORA 5595
+              - text: 
+            - generic:   
+            - navigation "Secundario" [ref=e63]:
+              - list [ref=e64]:
+                - listitem [ref=e65]:
+                  - link "Tarjeta Lider Bci" [ref=e67] [cursor=pointer]:
+                    - /url: https://tarjetadigital.liderbciserviciosfinancieros.cl/ingreso-de-datos?utm_source=Lidercl_sod_header&utm_medium=lidercl
+                - listitem [ref=e68]:
+                  - link "Mi Club" [ref=e70] [cursor=pointer]:
+                    - /url: https://www.miclublider.cl/
+                - listitem [ref=e71]:
+                  - link "Centro de ayuda" [ref=e73] [cursor=pointer]:
+                    - /url: /ayuda
+          - img [ref=e76]
+      - main [ref=e79]:
+        - generic [ref=e80]:
+          - generic [ref=e83]:
+            - generic [ref=e85]:
+              - generic [ref=e88]:
+                - generic [ref=e91]:
+                  - link "FUCHS" [ref=e92] [cursor=pointer]:
+                    - /url: https://super.lider.cl/wapcrs/track?bt=1&eventST=click&plmt=sb-search-top~desktop~&pos=1&tax=73535247_22477361_83966286&rdf=1&rd=https%3A%2F%2Fsuper.lider.cl%2Fbrowse%2Fpanaderia-y-pasteleria%2Fpanaderia-envasada%2F73535247_22477361%3Ffacet%3Dbrand%253AFuchs&adUid=ff7c0afd-591d-4752-90d9-cb88cda266e2&mloc=sb-search-top&pltfm=desktop&pgId=pan%20molde&pt=search&spQs=B-0ORuQ6BMVYu5ErviP0wmMPud2Cby730agPVAlZH-INDbDfiVnc_2GrTPTBLVCs2i2RT35jEoAxJm726nLA-8IXeTem34u4Cbx6IWetDbgvziro--2XioZ1noclf5UwUdxWKvsopWuuC6Lu4SWkudVsxodTO0uzt2qjHvi1qAVwjxwuF_3seriCOPWxCiVwlU9k8uTobp7ugtICFmhImQ&storeId=0000000088&tn=WCL_GR&wtn=kltzop&bkt=ace1_default%7Cace2_default%7Cace3_default&addlInfo=~sbaItems%7C00780348000139%7C00780348002007%7C00780348000144%7C00780348000143%7C00780348005005%7C00780348000142%7C00780348000141~
+                    - img "FUCHS" [ref=e93]
+                  - generic [ref=e94]:
+                    - link "Fuchs, expertos en granos y semillas Patrocinado por FUCHS" [ref=e95] [cursor=pointer]:
+                      - /url: https://super.lider.cl/wapcrs/track?bt=1&eventST=click&plmt=sb-search-top~desktop~&pos=1&tax=73535247_22477361_83966286&rdf=1&rd=https%3A%2F%2Fsuper.lider.cl%2Fbrowse%2Fpanaderia-y-pasteleria%2Fpanaderia-envasada%2F73535247_22477361%3Ffacet%3Dbrand%253AFuchs&adUid=ff7c0afd-591d-4752-90d9-cb88cda266e2&mloc=sb-search-top&pltfm=desktop&pgId=pan%20molde&pt=search&spQs=B-0ORuQ6BMVYu5ErviP0wmMPud2Cby730agPVAlZH-INDbDfiVnc_2GrTPTBLVCs2i2RT35jEoAxJm726nLA-8IXeTem34u4Cbx6IWetDbgvziro--2XioZ1noclf5UwUdxWKvsopWuuC6Lu4SWkudVsxodTO0uzt2qjHvi1qAVwjxwuF_3seriCOPWxCiVwlU9k8uTobp7ugtICFmhImQ&storeId=0000000088&tn=WCL_GR&wtn=kltzop&bkt=ace1_default%7Cace2_default%7Cace3_default&addlInfo=~sbaItems%7C00780348000139%7C00780348002007%7C00780348000144%7C00780348000143%7C00780348005005%7C00780348000142%7C00780348000141~
+                      - generic [ref=e96]:
+                        - generic [ref=e98]: Fuchs, expertos en granos y semillas
+                        - generic [ref=e100]: Patrocinado por FUCHS
+                    - link "Mostrar más":
+                      - /url: https://super.lider.cl/wapcrs/track?bt=1&eventST=click&plmt=sb-search-top~desktop~&pos=1&tax=73535247_22477361_83966286&rdf=1&rd=https%3A%2F%2Fsuper.lider.cl%2Fbrowse%2Fpanaderia-y-pasteleria%2Fpanaderia-envasada%2F73535247_22477361%3Ffacet%3Dbrand%253AFuchs&adUid=ff7c0afd-591d-4752-90d9-cb88cda266e2&mloc=sb-search-top&pltfm=desktop&pgId=pan%20molde&pt=search&spQs=B-0ORuQ6BMVYu5ErviP0wmMPud2Cby730agPVAlZH-INDbDfiVnc_2GrTPTBLVCs2i2RT35jEoAxJm726nLA-8IXeTem34u4Cbx6IWetDbgvziro--2XioZ1noclf5UwUdxWKvsopWuuC6Lu4SWkudVsxodTO0uzt2qjHvi1qAVwjxwuF_3seriCOPWxCiVwlU9k8uTobp7ugtICFmhImQ&storeId=0000000088&tn=WCL_GR&wtn=kltzop&bkt=ace1_default%7Cace2_default%7Cace3_default&addlInfo=~sbaItems%7C00780348000139%7C00780348002007%7C00780348000144%7C00780348000143%7C00780348005005%7C00780348000142%7C00780348000141~
+                      - button "Mostrar más" [ref=e102] [cursor=pointer]
+                - generic [ref=e104]:
+                  - group [ref=e107]:
+                    - generic [ref=e109]:
+                      - link "Pan De Molde Calabaza Nuez, 350 g" [ref=e111] [cursor=pointer]:
+                        - /url: https://super.lider.cl/wapcrs/track?bt=1&eventST=click&plmt=sb-search-top~desktop~&pos=2&tax=73535247_22477361_83966286&rdf=1&rd=https%3A%2F%2Fsuper.lider.cl%2Fip%2Fpanaderia-envasada%2F00780348000139&adUid=ff7c0afd-591d-4752-90d9-cb88cda266e2&mloc=sb-search-top&pltfm=desktop&pgId=pan%20molde&pt=search&spQs=MnnYnbQ1goTpt4PqGmrGOTvBnLXoI2DjF4DGmw-6KxgAUXG2zbv9EtHyJZImULtLsDxAKW6hWGaB-kN2-HkINR-Ha9HAiiy4O67QommDUIiH0eCNmSTqp1mMPs0T0PxzNOfHqNNqZLeBvsIuIeZKbcDLrCtdmm-DvH_V3qsDuMzOil4Sdl250HOvNdEJGht8UxLq5o2n0APUifF_eoTgiQ&storeId=0000000088&tn=WCL_GR&wtn=kltzop&bkt=ace1_default%7Cace2_default%7Cace3_default&/ip/panaderia-envasada/00780348000139
+                        - generic [ref=e112]: Pan De Molde Calabaza Nuez, 350 g
+                      - button "Agregar al carro - Pan De Molde Calabaza Nuez, 350 g" [ref=e117] [cursor=pointer]:
+                        - generic "agregar" [ref=e118]: 
+                        - generic [ref=e119]: Agregar
+                      - generic [ref=e120]:
+                        - generic [ref=e122]:
+                          - generic [ref=e123]: $2.290
+                          - generic [ref=e124]: precio actual $2.290
+                        - generic [ref=e126]: Pan De Molde Calabaza Nuez, 350 g
+                  - group [ref=e129]:
+                    - generic [ref=e131]:
+                      - link "Pan De Molde Integral Stutgart 1 Un, 650 g" [ref=e133] [cursor=pointer]:
+                        - /url: https://super.lider.cl/wapcrs/track?bt=1&eventST=click&plmt=sb-search-top~desktop~&pos=3&tax=73535247_22477361_83966286&rdf=1&rd=https%3A%2F%2Fsuper.lider.cl%2Fip%2Fpanaderia-envasada%2F00780348002007&adUid=ff7c0afd-591d-4752-90d9-cb88cda266e2&mloc=sb-search-top&pltfm=desktop&pgId=pan%20molde&pt=search&spQs=MnnYnbQ1goTpt4PqGmrGOc_Icvs83oZSJbWPL_0NX-IAUXG2zbv9EtHyJZImULtLsDxAKW6hWGaB-kN2-HkINR-Ha9HAiiy4O67QommDUIiH0eCNmSTqp1mMPs0T0PxzNOfHqNNqZLeBvsIuIeZKbcDLrCtdmm-DvH_V3qsDuMzOil4Sdl250HOvNdEJGht8UxLq5o2n0APUifF_eoTgiQ&storeId=0000000088&tn=WCL_GR&wtn=kltzop&bkt=ace1_default%7Cace2_default%7Cace3_default&/ip/panaderia-envasada/00780348002007
+                        - generic [ref=e134]: Pan De Molde Integral Stutgart 1 Un, 650 g
+                      - button "Agregar al carro - Pan De Molde Integral Stutgart 1 Un, 650 g" [ref=e139] [cursor=pointer]:
+                        - generic "agregar" [ref=e140]: 
+                        - generic [ref=e141]: Agregar
+                      - generic [ref=e142]:
+                        - generic [ref=e144]:
+                          - generic [ref=e145]: $2.850
+                          - generic [ref=e146]: precio actual $2.850
+                        - generic [ref=e148]: Pan De Molde Integral Stutgart 1 Un, 650 g
+                  - group [ref=e151]:
+                    - generic [ref=e153]:
+                      - link "Pan de Molde Linaza Chía, 350 g" [ref=e155] [cursor=pointer]:
+                        - /url: https://super.lider.cl/wapcrs/track?bt=1&eventST=click&plmt=sb-search-top~desktop~&pos=4&tax=73535247_22477361_83966286&rdf=1&rd=https%3A%2F%2Fsuper.lider.cl%2Fip%2Fpanaderia-envasada%2F00780348000144&adUid=ff7c0afd-591d-4752-90d9-cb88cda266e2&mloc=sb-search-top&pltfm=desktop&pgId=pan%20molde&pt=search&spQs=MnnYnbQ1goTpt4PqGmrGObTab93Qq6RiUxEh7FPNXBUAUXG2zbv9EtHyJZImULtLsDxAKW6hWGaB-kN2-HkINR-Ha9HAiiy4O67QommDUIiH0eCNmSTqp1mMPs0T0PxzNOfHqNNqZLeBvsIuIeZKbcDLrCtdmm-DvH_V3qsDuMzOil4Sdl250HOvNdEJGht8UxLq5o2n0APUifF_eoTgiQ&storeId=0000000088&tn=WCL_GR&wtn=kltzop&bkt=ace1_default%7Cace2_default%7Cace3_default&/ip/panaderia-envasada/00780348000144
+                        - generic [ref=e156]: Pan de Molde Linaza Chía, 350 g
+                      - button "Agregar al carro - Pan de Molde Linaza Chía, 350 g" [ref=e161] [cursor=pointer]:
+                        - generic "agregar" [ref=e162]: 
+                        - generic [ref=e163]: Agregar
+                      - generic [ref=e164]:
+                        - generic [ref=e166]:
+                          - generic [ref=e167]: $2.290
+                          - generic [ref=e168]: precio actual $2.290
+                        - generic [ref=e170]: Pan de Molde Linaza Chía, 350 g
+                  - group [ref=e173]:
+                    - generic [ref=e176]:
+                      - generic [ref=e178]: 
+                      - text: Rebaja
+                    - generic [ref=e179]:
+                      - link "Pan De Molde Linaza Chía, 600 g" [ref=e181] [cursor=pointer]:
+                        - /url: https://super.lider.cl/wapcrs/track?bt=1&eventST=click&plmt=sb-search-top~desktop~&pos=5&tax=73535247_22477361_83966286&rdf=1&rd=https%3A%2F%2Fsuper.lider.cl%2Fip%2Fpanaderia-envasada%2F00780348000143&adUid=ff7c0afd-591d-4752-90d9-cb88cda266e2&mloc=sb-search-top&pltfm=desktop&pgId=pan%20molde&pt=search&spQs=MnnYnbQ1goTpt4PqGmrGOYbnmApinoXxggdtIR3Ej_4AUXG2zbv9EtHyJZImULtLsDxAKW6hWGaB-kN2-HkINR-Ha9HAiiy4O67QommDUIiH0eCNmSTqp1mMPs0T0PxzNOfHqNNqZLeBvsIuIeZKbcDLrCtdmm-DvH_V3qsDuMzOil4Sdl250HOvNdEJGht8UxLq5o2n0APUifF_eoTgiQ&storeId=0000000088&tn=WCL_GR&wtn=kltzop&bkt=ace1_default%7Cace2_default%7Cace3_default&/ip/panaderia-envasada/00780348000143
+                        - generic [ref=e182]: Pan De Molde Linaza Chía, 600 g
+                      - button "Agregar al carro - Pan De Molde Linaza Chía, 600 g" [ref=e187] [cursor=pointer]:
+                        - generic "agregar" [ref=e188]: 
+                        - generic [ref=e189]: Agregar
+                      - generic [ref=e190]:
+                        - generic [ref=e192]:
+                          - generic [ref=e193]: $2.590
+                          - generic [ref=e194]: precio actual $2.590, Costaba $2.890
+                          - generic [ref=e195]: $2.890
+                        - generic [ref=e197]: Pan De Molde Linaza Chía, 600 g
+              - separator [ref=e198]
+            - region "Sección de ordenar y filtrar" [ref=e200]:
+              - button "Precio" [ref=e203]:
+                - generic [ref=e205]: 
+                - generic [ref=e206]: Precio
+                - generic [ref=e207]: 
+              - button "Marca" [ref=e210]:
+                - generic [ref=e211]: Marca
+                - generic [ref=e212]: 
+              - generic [ref=e213]:
+                - generic [ref=e214]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e216]:
+                  - text: Más relevantes
+                  - generic [ref=e217]: 
+            - separator [ref=e218]
+          - generic [ref=e221]:
+            - generic [ref=e222]:
+              - generic [ref=e225]:
+                - generic [ref=e226]:
+                  - button "Precio" [ref=e229]:
+                    - generic [ref=e230]: Precio
+                    - img [ref=e231]: 
+                  - separator [ref=e232]
+                - generic [ref=e233]:
+                  - button "Campaña" [ref=e236]:
+                    - generic [ref=e237]: Campaña
+                    - img [ref=e238]: 
+                  - separator [ref=e239]
+                - generic [ref=e240]:
+                  - button "Marca" [ref=e243]:
+                    - generic [ref=e244]: Marca
+                    - img [ref=e245]: 
+                  - separator [ref=e246]
+                - generic [ref=e247]:
+                  - button "Categoría" [ref=e250]:
+                    - generic [ref=e251]: Categoría
+                    - img [ref=e252]: 
+                  - separator [ref=e253]
+              - region "cargando resultados de búsqueda" [ref=e255]
+            - navigation "paginación" [ref=e357]:
+              - list [ref=e358]:
+                - listitem [ref=e359]
+                - listitem [ref=e361]:
+                  - link "1" [ref=e362] [cursor=pointer]:
+                    - /url: /search?q=pan+molde&facet=fulfillment_method%3ADelivery
+                - listitem [ref=e363]:
+                  - link "Ir a la página 2" [ref=e364] [cursor=pointer]:
+                    - /url: /search?q=pan+molde&facet=fulfillment_method%3ADelivery&page=2
+                    - text: "2"
+                - listitem [ref=e365]:
+                  - link "Página siguiente" [ref=e366] [cursor=pointer]:
+                    - /url: /search?q=pan+molde&facet=fulfillment_method%3ADelivery&page=2
+                    - generic [ref=e367]: 
+  - alert [ref=e375]: Supermercado

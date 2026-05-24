@@ -1,0 +1,127 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: manzana fuji
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e81]:
+            - generic [ref=e84]:
+              - generic [ref=e85]:
+                - button "Precio" [ref=e88]:
+                  - generic [ref=e89]: Precio
+                  - img [ref=e90]: 
+                - separator [ref=e91]
+              - generic [ref=e92]:
+                - button "Marca" [ref=e95]:
+                  - generic [ref=e96]: Marca
+                  - img [ref=e97]: 
+                - separator [ref=e98]
+              - generic [ref=e99]:
+                - button "Categoría" [ref=e102]:
+                  - generic [ref=e103]: Categoría
+                  - img [ref=e104]: 
+                - separator [ref=e105]
+            - generic [ref=e108]:
+              - heading "Resultados para manzana fuji (2)" [level=2] [ref=e116]: Resultados para manzana fuji(2)
+              - generic [ref=e117]:
+                - group [ref=e120]:
+                  - link "Manzana Fuji Granel." [ref=e121] [cursor=pointer]:
+                    - /url: /ip/frutas/00200274000000?from=/search
+                    - generic [ref=e122]: Manzana Fuji Granel.
+                  - generic [ref=e124]:
+                    - generic [ref=e127]:
+                      - img "Manzana Fuji Granel." [ref=e129]
+                      - button "Agregar al carro - Manzana Fuji Granel." [ref=e132] [cursor=pointer]:
+                        - generic "agregar" [ref=e133]: 
+                        - generic [ref=e134]: Agregar
+                    - generic [ref=e136]:
+                      - generic [ref=e138]:
+                        - generic [ref=e139]: $2.490/kg
+                        - generic [ref=e140]: precio actual $2.490/kg
+                        - generic [ref=e141]: $2.490 x kg
+                      - generic [ref=e142]: Multi Marca
+                      - generic [ref=e143]: Manzana Fuji Granel.
+                - group [ref=e146]:
+                  - link "Manzana Fuji Bolsa., 1 kg" [ref=e147] [cursor=pointer]:
+                    - /url: /ip/frutas/00040005014754?from=/search
+                    - generic [ref=e148]: Manzana Fuji Bolsa., 1 kg
+                  - generic [ref=e150]:
+                    - generic [ref=e151]:
+                      - generic [ref=e152]:
+                        - generic [ref=e154]: Combina 2 x $3.000
+                        - button "Combina 2 x $3.000. Ver combinaciones aceptadas y coincidir productos." [ref=e155] [cursor=pointer]: Combinar
+                      - generic [ref=e156]:
+                        - img "Manzana Fuji Bolsa., 1 kg" [ref=e158]
+                        - button "Agregar al carro - Manzana Fuji Bolsa., 1 kg" [ref=e161] [cursor=pointer]:
+                          - generic "agregar" [ref=e162]: 
+                          - generic [ref=e163]: Agregar
+                    - generic [ref=e165]:
+                      - generic [ref=e167]:
+                        - generic [ref=e168]: $1.990
+                        - generic [ref=e169]: precio actual $1.990
+                        - generic [ref=e170]: $1.990 x kg
+                      - generic [ref=e171]: Multi Marca
+                      - generic [ref=e172]: Manzana Fuji Bolsa., 1 kg
+  - alert [ref=e181]

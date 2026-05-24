@@ -1,0 +1,498 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: atun lomitos lata
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e81]:
+            - generic [ref=e84]:
+              - generic [ref=e85]:
+                - button "Precio" [ref=e88]:
+                  - generic [ref=e89]: Precio
+                  - img [ref=e90]: 
+                - separator [ref=e91]
+              - generic [ref=e92]:
+                - button "Campaña" [ref=e95]:
+                  - generic [ref=e96]: Campaña
+                  - img [ref=e97]: 
+                - separator [ref=e98]
+              - generic [ref=e99]:
+                - button "Marca" [ref=e102]:
+                  - generic [ref=e103]: Marca
+                  - img [ref=e104]: 
+                - separator [ref=e105]
+              - generic [ref=e106]:
+                - button "Categoría" [ref=e109]:
+                  - generic [ref=e110]: Categoría
+                  - img [ref=e111]: 
+                - separator [ref=e112]
+            - generic [ref=e115]:
+              - heading "Resultados para atun lomitos lata (22)" [level=2] [ref=e123]: Resultados para atun lomitos lata(22)
+              - generic [ref=e124]:
+                - group [ref=e127]:
+                  - link "Atún Lomitos Agua Lata, Drenado 104 g - Neto 160 g" [ref=e128] [cursor=pointer]:
+                    - /url: /ip/conservas/00885846300345?from=/search
+                    - generic [ref=e129]: Atún Lomitos Agua Lata, Drenado 104 g - Neto 160 g
+                  - generic [ref=e131]:
+                    - generic [ref=e134]:
+                      - img "Atún Lomitos Agua Lata, Drenado 104 g - Neto 160 g" [ref=e136]
+                      - button "Agregar al carro - Atún Lomitos Agua Lata, Drenado 104 g - Neto 160 g" [ref=e139] [cursor=pointer]:
+                        - generic "agregar" [ref=e140]: 
+                        - generic [ref=e141]: Agregar
+                    - generic [ref=e143]:
+                      - generic [ref=e145]:
+                        - generic [ref=e146]: $1.350
+                        - generic [ref=e147]: precio actual $1.350
+                        - generic [ref=e148]: $12.981 x kg
+                      - generic [ref=e149]: Lider
+                      - generic [ref=e150]: Atún Lomitos Agua Lata, Drenado 104 g - Neto 160 g
+                - group [ref=e153]:
+                  - link "Atún Lomitos Agua Lata, Drenado 91 g - Neto 140 g" [ref=e154] [cursor=pointer]:
+                    - /url: /ip/conservas/00780465140016?from=/search
+                    - generic [ref=e155]: Atún Lomitos Agua Lata, Drenado 91 g - Neto 140 g
+                  - generic [ref=e157]:
+                    - generic [ref=e160]:
+                      - img "Atún Lomitos Agua Lata, Drenado 91 g - Neto 140 g" [ref=e162]
+                      - button "Agregar al carro - Atún Lomitos Agua Lata, Drenado 91 g - Neto 140 g" [ref=e165] [cursor=pointer]:
+                        - generic "agregar" [ref=e166]: 
+                        - generic [ref=e167]: Agregar
+                    - generic [ref=e169]:
+                      - generic [ref=e171]:
+                        - generic [ref=e172]: $1.000
+                        - generic [ref=e173]: precio actual $1.000
+                        - generic [ref=e174]: $10.989 x kg
+                      - generic [ref=e175]: La Romana
+                      - generic [ref=e176]: Atún Lomitos Agua Lata, Drenado 91 g - Neto 140 g
+                - group [ref=e179]:
+                  - link "Atún Lomitos Aceite Lata, Drenado 104 g - Neto 160 g" [ref=e180] [cursor=pointer]:
+                    - /url: /ip/conservas/00885846300344?from=/search
+                    - generic [ref=e181]: Atún Lomitos Aceite Lata, Drenado 104 g - Neto 160 g
+                  - generic [ref=e183]:
+                    - generic [ref=e186]:
+                      - img "Atún Lomitos Aceite Lata, Drenado 104 g - Neto 160 g" [ref=e188]
+                      - button "Agregar al carro - Atún Lomitos Aceite Lata, Drenado 104 g - Neto 160 g" [ref=e191] [cursor=pointer]:
+                        - generic "agregar" [ref=e192]: 
+                        - generic [ref=e193]: Agregar
+                    - generic [ref=e195]:
+                      - generic [ref=e197]:
+                        - generic [ref=e198]: $1.350
+                        - generic [ref=e199]: precio actual $1.350
+                        - generic [ref=e200]: $12.981 x kg
+                      - generic [ref=e201]: Lider
+                      - generic [ref=e202]: Atún Lomitos Aceite Lata, Drenado 104 g - Neto 160 g
+                - group [ref=e205]:
+                  - link "Atún Lomito Aceite Lata, Drenado 104 g - Neto 160 g" [ref=e206] [cursor=pointer]:
+                    - /url: /ip/conservas/00770236700390?from=/search
+                    - generic [ref=e207]: Atún Lomito Aceite Lata, Drenado 104 g - Neto 160 g
+                  - generic [ref=e209]:
+                    - generic [ref=e212]:
+                      - img "Atún Lomito Aceite Lata, Drenado 104 g - Neto 160 g" [ref=e214]
+                      - button "Agregar al carro - Atún Lomito Aceite Lata, Drenado 104 g - Neto 160 g" [ref=e217] [cursor=pointer]:
+                        - generic "agregar" [ref=e218]: 
+                        - generic [ref=e219]: Agregar
+                    - generic [ref=e221]:
+                      - generic [ref=e223]:
+                        - generic [ref=e224]: $1.850
+                        - generic [ref=e225]: precio actual $1.850
+                        - generic [ref=e226]: $17.788 x kg
+                      - generic [ref=e227]: Van Camp's
+                      - generic [ref=e228]: Atún Lomito Aceite Lata, Drenado 104 g - Neto 160 g
+                - group [ref=e231]:
+                  - link "Atún Lomitos Agua Lata, Drenado 104 g - Neto 160 g" [ref=e232] [cursor=pointer]:
+                    - /url: /ip/conservas/00780126800204?from=/search
+                    - generic [ref=e233]: Atún Lomitos Agua Lata, Drenado 104 g - Neto 160 g
+                  - generic [ref=e235]:
+                    - generic [ref=e238]:
+                      - img "Atún Lomitos Agua Lata, Drenado 104 g - Neto 160 g" [ref=e240]
+                      - button "Agregar al carro - Atún Lomitos Agua Lata, Drenado 104 g - Neto 160 g" [ref=e243] [cursor=pointer]:
+                        - generic "agregar" [ref=e244]: 
+                        - generic [ref=e245]: Agregar
+                    - generic [ref=e247]:
+                      - generic [ref=e249]:
+                        - generic [ref=e250]: $1.550
+                        - generic [ref=e251]: precio actual $1.550
+                        - generic [ref=e252]: $14.904 x kg
+                      - generic [ref=e253]: Angelmo
+                      - generic [ref=e254]: Atún Lomitos Agua Lata, Drenado 104 g - Neto 160 g
+                - group [ref=e257]:
+                  - link "Atún Lomitos en Aceite Lata, Drenado 91 g - Neto 140 g" [ref=e258] [cursor=pointer]:
+                    - /url: /ip/conservas/00040000114307?from=/search
+                    - generic [ref=e259]: Atún Lomitos en Aceite Lata, Drenado 91 g - Neto 140 g
+                  - generic [ref=e261]:
+                    - generic [ref=e264]:
+                      - img "Atún Lomitos en Aceite Lata, Drenado 91 g - Neto 140 g" [ref=e266]
+                      - button "Agregar al carro - Atún Lomitos en Aceite Lata, Drenado 91 g - Neto 140 g" [ref=e269] [cursor=pointer]:
+                        - generic "agregar" [ref=e270]: 
+                        - generic [ref=e271]: Agregar
+                    - generic [ref=e273]:
+                      - generic [ref=e275]:
+                        - generic [ref=e276]: $1.000
+                        - generic [ref=e277]: precio actual $1.000
+                        - generic [ref=e278]: $10.989 x kg
+                      - generic [ref=e279]: Lider
+                      - generic [ref=e280]: Atún Lomitos en Aceite Lata, Drenado 91 g - Neto 140 g
+                - group [ref=e283]:
+                  - link "Atún Lomitos en Agua, Drenado 91 g - Neto 140 g" [ref=e284] [cursor=pointer]:
+                    - /url: /ip/conservas/00040000114316?from=/search
+                    - generic [ref=e285]: Atún Lomitos en Agua, Drenado 91 g - Neto 140 g
+                  - generic [ref=e287]:
+                    - generic [ref=e290]:
+                      - img "Atún Lomitos en Agua, Drenado 91 g - Neto 140 g" [ref=e292]
+                      - button "Agregar al carro - Atún Lomitos en Agua, Drenado 91 g - Neto 140 g" [ref=e295] [cursor=pointer]:
+                        - generic "agregar" [ref=e296]: 
+                        - generic [ref=e297]: Agregar
+                    - generic [ref=e299]:
+                      - generic [ref=e301]:
+                        - generic [ref=e302]: $1.000
+                        - generic [ref=e303]: precio actual $1.000
+                        - generic [ref=e304]: $10.989 x kg
+                      - generic [ref=e305]: Lider
+                      - generic [ref=e306]: Atún Lomitos en Agua, Drenado 91 g - Neto 140 g
+                - group [ref=e309]:
+                  - link "Atún Agua Lata, Drenado 104 g - Neto 160 g" [ref=e310] [cursor=pointer]:
+                    - /url: /ip/conservas/00770236700391?from=/search
+                    - generic [ref=e311]: Atún Agua Lata, Drenado 104 g - Neto 160 g
+                  - generic [ref=e313]:
+                    - generic [ref=e316]:
+                      - img "Atún Agua Lata, Drenado 104 g - Neto 160 g" [ref=e318]
+                      - button "Agregar al carro - Atún Agua Lata, Drenado 104 g - Neto 160 g" [ref=e321] [cursor=pointer]:
+                        - generic "agregar" [ref=e322]: 
+                        - generic [ref=e323]: Agregar
+                    - generic [ref=e325]:
+                      - generic [ref=e327]:
+                        - generic [ref=e328]: $1.850
+                        - generic [ref=e329]: precio actual $1.850
+                        - generic [ref=e330]: $17.788 x kg
+                      - generic [ref=e331]: Van Camp's
+                      - generic [ref=e332]: Atún Agua Lata, Drenado 104 g - Neto 160 g
+                - group [ref=e335]:
+                  - link "Atún Lominto Aceite Lata, Drenado 91 g - Neto 140 g" [ref=e336] [cursor=pointer]:
+                    - /url: /ip/conservas/00780465140017?from=/search
+                    - generic [ref=e337]: Atún Lominto Aceite Lata, Drenado 91 g - Neto 140 g
+                  - generic [ref=e339]:
+                    - generic [ref=e342]:
+                      - img "Atún Lominto Aceite Lata, Drenado 91 g - Neto 140 g" [ref=e344]
+                      - button "Agregar al carro - Atún Lominto Aceite Lata, Drenado 91 g - Neto 140 g" [ref=e347] [cursor=pointer]:
+                        - generic "agregar" [ref=e348]: 
+                        - generic [ref=e349]: Agregar
+                    - generic [ref=e351]:
+                      - generic [ref=e353]:
+                        - generic [ref=e354]: $1.000
+                        - generic [ref=e355]: precio actual $1.000
+                        - generic [ref=e356]: $10.989 x kg
+                      - generic [ref=e357]: La Romana
+                      - generic [ref=e358]: Atún Lominto Aceite Lata, Drenado 91 g - Neto 140 g
+                - group [ref=e361]:
+                  - link "Atún Lominto Aceite Lata, Drenado 104 g - Neto 160 g" [ref=e362] [cursor=pointer]:
+                    - /url: /ip/conservas/00780126800203?from=/search
+                    - generic [ref=e363]: Atún Lominto Aceite Lata, Drenado 104 g - Neto 160 g
+                  - generic [ref=e365]:
+                    - generic [ref=e368]:
+                      - img "Atún Lominto Aceite Lata, Drenado 104 g - Neto 160 g" [ref=e370]
+                      - button "Agregar al carro - Atún Lominto Aceite Lata, Drenado 104 g - Neto 160 g" [ref=e373] [cursor=pointer]:
+                        - generic "agregar" [ref=e374]: 
+                        - generic [ref=e375]: Agregar
+                    - generic [ref=e377]:
+                      - generic [ref=e379]:
+                        - generic [ref=e380]: $1.550
+                        - generic [ref=e381]: precio actual $1.550
+                        - generic [ref=e382]: $9.118 x kg
+                      - generic [ref=e383]: Angelmo
+                      - generic [ref=e384]: Atún Lominto Aceite Lata, Drenado 104 g - Neto 160 g
+                - group [ref=e387]:
+                  - link "Atún Ensalada con Cus Cús Lata, Drenado 160 g - Neto 160 g" [ref=e388] [cursor=pointer]:
+                    - /url: /ip/conservas/00780462147122?from=/search
+                    - generic [ref=e389]: Atún Ensalada con Cus Cús Lata, Drenado 160 g - Neto 160 g
+                  - generic [ref=e391]:
+                    - generic [ref=e394]:
+                      - img "Atún Ensalada con Cus Cús Lata, Drenado 160 g - Neto 160 g" [ref=e396]
+                      - button "Agregar al carro - Atún Ensalada con Cus Cús Lata, Drenado 160 g - Neto 160 g" [ref=e399] [cursor=pointer]:
+                        - generic "agregar" [ref=e400]: 
+                        - generic [ref=e401]: Agregar
+                    - generic [ref=e403]:
+                      - generic [ref=e405]:
+                        - generic [ref=e406]: $3.390
+                        - generic [ref=e407]: precio actual $3.390
+                        - generic [ref=e408]: $21.188 x kg
+                      - generic [ref=e409]: Robinson Crusoe
+                      - generic [ref=e410]: Atún Ensalada con Cus Cús Lata, Drenado 160 g - Neto 160 g
+                - group [ref=e413]:
+                  - link "Atún Ensalada de Quínoa y Cúrcuma Lata, Drenado 160 g - Neto 160 g" [ref=e414] [cursor=pointer]:
+                    - /url: /ip/conservas/00780462147065?from=/search
+                    - generic [ref=e415]: Atún Ensalada de Quínoa y Cúrcuma Lata, Drenado 160 g - Neto 160 g
+                  - generic [ref=e417]:
+                    - generic [ref=e420]:
+                      - img "Atún Ensalada de Quínoa y Cúrcuma Lata, Drenado 160 g - Neto 160 g" [ref=e422]
+                      - button "Agregar al carro - Atún Ensalada de Quínoa y Cúrcuma Lata, Drenado 160 g - Neto 160 g" [ref=e425] [cursor=pointer]:
+                        - generic "agregar" [ref=e426]: 
+                        - generic [ref=e427]: Agregar
+                    - generic [ref=e429]:
+                      - generic [ref=e431]:
+                        - generic [ref=e432]: $3.390
+                        - generic [ref=e433]: precio actual $3.390
+                        - generic [ref=e434]: $21.188 x kg
+                      - generic [ref=e435]: Robinson Crusoe
+                      - generic [ref=e436]: Atún Ensalada de Quínoa y Cúrcuma Lata, Drenado 160 g - Neto 160 g
+                - group [ref=e439]:
+                  - link "Atún Lominto Aceite de Oliva Extra Viergen Lata, Drenado 104 g - Neto 130 g" [ref=e440] [cursor=pointer]:
+                    - /url: /ip/conservas/00780462147129?from=/search
+                    - generic [ref=e441]: Atún Lominto Aceite de Oliva Extra Viergen Lata, Drenado 104 g - Neto 130 g
+                  - generic [ref=e443]:
+                    - generic [ref=e446]:
+                      - img "Atún Lominto Aceite de Oliva Extra Viergen Lata, Drenado 104 g - Neto 130 g" [ref=e448]
+                      - button "Agregar al carro - Atún Lominto Aceite de Oliva Extra Viergen Lata, Drenado 104 g - Neto 130 g" [ref=e451] [cursor=pointer]:
+                        - generic "agregar" [ref=e452]: 
+                        - generic [ref=e453]: Agregar
+                    - generic [ref=e455]:
+                      - generic [ref=e457]:
+                        - generic [ref=e458]: $2.150
+                        - generic [ref=e459]: precio actual $2.150
+                        - generic [ref=e460]: $20.673 x kg
+                      - generic [ref=e461]: Robinson Crusoe
+                      - generic [ref=e462]: Atún Lominto Aceite de Oliva Extra Viergen Lata, Drenado 104 g - Neto 130 g
+                - group [ref=e465]:
+                  - link "Atún Ensalada Primavera Lata, Drenado 160 g - Neto 160 g" [ref=e466] [cursor=pointer]:
+                    - /url: /ip/conservas/00780462147028?from=/search
+                    - generic [ref=e467]: Atún Ensalada Primavera Lata, Drenado 160 g - Neto 160 g
+                  - generic [ref=e469]:
+                    - generic [ref=e472]:
+                      - img "Atún Ensalada Primavera Lata, Drenado 160 g - Neto 160 g" [ref=e474]
+                      - button "Agregar al carro - Atún Ensalada Primavera Lata, Drenado 160 g - Neto 160 g" [ref=e477] [cursor=pointer]:
+                        - generic "agregar" [ref=e478]: 
+                        - generic [ref=e479]: Agregar
+                    - generic [ref=e481]:
+                      - generic [ref=e483]:
+                        - generic [ref=e484]: $3.390
+                        - generic [ref=e485]: precio actual $3.390
+                        - generic [ref=e486]: $21.188 x kg
+                      - generic [ref=e487]: Robinson Crusoe
+                      - generic [ref=e488]: Atún Ensalada Primavera Lata, Drenado 160 g - Neto 160 g
+                - group [ref=e491]:
+                  - link "Atún Ensalada Mexicana Lata, Drenado 160 g - Neto 160 g" [ref=e492] [cursor=pointer]:
+                    - /url: /ip/conservas/00780462147029?from=/search
+                    - generic [ref=e493]: Atún Ensalada Mexicana Lata, Drenado 160 g - Neto 160 g
+                  - generic [ref=e495]:
+                    - generic [ref=e498]:
+                      - img "Atún Ensalada Mexicana Lata, Drenado 160 g - Neto 160 g" [ref=e500]
+                      - button "Agregar al carro - Atún Ensalada Mexicana Lata, Drenado 160 g - Neto 160 g" [ref=e503] [cursor=pointer]:
+                        - generic "agregar" [ref=e504]: 
+                        - generic [ref=e505]: Agregar
+                    - generic [ref=e507]:
+                      - generic [ref=e509]:
+                        - generic [ref=e510]: $3.390
+                        - generic [ref=e511]: precio actual $3.390
+                        - generic [ref=e512]: $21.188 x kg
+                      - generic [ref=e513]: Robinson Crusoe
+                      - generic [ref=e514]: Atún Ensalada Mexicana Lata, Drenado 160 g - Neto 160 g
+                - group [ref=e517]:
+                  - link "Atún Agua Finas HierbasLata, Drenado 100 g- Neto 190 g" [ref=e518] [cursor=pointer]:
+                    - /url: /ip/conservas/00780462147218?from=/search
+                    - generic [ref=e519]: Atún Agua Finas HierbasLata, Drenado 100 g- Neto 190 g
+                  - generic [ref=e521]:
+                    - generic [ref=e524]:
+                      - img "Atún Agua Finas HierbasLata, Drenado 100 g- Neto 190 g" [ref=e526]
+                      - button "Agregar al carro - Atún Agua Finas HierbasLata, Drenado 100 g- Neto 190 g" [ref=e529] [cursor=pointer]:
+                        - generic "agregar" [ref=e530]: 
+                        - generic [ref=e531]: Agregar
+                    - generic [ref=e533]:
+                      - generic [ref=e535]:
+                        - generic [ref=e536]: $1.950
+                        - generic [ref=e537]: precio actual $1.950
+                        - generic [ref=e538]: $21.428 x kg
+                      - generic [ref=e539]: Robinson Crusoe
+                      - generic [ref=e540]: Atún Agua Finas HierbasLata, Drenado 100 g- Neto 190 g
+                - group [ref=e543]:
+                  - link "Alimento Húmedo Gato Adulto Sabor Atún Lata, 156 g" [ref=e544] [cursor=pointer]:
+                    - /url: /ip/gato/00005000029059?from=/search
+                    - generic [ref=e545]: Alimento Húmedo Gato Adulto Sabor Atún Lata, 156 g
+                  - generic [ref=e547]:
+                    - generic [ref=e550]:
+                      - generic [ref=e551]:
+                        - img "Alimento Húmedo Gato Adulto Sabor Atún Lata, 156 g"
+                      - button "Agregar al carro - Alimento Húmedo Gato Adulto Sabor Atún Lata, 156 g" [ref=e554] [cursor=pointer]:
+                        - generic "agregar" [ref=e555]: 
+                        - generic [ref=e556]: Agregar
+                    - generic [ref=e558]:
+                      - generic [ref=e560]:
+                        - generic [ref=e561]: $1.190
+                        - generic [ref=e562]: precio actual $1.190
+                        - generic [ref=e563]: $7.628 x kg
+                      - generic [ref=e564]: Felix
+                      - generic [ref=e565]: Alimento Húmedo Gato Adulto Sabor Atún Lata, 156 g
+                - group [ref=e568]:
+                  - link "Atún Agua, Drenado 91 g - Neto 140 g" [ref=e569] [cursor=pointer]:
+                    - /url: /ip/conservas/00780462147225?from=/search
+                    - generic [ref=e570]: Atún Agua, Drenado 91 g - Neto 140 g
+                  - generic [ref=e572]:
+                    - generic [ref=e573]:
+                      - generic [ref=e575]:
+                        - generic [ref=e577]: 
+                        - text: Rebaja
+                      - generic [ref=e578]:
+                        - generic [ref=e579]:
+                          - img "Atún Agua, Drenado 91 g - Neto 140 g"
+                        - button "Agregar al carro - Atún Agua, Drenado 91 g - Neto 140 g" [ref=e582] [cursor=pointer]:
+                          - generic "agregar" [ref=e583]: 
+                          - generic [ref=e584]: Agregar
+                    - generic [ref=e586]:
+                      - generic [ref=e588]:
+                        - generic [ref=e589]: $1.490
+                        - generic [ref=e590]: precio actual $1.490, Costaba $1.890
+                        - generic [ref=e591]: $16.374 x kg
+                        - generic [ref=e592]: $1.890
+                        - generic [ref=e593]: Ahorra $400
+                      - generic [ref=e594]: Robinson Crusoe
+                      - generic [ref=e595]: Atún Agua, Drenado 91 g - Neto 140 g
+                - group [ref=e598]:
+                  - link "Atún Aceite, Drenado 91 g - Neto 140 g" [ref=e599] [cursor=pointer]:
+                    - /url: /ip/conservas/00780462147226?from=/search
+                    - generic [ref=e600]: Atún Aceite, Drenado 91 g - Neto 140 g
+                  - generic [ref=e602]:
+                    - generic [ref=e603]:
+                      - generic [ref=e605]:
+                        - generic [ref=e607]: 
+                        - text: Rebaja
+                      - generic [ref=e608]:
+                        - generic [ref=e609]:
+                          - img "Atún Aceite, Drenado 91 g - Neto 140 g"
+                        - button "Agregar al carro - Atún Aceite, Drenado 91 g - Neto 140 g" [ref=e612] [cursor=pointer]:
+                          - generic "agregar" [ref=e613]: 
+                          - generic [ref=e614]: Agregar
+                    - generic [ref=e616]:
+                      - generic [ref=e618]:
+                        - generic [ref=e619]: $1.490
+                        - generic [ref=e620]: precio actual $1.490, Costaba $1.890
+                        - generic [ref=e621]: $16.374 x kg
+                        - generic [ref=e622]: $1.890
+                        - generic [ref=e623]: Ahorra $400
+                      - generic [ref=e624]: Robinson Crusoe
+                      - generic [ref=e625]: Atún Aceite, Drenado 91 g - Neto 140 g
+                - group [ref=e628]:
+                  - link "Atún Ahumado, Drenado 91 g - Neto 140 g" [ref=e629] [cursor=pointer]:
+                    - /url: /ip/conservas/00780462147178?from=/search
+                    - generic [ref=e630]: Atún Ahumado, Drenado 91 g - Neto 140 g
+                  - generic [ref=e632]:
+                    - generic [ref=e633]:
+                      - generic [ref=e635]:
+                        - generic [ref=e637]: 
+                        - text: Rebaja
+                      - generic [ref=e638]:
+                        - generic [ref=e639]:
+                          - img "Atún Ahumado, Drenado 91 g - Neto 140 g"
+                        - button "Agregar al carro - Atún Ahumado, Drenado 91 g - Neto 140 g" [ref=e642] [cursor=pointer]:
+                          - generic "agregar" [ref=e643]: 
+                          - generic [ref=e644]: Agregar
+                    - generic [ref=e646]:
+                      - generic [ref=e648]:
+                        - generic [ref=e649]: $1.490
+                        - generic [ref=e650]: precio actual $1.490, Costaba $1.890
+                        - generic [ref=e651]: $16.374 x kg
+                        - generic [ref=e652]: $1.890
+                        - generic [ref=e653]: Ahorra $400
+                      - generic [ref=e654]: Robinson Crusoe
+                      - generic [ref=e655]: Atún Ahumado, Drenado 91 g - Neto 140 g
+                - group [ref=e658]:
+                  - link "Atún Medallones, 400 g" [ref=e659] [cursor=pointer]:
+                    - /url: /ip/conservas/00040000722696?from=/search
+                    - generic [ref=e660]: Atún Medallones, 400 g
+                  - generic [ref=e662]:
+                    - generic [ref=e665]:
+                      - generic [ref=e666]:
+                        - img "Atún Medallones, 400 g"
+                      - button "Agregar al carro - Atún Medallones, 400 g" [ref=e669] [cursor=pointer]:
+                        - generic "agregar" [ref=e670]: 
+                        - generic [ref=e671]: Agregar
+                    - generic [ref=e673]:
+                      - generic [ref=e675]:
+                        - generic [ref=e676]: $8.090
+                        - generic [ref=e677]: precio actual $8.090
+                        - generic [ref=e678]: $20.225 x kg
+                      - generic [ref=e679]: Selección
+                      - generic [ref=e680]: Atún Medallones, 400 g
+                - group [ref=e683]:
+                  - link "Atún Limón, Drenado 91 g - Neto 140 g" [ref=e684] [cursor=pointer]:
+                    - /url: /ip/conservas/00780462147221?from=/search
+                    - generic [ref=e685]: Atún Limón, Drenado 91 g - Neto 140 g
+                  - generic [ref=e687]:
+                    - generic [ref=e688]:
+                      - generic [ref=e690]:
+                        - generic [ref=e692]: 
+                        - text: Rebaja
+                      - generic [ref=e693]:
+                        - generic [ref=e694]:
+                          - img "Atún Limón, Drenado 91 g - Neto 140 g"
+                        - button "Agregar al carro - Atún Limón, Drenado 91 g - Neto 140 g" [ref=e697] [cursor=pointer]:
+                          - generic "agregar" [ref=e698]: 
+                          - generic [ref=e699]: Agregar
+                    - generic [ref=e701]:
+                      - generic [ref=e703]:
+                        - generic [ref=e704]: $1.490
+                        - generic [ref=e705]: precio actual $1.490, Costaba $1.890
+                        - generic [ref=e706]: $16.374 x kg
+                        - generic [ref=e707]: $1.890
+                        - generic [ref=e708]: Ahorra $400
+                      - generic [ref=e709]: Robinson Crusoe
+                      - generic [ref=e710]: Atún Limón, Drenado 91 g - Neto 140 g
+  - alert [ref=e719]

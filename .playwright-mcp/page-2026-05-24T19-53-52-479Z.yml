@@ -1,0 +1,935 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: pollo pechuga entera envasada
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 1 producto Monto total $2.990" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: "1"
+              - generic [ref=e44]: $2.990
+    - generic [ref=e45]:
+      - generic [ref=e46]:
+        - separator [ref=e47]
+        - generic [ref=e48]:
+          - generic [ref=e49]:
+            - button "Despacho a Domicilio MARTIN DE ZAMORA 5595" [ref=e50] [cursor=pointer]:
+              - generic [ref=e52]:
+                - img [ref=e53]
+                - generic [ref=e54]: Despacho a Domicilio
+                - generic [ref=e55]: 
+                - generic [ref=e56]: "|"
+                - generic [ref=e1397]:
+                  - img [ref=e1398]
+                  - generic [ref=e1399]: MARTIN DE ZAMORA 5595
+              - text: 
+            - generic:   
+            - navigation "Secundario" [ref=e63]:
+              - list [ref=e64]:
+                - listitem [ref=e65]:
+                  - link "Tarjeta Lider Bci" [ref=e67] [cursor=pointer]:
+                    - /url: https://tarjetadigital.liderbciserviciosfinancieros.cl/ingreso-de-datos?utm_source=Lidercl_sod_header&utm_medium=lidercl
+                - listitem [ref=e68]:
+                  - link "Mi Club" [ref=e70] [cursor=pointer]:
+                    - /url: https://www.miclublider.cl/
+                - listitem [ref=e71]:
+                  - link "Centro de ayuda" [ref=e73] [cursor=pointer]:
+                    - /url: /ayuda
+          - img [ref=e76]
+      - main [ref=e79]:
+        - generic [ref=e80]:
+          - generic [ref=e83]:
+            - region "Sección de ordenar y filtrar" [ref=e85]:
+              - button "Precio" [ref=e88]:
+                - generic [ref=e90]: 
+                - generic [ref=e91]: Precio
+                - generic [ref=e92]: 
+              - button "Marca" [ref=e95]:
+                - generic [ref=e96]: Marca
+                - generic [ref=e97]: 
+              - generic [ref=e99]:
+                - generic [ref=e100]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e102]:
+                  - text: Más relevantes
+                  - generic [ref=e103]: 
+            - separator [ref=e104]
+          - generic [ref=e107]:
+            - generic [ref=e1400]:
+              - generic [ref=e1403]:
+                - generic [ref=e1404]:
+                  - button "Precio" [ref=e1407]:
+                    - generic [ref=e1408]: Precio
+                    - img [ref=e1409]: 
+                  - separator [ref=e1410]
+                - generic [ref=e1411]:
+                  - button "Campaña" [ref=e1414]:
+                    - generic [ref=e1415]: Campaña
+                    - img [ref=e1416]: 
+                  - separator [ref=e1417]
+                - generic [ref=e1418]:
+                  - button "Marca" [ref=e1421]:
+                    - generic [ref=e1422]: Marca
+                    - img [ref=e1423]: 
+                  - separator [ref=e1424]
+                - generic [ref=e1425]:
+                  - button "Categoría" [ref=e1428]:
+                    - generic [ref=e1429]: Categoría
+                    - img [ref=e1430]: 
+                  - separator [ref=e1431]
+              - generic [ref=e1434]:
+                - heading "Resultados para pollo pechuga entera envasada (109)" [level=2] [ref=e1442]: Resultados para pollo pechuga entera envasada(109)
+                - generic [ref=e1443]:
+                  - group [ref=e1446]:
+                    - link "Pollo Pechuga Entera Envasada" [ref=e1447] [cursor=pointer]:
+                      - /url: /ip/pollo/00216365000000?from=/search
+                      - generic [ref=e1448]: Pollo Pechuga Entera Envasada
+                    - generic [ref=e1450]:
+                      - generic [ref=e1451]:
+                        - generic [ref=e1453]:
+                          - generic [ref=e1455]: 
+                          - text: Rebaja
+                        - generic [ref=e1456]:
+                          - img "Pollo Pechuga Entera Envasada" [ref=e1458]
+                          - button "Agregar al carro - Pollo Pechuga Entera Envasada" [ref=e1461] [cursor=pointer]:
+                            - generic "agregar" [ref=e1462]: 
+                            - generic [ref=e1463]: Agregar
+                      - generic [ref=e1465]:
+                        - generic [ref=e1467]:
+                          - generic [ref=e1468]: $4.590/kg
+                          - generic [ref=e1469]: precio actual $4.590/kg, Costaba $5.790/kg
+                          - generic [ref=e1470]: $4.590 x kg
+                          - generic [ref=e1471]: $5.790/kg
+                          - generic [ref=e1472]: Ahorra $1.200
+                        - generic [ref=e1473]: Super Pollo
+                        - generic [ref=e1474]: Pollo Pechuga Entera Envasada
+                  - group [ref=e1477]:
+                    - link "Pollo Pechuga Entera Envasada" [ref=e1478] [cursor=pointer]:
+                      - /url: /ip/pollo/00216347000000?from=/search
+                      - generic [ref=e1479]: Pollo Pechuga Entera Envasada
+                    - generic [ref=e1481]:
+                      - generic [ref=e1484]:
+                        - img "Pollo Pechuga Entera Envasada" [ref=e1486]
+                        - button "Agregar al carro - Pollo Pechuga Entera Envasada" [ref=e1489] [cursor=pointer]:
+                          - generic "agregar" [ref=e1490]: 
+                          - generic [ref=e1491]: Agregar
+                      - generic [ref=e1493]:
+                        - generic [ref=e1495]:
+                          - generic [ref=e1496]: $5.790/kg
+                          - generic [ref=e1497]: precio actual $5.790/kg
+                          - generic [ref=e1498]: $5.790 x kg
+                        - generic [ref=e1499]: Ariztia
+                        - generic [ref=e1500]: Pollo Pechuga Entera Envasada
+                  - group [ref=e1503]:
+                    - link "Pollo Pechuga Deshuesada Envasada, 850 g" [ref=e1504] [cursor=pointer]:
+                      - /url: /ip/pollo/00780411500173?from=/search
+                      - generic [ref=e1505]: Pollo Pechuga Deshuesada Envasada, 850 g
+                    - generic [ref=e1507]:
+                      - generic [ref=e1510]:
+                        - img "Pollo Pechuga Deshuesada Envasada, 850 g" [ref=e1512]
+                        - button "Agregar al carro - Pollo Pechuga Deshuesada Envasada, 850 g" [ref=e1515] [cursor=pointer]:
+                          - generic "agregar" [ref=e1516]: 
+                          - generic [ref=e1517]: Agregar
+                      - generic [ref=e1519]:
+                        - generic [ref=e1521]:
+                          - generic [ref=e1522]: $7.190
+                          - generic [ref=e1523]: precio actual $7.190
+                          - generic [ref=e1524]: $8.459 x kg
+                        - generic [ref=e1525]: Ariztia
+                        - generic [ref=e1526]: Pollo Pechuga Deshuesada Envasada, 850 g
+                  - generic [ref=e1528]:
+                    - group [ref=e1529]:
+                      - link "Pollo Pechuga Deshuesada Envasada, 850 g" [ref=e1530] [cursor=pointer]:
+                        - /url: /ip/pollo/00780961172061?from=/search
+                        - generic [ref=e1531]: Pollo Pechuga Deshuesada Envasada, 850 g
+                      - generic [ref=e1533]:
+                        - generic [ref=e1534]:
+                          - generic [ref=e1536]:
+                            - generic [ref=e1538]: 
+                            - text: Rebaja
+                          - img "Pollo Pechuga Deshuesada Envasada, 850 g" [ref=e1541]
+                        - generic [ref=e1543]:
+                          - generic [ref=e1545]:
+                            - generic [ref=e1546]: $5.190
+                            - generic [ref=e1547]: precio actual $5.190, Costaba $7.290
+                            - generic [ref=e1548]: $6.106 x kg
+                            - generic [ref=e1549]: $7.290
+                          - generic [ref=e1550]: Super Pollo
+                          - generic [ref=e1551]: Pollo Pechuga Deshuesada Envasada, 850 g
+                          - generic [ref=e1552]: Agotado
+                    - button "Revisar productos similares - Pollo Pechuga Deshuesada Envasada, 850 g" [ref=e1554]: Revisar productos similares
+                  - group [ref=e1557]:
+                    - link "Pollo Pechuga Deshuesada Sin Marinar Envasada, 780 g" [ref=e1558] [cursor=pointer]:
+                      - /url: /ip/pollo/00780961172066?from=/search
+                      - generic [ref=e1559]: Pollo Pechuga Deshuesada Sin Marinar Envasada, 780 g
+                    - generic [ref=e1561]:
+                      - generic [ref=e1564]:
+                        - img "Pollo Pechuga Deshuesada Sin Marinar Envasada, 780 g" [ref=e1566]
+                        - button "Agregar al carro - Pollo Pechuga Deshuesada Sin Marinar Envasada, 780 g" [ref=e1569] [cursor=pointer]:
+                          - generic "agregar" [ref=e1570]: 
+                          - generic [ref=e1571]: Agregar
+                      - generic [ref=e1573]:
+                        - generic [ref=e1575]:
+                          - generic [ref=e1576]: $7.490
+                          - generic [ref=e1577]: precio actual $7.490
+                          - generic [ref=e1578]: $9.603 x kg
+                        - generic [ref=e1579]: Super Pollo
+                        - generic [ref=e1580]: Pollo Pechuga Deshuesada Sin Marinar Envasada, 780 g
+                  - group [ref=e1583]:
+                    - link "Pollo Pechuga Deshuesada Envasada, 500 g" [ref=e1584] [cursor=pointer]:
+                      - /url: /ip/todas-las-carnes/00780411500139?from=/search
+                      - generic [ref=e1585]: Pollo Pechuga Deshuesada Envasada, 500 g
+                    - generic [ref=e1587]:
+                      - generic [ref=e1590]:
+                        - img "Pollo Pechuga Deshuesada Envasada, 500 g" [ref=e1592]
+                        - button "Agregar al carro - Pollo Pechuga Deshuesada Envasada, 500 g" [ref=e1595] [cursor=pointer]:
+                          - generic "agregar" [ref=e1596]: 
+                          - generic [ref=e1597]: Agregar
+                      - generic [ref=e1599]:
+                        - generic [ref=e1601]:
+                          - generic [ref=e1602]: $4.590
+                          - generic [ref=e1603]: precio actual $4.590
+                          - generic [ref=e1604]: $9.180 x kg
+                        - generic [ref=e1605]: Ariztia
+                        - generic [ref=e1606]: Pollo Pechuga Deshuesada Envasada, 500 g
+                  - group [ref=e1609]:
+                    - link "Pollo Pechuga Entera Congelada, 2 kg" [ref=e1610] [cursor=pointer]:
+                      - /url: /ip/pollo/00789490422286?from=/search
+                      - generic [ref=e1611]: Pollo Pechuga Entera Congelada, 2 kg
+                    - generic [ref=e1613]:
+                      - generic [ref=e1614]:
+                        - generic [ref=e1616]:
+                          - generic [ref=e1618]: 
+                          - text: Rebaja
+                        - generic [ref=e1619]:
+                          - img "Pollo Pechuga Entera Congelada, 2 kg" [ref=e1621]
+                          - button "Agregar al carro - Pollo Pechuga Entera Congelada, 2 kg" [ref=e1624] [cursor=pointer]:
+                            - generic "agregar" [ref=e1625]: 
+                            - generic [ref=e1626]: Agregar
+                      - generic [ref=e1628]:
+                        - generic [ref=e1630]:
+                          - generic [ref=e1631]: $7.490
+                          - generic [ref=e1632]: precio actual $7.490, Costaba $7.590
+                          - generic [ref=e1633]: $3.745 x kg
+                          - generic [ref=e1634]: $7.590
+                          - generic [ref=e1635]: Ahorra $100
+                        - generic [ref=e1636]: Seara
+                        - generic [ref=e1637]: Pollo Pechuga Entera Congelada, 2 kg
+                  - group [ref=e1640]:
+                    - link "Pollo Pechuga Deshuesada Congelada, 750 g" [ref=e1641] [cursor=pointer]:
+                      - /url: /ip/pollo/00780961172203?from=/search
+                      - generic [ref=e1642]: Pollo Pechuga Deshuesada Congelada, 750 g
+                    - generic [ref=e1644]:
+                      - generic [ref=e1645]:
+                        - generic [ref=e1647]:
+                          - generic [ref=e1649]: 
+                          - text: Rebaja
+                        - generic [ref=e1650]:
+                          - img "Pollo Pechuga Deshuesada Congelada, 750 g" [ref=e1652]
+                          - button "Agregar al carro - Pollo Pechuga Deshuesada Congelada, 750 g" [ref=e1655] [cursor=pointer]:
+                            - generic "agregar" [ref=e1656]: 
+                            - generic [ref=e1657]: Agregar
+                      - generic [ref=e1659]:
+                        - generic [ref=e1661]:
+                          - generic [ref=e1662]: $4.790
+                          - generic [ref=e1663]: precio actual $4.790, Costaba $5.690
+                          - generic [ref=e1664]: $6.387 x kg
+                          - generic [ref=e1665]: $5.690
+                          - generic [ref=e1666]: Ahorra $900
+                        - generic [ref=e1667]: Super Pollo
+                        - generic [ref=e1668]: Pollo Pechuga Deshuesada Congelada, 750 g
+                  - group [ref=e1671]:
+                    - link "Pechuga de Pollo Cocida Granel" [ref=e1672] [cursor=pointer]:
+                      - /url: /ip/fiambres-y-embutidos/00206983000000?from=/search
+                      - generic [ref=e1673]: Pechuga de Pollo Cocida Granel
+                    - generic [ref=e1675]:
+                      - generic [ref=e1678]:
+                        - img "Pechuga de Pollo Cocida Granel" [ref=e1680]
+                        - button "Agregar al carro - Pechuga de Pollo Cocida Granel" [ref=e1683] [cursor=pointer]:
+                          - generic "agregar" [ref=e1684]: 
+                          - generic [ref=e1685]: Agregar
+                      - generic [ref=e1687]:
+                        - generic [ref=e1689]:
+                          - generic [ref=e1690]: $10.600/kg
+                          - generic [ref=e1691]: precio actual $10.600/kg
+                          - generic [ref=e1692]: $10.600 x kg
+                        - generic [ref=e1693]: PF
+                        - generic [ref=e1694]: Pechuga de Pollo Cocida Granel
+                  - group [ref=e1697]:
+                    - link "Pollo Pechuga Congelada, 1 kg" [ref=e1698] [cursor=pointer]:
+                      - /url: /ip/pollo/00789151555199?from=/search
+                      - generic [ref=e1699]: Pollo Pechuga Congelada, 1 kg
+                    - generic [ref=e1701]:
+                      - generic [ref=e1702]:
+                        - generic [ref=e1704]:
+                          - generic [ref=e1706]: 
+                          - text: Rebaja
+                        - generic [ref=e1707]:
+                          - img "Pollo Pechuga Congelada, 1 kg" [ref=e1709]
+                          - button "Agregar al carro - Pollo Pechuga Congelada, 1 kg" [ref=e1712] [cursor=pointer]:
+                            - generic "agregar" [ref=e1713]: 
+                            - generic [ref=e1714]: Agregar
+                      - generic [ref=e1716]:
+                        - generic [ref=e1718]:
+                          - generic [ref=e1719]: $4.990
+                          - generic [ref=e1720]: precio actual $4.990, Costaba $5.990
+                          - generic [ref=e1721]: $4.990 x kg
+                          - generic [ref=e1722]: $5.990
+                          - generic [ref=e1723]: Ahorra $1.000
+                        - generic [ref=e1724]: Sadia
+                        - generic [ref=e1725]: Pollo Pechuga Congelada, 1 kg
+                  - generic [ref=e1727]:
+                    - group [ref=e1728]:
+                      - link "Pollo Pechuga Deshuesada Sin Marinar Congelada, 700 g" [ref=e1729] [cursor=pointer]:
+                        - /url: /ip/pollo/00780961171848?from=/search
+                        - generic [ref=e1730]: Pollo Pechuga Deshuesada Sin Marinar Congelada, 700 g
+                      - generic [ref=e1732]:
+                        - generic [ref=e1733]:
+                          - generic [ref=e1735]:
+                            - generic [ref=e1737]: 
+                            - text: Rebaja
+                          - img "Pollo Pechuga Deshuesada Sin Marinar Congelada, 700 g" [ref=e1740]
+                        - generic [ref=e1742]:
+                          - generic [ref=e1744]:
+                            - generic [ref=e1745]: $5.490
+                            - generic [ref=e1746]: precio actual $5.490, Costaba $7.390
+                            - generic [ref=e1747]: $7.843 x kg
+                            - generic [ref=e1748]: $7.390
+                          - generic [ref=e1749]: Super Pollo
+                          - generic [ref=e1750]: Pollo Pechuga Deshuesada Sin Marinar Congelada, 700 g
+                          - generic [ref=e1751]: Agotado
+                    - button "Revisar productos similares - Pollo Pechuga Deshuesada Sin Marinar Congelada, 700 g" [ref=e1753]: Revisar productos similares
+                  - group [ref=e1756]:
+                    - link "Pechuga de Pollo Apanada, 120 gr" [ref=e1757] [cursor=pointer]:
+                      - /url: /ip/hamburguesas-y-churrascos/00780193001400?from=/search
+                      - generic [ref=e1758]: Pechuga de Pollo Apanada, 120 gr
+                    - generic [ref=e1760]:
+                      - generic [ref=e1763]:
+                        - img "Pechuga de Pollo Apanada, 120 gr" [ref=e1765]
+                        - button "Agregar al carro - Pechuga de Pollo Apanada, 120 gr" [ref=e1768] [cursor=pointer]:
+                          - generic "agregar" [ref=e1769]: 
+                          - generic [ref=e1770]: Agregar
+                      - generic [ref=e1772]:
+                        - generic [ref=e1774]:
+                          - generic [ref=e1775]: $1.000
+                          - generic [ref=e1776]: precio actual $1.000
+                          - generic [ref=e1777]: $8.333 x kg
+                        - generic [ref=e1778]: Receta Del Abuelo
+                        - generic [ref=e1779]: Pechuga de Pollo Apanada, 120 gr
+                  - group [ref=e1782]:
+                    - link "Pollo Pechuga Deshuesada Congelada, 800 g" [ref=e1783] [cursor=pointer]:
+                      - /url: /ip/pollo/00789490422283?from=/search
+                      - generic [ref=e1784]: Pollo Pechuga Deshuesada Congelada, 800 g
+                    - generic [ref=e1786]:
+                      - generic [ref=e1787]:
+                        - generic [ref=e1789]:
+                          - generic [ref=e1791]: 
+                          - text: Rebaja
+                        - generic [ref=e1792]:
+                          - img "Pollo Pechuga Deshuesada Congelada, 800 g" [ref=e1794]
+                          - button "Agregar al carro - Pollo Pechuga Deshuesada Congelada, 800 g" [ref=e1797] [cursor=pointer]:
+                            - generic "agregar" [ref=e1798]: 
+                            - generic [ref=e1799]: Agregar
+                      - generic [ref=e1801]:
+                        - generic [ref=e1803]:
+                          - generic [ref=e1804]: $4.190
+                          - generic [ref=e1805]: precio actual $4.190, Costaba $6.490
+                          - generic [ref=e1806]: $5.237 x kg
+                          - generic [ref=e1807]: $6.490
+                          - generic [ref=e1808]: Ahorra $2.300
+                        - generic [ref=e1809]: Seara
+                        - generic [ref=e1810]: Pollo Pechuga Deshuesada Congelada, 800 g
+                  - group [ref=e1813]:
+                    - link "Pollo Pechuga Sin Piel Deshuesada, 550 g" [ref=e1814] [cursor=pointer]:
+                      - /url: /ip/todas-las-carnes/00780411500224?from=/search
+                      - generic [ref=e1815]: Pollo Pechuga Sin Piel Deshuesada, 550 g
+                    - generic [ref=e1817]:
+                      - generic [ref=e1818]:
+                        - generic [ref=e1820]:
+                          - generic [ref=e1822]: 
+                          - text: Rebaja
+                        - generic [ref=e1823]:
+                          - img "Pollo Pechuga Sin Piel Deshuesada, 550 g" [ref=e1825]
+                          - button "Agregar al carro - Pollo Pechuga Sin Piel Deshuesada, 550 g" [ref=e1828] [cursor=pointer]:
+                            - generic "agregar" [ref=e1829]: 
+                            - generic [ref=e1830]: Agregar
+                      - generic [ref=e1832]:
+                        - generic [ref=e1834]:
+                          - generic [ref=e1835]: $4.790
+                          - generic [ref=e1836]: precio actual $4.790, Costaba $5.790
+                          - generic [ref=e1837]: $8.709 x kg
+                          - generic [ref=e1838]: $5.790
+                          - generic [ref=e1839]: Ahorra $1.000
+                        - generic [ref=e1840]: Canto Del Gallo
+                        - generic [ref=e1841]: Pollo Pechuga Sin Piel Deshuesada, 550 g
+                  - group [ref=e1844]:
+                    - link "Pechuga De Pollo Acaramelado" [ref=e1845] [cursor=pointer]:
+                      - /url: /ip/fiambres-y-embutidos/00232679000000?from=/search
+                      - generic [ref=e1846]: Pechuga De Pollo Acaramelado
+                    - generic [ref=e1848]:
+                      - generic [ref=e1851]:
+                        - img "Pechuga De Pollo Acaramelado" [ref=e1853]
+                        - button "Agregar al carro - Pechuga De Pollo Acaramelado" [ref=e1856] [cursor=pointer]:
+                          - generic "agregar" [ref=e1857]: 
+                          - generic [ref=e1858]: Agregar
+                      - generic [ref=e1860]:
+                        - generic [ref=e1862]:
+                          - generic [ref=e1863]: $9.000/kg
+                          - generic [ref=e1864]: precio actual $9.000/kg
+                          - generic [ref=e1865]: $9.000 x kg
+                        - generic [ref=e1866]: San Jorge
+                        - generic [ref=e1867]: Pechuga De Pollo Acaramelado
+                  - group [ref=e1870]:
+                    - link "Pollo Pechuga Deshuesada Congelada, 700 g" [ref=e1871] [cursor=pointer]:
+                      - /url: /ip/pollo/00780874950114?from=/search
+                      - generic [ref=e1872]: Pollo Pechuga Deshuesada Congelada, 700 g
+                    - generic [ref=e1874]:
+                      - generic [ref=e1877]:
+                        - img "Pollo Pechuga Deshuesada Congelada, 700 g" [ref=e1879]
+                        - button "Agregar al carro - Pollo Pechuga Deshuesada Congelada, 700 g" [ref=e1882] [cursor=pointer]:
+                          - generic "agregar" [ref=e1883]: 
+                          - generic [ref=e1884]: Agregar
+                      - generic [ref=e1886]:
+                        - generic [ref=e1888]:
+                          - generic [ref=e1889]: $7.190
+                          - generic [ref=e1890]: precio actual $7.190
+                          - generic [ref=e1891]: $10.271 x kg
+                        - generic [ref=e1892]: Ariztia
+                        - generic [ref=e1893]: Pollo Pechuga Deshuesada Congelada, 700 g
+                  - group [ref=e1896]:
+                    - link "Pechuga de Pollo Rebozada, 480 g" [ref=e1897] [cursor=pointer]:
+                      - /url: /ip/hamburguesas-y-churrascos/00789300001444?from=/search
+                      - generic [ref=e1898]: Pechuga de Pollo Rebozada, 480 g
+                    - generic [ref=e1900]:
+                      - generic [ref=e1901]:
+                        - generic [ref=e1903]:
+                          - generic [ref=e1905]: 
+                          - text: Rebaja
+                        - generic [ref=e1906]:
+                          - img "Pechuga de Pollo Rebozada, 480 g" [ref=e1908]
+                          - button "Agregar al carro - Pechuga de Pollo Rebozada, 480 g" [ref=e1911] [cursor=pointer]:
+                            - generic "agregar" [ref=e1912]: 
+                            - generic [ref=e1913]: Agregar
+                      - generic [ref=e1915]:
+                        - generic [ref=e1917]:
+                          - generic [ref=e1918]: $3.790
+                          - generic [ref=e1919]: precio actual $3.790, Costaba $4.190
+                          - generic [ref=e1920]: $7.896 x un
+                          - generic [ref=e1921]: $4.190
+                          - generic [ref=e1922]: Ahorra $400
+                        - generic [ref=e1923]: Sadia
+                        - generic [ref=e1924]: Pechuga de Pollo Rebozada, 480 g
+                  - generic [ref=e1926]:
+                    - group [ref=e1927]:
+                      - link "Pollo Pechuga Deshuesada Congelada, 1 kg" [ref=e1928] [cursor=pointer]:
+                        - /url: /ip/pollo/00789490428941?from=/search
+                        - generic [ref=e1929]: Pollo Pechuga Deshuesada Congelada, 1 kg
+                      - generic [ref=e1931]:
+                        - generic [ref=e1932]:
+                          - generic [ref=e1934]:
+                            - generic [ref=e1936]: 
+                            - text: Rebaja
+                          - img "Pollo Pechuga Deshuesada Congelada, 1 kg" [ref=e1939]
+                        - generic [ref=e1941]:
+                          - generic [ref=e1943]:
+                            - generic [ref=e1944]: $4.190
+                            - generic [ref=e1945]: precio actual $4.190, Costaba $5.790
+                            - generic [ref=e1946]: $4.190 x kg
+                            - generic [ref=e1947]: $5.790
+                          - generic [ref=e1948]: El Buen Corte
+                          - generic [ref=e1949]: Pollo Pechuga Deshuesada Congelada, 1 kg
+                          - generic [ref=e1950]: Agotado
+                    - button "Revisar productos similares - Pollo Pechuga Deshuesada Congelada, 1 kg" [ref=e1952]: Revisar productos similares
+                  - group [ref=e1955]:
+                    - link "Pollo Pechuga Filetito Congelado, 650 g" [ref=e1956] [cursor=pointer]:
+                      - /url: /ip/pollo/00780874950115?from=/search
+                      - generic [ref=e1957]: Pollo Pechuga Filetito Congelado, 650 g
+                    - generic [ref=e1959]:
+                      - generic [ref=e1960]:
+                        - generic [ref=e1962]:
+                          - generic [ref=e1964]: 
+                          - text: Rebaja
+                        - generic [ref=e1965]:
+                          - img "Pollo Pechuga Filetito Congelado, 650 g" [ref=e1967]
+                          - button "Agregar al carro - Pollo Pechuga Filetito Congelado, 650 g" [ref=e1970] [cursor=pointer]:
+                            - generic "agregar" [ref=e1971]: 
+                            - generic [ref=e1972]: Agregar
+                      - generic [ref=e1974]:
+                        - generic [ref=e1976]:
+                          - generic [ref=e1977]: $4.790
+                          - generic [ref=e1978]: precio actual $4.790, Costaba $7.190
+                          - generic [ref=e1979]: $7.369 x kg
+                          - generic [ref=e1980]: $7.190
+                          - generic [ref=e1981]: Ahorra $2.400
+                        - generic [ref=e1982]: Ariztia
+                        - generic [ref=e1983]: Pollo Pechuga Filetito Congelado, 650 g
+                  - group [ref=e1986]:
+                    - link "Pechuga de Pollo Cocida Bolsa, 150 g" [ref=e1987] [cursor=pointer]:
+                      - /url: /ip/fiambres-y-embutidos/00780193000989?from=/search
+                      - generic [ref=e1988]: Pechuga de Pollo Cocida Bolsa, 150 g
+                    - generic [ref=e1990]:
+                      - generic [ref=e1993]:
+                        - img "Pechuga de Pollo Cocida Bolsa, 150 g" [ref=e1995]
+                        - button "Agregar al carro - Pechuga de Pollo Cocida Bolsa, 150 g" [ref=e1998] [cursor=pointer]:
+                          - generic "agregar" [ref=e1999]: 
+                          - generic [ref=e2000]: Agregar
+                      - generic [ref=e2002]:
+                        - generic [ref=e2004]:
+                          - generic [ref=e2005]: $2.090
+                          - generic [ref=e2006]: precio actual $2.090
+                          - generic [ref=e2007]: $13.933 x kg
+                        - generic [ref=e2008]: PF
+                        - generic [ref=e2009]: Pechuga de Pollo Cocida Bolsa, 150 g
+                  - group [ref=e2012]:
+                    - link "Pechuga de Pollo Acaramelada Granel" [ref=e2013] [cursor=pointer]:
+                      - /url: /ip/fiambres-y-embutidos/00232561000000?from=/search
+                      - generic [ref=e2014]: Pechuga de Pollo Acaramelada Granel
+                    - generic [ref=e2016]:
+                      - generic [ref=e2019]:
+                        - img "Pechuga de Pollo Acaramelada Granel" [ref=e2021]
+                        - button "Agregar al carro - Pechuga de Pollo Acaramelada Granel" [ref=e2024] [cursor=pointer]:
+                          - generic "agregar" [ref=e2025]: 
+                          - generic [ref=e2026]: Agregar
+                      - generic [ref=e2028]:
+                        - generic [ref=e2030]:
+                          - generic [ref=e2031]: $10.200/kg
+                          - generic [ref=e2032]: precio actual $10.200/kg
+                          - generic [ref=e2033]: $10.200 x kg
+                        - generic [ref=e2034]: Super Pollo
+                        - generic [ref=e2035]: Pechuga de Pollo Acaramelada Granel
+                  - group [ref=e2038]:
+                    - link "Pechuga Pollo Apanado, 480 g" [ref=e2039] [cursor=pointer]:
+                      - /url: /ip/hamburguesas-y-churrascos/00780961172126?from=/search
+                      - generic [ref=e2040]: Pechuga Pollo Apanado, 480 g
+                    - generic [ref=e2042]:
+                      - generic [ref=e2045]:
+                        - img "Pechuga Pollo Apanado, 480 g" [ref=e2047]
+                        - button "Agregar al carro - Pechuga Pollo Apanado, 480 g" [ref=e2050] [cursor=pointer]:
+                          - generic "agregar" [ref=e2051]: 
+                          - generic [ref=e2052]: Agregar
+                      - generic [ref=e2054]:
+                        - generic [ref=e2056]:
+                          - generic [ref=e2057]: $4.490
+                          - generic [ref=e2058]: precio actual $4.490
+                          - generic [ref=e2059]: $9.354 x kg
+                        - generic [ref=e2060]: La Crianza
+                        - generic [ref=e2061]: Pechuga Pollo Apanado, 480 g
+                  - group [ref=e2064]:
+                    - link "Pechuga de Pollo Asada, 150 g" [ref=e2065] [cursor=pointer]:
+                      - /url: /ip/fiambres-y-embutidos/00780961171857?from=/search
+                      - generic [ref=e2066]: Pechuga de Pollo Asada, 150 g
+                    - generic [ref=e2068]:
+                      - generic [ref=e2071]:
+                        - img "Pechuga de Pollo Asada, 150 g" [ref=e2073]
+                        - button "Agregar al carro - Pechuga de Pollo Asada, 150 g" [ref=e2076] [cursor=pointer]:
+                          - generic "agregar" [ref=e2077]: 
+                          - generic [ref=e2078]: Agregar
+                      - generic [ref=e2080]:
+                        - generic [ref=e2082]:
+                          - generic [ref=e2083]: $1.990
+                          - generic [ref=e2084]: precio actual $1.990
+                          - generic [ref=e2085]: $7.960 x kg
+                        - generic [ref=e2086]: Super Pollo
+                        - generic [ref=e2087]: Pechuga de Pollo Asada, 150 g
+                  - group [ref=e2090]:
+                    - link "Pollo Pechuga Con Hueso y Piel Congelada, 800 g" [ref=e2091] [cursor=pointer]:
+                      - /url: /ip/pollo/00789490429293?from=/search
+                      - generic [ref=e2092]: Pollo Pechuga Con Hueso y Piel Congelada, 800 g
+                    - generic [ref=e2094]:
+                      - generic [ref=e2095]:
+                        - generic [ref=e2097]:
+                          - generic [ref=e2099]: 
+                          - text: Rebaja
+                        - generic [ref=e2100]:
+                          - img "Pollo Pechuga Con Hueso y Piel Congelada, 800 g" [ref=e2102]
+                          - button "Agregar al carro - Pollo Pechuga Con Hueso y Piel Congelada, 800 g" [ref=e2105] [cursor=pointer]:
+                            - generic "agregar" [ref=e2106]: 
+                            - generic [ref=e2107]: Agregar
+                      - generic [ref=e2109]:
+                        - generic [ref=e2111]:
+                          - generic [ref=e2112]: $3.490
+                          - generic [ref=e2113]: precio actual $3.490, Costaba $4.590
+                          - generic [ref=e2114]: $4.362 x kg
+                          - generic [ref=e2115]: $4.590
+                          - generic [ref=e2116]: Ahorra $1.100
+                        - generic [ref=e2117]: Seara
+                        - generic [ref=e2118]: Pollo Pechuga Con Hueso y Piel Congelada, 800 g
+                  - group [ref=e2121]:
+                    - link "Pollo Pechuga Deshuesada Congelada, 750 g" [ref=e2122] [cursor=pointer]:
+                      - /url: /ip/pollo/00780874950121?from=/search
+                      - generic [ref=e2123]: Pollo Pechuga Deshuesada Congelada, 750 g
+                    - generic [ref=e2125]:
+                      - generic [ref=e2128]:
+                        - img "Pollo Pechuga Deshuesada Congelada, 750 g" [ref=e2130]
+                        - button "Agregar al carro - Pollo Pechuga Deshuesada Congelada, 750 g" [ref=e2133] [cursor=pointer]:
+                          - generic "agregar" [ref=e2134]: 
+                          - generic [ref=e2135]: Agregar
+                      - generic [ref=e2137]:
+                        - generic [ref=e2139]:
+                          - generic [ref=e2140]: $8.190
+                          - generic [ref=e2141]: precio actual $8.190
+                          - generic [ref=e2142]: $10.920 x kg
+                        - generic [ref=e2143]: Canto Del Gallo
+                        - generic [ref=e2144]: Pollo Pechuga Deshuesada Congelada, 750 g
+                  - group [ref=e2147]:
+                    - link "Pavo Pechuga Bistec Envasada, 450 g" [ref=e2148] [cursor=pointer]:
+                      - /url: /ip/pavo/00780411500110?from=/search
+                      - generic [ref=e2149]: Pavo Pechuga Bistec Envasada, 450 g
+                    - generic [ref=e2151]:
+                      - generic [ref=e2154]:
+                        - img "Pavo Pechuga Bistec Envasada, 450 g" [ref=e2156]
+                        - button "Agregar al carro - Pavo Pechuga Bistec Envasada, 450 g" [ref=e2159] [cursor=pointer]:
+                          - generic "agregar" [ref=e2160]: 
+                          - generic [ref=e2161]: Agregar
+                      - generic [ref=e2163]:
+                        - generic [ref=e2165]:
+                          - generic [ref=e2166]: $5.690
+                          - generic [ref=e2167]: precio actual $5.690
+                          - generic [ref=e2168]: $12.644 x kg
+                        - generic [ref=e2169]: Ariztia
+                        - generic [ref=e2170]: Pavo Pechuga Bistec Envasada, 450 g
+                  - group [ref=e2173]:
+                    - link "Pavo Pechuga Bistec Light Envasada, 450 g" [ref=e2174] [cursor=pointer]:
+                      - /url: /ip/pavo/00780411500238?from=/search
+                      - generic [ref=e2175]: Pavo Pechuga Bistec Light Envasada, 450 g
+                    - generic [ref=e2177]:
+                      - generic [ref=e2180]:
+                        - img "Pavo Pechuga Bistec Light Envasada, 450 g" [ref=e2182]
+                        - button "Agregar al carro - Pavo Pechuga Bistec Light Envasada, 450 g" [ref=e2185] [cursor=pointer]:
+                          - generic "agregar" [ref=e2186]: 
+                          - generic [ref=e2187]: Agregar
+                      - generic [ref=e2189]:
+                        - generic [ref=e2191]:
+                          - generic [ref=e2192]: $5.990
+                          - generic [ref=e2193]: precio actual $5.990
+                          - generic [ref=e2194]: $13.311 x kg
+                        - generic [ref=e2195]: Ariztia
+                        - generic [ref=e2196]: Pavo Pechuga Bistec Light Envasada, 450 g
+                  - group [ref=e2199]:
+                    - link "Pavo Pechuga Deshuesada Envasada" [ref=e2200] [cursor=pointer]:
+                      - /url: /ip/pavo/00218335000000?from=/search
+                      - generic [ref=e2201]: Pavo Pechuga Deshuesada Envasada
+                    - generic [ref=e2203]:
+                      - generic [ref=e2206]:
+                        - img "Pavo Pechuga Deshuesada Envasada" [ref=e2208]
+                        - button "Agregar al carro - Pavo Pechuga Deshuesada Envasada" [ref=e2211] [cursor=pointer]:
+                          - generic "agregar" [ref=e2212]: 
+                          - generic [ref=e2213]: Agregar
+                      - generic [ref=e2215]:
+                        - generic [ref=e2217]:
+                          - generic [ref=e2218]: $11.390/kg
+                          - generic [ref=e2219]: precio actual $11.390/kg
+                          - generic [ref=e2220]: $11.390 x kg
+                        - generic [ref=e2221]: Ariztia
+                        - generic [ref=e2222]: Pavo Pechuga Deshuesada Envasada
+                  - group [ref=e2225]:
+                    - link "Molida de Pechuga, 320 g" [ref=e2226] [cursor=pointer]:
+                      - /url: /ip/pollo/00780961172080?from=/search
+                      - generic [ref=e2227]: Molida de Pechuga, 320 g
+                    - generic [ref=e2229]:
+                      - generic [ref=e2230]:
+                        - generic [ref=e2232]:
+                          - generic [ref=e2234]: 
+                          - text: Rebaja
+                        - generic [ref=e2235]:
+                          - generic [ref=e2236]:
+                            - img "Molida de Pechuga, 320 g"
+                          - button "Agregar al carro - Molida de Pechuga, 320 g" [ref=e2239] [cursor=pointer]:
+                            - generic "agregar" [ref=e2240]: 
+                            - generic [ref=e2241]: Agregar
+                      - generic [ref=e2243]:
+                        - generic [ref=e2245]:
+                          - generic [ref=e2246]: $2.190
+                          - generic [ref=e2247]: precio actual $2.190, Costaba $2.390
+                          - generic [ref=e2248]: $6.844 x kg
+                          - generic [ref=e2249]: $2.390
+                          - generic [ref=e2250]: Ahorra $200
+                        - generic [ref=e2251]: Super Pollo
+                        - generic [ref=e2252]: Molida de Pechuga, 320 g
+                  - group [ref=e2255]:
+                    - link "Pollo Alitas BBQ Envasada, 750 g" [ref=e2256] [cursor=pointer]:
+                      - /url: /ip/pollo/00780961171987?from=/search
+                      - generic [ref=e2257]: Pollo Alitas BBQ Envasada, 750 g
+                    - generic [ref=e2259]:
+                      - generic [ref=e2260]:
+                        - generic [ref=e2262]:
+                          - generic [ref=e2264]: 
+                          - text: Rebaja
+                        - generic [ref=e2265]:
+                          - generic [ref=e2266]:
+                            - img "Pollo Alitas BBQ Envasada, 750 g"
+                          - button "Agregar al carro - Pollo Alitas BBQ Envasada, 750 g" [ref=e2269] [cursor=pointer]:
+                            - generic "agregar" [ref=e2270]: 
+                            - generic [ref=e2271]: Agregar
+                      - generic [ref=e2273]:
+                        - generic [ref=e2275]:
+                          - generic [ref=e2276]: $4.390
+                          - generic [ref=e2277]: precio actual $4.390, Costaba $5.190
+                          - generic [ref=e2278]: $5.853 x kg
+                          - generic [ref=e2279]: $5.190
+                          - generic [ref=e2280]: Ahorra $800
+                        - generic [ref=e2281]: Super Pollo
+                        - generic [ref=e2282]: Pollo Alitas BBQ Envasada, 750 g
+                  - group [ref=e2285]:
+                    - link "Pollo Alitas Chilena Envasadas, 750 g" [ref=e2286] [cursor=pointer]:
+                      - /url: /ip/pollo/00780961171986?from=/search
+                      - generic [ref=e2287]: Pollo Alitas Chilena Envasadas, 750 g
+                    - generic [ref=e2289]:
+                      - generic [ref=e2290]:
+                        - generic [ref=e2292]:
+                          - generic [ref=e2294]: 
+                          - text: Rebaja
+                        - generic [ref=e2295]:
+                          - generic [ref=e2296]:
+                            - img "Pollo Alitas Chilena Envasadas, 750 g"
+                          - button "Agregar al carro - Pollo Alitas Chilena Envasadas, 750 g" [ref=e2299] [cursor=pointer]:
+                            - generic "agregar" [ref=e2300]: 
+                            - generic [ref=e2301]: Agregar
+                      - generic [ref=e2303]:
+                        - generic [ref=e2305]:
+                          - generic [ref=e2306]: $4.390
+                          - generic [ref=e2307]: precio actual $4.390, Costaba $5.190
+                          - generic [ref=e2308]: $5.853 x kg
+                          - generic [ref=e2309]: $5.190
+                          - generic [ref=e2310]: Ahorra $800
+                        - generic [ref=e2311]: Super Pollo
+                        - generic [ref=e2312]: Pollo Alitas Chilena Envasadas, 750 g
+                  - group [ref=e2315]:
+                    - link "Pollo Alitas Sureña Envasadas, 750 g" [ref=e2316] [cursor=pointer]:
+                      - /url: /ip/pollo/00780411526591?from=/search
+                      - generic [ref=e2317]: Pollo Alitas Sureña Envasadas, 750 g
+                    - generic [ref=e2319]:
+                      - generic [ref=e2322]:
+                        - generic [ref=e2323]:
+                          - img "Pollo Alitas Sureña Envasadas, 750 g"
+                        - button "Agregar al carro - Pollo Alitas Sureña Envasadas, 750 g" [ref=e2326] [cursor=pointer]:
+                          - generic "agregar" [ref=e2327]: 
+                          - generic [ref=e2328]: Agregar
+                      - generic [ref=e2330]:
+                        - generic [ref=e2332]:
+                          - generic [ref=e2333]: $5.190
+                          - generic [ref=e2334]: precio actual $5.190
+                          - generic [ref=e2335]: $6.920 x kg
+                        - generic [ref=e2336]: Ariztia
+                        - generic [ref=e2337]: Pollo Alitas Sureña Envasadas, 750 g
+                  - group [ref=e2340]:
+                    - link "Pollo Alitas Barbecue Envasadas, 750 g" [ref=e2341] [cursor=pointer]:
+                      - /url: /ip/pollo/00780411526583?from=/search
+                      - generic [ref=e2342]: Pollo Alitas Barbecue Envasadas, 750 g
+                    - generic [ref=e2344]:
+                      - generic [ref=e2347]:
+                        - generic [ref=e2348]:
+                          - img "Pollo Alitas Barbecue Envasadas, 750 g"
+                        - button "Agregar al carro - Pollo Alitas Barbecue Envasadas, 750 g" [ref=e2351] [cursor=pointer]:
+                          - generic "agregar" [ref=e2352]: 
+                          - generic [ref=e2353]: Agregar
+                      - generic [ref=e2355]:
+                        - generic [ref=e2357]:
+                          - generic [ref=e2358]: $5.190
+                          - generic [ref=e2359]: precio actual $5.190
+                          - generic [ref=e2360]: $6.920 x kg
+                        - generic [ref=e2361]: Ariztia
+                        - generic [ref=e2362]: Pollo Alitas Barbecue Envasadas, 750 g
+                  - group [ref=e2365]:
+                    - link "Pollo En Tiritas de Pechuga Congelado, 700 g" [ref=e2366] [cursor=pointer]:
+                      - /url: /ip/pollo/00780961171099?from=/search
+                      - generic [ref=e2367]: Pollo En Tiritas de Pechuga Congelado, 700 g
+                    - generic [ref=e2369]:
+                      - generic [ref=e2372]:
+                        - generic [ref=e2373]:
+                          - img "Pollo En Tiritas de Pechuga Congelado, 700 g"
+                        - button "Agregar al carro - Pollo En Tiritas de Pechuga Congelado, 700 g" [ref=e2376] [cursor=pointer]:
+                          - generic "agregar" [ref=e2377]: 
+                          - generic [ref=e2378]: Agregar
+                      - generic [ref=e2380]:
+                        - generic [ref=e2382]:
+                          - generic [ref=e2383]: $7.390
+                          - generic [ref=e2384]: precio actual $7.390
+                          - generic [ref=e2385]: $10.557 x kg
+                        - generic [ref=e2386]: Super Pollo
+                        - generic [ref=e2387]: Pollo En Tiritas de Pechuga Congelado, 700 g
+                  - group [ref=e2390]:
+                    - link "Pollo Filetito De Pechuga Sin Marinar Congelada, 700 g" [ref=e2391] [cursor=pointer]:
+                      - /url: /ip/pollo/00780961171849?from=/search
+                      - generic [ref=e2392]: Pollo Filetito De Pechuga Sin Marinar Congelada, 700 g
+                    - generic [ref=e2394]:
+                      - generic [ref=e2395]:
+                        - generic [ref=e2397]:
+                          - generic [ref=e2399]: 
+                          - text: Rebaja
+                        - generic [ref=e2400]:
+                          - generic [ref=e2401]:
+                            - img "Pollo Filetito De Pechuga Sin Marinar Congelada, 700 g"
+                          - button "Agregar al carro - Pollo Filetito De Pechuga Sin Marinar Congelada, 700 g" [ref=e2404] [cursor=pointer]:
+                            - generic "agregar" [ref=e2405]: 
+                            - generic [ref=e2406]: Agregar
+                      - generic [ref=e2408]:
+                        - generic [ref=e2410]:
+                          - generic [ref=e2411]: $6.490
+                          - generic [ref=e2412]: precio actual $6.490, Costaba $7.390
+                          - generic [ref=e2413]: $9.271 x kg
+                          - generic [ref=e2414]: $7.390
+                          - generic [ref=e2415]: Ahorra $900
+                        - generic [ref=e2416]: Super Pollo
+                        - generic [ref=e2417]: Pollo Filetito De Pechuga Sin Marinar Congelada, 700 g
+                  - group [ref=e2420]:
+                    - link "Pollo Filetitos De Pechuga Congelada, 800 g" [ref=e2421] [cursor=pointer]:
+                      - /url: /ip/pollo/00789490429416?from=/search
+                      - generic [ref=e2422]: Pollo Filetitos De Pechuga Congelada, 800 g
+                    - generic [ref=e2424]:
+                      - generic [ref=e2425]:
+                        - generic [ref=e2427]:
+                          - generic [ref=e2429]: 
+                          - text: Rebaja
+                        - generic [ref=e2430]:
+                          - generic [ref=e2431]:
+                            - img "Pollo Filetitos De Pechuga Congelada, 800 g"
+                          - button "Agregar al carro - Pollo Filetitos De Pechuga Congelada, 800 g" [ref=e2434] [cursor=pointer]:
+                            - generic "agregar" [ref=e2435]: 
+                            - generic [ref=e2436]: Agregar
+                      - generic [ref=e2438]:
+                        - generic [ref=e2440]:
+                          - generic [ref=e2441]: $4.190
+                          - generic [ref=e2442]: precio actual $4.190, Costaba $6.490
+                          - generic [ref=e2443]: $5.237 x kg
+                          - generic [ref=e2444]: $6.490
+                          - generic [ref=e2445]: Ahorra $2.300
+                        - generic [ref=e2446]: Seara
+                        - generic [ref=e2447]: Pollo Filetitos De Pechuga Congelada, 800 g
+                  - group [ref=e2450]:
+                    - link "Pollo Churrasco Pechuga Congelado, 500 g" [ref=e2451] [cursor=pointer]:
+                      - /url: /ip/pollo/00780873770050?from=/search
+                      - generic [ref=e2452]: Pollo Churrasco Pechuga Congelado, 500 g
+                    - generic [ref=e2454]:
+                      - generic [ref=e2457]:
+                        - generic [ref=e2458]:
+                          - img "Pollo Churrasco Pechuga Congelado, 500 g"
+                        - button "Agregar al carro - Pollo Churrasco Pechuga Congelado, 500 g" [ref=e2461] [cursor=pointer]:
+                          - generic "agregar" [ref=e2462]: 
+                          - generic [ref=e2463]: Agregar
+                      - generic [ref=e2465]:
+                        - generic [ref=e2467]:
+                          - generic [ref=e2468]: $4.390
+                          - generic [ref=e2469]: precio actual $4.390
+                          - generic [ref=e2470]: $8.780 x kg
+                        - generic [ref=e2471]: Super Pollo
+                        - generic [ref=e2472]: Pollo Churrasco Pechuga Congelado, 500 g
+                  - group [ref=e2475]:
+                    - link "Pollo Cubitos de Pechuga Congelados, 300 g" [ref=e2476] [cursor=pointer]:
+                      - /url: /ip/pollo/00780411500269?from=/search
+                      - generic [ref=e2477]: Pollo Cubitos de Pechuga Congelados, 300 g
+                    - generic [ref=e2479]:
+                      - generic [ref=e2480]:
+                        - generic [ref=e2482]:
+                          - generic [ref=e2484]: 
+                          - text: Rebaja
+                        - generic [ref=e2485]:
+                          - generic [ref=e2486]:
+                            - img "Pollo Cubitos de Pechuga Congelados, 300 g"
+                          - button "Agregar al carro - Pollo Cubitos de Pechuga Congelados, 300 g" [ref=e2489] [cursor=pointer]:
+                            - generic "agregar" [ref=e2490]: 
+                            - generic [ref=e2491]: Agregar
+                      - generic [ref=e2493]:
+                        - generic [ref=e2495]:
+                          - generic [ref=e2496]: $2.490
+                          - generic [ref=e2497]: precio actual $2.490, Costaba $3.490
+                          - generic [ref=e2498]: $8.300 x kg
+                          - generic [ref=e2499]: $3.490
+                          - generic [ref=e2500]: Ahorra $1.000
+                        - generic [ref=e2501]: Ariztia
+                        - generic [ref=e2502]: Pollo Cubitos de Pechuga Congelados, 300 g
+                  - generic [ref=e2504]:
+                    - group [ref=e2505]:
+                      - link "Pollo Tiritas De Pechuga Marinada, 400 g" [ref=e2506] [cursor=pointer]:
+                        - /url: /ip/pollo/00789151556887?from=/search
+                        - generic [ref=e2507]: Pollo Tiritas De Pechuga Marinada, 400 g
+                      - generic [ref=e2509]:
+                        - generic [ref=e2513]:
+                          - img "Pollo Tiritas De Pechuga Marinada, 400 g"
+                        - generic [ref=e2515]:
+                          - generic [ref=e2517]:
+                            - generic [ref=e2518]: $3.990
+                            - generic [ref=e2519]: precio actual $3.990
+                            - generic [ref=e2520]: $9.975 x kg
+                          - generic [ref=e2521]: Sadia
+                          - generic [ref=e2522]: Pollo Tiritas De Pechuga Marinada, 400 g
+                          - generic [ref=e2523]: Agotado
+                    - button "Revisar productos similares - Pollo Tiritas De Pechuga Marinada, 400 g" [ref=e2525]: Revisar productos similares
+                  - group [ref=e2528]:
+                    - link "Pollo Cubitos de Pechuga Congelados, 500 g" [ref=e2529] [cursor=pointer]:
+                      - /url: /ip/pollo/00780961171945?from=/search
+                      - generic [ref=e2530]: Pollo Cubitos de Pechuga Congelados, 500 g
+                    - generic [ref=e2532]:
+                      - generic [ref=e2533]:
+                        - generic [ref=e2535]:
+                          - generic [ref=e2537]: 
+                          - text: Rebaja
+                        - generic [ref=e2538]:
+                          - generic [ref=e2539]:
+                            - img "Pollo Cubitos de Pechuga Congelados, 500 g"
+                          - button "Agregar al carro - Pollo Cubitos de Pechuga Congelados, 500 g" [ref=e2542] [cursor=pointer]:
+                            - generic "agregar" [ref=e2543]: 
+                            - generic [ref=e2544]: Agregar
+                      - generic [ref=e2546]:
+                        - generic [ref=e2548]:
+                          - generic [ref=e2549]: $4.890
+                          - generic [ref=e2550]: precio actual $4.890, Costaba $5.790
+                          - generic [ref=e2551]: $9.780 x kg
+                          - generic [ref=e2552]: $5.790
+                          - generic [ref=e2553]: Ahorra $900
+                        - generic [ref=e2554]: Super Pollo
+                        - generic [ref=e2555]: Pollo Cubitos de Pechuga Congelados, 500 g
+            - navigation "paginación" [ref=e2558]:
+              - list [ref=e2559]:
+                - listitem [ref=e2560]
+                - listitem [ref=e2562]:
+                  - link "1" [ref=e2563] [cursor=pointer]:
+                    - /url: /search?q=pollo+pechuga+entera+envasada&facet=fulfillment_method%3ADelivery
+                - listitem [ref=e2564]:
+                  - link "Ir a la página 2" [ref=e2565] [cursor=pointer]:
+                    - /url: /search?q=pollo+pechuga+entera+envasada&facet=fulfillment_method%3ADelivery&page=2
+                    - text: "2"
+                - listitem [ref=e2566]:
+                  - link "Ir a la página 3" [ref=e2567] [cursor=pointer]:
+                    - /url: /search?q=pollo+pechuga+entera+envasada&facet=fulfillment_method%3ADelivery&page=3
+                    - text: "3"
+                - listitem [ref=e2568]:
+                  - link "Página siguiente" [ref=e2569] [cursor=pointer]:
+                    - /url: /search?q=pollo+pechuga+entera+envasada&facet=fulfillment_method%3ADelivery&page=2
+                    - generic [ref=e2570]: 
+  - alert [ref=e1396]: Supermercado

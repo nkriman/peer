@@ -9,3 +9,12 @@ c82f2ee	3ef8cf99	0.058824	0.058824	n/a	n/a	n/a	0.443319	34	ok	iter-6: add target
 ab2f445	ebce8709	0	0	n/a	n/a	n/a	3.184743	0	ok	iter-7: shim via claude code CLI (no API spend); same iter-2 winning prompt
 ab2f445	3d53d29e	0	0	n/a	n/a	n/a	0.754674	0	ok	iter-8: use_claude_code=true in recipe -> ClaudeCodeCLIReviewer path (JSON-instruction prompt, no tool-use)
 ab2f445	3d53d29e	0	0	n/a	n/a	n/a	0.768534	25	ok	iter-9: CLI reviewer with structured_output parser fix
+2efb682	3d53d29e	0.058824	0.058824	n/a	n/a	n/a	0.810882	22	ok	sweep[T=0.0,sev_floor=None,max_comments=None]
+2efb682	93948e87	0.058824	0.058824	n/a	n/a	n/a	0.86922	25	ok	sweep[T=0.0,sev_floor=None,max_comments=5]
+431bc3f	56033d63	0.078431	0.078431	n/a	n/a	n/a	0.749517	31	ok	arch[baseline: sonnet, ctx=30K, call_sites=5, no strategy]
+431bc3f	9cfbaa2e	0.098039	0.098039	n/a	n/a	n/a	0.832839	29	ok	arch[narrower context: ctx=10K, call_sites=2]
+431bc3f	bc472b02	0.039216	0.039216	n/a	n/a	n/a	0.772107	29	ok	arch[wider context: ctx=60K, call_sites=15]
+431bc3f	03cb70ab	0.019608	0.019608	n/a	n/a	n/a	0.237871	7	ok	arch[model=haiku]
+431bc3f	7f02ebd1	0.039216	0.039216	n/a	n/a	n/a	1.82355	30	ok	arch[model=opus]
+431bc3f	f7d0a1d3	0.039216	0.039216	n/a	n/a	n/a	n/a	22	ok	arch[strategy=draft_critique (CLI inner + CLI critique)]
+bd053d4	ad0fc760	0	n/a	n/a	n/a	n/a	n/a	0	ok	arch[strategy=self_filter (CLI inner)]

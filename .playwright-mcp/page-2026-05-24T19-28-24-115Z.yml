@@ -1,0 +1,309 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: pollo marinado trutro
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Ingresar Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Ingresar
+                - generic [ref=e37]: Cuenta
+            - text:  
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total" [ref=e314]:
+              - generic [ref=e42]: 
+              - generic [ref=e315]: "0"
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e316]:
+          - generic [ref=e317]:
+            - button "Elige un modo de entrega Santiago, Vitacura" [expanded] [ref=e318] [cursor=pointer]:
+              - generic [ref=e319]:
+                - generic [ref=e320]:
+                  - img [ref=e321]
+                  - generic [ref=e322]: Elige un modo de entrega
+                  - generic [ref=e323]: 
+                  - generic [ref=e324]: "|"
+                  - generic [ref=e326]:
+                    - img [ref=e327]
+                    - generic [ref=e328]: Santiago,
+                - generic [ref=e331]:
+                  - img [ref=e332]
+                  - generic [ref=e333]: Vitacura
+              - text: 
+            - paragraph [ref=e335]: "Instrucciones del lector de pantalla: En este cuadro de diálogo, encontrarás botones de alternancia para seleccionar cómo deseas comprar. Después de seleccionar, esta opción se guarda para personalizar tu experiencia de compra en Lider para mostrarte productos relevantes. Si deseas cambiar tu preferencia, puedes activar este cuadro de diálogo en cualquier página. El botón para activar el cuadro de diálogo aparece después del botón de \\\"Carro\\\" en el orden de lectura y teclado. El botón se etiquetará según la opción más reciente que hayas elegido. Para salir de este cuadro de diálogo, activa el botón \\\"Cerrar\\\" o presiona el botón \\\"Escape\\\"."
+            - dialog "Elige un modo de entrega" [ref=e336]:
+              - generic [ref=e338]:
+                - list [ref=e339]:
+                  - listitem [ref=e340]:
+                    - button "Retiro Pickup" [ref=e341]:
+                      - img [ref=e343]
+                      - generic [ref=e344]: Retiro Pickup
+                  - listitem [ref=e345]:
+                    - button "Despacho a Domicilio" [ref=e346]:
+                      - img [ref=e348]
+                      - generic [ref=e349]: Despacho a Domicilio
+                - generic [ref=e351]:
+                  - generic [ref=e356]:
+                    - generic [ref=e360]:
+                      - generic [ref=e362]: Agrega una dirección de despacho
+                      - generic [ref=e364]: Santiago, Región Metropolitana
+                    - button "Agregar dirección" [active] [ref=e366] [cursor=pointer]
+                  - separator [ref=e368]
+                  - button "Vitacura Elige tu método de entrega, Santiago, Región Metropolitana" [ref=e372]:
+                    - generic [ref=e377]:
+                      - generic [ref=e379]: Vitacura
+                      - generic [ref=e381]: Elige tu método de entrega, Santiago, Región Metropolitana
+                    - generic [ref=e383]: 
+                - button "Cerrar ¿Cómo quieres tus productos?" [ref=e384]:
+                  - generic [ref=e385]: 
+            - navigation "Secundario" [ref=e387]:
+              - list [ref=e388]:
+                - listitem [ref=e389]:
+                  - link "Tarjeta Lider Bci" [ref=e391] [cursor=pointer]:
+                    - /url: https://tarjetadigital.liderbciserviciosfinancieros.cl/ingreso-de-datos?utm_source=Lidercl_sod_header&utm_medium=lidercl
+                - listitem [ref=e392]:
+                  - link "Mi Club" [ref=e394] [cursor=pointer]:
+                    - /url: https://www.miclublider.cl/
+                - listitem [ref=e395]:
+                  - link "Centro de ayuda" [ref=e397] [cursor=pointer]:
+                    - /url: /ayuda
+          - generic [ref=e398]:
+            - img [ref=e400]
+            - img [ref=e402]
+      - main [ref=e49]:
+        - heading [level=1] [ref=e404]: Supermercado
+        - generic [ref=e52]:
+          - article [ref=e56]:
+            - generic [ref=e59]:
+              - list [ref=e60]:
+                - listitem [ref=e61]:
+                  - generic [ref=e67]:
+                    - heading [level=2] [ref=e405]:
+                      - link [ref=e69] [cursor=pointer]:
+                        - /url: https://super.lider.cl/browse/mascotas/07089592?contentzone2&co_ty=banner&co_nm=Banner01_web_Sem21&co_id=20052026_banner1&co_or=1
+                        - generic [ref=e70]: Alimentos y accesorios mascotas
+                      - text: Alimentos y accesorios mascotas
+                    - generic [ref=e71]: Todo para verlos sanos y felices
+                    - link [ref=e406] [cursor=pointer]:
+                      - /url: https://super.lider.cl/browse/mascotas/07089592?contentzone2&co_ty=banner&co_nm=Banner01_web_Sem21&co_id=20052026_banner1&co_or=1
+                      - text: ¡Descubre más!
+                - listitem [ref=e73]:
+                  - generic [ref=e79]:
+                    - heading [level=2] [ref=e407]:
+                      - link [ref=e81] [cursor=pointer]:
+                        - /url: https://super.lider.cl/search?q=Exclutec&contentzone2&co_ty=banner&co_nm=Banner02_web_segm_Sem21&co_id=20052026_banner2&co_or=2
+                        - generic [ref=e82]: Tu nuevo iPhone te espera
+                      - text: Tu nuevo iPhone te espera
+                    - generic [ref=e83]: Conéctate con la mejor tecnología
+                    - link [ref=e408] [cursor=pointer]:
+                      - /url: https://super.lider.cl/search?q=Exclutec&contentzone2&co_ty=banner&co_nm=Banner02_web_segm_Sem21&co_id=20052026_banner2&co_or=2
+                      - text: ¡Descubre más!
+                - listitem [ref=e85]:
+                  - generic [ref=e414]:
+                    - generic [ref=e416]:
+                      - heading [level=2] [ref=e417]: Tu hogar limpio y protegido
+                      - generic [ref=e418]: Tus aliados en limpieza profunda
+                      - link [ref=e419] [cursor=pointer]:
+                        - /url: https://super.lider.cl/browse/Activaciones/connect/connect-553/20126634_05267747_17336753
+                        - text: ¡Descubre más!
+                    - generic [ref=e421]: Patrocinado
+                - listitem [ref=e96]:
+                  - generic [ref=e427]:
+                    - generic [ref=e429]:
+                      - heading [level=2] [ref=e430]: Tus productos favoritos están aquí
+                      - generic [ref=e431]: Sabemos que no los dejarás pasar
+                      - link [ref=e432] [cursor=pointer]:
+                        - /url: https://super.lider.cl/browse/Activaciones/connect/connect-554/20126634_05267747_85079848
+                        - text: ¡Descubre más!
+                    - generic [ref=e434]: Patrocinado
+                - listitem [ref=e107]:
+                  - generic [ref=e440]:
+                    - generic [ref=e442]:
+                      - heading [level=2] [ref=e443]: Cocina rico todos los días
+                      - generic [ref=e444]: Dale más sabor a tus platos con Caldos Maggi
+                      - link [ref=e445] [cursor=pointer]:
+                        - /url: https://super.lider.cl/browse/Activaciones/connect/connect-557/20126634_05267747_40133300
+                        - text: ¡Descubre más!
+                    - generic [ref=e447]: Patrocinado
+                - listitem [ref=e118]:
+                  - generic [ref=e453]:
+                    - generic [ref=e455]:
+                      - heading [level=2] [ref=e456]: "Pan Fuchs: ¡Elige lo natural!"
+                      - generic [ref=e457]: Tu dosis de bienestar diario
+                      - link [ref=e458] [cursor=pointer]:
+                        - /url: https://super.lider.cl/browse/Activaciones/connect/connect-560/20126634_05267747_05824971
+                        - text: ¡Descubre más!
+                    - generic [ref=e460]: Patrocinado
+                - listitem [ref=e129]:
+                  - generic [ref=e466]:
+                    - generic [ref=e468]:
+                      - generic [ref=e469]: Frescura y desinfección en casa
+                      - heading [level=2] [ref=e470]: Aroma irresistible en todo tu hogar
+                      - link [ref=e471] [cursor=pointer]:
+                        - /url: https://super.lider.cl/browse/Activaciones/connect/connect-564/20126634_05267747_59804082
+                        - text: ¡Descubre más!
+                    - generic [ref=e473]: Patrocinado
+                - listitem [ref=e140]:
+                  - generic [ref=e146]:
+                    - heading [level=2] [ref=e474]:
+                      - link [ref=e148] [cursor=pointer]:
+                        - /url: https://super.lider.cl/search?q=torta&contentzone2&co_ty=banner&co_nm=Banner08_web_Sem21&co_id=20052026_banner8&co_or=8
+                        - generic [ref=e149]: Tortas y pastelería para celebrar
+                      - text: Tortas y pastelería para celebrar
+                    - generic [ref=e150]: El toque dulce que tus momentos especiales necesitan
+                    - link [ref=e475] [cursor=pointer]:
+                      - /url: https://super.lider.cl/search?q=torta&contentzone2&co_ty=banner&co_nm=Banner08_web_Sem21&co_id=20052026_banner8&co_or=8
+                      - text: ¡Descubre más!
+                - listitem [ref=e152]:
+                  - generic [ref=e158]:
+                    - heading [level=2] [ref=e476]:
+                      - link [ref=e160] [cursor=pointer]:
+                        - /url: https://super.lider.cl/search?q=Toy_story_5&contentzone2&co_ty=banner&co_nm=Banner09_web_Sem21&co_id=20052026_banner9&co_or=9
+                        - generic [ref=e161]: Juguetes de Toy Story y Pixar
+                      - text: Juguetes de Toy Story y Pixar
+                    - generic [ref=e162]: Revive tus escenas favoritas con Woody, Buzz y sus amigos
+                    - link [ref=e477] [cursor=pointer]:
+                      - /url: https://super.lider.cl/search?q=Toy_story_5&contentzone2&co_ty=banner&co_nm=Banner09_web_Sem21&co_id=20052026_banner9&co_or=9
+                      - text: ¡Descubre más!
+              - navigation [ref=e478]:
+                - button [ref=e479]
+                - generic [ref=e167]:
+                  - generic [ref=e170]: Diapositiva actual del carrusel 6 de 9
+                  - button [ref=e480]
+                  - button [ref=e481]
+          - generic [ref=e174]:
+            - generic [ref=e179]:
+              - heading [level=2] [ref=e482]: Campañas
+              - list [ref=e182]:
+                - listitem [ref=e183]:
+                  - link [ref=e483] [cursor=pointer]:
+                    - /url: https://super.lider.cl/content/estos-precios-no-se-tocan/94920941?contentzone3&co_ty=banner&co_nm=tusfavoritos1_Sem21&co_id=20052026_tus_favoritos_1&co_or=1
+                    - img [ref=e185]
+                    - generic [ref=e187]: Estos Precios No Se Tocan
+                - listitem [ref=e188]:
+                  - link [ref=e484] [cursor=pointer]:
+                    - /url: https://super.lider.cl/content/modo-invierno/08051177?contentzone3&co_ty=banner&co_nm=tusfavoritos2_Sem21&co_id=20052026_tus_favoritos_2&co_or=2
+                    - img [ref=e190]
+                    - generic [ref=e192]: Modo Invierno
+                - listitem [ref=e193]:
+                  - link [ref=e485] [cursor=pointer]:
+                    - /url: https://super.lider.cl/browse/Activaciones/Supermecado/Supermercado-131/20126634_89720227_98986479?contentzone3&co_ty=banner&co_nm=tusfavoritos3_Sem21&co_id=20052026_tus_favoritos_3&co_or=3
+                    - img [ref=e195]
+                    - generic [ref=e197]: Precios Bajos Siempre
+                - listitem [ref=e198]:
+                  - link [ref=e486] [cursor=pointer]:
+                    - /url: https://super.lider.cl/search?q=LBCI&contentzone3&co_ty=banner&co_nm=tusfavoritos4_Sem21&co_id=20052026_tus_favoritos_4&co_or=4
+                    - img [ref=e200]
+                    - generic [ref=e202]: Lider Bci
+            - generic [ref=e207]:
+              - heading [level=2] [ref=e487]: Destacados
+              - list [ref=e210]:
+                - listitem [ref=e211]:
+                  - link [ref=e488] [cursor=pointer]:
+                    - /url: https://super.lider.cl/content/belleza/70159643?contentzone3&co_ty=banner&co_nm=tusfavoritos5_Sem21&co_id=20052026_tus_favoritos_5&co_or=5
+                    - img [ref=e213]
+                    - generic [ref=e215]: Belleza
+                - listitem [ref=e216]:
+                  - link [ref=e489] [cursor=pointer]:
+                    - /url: https://super.lider.cl/content/mascotas/07089592?contentzone3&co_ty=banner&co_nm=tusfavoritos6_Sem21&co_id=20052026_tus_favoritos_6&co_or=6
+                    - img [ref=e218]
+                    - generic [ref=e220]: Mascotas
+                - listitem [ref=e221]:
+                  - link [ref=e490] [cursor=pointer]:
+                    - /url: https://super.lider.cl/browse/tecno-y-electro/38052117?contentzone3&co_ty=banner&co_nm=tusfavoritos7_Sem21&co_id=20052026_tus_favoritos_7&co_or=7
+                    - img [ref=e223]
+                    - generic [ref=e225]: Tecno y Electro
+                - listitem [ref=e226]:
+                  - link [ref=e491] [cursor=pointer]:
+                    - /url: https://super.lider.cl/content/despensa/46589040?contentzone3&co_ty=banner&co_nm=tusfavoritos8_Sem21&co_id=20052026_tus_favoritos_8&co_or=8
+                    - img [ref=e228]
+                    - generic [ref=e230]: Despensa
+            - generic [ref=e235]:
+              - heading [level=2] [ref=e492]: Tus Favoritos
+              - list [ref=e238]:
+                - listitem [ref=e239]:
+                  - link [ref=e493] [cursor=pointer]:
+                    - /url: https://super.lider.cl/content/marcas-americanas/27359988?contentzone3&co_ty=banner&co_nm=tusfavoritos9_Sem21&co_id=20052026_tus_favoritos_9&co_or=9
+                    - img [ref=e241]
+                    - generic [ref=e243]: Marcas Americanas
+                - listitem [ref=e244]:
+                  - link [ref=e494] [cursor=pointer]:
+                    - /url: https://super.lider.cl/content/marcas-propias/69507955?contentzone3&co_ty=banner&co_nm=tusfavoritos10_Sem21&co_id=20052026_tus_favoritos_10&co_or=10
+                    - img [ref=e246]
+                    - generic [ref=e248]: Marcas Propias
+                - listitem [ref=e249]:
+                  - link [ref=e495] [cursor=pointer]:
+                    - /url: https://super.lider.cl/browse/limpieza-y-aseo/43390617?contentzone3&co_ty=banner&co_nm=tusfavoritos11_Sem21&co_id=20052026_tus_favoritos_11&co_or=11
+                    - img [ref=e251]
+                    - generic [ref=e253]: Limpieza
+                - listitem [ref=e254]:
+                  - link [ref=e496] [cursor=pointer]:
+                    - /url: https://super.lider.cl/browse/mundo-bebe-y-jugueteria/11780484?contentzone3&co_ty=banner&co_nm=tusfavoritos12_Sem21&co_id=20052026_tus_favoritos_12&co_or=12
+                    - img [ref=e256]
+                    - generic [ref=e258]: Mundo bebé
+          - generic [ref=e261]:
+            - link [ref=e497] [cursor=pointer]:
+              - /url: https://super.lider.cl/content/marcas-propias/69507955?contentzone9&co_ty=rompefilas&co_nm=Marquee0_Sem21&co_id=20052026_rompefilas1&co_or=1
+              - img [ref=e498]
+            - img [ref=e499]
+            - link [ref=e500] [cursor=pointer]:
+              - /url: https://tarjetadigital.liderbciserviciosfinancieros.cl/ingreso-de-datos?utm_source=Lidercl_sod_rompefilas&utm_medium=lidercl
+              - img [ref=e501]
+            - link [ref=e502] [cursor=pointer]:
+              - /url: https://super.lider.cl/search?q=pampers+proteccion+insuperable
+              - img [ref=e503]
+            - generic [ref=e283]:
+              - heading [level=2] [ref=e504]: Beneficios adicionales
+              - list [ref=e286]:
+                - listitem [ref=e287]:
+                  - link [ref=e505] [cursor=pointer]:
+                    - /url: https://www.lider.cl/miclub
+                    - img [ref=e506]
+                    - generic [ref=e291]: Revisa tus movimientos y descubre todo lo que has acumulado
+                - listitem [ref=e292]:
+                  - link [ref=e507] [cursor=pointer]:
+                    - /url: https://www.lider.cl/miclub
+                    - img [ref=e508]
+                    - generic [ref=e296]: Acumula Pesos Mi Club en todas tus compras y canjéalos cuando quieras
+                - listitem [ref=e297]:
+                  - link [ref=e509] [cursor=pointer]:
+                    - /url: https://tarjetadigital.liderbciserviciosfinancieros.cl/ingreso-de-datos?utm_source=Lidercl_sod_caluga_beneficios_2&utm_medium=lidercl&utm_content=cuotas_sin_interes
+                    - img [ref=e510]
+                    - generic [ref=e301]: Paga con tu tarjeta Lider Bci y recibe parte de tu compra en Pesos Mi Club
+                - listitem [ref=e302]:
+                  - link [ref=e511] [cursor=pointer]:
+                    - /url: https://tarjetadigital.liderbciserviciosfinancieros.cl/ingreso-de-datos?utm_source=Lidercl_sod_caluga_beneficios_3&utm_medium=lidercl&utm_content=10porciento_primera_compra
+                    - img [ref=e512]
+                    - generic [ref=e306]: Activa tu tarjeta Lider Bci y aprovecha este beneficio exclusivo. Tope $20.000
+  - alert [ref=e313]
