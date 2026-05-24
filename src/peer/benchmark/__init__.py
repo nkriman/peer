@@ -1,11 +1,13 @@
-"""peer.benchmark — bug-benchmark capability (schemas + published baselines).
+"""peer.benchmark — bug-benchmark capability.
 
-Per benchmark-v01: core schemas land here. The MacroscopeLoader,
-BugBenchmarkRunner, and `peer benchmark` CLI subcommand are deferred
-follow-ups (see openspec/changes/benchmark-v01/tasks.md).
+Schemas, published baselines, MacroscopeLoader, judge, runner.
+The `peer benchmark` CLI subcommand lives in src/peer/cli.py.
 """
 
 from .baselines import PUBLISHED_BASELINES
+from .judge import DEFAULT_JUDGE_MODEL, DEFAULT_PROXIMITY_LINES, judge_bug_caught
+from .loader import BugDatasetSource, MacroscopeLoader
+from .runner import BugBenchmarkRunner
 from .types import (
     BenchmarkReport,
     BugBenchmarkResult,
@@ -15,10 +17,16 @@ from .types import (
 )
 
 __all__ = [
+    "DEFAULT_JUDGE_MODEL",
+    "DEFAULT_PROXIMITY_LINES",
     "PUBLISHED_BASELINES",
     "BenchmarkReport",
     "BugBenchmarkResult",
+    "BugBenchmarkRunner",
+    "BugDatasetSource",
     "BugLocation",
     "BugSample",
     "LineCoordinateSystem",
+    "MacroscopeLoader",
+    "judge_bug_caught",
 ]

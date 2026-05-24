@@ -155,6 +155,50 @@ def _make_parser() -> argparse.ArgumentParser:
         default=Path("dataset/reference/django_pydantic_v1.jsonl"),
     )
 
+    # --- peer benchmark (parent for subcommands) ----------------------------
+    p_bench = sub.add_parser(
+        "benchmark",
+        help="Run the bug-benchmark capability",
+        description="Run BugBenchmarkRunner against a bug-dataset and emit a BenchmarkReport.",
+    )
+    bench_sub = p_bench.add_subparsers(dest="ds_cmd", required=True, metavar="BENCH_COMMAND")
+
+    # peer benchmark run
+    p_bench_run = bench_sub.add_parser(
+        "run",
+        help="Run peer over a bug dataset and report detection_rate vs published baselines",
+    )
+    p_bench_run.add_argument(
+        "--dataset",
+        type=str,
+        default="macroscope",
+        help=(
+            "Dataset name (e.g. 'macroscope') or path to a JSONL file in "
+            "BugSample-shape. Default: macroscope."
+        ),
+    )
+    p_bench_run.add_argument(
+        "--model",
+        default="anthropic:claude-sonnet-4-6",
+        help="Model id for the reviewer under test (default: anthropic:claude-sonnet-4-6)",
+    )
+    p_bench_run.add_argument(
+        "--out",
+        type=Path,
+        default=None,
+        help="Where to write the BenchmarkReport JSON (default: data/benchmark_runs/<run_id>.json)",
+    )
+    p_bench_run.add_argument(
+        "--yes",
+        action="store_true",
+        help="Skip the cost-confirmation prompt",
+    )
+    p_bench_run.add_argument(
+        "--language",
+        default="python",
+        help="Filter the dataset by language (default: python)",
+    )
+
     return parser
 
 
@@ -341,6 +385,75 @@ def _cmd_dataset_show(args: argparse.Namespace) -> int:
     return 0
 
 
+def _cmd_benchmark_run(args: argparse.Namespace) -> int:
+    from .agent import Agent
+    from .benchmark import BugBenchmarkRunner, MacroscopeLoader
+
+    # Resolve dataset: named dataset → vendored path under dataset/benchmark/,
+    # explicit path → that path.
+    if args.dataset == "macroscope":
+        ds_path = Path("dataset/benchmark/macroscope_v1.jsonl")
+    else:
+        ds_path = Path(args.dataset)
+    if not ds_path.exists():
+        print(
+            f"Bug-benchmark dataset not found: {ds_path}. "
+            f"Run `peer benchmark update-dataset` once it's implemented, "
+            f"or pass --dataset <path-to.jsonl>.",
+            file=sys.stderr,
+        )
+        return 2
+
+    samples = MacroscopeLoader(ds_path).load(language=args.language)
+    if not samples:
+        print(
+            f"Dataset {ds_path} has no samples for language={args.language!r}.",
+            file=sys.stderr,
+        )
+        return 2
+
+    if not args.yes:
+        print(
+            f"About to run {len(samples)} bug(s) through {args.model}. "
+            f"Each bug fires one reviewer call + up to N judge calls. "
+            f"Pass --yes to skip this prompt.",
+            file=sys.stderr,
+        )
+        try:
+            reply = input("Continue? [y/N] ").strip().lower()
+        except EOFError:
+            reply = ""
+        if reply not in ("y", "yes"):
+            print("aborted.", file=sys.stderr)
+            return 1
+
+    import anthropic
+
+    agent = Agent(model=args.model)
+    runner = BugBenchmarkRunner(
+        reviewer=agent,
+        dataset=samples,
+        judge_client=anthropic.Anthropic(),
+    )
+    report = runner.run()
+
+    out_path = args.out
+    if out_path is None:
+        out_dir = Path("data/benchmark_runs")
+        out_dir.mkdir(parents=True, exist_ok=True)
+        out_path = out_dir / f"{report.run_id}.json"
+    out_path.write_text(report.model_dump_json(indent=2))
+    print(
+        f"\n=== BenchmarkReport ===\n"
+        f"  bugs total:   {report.n_bugs_total}\n"
+        f"  bugs caught:  {report.n_bugs_caught}\n"
+        f"  detection:    {report.detection_rate}\n"
+        f"  cost:         {report.cost_usd_total}\n"
+        f"\nReport saved to {out_path}"
+    )
+    return 0
+
+
 # ---------------------------------------------------------------------------
 # Entry point
 # ---------------------------------------------------------------------------
@@ -352,6 +465,7 @@ _DISPATCH = {
     ("dataset", "add"): _cmd_dataset_add,
     ("dataset", "list"): _cmd_dataset_list,
     ("dataset", "show"): _cmd_dataset_show,
+    ("benchmark", "run"): _cmd_benchmark_run,
 }
 
 

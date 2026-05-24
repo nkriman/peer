@@ -8,7 +8,7 @@ Feature: bug-benchmark runtime — loader, judge, runner, and CLI
     Given a temp JSONL with two valid Macroscope-shaped bug rows
     When I construct a MacroscopeLoader pointing at that file
     And I call MacroscopeLoader.load
-    Then the returned list has length 2
+    Then the returned BugSample list has length 2
     And the first BugSample's language equals "python"
 
   @fast
@@ -16,7 +16,7 @@ Feature: bug-benchmark runtime — loader, judge, runner, and CLI
     Given a temp JSONL with one python bug row and one go bug row
     When I construct a MacroscopeLoader pointing at that file
     And I call MacroscopeLoader.load with language "python"
-    Then the returned list has length 1
+    Then the returned BugSample list has length 1
     And the first BugSample's language equals "python"
 
   @fast
