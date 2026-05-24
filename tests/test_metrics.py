@@ -4,8 +4,6 @@ from __future__ import annotations
 
 from unittest.mock import patch
 
-import pytest
-
 from peer.dataset.types import GoldDefect, GoldSample, GoldSampleMetadata
 from peer.eval.metrics import DefectRecall, NoveltyRate, SeverityCalibration
 from peer.types import Comment, Review
@@ -180,9 +178,7 @@ def test_novelty_rate_none_match_is_one():
 
 def test_novelty_rate_partial():
     sample = _sample([_gold(line=10)])
-    review = Review(
-        comments=[_peer(line=10), _peer(path="z.py", line=99)]
-    )
+    review = Review(comments=[_peer(line=10), _peer(path="z.py", line=99)])
     with patch("peer.eval.metrics.judge_match", return_value=True):
         result = NoveltyRate().score(sample, review)
     assert result.value == 0.5
@@ -228,9 +224,7 @@ def test_severity_calibration_peer_more_severe_negative_delta():
 
 
 def test_severity_calibration_confusion_matrix_populated():
-    sample = _sample(
-        [_gold(line=10, severity="critical"), _gold(line=20, severity="minor")]
-    )
+    sample = _sample([_gold(line=10, severity="critical"), _gold(line=20, severity="minor")])
     review = Review(
         comments=[
             _peer(line=10, severity="important"),

@@ -162,9 +162,7 @@ def test_add_requires_storage(fake_source, fake_classifier):
         curator.add("https://github.com/o/r/pull/1", auto_accept=True)
 
 
-def test_add_auto_accept_writes_to_storage(
-    fake_source, fake_classifier, fake_storage
-):
+def test_add_auto_accept_writes_to_storage(fake_source, fake_classifier, fake_storage):
     curator = _curator(fake_source, fake_classifier, storage=fake_storage)
     sample = curator.add("https://github.com/o/r/pull/1", auto_accept=True)
     assert sample.pr_url == "https://github.com/o/r/pull/1"
@@ -193,12 +191,8 @@ def test_add_interactive_reject_raises_curation_rejected(
 
 def test_classifier_failure_does_not_abort_other_comments():
     # Two comments — first one raises during classification, second succeeds.
-    rc1 = RawComment(
-        source_id="c1", author="alice", path="a.py", line=1, body="bad"
-    )
-    rc2 = RawComment(
-        source_id="c2", author="bob", path="b.py", line=2, body="also bad"
-    )
+    rc1 = RawComment(source_id="c1", author="alice", path="a.py", line=1, body="bad")
+    rc2 = RawComment(source_id="c2", author="bob", path="b.py", line=2, body="also bad")
     raw = RawSample(
         pr_url="https://github.com/o/r/pull/9",
         pr_title="t",
@@ -235,9 +229,7 @@ def test_add_batch_continues_past_rejection(
     assert len(out) == 2
 
 
-def test_preview_metadata_records_taxonomy_version(
-    fake_source, fake_classifier
-):
+def test_preview_metadata_records_taxonomy_version(fake_source, fake_classifier):
     curator = _curator(fake_source, fake_classifier)
     proposed = curator.preview("https://github.com/o/r/pull/1")
     assert proposed.proposed.metadata.taxonomy_version == "default-v1"

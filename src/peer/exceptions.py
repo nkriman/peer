@@ -89,3 +89,22 @@ class LLMCallsDisabled(PeerError):
 
     def __init__(self, message: str | None = None) -> None:
         super().__init__(message or self.DEFAULT_MESSAGE)
+
+
+class ReviewerRateLimited(PeerError):
+    """A Reviewer's HTTP-429 retry budget was exhausted.
+
+    Raised by real Reviewers after `rate_limit_max_retries` exponential
+    backoff attempts all failed with HTTP 429. The benchmark runner
+    catches this to mark a sample as `rate_limited` rather than `errored`.
+    """
+
+    def __init__(self, model: str, attempts: int, last_error: Exception | None = None) -> None:
+        self.model = model
+        self.attempts = attempts
+        self.last_error = last_error
+        msg = (
+            f"Reviewer for model={model!r} rate-limited after {attempts} attempt(s). "
+            f"Last error: {last_error!r}"
+        )
+        super().__init__(msg)

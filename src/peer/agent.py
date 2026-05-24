@@ -13,6 +13,7 @@ gathers context, validates LLM output against the diff, and returns a Review.
 from __future__ import annotations
 
 import logging
+import time
 import warnings
 from collections.abc import Iterator
 from contextlib import contextmanager
@@ -22,8 +23,9 @@ from typing import TYPE_CHECKING, Any
 from .codebase_context import gather_codebase_context
 from .context import gather
 from .exceptions import CodebaseContextTooLarge, UnknownModelError
-from .prompts import DEFAULT_SYSTEM_PROMPT
+from .prompts import DEFAULT_SYSTEM_PROMPT, format_prompt
 from .reviewers import ClaudeReviewer, Reviewer
+from .runtime import RunContext, _emit_captured_message
 from .types import CodebaseContext, Comment, Context, Review
 
 if TYPE_CHECKING:
@@ -103,26 +105,62 @@ def _valid_lines_per_path(ctx: Context) -> dict[str, set[int]]:
     return out
 
 
-def _validate_comments(comments: list[Comment], ctx: Context) -> list[Comment]:
+def _validate_comments_with_reasons(
+    comments: list[Comment], ctx: Context
+) -> tuple[list[Comment], list[tuple[Comment, str]]]:
+    """Return (kept, dropped_with_reason)."""
     valid_lines = _valid_lines_per_path(ctx)
-    out: list[Comment] = []
+    kept: list[Comment] = []
+    dropped: list[tuple[Comment, str]] = []
     for c in comments:
         if c.path not in valid_lines:
-            logger.warning(
-                "Dropping comment with unknown path: %s (severity=%s)",
-                c.path,
-                c.severity,
+            dropped.append(
+                (
+                    c,
+                    f"path {c.path!r} is not modified by this PR — only "
+                    f"comment on modified files: {sorted(valid_lines)}",
+                )
             )
             continue
         if c.line is not None and c.line not in valid_lines[c.path]:
-            logger.warning(
-                "Dropping comment with out-of-hunk line: %s:%s",
-                c.path,
-                c.line,
+            valid_for_path = sorted(valid_lines[c.path])
+            dropped.append(
+                (
+                    c,
+                    f"line {c.line} on {c.path!r} is outside the modified "
+                    f"hunks — valid lines for this file: {valid_for_path}",
+                )
             )
             continue
-        out.append(c)
-    return out
+        kept.append(c)
+    return kept, dropped
+
+
+def _validate_comments(comments: list[Comment], ctx: Context) -> list[Comment]:
+    kept, dropped = _validate_comments_with_reasons(comments, ctx)
+    for c, reason in dropped:
+        logger.warning("Dropping comment %s:%s (sev=%s) — %s", c.path, c.line, c.severity, reason)
+    return kept
+
+
+def _build_retry_message(dropped: list[tuple[Comment, str]]) -> str:
+    """Build the follow-up user message that's appended on a retry round.
+
+    Cites each dropped comment by index + reason so the model can correct
+    its grounding.
+    """
+    lines = [
+        "Some of your previous comments were dropped because they did not",
+        "ground to a modified line of this PR. Please re-issue them with",
+        "corrected `path` + `line` values (or drop them if they cannot be",
+        "anchored). Do not repeat comments that were accepted.",
+        "",
+        "Dropped comments:",
+    ]
+    for i, (c, reason) in enumerate(dropped, start=1):
+        lines.append(f"{i}. {c.path}:{c.line} (sev={c.severity}) — {reason}")
+        lines.append(f"   body: {c.body[:200]}")
+    return "\n".join(lines)
 
 
 class Agent:
@@ -133,6 +171,7 @@ class Agent:
         system_prompt_file: Path | None = None,
         team_conventions: str | None = None,
         team_conventions_file: Path | None = None,
+        retries: dict | None = None,
     ) -> None:
         if system_prompt and system_prompt_file:
             raise ValueError("Pass system_prompt OR system_prompt_file, not both.")
@@ -166,6 +205,10 @@ class Agent:
         )
         # Override stack: each frame is a dict of original-values to restore.
         self._override_stack: list[dict[str, Any]] = []
+        # Retry budget. Keyed for forward-compat with Pydantic AI's
+        # `retries={'output': N, 'tool_call': M}` shape; today we only
+        # consume `output` (validation-failure retries).
+        self.retries: dict[str, int] = dict(retries) if retries is not None else {"output": 1}
 
     # ----- override -----------------------------------------------------------
 
@@ -266,15 +309,69 @@ class Agent:
             )
             cc = None
 
-        raw_comments, usage = self.reviewer.review(ctx, cc)
-        valid = _validate_comments(raw_comments, ctx)
-        dropped = len(raw_comments) - len(valid)
-        if dropped:
-            logger.info("Dropped %d invalid comment(s)", dropped)
+        # Retry loop. On the first pass, no extra_user_message. If everything
+        # the Reviewer returned got dropped during validation AND there's
+        # budget left, feed the dropped Comments back as an extra user message
+        # and re-invoke the Reviewer.
+        budget = int(self.retries.get("output", 0))
+        attempt = 0
+        n_retries_used = 0
+        extra_msg: str | None = None
+        valid: list[Comment] = []
+        usage: dict = {}
+        raw_comments: list[Comment] = []
+        dropped: list[tuple[Comment, str]] = []
+
+        while True:
+            rc = RunContext[Any](deps=deps, pr_url=pr_url, attempt=attempt)
+            t0 = time.perf_counter()
+            raw_comments, usage = self.reviewer.review(
+                ctx,
+                cc,
+                extra_user_message=extra_msg,
+                run_context=rc,
+            )
+            elapsed_ms = (time.perf_counter() - t0) * 1000.0
+
+            # capture_run_messages() hook — no-op outside an active block.
+            _emit_captured_message(
+                system_prompt=self.system_prompt,
+                user_prompt=format_prompt(ctx, cc) + ("\n\n" + extra_msg if extra_msg else ""),
+                raw_response={"comments": [c.model_dump() for c in raw_comments]},
+                usage=usage,
+                latency_ms=elapsed_ms,
+                pr_url=pr_url,
+                attempt=attempt,
+            )
+
+            valid, dropped = _validate_comments_with_reasons(raw_comments, ctx)
+            for c, reason in dropped:
+                logger.warning(
+                    "Dropping comment %s:%s (sev=%s) — %s", c.path, c.line, c.severity, reason
+                )
+
+            # Only retry when the Reviewer DID return something but all of it
+            # was dropped — that's a grounding error worth re-prompting on.
+            should_retry = budget > 0 and len(raw_comments) > 0 and len(valid) == 0
+            if not should_retry:
+                break
+            n_retries_used += 1
+            budget -= 1
+            attempt += 1
+            extra_msg = _build_retry_message(dropped)
+            logger.info(
+                "Validation dropped all %d comment(s); retrying (attempt=%d, budget left=%d)",
+                len(raw_comments),
+                attempt,
+                budget,
+            )
 
         # peer-config-v01: apply per-path severity bounds AFTER validation.
         if config is not None:
             valid = [apply_severity_bounds(c, config.for_path(c.path)) for c in valid]
+
+        usage = dict(usage)
+        usage["n_retries_used"] = n_retries_used
 
         if not valid:
             return Review(comments=[], reason="no issues found", usage=usage)

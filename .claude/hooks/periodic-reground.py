@@ -5,6 +5,7 @@ Prevents long-session spec drift. Counter is per session_id, persisted under
 .claude/session-state/. After every Nth prompt, returns additionalContext that
 re-grounds the agent in the load-bearing invariants.
 """
+
 from __future__ import annotations
 
 import json
@@ -13,6 +14,7 @@ import sys
 from pathlib import Path
 
 REGROUND_EVERY = 10  # turns
+
 
 def main() -> int:
     try:

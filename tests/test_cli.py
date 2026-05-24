@@ -70,9 +70,7 @@ def test_parser_eval_with_baseline_and_out():
 
 def test_parser_dataset_add_required():
     parser = _make_parser()
-    args = parser.parse_args(
-        ["dataset", "add", "https://github.com/o/r/pull/1"]
-    )
+    args = parser.parse_args(["dataset", "add", "https://github.com/o/r/pull/1"])
     assert args.cmd == "dataset"
     assert args.ds_cmd == "add"
     assert args.pr_url == "https://github.com/o/r/pull/1"
@@ -81,9 +79,7 @@ def test_parser_dataset_add_required():
 
 def test_parser_dataset_add_auto_accept():
     parser = _make_parser()
-    args = parser.parse_args(
-        ["dataset", "add", "https://github.com/o/r/pull/1", "--auto-accept"]
-    )
+    args = parser.parse_args(["dataset", "add", "https://github.com/o/r/pull/1", "--auto-accept"])
     assert args.auto_accept is True
 
 
@@ -108,9 +104,7 @@ def test_parser_dataset_list_show_classifications():
 
 def test_parser_dataset_show_required():
     parser = _make_parser()
-    args = parser.parse_args(
-        ["dataset", "show", "https://github.com/o/r/pull/2"]
-    )
+    args = parser.parse_args(["dataset", "show", "https://github.com/o/r/pull/2"])
     assert args.cmd == "dataset"
     assert args.ds_cmd == "show"
     assert args.pr_url == "https://github.com/o/r/pull/2"

@@ -2,15 +2,12 @@
 
 from __future__ import annotations
 
-from unittest.mock import patch
-
 import pytest
 
 from peer.dataset.types import GoldDefect, GoldSample, GoldSampleMetadata
 from peer.eval.runner import EvalRunner
 from peer.eval.types import MetricResult
 from peer.types import Comment, Review
-
 
 # ---------------------------------------------------------------------------
 # Test doubles
@@ -155,9 +152,7 @@ def test_eval_runner_reports_cost_and_latency():
 def test_eval_runner_per_sample_failure_isolated():
     s1 = _sample("https://github.com/o/r/pull/1")
     s2 = _sample("https://github.com/o/r/pull/2")
-    reviewer = FailingThenOkReviewer(
-        fail_urls={s1.pr_url}, good_review=_review()
-    )
+    reviewer = FailingThenOkReviewer(fail_urls={s1.pr_url}, good_review=_review())
     runner = EvalRunner(
         reviewer=reviewer,
         dataset=[s1, s2],

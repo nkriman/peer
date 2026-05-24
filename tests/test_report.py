@@ -7,13 +7,13 @@ import json
 import pytest
 
 # Importing peer.eval.report triggers monkey-patching of EvalReport.to_json/.from_json
-from peer.eval import (  # noqa: F401
+from peer.eval import (
+    REPORT_SCHEMA_VERSION,
     AgentConfig,
     EvalReport,
     EvalSampleResult,
     EvalSummary,
     MetricResult,
-    REPORT_SCHEMA_VERSION,
     render_diff,
     render_summary,
 )
@@ -41,8 +41,7 @@ def _report(
     summary = EvalSummary(
         metric_values=metric_values,
         metric_details={
-            name: {"n_samples_with_value": 1, "n_samples_skipped": 0}
-            for name in metric_values
+            name: {"n_samples_with_value": 1, "n_samples_skipped": 0} for name in metric_values
         },
         n_samples_total=n_total,
         n_samples_succeeded=n_succeeded,

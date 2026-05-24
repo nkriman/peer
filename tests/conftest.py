@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 from datetime import datetime
-from typing import Optional
 from unittest.mock import MagicMock
 
 import pytest
@@ -18,7 +17,6 @@ from peer.dataset.types import (
     RawSample,
 )
 from peer.types import Comment, Review
-
 
 # ---------------------------------------------------------------------------
 # Anthropic / external service mocks
@@ -83,7 +81,7 @@ def classification_correctness() -> Classification:
 
 def _make_gold_defect(
     path: str = "src/foo.py",
-    line: Optional[int] = 10,
+    line: int | None = 10,
     category: str = "defect-correctness",
     severity: str = "important",
     description: str = "Null deref risk when bar is None.",
@@ -130,7 +128,7 @@ def gold_sample(make_gold_defect) -> GoldSample:
 
 def _make_comment(
     path: str = "src/foo.py",
-    line: Optional[int] = 10,
+    line: int | None = 10,
     severity: str = "important",
     body: str = "Null deref risk when bar is None.",
 ) -> Comment:

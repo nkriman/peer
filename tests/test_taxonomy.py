@@ -2,8 +2,6 @@
 
 from __future__ import annotations
 
-import pytest
-
 from peer.dataset.taxonomy import DefaultTaxonomy, Taxonomy
 from peer.dataset.types import CategoryDef
 

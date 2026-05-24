@@ -17,11 +17,10 @@ import logging
 import re
 import sys
 from pathlib import Path
-from typing import Optional
 
 from peer.agent import Agent
 from peer.dataset import JSONLStorage
-from peer.eval import EvalRunner, EvalReport, render_diff, render_summary
+from peer.eval import EvalReport, EvalRunner, render_diff, render_summary
 from peer.types import Review
 
 logging.basicConfig(level=logging.WARNING, format="%(levelname)s %(name)s: %(message)s")
@@ -42,7 +41,7 @@ class RepoAwareAgent:
         self.model = model
         self._agents: dict[str, Agent] = {}
 
-    def _repo_key(self, pr_url: str) -> Optional[str]:
+    def _repo_key(self, pr_url: str) -> str | None:
         m = re.match(r"https?://github\.com/[^/]+/([^/]+)/", pr_url)
         return m.group(1) if m else None
 

@@ -35,11 +35,13 @@ from .exceptions import (
     LLMCallsDisabled,
     PeerError,
     PRNotAccessible,
+    ReviewerRateLimited,
     UnknownCategoryError,
     UnknownModelError,
 )
 from .linters import Linter, RuffLinter
 from .reviewers import ClaudeReviewer, Reviewer, TestReviewer
+from .runtime import CapturedMessage, RunContext, capture_run_messages
 from .types import (
     CallSite,
     CodebaseContext,
@@ -60,6 +62,7 @@ __all__ = [
     "Agent",
     # Existing types
     "CallSite",
+    "CapturedMessage",
     "ClaudeReviewer",
     "CodebaseContext",
     "CodebaseContextTooLarge",
@@ -95,7 +98,9 @@ __all__ = [
     "PeerError",
     "Review",
     "Reviewer",
+    "ReviewerRateLimited",
     "RuffLinter",
+    "RunContext",
     "Severity",
     "SeverityCalibration",
     "Symbol",
@@ -104,5 +109,6 @@ __all__ = [
     "TestReviewer",
     "UnknownCategoryError",
     "UnknownModelError",
+    "capture_run_messages",
     "render_summary",
 ]
