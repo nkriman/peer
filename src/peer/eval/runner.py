@@ -14,14 +14,23 @@ import hashlib
 import logging
 import time
 from datetime import datetime, timezone
-from typing import Optional, Protocol
+from statistics import mean, median
+from typing import Protocol
 
 import anthropic
 
 from ..agent import Agent
 from ..dataset.types import GoldSample
 from ..types import Review
-from .metrics import DefectRecall, EvalMetric, NoveltyRate, SeverityCalibration
+from .metrics import (
+    CommentsPerPR,
+    DetectionRate,
+    EvalMetric,
+    MeanPerPRRecall,
+    NoveltyRate,
+    PrecisionPerSeverity,
+    SeverityCalibration,
+)
 from .pricing import cost_unavailable_reason, estimate_cost
 from .types import (
     AgentConfig,
@@ -30,6 +39,86 @@ from .types import (
     EvalSummary,
     MetricResult,
 )
+
+
+def _aggregate_metrics(
+    metrics: list[EvalMetric],
+    per_sample: list,
+) -> tuple[dict[str, float | None], dict[str, dict]]:
+    """Aggregate per-sample MetricResults into report-level numbers + details.
+
+    Per-metric special-casing where the metric's semantics call for it:
+    - detection_rate: sum-of-sums (Macroscope-style headline)
+    - comments_per_pr: mean + median + min + max
+    - precision_per_severity: per-tier sum-of-sums
+    - others: mean of non-None per-sample values
+    """
+    values: dict[str, float | None] = {}
+    details: dict[str, dict] = {}
+    for metric in metrics:
+        name = metric.name
+        per_sample_mr = [r.metrics[name] for r in per_sample if name in r.metrics]
+        if name == "detection_rate":
+            total_matches = 0
+            total_gold = 0
+            for mr in per_sample_mr:
+                d = mr.per_sample_detail or {}
+                total_matches += d.get("matched_count", 0)
+                total_gold += d.get("total_gold", 0)
+            values[name] = (total_matches / total_gold) if total_gold > 0 else None
+            details[name] = {
+                "total_matches": total_matches,
+                "total_gold": total_gold,
+                "n_samples_with_gold": sum(
+                    1
+                    for mr in per_sample_mr
+                    if (mr.per_sample_detail or {}).get("total_gold", 0) > 0
+                ),
+            }
+        elif name == "comments_per_pr":
+            counts = [(mr.per_sample_detail or {}).get("n_comments", 0) for mr in per_sample_mr]
+            if counts:
+                values[name] = mean(counts)
+                details[name] = {
+                    "mean": mean(counts),
+                    "median": median(counts),
+                    "min": min(counts),
+                    "max": max(counts),
+                    "n_samples": len(counts),
+                }
+            else:
+                values[name] = None
+                details[name] = {"n_samples": 0}
+        elif name == "precision_per_severity":
+            per_tier_totals: dict[str, dict[str, int]] = {
+                sev: {"matched": 0, "total": 0} for sev in ("critical", "important", "minor", "nit")
+            }
+            for mr in per_sample_mr:
+                d = mr.per_sample_detail or {}
+                for sev, counts in d.items():
+                    if isinstance(counts, dict):
+                        per_tier_totals[sev]["matched"] += counts.get("matched", 0)
+                        per_tier_totals[sev]["total"] += counts.get("total", 0)
+            per_tier_agg: dict[str, dict] = {}
+            for sev, tier_counts in per_tier_totals.items():
+                if tier_counts["total"] == 0:
+                    continue
+                per_tier_agg[sev] = {
+                    "precision": tier_counts["matched"] / tier_counts["total"],
+                    "n": tier_counts["total"],
+                    "matched": tier_counts["matched"],
+                }
+            values[name] = None  # no single number; consult details
+            details[name] = per_tier_agg
+        else:
+            vals = [mr.value for mr in per_sample_mr if mr.value is not None]
+            values[name] = sum(vals) / len(vals) if vals else None
+            details[name] = {
+                "n_samples_with_value": len(vals),
+                "n_samples_skipped": len(per_sample) - len(vals),
+            }
+    return values, details
+
 
 logger = logging.getLogger(__name__)
 
@@ -40,7 +129,7 @@ class _ReviewerLike(Protocol):
     def review(self, pr_url: str) -> Review: ...
 
 
-def _percentile(values: list[float], pct: float) -> Optional[float]:
+def _percentile(values: list[float], pct: float) -> float | None:
     if not values:
         return None
     s = sorted(values)
@@ -58,11 +147,9 @@ def _infer_agent_config(reviewer: _ReviewerLike) -> AgentConfig:
     sensible placeholders otherwise."""
     model = getattr(reviewer, "model", None) or "unknown"
     system_prompt = getattr(reviewer, "system_prompt", None)
-    prompt_hash: Optional[str] = None
+    prompt_hash: str | None = None
     if isinstance(system_prompt, str):
-        prompt_hash = hashlib.sha256(
-            system_prompt.encode("utf-8")
-        ).hexdigest()[:16]
+        prompt_hash = hashlib.sha256(system_prompt.encode("utf-8")).hexdigest()[:16]
     cls_name = type(reviewer).__name__
     return AgentConfig(
         model=model,
@@ -76,19 +163,26 @@ class EvalRunner:
         self,
         reviewer: _ReviewerLike,
         dataset: list[GoldSample],
-        metrics: Optional[list[EvalMetric]] = None,
-        dataset_path: Optional[str] = None,
+        metrics: list[EvalMetric] | None = None,
+        dataset_path: str | None = None,
     ) -> None:
         self.reviewer = reviewer
         self.dataset = list(dataset)
         if metrics is None:
-            metrics = [DefectRecall(), NoveltyRate(), SeverityCalibration()]
+            metrics = [
+                DetectionRate(),
+                CommentsPerPR(),
+                PrecisionPerSeverity(),
+                MeanPerPRRecall(),
+                NoveltyRate(),
+                SeverityCalibration(),
+            ]
         self.metrics = metrics
         self.dataset_path = dataset_path or "in-memory"
         # One Anthropic client shared with metrics so judge calls reuse the
         # same connection pool / api key. Lazy-init so EvalRunner can be
         # constructed without ANTHROPIC_API_KEY (e.g., in unit tests).
-        self._client: Optional[anthropic.Anthropic] = None
+        self._client: anthropic.Anthropic | None = None
 
     def _get_client(self) -> anthropic.Anthropic:
         if self._client is None:
@@ -101,21 +195,19 @@ class EvalRunner:
         sample_costs: list[float] = []
         sample_latencies: list[float] = []
         any_cost_unavailable = False
-        unavailable_reason: Optional[str] = None
+        unavailable_reason: str | None = None
 
         n = len(self.dataset)
         for i, sample in enumerate(self.dataset, 1):
             print(f"[eval] {i}/{n} {sample.pr_url}", flush=True)
             sample_result = EvalSampleResult(pr_url=sample.pr_url)
             t0 = time.monotonic()
-            review: Optional[Review] = None
+            review: Review | None = None
             try:
                 review = self.reviewer.review(sample.pr_url)
-            except Exception as exc:  # noqa: BLE001 - per-sample isolation
+            except Exception as exc:
                 latency = time.monotonic() - t0
-                logger.warning(
-                    "Reviewer failed on %s: %s", sample.pr_url, exc
-                )
+                logger.warning("Reviewer failed on %s: %s", sample.pr_url, exc)
                 sample_result.error = str(exc)
                 sample_result.latency_seconds = latency
                 per_sample.append(sample_result)
@@ -151,11 +243,12 @@ class EvalRunner:
             for metric in self.metrics:
                 try:
                     mr = metric.score(sample, review, client=self._get_client())
-                except Exception as exc:  # noqa: BLE001
+                except Exception as exc:
                     logger.warning(
                         "Metric %s failed on %s: %s",
                         getattr(metric, "name", type(metric).__name__),
-                        sample.pr_url, exc,
+                        sample.pr_url,
+                        exc,
                     )
                     mr = MetricResult(
                         name=getattr(metric, "name", type(metric).__name__),
@@ -166,27 +259,13 @@ class EvalRunner:
 
             per_sample.append(sample_result)
 
-        # Aggregate
-        # NOTE: v0.1 aggregation = mean of per-PR metric values. A true
-        # global recall (sum-of-hits / sum-of-gold) is more statistically
-        # honest for DefectRecall in particular but adds per-metric special
-        # casing. Keep it simple for v0.1.
-        metric_values: dict[str, Optional[float]] = {}
-        metric_details: dict[str, dict] = {}
-        for metric in self.metrics:
-            vals = [
-                r.metrics[metric.name].value
-                for r in per_sample
-                if metric.name in r.metrics
-                and r.metrics[metric.name].value is not None
-            ]
-            metric_values[metric.name] = (
-                sum(vals) / len(vals) if vals else None
-            )
-            metric_details[metric.name] = {
-                "n_samples_with_value": len(vals),
-                "n_samples_skipped": len(per_sample) - len(vals),
-            }
+        # Aggregate. Per-metric aggregation honors each metric's semantics:
+        # - detection_rate: sum-of-sums (Macroscope-style; the headline number)
+        # - comments_per_pr: mean + median + min + max
+        # - precision_per_severity: sum-of-sums per tier
+        # - mean_per_pr_recall / novelty_rate / severity_calibration: mean
+        #   of per-sample values (the legacy aggregator).
+        metric_values, metric_details = _aggregate_metrics(self.metrics, per_sample)
 
         n_failed = sum(1 for r in per_sample if r.error is not None)
         n_succeeded = len(per_sample) - n_failed
@@ -194,7 +273,7 @@ class EvalRunner:
         # When at least one sample had pricing, report the partial total
         # (clearly flagged via cost_unavailable_reason so users see it's
         # incomplete). Report None only if NO sample had pricing.
-        cost_total: Optional[float] = sum(sample_costs) if sample_costs else None
+        cost_total: float | None = sum(sample_costs) if sample_costs else None
         summary = EvalSummary(
             metric_values=metric_values,
             metric_details=metric_details,
@@ -204,16 +283,15 @@ class EvalRunner:
             cost_usd_total=cost_total,
             cost_usd_p50=_percentile(sample_costs, 50),
             cost_usd_p95=_percentile(sample_costs, 95),
-            cost_unavailable_reason=(
-                unavailable_reason if any_cost_unavailable else None
-            ),
+            cost_unavailable_reason=(unavailable_reason if any_cost_unavailable else None),
             latency_seconds_p50=_percentile(sample_latencies, 50),
             latency_seconds_p95=_percentile(sample_latencies, 95),
         )
 
+        _peer_version: str | None
         try:
-            from .. import __version__ as _peer_version  # type: ignore
-        except Exception:  # noqa: BLE001
+            from .. import __version__ as _peer_version
+        except Exception:
             _peer_version = None
 
         return EvalReport(
@@ -227,4 +305,4 @@ class EvalRunner:
         )
 
 
-__all__ = ["EvalRunner", "Agent"]
+__all__ = ["Agent", "EvalRunner"]

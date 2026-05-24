@@ -12,7 +12,6 @@ import logging
 import sys
 from datetime import datetime
 from pathlib import Path
-from typing import Optional
 
 
 def _make_parser() -> argparse.ArgumentParser:
@@ -21,7 +20,9 @@ def _make_parser() -> argparse.ArgumentParser:
         description="Build AI PR review agents with evaluation built in.",
     )
     parser.add_argument(
-        "-v", "--verbose", action="store_true",
+        "-v",
+        "--verbose",
+        action="store_true",
         help="Verbose (DEBUG) logging",
     )
     sub = parser.add_subparsers(dest="cmd", required=True, metavar="COMMAND")
@@ -34,11 +35,14 @@ def _make_parser() -> argparse.ArgumentParser:
     )
     p_review.add_argument("pr_url", help="GitHub PR URL")
     p_review.add_argument(
-        "--model", default="claude-sonnet-4-6",
+        "--model",
+        default="claude-sonnet-4-6",
         help="Model id (default: claude-sonnet-4-6)",
     )
     p_review.add_argument(
-        "--system-prompt-file", type=Path, default=None,
+        "--system-prompt-file",
+        type=Path,
+        default=None,
         help="Path to a custom system prompt",
     )
 
@@ -46,25 +50,29 @@ def _make_parser() -> argparse.ArgumentParser:
     p_eval = sub.add_parser(
         "eval",
         help="Evaluate the configured agent against a gold dataset",
-        description=(
-            "Run EvalRunner on a dataset of GoldSamples and report metrics."
-        ),
+        description=("Run EvalRunner on a dataset of GoldSamples and report metrics."),
     )
     p_eval.add_argument(
-        "--dataset", type=Path,
+        "--dataset",
+        type=Path,
         default=Path("dataset/reference/django_pydantic_v1.jsonl"),
         help="Path to JSONL dataset (default: bundled reference dataset)",
     )
     p_eval.add_argument(
-        "--model", default="claude-sonnet-4-6",
+        "--model",
+        default="claude-sonnet-4-6",
         help="Model id for the reviewer under test",
     )
     p_eval.add_argument(
-        "--baseline", type=Path, default=None,
+        "--baseline",
+        type=Path,
+        default=None,
         help="Path to a prior EvalReport JSON for A/B diff",
     )
     p_eval.add_argument(
-        "--out", type=Path, default=None,
+        "--out",
+        type=Path,
+        default=None,
         help="Where to write the new EvalReport JSON (default: data/eval_runs/<run_id>.json)",
     )
 
@@ -83,12 +91,14 @@ def _make_parser() -> argparse.ArgumentParser:
     )
     p_ds_add.add_argument("pr_url", help="GitHub PR URL")
     p_ds_add.add_argument(
-        "--dataset", type=Path,
+        "--dataset",
+        type=Path,
         default=Path("dataset/reference/django_pydantic_v1.jsonl"),
         help="JSONL dataset to append to",
     )
     p_ds_add.add_argument(
-        "--auto-accept", action="store_true",
+        "--auto-accept",
+        action="store_true",
         help="Skip interactive spot-check prompt",
     )
 
@@ -98,11 +108,13 @@ def _make_parser() -> argparse.ArgumentParser:
         help="List the samples in a dataset",
     )
     p_ds_list.add_argument(
-        "--dataset", type=Path,
+        "--dataset",
+        type=Path,
         default=Path("dataset/reference/django_pydantic_v1.jsonl"),
     )
     p_ds_list.add_argument(
-        "--show-classifications", action="store_true",
+        "--show-classifications",
+        action="store_true",
         help="Also show per-defect path/severity/category",
     )
 
@@ -113,7 +125,8 @@ def _make_parser() -> argparse.ArgumentParser:
     )
     p_ds_show.add_argument("pr_url", help="GitHub PR URL of the sample to show")
     p_ds_show.add_argument(
-        "--dataset", type=Path,
+        "--dataset",
+        type=Path,
         default=Path("dataset/reference/django_pydantic_v1.jsonl"),
     )
 
@@ -161,7 +174,7 @@ def _cmd_review(args: argparse.Namespace) -> int:
 def _cmd_eval(args: argparse.Namespace) -> int:
     from .agent import Agent
     from .dataset import JSONLStorage
-    from .eval import EvalRunner, EvalReport, render_diff, render_summary
+    from .eval import EvalReport, EvalRunner, render_diff, render_summary
     from .exceptions import DatasetNotFound
 
     if not args.dataset.exists():
@@ -182,7 +195,7 @@ def _cmd_eval(args: argparse.Namespace) -> int:
         out_dir.mkdir(parents=True, exist_ok=True)
         out_path = out_dir / f"{report.run_id}.json"
 
-    report.to_json(out_path)
+    report.to_json(out_path)  # type: ignore[attr-defined]
     print(render_summary(report))
     print(f"\nReport saved to {out_path}")
 
@@ -190,7 +203,7 @@ def _cmd_eval(args: argparse.Namespace) -> int:
         if not args.baseline.exists():
             print(f"Baseline {args.baseline} not found.", file=sys.stderr)
             return 2
-        baseline = EvalReport.from_json(args.baseline)
+        baseline = EvalReport.from_json(args.baseline)  # type: ignore[attr-defined]
         print("\n=== A/B diff vs baseline ===")
         print(render_diff(baseline, report))
 
@@ -220,11 +233,12 @@ def _cmd_dataset_list(args: argparse.Namespace) -> int:
     print(f"Dataset {args.dataset}  —  {len(samples)} sample(s)\n")
     for s in samples:
         checked = "✓" if s.metadata.spot_checked else " "
-        curated = s.curated_at.strftime("%Y-%m-%d") if isinstance(s.curated_at, datetime) else str(s.curated_at)[:10]
-        print(
-            f"  [{checked}] {s.pr_url}  "
-            f"defects={len(s.gold_defects)}  curated={curated}"
+        curated = (
+            s.curated_at.strftime("%Y-%m-%d")
+            if isinstance(s.curated_at, datetime)
+            else str(s.curated_at)[:10]
         )
+        print(f"  [{checked}] {s.pr_url}  defects={len(s.gold_defects)}  curated={curated}")
         if args.show_classifications:
             for d in s.gold_defects:
                 line = f":{d.line}" if d.line is not None else ""
@@ -248,6 +262,7 @@ def _cmd_dataset_show(args: argparse.Namespace) -> int:
         return 2
 
     import json
+
     print(json.dumps(sample.model_dump(mode="json"), indent=2, default=str))
     return 0
 
@@ -266,7 +281,7 @@ _DISPATCH = {
 }
 
 
-def main(argv: Optional[list[str]] = None) -> int:
+def main(argv: list[str] | None = None) -> int:
     parser = _make_parser()
     args = parser.parse_args(argv)
 

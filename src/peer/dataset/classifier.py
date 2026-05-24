@@ -12,10 +12,9 @@ from __future__ import annotations
 import hashlib
 import json
 import logging
-import os
 import re
 from pathlib import Path
-from typing import Optional, Protocol
+from typing import Protocol
 
 import anthropic
 
@@ -105,9 +104,7 @@ def _parse_response(text: str, taxonomy: Taxonomy) -> Classification:
             )
 
     if severity not in _VALID_SEVERITIES:
-        logger.warning(
-            "Classifier returned unknown severity %r; coercing to 'minor'", severity
-        )
+        logger.warning("Classifier returned unknown severity %r; coercing to 'minor'", severity)
         severity = "minor"
 
     if not reasoning:
@@ -141,9 +138,7 @@ def _repo_from_pr_url(pr_url: str) -> str:
 class CommentClassifier(Protocol):
     """Classifies one raw comment into a Taxonomy category + severity."""
 
-    def classify(
-        self, comment: RawComment, pr_context: PRContext
-    ) -> Classification: ...
+    def classify(self, comment: RawComment, pr_context: PRContext) -> Classification: ...
 
 
 class LLMCommentClassifier:
@@ -157,8 +152,8 @@ class LLMCommentClassifier:
         self,
         taxonomy: Taxonomy = DefaultTaxonomy,
         model: str = DEFAULT_CLASSIFIER_MODEL,
-        client: Optional[anthropic.Anthropic] = None,
-        cache_path: Optional[Path] = DEFAULT_CACHE_PATH,
+        client: anthropic.Anthropic | None = None,
+        cache_path: Path | None = DEFAULT_CACHE_PATH,
     ) -> None:
         self.taxonomy = taxonomy
         self.model = model
@@ -219,9 +214,7 @@ class LLMCommentClassifier:
 
     # --------------------------------------------------------------- classify
 
-    def classify(
-        self, comment: RawComment, pr_context: PRContext
-    ) -> Classification:
+    def classify(self, comment: RawComment, pr_context: PRContext) -> Classification:
         self._load_cache()
         repo = _repo_from_pr_url(pr_context.pr_url)
         key = _cache_key(repo, comment.source_id, self.taxonomy.version)

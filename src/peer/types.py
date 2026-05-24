@@ -4,7 +4,7 @@ Slice 1: Severity, Comment, ContextHunk, Context, Review.
 Slice 2: Symbol, CallSite, TestFile, CodebaseContext.
 """
 
-from typing import Literal, Optional
+from typing import Literal
 
 from pydantic import BaseModel, Field
 
@@ -15,11 +15,11 @@ Severity = Literal["critical", "important", "minor", "nit"]
 
 class Comment(BaseModel):
     path: str
-    line: Optional[int] = None
+    line: int | None = None
     severity: Severity
     body: str
     rationale: str
-    references: Optional[list[str]] = None
+    references: list[str] | None = None
 
 
 class ContextHunk(BaseModel):
@@ -29,7 +29,7 @@ class ContextHunk(BaseModel):
     new_start: int
     new_lines: int
     diff_text: str
-    surrounding_code: Optional[str] = None
+    surrounding_code: str | None = None
 
 
 class Context(BaseModel):
@@ -47,7 +47,7 @@ class Context(BaseModel):
 
 class Review(BaseModel):
     comments: list[Comment] = Field(default_factory=list)
-    reason: Optional[str] = None
+    reason: str | None = None
     usage: dict = Field(default_factory=dict)
 
 
@@ -56,7 +56,7 @@ class Symbol(BaseModel):
     path: str
     kind: SymbolKind
     signature: str
-    enclosing_qualifier: Optional[str] = None
+    enclosing_qualifier: str | None = None
     start_line: int
     end_line: int
     deleted: bool = False

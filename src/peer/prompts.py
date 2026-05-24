@@ -15,8 +15,6 @@ See `docs/pr_agent_reverse_engineering.md` for the reverse-engineering
 analysis and the rationale behind these specific adoptions.
 """
 
-from typing import Optional
-
 from .types import CodebaseContext, Context, ContextHunk
 
 DEFAULT_SYSTEM_PROMPT = """You are an expert code reviewer reviewing a GitHub pull request. Focus on new code added in the PR (lines starting with '+') and on issues introduced by this PR.
@@ -74,7 +72,7 @@ Peer-specific guardrails:
 # ---------------------------------------------------------------------------
 
 
-def _parse_hunk_to_lines(hunk: ContextHunk) -> tuple[str, list[tuple[str, str, Optional[int]]]]:
+def _parse_hunk_to_lines(hunk: ContextHunk) -> tuple[str, list[tuple[str, str, int | None]]]:
     """Parse a ContextHunk into (header, lines).
 
     `lines` is a list of (op, content, new_line_no) tuples where:
@@ -84,7 +82,7 @@ def _parse_hunk_to_lines(hunk: ContextHunk) -> tuple[str, list[tuple[str, str, O
     """
     raw = hunk.diff_text.splitlines()
     header = ""
-    lines: list[tuple[str, str, Optional[int]]] = []
+    lines: list[tuple[str, str, int | None]] = []
     new_no = hunk.new_start
     for line in raw:
         if line.startswith("@@"):
@@ -154,9 +152,7 @@ def _render_hunk_pragent_format(hunk: ContextHunk) -> list[str]:
 # ---------------------------------------------------------------------------
 
 
-def format_prompt(
-    ctx: Context, cc: Optional[CodebaseContext] = None
-) -> str:
+def format_prompt(ctx: Context, cc: CodebaseContext | None = None) -> str:
     """Render the Context (and optional CodebaseContext) as a labeled,
     sectioned string for the LLM."""
     parts: list[str] = [
@@ -200,8 +196,7 @@ def format_prompt(
         parts.append("")
 
     if cc is not None and (
-        cc.modified_symbols or cc.call_sites
-        or cc.related_tests or cc.untested_files
+        cc.modified_symbols or cc.call_sites or cc.related_tests or cc.untested_files
     ):
         parts.append("## Codebase context")
         parts.append("")
@@ -214,17 +209,17 @@ def format_prompt(
                 parts.append(
                     f"- {s.kind} `{qual}{s.name}` @ {s.path}:{s.start_line}-{s.end_line}{tag}"
                 )
-                parts.append(f"  ```python")
+                parts.append("  ```python")
                 parts.append(f"  {s.signature}")
-                parts.append(f"  ```")
+                parts.append("  ```")
             parts.append("")
 
         if cc.call_sites:
             parts.append("### call_sites")
-            for c in cc.call_sites:
-                parts.append(f"- `{c.symbol_name}` called at {c.path}:{c.line}")
+            for cs in cc.call_sites:
+                parts.append(f"- `{cs.symbol_name}` called at {cs.path}:{cs.line}")
                 parts.append("  ```")
-                parts.append("  " + c.snippet.replace("\n", "\n  "))
+                parts.append("  " + cs.snippet.replace("\n", "\n  "))
                 parts.append("  ```")
             parts.append("")
 
@@ -240,9 +235,7 @@ def format_prompt(
 
         if cc.untested_files:
             parts.append("### untested_files")
-            parts.append(
-                "These modified source files have no matching test file by convention:"
-            )
+            parts.append("These modified source files have no matching test file by convention:")
             for f in cc.untested_files:
                 parts.append(f"- `{f}`")
             parts.append("")

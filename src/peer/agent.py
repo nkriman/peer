@@ -6,7 +6,6 @@ from __future__ import annotations
 
 import logging
 from pathlib import Path
-from typing import Optional
 
 from .codebase_context import gather_codebase_context
 from .context import gather
@@ -22,12 +21,8 @@ def _select_reviewer(model: str, system_prompt: str) -> Reviewer:
     if model.startswith("claude"):
         return ClaudeReviewer(model=model, system_prompt=system_prompt)
     if model.startswith("gpt"):
-        raise UnknownModelError(
-            f"OpenAI backend not yet implemented (Slice 3). model={model}"
-        )
-    raise UnknownModelError(
-        f"Unknown model: {model}. Supported prefixes in Slice 1: claude-*."
-    )
+        raise UnknownModelError(f"OpenAI backend not yet implemented (Slice 3). model={model}")
+    raise UnknownModelError(f"Unknown model: {model}. Supported prefixes in Slice 1: claude-*.")
 
 
 def _valid_lines_per_path(ctx: Context) -> dict[str, set[int]]:
@@ -39,22 +34,22 @@ def _valid_lines_per_path(ctx: Context) -> dict[str, set[int]]:
     return out
 
 
-def _validate_comments(
-    comments: list[Comment], ctx: Context
-) -> list[Comment]:
+def _validate_comments(comments: list[Comment], ctx: Context) -> list[Comment]:
     valid_lines = _valid_lines_per_path(ctx)
     out: list[Comment] = []
     for c in comments:
         if c.path not in valid_lines:
             logger.warning(
                 "Dropping comment with unknown path: %s (severity=%s)",
-                c.path, c.severity,
+                c.path,
+                c.severity,
             )
             continue
         if c.line is not None and c.line not in valid_lines[c.path]:
             logger.warning(
                 "Dropping comment with out-of-hunk line: %s:%s",
-                c.path, c.line,
+                c.path,
+                c.line,
             )
             continue
         out.append(c)
@@ -65,19 +60,15 @@ class Agent:
     def __init__(
         self,
         model: str = "claude-sonnet-4-6",
-        system_prompt: Optional[str] = None,
-        system_prompt_file: Optional[Path] = None,
-        team_conventions: Optional[str] = None,
-        team_conventions_file: Optional[Path] = None,
+        system_prompt: str | None = None,
+        system_prompt_file: Path | None = None,
+        team_conventions: str | None = None,
+        team_conventions_file: Path | None = None,
     ) -> None:
         if system_prompt and system_prompt_file:
-            raise ValueError(
-                "Pass system_prompt OR system_prompt_file, not both."
-            )
+            raise ValueError("Pass system_prompt OR system_prompt_file, not both.")
         if team_conventions and team_conventions_file:
-            raise ValueError(
-                "Pass team_conventions OR team_conventions_file, not both."
-            )
+            raise ValueError("Pass team_conventions OR team_conventions_file, not both.")
         if system_prompt_file:
             system_prompt = Path(system_prompt_file).read_text()
         if team_conventions_file:
@@ -90,11 +81,11 @@ class Agent:
                 + "\n\n# TEAM CONVENTIONS\n\n"
                 + "The following document captures style and review conventions "
                 "this team consistently applies. When reviewing the PR below, "
-                "treat departures from these conventions as defects "
-                "(at appropriate severity — usually nit or minor for pure style). "
-                "Cite the convention by name when flagging a related issue.\n\n"
-                + team_conventions.strip()
-                + "\n"
+                "flag departures from these conventions as defects. Infer the "
+                "appropriate severity from the convention's own framing — a "
+                "stated style preference is a style nit; a stated correctness "
+                "rule is a correctness defect. Cite the convention by name when "
+                "flagging a related issue.\n\n" + team_conventions.strip() + "\n"
             )
         self.model = model
         self.system_prompt = base_prompt
@@ -104,16 +95,20 @@ class Agent:
         ctx = gather(pr_url)
         logger.info(
             "Gathered PR context for %s: %d hunks, ~%d tokens",
-            pr_url, len(ctx.hunks), ctx.token_estimate,
+            pr_url,
+            len(ctx.hunks),
+            ctx.token_estimate,
         )
-        cc: Optional[CodebaseContext] = None
+        cc: CodebaseContext | None = None
         try:
             cc = gather_codebase_context(ctx)
             logger.info(
                 "Gathered codebase context: %d symbols, %d call sites, "
                 "%d tests, %d untested, ~%d tokens",
-                len(cc.modified_symbols), len(cc.call_sites),
-                len(cc.related_tests), len(cc.untested_files),
+                len(cc.modified_symbols),
+                len(cc.call_sites),
+                len(cc.related_tests),
+                len(cc.untested_files),
                 cc.token_estimate,
             )
         except CodebaseContextTooLarge as e:

@@ -12,7 +12,7 @@ import json
 import logging
 import re
 from datetime import datetime, timedelta, timezone
-from typing import Optional, Protocol
+from typing import Protocol
 
 import anthropic
 
@@ -46,27 +46,21 @@ class NoEnrichment:
 
 def _list_pr_files(owner: str, repo: str, number: int) -> list[str]:
     try:
-        data = _gh_run(
-            ["api", f"repos/{owner}/{repo}/pulls/{number}/files", "--paginate"]
-        ) or []
+        data = _gh_run(["api", f"repos/{owner}/{repo}/pulls/{number}/files", "--paginate"]) or []
     except Exception as e:
         logger.warning("Could not list files for %s/%s#%d: %s", owner, repo, number, e)
         return []
     return [f.get("filename", "") for f in data if f.get("filename")]
 
 
-def _search_followup_prs(
-    owner: str, repo: str, after: datetime, before: datetime
-) -> list[dict]:
+def _search_followup_prs(owner: str, repo: str, after: datetime, before: datetime) -> list[dict]:
     """Search merged PRs in [after, before] whose title looks like a bugfix."""
     q = (
         f"repo:{owner}/{repo} is:pr is:merged "
         f"merged:{after.date().isoformat()}..{before.date().isoformat()}"
     )
     try:
-        data = _gh_run(
-            ["api", "-X", "GET", "search/issues", "-f", f"q={q}", "--paginate"]
-        )
+        data = _gh_run(["api", "-X", "GET", "search/issues", "-f", f"q={q}", "--paginate"])
     except Exception as e:
         logger.warning("Follow-up PR search failed: %s", e)
         return []
@@ -90,9 +84,7 @@ class PostMergeBugfixCorrelation:
 
     def enrich(self, sample: GoldSample, pr_context: PRContext) -> GoldSample:
         if sample.merged_at is None:
-            logger.debug(
-                "PostMergeBugfixCorrelation: skipping %s (not merged)", sample.pr_url
-            )
+            logger.debug("PostMergeBugfixCorrelation: skipping %s (not merged)", sample.pr_url)
             return sample
         try:
             owner, repo, number = parse_pr_url(sample.pr_url)
@@ -148,8 +140,7 @@ class PostMergeBugfixCorrelation:
                 "metadata": sample.metadata.model_copy(
                     update={
                         "has_followup_bugfix": True,
-                        "defect_comment_count": sample.metadata.defect_comment_count
-                        + len(added),
+                        "defect_comment_count": sample.metadata.defect_comment_count + len(added),
                     }
                 ),
             }
@@ -205,7 +196,7 @@ class LLMOracleEnrichment:
     def __init__(
         self,
         model: str = DEFAULT_ORACLE_MODEL,
-        client: Optional[anthropic.Anthropic] = None,
+        client: anthropic.Anthropic | None = None,
         max_diff_chars: int = 20000,
     ) -> None:
         self.model = model
@@ -301,8 +292,7 @@ class LLMOracleEnrichment:
                 "gold_defects": list(sample.gold_defects) + added,
                 "metadata": sample.metadata.model_copy(
                     update={
-                        "defect_comment_count": sample.metadata.defect_comment_count
-                        + len(added),
+                        "defect_comment_count": sample.metadata.defect_comment_count + len(added),
                     }
                 ),
             }

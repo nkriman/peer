@@ -40,9 +40,7 @@ def _is_bot(login: str) -> bool:
         return True
     if low in _BOT_DENY_LIST:
         return True
-    if any(deny in low for deny in _BOT_DENY_LIST):
-        return True
-    return False
+    return bool(any(deny in low for deny in _BOT_DENY_LIST))
 
 
 def _parse_dt(s: str | None) -> datetime | None:
@@ -75,9 +73,13 @@ class GitHubInlineCommentSource:
 
         meta = _gh_run(
             [
-                "pr", "view", str(number),
-                "--repo", f"{owner}/{repo}",
-                "--json", "title,body,headRefOid,mergedAt",
+                "pr",
+                "view",
+                str(number),
+                "--repo",
+                f"{owner}/{repo}",
+                "--json",
+                "title,body,headRefOid,mergedAt",
             ]
         )
         head_sha = meta.get("headRefOid", "") or ""
@@ -88,9 +90,9 @@ class GitHubInlineCommentSource:
         comments: list[RawComment] = []
 
         # Inline review comments.
-        inline_raw = _gh_run(
-            ["api", f"repos/{owner}/{repo}/pulls/{number}/comments", "--paginate"]
-        ) or []
+        inline_raw = (
+            _gh_run(["api", f"repos/{owner}/{repo}/pulls/{number}/comments", "--paginate"]) or []
+        )
         for c in inline_raw:
             login = ((c.get("user") or {}).get("login") or "").strip()
             if _is_bot(login):
@@ -118,13 +120,16 @@ class GitHubInlineCommentSource:
 
         # Issue comments (top-level conversation).
         if self.include_issue_comments:
-            issue_raw = _gh_run(
-                [
-                    "api",
-                    f"repos/{owner}/{repo}/issues/{number}/comments",
-                    "--paginate",
-                ]
-            ) or []
+            issue_raw = (
+                _gh_run(
+                    [
+                        "api",
+                        f"repos/{owner}/{repo}/issues/{number}/comments",
+                        "--paginate",
+                    ]
+                )
+                or []
+            )
             for c in issue_raw:
                 login = ((c.get("user") or {}).get("login") or "").strip()
                 if _is_bot(login):

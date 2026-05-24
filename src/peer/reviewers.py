@@ -5,7 +5,7 @@ OpenAIReviewer lands in Slice 3 alongside the eval scaffolding.
 
 from __future__ import annotations
 
-from typing import Optional, Protocol
+from typing import Protocol
 
 import anthropic
 
@@ -48,14 +48,12 @@ class Reviewer(Protocol):
     def review(
         self,
         context: Context,
-        codebase_context: Optional[CodebaseContext] = None,
+        codebase_context: CodebaseContext | None = None,
     ) -> tuple[list[Comment], dict]: ...
 
 
 class ClaudeReviewer:
-    def __init__(
-        self, model: str, system_prompt: str = DEFAULT_SYSTEM_PROMPT
-    ) -> None:
+    def __init__(self, model: str, system_prompt: str = DEFAULT_SYSTEM_PROMPT) -> None:
         self.model = model
         self.system_prompt = system_prompt
         self.client = anthropic.Anthropic()
@@ -63,10 +61,13 @@ class ClaudeReviewer:
     def review(
         self,
         context: Context,
-        codebase_context: Optional[CodebaseContext] = None,
+        codebase_context: CodebaseContext | None = None,
     ) -> tuple[list[Comment], dict]:
         user_msg = format_prompt(context, codebase_context)
-        resp = self.client.messages.create(
+        # Tool schema + tool_choice shapes are dicts at runtime; Anthropic's
+        # generated overload typings don't accept the dict form directly, so
+        # we silence the call-site mypy noise rather than wrestle the SDK.
+        resp = self.client.messages.create(  # type: ignore[call-overload]
             model=self.model,
             max_tokens=8192,
             system=self.system_prompt,

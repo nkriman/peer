@@ -119,22 +119,26 @@ def fetch_pr_list(
     """List merged PRs in the given date range via gh CLI."""
     stdout = _run_gh(
         [
-            "pr", "list",
-            "--repo", repo,
-            "--state", "merged",
-            "--search", f"merged:{date_range[0]}..{date_range[1]}",
-            "--limit", str(limit),
-            "--json", "number,title,author,body,mergedAt,reviews",
+            "pr",
+            "list",
+            "--repo",
+            repo,
+            "--state",
+            "merged",
+            "--search",
+            f"merged:{date_range[0]}..{date_range[1]}",
+            "--limit",
+            str(limit),
+            "--json",
+            "number,title,author,body,mergedAt,reviews",
         ]
     )
-    return json.loads(stdout)
+    return json.loads(stdout)  # type: ignore[no-any-return]
 
 
 def fetch_inline_comments(repo: str, pr_number: int) -> list[dict]:
     """Fetch all inline review comments for a PR via gh api."""
-    stdout = _run_gh(
-        ["api", "--paginate", f"repos/{repo}/pulls/{pr_number}/comments"]
-    )
+    stdout = _run_gh(["api", "--paginate", f"repos/{repo}/pulls/{pr_number}/comments"])
     # Paginated output may concatenate JSON arrays; handle both cases.
     stdout = stdout.strip()
     if not stdout:
@@ -142,10 +146,10 @@ def fetch_inline_comments(repo: str, pr_number: int) -> list[dict]:
     # If multiple pages, gh --paginate concatenates without separators.
     # Simplest robust parse: try direct, then split on `][`.
     try:
-        return json.loads(stdout)
+        return json.loads(stdout)  # type: ignore[no-any-return]
     except json.JSONDecodeError:
         merged = stdout.replace("][", ",")
-        return json.loads(merged)
+        return json.loads(merged)  # type: ignore[no-any-return]
 
 
 def to_record(repo: str, pr: dict, inline_comments: list[dict]) -> PRRecord:

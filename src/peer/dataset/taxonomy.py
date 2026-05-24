@@ -1,14 +1,13 @@
 """Configurable Taxonomy with the framework's "good enough" default.
 
-Per design.md Decision 4: 8 categories × 4 severities. `discussion` is
+Per design.md Decision 4: 8 categories x 4 severities. `discussion` is
 dropped; `style-nit` is kept but forced to nit severity. The other six
 categories are kept as defects with classifier-assigned severity.
 """
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field
-from typing import Optional
+from dataclasses import dataclass
 
 from ..types import Severity
 from .types import CategoryDef
@@ -17,13 +16,14 @@ from .types import CategoryDef
 @dataclass
 class Taxonomy:
     """Configurable classification + severity scheme."""
+
     categories: list[CategoryDef]
     severities: list[Severity]
     drop_categories: list[str]
     nit_only_categories: list[str]
     version: str
 
-    def get(self, name: str) -> Optional[CategoryDef]:
+    def get(self, name: str) -> CategoryDef | None:
         for c in self.categories:
             if c.name == name:
                 return c
@@ -33,7 +33,7 @@ class Taxonomy:
         """Whether comments in this category survive into GoldSample."""
         return category_name not in self.drop_categories
 
-    def force_severity_for(self, category_name: str) -> Optional[Severity]:
+    def force_severity_for(self, category_name: str) -> Severity | None:
         """If this category overrides the classifier's severity, return that severity."""
         if category_name in self.nit_only_categories:
             return "nit"

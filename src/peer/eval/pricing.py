@@ -6,8 +6,6 @@ Update this table when new models are released or prices change.
 
 from __future__ import annotations
 
-from typing import Optional
-
 PRICING_TABLE_DATE = "2026-05-23"
 
 # model_id -> (input_per_mtok_usd, output_per_mtok_usd)
@@ -22,22 +20,15 @@ PRICING: dict[str, tuple[float, float]] = {
 }
 
 
-def estimate_cost(
-    model: str, input_tokens: int, output_tokens: int
-) -> Optional[float]:
+def estimate_cost(model: str, input_tokens: int, output_tokens: int) -> float | None:
     """Estimate USD cost for a single LLM call, or None if model unknown."""
     entry = PRICING.get(model)
     if entry is None:
         return None
     in_per_mtok, out_per_mtok = entry
-    return (input_tokens / 1_000_000.0) * in_per_mtok + (
-        output_tokens / 1_000_000.0
-    ) * out_per_mtok
+    return (input_tokens / 1_000_000.0) * in_per_mtok + (output_tokens / 1_000_000.0) * out_per_mtok
 
 
 def cost_unavailable_reason(model: str) -> str:
     """Human-readable explanation of why cost could not be computed."""
-    return (
-        f"model {model!r} not in pricing table "
-        f"(last updated {PRICING_TABLE_DATE})"
-    )
+    return f"model {model!r} not in pricing table (last updated {PRICING_TABLE_DATE})"

@@ -20,12 +20,11 @@ import re
 import shutil
 import subprocess
 from pathlib import Path
-from typing import Optional
 
 import tiktoken
 
 from .exceptions import CodebaseContextTooLarge
-from .types import CallSite, CodebaseContext, Context, Symbol, TestFile
+from .types import CallSite, CodebaseContext, Context, Symbol, SymbolKind, TestFile
 
 logger = logging.getLogger(__name__)
 
@@ -37,7 +36,7 @@ DEFAULT_TEST_CONVENTIONS = [
 ]
 
 CACHE_DIR = Path.home() / ".cache" / "peer" / "repos"
-_ENCODER: Optional[tiktoken.Encoding] = None
+_ENCODER: tiktoken.Encoding | None = None
 
 
 # -- Optional dependency detection (Decision 14) -----------------------------
@@ -74,9 +73,7 @@ def _have_ripgrep() -> bool:
 # -- Repo checkout helper ----------------------------------------------------
 
 
-def _ensure_repo_checkout(
-    owner: str, repo: str, pr_number: int, sha: str
-) -> Optional[Path]:
+def _ensure_repo_checkout(owner: str, repo: str, pr_number: int, sha: str) -> Path | None:
     """Clone (or update) the repo to ~/.cache/peer/repos and check out
     the PR head. Returns the checkout path, or None on failure."""
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
@@ -85,21 +82,28 @@ def _ensure_repo_checkout(
         logger.info("Cloning %s/%s to %s (first use)", owner, repo, repo_path)
         result = subprocess.run(
             [
-                "gh", "repo", "clone", f"{owner}/{repo}", str(repo_path),
-                "--", "--depth=100",
+                "gh",
+                "repo",
+                "clone",
+                f"{owner}/{repo}",
+                str(repo_path),
+                "--",
+                "--depth=100",
             ],
-            capture_output=True, text=True, check=False,
+            capture_output=True,
+            text=True,
+            check=False,
         )
         if result.returncode != 0:
-            logger.warning(
-                "Clone failed for %s/%s: %s", owner, repo, result.stderr.strip()
-            )
+            logger.warning("Clone failed for %s/%s: %s", owner, repo, result.stderr.strip())
             return None
 
     # Try to check out the SHA directly first (cheap if already fetched)
     co = subprocess.run(
         ["git", "-C", str(repo_path), "checkout", "-q", sha],
-        capture_output=True, text=True, check=False,
+        capture_output=True,
+        text=True,
+        check=False,
     )
     if co.returncode == 0:
         return repo_path
@@ -107,19 +111,30 @@ def _ensure_repo_checkout(
     # SHA not local — fetch the PR ref (handles fork PRs cleanly)
     subprocess.run(
         [
-            "git", "-C", str(repo_path),
-            "fetch", "origin", f"pull/{pr_number}/head", "--depth=100",
+            "git",
+            "-C",
+            str(repo_path),
+            "fetch",
+            "origin",
+            f"pull/{pr_number}/head",
+            "--depth=100",
         ],
-        capture_output=True, text=True, check=False,
+        capture_output=True,
+        text=True,
+        check=False,
     )
     co = subprocess.run(
         ["git", "-C", str(repo_path), "checkout", "-q", sha],
-        capture_output=True, text=True, check=False,
+        capture_output=True,
+        text=True,
+        check=False,
     )
     if co.returncode != 0:
         logger.warning(
             "Could not check out %s in %s: %s",
-            sha, repo_path, co.stderr.strip(),
+            sha,
+            repo_path,
+            co.stderr.strip(),
         )
         return None
     return repo_path
@@ -130,32 +145,34 @@ def _ensure_repo_checkout(
 
 def _extract_signature(node, source: bytes) -> str:
     """First line of the definition (up to the colon)."""
-    text = source[node.start_byte:node.end_byte].decode("utf-8", errors="replace")
+    text = source[node.start_byte : node.end_byte].decode("utf-8", errors="replace")
     first_line = text.split("\n", 1)[0].strip()
     if not first_line.endswith(":") and ":" in first_line:
         first_line = first_line.split(":", 1)[0].strip() + ":"
     return first_line
 
 
-def _walk_symbols(node, source: bytes, path: str, enclosing: Optional[str]) -> list[Symbol]:
+def _walk_symbols(node, source: bytes, path: str, enclosing: str | None) -> list[Symbol]:
     """Recursively extract function/method/class definitions."""
     out: list[Symbol] = []
     if node.type == "function_definition":
         name_node = node.child_by_field_name("name")
         if name_node is not None:
-            name = source[name_node.start_byte:name_node.end_byte].decode(
+            name = source[name_node.start_byte : name_node.end_byte].decode(
                 "utf-8", errors="replace"
             )
-            kind = "method" if enclosing else "function"
-            out.append(Symbol(
-                name=name,
-                path=path,
-                kind=kind,
-                signature=_extract_signature(node, source),
-                enclosing_qualifier=enclosing,
-                start_line=node.start_point[0] + 1,
-                end_line=node.end_point[0] + 1,
-            ))
+            kind: SymbolKind = "method" if enclosing else "function"
+            out.append(
+                Symbol(
+                    name=name,
+                    path=path,
+                    kind=kind,
+                    signature=_extract_signature(node, source),
+                    enclosing_qualifier=enclosing,
+                    start_line=node.start_point[0] + 1,
+                    end_line=node.end_point[0] + 1,
+                )
+            )
         # Recurse for nested defs (rare but real)
         for child in node.children:
             out.extend(_walk_symbols(child, source, path, enclosing))
@@ -164,18 +181,20 @@ def _walk_symbols(node, source: bytes, path: str, enclosing: Optional[str]) -> l
         name_node = node.child_by_field_name("name")
         cls_name = None
         if name_node is not None:
-            cls_name = source[name_node.start_byte:name_node.end_byte].decode(
+            cls_name = source[name_node.start_byte : name_node.end_byte].decode(
                 "utf-8", errors="replace"
             )
-            out.append(Symbol(
-                name=cls_name,
-                path=path,
-                kind="class",
-                signature=_extract_signature(node, source),
-                enclosing_qualifier=enclosing,
-                start_line=node.start_point[0] + 1,
-                end_line=node.end_point[0] + 1,
-            ))
+            out.append(
+                Symbol(
+                    name=cls_name,
+                    path=path,
+                    kind="class",
+                    signature=_extract_signature(node, source),
+                    enclosing_qualifier=enclosing,
+                    start_line=node.start_point[0] + 1,
+                    end_line=node.end_point[0] + 1,
+                )
+            )
         new_enclosing = (
             f"{enclosing}.{cls_name}" if (enclosing and cls_name) else cls_name
         ) or enclosing
@@ -187,12 +206,10 @@ def _walk_symbols(node, source: bytes, path: str, enclosing: Optional[str]) -> l
     return out
 
 
-def _extract_modified_symbols(
-    repo_path: Path, ctx: Context, cc: CodebaseContext
-) -> None:
+def _extract_modified_symbols(repo_path: Path, ctx: Context, cc: CodebaseContext) -> None:
     """Populate cc.modified_symbols / unsupported_files / parse_failures."""
-    from tree_sitter import Language, Parser
     import tree_sitter_python
+    from tree_sitter import Language, Parser
 
     lang = Language(tree_sitter_python.language())
     parser = Parser(lang)
@@ -212,9 +229,7 @@ def _extract_modified_symbols(
             continue
         try:
             source = full.read_bytes()
-            all_symbols = _walk_symbols(
-                parser.parse(source).root_node, source, path, None
-            )
+            all_symbols = _walk_symbols(parser.parse(source).root_node, source, path, None)
         except Exception as e:
             logger.warning("Parse failure on %s: %s", path, e)
             cc.parse_failures.append(path)
@@ -235,7 +250,7 @@ def _snippet(source_lines: list[str], line: int, n: int = 3) -> str:
     return "\n".join(source_lines[start:end])
 
 
-def _pattern_for(symbol: Symbol) -> Optional[str]:
+def _pattern_for(symbol: Symbol) -> str | None:
     if symbol.kind in ("function", "class"):
         return f"{symbol.name}($$$ARGS)"
     if symbol.kind == "method":
@@ -295,12 +310,14 @@ def _find_call_sites_ast_grep(
             for m in matches:
                 rng = m.range()
                 line = rng.start.line + 1
-                out.append(CallSite(
-                    symbol_name=sym.name,
-                    path=rel,
-                    line=line,
-                    snippet=_snippet(source_lines, line, n=3),
-                ))
+                out.append(
+                    CallSite(
+                        symbol_name=sym.name,
+                        path=rel,
+                        line=line,
+                        snippet=_snippet(source_lines, line, n=3),
+                    )
+                )
                 seen_per_symbol[sym.name] = seen_per_symbol.get(sym.name, 0) + 1
                 if seen_per_symbol[sym.name] >= max_per_symbol:
                     truncations[f"call_sites_{sym.name}"] = 1
@@ -311,7 +328,7 @@ def _find_call_sites_ast_grep(
 # -- Test discovery ----------------------------------------------------------
 
 
-def _source_to_module(source_rel: str) -> Optional[str]:
+def _source_to_module(source_rel: str) -> str | None:
     """Convert 'pydantic/_internal/_generate_schema.py' -> 'pydantic._internal._generate_schema'."""
     p = Path(source_rel)
     if p.suffix != ".py":
@@ -326,9 +343,7 @@ def _source_to_module(source_rel: str) -> Optional[str]:
     return ".".join(parts)
 
 
-def _find_tests_by_import(
-    repo_path: Path, source_rel: str, max_results: int
-) -> list[str]:
+def _find_tests_by_import(repo_path: Path, source_rel: str, max_results: int) -> list[str]:
     """Find test files in the repo that import from the source module."""
     module = _source_to_module(source_rel)
     if not module:
@@ -355,7 +370,9 @@ def _find_tests_by_import(
         for root in test_roots:
             result = subprocess.run(
                 ["rg", "--type", "py", "-l", "--no-messages", pat, str(root)],
-                capture_output=True, text=True, check=False,
+                capture_output=True,
+                text=True,
+                check=False,
             )
             for line in result.stdout.splitlines():
                 try:
@@ -403,15 +420,16 @@ def _find_related_tests(
             return False
         truncated = False
         if len(content) > max_chars:
-            content = (
-                content[:max_chars]
-                + f"\n... (truncated, {len(content) - max_chars} chars)"
-            )
+            content = content[:max_chars] + f"\n... (truncated, {len(content) - max_chars} chars)"
             truncated = True
-        found.append(TestFile(
-            path=test_rel, source_file=source_rel,
-            content=content, truncated=truncated,
-        ))
+        found.append(
+            TestFile(
+                path=test_rel,
+                source_file=source_rel,
+                content=content,
+                truncated=truncated,
+            )
+        )
         seen_test_paths.add(test_rel)
         return True
 
@@ -436,9 +454,7 @@ def _find_related_tests(
 
         # Strategy 2: import-graph fallback
         if not matched:
-            for test_rel in _find_tests_by_import(
-                repo_path, src, max_tests_per_source
-            ):
+            for test_rel in _find_tests_by_import(repo_path, src, max_tests_per_source):
                 if _add_test_file(test_rel, src):
                     matched = True
 
@@ -481,16 +497,13 @@ def _enforce_budget(cc: CodebaseContext, max_tokens: int) -> None:
         sym_tokens = int(_estimate_tokens(_serialize_cc(symbols_only)) * 1.3)
         if sym_tokens > max_tokens:
             raise CodebaseContextTooLarge(
-                f"modified_symbols alone is ~{sym_tokens} tokens, "
-                f"exceeds budget {max_tokens}"
+                f"modified_symbols alone is ~{sym_tokens} tokens, exceeds budget {max_tokens}"
             )
 
         # Drop call sites until under budget
         while cc.token_estimate > max_tokens and cc.call_sites:
             cc.call_sites.pop()
-            cc.truncations["call_sites_dropped"] = (
-                cc.truncations.get("call_sites_dropped", 0) + 1
-            )
+            cc.truncations["call_sites_dropped"] = cc.truncations.get("call_sites_dropped", 0) + 1
             cc.token_estimate = int(_estimate_tokens(_serialize_cc(cc)) * 1.3)
 
         # Drop tests last
@@ -510,7 +523,7 @@ def gather_codebase_context(
     max_tokens: int = 30_000,
     max_call_sites_per_symbol: int = 5,
     max_test_file_chars: int = 5000,
-    test_path_conventions: Optional[list[str]] = None,
+    test_path_conventions: list[str] | None = None,
 ) -> CodebaseContext:
     """Assemble the CodebaseContext for a PR. Graceful: returns empty if
     optional deps are unavailable."""
@@ -525,7 +538,9 @@ def gather_codebase_context(
     if repo_path is None:
         logger.warning(
             "Could not check out %s/%s @ %s — skipping codebase context",
-            pr_context.owner, pr_context.repo, pr_context.head_sha,
+            pr_context.owner,
+            pr_context.repo,
+            pr_context.head_sha,
         )
         return cc
 
@@ -547,9 +562,7 @@ def gather_codebase_context(
 
     modified_paths = [h.path for h in pr_context.hunks]
     conv = test_path_conventions or DEFAULT_TEST_CONVENTIONS
-    tests, untested = _find_related_tests(
-        repo_path, modified_paths, conv, max_test_file_chars
-    )
+    tests, untested = _find_related_tests(repo_path, modified_paths, conv, max_test_file_chars)
     cc.related_tests = tests
     cc.untested_files = untested
 

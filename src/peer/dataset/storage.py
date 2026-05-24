@@ -10,7 +10,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
-from typing import Optional, Protocol
+from typing import Protocol
 
 from pydantic import ValidationError
 
@@ -21,7 +21,7 @@ from .types import GoldSample
 class GoldSampleStorage(Protocol):
     def add(self, sample: GoldSample) -> None: ...
     def load_all(self) -> list[GoldSample]: ...
-    def find(self, pr_url: str) -> Optional[GoldSample]: ...
+    def find(self, pr_url: str) -> GoldSample | None: ...
     def delete(self, pr_url: str) -> None: ...
 
 
@@ -50,12 +50,10 @@ class JSONLStorage:
                         f"{self.path}:{lineno}: failed to validate GoldSample: {e}"
                     ) from e
                 except json.JSONDecodeError as e:
-                    raise InvalidGoldSample(
-                        f"{self.path}:{lineno}: malformed JSON: {e}"
-                    ) from e
+                    raise InvalidGoldSample(f"{self.path}:{lineno}: malformed JSON: {e}") from e
         return out
 
-    def find(self, pr_url: str) -> Optional[GoldSample]:
+    def find(self, pr_url: str) -> GoldSample | None:
         for sample in self.load_all():
             if sample.pr_url == pr_url:
                 return sample

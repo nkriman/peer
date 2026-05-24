@@ -6,8 +6,6 @@ now takes a GoldDefect (curated dataset record) instead of a raw HumanComment.
 
 from __future__ import annotations
 
-from typing import Optional
-
 import anthropic
 
 from ..dataset.types import GoldDefect
@@ -30,14 +28,16 @@ Respond with exactly one word: SAME or DIFFERENT."""
 def judge_match(
     peer_comment: Comment,
     gold_defect: GoldDefect,
-    client: Optional[anthropic.Anthropic] = None,
+    client: anthropic.Anthropic | None = None,
 ) -> bool:
     """Use a cheap LLM judge to decide if a peer comment refers to the same
     issue as a gold defect."""
     if client is None:
         client = anthropic.Anthropic()
-    gold_line = gold_defect.line if gold_defect.line is not None else (
-        gold_defect.line_range[0] if gold_defect.line_range else 0
+    gold_line = (
+        gold_defect.line
+        if gold_defect.line is not None
+        else (gold_defect.line_range[0] if gold_defect.line_range else 0)
     )
     prompt = JUDGE_PROMPT.format(
         peer_line=peer_comment.line if peer_comment.line is not None else 0,

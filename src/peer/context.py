@@ -37,16 +37,12 @@ def parse_pr_url(pr_url: str) -> tuple[str, str, int]:
 
 def _gh_check_available() -> None:
     if not shutil.which("gh"):
-        raise GHCLINotAvailable(
-            "`gh` CLI not found on PATH. Install via https://cli.github.com/"
-        )
+        raise GHCLINotAvailable("`gh` CLI not found on PATH. Install via https://cli.github.com/")
 
 
 def _gh_run(args: list[str], parse_json: bool = True) -> Any:
     _gh_check_available()
-    result = subprocess.run(
-        ["gh", *args], capture_output=True, text=True, check=False
-    )
+    result = subprocess.run(["gh", *args], capture_output=True, text=True, check=False)
     if result.returncode != 0:
         stderr = (result.stderr or "").strip()
         low = stderr.lower()
@@ -79,13 +75,9 @@ def _parse_diff(diff_text: str) -> list[ContextHunk]:
     return hunks
 
 
-def _fetch_file_at_sha(
-    owner: str, repo: str, path: str, sha: str
-) -> str | None:
+def _fetch_file_at_sha(owner: str, repo: str, path: str, sha: str) -> str | None:
     try:
-        data = _gh_run(
-            ["api", f"repos/{owner}/{repo}/contents/{path}?ref={sha}"]
-        )
+        data = _gh_run(["api", f"repos/{owner}/{repo}/contents/{path}?ref={sha}"])
     except PRNotAccessible:
         return None
     if not isinstance(data, dict):
@@ -160,17 +152,19 @@ def _serialize_for_estimate(ctx: Context) -> str:
     return "\n".join(pieces)
 
 
-def gather(
-    pr_url: str, context_lines: int = 20, max_tokens: int = 100_000
-) -> Context:
+def gather(pr_url: str, context_lines: int = 20, max_tokens: int = 100_000) -> Context:
     """Pull all Slice-1 context the agent needs to review a PR."""
     owner, repo, number = parse_pr_url(pr_url)
 
     meta = _gh_run(
         [
-            "pr", "view", str(number),
-            "--repo", f"{owner}/{repo}",
-            "--json", "title,body,headRefOid",
+            "pr",
+            "view",
+            str(number),
+            "--repo",
+            f"{owner}/{repo}",
+            "--json",
+            "title,body,headRefOid",
         ]
     )
     diff_text = _gh_run(

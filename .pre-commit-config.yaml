@@ -1,0 +1,68 @@
+# Pre-commit gates enforced on `git commit` (and via Claude Code PostToolUse hook).
+# Install once with: uv run pre-commit install
+#
+# These are the same checks the Stop hook runs — pre-commit is the backstop
+# for cases where the Stop hook was bypassed (e.g., user closed the session
+# without finishing a turn). Coverage runs only on push to keep commits fast.
+
+default_install_hook_types: [pre-commit, pre-push]
+default_stages: [pre-commit]
+
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.6.9
+    hooks:
+      - id: ruff
+        args: [--fix]
+      - id: ruff-format
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: check-merge-conflict
+      - id: check-added-large-files
+        args: [--maxkb=500]
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: debug-statements  # blocks accidental print()/breakpoint() (Python only)
+
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.13.0
+    hooks:
+      - id: mypy
+        args: [--config-file=pyproject.toml]
+        additional_dependencies:
+          - pydantic>=2.0
+          - types-requests
+        files: ^src/peer/
+
+  - repo: local
+    hooks:
+      - id: openspec-features-in-sync
+        name: features/ extracted from openspec are up to date
+        entry: python scripts/extract_features.py --check
+        language: system
+        pass_filenames: false
+        stages: [pre-commit]
+
+      - id: behave-fast
+        name: BDD scenarios tagged @fast
+        entry: uv run behave features/ --tags=@fast --no-capture --no-color
+        language: system
+        pass_filenames: false
+        stages: [pre-commit]
+
+      - id: pytest-fast
+        name: pytest (excluding slow / integration)
+        entry: uv run pytest -x -q -m "not slow and not integration" --tb=short
+        language: system
+        pass_filenames: false
+        stages: [pre-commit]
+
+      - id: coverage
+        name: coverage gate (80%)
+        entry: uv run pytest --cov=src/peer --cov-fail-under=80 -q -m "not slow and not integration"
+        language: system
+        pass_filenames: false
+        stages: [pre-push]

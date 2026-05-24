@@ -6,6 +6,7 @@ that must be supplied explicitly — there is no global default dataset path).
 
 from __future__ import annotations
 
+import contextlib
 import json
 import logging
 import os
@@ -13,13 +14,12 @@ import shutil
 import subprocess
 import tempfile
 from pathlib import Path
-from typing import Optional
 
 from ..exceptions import CurationRejected
 from .classifier import CommentClassifier, LLMCommentClassifier
 from .enrichment import EnrichmentStep, NoEnrichment
 from .sources import GitHubInlineCommentSource, RawSampleSource
-from .storage import GoldSampleStorage, JSONLStorage
+from .storage import GoldSampleStorage
 from .taxonomy import DefaultTaxonomy, Taxonomy
 from .types import (
     Classification,
@@ -51,9 +51,7 @@ def _normalize_description(comment: RawComment, classification: Classification) 
     information not present in the inputs."""
     reasoning = (classification.reasoning or "").strip()
     body = (comment.body or "").strip()
-    if reasoning and len(reasoning) >= 15 and not reasoning.lower().startswith(
-        "(no reasoning"
-    ):
+    if reasoning and len(reasoning) >= 15 and not reasoning.lower().startswith("(no reasoning"):
         return reasoning
     # Fallback: first ~300 chars of the actual comment body.
     if len(body) <= 300:
@@ -137,9 +135,7 @@ def _summarize_for_operator(proposed: ProposedSample) -> str:
         lines.append("  (none)")
     for i, d in enumerate(s.gold_defects, 1):
         loc = f"{d.path}:{d.line}" if d.line is not None else d.path
-        lines.append(
-            f"  [{i}] {d.severity:<9} {d.category:<22} {loc}"
-        )
+        lines.append(f"  [{i}] {d.severity:<9} {d.category:<22} {loc}")
         lines.append(f"      desc: {d.description[:200]}")
         lines.append(f"      source: {d.source} (confidence={d.confidence})")
     if proposed.dropped_categories:
@@ -175,10 +171,8 @@ def _edit_in_editor(sample: GoldSample) -> GoldSample:
             logger.error("Returning the pre-edit sample unchanged.")
             return sample
     finally:
-        try:
+        with contextlib.suppress(OSError):
             tmp_path.unlink()
-        except OSError:
-            pass
 
 
 class Curator:
@@ -188,18 +182,16 @@ class Curator:
 
     def __init__(
         self,
-        storage: Optional[GoldSampleStorage] = None,
-        source: Optional[RawSampleSource] = None,
-        classifier: Optional[CommentClassifier] = None,
-        enrichment: Optional[EnrichmentStep] = None,
+        storage: GoldSampleStorage | None = None,
+        source: RawSampleSource | None = None,
+        classifier: CommentClassifier | None = None,
+        enrichment: EnrichmentStep | None = None,
         taxonomy: Taxonomy = DefaultTaxonomy,
     ) -> None:
         self.storage = storage
         self.source = source if source is not None else GitHubInlineCommentSource()
         self.classifier = (
-            classifier
-            if classifier is not None
-            else LLMCommentClassifier(taxonomy=taxonomy)
+            classifier if classifier is not None else LLMCommentClassifier(taxonomy=taxonomy)
         )
         self.enrichment = enrichment if enrichment is not None else NoEnrichment()
         self.taxonomy = taxonomy
@@ -217,7 +209,9 @@ class Curator:
             except Exception as e:
                 logger.warning(
                     "Classifier failed on comment %s by @%s: %s",
-                    c.source_id, c.author, e,
+                    c.source_id,
+                    c.author,
+                    e,
                 )
         return out
 
@@ -262,18 +256,12 @@ class Curator:
             choice = input("[a]ccept / [r]eject / [e]dit > ").strip().lower()
             if choice in ("a", "accept", "y", "yes"):
                 sample = sample.model_copy(
-                    update={
-                        "metadata": sample.metadata.model_copy(
-                            update={"spot_checked": True}
-                        )
-                    }
+                    update={"metadata": sample.metadata.model_copy(update={"spot_checked": True})}
                 )
                 self.storage.add(sample)
                 return sample
             if choice in ("r", "reject", "n", "no"):
-                raise CurationRejected(
-                    f"Operator rejected proposed sample for {pr_url}"
-                )
+                raise CurationRejected(f"Operator rejected proposed sample for {pr_url}")
             if choice in ("e", "edit"):
                 sample = _edit_in_editor(sample)
                 proposed = ProposedSample(
@@ -284,9 +272,7 @@ class Curator:
                 continue
             print(f"Unknown choice: {choice!r}. Use a / r / e.")
 
-    def add_batch(
-        self, pr_urls: list[str], auto_accept: bool = False
-    ) -> list[GoldSample]:
+    def add_batch(self, pr_urls: list[str], auto_accept: bool = False) -> list[GoldSample]:
         out: list[GoldSample] = []
         for url in pr_urls:
             try:
