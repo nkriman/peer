@@ -40,7 +40,7 @@ from .exceptions import (
     UnknownModelError,
 )
 from .linters import Linter, RuffLinter
-from .reviewers import ClaudeReviewer, Reviewer, TestReviewer
+from .reviewers import ClaudeCodeCLIReviewer, ClaudeReviewer, Reviewer, TestReviewer
 from .runtime import CapturedMessage, RunContext, capture_run_messages
 from .types import (
     CallSite,
@@ -63,6 +63,7 @@ __all__ = [
     # Existing types
     "CallSite",
     "CapturedMessage",
+    "ClaudeCodeCLIReviewer",
     "ClaudeReviewer",
     "CodebaseContext",
     "CodebaseContextTooLarge",

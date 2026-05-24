@@ -24,7 +24,7 @@ from .codebase_context import gather_codebase_context
 from .context import gather
 from .exceptions import CodebaseContextTooLarge, UnknownModelError
 from .prompts import DEFAULT_SYSTEM_PROMPT, format_prompt
-from .reviewers import ClaudeReviewer, Reviewer
+from .reviewers import ClaudeCodeCLIReviewer, ClaudeReviewer, Reviewer
 from .runtime import RunContext, _emit_captured_message
 from .types import CodebaseContext, Comment, Context, Review
 
@@ -59,10 +59,10 @@ def _parse_model_id(model: str) -> tuple[str, str]:
         provider, model_id = model.split(":", 1)
         provider = provider.strip().lower()
         model_id = model_id.strip()
-        if provider not in ("anthropic", "openai"):
+        if provider not in ("anthropic", "openai", "claude-code"):
             raise UnknownModelError(
                 f"Unknown provider {provider!r} in model {model!r}. "
-                f"Supported providers: anthropic, openai."
+                f"Supported providers: anthropic, openai, claude-code."
             )
         return provider, model_id
     # Legacy bare name — infer provider + warn
@@ -89,6 +89,12 @@ def _select_reviewer(
 ) -> Reviewer:
     if provider == "anthropic":
         return ClaudeReviewer(model=canonical_model, system_prompt=system_prompt, model_id=model_id)
+    if provider == "claude-code":
+        return ClaudeCodeCLIReviewer(
+            model=canonical_model,
+            system_prompt=system_prompt,
+            model_id=model_id,
+        )
     if provider == "openai":
         raise UnknownModelError(
             f"OpenAI backend not yet implemented (agent-v01 task 3.3). model={canonical_model}"

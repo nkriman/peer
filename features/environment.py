@@ -34,3 +34,10 @@ def after_scenario(context: Any, scenario: Any) -> None:
     """Surface useful debug info when a scenario fails."""
     if scenario.status == "failed" and context.error is not None:
         print(f"[behave] scenario error: {context.error!r}")
+    # Restore globals that scenarios may flip but not roll back.
+    # The negative-path scenarios for ALLOW_LLM_CALLS leave the flag at
+    # False if they don't reach their own try/finally — that bleeds into
+    # subsequent scenarios across features.
+    from peer import deps as _peer_deps
+
+    _peer_deps.ALLOW_LLM_CALLS = True

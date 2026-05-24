@@ -6,33 +6,33 @@ Feature: ClaudeCodeCLIReviewer — peer driven by the claude CLI
 
   @fast
   Scenario: Reviewer parses a clean JSON response from the CLI
-    Given a fake claude binary returning result text "{\"comments\":[{\"path\":\"src/foo.py\",\"line\":10,\"severity\":\"minor\",\"body\":\"b\",\"rationale\":\"r\"}]}" with cost 0.012
+    Given a fake claude binary returning a clean JSON envelope with one comment on "src/foo.py" line 10 and cost 0.012
     When I invoke the ClaudeCodeCLIReviewer on a synthetic Context with one hunk on "src/foo.py"
     Then the returned comments list has length 1
     And the first parsed comment's path equals "src/foo.py"
-    And the returned usage's "total_cost_usd" equals 0.012
+    And the returned usage's total_cost_usd equals 0.012
 
   @fast
   Scenario: Reviewer extracts JSON from a fenced ```json block
-    Given a fake claude binary returning result text wrapped in a fenced json block with one comment
+    Given a fake claude binary returning the comments JSON wrapped in a fenced json block
     When I invoke the ClaudeCodeCLIReviewer on a synthetic Context with one hunk on "src/foo.py"
     Then the returned comments list has length 1
 
   @fast
   Scenario: Reviewer extracts JSON when prose precedes the object
-    Given a fake claude binary returning result text "Here is the JSON: {\"comments\":[{\"path\":\"src/foo.py\",\"line\":10,\"severity\":\"nit\",\"body\":\"b\",\"rationale\":\"r\"}]} and that's all." with cost 0
+    Given a fake claude binary returning the comments JSON preceded by some prose
     When I invoke the ClaudeCodeCLIReviewer on a synthetic Context with one hunk on "src/foo.py"
     Then the returned comments list has length 1
 
   @fast
   Scenario: Reviewer returns an empty list when the CLI yields no parseable JSON
-    Given a fake claude binary returning result text "I could not find any issues." with cost 0
+    Given a fake claude binary returning a result with no JSON at all
     When I invoke the ClaudeCodeCLIReviewer on a synthetic Context with one hunk on "src/foo.py"
     Then the returned comments list has length 0
 
   @fast
   Scenario: Reviewer invokes claude with the expected flags
-    Given a fake claude binary that records its argv
+    Given a fake claude binary that records its argv and returns empty comments
     When I invoke the ClaudeCodeCLIReviewer on a synthetic Context with one hunk on "src/foo.py"
     Then the recorded argv contains "--print"
     And the recorded argv contains "--output-format"

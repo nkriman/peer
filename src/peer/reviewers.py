@@ -5,7 +5,11 @@ OpenAIReviewer lands in Slice 3 alongside the eval scaffolding.
 
 from __future__ import annotations
 
+import json
 import logging
+import re
+import shutil
+import subprocess
 import time
 from dataclasses import dataclass, field
 from typing import Any, Protocol
@@ -196,6 +200,218 @@ class ClaudeReviewer:
                 )
                 self._sleep(backoff)  # type: ignore[operator]
         raise ReviewerRateLimited(self.model, attempts, last_exc)
+
+
+# ---------------------------------------------------------------------------
+# ClaudeCodeCLIReviewer — drives peer via the `claude` CLI
+# ---------------------------------------------------------------------------
+
+# JSON schema the model is asked to conform to. Mirror of _COMMENT_TOOL's
+# input_schema minus the wrapping tool fields. Passed to the CLI via
+# --json-schema; the CLI treats it as a strong hint, not a hard constraint
+# (the model may still wrap in markdown), so we have a robust fallback
+# parser below.
+_CLI_OUTPUT_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "comments": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "path": {"type": "string"},
+                    "line": {"type": ["integer", "null"]},
+                    "end_line": {"type": ["integer", "null"]},
+                    "severity": {
+                        "type": "string",
+                        "enum": ["critical", "important", "minor", "nit"],
+                    },
+                    "body": {"type": "string"},
+                    "rationale": {"type": "string"},
+                    "issue_header": {"type": ["string", "null"]},
+                    "suggestion": {"type": ["string", "null"]},
+                },
+                "required": ["path", "severity", "body", "rationale"],
+            },
+        },
+    },
+    "required": ["comments"],
+}
+
+_CLI_INSTRUCTIONS_SUFFIX = (
+    "\n\nReturn ONLY a JSON object with this shape and nothing else: "
+    '{"comments": [{"path": str, "line": int|null, "severity": '
+    '"critical"|"important"|"minor"|"nit", "body": str, "rationale": str, '
+    '"issue_header": str|null, "suggestion": str|null}, ...]}. '
+    "Return an empty comments list if the PR has no issues. "
+    "Do NOT wrap in markdown fences. Do NOT include any prose before or after."
+)
+
+
+def _extract_comments_payload(text: str) -> dict | None:
+    """Best-effort recovery of a `{"comments": [...]}` object from raw model
+    output. Tries (in order):
+      1. Parse the whole string as JSON.
+      2. Find the first fenced ```json ... ``` block.
+      3. Find the first balanced-brace `{...}` span and try parsing it.
+    Returns None if all attempts fail.
+    """
+    s = text.strip()
+    if not s:
+        return None
+    # 1. Direct parse.
+    try:
+        obj = json.loads(s)
+        if isinstance(obj, dict) and "comments" in obj:
+            return obj
+    except json.JSONDecodeError:
+        pass
+    # 2. ```json ... ``` block.
+    m = re.search(r"```(?:json)?\s*\n(.+?)\n```", s, re.DOTALL)
+    if m:
+        try:
+            obj = json.loads(m.group(1))
+            if isinstance(obj, dict) and "comments" in obj:
+                return obj
+        except json.JSONDecodeError:
+            pass
+    # 3. First balanced {...} span. Stop-on-depth-zero scan; tolerates
+    #    nested braces inside string values.
+    start = s.find("{")
+    while start != -1:
+        depth = 0
+        in_str = False
+        esc = False
+        for i in range(start, len(s)):
+            ch = s[i]
+            if in_str:
+                if esc:
+                    esc = False
+                elif ch == "\\":
+                    esc = True
+                elif ch == '"':
+                    in_str = False
+                continue
+            if ch == '"':
+                in_str = True
+            elif ch == "{":
+                depth += 1
+            elif ch == "}":
+                depth -= 1
+                if depth == 0:
+                    candidate = s[start : i + 1]
+                    try:
+                        obj = json.loads(candidate)
+                        if isinstance(obj, dict) and "comments" in obj:
+                            return obj
+                    except json.JSONDecodeError:
+                        pass
+                    break
+        start = s.find("{", start + 1)
+    return None
+
+
+@dataclass
+class ClaudeCodeCLIReviewer:
+    """Reviewer that shells out to the `claude` CLI instead of the SDK.
+
+    Uses Claude Code's OAuth/keychain auth, so it works without an
+    ANTHROPIC_API_KEY in the environment. Slower per call than the SDK
+    (CLI startup + cache_creation), but doesn't need a separate key.
+
+    Tools/skills/CLAUDE.md auto-discovery are suppressed so the reviewer
+    runs deterministically — only `--system-prompt` content matters.
+    """
+
+    name: str = "claude_code_cli"
+    model: str = "claude-code:sonnet"
+    system_prompt: str = DEFAULT_SYSTEM_PROMPT
+    model_id: str = "sonnet"
+    claude_bin: str = "claude"
+    timeout_seconds: float = 600.0
+
+    def review(
+        self,
+        context: Context,
+        codebase_context: CodebaseContext | None = None,
+        *,
+        extra_user_message: str | None = None,
+        run_context: object | None = None,
+    ) -> tuple[list[Comment], dict]:
+        if not _deps_module.ALLOW_LLM_CALLS:
+            raise LLMCallsDisabled()
+
+        binary = shutil.which(self.claude_bin) or self.claude_bin
+        user_msg = format_prompt(context, codebase_context)
+        if extra_user_message:
+            user_msg = user_msg + "\n\n" + extra_user_message
+        user_msg = user_msg + _CLI_INSTRUCTIONS_SUFFIX
+
+        argv = [
+            binary,
+            "--print",
+            "--output-format",
+            "json",
+            "--model",
+            self.model_id,
+            "--system-prompt",
+            self.system_prompt,
+            "--disable-slash-commands",
+            "--disallowedTools",
+            "Bash",
+            "Edit",
+            "Write",
+            "Read",
+            "Grep",
+            "Glob",
+            "WebFetch",
+            "WebSearch",
+            "--json-schema",
+            json.dumps(_CLI_OUTPUT_SCHEMA),
+            user_msg,
+        ]
+
+        proc = subprocess.run(
+            argv,
+            capture_output=True,
+            text=True,
+            timeout=self.timeout_seconds,
+            check=False,
+        )
+        if proc.returncode != 0:
+            logger.warning(
+                "claude CLI exited %s; stderr=%s",
+                proc.returncode,
+                proc.stderr[:500] if proc.stderr else "(empty)",
+            )
+
+        try:
+            envelope = json.loads(proc.stdout)
+        except json.JSONDecodeError:
+            logger.warning(
+                "claude CLI returned non-JSON envelope; first 500 chars: %r",
+                proc.stdout[:500],
+            )
+            envelope = {"result": "", "total_cost_usd": 0.0, "usage": {}}
+
+        result_text = envelope.get("result") or ""
+        cli_usage = envelope.get("usage") or {}
+        comments: list[Comment] = []
+        payload = _extract_comments_payload(result_text)
+        if payload is not None:
+            for raw in payload.get("comments", []):
+                try:
+                    comments.append(Comment(**raw))
+                except Exception as e:
+                    logger.warning("dropping unparseable comment from CLI: %s", e)
+        usage = {
+            "input_tokens": cli_usage.get("input_tokens", 0),
+            "output_tokens": cli_usage.get("output_tokens", 0),
+            "model": self.model,
+            "total_cost_usd": envelope.get("total_cost_usd", 0.0),
+            "duration_ms": envelope.get("duration_ms"),
+        }
+        return comments, usage
 
 
 @dataclass
