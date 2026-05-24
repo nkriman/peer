@@ -158,25 +158,7 @@ class Recipe(BaseModel):
 
 
 def _resolve_dotted(path: str) -> Any:
-    """Resolve a dotted import path to a class.
+    """Resolve a dotted import path or a short name via the strategies registry."""
+    from .strategies.registry import resolve_strategy
 
-    autoresearch-strategies-v01 introduces a richer registry with short
-    names; until then this falls back to plain importlib lookup. Both
-    paths through the recipe go through the registry once it lands.
-    """
-    import importlib
-
-    if "." not in path:
-        # Short-name lookup — try the strategies registry if available.
-        try:
-            from .strategies.registry import resolve_strategy
-
-            return resolve_strategy(path)
-        except ImportError as e:
-            raise ValueError(
-                f"Cannot resolve short name {path!r}: peer.strategies registry "
-                f"is not installed. Provide a full dotted path instead."
-            ) from e
-    module_path, attr = path.rsplit(".", 1)
-    mod = importlib.import_module(module_path)
-    return getattr(mod, attr)
+    return resolve_strategy(path)

@@ -18,7 +18,7 @@ from ..dataset import JSONLStorage
 from ..eval import EvalRunner
 from ..recipe import Recipe
 from .leaderboard import append_row
-from .utility import default_utility, parse_utility_formula
+from .utility import parse_utility_formula
 
 logger = logging.getLogger(__name__)
 
