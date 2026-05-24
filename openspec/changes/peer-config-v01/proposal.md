@@ -10,13 +10,15 @@ Every competitive AI-code-review tool ships a repo-root config file (CodeRabbit'
 
 ## What Changes
 
-- Add `.peer.yaml` config file format (root-level in a repo) with conventions, severity floors/caps, and reviewer-model overrides per-path-glob.
-- Add `peer.config.PeerConfig` Pydantic schema for the file.
+- Add `.peer.yaml` config file format (root-level in a repo) with conventions, severity floors/caps, file-level ignore patterns, and reviewer-model overrides per-path-glob.
+- Add `peer.config.PeerConfig` Pydantic schema for the file. PeerConfig becomes one of the fields on `PeerDeps` (per `peer-deps-v01` Decision 1).
 - Add `peer.config.load_config(repo_path)` that finds + parses `.peer.yaml` (or returns a default empty config if absent).
 - Add resolver `PeerConfig.for_path(path)` that returns the merged config for a given file path, applying per-path glob overrides on top of global defaults.
-- Extend `Agent.__init__` to optionally accept `config: PeerConfig` or `config_file: Path`, with conventions loaded automatically per-PR file paths.
+- Add `agent.extra_instructions: str` config field (PR-Agent pattern) — short free-form prompt addition, for "two-sentence tweak" use case (smaller than per-path conventions docs). Routed via `PeerDeps.extra_instructions`.
+- Add `ignore:` top-level section with `glob: list[str]`, `regex: list[str]`, `generated_code: list[str]` (vendored PR-Agent per-tech-stack patterns: protobuf, OpenAPI, gRPC, GraphQL codegen, Go generators, etc.). Files matching are excluded BEFORE codebase context extraction — saves tokens AND avoids agent attention on auto-generated noise.
 - Severity floor/cap enforcement: a Comment whose path matches a glob with `severity_cap=nit` gets its severity capped at `nit`; analogous for floors. Applied in the same comment-validation pass that already drops out-of-hunk comments.
-- Document the `.peer.yaml` format with a worked example.
+- Document the `.peer.yaml` format with a worked example. Ship `dataset/reference/peer.yaml.example` with the generated-code ignore patterns pre-populated.
+- **PeerDeps integration**: `PeerConfig` is set on `PeerDeps.config` rather than on `Agent.__init__` directly (per `peer-deps-v01`). Agent constructor's `config=` kwarg is kept for back-compat with `DeprecationWarning` and folds into `_default_deps.config`.
 
 ## Capabilities
 

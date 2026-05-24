@@ -113,6 +113,20 @@ The repository SHALL include `dataset/benchmark/macroscope_v1.jsonl` (vendored s
 - **WHEN** a user opens `dataset/benchmark/MACROSCOPE_PROVENANCE.md`
 - **THEN** they see the upstream commit SHA, fetch date, license, and a clear statement of how the upstream data was mapped to peer's `BugSample` schema
 
+### Requirement: BugBenchmarkRunner uses Agent.override for per-sample deps
+
+`BugBenchmarkRunner` SHALL accept ONE Agent (constructed once) and use `with agent.override(deps=deps_for_this_sample):` to swap per-sample dependencies (model, ignore patterns, etc.). This SHALL NOT require constructing a new Agent per sample.
+
+#### Scenario: Per-sample override
+
+- **WHEN** `BugBenchmarkRunner(agent=my_agent, dataset=bugs).run()` iterates over samples
+- **THEN** each sample is processed via `with my_agent.override(deps=PeerDeps(...)): my_agent.run(bug_pr_url, deps=...)`; the original agent's state is restored after each iteration
+
+#### Scenario: Dry-run cost validation via TestReviewer
+
+- **WHEN** a user invokes `peer benchmark --dry-run --dataset macroscope` (new flag)
+- **THEN** the runner uses `with agent.override(reviewer=TestReviewer()):` for every sample, producing a report shape with zero LLM cost; useful for verifying the benchmark pipeline before paying for the real run
+
 ### Requirement: Update-dataset helper for refreshing the vendored snapshot
 
 The CLI SHALL include `peer benchmark update-dataset --source <upstream> [--apply]` that fetches the upstream dataset, diffs against the vendored copy, and (with `--apply`) overwrites the vendored copy + updates provenance.

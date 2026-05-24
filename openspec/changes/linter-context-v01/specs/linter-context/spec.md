@@ -129,3 +129,22 @@ The `format_prompt(context, codebase_context)` helper SHALL render a `## LINTER 
 
 - **WHEN** no `.peer.yaml` is present
 - **THEN** `RuffLinter` is enabled by default; `MypyLinter` is NOT enabled (per Decision 5 of design.md — mypy too slow for default)
+
+### Requirement: Linters flow through PeerDeps
+
+`Linter` instances SHALL be passed to `gather_codebase_context` via `PeerDeps.linters` (per `peer-deps-v01`). The Agent SHALL extract `deps.linters` from the supplied `PeerDeps` and pass them into `gather_codebase_context(..., linters=deps.linters)`. Users may pass linters directly via `PeerDeps(linters=[MyLinter()])` for ad-hoc / test scenarios, bypassing `.peer.yaml`.
+
+#### Scenario: Linters from PeerDeps
+
+- **WHEN** `Agent(...).run(pr_url, deps=PeerDeps(linters=[RuffLinter()]))` is called
+- **THEN** `gather_codebase_context` receives `linters=[RuffLinter()]` and runs ruff on the modified Python files
+
+#### Scenario: Empty PeerDeps.linters runs no linters
+
+- **WHEN** `Agent(...).run(pr_url, deps=PeerDeps(linters=[]))`
+- **THEN** no linter is run; `cc.linter_findings` is empty
+
+#### Scenario: Config and explicit linters: explicit wins
+
+- **WHEN** `PeerDeps(config=cfg_with_mypy_enabled, linters=[RuffLinter()])` is passed
+- **THEN** only RuffLinter runs (explicit linters argument takes precedence over config-derived defaults)

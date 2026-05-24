@@ -7,14 +7,18 @@ This change adds an optional `suggestion` field to `Comment` so the agent can in
 ## What Changes
 
 - Extend `Comment` schema with `suggestion: Optional[str] = None` — when present, contains the proposed replacement text for the lines being commented on (typically a single contiguous block; can be multi-line).
+- Extend `Comment` with `issue_header: Optional[str] = None` (PR-Agent pattern) — short categorical label like "Possible Bug" / "Performance Concern" / "Test Coverage". Surface in CLI + eval reports for grouping/filtering.
+- Extend `Comment` with `end_line: Optional[int] = None` (PR-Agent pattern) — line range instead of single line. Single-line comments still set only `line`; multi-line comments set both `line` and `end_line`. Validation extends to the inclusive range.
 - Update the default system prompt to instruct the agent to include a `suggestion` when (a) the fix is small (≤5 lines), (b) the fix is concrete (not "consider refactoring"), and (c) the agent is confident the suggested code compiles / passes type checks.
-- Update the Anthropic tool schema to optionally accept the `suggestion` field.
-- Update `format_prompt` to label the `suggestion` field in the agent's input schema documentation.
-- Update CLI `peer review` rendering to display suggestions as fenced code blocks beneath each comment.
+- Update the default system prompt to include `issue_header` guidance (short noun phrase, 1-3 words, e.g. "Possible Bug").
+- Update the Anthropic tool schema to optionally accept `suggestion`, `issue_header`, and `end_line` fields.
+- Update `format_prompt` to document these in the agent's input schema.
+- Update CLI `peer review` rendering to display suggestions as fenced code blocks AND prepend `issue_header` to each comment when present.
+- Update validation: a `suggestion` cannot reference lines outside the diff hunk it's attached to; `end_line` (if present) must be ≥ `line` and within the same hunk.
+- **Validation retries (per `peer-deps-v01`)**: when a Comment's `suggestion` span exceeds the hunk OR `end_line` is invalid, feed the validation error back to the agent and retry (bounded by `retries['output']`). Materially better than the current "log WARNING and accept" approach for shaping the agent's output.
 - Update eval metrics:
   - Add `SuggestionRate` metric: % of peer comments that include a suggestion.
-  - Extend `PrecisionPerSeverity` reporting to also break down by `has_suggestion` (informational).
-- Update validation: a `suggestion` cannot reference lines outside the diff hunk it's attached to.
+  - `IssueHeaderDistribution` metric (informational): aggregates the categorical `issue_header` values across all peer comments. Surfaces what categories of issues peer is flagging.
 
 ## Capabilities
 

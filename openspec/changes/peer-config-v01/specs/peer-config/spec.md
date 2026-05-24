@@ -119,6 +119,58 @@ For a PR review, the system prompt SHALL include the union of `conventions_file`
 - **WHEN** two matched rules reference the same conventions file
 - **THEN** the conventions content appears only once in the system prompt with both path patterns listed
 
+### Requirement: PeerConfig has extra_instructions field
+
+`PeerConfig` SHALL accept an optional top-level `agent.extra_instructions: str` field (also accessible as `cfg.agent.extra_instructions` after loading). The field is appended to the agent's system prompt as a labeled section. Smaller scope than conventions docs — for short ad-hoc guidance.
+
+#### Scenario: extra_instructions appended to prompt
+
+- **WHEN** `.peer.yaml` contains `agent:\n  extra_instructions: "Focus on security."` and an Agent loads this config
+- **THEN** the agent's effective system prompt contains the literal string "Focus on security." in a labeled section
+
+#### Scenario: extra_instructions stacks with conventions
+
+- **WHEN** the config also has per-path conventions for `src/auth/**`
+- **THEN** both are included (extra_instructions first as a global note; conventions per-path as their own sections)
+
+### Requirement: ignore section excludes files before context extraction
+
+`PeerConfig` SHALL accept an `ignore:` top-level section with three subfields: `glob: list[str]`, `regex: list[str]`, `generated_code: list[str]` (the latter pre-populated with vendored PR-Agent patterns when no user override is provided). Files matching ANY pattern in any subfield SHALL be excluded from `Context.hunks` BEFORE codebase-context extraction.
+
+#### Scenario: glob exclusion
+
+- **WHEN** `.peer.yaml` has `ignore:\n  glob: ["vendor/**", "build/**"]` and a PR includes a hunk in `vendor/lib.py`
+- **THEN** the hunk is filtered out of `Context.hunks` and never reaches the agent or the codebase context extractor; INFO log records the skip
+
+#### Scenario: regex exclusion
+
+- **WHEN** `ignore.regex: [".*\\.min\\.js$"]` and a PR includes a hunk in `static/app.min.js`
+- **THEN** the hunk is filtered out
+
+#### Scenario: Default generated_code patterns
+
+- **WHEN** no `ignore.generated_code` is configured and a PR includes a hunk in `proto/foo_pb2.py`
+- **THEN** the hunk is filtered out (default patterns include `**/*_pb2.py`)
+
+#### Scenario: Custom generated_code overrides default
+
+- **WHEN** the user explicitly sets `ignore.generated_code: []` (empty list) and a PR includes a hunk in `proto/foo_pb2.py`
+- **THEN** the hunk is NOT filtered (user opted out of the default)
+
+### Requirement: PeerConfig integrates with PeerDeps
+
+`PeerConfig` SHALL be set on `PeerDeps.config` (per `peer-deps-v01`) rather than directly on `Agent`. The legacy `Agent(config=...)` and `Agent(config_file=...)` kwargs SHALL continue to work via a `DeprecationWarning` shim that folds the value into `self._default_deps.config`.
+
+#### Scenario: Config passed via PeerDeps
+
+- **WHEN** `Agent(model="anthropic:claude-sonnet-4-6", deps_type=PeerDeps).run(pr_url, deps=PeerDeps(config=cfg))` is called
+- **THEN** the agent uses `cfg` for per-path conventions, severity bounds, and ignore filtering
+
+#### Scenario: Legacy config kwarg with deprecation warning
+
+- **WHEN** `Agent(model="...", config=cfg)` is constructed
+- **THEN** a `DeprecationWarning` is emitted naming the `deps=PeerDeps(config=cfg)` pattern; the cfg is wrapped into `_default_deps.config` so existing `Agent.review(pr_url)` works
+
 ### Requirement: CLI commands accept --config override
 
 `peer review`, `peer eval`, and `peer dataset add` SHALL accept a `--config PATH` flag that overrides auto-detection of `.peer.yaml`.

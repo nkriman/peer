@@ -9,7 +9,8 @@ The chosen scope (runtime bugs with known ground truth, not human-comment matchi
 ## What Changes
 
 - Add a `BugDataset` JSONL schema: each line is a `BugSample` — a PR / commit / file-range with a known runtime bug + ground-truth metadata (root cause, suggested fix, severity).
-- Add a `BugBenchmarkRunner` (separate from `EvalRunner`) that runs peer against `BugDataset` and scores: did peer's review include a comment whose path + line range overlaps the bug location AND whose body semantically references the bug's root cause? Uses a Haiku judge similar to `judge_match`, with bug-specific prompt.
+- Add a `BugBenchmarkRunner` (separate from `EvalRunner`) that runs peer against `BugDataset` and scores: did peer's review include a comment whose path + line range overlaps the bug location AND whose body semantically references the bug's root cause? Uses an `LLMJudge` instance (per `eval-v02`) with bug-specific rubric — not a separate hardcoded judge function.
+- **Use `Agent.override()` pattern (per `peer-deps-v01`)** instead of constructing a separate `RepoAwareAgent`. The runner takes ONE Agent and, per-sample, uses `with agent.override(deps=deps_for_this_sample):` to swap deps. Cleaner than per-repo Agent instances; benefits from peer-deps-v01's testing primitives (e.g., `agent.override(reviewer=TestReviewer())` for dry-run cost validation before a real benchmark run).
 - Ship a `peer.benchmark.macroscope` loader that fetches + parses the Macroscope dataset from `github.com/vlad-ko/pr-review-bench` (or a vendored snapshot — see Decision 5).
 - Add a `peer benchmark` CLI subcommand: `peer benchmark --dataset macroscope` (or `--dataset path/to/custom.jsonl`) runs the full benchmark and produces a leaderboard-style report.
 - Add a `BenchmarkReport` schema: detection_rate, comments_per_pr, cost, latency, plus the per-bug breakdown.

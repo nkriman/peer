@@ -13,6 +13,7 @@ The cost is low: ruff and mypy run in seconds, are widely installed, and produce
 - Extend the prompt formatter to include a labeled `## LINTER FINDINGS` section so the agent sees the linter output explicitly.
 - Update the default system prompt (Decision 13 of agent-v01) to direct the agent to *consult* linter findings — prefer surfacing linter-flagged issues as-is over re-discovering them — and to suppress its own duplicate flags for issues a linter already caught.
 - Linters are configured via `.peer.yaml` (per `peer-config-v01`): default-enabled list at the top of the config, can be disabled per-path.
+- **PeerDeps integration**: `Linter` instances live on `PeerDeps.linters` (per `peer-deps-v01`) rather than as a separate Agent constructor kwarg. `PeerConfig.enabled_linters()` resolves to the list passed in `PeerDeps.linters`; users can pass a custom list directly via `PeerDeps(linters=[MyCustomLinter()])` for ad-hoc test scenarios.
 
 ## Capabilities
 
