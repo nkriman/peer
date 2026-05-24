@@ -228,6 +228,45 @@ def _make_parser() -> argparse.ArgumentParser:
         "--program-md", type=Path, default=Path("program.md"), help="Path to program.md"
     )
 
+    p_ar_loop = ar_sub.add_parser(
+        "loop",
+        help="Run the autonomous autoresearch loop (mutate + eval + keep-or-revert)",
+    )
+    p_ar_loop.add_argument("--recipe", type=Path, default=Path("recipe.yaml"))
+    p_ar_loop.add_argument(
+        "--dataset",
+        type=Path,
+        default=Path("dataset/reference/django_pydantic_v2_hard.jsonl"),
+    )
+    p_ar_loop.add_argument(
+        "--leaderboard", type=Path, default=Path("data/eval_runs/leaderboard.tsv")
+    )
+    p_ar_loop.add_argument("--program-md", type=Path, default=Path("program.md"))
+    p_ar_loop.add_argument("--max-iters", type=int, default=10)
+    p_ar_loop.add_argument("--budget-usd", type=float, default=20.0)
+    p_ar_loop.add_argument(
+        "--mutator",
+        default="no_op",
+        help="Dotted path to a mutator callable; default 'no_op' assumes you edit files between iters",
+    )
+
+    p_ar_diag = ar_sub.add_parser(
+        "diagnose",
+        help="Render a hypothesis markdown from an EvalReport JSON",
+    )
+    p_ar_diag.add_argument(
+        "--report",
+        type=Path,
+        default=None,
+        help="Path to an EvalReport JSON (default: latest under data/eval_runs/)",
+    )
+    p_ar_diag.add_argument(
+        "--out",
+        type=Path,
+        default=None,
+        help="Where to write the hypothesis markdown (default: data/autoresearch/<tag>/current_hypothesis.md)",
+    )
+
     return parser
 
 
@@ -439,6 +478,53 @@ def _cmd_autoresearch_run(args: argparse.Namespace) -> int:
     return 0 if status == "ok" else 1
 
 
+def _cmd_autoresearch_loop(args: argparse.Namespace) -> int:
+    from .autoresearch import run_loop
+
+    iters = run_loop(
+        recipe_path=args.recipe,
+        dataset_path=args.dataset,
+        leaderboard_path=args.leaderboard,
+        program_md_path=args.program_md,
+        max_iters=args.max_iters,
+        budget_usd=args.budget_usd,
+        mutator_dotted=args.mutator,
+    )
+    return 0 if iters >= 0 else 1
+
+
+def _cmd_autoresearch_diagnose(args: argparse.Namespace) -> int:
+    from .autoresearch import diagnose_report
+
+    report_path = args.report
+    if report_path is None:
+        d = Path("data/eval_runs")
+        candidates = list(d.glob("*.json")) if d.exists() else []
+        if not candidates:
+            print(
+                f"No EvalReport found under {d}. Pass --report PATH explicitly.",
+                file=sys.stderr,
+            )
+            return 2
+        report_path = max(candidates, key=lambda p: p.stat().st_mtime)
+        print(f"[autoresearch diagnose] using latest report: {report_path}", file=sys.stderr)
+
+    from .eval.types import EvalReport
+
+    report = EvalReport.model_validate_json(report_path.read_text())
+    md = diagnose_report(report)
+
+    out_path = args.out
+    if out_path is None:
+        out_dir = Path("data/autoresearch/default")
+        out_dir.mkdir(parents=True, exist_ok=True)
+        out_path = out_dir / "current_hypothesis.md"
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_text(md)
+    print(f"wrote hypothesis to {out_path}")
+    return 0
+
+
 def _cmd_benchmark_run(args: argparse.Namespace) -> int:
     from .agent import Agent
     from .benchmark import BugBenchmarkRunner, MacroscopeLoader
@@ -521,6 +607,8 @@ _DISPATCH = {
     ("dataset", "show"): _cmd_dataset_show,
     ("benchmark", "run"): _cmd_benchmark_run,
     ("autoresearch", "run"): lambda args: _cmd_autoresearch_run(args),
+    ("autoresearch", "loop"): lambda args: _cmd_autoresearch_loop(args),
+    ("autoresearch", "diagnose"): lambda args: _cmd_autoresearch_diagnose(args),
 }
 
 
