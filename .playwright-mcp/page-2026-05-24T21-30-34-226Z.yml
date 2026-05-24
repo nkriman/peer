@@ -1,0 +1,912 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: jugo 100 natural sin azucar
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 4 productos Monto total $7.620" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: "4"
+              - generic [ref=e44]: $7.620
+    - generic [ref=e45]:
+      - generic [ref=e46]:
+        - separator [ref=e47]
+        - generic [ref=e49]:
+          - img "Icono de título de banner" [ref=e50]
+          - generic [ref=e51]: ¿Cómo quieres tus productos?
+      - main [ref=e54]:
+        - generic [ref=e55]:
+          - generic [ref=e58]:
+            - region "Sección de ordenar y filtrar" [ref=e60]:
+              - button "Precio" [ref=e63]:
+                - generic [ref=e65]: 
+                - generic [ref=e66]: Precio
+                - generic [ref=e67]: 
+              - button "Marca" [ref=e70]:
+                - generic [ref=e71]: Marca
+                - generic [ref=e72]: 
+              - generic [ref=e73]:
+                - generic [ref=e74]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e76]:
+                  - text: Más relevantes
+                  - generic [ref=e77]: 
+            - separator [ref=e78]
+          - generic [ref=e81]:
+            - generic [ref=e82]:
+              - generic [ref=e85]:
+                - generic [ref=e86]:
+                  - button "Precio" [ref=e89]:
+                    - generic [ref=e90]: Precio
+                    - img [ref=e91]: 
+                  - separator [ref=e92]
+                - generic [ref=e93]:
+                  - button "Campaña" [ref=e96]:
+                    - generic [ref=e97]: Campaña
+                    - img [ref=e98]: 
+                  - separator [ref=e99]
+                - generic [ref=e100]:
+                  - button "Marca" [ref=e103]:
+                    - generic [ref=e104]: Marca
+                    - img [ref=e105]: 
+                  - separator [ref=e106]
+                - generic [ref=e107]:
+                  - button "Categoría" [ref=e110]:
+                    - generic [ref=e111]: Categoría
+                    - img [ref=e112]: 
+                  - separator [ref=e113]
+              - generic [ref=e116]:
+                - heading "Resultados para jugo 100 natural sin azucar (321)" [level=2] [ref=e124]: Resultados para jugo 100 natural sin azucar(321)
+                - generic [ref=e125]:
+                  - generic [ref=e127]:
+                    - group [ref=e128]:
+                      - link "Néctar De Piña 0% Azúcar Añadida Botella, 1,5 L" [ref=e129] [cursor=pointer]:
+                        - /url: /ip/refrigerados/00780282064585?from=/search
+                        - generic [ref=e130]: Néctar De Piña 0% Azúcar Añadida Botella, 1,5 L
+                      - generic [ref=e132]:
+                        - img "Néctar De Piña 0% Azúcar Añadida Botella, 1,5 L" [ref=e137]
+                        - generic [ref=e139]:
+                          - generic [ref=e141]:
+                            - generic [ref=e142]: $1.650
+                            - generic [ref=e143]: precio actual $1.650
+                            - generic [ref=e144]: $1.100 x lt
+                          - generic [ref=e145]: Andina Del Valle
+                          - generic [ref=e146]: Néctar De Piña 0% Azúcar Añadida Botella, 1,5 L
+                          - generic [ref=e147]: Agotado
+                    - button "Revisar productos similares - Néctar De Piña 0% Azúcar Añadida Botella, 1,5 L" [ref=e149]: Revisar productos similares
+                  - group [ref=e152]:
+                    - link "Néctar Durazno Sin Azúcar Botella, 1,5 L" [ref=e153] [cursor=pointer]:
+                      - /url: /ip/jugos/00780162000073?from=/search
+                      - generic [ref=e154]: Néctar Durazno Sin Azúcar Botella, 1,5 L
+                    - generic [ref=e156]:
+                      - generic [ref=e159]:
+                        - img "Néctar Durazno Sin Azúcar Botella, 1,5 L" [ref=e161]
+                        - button "Agregar al carro - Néctar Durazno Sin Azúcar Botella, 1,5 L" [ref=e164] [cursor=pointer]:
+                          - generic "agregar" [ref=e165]: 
+                          - generic [ref=e166]: Agregar
+                      - generic [ref=e168]:
+                        - generic [ref=e170]:
+                          - generic [ref=e171]: $1.950
+                          - generic [ref=e172]: precio actual $1.950
+                          - generic [ref=e173]: $1.300 x lt
+                        - generic [ref=e174]: Watts
+                        - generic [ref=e175]: Néctar Durazno Sin Azúcar Botella, 1,5 L
+                  - generic [ref=e177]:
+                    - group [ref=e178]:
+                      - link "Néctar Durazno Sin Azúcar Añadida Botella, 1,5 L" [ref=e179] [cursor=pointer]:
+                        - /url: /ip/jugos/00780282004832?from=/search
+                        - generic [ref=e180]: Néctar Durazno Sin Azúcar Añadida Botella, 1,5 L
+                      - generic [ref=e182]:
+                        - img "Néctar Durazno Sin Azúcar Añadida Botella, 1,5 L" [ref=e187]
+                        - generic [ref=e189]:
+                          - generic [ref=e191]:
+                            - generic [ref=e192]: $1.650
+                            - generic [ref=e193]: precio actual $1.650
+                            - generic [ref=e194]: $1.100 x lt
+                          - generic [ref=e195]: Del Valle
+                          - generic [ref=e196]: Néctar Durazno Sin Azúcar Añadida Botella, 1,5 L
+                          - generic [ref=e197]: Agotado
+                    - button "Revisar productos similares - Néctar Durazno Sin Azúcar Añadida Botella, 1,5 L" [ref=e199]: Revisar productos similares
+                  - group [ref=e202]:
+                    - link "Bebida Frambuesa Sin Azúcar Añadida Botella, 500" [ref=e203] [cursor=pointer]:
+                      - /url: /ip/jugos/00780466537043?from=/search
+                      - generic [ref=e204]: Bebida Frambuesa Sin Azúcar Añadida Botella, 500
+                    - generic [ref=e206]:
+                      - generic [ref=e209]:
+                        - img "Bebida Frambuesa Sin Azúcar Añadida Botella, 500" [ref=e211]
+                        - button "Agregar al carro - Bebida Frambuesa Sin Azúcar Añadida Botella, 500" [ref=e214] [cursor=pointer]:
+                          - generic "agregar" [ref=e215]: 
+                          - generic [ref=e216]: Agregar
+                      - generic [ref=e218]:
+                        - generic [ref=e220]:
+                          - generic [ref=e221]: $2.890
+                          - generic [ref=e222]: precio actual $2.890
+                          - generic [ref=e223]: $5.780 x lt
+                        - generic [ref=e224]: Kombuchacha
+                        - generic [ref=e225]: Bebida Frambuesa Sin Azúcar Añadida Botella, 500
+                  - group [ref=e228]:
+                    - link "Bebida Frambuesa Sin Azúcar Añadida Lata, 355" [ref=e229] [cursor=pointer]:
+                      - /url: /ip/jugos/00780466537046?from=/search
+                      - generic [ref=e230]: Bebida Frambuesa Sin Azúcar Añadida Lata, 355
+                    - generic [ref=e232]:
+                      - generic [ref=e233]:
+                        - generic [ref=e235]:
+                          - generic [ref=e237]: 
+                          - text: Rebaja
+                        - generic [ref=e238]:
+                          - img "Bebida Frambuesa Sin Azúcar Añadida Lata, 355" [ref=e240]
+                          - button "Agregar al carro - Bebida Frambuesa Sin Azúcar Añadida Lata, 355" [ref=e243] [cursor=pointer]:
+                            - generic "agregar" [ref=e244]: 
+                            - generic [ref=e245]: Agregar
+                      - generic [ref=e247]:
+                        - generic [ref=e249]:
+                          - generic [ref=e250]: $1.790
+                          - generic [ref=e251]: precio actual $1.790, Costaba $2.150
+                          - generic [ref=e252]: $5.042 x lt
+                          - generic [ref=e253]: $2.150
+                          - generic [ref=e254]: Ahorra $360
+                        - generic [ref=e255]: Kombuchacha
+                        - generic [ref=e256]: Bebida Frambuesa Sin Azúcar Añadida Lata, 355
+                  - group [ref=e259]:
+                    - link "Jugo Natural Arándano, 1 L" [ref=e260] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00780281000852?from=/search
+                      - generic [ref=e261]: Jugo Natural Arándano, 1 L
+                    - generic [ref=e263]:
+                      - generic [ref=e266]:
+                        - img "Jugo Natural Arándano, 1 L" [ref=e268]
+                        - button "Agregar al carro - Jugo Natural Arándano, 1 L" [ref=e271] [cursor=pointer]:
+                          - generic "agregar" [ref=e272]: 
+                          - generic [ref=e273]: Agregar
+                      - generic [ref=e275]:
+                        - generic [ref=e277]:
+                          - generic [ref=e278]: $6.590
+                          - generic [ref=e279]: precio actual $6.590
+                          - generic [ref=e280]: $6.590 x lt
+                        - generic [ref=e281]: Watts
+                        - generic [ref=e282]: Jugo Natural Arándano, 1 L
+                  - group [ref=e285]:
+                    - link "Jugo Natural Naranja, 1 L" [ref=e286] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00780282100672?from=/search
+                      - generic [ref=e287]: Jugo Natural Naranja, 1 L
+                    - generic [ref=e289]:
+                      - generic [ref=e292]:
+                        - img "Jugo Natural Naranja, 1 L" [ref=e294]
+                        - button "Agregar al carro - Jugo Natural Naranja, 1 L" [ref=e297] [cursor=pointer]:
+                          - generic "agregar" [ref=e298]: 
+                          - generic [ref=e299]: Agregar
+                      - generic [ref=e301]:
+                        - generic [ref=e303]:
+                          - generic [ref=e304]: $4.990
+                          - generic [ref=e305]: precio actual $4.990
+                          - generic [ref=e306]: $4.990 x lt
+                        - generic [ref=e307]: Fundo Sofruco
+                        - generic [ref=e308]: Jugo Natural Naranja, 1 L
+                  - group [ref=e311]:
+                    - link "Jugo Natural Pomelo, 1 L" [ref=e312] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00780282100716?from=/search
+                      - generic [ref=e313]: Jugo Natural Pomelo, 1 L
+                    - generic [ref=e315]:
+                      - generic [ref=e318]:
+                        - img "Jugo Natural Pomelo, 1 L" [ref=e320]
+                        - button "Agregar al carro - Jugo Natural Pomelo, 1 L" [ref=e323] [cursor=pointer]:
+                          - generic "agregar" [ref=e324]: 
+                          - generic [ref=e325]: Agregar
+                      - generic [ref=e327]:
+                        - generic [ref=e329]:
+                          - generic [ref=e330]: $4.990
+                          - generic [ref=e331]: precio actual $4.990
+                          - generic [ref=e332]: $4.990 x lt
+                        - generic [ref=e333]: Sofruco
+                        - generic [ref=e334]: Jugo Natural Pomelo, 1 L
+                  - group [ref=e337]:
+                    - link "Jugo Natural Mandarina, 1 L" [ref=e338] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00780282101189?from=/search
+                      - generic [ref=e339]: Jugo Natural Mandarina, 1 L
+                    - generic [ref=e341]:
+                      - generic [ref=e344]:
+                        - img "Jugo Natural Mandarina, 1 L" [ref=e346]
+                        - button "Agregar al carro - Jugo Natural Mandarina, 1 L" [ref=e349] [cursor=pointer]:
+                          - generic "agregar" [ref=e350]: 
+                          - generic [ref=e351]: Agregar
+                      - generic [ref=e353]:
+                        - generic [ref=e355]:
+                          - generic [ref=e356]: $4.990
+                          - generic [ref=e357]: precio actual $4.990
+                          - generic [ref=e358]: $4.990 x lt
+                        - generic [ref=e359]: Fundo Sofruco
+                        - generic [ref=e360]: Jugo Natural Mandarina, 1 L
+                  - group [ref=e363]:
+                    - link "Jugo Natural Naranja, 1 L" [ref=e364] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00780281005310?from=/search
+                      - generic [ref=e365]: Jugo Natural Naranja, 1 L
+                    - generic [ref=e367]:
+                      - generic [ref=e370]:
+                        - img "Jugo Natural Naranja, 1 L" [ref=e372]
+                        - button "Agregar al carro - Jugo Natural Naranja, 1 L" [ref=e375] [cursor=pointer]:
+                          - generic "agregar" [ref=e376]: 
+                          - generic [ref=e377]: Agregar
+                      - generic [ref=e379]:
+                        - generic [ref=e381]:
+                          - generic [ref=e382]: $4.690
+                          - generic [ref=e383]: precio actual $4.690
+                          - generic [ref=e384]: $4.690 x lt
+                        - generic [ref=e385]: Watts
+                        - generic [ref=e386]: Jugo Natural Naranja, 1 L
+                  - group [ref=e389]:
+                    - link "Jugo Natural Fresco Piña, 1 L" [ref=e390] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00780281005312?from=/search
+                      - generic [ref=e391]: Jugo Natural Fresco Piña, 1 L
+                    - generic [ref=e393]:
+                      - generic [ref=e396]:
+                        - img "Jugo Natural Fresco Piña, 1 L" [ref=e398]
+                        - button "Agregar al carro - Jugo Natural Fresco Piña, 1 L" [ref=e401] [cursor=pointer]:
+                          - generic "agregar" [ref=e402]: 
+                          - generic [ref=e403]: Agregar
+                      - generic [ref=e405]:
+                        - generic [ref=e407]:
+                          - generic [ref=e408]: $4.690
+                          - generic [ref=e409]: precio actual $4.690
+                          - generic [ref=e410]: $4.690 x lt
+                        - generic [ref=e411]: Watts
+                        - generic [ref=e412]: Jugo Natural Fresco Piña, 1 L
+                  - group [ref=e415]:
+                    - link "Jugo Manzana Botella, 1 L" [ref=e416] [cursor=pointer]:
+                      - /url: /ip/jugos/00780283210111?from=/search
+                      - generic [ref=e417]: Jugo Manzana Botella, 1 L
+                    - generic [ref=e419]:
+                      - generic [ref=e422]:
+                        - img "Jugo Manzana Botella, 1 L" [ref=e424]
+                        - button "Agregar al carro - Jugo Manzana Botella, 1 L" [ref=e427] [cursor=pointer]:
+                          - generic "agregar" [ref=e428]: 
+                          - generic [ref=e429]: Agregar
+                      - generic [ref=e431]:
+                        - generic [ref=e433]:
+                          - generic [ref=e434]: $3.890
+                          - generic [ref=e435]: precio actual $3.890
+                          - generic [ref=e436]: $3.890 x lt
+                        - generic [ref=e437]: AFE
+                        - generic [ref=e438]: Jugo Manzana Botella, 1 L
+                  - group [ref=e441]:
+                    - link "Jugo de Ciruela Botella, 1 L" [ref=e442] [cursor=pointer]:
+                      - /url: /ip/jugos/00780283200000?from=/search
+                      - generic [ref=e443]: Jugo de Ciruela Botella, 1 L
+                    - generic [ref=e445]:
+                      - generic [ref=e448]:
+                        - img "Jugo de Ciruela Botella, 1 L" [ref=e450]
+                        - button "Agregar al carro - Jugo de Ciruela Botella, 1 L" [ref=e453] [cursor=pointer]:
+                          - generic "agregar" [ref=e454]: 
+                          - generic [ref=e455]: Agregar
+                      - generic [ref=e457]:
+                        - generic [ref=e459]:
+                          - generic [ref=e460]: $3.890
+                          - generic [ref=e461]: precio actual $3.890
+                          - generic [ref=e462]: $3.890 x lt
+                        - generic [ref=e463]: AFE
+                        - generic [ref=e464]: Jugo de Ciruela Botella, 1 L
+                  - group [ref=e467]:
+                    - link "Jugo de Pera Botella, 1 L" [ref=e468] [cursor=pointer]:
+                      - /url: /ip/jugos/00780283210121?from=/search
+                      - generic [ref=e469]: Jugo de Pera Botella, 1 L
+                    - generic [ref=e471]:
+                      - generic [ref=e474]:
+                        - img "Jugo de Pera Botella, 1 L" [ref=e476]
+                        - button "Agregar al carro - Jugo de Pera Botella, 1 L" [ref=e479] [cursor=pointer]:
+                          - generic "agregar" [ref=e480]: 
+                          - generic [ref=e481]: Agregar
+                      - generic [ref=e483]:
+                        - generic [ref=e485]:
+                          - generic [ref=e486]: $3.890
+                          - generic [ref=e487]: precio actual $3.890
+                          - generic [ref=e488]: $3.890 x lt
+                        - generic [ref=e489]: AFE
+                        - generic [ref=e490]: Jugo de Pera Botella, 1 L
+                  - group [ref=e493]:
+                    - link "Jugo Orgánico de Manzana Botella, 1 L" [ref=e494] [cursor=pointer]:
+                      - /url: /ip/mas-estilos-de-vida/00780283200009?from=/search
+                      - generic [ref=e495]: Jugo Orgánico de Manzana Botella, 1 L
+                    - generic [ref=e497]:
+                      - generic [ref=e500]:
+                        - img "Jugo Orgánico de Manzana Botella, 1 L" [ref=e502]
+                        - button "Agregar al carro - Jugo Orgánico de Manzana Botella, 1 L" [ref=e505] [cursor=pointer]:
+                          - generic "agregar" [ref=e506]: 
+                          - generic [ref=e507]: Agregar
+                      - generic [ref=e509]:
+                        - generic [ref=e511]:
+                          - generic [ref=e512]: $5.190
+                          - generic [ref=e513]: precio actual $5.190
+                          - generic [ref=e514]: $5.190 x lt
+                        - generic [ref=e515]: AFE
+                        - generic [ref=e516]: Jugo Orgánico de Manzana Botella, 1 L
+                  - group [ref=e519]:
+                    - link "Jugo 100% De Naranja Don Simon, 2 L" [ref=e520] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00841026160880?from=/search
+                      - generic [ref=e521]: Jugo 100% De Naranja Don Simon, 2 L
+                    - generic [ref=e523]:
+                      - generic [ref=e526]:
+                        - img "Jugo 100% De Naranja Don Simon, 2 L" [ref=e528]
+                        - button "Agregar al carro - Jugo 100% De Naranja Don Simon, 2 L" [ref=e531] [cursor=pointer]:
+                          - generic "agregar" [ref=e532]: 
+                          - generic [ref=e533]: Agregar
+                      - generic [ref=e535]:
+                        - generic [ref=e537]:
+                          - generic [ref=e538]: $8.190
+                          - generic [ref=e539]: precio actual $8.190
+                          - generic [ref=e540]: $4.095 x lt
+                        - generic [ref=e541]: Don Simon
+                        - generic [ref=e542]: Jugo 100% De Naranja Don Simon, 2 L
+                  - group [ref=e545]:
+                    - link "Néctar de Piña Light 0% Azúcar Añadida Botella, 1500 cc" [ref=e546] [cursor=pointer]:
+                      - /url: /ip/jugos/00780162000634?from=/search
+                      - generic [ref=e547]: Néctar de Piña Light 0% Azúcar Añadida Botella, 1500 cc
+                    - generic [ref=e549]:
+                      - generic [ref=e552]:
+                        - generic [ref=e553]:
+                          - img "Néctar de Piña Light 0% Azúcar Añadida Botella, 1500 cc"
+                        - button "Agregar al carro - Néctar de Piña Light 0% Azúcar Añadida Botella, 1500 cc" [ref=e556] [cursor=pointer]:
+                          - generic "agregar" [ref=e557]: 
+                          - generic [ref=e558]: Agregar
+                      - generic [ref=e560]:
+                        - generic [ref=e562]:
+                          - generic [ref=e563]: $1.950
+                          - generic [ref=e564]: precio actual $1.950
+                          - generic [ref=e565]: $1.300 x lt
+                        - generic [ref=e566]: Watts
+                        - generic [ref=e567]: Néctar de Piña Light 0% Azúcar Añadida Botella, 1500 cc
+                  - group [ref=e570]:
+                    - link "Néctar Tutifrutilla Light 0% Azúcar Añadida Botella, 1,5 L" [ref=e571] [cursor=pointer]:
+                      - /url: /ip/jugos/00780162000291?from=/search
+                      - generic [ref=e572]: Néctar Tutifrutilla Light 0% Azúcar Añadida Botella, 1,5 L
+                    - generic [ref=e574]:
+                      - generic [ref=e577]:
+                        - generic [ref=e578]:
+                          - img "Néctar Tutifrutilla Light 0% Azúcar Añadida Botella, 1,5 L"
+                        - button "Agregar al carro - Néctar Tutifrutilla Light 0% Azúcar Añadida Botella, 1,5 L" [ref=e581] [cursor=pointer]:
+                          - generic "agregar" [ref=e582]: 
+                          - generic [ref=e583]: Agregar
+                      - generic [ref=e585]:
+                        - generic [ref=e587]:
+                          - generic [ref=e588]: $1.950
+                          - generic [ref=e589]: precio actual $1.950
+                          - generic [ref=e590]: $1.300 x lt
+                        - generic [ref=e591]: Watts
+                        - generic [ref=e592]: Néctar Tutifrutilla Light 0% Azúcar Añadida Botella, 1,5 L
+                  - group [ref=e595]:
+                    - link "Néctar Naranja Light 0% Azúcar Añadida Botella, 1,5 L" [ref=e596] [cursor=pointer]:
+                      - /url: /ip/jugos/00780162085339?from=/search
+                      - generic [ref=e597]: Néctar Naranja Light 0% Azúcar Añadida Botella, 1,5 L
+                    - generic [ref=e599]:
+                      - generic [ref=e602]:
+                        - generic [ref=e603]:
+                          - img "Néctar Naranja Light 0% Azúcar Añadida Botella, 1,5 L"
+                        - button "Agregar al carro - Néctar Naranja Light 0% Azúcar Añadida Botella, 1,5 L" [ref=e606] [cursor=pointer]:
+                          - generic "agregar" [ref=e607]: 
+                          - generic [ref=e608]: Agregar
+                      - generic [ref=e610]:
+                        - generic [ref=e612]:
+                          - generic [ref=e613]: $1.950
+                          - generic [ref=e614]: precio actual $1.950
+                          - generic [ref=e615]: $1.300 x lt
+                        - generic [ref=e616]: Watts
+                        - generic [ref=e617]: Néctar Naranja Light 0% Azúcar Añadida Botella, 1,5 L
+                  - group [ref=e620]:
+                    - link "Néctar de Maracuyá 0% Azúcar Añadida Botella, 1.5 L" [ref=e621] [cursor=pointer]:
+                      - /url: /ip/jugos/00780162000760?from=/search
+                      - generic [ref=e622]: Néctar de Maracuyá 0% Azúcar Añadida Botella, 1.5 L
+                    - generic [ref=e624]:
+                      - generic [ref=e627]:
+                        - generic [ref=e628]:
+                          - img "Néctar de Maracuyá 0% Azúcar Añadida Botella, 1.5 L"
+                        - button "Agregar al carro - Néctar de Maracuyá 0% Azúcar Añadida Botella, 1.5 L" [ref=e631] [cursor=pointer]:
+                          - generic "agregar" [ref=e632]: 
+                          - generic [ref=e633]: Agregar
+                      - generic [ref=e635]:
+                        - generic [ref=e637]:
+                          - generic [ref=e638]: $1.950
+                          - generic [ref=e639]: precio actual $1.950
+                          - generic [ref=e640]: $1.300 x lt
+                        - generic [ref=e641]: Watts
+                        - generic [ref=e642]: Néctar de Maracuyá 0% Azúcar Añadida Botella, 1.5 L
+                  - generic [ref=e644]:
+                    - group [ref=e645]:
+                      - link "Néctar De Naranja 0% Azúcar Añadida Botella, 1,5 L" [ref=e646] [cursor=pointer]:
+                        - /url: /ip/jugos/00780282070063?from=/search
+                        - generic [ref=e647]: Néctar De Naranja 0% Azúcar Añadida Botella, 1,5 L
+                      - generic [ref=e649]:
+                        - generic [ref=e653]:
+                          - img "Néctar De Naranja 0% Azúcar Añadida Botella, 1,5 L"
+                        - generic [ref=e655]:
+                          - generic [ref=e657]:
+                            - generic [ref=e658]: $1.650
+                            - generic [ref=e659]: precio actual $1.650
+                            - generic [ref=e660]: $1.100 x lt
+                          - generic [ref=e661]: Andina Del Valle
+                          - generic [ref=e662]: Néctar De Naranja 0% Azúcar Añadida Botella, 1,5 L
+                          - generic [ref=e663]: Agotado
+                    - button "Revisar productos similares - Néctar De Naranja 0% Azúcar Añadida Botella, 1,5 L" [ref=e665]: Revisar productos similares
+                  - generic [ref=e667]:
+                    - group [ref=e668]:
+                      - link "Néctar Multi-Frutilla 0% azúcar añadida Botella, 1,5 L" [ref=e669] [cursor=pointer]:
+                        - /url: /ip/jugos/00780282000108?from=/search
+                        - generic [ref=e670]: Néctar Multi-Frutilla 0% azúcar añadida Botella, 1,5 L
+                      - generic [ref=e672]:
+                        - generic [ref=e676]:
+                          - img "Néctar Multi-Frutilla 0% azúcar añadida Botella, 1,5 L"
+                        - generic [ref=e678]:
+                          - generic [ref=e680]:
+                            - generic [ref=e681]: $1.650
+                            - generic [ref=e682]: precio actual $1.650
+                            - generic [ref=e683]: $1.100 x lt
+                          - generic [ref=e684]: Del Valle
+                          - generic [ref=e685]: Néctar Multi-Frutilla 0% azúcar añadida Botella, 1,5 L
+                          - generic [ref=e686]: Agotado
+                    - button "Revisar productos similares - Néctar Multi-Frutilla 0% azúcar añadida Botella, 1,5 L" [ref=e688]: Revisar productos similares
+                  - group [ref=e691]:
+                    - link "Néctar Multi-Frutilla 0% Azúcar Añadida Botella, 1,75 L" [ref=e692] [cursor=pointer]:
+                      - /url: /ip/jugos/00780282017520?from=/search
+                      - generic [ref=e693]: Néctar Multi-Frutilla 0% Azúcar Añadida Botella, 1,75 L
+                    - generic [ref=e695]:
+                      - generic [ref=e696]:
+                        - generic [ref=e697]:
+                          - generic [ref=e699]: Combina 2 x $3.000
+                          - button "Combina 2 x $3.000. Ver combinaciones aceptadas y coincidir productos." [ref=e700] [cursor=pointer]: Combinar
+                        - generic [ref=e701]:
+                          - generic [ref=e702]:
+                            - img "Néctar Multi-Frutilla 0% Azúcar Añadida Botella, 1,75 L"
+                          - button "Agregar al carro - Néctar Multi-Frutilla 0% Azúcar Añadida Botella, 1,75 L" [ref=e705] [cursor=pointer]:
+                            - generic "agregar" [ref=e706]: 
+                            - generic [ref=e707]: Agregar
+                      - generic [ref=e709]:
+                        - generic [ref=e711]:
+                          - generic [ref=e712]: $1.790
+                          - generic [ref=e713]: precio actual $1.790
+                          - generic [ref=e714]: $1.023 x lt
+                        - generic [ref=e715]: Del Valle
+                        - generic [ref=e716]: Néctar Multi-Frutilla 0% Azúcar Añadida Botella, 1,75 L
+                  - group [ref=e719]:
+                    - link "Jugo Naranja Natural One, 900 ml" [ref=e720] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00789991691324?from=/search
+                      - generic [ref=e721]: Jugo Naranja Natural One, 900 ml
+                    - generic [ref=e723]:
+                      - generic [ref=e726]:
+                        - generic [ref=e727]:
+                          - img "Jugo Naranja Natural One, 900 ml"
+                        - button "Agregar al carro - Jugo Naranja Natural One, 900 ml" [ref=e730] [cursor=pointer]:
+                          - generic "agregar" [ref=e731]: 
+                          - generic [ref=e732]: Agregar
+                      - generic [ref=e734]:
+                        - generic [ref=e736]:
+                          - generic [ref=e737]: $3.990
+                          - generic [ref=e738]: precio actual $3.990
+                          - generic [ref=e739]: $4.433 x lt
+                        - generic [ref=e740]: Quillayes
+                        - generic [ref=e741]: Jugo Naranja Natural One, 900 ml
+                  - group [ref=e744]:
+                    - link "Jugo De Manzana Verde 100% Puro Botella, 1000 ml" [ref=e745] [cursor=pointer]:
+                      - /url: /ip/jugos/00780283200014?from=/search
+                      - generic [ref=e746]: Jugo De Manzana Verde 100% Puro Botella, 1000 ml
+                    - generic [ref=e748]:
+                      - generic [ref=e751]:
+                        - generic [ref=e752]:
+                          - img "Jugo De Manzana Verde 100% Puro Botella, 1000 ml"
+                        - button "Agregar al carro - Jugo De Manzana Verde 100% Puro Botella, 1000 ml" [ref=e755] [cursor=pointer]:
+                          - generic "agregar" [ref=e756]: 
+                          - generic [ref=e757]: Agregar
+                      - generic [ref=e759]:
+                        - generic [ref=e761]:
+                          - generic [ref=e762]: $3.890
+                          - generic [ref=e763]: precio actual $3.890
+                          - generic [ref=e764]: $3.890 x lt
+                        - generic [ref=e765]: AFE
+                        - generic [ref=e766]: Jugo De Manzana Verde 100% Puro Botella, 1000 ml
+                  - group [ref=e769]:
+                    - link "Jugo de Naranja Fruta Natural, 300 ml" [ref=e770] [cursor=pointer]:
+                      - /url: /ip/dulce-momento/00040005118023?from=/search
+                      - generic [ref=e771]: Jugo de Naranja Fruta Natural, 300 ml
+                    - generic [ref=e773]:
+                      - generic [ref=e776]:
+                        - generic [ref=e777]:
+                          - img "Jugo de Naranja Fruta Natural, 300 ml"
+                        - button "Agregar al carro - Jugo de Naranja Fruta Natural, 300 ml" [ref=e780] [cursor=pointer]:
+                          - generic "agregar" [ref=e781]: 
+                          - generic [ref=e782]: Agregar
+                      - generic [ref=e784]:
+                        - generic [ref=e786]:
+                          - generic [ref=e787]: $1.390
+                          - generic [ref=e788]: precio actual $1.390
+                          - generic [ref=e789]: $4.633 x lt
+                        - generic [ref=e790]: Lider
+                        - generic [ref=e791]: Jugo de Naranja Fruta Natural, 300 ml
+                  - group [ref=e794]:
+                    - link "Jugo Naranja sin Pulpa Tretra pak, 960 ml" [ref=e795] [cursor=pointer]:
+                      - /url: /ip/jugos/00750101310693?from=/search
+                      - generic [ref=e796]: Jugo Naranja sin Pulpa Tretra pak, 960 ml
+                    - generic [ref=e798]:
+                      - generic [ref=e801]:
+                        - generic [ref=e802]:
+                          - img "Jugo Naranja sin Pulpa Tretra pak, 960 ml"
+                        - button "Agregar al carro - Jugo Naranja sin Pulpa Tretra pak, 960 ml" [ref=e805] [cursor=pointer]:
+                          - generic "agregar" [ref=e806]: 
+                          - generic [ref=e807]: Agregar
+                      - generic [ref=e809]:
+                        - generic [ref=e811]:
+                          - generic [ref=e812]: $3.190
+                          - generic [ref=e813]: precio actual $3.190
+                          - generic [ref=e814]: $3.322 x lt
+                        - generic [ref=e815]: Jumex
+                        - generic [ref=e816]: Jugo Naranja sin Pulpa Tretra pak, 960 ml
+                  - group [ref=e819]:
+                    - link "Jugo de Naranja 100% Exprimido, 1,5 L" [ref=e820] [cursor=pointer]:
+                      - /url: /ip/jugos/00779808568184?from=/search
+                      - generic [ref=e821]: Jugo de Naranja 100% Exprimido, 1,5 L
+                    - generic [ref=e823]:
+                      - generic [ref=e826]:
+                        - generic [ref=e827]:
+                          - img "Jugo de Naranja 100% Exprimido, 1,5 L"
+                        - button "Agregar al carro - Jugo de Naranja 100% Exprimido, 1,5 L" [ref=e830] [cursor=pointer]:
+                          - generic "agregar" [ref=e831]: 
+                          - generic [ref=e832]: Agregar
+                      - generic [ref=e834]:
+                        - generic [ref=e836]:
+                          - generic [ref=e837]: $5.890
+                          - generic [ref=e838]: precio actual $5.890
+                          - generic [ref=e839]: $3.927 x lt
+                        - generic [ref=e840]: Citric
+                        - generic [ref=e841]: Jugo de Naranja 100% Exprimido, 1,5 L
+                  - group [ref=e844]:
+                    - link "Jugo Fresco Naranja 100% Caja, 1,6 L" [ref=e845] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00780281001031?from=/search
+                      - generic [ref=e846]: Jugo Fresco Naranja 100% Caja, 1,6 L
+                    - generic [ref=e848]:
+                      - generic [ref=e851]:
+                        - generic [ref=e852]:
+                          - img "Jugo Fresco Naranja 100% Caja, 1,6 L"
+                        - button "Agregar al carro - Jugo Fresco Naranja 100% Caja, 1,6 L" [ref=e855] [cursor=pointer]:
+                          - generic "agregar" [ref=e856]: 
+                          - generic [ref=e857]: Agregar
+                      - generic [ref=e859]:
+                        - generic [ref=e861]:
+                          - generic [ref=e862]: $6.990
+                          - generic [ref=e863]: precio actual $6.990
+                          - generic [ref=e864]: $4.369 x lt
+                        - generic [ref=e865]: Watt's
+                        - generic [ref=e866]: Jugo Fresco Naranja 100% Caja, 1,6 L
+                  - group [ref=e869]:
+                    - link "Jugo Naranja Mix, 1.6 L" [ref=e870] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00780281001187?from=/search
+                      - generic [ref=e871]: Jugo Naranja Mix, 1.6 L
+                    - generic [ref=e873]:
+                      - generic [ref=e876]:
+                        - generic [ref=e877]:
+                          - img "Jugo Naranja Mix, 1.6 L"
+                        - button "Agregar al carro - Jugo Naranja Mix, 1.6 L" [ref=e880] [cursor=pointer]:
+                          - generic "agregar" [ref=e881]: 
+                          - generic [ref=e882]: Agregar
+                      - generic [ref=e884]:
+                        - generic [ref=e886]:
+                          - generic [ref=e887]: $5.690
+                          - generic [ref=e888]: precio actual $5.690
+                          - generic [ref=e889]: $3.556 x lt
+                        - generic [ref=e890]: Watts Selección
+                        - generic [ref=e891]: Jugo Naranja Mix, 1.6 L
+                  - group [ref=e894]:
+                    - link "Jugo De Manzana, 1 L" [ref=e895] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00779808568153?from=/search
+                      - generic [ref=e896]: Jugo De Manzana, 1 L
+                    - generic [ref=e898]:
+                      - generic [ref=e901]:
+                        - generic [ref=e902]:
+                          - img "Jugo De Manzana, 1 L"
+                        - button "Agregar al carro - Jugo De Manzana, 1 L" [ref=e905] [cursor=pointer]:
+                          - generic "agregar" [ref=e906]: 
+                          - generic [ref=e907]: Agregar
+                      - generic [ref=e909]:
+                        - generic [ref=e911]:
+                          - generic [ref=e912]: $4.690
+                          - generic [ref=e913]: precio actual $4.690
+                          - generic [ref=e914]: $4.690 x lt
+                        - generic [ref=e915]: Citric
+                        - generic [ref=e916]: Jugo De Manzana, 1 L
+                  - group [ref=e919]:
+                    - link "Pan De Molde Integral Cero % Azúcar Y Grasas, 600 g" [ref=e920] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780340300324?from=/search
+                      - generic [ref=e921]: Pan De Molde Integral Cero % Azúcar Y Grasas, 600 g
+                    - generic [ref=e923]:
+                      - generic [ref=e926]:
+                        - generic [ref=e927]:
+                          - img "Pan De Molde Integral Cero % Azúcar Y Grasas, 600 g"
+                        - button "Agregar al carro - Pan De Molde Integral Cero % Azúcar Y Grasas, 600 g" [ref=e930] [cursor=pointer]:
+                          - generic "agregar" [ref=e931]: 
+                          - generic [ref=e932]: Agregar
+                      - generic [ref=e934]:
+                        - generic [ref=e936]:
+                          - generic [ref=e937]: $2.890
+                          - generic [ref=e938]: precio actual $2.890
+                          - generic [ref=e939]: $4.817 x kg
+                        - generic [ref=e940]: Ideal
+                        - generic [ref=e941]: Pan De Molde Integral Cero % Azúcar Y Grasas, 600 g
+                  - group [ref=e944]:
+                    - link "Pan De Molde Blanco Cero % Azúcar Y Grasas, 580 g" [ref=e945] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780340300323?from=/search
+                      - generic [ref=e946]: Pan De Molde Blanco Cero % Azúcar Y Grasas, 580 g
+                    - generic [ref=e948]:
+                      - generic [ref=e951]:
+                        - generic [ref=e952]:
+                          - img "Pan De Molde Blanco Cero % Azúcar Y Grasas, 580 g"
+                        - button "Agregar al carro - Pan De Molde Blanco Cero % Azúcar Y Grasas, 580 g" [ref=e955] [cursor=pointer]:
+                          - generic "agregar" [ref=e956]: 
+                          - generic [ref=e957]: Agregar
+                      - generic [ref=e959]:
+                        - generic [ref=e961]:
+                          - generic [ref=e962]: $2.890
+                          - generic [ref=e963]: precio actual $2.890
+                          - generic [ref=e964]: $4.983 x kg
+                        - generic [ref=e965]: Ideal
+                        - generic [ref=e966]: Pan De Molde Blanco Cero % Azúcar Y Grasas, 580 g
+                  - group [ref=e969]:
+                    - link "Galletas Chocolate con Frutillas Zero Azúcar, 225 g" [ref=e970] [cursor=pointer]:
+                      - /url: /ip/sin-azucar/00780352000238?from=/search
+                      - generic [ref=e971]: Galletas Chocolate con Frutillas Zero Azúcar, 225 g
+                    - generic [ref=e973]:
+                      - generic [ref=e974]:
+                        - generic [ref=e976]:
+                          - generic [ref=e978]: 
+                          - text: Rebaja
+                        - generic [ref=e979]:
+                          - generic [ref=e980]:
+                            - img "Galletas Chocolate con Frutillas Zero Azúcar, 225 g"
+                          - button "Agregar al carro - Galletas Chocolate con Frutillas Zero Azúcar, 225 g" [ref=e983] [cursor=pointer]:
+                            - generic "agregar" [ref=e984]: 
+                            - generic [ref=e985]: Agregar
+                      - generic [ref=e987]:
+                        - generic [ref=e989]:
+                          - generic [ref=e990]: $1.850
+                          - generic [ref=e991]: precio actual $1.850, Costaba $2.150
+                          - generic [ref=e992]: $8.222 x kg
+                          - generic [ref=e993]: $2.150
+                          - generic [ref=e994]: Ahorra $300
+                        - generic [ref=e995]: Ecovida
+                        - generic [ref=e996]: Galletas Chocolate con Frutillas Zero Azúcar, 225 g
+                  - group [ref=e999]:
+                    - link "Bebida Energética Gorilla Zero Azúcar Lata, 473 ml" [ref=e1000] [cursor=pointer]:
+                      - /url: /ip/bebidas-funcionales/00079819025378?from=/search
+                      - generic [ref=e1001]: Bebida Energética Gorilla Zero Azúcar Lata, 473 ml
+                    - generic [ref=e1003]:
+                      - generic [ref=e1006]:
+                        - generic [ref=e1007]:
+                          - img "Bebida Energética Gorilla Zero Azúcar Lata, 473 ml"
+                        - button "Agregar al carro - Bebida Energética Gorilla Zero Azúcar Lata, 473 ml" [ref=e1010] [cursor=pointer]:
+                          - generic "agregar" [ref=e1011]: 
+                          - generic [ref=e1012]: Agregar
+                      - generic [ref=e1014]:
+                        - generic [ref=e1016]:
+                          - generic [ref=e1017]: $1.350
+                          - generic [ref=e1018]: precio actual $1.350
+                          - generic [ref=e1019]: $2.854 x lt
+                        - generic [ref=e1020]: Score
+                        - generic [ref=e1021]: Bebida Energética Gorilla Zero Azúcar Lata, 473 ml
+                  - group [ref=e1024]:
+                    - link "Bebida Energética Zero Azúcar Lata, 250 ml" [ref=e1025] [cursor=pointer]:
+                      - /url: /ip/bebidas-funcionales/00000009047450?from=/search
+                      - generic [ref=e1026]: Bebida Energética Zero Azúcar Lata, 250 ml
+                    - generic [ref=e1028]:
+                      - generic [ref=e1031]:
+                        - generic [ref=e1032]:
+                          - img "Bebida Energética Zero Azúcar Lata, 250 ml"
+                        - button "Agregar al carro - Bebida Energética Zero Azúcar Lata, 250 ml" [ref=e1035] [cursor=pointer]:
+                          - generic "agregar" [ref=e1036]: 
+                          - generic [ref=e1037]: Agregar
+                      - generic [ref=e1039]:
+                        - generic [ref=e1041]:
+                          - generic [ref=e1042]: $1.750
+                          - generic [ref=e1043]: precio actual $1.750
+                          - generic [ref=e1044]: $7.000 x lt
+                        - generic [ref=e1045]: Red Bull
+                        - generic [ref=e1046]: Bebida Energética Zero Azúcar Lata, 250 ml
+                  - group [ref=e1049]:
+                    - link "Bebida Sin Azúcar Botella, 2 L" [ref=e1050] [cursor=pointer]:
+                      - /url: /ip/bebidas/00780161030528?from=/search
+                      - generic [ref=e1051]: Bebida Sin Azúcar Botella, 2 L
+                    - generic [ref=e1053]:
+                      - generic [ref=e1056]:
+                        - generic [ref=e1057]:
+                          - img "Bebida Sin Azúcar Botella, 2 L"
+                        - button "Agregar al carro - Bebida Sin Azúcar Botella, 2 L" [ref=e1060] [cursor=pointer]:
+                          - generic "agregar" [ref=e1061]: 
+                          - generic [ref=e1062]: Agregar
+                      - generic [ref=e1064]:
+                        - generic [ref=e1066]:
+                          - generic [ref=e1067]: $2.000
+                          - generic [ref=e1068]: precio actual $2.000
+                          - generic [ref=e1069]: $1.000 x lt
+                        - generic [ref=e1070]: Coca-cola
+                        - generic [ref=e1071]: Bebida Sin Azúcar Botella, 2 L
+                  - group [ref=e1074]:
+                    - link "Bebida Sin Azúcar Botella, 2,5 L" [ref=e1075] [cursor=pointer]:
+                      - /url: /ip/bebidas/00780161067104?from=/search
+                      - generic [ref=e1076]: Bebida Sin Azúcar Botella, 2,5 L
+                    - generic [ref=e1078]:
+                      - generic [ref=e1081]:
+                        - generic [ref=e1082]:
+                          - img "Bebida Sin Azúcar Botella, 2,5 L"
+                        - button "Agregar al carro - Bebida Sin Azúcar Botella, 2,5 L" [ref=e1085] [cursor=pointer]:
+                          - generic "agregar" [ref=e1086]: 
+                          - generic [ref=e1087]: Agregar
+                      - generic [ref=e1089]:
+                        - generic [ref=e1091]:
+                          - generic [ref=e1092]: $2.000
+                          - generic [ref=e1093]: precio actual $2.000
+                          - generic [ref=e1094]: $800 x lt
+                        - generic [ref=e1095]: Fanta
+                        - generic [ref=e1096]: Bebida Sin Azúcar Botella, 2,5 L
+                  - group [ref=e1099]:
+                    - link "Bebida Sin Azúcar Pack Lata, 6 Un" [ref=e1100] [cursor=pointer]:
+                      - /url: /ip/bebidas/00780161035635?from=/search
+                      - generic [ref=e1101]: Bebida Sin Azúcar Pack Lata, 6 Un
+                    - generic [ref=e1103]:
+                      - generic [ref=e1106]:
+                        - generic [ref=e1107]:
+                          - img "Bebida Sin Azúcar Pack Lata, 6 Un"
+                        - button "Agregar al carro - Bebida Sin Azúcar Pack Lata, 6 Un" [ref=e1110] [cursor=pointer]:
+                          - generic "agregar" [ref=e1111]: 
+                          - generic [ref=e1112]: Agregar
+                      - generic [ref=e1114]:
+                        - generic [ref=e1116]:
+                          - generic [ref=e1117]: $4.090
+                          - generic [ref=e1118]: precio actual $4.090
+                          - generic [ref=e1119]: $682 x un
+                        - generic [ref=e1120]: Coca-cola
+                        - generic [ref=e1121]: Bebida Sin Azúcar Pack Lata, 6 Un
+                  - group [ref=e1124]:
+                    - link "Galleta Sin Azúcar Diet Bolsa, 120 g" [ref=e1125] [cursor=pointer]:
+                      - /url: /ip/sin-azucar/00780352014014?from=/search
+                      - generic [ref=e1126]: Galleta Sin Azúcar Diet Bolsa, 120 g
+                    - generic [ref=e1128]:
+                      - generic [ref=e1129]:
+                        - generic [ref=e1131]:
+                          - generic [ref=e1133]: 
+                          - text: Rebaja
+                        - generic [ref=e1134]:
+                          - generic [ref=e1135]:
+                            - img "Galleta Sin Azúcar Diet Bolsa, 120 g"
+                          - button "Agregar al carro - Galleta Sin Azúcar Diet Bolsa, 120 g" [ref=e1138] [cursor=pointer]:
+                            - generic "agregar" [ref=e1139]: 
+                            - generic [ref=e1140]: Agregar
+                      - generic [ref=e1142]:
+                        - generic [ref=e1144]:
+                          - generic [ref=e1145]: $1.090
+                          - generic [ref=e1146]: precio actual $1.090, Costaba $1.250
+                          - generic [ref=e1147]: $9.083 x kg
+                          - generic [ref=e1148]: $1.250
+                          - generic [ref=e1149]: Ahorra $160
+                        - generic [ref=e1150]: Ecovida
+                        - generic [ref=e1151]: Galleta Sin Azúcar Diet Bolsa, 120 g
+                  - group [ref=e1154]:
+                    - link "Bebida Sin Azúcar Botella, 1,5 L" [ref=e1155] [cursor=pointer]:
+                      - /url: /ip/bebidas/00780161035040?from=/search
+                      - generic [ref=e1156]: Bebida Sin Azúcar Botella, 1,5 L
+                    - generic [ref=e1158]:
+                      - generic [ref=e1161]:
+                        - generic [ref=e1162]:
+                          - img "Bebida Sin Azúcar Botella, 1,5 L"
+                        - button "Agregar al carro - Bebida Sin Azúcar Botella, 1,5 L" [ref=e1165] [cursor=pointer]:
+                          - generic "agregar" [ref=e1166]: 
+                          - generic [ref=e1167]: Agregar
+                      - generic [ref=e1169]:
+                        - generic [ref=e1171]:
+                          - generic [ref=e1172]: $2.090
+                          - generic [ref=e1173]: precio actual $2.090
+                          - generic [ref=e1174]: $1.393 x lt
+                        - generic [ref=e1175]: Coca-cola
+                        - generic [ref=e1176]: Bebida Sin Azúcar Botella, 1,5 L
+                  - group [ref=e1179]:
+                    - link "Bebida Sin Azúcar Botella Retornable, 3 L" [ref=e1180] [cursor=pointer]:
+                      - /url: /ip/bebidas/00780161033332?from=/search
+                      - generic [ref=e1181]: Bebida Sin Azúcar Botella Retornable, 3 L
+                    - generic [ref=e1183]:
+                      - generic [ref=e1186]:
+                        - generic [ref=e1187]:
+                          - img "Bebida Sin Azúcar Botella Retornable, 3 L"
+                        - button "Agregar al carro - Bebida Sin Azúcar Botella Retornable, 3 L" [ref=e1190] [cursor=pointer]:
+                          - generic "agregar" [ref=e1191]: 
+                          - generic [ref=e1192]: Agregar
+                      - generic [ref=e1194]:
+                        - generic [ref=e1196]:
+                          - generic [ref=e1197]: $2.090
+                          - generic [ref=e1198]: precio actual $2.090
+                          - generic [ref=e1199]: $697 x lt
+                        - generic [ref=e1200]: Coca-cola
+                        - generic [ref=e1201]: Bebida Sin Azúcar Botella Retornable, 3 L
+                  - group [ref=e1204]:
+                    - link "Chicle Sin Azúcar Sabor Menta 46 Un, 1 Un" [ref=e1205] [cursor=pointer]:
+                      - /url: /ip/chocolates-y-candy/00400990041208?from=/search
+                      - generic [ref=e1206]: Chicle Sin Azúcar Sabor Menta 46 Un, 1 Un
+                    - generic [ref=e1208]:
+                      - generic [ref=e1211]:
+                        - generic [ref=e1212]:
+                          - img "Chicle Sin Azúcar Sabor Menta 46 Un, 1 Un"
+                        - button "Agregar al carro - Chicle Sin Azúcar Sabor Menta 46 Un, 1 Un" [ref=e1215] [cursor=pointer]:
+                          - generic "agregar" [ref=e1216]: 
+                          - generic [ref=e1217]: Agregar
+                      - generic [ref=e1219]:
+                        - generic [ref=e1221]:
+                          - generic [ref=e1222]: $4.490
+                          - generic [ref=e1223]: precio actual $4.490
+                          - generic [ref=e1224]: $4.490 x un
+                        - generic [ref=e1225]: Orbit
+                        - generic [ref=e1226]: Chicle Sin Azúcar Sabor Menta 46 Un, 1 Un
+                  - group [ref=e1229]:
+                    - link "Jalea Sin Azúcar Frambuesa 4 Un, 440 g" [ref=e1230] [cursor=pointer]:
+                      - /url: /ip/postres-refrigerados/00780290000473?from=/search
+                      - generic [ref=e1231]: Jalea Sin Azúcar Frambuesa 4 Un, 440 g
+                    - generic [ref=e1233]:
+                      - generic [ref=e1236]:
+                        - generic [ref=e1237]:
+                          - img "Jalea Sin Azúcar Frambuesa 4 Un, 440 g"
+                        - button "Agregar al carro - Jalea Sin Azúcar Frambuesa 4 Un, 440 g" [ref=e1240] [cursor=pointer]:
+                          - generic "agregar" [ref=e1241]: 
+                          - generic [ref=e1242]: Agregar
+                      - generic [ref=e1244]:
+                        - generic [ref=e1246]:
+                          - generic [ref=e1247]: $1.550
+                          - generic [ref=e1248]: precio actual $1.550
+                          - generic [ref=e1249]: $3.523 x kg
+                        - generic [ref=e1250]: Soprole
+                        - generic [ref=e1251]: Jalea Sin Azúcar Frambuesa 4 Un, 440 g
+            - navigation "paginación" [ref=e1254]:
+              - list [ref=e1255]:
+                - listitem [ref=e1256]
+                - listitem [ref=e1258]:
+                  - link "1" [ref=e1259] [cursor=pointer]:
+                    - /url: /search?q=jugo+100+natural+sin+azucar
+                - listitem [ref=e1260]:
+                  - link "Ir a la página 2" [ref=e1261] [cursor=pointer]:
+                    - /url: /search?q=jugo+100+natural+sin+azucar&page=2
+                    - text: "2"
+                - listitem [ref=e1262]:
+                  - link "Ir a la página 3" [ref=e1263] [cursor=pointer]:
+                    - /url: /search?q=jugo+100+natural+sin+azucar&page=3
+                    - text: "3"
+                - listitem [ref=e1264]:
+                  - generic [ref=e1265]: ...
+                - listitem [ref=e1266]:
+                  - generic [ref=e1267]: "8"
+                - listitem [ref=e1268]:
+                  - link "Página siguiente" [ref=e1269] [cursor=pointer]:
+                    - /url: /search?q=jugo+100+natural+sin+azucar&page=2
+                    - generic [ref=e1270]: 
+  - alert [ref=e1278]

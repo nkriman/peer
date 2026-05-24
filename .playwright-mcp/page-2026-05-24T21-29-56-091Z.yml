@@ -1,0 +1,661 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e55]:
+          - navigation "breadcrumb" [ref=e59]:
+            - list [ref=e60]:
+              - listitem [ref=e61]:
+                - link "Despensa" [ref=e62] [cursor=pointer]:
+                  - /url: /content/despensa/46589040
+                - text: /
+              - listitem [ref=e63]:
+                - link "Conservas" [ref=e64] [cursor=pointer]:
+                  - /url: /browse/despensa/conservas/46589040_33283038
+                - text: /
+              - listitem [ref=e65]:
+                - link "Pescados en Conserva" [ref=e66] [cursor=pointer]:
+                  - /url: /browse/despensa/conservas/pescados-en-conserva/46589040_33283038_76234655
+          - generic [ref=e68]:
+            - generic [ref=e73]:
+              - link "Van Camp's" [ref=e78] [cursor=pointer]:
+                - /url: /search?q=van-camps
+              - heading "Atún Agua Lata, Drenado 104 g - Neto 160 g" [level=1] [ref=e80]
+              - generic [ref=e83]:
+                - generic [ref=e84]: El precio actual es
+                - generic [ref=e87]: $1.850
+                - generic [ref=e88]: $17.788 x kg
+              - generic [ref=e90]:
+                - button "Agregar al carro - Atún Agua Lata, Drenado 104 g - Neto 160 g" [ref=e98] [cursor=pointer]:
+                  - generic [ref=e99]: Agregar al carro
+                - separator [ref=e101]
+              - link "Tarjeta de débito One 6% devolución en Pesos Mi Club Solicita aquí" [ref=e103] [cursor=pointer]:
+                - /url: https://tarjetadigital.liderbciserviciosfinancieros.cl/ingreso-de-datos?utm_source=Lidercl_sod_pdp&utm_medium=lidercl
+                - generic [ref=e104]:
+                  - img "Tarjeta de débito ONE" [ref=e105]
+                  - generic [ref=e106]:
+                    - generic [ref=e107]: 6% devolución en Pesos Mi Club
+                    - generic "Tarjeta de débito One 6% devolución en Pesos Mi Club Solicita aquí" [ref=e108]: Solicita aquí
+              - generic [ref=e111]:
+                - generic [ref=e112]: Derecho a retracto
+                - button "detalles" [ref=e113] [cursor=pointer]
+              - generic [ref=e119]:
+                - generic [ref=e120]: 
+                - generic "Vendido y enviado por Lider" [ref=e123]
+            - generic [ref=e129]:
+              - generic [ref=e131]:
+                - generic [ref=e132]:
+                  - generic [ref=e133]: 
+                  - button "thumbnail image 1 of Atún Agua Lata, Drenado 104 g - Neto 160 g, 1 of 1" [ref=e135]:
+                    - generic [ref=e136]:
+                      - img "thumbnail image 1 of Atún Agua Lata, Drenado 104 g - Neto 160 g, 1 of 1"
+                  - generic [ref=e137]: 
+                - generic [ref=e138]:
+                  - img "Atún Agua Lata, Drenado 104 g - Neto 160 g" [ref=e140]
+                  - button "Ampliar imagen modal" [ref=e144]:
+                    - generic [ref=e145]: 
+              - generic [ref=e146]:
+                - heading "Información del producto" [level=2] [ref=e148]
+                - separator [ref=e149]
+                - generic [ref=e151]:
+                  - separator [ref=e152]
+                  - generic [ref=e153]:
+                    - heading "Ficha nutricional" [level=2] [ref=e154]
+                    - button "Ficha nutricional" [expanded] [ref=e156]:
+                      - generic [ref=e157]: 
+                  - generic [ref=e160]:
+                    - paragraph [ref=e162]: Consulta la etiqueta del producto para obtener la información nutricional completa, que puede estar disponible como una imagen alternativa del producto.
+                    - generic [ref=e163]:
+                      - paragraph
+                      - paragraph [ref=e164]: "Porciones por envase: 2"
+                    - table [ref=e165]:
+                      - rowgroup [ref=e166]:
+                        - row "Cantidad por porción 100 gr/ml por Porción" [ref=e167]:
+                          - columnheader "Cantidad por porción" [ref=e168]:
+                            - generic [ref=e169]: Cantidad por porción
+                          - columnheader "100 gr/ml" [ref=e170]
+                          - columnheader "por Porción" [ref=e171]
+                      - rowgroup [ref=e172]:
+                        - row "Energía 1277.0 66" [ref=e173]:
+                          - cell "Energía" [ref=e174]
+                          - cell "1277.0" [ref=e175]
+                          - cell "66" [ref=e176]
+                        - row "Proteínas 27.0 14" [ref=e177]:
+                          - cell "Proteínas" [ref=e178]
+                          - cell "27.0" [ref=e179]
+                          - cell "14" [ref=e180]
+                        - row "Grasas Totales 0.9 .5" [ref=e181]:
+                          - cell "Grasas Totales" [ref=e182]
+                          - cell "0.9" [ref=e183]
+                          - cell ".5" [ref=e184]
+                        - row "Sodio 247.0 128" [ref=e185]:
+                          - cell "Sodio" [ref=e186]
+                          - cell "247.0" [ref=e187]
+                          - cell "128" [ref=e188]
+              - generic [ref=e190]:
+                - separator [ref=e191]
+                - generic [ref=e192]:
+                  - separator [ref=e193]
+                  - generic [ref=e194]:
+                    - heading "Detalles del producto" [level=3] [ref=e195]
+                    - button "Detalles del producto" [expanded] [ref=e197]:
+                      - generic [ref=e198]: 
+                  - generic [ref=e201]:
+                    - list [ref=e205]:
+                      - listitem [ref=e206]: Atún Agua Lata
+                    - generic [ref=e209]:
+                      - heading "ATUN VAN CAMPS AGUA 160G" [level=2] [ref=e210]:
+                        - strong [ref=e211]: ATUN VAN CAMPS AGUA 160G
+                      - separator [ref=e212]
+                      - paragraph [ref=e213]:
+                        - strong [ref=e214]: "Características:"
+                        - text: ATUN VAN CAMPS AGUA 160G
+                        - strong [ref=e215]: "Marca:"
+                        - text: VAN CAMPS
+                        - strong [ref=e216]: "Envase:"
+                        - text: LATA
+                        - strong [ref=e217]: "Tipo:"
+                        - text: LATA
+                        - strong [ref=e218]: "Almacenamiento:"
+                        - text: Mantener en lugar fresco, seco y limpio.
+                        - strong [ref=e219]: "Vida útil:"
+                        - text: Fecha de vencimiento en cada envase
+                        - strong [ref=e220]: "Contenido Neto:"
+                        - text: 160G
+                        - strong [ref=e221]: "Contenido del Empaque:"
+                        - text: Una caja con 48 productos
+                        - strong [ref=e222]: "País de Origen:"
+                        - text: ECUADOR
+                        - strong [ref=e223]: "Descripción:"
+                        - text: ATUN VAN CAMPS AGUA 160G
+                      - separator [ref=e224]
+              - generic [ref=e226]:
+                - separator [ref=e227]
+                - generic [ref=e228]:
+                  - separator [ref=e229]
+                  - generic [ref=e230]:
+                    - heading "Especificaciones" [level=2] [ref=e231]
+                    - button "Especificaciones" [expanded] [ref=e233]:
+                      - generic [ref=e234]: 
+                  - generic [ref=e237]:
+                    - generic [ref=e238]:
+                      - heading "Condición alimentaria" [level=3] [ref=e239]
+                      - generic [ref=e241]:
+                        - text: Libre de frutos secos
+                        - text: Libre de lactosa
+                        - text: Libre de huevo
+                        - text: Libre de lácteos
+                        - text: Libre de sulfitos
+                        - text: Libre de soya
+                        - text: Libre de nueces
+                        - text: Libre de mariscos y crustáceos
+                        - text: Libre de maní
+                    - generic [ref=e242]:
+                      - heading "Ingredientes" [level=3] [ref=e243]
+                      - generic [ref=e244]: Atún, agua y sal.
+                    - generic [ref=e245]:
+                      - heading "Descripción" [level=3] [ref=e246]
+                      - generic [ref=e247]: Atún Agua Lata
+                    - generic [ref=e248]:
+                      - heading "Marca" [level=3] [ref=e249]
+                      - generic [ref=e250]: Van Camp's
+                    - generic [ref=e251]:
+                      - heading "Tipo de producto" [level=3] [ref=e252]
+                      - generic [ref=e253]: Atún
+                    - generic [ref=e254]:
+                      - heading "Tipo" [level=3] [ref=e255]
+                      - generic [ref=e256]: Atún Lomitos
+                    - generic [ref=e257]:
+                      - heading "País de origen" [level=3] [ref=e258]
+                      - generic [ref=e259]: CL
+                    - generic [ref=e260]:
+                      - heading "Contenido neto" [level=3] [ref=e261]
+                      - generic [ref=e262]: Drenado 104 g - Neto 160 g
+                    - generic [ref=e263]:
+                      - heading "Item" [level=3] [ref=e264]
+                      - generic [ref=e265]: "753371"
+                    - generic [ref=e266]:
+                      - heading "Presentación" [level=3] [ref=e267]
+                      - generic [ref=e268]: Lata
+                    - generic [ref=e269]:
+                      - heading "Variedad" [level=3] [ref=e270]
+                      - generic [ref=e271]: Agua
+          - generic [ref=e278]:
+            - heading "Complementos para tu compra" [level=2] [ref=e285]
+            - generic [ref=e286]:
+              - text: 
+              - list [ref=e287]:
+                - listitem [ref=e288]:
+                  - group "Producto" [ref=e289]:
+                    - link "Atún Lomito Aceite Lata, Drenado 104 g - Neto 160 g" [ref=e290] [cursor=pointer]:
+                      - /url: /ip/conservas/00770236700390
+                      - heading "Atún Lomito Aceite Lata, Drenado 104 g - Neto 160 g" [level=3] [ref=e292]
+                    - generic [ref=e294]:
+                      - generic [ref=e295]:
+                        - img "Atún Lomito Aceite Lata, Drenado 104 g - Neto 160 g"
+                      - button "Agregar al carro - Atún Lomito Aceite Lata, Drenado 104 g - Neto 160 g" [ref=e298] [cursor=pointer]:
+                        - generic "agregar" [ref=e299]: 
+                        - generic [ref=e300]: Agregar
+                    - generic [ref=e303]:
+                      - generic [ref=e304]: $1.850
+                      - generic [ref=e305]: precio actual $1.850
+                      - generic [ref=e306]: $17.788 x kg
+                    - generic [ref=e308]: Van Camp's
+                    - generic [ref=e310]: Atún Lomito Aceite Lata, Drenado 104 g - Neto 160 g
+                - listitem [ref=e311]:
+                  - group "Producto" [ref=e312]:
+                    - link "Arroz Grado 1 Grano Largo Bolsa, 1 Kg" [ref=e313] [cursor=pointer]:
+                      - /url: /ip/arroz-y-legumbres/00780261500655
+                      - heading "Arroz Grado 1 Grano Largo Bolsa, 1 Kg" [level=3] [ref=e315]
+                    - generic [ref=e317]:
+                      - generic [ref=e318]:
+                        - img "Arroz Grado 1 Grano Largo Bolsa, 1 Kg"
+                      - button "Agregar al carro - Arroz Grado 1 Grano Largo Bolsa, 1 Kg" [ref=e321] [cursor=pointer]:
+                        - generic "agregar" [ref=e322]: 
+                        - generic [ref=e323]: Agregar
+                    - generic [ref=e326]:
+                      - generic [ref=e327]: $2.550
+                      - generic [ref=e328]: precio actual $2.550
+                      - generic [ref=e329]: $13.421 x kg
+                    - generic [ref=e331]: Miraflores
+                    - generic [ref=e333]: Arroz Grado 1 Grano Largo Bolsa, 1 Kg
+                - listitem [ref=e334]:
+                  - group "Producto" [ref=e335]:
+                    - link "Salsa de Tomate Italiana Pack 6 Un Bolsa, 200 g" [ref=e336] [cursor=pointer]:
+                      - /url: /ip/pastas-y-salsas/00780257535517
+                      - heading "Salsa de Tomate Italiana Pack 6 Un Bolsa, 200 g" [level=3] [ref=e338]
+                    - generic [ref=e340]:
+                      - generic [ref=e341]:
+                        - img "Salsa de Tomate Italiana Pack 6 Un Bolsa, 200 g"
+                      - button "Agregar al carro - Salsa de Tomate Italiana Pack 6 Un Bolsa, 200 g" [ref=e344] [cursor=pointer]:
+                        - generic "agregar" [ref=e345]: 
+                        - generic [ref=e346]: Agregar
+                    - generic [ref=e349]:
+                      - generic [ref=e350]: $3.890
+                      - generic [ref=e351]: precio actual $3.890
+                      - generic [ref=e352]: $3.242 x kg
+                    - generic [ref=e354]: Pomarola
+                    - generic [ref=e356]: Salsa de Tomate Italiana Pack 6 Un Bolsa, 200 g
+                - listitem [ref=e357]:
+                  - group "Producto" [ref=e358]:
+                    - link "Sal de Mesa Bolsa, 1 Kg" [ref=e359] [cursor=pointer]:
+                      - /url: /ip/aceites-y-aderezos/00780360003127
+                      - heading "Sal de Mesa Bolsa, 1 Kg" [level=3] [ref=e361]
+                    - generic [ref=e363]:
+                      - generic [ref=e364]:
+                        - img "Sal de Mesa Bolsa, 1 Kg"
+                      - button "Agregar al carro - Sal de Mesa Bolsa, 1 Kg" [ref=e367] [cursor=pointer]:
+                        - generic "agregar" [ref=e368]: 
+                        - generic [ref=e369]: Agregar
+                    - generic [ref=e372]:
+                      - generic [ref=e373]: $530
+                      - generic [ref=e374]: precio actual $530
+                      - generic [ref=e375]: $530 x kg
+                    - generic [ref=e377]: Lobos
+                    - generic [ref=e379]: Sal de Mesa Bolsa, 1 Kg
+                - listitem [ref=e380]:
+                  - group "Producto" [ref=e381]:
+                    - link "Aceite De Maravilla Botella Botella, 1 L" [ref=e382] [cursor=pointer]:
+                      - /url: /ip/aceites-y-aderezos/00780281000209
+                      - heading "Aceite De Maravilla Botella Botella, 1 L" [level=3] [ref=e384]
+                    - generic [ref=e386]:
+                      - generic [ref=e388]: 
+                      - text: Rebaja
+                    - generic [ref=e389]:
+                      - generic [ref=e390]:
+                        - img "Aceite De Maravilla Botella Botella, 1 L"
+                      - button "Agregar al carro - Aceite De Maravilla Botella Botella, 1 L" [ref=e393] [cursor=pointer]:
+                        - generic "agregar" [ref=e394]: 
+                        - generic [ref=e395]: Agregar
+                    - generic [ref=e398]:
+                      - generic [ref=e399]: $2.890
+                      - generic [ref=e400]: precio actual $2.890, Costaba $3.490
+                      - generic [ref=e401]: $2.890 x lt
+                      - generic [ref=e402]: $3.490
+                      - generic [ref=e403]: Ahorra $600
+                    - generic [ref=e405]: Chef
+                    - generic [ref=e407]: Aceite De Maravilla Botella Botella, 1 L
+                - listitem [ref=e408]:
+                  - group "Producto" [ref=e409]:
+                    - link "Arroz Grado 1 Grano Largo Bolsa, 1 kg" [ref=e410] [cursor=pointer]:
+                      - /url: /ip/arroz-y-legumbres/00780142025014
+                      - heading "Arroz Grado 1 Grano Largo Bolsa, 1 kg" [level=3] [ref=e412]
+                    - generic [ref=e414]:
+                      - generic [ref=e415]:
+                        - img "Arroz Grado 1 Grano Largo Bolsa, 1 kg"
+                      - button "Agregar al carro - Arroz Grado 1 Grano Largo Bolsa, 1 kg" [ref=e418] [cursor=pointer]:
+                        - generic "agregar" [ref=e419]: 
+                        - generic [ref=e420]: Agregar
+                    - generic [ref=e423]:
+                      - generic [ref=e424]: $2.350
+                      - generic [ref=e425]: precio actual $2.350
+                      - generic [ref=e426]: $2.350 x kg
+                    - generic [ref=e428]: Tucapel
+                    - generic [ref=e430]: Arroz Grado 1 Grano Largo Bolsa, 1 kg
+                - listitem [ref=e431]:
+                  - group "Producto" [ref=e432]:
+                    - link "Aceite Maravilla Botella, 900 ml" [ref=e433] [cursor=pointer]:
+                      - /url: /ip/aceites-y-aderezos/00780132000000
+                      - heading "Aceite Maravilla Botella, 900 ml" [level=3] [ref=e435]
+                    - generic [ref=e437]:
+                      - generic [ref=e438]:
+                        - img "Aceite Maravilla Botella, 900 ml"
+                      - button "Agregar al carro - Aceite Maravilla Botella, 900 ml" [ref=e441] [cursor=pointer]:
+                        - generic "agregar" [ref=e442]: 
+                        - generic [ref=e443]: Agregar
+                    - generic [ref=e446]:
+                      - generic [ref=e447]: $2.890
+                      - generic [ref=e448]: precio actual $2.890
+                      - generic [ref=e449]: $3.211 x lt
+                    - generic [ref=e451]: Miraflores
+                    - generic [ref=e453]: Aceite Maravilla Botella, 900 ml
+                - listitem [ref=e454]:
+                  - group "Producto" [ref=e455]:
+                    - link "Azúcar Blanca Granulada Bolsa, 1 Kg" [ref=e456] [cursor=pointer]:
+                      - /url: /ip/dulces-mermeladas-y-manjar/00780150523191
+                      - heading "Azúcar Blanca Granulada Bolsa, 1 Kg" [level=3] [ref=e458]
+                    - generic [ref=e460]: 2 x $2.490
+                    - generic [ref=e461]:
+                      - generic [ref=e462]:
+                        - img "Azúcar Blanca Granulada Bolsa, 1 Kg"
+                      - button "Agregar al carro - Azúcar Blanca Granulada Bolsa, 1 Kg" [ref=e465] [cursor=pointer]:
+                        - generic "agregar" [ref=e466]: 
+                        - generic [ref=e467]: Agregar
+                    - generic [ref=e470]:
+                      - generic [ref=e471]: $1.390
+                      - generic [ref=e472]: precio actual $1.390
+                      - generic [ref=e473]: $1.390 x kg
+                    - generic [ref=e475]: Iansa
+                    - generic [ref=e477]: Azúcar Blanca Granulada Bolsa, 1 Kg
+                - listitem [ref=e478]:
+                  - group "Producto" [ref=e479]:
+                    - link "Aceite Vegetal Botella, 1 L" [ref=e480] [cursor=pointer]:
+                      - /url: /ip/aceites-y-aderezos/00780281001202
+                      - heading "Aceite Vegetal Botella, 1 L" [level=3] [ref=e482]
+                    - generic [ref=e484]:
+                      - generic [ref=e485]:
+                        - img "Aceite Vegetal Botella, 1 L"
+                      - button "Agregar al carro - Aceite Vegetal Botella, 1 L" [ref=e488] [cursor=pointer]:
+                        - generic "agregar" [ref=e489]: 
+                        - generic [ref=e490]: Agregar
+                    - generic [ref=e493]:
+                      - generic [ref=e494]: $2.450
+                      - generic [ref=e495]: precio actual $2.450
+                      - generic [ref=e496]: $2.450 x lt
+                    - generic [ref=e498]: Belmont
+                    - generic [ref=e500]: Aceite Vegetal Botella, 1 L
+                - listitem [ref=e501]:
+                  - group "Producto" [ref=e502]:
+                    - link "Mantequilla Con sal, 250 g" [ref=e503] [cursor=pointer]:
+                      - /url: /ip/mantequillas-y-margarinas/00780292020330
+                      - heading "Mantequilla Con sal, 250 g" [level=3] [ref=e505]
+                    - generic [ref=e507]:
+                      - generic [ref=e508]:
+                        - img "Mantequilla Con sal, 250 g"
+                      - button "Agregar al carro - Mantequilla Con sal, 250 g" [ref=e511] [cursor=pointer]:
+                        - generic "agregar" [ref=e512]: 
+                        - generic [ref=e513]: Agregar
+                    - generic [ref=e516]:
+                      - generic [ref=e517]: $3.290
+                      - generic [ref=e518]: precio actual $3.290
+                      - generic [ref=e519]: $13.160 x kg
+                    - generic [ref=e521]: Colun
+                    - generic [ref=e523]: Mantequilla Con sal, 250 g
+                - listitem [ref=e524]:
+                  - group "Producto" [ref=e525]:
+                    - link "Carne Molida de Vacuno Tártara 4% grasa Bandeja, 500 gr" [ref=e526] [cursor=pointer]:
+                      - /url: /ip/vacuno/00040000518704
+                      - heading "Carne Molida de Vacuno Tártara 4% grasa Bandeja, 500 gr" [level=3] [ref=e528]
+                    - generic [ref=e530]: 2 x $13.000
+                    - generic [ref=e531]:
+                      - generic [ref=e532]:
+                        - img "Carne Molida de Vacuno Tártara 4% grasa Bandeja, 500 gr"
+                      - button "Agregar al carro - Carne Molida de Vacuno Tártara 4% grasa Bandeja, 500 gr" [ref=e535] [cursor=pointer]:
+                        - generic "agregar" [ref=e536]: 
+                        - generic [ref=e537]: Agregar
+                    - generic [ref=e540]:
+                      - generic [ref=e541]: $6.990
+                      - generic [ref=e542]: precio actual $6.990
+                      - generic [ref=e543]: $13.980 x kg
+                    - generic [ref=e545]: El Buen Corte
+                    - generic [ref=e547]: Carne Molida de Vacuno Tártara 4% grasa Bandeja, 500 gr
+                - listitem [ref=e548]:
+                  - group "Producto" [ref=e549]:
+                    - link "Crema De Leche Tarro, 157g" [ref=e550] [cursor=pointer]:
+                      - /url: /ip/cremas/00761303241458
+                      - heading "Crema De Leche Tarro, 157g" [level=3] [ref=e552]
+                    - generic [ref=e554]:
+                      - generic [ref=e555]:
+                        - img "Crema De Leche Tarro, 157g"
+                      - button "Agregar al carro - Crema De Leche Tarro, 157g" [ref=e558] [cursor=pointer]:
+                        - generic "agregar" [ref=e559]: 
+                        - generic [ref=e560]: Agregar
+                    - generic [ref=e563]:
+                      - generic [ref=e564]: $1.290
+                      - generic [ref=e565]: precio actual $1.290
+                      - generic [ref=e566]: $8.217 x kg
+                    - generic [ref=e568]: Nestle
+                    - generic [ref=e570]: Crema De Leche Tarro, 157g
+                - listitem [ref=e571]:
+                  - group "Producto" [ref=e572]:
+                    - link "Choritos Agua Lata, Drenado 100 g - Neto 190 g" [ref=e573] [cursor=pointer]:
+                      - /url: /ip/conservas/00008477361150
+                      - heading "Choritos Agua Lata, Drenado 100 g - Neto 190 g" [level=3] [ref=e575]
+                    - generic [ref=e577]:
+                      - generic [ref=e578]:
+                        - img "Choritos Agua Lata, Drenado 100 g - Neto 190 g"
+                      - button "Agregar al carro - Choritos Agua Lata, Drenado 100 g - Neto 190 g" [ref=e581] [cursor=pointer]:
+                        - generic "agregar" [ref=e582]: 
+                        - generic [ref=e583]: Agregar
+                    - generic [ref=e586]:
+                      - generic [ref=e587]: $1.950
+                      - generic [ref=e588]: precio actual $1.950
+                      - generic [ref=e589]: $19.500 x kg
+                    - generic [ref=e591]: Robinson Crusoe
+                    - generic [ref=e593]: Choritos Agua Lata, Drenado 100 g - Neto 190 g
+                - listitem [ref=e594]:
+                  - group "Producto" [ref=e595]:
+                    - link "Fideo Pasta Espirales N°49 Bolsa, 400 g" [ref=e596] [cursor=pointer]:
+                      - /url: /ip/pastas-y-salsas/00780257500223
+                      - heading "Fideo Pasta Espirales N°49 Bolsa, 400 g" [level=3] [ref=e598]
+                    - generic [ref=e599]:
+                      - generic [ref=e600]: Combina 4 x $3.000
+                      - button "Combinar" [ref=e601] [cursor=pointer]
+                    - generic [ref=e602]:
+                      - generic [ref=e603]:
+                        - img "Fideo Pasta Espirales N°49 Bolsa, 400 g"
+                      - button "Agregar al carro - Fideo Pasta Espirales N°49 Bolsa, 400 g" [ref=e606] [cursor=pointer]:
+                        - generic "agregar" [ref=e607]: 
+                        - generic [ref=e608]: Agregar
+                    - generic [ref=e611]:
+                      - generic [ref=e612]: $1.050
+                      - generic [ref=e613]: precio actual $1.050
+                      - generic [ref=e614]: $2.625 x kg
+                    - generic [ref=e616]: Carozzi
+                    - generic [ref=e618]: Fideo Pasta Espirales N°49 Bolsa, 400 g
+                - listitem [ref=e619]:
+                  - group "Producto" [ref=e620]:
+                    - link "Fideo Pasta Spaghetti N°5 Bolsa, 400 g" [ref=e621] [cursor=pointer]:
+                      - /url: /ip/pastas-y-salsas/00780257500443
+                      - heading "Fideo Pasta Spaghetti N°5 Bolsa, 400 g" [level=3] [ref=e623]
+                    - generic [ref=e624]:
+                      - generic [ref=e625]: Combina 4 x $3.000
+                      - button "Combinar" [ref=e626] [cursor=pointer]
+                    - generic [ref=e627]:
+                      - generic [ref=e628]:
+                        - img "Fideo Pasta Spaghetti N°5 Bolsa, 400 g"
+                      - button "Agregar al carro - Fideo Pasta Spaghetti N°5 Bolsa, 400 g" [ref=e631] [cursor=pointer]:
+                        - generic "agregar" [ref=e632]: 
+                        - generic [ref=e633]: Agregar
+                    - generic [ref=e636]:
+                      - generic [ref=e637]: $1.050
+                      - generic [ref=e638]: precio actual $1.050
+                      - generic [ref=e639]: $2.625 x kg
+                    - generic [ref=e641]: Carozzi
+                    - generic [ref=e643]: Fideo Pasta Spaghetti N°5 Bolsa, 400 g
+                - listitem [ref=e644]:
+                  - group "Producto" [ref=e645]:
+                    - link "Arroz Grado 1 Grano Largo Bolsa, 1 kg" [ref=e646] [cursor=pointer]:
+                      - /url: /ip/arroz-y-legumbres/00780311010221
+                      - heading "Arroz Grado 1 Grano Largo Bolsa, 1 kg" [level=3] [ref=e648]
+                    - generic [ref=e650]:
+                      - generic [ref=e651]:
+                        - img "Arroz Grado 1 Grano Largo Bolsa, 1 kg"
+                      - button "Agregar al carro - Arroz Grado 1 Grano Largo Bolsa, 1 kg" [ref=e654] [cursor=pointer]:
+                        - generic "agregar" [ref=e655]: 
+                        - generic [ref=e656]: Agregar
+                    - generic [ref=e659]:
+                      - generic [ref=e660]: $2.350
+                      - generic [ref=e661]: precio actual $2.350
+                      - generic [ref=e662]: $2.350 x kg
+                    - generic [ref=e664]: Banquete
+                    - generic [ref=e666]: Arroz Grado 1 Grano Largo Bolsa, 1 kg
+                - listitem [ref=e667]:
+                  - group "Producto" [ref=e668]:
+                    - link "Porotos Negros Listos Para Servir Caja, Drenado 230 g - Neto 380 g" [ref=e669] [cursor=pointer]:
+                      - /url: /ip/conservas/00780130500409
+                      - heading "Porotos Negros Listos Para Servir Caja, Drenado 230 g - Neto 380 g" [level=3] [ref=e671]
+                    - generic [ref=e673]:
+                      - generic [ref=e674]:
+                        - img "Porotos Negros Listos Para Servir Caja, Drenado 230 g - Neto 380 g"
+                      - button "Agregar al carro - Porotos Negros Listos Para Servir Caja, Drenado 230 g - Neto 380 g" [ref=e677] [cursor=pointer]:
+                        - generic "agregar" [ref=e678]: 
+                        - generic [ref=e679]: Agregar
+                    - generic [ref=e682]:
+                      - generic [ref=e683]: $1.490
+                      - generic [ref=e684]: precio actual $1.490
+                      - generic [ref=e685]: $6.478 x kg
+                    - generic [ref=e687]: Wasil
+                    - generic [ref=e689]: Porotos Negros Listos Para Servir Caja, Drenado 230 g - Neto 380 g
+                - listitem [ref=e690]:
+                  - group "Producto" [ref=e691]:
+                    - link "Queso Rallado Sobre, 40 g" [ref=e692] [cursor=pointer]:
+                      - /url: /ip/quesos/00780292042360
+                      - heading "Queso Rallado Sobre, 40 g" [level=3] [ref=e694]
+                    - generic [ref=e696]:
+                      - generic [ref=e697]:
+                        - img "Queso Rallado Sobre, 40 g"
+                      - button "Agregar al carro - Queso Rallado Sobre, 40 g" [ref=e700] [cursor=pointer]:
+                        - generic "agregar" [ref=e701]: 
+                        - generic [ref=e702]: Agregar
+                    - generic [ref=e705]:
+                      - generic [ref=e706]: $1.090
+                      - generic [ref=e707]: precio actual $1.090
+                      - generic [ref=e708]: $27.250 x kg
+                    - generic [ref=e710]: Colun
+                    - generic [ref=e712]: Queso Rallado Sobre, 40 g
+                - listitem [ref=e713]:
+                  - group "Producto" [ref=e714]:
+                    - link "Mayonesa Regular Frasco, 789 g" [ref=e715] [cursor=pointer]:
+                      - /url: /ip/salsas/00002100002632
+                      - heading "Mayonesa Regular Frasco, 789 g" [level=3] [ref=e717]
+                    - generic [ref=e719]:
+                      - generic [ref=e720]:
+                        - img "Mayonesa Regular Frasco, 789 g"
+                      - button "Agregar al carro - Mayonesa Regular Frasco, 789 g" [ref=e723] [cursor=pointer]:
+                        - generic "agregar" [ref=e724]: 
+                        - generic [ref=e725]: Agregar
+                    - generic [ref=e728]:
+                      - generic [ref=e729]: $6.990
+                      - generic [ref=e730]: precio actual $6.990
+                      - generic [ref=e731]: $8.859 x kg
+                    - generic [ref=e733]: Kraft
+                    - generic [ref=e735]: Mayonesa Regular Frasco, 789 g
+                - listitem [ref=e736]:
+                  - group "Producto" [ref=e737]:
+                    - link "Choclos en Grano, 500 g" [ref=e738] [cursor=pointer]:
+                      - /url: /ip/verduras-y-frutas-congeladas/00780122043110
+                      - heading "Choclos en Grano, 500 g" [level=3] [ref=e740]
+                    - generic [ref=e742]:
+                      - generic [ref=e743]:
+                        - img "Choclos en Grano, 500 g"
+                      - button "Agregar al carro - Choclos en Grano, 500 g" [ref=e746] [cursor=pointer]:
+                        - generic "agregar" [ref=e747]: 
+                        - generic [ref=e748]: Agregar
+                    - generic [ref=e751]:
+                      - generic [ref=e752]: $1.890
+                      - generic [ref=e753]: precio actual $1.890
+                      - generic [ref=e754]: $3.780 x kg
+                    - generic [ref=e756]: Minuto Verde
+                    - generic [ref=e758]: Choclos en Grano, 500 g
+                - listitem [ref=e759]:
+                  - group "Producto" [ref=e760]:
+                    - link "Fideo Pasta al Huevo Spirali Bolsa, 400 g" [ref=e761] [cursor=pointer]:
+                      - /url: /ip/pastas-y-salsas/00780250000804
+                      - heading "Fideo Pasta al Huevo Spirali Bolsa, 400 g" [level=3] [ref=e763]
+                    - generic [ref=e765]:
+                      - generic [ref=e766]:
+                        - img "Fideo Pasta al Huevo Spirali Bolsa, 400 g"
+                      - button "Agregar al carro - Fideo Pasta al Huevo Spirali Bolsa, 400 g" [ref=e769] [cursor=pointer]:
+                        - generic "agregar" [ref=e770]: 
+                        - generic [ref=e771]: Agregar
+                    - generic [ref=e774]:
+                      - generic [ref=e775]: $1.290
+                      - generic [ref=e776]: precio actual $1.290
+                      - generic [ref=e777]: $3.225 x kg
+                    - generic [ref=e779]: Talliani
+                    - generic [ref=e781]: Fideo Pasta al Huevo Spirali Bolsa, 400 g
+                - listitem [ref=e782]:
+                  - group "Producto" [ref=e783]:
+                    - link "Bolsa de Basura Mediana 70x90 cm, 10 Un" [ref=e784] [cursor=pointer]:
+                      - /url: /ip/mas-sustentables/00780681080044
+                      - heading "Bolsa de Basura Mediana 70x90 cm, 10 Un" [level=3] [ref=e786]
+                    - generic [ref=e788]:
+                      - generic [ref=e789]:
+                        - img "Bolsa de Basura Mediana 70x90 cm, 10 Un"
+                      - button "Agregar al carro - Bolsa de Basura Mediana 70x90 cm, 10 Un" [ref=e792] [cursor=pointer]:
+                        - generic "agregar" [ref=e793]: 
+                        - generic [ref=e794]: Agregar
+                    - generic [ref=e797]:
+                      - generic [ref=e798]: $1.190
+                      - generic [ref=e799]: precio actual $1.190
+                      - generic [ref=e800]: $119 x un
+                    - generic [ref=e802]: Virutex
+                    - generic [ref=e804]: Bolsa de Basura Mediana 70x90 cm, 10 Un
+                - listitem [ref=e805]:
+                  - group "Producto" [ref=e806]:
+                    - link "Fideo Pasta Corbatas N°80 Bolsa, 400 g" [ref=e807] [cursor=pointer]:
+                      - /url: /ip/pastas-y-salsas/00780257500603
+                      - heading "Fideo Pasta Corbatas N°80 Bolsa, 400 g" [level=3] [ref=e809]
+                    - generic [ref=e810]:
+                      - generic [ref=e811]: Combina 4 x $3.000
+                      - button "Combinar" [ref=e812] [cursor=pointer]
+                    - generic [ref=e813]:
+                      - generic [ref=e814]:
+                        - img "Fideo Pasta Corbatas N°80 Bolsa, 400 g"
+                      - button "Agregar al carro - Fideo Pasta Corbatas N°80 Bolsa, 400 g" [ref=e817] [cursor=pointer]:
+                        - generic "agregar" [ref=e818]: 
+                        - generic [ref=e819]: Agregar
+                    - generic [ref=e822]:
+                      - generic [ref=e823]: $1.050
+                      - generic [ref=e824]: precio actual $1.050
+                      - generic [ref=e825]: $2.625 x kg
+                    - generic [ref=e827]: Carozzi
+                    - generic [ref=e829]: Fideo Pasta Corbatas N°80 Bolsa, 400 g
+                - listitem [ref=e830]:
+                  - group "Producto" [ref=e831]:
+                    - link "Lavalozas Líquido Limón Con Bio Activos Concentrado Botella, 1,2 L" [ref=e832] [cursor=pointer]:
+                      - /url: /ip/bano-y-cocina/00780500032200
+                      - heading "Lavalozas Líquido Limón Con Bio Activos Concentrado Botella, 1,2 L" [level=3] [ref=e834]
+                    - generic [ref=e836]:
+                      - generic [ref=e837]:
+                        - img "Lavalozas Líquido Limón Con Bio Activos Concentrado Botella, 1,2 L"
+                      - button "Agregar al carro - Lavalozas Líquido Limón Con Bio Activos Concentrado Botella, 1,2 L" [ref=e840] [cursor=pointer]:
+                        - generic "agregar" [ref=e841]: 
+                        - generic [ref=e842]: Agregar
+                    - generic [ref=e845]:
+                      - generic [ref=e846]: $3.550
+                      - generic [ref=e847]: precio actual $3.550
+                      - generic [ref=e848]: $2.958 x lt
+                    - generic [ref=e850]: Quix
+                    - generic [ref=e852]: Lavalozas Líquido Limón Con Bio Activos Concentrado Botella, 1,2 L
+              - button "Siguiente diapositiva para la lista Complementos para tu compra" [ref=e853]:
+                - generic [ref=e854]: 
+  - alert [ref=e862]

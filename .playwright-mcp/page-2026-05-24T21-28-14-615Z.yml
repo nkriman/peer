@@ -1,0 +1,138 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: nectar jugo caja
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 4 productos Monto total $7.620" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: "4"
+              - generic [ref=e44]: $7.620
+    - generic [ref=e45]:
+      - generic [ref=e46]:
+        - separator [ref=e47]
+        - generic [ref=e48]:
+          - generic [ref=e49]:
+            - button "Despacho a Domicilio MARTIN DE ZAMORA 5595" [ref=e50] [cursor=pointer]:
+              - generic [ref=e52]:
+                - img [ref=e53]
+                - generic [ref=e54]: Despacho a Domicilio
+                - generic [ref=e55]: 
+                - generic [ref=e56]: "|"
+                - generic [ref=e58]:
+                  - img [ref=e59]
+                  - generic [ref=e60]: MARTIN DE ZAMORA 5595
+              - text: 
+            - generic:   
+            - navigation "Secundario" [ref=e63]:
+              - list [ref=e64]:
+                - listitem [ref=e65]:
+                  - link "Tarjeta Lider Bci" [ref=e67] [cursor=pointer]:
+                    - /url: https://tarjetadigital.liderbciserviciosfinancieros.cl/ingreso-de-datos?utm_source=Lidercl_sod_header&utm_medium=lidercl
+                - listitem [ref=e68]:
+                  - link "Mi Club" [ref=e70] [cursor=pointer]:
+                    - /url: https://www.miclublider.cl/
+                - listitem [ref=e71]:
+                  - link "Centro de ayuda" [ref=e73] [cursor=pointer]:
+                    - /url: /ayuda
+          - img [ref=e76]
+      - main [ref=e79]:
+        - generic [ref=e80]:
+          - generic [ref=e83]:
+            - region "Sección de ordenar y filtrar" [ref=e85]:
+              - button "Precio" [ref=e88]:
+                - generic [ref=e90]: 
+                - generic [ref=e91]: Precio
+                - generic [ref=e92]: 
+              - button "Marca" [ref=e95]:
+                - generic [ref=e96]: Marca
+                - generic [ref=e97]: 
+              - generic [ref=e98]:
+                - generic [ref=e99]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e101]:
+                  - text: Más relevantes
+                  - generic [ref=e102]: 
+            - separator [ref=e103]
+          - generic [ref=e106]:
+            - generic [ref=e107]:
+              - generic [ref=e110]:
+                - generic [ref=e111]:
+                  - button "Precio" [ref=e114]:
+                    - generic [ref=e115]: Precio
+                    - img [ref=e116]: 
+                  - separator [ref=e117]
+                - generic [ref=e118]:
+                  - button "Campaña" [ref=e121]:
+                    - generic [ref=e122]: Campaña
+                    - img [ref=e123]: 
+                  - separator [ref=e124]
+                - generic [ref=e125]:
+                  - button "Marca" [ref=e128]:
+                    - generic [ref=e129]: Marca
+                    - img [ref=e130]: 
+                  - separator [ref=e131]
+                - generic [ref=e132]:
+                  - button "Categoría" [ref=e135]:
+                    - generic [ref=e136]: Categoría
+                    - img [ref=e137]: 
+                  - separator [ref=e138]
+              - region "cargando resultados de búsqueda" [ref=e140]
+            - navigation "paginación" [ref=e242]:
+              - list [ref=e243]:
+                - listitem [ref=e244]
+                - listitem [ref=e246]:
+                  - link "1" [ref=e247] [cursor=pointer]:
+                    - /url: /search?q=nectar+jugo+caja&facet=fulfillment_method%3ADelivery
+                - listitem [ref=e248]:
+                  - link "Ir a la página 2" [ref=e249] [cursor=pointer]:
+                    - /url: /search?q=nectar+jugo+caja&facet=fulfillment_method%3ADelivery&page=2
+                    - text: "2"
+                - listitem [ref=e250]:
+                  - link "Ir a la página 3" [ref=e251] [cursor=pointer]:
+                    - /url: /search?q=nectar+jugo+caja&facet=fulfillment_method%3ADelivery&page=3
+                    - text: "3"
+                - listitem [ref=e252]:
+                  - generic [ref=e253]: ...
+                - listitem [ref=e254]:
+                  - generic [ref=e255]: "8"
+                - listitem [ref=e256]:
+                  - link "Página siguiente" [ref=e257] [cursor=pointer]:
+                    - /url: /search?q=nectar+jugo+caja&facet=fulfillment_method%3ADelivery&page=2
+                    - generic [ref=e258]: 
+  - alert [ref=e266]: Supermercado

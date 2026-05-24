@@ -1,0 +1,21 @@
+2026-05-24 17:43:52,688 INFO cli_bare_baseline: Running BareClaudeCodeReviewer on 7 samples (CLI, $0 spend)
+[eval] 1/7 https://github.com/django/django/pull/16603
+[eval] 2/7 https://github.com/django/django/pull/17147
+[eval] 3/7 https://github.com/pydantic/pydantic/pull/8059
+[eval] 4/7 https://github.com/pydantic/pydantic/pull/7900
+[eval] 5/7 https://github.com/django/django/pull/17256
+[eval] 6/7 https://github.com/django/django/pull/16746
+[eval] 7/7 https://github.com/pydantic/pydantic/pull/7677
+2026-05-24 18:02:24,296 INFO cli_bare_baseline: done in 1112s
+2026-05-24 18:02:24,333 INFO cli_bare_baseline: EvalReport saved to /Users/krilet/peer/data/eval_runs/bare_baseline.json
+
+=== BARE BASELINE RESULT ===
+  detection_rate:   0.0392156862745098
+  n_comments_total: 29
+  cost_usd:         None
+
+Compare against peer recipes:
+  arch[narrower context]:       DR=0.0980, n=29, $0.83  <- current peer best
+  arch[baseline] (sonnet/30K):  DR=0.0784, n=31, $0.75
+
+  ✓  Peer's best beats baseline by +0.0588 DR. Framework adds value.

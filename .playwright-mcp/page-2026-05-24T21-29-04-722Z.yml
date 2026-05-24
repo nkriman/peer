@@ -1,0 +1,468 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e55]:
+          - navigation "breadcrumb" [ref=e59]:
+            - list [ref=e60]:
+              - listitem [ref=e61]:
+                - link "Bebidas y Snacks" [ref=e62] [cursor=pointer]:
+                  - /url: /content/bebidas-y-snacks/13901022
+                - text: /
+              - listitem [ref=e63]:
+                - link "Refrigerados" [ref=e64] [cursor=pointer]:
+                  - /url: /browse/bebidas-y-snacks/refrigerados/13901022_41934663
+                - text: /
+              - listitem [ref=e65]:
+                - link "Jugos Nectares" [ref=e66] [cursor=pointer]:
+                  - /url: /browse/bebidas-y-snacks/refrigerados/jugos-nectares/13901022_41934663_66114975
+          - generic [ref=e68]:
+            - generic [ref=e73]:
+              - link "Del Valle" [ref=e78] [cursor=pointer]:
+                - /url: /search?q=del-valle
+              - heading "Jugo Durazno Botella, 1,5 L" [level=1] [ref=e80]
+              - generic [ref=e83]:
+                - generic [ref=e84]: El precio actual es
+                - generic [ref=e87]: $1.650
+                - generic [ref=e88]: $1.100 x lt
+              - generic [ref=e90]:
+                - generic [ref=e96]:
+                  - generic [ref=e97]: Agotado
+                  - button "Mostrar alternativas" [ref=e99] [cursor=pointer]
+                - separator [ref=e101]
+              - link "Tarjeta de débito One 6% devolución en Pesos Mi Club Solicita aquí" [ref=e103] [cursor=pointer]:
+                - /url: https://tarjetadigital.liderbciserviciosfinancieros.cl/ingreso-de-datos?utm_source=Lidercl_sod_pdp&utm_medium=lidercl
+                - generic [ref=e104]:
+                  - img "Tarjeta de débito ONE" [ref=e105]
+                  - generic [ref=e106]:
+                    - generic [ref=e107]: 6% devolución en Pesos Mi Club
+                    - generic "Tarjeta de débito One 6% devolución en Pesos Mi Club Solicita aquí" [ref=e108]: Solicita aquí
+              - generic [ref=e111]:
+                - generic [ref=e112]: Derecho a retracto
+                - button "detalles" [ref=e113] [cursor=pointer]
+            - generic [ref=e119]:
+              - generic [ref=e121]:
+                - generic [ref=e122]:
+                  - generic [ref=e123]: 
+                  - button "thumbnail image 1 of Jugo Durazno Botella, 1,5 L, 1 of 2" [ref=e125]:
+                    - generic [ref=e126]:
+                      - img "thumbnail image 1 of Jugo Durazno Botella, 1,5 L, 1 of 2"
+                  - button "thumbnail image 2 of Jugo Durazno Botella, 1,5 L, 2 of 2" [ref=e128]:
+                    - generic [ref=e129]:
+                      - img "thumbnail image 2 of Jugo Durazno Botella, 1,5 L, 2 of 2"
+                  - generic [ref=e130]: 
+                - generic [ref=e131]:
+                  - img "Jugo Durazno Botella, 1,5 L" [ref=e133]
+                  - button "Ampliar imagen modal" [ref=e137]:
+                    - generic [ref=e138]: 
+              - generic [ref=e139]:
+                - heading "Información del producto" [level=2] [ref=e141]
+                - separator [ref=e142]
+                - generic [ref=e144]:
+                  - separator [ref=e145]
+                  - generic [ref=e146]:
+                    - heading "Ficha nutricional" [level=2] [ref=e147]
+                    - button "Ficha nutricional" [expanded] [ref=e149]:
+                      - generic [ref=e150]: 
+                  - generic [ref=e153]:
+                    - paragraph [ref=e155]: Consulta la etiqueta del producto para obtener la información nutricional completa, que puede estar disponible como una imagen alternativa del producto.
+                    - generic [ref=e156]:
+                      - paragraph [ref=e157]: "Porción: 1 Vaso (200 ml)"
+                      - paragraph [ref=e158]: "Porciones por envase: 8 aprox"
+                    - table [ref=e159]:
+                      - rowgroup [ref=e160]:
+                        - row "Cantidad por porción 100ml 1 Porción" [ref=e161]:
+                          - columnheader "Cantidad por porción" [ref=e162]:
+                            - generic [ref=e163]: Cantidad por porción
+                          - columnheader "100ml" [ref=e164]
+                          - columnheader "1 Porción" [ref=e165]
+                      - rowgroup [ref=e166]:
+                        - row "Energía (kCal) 20.0 40" [ref=e167]:
+                          - cell "Energía (kCal)" [ref=e168]
+                          - cell "20.0" [ref=e169]
+                          - cell "40" [ref=e170]
+                        - row "Proteínas (g) 0.0 0" [ref=e171]:
+                          - cell "Proteínas (g)" [ref=e172]
+                          - cell "0.0" [ref=e173]
+                          - cell "0" [ref=e174]
+                        - row "Grasas Totales (g) 0.0 0" [ref=e175]:
+                          - cell "Grasas Totales (g)" [ref=e176]
+                          - cell "0.0" [ref=e177]
+                          - cell "0" [ref=e178]
+                        - row "H. de C. disponibles (g) 4.0 9,8" [ref=e179]:
+                          - cell "H. de C. disponibles (g)" [ref=e180]
+                          - cell "4.0" [ref=e181]
+                          - cell "9,8" [ref=e182]
+                        - row "Azúcares totales (g) 4.0 9,6" [ref=e183]:
+                          - cell "Azúcares totales (g)" [ref=e184]
+                          - cell "4.0" [ref=e185]
+                          - cell "9,6" [ref=e186]
+                        - row "Sodio (mg) 0.0 0" [ref=e187]:
+                          - cell "Sodio (mg)" [ref=e188]
+                          - cell "0.0" [ref=e189]
+                          - cell "0" [ref=e190]
+              - generic [ref=e192]:
+                - separator [ref=e193]
+                - generic [ref=e194]:
+                  - separator [ref=e195]
+                  - generic [ref=e196]:
+                    - heading "Detalles del producto" [level=3] [ref=e197]
+                    - button "Detalles del producto" [expanded] [ref=e199]:
+                      - generic [ref=e200]: 
+                  - generic [ref=e203]:
+                    - list [ref=e207]:
+                      - listitem [ref=e208]: Jugo Durazno Botella
+                    - generic [ref=e211]: Néctar Del Valle Durazno – Sabor suave y refrescante para compartir Disfrutar de un momento refrescante es aún mejor cuando el sabor acompaña. Néctar Del Valle Durazno destaca por su dulzor equilibrado y su sabor suave, ideal para acompañar comidas, colaciones o simplemente para refrescarte durante el día.Elaborado para ofrecer una experiencia agradable y fácil de disfrutar, es perfecto para servir bien frío y compartir en familia. Un clásico que aporta frescura y sabor frutal en cada vaso.Una opción práctica para quienes buscan un néctar con sabor tradicional y agradable.
+              - generic [ref=e213]:
+                - separator [ref=e214]
+                - generic [ref=e215]:
+                  - separator [ref=e216]
+                  - generic [ref=e217]:
+                    - heading "Especificaciones" [level=2] [ref=e218]
+                    - button "Especificaciones" [expanded] [ref=e220]:
+                      - generic [ref=e221]: 
+                  - generic [ref=e224]:
+                    - generic [ref=e225]:
+                      - heading "Condición alimentaria" [level=3] [ref=e226]
+                      - generic [ref=e228]:
+                        - text: Libre de lácteos
+                        - text: Libre de lactosa
+                        - text: Libre de soya
+                        - text: Libre de huevo
+                        - text: Libre de pescado
+                        - text: Libre de mariscos y crustáceos
+                        - text: Libre de frutos secos
+                        - text: Libre de maní
+                        - text: Libre de nueces
+                        - text: Libre de sulfitos
+                        - text: Vegana
+                        - text: Vegetariana
+                    - generic [ref=e229]:
+                      - heading "Ingredientes" [level=3] [ref=e230]
+                      - generic [ref=e231]: agua, puré concentrado de durazno (20%), azúcar, cmc sódica, ácido cítrico, ácido ascórbico, saborizantes idénticos a natural, saborizante artificial, sucralosa, pectina
+                    - generic [ref=e232]:
+                      - heading "Descripción" [level=3] [ref=e233]
+                      - generic [ref=e234]: Jugo Durazno Botella
+                    - generic [ref=e235]:
+                      - heading "Marca" [level=3] [ref=e236]
+                      - generic [ref=e237]: Del Valle
+                    - generic [ref=e238]:
+                      - heading "Tipo de producto" [level=3] [ref=e239]
+                      - generic [ref=e240]: Jugo
+                    - generic [ref=e241]:
+                      - heading "País de origen" [level=3] [ref=e242]
+                      - generic [ref=e243]: CL
+                    - generic [ref=e244]:
+                      - heading "Tipo de envase" [level=3] [ref=e245]
+                      - generic [ref=e246]: Reciclable
+                    - generic [ref=e247]:
+                      - heading "Variedad" [level=3] [ref=e248]
+                      - generic [ref=e249]: Durazno
+                    - generic [ref=e250]:
+                      - heading "Item" [level=3] [ref=e251]
+                      - generic [ref=e252]: "263571"
+                    - generic [ref=e253]:
+                      - heading "Presentación" [level=3] [ref=e254]
+                      - generic [ref=e255]: Botella
+          - generic [ref=e262]:
+            - heading "Complementos para tu compra" [level=2] [ref=e269]
+            - generic [ref=e270]:
+              - text: 
+              - list [ref=e271]:
+                - listitem [ref=e272]:
+                  - group "Producto" [ref=e273]:
+                    - link "Bebida Original Botella, 2,5 L" [ref=e274] [cursor=pointer]:
+                      - /url: /ip/bebidas/00780161000152
+                      - heading "Bebida Original Botella, 2,5 L" [level=3] [ref=e276]
+                    - generic [ref=e278]:
+                      - generic [ref=e279]:
+                        - img "Bebida Original Botella, 2,5 L"
+                      - button "Agregar al carro - Bebida Original Botella, 2,5 L" [ref=e282] [cursor=pointer]:
+                        - generic "agregar" [ref=e283]: 
+                        - generic [ref=e284]: Agregar
+                    - generic [ref=e287]:
+                      - generic [ref=e288]: $2.750
+                      - generic [ref=e289]: precio actual $2.750
+                      - generic [ref=e290]: $1.100 x lt
+                    - generic [ref=e292]: Coca-cola
+                    - generic [ref=e294]: Bebida Original Botella, 2,5 L
+                - listitem [ref=e295]:
+                  - group "Producto" [ref=e296]:
+                    - link "Bebida Original Botella, 2 L" [ref=e297] [cursor=pointer]:
+                      - /url: /ip/bebidas/00780161000161
+                      - heading "Bebida Original Botella, 2 L" [level=3] [ref=e299]
+                    - generic [ref=e301]:
+                      - generic [ref=e302]:
+                        - img "Bebida Original Botella, 2 L"
+                      - button "Agregar al carro - Bebida Original Botella, 2 L" [ref=e305] [cursor=pointer]:
+                        - generic "agregar" [ref=e306]: 
+                        - generic [ref=e307]: Agregar
+                    - generic [ref=e310]:
+                      - generic [ref=e311]: $2.000
+                      - generic [ref=e312]: precio actual $2.000
+                      - generic [ref=e313]: $1.000 x lt
+                    - generic [ref=e315]: Coca-cola
+                    - generic [ref=e317]: Bebida Original Botella, 2 L
+                - listitem [ref=e318]:
+                  - group "Producto" [ref=e319]:
+                    - link "Néctar Piña Botella, 1,75 L" [ref=e320] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00780282017505
+                      - heading "Néctar Piña Botella, 1,75 L" [level=3] [ref=e322]
+                    - generic [ref=e323]:
+                      - generic [ref=e324]: Combina 2 x $3.000
+                      - button "Combinar" [ref=e325] [cursor=pointer]
+                    - generic [ref=e326]:
+                      - generic [ref=e327]:
+                        - img "Néctar Piña Botella, 1,75 L"
+                      - button "Agregar al carro - Néctar Piña Botella, 1,75 L" [ref=e330] [cursor=pointer]:
+                        - generic "agregar" [ref=e331]: 
+                        - generic [ref=e332]: Agregar
+                    - generic [ref=e335]:
+                      - generic [ref=e336]: $1.790
+                      - generic [ref=e337]: precio actual $1.790
+                      - generic [ref=e338]: $1.023 x lt
+                    - generic [ref=e340]: Del Valle
+                    - generic [ref=e342]: Néctar Piña Botella, 1,75 L
+                - listitem [ref=e343]:
+                  - group "Producto" [ref=e344]:
+                    - link "Bebida Original Botella, 3 L" [ref=e345] [cursor=pointer]:
+                      - /url: /ip/bebidas/00780162001755
+                      - heading "Bebida Original Botella, 3 L" [level=3] [ref=e347]
+                    - generic [ref=e349]:
+                      - generic [ref=e350]:
+                        - img "Bebida Original Botella, 3 L"
+                      - button "Agregar al carro - Bebida Original Botella, 3 L" [ref=e353] [cursor=pointer]:
+                        - generic "agregar" [ref=e354]: 
+                        - generic [ref=e355]: Agregar
+                    - generic [ref=e358]:
+                      - generic [ref=e359]: $2.650
+                      - generic [ref=e360]: precio actual $2.650
+                      - generic [ref=e361]: $883 x lt
+                    - generic [ref=e363]: Pepsi
+                    - generic [ref=e365]: Bebida Original Botella, 3 L
+                - listitem [ref=e366]:
+                  - group "Producto" [ref=e367]:
+                    - link "Sal de Mesa Bolsa, 1 Kg" [ref=e368] [cursor=pointer]:
+                      - /url: /ip/aceites-y-aderezos/00780360003127
+                      - heading "Sal de Mesa Bolsa, 1 Kg" [level=3] [ref=e370]
+                    - generic [ref=e372]:
+                      - generic [ref=e373]:
+                        - img "Sal de Mesa Bolsa, 1 Kg"
+                      - button "Agregar al carro - Sal de Mesa Bolsa, 1 Kg" [ref=e376] [cursor=pointer]:
+                        - generic "agregar" [ref=e377]: 
+                        - generic [ref=e378]: Agregar
+                    - generic [ref=e381]:
+                      - generic [ref=e382]: $530
+                      - generic [ref=e383]: precio actual $530
+                      - generic [ref=e384]: $530 x kg
+                    - generic [ref=e386]: Lobos
+                    - generic [ref=e388]: Sal de Mesa Bolsa, 1 Kg
+                - listitem [ref=e389]:
+                  - group "Producto" [ref=e390]:
+                    - link "Bebida Limón Original Botella, 2,5 L" [ref=e391] [cursor=pointer]:
+                      - /url: /ip/bebidas/00780161000552
+                      - heading "Bebida Limón Original Botella, 2,5 L" [level=3] [ref=e393]
+                    - generic [ref=e395]:
+                      - generic [ref=e396]:
+                        - img "Bebida Limón Original Botella, 2,5 L"
+                      - button "Agregar al carro - Bebida Limón Original Botella, 2,5 L" [ref=e399] [cursor=pointer]:
+                        - generic "agregar" [ref=e400]: 
+                        - generic [ref=e401]: Agregar
+                    - generic [ref=e404]:
+                      - generic [ref=e405]: $2.000
+                      - generic [ref=e406]: precio actual $2.000
+                      - generic [ref=e407]: $800 x lt
+                    - generic [ref=e409]: Sprite
+                    - generic [ref=e411]: Bebida Limón Original Botella, 2,5 L
+                - listitem [ref=e412]:
+                  - group "Producto" [ref=e413]:
+                    - link "Suflés Chis Pop Tutti Frutti, 200 g" [ref=e414] [cursor=pointer]:
+                      - /url: /ip/snacks-y-picoteo/00780200001457
+                      - heading "Suflés Chis Pop Tutti Frutti, 200 g" [level=3] [ref=e416]
+                    - generic [ref=e418]:
+                      - generic [ref=e419]:
+                        - img "Suflés Chis Pop Tutti Frutti, 200 g"
+                      - button "Agregar al carro - Suflés Chis Pop Tutti Frutti, 200 g" [ref=e422] [cursor=pointer]:
+                        - generic "agregar" [ref=e423]: 
+                        - generic [ref=e424]: Agregar
+                    - generic [ref=e427]:
+                      - generic [ref=e428]: $1.990
+                      - generic [ref=e429]: precio actual $1.990
+                      - generic [ref=e430]: $7.370 x kg
+                    - generic [ref=e432]: Evercrisp
+                    - generic [ref=e434]: Suflés Chis Pop Tutti Frutti, 200 g
+                - listitem [ref=e435]:
+                  - group "Producto" [ref=e436]:
+                    - link "Bebida Naranja Botella, 2,5 L" [ref=e437] [cursor=pointer]:
+                      - /url: /ip/bebidas/00780161000307
+                      - heading "Bebida Naranja Botella, 2,5 L" [level=3] [ref=e439]
+                    - generic [ref=e441]:
+                      - generic [ref=e442]:
+                        - img "Bebida Naranja Botella, 2,5 L"
+                      - button "Agregar al carro - Bebida Naranja Botella, 2,5 L" [ref=e445] [cursor=pointer]:
+                        - generic "agregar" [ref=e446]: 
+                        - generic [ref=e447]: Agregar
+                    - generic [ref=e450]:
+                      - generic [ref=e451]: $2.000
+                      - generic [ref=e452]: precio actual $2.000
+                      - generic [ref=e453]: $800 x lt
+                    - generic [ref=e455]: Fanta
+                    - generic [ref=e457]: Bebida Naranja Botella, 2,5 L
+                - listitem [ref=e458]:
+                  - group "Producto" [ref=e459]:
+                    - link "Bebida Naranja Original Botella, 3 L" [ref=e460] [cursor=pointer]:
+                      - /url: /ip/bebidas/00780162000159
+                      - heading "Bebida Naranja Original Botella, 3 L" [level=3] [ref=e462]
+                    - generic [ref=e464]:
+                      - generic [ref=e465]:
+                        - img "Bebida Naranja Original Botella, 3 L"
+                      - button "Agregar al carro - Bebida Naranja Original Botella, 3 L" [ref=e468] [cursor=pointer]:
+                        - generic "agregar" [ref=e469]: 
+                        - generic [ref=e470]: Agregar
+                    - generic [ref=e473]:
+                      - generic [ref=e474]: $2.000
+                      - generic [ref=e475]: precio actual $2.000
+                      - generic [ref=e476]: $667 x lt
+                    - generic [ref=e478]: Crush
+                    - generic [ref=e480]: Bebida Naranja Original Botella, 3 L
+                - listitem [ref=e481]:
+                  - group "Producto" [ref=e482]:
+                    - link "Néctar Durazno Caja" [ref=e483] [cursor=pointer]:
+                      - /url: /ip/jugos-colacion/00780282055050
+                      - heading "Néctar Durazno Caja" [level=3] [ref=e485]
+                    - generic [ref=e486]:
+                      - generic [ref=e487]: Combina 6 x $1.850
+                      - button "Combinar" [ref=e488] [cursor=pointer]
+                    - generic [ref=e489]:
+                      - generic [ref=e490]:
+                        - img "Néctar Durazno Caja"
+                      - button "Agregar al carro - Néctar Durazno Caja" [ref=e493] [cursor=pointer]:
+                        - generic "agregar" [ref=e494]: 
+                        - generic [ref=e495]: Agregar
+                    - generic [ref=e498]:
+                      - generic [ref=e499]: $390
+                      - generic [ref=e500]: precio actual $390
+                      - generic [ref=e501]: $1.950 x lt
+                    - generic [ref=e503]: Del Valle
+                    - generic [ref=e505]: Néctar Durazno Caja
+                - listitem [ref=e506]:
+                  - group "Producto" [ref=e507]:
+                    - link "Galletas Nik Frutilla Bolsa, 71 g" [ref=e508] [cursor=pointer]:
+                      - /url: /ip/galletas-y-colaciones-dulces/00780221550466
+                      - heading "Galletas Nik Frutilla Bolsa, 71 g" [level=3] [ref=e510]
+                    - generic [ref=e511]:
+                      - generic [ref=e512]: Combina 3 x $1.290
+                      - button "Combinar" [ref=e513] [cursor=pointer]
+                    - generic [ref=e514]:
+                      - generic [ref=e515]:
+                        - img "Galletas Nik Frutilla Bolsa, 71 g"
+                      - button "Agregar al carro - Galletas Nik Frutilla Bolsa, 71 g" [ref=e518] [cursor=pointer]:
+                        - generic "agregar" [ref=e519]: 
+                        - generic [ref=e520]: Agregar
+                    - generic [ref=e523]:
+                      - generic [ref=e524]: $560
+                      - generic [ref=e525]: precio actual $560
+                      - generic [ref=e526]: $7.887 x kg
+                    - generic [ref=e528]: Costa
+                    - generic [ref=e530]: Galletas Nik Frutilla Bolsa, 71 g
+                - listitem [ref=e531]:
+                  - group "Producto" [ref=e532]:
+                    - link "Bebida Frutal Original Botella, 3 L" [ref=e533] [cursor=pointer]:
+                      - /url: /ip/bebidas/00780162000119
+                      - heading "Bebida Frutal Original Botella, 3 L" [level=3] [ref=e535]
+                    - generic [ref=e537]:
+                      - generic [ref=e538]:
+                        - img "Bebida Frutal Original Botella, 3 L"
+                      - button "Agregar al carro - Bebida Frutal Original Botella, 3 L" [ref=e541] [cursor=pointer]:
+                        - generic "agregar" [ref=e542]: 
+                        - generic [ref=e543]: Agregar
+                    - generic [ref=e546]:
+                      - generic [ref=e547]: $2.990
+                      - generic [ref=e548]: precio actual $2.990
+                      - generic [ref=e549]: $997 x lt
+                    - generic [ref=e551]: Bilz
+                    - generic [ref=e553]: Bebida Frutal Original Botella, 3 L
+                - listitem [ref=e554]:
+                  - group "Producto" [ref=e555]:
+                    - link "Bebida Papaya Original Botella, 3 L" [ref=e556] [cursor=pointer]:
+                      - /url: /ip/bebidas/00780162000121
+                      - heading "Bebida Papaya Original Botella, 3 L" [level=3] [ref=e558]
+                    - generic [ref=e560]:
+                      - generic [ref=e561]:
+                        - img "Bebida Papaya Original Botella, 3 L"
+                      - button "Agregar al carro - Bebida Papaya Original Botella, 3 L" [ref=e564] [cursor=pointer]:
+                        - generic "agregar" [ref=e565]: 
+                        - generic [ref=e566]: Agregar
+                    - generic [ref=e569]:
+                      - generic [ref=e570]: $2.990
+                      - generic [ref=e571]: precio actual $2.990
+                      - generic [ref=e572]: $997 x lt
+                    - generic [ref=e574]: PAP
+                    - generic [ref=e576]: Bebida Papaya Original Botella, 3 L
+                - listitem [ref=e577]:
+                  - group "Producto" [ref=e578]:
+                    - link "Bebida Piña Original Botella, 3 L" [ref=e579] [cursor=pointer]:
+                      - /url: /ip/bebidas/00780162000122
+                      - heading "Bebida Piña Original Botella, 3 L" [level=3] [ref=e581]
+                    - generic [ref=e583]:
+                      - generic [ref=e584]:
+                        - img "Bebida Piña Original Botella, 3 L"
+                      - button "Agregar al carro - Bebida Piña Original Botella, 3 L" [ref=e587] [cursor=pointer]:
+                        - generic "agregar" [ref=e588]: 
+                        - generic [ref=e589]: Agregar
+                    - generic [ref=e592]:
+                      - generic [ref=e593]: $2.990
+                      - generic [ref=e594]: precio actual $2.990
+                      - generic [ref=e595]: $997 x lt
+                    - generic [ref=e597]: KEM
+                    - generic [ref=e599]: Bebida Piña Original Botella, 3 L
+              - button "Siguiente diapositiva para la lista Complementos para tu compra" [ref=e600]:
+                - generic [ref=e601]: 
+  - alert [ref=e609]

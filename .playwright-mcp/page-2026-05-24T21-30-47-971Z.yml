@@ -1,0 +1,608 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e55]:
+          - navigation "breadcrumb" [ref=e59]:
+            - list [ref=e60]:
+              - listitem [ref=e61]:
+                - link "Bebidas y Snacks" [ref=e62] [cursor=pointer]:
+                  - /url: /content/bebidas-y-snacks/13901022
+                - text: /
+              - listitem [ref=e63]:
+                - link "Refrigerados" [ref=e64] [cursor=pointer]:
+                  - /url: /browse/bebidas-y-snacks/refrigerados/13901022_41934663
+                - text: /
+              - listitem [ref=e65]:
+                - link "Jugos 100" [ref=e66] [cursor=pointer]:
+                  - /url: /browse/bebidas-y-snacks/refrigerados/jugos-100/13901022_41934663_48309221
+          - generic [ref=e68]:
+            - generic [ref=e73]:
+              - link "Fundo Sofruco" [ref=e78] [cursor=pointer]:
+                - /url: /search?q=fundo-sofruco
+              - heading "Jugo Natural Naranja, 1 L" [level=1] [ref=e80]
+              - generic [ref=e83]:
+                - generic [ref=e84]: El precio actual es
+                - generic [ref=e87]: $4.990
+                - generic [ref=e88]: $4.990 x lt
+              - generic [ref=e90]:
+                - button "Agregar al carro - Jugo Natural Naranja, 1 L" [ref=e98] [cursor=pointer]:
+                  - generic [ref=e99]: Agregar al carro
+                - separator [ref=e101]
+              - link "Tarjeta de débito One 6% devolución en Pesos Mi Club Solicita aquí" [ref=e103] [cursor=pointer]:
+                - /url: https://tarjetadigital.liderbciserviciosfinancieros.cl/ingreso-de-datos?utm_source=Lidercl_sod_pdp&utm_medium=lidercl
+                - generic [ref=e104]:
+                  - img "Tarjeta de débito ONE" [ref=e105]
+                  - generic [ref=e106]:
+                    - generic [ref=e107]: 6% devolución en Pesos Mi Club
+                    - generic "Tarjeta de débito One 6% devolución en Pesos Mi Club Solicita aquí" [ref=e108]: Solicita aquí
+              - generic [ref=e111]:
+                - generic [ref=e112]: Derecho a retracto
+                - button "detalles" [ref=e113] [cursor=pointer]
+              - generic [ref=e119]:
+                - generic [ref=e120]: 
+                - generic "Vendido y enviado por Lider" [ref=e123]
+            - generic [ref=e129]:
+              - generic [ref=e131]:
+                - generic [ref=e132]:
+                  - generic [ref=e133]: 
+                  - button "thumbnail image 1 of Jugo Natural Naranja, 1 L, 1 of 1" [ref=e135]:
+                    - generic [ref=e136]:
+                      - img "thumbnail image 1 of Jugo Natural Naranja, 1 L, 1 of 1"
+                  - generic [ref=e137]: 
+                - generic [ref=e138]:
+                  - img "Jugo Natural Naranja, 1 L" [ref=e140]
+                  - button "Ampliar imagen modal" [ref=e144]:
+                    - generic [ref=e145]: 
+              - generic [ref=e147]:
+                - heading "Información del producto" [level=2] [ref=e150]
+                - separator [ref=e151]
+                - generic [ref=e152]:
+                  - separator [ref=e153]
+                  - generic [ref=e154]:
+                    - heading "Detalles del producto" [level=3] [ref=e155]
+                    - button "Detalles del producto" [expanded] [ref=e157]:
+                      - generic [ref=e158]: 
+                  - generic [ref=e161]:
+                    - list [ref=e165]:
+                      - listitem [ref=e166]: Jugo Natural Naranja
+                    - generic [ref=e169]:
+                      - heading "Jugo Líquido 100% Fresco de Naranjas" [level=5] [ref=e170]
+                      - paragraph [ref=e172]:
+                        - strong [ref=e173]: "Referencia :"
+                        - text: "2030517"
+                        - strong [ref=e174]: "Marca :"
+                        - text: Sofruco
+                        - strong [ref=e175]: "Envase :"
+                        - text: Caja 1 L
+                        - strong [ref=e176]: "País de origen :"
+                        - text: Chile
+                        - strong [ref=e177]: "Producto :"
+                        - text: Jugo Líquido
+                        - strong [ref=e178]: "Tipo :"
+                        - text: 100% Fresco
+                        - strong [ref=e179]: "Sabor :"
+                        - text: Naranja
+                        - strong [ref=e180]: "Contiene :"
+                        - text: Vitamina C, fibra y potasio
+                        - strong [ref=e181]: "Precauciones :"
+                        - text: Una vez abierto refrigerar
+                        - strong [ref=e182]: "Almacenamiento :"
+                        - text: Mantener siempre refrigerado entre 1 y 6° grados
+                        - strong [ref=e183]: "Modo de empleo :"
+                        - text: Agitar antes de consumir
+                        - strong [ref=e184]: "Información adicional :"
+                        - text: De los huertos de nuestros fundos a tu mesa
+                        - strong [ref=e185]: Servicio al consumidor
+                        - text: "800550555"
+              - generic [ref=e187]:
+                - separator [ref=e188]
+                - generic [ref=e189]:
+                  - separator [ref=e190]
+                  - generic [ref=e191]:
+                    - heading "Especificaciones" [level=2] [ref=e192]
+                    - button "Especificaciones" [expanded] [ref=e194]:
+                      - generic [ref=e195]: 
+                  - generic [ref=e198]:
+                    - generic [ref=e199]:
+                      - heading "Condición alimentaria" [level=3] [ref=e200]
+                      - generic [ref=e202]:
+                        - text: Libre de soya
+                        - text: Libre de lácteos
+                        - text: Libre de nueces
+                        - text: Libre de maní
+                        - text: Libre de pescado
+                        - text: Libre de mariscos y crustáceos
+                        - text: Libre de huevo
+                        - text: Libre de sulfitos
+                        - text: Libre de lactosa
+                        - text: Libre de gluten
+                        - text: Libre de frutos secos
+                    - generic [ref=e203]:
+                      - heading "Descripción" [level=3] [ref=e204]
+                      - generic [ref=e205]: Jugo Natural Naranja
+                    - generic [ref=e206]:
+                      - heading "Marca" [level=3] [ref=e207]
+                      - generic [ref=e208]: Fundo Sofruco
+                    - generic [ref=e209]:
+                      - heading "País de origen" [level=3] [ref=e210]
+                      - generic [ref=e211]: CL
+                    - generic [ref=e212]:
+                      - heading "Item" [level=3] [ref=e213]
+                      - generic [ref=e214]: "251019"
+                    - generic [ref=e215]:
+                      - heading "Contenido neto" [level=3] [ref=e216]
+                      - generic [ref=e217]: 0 - 1000 cc
+          - generic [ref=e224]:
+            - heading "Complementos para tu compra" [level=2] [ref=e231]
+            - generic [ref=e232]:
+              - text: 
+              - list [ref=e233]:
+                - listitem [ref=e234]:
+                  - group "Producto" [ref=e235]:
+                    - link "Jugo Natural Pomelo, 1 L" [ref=e236] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00780282100716
+                      - heading "Jugo Natural Pomelo, 1 L" [level=3] [ref=e238]
+                    - generic [ref=e240]:
+                      - generic [ref=e241]:
+                        - img "Jugo Natural Pomelo, 1 L"
+                      - button "Agregar al carro - Jugo Natural Pomelo, 1 L" [ref=e244] [cursor=pointer]:
+                        - generic "agregar" [ref=e245]: 
+                        - generic [ref=e246]: Agregar
+                    - generic [ref=e249]:
+                      - generic [ref=e250]: $4.990
+                      - generic [ref=e251]: precio actual $4.990
+                      - generic [ref=e252]: $4.990 x lt
+                    - generic [ref=e254]: Sofruco
+                    - generic [ref=e256]: Jugo Natural Pomelo, 1 L
+                - listitem [ref=e257]:
+                  - group "Producto" [ref=e258]:
+                    - link "Jugo Natural Mandarina, 1 L" [ref=e259] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00780282101189
+                      - heading "Jugo Natural Mandarina, 1 L" [level=3] [ref=e261]
+                    - generic [ref=e263]:
+                      - generic [ref=e264]:
+                        - img "Jugo Natural Mandarina, 1 L"
+                      - button "Agregar al carro - Jugo Natural Mandarina, 1 L" [ref=e267] [cursor=pointer]:
+                        - generic "agregar" [ref=e268]: 
+                        - generic [ref=e269]: Agregar
+                    - generic [ref=e272]:
+                      - generic [ref=e273]: $4.990
+                      - generic [ref=e274]: precio actual $4.990
+                      - generic [ref=e275]: $4.990 x lt
+                    - generic [ref=e277]: Fundo Sofruco
+                    - generic [ref=e279]: Jugo Natural Mandarina, 1 L
+                - listitem [ref=e280]:
+                  - group "Producto" [ref=e281]:
+                    - link "Jugo Mango Naranja, 1 L" [ref=e282] [cursor=pointer]:
+                      - /url: /ip/jugos/00780282101100
+                      - heading "Jugo Mango Naranja, 1 L" [level=3] [ref=e284]
+                    - generic [ref=e286]:
+                      - generic [ref=e287]:
+                        - img "Jugo Mango Naranja, 1 L"
+                      - button "Agregar al carro - Jugo Mango Naranja, 1 L" [ref=e290] [cursor=pointer]:
+                        - generic "agregar" [ref=e291]: 
+                        - generic [ref=e292]: Agregar
+                    - generic [ref=e295]:
+                      - generic [ref=e296]: $4.990
+                      - generic [ref=e297]: precio actual $4.990
+                      - generic [ref=e298]: $4.990 x lt
+                    - generic [ref=e300]: Sofruco
+                    - generic [ref=e302]: Jugo Mango Naranja, 1 L
+                - listitem [ref=e303]:
+                  - group "Producto" [ref=e304]:
+                    - link "Palta Hass Chilena Granel" [ref=e305] [cursor=pointer]:
+                      - /url: /ip/frutas/00203030000000
+                      - heading "Palta Hass Chilena Granel" [level=3] [ref=e307]
+                    - generic [ref=e309]:
+                      - generic [ref=e310]:
+                        - img "Palta Hass Chilena Granel"
+                      - button "Agregar al carro - Palta Hass Chilena Granel" [ref=e313] [cursor=pointer]:
+                        - generic "agregar" [ref=e314]: 
+                        - generic [ref=e315]: Agregar
+                    - generic [ref=e318]:
+                      - generic [ref=e319]: $6.290/kg
+                      - generic [ref=e320]: precio actual $6.290/kg
+                    - generic [ref=e322]: Multi Marca
+                    - generic [ref=e324]: Palta Hass Chilena Granel
+                - listitem [ref=e325]:
+                  - group "Producto" [ref=e326]:
+                    - link "Huevos de Campo y Gallina Libre Grande Color, 12 Un" [ref=e327] [cursor=pointer]:
+                      - /url: /ip/huevos/00780414000003
+                      - heading "Huevos de Campo y Gallina Libre Grande Color, 12 Un" [level=3] [ref=e329]
+                    - generic [ref=e331]:
+                      - generic [ref=e332]:
+                        - img "Huevos de Campo y Gallina Libre Grande Color, 12 Un"
+                      - button "Agregar al carro - Huevos de Campo y Gallina Libre Grande Color, 12 Un" [ref=e335] [cursor=pointer]:
+                        - generic "agregar" [ref=e336]: 
+                        - generic [ref=e337]: Agregar
+                    - generic [ref=e340]:
+                      - generic [ref=e341]: $5.190
+                      - generic [ref=e342]: precio actual $5.190
+                      - generic [ref=e343]: $433 x un
+                    - generic [ref=e345]: La Granja
+                    - generic [ref=e347]: Huevos de Campo y Gallina Libre Grande Color, 12 Un
+                - listitem [ref=e348]:
+                  - group "Producto" [ref=e349]:
+                    - link "Carne Molida de Vacuno Tártara 4% grasa Bandeja, 500 gr" [ref=e350] [cursor=pointer]:
+                      - /url: /ip/vacuno/00040000518704
+                      - heading "Carne Molida de Vacuno Tártara 4% grasa Bandeja, 500 gr" [level=3] [ref=e352]
+                    - generic [ref=e354]: 2 x $13.000
+                    - generic [ref=e355]:
+                      - generic [ref=e356]:
+                        - img "Carne Molida de Vacuno Tártara 4% grasa Bandeja, 500 gr"
+                      - button "Agregar al carro - Carne Molida de Vacuno Tártara 4% grasa Bandeja, 500 gr" [ref=e359] [cursor=pointer]:
+                        - generic "agregar" [ref=e360]: 
+                        - generic [ref=e361]: Agregar
+                    - generic [ref=e364]:
+                      - generic [ref=e365]: $6.990
+                      - generic [ref=e366]: precio actual $6.990
+                      - generic [ref=e367]: $13.980 x kg
+                    - generic [ref=e369]: El Buen Corte
+                    - generic [ref=e371]: Carne Molida de Vacuno Tártara 4% grasa Bandeja, 500 gr
+                - listitem [ref=e372]:
+                  - group "Producto" [ref=e373]:
+                    - link "Tomate Romanita Cocktail Pote, 340 gr" [ref=e374] [cursor=pointer]:
+                      - /url: /ip/verduras/00780460076028
+                      - heading "Tomate Romanita Cocktail Pote, 340 gr" [level=3] [ref=e376]
+                    - generic [ref=e378]:
+                      - generic [ref=e380]: 
+                      - text: Rebaja
+                    - generic [ref=e381]:
+                      - generic [ref=e382]:
+                        - img "Tomate Romanita Cocktail Pote, 340 gr"
+                      - button "Agregar al carro - Tomate Romanita Cocktail Pote, 340 gr" [ref=e385] [cursor=pointer]:
+                        - generic "agregar" [ref=e386]: 
+                        - generic [ref=e387]: Agregar
+                    - generic [ref=e390]:
+                      - generic [ref=e391]: $2.690
+                      - generic [ref=e392]: precio actual $2.690, Costaba $3.290
+                      - generic [ref=e393]: $7.912 x kg
+                      - generic [ref=e394]: $3.290
+                      - generic [ref=e395]: Ahorra $600
+                    - generic [ref=e397]: Multi Marca
+                    - generic [ref=e399]: Tomate Romanita Cocktail Pote, 340 gr
+                - listitem [ref=e400]:
+                  - group "Producto" [ref=e401]:
+                    - link "Tomate Larga Vida Granel" [ref=e402] [cursor=pointer]:
+                      - /url: /ip/verduras/00200001000000
+                      - heading "Tomate Larga Vida Granel" [level=3] [ref=e404]
+                    - generic [ref=e406]:
+                      - generic [ref=e407]:
+                        - img "Tomate Larga Vida Granel"
+                      - button "Agregar al carro - Tomate Larga Vida Granel" [ref=e410] [cursor=pointer]:
+                        - generic "agregar" [ref=e411]: 
+                        - generic [ref=e412]: Agregar
+                    - generic [ref=e415]:
+                      - generic [ref=e416]: $1.990/kg
+                      - generic [ref=e417]: precio actual $1.990/kg
+                      - generic [ref=e418]: $1.990 x kg
+                    - generic [ref=e420]: Multi Marca
+                    - generic [ref=e422]: Tomate Larga Vida Granel
+                - listitem [ref=e423]:
+                  - group "Producto" [ref=e424]:
+                    - link "Huevos de Campo y Gallina Libre Mediano Color, 18 Un" [ref=e425] [cursor=pointer]:
+                      - /url: /ip/huevos/00780410000277
+                      - heading "Huevos de Campo y Gallina Libre Mediano Color, 18 Un" [level=3] [ref=e427]
+                    - generic [ref=e429]:
+                      - generic [ref=e430]:
+                        - img "Huevos de Campo y Gallina Libre Mediano Color, 18 Un"
+                      - button "Agregar al carro - Huevos de Campo y Gallina Libre Mediano Color, 18 Un" [ref=e433] [cursor=pointer]:
+                        - generic "agregar" [ref=e434]: 
+                        - generic [ref=e435]: Agregar
+                    - generic [ref=e438]:
+                      - generic [ref=e439]: $5.890
+                      - generic [ref=e440]: precio actual $5.890
+                      - generic [ref=e441]: $327 x un
+                    - generic [ref=e443]: La Granja
+                    - generic [ref=e445]: Huevos de Campo y Gallina Libre Mediano Color, 18 Un
+                - listitem [ref=e446]:
+                  - group "Producto" [ref=e447]:
+                    - link "Jugo De Manzana, 1 L" [ref=e448] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00779808568153
+                      - heading "Jugo De Manzana, 1 L" [level=3] [ref=e450]
+                    - generic [ref=e452]:
+                      - generic [ref=e453]:
+                        - img "Jugo De Manzana, 1 L"
+                      - button "Agregar al carro - Jugo De Manzana, 1 L" [ref=e456] [cursor=pointer]:
+                        - generic "agregar" [ref=e457]: 
+                        - generic [ref=e458]: Agregar
+                    - generic [ref=e461]:
+                      - generic [ref=e462]: $4.690
+                      - generic [ref=e463]: precio actual $4.690
+                      - generic [ref=e464]: $4.690 x lt
+                    - generic [ref=e466]: Citric
+                    - generic [ref=e468]: Jugo De Manzana, 1 L
+                - listitem [ref=e469]:
+                  - group "Producto" [ref=e470]:
+                    - link "Pan Ciabatta Rústica 3 Un Aprox." [ref=e471] [cursor=pointer]:
+                      - /url: /ip/panaderia-granel/00203851000000
+                      - heading "Pan Ciabatta Rústica 3 Un Aprox." [level=3] [ref=e473]
+                    - generic [ref=e475]:
+                      - generic [ref=e476]:
+                        - img "Pan Ciabatta Rústica 3 Un Aprox."
+                      - button "Agregar al carro - Pan Ciabatta Rústica 3 Un Aprox." [ref=e479] [cursor=pointer]:
+                        - generic "agregar" [ref=e480]: 
+                        - generic [ref=e481]: Agregar
+                    - generic [ref=e484]:
+                      - generic [ref=e485]: $2.990/kg
+                      - generic [ref=e486]: precio actual $2.990/kg
+                      - generic [ref=e487]: $2.990 x kg
+                    - generic [ref=e489]: Lider
+                    - generic [ref=e491]: Pan Ciabatta Rústica 3 Un Aprox.
+                - listitem [ref=e492]:
+                  - group "Producto" [ref=e493]:
+                    - link "Lechuga Española Hidropónica Bolsa, 1 Un" [ref=e494] [cursor=pointer]:
+                      - /url: /ip/verduras/00780461085080
+                      - heading "Lechuga Española Hidropónica Bolsa, 1 Un" [level=3] [ref=e496]
+                    - generic [ref=e498]:
+                      - generic [ref=e499]:
+                        - img "Lechuga Española Hidropónica Bolsa, 1 Un"
+                      - button "Agregar al carro - Lechuga Española Hidropónica Bolsa, 1 Un" [ref=e502] [cursor=pointer]:
+                        - generic "agregar" [ref=e503]: 
+                        - generic [ref=e504]: Agregar
+                    - generic [ref=e507]:
+                      - generic [ref=e508]: $1.590
+                      - generic [ref=e509]: precio actual $1.590
+                      - generic [ref=e510]: $1.590 x un
+                    - generic [ref=e512]: Multi Marca
+                    - generic [ref=e514]: Lechuga Española Hidropónica Bolsa, 1 Un
+                - listitem [ref=e515]:
+                  - group "Producto" [ref=e516]:
+                    - link "Néctar Selección Frambuesa, 1 L" [ref=e517] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00780281000858
+                      - heading "Néctar Selección Frambuesa, 1 L" [level=3] [ref=e519]
+                    - generic [ref=e521]:
+                      - generic [ref=e522]:
+                        - img "Néctar Selección Frambuesa, 1 L"
+                      - button "Agregar al carro - Néctar Selección Frambuesa, 1 L" [ref=e525] [cursor=pointer]:
+                        - generic "agregar" [ref=e526]: 
+                        - generic [ref=e527]: Agregar
+                    - generic [ref=e530]:
+                      - generic [ref=e531]: $3.490
+                      - generic [ref=e532]: precio actual $3.490
+                      - generic [ref=e533]: $3.490 x lt
+                    - generic [ref=e535]: Watts
+                    - generic [ref=e537]: Néctar Selección Frambuesa, 1 L
+                - listitem [ref=e538]:
+                  - group "Producto" [ref=e539]:
+                    - link "Pasta Fresca Fetuccini, 300 g" [ref=e540] [cursor=pointer]:
+                      - /url: /ip/masas-refrigeradas/00800166570692
+                      - heading "Pasta Fresca Fetuccini, 300 g" [level=3] [ref=e542]
+                    - generic [ref=e544]:
+                      - generic [ref=e545]:
+                        - img "Pasta Fresca Fetuccini, 300 g"
+                      - button "Agregar al carro - Pasta Fresca Fetuccini, 300 g" [ref=e548] [cursor=pointer]:
+                        - generic "agregar" [ref=e549]: 
+                        - generic [ref=e550]: Agregar
+                    - generic [ref=e553]:
+                      - generic [ref=e554]: $4.190
+                      - generic [ref=e555]: precio actual $4.190
+                      - generic [ref=e556]: $13.967 x kg
+                    - generic [ref=e558]: Rana
+                    - generic [ref=e560]: Pasta Fresca Fetuccini, 300 g
+                - listitem [ref=e561]:
+                  - group "Producto" [ref=e562]:
+                    - link "Jamón Pierna Corte Pluma Tradicional, 125 g" [ref=e563] [cursor=pointer]:
+                      - /url: /ip/fiambres-y-embutidos/00780191603153
+                      - heading "Jamón Pierna Corte Pluma Tradicional, 125 g" [level=3] [ref=e565]
+                    - generic [ref=e567]:
+                      - generic [ref=e568]:
+                        - img "Jamón Pierna Corte Pluma Tradicional, 125 g"
+                      - button "Agregar al carro - Jamón Pierna Corte Pluma Tradicional, 125 g" [ref=e571] [cursor=pointer]:
+                        - generic "agregar" [ref=e572]: 
+                        - generic [ref=e573]: Agregar
+                    - generic [ref=e576]:
+                      - generic [ref=e577]: $2.250
+                      - generic [ref=e578]: precio actual $2.250
+                      - generic [ref=e579]: $18.000 x kg
+                    - generic [ref=e581]: La Preferida
+                    - generic [ref=e583]: Jamón Pierna Corte Pluma Tradicional, 125 g
+                - listitem [ref=e584]:
+                  - group "Producto" [ref=e585]:
+                    - link "Bebida Light Botella, 1,5 L" [ref=e586] [cursor=pointer]:
+                      - /url: /ip/bebidas/00780161002272
+                      - heading "Bebida Light Botella, 1,5 L" [level=3] [ref=e588]
+                    - generic [ref=e590]:
+                      - generic [ref=e591]:
+                        - img "Bebida Light Botella, 1,5 L"
+                      - button "Agregar al carro - Bebida Light Botella, 1,5 L" [ref=e594] [cursor=pointer]:
+                        - generic "agregar" [ref=e595]: 
+                        - generic [ref=e596]: Agregar
+                    - generic [ref=e599]:
+                      - generic [ref=e600]: $2.090
+                      - generic [ref=e601]: precio actual $2.090
+                      - generic [ref=e602]: $1.393 x lt
+                    - generic [ref=e604]: Coca-cola
+                    - generic [ref=e606]: Bebida Light Botella, 1,5 L
+                - listitem [ref=e607]:
+                  - group "Producto" [ref=e608]:
+                    - link "Manzana Fuji Granel." [ref=e609] [cursor=pointer]:
+                      - /url: /ip/frutas/00200274000000
+                      - heading "Manzana Fuji Granel." [level=3] [ref=e611]
+                    - generic [ref=e613]:
+                      - generic [ref=e614]:
+                        - img "Manzana Fuji Granel."
+                      - button "Agregar al carro - Manzana Fuji Granel." [ref=e617] [cursor=pointer]:
+                        - generic "agregar" [ref=e618]: 
+                        - generic [ref=e619]: Agregar
+                    - generic [ref=e622]:
+                      - generic [ref=e623]: $2.490/kg
+                      - generic [ref=e624]: precio actual $2.490/kg
+                      - generic [ref=e625]: $2.490 x kg
+                    - generic [ref=e627]: Multi Marca
+                    - generic [ref=e629]: Manzana Fuji Granel.
+                - listitem [ref=e630]:
+                  - group "Producto" [ref=e631]:
+                    - link "Pasta Fresca Girasoli Ricotta Espinaca, 250 g" [ref=e632] [cursor=pointer]:
+                      - /url: /ip/para-terminar-en-casa/00800166570004
+                      - heading "Pasta Fresca Girasoli Ricotta Espinaca, 250 g" [level=3] [ref=e634]
+                    - generic [ref=e636]:
+                      - generic [ref=e638]: 
+                      - text: Rebaja
+                    - generic [ref=e639]:
+                      - generic [ref=e640]:
+                        - img "Pasta Fresca Girasoli Ricotta Espinaca, 250 g"
+                      - button "Agregar al carro - Pasta Fresca Girasoli Ricotta Espinaca, 250 g" [ref=e643] [cursor=pointer]:
+                        - generic "agregar" [ref=e644]: 
+                        - generic [ref=e645]: Agregar
+                    - generic [ref=e648]:
+                      - generic [ref=e649]: $4.450
+                      - generic [ref=e650]: precio actual $4.450, Costaba $5.390
+                      - generic [ref=e651]: $17.800 x kg
+                      - generic [ref=e652]: $5.390
+                      - generic [ref=e653]: Ahorra $940
+                    - generic [ref=e655]: Rana
+                    - generic [ref=e657]: Pasta Fresca Girasoli Ricotta Espinaca, 250 g
+                - listitem [ref=e658]:
+                  - group "Producto" [ref=e659]:
+                    - link "Plátano Granel" [ref=e660] [cursor=pointer]:
+                      - /url: /ip/frutas/00200014000000
+                      - heading "Plátano Granel" [level=3] [ref=e662]
+                    - generic [ref=e664]:
+                      - generic [ref=e665]:
+                        - img "Plátano Granel"
+                      - button "Agregar al carro - Plátano Granel" [ref=e668] [cursor=pointer]:
+                        - generic "agregar" [ref=e669]: 
+                        - generic [ref=e670]: Agregar
+                    - generic [ref=e673]:
+                      - generic [ref=e674]: $1.450/kg
+                      - generic [ref=e675]: precio actual $1.450/kg
+                      - generic [ref=e676]: $1.450 x kg
+                    - generic [ref=e678]: Multi Marca
+                    - generic [ref=e680]: Plátano Granel
+                - listitem [ref=e681]:
+                  - group "Producto" [ref=e682]:
+                    - link "Pan Marraqueta Granel" [ref=e683] [cursor=pointer]:
+                      - /url: /ip/panaderia-granel/00228610000000
+                      - heading "Pan Marraqueta Granel" [level=3] [ref=e685]
+                    - generic [ref=e687]:
+                      - generic [ref=e688]:
+                        - img "Pan Marraqueta Granel"
+                      - button "Agregar al carro - Pan Marraqueta Granel" [ref=e691] [cursor=pointer]:
+                        - generic "agregar" [ref=e692]: 
+                        - generic [ref=e693]: Agregar
+                    - generic [ref=e696]:
+                      - generic [ref=e697]: $2.090/kg
+                      - generic [ref=e698]: precio actual $2.090/kg
+                      - generic [ref=e699]: $2.090 x kg
+                    - generic [ref=e701]: Aliserv
+                    - generic [ref=e703]: Pan Marraqueta Granel
+                - listitem [ref=e704]:
+                  - group "Producto" [ref=e705]:
+                    - link "Jugo Natural Fresco Piña, 1 L" [ref=e706] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00780281005312
+                      - heading "Jugo Natural Fresco Piña, 1 L" [level=3] [ref=e708]
+                    - generic [ref=e710]:
+                      - generic [ref=e711]:
+                        - img "Jugo Natural Fresco Piña, 1 L"
+                      - button "Agregar al carro - Jugo Natural Fresco Piña, 1 L" [ref=e714] [cursor=pointer]:
+                        - generic "agregar" [ref=e715]: 
+                        - generic [ref=e716]: Agregar
+                    - generic [ref=e719]:
+                      - generic [ref=e720]: $4.690
+                      - generic [ref=e721]: precio actual $4.690
+                      - generic [ref=e722]: $4.690 x lt
+                    - generic [ref=e724]: Watts
+                    - generic [ref=e726]: Jugo Natural Fresco Piña, 1 L
+                - listitem [ref=e727]:
+                  - group "Producto" [ref=e728]:
+                    - link "Bebida Sin Azúcar Botella, 1,5 L" [ref=e729] [cursor=pointer]:
+                      - /url: /ip/bebidas/00780161035040
+                      - heading "Bebida Sin Azúcar Botella, 1,5 L" [level=3] [ref=e731]
+                    - generic [ref=e733]:
+                      - generic [ref=e734]:
+                        - img "Bebida Sin Azúcar Botella, 1,5 L"
+                      - button "Agregar al carro - Bebida Sin Azúcar Botella, 1,5 L" [ref=e737] [cursor=pointer]:
+                        - generic "agregar" [ref=e738]: 
+                        - generic [ref=e739]: Agregar
+                    - generic [ref=e742]:
+                      - generic [ref=e743]: $2.090
+                      - generic [ref=e744]: precio actual $2.090
+                      - generic [ref=e745]: $1.393 x lt
+                    - generic [ref=e747]: Coca-cola
+                    - generic [ref=e749]: Bebida Sin Azúcar Botella, 1,5 L
+                - listitem [ref=e750]:
+                  - group "Producto" [ref=e751]:
+                    - link "Pan De Molde Integral Schwartzbrot" [ref=e752] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780341000004
+                      - heading "Pan De Molde Integral Schwartzbrot" [level=3] [ref=e754]
+                    - generic [ref=e756]:
+                      - generic [ref=e757]:
+                        - img "Pan De Molde Integral Schwartzbrot"
+                      - button "Agregar al carro - Pan De Molde Integral Schwartzbrot" [ref=e760] [cursor=pointer]:
+                        - generic "agregar" [ref=e761]: 
+                        - generic [ref=e762]: Agregar
+                    - generic [ref=e765]:
+                      - generic [ref=e766]: $3.890
+                      - generic [ref=e767]: precio actual $3.890
+                      - generic [ref=e768]: $5.187 x kg
+                    - generic [ref=e770]: Vollkorn
+                    - generic [ref=e772]: Pan De Molde Integral Schwartzbrot
+                - listitem [ref=e773]:
+                  - group "Producto" [ref=e774]:
+                    - link "Zanahoria Bolsa, 1 Kg" [ref=e775] [cursor=pointer]:
+                      - /url: /ip/verduras/00780461085032
+                      - heading "Zanahoria Bolsa, 1 Kg" [level=3] [ref=e777]
+                    - generic [ref=e779]:
+                      - generic [ref=e780]:
+                        - img "Zanahoria Bolsa, 1 Kg"
+                      - button "Agregar al carro - Zanahoria Bolsa, 1 Kg" [ref=e783] [cursor=pointer]:
+                        - generic "agregar" [ref=e784]: 
+                        - generic [ref=e785]: Agregar
+                    - generic [ref=e788]:
+                      - generic [ref=e789]: $1.290
+                      - generic [ref=e790]: precio actual $1.290
+                      - generic [ref=e791]: $1.290 x un
+                    - generic [ref=e793]: Multi Marca
+                    - generic [ref=e795]: Zanahoria Bolsa, 1 Kg
+              - button "Siguiente diapositiva para la lista Complementos para tu compra" [ref=e796]:
+                - generic [ref=e797]: 
+  - alert [ref=e805]

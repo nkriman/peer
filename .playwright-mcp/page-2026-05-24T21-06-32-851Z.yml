@@ -1,0 +1,940 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: leche descremada protein chocolate
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e80]:
+            - generic [ref=e81]:
+              - generic [ref=e84]:
+                - generic [ref=e85]:
+                  - button "Precio" [ref=e88]:
+                    - generic [ref=e89]: Precio
+                    - img [ref=e90]: 
+                  - separator [ref=e91]
+                - generic [ref=e92]:
+                  - button "Campaña" [ref=e95]:
+                    - generic [ref=e96]: Campaña
+                    - img [ref=e97]: 
+                  - separator [ref=e98]
+                - generic [ref=e99]:
+                  - button "Marca" [ref=e102]:
+                    - generic [ref=e103]: Marca
+                    - img [ref=e104]: 
+                  - separator [ref=e105]
+                - generic [ref=e106]:
+                  - button "Categoría" [ref=e109]:
+                    - generic [ref=e110]: Categoría
+                    - img [ref=e111]: 
+                  - separator [ref=e112]
+              - generic [ref=e115]:
+                - heading "Resultados para leche descremada protein chocolate (301)" [level=2] [ref=e123]: Resultados para leche descremada protein chocolate(301)
+                - generic [ref=e124]:
+                  - group [ref=e127]:
+                    - link "Leche Descremada Natural Caja 1 l, 1 L" [ref=e128] [cursor=pointer]:
+                      - /url: /ip/leche/00780292000008?from=/search
+                      - generic [ref=e129]: Leche Descremada Natural Caja 1 l, 1 L
+                    - generic [ref=e131]:
+                      - generic [ref=e134]:
+                        - img "Leche Descremada Natural Caja 1 l, 1 L" [ref=e136]
+                        - button "Agregar al carro - Leche Descremada Natural Caja 1 l, 1 L" [ref=e139] [cursor=pointer]:
+                          - generic "agregar" [ref=e140]: 
+                          - generic [ref=e141]: Agregar
+                      - generic [ref=e143]:
+                        - generic [ref=e145]:
+                          - generic [ref=e146]: $1.350
+                          - generic [ref=e147]: precio actual $1.350
+                          - generic [ref=e148]: $1.350 x lt
+                        - generic [ref=e149]: Colun
+                        - generic [ref=e150]: Leche Descremada Natural Caja 1 l, 1 L
+                  - group [ref=e153]:
+                    - link "Leche Descremada Natural Cremosa, 1 L" [ref=e154] [cursor=pointer]:
+                      - /url: /ip/leche/00780290000134?from=/search
+                      - generic [ref=e155]: Leche Descremada Natural Cremosa, 1 L
+                    - generic [ref=e157]:
+                      - generic [ref=e160]:
+                        - img "Leche Descremada Natural Cremosa, 1 L" [ref=e162]
+                        - button "Agregar al carro - Leche Descremada Natural Cremosa, 1 L" [ref=e165] [cursor=pointer]:
+                          - generic "agregar" [ref=e166]: 
+                          - generic [ref=e167]: Agregar
+                      - generic [ref=e169]:
+                        - generic [ref=e171]:
+                          - generic [ref=e172]: $1.350
+                          - generic [ref=e173]: precio actual $1.350
+                          - generic [ref=e174]: $1.350 x lt
+                        - generic [ref=e175]: Soprole
+                        - generic [ref=e176]: Leche Descremada Natural Cremosa, 1 L
+                  - group [ref=e179]:
+                    - link "Leche Descremada Sin Lactosa, 200 ml" [ref=e180] [cursor=pointer]:
+                      - /url: /ip/leche/00780292000963?from=/search
+                      - generic [ref=e181]: Leche Descremada Sin Lactosa, 200 ml
+                    - generic [ref=e183]:
+                      - generic [ref=e186]:
+                        - img "Leche Descremada Sin Lactosa, 200 ml" [ref=e188]
+                        - button "Agregar al carro - Leche Descremada Sin Lactosa, 200 ml" [ref=e191] [cursor=pointer]:
+                          - generic "agregar" [ref=e192]: 
+                          - generic [ref=e193]: Agregar
+                      - generic [ref=e195]:
+                        - generic [ref=e197]:
+                          - generic [ref=e198]: $640
+                          - generic [ref=e199]: precio actual $640
+                          - generic [ref=e200]: $3.200 x lt
+                        - generic [ref=e201]: Colun
+                        - generic [ref=e202]: Leche Descremada Sin Lactosa, 200 ml
+                  - group [ref=e205]:
+                    - link "Leche Descremada de Vacas Libre Pastoreo, 1 L" [ref=e206] [cursor=pointer]:
+                      - /url: /ip/leche/00780464445052?from=/search
+                      - generic [ref=e207]: Leche Descremada de Vacas Libre Pastoreo, 1 L
+                    - generic [ref=e209]:
+                      - generic [ref=e210]:
+                        - generic [ref=e212]:
+                          - generic [ref=e214]: 
+                          - text: Rebaja
+                        - generic [ref=e215]:
+                          - img "Leche Descremada de Vacas Libre Pastoreo, 1 L" [ref=e217]
+                          - button "Agregar al carro - Leche Descremada de Vacas Libre Pastoreo, 1 L" [ref=e220] [cursor=pointer]:
+                            - generic "agregar" [ref=e221]: 
+                            - generic [ref=e222]: Agregar
+                      - generic [ref=e224]:
+                        - generic [ref=e226]:
+                          - generic [ref=e227]: $2.550
+                          - generic [ref=e228]: precio actual $2.550, Costaba $2.990
+                          - generic [ref=e229]: $2.550 x lt
+                          - generic [ref=e230]: $2.990
+                          - generic [ref=e231]: Ahorra $440
+                        - generic [ref=e232]: Ecoterra
+                        - generic [ref=e233]: Leche Descremada de Vacas Libre Pastoreo, 1 L
+                  - group [ref=e236]:
+                    - link "Leche Descremada Protein Chocolate, 1 L" [ref=e237] [cursor=pointer]:
+                      - /url: /ip/leche/00780291000712?from=/search
+                      - generic [ref=e238]: Leche Descremada Protein Chocolate, 1 L
+                    - generic [ref=e240]:
+                      - generic [ref=e241]:
+                        - generic [ref=e243]:
+                          - generic [ref=e245]: 
+                          - text: Rebaja
+                        - generic [ref=e246]:
+                          - img "Leche Descremada Protein Chocolate, 1 L" [ref=e248]
+                          - button "Agregar al carro - Leche Descremada Protein Chocolate, 1 L" [ref=e251] [cursor=pointer]:
+                            - generic "agregar" [ref=e252]: 
+                            - generic [ref=e253]: Agregar
+                      - generic [ref=e255]:
+                        - generic [ref=e257]:
+                          - generic [ref=e258]: $2.090
+                          - generic [ref=e259]: precio actual $2.090, Costaba $2.490
+                          - generic [ref=e260]: $2.090 x lt
+                          - generic [ref=e261]: $2.490
+                          - generic [ref=e262]: Ahorra $400
+                        - generic [ref=e263]: Loncoleche
+                        - generic [ref=e264]: Leche Descremada Protein Chocolate, 1 L
+                  - group [ref=e267]:
+                    - link "Leche Descremada Whey Protein Chocolate, 200 ml" [ref=e268] [cursor=pointer]:
+                      - /url: /ip/leche/00780870950516?from=/search
+                      - generic [ref=e269]: Leche Descremada Whey Protein Chocolate, 200 ml
+                    - generic [ref=e271]:
+                      - generic [ref=e274]:
+                        - img "Leche Descremada Whey Protein Chocolate, 200 ml" [ref=e276]
+                        - button "Agregar al carro - Leche Descremada Whey Protein Chocolate, 200 ml" [ref=e279] [cursor=pointer]:
+                          - generic "agregar" [ref=e280]: 
+                          - generic [ref=e281]: Agregar
+                      - generic [ref=e283]:
+                        - generic [ref=e285]:
+                          - generic [ref=e286]: $890
+                          - generic [ref=e287]: precio actual $890
+                          - generic [ref=e288]: $4.450 x lt
+                        - generic [ref=e289]: Surlat
+                        - generic [ref=e290]: Leche Descremada Whey Protein Chocolate, 200 ml
+                  - group [ref=e293]:
+                    - link "Leche Blanca Descremada Caja 1 l, 1 L" [ref=e294] [cursor=pointer]:
+                      - /url: /ip/leche/00780870950044?from=/search
+                      - generic [ref=e295]: Leche Blanca Descremada Caja 1 l, 1 L
+                    - generic [ref=e297]:
+                      - generic [ref=e300]:
+                        - img "Leche Blanca Descremada Caja 1 l, 1 L" [ref=e302]
+                        - button "Agregar al carro - Leche Blanca Descremada Caja 1 l, 1 L" [ref=e305] [cursor=pointer]:
+                          - generic "agregar" [ref=e306]: 
+                          - generic [ref=e307]: Agregar
+                      - generic [ref=e309]:
+                        - generic [ref=e311]:
+                          - generic [ref=e312]: $990
+                          - generic [ref=e313]: precio actual $990
+                          - generic [ref=e314]: $990 x lt
+                        - generic [ref=e315]: Lider
+                        - generic [ref=e316]: Leche Blanca Descremada Caja 1 l, 1 L
+                  - group [ref=e319]:
+                    - link "Leche Natural Descremada Lonco Leche, 1 L" [ref=e320] [cursor=pointer]:
+                      - /url: /ip/leche/00780291000727?from=/search
+                      - generic [ref=e321]: Leche Natural Descremada Lonco Leche, 1 L
+                    - generic [ref=e323]:
+                      - generic [ref=e326]:
+                        - img "Leche Natural Descremada Lonco Leche, 1 L" [ref=e328]
+                        - button "Agregar al carro - Leche Natural Descremada Lonco Leche, 1 L" [ref=e331] [cursor=pointer]:
+                          - generic "agregar" [ref=e332]: 
+                          - generic [ref=e333]: Agregar
+                      - generic [ref=e335]:
+                        - generic [ref=e337]:
+                          - generic [ref=e338]: $1.150
+                          - generic [ref=e339]: precio actual $1.150
+                          - generic [ref=e340]: $1.150 x lt
+                        - generic [ref=e341]: Loncoleche
+                        - generic [ref=e342]: Leche Natural Descremada Lonco Leche, 1 L
+                  - group [ref=e345]:
+                    - link "Leche Proteína Chocolate con cacao, 1 L" [ref=e346] [cursor=pointer]:
+                      - /url: /ip/leche/00780290000142?from=/search
+                      - generic [ref=e347]: Leche Proteína Chocolate con cacao, 1 L
+                    - generic [ref=e349]:
+                      - generic [ref=e352]:
+                        - img "Leche Proteína Chocolate con cacao, 1 L" [ref=e354]
+                        - button "Agregar al carro - Leche Proteína Chocolate con cacao, 1 L" [ref=e357] [cursor=pointer]:
+                          - generic "agregar" [ref=e358]: 
+                          - generic [ref=e359]: Agregar
+                      - generic [ref=e361]:
+                        - generic [ref=e363]:
+                          - generic [ref=e364]: $2.750
+                          - generic [ref=e365]: precio actual $2.750
+                          - generic [ref=e366]: $2.750 x lt
+                        - generic [ref=e367]: Soprole
+                        - generic [ref=e368]: Leche Proteína Chocolate con cacao, 1 L
+                  - group [ref=e371]:
+                    - link "Leche Semidescremada Natural Caja 1 l, 1 L" [ref=e372] [cursor=pointer]:
+                      - /url: /ip/leche/00780292000009?from=/search
+                      - generic [ref=e373]: Leche Semidescremada Natural Caja 1 l, 1 L
+                    - generic [ref=e375]:
+                      - generic [ref=e378]:
+                        - img "Leche Semidescremada Natural Caja 1 l, 1 L" [ref=e380]
+                        - button "Agregar al carro - Leche Semidescremada Natural Caja 1 l, 1 L" [ref=e383] [cursor=pointer]:
+                          - generic "agregar" [ref=e384]: 
+                          - generic [ref=e385]: Agregar
+                      - generic [ref=e387]:
+                        - generic [ref=e389]:
+                          - generic [ref=e390]: $1.350
+                          - generic [ref=e391]: precio actual $1.350
+                          - generic [ref=e392]: $1.350 x lt
+                        - generic [ref=e393]: Colun
+                        - generic [ref=e394]: Leche Semidescremada Natural Caja 1 l, 1 L
+                  - group [ref=e397]:
+                    - link "Leche Natural Semidescremada Lonco Leche, 1 L" [ref=e398] [cursor=pointer]:
+                      - /url: /ip/leche/00780291000726?from=/search
+                      - generic [ref=e399]: Leche Natural Semidescremada Lonco Leche, 1 L
+                    - generic [ref=e401]:
+                      - generic [ref=e404]:
+                        - img "Leche Natural Semidescremada Lonco Leche, 1 L" [ref=e406]
+                        - button "Agregar al carro - Leche Natural Semidescremada Lonco Leche, 1 L" [ref=e409] [cursor=pointer]:
+                          - generic "agregar" [ref=e410]: 
+                          - generic [ref=e411]: Agregar
+                      - generic [ref=e413]:
+                        - generic [ref=e415]:
+                          - generic [ref=e416]: $1.150
+                          - generic [ref=e417]: precio actual $1.150
+                          - generic [ref=e418]: $1.150 x lt
+                        - generic [ref=e419]: Loncoleche
+                        - generic [ref=e420]: Leche Natural Semidescremada Lonco Leche, 1 L
+                  - group [ref=e423]:
+                    - link "Leche Proteína Natural 1 l, 1 L" [ref=e424] [cursor=pointer]:
+                      - /url: /ip/leche/00780290000238?from=/search
+                      - generic [ref=e425]: Leche Proteína Natural 1 l, 1 L
+                    - generic [ref=e427]:
+                      - generic [ref=e430]:
+                        - img "Leche Proteína Natural 1 l, 1 L" [ref=e432]
+                        - button "Agregar al carro - Leche Proteína Natural 1 l, 1 L" [ref=e435] [cursor=pointer]:
+                          - generic "agregar" [ref=e436]: 
+                          - generic [ref=e437]: Agregar
+                      - generic [ref=e439]:
+                        - generic [ref=e441]:
+                          - generic [ref=e442]: $2.750
+                          - generic [ref=e443]: precio actual $2.750
+                          - generic [ref=e444]: $2.750 x lt
+                        - generic [ref=e445]: Soprole
+                        - generic [ref=e446]: Leche Proteína Natural 1 l, 1 L
+                  - generic [ref=e448]:
+                    - group [ref=e449]:
+                      - link "Leche Descremada, 1 L" [ref=e450] [cursor=pointer]:
+                        - /url: /ip/leche/00780461747030?from=/search
+                        - generic [ref=e451]: Leche Descremada, 1 L
+                      - generic [ref=e453]:
+                        - img "Leche Descremada, 1 L" [ref=e458]
+                        - generic [ref=e460]:
+                          - generic [ref=e462]:
+                            - generic [ref=e463]: $1.090
+                            - generic [ref=e464]: precio actual $1.090
+                            - generic [ref=e465]: $1.090 x lt
+                          - generic [ref=e466]: Surlat
+                          - generic [ref=e467]: Leche Descremada, 1 L
+                          - generic [ref=e468]: Agotado
+                    - button "Revisar productos similares - Leche Descremada, 1 L" [ref=e470]: Revisar productos similares
+                  - group [ref=e473]:
+                    - link "Leche Semidescremada, 1 L" [ref=e474] [cursor=pointer]:
+                      - /url: /ip/leche/00780870950045?from=/search
+                      - generic [ref=e475]: Leche Semidescremada, 1 L
+                    - generic [ref=e477]:
+                      - generic [ref=e480]:
+                        - img "Leche Semidescremada, 1 L" [ref=e482]
+                        - button "Agregar al carro - Leche Semidescremada, 1 L" [ref=e485] [cursor=pointer]:
+                          - generic "agregar" [ref=e486]: 
+                          - generic [ref=e487]: Agregar
+                      - generic [ref=e489]:
+                        - generic [ref=e491]:
+                          - generic [ref=e492]: $990
+                          - generic [ref=e493]: precio actual $990
+                          - generic [ref=e494]: $990 x lt
+                        - generic [ref=e495]: Lider
+                        - generic [ref=e496]: Leche Semidescremada, 1 L
+                  - generic [ref=e498]:
+                    - group [ref=e499]:
+                      - link "Leche Semidescremada, 1 L" [ref=e500] [cursor=pointer]:
+                        - /url: /ip/leche/00780461747029?from=/search
+                        - generic [ref=e501]: Leche Semidescremada, 1 L
+                      - generic [ref=e503]:
+                        - img "Leche Semidescremada, 1 L" [ref=e508]
+                        - generic [ref=e510]:
+                          - generic [ref=e512]:
+                            - generic [ref=e513]: $1.090
+                            - generic [ref=e514]: precio actual $1.090
+                            - generic [ref=e515]: $1.090 x lt
+                          - generic [ref=e516]: Surlat
+                          - generic [ref=e517]: Leche Semidescremada, 1 L
+                          - generic [ref=e518]: Agotado
+                    - button "Revisar productos similares - Leche Semidescremada, 1 L" [ref=e520]: Revisar productos similares
+                  - group [ref=e523]:
+                    - link "Leche Descremada Whey Protein Caramelo Salado, 200 ml" [ref=e524] [cursor=pointer]:
+                      - /url: /ip/leche/00780870950515?from=/search
+                      - generic [ref=e525]: Leche Descremada Whey Protein Caramelo Salado, 200 ml
+                    - generic [ref=e527]:
+                      - generic [ref=e530]:
+                        - img "Leche Descremada Whey Protein Caramelo Salado, 200 ml" [ref=e532]
+                        - button "Agregar al carro - Leche Descremada Whey Protein Caramelo Salado, 200 ml" [ref=e535] [cursor=pointer]:
+                          - generic "agregar" [ref=e536]: 
+                          - generic [ref=e537]: Agregar
+                      - generic [ref=e539]:
+                        - generic [ref=e541]:
+                          - generic [ref=e542]: $890
+                          - generic [ref=e543]: precio actual $890
+                          - generic [ref=e544]: $4.450 x lt
+                        - generic [ref=e545]: Surlat
+                        - generic [ref=e546]: Leche Descremada Whey Protein Caramelo Salado, 200 ml
+                  - group [ref=e549]:
+                    - link "Leche Descremada Whey Proteína Chocolate, 1 L" [ref=e550] [cursor=pointer]:
+                      - /url: /ip/leche/00780870950513?from=/search
+                      - generic [ref=e551]: Leche Descremada Whey Proteína Chocolate, 1 L
+                    - generic [ref=e553]:
+                      - generic [ref=e554]:
+                        - generic [ref=e556]:
+                          - generic [ref=e558]: 
+                          - text: Rebaja
+                        - generic [ref=e559]:
+                          - generic [ref=e560]:
+                            - img "Leche Descremada Whey Proteína Chocolate, 1 L"
+                          - button "Agregar al carro - Leche Descremada Whey Proteína Chocolate, 1 L" [ref=e563] [cursor=pointer]:
+                            - generic "agregar" [ref=e564]: 
+                            - generic [ref=e565]: Agregar
+                      - generic [ref=e567]:
+                        - generic [ref=e569]:
+                          - generic [ref=e570]: $2.450
+                          - generic [ref=e571]: precio actual $2.450, Costaba $2.890
+                          - generic [ref=e572]: $2.450 x lt
+                          - generic [ref=e573]: $2.890
+                          - generic [ref=e574]: Ahorra $440
+                        - generic [ref=e575]: Surlat
+                        - generic [ref=e576]: Leche Descremada Whey Proteína Chocolate, 1 L
+                  - group [ref=e579]:
+                    - link "Leche Descremada Light Chocolate Caja, 1 L" [ref=e580] [cursor=pointer]:
+                      - /url: /ip/leche/00780291000216?from=/search
+                      - generic [ref=e581]: Leche Descremada Light Chocolate Caja, 1 L
+                    - generic [ref=e583]:
+                      - generic [ref=e586]:
+                        - generic [ref=e587]:
+                          - img "Leche Descremada Light Chocolate Caja, 1 L"
+                        - button "Agregar al carro - Leche Descremada Light Chocolate Caja, 1 L" [ref=e590] [cursor=pointer]:
+                          - generic "agregar" [ref=e591]: 
+                          - generic [ref=e592]: Agregar
+                      - generic [ref=e594]:
+                        - generic [ref=e596]:
+                          - generic [ref=e597]: $2.150
+                          - generic [ref=e598]: precio actual $2.150
+                          - generic [ref=e599]: $2.150 x lt
+                        - generic [ref=e600]: Loncoleche
+                        - generic [ref=e601]: Leche Descremada Light Chocolate Caja, 1 L
+                  - group [ref=e604]:
+                    - link "Leche descremada sin lactosa Proteína Chocolate Caja, 200 ml" [ref=e605] [cursor=pointer]:
+                      - /url: /ip/leche/00780870950442?from=/search
+                      - generic [ref=e606]: Leche descremada sin lactosa Proteína Chocolate Caja, 200 ml
+                    - generic [ref=e608]:
+                      - generic [ref=e611]:
+                        - generic [ref=e612]:
+                          - img "Leche descremada sin lactosa Proteína Chocolate Caja, 200 ml"
+                        - button "Agregar al carro - Leche descremada sin lactosa Proteína Chocolate Caja, 200 ml" [ref=e615] [cursor=pointer]:
+                          - generic "agregar" [ref=e616]: 
+                          - generic [ref=e617]: Agregar
+                      - generic [ref=e619]:
+                        - generic [ref=e621]:
+                          - generic [ref=e622]: $650
+                          - generic [ref=e623]: precio actual $650
+                          - generic [ref=e624]: $3.250 x lt
+                        - generic [ref=e625]: Surlat
+                        - generic [ref=e626]: Leche descremada sin lactosa Proteína Chocolate Caja, 200 ml
+                  - group [ref=e629]:
+                    - link "Leche Protein Milk Sin Lactosa Chocolate, 200 ml" [ref=e630] [cursor=pointer]:
+                      - /url: /ip/leche/00780291000806?from=/search
+                      - generic [ref=e631]: Leche Protein Milk Sin Lactosa Chocolate, 200 ml
+                    - generic [ref=e633]:
+                      - generic [ref=e634]:
+                        - generic [ref=e636]:
+                          - generic [ref=e638]: 
+                          - text: Rebaja
+                        - generic [ref=e639]:
+                          - generic [ref=e640]:
+                            - img "Leche Protein Milk Sin Lactosa Chocolate, 200 ml"
+                          - button "Agregar al carro - Leche Protein Milk Sin Lactosa Chocolate, 200 ml" [ref=e643] [cursor=pointer]:
+                            - generic "agregar" [ref=e644]: 
+                            - generic [ref=e645]: Agregar
+                      - generic [ref=e647]:
+                        - generic [ref=e649]:
+                          - generic [ref=e650]: $550
+                          - generic [ref=e651]: precio actual $550, Costaba $670
+                          - generic [ref=e652]: $2.750 x lt
+                          - generic [ref=e653]: $670
+                          - generic [ref=e654]: Ahorra $120
+                        - generic [ref=e655]: Loncoleche
+                        - generic [ref=e656]: Leche Protein Milk Sin Lactosa Chocolate, 200 ml
+                  - group [ref=e659]:
+                    - link "Leche Descremada Whey Proteína Caramelo Salado, 1 L" [ref=e660] [cursor=pointer]:
+                      - /url: /ip/leche/00780870950514?from=/search
+                      - generic [ref=e661]: Leche Descremada Whey Proteína Caramelo Salado, 1 L
+                    - generic [ref=e663]:
+                      - generic [ref=e664]:
+                        - generic [ref=e666]:
+                          - generic [ref=e668]: 
+                          - text: Rebaja
+                        - generic [ref=e669]:
+                          - generic [ref=e670]:
+                            - img "Leche Descremada Whey Proteína Caramelo Salado, 1 L"
+                          - button "Agregar al carro - Leche Descremada Whey Proteína Caramelo Salado, 1 L" [ref=e673] [cursor=pointer]:
+                            - generic "agregar" [ref=e674]: 
+                            - generic [ref=e675]: Agregar
+                      - generic [ref=e677]:
+                        - generic [ref=e679]:
+                          - generic [ref=e680]: $2.450
+                          - generic [ref=e681]: precio actual $2.450, Costaba $2.890
+                          - generic [ref=e682]: $2.450 x lt
+                          - generic [ref=e683]: $2.890
+                          - generic [ref=e684]: Ahorra $440
+                        - generic [ref=e685]: Surlat
+                        - generic [ref=e686]: Leche Descremada Whey Proteína Caramelo Salado, 1 L
+                  - group [ref=e689]:
+                    - link "Leche con Chocolate Protein Up, 330 ml" [ref=e690] [cursor=pointer]:
+                      - /url: /ip/leche/00761328750639?from=/search
+                      - generic [ref=e691]: Leche con Chocolate Protein Up, 330 ml
+                    - generic [ref=e693]:
+                      - generic [ref=e696]:
+                        - generic [ref=e697]:
+                          - img "Leche con Chocolate Protein Up, 330 ml"
+                        - button "Agregar al carro - Leche con Chocolate Protein Up, 330 ml" [ref=e700] [cursor=pointer]:
+                          - generic "agregar" [ref=e701]: 
+                          - generic [ref=e702]: Agregar
+                      - generic [ref=e704]:
+                        - generic [ref=e706]:
+                          - generic [ref=e707]: $1.590
+                          - generic [ref=e708]: precio actual $1.590
+                        - generic [ref=e709]: Milo
+                        - generic [ref=e710]: Leche con Chocolate Protein Up, 330 ml
+                  - group [ref=e713]:
+                    - link "Leche Descremada Sin Lactosa Caja, 1 L" [ref=e714] [cursor=pointer]:
+                      - /url: /ip/leche/00780292000740?from=/search
+                      - generic [ref=e715]: Leche Descremada Sin Lactosa Caja, 1 L
+                    - generic [ref=e717]:
+                      - generic [ref=e720]:
+                        - generic [ref=e721]:
+                          - img "Leche Descremada Sin Lactosa Caja, 1 L"
+                        - button "Agregar al carro - Leche Descremada Sin Lactosa Caja, 1 L" [ref=e724] [cursor=pointer]:
+                          - generic "agregar" [ref=e725]: 
+                          - generic [ref=e726]: Agregar
+                      - generic [ref=e728]:
+                        - generic [ref=e730]:
+                          - generic [ref=e731]: $1.390
+                          - generic [ref=e732]: precio actual $1.390
+                          - generic [ref=e733]: $1.390 x lt
+                        - generic [ref=e734]: Colun
+                        - generic [ref=e735]: Leche Descremada Sin Lactosa Caja, 1 L
+                  - generic [ref=e737]:
+                    - group [ref=e738]:
+                      - link "Leche Descremada Sin Lactosa Caja, 1 L" [ref=e739] [cursor=pointer]:
+                        - /url: /ip/leche/00780870950199?from=/search
+                        - generic [ref=e740]: Leche Descremada Sin Lactosa Caja, 1 L
+                      - generic [ref=e742]:
+                        - generic [ref=e746]:
+                          - img "Leche Descremada Sin Lactosa Caja, 1 L"
+                        - generic [ref=e748]:
+                          - generic [ref=e750]:
+                            - generic [ref=e751]: $1.290
+                            - generic [ref=e752]: precio actual $1.290
+                            - generic [ref=e753]: $1.290 x lt
+                          - generic [ref=e754]: Surlat
+                          - generic [ref=e755]: Leche Descremada Sin Lactosa Caja, 1 L
+                          - generic [ref=e756]: Agotado
+                    - button "Revisar productos similares - Leche Descremada Sin Lactosa Caja, 1 L" [ref=e758]: Revisar productos similares
+                  - group [ref=e761]:
+                    - link "Leche Descremada Instantánea Bolsa, 800 g" [ref=e762] [cursor=pointer]:
+                      - /url: /ip/nuestras-marcas/00780460062588?from=/search
+                      - generic [ref=e763]: Leche Descremada Instantánea Bolsa, 800 g
+                    - generic [ref=e765]:
+                      - generic [ref=e768]:
+                        - generic [ref=e769]:
+                          - img "Leche Descremada Instantánea Bolsa, 800 g"
+                        - button "Agregar al carro - Leche Descremada Instantánea Bolsa, 800 g" [ref=e772] [cursor=pointer]:
+                          - generic "agregar" [ref=e773]: 
+                          - generic [ref=e774]: Agregar
+                      - generic [ref=e776]:
+                        - generic [ref=e778]:
+                          - generic [ref=e779]: $5.790
+                          - generic [ref=e780]: precio actual $5.790
+                        - generic [ref=e781]: Lider
+                        - generic [ref=e782]: Leche Descremada Instantánea Bolsa, 800 g
+                  - group [ref=e785]:
+                    - link "Leche Descremada Caja, 200 ml" [ref=e786] [cursor=pointer]:
+                      - /url: /ip/leche/00780292010616?from=/search
+                      - generic [ref=e787]: Leche Descremada Caja, 200 ml
+                    - generic [ref=e789]:
+                      - generic [ref=e792]:
+                        - generic [ref=e793]:
+                          - img "Leche Descremada Caja, 200 ml"
+                        - button "Agregar al carro - Leche Descremada Caja, 200 ml" [ref=e796] [cursor=pointer]:
+                          - generic "agregar" [ref=e797]: 
+                          - generic [ref=e798]: Agregar
+                      - generic [ref=e800]:
+                        - generic [ref=e802]:
+                          - generic [ref=e803]: $620
+                          - generic [ref=e804]: precio actual $620
+                          - generic [ref=e805]: $3.100 x lt
+                        - generic [ref=e806]: Colun
+                        - generic [ref=e807]: Leche Descremada Caja, 200 ml
+                  - group [ref=e810]:
+                    - link "Leche Descremada Natural sin Lactosa, 1 L" [ref=e811] [cursor=pointer]:
+                      - /url: /ip/leche/00780291008350?from=/search
+                      - generic [ref=e812]: Leche Descremada Natural sin Lactosa, 1 L
+                    - generic [ref=e814]:
+                      - generic [ref=e817]:
+                        - generic [ref=e818]:
+                          - img "Leche Descremada Natural sin Lactosa, 1 L"
+                        - button "Agregar al carro - Leche Descremada Natural sin Lactosa, 1 L" [ref=e821] [cursor=pointer]:
+                          - generic "agregar" [ref=e822]: 
+                          - generic [ref=e823]: Agregar
+                      - generic [ref=e825]:
+                        - generic [ref=e827]:
+                          - generic [ref=e828]: $1.350
+                          - generic [ref=e829]: precio actual $1.350
+                          - generic [ref=e830]: $1.350 x lt
+                        - generic [ref=e831]: Loncoleche
+                        - generic [ref=e832]: Leche Descremada Natural sin Lactosa, 1 L
+                  - group [ref=e835]:
+                    - link "Leche descremada Sin lactosa Caja, 200 ml" [ref=e836] [cursor=pointer]:
+                      - /url: /ip/leche/00780870950435?from=/search
+                      - generic [ref=e837]: Leche descremada Sin lactosa Caja, 200 ml
+                    - generic [ref=e839]:
+                      - generic [ref=e842]:
+                        - generic [ref=e843]:
+                          - img "Leche descremada Sin lactosa Caja, 200 ml"
+                        - button "Agregar al carro - Leche descremada Sin lactosa Caja, 200 ml" [ref=e846] [cursor=pointer]:
+                          - generic "agregar" [ref=e847]: 
+                          - generic [ref=e848]: Agregar
+                      - generic [ref=e850]:
+                        - generic [ref=e852]:
+                          - generic [ref=e853]: $560
+                          - generic [ref=e854]: precio actual $560
+                          - generic [ref=e855]: $2.800 x lt
+                        - generic [ref=e856]: Surlat
+                        - generic [ref=e857]: Leche descremada Sin lactosa Caja, 200 ml
+                  - group [ref=e860]:
+                    - link "Leche Descremada Natural Extra calcio Descremada Sin Lactosa Caja, 1 L" [ref=e861] [cursor=pointer]:
+                      - /url: /ip/leche/00780291000315?from=/search
+                      - generic [ref=e862]: Leche Descremada Natural Extra calcio Descremada Sin Lactosa Caja, 1 L
+                    - generic [ref=e864]:
+                      - generic [ref=e867]:
+                        - generic [ref=e868]:
+                          - img "Leche Descremada Natural Extra calcio Descremada Sin Lactosa Caja, 1 L"
+                        - button "Agregar al carro - Leche Descremada Natural Extra calcio Descremada Sin Lactosa Caja, 1 L" [ref=e871] [cursor=pointer]:
+                          - generic "agregar" [ref=e872]: 
+                          - generic [ref=e873]: Agregar
+                      - generic [ref=e875]:
+                        - generic [ref=e877]:
+                          - generic [ref=e878]: $2.550
+                          - generic [ref=e879]: precio actual $2.550
+                          - generic [ref=e880]: $2.550 x lt
+                        - generic [ref=e881]: Loncoleche
+                        - generic [ref=e882]: Leche Descremada Natural Extra calcio Descremada Sin Lactosa Caja, 1 L
+                  - group [ref=e885]:
+                    - link "Leche Protein Milk Sin Lactosa Cappuccino, 200 ml" [ref=e886] [cursor=pointer]:
+                      - /url: /ip/leche/00780291000805?from=/search
+                      - generic [ref=e887]: Leche Protein Milk Sin Lactosa Cappuccino, 200 ml
+                    - generic [ref=e889]:
+                      - generic [ref=e890]:
+                        - generic [ref=e892]:
+                          - generic [ref=e894]: 
+                          - text: Rebaja
+                        - generic [ref=e895]:
+                          - generic [ref=e896]:
+                            - img "Leche Protein Milk Sin Lactosa Cappuccino, 200 ml"
+                          - button "Agregar al carro - Leche Protein Milk Sin Lactosa Cappuccino, 200 ml" [ref=e899] [cursor=pointer]:
+                            - generic "agregar" [ref=e900]: 
+                            - generic [ref=e901]: Agregar
+                      - generic [ref=e903]:
+                        - generic [ref=e905]:
+                          - generic [ref=e906]: $550
+                          - generic [ref=e907]: precio actual $550, Costaba $670
+                          - generic [ref=e908]: $2.750 x lt
+                          - generic [ref=e909]: $670
+                          - generic [ref=e910]: Ahorra $120
+                        - generic [ref=e911]: Loncoleche
+                        - generic [ref=e912]: Leche Protein Milk Sin Lactosa Cappuccino, 200 ml
+                  - group [ref=e915]:
+                    - link "Leche Protein Cappuccino, 1 L" [ref=e916] [cursor=pointer]:
+                      - /url: /ip/leche/00780291000709?from=/search
+                      - generic [ref=e917]: Leche Protein Cappuccino, 1 L
+                    - generic [ref=e919]:
+                      - generic [ref=e920]:
+                        - generic [ref=e922]:
+                          - generic [ref=e924]: 
+                          - text: Rebaja
+                        - generic [ref=e925]:
+                          - generic [ref=e926]:
+                            - img "Leche Protein Cappuccino, 1 L"
+                          - button "Agregar al carro - Leche Protein Cappuccino, 1 L" [ref=e929] [cursor=pointer]:
+                            - generic "agregar" [ref=e930]: 
+                            - generic [ref=e931]: Agregar
+                      - generic [ref=e933]:
+                        - generic [ref=e935]:
+                          - generic [ref=e936]: $2.090
+                          - generic [ref=e937]: precio actual $2.090, Costaba $2.490
+                          - generic [ref=e938]: $2.090 x lt
+                          - generic [ref=e939]: $2.490
+                          - generic [ref=e940]: Ahorra $400
+                        - generic [ref=e941]: Loncoleche
+                        - generic [ref=e942]: Leche Protein Cappuccino, 1 L
+                  - group [ref=e945]:
+                    - link "Leche Protein Full Pro, 250 ml" [ref=e946] [cursor=pointer]:
+                      - /url: /ip/leche/00780291000809?from=/search
+                      - generic [ref=e947]: Leche Protein Full Pro, 250 ml
+                    - generic [ref=e949]:
+                      - generic [ref=e950]:
+                        - generic [ref=e952]:
+                          - generic [ref=e954]: 
+                          - text: Rebaja
+                        - generic [ref=e955]:
+                          - generic [ref=e956]:
+                            - img "Leche Protein Full Pro, 250 ml"
+                          - button "Agregar al carro - Leche Protein Full Pro, 250 ml" [ref=e959] [cursor=pointer]:
+                            - generic "agregar" [ref=e960]: 
+                            - generic [ref=e961]: Agregar
+                      - generic [ref=e963]:
+                        - generic [ref=e965]:
+                          - generic [ref=e966]: $1.390
+                          - generic [ref=e967]: precio actual $1.390, Costaba $1.690
+                          - generic [ref=e968]: $5.560 x lt
+                          - generic [ref=e969]: $1.690
+                          - generic [ref=e970]: Ahorra $300
+                        - generic [ref=e971]: Loncoleche
+                        - generic [ref=e972]: Leche Protein Full Pro, 250 ml
+                  - group [ref=e975]:
+                    - link "Leche Chocolate Origen, 1 L" [ref=e976] [cursor=pointer]:
+                      - /url: /ip/leche/00780292001153?from=/search
+                      - generic [ref=e977]: Leche Chocolate Origen, 1 L
+                    - generic [ref=e979]:
+                      - generic [ref=e982]:
+                        - generic [ref=e983]:
+                          - img "Leche Chocolate Origen, 1 L"
+                        - button "Agregar al carro - Leche Chocolate Origen, 1 L" [ref=e986] [cursor=pointer]:
+                          - generic "agregar" [ref=e987]: 
+                          - generic [ref=e988]: Agregar
+                      - generic [ref=e990]:
+                        - generic [ref=e992]:
+                          - generic [ref=e993]: $1.850
+                          - generic [ref=e994]: precio actual $1.850
+                          - generic [ref=e995]: $1.850 x lt
+                        - generic [ref=e996]: Colun
+                        - generic [ref=e997]: Leche Chocolate Origen, 1 L
+                  - group [ref=e1000]:
+                    - link "Leche chocolate simple, 200 ml" [ref=e1001] [cursor=pointer]:
+                      - /url: /ip/leche/00780290000502?from=/search
+                      - generic [ref=e1002]: Leche chocolate simple, 200 ml
+                    - generic [ref=e1004]:
+                      - generic [ref=e1007]:
+                        - generic [ref=e1008]:
+                          - img "Leche chocolate simple, 200 ml"
+                        - button "Agregar al carro - Leche chocolate simple, 200 ml" [ref=e1011] [cursor=pointer]:
+                          - generic "agregar" [ref=e1012]: 
+                          - generic [ref=e1013]: Agregar
+                      - generic [ref=e1015]:
+                        - generic [ref=e1017]:
+                          - generic [ref=e1018]: $560
+                          - generic [ref=e1019]: precio actual $560
+                          - generic [ref=e1020]: $2.800 x lt
+                        - generic [ref=e1021]: Soprole
+                        - generic [ref=e1022]: Leche chocolate simple, 200 ml
+                  - generic [ref=e1024]:
+                    - group [ref=e1025]:
+                      - link "Shake Chocolate Vegan, 350 g" [ref=e1026] [cursor=pointer]:
+                        - /url: /ip/proteina/00780467391041?from=/search
+                        - generic [ref=e1027]: Shake Chocolate Vegan, 350 g
+                      - generic [ref=e1029]:
+                        - generic [ref=e1033]:
+                          - img "Shake Chocolate Vegan, 350 g"
+                        - generic [ref=e1035]:
+                          - generic [ref=e1037]:
+                            - generic [ref=e1038]: $11.390
+                            - generic [ref=e1039]: precio actual $11.390
+                            - generic [ref=e1040]: $32.543 x kg
+                          - generic [ref=e1041]: Wild Protein
+                          - generic [ref=e1042]: Shake Chocolate Vegan, 350 g
+                          - generic [ref=e1043]: Agotado
+                    - button "Revisar productos similares - Shake Chocolate Vegan, 350 g" [ref=e1045]: Revisar productos similares
+                  - group [ref=e1048]:
+                    - link "Leche Sin Lactosa Descremada Zerolacto, 1 L" [ref=e1049] [cursor=pointer]:
+                      - /url: /ip/leche/00780290004801?from=/search
+                      - generic [ref=e1050]: Leche Sin Lactosa Descremada Zerolacto, 1 L
+                    - generic [ref=e1052]:
+                      - generic [ref=e1055]:
+                        - generic [ref=e1056]:
+                          - img "Leche Sin Lactosa Descremada Zerolacto, 1 L"
+                        - button "Agregar al carro - Leche Sin Lactosa Descremada Zerolacto, 1 L" [ref=e1059] [cursor=pointer]:
+                          - generic "agregar" [ref=e1060]: 
+                          - generic [ref=e1061]: Agregar
+                      - generic [ref=e1063]:
+                        - generic [ref=e1065]:
+                          - generic [ref=e1066]: $1.390
+                          - generic [ref=e1067]: precio actual $1.390
+                          - generic [ref=e1068]: $1.390 x lt
+                        - generic [ref=e1069]: Soprole
+                        - generic [ref=e1070]: Leche Sin Lactosa Descremada Zerolacto, 1 L
+                  - group [ref=e1073]:
+                    - link "Leche Zero % Descremada Sin Lactosa, 1 L" [ref=e1074] [cursor=pointer]:
+                      - /url: /ip/sin-lactosa/00780870950291?from=/search
+                      - generic [ref=e1075]: Leche Zero % Descremada Sin Lactosa, 1 L
+                    - generic [ref=e1077]:
+                      - generic [ref=e1080]:
+                        - generic [ref=e1081]:
+                          - img "Leche Zero % Descremada Sin Lactosa, 1 L"
+                        - button "Agregar al carro - Leche Zero % Descremada Sin Lactosa, 1 L" [ref=e1084] [cursor=pointer]:
+                          - generic "agregar" [ref=e1085]: 
+                          - generic [ref=e1086]: Agregar
+                      - generic [ref=e1088]:
+                        - generic [ref=e1090]:
+                          - generic [ref=e1091]: $1.190
+                          - generic [ref=e1092]: precio actual $1.190
+                          - generic [ref=e1093]: $1.190 x lt
+                        - generic [ref=e1094]: Lider
+                        - generic [ref=e1095]: Leche Zero % Descremada Sin Lactosa, 1 L
+                  - group [ref=e1098]:
+                    - link "Leche en Polvo Descremada Bolsa, 800 g" [ref=e1099] [cursor=pointer]:
+                      - /url: /ip/leche/00780292000986?from=/search
+                      - generic [ref=e1100]: Leche en Polvo Descremada Bolsa, 800 g
+                    - generic [ref=e1102]:
+                      - generic [ref=e1103]:
+                        - generic [ref=e1105]:
+                          - generic [ref=e1107]: 
+                          - text: Rebaja
+                        - generic [ref=e1108]:
+                          - generic [ref=e1109]:
+                            - img "Leche en Polvo Descremada Bolsa, 800 g"
+                          - button "Agregar al carro - Leche en Polvo Descremada Bolsa, 800 g" [ref=e1112] [cursor=pointer]:
+                            - generic "agregar" [ref=e1113]: 
+                            - generic [ref=e1114]: Agregar
+                      - generic [ref=e1116]:
+                        - generic [ref=e1118]:
+                          - generic [ref=e1119]: $6.590
+                          - generic [ref=e1120]: precio actual $6.590, Costaba $7.090
+                          - generic [ref=e1121]: $8.237 x kg
+                          - generic [ref=e1122]: $7.090
+                          - generic [ref=e1123]: Ahorra $500
+                        - generic [ref=e1124]: Colun
+                        - generic [ref=e1125]: Leche en Polvo Descremada Bolsa, 800 g
+                  - group [ref=e1128]:
+                    - link "Leche en Polvo Move+ Descremada Sin Lactosa Bolsa, 800 g" [ref=e1129] [cursor=pointer]:
+                      - /url: /ip/leche/00761303433566?from=/search
+                      - generic [ref=e1130]: Leche en Polvo Move+ Descremada Sin Lactosa Bolsa, 800 g
+                    - generic [ref=e1132]:
+                      - generic [ref=e1135]:
+                        - generic [ref=e1136]:
+                          - img "Leche en Polvo Move+ Descremada Sin Lactosa Bolsa, 800 g"
+                        - button "Agregar al carro - Leche en Polvo Move+ Descremada Sin Lactosa Bolsa, 800 g" [ref=e1139] [cursor=pointer]:
+                          - generic "agregar" [ref=e1140]: 
+                          - generic [ref=e1141]: Agregar
+                      - generic [ref=e1143]:
+                        - generic [ref=e1145]:
+                          - generic [ref=e1146]: $11.190
+                          - generic [ref=e1147]: precio actual $11.190
+                          - generic [ref=e1148]: $13.987 x kg
+                        - generic [ref=e1149]: Nestle
+                        - generic [ref=e1150]: Leche en Polvo Move+ Descremada Sin Lactosa Bolsa, 800 g
+                  - group [ref=e1153]:
+                    - link "Leche en Polvo Descremada Bolsa, 350 g" [ref=e1154] [cursor=pointer]:
+                      - /url: /ip/leche/00780292000987?from=/search
+                      - generic [ref=e1155]: Leche en Polvo Descremada Bolsa, 350 g
+                    - generic [ref=e1157]:
+                      - generic [ref=e1160]:
+                        - generic [ref=e1161]:
+                          - img "Leche en Polvo Descremada Bolsa, 350 g"
+                        - button "Agregar al carro - Leche en Polvo Descremada Bolsa, 350 g" [ref=e1164] [cursor=pointer]:
+                          - generic "agregar" [ref=e1165]: 
+                          - generic [ref=e1166]: Agregar
+                      - generic [ref=e1168]:
+                        - generic [ref=e1170]:
+                          - generic [ref=e1171]: $3.750
+                          - generic [ref=e1172]: precio actual $3.750
+                          - generic [ref=e1173]: $10.714 x kg
+                        - generic [ref=e1174]: Colun
+                        - generic [ref=e1175]: Leche en Polvo Descremada Bolsa, 350 g
+                  - group [ref=e1178]:
+                    - link "Leche En Polvo Descremada Bolsa, 760 g" [ref=e1179] [cursor=pointer]:
+                      - /url: /ip/leche/00780291000870?from=/search
+                      - generic [ref=e1180]: Leche En Polvo Descremada Bolsa, 760 g
+                    - generic [ref=e1182]:
+                      - generic [ref=e1185]:
+                        - generic [ref=e1186]:
+                          - img "Leche En Polvo Descremada Bolsa, 760 g"
+                        - button "Agregar al carro - Leche En Polvo Descremada Bolsa, 760 g" [ref=e1189] [cursor=pointer]:
+                          - generic "agregar" [ref=e1190]: 
+                          - generic [ref=e1191]: Agregar
+                      - generic [ref=e1193]:
+                        - generic [ref=e1195]:
+                          - generic [ref=e1196]: $6.790
+                          - generic [ref=e1197]: precio actual $6.790
+                        - generic [ref=e1198]: Loncoleche
+                        - generic [ref=e1199]: Leche En Polvo Descremada Bolsa, 760 g
+                  - group [ref=e1202]:
+                    - link "Leche en Polvo Descremada Bolsa, 800 g" [ref=e1203] [cursor=pointer]:
+                      - /url: /ip/leche/00761303242561?from=/search
+                      - generic [ref=e1204]: Leche en Polvo Descremada Bolsa, 800 g
+                    - generic [ref=e1206]:
+                      - generic [ref=e1209]:
+                        - generic [ref=e1210]:
+                          - img "Leche en Polvo Descremada Bolsa, 800 g"
+                        - button "Agregar al carro - Leche en Polvo Descremada Bolsa, 800 g" [ref=e1213] [cursor=pointer]:
+                          - generic "agregar" [ref=e1214]: 
+                          - generic [ref=e1215]: Agregar
+                      - generic [ref=e1217]:
+                        - generic [ref=e1219]:
+                          - generic [ref=e1220]: $6.850
+                          - generic [ref=e1221]: precio actual $6.850
+                          - generic [ref=e1222]: $8.562 x kg
+                        - generic [ref=e1223]: Svelty
+                        - generic [ref=e1224]: Leche en Polvo Descremada Bolsa, 800 g
+                  - group [ref=e1227]:
+                    - link "Leche en Polvo Descremada, 300 g" [ref=e1228] [cursor=pointer]:
+                      - /url: /ip/leche/00844529137388?from=/search
+                      - generic [ref=e1229]: Leche en Polvo Descremada, 300 g
+                    - generic [ref=e1231]:
+                      - generic [ref=e1234]:
+                        - generic [ref=e1235]:
+                          - img "Leche en Polvo Descremada, 300 g"
+                        - button "Agregar al carro - Leche en Polvo Descremada, 300 g" [ref=e1238] [cursor=pointer]:
+                          - generic "agregar" [ref=e1239]: 
+                          - generic [ref=e1240]: Agregar
+                      - generic [ref=e1242]:
+                        - generic [ref=e1244]:
+                          - generic [ref=e1245]: $3.790
+                          - generic [ref=e1246]: precio actual $3.790
+                          - generic [ref=e1247]: $12.633 x kg
+                        - generic [ref=e1248]: Svelty
+                        - generic [ref=e1249]: Leche en Polvo Descremada, 300 g
+                  - group [ref=e1252]:
+                    - link "Leche Sin Lactosa Descremada Con Fibra, 1 L" [ref=e1253] [cursor=pointer]:
+                      - /url: /ip/leche/00780290000462?from=/search
+                      - generic [ref=e1254]: Leche Sin Lactosa Descremada Con Fibra, 1 L
+                    - generic [ref=e1256]:
+                      - generic [ref=e1259]:
+                        - generic [ref=e1260]:
+                          - img "Leche Sin Lactosa Descremada Con Fibra, 1 L"
+                        - button "Agregar al carro - Leche Sin Lactosa Descremada Con Fibra, 1 L" [ref=e1263] [cursor=pointer]:
+                          - generic "agregar" [ref=e1264]: 
+                          - generic [ref=e1265]: Agregar
+                      - generic [ref=e1267]:
+                        - generic [ref=e1269]:
+                          - generic [ref=e1270]: $1.790
+                          - generic [ref=e1271]: precio actual $1.790
+                          - generic [ref=e1272]: $1.790 x lt
+                        - generic [ref=e1273]: Soprole
+                        - generic [ref=e1274]: Leche Sin Lactosa Descremada Con Fibra, 1 L
+            - navigation "paginación" [ref=e1277]:
+              - list [ref=e1278]:
+                - listitem [ref=e1279]
+                - listitem [ref=e1281]:
+                  - link "1" [ref=e1282] [cursor=pointer]:
+                    - /url: /search?q=leche+descremada+protein+chocolate
+                - listitem [ref=e1283]:
+                  - link "Ir a la página 2" [ref=e1284] [cursor=pointer]:
+                    - /url: /search?q=leche+descremada+protein+chocolate&page=2
+                    - text: "2"
+                - listitem [ref=e1285]:
+                  - link "Ir a la página 3" [ref=e1286] [cursor=pointer]:
+                    - /url: /search?q=leche+descremada+protein+chocolate&page=3
+                    - text: "3"
+                - listitem [ref=e1287]:
+                  - generic [ref=e1288]: ...
+                - listitem [ref=e1289]:
+                  - generic [ref=e1290]: "7"
+                - listitem [ref=e1291]:
+                  - link "Página siguiente" [ref=e1292] [cursor=pointer]:
+                    - /url: /search?q=leche+descremada+protein+chocolate&page=2
+                    - generic [ref=e1293]: 
+  - alert [ref=e1301]

@@ -1,0 +1,647 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 4 productos Monto total $7.620" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: "4"
+              - generic [ref=e44]: $7.620
+    - generic [ref=e45]:
+      - generic [ref=e46]:
+        - separator [ref=e47]
+        - generic [ref=e48]:
+          - generic [ref=e49]:
+            - button "Despacho a Domicilio MARTIN DE ZAMORA 5595" [ref=e50] [cursor=pointer]:
+              - generic [ref=e52]:
+                - img [ref=e53]
+                - generic [ref=e54]: Despacho a Domicilio
+                - generic [ref=e55]: 
+                - generic [ref=e56]: "|"
+                - generic [ref=e58]:
+                  - img [ref=e59]
+                  - generic [ref=e60]: MARTIN DE ZAMORA 5595
+              - text: 
+            - generic:   
+            - navigation "Secundario" [ref=e63]:
+              - list [ref=e64]:
+                - listitem [ref=e65]:
+                  - link "Tarjeta Lider Bci" [ref=e67] [cursor=pointer]:
+                    - /url: https://tarjetadigital.liderbciserviciosfinancieros.cl/ingreso-de-datos?utm_source=Lidercl_sod_header&utm_medium=lidercl
+                - listitem [ref=e68]:
+                  - link "Mi Club" [ref=e70] [cursor=pointer]:
+                    - /url: https://www.miclublider.cl/
+                - listitem [ref=e71]:
+                  - link "Centro de ayuda" [ref=e73] [cursor=pointer]:
+                    - /url: /ayuda
+          - img [ref=e76]
+      - main [ref=e79]:
+        - generic [ref=e81]:
+          - navigation "breadcrumb" [ref=e85]:
+            - list [ref=e86]:
+              - listitem [ref=e87]:
+                - link "Limpieza y Aseo" [ref=e88] [cursor=pointer]:
+                  - /url: /content/limpieza-y-aseo/43390617
+                - text: /
+              - listitem [ref=e89]:
+                - link "Detergentes" [ref=e90] [cursor=pointer]:
+                  - /url: /browse/limpieza-y-aseo/detergentes/43390617_23557375
+                - text: /
+              - listitem [ref=e91]:
+                - link "Detergente Líquido" [ref=e92] [cursor=pointer]:
+                  - /url: /browse/limpieza-y-aseo/detergentes/detergente-liquido/43390617_23557375_37826208
+          - generic [ref=e94]:
+            - generic [ref=e99]:
+              - link "Ariel" [ref=e104] [cursor=pointer]:
+                - /url: /search?q=ariel
+              - heading "Detergente Líquido Doble Poder Concentrado Para Ropa Blanca Y de Color Botella, 3 L" [level=1] [ref=e106]
+              - generic [ref=e109]:
+                - generic [ref=e110]: El precio actual es
+                - generic [ref=e113]: $12.990
+                - generic [ref=e114]: $4.330 x un
+              - generic [ref=e116]:
+                - button "Agregar al carro - Detergente Líquido Doble Poder Concentrado Para Ropa Blanca Y de Color Botella, 3 L" [ref=e124] [cursor=pointer]:
+                  - generic [ref=e125]: Agregar al carro
+                - separator [ref=e127]
+              - link "Tarjeta de débito One 6% devolución en Pesos Mi Club Solicita aquí" [ref=e129] [cursor=pointer]:
+                - /url: https://tarjetadigital.liderbciserviciosfinancieros.cl/ingreso-de-datos?utm_source=Lidercl_sod_pdp&utm_medium=lidercl
+                - generic [ref=e130]:
+                  - img "Tarjeta de débito ONE" [ref=e131]
+                  - generic [ref=e132]:
+                    - generic [ref=e133]: 6% devolución en Pesos Mi Club
+                    - generic "Tarjeta de débito One 6% devolución en Pesos Mi Club Solicita aquí" [ref=e134]: Solicita aquí
+              - generic [ref=e137]:
+                - generic [ref=e138]: Derecho a retracto
+                - button "detalles" [ref=e139] [cursor=pointer]
+              - generic [ref=e145]:
+                - generic [ref=e146]: 
+                - generic "Vendido y enviado por Lider" [ref=e149]
+            - generic [ref=e155]:
+              - generic [ref=e157]:
+                - generic [ref=e158]:
+                  - generic [ref=e159]: 
+                  - button "thumbnail image 1 of Detergente Líquido Doble Poder Concentrado Para Ropa Blanca Y de Color Botella, 3 L, 1 of 5" [ref=e161]:
+                    - generic [ref=e162]:
+                      - img "thumbnail image 1 of Detergente Líquido Doble Poder Concentrado Para Ropa Blanca Y de Color Botella, 3 L, 1 of 5"
+                  - button "thumbnail image 2 of Detergente Líquido Doble Poder Concentrado Para Ropa Blanca Y de Color Botella, 3 L, 2 of 5" [ref=e164]:
+                    - generic [ref=e165]:
+                      - img "thumbnail image 2 of Detergente Líquido Doble Poder Concentrado Para Ropa Blanca Y de Color Botella, 3 L, 2 of 5"
+                  - button "thumbnail image 3 of Detergente Líquido Doble Poder Concentrado Para Ropa Blanca Y de Color Botella, 3 L, 3 of 5" [ref=e167]:
+                    - generic [ref=e168]:
+                      - img "thumbnail image 3 of Detergente Líquido Doble Poder Concentrado Para Ropa Blanca Y de Color Botella, 3 L, 3 of 5"
+                  - button "thumbnail image 4 of Detergente Líquido Doble Poder Concentrado Para Ropa Blanca Y de Color Botella, 3 L, 4 of 5" [ref=e170]:
+                    - generic [ref=e171]:
+                      - img "thumbnail image 4 of Detergente Líquido Doble Poder Concentrado Para Ropa Blanca Y de Color Botella, 3 L, 4 of 5"
+                  - button "thumbnail image 5 of Detergente Líquido Doble Poder Concentrado Para Ropa Blanca Y de Color Botella, 3 L, 5 of 5" [ref=e173]:
+                    - generic [ref=e174]:
+                      - img "thumbnail image 5 of Detergente Líquido Doble Poder Concentrado Para Ropa Blanca Y de Color Botella, 3 L, 5 of 5"
+                  - generic [ref=e175]: 
+                - generic [ref=e176]:
+                  - img "Detergente Líquido Doble Poder Concentrado Para Ropa Blanca Y de Color Botella, 3 L" [ref=e178]
+                  - button "Ampliar imagen modal" [ref=e182]:
+                    - generic [ref=e183]: 
+              - generic [ref=e185]:
+                - heading "Información del producto" [level=2] [ref=e188]
+                - separator [ref=e189]
+                - generic [ref=e190]:
+                  - separator [ref=e191]
+                  - generic [ref=e192]:
+                    - heading "Detalles del producto" [level=3] [ref=e193]
+                    - button "Detalles del producto" [expanded] [ref=e195]:
+                      - generic [ref=e196]: 
+                  - generic [ref=e199]:
+                    - list [ref=e203]:
+                      - listitem [ref=e204]: Detergente Líquido Doble Poder Concentrado Para Ropa Blanca Y de Color Botella
+                    - generic [ref=e207]: "Descubre el detergente líquido Ariel Doble Poder Concentrado para Ropa Blanca y de Color, ideal para quienes buscan un removedor de manchas eficaz y un cuidado excepcional para su ropa. Su fórmula concentrada combina un sistema de bloque enzimático y surfactantes que eliminan las manchas difíciles, como grasa y percudido, al primer lavado. Además, su uso es eficiente: con menos de una tapita, obtienes resultados sorprendentes. Dale a tu ropa el tratamiento que se merece con el detergente Ariel, que también protege los colores y deja un aroma fresco. REMUEVE MANCHAS: Eficaz contra manchas difíciles como grasa y suciedad, cuidando tu ropa en cada lavado. LIMPIEZA SUPERIOR: Su fórmula con bloque enzimático y surfactantes asegura una limpieza profunda y rápida. CONCENTRADO: Menos de una tapita es suficiente para obtener resultados excepcionales, haciendo que tu producto rinda más. IDEAL PARA TODOS: Perfecto para lavar ropa blanca y de color, manteniendo la intensidad de los colores. AROMA FRESCO: Deja en tu ropa un aroma increíble que perdura tras cada lavado. COMPATIBLE: Apto para lavadoras HE, de carga superior y frontal, para mayor comodidad. PAQUETE ECONÓMICO: Contenido de 3 litros, ideal para mantenerte abastecido y listo para el lavado. Instrucciones de uso: 1. Mida. Para lavadoras de 4 a 8 kg llene aproximadamente hasta la línea 1 de la tapa, para lavadoras de 9 kg o más llene aproximadamente hasta línea 3 de la tapa. Para remover manchas más fácilmente dosifique 1 tapa. 2. Aplique sobre las manchas. Vierta un poco de producto directamente sobre las manchas y deje actuar por 5 min. 3. Lave. Agregue la cantidad restante en la lavadora y lave. Importante, lea atentamente las instrucciones de lavado recomendadas en las etiquetas de las prendas."
+              - generic [ref=e209]:
+                - separator [ref=e210]
+                - generic [ref=e211]:
+                  - separator [ref=e212]
+                  - generic [ref=e213]:
+                    - heading "Especificaciones" [level=2] [ref=e214]
+                    - button "Especificaciones" [expanded] [ref=e216]:
+                      - generic [ref=e217]: 
+                  - generic [ref=e220]:
+                    - generic [ref=e221]:
+                      - heading "Descripción" [level=3] [ref=e222]
+                      - generic [ref=e223]: Detergente Líquido Doble Poder Concentrado Para Ropa Blanca Y de Color Botella
+                    - generic [ref=e224]:
+                      - heading "Marca" [level=3] [ref=e225]
+                      - generic [ref=e226]: Ariel
+                    - generic [ref=e227]:
+                      - heading "Tipo de producto" [level=3] [ref=e228]
+                      - generic [ref=e229]: Detergente
+                    - generic [ref=e230]:
+                      - heading "País de origen" [level=3] [ref=e231]
+                      - generic [ref=e232]: MX
+                    - generic [ref=e233]:
+                      - heading "Variedad" [level=3] [ref=e234]
+                      - generic [ref=e235]: Doble Poder
+                    - generic [ref=e236]:
+                      - heading "Uso recomendado" [level=3] [ref=e237]
+                      - generic [ref=e238]: Ropa blanca y de color
+                    - generic [ref=e239]:
+                      - heading "Advertencias de uso" [level=3] [ref=e240]
+                      - generic [ref=e241]: Mantener fuera del alcance de los niños. En caso de contacto con los ojos, enjuagar con abundante agua
+                    - generic [ref=e242]:
+                      - heading "Contenido neto" [level=3] [ref=e243]
+                      - generic [ref=e244]: 3 l
+                    - generic [ref=e245]:
+                      - heading "Quitamanchas" [level=3] [ref=e246]
+                      - generic [ref=e247]: Sí
+                    - generic [ref=e248]:
+                      - heading "Presentación" [level=3] [ref=e249]
+                      - generic [ref=e250]: Botella
+                    - generic [ref=e251]:
+                      - heading "Tipo de envase" [level=3] [ref=e252]
+                      - generic [ref=e253]: Desechable
+                    - generic [ref=e254]:
+                      - heading "Item" [level=3] [ref=e255]
+                      - generic [ref=e256]: "561304"
+                    - generic [ref=e257]:
+                      - heading "Concentrado" [level=3] [ref=e258]
+                      - generic [ref=e259]: Sí
+                    - generic [ref=e260]:
+                      - heading "Formato" [level=3] [ref=e261]
+                      - generic [ref=e262]: Líquido
+          - generic [ref=e269]:
+            - heading "Complementos para tu compra" [level=2] [ref=e276]
+            - generic [ref=e277]:
+              - text: 
+              - list [ref=e278]:
+                - listitem [ref=e279]:
+                  - group "Producto" [ref=e280]:
+                    - link "Lavalozas Líquido Limón Con Bio Activos Concentrado Botella, 1,2 L" [ref=e281] [cursor=pointer]:
+                      - /url: /ip/bano-y-cocina/00780500032200
+                      - heading "Lavalozas Líquido Limón Con Bio Activos Concentrado Botella, 1,2 L" [level=3] [ref=e283]
+                    - generic [ref=e285]:
+                      - generic [ref=e286]:
+                        - img "Lavalozas Líquido Limón Con Bio Activos Concentrado Botella, 1,2 L"
+                      - button "Agregar al carro - Lavalozas Líquido Limón Con Bio Activos Concentrado Botella, 1,2 L" [ref=e289] [cursor=pointer]:
+                        - generic "agregar" [ref=e290]: 
+                        - generic [ref=e291]: Agregar
+                    - generic [ref=e294]:
+                      - generic [ref=e295]: $3.550
+                      - generic [ref=e296]: precio actual $3.550
+                      - generic [ref=e297]: $2.958 x lt
+                    - generic [ref=e299]: Quix
+                    - generic [ref=e301]: Lavalozas Líquido Limón Con Bio Activos Concentrado Botella, 1,2 L
+                - listitem [ref=e302]:
+                  - group "Producto" [ref=e303]:
+                    - link "Papel Higiénico Ultra Doble Hoja 50 m, 12 Un" [ref=e304] [cursor=pointer]:
+                      - /url: /ip/papeles/00780650050984
+                      - heading "Papel Higiénico Ultra Doble Hoja 50 m, 12 Un" [level=3] [ref=e306]
+                    - generic [ref=e308]:
+                      - generic [ref=e309]:
+                        - img "Papel Higiénico Ultra Doble Hoja 50 m, 12 Un"
+                      - button "Agregar al carro - Papel Higiénico Ultra Doble Hoja 50 m, 12 Un" [ref=e312] [cursor=pointer]:
+                        - generic "agregar" [ref=e313]: 
+                        - generic [ref=e314]: Agregar
+                    - generic [ref=e317]:
+                      - generic [ref=e318]: $12.890
+                      - generic [ref=e319]: precio actual $12.890
+                      - generic [ref=e320]: $21 x m
+                    - generic [ref=e322]: Elite
+                    - generic [ref=e324]: Papel Higiénico Ultra Doble Hoja 50 m, 12 Un
+                - listitem [ref=e325]:
+                  - group "Producto" [ref=e326]:
+                    - link "Suavizante Líquido Classic Botella, 1,5 L" [ref=e327] [cursor=pointer]:
+                      - /url: /ip/detergentes/00780500031689
+                      - heading "Suavizante Líquido Classic Botella, 1,5 L" [level=3] [ref=e329]
+                    - generic [ref=e331]:
+                      - generic [ref=e332]:
+                        - img "Suavizante Líquido Classic Botella, 1,5 L"
+                      - button "Agregar al carro - Suavizante Líquido Classic Botella, 1,5 L" [ref=e335] [cursor=pointer]:
+                        - generic "agregar" [ref=e336]: 
+                        - generic [ref=e337]: Agregar
+                    - generic [ref=e340]:
+                      - generic [ref=e341]: $4.190
+                      - generic [ref=e342]: precio actual $4.190
+                      - generic [ref=e343]: $2.793 x lt
+                    - generic [ref=e345]: Soft
+                    - generic [ref=e347]: Suavizante Líquido Classic Botella, 1,5 L
+                - listitem [ref=e348]:
+                  - group "Producto" [ref=e349]:
+                    - link "Suavizante Concentrado Líquido Brisa de Verano Botella, 1 l" [ref=e350] [cursor=pointer]:
+                      - /url: /ip/detergentes/00750633933264
+                      - heading "Suavizante Concentrado Líquido Brisa de Verano Botella, 1 l" [level=3] [ref=e352]
+                    - generic [ref=e354]:
+                      - generic [ref=e355]:
+                        - img "Suavizante Concentrado Líquido Brisa de Verano Botella, 1 l"
+                      - button "Agregar al carro - Suavizante Concentrado Líquido Brisa de Verano Botella, 1 l" [ref=e358] [cursor=pointer]:
+                        - generic "agregar" [ref=e359]: 
+                        - generic [ref=e360]: Agregar
+                    - generic [ref=e363]:
+                      - generic [ref=e364]: $7.290
+                      - generic [ref=e365]: precio actual $7.290
+                      - generic [ref=e366]: $7.290 x lt
+                    - generic [ref=e368]: Downy
+                    - generic [ref=e370]: Suavizante Concentrado Líquido Brisa de Verano Botella, 1 l
+                - listitem [ref=e371]:
+                  - group "Producto" [ref=e372]:
+                    - link "Aceite De Maravilla Botella Botella, 1 L" [ref=e373] [cursor=pointer]:
+                      - /url: /ip/aceites-y-aderezos/00780281000209
+                      - heading "Aceite De Maravilla Botella Botella, 1 L" [level=3] [ref=e375]
+                    - generic [ref=e377]:
+                      - generic [ref=e379]: 
+                      - text: Rebaja
+                    - generic [ref=e380]:
+                      - generic [ref=e381]:
+                        - img "Aceite De Maravilla Botella Botella, 1 L"
+                      - button "Agregar al carro - Aceite De Maravilla Botella Botella, 1 L" [ref=e384] [cursor=pointer]:
+                        - generic "agregar" [ref=e385]: 
+                        - generic [ref=e386]: Agregar
+                    - generic [ref=e389]:
+                      - generic [ref=e390]: $2.890
+                      - generic [ref=e391]: precio actual $2.890, Costaba $3.490
+                      - generic [ref=e392]: $2.890 x lt
+                      - generic [ref=e393]: $3.490
+                      - generic [ref=e394]: Ahorra $600
+                    - generic [ref=e396]: Chef
+                    - generic [ref=e398]: Aceite De Maravilla Botella Botella, 1 L
+                - listitem [ref=e399]:
+                  - group "Producto" [ref=e400]:
+                    - link "Suavizante Concentrado Líquido Brisa Intensa Botella, 1 L" [ref=e401] [cursor=pointer]:
+                      - /url: /ip/detergentes/00750043520128
+                      - heading "Suavizante Concentrado Líquido Brisa Intensa Botella, 1 L" [level=3] [ref=e403]
+                    - generic [ref=e405]:
+                      - generic [ref=e407]: 
+                      - text: Rebaja
+                    - generic [ref=e408]:
+                      - generic [ref=e409]:
+                        - img "Suavizante Concentrado Líquido Brisa Intensa Botella, 1 L"
+                      - button "Agregar al carro - Suavizante Concentrado Líquido Brisa Intensa Botella, 1 L" [ref=e412] [cursor=pointer]:
+                        - generic "agregar" [ref=e413]: 
+                        - generic [ref=e414]: Agregar
+                    - generic [ref=e417]:
+                      - generic [ref=e418]: $5.390
+                      - generic [ref=e419]: precio actual $5.390, Costaba $7.290
+                      - generic [ref=e420]: $5.390 x lt
+                      - generic [ref=e421]: $7.290
+                      - generic [ref=e422]: Ahorra $1.900
+                    - generic [ref=e424]: Downy
+                    - generic [ref=e426]: Suavizante Concentrado Líquido Brisa Intensa Botella, 1 L
+                - listitem [ref=e427]:
+                  - group "Producto" [ref=e428]:
+                    - link "Arroz Grado 1 Grano Largo Bolsa, 1 Kg" [ref=e429] [cursor=pointer]:
+                      - /url: /ip/arroz-y-legumbres/00780261500655
+                      - heading "Arroz Grado 1 Grano Largo Bolsa, 1 Kg" [level=3] [ref=e431]
+                    - generic [ref=e433]:
+                      - generic [ref=e434]:
+                        - img "Arroz Grado 1 Grano Largo Bolsa, 1 Kg"
+                      - button "Agregar al carro - Arroz Grado 1 Grano Largo Bolsa, 1 Kg" [ref=e437] [cursor=pointer]:
+                        - generic "agregar" [ref=e438]: 
+                        - generic [ref=e439]: Agregar
+                    - generic [ref=e442]:
+                      - generic [ref=e443]: $2.550
+                      - generic [ref=e444]: precio actual $2.550
+                      - generic [ref=e445]: $13.421 x kg
+                    - generic [ref=e447]: Miraflores
+                    - generic [ref=e449]: Arroz Grado 1 Grano Largo Bolsa, 1 Kg
+                - listitem [ref=e450]:
+                  - group "Producto" [ref=e451]:
+                    - link "Suavizante Concentrado Líquido Sofisticado Frutal Botella, 900 ml" [ref=e452] [cursor=pointer]:
+                      - /url: /ip/detergentes/00750043516000
+                      - heading "Suavizante Concentrado Líquido Sofisticado Frutal Botella, 900 ml" [level=3] [ref=e454]
+                    - generic [ref=e456]:
+                      - generic [ref=e457]:
+                        - img "Suavizante Concentrado Líquido Sofisticado Frutal Botella, 900 ml"
+                      - button "Agregar al carro - Suavizante Concentrado Líquido Sofisticado Frutal Botella, 900 ml" [ref=e460] [cursor=pointer]:
+                        - generic "agregar" [ref=e461]: 
+                        - generic [ref=e462]: Agregar
+                    - generic [ref=e465]:
+                      - generic [ref=e466]: $7.290
+                      - generic [ref=e467]: precio actual $7.290
+                      - generic [ref=e468]: $8.100 x lt
+                    - generic [ref=e470]: Downy
+                    - generic [ref=e472]: Suavizante Concentrado Líquido Sofisticado Frutal Botella, 900 ml
+                - listitem [ref=e473]:
+                  - group "Producto" [ref=e474]:
+                    - link "Toalla de Papel Ultra Megarollo Doble Hoja 26 m, 2 Un" [ref=e475] [cursor=pointer]:
+                      - /url: /ip/papeles/00780650040684
+                      - heading "Toalla de Papel Ultra Megarollo Doble Hoja 26 m, 2 Un" [level=3] [ref=e477]
+                    - generic [ref=e479]:
+                      - generic [ref=e480]:
+                        - img "Toalla de Papel Ultra Megarollo Doble Hoja 26 m, 2 Un"
+                      - button "Agregar al carro - Toalla de Papel Ultra Megarollo Doble Hoja 26 m, 2 Un" [ref=e483] [cursor=pointer]:
+                        - generic "agregar" [ref=e484]: 
+                        - generic [ref=e485]: Agregar
+                    - generic [ref=e488]:
+                      - generic [ref=e489]: $3.090
+                      - generic [ref=e490]: precio actual $3.090
+                      - generic [ref=e491]: $48 x m
+                    - generic [ref=e493]: Nova
+                    - generic [ref=e495]: Toalla de Papel Ultra Megarollo Doble Hoja 26 m, 2 Un
+                - listitem [ref=e496]:
+                  - group "Producto" [ref=e497]:
+                    - link "Papel Higiénico Mega Doble Hoja 50 m, 12 Un" [ref=e498] [cursor=pointer]:
+                      - /url: /ip/papeles/00780650050723
+                      - heading "Papel Higiénico Mega Doble Hoja 50 m, 12 Un" [level=3] [ref=e500]
+                    - generic [ref=e502]:
+                      - generic [ref=e503]:
+                        - img "Papel Higiénico Mega Doble Hoja 50 m, 12 Un"
+                      - button "Agregar al carro - Papel Higiénico Mega Doble Hoja 50 m, 12 Un" [ref=e506] [cursor=pointer]:
+                        - generic "agregar" [ref=e507]: 
+                        - generic [ref=e508]: Agregar
+                    - generic [ref=e511]:
+                      - generic [ref=e512]: $9.990
+                      - generic [ref=e513]: precio actual $9.990
+                      - generic [ref=e514]: $17 x m
+                    - generic [ref=e516]: Confort
+                    - generic [ref=e518]: Papel Higiénico Mega Doble Hoja 50 m, 12 Un
+                - listitem [ref=e519]:
+                  - group "Producto" [ref=e520]:
+                    - link "Toalla de Papel Doble Hoja 100 m Gigante Bolsa, 1 Un" [ref=e521] [cursor=pointer]:
+                      - /url: /ip/papeles/00780650040682
+                      - heading "Toalla de Papel Doble Hoja 100 m Gigante Bolsa, 1 Un" [level=3] [ref=e523]
+                    - generic [ref=e525]:
+                      - generic [ref=e526]:
+                        - img "Toalla de Papel Doble Hoja 100 m Gigante Bolsa, 1 Un"
+                      - button "Agregar al carro - Toalla de Papel Doble Hoja 100 m Gigante Bolsa, 1 Un" [ref=e529] [cursor=pointer]:
+                        - generic "agregar" [ref=e530]: 
+                        - generic [ref=e531]: Agregar
+                    - generic [ref=e534]:
+                      - generic [ref=e535]: $4.450
+                      - generic [ref=e536]: precio actual $4.450
+                      - generic [ref=e537]: $45 x m
+                    - generic [ref=e539]: Nova
+                    - generic [ref=e541]: Toalla de Papel Doble Hoja 100 m Gigante Bolsa, 1 Un
+                - listitem [ref=e542]:
+                  - group "Producto" [ref=e543]:
+                    - link "Papel Higiénico Doble Hoja Ultra 40 m, 18 Un" [ref=e544] [cursor=pointer]:
+                      - /url: /ip/papeles/00780650050997
+                      - heading "Papel Higiénico Doble Hoja Ultra 40 m, 18 Un" [level=3] [ref=e546]
+                    - generic [ref=e548]:
+                      - generic [ref=e549]:
+                        - img "Papel Higiénico Doble Hoja Ultra 40 m, 18 Un"
+                      - button "Agregar al carro - Papel Higiénico Doble Hoja Ultra 40 m, 18 Un" [ref=e552] [cursor=pointer]:
+                        - generic "agregar" [ref=e553]: 
+                        - generic [ref=e554]: Agregar
+                    - generic [ref=e557]:
+                      - generic [ref=e558]: $15.290
+                      - generic [ref=e559]: precio actual $15.290
+                      - generic [ref=e560]: $21 x m
+                    - generic [ref=e562]: Elite
+                    - generic [ref=e564]: Papel Higiénico Doble Hoja Ultra 40 m, 18 Un
+                - listitem [ref=e565]:
+                  - group "Producto" [ref=e566]:
+                    - link "Toalla de Papel Gigante Doble Hoja 70 m, 1 Un" [ref=e567] [cursor=pointer]:
+                      - /url: /ip/papeles/00780650040686
+                      - heading "Toalla de Papel Gigante Doble Hoja 70 m, 1 Un" [level=3] [ref=e569]
+                    - generic [ref=e571]:
+                      - generic [ref=e572]:
+                        - img "Toalla de Papel Gigante Doble Hoja 70 m, 1 Un"
+                      - button "Agregar al carro - Toalla de Papel Gigante Doble Hoja 70 m, 1 Un" [ref=e575] [cursor=pointer]:
+                        - generic "agregar" [ref=e576]: 
+                        - generic [ref=e577]: Agregar
+                    - generic [ref=e580]:
+                      - generic [ref=e581]: $3.590
+                      - generic [ref=e582]: precio actual $3.590
+                      - generic [ref=e583]: $51 x un
+                    - generic [ref=e585]: Nova
+                    - generic [ref=e587]: Toalla de Papel Gigante Doble Hoja 70 m, 1 Un
+                - listitem [ref=e588]:
+                  - group "Producto" [ref=e589]:
+                    - link "Salsa de Tomate Italiana Pack 6 Un Bolsa, 200 g" [ref=e590] [cursor=pointer]:
+                      - /url: /ip/pastas-y-salsas/00780257535517
+                      - heading "Salsa de Tomate Italiana Pack 6 Un Bolsa, 200 g" [level=3] [ref=e592]
+                    - generic [ref=e594]:
+                      - generic [ref=e595]:
+                        - img "Salsa de Tomate Italiana Pack 6 Un Bolsa, 200 g"
+                      - button "Agregar al carro - Salsa de Tomate Italiana Pack 6 Un Bolsa, 200 g" [ref=e598] [cursor=pointer]:
+                        - generic "agregar" [ref=e599]: 
+                        - generic [ref=e600]: Agregar
+                    - generic [ref=e603]:
+                      - generic [ref=e604]: $3.890
+                      - generic [ref=e605]: precio actual $3.890
+                      - generic [ref=e606]: $3.242 x kg
+                    - generic [ref=e608]: Pomarola
+                    - generic [ref=e610]: Salsa de Tomate Italiana Pack 6 Un Bolsa, 200 g
+                - listitem [ref=e611]:
+                  - group "Producto" [ref=e612]:
+                    - link "Servilletas Cóctel 24x24 cm, 220 Un" [ref=e613] [cursor=pointer]:
+                      - /url: /ip/papeles/00780650022135
+                      - heading "Servilletas Cóctel 24x24 cm, 220 Un" [level=3] [ref=e615]
+                    - generic [ref=e617]:
+                      - generic [ref=e618]:
+                        - img "Servilletas Cóctel 24x24 cm, 220 Un"
+                      - button "Agregar al carro - Servilletas Cóctel 24x24 cm, 220 Un" [ref=e621] [cursor=pointer]:
+                        - generic "agregar" [ref=e622]: 
+                        - generic [ref=e623]: Agregar
+                    - generic [ref=e626]:
+                      - generic [ref=e627]: $1.890
+                      - generic [ref=e628]: precio actual $1.890
+                      - generic [ref=e629]: $859 x 100un
+                    - generic [ref=e631]: Elite
+                    - generic [ref=e633]: Servilletas Cóctel 24x24 cm, 220 Un
+                - listitem [ref=e634]:
+                  - group "Producto" [ref=e635]:
+                    - link "Carne Molida de Vacuno Tártara 4% grasa Bandeja, 500 gr" [ref=e636] [cursor=pointer]:
+                      - /url: /ip/vacuno/00040000518704
+                      - heading "Carne Molida de Vacuno Tártara 4% grasa Bandeja, 500 gr" [level=3] [ref=e638]
+                    - generic [ref=e640]: 2 x $13.000
+                    - generic [ref=e641]:
+                      - generic [ref=e642]:
+                        - img "Carne Molida de Vacuno Tártara 4% grasa Bandeja, 500 gr"
+                      - button "Agregar al carro - Carne Molida de Vacuno Tártara 4% grasa Bandeja, 500 gr" [ref=e645] [cursor=pointer]:
+                        - generic "agregar" [ref=e646]: 
+                        - generic [ref=e647]: Agregar
+                    - generic [ref=e650]:
+                      - generic [ref=e651]: $6.990
+                      - generic [ref=e652]: precio actual $6.990
+                      - generic [ref=e653]: $13.980 x kg
+                    - generic [ref=e655]: El Buen Corte
+                    - generic [ref=e657]: Carne Molida de Vacuno Tártara 4% grasa Bandeja, 500 gr
+                - listitem [ref=e658]:
+                  - group "Producto" [ref=e659]:
+                    - link "Limpiador Crema Original Botella, 500 ml" [ref=e660] [cursor=pointer]:
+                      - /url: /ip/bano-y-cocina/00779129079422
+                      - heading "Limpiador Crema Original Botella, 500 ml" [level=3] [ref=e662]
+                    - generic [ref=e664]:
+                      - generic [ref=e665]:
+                        - img "Limpiador Crema Original Botella, 500 ml"
+                      - button "Agregar al carro - Limpiador Crema Original Botella, 500 ml" [ref=e668] [cursor=pointer]:
+                        - generic "agregar" [ref=e669]: 
+                        - generic [ref=e670]: Agregar
+                    - generic [ref=e673]:
+                      - generic [ref=e674]: $2.790
+                      - generic [ref=e675]: precio actual $2.790
+                      - generic [ref=e676]: $5.580 x lt
+                    - generic [ref=e678]: CIF
+                    - generic [ref=e680]: Limpiador Crema Original Botella, 500 ml
+                - listitem [ref=e681]:
+                  - group "Producto" [ref=e682]:
+                    - link "Sal de Mesa Bolsa, 1 Kg" [ref=e683] [cursor=pointer]:
+                      - /url: /ip/aceites-y-aderezos/00780360003127
+                      - heading "Sal de Mesa Bolsa, 1 Kg" [level=3] [ref=e685]
+                    - generic [ref=e687]:
+                      - generic [ref=e688]:
+                        - img "Sal de Mesa Bolsa, 1 Kg"
+                      - button "Agregar al carro - Sal de Mesa Bolsa, 1 Kg" [ref=e691] [cursor=pointer]:
+                        - generic "agregar" [ref=e692]: 
+                        - generic [ref=e693]: Agregar
+                    - generic [ref=e696]:
+                      - generic [ref=e697]: $530
+                      - generic [ref=e698]: precio actual $530
+                      - generic [ref=e699]: $530 x kg
+                    - generic [ref=e701]: Lobos
+                    - generic [ref=e703]: Sal de Mesa Bolsa, 1 Kg
+                - listitem [ref=e704]:
+                  - group "Producto" [ref=e705]:
+                    - link "Arroz Grado 1 Grano Largo Bolsa, 1 kg" [ref=e706] [cursor=pointer]:
+                      - /url: /ip/arroz-y-legumbres/00780311010221
+                      - heading "Arroz Grado 1 Grano Largo Bolsa, 1 kg" [level=3] [ref=e708]
+                    - generic [ref=e710]:
+                      - generic [ref=e711]:
+                        - img "Arroz Grado 1 Grano Largo Bolsa, 1 kg"
+                      - button "Agregar al carro - Arroz Grado 1 Grano Largo Bolsa, 1 kg" [ref=e714] [cursor=pointer]:
+                        - generic "agregar" [ref=e715]: 
+                        - generic [ref=e716]: Agregar
+                    - generic [ref=e719]:
+                      - generic [ref=e720]: $2.350
+                      - generic [ref=e721]: precio actual $2.350
+                      - generic [ref=e722]: $2.350 x kg
+                    - generic [ref=e724]: Banquete
+                    - generic [ref=e726]: Arroz Grado 1 Grano Largo Bolsa, 1 kg
+                - listitem [ref=e727]:
+                  - group "Producto" [ref=e728]:
+                    - link "Azúcar Blanca Granulada Bolsa, 1 Kg" [ref=e729] [cursor=pointer]:
+                      - /url: /ip/dulces-mermeladas-y-manjar/00780150523191
+                      - heading "Azúcar Blanca Granulada Bolsa, 1 Kg" [level=3] [ref=e731]
+                    - generic [ref=e733]: 2 x $2.490
+                    - generic [ref=e734]:
+                      - generic [ref=e735]:
+                        - img "Azúcar Blanca Granulada Bolsa, 1 Kg"
+                      - button "Agregar al carro - Azúcar Blanca Granulada Bolsa, 1 Kg" [ref=e738] [cursor=pointer]:
+                        - generic "agregar" [ref=e739]: 
+                        - generic [ref=e740]: Agregar
+                    - generic [ref=e743]:
+                      - generic [ref=e744]: $1.390
+                      - generic [ref=e745]: precio actual $1.390
+                      - generic [ref=e746]: $1.390 x kg
+                    - generic [ref=e748]: Iansa
+                    - generic [ref=e750]: Azúcar Blanca Granulada Bolsa, 1 Kg
+                - listitem [ref=e751]:
+                  - group "Producto" [ref=e752]:
+                    - link "Atún Agua Lata, Drenado 104 g - Neto 160 g" [ref=e753] [cursor=pointer]:
+                      - /url: /ip/conservas/00770236700391
+                      - heading "Atún Agua Lata, Drenado 104 g - Neto 160 g" [level=3] [ref=e755]
+                    - generic [ref=e757]:
+                      - generic [ref=e758]:
+                        - img "Atún Agua Lata, Drenado 104 g - Neto 160 g"
+                      - button "Agregar al carro - Atún Agua Lata, Drenado 104 g - Neto 160 g" [ref=e761] [cursor=pointer]:
+                        - generic "agregar" [ref=e762]: 
+                        - generic [ref=e763]: Agregar
+                    - generic [ref=e766]:
+                      - generic [ref=e767]: $1.850
+                      - generic [ref=e768]: precio actual $1.850
+                      - generic [ref=e769]: $17.788 x kg
+                    - generic [ref=e771]: Van Camp's
+                    - generic [ref=e773]: Atún Agua Lata, Drenado 104 g - Neto 160 g
+                - listitem [ref=e774]:
+                  - group "Producto" [ref=e775]:
+                    - link "Mantequilla Con sal, 250 g" [ref=e776] [cursor=pointer]:
+                      - /url: /ip/mantequillas-y-margarinas/00780292020330
+                      - heading "Mantequilla Con sal, 250 g" [level=3] [ref=e778]
+                    - generic [ref=e780]:
+                      - generic [ref=e781]:
+                        - img "Mantequilla Con sal, 250 g"
+                      - button "Agregar al carro - Mantequilla Con sal, 250 g" [ref=e784] [cursor=pointer]:
+                        - generic "agregar" [ref=e785]: 
+                        - generic [ref=e786]: Agregar
+                    - generic [ref=e789]:
+                      - generic [ref=e790]: $3.290
+                      - generic [ref=e791]: precio actual $3.290
+                      - generic [ref=e792]: $13.160 x kg
+                    - generic [ref=e794]: Colun
+                    - generic [ref=e796]: Mantequilla Con sal, 250 g
+                - listitem [ref=e797]:
+                  - group "Producto" [ref=e798]:
+                    - link "Bolsa de Basura Mediana 70x90 cm, 10 Un" [ref=e799] [cursor=pointer]:
+                      - /url: /ip/mas-sustentables/00780681080044
+                      - heading "Bolsa de Basura Mediana 70x90 cm, 10 Un" [level=3] [ref=e801]
+                    - generic [ref=e803]:
+                      - generic [ref=e804]:
+                        - img "Bolsa de Basura Mediana 70x90 cm, 10 Un"
+                      - button "Agregar al carro - Bolsa de Basura Mediana 70x90 cm, 10 Un" [ref=e807] [cursor=pointer]:
+                        - generic "agregar" [ref=e808]: 
+                        - generic [ref=e809]: Agregar
+                    - generic [ref=e812]:
+                      - generic [ref=e813]: $1.190
+                      - generic [ref=e814]: precio actual $1.190
+                      - generic [ref=e815]: $119 x un
+                    - generic [ref=e817]: Virutex
+                    - generic [ref=e819]: Bolsa de Basura Mediana 70x90 cm, 10 Un
+                - listitem [ref=e820]:
+                  - group "Producto" [ref=e821]:
+                    - link "Suavizante Líquido Classic Botella, 5 L" [ref=e822] [cursor=pointer]:
+                      - /url: /ip/detergentes/00780500012764
+                      - heading "Suavizante Líquido Classic Botella, 5 L" [level=3] [ref=e824]
+                    - generic [ref=e826]:
+                      - generic [ref=e827]:
+                        - img "Suavizante Líquido Classic Botella, 5 L"
+                      - button "Agregar al carro - Suavizante Líquido Classic Botella, 5 L" [ref=e830] [cursor=pointer]:
+                        - generic "agregar" [ref=e831]: 
+                        - generic [ref=e832]: Agregar
+                    - generic [ref=e835]:
+                      - generic [ref=e836]: $9.490
+                      - generic [ref=e837]: precio actual $9.490
+                      - generic [ref=e838]: $1.898 x lt
+                    - generic [ref=e840]: Soft
+                    - generic [ref=e842]: Suavizante Líquido Classic Botella, 5 L
+                - listitem [ref=e843]:
+                  - group "Producto" [ref=e844]:
+                    - link "Aceite Vegetal Botella, 1 L" [ref=e845] [cursor=pointer]:
+                      - /url: /ip/aceites-y-aderezos/00780281001202
+                      - heading "Aceite Vegetal Botella, 1 L" [level=3] [ref=e847]
+                    - generic [ref=e849]:
+                      - generic [ref=e850]:
+                        - img "Aceite Vegetal Botella, 1 L"
+                      - button "Agregar al carro - Aceite Vegetal Botella, 1 L" [ref=e853] [cursor=pointer]:
+                        - generic "agregar" [ref=e854]: 
+                        - generic [ref=e855]: Agregar
+                    - generic [ref=e858]:
+                      - generic [ref=e859]: $2.450
+                      - generic [ref=e860]: precio actual $2.450
+                      - generic [ref=e861]: $2.450 x lt
+                    - generic [ref=e863]: Belmont
+                    - generic [ref=e865]: Aceite Vegetal Botella, 1 L
+              - button "Siguiente diapositiva para la lista Complementos para tu compra" [ref=e866]:
+                - generic [ref=e867]: 
+  - alert [ref=e875]

@@ -1,0 +1,469 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e55]:
+          - navigation "breadcrumb" [ref=e59]:
+            - list [ref=e60]:
+              - listitem [ref=e61]:
+                - link "Lácteos, Fiambrería y Huevos" [ref=e62] [cursor=pointer]:
+                  - /url: /content/lacteos-fiambreria-y-huevos/45669105
+                - text: /
+              - listitem [ref=e63]:
+                - link "Quesos" [ref=e64] [cursor=pointer]:
+                  - /url: /browse/lacteos-fiambreria-y-huevos/quesos/45669105_72564080
+                - text: /
+              - listitem [ref=e65]:
+                - link "Gauda" [ref=e66] [cursor=pointer]:
+                  - /url: /browse/lacteos-fiambreria-y-huevos/quesos/gauda/45669105_72564080_21161375
+          - generic [ref=e68]:
+            - generic [ref=e73]:
+              - link "Acuenta" [ref=e78] [cursor=pointer]:
+                - /url: /search?q=acuenta
+              - heading "Queso Tipo Gauda Laminado, 500 g" [level=1] [ref=e80]
+              - generic [ref=e83]:
+                - generic [ref=e84]: El precio actual es
+                - generic [ref=e87]: $4.390
+                - generic [ref=e88]: $8.780 x kg
+              - generic [ref=e90]:
+                - button "Agregar al carro - Queso Tipo Gauda Laminado, 500 g" [ref=e98] [cursor=pointer]:
+                  - generic [ref=e99]: Agregar al carro
+                - separator [ref=e101]
+              - link "Tarjeta de débito One 6% devolución en Pesos Mi Club Solicita aquí" [ref=e103] [cursor=pointer]:
+                - /url: https://tarjetadigital.liderbciserviciosfinancieros.cl/ingreso-de-datos?utm_source=Lidercl_sod_pdp&utm_medium=lidercl
+                - generic [ref=e104]:
+                  - img "Tarjeta de débito ONE" [ref=e105]
+                  - generic [ref=e106]:
+                    - generic [ref=e107]: 6% devolución en Pesos Mi Club
+                    - generic "Tarjeta de débito One 6% devolución en Pesos Mi Club Solicita aquí" [ref=e108]: Solicita aquí
+              - generic [ref=e111]:
+                - generic [ref=e112]: Derecho a retracto
+                - button "detalles" [ref=e113] [cursor=pointer]
+              - generic [ref=e119]:
+                - generic [ref=e120]: 
+                - generic "Vendido y enviado por Lider" [ref=e123]
+            - generic [ref=e129]:
+              - generic [ref=e131]:
+                - generic [ref=e132]:
+                  - generic [ref=e133]: 
+                  - button "thumbnail image 1 of Queso Tipo Gauda Laminado, 500 g, 1 of 1" [ref=e135]:
+                    - generic [ref=e136]:
+                      - img "thumbnail image 1 of Queso Tipo Gauda Laminado, 500 g, 1 of 1"
+                  - generic [ref=e137]: 
+                - generic [ref=e138]:
+                  - img "Queso Tipo Gauda Laminado, 500 g" [ref=e140]
+                  - button "Ampliar imagen modal" [ref=e144]:
+                    - generic [ref=e145]: 
+              - generic [ref=e146]:
+                - heading "Información del producto" [level=2] [ref=e148]
+                - separator [ref=e149]
+                - generic [ref=e151]:
+                  - separator [ref=e152]
+                  - generic [ref=e153]:
+                    - heading "Ficha nutricional" [level=2] [ref=e154]
+                    - button "Ficha nutricional" [expanded] [ref=e156]:
+                      - generic [ref=e157]: 
+                  - generic [ref=e160]:
+                    - paragraph [ref=e162]: Consulta la etiqueta del producto para obtener la información nutricional completa, que puede estar disponible como una imagen alternativa del producto.
+                    - generic [ref=e163]:
+                      - paragraph
+                      - paragraph [ref=e164]: "Porciones por envase: 25"
+                    - table [ref=e165]:
+                      - rowgroup [ref=e166]:
+                        - row "Cantidad por porción 100 gr/ml por Porción" [ref=e167]:
+                          - columnheader "Cantidad por porción" [ref=e168]:
+                            - generic [ref=e169]: Cantidad por porción
+                          - columnheader "100 gr/ml" [ref=e170]
+                          - columnheader "por Porción" [ref=e171]
+                      - rowgroup [ref=e172]:
+                        - row "Energía(kCal) 347.0 69.0" [ref=e173]:
+                          - cell "Energía(kCal)" [ref=e174]
+                          - cell "347.0" [ref=e175]
+                          - cell "69.0" [ref=e176]
+                        - row "Proteínas(g) 26.0 5.2" [ref=e177]:
+                          - cell "Proteínas(g)" [ref=e178]
+                          - cell "26.0" [ref=e179]
+                          - cell "5.2" [ref=e180]
+                        - row "Grasas Totales(g) 27.0 5.4" [ref=e181]:
+                          - cell "Grasas Totales(g)" [ref=e182]
+                          - cell "27.0" [ref=e183]
+                          - cell "5.4" [ref=e184]
+                        - row "Grasas Saturadas(g) 13.4 2.7" [ref=e185]:
+                          - cell "Grasas Saturadas(g)" [ref=e186]
+                          - cell "13.4" [ref=e187]
+                          - cell "2.7" [ref=e188]
+                        - row "Grasas Monoinsaturadas(g) 10.3 2.1" [ref=e189]:
+                          - cell "Grasas Monoinsaturadas(g)" [ref=e190]
+                          - cell "10.3" [ref=e191]
+                          - cell "2.1" [ref=e192]
+                        - row "Grasas Polinsaturadas(g) 2.5 0.5" [ref=e193]:
+                          - cell "Grasas Polinsaturadas(g)" [ref=e194]
+                          - cell "2.5" [ref=e195]
+                          - cell "0.5" [ref=e196]
+                        - row "Ac. Grasos Trans() 0.1 0.0" [ref=e197]:
+                          - cell "Ac. Grasos Trans()" [ref=e198]
+                          - cell "0.1" [ref=e199]
+                          - cell "0.0" [ref=e200]
+                        - row "Colesterol(g) 15.0 3.0" [ref=e201]:
+                          - cell "Colesterol(g)" [ref=e202]
+                          - cell "15.0" [ref=e203]
+                          - cell "3.0" [ref=e204]
+                        - row "Hidratos de Carbono Disp.(g) 0.0 0.0" [ref=e205]:
+                          - cell "Hidratos de Carbono Disp.(g)" [ref=e206]
+                          - cell "0.0" [ref=e207]
+                          - cell "0.0" [ref=e208]
+                        - row "Azúcares Totales(g) 0.0 0.0" [ref=e209]:
+                          - cell "Azúcares Totales(g)" [ref=e210]
+                          - cell "0.0" [ref=e211]
+                          - cell "0.0" [ref=e212]
+                        - row "Sodio(mg) 700.0 140.0" [ref=e213]:
+                          - cell "Sodio(mg)" [ref=e214]
+                          - cell "700.0" [ref=e215]
+                          - cell "140.0" [ref=e216]
+              - generic [ref=e218]:
+                - separator [ref=e219]
+                - generic [ref=e220]:
+                  - separator [ref=e221]
+                  - generic [ref=e222]:
+                    - heading "Detalles del producto" [level=3] [ref=e223]
+                    - button "Detalles del producto" [expanded] [ref=e225]:
+                      - generic [ref=e226]: 
+                  - generic [ref=e229]:
+                    - list [ref=e233]:
+                      - listitem [ref=e234]: Queso Tipo Gauda Laminado
+                    - generic [ref=e237]: El Queso Tipo Gauda Laminado de Acuenta ofrece un sabor suave y cremoso, ideal para enriquecer tus comidas. Presentado en formato laminado, es una excelente opción para sándwiches, ensaladas o tablas de quesos. Con un contenido neto de 500g, este queso debe mantenerse refrigerado entre 0 a 8°C para asegurar su frescura. Su versatilidad lo hace adecuado tanto para recetas diarias como para ocasiones especiales. Ten en cuenta que contiene leche (caseína), lo que lo hace inapropiado para personas con alergias a este componente. Disfruta de su textura y sabor en cada bocado.
+              - generic [ref=e239]:
+                - separator [ref=e240]
+                - generic [ref=e241]:
+                  - separator [ref=e242]
+                  - generic [ref=e243]:
+                    - heading "Especificaciones" [level=2] [ref=e244]
+                    - button "Especificaciones" [expanded] [ref=e246]:
+                      - generic [ref=e247]: 
+                  - generic [ref=e250]:
+                    - generic [ref=e251]:
+                      - heading "Ingredientes" [level=3] [ref=e252]
+                      - generic [ref=e253]: Leche Parcialmente Descremada Pasteurizada, Aceite De Palma (27%), Sal, Cultivos Lácticos, Cuajo, Cloruro De Calcio, Nitrato De Potasio Y Colorante Natural Caroteno.
+                    - generic [ref=e254]:
+                      - heading "Alérgenos declarados" [level=3] [ref=e255]
+                      - generic [ref=e256]: Leche (caseína)
+                    - generic [ref=e257]:
+                      - heading "Descripción" [level=3] [ref=e258]
+                      - generic [ref=e259]: Queso Tipo Gauda Laminado
+                    - generic [ref=e260]:
+                      - heading "Marca" [level=3] [ref=e261]
+                      - generic [ref=e262]: Acuenta
+                    - generic [ref=e263]:
+                      - heading "Tipo de producto" [level=3] [ref=e264]
+                      - generic [ref=e265]: Queso
+                    - generic [ref=e266]:
+                      - heading "País de origen" [level=3] [ref=e267]
+                      - generic [ref=e268]: CL
+                    - generic [ref=e269]:
+                      - heading "Vegano" [level=3] [ref=e270]
+                      - generic [ref=e271]: "no"
+                    - generic [ref=e272]:
+                      - heading "Advertencias de almacenamiento" [level=3] [ref=e273]
+                      - generic [ref=e274]: "no"
+                    - generic [ref=e275]:
+                      - heading "Tipo de envase" [level=3] [ref=e276]
+                      - generic [ref=e277]: No Reciclable
+                    - generic [ref=e278]:
+                      - heading "Variedad" [level=3] [ref=e279]
+                      - generic [ref=e280]: Gauda
+                    - generic [ref=e281]:
+                      - heading "Temperatura de almacenamiento" [level=3] [ref=e282]
+                      - generic [ref=e283]: Mantener Refrigerado 0 a 8°C
+                    - generic [ref=e284]:
+                      - heading "Orgánico" [level=3] [ref=e285]
+                      - generic [ref=e286]: "no"
+                    - generic [ref=e287]:
+                      - heading "Formato" [level=3] [ref=e288]
+                      - generic [ref=e289]: Laminado
+                    - generic [ref=e290]:
+                      - heading "Presentación" [level=3] [ref=e291]
+                      - generic [ref=e292]: Tapa y fondo
+                    - generic [ref=e293]:
+                      - heading "Contenido neto" [level=3] [ref=e294]
+                      - generic [ref=e295]: 500 g
+                    - generic [ref=e296]:
+                      - heading "Item" [level=3] [ref=e297]
+                      - generic [ref=e298]: "5034476"
+                    - generic [ref=e299]:
+                      - heading "Denominación dietética" [level=3] [ref=e300]
+                      - generic [ref=e301]: "no"
+          - generic [ref=e308]:
+            - heading "Complementos para tu compra" [level=2] [ref=e315]
+            - generic [ref=e316]:
+              - text: 
+              - list [ref=e317]:
+                - listitem [ref=e318]:
+                  - group "Producto" [ref=e319]:
+                    - link "Jamón Fiambre Sándwich Granel" [ref=e320] [cursor=pointer]:
+                      - /url: /ip/fiambres-y-embutidos/00207043000000
+                      - heading "Jamón Fiambre Sándwich Granel" [level=3] [ref=e322]
+                    - generic [ref=e324]:
+                      - generic [ref=e325]:
+                        - img "Jamón Fiambre Sándwich Granel"
+                      - button "Agregar al carro - Jamón Fiambre Sándwich Granel" [ref=e328] [cursor=pointer]:
+                        - generic "agregar" [ref=e329]: 
+                        - generic [ref=e330]: Agregar
+                    - generic [ref=e333]:
+                      - generic [ref=e334]: $7.800/kg
+                      - generic [ref=e335]: precio actual $7.800/kg
+                      - generic [ref=e336]: $7.800 x kg
+                    - generic [ref=e338]: PF
+                    - generic [ref=e340]: Jamón Fiambre Sándwich Granel
+                - listitem [ref=e341]:
+                  - group "Producto" [ref=e342]:
+                    - link "Salchicha Tradicional 20 Un, 1 Kg" [ref=e343] [cursor=pointer]:
+                      - /url: /ip/todas-las-carnes/00780190008454
+                      - heading "Salchicha Tradicional 20 Un, 1 Kg" [level=3] [ref=e345]
+                    - generic [ref=e347]:
+                      - generic [ref=e349]: 
+                      - text: Rebaja
+                    - generic [ref=e350]:
+                      - generic [ref=e351]:
+                        - img "Salchicha Tradicional 20 Un, 1 Kg"
+                      - button "Agregar al carro - Salchicha Tradicional 20 Un, 1 Kg" [ref=e354] [cursor=pointer]:
+                        - generic "agregar" [ref=e355]: 
+                        - generic [ref=e356]: Agregar
+                    - generic [ref=e359]:
+                      - generic [ref=e360]: $3.000
+                      - generic [ref=e361]: precio actual $3.000, Costaba $3.350
+                      - generic [ref=e362]: $3.000 x kg
+                      - generic [ref=e363]: $3.350
+                      - generic [ref=e364]: Ahorra $350
+                    - generic [ref=e366]: Winter
+                    - generic [ref=e368]: Salchicha Tradicional 20 Un, 1 Kg
+                - listitem [ref=e369]:
+                  - group "Producto" [ref=e370]:
+                    - link "Pan de Molde Blanco XL, 700 g" [ref=e371] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780340300455
+                      - heading "Pan de Molde Blanco XL, 700 g" [level=3] [ref=e373]
+                    - generic [ref=e375]:
+                      - generic [ref=e377]: 
+                      - text: Rebaja
+                    - generic [ref=e378]:
+                      - generic [ref=e379]:
+                        - img "Pan de Molde Blanco XL, 700 g"
+                      - button "Agregar al carro - Pan de Molde Blanco XL, 700 g" [ref=e382] [cursor=pointer]:
+                        - generic "agregar" [ref=e383]: 
+                        - generic [ref=e384]: Agregar
+                    - generic [ref=e387]:
+                      - generic [ref=e388]: $2.000
+                      - generic [ref=e389]: precio actual $2.000, Costaba $2.390
+                      - generic [ref=e390]: $2.857 x kg
+                      - generic [ref=e391]: $2.390
+                      - generic [ref=e392]: Ahorra $390
+                    - generic [ref=e394]: Cena
+                    - generic [ref=e396]: Pan de Molde Blanco XL, 700 g
+                - listitem [ref=e397]:
+                  - group "Producto" [ref=e398]:
+                    - link "Pan De Molde Blanco Xl, 750 g" [ref=e399] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780349500156
+                      - heading "Pan De Molde Blanco Xl, 750 g" [level=3] [ref=e401]
+                    - generic [ref=e403]:
+                      - generic [ref=e404]:
+                        - img "Pan De Molde Blanco Xl, 750 g"
+                      - button "Agregar al carro - Pan De Molde Blanco Xl, 750 g" [ref=e407] [cursor=pointer]:
+                        - generic "agregar" [ref=e408]: 
+                        - generic [ref=e409]: Agregar
+                    - generic [ref=e412]:
+                      - generic [ref=e413]: $2.000
+                      - generic [ref=e414]: precio actual $2.000
+                      - generic [ref=e415]: $2.000 x kg
+                    - generic [ref=e417]: Lider
+                    - generic [ref=e419]: Pan De Molde Blanco Xl, 750 g
+                - listitem [ref=e420]:
+                  - group "Producto" [ref=e421]:
+                    - link "Salsa de Tomate Italiana Pack 6 Un Bolsa, 1200 g" [ref=e422] [cursor=pointer]:
+                      - /url: /ip/pastas-y-salsas/00780180010287
+                      - heading "Salsa de Tomate Italiana Pack 6 Un Bolsa, 1200 g" [level=3] [ref=e424]
+                    - generic [ref=e426]:
+                      - generic [ref=e427]:
+                        - img "Salsa de Tomate Italiana Pack 6 Un Bolsa, 1200 g"
+                      - button "Agregar al carro - Salsa de Tomate Italiana Pack 6 Un Bolsa, 1200 g" [ref=e430] [cursor=pointer]:
+                        - generic "agregar" [ref=e431]: 
+                        - generic [ref=e432]: Agregar
+                    - generic [ref=e435]:
+                      - generic [ref=e436]: $2.950
+                      - generic [ref=e437]: precio actual $2.950
+                      - generic [ref=e438]: $2.458 x kg
+                    - generic [ref=e440]: Lider
+                    - generic [ref=e442]: Salsa de Tomate Italiana Pack 6 Un Bolsa, 1200 g
+                - listitem [ref=e443]:
+                  - group "Producto" [ref=e444]:
+                    - link "Carne Molida de Vacuno 10% grasa Bandeja, 500 gr" [ref=e445] [cursor=pointer]:
+                      - /url: /ip/vacuno/00040000518707
+                      - heading "Carne Molida de Vacuno 10% grasa Bandeja, 500 gr" [level=3] [ref=e447]
+                    - generic [ref=e449]: 2 x $10.000
+                    - generic [ref=e450]:
+                      - generic [ref=e451]:
+                        - img "Carne Molida de Vacuno 10% grasa Bandeja, 500 gr"
+                      - button "Agregar al carro - Carne Molida de Vacuno 10% grasa Bandeja, 500 gr" [ref=e454] [cursor=pointer]:
+                        - generic "agregar" [ref=e455]: 
+                        - generic [ref=e456]: Agregar
+                    - generic [ref=e459]:
+                      - generic [ref=e460]: $5.190
+                      - generic [ref=e461]: precio actual $5.190
+                      - generic [ref=e462]: $10.380 x kg
+                    - generic [ref=e464]: El Buen Corte
+                    - generic [ref=e466]: Carne Molida de Vacuno 10% grasa Bandeja, 500 gr
+                - listitem [ref=e467]:
+                  - group "Producto" [ref=e468]:
+                    - link "Margarina Tradicional, 500 g" [ref=e469] [cursor=pointer]:
+                      - /url: /ip/mantequillas-y-margarinas/00789300006525
+                      - heading "Margarina Tradicional, 500 g" [level=3] [ref=e471]
+                    - generic [ref=e473]:
+                      - generic [ref=e474]:
+                        - img "Margarina Tradicional, 500 g"
+                      - button "Agregar al carro - Margarina Tradicional, 500 g" [ref=e477] [cursor=pointer]:
+                        - generic "agregar" [ref=e478]: 
+                        - generic [ref=e479]: Agregar
+                    - generic [ref=e482]:
+                      - generic [ref=e483]: $2.550
+                      - generic [ref=e484]: precio actual $2.550
+                      - generic [ref=e485]: $5.100 x kg
+                    - generic [ref=e487]: Qualy
+                    - generic [ref=e489]: Margarina Tradicional, 500 g
+                - listitem [ref=e490]:
+                  - group "Producto" [ref=e491]:
+                    - link "Lasaña Precocida Caja, 360 g" [ref=e492] [cursor=pointer]:
+                      - /url: /ip/pastas-y-salsas/00780250022166
+                      - heading "Lasaña Precocida Caja, 360 g" [level=3] [ref=e494]
+                    - generic [ref=e496]:
+                      - generic [ref=e498]: 
+                      - text: Rebaja
+                    - generic [ref=e499]:
+                      - generic [ref=e500]:
+                        - img "Lasaña Precocida Caja, 360 g"
+                      - button "Agregar al carro - Lasaña Precocida Caja, 360 g" [ref=e503] [cursor=pointer]:
+                        - generic "agregar" [ref=e504]: 
+                        - generic [ref=e505]: Agregar
+                    - generic [ref=e508]:
+                      - generic [ref=e509]: $1.690
+                      - generic [ref=e510]: precio actual $1.690, Costaba $1.850
+                      - generic [ref=e511]: $4.694 x kg
+                      - generic [ref=e512]: $1.850
+                      - generic [ref=e513]: Ahorra $160
+                    - generic [ref=e515]: Lucchetti
+                    - generic [ref=e517]: Lasaña Precocida Caja, 360 g
+                - listitem [ref=e518]:
+                  - group "Producto" [ref=e519]:
+                    - link "Atún Lominto Aceite Lata, Drenado 91 g - Neto 140 g" [ref=e520] [cursor=pointer]:
+                      - /url: /ip/conservas/00780465140017
+                      - heading "Atún Lominto Aceite Lata, Drenado 91 g - Neto 140 g" [level=3] [ref=e522]
+                    - generic [ref=e524]:
+                      - generic [ref=e525]:
+                        - img "Atún Lominto Aceite Lata, Drenado 91 g - Neto 140 g"
+                      - button "Agregar al carro - Atún Lominto Aceite Lata, Drenado 91 g - Neto 140 g" [ref=e528] [cursor=pointer]:
+                        - generic "agregar" [ref=e529]: 
+                        - generic [ref=e530]: Agregar
+                    - generic [ref=e533]:
+                      - generic [ref=e534]: $1.000
+                      - generic [ref=e535]: precio actual $1.000
+                      - generic [ref=e536]: $10.989 x kg
+                    - generic [ref=e538]: La Romana
+                    - generic [ref=e540]: Atún Lominto Aceite Lata, Drenado 91 g - Neto 140 g
+                - listitem [ref=e541]:
+                  - group "Producto" [ref=e542]:
+                    - link "Atún Lomitos Agua Lata, Drenado 91 g - Neto 140 g" [ref=e543] [cursor=pointer]:
+                      - /url: /ip/conservas/00780465140016
+                      - heading "Atún Lomitos Agua Lata, Drenado 91 g - Neto 140 g" [level=3] [ref=e545]
+                    - generic [ref=e547]:
+                      - generic [ref=e548]:
+                        - img "Atún Lomitos Agua Lata, Drenado 91 g - Neto 140 g"
+                      - button "Agregar al carro - Atún Lomitos Agua Lata, Drenado 91 g - Neto 140 g" [ref=e551] [cursor=pointer]:
+                        - generic "agregar" [ref=e552]: 
+                        - generic [ref=e553]: Agregar
+                    - generic [ref=e556]:
+                      - generic [ref=e557]: $1.000
+                      - generic [ref=e558]: precio actual $1.000
+                      - generic [ref=e559]: $10.989 x kg
+                    - generic [ref=e561]: La Romana
+                    - generic [ref=e563]: Atún Lomitos Agua Lata, Drenado 91 g - Neto 140 g
+                - listitem [ref=e564]:
+                  - group "Producto" [ref=e565]:
+                    - link "Choclo en Granos Congelado, 500 g" [ref=e566] [cursor=pointer]:
+                      - /url: /ip/verduras-y-frutas-congeladas/00780122000121
+                      - heading "Choclo en Granos Congelado, 500 g" [level=3] [ref=e568]
+                    - generic [ref=e570]:
+                      - generic [ref=e571]:
+                        - img "Choclo en Granos Congelado, 500 g"
+                      - button "Agregar al carro - Choclo en Granos Congelado, 500 g" [ref=e574] [cursor=pointer]:
+                        - generic "agregar" [ref=e575]: 
+                        - generic [ref=e576]: Agregar
+                    - generic [ref=e579]:
+                      - generic [ref=e580]: $1.590
+                      - generic [ref=e581]: precio actual $1.590
+                      - generic [ref=e582]: $3.180 x kg
+                    - generic [ref=e584]: Lider
+                    - generic [ref=e586]: Choclo en Granos Congelado, 500 g
+                - listitem [ref=e587]:
+                  - group "Producto" [ref=e588]:
+                    - link "Tortilla Rapidita, 1 Un" [ref=e589] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780340300033
+                      - heading "Tortilla Rapidita, 1 Un" [level=3] [ref=e591]
+                    - generic [ref=e593]:
+                      - generic [ref=e594]:
+                        - img "Tortilla Rapidita, 1 Un"
+                      - button "Agregar al carro - Tortilla Rapidita, 1 Un" [ref=e597] [cursor=pointer]:
+                        - generic "agregar" [ref=e598]: 
+                        - generic [ref=e599]: Agregar
+                    - generic [ref=e602]:
+                      - generic [ref=e603]: $1.490
+                      - generic [ref=e604]: precio actual $1.490
+                      - generic [ref=e605]: $186 x kg
+                    - generic [ref=e607]: Ideal
+                    - generic [ref=e609]: Tortilla Rapidita, 1 Un
+              - button "Siguiente diapositiva para la lista Complementos para tu compra" [ref=e610]:
+                - generic [ref=e611]: 
+  - alert [ref=e619]

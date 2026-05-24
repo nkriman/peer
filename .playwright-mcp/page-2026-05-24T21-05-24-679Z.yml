@@ -1,0 +1,87 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: "0"
+    - generic [ref=e49]:
+      - region "Carro" [ref=e50]:
+        - heading "Carro" [level=1] [ref=e51]
+        - generic [ref=e52]: (0 productos)
+      - generic [ref=e53]:
+        - generic [ref=e56]:
+          - heading "Guardado para después" [level=2] [ref=e58]
+          - generic [ref=e59]:
+            - generic [ref=e60]:
+              - generic [ref=e61]: 1 producto
+              - button "Guardado para después" [expanded] [ref=e62]:
+                - generic [ref=e63]: 
+            - list [ref=e66]:
+              - listitem [ref=e67]:
+                - generic [ref=e73]:
+                  - link "Jamón Pierna Corte Pluma Tradicional, 125 g" [ref=e76] [cursor=pointer]:
+                    - /url: /ip/seort/00780191603153
+                  - generic [ref=e77]:
+                    - generic [ref=e78]:
+                      - generic [ref=e79]:
+                        - link "Jamón Pierna Corte Pluma Tradicional, 125 g" [ref=e80] [cursor=pointer]:
+                          - /url: /ip/seort/00780191603153
+                          - generic [ref=e82]: Jamón Pierna Corte Pluma Tradicional, 125 g
+                        - generic [ref=e84]: $18.000 x kg
+                      - generic [ref=e87]: $2.250
+                    - generic [ref=e89]:
+                      - generic [ref=e90]: "Unidades: 1"
+                      - generic [ref=e91]:
+                        - 'button "Eliminar: Jamón Pierna Corte Pluma Tradicional, 125 g" [ref=e93] [cursor=pointer]': Eliminar
+                        - 'button "Mover al carro: Jamón Pierna Corte Pluma Tradicional, 125 g" [ref=e94] [cursor=pointer]': Mover al carro
+        - generic [ref=e96]:
+          - img "vaciar carro" [ref=e97]
+          - generic [ref=e98]:
+            - heading "Tu carro está vacío" [level=2] [ref=e100]
+            - generic [ref=e102]: Hola, Nicolas K - llénalo con ahorros de tus categorías favoritas.
+            - generic [ref=e106]:
+              - link "Despensa" [ref=e107] [cursor=pointer]:
+                - /url: https://super.lider.cl/content/despensa/46589040
+              - link "Carnes y pescados" [ref=e108] [cursor=pointer]:
+                - /url: https://super.lider.cl/content/carnes-y-pescados/21856785
+              - link "La Boti" [ref=e109] [cursor=pointer]:
+                - /url: https://super.lider.cl/content/la-boti/60338008
+  - alert [ref=e114]

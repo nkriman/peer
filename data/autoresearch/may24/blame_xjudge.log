@@ -29,3 +29,50 @@
 2026-05-24 16:55:39,039 INFO peer.agent: Gathered codebase context: 20 symbols, 11 call sites, 2 tests, 7 untested, 0 linter findings, ~3398 tokens
 2026-05-24 16:59:49,119 INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/8059: 5 hunks, ~4741 tokens
 2026-05-24 16:59:49,284 INFO peer.agent: Gathered codebase context: 0 symbols, 0 call sites, 1 tests, 0 untested, 0 linter findings, ~1812 tokens
+2026-05-24 17:01:16,682 INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7900: 3 hunks, ~3046 tokens
+2026-05-24 17:01:18,299 INFO peer.agent: Gathered codebase context: 3 symbols, 10 call sites, 1 tests, 0 untested, 0 linter findings, ~2761 tokens
+2026-05-24 17:06:24,378 INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17256: 6 hunks, ~3687 tokens
+2026-05-24 17:06:26,289 INFO peer.agent: Gathered codebase context: 13 symbols, 7 call sites, 2 tests, 0 untested, 0 linter findings, ~3413 tokens
+2026-05-24 17:08:18,960 INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/16746: 6 hunks, ~4698 tokens
+2026-05-24 17:08:21,331 INFO peer.agent: Gathered codebase context: 9 symbols, 10 call sites, 3 tests, 1 untested, 0 linter findings, ~5213 tokens
+2026-05-24 17:09:40,913 INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7677: 12 hunks, ~7226 tokens
+2026-05-24 17:09:41,678 INFO peer.agent: Gathered codebase context: 16 symbols, 7 call sites, 0 tests, 11 untested, 0 linter findings, ~1467 tokens
+[eval] 1/7 https://github.com/django/django/pull/16603
+[eval] 2/7 https://github.com/django/django/pull/17147
+[eval] 3/7 https://github.com/pydantic/pydantic/pull/8059
+[eval] 4/7 https://github.com/pydantic/pydantic/pull/7900
+[eval] 5/7 https://github.com/django/django/pull/17256
+[eval] 6/7 https://github.com/django/django/pull/16746
+[eval] 7/7 https://github.com/pydantic/pydantic/pull/7677
+[eval] 1/7 https://github.com/django/django/pull/16603
+[eval] 2/7 https://github.com/django/django/pull/17147
+[eval] 3/7 https://github.com/pydantic/pydantic/pull/8059
+[eval] 4/7 https://github.com/pydantic/pydantic/pull/7900
+[eval] 5/7 https://github.com/django/django/pull/17256
+[eval] 6/7 https://github.com/django/django/pull/16746
+[eval] 7/7 https://github.com/pydantic/pydantic/pull/7677
+[eval] 1/7 https://github.com/django/django/pull/16603
+[eval] 2/7 https://github.com/django/django/pull/17147
+[eval] 3/7 https://github.com/pydantic/pydantic/pull/8059
+[eval] 4/7 https://github.com/pydantic/pydantic/pull/7900
+[eval] 5/7 https://github.com/django/django/pull/17256
+[eval] 6/7 https://github.com/django/django/pull/16746
+[eval] 7/7 https://github.com/pydantic/pydantic/pull/7677
+2026-05-24 17:48:30,546 INFO cli_blame_and_xjudge: Phase 2 done in 3556s; report at /Users/krilet/peer/data/eval_runs/cross_judge_narrower.json
+2026-05-24 17:48:30,571 INFO cli_blame_and_xjudge: Summary written to /Users/krilet/peer/data/autoresearch/may24/blame_and_xjudge_findings.md
+# Cross-judge variance report
+
+Judges: sonnet, haiku, opus
+
+## Variance bands
+
+| metric | min | median | max | range | flag |
+|---|---:|---:|---:|---:|:---:|
+| comments_per_pr | 3.1429 | 3.1429 | 3.1429 | 0.0000 |  |
+| detection_rate | 0.0392 | 0.0392 | 0.0392 | 0.0000 |  |
+| mean_per_pr_recall | 0.0192 | 0.0192 | 0.0192 | 0.0000 |  |
+| novelty_rate | 0.9167 | 0.9167 | 0.9167 | 0.0000 |  |
+| precision_per_severity | n/a | n/a | n/a | n/a |  |
+| severity_calibration | 1.0000 | 1.0000 | 1.0000 | 0.0000 |  |
+| suggestion_rate | 0.4524 | 0.4524 | 0.4524 | 0.0000 |  |
+
