@@ -41,3 +41,9 @@ def after_scenario(context: Any, scenario: Any) -> None:
     from peer import deps as _peer_deps
 
     _peer_deps.ALLOW_LLM_CALLS = True
+
+    # claude-code-everywhere-v01 scenarios flip PEER_USE_CLAUDE_CODE; reset
+    # so it doesn't leak into other features that construct SDK clients.
+    import os as _os
+
+    _os.environ.pop("PEER_USE_CLAUDE_CODE", None)

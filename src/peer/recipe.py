@@ -56,6 +56,12 @@ class Recipe(BaseModel):
     reviewer_dotted_path: str | None = None
     reviewer_kwargs: dict[str, Any] = Field(default_factory=dict)
 
+    # ----- claude-code-everywhere-v01 -----
+    # When true: apply_to_agent sets PEER_USE_CLAUDE_CODE=1 and builds a
+    # ClaudeCodeCLIReviewer (instead of the default ClaudeReviewer-via-shim).
+    # Lets the autoresearch loop run with zero ANTHROPIC_API_KEY spend.
+    use_claude_code: bool = False
+
     # -------------------------------------------------------------------
     # YAML round-trip
     # -------------------------------------------------------------------
@@ -98,8 +104,17 @@ class Recipe(BaseModel):
         appends team conventions if `team_conventions_path` is set.
         Rebuilds the reviewer so model + temperature + max_tokens land on
         the underlying SDK call. Sets `retries`.
+
+        When `use_claude_code` is true: sets the PEER_USE_CLAUDE_CODE env
+        var (so downstream judges route through the CLI) and constructs
+        a ClaudeCodeCLIReviewer instead of the default reviewer.
         """
+        import os
+
         from .agent import _parse_model_id, _select_reviewer
+
+        if self.use_claude_code:
+            os.environ["PEER_USE_CLAUDE_CODE"] = "1"
 
         prompt_text = Path(self.system_prompt_path).read_text()
         if self.team_conventions_path is not None:
@@ -128,6 +143,14 @@ class Recipe(BaseModel):
         if self.reviewer_dotted_path:
             cls = _resolve_dotted(self.reviewer_dotted_path)
             agent.reviewer = cls(**self._resolved_reviewer_kwargs())
+        elif self.use_claude_code:
+            from .reviewers import ClaudeCodeCLIReviewer
+
+            agent.reviewer = ClaudeCodeCLIReviewer(
+                model=canonical,
+                system_prompt=prompt_text,
+                model_id=model_id,
+            )
         else:
             base = _select_reviewer(provider, model_id, canonical, prompt_text)
             # Re-set temperature + max_tokens — _select_reviewer doesn't know about Recipe.

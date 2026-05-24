@@ -130,7 +130,12 @@ class ClaudeReviewer:
         # (peer-o4v). Users tuning recipes can override via Recipe.temperature.
         self.temperature = temperature
         self.max_tokens = max_tokens
-        self.client = anthropic.Anthropic()
+        # `make_client` returns either an anthropic.Anthropic() or a
+        # ClaudeCodeShimClient based on PEER_USE_CLAUDE_CODE — see
+        # claude-code-everywhere-v01.
+        from .claude_code_client import make_client
+
+        self.client = make_client()
         # 429 backoff: total attempts = rate_limit_max_retries + 1.
         self.rate_limit_max_retries = rate_limit_max_retries
         self.rate_limit_base_backoff = rate_limit_base_backoff
@@ -183,7 +188,7 @@ class ClaudeReviewer:
                 # Anthropic's overload typings don't accept the dict form
                 # directly, so we silence the call-site mypy noise rather
                 # than wrestle the SDK.
-                return self.client.messages.create(  # type: ignore[call-overload]
+                return self.client.messages.create(
                     model=self._model_id,
                     max_tokens=self.max_tokens,
                     temperature=self.temperature,

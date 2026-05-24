@@ -206,7 +206,9 @@ class LLMOracleEnrichment:
     @property
     def client(self) -> anthropic.Anthropic:
         if self._client is None:
-            self._client = anthropic.Anthropic()
+            from ..claude_code_client import make_client
+
+            self._client = make_client()
         return self._client
 
     def _fetch_diff(self, pr_url: str) -> str:

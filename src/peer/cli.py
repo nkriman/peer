@@ -100,6 +100,12 @@ def _make_parser() -> argparse.ArgumentParser:
         action="store_false",
         help="Explicitly disable the RationaleGrounding LLMJudge.",
     )
+    p_eval.add_argument(
+        "--use-claude-code",
+        action="store_true",
+        default=False,
+        help="Route every model call through the claude CLI (free, no ANTHROPIC_API_KEY). See claude-code-everywhere-v01.",
+    )
 
     # --- peer dataset (parent for subcommands) ------------------------------
     p_ds = sub.add_parser(
@@ -198,6 +204,12 @@ def _make_parser() -> argparse.ArgumentParser:
         default="python",
         help="Filter the dataset by language (default: python)",
     )
+    p_bench_run.add_argument(
+        "--use-claude-code",
+        action="store_true",
+        default=False,
+        help="Route every model call through the claude CLI (free, no ANTHROPIC_API_KEY).",
+    )
 
     # --- peer autoresearch (parent for subcommands) -------------------------
     p_ar = sub.add_parser(
@@ -227,6 +239,12 @@ def _make_parser() -> argparse.ArgumentParser:
     p_ar_run.add_argument(
         "--program-md", type=Path, default=Path("program.md"), help="Path to program.md"
     )
+    p_ar_run.add_argument(
+        "--use-claude-code",
+        action="store_true",
+        default=False,
+        help="Route every model call through the claude CLI (free, no ANTHROPIC_API_KEY).",
+    )
 
     p_ar_loop = ar_sub.add_parser(
         "loop",
@@ -248,6 +266,12 @@ def _make_parser() -> argparse.ArgumentParser:
         "--mutator",
         default="no_op",
         help="Dotted path to a mutator callable; default 'no_op' assumes you edit files between iters",
+    )
+    p_ar_loop.add_argument(
+        "--use-claude-code",
+        action="store_true",
+        default=False,
+        help="Route every model call through the claude CLI (free, no ANTHROPIC_API_KEY).",
     )
 
     p_ar_diag = ar_sub.add_parser(
@@ -327,7 +351,17 @@ def _cmd_review(args: argparse.Namespace) -> int:
     return 0
 
 
+def _maybe_set_claude_code_env(args: argparse.Namespace) -> None:
+    """If --use-claude-code was passed, set PEER_USE_CLAUDE_CODE=1 before
+    any client is constructed downstream."""
+    import os
+
+    if getattr(args, "use_claude_code", False):
+        os.environ["PEER_USE_CLAUDE_CODE"] = "1"
+
+
 def _cmd_eval(args: argparse.Namespace) -> int:
+    _maybe_set_claude_code_env(args)
     from .agent import Agent
     from .dataset import JSONLStorage
     from .eval import EvalReport, EvalRunner, render_diff, render_summary
@@ -454,6 +488,7 @@ def _cmd_dataset_show(args: argparse.Namespace) -> int:
 
 
 def _cmd_autoresearch_run(args: argparse.Namespace) -> int:
+    _maybe_set_claude_code_env(args)
     from .autoresearch import run_one_iteration
 
     row = run_one_iteration(
@@ -479,6 +514,7 @@ def _cmd_autoresearch_run(args: argparse.Namespace) -> int:
 
 
 def _cmd_autoresearch_loop(args: argparse.Namespace) -> int:
+    _maybe_set_claude_code_env(args)
     from .autoresearch import run_loop
 
     iters = run_loop(
@@ -526,6 +562,7 @@ def _cmd_autoresearch_diagnose(args: argparse.Namespace) -> int:
 
 
 def _cmd_benchmark_run(args: argparse.Namespace) -> int:
+    _maybe_set_claude_code_env(args)
     from .agent import Agent
     from .benchmark import BugBenchmarkRunner, MacroscopeLoader
 
@@ -567,13 +604,13 @@ def _cmd_benchmark_run(args: argparse.Namespace) -> int:
             print("aborted.", file=sys.stderr)
             return 1
 
-    import anthropic
+    from .claude_code_client import make_client as _make_client
 
     agent = Agent(model=args.model)
     runner = BugBenchmarkRunner(
         reviewer=agent,
         dataset=samples,
-        judge_client=anthropic.Anthropic(),
+        judge_client=_make_client(),
     )
     report = runner.run()
 
