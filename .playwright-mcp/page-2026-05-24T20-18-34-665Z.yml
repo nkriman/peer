@@ -1,0 +1,768 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: jurel natural lata
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e81]:
+            - generic [ref=e84]:
+              - generic [ref=e85]:
+                - button "Precio" [ref=e88]:
+                  - generic [ref=e89]: Precio
+                  - img [ref=e90]: 
+                - separator [ref=e91]
+              - generic [ref=e92]:
+                - button "Marca" [ref=e95]:
+                  - generic [ref=e96]: Marca
+                  - img [ref=e97]: 
+                - separator [ref=e98]
+              - generic [ref=e99]:
+                - button "Categoría" [ref=e102]:
+                  - generic [ref=e103]: Categoría
+                  - img [ref=e104]: 
+                - separator [ref=e105]
+            - generic [ref=e108]:
+              - heading "Resultados para jurel natural lata (39)" [level=2] [ref=e116]: Resultados para jurel natural lata(39)
+              - generic [ref=e117]:
+                - generic [ref=e119]:
+                  - group [ref=e120]:
+                    - link "Jurel Natural Lata, Drenado 300 g - Neto 425 g" [ref=e121] [cursor=pointer]:
+                      - /url: /ip/conservas/00780123513111?from=/search
+                      - generic [ref=e122]: Jurel Natural Lata, Drenado 300 g - Neto 425 g
+                    - generic [ref=e124]:
+                      - img "Jurel Natural Lata, Drenado 300 g - Neto 425 g" [ref=e129]
+                      - generic [ref=e131]:
+                        - generic [ref=e133]:
+                          - generic [ref=e134]: $2.150
+                          - generic [ref=e135]: precio actual $2.150
+                          - generic [ref=e136]: $7.167 x kg
+                        - generic [ref=e137]: San José
+                        - generic [ref=e138]: Jurel Natural Lata, Drenado 300 g - Neto 425 g
+                        - generic [ref=e139]: Agotado
+                  - button "Revisar productos similares - Jurel Natural Lata, Drenado 300 g - Neto 425 g" [ref=e141]: Revisar productos similares
+                - group [ref=e144]:
+                  - link "Jurel Natural Lata, Drenado 300 g - Neto 425 g" [ref=e145] [cursor=pointer]:
+                    - /url: /ip/conservas/00780152800017?from=/search
+                    - generic [ref=e146]: Jurel Natural Lata, Drenado 300 g - Neto 425 g
+                  - generic [ref=e148]:
+                    - generic [ref=e151]:
+                      - img "Jurel Natural Lata, Drenado 300 g - Neto 425 g" [ref=e153]
+                      - button "Agregar al carro - Jurel Natural Lata, Drenado 300 g - Neto 425 g" [ref=e156] [cursor=pointer]:
+                        - generic "agregar" [ref=e157]: 
+                        - generic [ref=e158]: Agregar
+                    - generic [ref=e160]:
+                      - generic [ref=e162]:
+                        - generic [ref=e163]: $1.850
+                        - generic [ref=e164]: precio actual $1.850
+                        - generic [ref=e165]: $6.167 x kg
+                      - generic [ref=e166]: Lider
+                      - generic [ref=e167]: Jurel Natural Lata, Drenado 300 g - Neto 425 g
+                - group [ref=e170]:
+                  - link "Jurel Lomo Natural Lata, Drenado 104 g - Neto 160 g" [ref=e171] [cursor=pointer]:
+                    - /url: /ip/conservas/00780123500240?from=/search
+                    - generic [ref=e172]: Jurel Lomo Natural Lata, Drenado 104 g - Neto 160 g
+                  - generic [ref=e174]:
+                    - generic [ref=e177]:
+                      - img "Jurel Lomo Natural Lata, Drenado 104 g - Neto 160 g" [ref=e179]
+                      - button "Agregar al carro - Jurel Lomo Natural Lata, Drenado 104 g - Neto 160 g" [ref=e182] [cursor=pointer]:
+                        - generic "agregar" [ref=e183]: 
+                        - generic [ref=e184]: Agregar
+                    - generic [ref=e186]:
+                      - generic [ref=e188]:
+                        - generic [ref=e189]: $1.390
+                        - generic [ref=e190]: precio actual $1.390
+                        - generic [ref=e191]: $13.365 x kg
+                      - generic [ref=e192]: San José
+                      - generic [ref=e193]: Jurel Lomo Natural Lata, Drenado 104 g - Neto 160 g
+                - group [ref=e196]:
+                  - link "Jurel Natural sin Sal Agregada Lata, Drenado 300 g - Neto 425 g" [ref=e197] [cursor=pointer]:
+                    - /url: /ip/conservas/00780123513161?from=/search
+                    - generic [ref=e198]: Jurel Natural sin Sal Agregada Lata, Drenado 300 g - Neto 425 g
+                  - generic [ref=e200]:
+                    - generic [ref=e203]:
+                      - img "Jurel Natural sin Sal Agregada Lata, Drenado 300 g - Neto 425 g" [ref=e205]
+                      - button "Agregar al carro - Jurel Natural sin Sal Agregada Lata, Drenado 300 g - Neto 425 g" [ref=e208] [cursor=pointer]:
+                        - generic "agregar" [ref=e209]: 
+                        - generic [ref=e210]: Agregar
+                    - generic [ref=e212]:
+                      - generic [ref=e214]:
+                        - generic [ref=e215]: $2.650
+                        - generic [ref=e216]: precio actual $2.650
+                      - generic [ref=e217]: San José
+                      - generic [ref=e218]: Jurel Natural sin Sal Agregada Lata, Drenado 300 g - Neto 425 g
+                - group [ref=e221]:
+                  - link "Jurel Lomo Ahumado Lata, Drenado 104 g - Neto 160 g" [ref=e222] [cursor=pointer]:
+                    - /url: /ip/conservas/00780123500242?from=/search
+                    - generic [ref=e223]: Jurel Lomo Ahumado Lata, Drenado 104 g - Neto 160 g
+                  - generic [ref=e225]:
+                    - generic [ref=e228]:
+                      - img "Jurel Lomo Ahumado Lata, Drenado 104 g - Neto 160 g" [ref=e230]
+                      - button "Agregar al carro - Jurel Lomo Ahumado Lata, Drenado 104 g - Neto 160 g" [ref=e233] [cursor=pointer]:
+                        - generic "agregar" [ref=e234]: 
+                        - generic [ref=e235]: Agregar
+                    - generic [ref=e237]:
+                      - generic [ref=e239]:
+                        - generic [ref=e240]: $1.390
+                        - generic [ref=e241]: precio actual $1.390
+                        - generic [ref=e242]: $13.365 x kg
+                      - generic [ref=e243]: San José
+                      - generic [ref=e244]: Jurel Lomo Ahumado Lata, Drenado 104 g - Neto 160 g
+                - group [ref=e247]:
+                  - link "Jurel Lomo Aceite Lata, Drenado 104 g - Neto 160 g" [ref=e248] [cursor=pointer]:
+                    - /url: /ip/conservas/00780123500241?from=/search
+                    - generic [ref=e249]: Jurel Lomo Aceite Lata, Drenado 104 g - Neto 160 g
+                  - generic [ref=e251]:
+                    - generic [ref=e254]:
+                      - img "Jurel Lomo Aceite Lata, Drenado 104 g - Neto 160 g" [ref=e256]
+                      - button "Agregar al carro - Jurel Lomo Aceite Lata, Drenado 104 g - Neto 160 g" [ref=e259] [cursor=pointer]:
+                        - generic "agregar" [ref=e260]: 
+                        - generic [ref=e261]: Agregar
+                    - generic [ref=e263]:
+                      - generic [ref=e265]:
+                        - generic [ref=e266]: $1.390
+                        - generic [ref=e267]: precio actual $1.390
+                        - generic [ref=e268]: $13.365 x kg
+                      - generic [ref=e269]: San José
+                      - generic [ref=e270]: Jurel Lomo Aceite Lata, Drenado 104 g - Neto 160 g
+                - generic [ref=e272]:
+                  - group [ref=e273]:
+                    - link "Erizo Natural Caja, Drenado 50 g - Neto 90 g" [ref=e274] [cursor=pointer]:
+                      - /url: /ip/conservas/00780142400068?from=/search
+                      - generic [ref=e275]: Erizo Natural Caja, Drenado 50 g - Neto 90 g
+                    - generic [ref=e277]:
+                      - img "Erizo Natural Caja, Drenado 50 g - Neto 90 g" [ref=e282]
+                      - generic [ref=e284]:
+                        - generic [ref=e286]:
+                          - generic [ref=e287]: $5.390
+                          - generic [ref=e288]: precio actual $5.390
+                        - generic [ref=e289]: Geomar
+                        - generic [ref=e290]: Erizo Natural Caja, Drenado 50 g - Neto 90 g
+                        - generic [ref=e291]: Agotado
+                  - button "Revisar productos similares - Erizo Natural Caja, Drenado 50 g - Neto 90 g" [ref=e293]: Revisar productos similares
+                - group [ref=e296]:
+                  - link "Leche Natural Entera caja, 1 L" [ref=e297] [cursor=pointer]:
+                    - /url: /ip/leche/00040000720074?from=/search
+                    - generic [ref=e298]: Leche Natural Entera caja, 1 L
+                  - generic [ref=e300]:
+                    - generic [ref=e303]:
+                      - img "Leche Natural Entera caja, 1 L" [ref=e305]
+                      - button "Agregar al carro - Leche Natural Entera caja, 1 L" [ref=e308] [cursor=pointer]:
+                        - generic "agregar" [ref=e309]: 
+                        - generic [ref=e310]: Agregar
+                    - generic [ref=e312]:
+                      - generic [ref=e314]:
+                        - generic [ref=e315]: $1.000
+                        - generic [ref=e316]: precio actual $1.000
+                        - generic [ref=e317]: $1.000 x lt
+                      - generic [ref=e318]: Lider
+                      - generic [ref=e319]: Leche Natural Entera caja, 1 L
+                - group [ref=e322]:
+                  - link "Choritos Natural Lata, Drenado 100 g - Neto 190 g" [ref=e323] [cursor=pointer]:
+                    - /url: /ip/conservas/00780123527611?from=/search
+                    - generic [ref=e324]: Choritos Natural Lata, Drenado 100 g - Neto 190 g
+                  - generic [ref=e326]:
+                    - generic [ref=e329]:
+                      - img "Choritos Natural Lata, Drenado 100 g - Neto 190 g" [ref=e331]
+                      - button "Agregar al carro - Choritos Natural Lata, Drenado 100 g - Neto 190 g" [ref=e334] [cursor=pointer]:
+                        - generic "agregar" [ref=e335]: 
+                        - generic [ref=e336]: Agregar
+                    - generic [ref=e338]:
+                      - generic [ref=e340]:
+                        - generic [ref=e341]: $1.790
+                        - generic [ref=e342]: precio actual $1.790
+                        - generic [ref=e343]: $17.900 x kg
+                      - generic [ref=e344]: San José
+                      - generic [ref=e345]: Choritos Natural Lata, Drenado 100 g - Neto 190 g
+                - group [ref=e348]:
+                  - link "Bebida Natural Tarro, 170 gr" [ref=e349] [cursor=pointer]:
+                    - /url: /ip/cafe-te-y-hierbas/00780280051201?from=/search
+                    - generic [ref=e350]: Bebida Natural Tarro, 170 gr
+                  - generic [ref=e352]:
+                    - generic [ref=e355]:
+                      - img "Bebida Natural Tarro, 170 gr" [ref=e357]
+                      - button "Agregar al carro - Bebida Natural Tarro, 170 gr" [ref=e360] [cursor=pointer]:
+                        - generic "agregar" [ref=e361]: 
+                        - generic [ref=e362]: Agregar
+                    - generic [ref=e364]:
+                      - generic [ref=e366]:
+                        - generic [ref=e367]: $3.390
+                        - generic [ref=e368]: precio actual $3.390
+                      - generic [ref=e369]: Coronado
+                      - generic [ref=e370]: Bebida Natural Tarro, 170 gr
+                - group [ref=e373]:
+                  - link "Choritos Natural Lata, Drenado 100 g - Neto 241 g" [ref=e374] [cursor=pointer]:
+                    - /url: /ip/conservas/00780123500046?from=/search
+                    - generic [ref=e375]: Choritos Natural Lata, Drenado 100 g - Neto 241 g
+                  - generic [ref=e377]:
+                    - generic [ref=e380]:
+                      - img "Choritos Natural Lata, Drenado 100 g - Neto 241 g" [ref=e382]
+                      - button "Agregar al carro - Choritos Natural Lata, Drenado 100 g - Neto 241 g" [ref=e385] [cursor=pointer]:
+                        - generic "agregar" [ref=e386]: 
+                        - generic [ref=e387]: Agregar
+                    - generic [ref=e389]:
+                      - generic [ref=e391]:
+                        - generic [ref=e392]: $1.890
+                        - generic [ref=e393]: precio actual $1.890
+                        - generic [ref=e394]: $18.900 x kg
+                      - generic [ref=e395]: San José
+                      - generic [ref=e396]: Choritos Natural Lata, Drenado 100 g - Neto 241 g
+                - generic [ref=e398]:
+                  - group [ref=e399]:
+                    - link "Choritos Natural Lata, Drenado 200 g - Neto 425 g" [ref=e400] [cursor=pointer]:
+                      - /url: /ip/conservas/00780123500029?from=/search
+                      - generic [ref=e401]: Choritos Natural Lata, Drenado 200 g - Neto 425 g
+                    - generic [ref=e403]:
+                      - img "Choritos Natural Lata, Drenado 200 g - Neto 425 g" [ref=e408]
+                      - generic [ref=e410]:
+                        - generic [ref=e412]:
+                          - generic [ref=e413]: $3.390
+                          - generic [ref=e414]: precio actual $3.390
+                          - generic [ref=e415]: $16.950 x kg
+                        - generic [ref=e416]: San José
+                        - generic [ref=e417]: Choritos Natural Lata, Drenado 200 g - Neto 425 g
+                        - generic [ref=e418]: Agotado
+                  - button "Revisar productos similares - Choritos Natural Lata, Drenado 200 g - Neto 425 g" [ref=e420]: Revisar productos similares
+                - group [ref=e423]:
+                  - link "Cholgas Natural Lata, Drenado 100 g - Neto 190 g" [ref=e424] [cursor=pointer]:
+                    - /url: /ip/conservas/00841072107066?from=/search
+                    - generic [ref=e425]: Cholgas Natural Lata, Drenado 100 g - Neto 190 g
+                  - generic [ref=e427]:
+                    - generic [ref=e430]:
+                      - img "Cholgas Natural Lata, Drenado 100 g - Neto 190 g" [ref=e432]
+                      - button "Agregar al carro - Cholgas Natural Lata, Drenado 100 g - Neto 190 g" [ref=e435] [cursor=pointer]:
+                        - generic "agregar" [ref=e436]: 
+                        - generic [ref=e437]: Agregar
+                    - generic [ref=e439]:
+                      - generic [ref=e441]:
+                        - generic [ref=e442]: $2.290
+                        - generic [ref=e443]: precio actual $2.290
+                        - generic [ref=e444]: $22.900 x kg
+                      - generic [ref=e445]: Lider
+                      - generic [ref=e446]: Cholgas Natural Lata, Drenado 100 g - Neto 190 g
+                - group [ref=e449]:
+                  - link "Caldillo Natural Lata, Drenado 100 g - Neto 192 g" [ref=e450] [cursor=pointer]:
+                    - /url: /ip/conservas/00780125000080?from=/search
+                    - generic [ref=e451]: Caldillo Natural Lata, Drenado 100 g - Neto 192 g
+                  - generic [ref=e453]:
+                    - generic [ref=e456]:
+                      - img "Caldillo Natural Lata, Drenado 100 g - Neto 192 g" [ref=e458]
+                      - button "Agregar al carro - Caldillo Natural Lata, Drenado 100 g - Neto 192 g" [ref=e461] [cursor=pointer]:
+                        - generic "agregar" [ref=e462]: 
+                        - generic [ref=e463]: Agregar
+                    - generic [ref=e465]:
+                      - generic [ref=e467]:
+                        - generic [ref=e468]: $1.690
+                        - generic [ref=e469]: precio actual $1.690
+                      - generic [ref=e470]: Angelmo
+                      - generic [ref=e471]: Caldillo Natural Lata, Drenado 100 g - Neto 192 g
+                - group [ref=e474]:
+                  - link "Leche Entera Natural Caja 1 l, 1 L" [ref=e475] [cursor=pointer]:
+                    - /url: /ip/leche/00780292077754?from=/search
+                    - generic [ref=e476]: Leche Entera Natural Caja 1 l, 1 L
+                  - generic [ref=e478]:
+                    - generic [ref=e481]:
+                      - img "Leche Entera Natural Caja 1 l, 1 L" [ref=e483]
+                      - button "Agregar al carro - Leche Entera Natural Caja 1 l, 1 L" [ref=e486] [cursor=pointer]:
+                        - generic "agregar" [ref=e487]: 
+                        - generic [ref=e488]: Agregar
+                    - generic [ref=e490]:
+                      - generic [ref=e492]:
+                        - generic [ref=e493]: $1.350
+                        - generic [ref=e494]: precio actual $1.350
+                        - generic [ref=e495]: $1.350 x lt
+                      - generic [ref=e496]: Colun
+                      - generic [ref=e497]: Leche Entera Natural Caja 1 l, 1 L
+                - group [ref=e500]:
+                  - link "Crema de leche Natural Para Batir Caja, 200 ml" [ref=e501] [cursor=pointer]:
+                    - /url: /ip/cremas/00780292077728?from=/search
+                    - generic [ref=e502]: Crema de leche Natural Para Batir Caja, 200 ml
+                  - generic [ref=e504]:
+                    - generic [ref=e507]:
+                      - img "Crema de leche Natural Para Batir Caja, 200 ml" [ref=e509]
+                      - button "Agregar al carro - Crema de leche Natural Para Batir Caja, 200 ml" [ref=e512] [cursor=pointer]:
+                        - generic "agregar" [ref=e513]: 
+                        - generic [ref=e514]: Agregar
+                    - generic [ref=e516]:
+                      - generic [ref=e518]:
+                        - generic [ref=e519]: $1.390
+                        - generic [ref=e520]: precio actual $1.390
+                        - generic [ref=e521]: $6.950 x un
+                      - generic [ref=e522]: Colun
+                      - generic [ref=e523]: Crema de leche Natural Para Batir Caja, 200 ml
+                - group [ref=e526]:
+                  - link "Leche Semidescremada Natural Caja 1 l, 1 L" [ref=e527] [cursor=pointer]:
+                    - /url: /ip/leche/00780292000009?from=/search
+                    - generic [ref=e528]: Leche Semidescremada Natural Caja 1 l, 1 L
+                  - generic [ref=e530]:
+                    - generic [ref=e533]:
+                      - generic [ref=e534]:
+                        - img "Leche Semidescremada Natural Caja 1 l, 1 L"
+                      - button "Agregar al carro - Leche Semidescremada Natural Caja 1 l, 1 L" [ref=e537] [cursor=pointer]:
+                        - generic "agregar" [ref=e538]: 
+                        - generic [ref=e539]: Agregar
+                    - generic [ref=e541]:
+                      - generic [ref=e543]:
+                        - generic [ref=e544]: $1.350
+                        - generic [ref=e545]: precio actual $1.350
+                        - generic [ref=e546]: $1.350 x lt
+                      - generic [ref=e547]: Colun
+                      - generic [ref=e548]: Leche Semidescremada Natural Caja 1 l, 1 L
+                - group [ref=e551]:
+                  - link "Leche Entera Natural Caja, 200 ml" [ref=e552] [cursor=pointer]:
+                    - /url: /ip/leche/00780292080185?from=/search
+                    - generic [ref=e553]: Leche Entera Natural Caja, 200 ml
+                  - generic [ref=e555]:
+                    - generic [ref=e558]:
+                      - generic [ref=e559]:
+                        - img "Leche Entera Natural Caja, 200 ml"
+                      - button "Agregar al carro - Leche Entera Natural Caja, 200 ml" [ref=e562] [cursor=pointer]:
+                        - generic "agregar" [ref=e563]: 
+                        - generic [ref=e564]: Agregar
+                    - generic [ref=e566]:
+                      - generic [ref=e568]:
+                        - generic [ref=e569]: $620
+                        - generic [ref=e570]: precio actual $620
+                        - generic [ref=e571]: $3.100 x lt
+                      - generic [ref=e572]: Colun
+                      - generic [ref=e573]: Leche Entera Natural Caja, 200 ml
+                - group [ref=e576]:
+                  - link "Leche Descremada Natural Caja 1 l, 1 L" [ref=e577] [cursor=pointer]:
+                    - /url: /ip/leche/00780292000008?from=/search
+                    - generic [ref=e578]: Leche Descremada Natural Caja 1 l, 1 L
+                  - generic [ref=e580]:
+                    - generic [ref=e583]:
+                      - generic [ref=e584]:
+                        - img "Leche Descremada Natural Caja 1 l, 1 L"
+                      - button "Agregar al carro - Leche Descremada Natural Caja 1 l, 1 L" [ref=e587] [cursor=pointer]:
+                        - generic "agregar" [ref=e588]: 
+                        - generic [ref=e589]: Agregar
+                    - generic [ref=e591]:
+                      - generic [ref=e593]:
+                        - generic [ref=e594]: $1.350
+                        - generic [ref=e595]: precio actual $1.350
+                        - generic [ref=e596]: $1.350 x lt
+                      - generic [ref=e597]: Colun
+                      - generic [ref=e598]: Leche Descremada Natural Caja 1 l, 1 L
+                - group [ref=e601]:
+                  - link "Leche Semidescremada Natural Caja, 200 ml" [ref=e602] [cursor=pointer]:
+                    - /url: /ip/leche/00780290000437?from=/search
+                    - generic [ref=e603]: Leche Semidescremada Natural Caja, 200 ml
+                  - generic [ref=e605]:
+                    - generic [ref=e608]:
+                      - generic [ref=e609]:
+                        - img "Leche Semidescremada Natural Caja, 200 ml"
+                      - button "Agregar al carro - Leche Semidescremada Natural Caja, 200 ml" [ref=e612] [cursor=pointer]:
+                        - generic "agregar" [ref=e613]: 
+                        - generic [ref=e614]: Agregar
+                    - generic [ref=e616]:
+                      - generic [ref=e618]:
+                        - generic [ref=e619]: $550
+                        - generic [ref=e620]: precio actual $550
+                        - generic [ref=e621]: $2.749 x lt
+                      - generic [ref=e622]: Soprole
+                      - generic [ref=e623]: Leche Semidescremada Natural Caja, 200 ml
+                - group [ref=e626]:
+                  - link "Bebida Vegetal Soya Natural Caja, 1 L" [ref=e627] [cursor=pointer]:
+                    - /url: /ip/bebidas-vegetales/00780291000515?from=/search
+                    - generic [ref=e628]: Bebida Vegetal Soya Natural Caja, 1 L
+                  - generic [ref=e630]:
+                    - generic [ref=e633]:
+                      - generic [ref=e634]:
+                        - img "Bebida Vegetal Soya Natural Caja, 1 L"
+                      - button "Agregar al carro - Bebida Vegetal Soya Natural Caja, 1 L" [ref=e637] [cursor=pointer]:
+                        - generic "agregar" [ref=e638]: 
+                        - generic [ref=e639]: Agregar
+                    - generic [ref=e641]:
+                      - generic [ref=e643]:
+                        - generic [ref=e644]: $2.750
+                        - generic [ref=e645]: precio actual $2.750
+                        - generic [ref=e646]: $2.750 x lt
+                      - generic [ref=e647]: Loncoleche
+                      - generic [ref=e648]: Bebida Vegetal Soya Natural Caja, 1 L
+                - group [ref=e651]:
+                  - link "Leche Descremada Natural Extra calcio Descremada Sin Lactosa Caja, 1 L" [ref=e652] [cursor=pointer]:
+                    - /url: /ip/leche/00780291000315?from=/search
+                    - generic [ref=e653]: Leche Descremada Natural Extra calcio Descremada Sin Lactosa Caja, 1 L
+                  - generic [ref=e655]:
+                    - generic [ref=e658]:
+                      - generic [ref=e659]:
+                        - img "Leche Descremada Natural Extra calcio Descremada Sin Lactosa Caja, 1 L"
+                      - button "Agregar al carro - Leche Descremada Natural Extra calcio Descremada Sin Lactosa Caja, 1 L" [ref=e662] [cursor=pointer]:
+                        - generic "agregar" [ref=e663]: 
+                        - generic [ref=e664]: Agregar
+                    - generic [ref=e666]:
+                      - generic [ref=e668]:
+                        - generic [ref=e669]: $2.550
+                        - generic [ref=e670]: precio actual $2.550
+                        - generic [ref=e671]: $2.550 x lt
+                      - generic [ref=e672]: Loncoleche
+                      - generic [ref=e673]: Leche Descremada Natural Extra calcio Descremada Sin Lactosa Caja, 1 L
+                - group [ref=e676]:
+                  - link "Sal de Mar Gruesa Bolsa, 1 Kg" [ref=e677] [cursor=pointer]:
+                    - /url: /ip/aceites-y-aderezos/00780351510101?from=/search
+                    - generic [ref=e678]: Sal de Mar Gruesa Bolsa, 1 Kg
+                  - generic [ref=e680]:
+                    - generic [ref=e683]:
+                      - generic [ref=e684]:
+                        - img "Sal de Mar Gruesa Bolsa, 1 Kg"
+                      - button "Agregar al carro - Sal de Mar Gruesa Bolsa, 1 Kg" [ref=e687] [cursor=pointer]:
+                        - generic "agregar" [ref=e688]: 
+                        - generic [ref=e689]: Agregar
+                    - generic [ref=e691]:
+                      - generic [ref=e693]:
+                        - generic [ref=e694]: $1.750
+                        - generic [ref=e695]: precio actual $1.750
+                        - generic [ref=e696]: $1.750 x kg
+                      - generic [ref=e697]: La Fuente Natural
+                      - generic [ref=e698]: Sal de Mar Gruesa Bolsa, 1 Kg
+                - group [ref=e701]:
+                  - link "Jibia Al Natural, Drenado 213 g - Neto 425 g" [ref=e702] [cursor=pointer]:
+                    - /url: /ip/conservas/00841072107057?from=/search
+                    - generic [ref=e703]: Jibia Al Natural, Drenado 213 g - Neto 425 g
+                  - generic [ref=e705]:
+                    - generic [ref=e708]:
+                      - generic [ref=e709]:
+                        - img "Jibia Al Natural, Drenado 213 g - Neto 425 g"
+                      - button "Agregar al carro - Jibia Al Natural, Drenado 213 g - Neto 425 g" [ref=e712] [cursor=pointer]:
+                        - generic "agregar" [ref=e713]: 
+                        - generic [ref=e714]: Agregar
+                    - generic [ref=e716]:
+                      - generic [ref=e718]:
+                        - generic [ref=e719]: $3.490
+                        - generic [ref=e720]: precio actual $3.490
+                        - generic [ref=e721]: $16.384 x kg
+                      - generic [ref=e722]: Lider
+                      - generic [ref=e723]: Jibia Al Natural, Drenado 213 g - Neto 425 g
+                - group [ref=e726]:
+                  - link "Desodorante Ambiental Aerosol Paraíso Azul Lata, 360 ml" [ref=e727] [cursor=pointer]:
+                    - /url: /ip/ambientadores/00779052099828?from=/search
+                    - generic [ref=e728]: Desodorante Ambiental Aerosol Paraíso Azul Lata, 360 ml
+                  - generic [ref=e730]:
+                    - generic [ref=e733]:
+                      - generic [ref=e734]:
+                        - img "Desodorante Ambiental Aerosol Paraíso Azul Lata, 360 ml"
+                      - button "Agregar al carro - Desodorante Ambiental Aerosol Paraíso Azul Lata, 360 ml" [ref=e737] [cursor=pointer]:
+                        - generic "agregar" [ref=e738]: 
+                        - generic [ref=e739]: Agregar
+                    - generic [ref=e741]:
+                      - generic [ref=e743]:
+                        - generic [ref=e744]: $2.690
+                        - generic [ref=e745]: precio actual $2.690
+                        - generic [ref=e746]: $7.472 x lt
+                      - generic [ref=e747]: Glade
+                      - generic [ref=e748]: Desodorante Ambiental Aerosol Paraíso Azul Lata, 360 ml
+                - group [ref=e751]:
+                  - link "Desodorante Ambiental Aerosol Naranja y Orquideas Lata, 360 ml" [ref=e752] [cursor=pointer]:
+                    - /url: /ip/ambientadores/00779052003157?from=/search
+                    - generic [ref=e753]: Desodorante Ambiental Aerosol Naranja y Orquideas Lata, 360 ml
+                  - generic [ref=e755]:
+                    - generic [ref=e758]:
+                      - generic [ref=e759]:
+                        - img "Desodorante Ambiental Aerosol Naranja y Orquideas Lata, 360 ml"
+                      - button "Agregar al carro - Desodorante Ambiental Aerosol Naranja y Orquideas Lata, 360 ml" [ref=e762] [cursor=pointer]:
+                        - generic "agregar" [ref=e763]: 
+                        - generic [ref=e764]: Agregar
+                    - generic [ref=e766]:
+                      - generic [ref=e768]:
+                        - generic [ref=e769]: $2.690
+                        - generic [ref=e770]: precio actual $2.690
+                        - generic [ref=e771]: $7.472 x lt
+                      - generic [ref=e772]: Glade
+                      - generic [ref=e773]: Desodorante Ambiental Aerosol Naranja y Orquideas Lata, 360 ml
+                - group [ref=e776]:
+                  - link "Desodorante Ambiental Aerosol Potpourrí Lata, 360 ml" [ref=e777] [cursor=pointer]:
+                    - /url: /ip/ambientadores/00779052099825?from=/search
+                    - generic [ref=e778]: Desodorante Ambiental Aerosol Potpourrí Lata, 360 ml
+                  - generic [ref=e780]:
+                    - generic [ref=e783]:
+                      - generic [ref=e784]:
+                        - img "Desodorante Ambiental Aerosol Potpourrí Lata, 360 ml"
+                      - button "Agregar al carro - Desodorante Ambiental Aerosol Potpourrí Lata, 360 ml" [ref=e787] [cursor=pointer]:
+                        - generic "agregar" [ref=e788]: 
+                        - generic [ref=e789]: Agregar
+                    - generic [ref=e791]:
+                      - generic [ref=e793]:
+                        - generic [ref=e794]: $2.690
+                        - generic [ref=e795]: precio actual $2.690
+                        - generic [ref=e796]: $7.472 x lt
+                      - generic [ref=e797]: Glade
+                      - generic [ref=e798]: Desodorante Ambiental Aerosol Potpourrí Lata, 360 ml
+                - group [ref=e801]:
+                  - link "Desodorante Ambiental Aerosol Coco Vibes Lata, 315 ml" [ref=e802] [cursor=pointer]:
+                    - /url: /ip/ambientadores/00779052003177?from=/search
+                    - generic [ref=e803]: Desodorante Ambiental Aerosol Coco Vibes Lata, 315 ml
+                  - generic [ref=e805]:
+                    - generic [ref=e808]:
+                      - generic [ref=e809]:
+                        - img "Desodorante Ambiental Aerosol Coco Vibes Lata, 315 ml"
+                      - button "Agregar al carro - Desodorante Ambiental Aerosol Coco Vibes Lata, 315 ml" [ref=e812] [cursor=pointer]:
+                        - generic "agregar" [ref=e813]: 
+                        - generic [ref=e814]: Agregar
+                    - generic [ref=e816]:
+                      - generic [ref=e818]:
+                        - generic [ref=e819]: $2.850
+                        - generic [ref=e820]: precio actual $2.850
+                        - generic [ref=e821]: $9.048 x lt
+                      - generic [ref=e822]: Glade
+                      - generic [ref=e823]: Desodorante Ambiental Aerosol Coco Vibes Lata, 315 ml
+                - group [ref=e826]:
+                  - link "Desodorante Ambiental Aerosol Flores tropicales y Coco Lata, 360 ml" [ref=e827] [cursor=pointer]:
+                    - /url: /ip/ambientadores/00779052099820?from=/search
+                    - generic [ref=e828]: Desodorante Ambiental Aerosol Flores tropicales y Coco Lata, 360 ml
+                  - generic [ref=e830]:
+                    - generic [ref=e833]:
+                      - generic [ref=e834]:
+                        - img "Desodorante Ambiental Aerosol Flores tropicales y Coco Lata, 360 ml"
+                      - button "Agregar al carro - Desodorante Ambiental Aerosol Flores tropicales y Coco Lata, 360 ml" [ref=e837] [cursor=pointer]:
+                        - generic "agregar" [ref=e838]: 
+                        - generic [ref=e839]: Agregar
+                    - generic [ref=e841]:
+                      - generic [ref=e843]:
+                        - generic [ref=e844]: $2.690
+                        - generic [ref=e845]: precio actual $2.690
+                        - generic [ref=e846]: $7.472 x kg
+                      - generic [ref=e847]: Glade
+                      - generic [ref=e848]: Desodorante Ambiental Aerosol Flores tropicales y Coco Lata, 360 ml
+                - group [ref=e851]:
+                  - link "Desodorante Ambiental Gel en Lata Frutos Silvestres y Flor de Durazno, 70 g" [ref=e852] [cursor=pointer]:
+                    - /url: /ip/ambientadores/00780501000415?from=/search
+                    - generic [ref=e853]: Desodorante Ambiental Gel en Lata Frutos Silvestres y Flor de Durazno, 70 g
+                  - generic [ref=e855]:
+                    - generic [ref=e858]:
+                      - generic [ref=e859]:
+                        - img "Desodorante Ambiental Gel en Lata Frutos Silvestres y Flor de Durazno, 70 g"
+                      - button "Agregar al carro - Desodorante Ambiental Gel en Lata Frutos Silvestres y Flor de Durazno, 70 g" [ref=e862] [cursor=pointer]:
+                        - generic "agregar" [ref=e863]: 
+                        - generic [ref=e864]: Agregar
+                    - generic [ref=e866]:
+                      - generic [ref=e868]:
+                        - generic [ref=e869]: $1.590
+                        - generic [ref=e870]: precio actual $1.590
+                        - generic [ref=e871]: $1.590 x un
+                      - generic [ref=e872]: Air Wick
+                      - generic [ref=e873]: Desodorante Ambiental Gel en Lata Frutos Silvestres y Flor de Durazno, 70 g
+                - group [ref=e876]:
+                  - link "Desodorante Ambiental Aerosol Campos de Lavanda Lata, 360 ml" [ref=e877] [cursor=pointer]:
+                    - /url: /ip/ambientadores/00779052099826?from=/search
+                    - generic [ref=e878]: Desodorante Ambiental Aerosol Campos de Lavanda Lata, 360 ml
+                  - generic [ref=e880]:
+                    - generic [ref=e883]:
+                      - generic [ref=e884]:
+                        - img "Desodorante Ambiental Aerosol Campos de Lavanda Lata, 360 ml"
+                      - button "Agregar al carro - Desodorante Ambiental Aerosol Campos de Lavanda Lata, 360 ml" [ref=e887] [cursor=pointer]:
+                        - generic "agregar" [ref=e888]: 
+                        - generic [ref=e889]: Agregar
+                    - generic [ref=e891]:
+                      - generic [ref=e893]:
+                        - generic [ref=e894]: $2.690
+                        - generic [ref=e895]: precio actual $2.690
+                        - generic [ref=e896]: $7.472 x un
+                      - generic [ref=e897]: Glade
+                      - generic [ref=e898]: Desodorante Ambiental Aerosol Campos de Lavanda Lata, 360 ml
+                - group [ref=e901]:
+                  - link "Desodorante Ambiental Aerosol Encanto de Vainilla Lata Pack 2 Un, 2 Un x 360 ml c/u" [ref=e902] [cursor=pointer]:
+                    - /url: /ip/ambientadores/00779052099833?from=/search
+                    - generic [ref=e903]: Desodorante Ambiental Aerosol Encanto de Vainilla Lata Pack 2 Un, 2 Un x 360 ml c/u
+                  - generic [ref=e905]:
+                    - generic [ref=e908]:
+                      - generic [ref=e909]:
+                        - img "Desodorante Ambiental Aerosol Encanto de Vainilla Lata Pack 2 Un, 2 Un x 360 ml c/u"
+                      - button "Agregar al carro - Desodorante Ambiental Aerosol Encanto de Vainilla Lata Pack 2 Un, 2 Un x 360 ml c/u" [ref=e912] [cursor=pointer]:
+                        - generic "agregar" [ref=e913]: 
+                        - generic [ref=e914]: Agregar
+                    - generic [ref=e916]:
+                      - generic [ref=e918]:
+                        - generic [ref=e919]: $4.390
+                        - generic [ref=e920]: precio actual $4.390
+                        - generic [ref=e921]: $6.097 x lt
+                      - generic [ref=e922]: Glade
+                      - generic [ref=e923]: Desodorante Ambiental Aerosol Encanto de Vainilla Lata Pack 2 Un, 2 Un x 360 ml c/u
+                - group [ref=e926]:
+                  - link "Aromatizante Ambiental Aerosol Toque Repuesto Campos de Lavanda Lata, 1 Un" [ref=e927] [cursor=pointer]:
+                    - /url: /ip/ambientadores/00779052099615?from=/search
+                    - generic [ref=e928]: Aromatizante Ambiental Aerosol Toque Repuesto Campos de Lavanda Lata, 1 Un
+                  - generic [ref=e930]:
+                    - generic [ref=e933]:
+                      - generic [ref=e934]:
+                        - img "Aromatizante Ambiental Aerosol Toque Repuesto Campos de Lavanda Lata, 1 Un"
+                      - button "Agregar al carro - Aromatizante Ambiental Aerosol Toque Repuesto Campos de Lavanda Lata, 1 Un" [ref=e937] [cursor=pointer]:
+                        - generic "agregar" [ref=e938]: 
+                        - generic [ref=e939]: Agregar
+                    - generic [ref=e941]:
+                      - generic [ref=e943]:
+                        - generic [ref=e944]: $6.190
+                        - generic [ref=e945]: precio actual $6.190
+                        - generic [ref=e946]: $343.889 x un
+                      - generic [ref=e947]: Glade
+                      - generic [ref=e948]: Aromatizante Ambiental Aerosol Toque Repuesto Campos de Lavanda Lata, 1 Un
+                - group [ref=e951]:
+                  - link "Aromatizante Ambiental Aerosol Toque Repuesto Mix Lavanda - Tropical Floral - Limón Refrescante Lata, 3 Un x 12 ml c/u" [ref=e952] [cursor=pointer]:
+                    - /url: /ip/ambientadores/00779052000599?from=/search
+                    - generic [ref=e953]: Aromatizante Ambiental Aerosol Toque Repuesto Mix Lavanda - Tropical Floral - Limón Refrescante Lata, 3 Un x 12 ml c/u
+                  - generic [ref=e955]:
+                    - generic [ref=e958]:
+                      - generic [ref=e959]:
+                        - img "Aromatizante Ambiental Aerosol Toque Repuesto Mix Lavanda - Tropical Floral - Limón Refrescante Lata, 3 Un x 12 ml c/u"
+                      - button "Agregar al carro - Aromatizante Ambiental Aerosol Toque Repuesto Mix Lavanda - Tropical Floral - Limón Refrescante Lata, 3 Un x 12 ml c/u" [ref=e962] [cursor=pointer]:
+                        - generic "agregar" [ref=e963]: 
+                        - generic [ref=e964]: Agregar
+                    - generic [ref=e966]:
+                      - generic [ref=e968]:
+                        - generic [ref=e969]: $7.790
+                        - generic [ref=e970]: precio actual $7.790
+                        - generic [ref=e971]: $288.519 x kg
+                      - generic [ref=e972]: Glade
+                      - generic [ref=e973]: Aromatizante Ambiental Aerosol Toque Repuesto Mix Lavanda - Tropical Floral - Limón Refrescante Lata, 3 Un x 12 ml c/u
+                - group [ref=e976]:
+                  - link "Té Verde Caja, 50 Un" [ref=e977] [cursor=pointer]:
+                    - /url: /ip/cafe-te-y-hierbas/00931263116591?from=/search
+                    - generic [ref=e978]: Té Verde Caja, 50 Un
+                  - generic [ref=e980]:
+                    - generic [ref=e983]:
+                      - generic [ref=e984]:
+                        - img "Té Verde Caja, 50 Un"
+                      - button "Agregar al carro - Té Verde Caja, 50 Un" [ref=e987] [cursor=pointer]:
+                        - generic "agregar" [ref=e988]: 
+                        - generic [ref=e989]: Agregar
+                    - generic [ref=e991]:
+                      - generic [ref=e993]:
+                        - generic [ref=e994]: $9.190
+                        - generic [ref=e995]: precio actual $9.190
+                        - generic [ref=e996]: $184 x un
+                      - generic [ref=e997]: Dilmah
+                      - generic [ref=e998]: Té Verde Caja, 50 Un
+                - group [ref=e1001]:
+                  - link "Desodorante Ambiental Aerosol Floral Vibres Lata, 315 ml" [ref=e1002] [cursor=pointer]:
+                    - /url: /ip/ambientadores/00779052003178?from=/search
+                    - generic [ref=e1003]: Desodorante Ambiental Aerosol Floral Vibres Lata, 315 ml
+                  - generic [ref=e1005]:
+                    - generic [ref=e1008]:
+                      - generic [ref=e1009]:
+                        - img "Desodorante Ambiental Aerosol Floral Vibres Lata, 315 ml"
+                      - button "Agregar al carro - Desodorante Ambiental Aerosol Floral Vibres Lata, 315 ml" [ref=e1012] [cursor=pointer]:
+                        - generic "agregar" [ref=e1013]: 
+                        - generic [ref=e1014]: Agregar
+                    - generic [ref=e1016]:
+                      - generic [ref=e1018]:
+                        - generic [ref=e1019]: $2.890
+                        - generic [ref=e1020]: precio actual $2.890
+                        - generic [ref=e1021]: $9.175 x lt
+                      - generic [ref=e1022]: Glade
+                      - generic [ref=e1023]: Desodorante Ambiental Aerosol Floral Vibres Lata, 315 ml
+                - group [ref=e1026]:
+                  - link "Aromatizante Ambiental Toque Repuesto Aerosol Limón Refrescante Lata, 2 Un x 12 ml c/u" [ref=e1027] [cursor=pointer]:
+                    - /url: /ip/ambientadores/00779052099623?from=/search
+                    - generic [ref=e1028]: Aromatizante Ambiental Toque Repuesto Aerosol Limón Refrescante Lata, 2 Un x 12 ml c/u
+                  - generic [ref=e1030]:
+                    - generic [ref=e1033]:
+                      - generic [ref=e1034]:
+                        - img "Aromatizante Ambiental Toque Repuesto Aerosol Limón Refrescante Lata, 2 Un x 12 ml c/u"
+                      - button "Agregar al carro - Aromatizante Ambiental Toque Repuesto Aerosol Limón Refrescante Lata, 2 Un x 12 ml c/u" [ref=e1037] [cursor=pointer]:
+                        - generic "agregar" [ref=e1038]: 
+                        - generic [ref=e1039]: Agregar
+                    - generic [ref=e1041]:
+                      - generic [ref=e1043]:
+                        - generic [ref=e1044]: $6.190
+                        - generic [ref=e1045]: precio actual $6.190
+                        - generic [ref=e1046]: $343.889 x un
+                      - generic [ref=e1047]: Glade
+                      - generic [ref=e1048]: Aromatizante Ambiental Toque Repuesto Aerosol Limón Refrescante Lata, 2 Un x 12 ml c/u
+                - group [ref=e1051]:
+                  - link "Desodorante Ambiental Gel en Lata Praderas de Lavanda, 70 g" [ref=e1052] [cursor=pointer]:
+                    - /url: /ip/ambientadores/00780501000414?from=/search
+                    - generic [ref=e1053]: Desodorante Ambiental Gel en Lata Praderas de Lavanda, 70 g
+                  - generic [ref=e1055]:
+                    - generic [ref=e1058]:
+                      - generic [ref=e1059]:
+                        - img "Desodorante Ambiental Gel en Lata Praderas de Lavanda, 70 g"
+                      - button "Agregar al carro - Desodorante Ambiental Gel en Lata Praderas de Lavanda, 70 g" [ref=e1062] [cursor=pointer]:
+                        - generic "agregar" [ref=e1063]: 
+                        - generic [ref=e1064]: Agregar
+                    - generic [ref=e1066]:
+                      - generic [ref=e1068]:
+                        - generic [ref=e1069]: $1.590
+                        - generic [ref=e1070]: precio actual $1.590
+                        - generic [ref=e1071]: $1.590 x un
+                      - generic [ref=e1072]: Air Wick
+                      - generic [ref=e1073]: Desodorante Ambiental Gel en Lata Praderas de Lavanda, 70 g
+                - group [ref=e1076]:
+                  - link "Set De Colgador Madera 3 Piezas Natural, 1 Un" [ref=e1077] [cursor=pointer]:
+                    - /url: /ip/organizacion-y-logia/00000004606390?from=/search
+                    - generic [ref=e1078]: Set De Colgador Madera 3 Piezas Natural, 1 Un
+                  - generic [ref=e1080]:
+                    - generic [ref=e1083]:
+                      - generic [ref=e1084]:
+                        - img "Set De Colgador Madera 3 Piezas Natural, 1 Un"
+                      - button "Agregar al carro - Set De Colgador Madera 3 Piezas Natural, 1 Un" [ref=e1087] [cursor=pointer]:
+                        - generic "agregar" [ref=e1088]: 
+                        - generic [ref=e1089]: Agregar
+                    - generic [ref=e1091]:
+                      - generic [ref=e1093]:
+                        - generic [ref=e1094]: $2.490
+                        - generic [ref=e1095]: precio actual $2.490
+                        - generic [ref=e1096]: $2.490 x un
+                      - generic [ref=e1097]: Mainstays
+                      - generic [ref=e1098]: Set De Colgador Madera 3 Piezas Natural, 1 Un
+  - alert [ref=e1107]

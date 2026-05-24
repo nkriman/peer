@@ -1,0 +1,902 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: agua con gas 1.6L
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e80]:
+            - generic [ref=e81]:
+              - generic [ref=e84]:
+                - generic [ref=e85]:
+                  - button "Precio" [ref=e88]:
+                    - generic [ref=e89]: Precio
+                    - img [ref=e90]: 
+                  - separator [ref=e91]
+                - generic [ref=e92]:
+                  - button "Campaña" [ref=e95]:
+                    - generic [ref=e96]: Campaña
+                    - img [ref=e97]: 
+                  - separator [ref=e98]
+                - generic [ref=e99]:
+                  - button "Marca" [ref=e102]:
+                    - generic [ref=e103]: Marca
+                    - img [ref=e104]: 
+                  - separator [ref=e105]
+                - generic [ref=e106]:
+                  - button "Categoría" [ref=e109]:
+                    - generic [ref=e110]: Categoría
+                    - img [ref=e111]: 
+                  - separator [ref=e112]
+              - generic [ref=e115]:
+                - heading "Resultados para agua con gas 1.6L (47)" [level=2] [ref=e123]: Resultados para agua con gas 1.6L(47)
+                - generic [ref=e124]:
+                  - group [ref=e127]:
+                    - link "Agua con Gas Strong Botella, 600 ml" [ref=e128] [cursor=pointer]:
+                      - /url: /ip/aguas/00780162001073?from=/search
+                      - generic [ref=e129]: Agua con Gas Strong Botella, 600 ml
+                    - generic [ref=e131]:
+                      - generic [ref=e134]:
+                        - img "Agua con Gas Strong Botella, 600 ml" [ref=e136]
+                        - button "Agregar al carro - Agua con Gas Strong Botella, 600 ml" [ref=e139] [cursor=pointer]:
+                          - generic "agregar" [ref=e140]: 
+                          - generic [ref=e141]: Agregar
+                      - generic [ref=e143]:
+                        - generic [ref=e145]:
+                          - generic [ref=e146]: $750
+                          - generic [ref=e147]: precio actual $750
+                          - generic [ref=e148]: $1.250 x lt
+                        - generic [ref=e149]: Cachantun
+                        - generic [ref=e150]: Agua con Gas Strong Botella, 600 ml
+                  - group [ref=e153]:
+                    - link "Agua Mineral Con Gas Botella, 2,5 L" [ref=e154] [cursor=pointer]:
+                      - /url: /ip/aguas/00780162000588?from=/search
+                      - generic [ref=e155]: Agua Mineral Con Gas Botella, 2,5 L
+                    - generic [ref=e157]:
+                      - generic [ref=e160]:
+                        - img "Agua Mineral Con Gas Botella, 2,5 L" [ref=e162]
+                        - button "Agregar al carro - Agua Mineral Con Gas Botella, 2,5 L" [ref=e165] [cursor=pointer]:
+                          - generic "agregar" [ref=e166]: 
+                          - generic [ref=e167]: Agregar
+                      - generic [ref=e169]:
+                        - generic [ref=e171]:
+                          - generic [ref=e172]: $1.190
+                          - generic [ref=e173]: precio actual $1.190
+                          - generic [ref=e174]: $476 x lt
+                        - generic [ref=e175]: Cachantun
+                        - generic [ref=e176]: Agua Mineral Con Gas Botella, 2,5 L
+                  - group [ref=e179]:
+                    - link "Agua Saborizada Pera Sin Gas Botella, 1,6 L" [ref=e180] [cursor=pointer]:
+                      - /url: /ip/aguas/00780162000665?from=/search
+                      - generic [ref=e181]: Agua Saborizada Pera Sin Gas Botella, 1,6 L
+                    - generic [ref=e183]:
+                      - generic [ref=e186]:
+                        - img "Agua Saborizada Pera Sin Gas Botella, 1,6 L" [ref=e188]
+                        - button "Agregar al carro - Agua Saborizada Pera Sin Gas Botella, 1,6 L" [ref=e191] [cursor=pointer]:
+                          - generic "agregar" [ref=e192]: 
+                          - generic [ref=e193]: Agregar
+                      - generic [ref=e195]:
+                        - generic [ref=e197]:
+                          - generic [ref=e198]: $1.350
+                          - generic [ref=e199]: precio actual $1.350
+                          - generic [ref=e200]: $844 x lt
+                        - generic [ref=e201]: MAS
+                        - generic [ref=e202]: Agua Saborizada Pera Sin Gas Botella, 1,6 L
+                  - group [ref=e205]:
+                    - link "Agua Saborizada Granada Sin Gas Botella, 1,6 L" [ref=e206] [cursor=pointer]:
+                      - /url: /ip/aguas/00780162000663?from=/search
+                      - generic [ref=e207]: Agua Saborizada Granada Sin Gas Botella, 1,6 L
+                    - generic [ref=e209]:
+                      - generic [ref=e212]:
+                        - img "Agua Saborizada Granada Sin Gas Botella, 1,6 L" [ref=e214]
+                        - button "Agregar al carro - Agua Saborizada Granada Sin Gas Botella, 1,6 L" [ref=e217] [cursor=pointer]:
+                          - generic "agregar" [ref=e218]: 
+                          - generic [ref=e219]: Agregar
+                      - generic [ref=e221]:
+                        - generic [ref=e223]:
+                          - generic [ref=e224]: $1.350
+                          - generic [ref=e225]: precio actual $1.350
+                          - generic [ref=e226]: $844 x lt
+                        - generic [ref=e227]: MAS
+                        - generic [ref=e228]: Agua Saborizada Granada Sin Gas Botella, 1,6 L
+                  - group [ref=e231]:
+                    - link "Agua Saborizada Limonada Frambuesa Con Gas Botella, 1,6 L" [ref=e232] [cursor=pointer]:
+                      - /url: /ip/jugos-colacion/00780162001038?from=/search
+                      - generic [ref=e233]: Agua Saborizada Limonada Frambuesa Con Gas Botella, 1,6 L
+                    - generic [ref=e235]:
+                      - generic [ref=e238]:
+                        - img "Agua Saborizada Limonada Frambuesa Con Gas Botella, 1,6 L" [ref=e240]
+                        - button "Agregar al carro - Agua Saborizada Limonada Frambuesa Con Gas Botella, 1,6 L" [ref=e243] [cursor=pointer]:
+                          - generic "agregar" [ref=e244]: 
+                          - generic [ref=e245]: Agregar
+                      - generic [ref=e247]:
+                        - generic [ref=e249]:
+                          - generic [ref=e250]: $1.350
+                          - generic [ref=e251]: precio actual $1.350
+                          - generic [ref=e252]: $844 x lt
+                        - generic [ref=e253]: MAS
+                        - generic [ref=e254]: Agua Saborizada Limonada Frambuesa Con Gas Botella, 1,6 L
+                  - group [ref=e257]:
+                    - link "Agua Purificada Con Gas Botella, 3 L" [ref=e258] [cursor=pointer]:
+                      - /url: /ip/aguas/00780162001045?from=/search
+                      - generic [ref=e259]: Agua Purificada Con Gas Botella, 3 L
+                    - generic [ref=e261]:
+                      - generic [ref=e264]:
+                        - img "Agua Purificada Con Gas Botella, 3 L" [ref=e266]
+                        - button "Agregar al carro - Agua Purificada Con Gas Botella, 3 L" [ref=e269] [cursor=pointer]:
+                          - generic "agregar" [ref=e270]: 
+                          - generic [ref=e271]: Agregar
+                      - generic [ref=e273]:
+                        - generic [ref=e275]:
+                          - generic [ref=e276]: $1.350
+                          - generic [ref=e277]: precio actual $1.350
+                          - generic [ref=e278]: $450 x lt
+                        - generic [ref=e279]: Manantial
+                        - generic [ref=e280]: Agua Purificada Con Gas Botella, 3 L
+                  - group [ref=e283]:
+                    - link "Agua Botella sin Gas Sabor Mango Maracuyá, 1,6 L" [ref=e284] [cursor=pointer]:
+                      - /url: /ip/aguas/00780162001030?from=/search
+                      - generic [ref=e285]: Agua Botella sin Gas Sabor Mango Maracuyá, 1,6 L
+                    - generic [ref=e287]:
+                      - generic [ref=e290]:
+                        - img "Agua Botella sin Gas Sabor Mango Maracuyá, 1,6 L" [ref=e292]
+                        - button "Agregar al carro - Agua Botella sin Gas Sabor Mango Maracuyá, 1,6 L" [ref=e295] [cursor=pointer]:
+                          - generic "agregar" [ref=e296]: 
+                          - generic [ref=e297]: Agregar
+                      - generic [ref=e299]:
+                        - generic [ref=e301]:
+                          - generic [ref=e302]: $1.350
+                          - generic [ref=e303]: precio actual $1.350
+                          - generic [ref=e304]: $844 x lt
+                        - generic [ref=e305]: MAS
+                        - generic [ref=e306]: Agua Botella sin Gas Sabor Mango Maracuyá, 1,6 L
+                  - group [ref=e309]:
+                    - link "Agua Saborizada Citrus Con Gas Botella, 1,6 L" [ref=e310] [cursor=pointer]:
+                      - /url: /ip/aguas/00780162000660?from=/search
+                      - generic [ref=e311]: Agua Saborizada Citrus Con Gas Botella, 1,6 L
+                    - generic [ref=e313]:
+                      - generic [ref=e316]:
+                        - img "Agua Saborizada Citrus Con Gas Botella, 1,6 L" [ref=e318]
+                        - button "Agregar al carro - Agua Saborizada Citrus Con Gas Botella, 1,6 L" [ref=e321] [cursor=pointer]:
+                          - generic "agregar" [ref=e322]: 
+                          - generic [ref=e323]: Agregar
+                      - generic [ref=e325]:
+                        - generic [ref=e327]:
+                          - generic [ref=e328]: $1.350
+                          - generic [ref=e329]: precio actual $1.350
+                          - generic [ref=e330]: $844 x lt
+                        - generic [ref=e331]: MAS
+                        - generic [ref=e332]: Agua Saborizada Citrus Con Gas Botella, 1,6 L
+                  - group [ref=e335]:
+                    - link "Agua Saborizada Manzana Sin Gas Botella, 1,6 L" [ref=e336] [cursor=pointer]:
+                      - /url: /ip/aguas/00780162000662?from=/search
+                      - generic [ref=e337]: Agua Saborizada Manzana Sin Gas Botella, 1,6 L
+                    - generic [ref=e339]:
+                      - generic [ref=e342]:
+                        - img "Agua Saborizada Manzana Sin Gas Botella, 1,6 L" [ref=e344]
+                        - button "Agregar al carro - Agua Saborizada Manzana Sin Gas Botella, 1,6 L" [ref=e347] [cursor=pointer]:
+                          - generic "agregar" [ref=e348]: 
+                          - generic [ref=e349]: Agregar
+                      - generic [ref=e351]:
+                        - generic [ref=e353]:
+                          - generic [ref=e354]: $1.350
+                          - generic [ref=e355]: precio actual $1.350
+                          - generic [ref=e356]: $844 x lt
+                        - generic [ref=e357]: MAS
+                        - generic [ref=e358]: Agua Saborizada Manzana Sin Gas Botella, 1,6 L
+                  - generic [ref=e360]:
+                    - group [ref=e361]:
+                      - link "Agua Purificada Con Gas Botella, 2,5 L" [ref=e362] [cursor=pointer]:
+                        - /url: /ip/aguas/00780282000217?from=/search
+                        - generic [ref=e363]: Agua Purificada Con Gas Botella, 2,5 L
+                      - generic [ref=e365]:
+                        - img "Agua Purificada Con Gas Botella, 2,5 L" [ref=e370]
+                        - generic [ref=e372]:
+                          - generic [ref=e374]:
+                            - generic [ref=e375]: $1.000
+                            - generic [ref=e376]: precio actual $1.000
+                            - generic [ref=e377]: $400 x lt
+                          - generic [ref=e378]: Benedictino
+                          - generic [ref=e379]: Agua Purificada Con Gas Botella, 2,5 L
+                          - generic [ref=e380]: Agotado
+                    - button "Revisar productos similares - Agua Purificada Con Gas Botella, 2,5 L" [ref=e382]: Revisar productos similares
+                  - group [ref=e385]:
+                    - link "Agua Purificada Sin Gas Bidón, 6 L" [ref=e386] [cursor=pointer]:
+                      - /url: /ip/aguas/00780162000604?from=/search
+                      - generic [ref=e387]: Agua Purificada Sin Gas Bidón, 6 L
+                    - generic [ref=e389]:
+                      - generic [ref=e392]:
+                        - img "Agua Purificada Sin Gas Bidón, 6 L" [ref=e394]
+                        - button "Agregar al carro - Agua Purificada Sin Gas Bidón, 6 L" [ref=e397] [cursor=pointer]:
+                          - generic "agregar" [ref=e398]: 
+                          - generic [ref=e399]: Agregar
+                      - generic [ref=e401]:
+                        - generic [ref=e403]:
+                          - generic [ref=e404]: $1.990
+                          - generic [ref=e405]: precio actual $1.990
+                          - generic [ref=e406]: $332 x lt
+                        - generic [ref=e407]: Pura Vida
+                        - generic [ref=e408]: Agua Purificada Sin Gas Bidón, 6 L
+                  - group [ref=e411]:
+                    - link "Agua Saborizada Manzana Sin Gas Botella, 1,5 L" [ref=e412] [cursor=pointer]:
+                      - /url: /ip/aguas/00780282045212?from=/search
+                      - generic [ref=e413]: Agua Saborizada Manzana Sin Gas Botella, 1,5 L
+                    - generic [ref=e415]:
+                      - generic [ref=e418]:
+                        - img "Agua Saborizada Manzana Sin Gas Botella, 1,5 L" [ref=e420]
+                        - button "Agregar al carro - Agua Saborizada Manzana Sin Gas Botella, 1,5 L" [ref=e423] [cursor=pointer]:
+                          - generic "agregar" [ref=e424]: 
+                          - generic [ref=e425]: Agregar
+                      - generic [ref=e427]:
+                        - generic [ref=e429]:
+                          - generic [ref=e430]: $1.150
+                          - generic [ref=e431]: precio actual $1.150
+                          - generic [ref=e432]: $767 x lt
+                        - generic [ref=e433]: Benedictino
+                        - generic [ref=e434]: Agua Saborizada Manzana Sin Gas Botella, 1,5 L
+                  - group [ref=e437]:
+                    - link "Agua Bidón purificada sin gas sin Gas, 6.5 L" [ref=e438] [cursor=pointer]:
+                      - /url: /ip/aguas/00780282065001?from=/search
+                      - generic [ref=e439]: Agua Bidón purificada sin gas sin Gas, 6.5 L
+                    - generic [ref=e441]:
+                      - generic [ref=e444]:
+                        - img "Agua Bidón purificada sin gas sin Gas, 6.5 L" [ref=e446]
+                        - button "Agregar al carro - Agua Bidón purificada sin gas sin Gas, 6.5 L" [ref=e449] [cursor=pointer]:
+                          - generic "agregar" [ref=e450]: 
+                          - generic [ref=e451]: Agregar
+                      - generic [ref=e453]:
+                        - generic [ref=e455]:
+                          - generic [ref=e456]: $2.150
+                          - generic [ref=e457]: precio actual $2.150
+                          - generic [ref=e458]: $331 x lt
+                        - generic [ref=e459]: Benedictino
+                        - generic [ref=e460]: Agua Bidón purificada sin gas sin Gas, 6.5 L
+                  - group [ref=e463]:
+                    - link "Agua Saborizada Pera Sin Gas Botella, 1,5 L" [ref=e464] [cursor=pointer]:
+                      - /url: /ip/aguas/00780282045220?from=/search
+                      - generic [ref=e465]: Agua Saborizada Pera Sin Gas Botella, 1,5 L
+                    - generic [ref=e467]:
+                      - generic [ref=e470]:
+                        - img "Agua Saborizada Pera Sin Gas Botella, 1,5 L" [ref=e472]
+                        - button "Agregar al carro - Agua Saborizada Pera Sin Gas Botella, 1,5 L" [ref=e475] [cursor=pointer]:
+                          - generic "agregar" [ref=e476]: 
+                          - generic [ref=e477]: Agregar
+                      - generic [ref=e479]:
+                        - generic [ref=e481]:
+                          - generic [ref=e482]: $1.150
+                          - generic [ref=e483]: precio actual $1.150
+                          - generic [ref=e484]: $767 x lt
+                        - generic [ref=e485]: Benedictino
+                        - generic [ref=e486]: Agua Saborizada Pera Sin Gas Botella, 1,5 L
+                  - group [ref=e489]:
+                    - link "Agua Saborizada Piña Sin Gas Botella, 1,6 L" [ref=e490] [cursor=pointer]:
+                      - /url: /ip/aguas/00780162000833?from=/search
+                      - generic [ref=e491]: Agua Saborizada Piña Sin Gas Botella, 1,6 L
+                    - generic [ref=e493]:
+                      - generic [ref=e496]:
+                        - img "Agua Saborizada Piña Sin Gas Botella, 1,6 L" [ref=e498]
+                        - button "Agregar al carro - Agua Saborizada Piña Sin Gas Botella, 1,6 L" [ref=e501] [cursor=pointer]:
+                          - generic "agregar" [ref=e502]: 
+                          - generic [ref=e503]: Agregar
+                      - generic [ref=e505]:
+                        - generic [ref=e507]:
+                          - generic [ref=e508]: $1.350
+                          - generic [ref=e509]: precio actual $1.350
+                          - generic [ref=e510]: $844 x lt
+                        - generic [ref=e511]: MAS
+                        - generic [ref=e512]: Agua Saborizada Piña Sin Gas Botella, 1,6 L
+                  - group [ref=e515]:
+                    - link "Agua Saborizada Limonada Jengibre Sin Gas Botella, 1,5 L" [ref=e516] [cursor=pointer]:
+                      - /url: /ip/aguas/00780282045228?from=/search
+                      - generic [ref=e517]: Agua Saborizada Limonada Jengibre Sin Gas Botella, 1,5 L
+                    - generic [ref=e519]:
+                      - generic [ref=e522]:
+                        - img "Agua Saborizada Limonada Jengibre Sin Gas Botella, 1,5 L" [ref=e524]
+                        - button "Agregar al carro - Agua Saborizada Limonada Jengibre Sin Gas Botella, 1,5 L" [ref=e527] [cursor=pointer]:
+                          - generic "agregar" [ref=e528]: 
+                          - generic [ref=e529]: Agregar
+                      - generic [ref=e531]:
+                        - generic [ref=e533]:
+                          - generic [ref=e534]: $1.150
+                          - generic [ref=e535]: precio actual $1.150
+                          - generic [ref=e536]: $767 x lt
+                        - generic [ref=e537]: Benedictino
+                        - generic [ref=e538]: Agua Saborizada Limonada Jengibre Sin Gas Botella, 1,5 L
+                  - group [ref=e541]:
+                    - link "Agua Mineral Con Gas Botella, 1,6 L" [ref=e542] [cursor=pointer]:
+                      - /url: /ip/aguas/00780282002095?from=/search
+                      - generic [ref=e543]: Agua Mineral Con Gas Botella, 1,6 L
+                    - generic [ref=e545]:
+                      - generic [ref=e546]:
+                        - generic [ref=e547]:
+                          - generic [ref=e549]: Combina 2 x $1.490
+                          - button "Combina 2 x $1.490. Ver combinaciones aceptadas y coincidir productos." [ref=e550] [cursor=pointer]: Combinar
+                        - generic [ref=e551]:
+                          - generic [ref=e552]:
+                            - img "Agua Mineral Con Gas Botella, 1,6 L"
+                          - button "Agregar al carro - Agua Mineral Con Gas Botella, 1,6 L" [ref=e555] [cursor=pointer]:
+                            - generic "agregar" [ref=e556]: 
+                            - generic [ref=e557]: Agregar
+                      - generic [ref=e559]:
+                        - generic [ref=e561]:
+                          - generic [ref=e562]: $990
+                          - generic [ref=e563]: precio actual $990
+                          - generic [ref=e564]: $619 x lt
+                        - generic [ref=e565]: Vital
+                        - generic [ref=e566]: Agua Mineral Con Gas Botella, 1,6 L
+                  - group [ref=e569]:
+                    - link "Agua Mineral Sin Gas Botella, 2,5 L" [ref=e570] [cursor=pointer]:
+                      - /url: /ip/aguas/00780162000589?from=/search
+                      - generic [ref=e571]: Agua Mineral Sin Gas Botella, 2,5 L
+                    - generic [ref=e573]:
+                      - generic [ref=e576]:
+                        - generic [ref=e577]:
+                          - img "Agua Mineral Sin Gas Botella, 2,5 L"
+                        - button "Agregar al carro - Agua Mineral Sin Gas Botella, 2,5 L" [ref=e580] [cursor=pointer]:
+                          - generic "agregar" [ref=e581]: 
+                          - generic [ref=e582]: Agregar
+                      - generic [ref=e584]:
+                        - generic [ref=e586]:
+                          - generic [ref=e587]: $1.190
+                          - generic [ref=e588]: precio actual $1.190
+                          - generic [ref=e589]: $476 x lt
+                        - generic [ref=e590]: Cachantun
+                        - generic [ref=e591]: Agua Mineral Sin Gas Botella, 2,5 L
+                  - group [ref=e594]:
+                    - link "Agua Purificada Sin Gas Botella, 3 L" [ref=e595] [cursor=pointer]:
+                      - /url: /ip/aguas/00780162001046?from=/search
+                      - generic [ref=e596]: Agua Purificada Sin Gas Botella, 3 L
+                    - generic [ref=e598]:
+                      - generic [ref=e601]:
+                        - img "Agua Purificada Sin Gas Botella, 3 L" [ref=e603]
+                        - button "Agregar al carro - Agua Purificada Sin Gas Botella, 3 L" [ref=e606] [cursor=pointer]:
+                          - generic "agregar" [ref=e607]: 
+                          - generic [ref=e608]: Agregar
+                      - generic [ref=e610]:
+                        - generic [ref=e612]:
+                          - generic [ref=e613]: $1.350
+                          - generic [ref=e614]: precio actual $1.350
+                          - generic [ref=e615]: $450 x lt
+                        - generic [ref=e616]: Manantial
+                        - generic [ref=e617]: Agua Purificada Sin Gas Botella, 3 L
+                  - group [ref=e620]:
+                    - link "Agua Saborizada Pomelo Menta Sin Gas Botella, 1,5 L" [ref=e621] [cursor=pointer]:
+                      - /url: /ip/aguas/00780282045236?from=/search
+                      - generic [ref=e622]: Agua Saborizada Pomelo Menta Sin Gas Botella, 1,5 L
+                    - generic [ref=e624]:
+                      - generic [ref=e627]:
+                        - generic [ref=e628]:
+                          - img "Agua Saborizada Pomelo Menta Sin Gas Botella, 1,5 L"
+                        - button "Agregar al carro - Agua Saborizada Pomelo Menta Sin Gas Botella, 1,5 L" [ref=e631] [cursor=pointer]:
+                          - generic "agregar" [ref=e632]: 
+                          - generic [ref=e633]: Agregar
+                      - generic [ref=e635]:
+                        - generic [ref=e637]:
+                          - generic [ref=e638]: $1.150
+                          - generic [ref=e639]: precio actual $1.150
+                          - generic [ref=e640]: $767 x lt
+                        - generic [ref=e641]: Benedictino
+                        - generic [ref=e642]: Agua Saborizada Pomelo Menta Sin Gas Botella, 1,5 L
+                  - group [ref=e645]:
+                    - link "Agua Mineral Botella Con Gas, 1,5 L" [ref=e646] [cursor=pointer]:
+                      - /url: /ip/aguas/00780282044152?from=/search
+                      - generic [ref=e647]: Agua Mineral Botella Con Gas, 1,5 L
+                    - generic [ref=e649]:
+                      - generic [ref=e652]:
+                        - generic [ref=e653]:
+                          - img "Agua Mineral Botella Con Gas, 1,5 L"
+                        - button "Agregar al carro - Agua Mineral Botella Con Gas, 1,5 L" [ref=e656] [cursor=pointer]:
+                          - generic "agregar" [ref=e657]: 
+                          - generic [ref=e658]: Agregar
+                      - generic [ref=e660]:
+                        - generic [ref=e662]:
+                          - generic [ref=e663]: $750
+                          - generic [ref=e664]: precio actual $750
+                          - generic [ref=e665]: $500 x lt
+                        - generic [ref=e666]: Benedictino
+                        - generic [ref=e667]: Agua Mineral Botella Con Gas, 1,5 L
+                  - group [ref=e670]:
+                    - link "Agua Botella Purificada sin Gas, 500 ml" [ref=e671] [cursor=pointer]:
+                      - /url: /ip/aguas/00040000716160?from=/search
+                      - generic [ref=e672]: Agua Botella Purificada sin Gas, 500 ml
+                    - generic [ref=e674]:
+                      - generic [ref=e677]:
+                        - img "Agua Botella Purificada sin Gas, 500 ml" [ref=e679]
+                        - button "Agregar al carro - Agua Botella Purificada sin Gas, 500 ml" [ref=e682] [cursor=pointer]:
+                          - generic "agregar" [ref=e683]: 
+                          - generic [ref=e684]: Agregar
+                      - generic [ref=e686]:
+                        - generic [ref=e688]:
+                          - generic [ref=e689]: $450
+                          - generic [ref=e690]: precio actual $450
+                          - generic [ref=e691]: $900 x lt
+                        - generic [ref=e692]: Great Value
+                        - generic [ref=e693]: Agua Botella Purificada sin Gas, 500 ml
+                  - group [ref=e696]:
+                    - link "Agua Mineral Light Gas Botella, 1,6 L" [ref=e697] [cursor=pointer]:
+                      - /url: /ip/aguas/00780162001585?from=/search
+                      - generic [ref=e698]: Agua Mineral Light Gas Botella, 1,6 L
+                    - generic [ref=e700]:
+                      - generic [ref=e701]:
+                        - generic [ref=e702]:
+                          - generic [ref=e704]: Combina 3 x $2.290
+                          - button "Combina 3 x $2.290. Ver combinaciones aceptadas y coincidir productos." [ref=e705] [cursor=pointer]: Combinar
+                        - generic [ref=e706]:
+                          - generic [ref=e707]:
+                            - img "Agua Mineral Light Gas Botella, 1,6 L"
+                          - button "Agregar al carro - Agua Mineral Light Gas Botella, 1,6 L" [ref=e710] [cursor=pointer]:
+                            - generic "agregar" [ref=e711]: 
+                            - generic [ref=e712]: Agregar
+                      - generic [ref=e714]:
+                        - generic [ref=e716]:
+                          - generic [ref=e717]: $1.090
+                          - generic [ref=e718]: precio actual $1.090
+                          - generic [ref=e719]: $681 x lt
+                        - generic [ref=e720]: Cachantun
+                        - generic [ref=e721]: Agua Mineral Light Gas Botella, 1,6 L
+                  - group [ref=e724]:
+                    - link "Agua Mineral Con Gas Botella, 1,6 L" [ref=e725] [cursor=pointer]:
+                      - /url: /ip/aguas/00780162085295?from=/search
+                      - generic [ref=e726]: Agua Mineral Con Gas Botella, 1,6 L
+                    - generic [ref=e728]:
+                      - generic [ref=e729]:
+                        - generic [ref=e730]:
+                          - generic [ref=e732]: Combina 3 x $2.290
+                          - button "Combina 3 x $2.290. Ver combinaciones aceptadas y coincidir productos." [ref=e733] [cursor=pointer]: Combinar
+                        - generic [ref=e734]:
+                          - generic [ref=e735]:
+                            - img "Agua Mineral Con Gas Botella, 1,6 L"
+                          - button "Agregar al carro - Agua Mineral Con Gas Botella, 1,6 L" [ref=e738] [cursor=pointer]:
+                            - generic "agregar" [ref=e739]: 
+                            - generic [ref=e740]: Agregar
+                      - generic [ref=e742]:
+                        - generic [ref=e744]:
+                          - generic [ref=e745]: $1.090
+                          - generic [ref=e746]: precio actual $1.090
+                          - generic [ref=e747]: $681 x lt
+                        - generic [ref=e748]: Cachantun
+                        - generic [ref=e749]: Agua Mineral Con Gas Botella, 1,6 L
+                  - group [ref=e752]:
+                    - link "Agua Saborizada Limonada Jengibre Sin Gas Botella, 1,6 L" [ref=e753] [cursor=pointer]:
+                      - /url: /ip/aguas/00780162000831?from=/search
+                      - generic [ref=e754]: Agua Saborizada Limonada Jengibre Sin Gas Botella, 1,6 L
+                    - generic [ref=e756]:
+                      - generic [ref=e759]:
+                        - generic [ref=e760]:
+                          - img "Agua Saborizada Limonada Jengibre Sin Gas Botella, 1,6 L"
+                        - button "Agregar al carro - Agua Saborizada Limonada Jengibre Sin Gas Botella, 1,6 L" [ref=e763] [cursor=pointer]:
+                          - generic "agregar" [ref=e764]: 
+                          - generic [ref=e765]: Agregar
+                      - generic [ref=e767]:
+                        - generic [ref=e769]:
+                          - generic [ref=e770]: $1.350
+                          - generic [ref=e771]: precio actual $1.350
+                          - generic [ref=e772]: $844 x lt
+                        - generic [ref=e773]: MAS
+                        - generic [ref=e774]: Agua Saborizada Limonada Jengibre Sin Gas Botella, 1,6 L
+                  - group [ref=e777]:
+                    - link "Agua Purificada sin Gas Botella, 2,5 L" [ref=e778] [cursor=pointer]:
+                      - /url: /ip/aguas/00780282000218?from=/search
+                      - generic [ref=e779]: Agua Purificada sin Gas Botella, 2,5 L
+                    - generic [ref=e781]:
+                      - generic [ref=e784]:
+                        - img "Agua Purificada sin Gas Botella, 2,5 L" [ref=e786]
+                        - button "Agregar al carro - Agua Purificada sin Gas Botella, 2,5 L" [ref=e789] [cursor=pointer]:
+                          - generic "agregar" [ref=e790]: 
+                          - generic [ref=e791]: Agregar
+                      - generic [ref=e793]:
+                        - generic [ref=e795]:
+                          - generic [ref=e796]: $1.000
+                          - generic [ref=e797]: precio actual $1.000
+                          - generic [ref=e798]: $400 x lt
+                        - generic [ref=e799]: Bendictino
+                        - generic [ref=e800]: Agua Purificada sin Gas Botella, 2,5 L
+                  - group [ref=e803]:
+                    - link "Agua Mineral Sin Gas Botella, 1,6 L" [ref=e804] [cursor=pointer]:
+                      - /url: /ip/aguas/00780282002195?from=/search
+                      - generic [ref=e805]: Agua Mineral Sin Gas Botella, 1,6 L
+                    - generic [ref=e807]:
+                      - generic [ref=e808]:
+                        - generic [ref=e809]:
+                          - generic [ref=e811]: Combina 2 x $1.490
+                          - button "Combina 2 x $1.490. Ver combinaciones aceptadas y coincidir productos." [ref=e812] [cursor=pointer]: Combinar
+                        - generic [ref=e813]:
+                          - generic [ref=e814]:
+                            - img "Agua Mineral Sin Gas Botella, 1,6 L"
+                          - button "Agregar al carro - Agua Mineral Sin Gas Botella, 1,6 L" [ref=e817] [cursor=pointer]:
+                            - generic "agregar" [ref=e818]: 
+                            - generic [ref=e819]: Agregar
+                      - generic [ref=e821]:
+                        - generic [ref=e823]:
+                          - generic [ref=e824]: $990
+                          - generic [ref=e825]: precio actual $990
+                          - generic [ref=e826]: $619 x lt
+                        - generic [ref=e827]: Vital
+                        - generic [ref=e828]: Agua Mineral Sin Gas Botella, 1,6 L
+                  - group [ref=e831]:
+                    - link "Agua Saborizada Sin Gas Sabor Uva Botella, 1,6 L" [ref=e832] [cursor=pointer]:
+                      - /url: /ip/jugos-colacion/00780162000664?from=/search
+                      - generic [ref=e833]: Agua Saborizada Sin Gas Sabor Uva Botella, 1,6 L
+                    - generic [ref=e835]:
+                      - generic [ref=e838]:
+                        - generic [ref=e839]:
+                          - img "Agua Saborizada Sin Gas Sabor Uva Botella, 1,6 L"
+                        - button "Agregar al carro - Agua Saborizada Sin Gas Sabor Uva Botella, 1,6 L" [ref=e842] [cursor=pointer]:
+                          - generic "agregar" [ref=e843]: 
+                          - generic [ref=e844]: Agregar
+                      - generic [ref=e846]:
+                        - generic [ref=e848]:
+                          - generic [ref=e849]: $1.350
+                          - generic [ref=e850]: precio actual $1.350
+                          - generic [ref=e851]: $844 x lt
+                        - generic [ref=e852]: MAS
+                        - generic [ref=e853]: Agua Saborizada Sin Gas Sabor Uva Botella, 1,6 L
+                  - group [ref=e856]:
+                    - link "Agua Botella Purificada Con Gas, 500 ml" [ref=e857] [cursor=pointer]:
+                      - /url: /ip/aguas/00780282044112?from=/search
+                      - generic [ref=e858]: Agua Botella Purificada Con Gas, 500 ml
+                    - generic [ref=e860]:
+                      - generic [ref=e863]:
+                        - img "Agua Botella Purificada Con Gas, 500 ml" [ref=e865]
+                        - button "Agregar al carro - Agua Botella Purificada Con Gas, 500 ml" [ref=e868] [cursor=pointer]:
+                          - generic "agregar" [ref=e869]: 
+                          - generic [ref=e870]: Agregar
+                      - generic [ref=e872]:
+                        - generic [ref=e874]:
+                          - generic [ref=e875]: $830
+                          - generic [ref=e876]: precio actual $830
+                          - generic [ref=e877]: $1.660 x lt
+                        - generic [ref=e878]: Benedictino
+                        - generic [ref=e879]: Agua Botella Purificada Con Gas, 500 ml
+                  - group [ref=e882]:
+                    - link "Agua Botella Purificada Con Gas, 1,5 L" [ref=e883] [cursor=pointer]:
+                      - /url: /ip/aguas/00780162001039?from=/search
+                      - generic [ref=e884]: Agua Botella Purificada Con Gas, 1,5 L
+                    - generic [ref=e886]:
+                      - generic [ref=e889]:
+                        - img "Agua Botella Purificada Con Gas, 1,5 L" [ref=e891]
+                        - button "Agregar al carro - Agua Botella Purificada Con Gas, 1,5 L" [ref=e894] [cursor=pointer]:
+                          - generic "agregar" [ref=e895]: 
+                          - generic [ref=e896]: Agregar
+                      - generic [ref=e898]:
+                        - generic [ref=e900]:
+                          - generic [ref=e901]: $750
+                          - generic [ref=e902]: precio actual $750
+                          - generic [ref=e903]: $500 x lt
+                        - generic [ref=e904]: Manantial
+                        - generic [ref=e905]: Agua Botella Purificada Con Gas, 1,5 L
+                  - group [ref=e908]:
+                    - link "Agua Botella Purificada sin Gas, 500 ml" [ref=e909] [cursor=pointer]:
+                      - /url: /ip/aguas/00780282044100?from=/search
+                      - generic [ref=e910]: Agua Botella Purificada sin Gas, 500 ml
+                    - generic [ref=e912]:
+                      - generic [ref=e915]:
+                        - img "Agua Botella Purificada sin Gas, 500 ml" [ref=e917]
+                        - button "Agregar al carro - Agua Botella Purificada sin Gas, 500 ml" [ref=e920] [cursor=pointer]:
+                          - generic "agregar" [ref=e921]: 
+                          - generic [ref=e922]: Agregar
+                      - generic [ref=e924]:
+                        - generic [ref=e926]:
+                          - generic [ref=e927]: $830
+                          - generic [ref=e928]: precio actual $830
+                          - generic [ref=e929]: $1.660 x lt
+                        - generic [ref=e930]: Benedictino
+                        - generic [ref=e931]: Agua Botella Purificada sin Gas, 500 ml
+                  - group [ref=e934]:
+                    - link "Agua Mineral Sin Gas Botella, 1,6 L" [ref=e935] [cursor=pointer]:
+                      - /url: /ip/aguas/00780162085296?from=/search
+                      - generic [ref=e936]: Agua Mineral Sin Gas Botella, 1,6 L
+                    - generic [ref=e938]:
+                      - generic [ref=e939]:
+                        - generic [ref=e940]:
+                          - generic [ref=e942]: Combina 3 x $2.290
+                          - button "Combina 3 x $2.290. Ver combinaciones aceptadas y coincidir productos." [ref=e943] [cursor=pointer]: Combinar
+                        - generic [ref=e944]:
+                          - generic [ref=e945]:
+                            - img "Agua Mineral Sin Gas Botella, 1,6 L"
+                          - button "Agregar al carro - Agua Mineral Sin Gas Botella, 1,6 L" [ref=e948] [cursor=pointer]:
+                            - generic "agregar" [ref=e949]: 
+                            - generic [ref=e950]: Agregar
+                      - generic [ref=e952]:
+                        - generic [ref=e954]:
+                          - generic [ref=e955]: $1.090
+                          - generic [ref=e956]: precio actual $1.090
+                          - generic [ref=e957]: $681 x lt
+                        - generic [ref=e958]: Cachantun
+                        - generic [ref=e959]: Agua Mineral Sin Gas Botella, 1,6 L
+                  - generic [ref=e961]:
+                    - group [ref=e962]:
+                      - link "Agua Saborizada Pera Sin Gas Botella, 600 ml" [ref=e963] [cursor=pointer]:
+                        - /url: /ip/aguas/00780162000958?from=/search
+                        - generic [ref=e964]: Agua Saborizada Pera Sin Gas Botella, 600 ml
+                      - generic [ref=e966]:
+                        - generic [ref=e970]:
+                          - img "Agua Saborizada Pera Sin Gas Botella, 600 ml"
+                        - generic [ref=e972]:
+                          - generic [ref=e974]:
+                            - generic [ref=e975]: $940
+                            - generic [ref=e976]: precio actual $940
+                            - generic [ref=e977]: $1.567 x lt
+                          - generic [ref=e978]: MAS
+                          - generic [ref=e979]: Agua Saborizada Pera Sin Gas Botella, 600 ml
+                          - generic [ref=e980]: Agotado
+                    - button "Revisar productos similares - Agua Saborizada Pera Sin Gas Botella, 600 ml" [ref=e982]: Revisar productos similares
+                  - group [ref=e985]:
+                    - link "Agua Saborizada Manzana Sin Gas Botella, 600 ml" [ref=e986] [cursor=pointer]:
+                      - /url: /ip/aguas/00780162000957?from=/search
+                      - generic [ref=e987]: Agua Saborizada Manzana Sin Gas Botella, 600 ml
+                    - generic [ref=e989]:
+                      - generic [ref=e992]:
+                        - generic [ref=e993]:
+                          - img "Agua Saborizada Manzana Sin Gas Botella, 600 ml"
+                        - button "Agregar al carro - Agua Saborizada Manzana Sin Gas Botella, 600 ml" [ref=e996] [cursor=pointer]:
+                          - generic "agregar" [ref=e997]: 
+                          - generic [ref=e998]: Agregar
+                      - generic [ref=e1000]:
+                        - generic [ref=e1002]:
+                          - generic [ref=e1003]: $940
+                          - generic [ref=e1004]: precio actual $940
+                          - generic [ref=e1005]: $1.567 x lt
+                        - generic [ref=e1006]: MAS
+                        - generic [ref=e1007]: Agua Saborizada Manzana Sin Gas Botella, 600 ml
+                  - group [ref=e1010]:
+                    - link "Agua Saborizada Piña Sin Gas Botella, 600 ml" [ref=e1011] [cursor=pointer]:
+                      - /url: /ip/aguas/00780162000964?from=/search
+                      - generic [ref=e1012]: Agua Saborizada Piña Sin Gas Botella, 600 ml
+                    - generic [ref=e1014]:
+                      - generic [ref=e1017]:
+                        - generic [ref=e1018]:
+                          - img "Agua Saborizada Piña Sin Gas Botella, 600 ml"
+                        - button "Agregar al carro - Agua Saborizada Piña Sin Gas Botella, 600 ml" [ref=e1021] [cursor=pointer]:
+                          - generic "agregar" [ref=e1022]: 
+                          - generic [ref=e1023]: Agregar
+                      - generic [ref=e1025]:
+                        - generic [ref=e1027]:
+                          - generic [ref=e1028]: $940
+                          - generic [ref=e1029]: precio actual $940
+                          - generic [ref=e1030]: $1.567 x lt
+                        - generic [ref=e1031]: MAS
+                        - generic [ref=e1032]: Agua Saborizada Piña Sin Gas Botella, 600 ml
+                  - group [ref=e1035]:
+                    - link "Agua Saborizada Granada Sin Gas Botella, 600 ml" [ref=e1036] [cursor=pointer]:
+                      - /url: /ip/aguas/00780162000959?from=/search
+                      - generic [ref=e1037]: Agua Saborizada Granada Sin Gas Botella, 600 ml
+                    - generic [ref=e1039]:
+                      - generic [ref=e1042]:
+                        - generic [ref=e1043]:
+                          - img "Agua Saborizada Granada Sin Gas Botella, 600 ml"
+                        - button "Agregar al carro - Agua Saborizada Granada Sin Gas Botella, 600 ml" [ref=e1046] [cursor=pointer]:
+                          - generic "agregar" [ref=e1047]: 
+                          - generic [ref=e1048]: Agregar
+                      - generic [ref=e1050]:
+                        - generic [ref=e1052]:
+                          - generic [ref=e1053]: $940
+                          - generic [ref=e1054]: precio actual $940
+                          - generic [ref=e1055]: $1.567 x lt
+                        - generic [ref=e1056]: MAS
+                        - generic [ref=e1057]: Agua Saborizada Granada Sin Gas Botella, 600 ml
+                  - group [ref=e1060]:
+                    - link "Agua Mineral Light Gas Botella, 600 ml" [ref=e1061] [cursor=pointer]:
+                      - /url: /ip/aguas/00780162000970?from=/search
+                      - generic [ref=e1062]: Agua Mineral Light Gas Botella, 600 ml
+                    - generic [ref=e1064]:
+                      - generic [ref=e1067]:
+                        - generic [ref=e1068]:
+                          - img "Agua Mineral Light Gas Botella, 600 ml"
+                        - button "Agregar al carro - Agua Mineral Light Gas Botella, 600 ml" [ref=e1071] [cursor=pointer]:
+                          - generic "agregar" [ref=e1072]: 
+                          - generic [ref=e1073]: Agregar
+                      - generic [ref=e1075]:
+                        - generic [ref=e1077]:
+                          - generic [ref=e1078]: $750
+                          - generic [ref=e1079]: precio actual $750
+                          - generic [ref=e1080]: $1.250 x lt
+                        - generic [ref=e1081]: Cachantun
+                        - generic [ref=e1082]: Agua Mineral Light Gas Botella, 600 ml
+                  - group [ref=e1085]:
+                    - link "Agua Mineral Con Gas Botella, 600 ml" [ref=e1086] [cursor=pointer]:
+                      - /url: /ip/aguas/00780162000969?from=/search
+                      - generic [ref=e1087]: Agua Mineral Con Gas Botella, 600 ml
+                    - generic [ref=e1089]:
+                      - generic [ref=e1092]:
+                        - generic [ref=e1093]:
+                          - img "Agua Mineral Con Gas Botella, 600 ml"
+                        - button "Agregar al carro - Agua Mineral Con Gas Botella, 600 ml" [ref=e1096] [cursor=pointer]:
+                          - generic "agregar" [ref=e1097]: 
+                          - generic [ref=e1098]: Agregar
+                      - generic [ref=e1100]:
+                        - generic [ref=e1102]:
+                          - generic [ref=e1103]: $750
+                          - generic [ref=e1104]: precio actual $750
+                          - generic [ref=e1105]: $1.250 x lt
+                        - generic [ref=e1106]: Cachantun
+                        - generic [ref=e1107]: Agua Mineral Con Gas Botella, 600 ml
+                  - group [ref=e1110]:
+                    - link "Agua Botella Saborizada Frutos del Bosque Con Gas, 1600 ml" [ref=e1111] [cursor=pointer]:
+                      - /url: /ip/aguas/00780162001107?from=/search
+                      - generic [ref=e1112]: Agua Botella Saborizada Frutos del Bosque Con Gas, 1600 ml
+                    - generic [ref=e1114]:
+                      - generic [ref=e1117]:
+                        - generic [ref=e1118]:
+                          - img "Agua Botella Saborizada Frutos del Bosque Con Gas, 1600 ml"
+                        - button "Agregar al carro - Agua Botella Saborizada Frutos del Bosque Con Gas, 1600 ml" [ref=e1121] [cursor=pointer]:
+                          - generic "agregar" [ref=e1122]: 
+                          - generic [ref=e1123]: Agregar
+                      - generic [ref=e1125]:
+                        - generic [ref=e1127]:
+                          - generic [ref=e1128]: $1.350
+                          - generic [ref=e1129]: precio actual $1.350
+                          - generic [ref=e1130]: $900 x lt
+                        - generic [ref=e1131]: MAS
+                        - generic [ref=e1132]: Agua Botella Saborizada Frutos del Bosque Con Gas, 1600 ml
+                  - group [ref=e1135]:
+                    - link "Agua Botella Purificada sin Gas, 1.5 L" [ref=e1136] [cursor=pointer]:
+                      - /url: /ip/aguas/00780162001041?from=/search
+                      - generic [ref=e1137]: Agua Botella Purificada sin Gas, 1.5 L
+                    - generic [ref=e1139]:
+                      - generic [ref=e1142]:
+                        - img "Agua Botella Purificada sin Gas, 1.5 L" [ref=e1144]
+                        - button "Agregar al carro - Agua Botella Purificada sin Gas, 1.5 L" [ref=e1147] [cursor=pointer]:
+                          - generic "agregar" [ref=e1148]: 
+                          - generic [ref=e1149]: Agregar
+                      - generic [ref=e1151]:
+                        - generic [ref=e1153]:
+                          - generic [ref=e1154]: $750
+                          - generic [ref=e1155]: precio actual $750
+                          - generic [ref=e1156]: $500 x lt
+                        - generic [ref=e1157]: Manantial
+                        - generic [ref=e1158]: Agua Botella Purificada sin Gas, 1.5 L
+                  - group [ref=e1161]:
+                    - link "Agua Mineral Sin Gas Botella, 600 ml" [ref=e1162] [cursor=pointer]:
+                      - /url: /ip/aguas/00780162000971?from=/search
+                      - generic [ref=e1163]: Agua Mineral Sin Gas Botella, 600 ml
+                    - generic [ref=e1165]:
+                      - generic [ref=e1168]:
+                        - generic [ref=e1169]:
+                          - img "Agua Mineral Sin Gas Botella, 600 ml"
+                        - button "Agregar al carro - Agua Mineral Sin Gas Botella, 600 ml" [ref=e1172] [cursor=pointer]:
+                          - generic "agregar" [ref=e1173]: 
+                          - generic [ref=e1174]: Agregar
+                      - generic [ref=e1176]:
+                        - generic [ref=e1178]:
+                          - generic [ref=e1179]: $750
+                          - generic [ref=e1180]: precio actual $750
+                          - generic [ref=e1181]: $1.250 x lt
+                        - generic [ref=e1182]: Cachantun
+                        - generic [ref=e1183]: Agua Mineral Sin Gas Botella, 600 ml
+                  - group [ref=e1186]:
+                    - link "Agua Saborizada Limonada Jengibre Sin Gas Botella, 600 ml" [ref=e1187] [cursor=pointer]:
+                      - /url: /ip/aguas/00780162000963?from=/search
+                      - generic [ref=e1188]: Agua Saborizada Limonada Jengibre Sin Gas Botella, 600 ml
+                    - generic [ref=e1190]:
+                      - generic [ref=e1193]:
+                        - generic [ref=e1194]:
+                          - img "Agua Saborizada Limonada Jengibre Sin Gas Botella, 600 ml"
+                        - button "Agregar al carro - Agua Saborizada Limonada Jengibre Sin Gas Botella, 600 ml" [ref=e1197] [cursor=pointer]:
+                          - generic "agregar" [ref=e1198]: 
+                          - generic [ref=e1199]: Agregar
+                      - generic [ref=e1201]:
+                        - generic [ref=e1203]:
+                          - generic [ref=e1204]: $940
+                          - generic [ref=e1205]: precio actual $940
+                          - generic [ref=e1206]: $1.567 x lt
+                        - generic [ref=e1207]: MAS
+                        - generic [ref=e1208]: Agua Saborizada Limonada Jengibre Sin Gas Botella, 600 ml
+                  - group [ref=e1211]:
+                    - link "Agua Mineral Vital Sin Gas Botella, 600 ml" [ref=e1212] [cursor=pointer]:
+                      - /url: /ip/aguas/00780282060020?from=/search
+                      - generic [ref=e1213]: Agua Mineral Vital Sin Gas Botella, 600 ml
+                    - generic [ref=e1215]:
+                      - generic [ref=e1216]:
+                        - generic [ref=e1218]:
+                          - generic [ref=e1220]: 
+                          - text: Rebaja
+                        - generic [ref=e1221]:
+                          - generic [ref=e1222]:
+                            - img "Agua Mineral Vital Sin Gas Botella, 600 ml"
+                          - button "Agregar al carro - Agua Mineral Vital Sin Gas Botella, 600 ml" [ref=e1225] [cursor=pointer]:
+                            - generic "agregar" [ref=e1226]: 
+                            - generic [ref=e1227]: Agregar
+                      - generic [ref=e1229]:
+                        - generic [ref=e1231]:
+                          - generic [ref=e1232]: $690
+                          - generic [ref=e1233]: precio actual $690, Costaba $850
+                          - generic [ref=e1234]: $1.150 x lt
+                          - generic [ref=e1235]: $850
+                          - generic [ref=e1236]: Ahorra $160
+                        - generic [ref=e1237]: Vital
+                        - generic [ref=e1238]: Agua Mineral Vital Sin Gas Botella, 600 ml
+                  - group [ref=e1241]:
+                    - link "Agua Mineral Sin Gas Botella, 1 L" [ref=e1242] [cursor=pointer]:
+                      - /url: /ip/aguas/00780162000541?from=/search
+                      - generic [ref=e1243]: Agua Mineral Sin Gas Botella, 1 L
+                    - generic [ref=e1245]:
+                      - generic [ref=e1248]:
+                        - generic [ref=e1249]:
+                          - img "Agua Mineral Sin Gas Botella, 1 L"
+                        - button "Agregar al carro - Agua Mineral Sin Gas Botella, 1 L" [ref=e1252] [cursor=pointer]:
+                          - generic "agregar" [ref=e1253]: 
+                          - generic [ref=e1254]: Agregar
+                      - generic [ref=e1256]:
+                        - generic [ref=e1258]:
+                          - generic [ref=e1259]: $1.350
+                          - generic [ref=e1260]: precio actual $1.350
+                          - generic [ref=e1261]: $1.350 x lt
+                        - generic [ref=e1262]: Cachantun
+                        - generic [ref=e1263]: Agua Mineral Sin Gas Botella, 1 L
+            - navigation "paginación" [ref=e1266]:
+              - list [ref=e1267]:
+                - listitem [ref=e1268]
+                - listitem [ref=e1270]:
+                  - link "1" [ref=e1271] [cursor=pointer]:
+                    - /url: /search?q=agua+con+gas+1.6L
+                - listitem [ref=e1272]:
+                  - link "Ir a la página 2" [ref=e1273] [cursor=pointer]:
+                    - /url: /search?q=agua+con+gas+1.6L&page=2
+                    - text: "2"
+                - listitem [ref=e1274]:
+                  - link "Página siguiente" [ref=e1275] [cursor=pointer]:
+                    - /url: /search?q=agua+con+gas+1.6L&page=2
+                    - generic [ref=e1276]: 
+  - alert [ref=e1284]

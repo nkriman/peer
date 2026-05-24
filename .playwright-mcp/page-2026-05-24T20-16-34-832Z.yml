@@ -1,0 +1,711 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: arroz grado 1
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e81]:
+            - generic [ref=e84]:
+              - generic [ref=e85]:
+                - button "Precio" [ref=e88]:
+                  - generic [ref=e89]: Precio
+                  - img [ref=e90]: 
+                - separator [ref=e91]
+              - generic [ref=e92]:
+                - button "Campaña" [ref=e95]:
+                  - generic [ref=e96]: Campaña
+                  - img [ref=e97]: 
+                - separator [ref=e98]
+              - generic [ref=e99]:
+                - button "Marca" [ref=e102]:
+                  - generic [ref=e103]: Marca
+                  - img [ref=e104]: 
+                - separator [ref=e105]
+              - generic [ref=e106]:
+                - button "Categoría" [ref=e109]:
+                  - generic [ref=e110]: Categoría
+                  - img [ref=e111]: 
+                - separator [ref=e112]
+            - generic [ref=e115]:
+              - heading "Resultados para arroz grado 1 (34)" [level=2] [ref=e123]: Resultados para arroz grado 1(34)
+              - generic [ref=e124]:
+                - group [ref=e127]:
+                  - link "Arroz Grado 1 Grano Largo Bolsa, 1 kg" [ref=e128] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780142025014?from=/search
+                    - generic [ref=e129]: Arroz Grado 1 Grano Largo Bolsa, 1 kg
+                  - generic [ref=e131]:
+                    - generic [ref=e134]:
+                      - img "Arroz Grado 1 Grano Largo Bolsa, 1 kg" [ref=e136]
+                      - button "Agregar al carro - Arroz Grado 1 Grano Largo Bolsa, 1 kg" [ref=e139] [cursor=pointer]:
+                        - generic "agregar" [ref=e140]: 
+                        - generic [ref=e141]: Agregar
+                    - generic [ref=e143]:
+                      - generic [ref=e145]:
+                        - generic [ref=e146]: $2.350
+                        - generic [ref=e147]: precio actual $2.350
+                        - generic [ref=e148]: $2.350 x kg
+                      - generic [ref=e149]: Tucapel
+                      - generic [ref=e150]: Arroz Grado 1 Grano Largo Bolsa, 1 kg
+                - group [ref=e153]:
+                  - link "Arroz Grado 1 Grano Largo Bolsa, 1 Kg" [ref=e154] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780261500655?from=/search
+                    - generic [ref=e155]: Arroz Grado 1 Grano Largo Bolsa, 1 Kg
+                  - generic [ref=e157]:
+                    - generic [ref=e160]:
+                      - img "Arroz Grado 1 Grano Largo Bolsa, 1 Kg" [ref=e162]
+                      - button "Agregar al carro - Arroz Grado 1 Grano Largo Bolsa, 1 Kg" [ref=e165] [cursor=pointer]:
+                        - generic "agregar" [ref=e166]: 
+                        - generic [ref=e167]: Agregar
+                    - generic [ref=e169]:
+                      - generic [ref=e171]:
+                        - generic [ref=e172]: $2.550
+                        - generic [ref=e173]: precio actual $2.550
+                        - generic [ref=e174]: $13.421 x kg
+                      - generic [ref=e175]: Miraflores
+                      - generic [ref=e176]: Arroz Grado 1 Grano Largo Bolsa, 1 Kg
+                - group [ref=e179]:
+                  - link "Arroz Grado 1 Grano Largo Bolsa, 1 kg" [ref=e180] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780311010221?from=/search
+                    - generic [ref=e181]: Arroz Grado 1 Grano Largo Bolsa, 1 kg
+                  - generic [ref=e183]:
+                    - generic [ref=e186]:
+                      - img "Arroz Grado 1 Grano Largo Bolsa, 1 kg" [ref=e188]
+                      - button "Agregar al carro - Arroz Grado 1 Grano Largo Bolsa, 1 kg" [ref=e191] [cursor=pointer]:
+                        - generic "agregar" [ref=e192]: 
+                        - generic [ref=e193]: Agregar
+                    - generic [ref=e195]:
+                      - generic [ref=e197]:
+                        - generic [ref=e198]: $2.350
+                        - generic [ref=e199]: precio actual $2.350
+                        - generic [ref=e200]: $2.350 x kg
+                      - generic [ref=e201]: Banquete
+                      - generic [ref=e202]: Arroz Grado 1 Grano Largo Bolsa, 1 kg
+                - group [ref=e205]:
+                  - link "Arroz Grado 1 Grano Largo Pregraneado Bolsa, 1 kg" [ref=e206] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780142014013?from=/search
+                    - generic [ref=e207]: Arroz Grado 1 Grano Largo Pregraneado Bolsa, 1 kg
+                  - generic [ref=e209]:
+                    - generic [ref=e210]:
+                      - generic [ref=e212]:
+                        - generic [ref=e214]: 
+                        - text: Rebaja
+                      - generic [ref=e215]:
+                        - img "Arroz Grado 1 Grano Largo Pregraneado Bolsa, 1 kg" [ref=e217]
+                        - button "Agregar al carro - Arroz Grado 1 Grano Largo Pregraneado Bolsa, 1 kg" [ref=e220] [cursor=pointer]:
+                          - generic "agregar" [ref=e221]: 
+                          - generic [ref=e222]: Agregar
+                    - generic [ref=e224]:
+                      - generic [ref=e226]:
+                        - generic [ref=e227]: $1.890
+                        - generic [ref=e228]: precio actual $1.890, Costaba $2.390
+                        - generic [ref=e229]: $1.890 x kg
+                        - generic [ref=e230]: $2.390
+                        - generic [ref=e231]: Ahorra $500
+                      - generic [ref=e232]: Tucapel
+                      - generic [ref=e233]: Arroz Grado 1 Grano Largo Pregraneado Bolsa, 1 kg
+                - generic [ref=e235]:
+                  - group [ref=e236]:
+                    - link "Arroz Grado 1 Grano Largo Pregraneado Bolsa, 1 Kg" [ref=e237] [cursor=pointer]:
+                      - /url: /ip/arroz-y-legumbres/00780261500656?from=/search
+                      - generic [ref=e238]: Arroz Grado 1 Grano Largo Pregraneado Bolsa, 1 Kg
+                    - generic [ref=e240]:
+                      - generic [ref=e241]:
+                        - generic [ref=e243]:
+                          - generic [ref=e245]: 
+                          - text: Rebaja
+                        - img "Arroz Grado 1 Grano Largo Pregraneado Bolsa, 1 Kg" [ref=e248]
+                      - generic [ref=e250]:
+                        - generic [ref=e252]:
+                          - generic [ref=e253]: $2.090
+                          - generic [ref=e254]: precio actual $2.090, Costaba $2.490
+                          - generic [ref=e255]: $2.090 x kg
+                          - generic [ref=e256]: $2.490
+                        - generic [ref=e257]: Miraflores
+                        - generic [ref=e258]: Arroz Grado 1 Grano Largo Pregraneado Bolsa, 1 Kg
+                        - generic [ref=e259]: Agotado
+                  - button "Revisar productos similares - Arroz Grado 1 Grano Largo Pregraneado Bolsa, 1 Kg" [ref=e261]: Revisar productos similares
+                - group [ref=e264]:
+                  - link "Arroz Grado 1 Grano Largo Basmati Bolsa, 1 kg" [ref=e265] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780142000153?from=/search
+                    - generic [ref=e266]: Arroz Grado 1 Grano Largo Basmati Bolsa, 1 kg
+                  - generic [ref=e268]:
+                    - generic [ref=e271]:
+                      - img "Arroz Grado 1 Grano Largo Basmati Bolsa, 1 kg" [ref=e273]
+                      - button "Agregar al carro - Arroz Grado 1 Grano Largo Basmati Bolsa, 1 kg" [ref=e276] [cursor=pointer]:
+                        - generic "agregar" [ref=e277]: 
+                        - generic [ref=e278]: Agregar
+                    - generic [ref=e280]:
+                      - generic [ref=e282]:
+                        - generic [ref=e283]: $5.390
+                        - generic [ref=e284]: precio actual $5.390
+                        - generic [ref=e285]: $5.390 x kg
+                      - generic [ref=e286]: Tucapel
+                      - generic [ref=e287]: Arroz Grado 1 Grano Largo Basmati Bolsa, 1 kg
+                - group [ref=e290]:
+                  - link "Arroz Grado 1 Grano Largo Pregraneado Bolsa, 1 kg" [ref=e291] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780142000195?from=/search
+                    - generic [ref=e292]: Arroz Grado 1 Grano Largo Pregraneado Bolsa, 1 kg
+                  - generic [ref=e294]:
+                    - generic [ref=e297]:
+                      - img "Arroz Grado 1 Grano Largo Pregraneado Bolsa, 1 kg" [ref=e299]
+                      - button "Agregar al carro - Arroz Grado 1 Grano Largo Pregraneado Bolsa, 1 kg" [ref=e302] [cursor=pointer]:
+                        - generic "agregar" [ref=e303]: 
+                        - generic [ref=e304]: Agregar
+                    - generic [ref=e306]:
+                      - generic [ref=e308]:
+                        - generic [ref=e309]: $1.850
+                        - generic [ref=e310]: precio actual $1.850
+                        - generic [ref=e311]: $1.850 x kg
+                      - generic [ref=e312]: Lider
+                      - generic [ref=e313]: Arroz Grado 1 Grano Largo Pregraneado Bolsa, 1 kg
+                - group [ref=e316]:
+                  - link "Arroz Grado 1 Grano Largo y Ancho Bolsa, 1 kg" [ref=e317] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780142000013?from=/search
+                    - generic [ref=e318]: Arroz Grado 1 Grano Largo y Ancho Bolsa, 1 kg
+                  - generic [ref=e320]:
+                    - generic [ref=e323]:
+                      - img "Arroz Grado 1 Grano Largo y Ancho Bolsa, 1 kg" [ref=e325]
+                      - button "Agregar al carro - Arroz Grado 1 Grano Largo y Ancho Bolsa, 1 kg" [ref=e328] [cursor=pointer]:
+                        - generic "agregar" [ref=e329]: 
+                        - generic [ref=e330]: Agregar
+                    - generic [ref=e332]:
+                      - generic [ref=e334]:
+                        - generic [ref=e335]: $1.890
+                        - generic [ref=e336]: precio actual $1.890
+                        - generic [ref=e337]: $1.890 x kg
+                      - generic [ref=e338]: Lider
+                      - generic [ref=e339]: Arroz Grado 1 Grano Largo y Ancho Bolsa, 1 kg
+                - group [ref=e342]:
+                  - link "Arroz Grado 1 Grano Largo Blue Bonnet Bolsa, 1 Kg" [ref=e343] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780142000169?from=/search
+                    - generic [ref=e344]: Arroz Grado 1 Grano Largo Blue Bonnet Bolsa, 1 Kg
+                  - generic [ref=e346]:
+                    - generic [ref=e349]:
+                      - img "Arroz Grado 1 Grano Largo Blue Bonnet Bolsa, 1 Kg" [ref=e351]
+                      - button "Agregar al carro - Arroz Grado 1 Grano Largo Blue Bonnet Bolsa, 1 Kg" [ref=e354] [cursor=pointer]:
+                        - generic "agregar" [ref=e355]: 
+                        - generic [ref=e356]: Agregar
+                    - generic [ref=e358]:
+                      - generic [ref=e360]:
+                        - generic [ref=e361]: $2.250
+                        - generic [ref=e362]: precio actual $2.250
+                        - generic [ref=e363]: $2.250 x kg
+                      - generic [ref=e364]: Tucapel
+                      - generic [ref=e365]: Arroz Grado 1 Grano Largo Blue Bonnet Bolsa, 1 Kg
+                - group [ref=e368]:
+                  - link "Arroz Grado 1 Grano Corto Risotto Italiano Bolsa, 1 kg" [ref=e369] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780142000155?from=/search
+                    - generic [ref=e370]: Arroz Grado 1 Grano Corto Risotto Italiano Bolsa, 1 kg
+                  - generic [ref=e372]:
+                    - generic [ref=e375]:
+                      - img "Arroz Grado 1 Grano Corto Risotto Italiano Bolsa, 1 kg" [ref=e377]
+                      - button "Agregar al carro - Arroz Grado 1 Grano Corto Risotto Italiano Bolsa, 1 kg" [ref=e380] [cursor=pointer]:
+                        - generic "agregar" [ref=e381]: 
+                        - generic [ref=e382]: Agregar
+                    - generic [ref=e384]:
+                      - generic [ref=e386]:
+                        - generic [ref=e387]: $4.990
+                        - generic [ref=e388]: precio actual $4.990
+                        - generic [ref=e389]: $4.990 x kg
+                      - generic [ref=e390]: Tucapel
+                      - generic [ref=e391]: Arroz Grado 1 Grano Corto Risotto Italiano Bolsa, 1 kg
+                - group [ref=e394]:
+                  - link "Arroz Grado 1 Grano Largo Bolsa, 2 kg" [ref=e395] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780311000019?from=/search
+                    - generic [ref=e396]: Arroz Grado 1 Grano Largo Bolsa, 2 kg
+                  - generic [ref=e398]:
+                    - generic [ref=e401]:
+                      - img "Arroz Grado 1 Grano Largo Bolsa, 2 kg" [ref=e403]
+                      - button "Agregar al carro - Arroz Grado 1 Grano Largo Bolsa, 2 kg" [ref=e406] [cursor=pointer]:
+                        - generic "agregar" [ref=e407]: 
+                        - generic [ref=e408]: Agregar
+                    - generic [ref=e410]:
+                      - generic [ref=e412]:
+                        - generic [ref=e413]: $4.490
+                        - generic [ref=e414]: precio actual $4.490
+                        - generic [ref=e415]: $2.245 x kg
+                      - generic [ref=e416]: Banquete
+                      - generic [ref=e417]: Arroz Grado 1 Grano Largo Bolsa, 2 kg
+                - group [ref=e420]:
+                  - link "Arroz Grado 1 Grano Corto Para Paella Bolsa, 1 kg" [ref=e421] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780142095018?from=/search
+                    - generic [ref=e422]: Arroz Grado 1 Grano Corto Para Paella Bolsa, 1 kg
+                  - generic [ref=e424]:
+                    - generic [ref=e427]:
+                      - img "Arroz Grado 1 Grano Corto Para Paella Bolsa, 1 kg" [ref=e429]
+                      - button "Agregar al carro - Arroz Grado 1 Grano Corto Para Paella Bolsa, 1 kg" [ref=e432] [cursor=pointer]:
+                        - generic "agregar" [ref=e433]: 
+                        - generic [ref=e434]: Agregar
+                    - generic [ref=e436]:
+                      - generic [ref=e438]:
+                        - generic [ref=e439]: $3.250
+                        - generic [ref=e440]: precio actual $3.250
+                        - generic [ref=e441]: $3.250 x kg
+                      - generic [ref=e442]: Tucapel
+                      - generic [ref=e443]: Arroz Grado 1 Grano Corto Para Paella Bolsa, 1 kg
+                - group [ref=e446]:
+                  - link "Arroz Grado 1 Grano Largo y Delgado Bolsa, 1 kg" [ref=e447] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780963720030?from=/search
+                    - generic [ref=e448]: Arroz Grado 1 Grano Largo y Delgado Bolsa, 1 kg
+                  - generic [ref=e450]:
+                    - generic [ref=e453]:
+                      - img "Arroz Grado 1 Grano Largo y Delgado Bolsa, 1 kg" [ref=e455]
+                      - button "Agregar al carro - Arroz Grado 1 Grano Largo y Delgado Bolsa, 1 kg" [ref=e458] [cursor=pointer]:
+                        - generic "agregar" [ref=e459]: 
+                        - generic [ref=e460]: Agregar
+                    - generic [ref=e462]:
+                      - generic [ref=e464]:
+                        - generic [ref=e465]: $1.650
+                        - generic [ref=e466]: precio actual $1.650
+                        - generic [ref=e467]: $1.650 x kg
+                      - generic [ref=e468]: Lider
+                      - generic [ref=e469]: Arroz Grado 1 Grano Largo y Delgado Bolsa, 1 kg
+                - group [ref=e472]:
+                  - link "Arroz Grado 1 Grano Largo Basmati Bolsa, 1 kg" [ref=e473] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780963720147?from=/search
+                    - generic [ref=e474]: Arroz Grado 1 Grano Largo Basmati Bolsa, 1 kg
+                  - generic [ref=e476]:
+                    - generic [ref=e479]:
+                      - img "Arroz Grado 1 Grano Largo Basmati Bolsa, 1 kg" [ref=e481]
+                      - button "Agregar al carro - Arroz Grado 1 Grano Largo Basmati Bolsa, 1 kg" [ref=e484] [cursor=pointer]:
+                        - generic "agregar" [ref=e485]: 
+                        - generic [ref=e486]: Agregar
+                    - generic [ref=e488]:
+                      - generic [ref=e490]:
+                        - generic [ref=e491]: $4.290
+                        - generic [ref=e492]: precio actual $4.290
+                      - generic [ref=e493]: Lider
+                      - generic [ref=e494]: Arroz Grado 1 Grano Largo Basmati Bolsa, 1 kg
+                - group [ref=e497]:
+                  - link "Arroz Grado 1 Grano Largo Basmati Bolsa, 400 g" [ref=e498] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780963720148?from=/search
+                    - generic [ref=e499]: Arroz Grado 1 Grano Largo Basmati Bolsa, 400 g
+                  - generic [ref=e501]:
+                    - generic [ref=e504]:
+                      - img "Arroz Grado 1 Grano Largo Basmati Bolsa, 400 g" [ref=e506]
+                      - button "Agregar al carro - Arroz Grado 1 Grano Largo Basmati Bolsa, 400 g" [ref=e509] [cursor=pointer]:
+                        - generic "agregar" [ref=e510]: 
+                        - generic [ref=e511]: Agregar
+                    - generic [ref=e513]:
+                      - generic [ref=e515]:
+                        - generic [ref=e516]: $1.950
+                        - generic [ref=e517]: precio actual $1.950
+                      - generic [ref=e518]: Lider
+                      - generic [ref=e519]: Arroz Grado 1 Grano Largo Basmati Bolsa, 400 g
+                - group [ref=e522]:
+                  - link "Arroz Grado 1 Grano Corto Para Sushi Caja, 400 g" [ref=e523] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780142000004?from=/search
+                    - generic [ref=e524]: Arroz Grado 1 Grano Corto Para Sushi Caja, 400 g
+                  - generic [ref=e526]:
+                    - generic [ref=e529]:
+                      - img "Arroz Grado 1 Grano Corto Para Sushi Caja, 400 g" [ref=e531]
+                      - button "Agregar al carro - Arroz Grado 1 Grano Corto Para Sushi Caja, 400 g" [ref=e534] [cursor=pointer]:
+                        - generic "agregar" [ref=e535]: 
+                        - generic [ref=e536]: Agregar
+                    - generic [ref=e538]:
+                      - generic [ref=e540]:
+                        - generic [ref=e541]: $3.090
+                        - generic [ref=e542]: precio actual $3.090
+                        - generic [ref=e543]: $7.725 x kg
+                      - generic [ref=e544]: Tucapel
+                      - generic [ref=e545]: Arroz Grado 1 Grano Corto Para Sushi Caja, 400 g
+                - group [ref=e548]:
+                  - link "Arroz Grado 2 Grano Largo Bolsa, 1 kg" [ref=e549] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780142022013?from=/search
+                    - generic [ref=e550]: Arroz Grado 2 Grano Largo Bolsa, 1 kg
+                  - generic [ref=e552]:
+                    - generic [ref=e555]:
+                      - generic [ref=e556]:
+                        - img "Arroz Grado 2 Grano Largo Bolsa, 1 kg"
+                      - button "Agregar al carro - Arroz Grado 2 Grano Largo Bolsa, 1 kg" [ref=e559] [cursor=pointer]:
+                        - generic "agregar" [ref=e560]: 
+                        - generic [ref=e561]: Agregar
+                    - generic [ref=e563]:
+                      - generic [ref=e565]:
+                        - generic [ref=e566]: $1.490
+                        - generic [ref=e567]: precio actual $1.490
+                        - generic [ref=e568]: $1.490 x kg
+                      - generic [ref=e569]: Tucapel
+                      - generic [ref=e570]: Arroz Grado 2 Grano Largo Bolsa, 1 kg
+                - group [ref=e573]:
+                  - link "Arroz Grado 2 Grano Largo y Delgado Bolsa, 1 kg" [ref=e574] [cursor=pointer]:
+                    - /url: /ip/nuestras-marcas/00780460822421?from=/search
+                    - generic [ref=e575]: Arroz Grado 2 Grano Largo y Delgado Bolsa, 1 kg
+                  - generic [ref=e577]:
+                    - generic [ref=e580]:
+                      - generic [ref=e581]:
+                        - img "Arroz Grado 2 Grano Largo y Delgado Bolsa, 1 kg"
+                      - button "Agregar al carro - Arroz Grado 2 Grano Largo y Delgado Bolsa, 1 kg" [ref=e584] [cursor=pointer]:
+                        - generic "agregar" [ref=e585]: 
+                        - generic [ref=e586]: Agregar
+                    - generic [ref=e588]:
+                      - generic [ref=e590]:
+                        - generic [ref=e591]: $980
+                        - generic [ref=e592]: precio actual $980
+                        - generic [ref=e593]: $980 x kg
+                      - generic [ref=e594]: Lider
+                      - generic [ref=e595]: Arroz Grado 2 Grano Largo y Delgado Bolsa, 1 kg
+                - group [ref=e598]:
+                  - link "Arroz Grado 2 Grano Largo y Ancho Bolsa, 1 kg" [ref=e599] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780142000015?from=/search
+                    - generic [ref=e600]: Arroz Grado 2 Grano Largo y Ancho Bolsa, 1 kg
+                  - generic [ref=e602]:
+                    - generic [ref=e605]:
+                      - generic [ref=e606]:
+                        - img "Arroz Grado 2 Grano Largo y Ancho Bolsa, 1 kg"
+                      - button "Agregar al carro - Arroz Grado 2 Grano Largo y Ancho Bolsa, 1 kg" [ref=e609] [cursor=pointer]:
+                        - generic "agregar" [ref=e610]: 
+                        - generic [ref=e611]: Agregar
+                    - generic [ref=e613]:
+                      - generic [ref=e615]:
+                        - generic [ref=e616]: $1.490
+                        - generic [ref=e617]: precio actual $1.490
+                        - generic [ref=e618]: $1.490 x kg
+                      - generic [ref=e619]: Lider
+                      - generic [ref=e620]: Arroz Grado 2 Grano Largo y Ancho Bolsa, 1 kg
+                - group [ref=e623]:
+                  - link "Arroz Grado 2 Grano Largo Bolsa, 1 kg" [ref=e624] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780142021013?from=/search
+                    - generic [ref=e625]: Arroz Grado 2 Grano Largo Bolsa, 1 kg
+                  - generic [ref=e627]:
+                    - generic [ref=e630]:
+                      - generic [ref=e631]:
+                        - img "Arroz Grado 2 Grano Largo Bolsa, 1 kg"
+                      - button "Agregar al carro - Arroz Grado 2 Grano Largo Bolsa, 1 kg" [ref=e634] [cursor=pointer]:
+                        - generic "agregar" [ref=e635]: 
+                        - generic [ref=e636]: Agregar
+                    - generic [ref=e638]:
+                      - generic [ref=e640]:
+                        - generic [ref=e641]: $1.750
+                        - generic [ref=e642]: precio actual $1.750
+                        - generic [ref=e643]: $1.750 x kg
+                      - generic [ref=e644]: Tucapel
+                      - generic [ref=e645]: Arroz Grado 2 Grano Largo Bolsa, 1 kg
+                - group [ref=e648]:
+                  - link "Arroz Grado 2 Largo Ancho Bolsa, 1 kg" [ref=e649] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780261500657?from=/search
+                    - generic [ref=e650]: Arroz Grado 2 Largo Ancho Bolsa, 1 kg
+                  - generic [ref=e652]:
+                    - generic [ref=e655]:
+                      - generic [ref=e656]:
+                        - img "Arroz Grado 2 Largo Ancho Bolsa, 1 kg"
+                      - button "Agregar al carro - Arroz Grado 2 Largo Ancho Bolsa, 1 kg" [ref=e659] [cursor=pointer]:
+                        - generic "agregar" [ref=e660]: 
+                        - generic [ref=e661]: Agregar
+                    - generic [ref=e663]:
+                      - generic [ref=e665]:
+                        - generic [ref=e666]: $2.150
+                        - generic [ref=e667]: precio actual $2.150
+                        - generic [ref=e668]: $2.150 x kg
+                      - generic [ref=e669]: Miraflores
+                      - generic [ref=e670]: Arroz Grado 2 Largo Ancho Bolsa, 1 kg
+                - group [ref=e673]:
+                  - link "Arroz Grado 2 Grano Largo Bolsa, 1 kg" [ref=e674] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780311010223?from=/search
+                    - generic [ref=e675]: Arroz Grado 2 Grano Largo Bolsa, 1 kg
+                  - generic [ref=e677]:
+                    - generic [ref=e680]:
+                      - generic [ref=e681]:
+                        - img "Arroz Grado 2 Grano Largo Bolsa, 1 kg"
+                      - button "Agregar al carro - Arroz Grado 2 Grano Largo Bolsa, 1 kg" [ref=e684] [cursor=pointer]:
+                        - generic "agregar" [ref=e685]: 
+                        - generic [ref=e686]: Agregar
+                    - generic [ref=e688]:
+                      - generic [ref=e690]:
+                        - generic [ref=e691]: $2.090
+                        - generic [ref=e692]: precio actual $2.090
+                        - generic [ref=e693]: $2.090 x kg
+                      - generic [ref=e694]: Banquete
+                      - generic [ref=e695]: Arroz Grado 2 Grano Largo Bolsa, 1 kg
+                - group [ref=e698]:
+                  - link "Arroz Grado 2 Largo Ancho" [ref=e699] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780311000040?from=/search
+                    - generic [ref=e700]: Arroz Grado 2 Largo Ancho
+                  - generic [ref=e702]:
+                    - generic [ref=e705]:
+                      - generic [ref=e706]:
+                        - img "Arroz Grado 2 Largo Ancho"
+                      - button "Agregar al carro - Arroz Grado 2 Largo Ancho" [ref=e709] [cursor=pointer]:
+                        - generic "agregar" [ref=e710]: 
+                        - generic [ref=e711]: Agregar
+                    - generic [ref=e713]:
+                      - generic [ref=e715]:
+                        - generic [ref=e716]: $2.000
+                        - generic [ref=e717]: precio actual $2.000
+                        - generic [ref=e718]: $1.111 x kg
+                      - generic [ref=e719]: Banquete
+                      - generic [ref=e720]: Arroz Grado 2 Largo Ancho
+                - group [ref=e723]:
+                  - link "Arroz Tucapel Extra Fino Grado 2 Grano largo fino, 1 kg" [ref=e724] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780142000224?from=/search
+                    - generic [ref=e725]: Arroz Tucapel Extra Fino Grado 2 Grano largo fino, 1 kg
+                  - generic [ref=e727]:
+                    - generic [ref=e730]:
+                      - generic [ref=e731]:
+                        - img "Arroz Tucapel Extra Fino Grado 2 Grano largo fino, 1 kg"
+                      - button "Agregar al carro - Arroz Tucapel Extra Fino Grado 2 Grano largo fino, 1 kg" [ref=e734] [cursor=pointer]:
+                        - generic "agregar" [ref=e735]: 
+                        - generic [ref=e736]: Agregar
+                    - generic [ref=e738]:
+                      - generic [ref=e740]:
+                        - generic [ref=e741]: $1.000
+                        - generic [ref=e742]: precio actual $1.000
+                        - generic [ref=e743]: $1.000 x kg
+                      - generic [ref=e744]: Tucapel
+                      - generic [ref=e745]: Arroz Tucapel Extra Fino Grado 2 Grano largo fino, 1 kg
+                - group [ref=e748]:
+                  - link "Arroz Grado 1 Grano Largo Basmati Bolsa, 400 g" [ref=e749] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780142000196?from=/search
+                    - generic [ref=e750]: Arroz Grado 1 Grano Largo Basmati Bolsa, 400 g
+                  - generic [ref=e752]:
+                    - generic [ref=e753]:
+                      - generic [ref=e755]:
+                        - generic [ref=e757]: 
+                        - text: Rebaja
+                      - generic [ref=e758]:
+                        - generic [ref=e759]:
+                          - img "Arroz Grado 1 Grano Largo Basmati Bolsa, 400 g"
+                        - button "Agregar al carro - Arroz Grado 1 Grano Largo Basmati Bolsa, 400 g" [ref=e762] [cursor=pointer]:
+                          - generic "agregar" [ref=e763]: 
+                          - generic [ref=e764]: Agregar
+                    - generic [ref=e766]:
+                      - generic [ref=e768]:
+                        - generic [ref=e769]: $1.990
+                        - generic [ref=e770]: precio actual $1.990, Costaba $2.350
+                        - generic [ref=e771]: $4.975 x kg
+                        - generic [ref=e772]: $2.350
+                        - generic [ref=e773]: Ahorra $360
+                      - generic [ref=e774]: Tucapel
+                      - generic [ref=e775]: Arroz Grado 1 Grano Largo Basmati Bolsa, 400 g
+                - group [ref=e778]:
+                  - link "Arroz Grado 1 Risotto Italiano Bolsa, 400 g" [ref=e779] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780142000197?from=/search
+                    - generic [ref=e780]: Arroz Grado 1 Risotto Italiano Bolsa, 400 g
+                  - generic [ref=e782]:
+                    - generic [ref=e783]:
+                      - generic [ref=e785]:
+                        - generic [ref=e787]: 
+                        - text: Rebaja
+                      - generic [ref=e788]:
+                        - generic [ref=e789]:
+                          - img "Arroz Grado 1 Risotto Italiano Bolsa, 400 g"
+                        - button "Agregar al carro - Arroz Grado 1 Risotto Italiano Bolsa, 400 g" [ref=e792] [cursor=pointer]:
+                          - generic "agregar" [ref=e793]: 
+                          - generic [ref=e794]: Agregar
+                    - generic [ref=e796]:
+                      - generic [ref=e798]:
+                        - generic [ref=e799]: $1.690
+                        - generic [ref=e800]: precio actual $1.690, Costaba $1.990
+                        - generic [ref=e801]: $4.225 x kg
+                        - generic [ref=e802]: $1.990
+                        - generic [ref=e803]: Ahorra $300
+                      - generic [ref=e804]: Tucapel
+                      - generic [ref=e805]: Arroz Grado 1 Risotto Italiano Bolsa, 400 g
+                - generic [ref=e807]:
+                  - group [ref=e808]:
+                    - link "Arroz Integral Grado 1 Grano Largo Bolsa, 1 Kg" [ref=e809] [cursor=pointer]:
+                      - /url: /ip/arroz-y-legumbres/00780012073742?from=/search
+                      - generic [ref=e810]: Arroz Integral Grado 1 Grano Largo Bolsa, 1 Kg
+                    - generic [ref=e812]:
+                      - generic [ref=e816]:
+                        - img "Arroz Integral Grado 1 Grano Largo Bolsa, 1 Kg"
+                      - generic [ref=e818]:
+                        - generic [ref=e820]:
+                          - generic [ref=e821]: $2.690
+                          - generic [ref=e822]: precio actual $2.690
+                        - generic [ref=e823]: Miraflores
+                        - generic [ref=e824]: Arroz Integral Grado 1 Grano Largo Bolsa, 1 Kg
+                        - generic [ref=e825]: Agotado
+                  - button "Revisar productos similares - Arroz Integral Grado 1 Grano Largo Bolsa, 1 Kg" [ref=e827]: Revisar productos similares
+                - group [ref=e830]:
+                  - link "Arroz Integral Grado 1 Grano Largo y Ancho Bolsa, 1 kg" [ref=e831] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780142000080?from=/search
+                    - generic [ref=e832]: Arroz Integral Grado 1 Grano Largo y Ancho Bolsa, 1 kg
+                  - generic [ref=e834]:
+                    - generic [ref=e837]:
+                      - generic [ref=e838]:
+                        - img "Arroz Integral Grado 1 Grano Largo y Ancho Bolsa, 1 kg"
+                      - button "Agregar al carro - Arroz Integral Grado 1 Grano Largo y Ancho Bolsa, 1 kg" [ref=e841] [cursor=pointer]:
+                        - generic "agregar" [ref=e842]: 
+                        - generic [ref=e843]: Agregar
+                    - generic [ref=e845]:
+                      - generic [ref=e847]:
+                        - generic [ref=e848]: $1.990
+                        - generic [ref=e849]: precio actual $1.990
+                        - generic [ref=e850]: $1.990 x kg
+                      - generic [ref=e851]: Lider
+                      - generic [ref=e852]: Arroz Integral Grado 1 Grano Largo y Ancho Bolsa, 1 kg
+                - generic [ref=e854]:
+                  - group [ref=e855]:
+                    - link "Arroz Integral Grado 1 Grano Largo Bolsa, 1 kg" [ref=e856] [cursor=pointer]:
+                      - /url: /ip/arroz-y-legumbres/00780142013013?from=/search
+                      - generic [ref=e857]: Arroz Integral Grado 1 Grano Largo Bolsa, 1 kg
+                    - generic [ref=e859]:
+                      - generic [ref=e860]:
+                        - generic [ref=e862]:
+                          - generic [ref=e864]: 
+                          - text: Rebaja
+                        - generic [ref=e866]:
+                          - img "Arroz Integral Grado 1 Grano Largo Bolsa, 1 kg"
+                      - generic [ref=e868]:
+                        - generic [ref=e870]:
+                          - generic [ref=e871]: $1.990
+                          - generic [ref=e872]: precio actual $1.990, Costaba $2.690
+                          - generic [ref=e873]: $1.990 x kg
+                          - generic [ref=e874]: $2.690
+                        - generic [ref=e875]: Tucapel
+                        - generic [ref=e876]: Arroz Integral Grado 1 Grano Largo Bolsa, 1 kg
+                        - generic [ref=e877]: Agotado
+                  - button "Revisar productos similares - Arroz Integral Grado 1 Grano Largo Bolsa, 1 kg" [ref=e879]: Revisar productos similares
+                - group [ref=e882]:
+                  - link "Poroto Hallado Bolsa, 1 Kg" [ref=e883] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780150500299?from=/search
+                    - generic [ref=e884]: Poroto Hallado Bolsa, 1 Kg
+                  - generic [ref=e886]:
+                    - generic [ref=e889]:
+                      - generic [ref=e890]:
+                        - img "Poroto Hallado Bolsa, 1 Kg"
+                      - button "Agregar al carro - Poroto Hallado Bolsa, 1 Kg" [ref=e893] [cursor=pointer]:
+                        - generic "agregar" [ref=e894]: 
+                        - generic [ref=e895]: Agregar
+                    - generic [ref=e897]:
+                      - generic [ref=e899]:
+                        - generic [ref=e900]: $3.990
+                        - generic [ref=e901]: precio actual $3.990
+                        - generic [ref=e902]: $3.990 x kg
+                      - generic [ref=e903]: Iansa Agro
+                      - generic [ref=e904]: Poroto Hallado Bolsa, 1 Kg
+                - group [ref=e907]:
+                  - link "Poroto Tórtola Bolsa, 1 Kg" [ref=e908] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780150500296?from=/search
+                    - generic [ref=e909]: Poroto Tórtola Bolsa, 1 Kg
+                  - generic [ref=e911]:
+                    - generic [ref=e914]:
+                      - generic [ref=e915]:
+                        - img "Poroto Tórtola Bolsa, 1 Kg"
+                      - button "Agregar al carro - Poroto Tórtola Bolsa, 1 Kg" [ref=e918] [cursor=pointer]:
+                        - generic "agregar" [ref=e919]: 
+                        - generic [ref=e920]: Agregar
+                    - generic [ref=e922]:
+                      - generic [ref=e924]:
+                        - generic [ref=e925]: $4.590
+                        - generic [ref=e926]: precio actual $4.590
+                      - generic [ref=e927]: Iansa Agro
+                      - generic [ref=e928]: Poroto Tórtola Bolsa, 1 Kg
+                - group [ref=e931]:
+                  - link "Poroto Negro Bolsa, 1 Kg" [ref=e932] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780150500298?from=/search
+                    - generic [ref=e933]: Poroto Negro Bolsa, 1 Kg
+                  - generic [ref=e935]:
+                    - generic [ref=e938]:
+                      - generic [ref=e939]:
+                        - img "Poroto Negro Bolsa, 1 Kg"
+                      - button "Agregar al carro - Poroto Negro Bolsa, 1 Kg" [ref=e942] [cursor=pointer]:
+                        - generic "agregar" [ref=e943]: 
+                        - generic [ref=e944]: Agregar
+                    - generic [ref=e946]:
+                      - generic [ref=e948]:
+                        - generic [ref=e949]: $2.990
+                        - generic [ref=e950]: precio actual $2.990
+                        - generic [ref=e951]: $2.990 x kg
+                      - generic [ref=e952]: Iansa Agro
+                      - generic [ref=e953]: Poroto Negro Bolsa, 1 Kg
+                - group [ref=e956]:
+                  - link "Postre Preparado Arroz Con Leche 1 Un, 200 g" [ref=e957] [cursor=pointer]:
+                    - /url: /ip/conoce-nuestras-marcas/00780951230016?from=/search
+                    - generic [ref=e958]: Postre Preparado Arroz Con Leche 1 Un, 200 g
+                  - generic [ref=e960]:
+                    - generic [ref=e963]:
+                      - generic [ref=e964]:
+                        - img "Postre Preparado Arroz Con Leche 1 Un, 200 g"
+                      - button "Agregar al carro - Postre Preparado Arroz Con Leche 1 Un, 200 g" [ref=e967] [cursor=pointer]:
+                        - generic "agregar" [ref=e968]: 
+                        - generic [ref=e969]: Agregar
+                    - generic [ref=e971]:
+                      - generic [ref=e973]:
+                        - generic [ref=e974]: $1.050
+                        - generic [ref=e975]: precio actual $1.050
+                        - generic [ref=e976]: $5.250 x kg
+                      - generic [ref=e977]: Lider
+                      - generic [ref=e978]: Postre Preparado Arroz Con Leche 1 Un, 200 g
+                - group [ref=e981]:
+                  - link "Virutilla Super Fina Grado 1, 1 Un" [ref=e982] [cursor=pointer]:
+                    - /url: /ip/pisos-y-muebles/00780681000002?from=/search
+                    - generic [ref=e983]: Virutilla Super Fina Grado 1, 1 Un
+                  - generic [ref=e985]:
+                    - generic [ref=e988]:
+                      - generic [ref=e989]:
+                        - img "Virutilla Super Fina Grado 1, 1 Un"
+                      - button "Agregar al carro - Virutilla Super Fina Grado 1, 1 Un" [ref=e992] [cursor=pointer]:
+                        - generic "agregar" [ref=e993]: 
+                        - generic [ref=e994]: Agregar
+                    - generic [ref=e996]:
+                      - generic [ref=e998]:
+                        - generic [ref=e999]: $4.690
+                        - generic [ref=e1000]: precio actual $4.690
+                        - generic [ref=e1001]: $4.690 x un
+                      - generic [ref=e1002]: Virutex
+                      - generic [ref=e1003]: Virutilla Super Fina Grado 1, 1 Un
+  - alert [ref=e1012]

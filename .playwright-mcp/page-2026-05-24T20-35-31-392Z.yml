@@ -1,0 +1,271 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: kiwi malla
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e81]:
+            - generic [ref=e84]:
+              - generic [ref=e85]:
+                - button "Precio" [ref=e88]:
+                  - generic [ref=e89]: Precio
+                  - img [ref=e90]: 
+                - separator [ref=e91]
+              - generic [ref=e92]:
+                - button "Campaña" [ref=e95]:
+                  - generic [ref=e96]: Campaña
+                  - img [ref=e97]: 
+                - separator [ref=e98]
+              - generic [ref=e99]:
+                - button "Marca" [ref=e102]:
+                  - generic [ref=e103]: Marca
+                  - img [ref=e104]: 
+                - separator [ref=e105]
+              - generic [ref=e106]:
+                - button "Categoría" [ref=e109]:
+                  - generic [ref=e110]: Categoría
+                  - img [ref=e111]: 
+                - separator [ref=e112]
+            - generic [ref=e115]:
+              - heading "Resultados para kiwi malla (10)" [level=2] [ref=e123]: Resultados para kiwi malla(10)
+              - generic [ref=e124]:
+                - generic [ref=e126]:
+                  - group [ref=e127]:
+                    - link "Naranja Malla Usa, 2 kg" [ref=e128] [cursor=pointer]:
+                      - /url: /ip/frutas/00347572861000?from=/search
+                      - generic [ref=e129]: Naranja Malla Usa, 2 kg
+                    - generic [ref=e131]:
+                      - img "Naranja Malla Usa, 2 kg" [ref=e136]
+                      - generic [ref=e138]:
+                        - generic [ref=e140]:
+                          - generic [ref=e141]: $8.990
+                          - generic [ref=e142]: precio actual $8.990
+                          - generic [ref=e143]: $4.495 x kg
+                        - generic [ref=e144]: Sofruco
+                        - generic [ref=e145]: Naranja Malla Usa, 2 kg
+                        - generic [ref=e146]: Agotado
+                  - button "Revisar productos similares - Naranja Malla Usa, 2 kg" [ref=e148]: Revisar productos similares
+                - group [ref=e151]:
+                  - link "Naranja Malla, 2 kg" [ref=e152] [cursor=pointer]:
+                    - /url: /ip/frutas/00340072168000?from=/search
+                    - generic [ref=e153]: Naranja Malla, 2 kg
+                  - generic [ref=e155]:
+                    - generic [ref=e158]:
+                      - img "Naranja Malla, 2 kg" [ref=e160]
+                      - button "Agregar al carro - Naranja Malla, 2 kg" [ref=e163] [cursor=pointer]:
+                        - generic "agregar" [ref=e164]: 
+                        - generic [ref=e165]: Agregar
+                    - generic [ref=e167]:
+                      - generic [ref=e169]:
+                        - generic [ref=e170]: $3.590
+                        - generic [ref=e171]: precio actual $3.590
+                        - generic [ref=e172]: $1.795 x kg
+                      - generic [ref=e173]: Multimarca
+                      - generic [ref=e174]: Naranja Malla, 2 kg
+                - group [ref=e177]:
+                  - link "Limón Malla, 1 kg" [ref=e178] [cursor=pointer]:
+                    - /url: /ip/frutas/00780465943000?from=/search
+                    - generic [ref=e179]: Limón Malla, 1 kg
+                  - generic [ref=e181]:
+                    - generic [ref=e182]:
+                      - generic [ref=e184]: 2 x $2.000
+                      - generic [ref=e185]:
+                        - img "Limón Malla, 1 kg" [ref=e187]
+                        - button "Agregar al carro - Limón Malla, 1 kg" [ref=e190] [cursor=pointer]:
+                          - generic "agregar" [ref=e191]: 
+                          - generic [ref=e192]: Agregar
+                    - generic [ref=e194]:
+                      - generic [ref=e196]:
+                        - generic [ref=e197]: $1.950
+                        - generic [ref=e198]: precio actual $1.950
+                        - generic [ref=e199]: $1.950 x kg
+                      - generic [ref=e200]: Multi Marca
+                      - generic [ref=e201]: Limón Malla, 1 kg
+                - group [ref=e204]:
+                  - link "Mandarina Sofruco Malla, 1,5 kg" [ref=e205] [cursor=pointer]:
+                    - /url: /ip/frutas/00780282101167?from=/search
+                    - generic [ref=e206]: Mandarina Sofruco Malla, 1,5 kg
+                  - generic [ref=e208]:
+                    - generic [ref=e211]:
+                      - img "Mandarina Sofruco Malla, 1,5 kg" [ref=e213]
+                      - button "Agregar al carro - Mandarina Sofruco Malla, 1,5 kg" [ref=e216] [cursor=pointer]:
+                        - generic "agregar" [ref=e217]: 
+                        - generic [ref=e218]: Agregar
+                    - generic [ref=e220]:
+                      - generic [ref=e222]:
+                        - generic [ref=e223]: $4.990
+                        - generic [ref=e224]: precio actual $4.990
+                        - generic [ref=e225]: $3.327 x kg
+                      - generic [ref=e226]: Sofruco
+                      - generic [ref=e227]: Mandarina Sofruco Malla, 1,5 kg
+                - group [ref=e230]:
+                  - link "Limón Sutil Malla, 1 kg" [ref=e231] [cursor=pointer]:
+                    - /url: /ip/frutas/00780463169005?from=/search
+                    - generic [ref=e232]: Limón Sutil Malla, 1 kg
+                  - generic [ref=e234]:
+                    - generic [ref=e237]:
+                      - img "Limón Sutil Malla, 1 kg" [ref=e239]
+                      - button "Agregar al carro - Limón Sutil Malla, 1 kg" [ref=e242] [cursor=pointer]:
+                        - generic "agregar" [ref=e243]: 
+                        - generic [ref=e244]: Agregar
+                    - generic [ref=e246]:
+                      - generic [ref=e248]:
+                        - generic [ref=e249]: $3.790
+                        - generic [ref=e250]: precio actual $3.790
+                        - generic [ref=e251]: $3.790 x kg
+                      - generic [ref=e252]: Multi Marca
+                      - generic [ref=e253]: Limón Sutil Malla, 1 kg
+                - group [ref=e256]:
+                  - link "Limón Sin Semillas Malla, 900 g" [ref=e257] [cursor=pointer]:
+                    - /url: /ip/frutas/00780460592054?from=/search
+                    - generic [ref=e258]: Limón Sin Semillas Malla, 900 g
+                  - generic [ref=e260]:
+                    - generic [ref=e263]:
+                      - img "Limón Sin Semillas Malla, 900 g" [ref=e265]
+                      - button "Agregar al carro - Limón Sin Semillas Malla, 900 g" [ref=e268] [cursor=pointer]:
+                        - generic "agregar" [ref=e269]: 
+                        - generic [ref=e270]: Agregar
+                    - generic [ref=e272]:
+                      - generic [ref=e274]:
+                        - generic [ref=e275]: $1.990
+                        - generic [ref=e276]: precio actual $1.990
+                        - generic [ref=e277]: $2.211 x kg
+                      - generic [ref=e278]: Pangalillo
+                      - generic [ref=e279]: Limón Sin Semillas Malla, 900 g
+                - group [ref=e282]:
+                  - link "Pomelo Malla, 2 kg" [ref=e283] [cursor=pointer]:
+                    - /url: /ip/frutas/00040000728344?from=/search
+                    - generic [ref=e284]: Pomelo Malla, 2 kg
+                  - generic [ref=e286]:
+                    - generic [ref=e289]:
+                      - img "Pomelo Malla, 2 kg" [ref=e291]
+                      - button "Agregar al carro - Pomelo Malla, 2 kg" [ref=e294] [cursor=pointer]:
+                        - generic "agregar" [ref=e295]: 
+                        - generic [ref=e296]: Agregar
+                    - generic [ref=e298]:
+                      - generic [ref=e300]:
+                        - generic [ref=e301]: $3.590
+                        - generic [ref=e302]: precio actual $3.590
+                        - generic [ref=e303]: $1.795 x kg
+                      - generic [ref=e304]: Multi Marca
+                      - generic [ref=e305]: Pomelo Malla, 2 kg
+                - group [ref=e308]:
+                  - link "Limón Organico Malla, 1 Kg" [ref=e309] [cursor=pointer]:
+                    - /url: /ip/frutas/00780460120039?from=/search
+                    - generic [ref=e310]: Limón Organico Malla, 1 Kg
+                  - generic [ref=e312]:
+                    - generic [ref=e315]:
+                      - img "Limón Organico Malla, 1 Kg" [ref=e317]
+                      - button "Agregar al carro - Limón Organico Malla, 1 Kg" [ref=e320] [cursor=pointer]:
+                        - generic "agregar" [ref=e321]: 
+                        - generic [ref=e322]: Agregar
+                    - generic [ref=e324]:
+                      - generic [ref=e326]:
+                        - generic [ref=e327]: $2.390
+                        - generic [ref=e328]: precio actual $2.390
+                        - generic [ref=e329]: $2.390 x kg
+                      - generic [ref=e330]: Multi Marca
+                      - generic [ref=e331]: Limón Organico Malla, 1 Kg
+                - group [ref=e334]:
+                  - link "Mandarina Malla, 1 kg" [ref=e335] [cursor=pointer]:
+                    - /url: /ip/frutas/00340977388000?from=/search
+                    - generic [ref=e336]: Mandarina Malla, 1 kg
+                  - generic [ref=e338]:
+                    - generic [ref=e339]:
+                      - generic [ref=e341]:
+                        - generic [ref=e343]: 
+                        - text: Rebaja
+                      - generic [ref=e344]:
+                        - img "Mandarina Malla, 1 kg" [ref=e346]
+                        - button "Agregar al carro - Mandarina Malla, 1 kg" [ref=e349] [cursor=pointer]:
+                          - generic "agregar" [ref=e350]: 
+                          - generic [ref=e351]: Agregar
+                    - generic [ref=e353]:
+                      - generic [ref=e355]:
+                        - generic [ref=e356]: $2.000
+                        - generic [ref=e357]: precio actual $2.000, Costaba $2.990
+                        - generic [ref=e358]: $2.000 x kg
+                        - generic [ref=e359]: $2.990
+                        - generic [ref=e360]: Ahorra $990
+                      - generic [ref=e361]: Multi Marca
+                      - generic [ref=e362]: Mandarina Malla, 1 kg
+                - group [ref=e365]:
+                  - link "Limón Malla, 1 kg" [ref=e366] [cursor=pointer]:
+                    - /url: /ip/frutas/00347354309000?from=/search
+                    - generic [ref=e367]: Limón Malla, 1 kg
+                  - generic [ref=e369]:
+                    - generic [ref=e372]:
+                      - img "Limón Malla, 1 kg" [ref=e374]
+                      - button "Agregar al carro - Limón Malla, 1 kg" [ref=e377] [cursor=pointer]:
+                        - generic "agregar" [ref=e378]: 
+                        - generic [ref=e379]: Agregar
+                    - generic [ref=e381]:
+                      - generic [ref=e383]:
+                        - generic [ref=e384]: $1.990
+                        - generic [ref=e385]: precio actual $1.990
+                        - generic [ref=e386]: $1.990 x kg
+                      - generic [ref=e387]: Sofruco
+                      - generic [ref=e388]: Limón Malla, 1 kg
+  - alert [ref=e397]

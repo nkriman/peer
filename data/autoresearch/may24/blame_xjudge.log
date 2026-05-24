@@ -1,0 +1,31 @@
+2026-05-24 16:23:03,904 INFO cli_blame_and_xjudge: Phase 1: blame ON (narrower context, include_git_history=true)
+[eval] 1/7 https://github.com/django/django/pull/16603
+[eval] 2/7 https://github.com/django/django/pull/17147
+[eval] 3/7 https://github.com/pydantic/pydantic/pull/8059
+[eval] 4/7 https://github.com/pydantic/pydantic/pull/7900
+[eval] 5/7 https://github.com/django/django/pull/17256
+2026-05-24 16:23:09,726 INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7900: 3 hunks, ~3046 tokens
+2026-05-24 16:23:10,009 INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/8059: 5 hunks, ~4741 tokens
+2026-05-24 16:23:10,761 INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17256: 6 hunks, ~3687 tokens
+2026-05-24 16:23:12,156 INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17147: 10 hunks, ~10572 tokens
+2026-05-24 16:23:12,211 INFO peer.agent: Gathered codebase context: 3 symbols, 10 call sites, 1 tests, 0 untested, 0 linter findings, ~2761 tokens
+2026-05-24 16:23:12,290 INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/16603: 11 hunks, ~9192 tokens
+2026-05-24 16:23:13,735 INFO peer.agent: Gathered codebase context: 0 symbols, 0 call sites, 1 tests, 0 untested, 0 linter findings, ~1812 tokens
+2026-05-24 16:23:33,972 INFO peer.agent: Gathered codebase context: 8 symbols, 1 call sites, 2 tests, 0 untested, 0 linter findings, ~2895 tokens
+2026-05-24 16:23:42,386 INFO peer.agent: Gathered codebase context: 20 symbols, 11 call sites, 2 tests, 7 untested, 0 linter findings, ~3402 tokens
+2026-05-24 16:23:44,139 INFO peer.agent: Gathered codebase context: 19 symbols, 6 call sites, 2 tests, 7 untested, 0 linter findings, ~2874 tokens
+[eval] 6/7 https://github.com/django/django/pull/16746
+2026-05-24 16:28:35,103 INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/16746: 6 hunks, ~4698 tokens
+2026-05-24 16:29:03,507 INFO peer.agent: Gathered codebase context: 9 symbols, 10 call sites, 3 tests, 1 untested, 0 linter findings, ~5213 tokens
+[eval] 7/7 https://github.com/pydantic/pydantic/pull/7677
+2026-05-24 16:30:57,556 INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7677: 12 hunks, ~7226 tokens
+2026-05-24 16:31:10,365 INFO peer.agent: Gathered codebase context: 16 symbols, 7 call sites, 0 tests, 11 untested, 0 linter findings, ~1467 tokens
+2026-05-24 16:49:14,681 INFO peer.autoresearch.runner: autoresearch run: utility=0.0392156862745098 detection_rate=0.0392156862745098 cost=0.714777 comments=26
+2026-05-24 16:49:14,686 INFO cli_blame_and_xjudge: Phase 1 done in 1571s: DR=0.0392156862745098 comments=26 cost=0.714777
+2026-05-24 16:49:14,705 INFO cli_blame_and_xjudge: Phase 2: cross-judge (narrower context, no blame) across sonnet/haiku/opus
+2026-05-24 16:49:22,330 INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/16603: 11 hunks, ~9192 tokens
+2026-05-24 16:49:30,691 INFO peer.agent: Gathered codebase context: 19 symbols, 6 call sites, 2 tests, 7 untested, 0 linter findings, ~2874 tokens
+2026-05-24 16:55:32,674 INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17147: 10 hunks, ~10572 tokens
+2026-05-24 16:55:39,039 INFO peer.agent: Gathered codebase context: 20 symbols, 11 call sites, 2 tests, 7 untested, 0 linter findings, ~3398 tokens
+2026-05-24 16:59:49,119 INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/8059: 5 hunks, ~4741 tokens
+2026-05-24 16:59:49,284 INFO peer.agent: Gathered codebase context: 0 symbols, 0 call sites, 1 tests, 0 untested, 0 linter findings, ~1812 tokens

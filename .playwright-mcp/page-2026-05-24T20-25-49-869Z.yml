@@ -1,0 +1,1297 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 52 productos Monto total $108.965" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: "52"
+              - generic [ref=e44]: $108.965
+    - generic [ref=e50]:
+      - region "Carro" [ref=e51]:
+        - heading "Carro" [level=1] [ref=e52]
+        - generic [ref=e53]: (52 productos)
+      - button "Ir a la sección de pago" [ref=e54] [cursor=pointer]
+      - generic [ref=e55]:
+        - generic [ref=e56]:
+          - generic [ref=e60]:
+            - generic [ref=e67]:
+              - generic [ref=e68]:
+                - heading "Retiro Pickup o Despacho a Domicilio," [level=2] [ref=e69]
+                - button "MARTIN DE ZAMORA, 5595, Las Condes" [ref=e74] [cursor=pointer]
+              - generic [ref=e77]:
+                - button "Reservar horario Reserva un horario para el Retiro Pickup o Despacho a Domicilio de tu pedido." [ref=e78] [cursor=pointer]: Reservar horario
+                - generic [ref=e81]:
+                  - generic [ref=e82]:
+                    - generic [ref=e83]: Reserva un horario para el Retiro Pickup o Despacho a Domicilio de tu pedido.
+                    - text: Reserva un horario para el Retiro Pickup o Despacho a Domicilio de tu pedido.
+                  - button "Cerrar Reserva un horario para el Retiro Pickup o Despacho a Domicilio de tu pedido." [ref=e85] [cursor=pointer]: Cerrar
+            - generic [ref=e86]:
+              - generic [ref=e88]:
+                - generic [ref=e89]: 52 productos
+                - button "ocultar detalles" [expanded] [ref=e91]:
+                  - generic [ref=e92]: 
+              - list [ref=e97]:
+                - listitem [ref=e98]:
+                  - generic [ref=e101]:
+                    - generic [ref=e103]:
+                      - alert [ref=e105]:
+                        - generic [ref=e106]:
+                          - generic [ref=e107]: 
+                          - text: Rebaja
+                      - generic [ref=e109]:
+                        - link [ref=e111] [cursor=pointer]:
+                          - /url: /ip/seort/00780874950138
+                        - link "Pollo Trutro Largo Marinado, 1 en el carro" [ref=e115] [cursor=pointer]:
+                          - /url: /ip/seort/00780874950138
+                          - heading "Pollo Trutro Largo Marinado" [level=3] [ref=e116]:
+                            - generic [ref=e118]: Pollo Trutro Largo Marinado
+                        - generic [ref=e120]:
+                          - generic [ref=e122]: $2.990
+                          - generic [ref=e123]: $3.690 c/u
+                          - generic [ref=e124]: Costaba $3.690 c/u
+                          - generic [ref=e125]: Ahorras$700
+                          - generic [ref=e126]: Ahorras $700
+                    - generic [ref=e127]:
+                      - generic [ref=e128]:
+                        - button "Eliminar Pollo Trutro Largo Marinado" [ref=e129] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Pollo Trutro Largo Marinado" [ref=e130] [cursor=pointer]': Guardar para después
+                      - generic [ref=e134]:
+                        - button "Reducir las unidades Pollo Trutro Largo Marinado, Cantidad actual de 1" [ref=e137]:
+                          - generic [ref=e138]: 
+                        - generic [ref=e140]: "1"
+                        - button "Aumentar las unidades Pollo Trutro Largo Marinado, Cantidad actual de 1" [ref=e142]:
+                          - generic [ref=e143]: 
+                - listitem [ref=e144]:
+                  - generic [ref=e148]:
+                    - generic [ref=e150]:
+                      - alert [ref=e152]:
+                        - generic [ref=e153]:
+                          - generic [ref=e154]: 
+                          - text: Rebaja
+                      - generic [ref=e156]:
+                        - link [ref=e158] [cursor=pointer]:
+                          - /url: /ip/seort/00789490422286
+                        - link "Pollo Pechuga Entera Congelada, 1 en el carro" [ref=e162] [cursor=pointer]:
+                          - /url: /ip/seort/00789490422286
+                          - heading "Pollo Pechuga Entera Congelada" [level=3] [ref=e163]:
+                            - generic [ref=e165]: Pollo Pechuga Entera Congelada
+                        - generic [ref=e167]:
+                          - generic [ref=e169]: $7.490
+                          - generic [ref=e170]: $7.590 c/u
+                          - generic [ref=e171]: Costaba $7.590 c/u
+                          - generic [ref=e172]: Ahorras$100
+                          - generic [ref=e173]: Ahorras $100
+                    - generic [ref=e174]:
+                      - generic [ref=e175]:
+                        - button "Eliminar Pollo Pechuga Entera Congelada" [ref=e176] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Pollo Pechuga Entera Congelada" [ref=e177] [cursor=pointer]': Guardar para después
+                      - generic [ref=e181]:
+                        - button "Reducir las unidades Pollo Pechuga Entera Congelada, Cantidad actual de 1" [ref=e184]:
+                          - generic [ref=e185]: 
+                        - generic [ref=e187]: "1"
+                        - button "Aumentar las unidades Pollo Pechuga Entera Congelada, Cantidad actual de 1" [ref=e189]:
+                          - generic [ref=e190]: 
+                - listitem [ref=e191]:
+                  - generic [ref=e195]:
+                    - generic [ref=e199]:
+                      - link [ref=e201] [cursor=pointer]:
+                        - /url: /ip/seort/00040000114316
+                      - link "Atún Lomitos en Agua, 1 en el carro" [ref=e205] [cursor=pointer]:
+                        - /url: /ip/seort/00040000114316
+                        - heading "Atún Lomitos en Agua" [level=3] [ref=e206]:
+                          - generic [ref=e208]: Atún Lomitos en Agua
+                      - generic [ref=e212]: $1.000
+                    - generic [ref=e214]:
+                      - generic [ref=e215]:
+                        - button "Eliminar Atún Lomitos en Agua" [ref=e216] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Atún Lomitos en Agua" [ref=e217] [cursor=pointer]': Guardar para después
+                      - generic [ref=e221]:
+                        - button "Reducir las unidades Atún Lomitos en Agua, Cantidad actual de 1" [ref=e224]:
+                          - generic [ref=e225]: 
+                        - generic [ref=e227]: "1"
+                        - button "Aumentar las unidades Atún Lomitos en Agua, Cantidad actual de 1" [ref=e229]:
+                          - generic [ref=e230]: 
+                - listitem [ref=e231]:
+                  - generic [ref=e235]:
+                    - generic [ref=e239]:
+                      - link [ref=e241] [cursor=pointer]:
+                        - /url: /ip/seort/00844529128563
+                      - link "Yoghurt Proteína Sabor Frutilla Pote, 1 en el carro" [ref=e245] [cursor=pointer]:
+                        - /url: /ip/seort/00844529128563
+                        - heading "Yoghurt Proteína Sabor Frutilla Pote" [level=3] [ref=e246]:
+                          - generic [ref=e248]: Yoghurt Proteína Sabor Frutilla Pote
+                      - generic [ref=e252]: $610
+                    - generic [ref=e254]:
+                      - generic [ref=e255]:
+                        - button "Eliminar Yoghurt Proteína Sabor Frutilla Pote" [ref=e256] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Yoghurt Proteína Sabor Frutilla Pote" [ref=e257] [cursor=pointer]': Guardar para después
+                      - generic [ref=e261]:
+                        - button "Reducir las unidades Yoghurt Proteína Sabor Frutilla Pote, Cantidad actual de 1" [ref=e264]:
+                          - generic [ref=e265]: 
+                        - generic [ref=e267]: "1"
+                        - button "Aumentar las unidades Yoghurt Proteína Sabor Frutilla Pote, Cantidad actual de 1" [ref=e269]:
+                          - generic [ref=e270]: 
+                - listitem [ref=e271]:
+                  - generic [ref=e275]:
+                    - generic [ref=e279]:
+                      - link [ref=e281] [cursor=pointer]:
+                        - /url: /ip/seort/00844529128550
+                      - link "Yoghurt Proteína Sabor Chirimoya Pote, 1 en el carro" [ref=e285] [cursor=pointer]:
+                        - /url: /ip/seort/00844529128550
+                        - heading "Yoghurt Proteína Sabor Chirimoya Pote" [level=3] [ref=e286]:
+                          - generic [ref=e288]: Yoghurt Proteína Sabor Chirimoya Pote
+                      - generic [ref=e292]: $610
+                    - generic [ref=e294]:
+                      - generic [ref=e295]:
+                        - button "Eliminar Yoghurt Proteína Sabor Chirimoya Pote" [ref=e296] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Yoghurt Proteína Sabor Chirimoya Pote" [ref=e297] [cursor=pointer]': Guardar para después
+                      - generic [ref=e301]:
+                        - button "Reducir las unidades Yoghurt Proteína Sabor Chirimoya Pote, Cantidad actual de 1" [ref=e304]:
+                          - generic [ref=e305]: 
+                        - generic [ref=e307]: "1"
+                        - button "Aumentar las unidades Yoghurt Proteína Sabor Chirimoya Pote, Cantidad actual de 1" [ref=e309]:
+                          - generic [ref=e310]: 
+                - listitem [ref=e311]:
+                  - generic [ref=e315]:
+                    - generic [ref=e319]:
+                      - link [ref=e321] [cursor=pointer]:
+                        - /url: /ip/seort/00780290000142
+                      - link "Leche Proteína Chocolate con cacao, 1 en el carro" [ref=e325] [cursor=pointer]:
+                        - /url: /ip/seort/00780290000142
+                        - heading "Leche Proteína Chocolate con cacao" [level=3] [ref=e326]:
+                          - generic [ref=e328]: Leche Proteína Chocolate con cacao
+                      - generic [ref=e332]: $2.750
+                    - generic [ref=e334]:
+                      - generic [ref=e335]:
+                        - button "Eliminar Leche Proteína Chocolate con cacao" [ref=e336] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Leche Proteína Chocolate con cacao" [ref=e337] [cursor=pointer]': Guardar para después
+                      - generic [ref=e341]:
+                        - button "Reducir las unidades Leche Proteína Chocolate con cacao, Cantidad actual de 1" [ref=e344]:
+                          - generic [ref=e345]: 
+                        - generic [ref=e347]: "1"
+                        - button "Aumentar las unidades Leche Proteína Chocolate con cacao, Cantidad actual de 1" [ref=e349]:
+                          - generic [ref=e350]: 
+                - listitem [ref=e351]:
+                  - generic [ref=e355]:
+                    - generic [ref=e359]:
+                      - link [ref=e361] [cursor=pointer]:
+                        - /url: /ip/seort/00780292077754
+                      - link "Leche Entera Natural Caja 1 l, 1 en el carro" [ref=e365] [cursor=pointer]:
+                        - /url: /ip/seort/00780292077754
+                        - heading "Leche Entera Natural Caja 1 l" [level=3] [ref=e366]:
+                          - generic [ref=e368]: Leche Entera Natural Caja 1 l
+                      - generic [ref=e372]: $1.350
+                    - generic [ref=e374]:
+                      - generic [ref=e375]:
+                        - button "Eliminar Leche Entera Natural Caja 1 l" [ref=e376] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Leche Entera Natural Caja 1 l" [ref=e377] [cursor=pointer]': Guardar para después
+                      - generic [ref=e381]:
+                        - button "Reducir las unidades Leche Entera Natural Caja 1 l, Cantidad actual de 1" [ref=e384]:
+                          - generic [ref=e385]: 
+                        - generic [ref=e387]: "1"
+                        - button "Aumentar las unidades Leche Entera Natural Caja 1 l, Cantidad actual de 1" [ref=e389]:
+                          - generic [ref=e390]: 
+                - listitem [ref=e391]:
+                  - generic [ref=e395]:
+                    - generic [ref=e399]:
+                      - link [ref=e401] [cursor=pointer]:
+                        - /url: /ip/seort/00780413300502
+                      - link "Huevos Tradicionales Extra Grande Blanco, 1 en el carro" [ref=e405] [cursor=pointer]:
+                        - /url: /ip/seort/00780413300502
+                        - heading "Huevos Tradicionales Extra Grande Blanco" [level=3] [ref=e406]:
+                          - generic [ref=e408]: Huevos Tradicionales Extra Grande Blanco
+                      - generic [ref=e412]: $4.790
+                    - generic [ref=e414]:
+                      - generic [ref=e415]:
+                        - button "Eliminar Huevos Tradicionales Extra Grande Blanco" [ref=e416] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Huevos Tradicionales Extra Grande Blanco" [ref=e417] [cursor=pointer]': Guardar para después
+                      - generic [ref=e421]:
+                        - button "Reducir las unidades Huevos Tradicionales Extra Grande Blanco, Cantidad actual de 1" [ref=e424]:
+                          - generic [ref=e425]: 
+                        - generic [ref=e427]: "1"
+                        - button "Aumentar las unidades Huevos Tradicionales Extra Grande Blanco, Cantidad actual de 1" [ref=e429]:
+                          - generic [ref=e430]: 
+                - listitem [ref=e431]:
+                  - generic [ref=e435]:
+                    - generic [ref=e439]:
+                      - link [ref=e441] [cursor=pointer]:
+                        - /url: /ip/seort/00780132300068
+                      - link "Nuggets De Merluza, 1 en el carro" [ref=e445] [cursor=pointer]:
+                        - /url: /ip/seort/00780132300068
+                        - heading "Nuggets De Merluza" [level=3] [ref=e446]:
+                          - generic [ref=e448]: Nuggets De Merluza
+                      - generic [ref=e452]: $3.090
+                    - generic [ref=e454]:
+                      - generic [ref=e455]:
+                        - button "Eliminar Nuggets De Merluza" [ref=e456] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Nuggets De Merluza" [ref=e457] [cursor=pointer]': Guardar para después
+                      - generic [ref=e461]:
+                        - button "Reducir las unidades Nuggets De Merluza, Cantidad actual de 1" [ref=e464]:
+                          - generic [ref=e465]: 
+                        - generic [ref=e467]: "1"
+                        - button "Aumentar las unidades Nuggets De Merluza, Cantidad actual de 1" [ref=e469]:
+                          - generic [ref=e470]: 
+                - listitem [ref=e471]:
+                  - generic [ref=e475]:
+                    - generic [ref=e479]:
+                      - link [ref=e481] [cursor=pointer]:
+                        - /url: /ip/seort/00780132300402
+                      - link "Merluza Filete Con Piel Bolsa, 1 en el carro" [ref=e485] [cursor=pointer]:
+                        - /url: /ip/seort/00780132300402
+                        - heading "Merluza Filete Con Piel Bolsa" [level=3] [ref=e486]:
+                          - generic [ref=e488]: Merluza Filete Con Piel Bolsa
+                      - generic [ref=e492]: $5.390
+                    - generic [ref=e494]:
+                      - generic [ref=e495]:
+                        - button "Eliminar Merluza Filete Con Piel Bolsa" [ref=e496] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Merluza Filete Con Piel Bolsa" [ref=e497] [cursor=pointer]': Guardar para después
+                      - generic [ref=e501]:
+                        - button "Reducir las unidades Merluza Filete Con Piel Bolsa, Cantidad actual de 1" [ref=e504]:
+                          - generic [ref=e505]: 
+                        - generic [ref=e507]: "1"
+                        - button "Aumentar las unidades Merluza Filete Con Piel Bolsa, Cantidad actual de 1" [ref=e509]:
+                          - generic [ref=e510]: 
+                - listitem [ref=e511]:
+                  - generic [ref=e515]:
+                    - generic [ref=e519]:
+                      - link [ref=e521] [cursor=pointer]:
+                        - /url: /ip/seort/00780461339285
+                      - link "Queso Tipo Gauda Laminado, 1 en el carro" [ref=e525] [cursor=pointer]:
+                        - /url: /ip/seort/00780461339285
+                        - heading "Queso Tipo Gauda Laminado" [level=3] [ref=e526]:
+                          - generic [ref=e528]: Queso Tipo Gauda Laminado
+                      - generic [ref=e532]: $4.390
+                    - generic [ref=e534]:
+                      - generic [ref=e535]:
+                        - button "Eliminar Queso Tipo Gauda Laminado" [ref=e536] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Queso Tipo Gauda Laminado" [ref=e537] [cursor=pointer]': Guardar para después
+                      - generic [ref=e541]:
+                        - button "Reducir las unidades Queso Tipo Gauda Laminado, Cantidad actual de 1" [ref=e544]:
+                          - generic [ref=e545]: 
+                        - generic [ref=e547]: "1"
+                        - button "Aumentar las unidades Queso Tipo Gauda Laminado, Cantidad actual de 1" [ref=e549]:
+                          - generic [ref=e550]: 
+                - listitem [ref=e551]:
+                  - generic [ref=e555]:
+                    - generic [ref=e559]:
+                      - link [ref=e561] [cursor=pointer]:
+                        - /url: /ip/seort/00780292000863
+                      - link "Queso Fresco Light Sin Lactosa, 1 en el carro" [ref=e565] [cursor=pointer]:
+                        - /url: /ip/seort/00780292000863
+                        - heading "Queso Fresco Light Sin Lactosa" [level=3] [ref=e566]:
+                          - generic [ref=e568]: Queso Fresco Light Sin Lactosa
+                      - generic [ref=e572]: $2.950
+                    - generic [ref=e574]:
+                      - generic [ref=e575]:
+                        - button "Eliminar Queso Fresco Light Sin Lactosa" [ref=e576] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Queso Fresco Light Sin Lactosa" [ref=e577] [cursor=pointer]': Guardar para después
+                      - generic [ref=e581]:
+                        - button "Reducir las unidades Queso Fresco Light Sin Lactosa, Cantidad actual de 1" [ref=e584]:
+                          - generic [ref=e585]: 
+                        - generic [ref=e587]: "1"
+                        - button "Aumentar las unidades Queso Fresco Light Sin Lactosa, Cantidad actual de 1" [ref=e589]:
+                          - generic [ref=e590]: 
+                - listitem [ref=e591]:
+                  - generic [ref=e595]:
+                    - generic [ref=e597]:
+                      - alert [ref=e599]:
+                        - generic [ref=e600]:
+                          - generic [ref=e601]: 
+                          - text: Rebaja
+                      - generic [ref=e603]:
+                        - link [ref=e605] [cursor=pointer]:
+                          - /url: /ip/seort/00780292011601
+                        - link "Queso Parmesano Rallado, 1 en el carro" [ref=e609] [cursor=pointer]:
+                          - /url: /ip/seort/00780292011601
+                          - heading "Queso Parmesano Rallado" [level=3] [ref=e610]:
+                            - generic [ref=e612]: Queso Parmesano Rallado
+                        - generic [ref=e614]:
+                          - generic [ref=e616]: $950
+                          - generic [ref=e617]: $1.050 c/u
+                          - generic [ref=e618]: Costaba $1.050 c/u
+                          - generic [ref=e619]: Ahorras$100
+                          - generic [ref=e620]: Ahorras $100
+                    - generic [ref=e621]:
+                      - generic [ref=e622]:
+                        - button "Eliminar Queso Parmesano Rallado" [ref=e623] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Queso Parmesano Rallado" [ref=e624] [cursor=pointer]': Guardar para después
+                      - generic [ref=e628]:
+                        - button "Reducir las unidades Queso Parmesano Rallado, Cantidad actual de 1" [ref=e631]:
+                          - generic [ref=e632]: 
+                        - generic [ref=e634]: "1"
+                        - button "Aumentar las unidades Queso Parmesano Rallado, Cantidad actual de 1" [ref=e636]:
+                          - generic [ref=e637]: 
+                - listitem [ref=e638]:
+                  - generic [ref=e642]:
+                    - generic [ref=e644]:
+                      - alert [ref=e646]:
+                        - generic [ref=e647]:
+                          - generic [ref=e648]: 
+                          - text: Rebaja
+                      - generic [ref=e650]:
+                        - link [ref=e652] [cursor=pointer]:
+                          - /url: /ip/seort/00780291015060
+                        - link "Mantequilla Con Sal Tradicional, 1 en el carro" [ref=e656] [cursor=pointer]:
+                          - /url: /ip/seort/00780291015060
+                          - heading "Mantequilla Con Sal Tradicional" [level=3] [ref=e657]:
+                            - generic [ref=e659]: Mantequilla Con Sal Tradicional
+                        - generic [ref=e661]:
+                          - generic [ref=e663]: $2.490
+                          - generic [ref=e664]: $2.790 c/u
+                          - generic [ref=e665]: Costaba $2.790 c/u
+                          - generic [ref=e666]: Ahorras$300
+                          - generic [ref=e667]: Ahorras $300
+                    - generic [ref=e668]:
+                      - generic [ref=e669]:
+                        - button "Eliminar Mantequilla Con Sal Tradicional" [ref=e670] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Mantequilla Con Sal Tradicional" [ref=e671] [cursor=pointer]': Guardar para después
+                      - generic [ref=e675]:
+                        - button "Reducir las unidades Mantequilla Con Sal Tradicional, Cantidad actual de 1" [ref=e678]:
+                          - generic [ref=e679]: 
+                        - generic [ref=e681]: "1"
+                        - button "Aumentar las unidades Mantequilla Con Sal Tradicional, Cantidad actual de 1" [ref=e683]:
+                          - generic [ref=e684]: 
+                - listitem [ref=e685]:
+                  - generic [ref=e689]:
+                    - generic [ref=e693]:
+                      - link [ref=e695] [cursor=pointer]:
+                        - /url: /ip/seort/00780298500092
+                      - link "Mermelada Mora, 1 en el carro" [ref=e699] [cursor=pointer]:
+                        - /url: /ip/seort/00780298500092
+                        - heading "Mermelada Mora" [level=3] [ref=e700]:
+                          - generic [ref=e702]: Mermelada Mora
+                      - generic [ref=e706]: $980
+                    - generic [ref=e708]:
+                      - generic [ref=e709]:
+                        - button "Eliminar Mermelada Mora" [ref=e710] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Mermelada Mora" [ref=e711] [cursor=pointer]': Guardar para después
+                      - generic [ref=e715]:
+                        - button "Reducir las unidades Mermelada Mora, Cantidad actual de 1" [ref=e718]:
+                          - generic [ref=e719]: 
+                        - generic [ref=e721]: "1"
+                        - button "Aumentar las unidades Mermelada Mora, Cantidad actual de 1" [ref=e723]:
+                          - generic [ref=e724]: 
+                - listitem [ref=e725]:
+                  - generic [ref=e729]:
+                    - generic [ref=e731]:
+                      - alert [ref=e733]:
+                        - generic [ref=e734]:
+                          - generic [ref=e735]: 
+                          - text: Rebaja
+                      - generic [ref=e737]:
+                        - link [ref=e739] [cursor=pointer]:
+                          - /url: /ip/seort/00207074000000
+                        - link "Jamón Artesanal Granel, 0.25 en el carro" [ref=e743] [cursor=pointer]:
+                          - /url: /ip/seort/00207074000000
+                          - heading "Jamón Artesanal Granel" [level=3] [ref=e744]:
+                            - generic [ref=e746]: Jamón Artesanal Granel
+                        - generic [ref=e748]:
+                          - generic [ref=e750]: $2.950
+                          - generic [ref=e751]: $13.800/kg
+                          - generic [ref=e752]: Costaba $13.800/kg
+                          - generic [ref=e753]: Ahorras$500
+                          - generic [ref=e754]: Ahorras $500
+                    - generic [ref=e755]:
+                      - generic [ref=e756]:
+                        - button "Eliminar Jamón Artesanal Granel" [ref=e757] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Jamón Artesanal Granel" [ref=e758] [cursor=pointer]': Guardar para después
+                      - generic [ref=e762]:
+                        - button "Reducir las unidades Jamón Artesanal Granel, Cantidad actual de 0.25" [ref=e765]:
+                          - generic [ref=e766]: 
+                        - generic [ref=e768]: 0.25 kg
+                        - button "Aumentar las unidades Jamón Artesanal Granel, Cantidad actual de 0.25" [ref=e770]:
+                          - generic [ref=e771]: 
+                - listitem [ref=e772]:
+                  - generic [ref=e776]:
+                    - generic [ref=e778]:
+                      - alert [ref=e780]:
+                        - generic [ref=e781]:
+                          - generic [ref=e782]: 
+                          - text: Rebaja
+                      - generic [ref=e784]:
+                        - link [ref=e786] [cursor=pointer]:
+                          - /url: /ip/seort/00780340300455
+                        - link "Pan de Molde Blanco XL, 1 en el carro" [ref=e790] [cursor=pointer]:
+                          - /url: /ip/seort/00780340300455
+                          - heading "Pan de Molde Blanco XL" [level=3] [ref=e791]:
+                            - generic [ref=e793]: Pan de Molde Blanco XL
+                        - generic [ref=e795]:
+                          - generic [ref=e797]: $2.000
+                          - generic [ref=e798]: $2.390 c/u
+                          - generic [ref=e799]: Costaba $2.390 c/u
+                          - generic [ref=e800]: Ahorras$390
+                          - generic [ref=e801]: Ahorras $390
+                    - generic [ref=e802]:
+                      - generic [ref=e803]:
+                        - button "Eliminar Pan de Molde Blanco XL" [ref=e804] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Pan de Molde Blanco XL" [ref=e805] [cursor=pointer]': Guardar para después
+                      - generic [ref=e809]:
+                        - button "Reducir las unidades Pan de Molde Blanco XL, Cantidad actual de 1" [ref=e812]:
+                          - generic [ref=e813]: 
+                        - generic [ref=e815]: "1"
+                        - button "Aumentar las unidades Pan de Molde Blanco XL, Cantidad actual de 1" [ref=e817]:
+                          - generic [ref=e818]: 
+                - listitem [ref=e819]:
+                  - generic [ref=e823]:
+                    - generic [ref=e825]:
+                      - alert [ref=e827]:
+                        - generic [ref=e828]:
+                          - generic [ref=e829]: 
+                          - text: Rebaja
+                      - generic [ref=e831]:
+                        - link [ref=e833] [cursor=pointer]:
+                          - /url: /ip/seort/00780190700172
+                        - link "Salame Italiano, 1 en el carro" [ref=e837] [cursor=pointer]:
+                          - /url: /ip/seort/00780190700172
+                          - heading "Salame Italiano" [level=3] [ref=e838]:
+                            - generic [ref=e840]: Salame Italiano
+                        - generic [ref=e842]:
+                          - generic [ref=e844]: $1.490
+                          - generic [ref=e845]: $1.690 c/u
+                          - generic [ref=e846]: Costaba $1.690 c/u
+                          - generic [ref=e847]: Ahorras$200
+                          - generic [ref=e848]: Ahorras $200
+                    - generic [ref=e849]:
+                      - generic [ref=e850]:
+                        - button "Eliminar Salame Italiano" [ref=e851] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Salame Italiano" [ref=e852] [cursor=pointer]': Guardar para después
+                      - generic [ref=e856]:
+                        - button "Reducir las unidades Salame Italiano, Cantidad actual de 1" [ref=e859]:
+                          - generic [ref=e860]: 
+                        - generic [ref=e862]: "1"
+                        - button "Aumentar las unidades Salame Italiano, Cantidad actual de 1" [ref=e864]:
+                          - generic [ref=e865]: 
+                - listitem [ref=e866]:
+                  - generic [ref=e870]:
+                    - generic [ref=e874]:
+                      - link [ref=e876] [cursor=pointer]:
+                        - /url: /ip/seort/00780352500041
+                      - link "Braunichoc Pack 4 Un, 1 en el carro" [ref=e880] [cursor=pointer]:
+                        - /url: /ip/seort/00780352500041
+                        - heading "Braunichoc Pack 4 Un" [level=3] [ref=e881]:
+                          - generic [ref=e883]: Braunichoc Pack 4 Un
+                      - generic [ref=e887]: $1.850
+                    - generic [ref=e889]:
+                      - generic [ref=e890]:
+                        - button "Eliminar Braunichoc Pack 4 Un" [ref=e891] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Braunichoc Pack 4 Un" [ref=e892] [cursor=pointer]': Guardar para después
+                      - generic [ref=e896]:
+                        - button "Reducir las unidades Braunichoc Pack 4 Un, Cantidad actual de 1" [ref=e899]:
+                          - generic [ref=e900]: 
+                        - generic [ref=e902]: "1"
+                        - button "Aumentar las unidades Braunichoc Pack 4 Un, Cantidad actual de 1" [ref=e904]:
+                          - generic [ref=e905]: 
+                - listitem [ref=e906]:
+                  - generic [ref=e910]:
+                    - generic [ref=e914]:
+                      - link [ref=e916] [cursor=pointer]:
+                        - /url: /ip/seort/00780464645002
+                      - link "Galletas de arroz Mizos chocolate, 1 en el carro" [ref=e920] [cursor=pointer]:
+                        - /url: /ip/seort/00780464645002
+                        - heading "Galletas de arroz Mizos chocolate" [level=3] [ref=e921]:
+                          - generic [ref=e923]: Galletas de arroz Mizos chocolate
+                      - generic [ref=e927]: $540
+                    - generic [ref=e929]:
+                      - generic [ref=e930]:
+                        - button "Eliminar Galletas de arroz Mizos chocolate" [ref=e931] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Galletas de arroz Mizos chocolate" [ref=e932] [cursor=pointer]': Guardar para después
+                      - generic [ref=e936]:
+                        - button "Reducir las unidades Galletas de arroz Mizos chocolate, Cantidad actual de 1" [ref=e939]:
+                          - generic [ref=e940]: 
+                        - generic [ref=e942]: "1"
+                        - button "Aumentar las unidades Galletas de arroz Mizos chocolate, Cantidad actual de 1" [ref=e944]:
+                          - generic [ref=e945]: 
+                - listitem [ref=e946]:
+                  - generic [ref=e950]:
+                    - generic [ref=e952]:
+                      - alert [ref=e954]:
+                        - generic [ref=e955]:
+                          - generic [ref=e956]: 
+                          - text: Rebaja
+                      - generic [ref=e958]:
+                        - link [ref=e960] [cursor=pointer]:
+                          - /url: /ip/seort/00780122000352
+                        - link "Mango en Trozos Bolsa, 1 en el carro" [ref=e964] [cursor=pointer]:
+                          - /url: /ip/seort/00780122000352
+                          - heading "Mango en Trozos Bolsa" [level=3] [ref=e965]:
+                            - generic [ref=e967]: Mango en Trozos Bolsa
+                        - generic [ref=e969]:
+                          - generic [ref=e971]: $3.690
+                          - generic [ref=e972]: $4.250 c/u
+                          - generic [ref=e973]: Costaba $4.250 c/u
+                          - generic [ref=e974]: Ahorras$560
+                          - generic [ref=e975]: Ahorras $560
+                    - generic [ref=e976]:
+                      - generic [ref=e977]:
+                        - button "Eliminar Mango en Trozos Bolsa" [ref=e978] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Mango en Trozos Bolsa" [ref=e979] [cursor=pointer]': Guardar para después
+                      - generic [ref=e983]:
+                        - button "Reducir las unidades Mango en Trozos Bolsa, Cantidad actual de 1" [ref=e986]:
+                          - generic [ref=e987]: 
+                        - generic [ref=e989]: "1"
+                        - button "Aumentar las unidades Mango en Trozos Bolsa, Cantidad actual de 1" [ref=e991]:
+                          - generic [ref=e992]: 
+                - listitem [ref=e993]:
+                  - generic [ref=e997]:
+                    - generic [ref=e1001]:
+                      - link [ref=e1003] [cursor=pointer]:
+                        - /url: /ip/seort/00780465037000
+                      - link "Tomate Larga Vida Malla, 1 en el carro" [ref=e1007] [cursor=pointer]:
+                        - /url: /ip/seort/00780465037000
+                        - heading "Tomate Larga Vida Malla" [level=3] [ref=e1008]:
+                          - generic [ref=e1010]: Tomate Larga Vida Malla
+                      - generic [ref=e1014]: $1.990
+                    - generic [ref=e1016]:
+                      - generic [ref=e1017]:
+                        - button "Eliminar Tomate Larga Vida Malla" [ref=e1018] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Tomate Larga Vida Malla" [ref=e1019] [cursor=pointer]': Guardar para después
+                      - generic [ref=e1023]:
+                        - button "Reducir las unidades Tomate Larga Vida Malla, Cantidad actual de 1" [ref=e1026]:
+                          - generic [ref=e1027]: 
+                        - generic [ref=e1029]: "1"
+                        - button "Aumentar las unidades Tomate Larga Vida Malla, Cantidad actual de 1" [ref=e1031]:
+                          - generic [ref=e1032]: 
+                - listitem [ref=e1033]:
+                  - generic [ref=e1037]:
+                    - generic [ref=e1039]:
+                      - generic [ref=e1040]:
+                        - generic [ref=e1043]: Combina 2 x $3.000
+                        - generic [ref=e1046]: Combina 2 x $3.000
+                      - generic [ref=e1048]:
+                        - link [ref=e1050] [cursor=pointer]:
+                          - /url: /ip/seort/00040005014754
+                        - link "Manzana Fuji Bolsa., 1 en el carro" [ref=e1054] [cursor=pointer]:
+                          - /url: /ip/seort/00040005014754
+                          - heading "Manzana Fuji Bolsa." [level=3] [ref=e1055]:
+                            - generic [ref=e1057]: Manzana Fuji Bolsa.
+                        - generic [ref=e1059]:
+                          - generic [ref=e1061]: $1.500
+                          - generic [ref=e1063]: Ahorras$490
+                          - generic [ref=e1064]: Ahorras $490
+                    - generic [ref=e1065]:
+                      - generic [ref=e1066]:
+                        - button "Eliminar Manzana Fuji Bolsa." [ref=e1067] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Manzana Fuji Bolsa." [ref=e1068] [cursor=pointer]': Guardar para después
+                      - generic [ref=e1072]:
+                        - button "Reducir las unidades Manzana Fuji Bolsa., Cantidad actual de 1" [ref=e1075]:
+                          - generic [ref=e1076]: 
+                        - generic [ref=e1078]: "1"
+                        - button "Aumentar las unidades Manzana Fuji Bolsa., Cantidad actual de 1" [ref=e1080]:
+                          - generic [ref=e1081]: 
+                - listitem [ref=e1082]:
+                  - generic [ref=e1086]:
+                    - generic [ref=e1088]:
+                      - generic [ref=e1092]: Combina 2 x $3.000
+                      - generic [ref=e1094]:
+                        - link [ref=e1096] [cursor=pointer]:
+                          - /url: /ip/seort/00780282100575
+                        - link "Pera Bolsa., 1 en el carro" [ref=e1100] [cursor=pointer]:
+                          - /url: /ip/seort/00780282100575
+                          - heading "Pera Bolsa." [level=3] [ref=e1101]:
+                            - generic [ref=e1103]: Pera Bolsa.
+                        - generic [ref=e1105]:
+                          - generic [ref=e1107]: $1.500
+                          - generic [ref=e1109]: Ahorras$290
+                          - generic [ref=e1110]: Ahorras $290
+                    - generic [ref=e1111]:
+                      - generic [ref=e1112]:
+                        - button "Eliminar Pera Bolsa." [ref=e1113] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Pera Bolsa." [ref=e1114] [cursor=pointer]': Guardar para después
+                      - generic [ref=e1118]:
+                        - button "Reducir las unidades Pera Bolsa., Cantidad actual de 1" [ref=e1121]:
+                          - generic [ref=e1122]: 
+                        - generic [ref=e1124]: "1"
+                        - button "Aumentar las unidades Pera Bolsa., Cantidad actual de 1" [ref=e1126]:
+                          - generic [ref=e1127]: 
+                - listitem [ref=e1128]:
+                  - generic [ref=e1132]:
+                    - generic [ref=e1136]:
+                      - link [ref=e1138] [cursor=pointer]:
+                        - /url: /ip/seort/00780403300006
+                      - link "Ciboulette Oriental Bolsa, 1 en el carro" [ref=e1142] [cursor=pointer]:
+                        - /url: /ip/seort/00780403300006
+                        - heading "Ciboulette Oriental Bolsa" [level=3] [ref=e1143]:
+                          - generic [ref=e1145]: Ciboulette Oriental Bolsa
+                      - generic [ref=e1149]: $990
+                    - generic [ref=e1151]:
+                      - generic [ref=e1152]:
+                        - button "Eliminar Ciboulette Oriental Bolsa" [ref=e1153] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Ciboulette Oriental Bolsa" [ref=e1154] [cursor=pointer]': Guardar para después
+                      - generic [ref=e1158]:
+                        - button "Reducir las unidades Ciboulette Oriental Bolsa, Cantidad actual de 1" [ref=e1161]:
+                          - generic [ref=e1162]: 
+                        - generic [ref=e1164]: "1"
+                        - button "Aumentar las unidades Ciboulette Oriental Bolsa, Cantidad actual de 1" [ref=e1166]:
+                          - generic [ref=e1167]: 
+                - listitem [ref=e1168]:
+                  - generic [ref=e1172]:
+                    - generic [ref=e1176]:
+                      - link [ref=e1178] [cursor=pointer]:
+                        - /url: /ip/seort/00780394600113
+                      - link "Cilantro Bolsa, 1 en el carro" [ref=e1182] [cursor=pointer]:
+                        - /url: /ip/seort/00780394600113
+                        - heading "Cilantro Bolsa" [level=3] [ref=e1183]:
+                          - generic [ref=e1185]: Cilantro Bolsa
+                      - generic [ref=e1189]: $950
+                    - generic [ref=e1191]:
+                      - generic [ref=e1192]:
+                        - button "Eliminar Cilantro Bolsa" [ref=e1193] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Cilantro Bolsa" [ref=e1194] [cursor=pointer]': Guardar para después
+                      - generic [ref=e1198]:
+                        - button "Reducir las unidades Cilantro Bolsa, Cantidad actual de 1" [ref=e1201]:
+                          - generic [ref=e1202]: 
+                        - generic [ref=e1204]: "1"
+                        - button "Aumentar las unidades Cilantro Bolsa, Cantidad actual de 1" [ref=e1206]:
+                          - generic [ref=e1207]: 
+                - listitem [ref=e1208]:
+                  - generic [ref=e1212]:
+                    - generic [ref=e1216]:
+                      - link [ref=e1218] [cursor=pointer]:
+                        - /url: /ip/seort/00780460020017
+                      - link "Cebolla Morada Malla, 1 en el carro" [ref=e1222] [cursor=pointer]:
+                        - /url: /ip/seort/00780460020017
+                        - heading "Cebolla Morada Malla" [level=3] [ref=e1223]:
+                          - generic [ref=e1225]: Cebolla Morada Malla
+                      - generic [ref=e1229]: $1.990
+                    - generic [ref=e1231]:
+                      - generic [ref=e1232]:
+                        - button "Eliminar Cebolla Morada Malla" [ref=e1233] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Cebolla Morada Malla" [ref=e1234] [cursor=pointer]': Guardar para después
+                      - generic [ref=e1238]:
+                        - button "Reducir las unidades Cebolla Morada Malla, Cantidad actual de 1" [ref=e1241]:
+                          - generic [ref=e1242]: 
+                        - generic [ref=e1244]: "1"
+                        - button "Aumentar las unidades Cebolla Morada Malla, Cantidad actual de 1" [ref=e1246]:
+                          - generic [ref=e1247]: 
+                - listitem [ref=e1248]:
+                  - generic [ref=e1252]:
+                    - generic [ref=e1256]:
+                      - link [ref=e1258] [cursor=pointer]:
+                        - /url: /ip/seort/00780461085032
+                      - link "Zanahoria Bolsa, 1 en el carro" [ref=e1262] [cursor=pointer]:
+                        - /url: /ip/seort/00780461085032
+                        - heading "Zanahoria Bolsa" [level=3] [ref=e1263]:
+                          - generic [ref=e1265]: Zanahoria Bolsa
+                      - generic [ref=e1269]: $1.290
+                    - generic [ref=e1271]:
+                      - generic [ref=e1272]:
+                        - button "Eliminar Zanahoria Bolsa" [ref=e1273] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Zanahoria Bolsa" [ref=e1274] [cursor=pointer]': Guardar para después
+                      - generic [ref=e1278]:
+                        - button "Reducir las unidades Zanahoria Bolsa, Cantidad actual de 1" [ref=e1281]:
+                          - generic [ref=e1282]: 
+                        - generic [ref=e1284]: "1"
+                        - button "Aumentar las unidades Zanahoria Bolsa, Cantidad actual de 1" [ref=e1286]:
+                          - generic [ref=e1287]: 
+                - listitem [ref=e1288]:
+                  - generic [ref=e1292]:
+                    - generic [ref=e1294]:
+                      - alert [ref=e1296]:
+                        - generic [ref=e1297]:
+                          - generic [ref=e1298]: 
+                          - text: Rebaja
+                      - generic [ref=e1300]:
+                        - link [ref=e1302] [cursor=pointer]:
+                          - /url: /ip/seort/00780953490126
+                        - link "Palta Hass Malla, 1 en el carro" [ref=e1306] [cursor=pointer]:
+                          - /url: /ip/seort/00780953490126
+                          - heading "Palta Hass Malla" [level=3] [ref=e1307]:
+                            - generic [ref=e1309]: Palta Hass Malla
+                        - generic [ref=e1311]:
+                          - generic [ref=e1313]: $2.000
+                          - generic [ref=e1314]: $2.990 c/u
+                          - generic [ref=e1315]: Costaba $2.990 c/u
+                          - generic [ref=e1316]: Ahorras$990
+                          - generic [ref=e1317]: Ahorras $990
+                    - generic [ref=e1318]:
+                      - generic [ref=e1319]:
+                        - button "Eliminar Palta Hass Malla" [ref=e1320] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Palta Hass Malla" [ref=e1321] [cursor=pointer]': Guardar para después
+                      - generic [ref=e1325]:
+                        - button "Reducir las unidades Palta Hass Malla, Cantidad actual de 1" [ref=e1328]:
+                          - generic [ref=e1329]: 
+                        - generic [ref=e1331]: "1"
+                        - button "Aumentar las unidades Palta Hass Malla, Cantidad actual de 1" [ref=e1333]:
+                          - generic [ref=e1334]: 
+                - listitem [ref=e1335]:
+                  - generic [ref=e1339]:
+                    - generic [ref=e1343]:
+                      - link [ref=e1345] [cursor=pointer]:
+                        - /url: /ip/seort/00780408600019
+                      - link "Brócoli, 1 en el carro" [ref=e1349] [cursor=pointer]:
+                        - /url: /ip/seort/00780408600019
+                        - heading "Brócoli" [level=3] [ref=e1350]:
+                          - generic [ref=e1352]: Brócoli
+                      - generic [ref=e1356]: $1.190
+                    - generic [ref=e1358]:
+                      - generic [ref=e1359]:
+                        - button "Eliminar Brócoli" [ref=e1360] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Brócoli" [ref=e1361] [cursor=pointer]': Guardar para después
+                      - generic [ref=e1365]:
+                        - button "Reducir las unidades Brócoli, Cantidad actual de 1" [ref=e1368]:
+                          - generic [ref=e1369]: 
+                        - generic [ref=e1371]: "1"
+                        - button "Aumentar las unidades Brócoli, Cantidad actual de 1" [ref=e1373]:
+                          - generic [ref=e1374]: 
+                - listitem [ref=e1375]:
+                  - generic [ref=e1379]:
+                    - generic [ref=e1383]:
+                      - link [ref=e1385] [cursor=pointer]:
+                        - /url: /ip/seort/00780142000195
+                      - link "Arroz Grado 1 Grano Largo Pregraneado Bolsa, 1 en el carro" [ref=e1389] [cursor=pointer]:
+                        - /url: /ip/seort/00780142000195
+                        - heading "Arroz Grado 1 Grano Largo Pregraneado Bolsa" [level=3] [ref=e1390]:
+                          - generic [ref=e1392]: Arroz Grado 1 Grano Largo Pregraneado Bolsa
+                      - generic [ref=e1396]: $1.850
+                    - generic [ref=e1398]:
+                      - generic [ref=e1399]:
+                        - button "Eliminar Arroz Grado 1 Grano Largo Pregraneado Bolsa" [ref=e1400] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Arroz Grado 1 Grano Largo Pregraneado Bolsa" [ref=e1401] [cursor=pointer]': Guardar para después
+                      - generic [ref=e1405]:
+                        - button "Reducir las unidades Arroz Grado 1 Grano Largo Pregraneado Bolsa, Cantidad actual de 1" [ref=e1408]:
+                          - generic [ref=e1409]: 
+                        - generic [ref=e1411]: "1"
+                        - button "Aumentar las unidades Arroz Grado 1 Grano Largo Pregraneado Bolsa, Cantidad actual de 1" [ref=e1413]:
+                          - generic [ref=e1414]: 
+                - listitem [ref=e1415]:
+                  - generic [ref=e1419]:
+                    - generic [ref=e1421]:
+                      - alert [ref=e1423]:
+                        - generic [ref=e1424]:
+                          - generic [ref=e1425]: 
+                          - text: Rebaja
+                      - generic [ref=e1427]:
+                        - link [ref=e1429] [cursor=pointer]:
+                          - /url: /ip/seort/00780257501672
+                        - link "Fideo Pasta Pack Spaghetti N°5 3 Unidades 400 gr + Salsa Tomate 1 Unidad 200 gr, 1 en el carro" [ref=e1433] [cursor=pointer]:
+                          - /url: /ip/seort/00780257501672
+                          - heading "Fideo Pasta Pack Spaghetti N°5 3 Unidades 400 gr + Salsa Tomate 1 Unidad 200 gr" [level=3] [ref=e1434]:
+                            - generic [ref=e1436]: Fideo Pasta Pack Spaghetti N°5 3 Unidades 400 gr + Salsa Tomate 1 Unidad 200 gr
+                        - generic [ref=e1438]:
+                          - generic [ref=e1440]: $2.750
+                          - generic [ref=e1441]: $3.290 c/u
+                          - generic [ref=e1442]: Costaba $3.290 c/u
+                          - generic [ref=e1443]: Ahorras$540
+                          - generic [ref=e1444]: Ahorras $540
+                    - generic [ref=e1445]:
+                      - generic [ref=e1446]:
+                        - button "Eliminar Fideo Pasta Pack Spaghetti N°5 3 Unidades 400 gr + Salsa Tomate 1 Unidad 200 gr" [ref=e1447] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Fideo Pasta Pack Spaghetti N°5 3 Unidades 400 gr + Salsa Tomate 1 Unidad 200 gr" [ref=e1448] [cursor=pointer]': Guardar para después
+                      - generic [ref=e1452]:
+                        - button "Reducir las unidades Fideo Pasta Pack Spaghetti N°5 3 Unidades 400 gr + Salsa Tomate 1 Unidad 200 gr, Cantidad actual de 1" [ref=e1455]:
+                          - generic [ref=e1456]: 
+                        - generic [ref=e1458]: "1"
+                        - button "Aumentar las unidades Fideo Pasta Pack Spaghetti N°5 3 Unidades 400 gr + Salsa Tomate 1 Unidad 200 gr, Cantidad actual de 1" [ref=e1460]:
+                          - generic [ref=e1461]: 
+                - listitem [ref=e1462]:
+                  - generic [ref=e1466]:
+                    - generic [ref=e1470]:
+                      - link [ref=e1472] [cursor=pointer]:
+                        - /url: /ip/seort/00040005052441
+                      - link "Aceite Maravilla Botella, 1 en el carro" [ref=e1476] [cursor=pointer]:
+                        - /url: /ip/seort/00040005052441
+                        - heading "Aceite Maravilla Botella" [level=3] [ref=e1477]:
+                          - generic [ref=e1479]: Aceite Maravilla Botella
+                      - generic [ref=e1483]: $2.490
+                    - generic [ref=e1485]:
+                      - generic [ref=e1486]:
+                        - button "Eliminar Aceite Maravilla Botella" [ref=e1487] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Aceite Maravilla Botella" [ref=e1488] [cursor=pointer]': Guardar para después
+                      - generic [ref=e1492]:
+                        - button "Reducir las unidades Aceite Maravilla Botella, Cantidad actual de 1" [ref=e1495]:
+                          - generic [ref=e1496]: 
+                        - generic [ref=e1498]: "1"
+                        - button "Aumentar las unidades Aceite Maravilla Botella, Cantidad actual de 1" [ref=e1500]:
+                          - generic [ref=e1501]: 
+                - listitem [ref=e1502]:
+                  - generic [ref=e1506]:
+                    - generic [ref=e1510]:
+                      - link [ref=e1512] [cursor=pointer]:
+                        - /url: /ip/seort/00780226400120
+                      - link "Avena Tradicional, 1 en el carro" [ref=e1516] [cursor=pointer]:
+                        - /url: /ip/seort/00780226400120
+                        - heading "Avena Tradicional" [level=3] [ref=e1517]:
+                          - generic [ref=e1519]: Avena Tradicional
+                      - generic [ref=e1523]: $1.690
+                    - generic [ref=e1525]:
+                      - generic [ref=e1526]:
+                        - button "Eliminar Avena Tradicional" [ref=e1527] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Avena Tradicional" [ref=e1528] [cursor=pointer]': Guardar para después
+                      - generic [ref=e1532]:
+                        - button "Reducir las unidades Avena Tradicional, Cantidad actual de 1" [ref=e1535]:
+                          - generic [ref=e1536]: 
+                        - generic [ref=e1538]: "1"
+                        - button "Aumentar las unidades Avena Tradicional, Cantidad actual de 1" [ref=e1540]:
+                          - generic [ref=e1541]: 
+                - listitem [ref=e1542]:
+                  - generic [ref=e1546]:
+                    - generic [ref=e1550]:
+                      - link [ref=e1552] [cursor=pointer]:
+                        - /url: /ip/seort/00780874360291
+                      - link "Lentejas 4 mm Bolsa, 1 en el carro" [ref=e1556] [cursor=pointer]:
+                        - /url: /ip/seort/00780874360291
+                        - heading "Lentejas 4 mm Bolsa" [level=3] [ref=e1557]:
+                          - generic [ref=e1559]: Lentejas 4 mm Bolsa
+                      - generic [ref=e1563]: $2.990
+                    - generic [ref=e1565]:
+                      - generic [ref=e1566]:
+                        - button "Eliminar Lentejas 4 mm Bolsa" [ref=e1567] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Lentejas 4 mm Bolsa" [ref=e1568] [cursor=pointer]': Guardar para después
+                      - generic [ref=e1572]:
+                        - button "Reducir las unidades Lentejas 4 mm Bolsa, Cantidad actual de 1" [ref=e1575]:
+                          - generic [ref=e1576]: 
+                        - generic [ref=e1578]: "1"
+                        - button "Aumentar las unidades Lentejas 4 mm Bolsa, Cantidad actual de 1" [ref=e1580]:
+                          - generic [ref=e1581]: 
+                - listitem [ref=e1582]:
+                  - generic [ref=e1586]:
+                    - generic [ref=e1590]:
+                      - link [ref=e1592] [cursor=pointer]:
+                        - /url: /ip/seort/00780152800017
+                      - link "Jurel Natural Lata, 1 en el carro" [ref=e1596] [cursor=pointer]:
+                        - /url: /ip/seort/00780152800017
+                        - heading "Jurel Natural Lata" [level=3] [ref=e1597]:
+                          - generic [ref=e1599]: Jurel Natural Lata
+                      - generic [ref=e1603]: $1.850
+                    - generic [ref=e1605]:
+                      - generic [ref=e1606]:
+                        - button "Eliminar Jurel Natural Lata" [ref=e1607] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Jurel Natural Lata" [ref=e1608] [cursor=pointer]': Guardar para después
+                      - generic [ref=e1612]:
+                        - button "Reducir las unidades Jurel Natural Lata, Cantidad actual de 1" [ref=e1615]:
+                          - generic [ref=e1616]: 
+                        - generic [ref=e1618]: "1"
+                        - button "Aumentar las unidades Jurel Natural Lata, Cantidad actual de 1" [ref=e1620]:
+                          - generic [ref=e1621]: 
+                - listitem [ref=e1622]:
+                  - generic [ref=e1626]:
+                    - generic [ref=e1630]:
+                      - link [ref=e1632] [cursor=pointer]:
+                        - /url: /ip/seort/00780282065001
+                      - link "Agua Bidón purificada sin gas sin Gas, 1 en el carro" [ref=e1636] [cursor=pointer]:
+                        - /url: /ip/seort/00780282065001
+                        - heading "Agua Bidón purificada sin gas sin Gas" [level=3] [ref=e1637]:
+                          - generic [ref=e1639]: Agua Bidón purificada sin gas sin Gas
+                      - generic [ref=e1643]: $2.150
+                    - generic [ref=e1645]:
+                      - generic [ref=e1646]:
+                        - button "Eliminar Agua Bidón purificada sin gas sin Gas" [ref=e1647] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Agua Bidón purificada sin gas sin Gas" [ref=e1648] [cursor=pointer]': Guardar para después
+                      - generic [ref=e1652]:
+                        - button "Reducir las unidades Agua Bidón purificada sin gas sin Gas, Cantidad actual de 1" [ref=e1655]:
+                          - generic [ref=e1656]: 
+                        - generic [ref=e1658]: "1"
+                        - button "Aumentar las unidades Agua Bidón purificada sin gas sin Gas, Cantidad actual de 1" [ref=e1660]:
+                          - generic [ref=e1661]: 
+                - listitem [ref=e1662]:
+                  - generic [ref=e1666]:
+                    - generic [ref=e1668]:
+                      - generic [ref=e1672]: Combina 2 x $1.490
+                      - generic [ref=e1674]:
+                        - link [ref=e1676] [cursor=pointer]:
+                          - /url: /ip/seort/00780282002095
+                        - link "Agua Mineral Con Gas Botella, 1 en el carro" [ref=e1680] [cursor=pointer]:
+                          - /url: /ip/seort/00780282002095
+                          - heading "Agua Mineral Con Gas Botella" [level=3] [ref=e1681]:
+                            - generic [ref=e1683]: Agua Mineral Con Gas Botella
+                        - generic [ref=e1687]: $990
+                    - generic [ref=e1689]:
+                      - generic [ref=e1690]:
+                        - button "Eliminar Agua Mineral Con Gas Botella" [ref=e1691] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Agua Mineral Con Gas Botella" [ref=e1692] [cursor=pointer]': Guardar para después
+                      - generic [ref=e1696]:
+                        - button "Reducir las unidades Agua Mineral Con Gas Botella, Cantidad actual de 1" [ref=e1699]:
+                          - generic [ref=e1700]: 
+                        - generic [ref=e1702]: "1"
+                        - button "Aumentar las unidades Agua Mineral Con Gas Botella, Cantidad actual de 1" [ref=e1704]:
+                          - generic [ref=e1705]: 
+                - listitem [ref=e1706]:
+                  - generic [ref=e1710]:
+                    - generic [ref=e1712]:
+                      - generic [ref=e1716]: Combina 2 x $3.000
+                      - generic [ref=e1718]:
+                        - link [ref=e1720] [cursor=pointer]:
+                          - /url: /ip/seort/00780282017501
+                        - link "Néctar Naranja Botella, 1 en el carro" [ref=e1724] [cursor=pointer]:
+                          - /url: /ip/seort/00780282017501
+                          - heading "Néctar Naranja Botella" [level=3] [ref=e1725]:
+                            - generic [ref=e1727]: Néctar Naranja Botella
+                        - generic [ref=e1729]:
+                          - generic [ref=e1731]: $1.500
+                          - generic [ref=e1733]: Ahorras$290
+                          - generic [ref=e1734]: Ahorras $290
+                    - generic [ref=e1735]:
+                      - generic [ref=e1736]:
+                        - button "Eliminar Néctar Naranja Botella" [ref=e1737] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Néctar Naranja Botella" [ref=e1738] [cursor=pointer]': Guardar para después
+                      - generic [ref=e1742]:
+                        - button "Reducir las unidades Néctar Naranja Botella, Cantidad actual de 1" [ref=e1745]:
+                          - generic [ref=e1746]: 
+                        - generic [ref=e1748]: "1"
+                        - button "Aumentar las unidades Néctar Naranja Botella, Cantidad actual de 1" [ref=e1750]:
+                          - generic [ref=e1751]: 
+                - listitem [ref=e1752]:
+                  - generic [ref=e1756]:
+                    - generic [ref=e1758]:
+                      - generic [ref=e1762]: Combina 2 x $3.000
+                      - generic [ref=e1764]:
+                        - link [ref=e1766] [cursor=pointer]:
+                          - /url: /ip/seort/00780282017525
+                        - link "Néctar Tetra Pack Durazno, 1 en el carro" [ref=e1770] [cursor=pointer]:
+                          - /url: /ip/seort/00780282017525
+                          - heading "Néctar Tetra Pack Durazno" [level=3] [ref=e1771]:
+                            - generic [ref=e1773]: Néctar Tetra Pack Durazno
+                        - generic [ref=e1775]:
+                          - generic [ref=e1777]: $1.500
+                          - generic [ref=e1779]: Ahorras$290
+                          - generic [ref=e1780]: Ahorras $290
+                    - generic [ref=e1781]:
+                      - generic [ref=e1782]:
+                        - button "Eliminar Néctar Tetra Pack Durazno" [ref=e1783] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Néctar Tetra Pack Durazno" [ref=e1784] [cursor=pointer]': Guardar para después
+                      - generic [ref=e1788]:
+                        - button "Reducir las unidades Néctar Tetra Pack Durazno, Cantidad actual de 1" [ref=e1791]:
+                          - generic [ref=e1792]: 
+                        - generic [ref=e1794]: "1"
+                        - button "Aumentar las unidades Néctar Tetra Pack Durazno, Cantidad actual de 1" [ref=e1796]:
+                          - generic [ref=e1797]: 
+                - listitem [ref=e1798]:
+                  - generic [ref=e1802]:
+                    - generic [ref=e1806]:
+                      - link [ref=e1808] [cursor=pointer]:
+                        - /url: /ip/seort/00780257522051
+                      - link "Néctar De Manzana Caja, 1 en el carro" [ref=e1812] [cursor=pointer]:
+                        - /url: /ip/seort/00780257522051
+                        - heading "Néctar De Manzana Caja" [level=3] [ref=e1813]:
+                          - generic [ref=e1815]: Néctar De Manzana Caja
+                      - generic [ref=e1819]: $450
+                    - generic [ref=e1821]:
+                      - generic [ref=e1822]:
+                        - button "Eliminar Néctar De Manzana Caja" [ref=e1823] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Néctar De Manzana Caja" [ref=e1824] [cursor=pointer]': Guardar para después
+                      - generic [ref=e1828]:
+                        - button "Reducir las unidades Néctar De Manzana Caja, Cantidad actual de 1" [ref=e1831]:
+                          - generic [ref=e1832]: 
+                        - generic [ref=e1834]: "1"
+                        - button "Aumentar las unidades Néctar De Manzana Caja, Cantidad actual de 1" [ref=e1836]:
+                          - generic [ref=e1837]: 
+                - listitem [ref=e1838]:
+                  - generic [ref=e1842]:
+                    - generic [ref=e1846]:
+                      - link [ref=e1848] [cursor=pointer]:
+                        - /url: /ip/seort/00780187506936
+                      - link "Bolsa de Basura Mediana 70x90 cm, 1 en el carro" [ref=e1852] [cursor=pointer]:
+                        - /url: /ip/seort/00780187506936
+                        - heading "Bolsa de Basura Mediana 70x90 cm" [level=3] [ref=e1853]:
+                          - generic [ref=e1855]: Bolsa de Basura Mediana 70x90 cm
+                      - generic [ref=e1859]: $890
+                    - generic [ref=e1861]:
+                      - generic [ref=e1862]:
+                        - button "Eliminar Bolsa de Basura Mediana 70x90 cm" [ref=e1863] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Bolsa de Basura Mediana 70x90 cm" [ref=e1864] [cursor=pointer]': Guardar para después
+                      - generic [ref=e1868]:
+                        - button "Reducir las unidades Bolsa de Basura Mediana 70x90 cm, Cantidad actual de 1" [ref=e1871]:
+                          - generic [ref=e1872]: 
+                        - generic [ref=e1874]: "1"
+                        - button "Aumentar las unidades Bolsa de Basura Mediana 70x90 cm, Cantidad actual de 1" [ref=e1876]:
+                          - generic [ref=e1877]: 
+                - listitem [ref=e1878]:
+                  - generic [ref=e1882]:
+                    - generic [ref=e1886]:
+                      - link [ref=e1888] [cursor=pointer]:
+                        - /url: /ip/seort/00779129079337
+                      - link "Limpiador En Crema Bioactive Rosas & Jazmines, 1 en el carro" [ref=e1892] [cursor=pointer]:
+                        - /url: /ip/seort/00779129079337
+                        - heading "Limpiador En Crema Bioactive Rosas & Jazmines" [level=3] [ref=e1893]:
+                          - generic [ref=e1895]: Limpiador En Crema Bioactive Rosas & Jazmines
+                      - generic [ref=e1899]: $2.890
+                    - generic [ref=e1901]:
+                      - generic [ref=e1902]:
+                        - button "Eliminar Limpiador En Crema Bioactive Rosas & Jazmines" [ref=e1903] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Limpiador En Crema Bioactive Rosas & Jazmines" [ref=e1904] [cursor=pointer]': Guardar para después
+                      - generic [ref=e1908]:
+                        - button "Reducir las unidades Limpiador En Crema Bioactive Rosas & Jazmines, Cantidad actual de 1" [ref=e1911]:
+                          - generic [ref=e1912]: 
+                        - generic [ref=e1914]: "1"
+                        - button "Aumentar las unidades Limpiador En Crema Bioactive Rosas & Jazmines, Cantidad actual de 1" [ref=e1916]:
+                          - generic [ref=e1917]: 
+                - listitem [ref=e1918]:
+                  - generic [ref=e1922]:
+                    - generic [ref=e1926]:
+                      - link [ref=e1928] [cursor=pointer]:
+                        - /url: /ip/seort/00844529269460
+                      - link "Cereal zucosos, 1 en el carro" [ref=e1932] [cursor=pointer]:
+                        - /url: /ip/seort/00844529269460
+                        - heading "Cereal zucosos" [level=3] [ref=e1933]:
+                          - generic [ref=e1935]: Cereal zucosos
+                      - generic [ref=e1939]: $5.450
+                    - generic [ref=e1941]:
+                      - generic [ref=e1942]:
+                        - button "Eliminar Cereal zucosos" [ref=e1943] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Cereal zucosos" [ref=e1944] [cursor=pointer]': Guardar para después
+                      - generic [ref=e1948]:
+                        - button "Reducir las unidades Cereal zucosos, Cantidad actual de 1" [ref=e1951]:
+                          - generic [ref=e1952]: 
+                        - generic [ref=e1954]: "1"
+                        - button "Aumentar las unidades Cereal zucosos, Cantidad actual de 1" [ref=e1956]:
+                          - generic [ref=e1957]: 
+                - listitem [ref=e1958]:
+                  - generic [ref=e1962]:
+                    - generic [ref=e1966]:
+                      - link [ref=e1968] [cursor=pointer]:
+                        - /url: /ip/seort/00200014000000
+                      - link "Plátano Granel, 0.5 en el carro" [ref=e1972] [cursor=pointer]:
+                        - /url: /ip/seort/00200014000000
+                        - heading "Plátano Granel" [level=3] [ref=e1973]:
+                          - generic [ref=e1975]: Plátano Granel
+                      - generic [ref=e1977]:
+                        - generic [ref=e1979]: $725
+                        - generic [ref=e1980]: $1.450/kg
+                    - generic [ref=e1981]:
+                      - generic [ref=e1982]:
+                        - button "Eliminar Plátano Granel" [ref=e1983] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Plátano Granel" [ref=e1984] [cursor=pointer]': Guardar para después
+                      - generic [ref=e1988]:
+                        - button "Reducir las unidades Plátano Granel, Cantidad actual de 0.5" [ref=e1991]:
+                          - generic [ref=e1992]: 
+                        - generic [ref=e1994]: 0.5 kg
+                        - button "Aumentar las unidades Plátano Granel, Cantidad actual de 0.5" [ref=e1996]:
+                          - generic [ref=e1997]: 
+                - listitem [ref=e1998]:
+                  - generic [ref=e2002]:
+                    - generic [ref=e2004]:
+                      - generic [ref=e2008]: 2 x $2.000
+                      - generic [ref=e2010]:
+                        - link [ref=e2012] [cursor=pointer]:
+                          - /url: /ip/seort/00780465943000
+                        - link "Limón Malla, 1 en el carro" [ref=e2016] [cursor=pointer]:
+                          - /url: /ip/seort/00780465943000
+                          - heading "Limón Malla" [level=3] [ref=e2017]:
+                            - generic [ref=e2019]: Limón Malla
+                        - generic [ref=e2023]: $1.950
+                    - generic [ref=e2025]:
+                      - generic [ref=e2026]:
+                        - button "Eliminar Limón Malla" [ref=e2027] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Limón Malla" [ref=e2028] [cursor=pointer]': Guardar para después
+                      - generic [ref=e2032]:
+                        - button "Reducir las unidades Limón Malla, Cantidad actual de 1" [ref=e2035]:
+                          - generic [ref=e2036]: 
+                        - generic [ref=e2038]: "1"
+                        - button "Aumentar las unidades Limón Malla, Cantidad actual de 1" [ref=e2040]:
+                          - generic [ref=e2041]: 
+                - listitem [ref=e2042]:
+                  - generic [ref=e2046]:
+                    - generic [ref=e2050]:
+                      - link [ref=e2052] [cursor=pointer]:
+                        - /url: /ip/seort/00200005000000
+                      - link "Papas Granel, 0.5 en el carro" [ref=e2056] [cursor=pointer]:
+                        - /url: /ip/seort/00200005000000
+                        - heading "Papas Granel" [level=3] [ref=e2057]:
+                          - generic [ref=e2059]: Papas Granel
+                      - generic [ref=e2061]:
+                        - generic [ref=e2063]: $795
+                        - generic [ref=e2064]: $1.590/kg
+                    - generic [ref=e2065]:
+                      - generic [ref=e2066]:
+                        - button "Eliminar Papas Granel" [ref=e2067] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Papas Granel" [ref=e2068] [cursor=pointer]': Guardar para después
+                      - generic [ref=e2072]:
+                        - button "Reducir las unidades Papas Granel, Cantidad actual de 0.5" [ref=e2075]:
+                          - generic [ref=e2076]: 
+                        - generic [ref=e2078]: 0.5 kg
+                        - button "Aumentar las unidades Papas Granel, Cantidad actual de 0.5" [ref=e2080]:
+                          - generic [ref=e2081]: 
+                - listitem [ref=e2082]:
+                  - generic [ref=e2086]:
+                    - generic [ref=e2090]:
+                      - link [ref=e2092] [cursor=pointer]:
+                        - /url: /ip/seort/00780134000014
+                      - link "Champiñones Blanco Bandeja, 1 en el carro" [ref=e2096] [cursor=pointer]:
+                        - /url: /ip/seort/00780134000014
+                        - heading "Champiñones Blanco Bandeja" [level=3] [ref=e2097]:
+                          - generic [ref=e2099]: Champiñones Blanco Bandeja
+                      - generic [ref=e2103]: $1.590
+                    - generic [ref=e2105]:
+                      - generic [ref=e2106]:
+                        - button "Eliminar Champiñones Blanco Bandeja" [ref=e2107] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Champiñones Blanco Bandeja" [ref=e2108] [cursor=pointer]': Guardar para después
+                      - generic [ref=e2112]:
+                        - button "Reducir las unidades Champiñones Blanco Bandeja, Cantidad actual de 1" [ref=e2115]:
+                          - generic [ref=e2116]: 
+                        - generic [ref=e2118]: "1"
+                        - button "Aumentar las unidades Champiñones Blanco Bandeja, Cantidad actual de 1" [ref=e2120]:
+                          - generic [ref=e2121]: 
+                - listitem [ref=e2122]:
+                  - generic [ref=e2126]:
+                    - generic [ref=e2130]:
+                      - link [ref=e2132] [cursor=pointer]:
+                        - /url: /ip/seort/00780461085020
+                      - link "Lechuga Costina Bolsa, 1 en el carro" [ref=e2136] [cursor=pointer]:
+                        - /url: /ip/seort/00780461085020
+                        - heading "Lechuga Costina Bolsa" [level=3] [ref=e2137]:
+                          - generic [ref=e2139]: Lechuga Costina Bolsa
+                      - generic [ref=e2143]: $1.290
+                    - generic [ref=e2145]:
+                      - generic [ref=e2146]:
+                        - button "Eliminar Lechuga Costina Bolsa" [ref=e2147] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Lechuga Costina Bolsa" [ref=e2148] [cursor=pointer]': Guardar para después
+                      - generic [ref=e2152]:
+                        - button "Reducir las unidades Lechuga Costina Bolsa, Cantidad actual de 1" [ref=e2155]:
+                          - generic [ref=e2156]: 
+                        - generic [ref=e2158]: "1"
+                        - button "Aumentar las unidades Lechuga Costina Bolsa, Cantidad actual de 1" [ref=e2160]:
+                          - generic [ref=e2161]: 
+                - listitem [ref=e2162]:
+                  - generic [ref=e2166]:
+                    - generic [ref=e2170]:
+                      - link [ref=e2172] [cursor=pointer]:
+                        - /url: /ip/seort/00203965000000
+                      - link "Pan Hallulla Granel, 0.5 en el carro" [ref=e2176] [cursor=pointer]:
+                        - /url: /ip/seort/00203965000000
+                        - heading "Pan Hallulla Granel" [level=3] [ref=e2177]:
+                          - generic [ref=e2179]: Pan Hallulla Granel
+                      - generic [ref=e2181]:
+                        - generic [ref=e2183]: $1.045
+                        - generic [ref=e2184]: $2.090/kg
+                    - generic [ref=e2185]:
+                      - generic [ref=e2186]:
+                        - button "Eliminar Pan Hallulla Granel" [ref=e2187] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Pan Hallulla Granel" [ref=e2188] [cursor=pointer]': Guardar para después
+                      - generic [ref=e2192]:
+                        - button "Reducir las unidades Pan Hallulla Granel, Cantidad actual de 0.5" [ref=e2195]:
+                          - generic [ref=e2196]: 
+                        - generic [ref=e2198]: 0.5 kg
+                        - button "Aumentar las unidades Pan Hallulla Granel, Cantidad actual de 0.5" [ref=e2200]:
+                          - generic [ref=e2201]: 
+                - listitem [ref=e2202]:
+                  - generic [ref=e2206]:
+                    - generic [ref=e2210]:
+                      - link [ref=e2212] [cursor=pointer]:
+                        - /url: /ip/seort/00780650040132
+                      - link "Toalla de Papel Nova 14m, 1 en el carro" [ref=e2216] [cursor=pointer]:
+                        - /url: /ip/seort/00780650040132
+                        - heading "Toalla de Papel Nova 14m" [level=3] [ref=e2217]:
+                          - generic [ref=e2219]: Toalla de Papel Nova 14m
+                      - generic [ref=e2223]: $1.790
+                    - generic [ref=e2225]:
+                      - generic [ref=e2226]:
+                        - button "Eliminar Toalla de Papel Nova 14m" [ref=e2227] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Toalla de Papel Nova 14m" [ref=e2228] [cursor=pointer]': Guardar para después
+                      - generic [ref=e2232]:
+                        - button "Reducir las unidades Toalla de Papel Nova 14m, Cantidad actual de 1" [ref=e2235]:
+                          - generic [ref=e2236]: 
+                        - generic [ref=e2238]: "1"
+                        - button "Aumentar las unidades Toalla de Papel Nova 14m, Cantidad actual de 1" [ref=e2240]:
+                          - generic [ref=e2241]: 
+                - listitem [ref=e2242]:
+                  - generic [ref=e2246]:
+                    - generic [ref=e2250]:
+                      - link [ref=e2252] [cursor=pointer]:
+                        - /url: /ip/seort/00340028479000
+                      - link "Frutillas Pote, 1 en el carro" [ref=e2256] [cursor=pointer]:
+                        - /url: /ip/seort/00340028479000
+                        - heading "Frutillas Pote" [level=3] [ref=e2257]:
+                          - generic [ref=e2259]: Frutillas Pote
+                      - generic [ref=e2263]: $2.590
+                    - generic [ref=e2265]:
+                      - generic [ref=e2266]:
+                        - button "Eliminar Frutillas Pote" [ref=e2267] [cursor=pointer]: Eliminar
+                        - 'button "Guardar para después: Frutillas Pote" [ref=e2268] [cursor=pointer]': Guardar para después
+                      - generic [ref=e2272]:
+                        - button "Reducir las unidades Frutillas Pote, Cantidad actual de 1" [ref=e2275]:
+                          - generic [ref=e2276]: 
+                        - generic [ref=e2278]: "1"
+                        - button "Aumentar las unidades Frutillas Pote, Cantidad actual de 1" [ref=e2280]:
+                          - generic [ref=e2281]: 
+          - generic [ref=e2283]:
+            - heading "Guardado para después" [level=2] [ref=e2285]
+            - generic [ref=e2286]:
+              - generic [ref=e2287]:
+                - generic [ref=e2288]: 1 producto
+                - button "Guardado para después" [expanded] [ref=e2289]:
+                  - generic [ref=e2290]: 
+              - list [ref=e2293]:
+                - listitem [ref=e2294]:
+                  - generic [ref=e2300]:
+                    - link "Jamón Pierna Corte Pluma Tradicional, 125 g" [ref=e2303] [cursor=pointer]:
+                      - /url: /ip/seort/00780191603153
+                    - generic [ref=e2304]:
+                      - generic [ref=e2305]:
+                        - generic [ref=e2306]:
+                          - link "Jamón Pierna Corte Pluma Tradicional, 125 g" [ref=e2307] [cursor=pointer]:
+                            - /url: /ip/seort/00780191603153
+                            - generic [ref=e2309]: Jamón Pierna Corte Pluma Tradicional, 125 g
+                          - generic [ref=e2311]: $18.000 x kg
+                        - generic [ref=e2314]: $2.250
+                      - generic [ref=e2316]:
+                        - generic [ref=e2317]: "Unidades: 1"
+                        - generic [ref=e2318]:
+                          - 'button "Eliminar: Jamón Pierna Corte Pluma Tradicional, 125 g" [ref=e2320] [cursor=pointer]': Eliminar
+                          - 'button "Mover al carro: Jamón Pierna Corte Pluma Tradicional, 125 g" [ref=e2321] [cursor=pointer]': Mover al carro
+        - generic [ref=e2324]:
+          - generic [ref=e2327]:
+            - paragraph [ref=e2330]: Tienes retiro o despacho gratis
+            - button "Continuar" [ref=e2331] [cursor=pointer]
+          - generic [ref=e2333]:
+            - generic [ref=e2335]:
+              - generic [ref=e2336]:
+                - text: Productos
+                - generic [ref=e2337]: (52)
+              - generic [ref=e2338]:
+                - generic [ref=e2339]: $114.705
+                - generic [ref=e2340]: El subtotal anterior era $114.705
+            - generic [ref=e2342]:
+              - generic [ref=e2343]: Descuento productos
+              - generic [ref=e2344]: Ahorros de $5.740
+              - generic [ref=e2345]: "-$5.740"
+            - generic [ref=e2347]:
+              - generic [ref=e2348]: Subtotal
+              - generic [ref=e2349]:
+                - generic [ref=e2350]: $108.965
+                - generic [ref=e2351]: nuevo subtotal $108.965
+            - generic [ref=e2352]:
+              - generic [ref=e2353]: Total estimado
+              - generic [ref=e2354]: $108.965
+            - generic [ref=e2355]:
+              - generic [ref=e2356]:
+                - generic [ref=e2357]: Pagando con Lider Bci
+                - generic [ref=e2358]: $108.965
+              - generic [ref=e2362]: Además, recibirías 6.538 Pesos Mi Club
+  - alert [ref=e2367]

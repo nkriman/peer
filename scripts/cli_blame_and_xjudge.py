@@ -11,7 +11,7 @@ Both write to the standard leaderboard / report locations. After both
 complete, prints a summary section comparing:
    - blame on/off DR delta
    - DR variance across judges
-"""  # noqa: RUF002
+"""
 
 from __future__ import annotations
 
@@ -103,9 +103,7 @@ def run_xjudge_experiment() -> Any:
 
     samples = JSONLStorage(DATASET_PATH).load_all()
     agent = Agent(recipe=recipe)
-    logger.info(
-        "Phase 2: cross-judge (narrower context, no blame) across sonnet/haiku/opus"
-    )
+    logger.info("Phase 2: cross-judge (narrower context, no blame) across sonnet/haiku/opus")
     t0 = time.monotonic()
     runner = CrossJudgeRunner(
         reviewer=agent,
@@ -154,7 +152,7 @@ def write_summary(blame_row: dict, xjudge_report: Any) -> None:
     lines.append("")
     lines.append("| variant | DR | n_comments | cost |")
     lines.append("|---|---:|---:|---:|")
-    lines.append(f"| narrower context (no blame, prior) | 0.0980 | 29 | $0.83 |")
+    lines.append("| narrower context (no blame, prior) | 0.0980 | 29 | $0.83 |")
     lines.append(
         f"| narrower context + git_blame | "
         f"{(blame_dr or 0.0):.4f} | "
@@ -187,12 +185,12 @@ def write_summary(blame_row: dict, xjudge_report: Any) -> None:
         lines.append("")
         if detection_min and detection_min > 0 and detection_max / detection_min >= 2.0:
             lines.append(
-                f"**⚠️ HIGH VARIANCE**: {detection_max / detection_min:.1f}× spread across judges. "
+                f"**⚠️ HIGH VARIANCE**: {detection_max / detection_min:.1f}× spread across judges. "  # noqa: RUF001
                 "Published DR numbers must include bands; point estimates from a single judge are misleading."
             )
         else:
             lines.append(
-                "Judge variance is below the 2× threshold. Point estimates are reasonable but "
+                "Judge variance is below the 2× threshold. Point estimates are reasonable but "  # noqa: RUF001
                 "should still cite the judge model."
             )
     else:
@@ -226,6 +224,6 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    from typing import Any  # noqa: F401  (used by run_xjudge_experiment's annotation)
+    from typing import Any
 
     raise SystemExit(main())

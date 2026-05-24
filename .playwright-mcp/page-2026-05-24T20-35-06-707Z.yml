@@ -1,0 +1,916 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: pan perfecto integral
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 52 productos Monto total $116.755" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: "52"
+              - generic [ref=e44]: $116.755
+    - generic [ref=e45]:
+      - generic [ref=e46]:
+        - separator [ref=e47]
+        - generic [ref=e49]:
+          - img "Icono de título de banner" [ref=e50]
+          - generic [ref=e51]: ¿Cómo quieres tus productos?
+      - main [ref=e54]:
+        - generic [ref=e55]:
+          - generic [ref=e58]:
+            - region "Sección de ordenar y filtrar" [ref=e60]:
+              - button "Precio" [ref=e63]:
+                - generic [ref=e65]: 
+                - generic [ref=e66]: Precio
+                - generic [ref=e67]: 
+              - button "Marca" [ref=e70]:
+                - generic [ref=e71]: Marca
+                - generic [ref=e72]: 
+              - generic [ref=e73]:
+                - generic [ref=e74]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e76]:
+                  - text: Más relevantes
+                  - generic [ref=e77]: 
+            - separator [ref=e78]
+          - generic [ref=e81]:
+            - generic [ref=e82]:
+              - generic [ref=e85]:
+                - generic [ref=e86]:
+                  - button "Precio" [ref=e89]:
+                    - generic [ref=e90]: Precio
+                    - img [ref=e91]: 
+                  - separator [ref=e92]
+                - generic [ref=e93]:
+                  - button "Campaña" [ref=e96]:
+                    - generic [ref=e97]: Campaña
+                    - img [ref=e98]: 
+                  - separator [ref=e99]
+                - generic [ref=e100]:
+                  - button "Marca" [ref=e103]:
+                    - generic [ref=e104]: Marca
+                    - img [ref=e105]: 
+                  - separator [ref=e106]
+                - generic [ref=e107]:
+                  - button "Categoría" [ref=e110]:
+                    - generic [ref=e111]: Categoría
+                    - img [ref=e112]: 
+                  - separator [ref=e113]
+              - generic [ref=e116]:
+                - heading "Resultados para pan perfecto integral (61)" [level=2] [ref=e124]: Resultados para pan perfecto integral(61)
+                - generic [ref=e125]:
+                  - group [ref=e128]:
+                    - link "Pan de Molde Familiar Kingsbury Perfecto Integral, 580 g" [ref=e129] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780346800573?from=/search
+                      - generic [ref=e130]: Pan de Molde Familiar Kingsbury Perfecto Integral, 580 g
+                    - generic [ref=e132]:
+                      - generic [ref=e135]:
+                        - img "Pan de Molde Familiar Kingsbury Perfecto Integral, 580 g" [ref=e137]
+                        - button "Agregar al carro - Pan de Molde Familiar Kingsbury Perfecto Integral, 580 g" [ref=e140] [cursor=pointer]:
+                          - generic "agregar" [ref=e141]: 
+                          - generic [ref=e142]: Agregar
+                      - generic [ref=e144]:
+                        - generic [ref=e146]:
+                          - generic [ref=e147]: $3.750
+                          - generic [ref=e148]: precio actual $3.750
+                          - generic [ref=e149]: $6.466 x kg
+                        - generic [ref=e150]: Kingsbury
+                        - generic [ref=e151]: Pan de Molde Familiar Kingsbury Perfecto Integral, 580 g
+                  - group [ref=e154]:
+                    - link "Pan Ciabatta Integral Fibra Granel" [ref=e155] [cursor=pointer]:
+                      - /url: /ip/panaderia-granel/00228614000000?from=/search
+                      - generic [ref=e156]: Pan Ciabatta Integral Fibra Granel
+                    - generic [ref=e158]:
+                      - generic [ref=e161]:
+                        - img "Pan Ciabatta Integral Fibra Granel" [ref=e163]
+                        - button "Agregar al carro - Pan Ciabatta Integral Fibra Granel" [ref=e166] [cursor=pointer]:
+                          - generic "agregar" [ref=e167]: 
+                          - generic [ref=e168]: Agregar
+                      - generic [ref=e170]:
+                        - generic [ref=e172]:
+                          - generic [ref=e173]: $2.990/kg
+                          - generic [ref=e174]: precio actual $2.990/kg
+                          - generic [ref=e175]: $2.990 x kg
+                        - generic [ref=e176]: Lider
+                        - generic [ref=e177]: Pan Ciabatta Integral Fibra Granel
+                  - group [ref=e180]:
+                    - link "Pan De Molde Integral Cero % Azúcar Y Grasas, 600 g" [ref=e181] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780340300324?from=/search
+                      - generic [ref=e182]: Pan De Molde Integral Cero % Azúcar Y Grasas, 600 g
+                    - generic [ref=e184]:
+                      - generic [ref=e187]:
+                        - img "Pan De Molde Integral Cero % Azúcar Y Grasas, 600 g" [ref=e189]
+                        - button "Agregar al carro - Pan De Molde Integral Cero % Azúcar Y Grasas, 600 g" [ref=e192] [cursor=pointer]:
+                          - generic "agregar" [ref=e193]: 
+                          - generic [ref=e194]: Agregar
+                      - generic [ref=e196]:
+                        - generic [ref=e198]:
+                          - generic [ref=e199]: $2.890
+                          - generic [ref=e200]: precio actual $2.890
+                          - generic [ref=e201]: $4.817 x kg
+                        - generic [ref=e202]: Ideal
+                        - generic [ref=e203]: Pan De Molde Integral Cero % Azúcar Y Grasas, 600 g
+                  - group [ref=e206]:
+                    - link "Pan Precocido Hallulla Integral Atm 18 Un, 1 kg" [ref=e207] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00040005054558?from=/search
+                      - generic [ref=e208]: Pan Precocido Hallulla Integral Atm 18 Un, 1 kg
+                    - generic [ref=e210]:
+                      - generic [ref=e213]:
+                        - img "Pan Precocido Hallulla Integral Atm 18 Un, 1 kg" [ref=e215]
+                        - button "Agregar al carro - Pan Precocido Hallulla Integral Atm 18 Un, 1 kg" [ref=e218] [cursor=pointer]:
+                          - generic "agregar" [ref=e219]: 
+                          - generic [ref=e220]: Agregar
+                      - generic [ref=e222]:
+                        - generic [ref=e224]:
+                          - generic [ref=e225]: $2.390
+                          - generic [ref=e226]: precio actual $2.390
+                          - generic [ref=e227]: $2.390 x kg
+                        - generic [ref=e228]: Lider
+                        - generic [ref=e229]: Pan Precocido Hallulla Integral Atm 18 Un, 1 kg
+                  - group [ref=e232]:
+                    - link "Pan Artesano Integral 1 Un, 600 g" [ref=e233] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780340300304?from=/search
+                      - generic [ref=e234]: Pan Artesano Integral 1 Un, 600 g
+                    - generic [ref=e236]:
+                      - generic [ref=e239]:
+                        - img "Pan Artesano Integral 1 Un, 600 g" [ref=e241]
+                        - button "Agregar al carro - Pan Artesano Integral 1 Un, 600 g" [ref=e244] [cursor=pointer]:
+                          - generic "agregar" [ref=e245]: 
+                          - generic [ref=e246]: Agregar
+                      - generic [ref=e248]:
+                        - generic [ref=e250]:
+                          - generic [ref=e251]: $2.990
+                          - generic [ref=e252]: precio actual $2.990
+                          - generic [ref=e253]: $4.983 x kg
+                        - generic [ref=e254]: Ideal
+                        - generic [ref=e255]: Pan Artesano Integral 1 Un, 600 g
+                  - generic [ref=e257]:
+                    - group [ref=e258]:
+                      - link "Pan Pita Integral Cero & Cero 1 Un, 344 g" [ref=e259] [cursor=pointer]:
+                        - /url: /ip/panaderia-envasada/00780340300383?from=/search
+                        - generic [ref=e260]: Pan Pita Integral Cero & Cero 1 Un, 344 g
+                      - generic [ref=e262]:
+                        - img "Pan Pita Integral Cero & Cero 1 Un, 344 g" [ref=e267]
+                        - generic [ref=e269]:
+                          - generic [ref=e271]:
+                            - generic [ref=e272]: $1.790
+                            - generic [ref=e273]: precio actual $1.790
+                            - generic [ref=e274]: $5.203 x kg
+                          - generic [ref=e275]: Ideal
+                          - generic [ref=e276]: Pan Pita Integral Cero & Cero 1 Un, 344 g
+                          - generic [ref=e277]: Agotado
+                    - button "Revisar productos similares - Pan Pita Integral Cero & Cero 1 Un, 344 g" [ref=e279]: Revisar productos similares
+                  - group [ref=e282]:
+                    - link "Pan De Molde Integral Masa Madre 1 Un, 580 g" [ref=e283] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780349500257?from=/search
+                      - generic [ref=e284]: Pan De Molde Integral Masa Madre 1 Un, 580 g
+                    - generic [ref=e286]:
+                      - generic [ref=e289]:
+                        - img "Pan De Molde Integral Masa Madre 1 Un, 580 g" [ref=e291]
+                        - button "Agregar al carro - Pan De Molde Integral Masa Madre 1 Un, 580 g" [ref=e294] [cursor=pointer]:
+                          - generic "agregar" [ref=e295]: 
+                          - generic [ref=e296]: Agregar
+                      - generic [ref=e298]:
+                        - generic [ref=e300]:
+                          - generic [ref=e301]: $2.250
+                          - generic [ref=e302]: precio actual $2.250
+                          - generic [ref=e303]: $5.625 x kg
+                        - generic [ref=e304]: La Selecta
+                        - generic [ref=e305]: Pan De Molde Integral Masa Madre 1 Un, 580 g
+                  - group [ref=e308]:
+                    - link "Pan De Molde Integral Familiar, 580 g" [ref=e309] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780349500229?from=/search
+                      - generic [ref=e310]: Pan De Molde Integral Familiar, 580 g
+                    - generic [ref=e312]:
+                      - generic [ref=e315]:
+                        - img "Pan De Molde Integral Familiar, 580 g" [ref=e317]
+                        - button "Agregar al carro - Pan De Molde Integral Familiar, 580 g" [ref=e320] [cursor=pointer]:
+                          - generic "agregar" [ref=e321]: 
+                          - generic [ref=e322]: Agregar
+                      - generic [ref=e324]:
+                        - generic [ref=e326]:
+                          - generic [ref=e327]: $1.990
+                          - generic [ref=e328]: precio actual $1.990
+                          - generic [ref=e329]: $3.431 x kg
+                        - generic [ref=e330]: Lider
+                        - generic [ref=e331]: Pan De Molde Integral Familiar, 580 g
+                  - group [ref=e334]:
+                    - link "Pan De Molde Integral Schwartzbrot" [ref=e335] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780341000004?from=/search
+                      - generic [ref=e336]: Pan De Molde Integral Schwartzbrot
+                    - generic [ref=e338]:
+                      - generic [ref=e341]:
+                        - img "Pan De Molde Integral Schwartzbrot" [ref=e343]
+                        - button "Agregar al carro - Pan De Molde Integral Schwartzbrot" [ref=e346] [cursor=pointer]:
+                          - generic "agregar" [ref=e347]: 
+                          - generic [ref=e348]: Agregar
+                      - generic [ref=e350]:
+                        - generic [ref=e352]:
+                          - generic [ref=e353]: $3.890
+                          - generic [ref=e354]: precio actual $3.890
+                          - generic [ref=e355]: $5.187 x kg
+                        - generic [ref=e356]: Vollkorn
+                        - generic [ref=e357]: Pan De Molde Integral Schwartzbrot
+                  - group [ref=e360]:
+                    - link "Pan Pita Integral 8 Un, 300 g" [ref=e361] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780346800252?from=/search
+                      - generic [ref=e362]: Pan Pita Integral 8 Un, 300 g
+                    - generic [ref=e364]:
+                      - generic [ref=e367]:
+                        - img "Pan Pita Integral 8 Un, 300 g" [ref=e369]
+                        - button "Agregar al carro - Pan Pita Integral 8 Un, 300 g" [ref=e372] [cursor=pointer]:
+                          - generic "agregar" [ref=e373]: 
+                          - generic [ref=e374]: Agregar
+                      - generic [ref=e376]:
+                        - generic [ref=e378]:
+                          - generic [ref=e379]: $1.750
+                          - generic [ref=e380]: precio actual $1.750
+                          - generic [ref=e381]: $5.833 x kg
+                        - generic [ref=e382]: Castaño
+                        - generic [ref=e383]: Pan Pita Integral 8 Un, 300 g
+                  - group [ref=e386]:
+                    - link "Pan Pita Integral, 8 Un" [ref=e387] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780347300075?from=/search
+                      - generic [ref=e388]: Pan Pita Integral, 8 Un
+                    - generic [ref=e390]:
+                      - generic [ref=e393]:
+                        - img "Pan Pita Integral, 8 Un" [ref=e395]
+                        - button "Agregar al carro - Pan Pita Integral, 8 Un" [ref=e398] [cursor=pointer]:
+                          - generic "agregar" [ref=e399]: 
+                          - generic [ref=e400]: Agregar
+                      - generic [ref=e402]:
+                        - generic [ref=e404]:
+                          - generic [ref=e405]: $1.750
+                          - generic [ref=e406]: precio actual $1.750
+                          - generic [ref=e407]: $5.087 x kg
+                        - generic [ref=e408]: Ideal
+                        - generic [ref=e409]: Pan Pita Integral, 8 Un
+                  - group [ref=e412]:
+                    - link "Pan Marraqueta Integral Granel" [ref=e413] [cursor=pointer]:
+                      - /url: /ip/panaderia-granel/00228756000000?from=/search
+                      - generic [ref=e414]: Pan Marraqueta Integral Granel
+                    - generic [ref=e416]:
+                      - generic [ref=e419]:
+                        - img "Pan Marraqueta Integral Granel" [ref=e421]
+                        - button "Agregar al carro - Pan Marraqueta Integral Granel" [ref=e424] [cursor=pointer]:
+                          - generic "agregar" [ref=e425]: 
+                          - generic [ref=e426]: Agregar
+                      - generic [ref=e428]:
+                        - generic [ref=e430]:
+                          - generic [ref=e431]: $2.990/kg
+                          - generic [ref=e432]: precio actual $2.990/kg
+                          - generic [ref=e433]: $2.990 x kg
+                        - generic [ref=e434]: Pulmahue
+                        - generic [ref=e435]: Pan Marraqueta Integral Granel
+                  - group [ref=e438]:
+                    - link "Pan Hallulla Integral Linaza, 400 g" [ref=e439] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780349500346?from=/search
+                      - generic [ref=e440]: Pan Hallulla Integral Linaza, 400 g
+                    - generic [ref=e442]:
+                      - generic [ref=e445]:
+                        - img "Pan Hallulla Integral Linaza, 400 g" [ref=e447]
+                        - button "Agregar al carro - Pan Hallulla Integral Linaza, 400 g" [ref=e450] [cursor=pointer]:
+                          - generic "agregar" [ref=e451]: 
+                          - generic [ref=e452]: Agregar
+                      - generic [ref=e454]:
+                        - generic [ref=e456]:
+                          - generic [ref=e457]: $1.790
+                          - generic [ref=e458]: precio actual $1.790
+                          - generic [ref=e459]: $4.475 x kg
+                        - generic [ref=e460]: Marketside
+                        - generic [ref=e461]: Pan Hallulla Integral Linaza, 400 g
+                  - group [ref=e464]:
+                    - link "Pan De Molde Integral Stutgart 1 Un, 650 g" [ref=e465] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780348002007?from=/search
+                      - generic [ref=e466]: Pan De Molde Integral Stutgart 1 Un, 650 g
+                    - generic [ref=e468]:
+                      - generic [ref=e471]:
+                        - img "Pan De Molde Integral Stutgart 1 Un, 650 g" [ref=e473]
+                        - button "Agregar al carro - Pan De Molde Integral Stutgart 1 Un, 650 g" [ref=e476] [cursor=pointer]:
+                          - generic "agregar" [ref=e477]: 
+                          - generic [ref=e478]: Agregar
+                      - generic [ref=e480]:
+                        - generic [ref=e482]:
+                          - generic [ref=e483]: $2.850
+                          - generic [ref=e484]: precio actual $2.850
+                          - generic [ref=e485]: $4.385 x kg
+                        - generic [ref=e486]: Fuchs
+                        - generic [ref=e487]: Pan De Molde Integral Stutgart 1 Un, 650 g
+                  - group [ref=e490]:
+                    - link "Pan De Molde Integral Mas Protein 1 Un, 650 g" [ref=e491] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780340300311?from=/search
+                      - generic [ref=e492]: Pan De Molde Integral Mas Protein 1 Un, 650 g
+                    - generic [ref=e494]:
+                      - generic [ref=e497]:
+                        - img "Pan De Molde Integral Mas Protein 1 Un, 650 g" [ref=e499]
+                        - button "Agregar al carro - Pan De Molde Integral Mas Protein 1 Un, 650 g" [ref=e502] [cursor=pointer]:
+                          - generic "agregar" [ref=e503]: 
+                          - generic [ref=e504]: Agregar
+                      - generic [ref=e506]:
+                        - generic [ref=e508]:
+                          - generic [ref=e509]: $3.190
+                          - generic [ref=e510]: precio actual $3.190
+                          - generic [ref=e511]: $4.908 x kg
+                        - generic [ref=e512]: Ideal
+                        - generic [ref=e513]: Pan De Molde Integral Mas Protein 1 Un, 650 g
+                  - group [ref=e516]:
+                    - link "Pan De Molde Integral 1 Un, 600 g" [ref=e517] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780340300429?from=/search
+                      - generic [ref=e518]: Pan De Molde Integral 1 Un, 600 g
+                    - generic [ref=e520]:
+                      - generic [ref=e523]:
+                        - img "Pan De Molde Integral 1 Un, 600 g" [ref=e525]
+                        - button "Agregar al carro - Pan De Molde Integral 1 Un, 600 g" [ref=e528] [cursor=pointer]:
+                          - generic "agregar" [ref=e529]: 
+                          - generic [ref=e530]: Agregar
+                      - generic [ref=e532]:
+                        - generic [ref=e534]:
+                          - generic [ref=e535]: $2.390
+                          - generic [ref=e536]: precio actual $2.390
+                          - generic [ref=e537]: $3.983 x kg
+                        - generic [ref=e538]: Ideal
+                        - generic [ref=e539]: Pan De Molde Integral 1 Un, 600 g
+                  - group [ref=e542]:
+                    - link "Pan Árabe Integral, 1 Un" [ref=e543] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780464216014?from=/search
+                      - generic [ref=e544]: Pan Árabe Integral, 1 Un
+                    - generic [ref=e546]:
+                      - generic [ref=e547]:
+                        - generic [ref=e549]:
+                          - generic [ref=e551]: 
+                          - text: Rebaja
+                        - generic [ref=e552]:
+                          - generic [ref=e553]:
+                            - img "Pan Árabe Integral, 1 Un"
+                          - button "Agregar al carro - Pan Árabe Integral, 1 Un" [ref=e556] [cursor=pointer]:
+                            - generic "agregar" [ref=e557]: 
+                            - generic [ref=e558]: Agregar
+                      - generic [ref=e560]:
+                        - generic [ref=e562]:
+                          - generic [ref=e563]: $1.050
+                          - generic [ref=e564]: precio actual $1.050, Costaba $1.390
+                          - generic [ref=e565]: $2.917 x kg
+                          - generic [ref=e566]: $1.390
+                          - generic [ref=e567]: Ahorra $340
+                        - generic [ref=e568]: Sanabel
+                        - generic [ref=e569]: Pan Árabe Integral, 1 Un
+                  - generic [ref=e571]:
+                    - group [ref=e572]:
+                      - link "Pan Pita Integral 8 Un, 300 g" [ref=e573] [cursor=pointer]:
+                        - /url: /ip/panaderia-envasada/00780461846018?from=/search
+                        - generic [ref=e574]: Pan Pita Integral 8 Un, 300 g
+                      - generic [ref=e576]:
+                        - generic [ref=e580]:
+                          - img "Pan Pita Integral 8 Un, 300 g"
+                        - generic [ref=e582]:
+                          - generic [ref=e584]:
+                            - generic [ref=e585]: $1.590
+                            - generic [ref=e586]: precio actual $1.590
+                            - generic [ref=e587]: $5.300 x kg
+                          - generic [ref=e588]: Spagnolia
+                          - generic [ref=e589]: Pan Pita Integral 8 Un, 300 g
+                          - generic [ref=e590]: Agotado
+                    - button "Revisar productos similares - Pan Pita Integral 8 Un, 300 g" [ref=e592]: Revisar productos similares
+                  - group [ref=e595]:
+                    - link "Pan De Molde Integral Hi Low 1 Un, 500 g" [ref=e596] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780346800356?from=/search
+                      - generic [ref=e597]: Pan De Molde Integral Hi Low 1 Un, 500 g
+                    - generic [ref=e599]:
+                      - generic [ref=e602]:
+                        - generic [ref=e603]:
+                          - img "Pan De Molde Integral Hi Low 1 Un, 500 g"
+                        - button "Agregar al carro - Pan De Molde Integral Hi Low 1 Un, 500 g" [ref=e606] [cursor=pointer]:
+                          - generic "agregar" [ref=e607]: 
+                          - generic [ref=e608]: Agregar
+                      - generic [ref=e610]:
+                        - generic [ref=e612]:
+                          - generic [ref=e613]: $3.390
+                          - generic [ref=e614]: precio actual $3.390
+                          - generic [ref=e615]: $6.780 x kg
+                        - generic [ref=e616]: Kingsbury
+                        - generic [ref=e617]: Pan De Molde Integral Hi Low 1 Un, 500 g
+                  - group [ref=e620]:
+                    - link "Pan De Molde Integral Xl, 750 g" [ref=e621] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780340300333?from=/search
+                      - generic [ref=e622]: Pan De Molde Integral Xl, 750 g
+                    - generic [ref=e624]:
+                      - generic [ref=e625]:
+                        - generic [ref=e627]:
+                          - generic [ref=e629]: 
+                          - text: Rebaja
+                        - generic [ref=e630]:
+                          - generic [ref=e631]:
+                            - img "Pan De Molde Integral Xl, 750 g"
+                          - button "Agregar al carro - Pan De Molde Integral Xl, 750 g" [ref=e634] [cursor=pointer]:
+                            - generic "agregar" [ref=e635]: 
+                            - generic [ref=e636]: Agregar
+                      - generic [ref=e638]:
+                        - generic [ref=e640]:
+                          - generic [ref=e641]: $2.490
+                          - generic [ref=e642]: precio actual $2.490, Costaba $2.850
+                          - generic [ref=e643]: $3.234 x kg
+                          - generic [ref=e644]: $2.850
+                          - generic [ref=e645]: Ahorra $360
+                        - generic [ref=e646]: Ideal
+                        - generic [ref=e647]: Pan De Molde Integral Xl, 750 g
+                  - group [ref=e650]:
+                    - link "Pan De Molde Integral Familiar 1 Un, 630 g" [ref=e651] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780346800151?from=/search
+                      - generic [ref=e652]: Pan De Molde Integral Familiar 1 Un, 630 g
+                    - generic [ref=e654]:
+                      - generic [ref=e657]:
+                        - generic [ref=e658]:
+                          - img "Pan De Molde Integral Familiar 1 Un, 630 g"
+                        - button "Agregar al carro - Pan De Molde Integral Familiar 1 Un, 630 g" [ref=e661] [cursor=pointer]:
+                          - generic "agregar" [ref=e662]: 
+                          - generic [ref=e663]: Agregar
+                      - generic [ref=e665]:
+                        - generic [ref=e667]:
+                          - generic [ref=e668]: $2.850
+                          - generic [ref=e669]: precio actual $2.850
+                          - generic [ref=e670]: $4.750 x kg
+                        - generic [ref=e671]: Castaño
+                        - generic [ref=e672]: Pan De Molde Integral Familiar 1 Un, 630 g
+                  - group [ref=e675]:
+                    - link "Pan De Molde Sándwich Integral 1 Un, 800 g" [ref=e676] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780349500218?from=/search
+                      - generic [ref=e677]: Pan De Molde Sándwich Integral 1 Un, 800 g
+                    - generic [ref=e679]:
+                      - generic [ref=e682]:
+                        - generic [ref=e683]:
+                          - img "Pan De Molde Sándwich Integral 1 Un, 800 g"
+                        - button "Agregar al carro - Pan De Molde Sándwich Integral 1 Un, 800 g" [ref=e686] [cursor=pointer]:
+                          - generic "agregar" [ref=e687]: 
+                          - generic [ref=e688]: Agregar
+                      - generic [ref=e690]:
+                        - generic [ref=e692]:
+                          - generic [ref=e693]: $3.390
+                          - generic [ref=e694]: precio actual $3.390
+                          - generic [ref=e695]: $4.237 x kg
+                        - generic [ref=e696]: Selecta
+                        - generic [ref=e697]: Pan De Molde Sándwich Integral 1 Un, 800 g
+                  - group [ref=e700]:
+                    - link "Pan De Molde Integral 1 Un, 390 g" [ref=e701] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00789196206405?from=/search
+                      - generic [ref=e702]: Pan De Molde Integral 1 Un, 390 g
+                    - generic [ref=e704]:
+                      - generic [ref=e707]:
+                        - generic [ref=e708]:
+                          - img "Pan De Molde Integral 1 Un, 390 g"
+                        - button "Agregar al carro - Pan De Molde Integral 1 Un, 390 g" [ref=e711] [cursor=pointer]:
+                          - generic "agregar" [ref=e712]: 
+                          - generic [ref=e713]: Agregar
+                      - generic [ref=e715]:
+                        - generic [ref=e717]:
+                          - generic [ref=e718]: $1.890
+                          - generic [ref=e719]: precio actual $1.890
+                          - generic [ref=e720]: $4.846 x kg
+                        - generic [ref=e721]: Bauducco
+                        - generic [ref=e722]: Pan De Molde Integral 1 Un, 390 g
+                  - group [ref=e725]:
+                    - link "Pan De Molde Integral Xl, 770 g" [ref=e726] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780346800461?from=/search
+                      - generic [ref=e727]: Pan De Molde Integral Xl, 770 g
+                    - generic [ref=e729]:
+                      - generic [ref=e732]:
+                        - generic [ref=e733]:
+                          - img "Pan De Molde Integral Xl, 770 g"
+                        - button "Agregar al carro - Pan De Molde Integral Xl, 770 g" [ref=e736] [cursor=pointer]:
+                          - generic "agregar" [ref=e737]: 
+                          - generic [ref=e738]: Agregar
+                      - generic [ref=e740]:
+                        - generic [ref=e742]:
+                          - generic [ref=e743]: $2.950
+                          - generic [ref=e744]: precio actual $2.950
+                          - generic [ref=e745]: $3.831 x kg
+                        - generic [ref=e746]: Castaño
+                        - generic [ref=e747]: Pan De Molde Integral Xl, 770 g
+                  - group [ref=e750]:
+                    - link "Pan De Molde Integral, 400 g" [ref=e751] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780346800223?from=/search
+                      - generic [ref=e752]: Pan De Molde Integral, 400 g
+                    - generic [ref=e754]:
+                      - generic [ref=e757]:
+                        - generic [ref=e758]:
+                          - img "Pan De Molde Integral, 400 g"
+                        - button "Agregar al carro - Pan De Molde Integral, 400 g" [ref=e761] [cursor=pointer]:
+                          - generic "agregar" [ref=e762]: 
+                          - generic [ref=e763]: Agregar
+                      - generic [ref=e765]:
+                        - generic [ref=e767]:
+                          - generic [ref=e768]: $1.690
+                          - generic [ref=e769]: precio actual $1.690
+                          - generic [ref=e770]: $4.225 x un
+                        - generic [ref=e771]: Castaño
+                        - generic [ref=e772]: Pan De Molde Integral, 400 g
+                  - generic [ref=e774]:
+                    - group [ref=e775]:
+                      - link "Pan De Molde Integral Sin Glúten, 480 g" [ref=e776] [cursor=pointer]:
+                        - /url: /ip/panaderia-envasada/00780350000036?from=/search
+                        - generic [ref=e777]: Pan De Molde Integral Sin Glúten, 480 g
+                      - generic [ref=e779]:
+                        - generic [ref=e783]:
+                          - img "Pan De Molde Integral Sin Glúten, 480 g"
+                        - generic [ref=e785]:
+                          - generic [ref=e787]:
+                            - generic [ref=e788]: $5.290
+                            - generic [ref=e789]: precio actual $5.290
+                            - generic [ref=e790]: $5.290 x un
+                          - generic [ref=e791]: No+gluten
+                          - generic [ref=e792]: Pan De Molde Integral Sin Glúten, 480 g
+                          - generic [ref=e793]: Agotado
+                    - button "Revisar productos similares - Pan De Molde Integral Sin Glúten, 480 g" [ref=e795]: Revisar productos similares
+                  - group [ref=e798]:
+                    - link "Pan Libanes Integral 6 Un, 250 g" [ref=e799] [cursor=pointer]:
+                      - /url: /ip/panaderia-granel/00780461846034?from=/search
+                      - generic [ref=e800]: Pan Libanes Integral 6 Un, 250 g
+                    - generic [ref=e802]:
+                      - generic [ref=e805]:
+                        - generic [ref=e806]:
+                          - img "Pan Libanes Integral 6 Un, 250 g"
+                        - button "Agregar al carro - Pan Libanes Integral 6 Un, 250 g" [ref=e809] [cursor=pointer]:
+                          - generic "agregar" [ref=e810]: 
+                          - generic [ref=e811]: Agregar
+                      - generic [ref=e813]:
+                        - generic [ref=e815]:
+                          - generic [ref=e816]: $1.490
+                          - generic [ref=e817]: precio actual $1.490
+                          - generic [ref=e818]: $5.960 x kg
+                        - generic [ref=e819]: Spagnolia
+                        - generic [ref=e820]: Pan Libanes Integral 6 Un, 250 g
+                  - group [ref=e823]:
+                    - link "Pan De Molde Trigo Integral Light 1 Un, 550 gr" [ref=e824] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780341000023?from=/search
+                      - generic [ref=e825]: Pan De Molde Trigo Integral Light 1 Un, 550 gr
+                    - generic [ref=e827]:
+                      - generic [ref=e830]:
+                        - generic [ref=e831]:
+                          - img "Pan De Molde Trigo Integral Light 1 Un, 550 gr"
+                        - button "Agregar al carro - Pan De Molde Trigo Integral Light 1 Un, 550 gr" [ref=e834] [cursor=pointer]:
+                          - generic "agregar" [ref=e835]: 
+                          - generic [ref=e836]: Agregar
+                      - generic [ref=e838]:
+                        - generic [ref=e840]:
+                          - generic [ref=e841]: $3.790
+                          - generic [ref=e842]: precio actual $3.790
+                          - generic [ref=e843]: $6.891 x kg
+                        - generic [ref=e844]: Vollkorn
+                        - generic [ref=e845]: Pan De Molde Trigo Integral Light 1 Un, 550 gr
+                  - group [ref=e848]:
+                    - link "Pan De Molde Pan Perfecto Blanco, 580 g" [ref=e849] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780346800148?from=/search
+                      - generic [ref=e850]: Pan De Molde Pan Perfecto Blanco, 580 g
+                    - generic [ref=e852]:
+                      - generic [ref=e855]:
+                        - generic [ref=e856]:
+                          - img "Pan De Molde Pan Perfecto Blanco, 580 g"
+                        - button "Agregar al carro - Pan De Molde Pan Perfecto Blanco, 580 g" [ref=e859] [cursor=pointer]:
+                          - generic "agregar" [ref=e860]: 
+                          - generic [ref=e861]: Agregar
+                      - generic [ref=e863]:
+                        - generic [ref=e865]:
+                          - generic [ref=e866]: $3.750
+                          - generic [ref=e867]: precio actual $3.750
+                          - generic [ref=e868]: $6.250 x un
+                        - generic [ref=e869]: Kingsbury
+                        - generic [ref=e870]: Pan De Molde Pan Perfecto Blanco, 580 g
+                  - group [ref=e873]:
+                    - link "Pan Pita Perfecto 8 Un, 300 gr" [ref=e874] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780346800164?from=/search
+                      - generic [ref=e875]: Pan Pita Perfecto 8 Un, 300 gr
+                    - generic [ref=e877]:
+                      - generic [ref=e878]:
+                        - generic [ref=e880]:
+                          - generic [ref=e882]: 
+                          - text: Rebaja
+                        - generic [ref=e883]:
+                          - generic [ref=e884]:
+                            - img "Pan Pita Perfecto 8 Un, 300 gr"
+                          - button "Agregar al carro - Pan Pita Perfecto 8 Un, 300 gr" [ref=e887] [cursor=pointer]:
+                            - generic "agregar" [ref=e888]: 
+                            - generic [ref=e889]: Agregar
+                      - generic [ref=e891]:
+                        - generic [ref=e893]:
+                          - generic [ref=e894]: $1.890
+                          - generic [ref=e895]: precio actual $1.890, Costaba $2.190
+                          - generic [ref=e896]: $6.300 x kg
+                          - generic [ref=e897]: $2.190
+                          - generic [ref=e898]: Ahorra $300
+                        - generic [ref=e899]: Kingsbury
+                        - generic [ref=e900]: Pan Pita Perfecto 8 Un, 300 gr
+                  - group [ref=e903]:
+                    - link "Tostadas Integral Bolsa, 142 g" [ref=e904] [cursor=pointer]:
+                      - /url: /ip/complementos-y-snacks/00789196206046?from=/search
+                      - generic [ref=e905]: Tostadas Integral Bolsa, 142 g
+                    - generic [ref=e907]:
+                      - generic [ref=e910]:
+                        - generic [ref=e911]:
+                          - img "Tostadas Integral Bolsa, 142 g"
+                        - button "Agregar al carro - Tostadas Integral Bolsa, 142 g" [ref=e914] [cursor=pointer]:
+                          - generic "agregar" [ref=e915]: 
+                          - generic [ref=e916]: Agregar
+                      - generic [ref=e918]:
+                        - generic [ref=e920]:
+                          - generic [ref=e921]: $1.750
+                          - generic [ref=e922]: precio actual $1.750
+                          - generic [ref=e923]: $10.938 x kg
+                        - generic [ref=e924]: Bauducco
+                        - generic [ref=e925]: Tostadas Integral Bolsa, 142 g
+                  - group [ref=e928]:
+                    - link "Pan Kornspitz Granel" [ref=e929] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00203870000000?from=/search
+                      - generic [ref=e930]: Pan Kornspitz Granel
+                    - generic [ref=e932]:
+                      - generic [ref=e935]:
+                        - generic [ref=e936]:
+                          - img "Pan Kornspitz Granel"
+                        - button "Agregar al carro - Pan Kornspitz Granel" [ref=e939] [cursor=pointer]:
+                          - generic "agregar" [ref=e940]: 
+                          - generic [ref=e941]: Agregar
+                      - generic [ref=e943]:
+                        - generic [ref=e945]:
+                          - generic [ref=e946]: $2.990/kg
+                          - generic [ref=e947]: precio actual $2.990/kg
+                          - generic [ref=e948]: $2.990 x kg
+                        - generic [ref=e949]: .
+                        - generic [ref=e950]: Pan Kornspitz Granel
+                  - group [ref=e953]:
+                    - link "Pan Bagel De Cebolla Artesanal 12 Un, 650 g" [ref=e954] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780466706013?from=/search
+                      - generic [ref=e955]: Pan Bagel De Cebolla Artesanal 12 Un, 650 g
+                    - generic [ref=e957]:
+                      - generic [ref=e960]:
+                        - generic [ref=e961]:
+                          - img "Pan Bagel De Cebolla Artesanal 12 Un, 650 g"
+                        - button "Agregar al carro - Pan Bagel De Cebolla Artesanal 12 Un, 650 g" [ref=e964] [cursor=pointer]:
+                          - generic "agregar" [ref=e965]: 
+                          - generic [ref=e966]: Agregar
+                      - generic [ref=e968]:
+                        - generic [ref=e970]:
+                          - generic [ref=e971]: $3.290
+                          - generic [ref=e972]: precio actual $3.290
+                        - generic [ref=e973]: Bagels & Co
+                        - generic [ref=e974]: Pan Bagel De Cebolla Artesanal 12 Un, 650 g
+                  - group [ref=e977]:
+                    - link "Pan de Molde Fibra XL, 700 g" [ref=e978] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780340300456?from=/search
+                      - generic [ref=e979]: Pan de Molde Fibra XL, 700 g
+                    - generic [ref=e981]:
+                      - generic [ref=e982]:
+                        - generic [ref=e984]:
+                          - generic [ref=e986]: 
+                          - text: Rebaja
+                        - generic [ref=e987]:
+                          - generic [ref=e988]:
+                            - img "Pan de Molde Fibra XL, 700 g"
+                          - button "Agregar al carro - Pan de Molde Fibra XL, 700 g" [ref=e991] [cursor=pointer]:
+                            - generic "agregar" [ref=e992]: 
+                            - generic [ref=e993]: Agregar
+                      - generic [ref=e995]:
+                        - generic [ref=e997]:
+                          - generic [ref=e998]: $2.000
+                          - generic [ref=e999]: precio actual $2.000, Costaba $2.390
+                          - generic [ref=e1000]: $2.857 x kg
+                          - generic [ref=e1001]: $2.390
+                          - generic [ref=e1002]: Ahorra $390
+                        - generic [ref=e1003]: Cena
+                        - generic [ref=e1004]: Pan de Molde Fibra XL, 700 g
+                  - group [ref=e1007]:
+                    - link "Pan De Molde Linaza Chía, 600 g" [ref=e1008] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780348000143?from=/search
+                      - generic [ref=e1009]: Pan De Molde Linaza Chía, 600 g
+                    - generic [ref=e1011]:
+                      - generic [ref=e1012]:
+                        - generic [ref=e1014]:
+                          - generic [ref=e1016]: 
+                          - text: Rebaja
+                        - generic [ref=e1017]:
+                          - generic [ref=e1018]:
+                            - img "Pan De Molde Linaza Chía, 600 g"
+                          - button "Agregar al carro - Pan De Molde Linaza Chía, 600 g" [ref=e1021] [cursor=pointer]:
+                            - generic "agregar" [ref=e1022]: 
+                            - generic [ref=e1023]: Agregar
+                      - generic [ref=e1025]:
+                        - generic [ref=e1027]:
+                          - generic [ref=e1028]: $2.590
+                          - generic [ref=e1029]: precio actual $2.590, Costaba $2.890
+                          - generic [ref=e1030]: $4.317 x kg
+                          - generic [ref=e1031]: $2.890
+                          - generic [ref=e1032]: Ahorra $300
+                        - generic [ref=e1033]: Fuchs
+                        - generic [ref=e1034]: Pan De Molde Linaza Chía, 600 g
+                  - group [ref=e1037]:
+                    - link "Pan De Molde Calabaza Nuez, 600 g" [ref=e1038] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780348000142?from=/search
+                      - generic [ref=e1039]: Pan De Molde Calabaza Nuez, 600 g
+                    - generic [ref=e1041]:
+                      - generic [ref=e1044]:
+                        - generic [ref=e1045]:
+                          - img "Pan De Molde Calabaza Nuez, 600 g"
+                        - button "Agregar al carro - Pan De Molde Calabaza Nuez, 600 g" [ref=e1048] [cursor=pointer]:
+                          - generic "agregar" [ref=e1049]: 
+                          - generic [ref=e1050]: Agregar
+                      - generic [ref=e1052]:
+                        - generic [ref=e1054]:
+                          - generic [ref=e1055]: $2.890
+                          - generic [ref=e1056]: precio actual $2.890
+                          - generic [ref=e1057]: $4.587 x kg
+                        - generic [ref=e1058]: Fuchs
+                        - generic [ref=e1059]: Pan De Molde Calabaza Nuez, 600 g
+                  - group [ref=e1062]:
+                    - link "Pan Centeno Linaza, 500 g" [ref=e1063] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780341000000?from=/search
+                      - generic [ref=e1064]: Pan Centeno Linaza, 500 g
+                    - generic [ref=e1066]:
+                      - generic [ref=e1069]:
+                        - generic [ref=e1070]:
+                          - img "Pan Centeno Linaza, 500 g"
+                        - button "Agregar al carro - Pan Centeno Linaza, 500 g" [ref=e1073] [cursor=pointer]:
+                          - generic "agregar" [ref=e1074]: 
+                          - generic [ref=e1075]: Agregar
+                      - generic [ref=e1077]:
+                        - generic [ref=e1079]:
+                          - generic [ref=e1080]: $3.490
+                          - generic [ref=e1081]: precio actual $3.490
+                          - generic [ref=e1082]: $6.980 x kg
+                        - generic [ref=e1083]: Vollkorn
+                        - generic [ref=e1084]: Pan Centeno Linaza, 500 g
+                  - group [ref=e1087]:
+                    - link "Pan de Molde Light Multigrano, 620 g" [ref=e1088] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780348000141?from=/search
+                      - generic [ref=e1089]: Pan de Molde Light Multigrano, 620 g
+                    - generic [ref=e1091]:
+                      - generic [ref=e1092]:
+                        - generic [ref=e1094]:
+                          - generic [ref=e1096]: 
+                          - text: Rebaja
+                        - generic [ref=e1097]:
+                          - generic [ref=e1098]:
+                            - img "Pan de Molde Light Multigrano, 620 g"
+                          - button "Agregar al carro - Pan de Molde Light Multigrano, 620 g" [ref=e1101] [cursor=pointer]:
+                            - generic "agregar" [ref=e1102]: 
+                            - generic [ref=e1103]: Agregar
+                      - generic [ref=e1105]:
+                        - generic [ref=e1107]:
+                          - generic [ref=e1108]: $2.590
+                          - generic [ref=e1109]: precio actual $2.590, Costaba $2.890
+                          - generic [ref=e1110]: $2.890
+                          - generic [ref=e1111]: Ahorra $300
+                        - generic [ref=e1112]: Fuchs
+                        - generic [ref=e1113]: Pan de Molde Light Multigrano, 620 g
+                  - generic [ref=e1115]:
+                    - group [ref=e1116]:
+                      - link "Pan de Molde Multigrano Proteína, 620 g" [ref=e1117] [cursor=pointer]:
+                        - /url: /ip/panaderia-envasada/00780346800176?from=/search
+                        - generic [ref=e1118]: Pan de Molde Multigrano Proteína, 620 g
+                      - generic [ref=e1120]:
+                        - generic [ref=e1124]:
+                          - img "Pan de Molde Multigrano Proteína, 620 g"
+                        - generic [ref=e1126]:
+                          - generic [ref=e1128]:
+                            - generic [ref=e1129]: $2.790
+                            - generic [ref=e1130]: precio actual $2.790
+                            - generic [ref=e1131]: $4.500 x kg
+                          - generic [ref=e1132]: Castaño
+                          - generic [ref=e1133]: Pan de Molde Multigrano Proteína, 620 g
+                          - generic [ref=e1134]: Agotado
+                    - button "Revisar productos similares - Pan de Molde Multigrano Proteína, 620 g" [ref=e1136]: Revisar productos similares
+                  - group [ref=e1139]:
+                    - link "Pan De Molde Calabaza Con Proteína De Arveja, 400 g" [ref=e1140] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780346800012?from=/search
+                      - generic [ref=e1141]: Pan De Molde Calabaza Con Proteína De Arveja, 400 g
+                    - generic [ref=e1143]:
+                      - generic [ref=e1146]:
+                        - generic [ref=e1147]:
+                          - img "Pan De Molde Calabaza Con Proteína De Arveja, 400 g"
+                        - button "Agregar al carro - Pan De Molde Calabaza Con Proteína De Arveja, 400 g" [ref=e1150] [cursor=pointer]:
+                          - generic "agregar" [ref=e1151]: 
+                          - generic [ref=e1152]: Agregar
+                      - generic [ref=e1154]:
+                        - generic [ref=e1156]:
+                          - generic [ref=e1157]: $2.000
+                          - generic [ref=e1158]: precio actual $2.000
+                          - generic [ref=e1159]: $5.000 x kg
+                        - generic [ref=e1160]: Castaño
+                        - generic [ref=e1161]: Pan De Molde Calabaza Con Proteína De Arveja, 400 g
+                  - group [ref=e1164]:
+                    - link "Pan De Molde Linaza Chía Con Prebióticos, 400 g" [ref=e1165] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780346800302?from=/search
+                      - generic [ref=e1166]: Pan De Molde Linaza Chía Con Prebióticos, 400 g
+                    - generic [ref=e1168]:
+                      - generic [ref=e1171]:
+                        - generic [ref=e1172]:
+                          - img "Pan De Molde Linaza Chía Con Prebióticos, 400 g"
+                        - button "Agregar al carro - Pan De Molde Linaza Chía Con Prebióticos, 400 g" [ref=e1175] [cursor=pointer]:
+                          - generic "agregar" [ref=e1176]: 
+                          - generic [ref=e1177]: Agregar
+                      - generic [ref=e1179]:
+                        - generic [ref=e1181]:
+                          - generic [ref=e1182]: $2.000
+                          - generic [ref=e1183]: precio actual $2.000
+                          - generic [ref=e1184]: $500 x kg
+                        - generic [ref=e1185]: Castaño
+                        - generic [ref=e1186]: Pan De Molde Linaza Chía Con Prebióticos, 400 g
+                  - group [ref=e1189]:
+                    - link "Pan De Molde Linaza Chía Con Prebióticos 1 Un, 600 g" [ref=e1190] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780346800195?from=/search
+                      - generic [ref=e1191]: Pan De Molde Linaza Chía Con Prebióticos 1 Un, 600 g
+                    - generic [ref=e1193]:
+                      - generic [ref=e1196]:
+                        - generic [ref=e1197]:
+                          - img "Pan De Molde Linaza Chía Con Prebióticos 1 Un, 600 g"
+                        - button "Agregar al carro - Pan De Molde Linaza Chía Con Prebióticos 1 Un, 600 g" [ref=e1200] [cursor=pointer]:
+                          - generic "agregar" [ref=e1201]: 
+                          - generic [ref=e1202]: Agregar
+                      - generic [ref=e1204]:
+                        - generic [ref=e1206]:
+                          - generic [ref=e1207]: $2.790
+                          - generic [ref=e1208]: precio actual $2.790
+                          - generic [ref=e1209]: $4.650 x kg
+                        - generic [ref=e1210]: Castaño
+                        - generic [ref=e1211]: Pan De Molde Linaza Chía Con Prebióticos 1 Un, 600 g
+                  - group [ref=e1214]:
+                    - link "Pan de Molde Calabaza Proteína, 600 g" [ref=e1215] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780346800539?from=/search
+                      - generic [ref=e1216]: Pan de Molde Calabaza Proteína, 600 g
+                    - generic [ref=e1218]:
+                      - generic [ref=e1221]:
+                        - generic [ref=e1222]:
+                          - img "Pan de Molde Calabaza Proteína, 600 g"
+                        - button "Agregar al carro - Pan de Molde Calabaza Proteína, 600 g" [ref=e1225] [cursor=pointer]:
+                          - generic "agregar" [ref=e1226]: 
+                          - generic [ref=e1227]: Agregar
+                      - generic [ref=e1229]:
+                        - generic [ref=e1231]:
+                          - generic [ref=e1232]: $2.790
+                          - generic [ref=e1233]: precio actual $2.790
+                          - generic [ref=e1234]: $4.650 x kg
+                        - generic [ref=e1235]: Castaño
+                        - generic [ref=e1236]: Pan de Molde Calabaza Proteína, 600 g
+                  - group [ref=e1239]:
+                    - link "Pan de Molde Linaza Chía, 350 g" [ref=e1240] [cursor=pointer]:
+                      - /url: /ip/panaderia-envasada/00780348000144?from=/search
+                      - generic [ref=e1241]: Pan de Molde Linaza Chía, 350 g
+                    - generic [ref=e1243]:
+                      - generic [ref=e1246]:
+                        - generic [ref=e1247]:
+                          - img "Pan de Molde Linaza Chía, 350 g"
+                        - button "Agregar al carro - Pan de Molde Linaza Chía, 350 g" [ref=e1250] [cursor=pointer]:
+                          - generic "agregar" [ref=e1251]: 
+                          - generic [ref=e1252]: Agregar
+                      - generic [ref=e1254]:
+                        - generic [ref=e1256]:
+                          - generic [ref=e1257]: $2.290
+                          - generic [ref=e1258]: precio actual $2.290
+                          - generic [ref=e1259]: $6.026 x kg
+                        - generic [ref=e1260]: Fuchs
+                        - generic [ref=e1261]: Pan de Molde Linaza Chía, 350 g
+            - navigation "paginación" [ref=e1264]:
+              - list [ref=e1265]:
+                - listitem [ref=e1266]
+                - listitem [ref=e1268]:
+                  - link "1" [ref=e1269] [cursor=pointer]:
+                    - /url: /search?q=pan+perfecto+integral
+                - listitem [ref=e1270]:
+                  - link "Ir a la página 2" [ref=e1271] [cursor=pointer]:
+                    - /url: /search?q=pan+perfecto+integral&page=2
+                    - text: "2"
+                - listitem [ref=e1272]:
+                  - link "Página siguiente" [ref=e1273] [cursor=pointer]:
+                    - /url: /search?q=pan+perfecto+integral&page=2
+                    - generic [ref=e1274]: 
+  - alert [ref=e1282]

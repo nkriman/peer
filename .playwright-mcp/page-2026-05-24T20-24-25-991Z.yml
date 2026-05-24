@@ -1,0 +1,877 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: frutilla fresca
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e80]:
+            - generic [ref=e81]:
+              - generic [ref=e84]:
+                - generic [ref=e85]:
+                  - button "Precio" [ref=e88]:
+                    - generic [ref=e89]: Precio
+                    - img [ref=e90]: 
+                  - separator [ref=e91]
+                - generic [ref=e92]:
+                  - button "Marca" [ref=e95]:
+                    - generic [ref=e96]: Marca
+                    - img [ref=e97]: 
+                  - separator [ref=e98]
+                - generic [ref=e99]:
+                  - button "Categoría" [ref=e102]:
+                    - generic [ref=e103]: Categoría
+                    - img [ref=e104]: 
+                  - separator [ref=e105]
+              - generic [ref=e108]:
+                - heading "Resultados para frutilla fresco (56)" [level=2] [ref=e116]: Resultados para frutilla fresco(56)
+                - generic [ref=e117]:
+                  - group [ref=e120]:
+                    - link "Frutillas Pote, 300 g" [ref=e121] [cursor=pointer]:
+                      - /url: /ip/frutas/00340028479000?from=/search
+                      - generic [ref=e122]: Frutillas Pote, 300 g
+                    - generic [ref=e124]:
+                      - generic [ref=e127]:
+                        - img "Frutillas Pote, 300 g" [ref=e129]
+                        - button "Agregar al carro - Frutillas Pote, 300 g" [ref=e132] [cursor=pointer]:
+                          - generic "agregar" [ref=e133]: 
+                          - generic [ref=e134]: Agregar
+                      - generic [ref=e136]:
+                        - generic [ref=e138]:
+                          - generic [ref=e139]: $2.590
+                          - generic [ref=e140]: precio actual $2.590
+                          - generic [ref=e141]: $8.633 x kg
+                        - generic [ref=e142]: Multi Marca
+                        - generic [ref=e143]: Frutillas Pote, 300 g
+                  - group [ref=e146]:
+                    - link "Mermelada Frutilla Sin Azúcar, 200 g" [ref=e147] [cursor=pointer]:
+                      - /url: /ip/dulces-mermeladas-y-manjar/00780400000107?from=/search
+                      - generic [ref=e148]: Mermelada Frutilla Sin Azúcar, 200 g
+                    - generic [ref=e150]:
+                      - generic [ref=e153]:
+                        - img "Mermelada Frutilla Sin Azúcar, 200 g" [ref=e155]
+                        - button "Agregar al carro - Mermelada Frutilla Sin Azúcar, 200 g" [ref=e158] [cursor=pointer]:
+                          - generic "agregar" [ref=e159]: 
+                          - generic [ref=e160]: Agregar
+                      - generic [ref=e162]:
+                        - generic [ref=e164]:
+                          - generic [ref=e165]: $1.290
+                          - generic [ref=e166]: precio actual $1.290
+                          - generic [ref=e167]: $6.450 x kg
+                        - generic [ref=e168]: En Línea
+                        - generic [ref=e169]: Mermelada Frutilla Sin Azúcar, 200 g
+                  - group [ref=e172]:
+                    - link "Mermelada Frutilla Sin Azúcar, 200 g" [ref=e173] [cursor=pointer]:
+                      - /url: /ip/sin-azucar/00780130500336?from=/search
+                      - generic [ref=e174]: Mermelada Frutilla Sin Azúcar, 200 g
+                    - generic [ref=e176]:
+                      - generic [ref=e179]:
+                        - img "Mermelada Frutilla Sin Azúcar, 200 g" [ref=e181]
+                        - button "Agregar al carro - Mermelada Frutilla Sin Azúcar, 200 g" [ref=e184] [cursor=pointer]:
+                          - generic "agregar" [ref=e185]: 
+                          - generic [ref=e186]: Agregar
+                      - generic [ref=e188]:
+                        - generic [ref=e190]:
+                          - generic [ref=e191]: $1.490
+                          - generic [ref=e192]: precio actual $1.490
+                          - generic [ref=e193]: $7.450 x kg
+                        - generic [ref=e194]: Regimel
+                        - generic [ref=e195]: Mermelada Frutilla Sin Azúcar, 200 g
+                  - group [ref=e198]:
+                    - link "Mermelada Frutilla Sin Azúcar, 320 g" [ref=e199] [cursor=pointer]:
+                      - /url: /ip/dulces-mermeladas-y-manjar/00780400000137?from=/search
+                      - generic [ref=e200]: Mermelada Frutilla Sin Azúcar, 320 g
+                    - generic [ref=e202]:
+                      - generic [ref=e205]:
+                        - img "Mermelada Frutilla Sin Azúcar, 320 g" [ref=e207]
+                        - button "Agregar al carro - Mermelada Frutilla Sin Azúcar, 320 g" [ref=e210] [cursor=pointer]:
+                          - generic "agregar" [ref=e211]: 
+                          - generic [ref=e212]: Agregar
+                      - generic [ref=e214]:
+                        - generic [ref=e216]:
+                          - generic [ref=e217]: $3.290
+                          - generic [ref=e218]: precio actual $3.290
+                          - generic [ref=e219]: $10.281 x kg
+                        - generic [ref=e220]: En Línea
+                        - generic [ref=e221]: Mermelada Frutilla Sin Azúcar, 320 g
+                  - group [ref=e224]:
+                    - link "Yoghurt Batido Sabor Frutilla Pack 6 Caja, 690 gr" [ref=e225] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780290000248?from=/search
+                      - generic [ref=e226]: Yoghurt Batido Sabor Frutilla Pack 6 Caja, 690 gr
+                    - generic [ref=e228]:
+                      - generic [ref=e231]:
+                        - img "Yoghurt Batido Sabor Frutilla Pack 6 Caja, 690 gr" [ref=e233]
+                        - button "Agregar al carro - Yoghurt Batido Sabor Frutilla Pack 6 Caja, 690 gr" [ref=e236] [cursor=pointer]:
+                          - generic "agregar" [ref=e237]: 
+                          - generic [ref=e238]: Agregar
+                      - generic [ref=e240]:
+                        - generic [ref=e242]:
+                          - generic [ref=e243]: $2.590
+                          - generic [ref=e244]: precio actual $2.590
+                          - generic [ref=e245]: $3.754 x kg
+                        - generic [ref=e246]: Soprole
+                        - generic [ref=e247]: Yoghurt Batido Sabor Frutilla Pack 6 Caja, 690 gr
+                  - group [ref=e250]:
+                    - link "Leche Semidescremada Frutilla Caja, 200 ml" [ref=e251] [cursor=pointer]:
+                      - /url: /ip/leche/00780292075913?from=/search
+                      - generic [ref=e252]: Leche Semidescremada Frutilla Caja, 200 ml
+                    - generic [ref=e254]:
+                      - generic [ref=e257]:
+                        - img "Leche Semidescremada Frutilla Caja, 200 ml" [ref=e259]
+                        - button "Agregar al carro - Leche Semidescremada Frutilla Caja, 200 ml" [ref=e262] [cursor=pointer]:
+                          - generic "agregar" [ref=e263]: 
+                          - generic [ref=e264]: Agregar
+                      - generic [ref=e266]:
+                        - generic [ref=e268]:
+                          - generic [ref=e269]: $620
+                          - generic [ref=e270]: precio actual $620
+                          - generic [ref=e271]: $3.100 x lt
+                        - generic [ref=e272]: Colun
+                        - generic [ref=e273]: Leche Semidescremada Frutilla Caja, 200 ml
+                  - group [ref=e276]:
+                    - link "Mermelada Frutilla, 225 g" [ref=e277] [cursor=pointer]:
+                      - /url: /ip/dulces-mermeladas-y-manjar/00780281003107?from=/search
+                      - generic [ref=e278]: Mermelada Frutilla, 225 g
+                    - generic [ref=e280]:
+                      - generic [ref=e283]:
+                        - img "Mermelada Frutilla, 225 g" [ref=e285]
+                        - button "Agregar al carro - Mermelada Frutilla, 225 g" [ref=e288] [cursor=pointer]:
+                          - generic "agregar" [ref=e289]: 
+                          - generic [ref=e290]: Agregar
+                      - generic [ref=e292]:
+                        - generic [ref=e294]:
+                          - generic [ref=e295]: $1.250
+                          - generic [ref=e296]: precio actual $1.250
+                          - generic [ref=e297]: $5.556 x kg
+                        - generic [ref=e298]: Watts
+                        - generic [ref=e299]: Mermelada Frutilla, 225 g
+                  - group [ref=e302]:
+                    - link "Yoghurt Griego con Trozos de Frutilla Pote, 110 g" [ref=e303] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780295500497?from=/search
+                      - generic [ref=e304]: Yoghurt Griego con Trozos de Frutilla Pote, 110 g
+                    - generic [ref=e306]:
+                      - generic [ref=e309]:
+                        - img "Yoghurt Griego con Trozos de Frutilla Pote, 110 g" [ref=e311]
+                        - button "Agregar al carro - Yoghurt Griego con Trozos de Frutilla Pote, 110 g" [ref=e314] [cursor=pointer]:
+                          - generic "agregar" [ref=e315]: 
+                          - generic [ref=e316]: Agregar
+                      - generic [ref=e318]:
+                        - generic [ref=e320]:
+                          - generic [ref=e321]: $580
+                          - generic [ref=e322]: precio actual $580
+                          - generic [ref=e323]: $5.273 x kg
+                        - generic [ref=e324]: Oikos
+                        - generic [ref=e325]: Yoghurt Griego con Trozos de Frutilla Pote, 110 g
+                  - group [ref=e328]:
+                    - link "Yoghurt Batido Sabor Frutilla Bolsa, 1 Kg" [ref=e329] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780292024251?from=/search
+                      - generic [ref=e330]: Yoghurt Batido Sabor Frutilla Bolsa, 1 Kg
+                    - generic [ref=e332]:
+                      - generic [ref=e335]:
+                        - img "Yoghurt Batido Sabor Frutilla Bolsa, 1 Kg" [ref=e337]
+                        - button "Agregar al carro - Yoghurt Batido Sabor Frutilla Bolsa, 1 Kg" [ref=e340] [cursor=pointer]:
+                          - generic "agregar" [ref=e341]: 
+                          - generic [ref=e342]: Agregar
+                      - generic [ref=e344]:
+                        - generic [ref=e346]:
+                          - generic [ref=e347]: $1.950
+                          - generic [ref=e348]: precio actual $1.950
+                          - generic [ref=e349]: $1.950 x lt
+                        - generic [ref=e350]: Colun
+                        - generic [ref=e351]: Yoghurt Batido Sabor Frutilla Bolsa, 1 Kg
+                  - group [ref=e354]:
+                    - link "Mermelada Frutilla, 360 g" [ref=e355] [cursor=pointer]:
+                      - /url: /ip/dulces-mermeladas-y-manjar/00780281001002?from=/search
+                      - generic [ref=e356]: Mermelada Frutilla, 360 g
+                    - generic [ref=e358]:
+                      - generic [ref=e361]:
+                        - img "Mermelada Frutilla, 360 g" [ref=e363]
+                        - button "Agregar al carro - Mermelada Frutilla, 360 g" [ref=e366] [cursor=pointer]:
+                          - generic "agregar" [ref=e367]: 
+                          - generic [ref=e368]: Agregar
+                      - generic [ref=e370]:
+                        - generic [ref=e372]:
+                          - generic [ref=e373]: $2.150
+                          - generic [ref=e374]: precio actual $2.150
+                        - generic [ref=e375]: Watts
+                        - generic [ref=e376]: Mermelada Frutilla, 360 g
+                  - group [ref=e379]:
+                    - link "Yoghurt Batido Sabor Frutilla, 115 g" [ref=e380] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780291000823?from=/search
+                      - generic [ref=e381]: Yoghurt Batido Sabor Frutilla, 115 g
+                    - generic [ref=e383]:
+                      - generic [ref=e386]:
+                        - img "Yoghurt Batido Sabor Frutilla, 115 g" [ref=e388]
+                        - button "Agregar al carro - Yoghurt Batido Sabor Frutilla, 115 g" [ref=e391] [cursor=pointer]:
+                          - generic "agregar" [ref=e392]: 
+                          - generic [ref=e393]: Agregar
+                      - generic [ref=e395]:
+                        - generic [ref=e397]:
+                          - generic [ref=e398]: $410
+                          - generic [ref=e399]: precio actual $410
+                          - generic [ref=e400]: $3.565 x kg
+                        - generic [ref=e401]: Yogu Yogu
+                        - generic [ref=e402]: Yoghurt Batido Sabor Frutilla, 115 g
+                  - group [ref=e405]:
+                    - link "Yoghurt Batido Sabor Frutilla, 125 g" [ref=e406] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780292000093?from=/search
+                      - generic [ref=e407]: Yoghurt Batido Sabor Frutilla, 125 g
+                    - generic [ref=e409]:
+                      - generic [ref=e412]:
+                        - img "Yoghurt Batido Sabor Frutilla, 125 g" [ref=e414]
+                        - button "Agregar al carro - Yoghurt Batido Sabor Frutilla, 125 g" [ref=e417] [cursor=pointer]:
+                          - generic "agregar" [ref=e418]: 
+                          - generic [ref=e419]: Agregar
+                      - generic [ref=e421]:
+                        - generic [ref=e423]:
+                          - generic [ref=e424]: $290
+                          - generic [ref=e425]: precio actual $290
+                          - generic [ref=e426]: $2.320 x kg
+                        - generic [ref=e427]: Colun
+                        - generic [ref=e428]: Yoghurt Batido Sabor Frutilla, 125 g
+                  - group [ref=e431]:
+                    - link "Bebida Láctea Probiótico UNO Sabor Frutilla Pack 12 Caja, 80 ml" [ref=e432] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780290000146?from=/search
+                      - generic [ref=e433]: Bebida Láctea Probiótico UNO Sabor Frutilla Pack 12 Caja, 80 ml
+                    - generic [ref=e435]:
+                      - generic [ref=e438]:
+                        - img "Bebida Láctea Probiótico UNO Sabor Frutilla Pack 12 Caja, 80 ml" [ref=e440]
+                        - button "Agregar al carro - Bebida Láctea Probiótico UNO Sabor Frutilla Pack 12 Caja, 80 ml" [ref=e443] [cursor=pointer]:
+                          - generic "agregar" [ref=e444]: 
+                          - generic [ref=e445]: Agregar
+                      - generic [ref=e447]:
+                        - generic [ref=e449]:
+                          - generic [ref=e450]: $4.190
+                          - generic [ref=e451]: precio actual $4.190
+                          - generic [ref=e452]: $4.365 x lt
+                        - generic [ref=e453]: Soprole
+                        - generic [ref=e454]: Bebida Láctea Probiótico UNO Sabor Frutilla Pack 12 Caja, 80 ml
+                  - group [ref=e457]:
+                    - link "Yoghurt Kefir Frutilla, 120 g" [ref=e458] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780292001062?from=/search
+                      - generic [ref=e459]: Yoghurt Kefir Frutilla, 120 g
+                    - generic [ref=e461]:
+                      - generic [ref=e464]:
+                        - img "Yoghurt Kefir Frutilla, 120 g" [ref=e466]
+                        - button "Agregar al carro - Yoghurt Kefir Frutilla, 120 g" [ref=e469] [cursor=pointer]:
+                          - generic "agregar" [ref=e470]: 
+                          - generic [ref=e471]: Agregar
+                      - generic [ref=e473]:
+                        - generic [ref=e475]:
+                          - generic [ref=e476]: $430
+                          - generic [ref=e477]: precio actual $430
+                          - generic [ref=e478]: $3.583 x kg
+                        - generic [ref=e479]: Colun
+                        - generic [ref=e480]: Yoghurt Kefir Frutilla, 120 g
+                  - group [ref=e483]:
+                    - link "Yoghurt Light Sin Lactosa Frutilla, 120 g" [ref=e484] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780292001082?from=/search
+                      - generic [ref=e485]: Yoghurt Light Sin Lactosa Frutilla, 120 g
+                    - generic [ref=e487]:
+                      - generic [ref=e490]:
+                        - img "Yoghurt Light Sin Lactosa Frutilla, 120 g" [ref=e492]
+                        - button "Agregar al carro - Yoghurt Light Sin Lactosa Frutilla, 120 g" [ref=e495] [cursor=pointer]:
+                          - generic "agregar" [ref=e496]: 
+                          - generic [ref=e497]: Agregar
+                      - generic [ref=e499]:
+                        - generic [ref=e501]:
+                          - generic [ref=e502]: $370
+                          - generic [ref=e503]: precio actual $370
+                          - generic [ref=e504]: $2.960 x kg
+                        - generic [ref=e505]: Colun
+                        - generic [ref=e506]: Yoghurt Light Sin Lactosa Frutilla, 120 g
+                  - group [ref=e509]:
+                    - link "Yoghurt Batido Frutilla Bolsa Sin Azúcar Bolsa, 800 g" [ref=e510] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780290000466?from=/search
+                      - generic [ref=e511]: Yoghurt Batido Frutilla Bolsa Sin Azúcar Bolsa, 800 g
+                    - generic [ref=e513]:
+                      - generic [ref=e516]:
+                        - img "Yoghurt Batido Frutilla Bolsa Sin Azúcar Bolsa, 800 g" [ref=e518]
+                        - button "Agregar al carro - Yoghurt Batido Frutilla Bolsa Sin Azúcar Bolsa, 800 g" [ref=e521] [cursor=pointer]:
+                          - generic "agregar" [ref=e522]: 
+                          - generic [ref=e523]: Agregar
+                      - generic [ref=e525]:
+                        - generic [ref=e527]:
+                          - generic [ref=e528]: $1.790
+                          - generic [ref=e529]: precio actual $1.790
+                          - generic [ref=e530]: $2.237 x kg
+                        - generic [ref=e531]: Soprole
+                        - generic [ref=e532]: Yoghurt Batido Frutilla Bolsa Sin Azúcar Bolsa, 800 g
+                  - group [ref=e535]:
+                    - link "Yoghurt Sin Lactosa Sabor Frutilla Bolsa, 1 kg" [ref=e536] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780290000287?from=/search
+                      - generic [ref=e537]: Yoghurt Sin Lactosa Sabor Frutilla Bolsa, 1 kg
+                    - generic [ref=e539]:
+                      - generic [ref=e542]:
+                        - generic [ref=e543]:
+                          - img "Yoghurt Sin Lactosa Sabor Frutilla Bolsa, 1 kg"
+                        - button "Agregar al carro - Yoghurt Sin Lactosa Sabor Frutilla Bolsa, 1 kg" [ref=e546] [cursor=pointer]:
+                          - generic "agregar" [ref=e547]: 
+                          - generic [ref=e548]: Agregar
+                      - generic [ref=e550]:
+                        - generic [ref=e552]:
+                          - generic [ref=e553]: $2.250
+                          - generic [ref=e554]: precio actual $2.250
+                          - generic [ref=e555]: $2.250 x kg
+                        - generic [ref=e556]: Soprole
+                        - generic [ref=e557]: Yoghurt Sin Lactosa Sabor Frutilla Bolsa, 1 kg
+                  - group [ref=e560]:
+                    - link "Leche Sin Lactosa Frutilla, 200 ml" [ref=e561] [cursor=pointer]:
+                      - /url: /ip/leche/00780290000366?from=/search
+                      - generic [ref=e562]: Leche Sin Lactosa Frutilla, 200 ml
+                    - generic [ref=e564]:
+                      - generic [ref=e567]:
+                        - generic [ref=e568]:
+                          - img "Leche Sin Lactosa Frutilla, 200 ml"
+                        - button "Agregar al carro - Leche Sin Lactosa Frutilla, 200 ml" [ref=e571] [cursor=pointer]:
+                          - generic "agregar" [ref=e572]: 
+                          - generic [ref=e573]: Agregar
+                      - generic [ref=e575]:
+                        - generic [ref=e577]:
+                          - generic [ref=e578]: $560
+                          - generic [ref=e579]: precio actual $560
+                          - generic [ref=e580]: $2.800 x lt
+                        - generic [ref=e581]: Soprole
+                        - generic [ref=e582]: Leche Sin Lactosa Frutilla, 200 ml
+                  - group [ref=e585]:
+                    - link "Yoghurt Batido Sabor Frutilla Pote, 165 g" [ref=e586] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780290030002?from=/search
+                      - generic [ref=e587]: Yoghurt Batido Sabor Frutilla Pote, 165 g
+                    - generic [ref=e589]:
+                      - generic [ref=e592]:
+                        - generic [ref=e593]:
+                          - img "Yoghurt Batido Sabor Frutilla Pote, 165 g"
+                        - button "Agregar al carro - Yoghurt Batido Sabor Frutilla Pote, 165 g" [ref=e596] [cursor=pointer]:
+                          - generic "agregar" [ref=e597]: 
+                          - generic [ref=e598]: Agregar
+                      - generic [ref=e600]:
+                        - generic [ref=e602]:
+                          - generic [ref=e603]: $560
+                          - generic [ref=e604]: precio actual $560
+                          - generic [ref=e605]: $3.394 x kg
+                        - generic [ref=e606]: Soprole
+                        - generic [ref=e607]: Yoghurt Batido Sabor Frutilla Pote, 165 g
+                  - group [ref=e610]:
+                    - link "Yoghurt Batido Light Sabor Frutilla Pote, 115 g" [ref=e611] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780295501002?from=/search
+                      - generic [ref=e612]: Yoghurt Batido Light Sabor Frutilla Pote, 115 g
+                    - generic [ref=e614]:
+                      - generic [ref=e617]:
+                        - generic [ref=e618]:
+                          - img "Yoghurt Batido Light Sabor Frutilla Pote, 115 g"
+                        - button "Agregar al carro - Yoghurt Batido Light Sabor Frutilla Pote, 115 g" [ref=e621] [cursor=pointer]:
+                          - generic "agregar" [ref=e622]: 
+                          - generic [ref=e623]: Agregar
+                      - generic [ref=e625]:
+                        - generic [ref=e627]:
+                          - generic [ref=e628]: $370
+                          - generic [ref=e629]: precio actual $370
+                          - generic [ref=e630]: $3.217 x kg
+                        - generic [ref=e631]: Danone
+                        - generic [ref=e632]: Yoghurt Batido Light Sabor Frutilla Pote, 115 g
+                  - group [ref=e635]:
+                    - link "Yoghurt Light Sabor Frutilla Bolsa, 900 ml" [ref=e636] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780292000342?from=/search
+                      - generic [ref=e637]: Yoghurt Light Sabor Frutilla Bolsa, 900 ml
+                    - generic [ref=e639]:
+                      - generic [ref=e642]:
+                        - generic [ref=e643]:
+                          - img "Yoghurt Light Sabor Frutilla Bolsa, 900 ml"
+                        - button "Agregar al carro - Yoghurt Light Sabor Frutilla Bolsa, 900 ml" [ref=e646] [cursor=pointer]:
+                          - generic "agregar" [ref=e647]: 
+                          - generic [ref=e648]: Agregar
+                      - generic [ref=e650]:
+                        - generic [ref=e652]:
+                          - generic [ref=e653]: $1.990
+                          - generic [ref=e654]: precio actual $1.990
+                          - generic [ref=e655]: $1.990 x kg
+                        - generic [ref=e656]: Colun
+                        - generic [ref=e657]: Yoghurt Light Sabor Frutilla Bolsa, 900 ml
+                  - generic [ref=e659]:
+                    - group [ref=e660]:
+                      - link "Yoghurt Batido Frutilla Botella, 1000 ml" [ref=e661] [cursor=pointer]:
+                        - /url: /ip/yoghurt/00780290039202?from=/search
+                        - generic [ref=e662]: Yoghurt Batido Frutilla Botella, 1000 ml
+                      - generic [ref=e664]:
+                        - generic [ref=e668]:
+                          - img "Yoghurt Batido Frutilla Botella, 1000 ml"
+                        - generic [ref=e670]:
+                          - generic [ref=e672]:
+                            - generic [ref=e673]: $2.490
+                            - generic [ref=e674]: precio actual $2.490
+                            - generic [ref=e675]: $2.490 x lt
+                          - generic [ref=e676]: Soprole
+                          - generic [ref=e677]: Yoghurt Batido Frutilla Botella, 1000 ml
+                          - generic [ref=e678]: Agotado
+                    - button "Revisar productos similares - Yoghurt Batido Frutilla Botella, 1000 ml" [ref=e680]: Revisar productos similares
+                  - group [ref=e683]:
+                    - link "Mermelada Frutilla, 400 g" [ref=e684] [cursor=pointer]:
+                      - /url: /ip/dulces-mermeladas-y-manjar/00780180010869?from=/search
+                      - generic [ref=e685]: Mermelada Frutilla, 400 g
+                    - generic [ref=e687]:
+                      - generic [ref=e690]:
+                        - generic [ref=e691]:
+                          - img "Mermelada Frutilla, 400 g"
+                        - button "Agregar al carro - Mermelada Frutilla, 400 g" [ref=e694] [cursor=pointer]:
+                          - generic "agregar" [ref=e695]: 
+                          - generic [ref=e696]: Agregar
+                      - generic [ref=e698]:
+                        - generic [ref=e700]:
+                          - generic [ref=e701]: $1.890
+                          - generic [ref=e702]: precio actual $1.890
+                        - generic [ref=e703]: Aconcagua
+                        - generic [ref=e704]: Mermelada Frutilla, 400 g
+                  - group [ref=e707]:
+                    - link "Leche Cultivada Next Sabor Frutilla Botella, 1 L" [ref=e708] [cursor=pointer]:
+                      - /url: /ip/leche/00780290034502?from=/search
+                      - generic [ref=e709]: Leche Cultivada Next Sabor Frutilla Botella, 1 L
+                    - generic [ref=e711]:
+                      - generic [ref=e714]:
+                        - generic [ref=e715]:
+                          - img "Leche Cultivada Next Sabor Frutilla Botella, 1 L"
+                        - button "Agregar al carro - Leche Cultivada Next Sabor Frutilla Botella, 1 L" [ref=e718] [cursor=pointer]:
+                          - generic "agregar" [ref=e719]: 
+                          - generic [ref=e720]: Agregar
+                      - generic [ref=e722]:
+                        - generic [ref=e724]:
+                          - generic [ref=e725]: $2.390
+                          - generic [ref=e726]: precio actual $2.390
+                          - generic [ref=e727]: $2.390 x lt
+                        - generic [ref=e728]: Soprole
+                        - generic [ref=e729]: Leche Cultivada Next Sabor Frutilla Botella, 1 L
+                  - group [ref=e732]:
+                    - link "Yoghurt Light & Free con trozos De Frutilla, 145 g" [ref=e733] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780295501122?from=/search
+                      - generic [ref=e734]: Yoghurt Light & Free con trozos De Frutilla, 145 g
+                    - generic [ref=e736]:
+                      - generic [ref=e739]:
+                        - generic [ref=e740]:
+                          - img "Yoghurt Light & Free con trozos De Frutilla, 145 g"
+                        - button "Agregar al carro - Yoghurt Light & Free con trozos De Frutilla, 145 g" [ref=e743] [cursor=pointer]:
+                          - generic "agregar" [ref=e744]: 
+                          - generic [ref=e745]: Agregar
+                      - generic [ref=e747]:
+                        - generic [ref=e749]:
+                          - generic [ref=e750]: $610
+                          - generic [ref=e751]: precio actual $610
+                          - generic [ref=e752]: $4.207 x kg
+                        - generic [ref=e753]: Danone
+                        - generic [ref=e754]: Yoghurt Light & Free con trozos De Frutilla, 145 g
+                  - group [ref=e757]:
+                    - link "Yoghurt Sin lactosa Frutilla Bolsa, 900 ml" [ref=e758] [cursor=pointer]:
+                      - /url: /ip/sin-lactosa/00780292000735?from=/search
+                      - generic [ref=e759]: Yoghurt Sin lactosa Frutilla Bolsa, 900 ml
+                    - generic [ref=e761]:
+                      - generic [ref=e764]:
+                        - generic [ref=e765]:
+                          - img "Yoghurt Sin lactosa Frutilla Bolsa, 900 ml"
+                        - button "Agregar al carro - Yoghurt Sin lactosa Frutilla Bolsa, 900 ml" [ref=e768] [cursor=pointer]:
+                          - generic "agregar" [ref=e769]: 
+                          - generic [ref=e770]: Agregar
+                      - generic [ref=e772]:
+                        - generic [ref=e774]:
+                          - generic [ref=e775]: $2.190
+                          - generic [ref=e776]: precio actual $2.190
+                          - generic [ref=e777]: $2.433 x kg
+                        - generic [ref=e778]: Colun
+                        - generic [ref=e779]: Yoghurt Sin lactosa Frutilla Bolsa, 900 ml
+                  - group [ref=e782]:
+                    - link "Leche Cultivada Light Sabor Frutilla Botella, 180 g" [ref=e783] [cursor=pointer]:
+                      - /url: /ip/leche/00780292000516?from=/search
+                      - generic [ref=e784]: Leche Cultivada Light Sabor Frutilla Botella, 180 g
+                    - generic [ref=e786]:
+                      - generic [ref=e789]:
+                        - generic [ref=e790]:
+                          - img "Leche Cultivada Light Sabor Frutilla Botella, 180 g"
+                        - button "Agregar al carro - Leche Cultivada Light Sabor Frutilla Botella, 180 g" [ref=e793] [cursor=pointer]:
+                          - generic "agregar" [ref=e794]: 
+                          - generic [ref=e795]: Agregar
+                      - generic [ref=e797]:
+                        - generic [ref=e799]:
+                          - generic [ref=e800]: $640
+                          - generic [ref=e801]: precio actual $640
+                          - generic [ref=e802]: $3.556 x kg
+                        - generic [ref=e803]: Colun
+                        - generic [ref=e804]: Leche Cultivada Light Sabor Frutilla Botella, 180 g
+                  - group [ref=e807]:
+                    - link "Mermelada sin azúcar Frutilla Doypack, 350 gr" [ref=e808] [cursor=pointer]:
+                      - /url: /ip/dulces-mermeladas-y-manjar/00780400000256?from=/search
+                      - generic [ref=e809]: Mermelada sin azúcar Frutilla Doypack, 350 gr
+                    - generic [ref=e811]:
+                      - generic [ref=e814]:
+                        - generic [ref=e815]:
+                          - img "Mermelada sin azúcar Frutilla Doypack, 350 gr"
+                        - button "Agregar al carro - Mermelada sin azúcar Frutilla Doypack, 350 gr" [ref=e818] [cursor=pointer]:
+                          - generic "agregar" [ref=e819]: 
+                          - generic [ref=e820]: Agregar
+                      - generic [ref=e822]:
+                        - generic [ref=e824]:
+                          - generic [ref=e825]: $2.990
+                          - generic [ref=e826]: precio actual $2.990
+                          - generic [ref=e827]: $7.475 x kg
+                        - generic [ref=e828]: En Línea
+                        - generic [ref=e829]: Mermelada sin azúcar Frutilla Doypack, 350 gr
+                  - group [ref=e832]:
+                    - link "Yoghurt Griego Sabor Frutilla Pote, 110 g" [ref=e833] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780295501085?from=/search
+                      - generic [ref=e834]: Yoghurt Griego Sabor Frutilla Pote, 110 g
+                    - generic [ref=e836]:
+                      - generic [ref=e839]:
+                        - generic [ref=e840]:
+                          - img "Yoghurt Griego Sabor Frutilla Pote, 110 g"
+                        - button "Agregar al carro - Yoghurt Griego Sabor Frutilla Pote, 110 g" [ref=e843] [cursor=pointer]:
+                          - generic "agregar" [ref=e844]: 
+                          - generic [ref=e845]: Agregar
+                      - generic [ref=e847]:
+                        - generic [ref=e849]:
+                          - generic [ref=e850]: $380
+                          - generic [ref=e851]: precio actual $380
+                          - generic [ref=e852]: $3.455 x kg
+                        - generic [ref=e853]: Oikos
+                        - generic [ref=e854]: Yoghurt Griego Sabor Frutilla Pote, 110 g
+                  - group [ref=e857]:
+                    - link "Yoghurt Batido sin Azúcar con Trozos Sabor Frutilla Pote, 155 g" [ref=e858] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780290000094?from=/search
+                      - generic [ref=e859]: Yoghurt Batido sin Azúcar con Trozos Sabor Frutilla Pote, 155 g
+                    - generic [ref=e861]:
+                      - generic [ref=e864]:
+                        - generic [ref=e865]:
+                          - img "Yoghurt Batido sin Azúcar con Trozos Sabor Frutilla Pote, 155 g"
+                        - button "Agregar al carro - Yoghurt Batido sin Azúcar con Trozos Sabor Frutilla Pote, 155 g" [ref=e868] [cursor=pointer]:
+                          - generic "agregar" [ref=e869]: 
+                          - generic [ref=e870]: Agregar
+                      - generic [ref=e872]:
+                        - generic [ref=e874]:
+                          - generic [ref=e875]: $720
+                          - generic [ref=e876]: precio actual $720
+                          - generic [ref=e877]: $4.645 x kg
+                        - generic [ref=e878]: Soprole
+                        - generic [ref=e879]: Yoghurt Batido sin Azúcar con Trozos Sabor Frutilla Pote, 155 g
+                  - group [ref=e882]:
+                    - link "Yoghurt Batido Sabor Frutilla Bolsa, 1 kg" [ref=e883] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780290036502?from=/search
+                      - generic [ref=e884]: Yoghurt Batido Sabor Frutilla Bolsa, 1 kg
+                    - generic [ref=e886]:
+                      - generic [ref=e889]:
+                        - generic [ref=e890]:
+                          - img "Yoghurt Batido Sabor Frutilla Bolsa, 1 kg"
+                        - button "Agregar al carro - Yoghurt Batido Sabor Frutilla Bolsa, 1 kg" [ref=e893] [cursor=pointer]:
+                          - generic "agregar" [ref=e894]: 
+                          - generic [ref=e895]: Agregar
+                      - generic [ref=e897]:
+                        - generic [ref=e899]:
+                          - generic [ref=e900]: $1.950
+                          - generic [ref=e901]: precio actual $1.950
+                          - generic [ref=e902]: $1.950 x kg
+                        - generic [ref=e903]: Soprole
+                        - generic [ref=e904]: Yoghurt Batido Sabor Frutilla Bolsa, 1 kg
+                  - group [ref=e907]:
+                    - link "Leche Cultivada Sabor Frutilla Botella, 1 L" [ref=e908] [cursor=pointer]:
+                      - /url: /ip/leche/00780290017002?from=/search
+                      - generic [ref=e909]: Leche Cultivada Sabor Frutilla Botella, 1 L
+                    - generic [ref=e911]:
+                      - generic [ref=e914]:
+                        - generic [ref=e915]:
+                          - img "Leche Cultivada Sabor Frutilla Botella, 1 L"
+                        - button "Agregar al carro - Leche Cultivada Sabor Frutilla Botella, 1 L" [ref=e918] [cursor=pointer]:
+                          - generic "agregar" [ref=e919]: 
+                          - generic [ref=e920]: Agregar
+                      - generic [ref=e922]:
+                        - generic [ref=e924]:
+                          - generic [ref=e925]: $2.490
+                          - generic [ref=e926]: precio actual $2.490
+                          - generic [ref=e927]: $2.490 x lt
+                        - generic [ref=e928]: Soprole
+                        - generic [ref=e929]: Leche Cultivada Sabor Frutilla Botella, 1 L
+                  - group [ref=e932]:
+                    - link "Mermelada Trozos De Frutilla, 200 g" [ref=e933] [cursor=pointer]:
+                      - /url: /ip/dulces-mermeladas-y-manjar/00780180010911?from=/search
+                      - generic [ref=e934]: Mermelada Trozos De Frutilla, 200 g
+                    - generic [ref=e936]:
+                      - generic [ref=e939]:
+                        - generic [ref=e940]:
+                          - img "Mermelada Trozos De Frutilla, 200 g"
+                        - button "Agregar al carro - Mermelada Trozos De Frutilla, 200 g" [ref=e943] [cursor=pointer]:
+                          - generic "agregar" [ref=e944]: 
+                          - generic [ref=e945]: Agregar
+                      - generic [ref=e947]:
+                        - generic [ref=e949]:
+                          - generic [ref=e950]: $1.150
+                          - generic [ref=e951]: precio actual $1.150
+                          - generic [ref=e952]: $5.750 x kg
+                        - generic [ref=e953]: Aconcagua
+                        - generic [ref=e954]: Mermelada Trozos De Frutilla, 200 g
+                  - group [ref=e957]:
+                    - link "Yoghurt con Probiótico y Semillas con Trozos Frutilla Pote, 140 g" [ref=e958] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780295501131?from=/search
+                      - generic [ref=e959]: Yoghurt con Probiótico y Semillas con Trozos Frutilla Pote, 140 g
+                    - generic [ref=e961]:
+                      - generic [ref=e964]:
+                        - generic [ref=e965]:
+                          - img "Yoghurt con Probiótico y Semillas con Trozos Frutilla Pote, 140 g"
+                        - button "Agregar al carro - Yoghurt con Probiótico y Semillas con Trozos Frutilla Pote, 140 g" [ref=e968] [cursor=pointer]:
+                          - generic "agregar" [ref=e969]: 
+                          - generic [ref=e970]: Agregar
+                      - generic [ref=e972]:
+                        - generic [ref=e974]:
+                          - generic [ref=e975]: $590
+                          - generic [ref=e976]: precio actual $590
+                          - generic [ref=e977]: $4.214 x kg
+                        - generic [ref=e978]: Activia
+                        - generic [ref=e979]: Yoghurt con Probiótico y Semillas con Trozos Frutilla Pote, 140 g
+                  - group [ref=e982]:
+                    - link "Yoghurt Goodnes con Probióticos Sabor Frutilla Pote, 140 g" [ref=e983] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00761328742403?from=/search
+                      - generic [ref=e984]: Yoghurt Goodnes con Probióticos Sabor Frutilla Pote, 140 g
+                    - generic [ref=e986]:
+                      - generic [ref=e989]:
+                        - generic [ref=e990]:
+                          - img "Yoghurt Goodnes con Probióticos Sabor Frutilla Pote, 140 g"
+                        - button "Agregar al carro - Yoghurt Goodnes con Probióticos Sabor Frutilla Pote, 140 g" [ref=e993] [cursor=pointer]:
+                          - generic "agregar" [ref=e994]: 
+                          - generic [ref=e995]: Agregar
+                      - generic [ref=e997]:
+                        - generic [ref=e999]:
+                          - generic [ref=e1000]: $540
+                          - generic [ref=e1001]: precio actual $540
+                          - generic [ref=e1002]: $3.857 x kg
+                        - generic [ref=e1003]: Nestlé
+                        - generic [ref=e1004]: Yoghurt Goodnes con Probióticos Sabor Frutilla Pote, 140 g
+                  - group [ref=e1007]:
+                    - link "Yoghurt Sin lactosa Frutilla, 155 g" [ref=e1008] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780290000189?from=/search
+                      - generic [ref=e1009]: Yoghurt Sin lactosa Frutilla, 155 g
+                    - generic [ref=e1011]:
+                      - generic [ref=e1014]:
+                        - generic [ref=e1015]:
+                          - img "Yoghurt Sin lactosa Frutilla, 155 g"
+                        - button "Agregar al carro - Yoghurt Sin lactosa Frutilla, 155 g" [ref=e1018] [cursor=pointer]:
+                          - generic "agregar" [ref=e1019]: 
+                          - generic [ref=e1020]: Agregar
+                      - generic [ref=e1022]:
+                        - generic [ref=e1024]:
+                          - generic [ref=e1025]: $720
+                          - generic [ref=e1026]: precio actual $720
+                          - generic [ref=e1027]: $4.645 x kg
+                        - generic [ref=e1028]: Soprole
+                        - generic [ref=e1029]: Yoghurt Sin lactosa Frutilla, 155 g
+                  - group [ref=e1032]:
+                    - link "Yoghurt Batido Light Sabor Frutilla Bolsa, 900 g" [ref=e1033] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780295501005?from=/search
+                      - generic [ref=e1034]: Yoghurt Batido Light Sabor Frutilla Bolsa, 900 g
+                    - generic [ref=e1036]:
+                      - generic [ref=e1039]:
+                        - generic [ref=e1040]:
+                          - img "Yoghurt Batido Light Sabor Frutilla Bolsa, 900 g"
+                        - button "Agregar al carro - Yoghurt Batido Light Sabor Frutilla Bolsa, 900 g" [ref=e1043] [cursor=pointer]:
+                          - generic "agregar" [ref=e1044]: 
+                          - generic [ref=e1045]: Agregar
+                      - generic [ref=e1047]:
+                        - generic [ref=e1049]:
+                          - generic [ref=e1050]: $2.050
+                          - generic [ref=e1051]: precio actual $2.050
+                          - generic [ref=e1052]: $2.278 x kg
+                        - generic [ref=e1053]: Danone
+                        - generic [ref=e1054]: Yoghurt Batido Light Sabor Frutilla Bolsa, 900 g
+                  - group [ref=e1057]:
+                    - link "Yoghurt Batido Sin Azúcar Sabor Frutilla Pote, 155 gr" [ref=e1058] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780290000217?from=/search
+                      - generic [ref=e1059]: Yoghurt Batido Sin Azúcar Sabor Frutilla Pote, 155 gr
+                    - generic [ref=e1061]:
+                      - generic [ref=e1064]:
+                        - generic [ref=e1065]:
+                          - img "Yoghurt Batido Sin Azúcar Sabor Frutilla Pote, 155 gr"
+                        - button "Agregar al carro - Yoghurt Batido Sin Azúcar Sabor Frutilla Pote, 155 gr" [ref=e1068] [cursor=pointer]:
+                          - generic "agregar" [ref=e1069]: 
+                          - generic [ref=e1070]: Agregar
+                      - generic [ref=e1072]:
+                        - generic [ref=e1074]:
+                          - generic [ref=e1075]: $680
+                          - generic [ref=e1076]: precio actual $680
+                          - generic [ref=e1077]: $4.387 x kg
+                        - generic [ref=e1078]: Soprole
+                        - generic [ref=e1079]: Yoghurt Batido Sin Azúcar Sabor Frutilla Pote, 155 gr
+                  - group [ref=e1082]:
+                    - link "Probiótico Uno Vitamina C Frutilla Pack 6 Botellas, 80 ml" [ref=e1083] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780290000415?from=/search
+                      - generic [ref=e1084]: Probiótico Uno Vitamina C Frutilla Pack 6 Botellas, 80 ml
+                    - generic [ref=e1086]:
+                      - generic [ref=e1089]:
+                        - generic [ref=e1090]:
+                          - img "Probiótico Uno Vitamina C Frutilla Pack 6 Botellas, 80 ml"
+                        - button "Agregar al carro - Probiótico Uno Vitamina C Frutilla Pack 6 Botellas, 80 ml" [ref=e1093] [cursor=pointer]:
+                          - generic "agregar" [ref=e1094]: 
+                          - generic [ref=e1095]: Agregar
+                      - generic [ref=e1097]:
+                        - generic [ref=e1099]:
+                          - generic [ref=e1100]: $2.450
+                          - generic [ref=e1101]: precio actual $2.450
+                          - generic [ref=e1102]: $30.625 x lt
+                        - generic [ref=e1103]: Soprole
+                        - generic [ref=e1104]: Probiótico Uno Vitamina C Frutilla Pack 6 Botellas, 80 ml
+                  - group [ref=e1107]:
+                    - link "Mermelada Frutilla, 200 g" [ref=e1108] [cursor=pointer]:
+                      - /url: /ip/dulces-mermeladas-y-manjar/00780400000229?from=/search
+                      - generic [ref=e1109]: Mermelada Frutilla, 200 g
+                    - generic [ref=e1111]:
+                      - generic [ref=e1114]:
+                        - generic [ref=e1115]:
+                          - img "Mermelada Frutilla, 200 g"
+                        - button "Agregar al carro - Mermelada Frutilla, 200 g" [ref=e1118] [cursor=pointer]:
+                          - generic "agregar" [ref=e1119]: 
+                          - generic [ref=e1120]: Agregar
+                      - generic [ref=e1122]:
+                        - generic [ref=e1124]:
+                          - generic [ref=e1125]: $1.350
+                          - generic [ref=e1126]: precio actual $1.350
+                          - generic [ref=e1127]: $6.750 x kg
+                        - generic [ref=e1128]: Honesta
+                        - generic [ref=e1129]: Mermelada Frutilla, 200 g
+                  - group [ref=e1132]:
+                    - link "Yoghurt Sin lactosa Sabor Frutilla Botella, 900 g" [ref=e1133] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780291000316?from=/search
+                      - generic [ref=e1134]: Yoghurt Sin lactosa Sabor Frutilla Botella, 900 g
+                    - generic [ref=e1136]:
+                      - generic [ref=e1139]:
+                        - generic [ref=e1140]:
+                          - img "Yoghurt Sin lactosa Sabor Frutilla Botella, 900 g"
+                        - button "Agregar al carro - Yoghurt Sin lactosa Sabor Frutilla Botella, 900 g" [ref=e1143] [cursor=pointer]:
+                          - generic "agregar" [ref=e1144]: 
+                          - generic [ref=e1145]: Agregar
+                      - generic [ref=e1147]:
+                        - generic [ref=e1149]:
+                          - generic [ref=e1150]: $3.090
+                          - generic [ref=e1151]: precio actual $3.090
+                          - generic [ref=e1152]: $3.433 x kg
+                        - generic [ref=e1153]: Loncoleche
+                        - generic [ref=e1154]: Yoghurt Sin lactosa Sabor Frutilla Botella, 900 g
+                  - group [ref=e1157]:
+                    - link "Yoghurt Griego Colchón de Frutas con Trozos de Frutilla Pote, 150 g" [ref=e1158] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780295500923?from=/search
+                      - generic [ref=e1159]: Yoghurt Griego Colchón de Frutas con Trozos de Frutilla Pote, 150 g
+                    - generic [ref=e1161]:
+                      - generic [ref=e1164]:
+                        - generic [ref=e1165]:
+                          - img "Yoghurt Griego Colchón de Frutas con Trozos de Frutilla Pote, 150 g"
+                        - button "Agregar al carro - Yoghurt Griego Colchón de Frutas con Trozos de Frutilla Pote, 150 g" [ref=e1168] [cursor=pointer]:
+                          - generic "agregar" [ref=e1169]: 
+                          - generic [ref=e1170]: Agregar
+                      - generic [ref=e1172]:
+                        - generic [ref=e1174]:
+                          - generic [ref=e1175]: $750
+                          - generic [ref=e1176]: precio actual $750
+                          - generic [ref=e1177]: $5.000 x kg
+                        - generic [ref=e1178]: Oikos
+                        - generic [ref=e1179]: Yoghurt Griego Colchón de Frutas con Trozos de Frutilla Pote, 150 g
+                  - group [ref=e1182]:
+                    - link "Saborizante de Leche En Polvo Fortificado Tradicional Sabor Frutilla, 180 g" [ref=e1183] [cursor=pointer]:
+                      - /url: /ip/leche/00780461452123?from=/search
+                      - generic [ref=e1184]: Saborizante de Leche En Polvo Fortificado Tradicional Sabor Frutilla, 180 g
+                    - generic [ref=e1186]:
+                      - generic [ref=e1189]:
+                        - generic [ref=e1190]:
+                          - img "Saborizante de Leche En Polvo Fortificado Tradicional Sabor Frutilla, 180 g"
+                        - button "Agregar al carro - Saborizante de Leche En Polvo Fortificado Tradicional Sabor Frutilla, 180 g" [ref=e1193] [cursor=pointer]:
+                          - generic "agregar" [ref=e1194]: 
+                          - generic [ref=e1195]: Agregar
+                      - generic [ref=e1197]:
+                        - generic [ref=e1199]:
+                          - generic [ref=e1200]: $1.590
+                          - generic [ref=e1201]: precio actual $1.590
+                          - generic [ref=e1202]: $8.833 x kg
+                        - generic [ref=e1203]: Lider
+                        - generic [ref=e1204]: Saborizante de Leche En Polvo Fortificado Tradicional Sabor Frutilla, 180 g
+                  - group [ref=e1207]:
+                    - link "Yoghurt Batido Sabor Frutilla Pote, 110 g" [ref=e1208] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780461747103?from=/search
+                      - generic [ref=e1209]: Yoghurt Batido Sabor Frutilla Pote, 110 g
+                    - generic [ref=e1211]:
+                      - generic [ref=e1214]:
+                        - generic [ref=e1215]:
+                          - img "Yoghurt Batido Sabor Frutilla Pote, 110 g"
+                        - button "Agregar al carro - Yoghurt Batido Sabor Frutilla Pote, 110 g" [ref=e1218] [cursor=pointer]:
+                          - generic "agregar" [ref=e1219]: 
+                          - generic [ref=e1220]: Agregar
+                      - generic [ref=e1222]:
+                        - generic [ref=e1224]:
+                          - generic [ref=e1225]: $240
+                          - generic [ref=e1226]: precio actual $240
+                          - generic [ref=e1227]: $2.000 x kg
+                        - generic [ref=e1228]: Lider
+                        - generic [ref=e1229]: Yoghurt Batido Sabor Frutilla Pote, 110 g
+            - navigation "paginación" [ref=e1232]:
+              - list [ref=e1233]:
+                - listitem [ref=e1234]
+                - listitem [ref=e1236]:
+                  - link "1" [ref=e1237] [cursor=pointer]:
+                    - /url: /search?q=frutilla+fresca
+                - listitem [ref=e1238]:
+                  - link "Ir a la página 2" [ref=e1239] [cursor=pointer]:
+                    - /url: /search?q=frutilla+fresca&page=2
+                    - text: "2"
+                - listitem [ref=e1240]:
+                  - link "Página siguiente" [ref=e1241] [cursor=pointer]:
+                    - /url: /search?q=frutilla+fresca&page=2
+                    - generic [ref=e1242]: 
+  - alert [ref=e1250]

@@ -1,0 +1,247 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: cereal familiar
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e81]:
+            - generic [ref=e84]:
+              - generic [ref=e85]:
+                - button "Precio" [ref=e88]:
+                  - generic [ref=e89]: Precio
+                  - img [ref=e90]: 
+                - separator [ref=e91]
+              - generic [ref=e92]:
+                - button "Marca" [ref=e95]:
+                  - generic [ref=e96]: Marca
+                  - img [ref=e97]: 
+                - separator [ref=e98]
+              - generic [ref=e99]:
+                - button "Categoría" [ref=e102]:
+                  - generic [ref=e103]: Categoría
+                  - img [ref=e104]: 
+                - separator [ref=e105]
+            - generic [ref=e108]:
+              - heading "Resultados para cereal familiar (3)" [level=2] [ref=e116]: Resultados para cereal familiar(3)
+              - generic [ref=e117]:
+                - group [ref=e120]:
+                  - link "Cereal zucosos, 805 g" [ref=e121] [cursor=pointer]:
+                    - /url: https://super.lider.cl/wapcrs/track?bt=1&eventST=click&plmt=sp-search-middle~desktop~&pos=1&tax=&rdf=1&rd=https%3A%2F%2Fsuper.lider.cl%2Fip%2Fcereales%2F00844529269460&adUid=a75dc4a1-58fb-4e0f-b2da-62436f23e265&mloc=sp-search-middle&pltfm=desktop&pgId=cereal%20familiar&pt=search&spQs=A2VGG1YLcSvlfFmSovDQ7n4UQ2MkMFA7LQIS-vT1xibgeL1Mdrfs5Wkb-zrDcRZEi09JV-7WWKuyGg9Xtm5HqfCo4uPevnuenFa4od2MEt98vkx4SxaP8SAim80Y_DcXq1mMqBZHGvDHRh9syPZXkrtM02LHy_8aIstHmZgs8BlQrjXYo2aIYl928KfCG7w0RuJEMMA2i5s1PHDWCx62uhmhVVyeJW6TZWFAw3kqEm9VBPqekD0JTreQGKEo3VUvPtRWJieyBiEtygWiBll-CIW1J7zGCk2OcC6PjvkXgRw&storeId=0000000088&tn=WCL_GR&wtn=kltzop&bkt=ace1_default%7Cace2_default%7Cace3_default%7Csearch_default&/ip/cereales/00844529269460
+                    - generic [ref=e122]: Cereal zucosos, 805 g
+                  - generic [ref=e124]:
+                    - generic [ref=e125]:
+                      - generic [ref=e127]:
+                        - img "Cereal zucosos, 805 g" [ref=e129]
+                        - button "Agregar al carro - Cereal zucosos, 805 g" [ref=e132] [cursor=pointer]:
+                          - generic "agregar" [ref=e133]: 
+                          - generic [ref=e134]: Agregar
+                      - generic [ref=e138]: Patrocinado
+                    - generic [ref=e139]:
+                      - generic [ref=e141]:
+                        - generic [ref=e142]: $5.450
+                        - generic [ref=e143]: precio actual $5.450
+                        - generic [ref=e144]: $6.770 x kg
+                      - generic [ref=e145]: Nestle
+                      - generic [ref=e146]: Cereal zucosos, 805 g
+                - group [ref=e149]:
+                  - link "Cereal Sin Azúcar Añadida, 350 g" [ref=e150] [cursor=pointer]:
+                    - /url: https://super.lider.cl/wapcrs/track?bt=1&eventST=click&plmt=sp-search-middle~desktop~&pos=2&tax=&rdf=1&rd=https%3A%2F%2Fsuper.lider.cl%2Fip%2Fcereales%2F00761328752150&adUid=a75dc4a1-58fb-4e0f-b2da-62436f23e265&mloc=sp-search-middle&pltfm=desktop&pgId=cereal%20familiar&pt=search&spQs=celCglHL6DeMsAoz888Z06nUx_L0BwRLBNmLMEx5ikbrJIptQW3pJfxGFxzqTd31i09JV-7WWKuyGg9Xtm5HqfCo4uPevnuenFa4od2MEt98vkx4SxaP8SAim80Y_DcXq1mMqBZHGvDHRh9syPZXkrtM02LHy_8aIstHmZgs8BlQrjXYo2aIYl928KfCG7w0RuJEMMA2i5s1PHDWCx62uhmhVVyeJW6TZWFAw3kqEm9VBPqekD0JTreQGKEo3VUvPtRWJieyBiEtygWiBll-CIW1J7zGCk2OcC6PjvkXgRw&storeId=0000000088&tn=WCL_GR&wtn=kltzop&bkt=ace1_default%7Cace2_default%7Cace3_default%7Csearch_default&/ip/cereales/00761328752150
+                    - generic [ref=e151]: Cereal Sin Azúcar Añadida, 350 g
+                  - generic [ref=e153]:
+                    - generic [ref=e154]:
+                      - generic [ref=e155]:
+                        - generic [ref=e157]: Combina 2 x $5.790
+                        - button "Combina 2 x $5.790. Ver combinaciones aceptadas y coincidir productos." [ref=e158] [cursor=pointer]: Combinar
+                      - generic [ref=e159]:
+                        - img "Cereal Sin Azúcar Añadida, 350 g" [ref=e161]
+                        - button "Agregar al carro - Cereal Sin Azúcar Añadida, 350 g" [ref=e164] [cursor=pointer]:
+                          - generic "agregar" [ref=e165]: 
+                          - generic [ref=e166]: Agregar
+                      - generic [ref=e170]: Patrocinado
+                    - generic [ref=e171]:
+                      - generic [ref=e173]:
+                        - generic [ref=e174]: $3.590
+                        - generic [ref=e175]: precio actual $3.590
+                        - generic [ref=e176]: $10.257 x kg
+                      - generic [ref=e177]: Chocapic
+                      - generic [ref=e178]: Cereal Sin Azúcar Añadida, 350 g
+                - group [ref=e181]:
+                  - link "Cereal Multigranos, 350 g" [ref=e182] [cursor=pointer]:
+                    - /url: https://super.lider.cl/wapcrs/track?bt=1&eventST=click&plmt=sp-search-middle~desktop~&pos=3&tax=&rdf=1&rd=https%3A%2F%2Fsuper.lider.cl%2Fip%2Fcereales%2F00761328759346&adUid=a75dc4a1-58fb-4e0f-b2da-62436f23e265&mloc=sp-search-middle&pltfm=desktop&pgId=cereal%20familiar&pt=search&spQs=celCglHL6DeMsAoz888Z08bt1P0MbTRBkOzDIsSOd0PwqSrKje4FbeWgVB1ZHY2Zi09JV-7WWKuyGg9Xtm5HqfCo4uPevnuenFa4od2MEt98vkx4SxaP8SAim80Y_DcXq1mMqBZHGvDHRh9syPZXkrtM02LHy_8aIstHmZgs8BlQrjXYo2aIYl928KfCG7w0RuJEMMA2i5s1PHDWCx62uhmhVVyeJW6TZWFAw3kqEm9VBPqekD0JTreQGKEo3VUvPtRWJieyBiEtygWiBll-CIW1J7zGCk2OcC6PjvkXgRw&storeId=0000000088&tn=WCL_GR&wtn=kltzop&bkt=ace1_default%7Cace2_default%7Cace3_default%7Csearch_default&/ip/cereales/00761328759346
+                    - generic [ref=e183]: Cereal Multigranos, 350 g
+                  - generic [ref=e185]:
+                    - generic [ref=e186]:
+                      - generic [ref=e187]:
+                        - generic [ref=e189]: Combina 2 x $6.690
+                        - button "Combina 2 x $6.690. Ver combinaciones aceptadas y coincidir productos." [ref=e190] [cursor=pointer]: Combinar
+                      - generic [ref=e191]:
+                        - img "Cereal Multigranos, 350 g" [ref=e193]
+                        - button "Agregar al carro - Cereal Multigranos, 350 g" [ref=e196] [cursor=pointer]:
+                          - generic "agregar" [ref=e197]: 
+                          - generic [ref=e198]: Agregar
+                      - generic [ref=e202]: Patrocinado
+                    - generic [ref=e203]:
+                      - generic [ref=e205]:
+                        - generic [ref=e206]: $4.150
+                        - generic [ref=e207]: precio actual $4.150
+                        - generic [ref=e208]: $11.857 x kg
+                      - generic [ref=e209]: Cheerios
+                      - generic [ref=e210]: Cereal Multigranos, 350 g
+                - group [ref=e213]:
+                  - link "Cereal Miel y Almendras, 330 g" [ref=e214] [cursor=pointer]:
+                    - /url: https://super.lider.cl/wapcrs/track?bt=1&eventST=click&plmt=sp-search-middle~desktop~&pos=4&tax=&rdf=1&rd=https%3A%2F%2Fsuper.lider.cl%2Fip%2Fcereales%2F00761328783352&adUid=a75dc4a1-58fb-4e0f-b2da-62436f23e265&mloc=sp-search-middle&pltfm=desktop&pgId=cereal%20familiar&pt=search&spQs=celCglHL6DeMsAoz888Z08WqZnTMzgLVcR087UOSj98IyLZoPF1NTHIWHWmDmmC-i09JV-7WWKuyGg9Xtm5HqfCo4uPevnuenFa4od2MEt98vkx4SxaP8SAim80Y_DcXq1mMqBZHGvDHRh9syPZXkn8P9ffo2pgY2aozbZ547GN5xTkGomBqoLcMwc4_R6OqRuJEMMA2i5s1PHDWCx62uhmhVVyeJW6TZWFAw3kqEm9VBPqekD0JTreQGKEo3VUvPtRWJieyBiEtygWiBll-CIW1J7zGCk2OcC6PjvkXgRw&storeId=0000000088&tn=WCL_GR&wtn=kltzop&bkt=ace1_default%7Cace2_default%7Cace3_default%7Csearch_default&/ip/cereales/00761328783352
+                    - generic [ref=e215]: Cereal Miel y Almendras, 330 g
+                  - generic [ref=e217]:
+                    - generic [ref=e218]:
+                      - generic [ref=e219]:
+                        - generic [ref=e221]: Combina 2 x $5.590
+                        - button "Combina 2 x $5.590. Ver combinaciones aceptadas y coincidir productos." [ref=e222] [cursor=pointer]: Combinar
+                      - generic [ref=e223]:
+                        - img "Cereal Miel y Almendras, 330 g" [ref=e225]
+                        - button "Agregar al carro - Cereal Miel y Almendras, 330 g" [ref=e228] [cursor=pointer]:
+                          - generic "agregar" [ref=e229]: 
+                          - generic [ref=e230]: Agregar
+                      - generic [ref=e234]: Patrocinado
+                    - generic [ref=e235]:
+                      - generic [ref=e237]:
+                        - generic [ref=e238]: $3.490
+                        - generic [ref=e239]: precio actual $3.490
+                        - generic [ref=e240]: $10.576 x kg
+                      - generic [ref=e241]: Fitness
+                      - generic [ref=e242]: Cereal Miel y Almendras, 330 g
+                - group [ref=e245]:
+                  - link "Cereal Trocitos Choco-Crush, 350 g" [ref=e246] [cursor=pointer]:
+                    - /url: https://super.lider.cl/wapcrs/track?bt=1&eventST=click&plmt=sp-search-middle~desktop~&pos=5&tax=&rdf=1&rd=https%3A%2F%2Fsuper.lider.cl%2Fip%2Fcereales%2F00844529159536&adUid=a75dc4a1-58fb-4e0f-b2da-62436f23e265&mloc=sp-search-middle&pltfm=desktop&pgId=cereal%20familiar&pt=search&spQs=I4Wmv8EkpmeK5sUwr5-juMSLcq28fA-BQzFOX8euKtMmCScldwgIGTsEclXdP5xui09JV-7WWKuyGg9Xtm5HqfCo4uPevnuenFa4od2MEt98vkx4SxaP8SAim80Y_DcXq1mMqBZHGvDHRh9syPZXkn8P9ffo2pgY2aozbZ547GN5xTkGomBqoLcMwc4_R6OqRuJEMMA2i5s1PHDWCx62uhmhVVyeJW6TZWFAw3kqEm9VBPqekD0JTreQGKEo3VUvPtRWJieyBiEtygWiBll-CIW1J7zGCk2OcC6PjvkXgRw&storeId=0000000088&tn=WCL_GR&wtn=kltzop&bkt=ace1_default%7Cace2_default%7Cace3_default%7Csearch_default&/ip/cereales/00844529159536
+                    - generic [ref=e247]: Cereal Trocitos Choco-Crush, 350 g
+                  - generic [ref=e249]:
+                    - generic [ref=e250]:
+                      - generic [ref=e251]:
+                        - generic [ref=e253]: Combina 2 x $5.790
+                        - button "Combina 2 x $5.790. Ver combinaciones aceptadas y coincidir productos." [ref=e254] [cursor=pointer]: Combinar
+                      - generic [ref=e255]:
+                        - img "Cereal Trocitos Choco-Crush, 350 g" [ref=e257]
+                        - button "Agregar al carro - Cereal Trocitos Choco-Crush, 350 g" [ref=e260] [cursor=pointer]:
+                          - generic "agregar" [ref=e261]: 
+                          - generic [ref=e262]: Agregar
+                      - generic [ref=e266]: Patrocinado
+                    - generic [ref=e267]:
+                      - generic [ref=e269]:
+                        - generic [ref=e270]: $3.790
+                        - generic [ref=e271]: precio actual $3.790
+                        - generic [ref=e272]: $10.829 x kg
+                      - generic [ref=e273]: Chocapic
+                      - generic [ref=e274]: Cereal Trocitos Choco-Crush, 350 g
+                - group [ref=e277]:
+                  - link "Cereal Puffs Pera Espinaca Familiar, g ml" [ref=e278] [cursor=pointer]:
+                    - /url: /ip/cereales/00074585384290?from=/search
+                    - generic [ref=e279]: Cereal Puffs Pera Espinaca Familiar, g ml
+                  - generic [ref=e281]:
+                    - generic [ref=e284]:
+                      - img "Cereal Puffs Pera Espinaca Familiar, g ml" [ref=e286]
+                      - button "Agregar al carro - Cereal Puffs Pera Espinaca Familiar, g ml" [ref=e289] [cursor=pointer]:
+                        - generic "agregar" [ref=e290]: 
+                        - generic [ref=e291]: Agregar
+                    - generic [ref=e293]:
+                      - generic [ref=e295]:
+                        - generic [ref=e296]: $3.490
+                        - generic [ref=e297]: precio actual $3.490
+                        - generic [ref=e298]: $69.800 x kg
+                      - generic [ref=e299]: Kuna Foods
+                      - generic [ref=e300]: Cereal Puffs Pera Espinaca Familiar, g ml
+                - group [ref=e303]:
+                  - link "Suflés Bombas Maní Familiar, 100 g" [ref=e304] [cursor=pointer]:
+                    - /url: /ip/alimentacion-y-lactancia/00074585384295?from=/search
+                    - generic [ref=e305]: Suflés Bombas Maní Familiar, 100 g
+                  - generic [ref=e307]:
+                    - generic [ref=e310]:
+                      - img "Suflés Bombas Maní Familiar, 100 g" [ref=e312]
+                      - button "Agregar al carro - Suflés Bombas Maní Familiar, 100 g" [ref=e315] [cursor=pointer]:
+                        - generic "agregar" [ref=e316]: 
+                        - generic [ref=e317]: Agregar
+                    - generic [ref=e319]:
+                      - generic [ref=e321]:
+                        - generic [ref=e322]: $3.390
+                        - generic [ref=e323]: precio actual $3.390
+                        - generic [ref=e324]: $33.900 x kg
+                      - generic [ref=e325]: Kuna Foods
+                      - generic [ref=e326]: Suflés Bombas Maní Familiar, 100 g
+                - group [ref=e329]:
+                  - link "Suflés Bombas Mediterráneas Familiar, 100 g" [ref=e330] [cursor=pointer]:
+                    - /url: /ip/alimentacion-y-lactancia/00074585384296?from=/search
+                    - generic [ref=e331]: Suflés Bombas Mediterráneas Familiar, 100 g
+                  - generic [ref=e333]:
+                    - generic [ref=e336]:
+                      - img "Suflés Bombas Mediterráneas Familiar, 100 g" [ref=e338]
+                      - button "Agregar al carro - Suflés Bombas Mediterráneas Familiar, 100 g" [ref=e341] [cursor=pointer]:
+                        - generic "agregar" [ref=e342]: 
+                        - generic [ref=e343]: Agregar
+                    - generic [ref=e345]:
+                      - generic [ref=e347]:
+                        - generic [ref=e348]: $3.390
+                        - generic [ref=e349]: precio actual $3.390
+                        - generic [ref=e350]: $33.900 x kg
+                      - generic [ref=e351]: Kuna Foods
+                      - generic [ref=e352]: Suflés Bombas Mediterráneas Familiar, 100 g
+  - alert [ref=e361]

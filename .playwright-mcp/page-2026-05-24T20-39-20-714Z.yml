@@ -1,0 +1,663 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: te verde matcha
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e81]:
+            - generic [ref=e84]:
+              - generic [ref=e85]:
+                - button "Precio" [ref=e88]:
+                  - generic [ref=e89]: Precio
+                  - img [ref=e90]: 
+                - separator [ref=e91]
+              - generic [ref=e92]:
+                - button "Campaña" [ref=e95]:
+                  - generic [ref=e96]: Campaña
+                  - img [ref=e97]: 
+                - separator [ref=e98]
+              - generic [ref=e99]:
+                - button "Marca" [ref=e102]:
+                  - generic [ref=e103]: Marca
+                  - img [ref=e104]: 
+                - separator [ref=e105]
+              - generic [ref=e106]:
+                - button "Categoría" [ref=e109]:
+                  - generic [ref=e110]: Categoría
+                  - img [ref=e111]: 
+                - separator [ref=e112]
+            - generic [ref=e115]:
+              - heading "Resultados para te verde matcha (31)" [level=2] [ref=e123]: Resultados para te verde matcha(31)
+              - generic [ref=e124]:
+                - group [ref=e127]:
+                  - link "Té Verde con Matcha Caja, 40 g" [ref=e128] [cursor=pointer]:
+                    - /url: /ip/cafe-te-y-hierbas/00780187500184?from=/search
+                    - generic [ref=e129]: Té Verde con Matcha Caja, 40 g
+                  - generic [ref=e131]:
+                    - generic [ref=e132]:
+                      - generic [ref=e134]:
+                        - generic [ref=e136]: 
+                        - text: Rebaja
+                      - generic [ref=e137]:
+                        - img "Té Verde con Matcha Caja, 40 g" [ref=e139]
+                        - button "Agregar al carro - Té Verde con Matcha Caja, 40 g" [ref=e142] [cursor=pointer]:
+                          - generic "agregar" [ref=e143]: 
+                          - generic [ref=e144]: Agregar
+                    - generic [ref=e146]:
+                      - generic [ref=e148]:
+                        - generic [ref=e149]: $1.850
+                        - generic [ref=e150]: precio actual $1.850, Costaba $2.250
+                        - generic [ref=e151]: $93 x un
+                        - generic [ref=e152]: $2.250
+                        - generic [ref=e153]: Ahorra $400
+                      - generic [ref=e154]: Supremo
+                      - generic [ref=e155]: Té Verde con Matcha Caja, 40 g
+                - group [ref=e158]:
+                  - link "Té Verde Clasico Caja, 20 Un" [ref=e159] [cursor=pointer]:
+                    - /url: /ip/cafe-te-y-hierbas/00506327010135?from=/search
+                    - generic [ref=e160]: Té Verde Clasico Caja, 20 Un
+                  - generic [ref=e162]:
+                    - generic [ref=e165]:
+                      - img "Té Verde Clasico Caja, 20 Un" [ref=e167]
+                      - button "Agregar al carro - Té Verde Clasico Caja, 20 Un" [ref=e170] [cursor=pointer]:
+                        - generic "agregar" [ref=e171]: 
+                        - generic [ref=e172]: Agregar
+                    - generic [ref=e174]:
+                      - generic [ref=e176]:
+                        - generic [ref=e177]: $2.750
+                        - generic [ref=e178]: precio actual $2.750
+                        - generic [ref=e179]: $138 x kg
+                      - generic [ref=e180]: Lipton
+                      - generic [ref=e181]: Té Verde Clasico Caja, 20 Un
+                - group [ref=e184]:
+                  - link "Té Verde Premium Caja, 100 g" [ref=e185] [cursor=pointer]:
+                    - /url: /ip/cafe-te-y-hierbas/00780187500059?from=/search
+                    - generic [ref=e186]: Té Verde Premium Caja, 100 g
+                  - generic [ref=e188]:
+                    - generic [ref=e191]:
+                      - img "Té Verde Premium Caja, 100 g" [ref=e193]
+                      - button "Agregar al carro - Té Verde Premium Caja, 100 g" [ref=e196] [cursor=pointer]:
+                        - generic "agregar" [ref=e197]: 
+                        - generic [ref=e198]: Agregar
+                    - generic [ref=e200]:
+                      - generic [ref=e202]:
+                        - generic [ref=e203]: $3.890
+                        - generic [ref=e204]: precio actual $3.890
+                        - generic [ref=e205]: $78 x un
+                      - generic [ref=e206]: Supremo
+                      - generic [ref=e207]: Té Verde Premium Caja, 100 g
+                - group [ref=e210]:
+                  - link "Té Verde China 20 un Caja, 40 g" [ref=e211] [cursor=pointer]:
+                    - /url: /ip/cafe-te-y-hierbas/00780790000090?from=/search
+                    - generic [ref=e212]: Té Verde China 20 un Caja, 40 g
+                  - generic [ref=e214]:
+                    - generic [ref=e217]:
+                      - img "Té Verde China 20 un Caja, 40 g" [ref=e219]
+                      - button "Agregar al carro - Té Verde China 20 un Caja, 40 g" [ref=e222] [cursor=pointer]:
+                        - generic "agregar" [ref=e223]: 
+                        - generic [ref=e224]: Agregar
+                    - generic [ref=e226]:
+                      - generic [ref=e228]:
+                        - generic [ref=e229]: $1.150
+                        - generic [ref=e230]: precio actual $1.150
+                        - generic [ref=e231]: $58 x un
+                      - generic [ref=e232]: Lider
+                      - generic [ref=e233]: Té Verde China 20 un Caja, 40 g
+                - group [ref=e236]:
+                  - link "Té Verde Frutos Del Bosque Caja, 40 g" [ref=e237] [cursor=pointer]:
+                    - /url: /ip/cafe-te-y-hierbas/00780187500103?from=/search
+                    - generic [ref=e238]: Té Verde Frutos Del Bosque Caja, 40 g
+                  - generic [ref=e240]:
+                    - generic [ref=e241]:
+                      - generic [ref=e243]:
+                        - generic [ref=e245]: 
+                        - text: Rebaja
+                      - generic [ref=e246]:
+                        - img "Té Verde Frutos Del Bosque Caja, 40 g" [ref=e248]
+                        - button "Agregar al carro - Té Verde Frutos Del Bosque Caja, 40 g" [ref=e251] [cursor=pointer]:
+                          - generic "agregar" [ref=e252]: 
+                          - generic [ref=e253]: Agregar
+                    - generic [ref=e255]:
+                      - generic [ref=e257]:
+                        - generic [ref=e258]: $1.590
+                        - generic [ref=e259]: precio actual $1.590, Costaba $1.950
+                        - generic [ref=e260]: $159 x un
+                        - generic [ref=e261]: $1.950
+                        - generic [ref=e262]: Ahorra $360
+                      - generic [ref=e263]: Supremo
+                      - generic [ref=e264]: Té Verde Frutos Del Bosque Caja, 40 g
+                - group [ref=e267]:
+                  - link "Té Verde con Limón Caja, 40 g" [ref=e268] [cursor=pointer]:
+                    - /url: /ip/cafe-te-y-hierbas/00780187505514?from=/search
+                    - generic [ref=e269]: Té Verde con Limón Caja, 40 g
+                  - generic [ref=e271]:
+                    - generic [ref=e274]:
+                      - img "Té Verde con Limón Caja, 40 g" [ref=e276]
+                      - button "Agregar al carro - Té Verde con Limón Caja, 40 g" [ref=e279] [cursor=pointer]:
+                        - generic "agregar" [ref=e280]: 
+                        - generic [ref=e281]: Agregar
+                    - generic [ref=e283]:
+                      - generic [ref=e285]:
+                        - generic [ref=e286]: $1.750
+                        - generic [ref=e287]: precio actual $1.750
+                        - generic [ref=e288]: $88 x un
+                      - generic [ref=e289]: Supremo
+                      - generic [ref=e290]: Té Verde con Limón Caja, 40 g
+                - group [ref=e293]:
+                  - link "Té Verde con Moringa, Jengibre y Limón Caja, 40 g" [ref=e294] [cursor=pointer]:
+                    - /url: /ip/cafe-te-y-hierbas/00780187500216?from=/search
+                    - generic [ref=e295]: Té Verde con Moringa, Jengibre y Limón Caja, 40 g
+                  - generic [ref=e297]:
+                    - generic [ref=e300]:
+                      - img "Té Verde con Moringa, Jengibre y Limón Caja, 40 g" [ref=e302]
+                      - button "Agregar al carro - Té Verde con Moringa, Jengibre y Limón Caja, 40 g" [ref=e305] [cursor=pointer]:
+                        - generic "agregar" [ref=e306]: 
+                        - generic [ref=e307]: Agregar
+                    - generic [ref=e309]:
+                      - generic [ref=e311]:
+                        - generic [ref=e312]: $2.250
+                        - generic [ref=e313]: precio actual $2.250
+                        - generic [ref=e314]: $113 x un
+                      - generic [ref=e315]: Superior
+                      - generic [ref=e316]: Té Verde con Moringa, Jengibre y Limón Caja, 40 g
+                - group [ref=e319]:
+                  - link "Té Verde Chino Caja, 200 g" [ref=e320] [cursor=pointer]:
+                    - /url: /ip/cafe-te-y-hierbas/00690111870702?from=/search
+                    - generic [ref=e321]: Té Verde Chino Caja, 200 g
+                  - generic [ref=e323]:
+                    - generic [ref=e326]:
+                      - img "Té Verde Chino Caja, 200 g" [ref=e328]
+                      - button "Agregar al carro - Té Verde Chino Caja, 200 g" [ref=e331] [cursor=pointer]:
+                        - generic "agregar" [ref=e332]: 
+                        - generic [ref=e333]: Agregar
+                    - generic [ref=e335]:
+                      - generic [ref=e337]:
+                        - generic [ref=e338]: $6.190
+                        - generic [ref=e339]: precio actual $6.190
+                      - generic [ref=e340]: Green
+                      - generic [ref=e341]: Té Verde Chino Caja, 200 g
+                - group [ref=e344]:
+                  - link "Té Verde Chino Caja, 20 Un" [ref=e345] [cursor=pointer]:
+                    - /url: /ip/cafe-te-y-hierbas/00690111870701?from=/search
+                    - generic [ref=e346]: Té Verde Chino Caja, 20 Un
+                  - generic [ref=e348]:
+                    - generic [ref=e351]:
+                      - img "Té Verde Chino Caja, 20 Un" [ref=e353]
+                      - button "Agregar al carro - Té Verde Chino Caja, 20 Un" [ref=e356] [cursor=pointer]:
+                        - generic "agregar" [ref=e357]: 
+                        - generic [ref=e358]: Agregar
+                    - generic [ref=e360]:
+                      - generic [ref=e362]:
+                        - generic [ref=e363]: $1.350
+                        - generic [ref=e364]: precio actual $1.350
+                        - generic [ref=e365]: $33.750 x kg
+                      - generic [ref=e366]: Green
+                      - generic [ref=e367]: Té Verde Chino Caja, 20 Un
+                - group [ref=e370]:
+                  - link "Té Verde y Limón Caja, 16 g" [ref=e371] [cursor=pointer]:
+                    - /url: /ip/cafe-te-y-hierbas/00007017717743?from=/search
+                    - generic [ref=e372]: Té Verde y Limón Caja, 16 g
+                  - generic [ref=e374]:
+                    - generic [ref=e377]:
+                      - img "Té Verde y Limón Caja, 16 g" [ref=e379]
+                      - button "Agregar al carro - Té Verde y Limón Caja, 16 g" [ref=e382] [cursor=pointer]:
+                        - generic "agregar" [ref=e383]: 
+                        - generic [ref=e384]: Agregar
+                    - generic [ref=e386]:
+                      - generic [ref=e388]:
+                        - generic [ref=e389]: $3.190
+                        - generic [ref=e390]: precio actual $3.190
+                        - generic [ref=e391]: $319 x un
+                      - generic [ref=e392]: Twinings
+                      - generic [ref=e393]: Té Verde y Limón Caja, 16 g
+                - group [ref=e396]:
+                  - link "Té Verde Premium Caja, 40 g" [ref=e397] [cursor=pointer]:
+                    - /url: /ip/cafe-te-y-hierbas/00780187500058?from=/search
+                    - generic [ref=e398]: Té Verde Premium Caja, 40 g
+                  - generic [ref=e400]:
+                    - generic [ref=e403]:
+                      - img "Té Verde Premium Caja, 40 g" [ref=e405]
+                      - button "Agregar al carro - Té Verde Premium Caja, 40 g" [ref=e408] [cursor=pointer]:
+                        - generic "agregar" [ref=e409]: 
+                        - generic [ref=e410]: Agregar
+                    - generic [ref=e412]:
+                      - generic [ref=e414]:
+                        - generic [ref=e415]: $1.790
+                        - generic [ref=e416]: precio actual $1.790
+                        - generic [ref=e417]: $90 x un
+                      - generic [ref=e418]: Supremo
+                      - generic [ref=e419]: Té Verde Premium Caja, 40 g
+                - group [ref=e422]:
+                  - link "Té Verde Hoja Supremo Bolsa, 250 g" [ref=e423] [cursor=pointer]:
+                    - /url: /ip/cafe-te-y-hierbas/00780187501502?from=/search
+                    - generic [ref=e424]: Té Verde Hoja Supremo Bolsa, 250 g
+                  - generic [ref=e426]:
+                    - generic [ref=e429]:
+                      - img "Té Verde Hoja Supremo Bolsa, 250 g" [ref=e431]
+                      - button "Agregar al carro - Té Verde Hoja Supremo Bolsa, 250 g" [ref=e434] [cursor=pointer]:
+                        - generic "agregar" [ref=e435]: 
+                        - generic [ref=e436]: Agregar
+                    - generic [ref=e438]:
+                      - generic [ref=e440]:
+                        - generic [ref=e441]: $4.390
+                        - generic [ref=e442]: precio actual $4.390
+                        - generic [ref=e443]: $17.560 x kg
+                      - generic [ref=e444]: Supremo
+                      - generic [ref=e445]: Té Verde Hoja Supremo Bolsa, 250 g
+                - group [ref=e448]:
+                  - link "Té Verde frutos rojos 20 bolsitas Caja, 22 g" [ref=e449] [cursor=pointer]:
+                    - /url: /ip/cafe-te-y-hierbas/00780181080446?from=/search
+                    - generic [ref=e450]: Té Verde frutos rojos 20 bolsitas Caja, 22 g
+                  - generic [ref=e452]:
+                    - generic [ref=e455]:
+                      - img "Té Verde frutos rojos 20 bolsitas Caja, 22 g" [ref=e457]
+                      - button "Agregar al carro - Té Verde frutos rojos 20 bolsitas Caja, 22 g" [ref=e460] [cursor=pointer]:
+                        - generic "agregar" [ref=e461]: 
+                        - generic [ref=e462]: Agregar
+                    - generic [ref=e464]:
+                      - generic [ref=e466]:
+                        - generic [ref=e467]: $4.190
+                        - generic [ref=e468]: precio actual $4.190
+                        - generic [ref=e469]: $209.500 x un
+                      - generic [ref=e470]: Lipton
+                      - generic [ref=e471]: Té Verde frutos rojos 20 bolsitas Caja, 22 g
+                - group [ref=e474]:
+                  - link "Té Verde Surtidos Caja, 150 g" [ref=e475] [cursor=pointer]:
+                    - /url: /ip/cafe-te-y-hierbas/00780187500220?from=/search
+                    - generic [ref=e476]: Té Verde Surtidos Caja, 150 g
+                  - generic [ref=e478]:
+                    - generic [ref=e481]:
+                      - img "Té Verde Surtidos Caja, 150 g" [ref=e483]
+                      - button "Agregar al carro - Té Verde Surtidos Caja, 150 g" [ref=e486] [cursor=pointer]:
+                        - generic "agregar" [ref=e487]: 
+                        - generic [ref=e488]: Agregar
+                    - generic [ref=e490]:
+                      - generic [ref=e492]:
+                        - generic [ref=e493]: $6.690
+                        - generic [ref=e494]: precio actual $6.690
+                        - generic [ref=e495]: $8.920 x 100un
+                      - generic [ref=e496]: Supremo
+                      - generic [ref=e497]: Té Verde Surtidos Caja, 150 g
+                - group [ref=e500]:
+                  - link "Té Verde Caja, 50 Un" [ref=e501] [cursor=pointer]:
+                    - /url: /ip/cafe-te-y-hierbas/00931263116591?from=/search
+                    - generic [ref=e502]: Té Verde Caja, 50 Un
+                  - generic [ref=e504]:
+                    - generic [ref=e507]:
+                      - img "Té Verde Caja, 50 Un" [ref=e509]
+                      - button "Agregar al carro - Té Verde Caja, 50 Un" [ref=e512] [cursor=pointer]:
+                        - generic "agregar" [ref=e513]: 
+                        - generic [ref=e514]: Agregar
+                    - generic [ref=e516]:
+                      - generic [ref=e518]:
+                        - generic [ref=e519]: $9.190
+                        - generic [ref=e520]: precio actual $9.190
+                        - generic [ref=e521]: $184 x un
+                      - generic [ref=e522]: Dilmah
+                      - generic [ref=e523]: Té Verde Caja, 50 Un
+                - group [ref=e526]:
+                  - link "Té Verde Caja 20 Un, 40 g" [ref=e527] [cursor=pointer]:
+                    - /url: /ip/cafe-te-y-hierbas/00780242000611?from=/search
+                    - generic [ref=e528]: Té Verde Caja 20 Un, 40 g
+                  - generic [ref=e530]:
+                    - generic [ref=e533]:
+                      - img "Té Verde Caja 20 Un, 40 g" [ref=e535]
+                      - button "Agregar al carro - Té Verde Caja 20 Un, 40 g" [ref=e538] [cursor=pointer]:
+                        - generic "agregar" [ref=e539]: 
+                        - generic [ref=e540]: Agregar
+                    - generic [ref=e542]:
+                      - generic [ref=e544]:
+                        - generic [ref=e545]: $1.850
+                        - generic [ref=e546]: precio actual $1.850
+                        - generic [ref=e547]: $93 x un
+                      - generic [ref=e548]: Club
+                      - generic [ref=e549]: Té Verde Caja 20 Un, 40 g
+                - group [ref=e552]:
+                  - link "Té Verde Ginger-Orange Caja, 35 g" [ref=e553] [cursor=pointer]:
+                    - /url: /ip/cafe-te-y-hierbas/00400930052428?from=/search
+                    - generic [ref=e554]: Té Verde Ginger-Orange Caja, 35 g
+                  - generic [ref=e556]:
+                    - generic [ref=e557]:
+                      - generic [ref=e559]:
+                        - generic [ref=e561]: 
+                        - text: Rebaja
+                      - generic [ref=e562]:
+                        - generic [ref=e563]:
+                          - img "Té Verde Ginger-Orange Caja, 35 g"
+                        - button "Agregar al carro - Té Verde Ginger-Orange Caja, 35 g" [ref=e566] [cursor=pointer]:
+                          - generic "agregar" [ref=e567]: 
+                          - generic [ref=e568]: Agregar
+                    - generic [ref=e570]:
+                      - generic [ref=e572]:
+                        - generic [ref=e573]: $3.990
+                        - generic [ref=e574]: precio actual $3.990, Costaba $4.790
+                        - generic [ref=e575]: $200 x un
+                        - generic [ref=e576]: $4.790
+                        - generic [ref=e577]: Ahorra $800
+                      - generic [ref=e578]: Teekanne
+                      - generic [ref=e579]: Té Verde Ginger-Orange Caja, 35 g
+                - group [ref=e582]:
+                  - link "Té Verde Cirrusen Bolsitas, 20 Un" [ref=e583] [cursor=pointer]:
+                    - /url: /ip/cafe-te-y-hierbas/00506327010139?from=/search
+                    - generic [ref=e584]: Té Verde Cirrusen Bolsitas, 20 Un
+                  - generic [ref=e586]:
+                    - generic [ref=e589]:
+                      - generic [ref=e590]:
+                        - img "Té Verde Cirrusen Bolsitas, 20 Un"
+                      - button "Agregar al carro - Té Verde Cirrusen Bolsitas, 20 Un" [ref=e593] [cursor=pointer]:
+                        - generic "agregar" [ref=e594]: 
+                        - generic [ref=e595]: Agregar
+                    - generic [ref=e597]:
+                      - generic [ref=e599]:
+                        - generic [ref=e600]: $3.390
+                        - generic [ref=e601]: precio actual $3.390
+                        - generic [ref=e602]: $170 x un
+                      - generic [ref=e603]: Liptón
+                      - generic [ref=e604]: Té Verde Cirrusen Bolsitas, 20 Un
+                - group [ref=e607]:
+                  - link "Té Helado Verde Helado Sabor Durazno y Pera Botella, 1,5 L" [ref=e608] [cursor=pointer]:
+                    - /url: /ip/bebidas-funcionales/00040000590395?from=/search
+                    - generic [ref=e609]: Té Helado Verde Helado Sabor Durazno y Pera Botella, 1,5 L
+                  - generic [ref=e611]:
+                    - generic [ref=e614]:
+                      - generic [ref=e615]:
+                        - img "Té Helado Verde Helado Sabor Durazno y Pera Botella, 1,5 L"
+                      - button "Agregar al carro - Té Helado Verde Helado Sabor Durazno y Pera Botella, 1,5 L" [ref=e618] [cursor=pointer]:
+                        - generic "agregar" [ref=e619]: 
+                        - generic [ref=e620]: Agregar
+                    - generic [ref=e622]:
+                      - generic [ref=e624]:
+                        - generic [ref=e625]: $1.290
+                        - generic [ref=e626]: precio actual $1.290
+                        - generic [ref=e627]: $860 x lt
+                      - generic [ref=e628]: Amane
+                      - generic [ref=e629]: Té Helado Verde Helado Sabor Durazno y Pera Botella, 1,5 L
+                - generic [ref=e631]:
+                  - group [ref=e632]:
+                    - link "Té Helado Verde Sabor Limón Botella, 1,5 L" [ref=e633] [cursor=pointer]:
+                      - /url: /ip/bebidas-funcionales/00040000590392?from=/search
+                      - generic [ref=e634]: Té Helado Verde Sabor Limón Botella, 1,5 L
+                    - generic [ref=e636]:
+                      - generic [ref=e640]:
+                        - img "Té Helado Verde Sabor Limón Botella, 1,5 L"
+                      - generic [ref=e642]:
+                        - generic [ref=e644]:
+                          - generic [ref=e645]: $1.290
+                          - generic [ref=e646]: precio actual $1.290
+                          - generic [ref=e647]: $860 x lt
+                        - generic [ref=e648]: Amane
+                        - generic [ref=e649]: Té Helado Verde Sabor Limón Botella, 1,5 L
+                        - generic [ref=e650]: Agotado
+                  - button "Revisar productos similares - Té Helado Verde Sabor Limón Botella, 1,5 L" [ref=e652]: Revisar productos similares
+                - group [ref=e655]:
+                  - link "Shampoo Herbal Essences Aroma Té Verde & Menta, 600 ML" [ref=e656] [cursor=pointer]:
+                    - /url: /ip/rutina-para-el-cabello/00750043521866?from=/search
+                    - generic [ref=e657]: Shampoo Herbal Essences Aroma Té Verde & Menta, 600 ML
+                  - generic [ref=e659]:
+                    - generic [ref=e662]:
+                      - generic [ref=e663]:
+                        - img "Shampoo Herbal Essences Aroma Té Verde & Menta, 600 ML"
+                      - button "Agregar al carro - Shampoo Herbal Essences Aroma Té Verde & Menta, 600 ML" [ref=e666] [cursor=pointer]:
+                        - generic "agregar" [ref=e667]: 
+                        - generic [ref=e668]: Agregar
+                    - generic [ref=e670]:
+                      - generic [ref=e672]:
+                        - generic [ref=e673]: $7.790
+                        - generic [ref=e674]: precio actual $7.790
+                        - generic [ref=e675]: $1.298 x 100ml
+                      - generic [ref=e676]: Herbal Essences
+                      - generic [ref=e677]: Shampoo Herbal Essences Aroma Té Verde & Menta, 600 ML
+                - group [ref=e680]:
+                  - link "Shampoo Herbal Essences Detox Té Verde & Menta, 400 ml" [ref=e681] [cursor=pointer]:
+                    - /url: /ip/rutina-para-el-cabello/00750043519388?from=/search
+                    - generic [ref=e682]: Shampoo Herbal Essences Detox Té Verde & Menta, 400 ml
+                  - generic [ref=e684]:
+                    - generic [ref=e687]:
+                      - generic [ref=e688]:
+                        - img "Shampoo Herbal Essences Detox Té Verde & Menta, 400 ml"
+                      - button "Agregar al carro - Shampoo Herbal Essences Detox Té Verde & Menta, 400 ml" [ref=e691] [cursor=pointer]:
+                        - generic "agregar" [ref=e692]: 
+                        - generic [ref=e693]: Agregar
+                    - generic [ref=e695]:
+                      - generic [ref=e697]:
+                        - generic [ref=e698]: $6.090
+                        - generic [ref=e699]: precio actual $6.090
+                        - generic [ref=e700]: $1.523 x 100ml
+                      - generic [ref=e701]: Herbal Essences
+                      - generic [ref=e702]: Shampoo Herbal Essences Detox Té Verde & Menta, 400 ml
+                - group [ref=e705]:
+                  - link "Acondicionador Herbal Essences Detox Té Verde & Menta, 400 ml" [ref=e706] [cursor=pointer]:
+                    - /url: /ip/rutina-para-el-cabello/00750043519389?from=/search
+                    - generic [ref=e707]: Acondicionador Herbal Essences Detox Té Verde & Menta, 400 ml
+                  - generic [ref=e709]:
+                    - generic [ref=e712]:
+                      - generic [ref=e713]:
+                        - img "Acondicionador Herbal Essences Detox Té Verde & Menta, 400 ml"
+                      - button "Agregar al carro - Acondicionador Herbal Essences Detox Té Verde & Menta, 400 ml" [ref=e716] [cursor=pointer]:
+                        - generic "agregar" [ref=e717]: 
+                        - generic [ref=e718]: Agregar
+                    - generic [ref=e720]:
+                      - generic [ref=e722]:
+                        - generic [ref=e723]: $5.990
+                        - generic [ref=e724]: precio actual $5.990
+                        - generic [ref=e725]: $1.498 x 100ml
+                      - generic [ref=e726]: Herbal Essences
+                      - generic [ref=e727]: Acondicionador Herbal Essences Detox Té Verde & Menta, 400 ml
+                - group [ref=e730]:
+                  - link "Shampoo Sólido Té Verde & Lemongrass, 60 g" [ref=e731] [cursor=pointer]:
+                    - /url: /ip/rutina-para-el-cabello/00074585337623?from=/search
+                    - generic [ref=e732]: Shampoo Sólido Té Verde & Lemongrass, 60 g
+                  - generic [ref=e734]:
+                    - generic [ref=e737]:
+                      - generic [ref=e738]:
+                        - img "Shampoo Sólido Té Verde & Lemongrass, 60 g"
+                      - button "Agregar al carro - Shampoo Sólido Té Verde & Lemongrass, 60 g" [ref=e741] [cursor=pointer]:
+                        - generic "agregar" [ref=e742]: 
+                        - generic [ref=e743]: Agregar
+                    - generic [ref=e745]:
+                      - generic [ref=e747]:
+                        - generic [ref=e748]: $5.790
+                        - generic [ref=e749]: precio actual $5.790
+                        - generic [ref=e750]: $9.650 x 100g
+                      - generic [ref=e751]: Weltun Vida Sustentable
+                      - generic [ref=e752]: Shampoo Sólido Té Verde & Lemongrass, 60 g
+                - group [ref=e755]:
+                  - link "Acondicionador Herbal Essences Aaroma Té Verde & Menta, 600 ml" [ref=e756] [cursor=pointer]:
+                    - /url: /ip/rutina-para-el-cabello/00750043521865?from=/search
+                    - generic [ref=e757]: Acondicionador Herbal Essences Aaroma Té Verde & Menta, 600 ml
+                  - generic [ref=e759]:
+                    - generic [ref=e760]:
+                      - generic [ref=e762]:
+                        - generic [ref=e764]: 
+                        - text: Rebaja
+                      - generic [ref=e765]:
+                        - generic [ref=e766]:
+                          - img "Acondicionador Herbal Essences Aaroma Té Verde & Menta, 600 ml"
+                        - button "Agregar al carro - Acondicionador Herbal Essences Aaroma Té Verde & Menta, 600 ml" [ref=e769] [cursor=pointer]:
+                          - generic "agregar" [ref=e770]: 
+                          - generic [ref=e771]: Agregar
+                    - generic [ref=e773]:
+                      - generic [ref=e775]:
+                        - generic [ref=e776]: $6.290
+                        - generic [ref=e777]: precio actual $6.290, Costaba $7.790
+                        - generic [ref=e778]: $1.048 x 100ml
+                        - generic [ref=e779]: $7.790
+                        - generic [ref=e780]: Ahorra $1.500
+                      - generic [ref=e781]: Herbal Essences
+                      - generic [ref=e782]: Acondicionador Herbal Essences Aaroma Té Verde & Menta, 600 ml
+                - group [ref=e785]:
+                  - link "Té Green Intense Mint Caja, 20 Un" [ref=e786] [cursor=pointer]:
+                    - /url: /ip/cafe-te-y-hierbas/00506327010176?from=/search
+                    - generic [ref=e787]: Té Green Intense Mint Caja, 20 Un
+                  - generic [ref=e789]:
+                    - generic [ref=e792]:
+                      - generic [ref=e793]:
+                        - img "Té Green Intense Mint Caja, 20 Un"
+                      - button "Agregar al carro - Té Green Intense Mint Caja, 20 Un" [ref=e796] [cursor=pointer]:
+                        - generic "agregar" [ref=e797]: 
+                        - generic [ref=e798]: Agregar
+                    - generic [ref=e800]:
+                      - generic [ref=e802]:
+                        - generic [ref=e803]: $4.150
+                        - generic [ref=e804]: precio actual $4.150
+                        - generic [ref=e805]: $208 x un
+                      - generic [ref=e806]: Lipton
+                      - generic [ref=e807]: Té Green Intense Mint Caja, 20 Un
+                - group [ref=e810]:
+                  - link "Té Green Mand Orange Caja, 20 Un" [ref=e811] [cursor=pointer]:
+                    - /url: /ip/cafe-te-y-hierbas/00506327010142?from=/search
+                    - generic [ref=e812]: Té Green Mand Orange Caja, 20 Un
+                  - generic [ref=e814]:
+                    - generic [ref=e817]:
+                      - generic [ref=e818]:
+                        - img "Té Green Mand Orange Caja, 20 Un"
+                      - button "Agregar al carro - Té Green Mand Orange Caja, 20 Un" [ref=e821] [cursor=pointer]:
+                        - generic "agregar" [ref=e822]: 
+                        - generic [ref=e823]: Agregar
+                    - generic [ref=e825]:
+                      - generic [ref=e827]:
+                        - generic [ref=e828]: $4.150
+                        - generic [ref=e829]: precio actual $4.150
+                        - generic [ref=e830]: $208 x un
+                      - generic [ref=e831]: Lipton
+                      - generic [ref=e832]: Té Green Mand Orange Caja, 20 Un
+                - group [ref=e835]:
+                  - link "Té Green Caja, 23 g" [ref=e836] [cursor=pointer]:
+                    - /url: /ip/cafe-te-y-hierbas/00007231075847?from=/search
+                    - generic [ref=e837]: Té Green Caja, 23 g
+                  - generic [ref=e839]:
+                    - generic [ref=e840]:
+                      - generic [ref=e842]:
+                        - generic [ref=e844]: 
+                        - text: Rebaja
+                      - generic [ref=e845]:
+                        - generic [ref=e846]:
+                          - img "Té Green Caja, 23 g"
+                        - button "Agregar al carro - Té Green Caja, 23 g" [ref=e849] [cursor=pointer]:
+                          - generic "agregar" [ref=e850]: 
+                          - generic [ref=e851]: Agregar
+                    - generic [ref=e853]:
+                      - generic [ref=e855]:
+                        - generic [ref=e856]: $4.450
+                        - generic [ref=e857]: precio actual $4.450, Costaba $5.290
+                        - generic [ref=e858]: $247 x un
+                        - generic [ref=e859]: $5.290
+                        - generic [ref=e860]: Ahorra $840
+                      - generic [ref=e861]: Bigelow
+                      - generic [ref=e862]: Té Green Caja, 23 g
+                - group [ref=e865]:
+                  - link "Té Pure Chá Verde Caja, 20 g" [ref=e866] [cursor=pointer]:
+                    - /url: /ip/cafe-te-y-hierbas/00007017719724?from=/search
+                    - generic [ref=e867]: Té Pure Chá Verde Caja, 20 g
+                  - generic [ref=e869]:
+                    - generic [ref=e872]:
+                      - generic [ref=e873]:
+                        - img "Té Pure Chá Verde Caja, 20 g"
+                      - button "Agregar al carro - Té Pure Chá Verde Caja, 20 g" [ref=e876] [cursor=pointer]:
+                        - generic "agregar" [ref=e877]: 
+                        - generic [ref=e878]: Agregar
+                    - generic [ref=e880]:
+                      - generic [ref=e882]:
+                        - generic [ref=e883]: $3.190
+                        - generic [ref=e884]: precio actual $3.190
+                        - generic [ref=e885]: $159.500 x kg
+                      - generic [ref=e886]: Twinings
+                      - generic [ref=e887]: Té Pure Chá Verde Caja, 20 g
+                - group [ref=e890]:
+                  - link "Té Helado Negro Sabor Frambuesa Botella, 1,5 L" [ref=e891] [cursor=pointer]:
+                    - /url: /ip/bebidas-funcionales/00040000590393?from=/search
+                    - generic [ref=e892]: Té Helado Negro Sabor Frambuesa Botella, 1,5 L
+                  - generic [ref=e894]:
+                    - generic [ref=e897]:
+                      - generic [ref=e898]:
+                        - img "Té Helado Negro Sabor Frambuesa Botella, 1,5 L"
+                      - button "Agregar al carro - Té Helado Negro Sabor Frambuesa Botella, 1,5 L" [ref=e901] [cursor=pointer]:
+                        - generic "agregar" [ref=e902]: 
+                        - generic [ref=e903]: Agregar
+                    - generic [ref=e905]:
+                      - generic [ref=e907]:
+                        - generic [ref=e908]: $1.290
+                        - generic [ref=e909]: precio actual $1.290
+                        - generic [ref=e910]: $860 x lt
+                      - generic [ref=e911]: Amane
+                      - generic [ref=e912]: Té Helado Negro Sabor Frambuesa Botella, 1,5 L
+                - generic [ref=e914]:
+                  - group [ref=e915]:
+                    - link "Té Jasmine Green, 330 ml" [ref=e916] [cursor=pointer]:
+                      - /url: /ip/f/00590285410699?from=/search
+                      - generic [ref=e917]: Té Jasmine Green, 330 ml
+                    - generic [ref=e919]:
+                      - generic [ref=e923]:
+                        - img "Té Jasmine Green, 330 ml"
+                      - generic [ref=e925]:
+                        - generic [ref=e927]:
+                          - generic [ref=e928]: $1.490
+                          - generic [ref=e929]: precio actual $1.490
+                          - generic [ref=e930]: $4.515 x lt
+                        - generic [ref=e931]: Dilmah
+                        - generic [ref=e932]: Té Jasmine Green, 330 ml
+                        - generic [ref=e933]: Agotado
+                  - button "Revisar productos similares - Té Jasmine Green, 330 ml" [ref=e935]: Revisar productos similares
+  - alert [ref=e944]

@@ -1,0 +1,275 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: pan hallulla
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e81]:
+            - generic [ref=e84]:
+              - generic [ref=e85]:
+                - button "Precio" [ref=e88]:
+                  - generic [ref=e89]: Precio
+                  - img [ref=e90]: 
+                - separator [ref=e91]
+              - generic [ref=e92]:
+                - button "Marca" [ref=e95]:
+                  - generic [ref=e96]: Marca
+                  - img [ref=e97]: 
+                - separator [ref=e98]
+              - generic [ref=e99]:
+                - button "Categoría" [ref=e102]:
+                  - generic [ref=e103]: Categoría
+                  - img [ref=e104]: 
+                - separator [ref=e105]
+            - generic [ref=e108]:
+              - heading "Resultados para pan hallulla (11)" [level=2] [ref=e116]: Resultados para pan hallulla(11)
+              - generic [ref=e117]:
+                - group [ref=e120]:
+                  - link "Pan Hallulla Granel" [ref=e121] [cursor=pointer]:
+                    - /url: /ip/panaderia-granel/00203965000000?from=/search
+                    - generic [ref=e122]: Pan Hallulla Granel
+                  - generic [ref=e124]:
+                    - generic [ref=e127]:
+                      - img "Pan Hallulla Granel" [ref=e129]
+                      - button "Agregar al carro - Pan Hallulla Granel" [ref=e132] [cursor=pointer]:
+                        - generic "agregar" [ref=e133]: 
+                        - generic [ref=e134]: Agregar
+                    - generic [ref=e136]:
+                      - generic [ref=e138]:
+                        - generic [ref=e139]: $2.090/kg
+                        - generic [ref=e140]: precio actual $2.090/kg
+                        - generic [ref=e141]: $2.090 x kg
+                      - generic [ref=e142]: Lider
+                      - generic [ref=e143]: Pan Hallulla Granel
+                - group [ref=e146]:
+                  - link "Pan Hallulla Integral Linaza, 400 g" [ref=e147] [cursor=pointer]:
+                    - /url: /ip/panaderia-envasada/00780349500346?from=/search
+                    - generic [ref=e148]: Pan Hallulla Integral Linaza, 400 g
+                  - generic [ref=e150]:
+                    - generic [ref=e153]:
+                      - img "Pan Hallulla Integral Linaza, 400 g" [ref=e155]
+                      - button "Agregar al carro - Pan Hallulla Integral Linaza, 400 g" [ref=e158] [cursor=pointer]:
+                        - generic "agregar" [ref=e159]: 
+                        - generic [ref=e160]: Agregar
+                    - generic [ref=e162]:
+                      - generic [ref=e164]:
+                        - generic [ref=e165]: $1.790
+                        - generic [ref=e166]: precio actual $1.790
+                        - generic [ref=e167]: $4.475 x kg
+                      - generic [ref=e168]: Marketside
+                      - generic [ref=e169]: Pan Hallulla Integral Linaza, 400 g
+                - group [ref=e172]:
+                  - link "Pan Hallulla Sin Gluten, 320 g" [ref=e173] [cursor=pointer]:
+                    - /url: /ip/panaderia-envasada/00780350000100?from=/search
+                    - generic [ref=e174]: Pan Hallulla Sin Gluten, 320 g
+                  - generic [ref=e176]:
+                    - generic [ref=e179]:
+                      - img "Pan Hallulla Sin Gluten, 320 g" [ref=e181]
+                      - button "Agregar al carro - Pan Hallulla Sin Gluten, 320 g" [ref=e184] [cursor=pointer]:
+                        - generic "agregar" [ref=e185]: 
+                        - generic [ref=e186]: Agregar
+                    - generic [ref=e188]:
+                      - generic [ref=e190]:
+                        - generic [ref=e191]: $4.090
+                        - generic [ref=e192]: precio actual $4.090
+                        - generic [ref=e193]: $12.781 x kg
+                      - generic [ref=e194]: No+gluten
+                      - generic [ref=e195]: Pan Hallulla Sin Gluten, 320 g
+                - generic [ref=e197]:
+                  - group [ref=e198]:
+                    - link "Pan Hallulla delgada" [ref=e199] [cursor=pointer]:
+                      - /url: /ip/panaderia-granel/00203890000000?from=/search
+                      - generic [ref=e200]: Pan Hallulla delgada
+                    - generic [ref=e202]:
+                      - img "Pan Hallulla delgada" [ref=e207]
+                      - generic [ref=e209]:
+                        - generic [ref=e211]:
+                          - generic [ref=e212]: $2.090/kg
+                          - generic [ref=e213]: precio actual $2.090/kg
+                          - generic [ref=e214]: $2.090 x kg
+                        - generic [ref=e215]: .
+                        - generic [ref=e216]: Pan Hallulla delgada
+                        - generic [ref=e217]: Agotado
+                  - button "Revisar productos similares - Pan Hallulla delgada" [ref=e219]: Revisar productos similares
+                - group [ref=e222]:
+                  - link "Pan Hallulla delgada" [ref=e223] [cursor=pointer]:
+                    - /url: /ip/panaderia-granel/00203871000000?from=/search
+                    - generic [ref=e224]: Pan Hallulla delgada
+                  - generic [ref=e226]:
+                    - generic [ref=e229]:
+                      - img "Pan Hallulla delgada" [ref=e231]
+                      - button "Agregar al carro - Pan Hallulla delgada" [ref=e234] [cursor=pointer]:
+                        - generic "agregar" [ref=e235]: 
+                        - generic [ref=e236]: Agregar
+                    - generic [ref=e238]:
+                      - generic [ref=e240]:
+                        - generic [ref=e241]: $2.090/kg
+                        - generic [ref=e242]: precio actual $2.090/kg
+                        - generic [ref=e243]: $2.090 x kg
+                      - generic [ref=e244]: .
+                      - generic [ref=e245]: Pan Hallulla delgada
+                - group [ref=e248]:
+                  - link "Pan Precocido Hallulla Integral Atm 18 Un, 1 kg" [ref=e249] [cursor=pointer]:
+                    - /url: /ip/panaderia-envasada/00040005054558?from=/search
+                    - generic [ref=e250]: Pan Precocido Hallulla Integral Atm 18 Un, 1 kg
+                  - generic [ref=e252]:
+                    - generic [ref=e255]:
+                      - img "Pan Precocido Hallulla Integral Atm 18 Un, 1 kg" [ref=e257]
+                      - button "Agregar al carro - Pan Precocido Hallulla Integral Atm 18 Un, 1 kg" [ref=e260] [cursor=pointer]:
+                        - generic "agregar" [ref=e261]: 
+                        - generic [ref=e262]: Agregar
+                    - generic [ref=e264]:
+                      - generic [ref=e266]:
+                        - generic [ref=e267]: $2.390
+                        - generic [ref=e268]: precio actual $2.390
+                        - generic [ref=e269]: $2.390 x kg
+                      - generic [ref=e270]: Lider
+                      - generic [ref=e271]: Pan Precocido Hallulla Integral Atm 18 Un, 1 kg
+                - group [ref=e274]:
+                  - link "Pan Hallulla Especial Suave 8 Un, 400 g" [ref=e275] [cursor=pointer]:
+                    - /url: /ip/nuestras-marcas/00780349500457?from=/search
+                    - generic [ref=e276]: Pan Hallulla Especial Suave 8 Un, 400 g
+                  - generic [ref=e278]:
+                    - generic [ref=e281]:
+                      - img "Pan Hallulla Especial Suave 8 Un, 400 g" [ref=e283]
+                      - button "Agregar al carro - Pan Hallulla Especial Suave 8 Un, 400 g" [ref=e286] [cursor=pointer]:
+                        - generic "agregar" [ref=e287]: 
+                        - generic [ref=e288]: Agregar
+                    - generic [ref=e290]:
+                      - generic [ref=e292]:
+                        - generic [ref=e293]: $1.790
+                        - generic [ref=e294]: precio actual $1.790
+                        - generic [ref=e295]: $4.475 x kg
+                      - generic [ref=e296]: Marketside
+                      - generic [ref=e297]: Pan Hallulla Especial Suave 8 Un, 400 g
+                - group [ref=e300]:
+                  - link "Pan Precocido O Hallulla Atm 9 Un, 900 g" [ref=e301] [cursor=pointer]:
+                    - /url: /ip/panaderia-envasada/00780263600108?from=/search
+                    - generic [ref=e302]: Pan Precocido O Hallulla Atm 9 Un, 900 g
+                  - generic [ref=e304]:
+                    - generic [ref=e307]:
+                      - img "Pan Precocido O Hallulla Atm 9 Un, 900 g" [ref=e309]
+                      - button "Agregar al carro - Pan Precocido O Hallulla Atm 9 Un, 900 g" [ref=e312] [cursor=pointer]:
+                        - generic "agregar" [ref=e313]: 
+                        - generic [ref=e314]: Agregar
+                    - generic [ref=e316]:
+                      - generic [ref=e318]:
+                        - generic [ref=e319]: $2.390
+                        - generic [ref=e320]: precio actual $2.390
+                        - generic [ref=e321]: $2.390 x kg
+                      - generic [ref=e322]: Lider
+                      - generic [ref=e323]: Pan Precocido O Hallulla Atm 9 Un, 900 g
+                - group [ref=e326]:
+                  - link "Pan Precocido Congelado Hallulla 30 Un, 1,6 kg" [ref=e327] [cursor=pointer]:
+                    - /url: /ip/panaderia-envasada/00780341300398?from=/search
+                    - generic [ref=e328]: Pan Precocido Congelado Hallulla 30 Un, 1,6 kg
+                  - generic [ref=e330]:
+                    - generic [ref=e333]:
+                      - img "Pan Precocido Congelado Hallulla 30 Un, 1,6 kg" [ref=e335]
+                      - button "Agregar al carro - Pan Precocido Congelado Hallulla 30 Un, 1,6 kg" [ref=e338] [cursor=pointer]:
+                        - generic "agregar" [ref=e339]: 
+                        - generic [ref=e340]: Agregar
+                    - generic [ref=e342]:
+                      - generic [ref=e344]:
+                        - generic [ref=e345]: $6.690
+                        - generic [ref=e346]: precio actual $6.690
+                        - generic [ref=e347]: $6.690 x kg
+                      - generic [ref=e348]: Bredenmaster
+                      - generic [ref=e349]: Pan Precocido Congelado Hallulla 30 Un, 1,6 kg
+                - group [ref=e352]:
+                  - link "Pan Precocido Congelado Hallulla 11 Un, 1000 gr" [ref=e353] [cursor=pointer]:
+                    - /url: /ip/panaderia-envasada/00780341300393?from=/search
+                    - generic [ref=e354]: Pan Precocido Congelado Hallulla 11 Un, 1000 gr
+                  - generic [ref=e356]:
+                    - generic [ref=e359]:
+                      - img "Pan Precocido Congelado Hallulla 11 Un, 1000 gr" [ref=e361]
+                      - button "Agregar al carro - Pan Precocido Congelado Hallulla 11 Un, 1000 gr" [ref=e364] [cursor=pointer]:
+                        - generic "agregar" [ref=e365]: 
+                        - generic [ref=e366]: Agregar
+                    - generic [ref=e368]:
+                      - generic [ref=e370]:
+                        - generic [ref=e371]: $4.550
+                        - generic [ref=e372]: precio actual $4.550
+                        - generic [ref=e373]: $4.550 x kg
+                      - generic [ref=e374]: Bredenmaster
+                      - generic [ref=e375]: Pan Precocido Congelado Hallulla 11 Un, 1000 gr
+                - group [ref=e378]:
+                  - link "Pan Precocido Hallullita Atm 20 Un, 1100 g" [ref=e379] [cursor=pointer]:
+                    - /url: /ip/panaderia-envasada/00780263600307?from=/search
+                    - generic [ref=e380]: Pan Precocido Hallullita Atm 20 Un, 1100 g
+                  - generic [ref=e382]:
+                    - generic [ref=e385]:
+                      - img "Pan Precocido Hallullita Atm 20 Un, 1100 g" [ref=e387]
+                      - button "Agregar al carro - Pan Precocido Hallullita Atm 20 Un, 1100 g" [ref=e390] [cursor=pointer]:
+                        - generic "agregar" [ref=e391]: 
+                        - generic [ref=e392]: Agregar
+                    - generic [ref=e394]:
+                      - generic [ref=e396]:
+                        - generic [ref=e397]: $2.390
+                        - generic [ref=e398]: precio actual $2.390
+                        - generic [ref=e399]: $2.173 x kg
+                      - generic [ref=e400]: Lider
+                      - generic [ref=e401]: Pan Precocido Hallullita Atm 20 Un, 1100 g
+  - alert [ref=e410]

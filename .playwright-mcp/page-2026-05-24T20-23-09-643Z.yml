@@ -1,0 +1,738 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: lechuga
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+            - region "Mejoras rápidas" [ref=e78]:
+              - generic [ref=e79]:
+                - text: 
+                - list [ref=e80]:
+                  - listitem [ref=e81]:
+                    - link "Frutas y verduras congeladas" [ref=e82] [cursor=pointer]:
+                      - /url: https://super.lider.cl/search?q=pqnst_6&ContentZone1&co_ty=cate_pqnst&co_nm=search_pqnst_W16&co_id=17042026_cate_congelados_ffvv&co_or=1
+                      - generic [ref=e84]: Frutas y verduras congeladas
+                  - listitem [ref=e85]:
+                    - link "Precios que no se tocan" [ref=e86] [cursor=pointer]:
+                      - /url: /content/estos-precios-no-se-tocan/94920941?&co_ty=cate_pqnst&co_nm=search_pqnst_W16&co_id=17042026_cate_pqnst_content&co_or=1
+                      - generic [ref=e88]: Precios que no se tocan
+                  - listitem [ref=e89]:
+                    - link "Frutas y verduras" [ref=e90] [cursor=pointer]:
+                      - /url: /content/frutas-y-verduras/22884697?ContentZone1&co_ty=cate_pqnst&co_nm=search_pqnst_W16&co_id=17042026_cate_ffvv_content&co_or=1
+                      - generic [ref=e92]: Frutas y verduras
+                - text: 
+            - separator [ref=e93]
+          - generic [ref=e97]:
+            - generic [ref=e100]:
+              - generic [ref=e101]:
+                - button "Precio" [ref=e104]:
+                  - generic [ref=e105]: Precio
+                  - img [ref=e106]: 
+                - separator [ref=e107]
+              - generic [ref=e108]:
+                - button "Campaña" [ref=e111]:
+                  - generic [ref=e112]: Campaña
+                  - img [ref=e113]: 
+                - separator [ref=e114]
+              - generic [ref=e115]:
+                - button "Marca" [ref=e118]:
+                  - generic [ref=e119]: Marca
+                  - img [ref=e120]: 
+                - separator [ref=e121]
+              - generic [ref=e122]:
+                - button "Categoría" [ref=e125]:
+                  - generic [ref=e126]: Categoría
+                  - img [ref=e127]: 
+                - separator [ref=e128]
+            - generic [ref=e131]:
+              - heading "Resultados para lechuga (35)" [level=2] [ref=e139]: Resultados para lechuga(35)
+              - generic [ref=e140]:
+                - group [ref=e143]:
+                  - link "Lechuga Escarola Bolsa, 1 Un" [ref=e144] [cursor=pointer]:
+                    - /url: /ip/verduras/00780464080001?from=/search
+                    - generic [ref=e145]: Lechuga Escarola Bolsa, 1 Un
+                  - generic [ref=e147]:
+                    - generic [ref=e150]:
+                      - img "Lechuga Escarola Bolsa, 1 Un" [ref=e152]
+                      - button "Agregar al carro - Lechuga Escarola Bolsa, 1 Un" [ref=e155] [cursor=pointer]:
+                        - generic "agregar" [ref=e156]: 
+                        - generic [ref=e157]: Agregar
+                    - generic [ref=e159]:
+                      - generic [ref=e161]:
+                        - generic [ref=e162]: $1.290
+                        - generic [ref=e163]: precio actual $1.290
+                        - generic [ref=e164]: $1.290 x un
+                      - generic [ref=e165]: Multi Marca
+                      - generic [ref=e166]: Lechuga Escarola Bolsa, 1 Un
+                - group [ref=e169]:
+                  - link "Lechuga Costina Bolsa, 1 Un" [ref=e170] [cursor=pointer]:
+                    - /url: /ip/verduras/00780461085020?from=/search
+                    - generic [ref=e171]: Lechuga Costina Bolsa, 1 Un
+                  - generic [ref=e173]:
+                    - generic [ref=e176]:
+                      - img "Lechuga Costina Bolsa, 1 Un" [ref=e178]
+                      - button "Agregar al carro - Lechuga Costina Bolsa, 1 Un" [ref=e181] [cursor=pointer]:
+                        - generic "agregar" [ref=e182]: 
+                        - generic [ref=e183]: Agregar
+                    - generic [ref=e185]:
+                      - generic [ref=e187]:
+                        - generic [ref=e188]: $1.290
+                        - generic [ref=e189]: precio actual $1.290
+                        - generic [ref=e190]: $1.290 x un
+                      - generic [ref=e191]: Multi Marca
+                      - generic [ref=e192]: Lechuga Costina Bolsa, 1 Un
+                - group [ref=e195]:
+                  - link "Lechuga Española Bolsa, 1 Un" [ref=e196] [cursor=pointer]:
+                    - /url: /ip/verduras/00780408600012?from=/search
+                    - generic [ref=e197]: Lechuga Española Bolsa, 1 Un
+                  - generic [ref=e199]:
+                    - generic [ref=e202]:
+                      - img "Lechuga Española Bolsa, 1 Un" [ref=e204]
+                      - button "Agregar al carro - Lechuga Española Bolsa, 1 Un" [ref=e207] [cursor=pointer]:
+                        - generic "agregar" [ref=e208]: 
+                        - generic [ref=e209]: Agregar
+                    - generic [ref=e211]:
+                      - generic [ref=e213]:
+                        - generic [ref=e214]: $1.290
+                        - generic [ref=e215]: precio actual $1.290
+                        - generic [ref=e216]: $1.290 x un
+                      - generic [ref=e217]: Multi Marca
+                      - generic [ref=e218]: Lechuga Española Bolsa, 1 Un
+                - generic [ref=e220]:
+                  - group [ref=e221]:
+                    - link "Lechuga Francesa Bolsa, 1 Un" [ref=e222] [cursor=pointer]:
+                      - /url: /ip/verduras/00780408600033?from=/search
+                      - generic [ref=e223]: Lechuga Francesa Bolsa, 1 Un
+                    - generic [ref=e225]:
+                      - img "Lechuga Francesa Bolsa, 1 Un" [ref=e230]
+                      - generic [ref=e232]:
+                        - generic [ref=e234]:
+                          - generic [ref=e235]: $1.290
+                          - generic [ref=e236]: precio actual $1.290
+                          - generic [ref=e237]: $1.290 x un
+                        - generic [ref=e238]: Multi Marca
+                        - generic [ref=e239]: Lechuga Francesa Bolsa, 1 Un
+                        - generic [ref=e240]: Agotado
+                  - button "Revisar productos similares - Lechuga Francesa Bolsa, 1 Un" [ref=e242]: Revisar productos similares
+                - group [ref=e245]:
+                  - link "Lechuga 3 Corazones de Costina Bolsa, 1 Un" [ref=e246] [cursor=pointer]:
+                    - /url: /ip/verduras/00780461085121?from=/search
+                    - generic [ref=e247]: Lechuga 3 Corazones de Costina Bolsa, 1 Un
+                  - generic [ref=e249]:
+                    - generic [ref=e252]:
+                      - img "Lechuga 3 Corazones de Costina Bolsa, 1 Un" [ref=e254]
+                      - button "Agregar al carro - Lechuga 3 Corazones de Costina Bolsa, 1 Un" [ref=e257] [cursor=pointer]:
+                        - generic "agregar" [ref=e258]: 
+                        - generic [ref=e259]: Agregar
+                    - generic [ref=e261]:
+                      - generic [ref=e263]:
+                        - generic [ref=e264]: $3.190
+                        - generic [ref=e265]: precio actual $3.190
+                        - generic [ref=e266]: $3.190 x un
+                      - generic [ref=e267]: Multi Marca
+                      - generic [ref=e268]: Lechuga 3 Corazones de Costina Bolsa, 1 Un
+                - group [ref=e271]:
+                  - link "Lechuga Escarola Bolsa, 2 Un" [ref=e272] [cursor=pointer]:
+                    - /url: /ip/verduras/00340866705000?from=/search
+                    - generic [ref=e273]: Lechuga Escarola Bolsa, 2 Un
+                  - generic [ref=e275]:
+                    - generic [ref=e278]:
+                      - img "Lechuga Escarola Bolsa, 2 Un" [ref=e280]
+                      - button "Agregar al carro - Lechuga Escarola Bolsa, 2 Un" [ref=e283] [cursor=pointer]:
+                        - generic "agregar" [ref=e284]: 
+                        - generic [ref=e285]: Agregar
+                    - generic [ref=e287]:
+                      - generic [ref=e289]:
+                        - generic [ref=e290]: $2.490
+                        - generic [ref=e291]: precio actual $2.490
+                        - generic [ref=e292]: $2.490 x un
+                      - generic [ref=e293]: Multi Marca
+                      - generic [ref=e294]: Lechuga Escarola Bolsa, 2 Un
+                - group [ref=e297]:
+                  - link "Lechuga Marina Bolsa, 1 Un" [ref=e298] [cursor=pointer]:
+                    - /url: /ip/verduras/00780408600031?from=/search
+                    - generic [ref=e299]: Lechuga Marina Bolsa, 1 Un
+                  - generic [ref=e301]:
+                    - generic [ref=e304]:
+                      - img "Lechuga Marina Bolsa, 1 Un" [ref=e306]
+                      - button "Agregar al carro - Lechuga Marina Bolsa, 1 Un" [ref=e309] [cursor=pointer]:
+                        - generic "agregar" [ref=e310]: 
+                        - generic [ref=e311]: Agregar
+                    - generic [ref=e313]:
+                      - generic [ref=e315]:
+                        - generic [ref=e316]: $1.290
+                        - generic [ref=e317]: precio actual $1.290
+                        - generic [ref=e318]: $1.290 x un
+                      - generic [ref=e319]: Multi Marca
+                      - generic [ref=e320]: Lechuga Marina Bolsa, 1 Un
+                - group [ref=e323]:
+                  - link "Lechuga Hoja De Roble Verde Hidroponica Bolsa, 1 Un" [ref=e324] [cursor=pointer]:
+                    - /url: /ip/verduras/00780461085081?from=/search
+                    - generic [ref=e325]: Lechuga Hoja De Roble Verde Hidroponica Bolsa, 1 Un
+                  - generic [ref=e327]:
+                    - generic [ref=e330]:
+                      - img "Lechuga Hoja De Roble Verde Hidroponica Bolsa, 1 Un" [ref=e332]
+                      - button "Agregar al carro - Lechuga Hoja De Roble Verde Hidroponica Bolsa, 1 Un" [ref=e335] [cursor=pointer]:
+                        - generic "agregar" [ref=e336]: 
+                        - generic [ref=e337]: Agregar
+                    - generic [ref=e339]:
+                      - generic [ref=e341]:
+                        - generic [ref=e342]: $1.590
+                        - generic [ref=e343]: precio actual $1.590
+                        - generic [ref=e344]: $1.590 x un
+                      - generic [ref=e345]: Multi Marca
+                      - generic [ref=e346]: Lechuga Hoja De Roble Verde Hidroponica Bolsa, 1 Un
+                - group [ref=e349]:
+                  - link "Lechuga Española Hidropónica Bolsa, 1 Un" [ref=e350] [cursor=pointer]:
+                    - /url: /ip/verduras/00780461085080?from=/search
+                    - generic [ref=e351]: Lechuga Española Hidropónica Bolsa, 1 Un
+                  - generic [ref=e353]:
+                    - generic [ref=e356]:
+                      - img "Lechuga Española Hidropónica Bolsa, 1 Un" [ref=e358]
+                      - button "Agregar al carro - Lechuga Española Hidropónica Bolsa, 1 Un" [ref=e361] [cursor=pointer]:
+                        - generic "agregar" [ref=e362]: 
+                        - generic [ref=e363]: Agregar
+                    - generic [ref=e365]:
+                      - generic [ref=e367]:
+                        - generic [ref=e368]: $1.590
+                        - generic [ref=e369]: precio actual $1.590
+                        - generic [ref=e370]: $1.590 x un
+                      - generic [ref=e371]: Multi Marca
+                      - generic [ref=e372]: Lechuga Española Hidropónica Bolsa, 1 Un
+                - group [ref=e375]:
+                  - link "Lechuga Crespa Roja Bolsa, 1 Un" [ref=e376] [cursor=pointer]:
+                    - /url: /ip/verduras/00780408600035?from=/search
+                    - generic [ref=e377]: Lechuga Crespa Roja Bolsa, 1 Un
+                  - generic [ref=e379]:
+                    - generic [ref=e382]:
+                      - img "Lechuga Crespa Roja Bolsa, 1 Un" [ref=e384]
+                      - button "Agregar al carro - Lechuga Crespa Roja Bolsa, 1 Un" [ref=e387] [cursor=pointer]:
+                        - generic "agregar" [ref=e388]: 
+                        - generic [ref=e389]: Agregar
+                    - generic [ref=e391]:
+                      - generic [ref=e393]:
+                        - generic [ref=e394]: $1.290
+                        - generic [ref=e395]: precio actual $1.290
+                        - generic [ref=e396]: $1.290 x un
+                      - generic [ref=e397]: Multi Marca
+                      - generic [ref=e398]: Lechuga Crespa Roja Bolsa, 1 Un
+                - group [ref=e401]:
+                  - link "Ensalada Lechuga Escarola Bolsa, 180 g" [ref=e402] [cursor=pointer]:
+                    - /url: /ip/verduras/00780461085376?from=/search
+                    - generic [ref=e403]: Ensalada Lechuga Escarola Bolsa, 180 g
+                  - generic [ref=e405]:
+                    - generic [ref=e408]:
+                      - img "Ensalada Lechuga Escarola Bolsa, 180 g" [ref=e410]
+                      - button "Agregar al carro - Ensalada Lechuga Escarola Bolsa, 180 g" [ref=e413] [cursor=pointer]:
+                        - generic "agregar" [ref=e414]: 
+                        - generic [ref=e415]: Agregar
+                    - generic [ref=e417]:
+                      - generic [ref=e419]:
+                        - generic [ref=e420]: $1.090
+                        - generic [ref=e421]: precio actual $1.090
+                        - generic [ref=e422]: $6.056 x kg
+                      - generic [ref=e423]: Proverde
+                      - generic [ref=e424]: Ensalada Lechuga Escarola Bolsa, 180 g
+                - group [ref=e427]:
+                  - link "Ensalada Lechuga Escarola Bolsa, 300 g" [ref=e428] [cursor=pointer]:
+                    - /url: /ip/verduras/00780461085175?from=/search
+                    - generic [ref=e429]: Ensalada Lechuga Escarola Bolsa, 300 g
+                  - generic [ref=e431]:
+                    - generic [ref=e432]:
+                      - generic [ref=e434]:
+                        - generic [ref=e436]: 
+                        - text: Rebaja
+                      - generic [ref=e437]:
+                        - img "Ensalada Lechuga Escarola Bolsa, 300 g" [ref=e439]
+                        - button "Agregar al carro - Ensalada Lechuga Escarola Bolsa, 300 g" [ref=e442] [cursor=pointer]:
+                          - generic "agregar" [ref=e443]: 
+                          - generic [ref=e444]: Agregar
+                    - generic [ref=e446]:
+                      - generic [ref=e448]:
+                        - generic [ref=e449]: $1.390
+                        - generic [ref=e450]: precio actual $1.390, Costaba $1.790
+                        - generic [ref=e451]: $4.633 x kg
+                        - generic [ref=e452]: $1.790
+                        - generic [ref=e453]: Ahorra $400
+                      - generic [ref=e454]: Multi Marca
+                      - generic [ref=e455]: Ensalada Lechuga Escarola Bolsa, 300 g
+                - group [ref=e458]:
+                  - link "Lechuga Milanesa Bolsa, 1 Un" [ref=e459] [cursor=pointer]:
+                    - /url: /ip/verduras/00780408600034?from=/search
+                    - generic [ref=e460]: Lechuga Milanesa Bolsa, 1 Un
+                  - generic [ref=e462]:
+                    - generic [ref=e465]:
+                      - img "Lechuga Milanesa Bolsa, 1 Un" [ref=e467]
+                      - button "Agregar al carro - Lechuga Milanesa Bolsa, 1 Un" [ref=e470] [cursor=pointer]:
+                        - generic "agregar" [ref=e471]: 
+                        - generic [ref=e472]: Agregar
+                    - generic [ref=e474]:
+                      - generic [ref=e476]:
+                        - generic [ref=e477]: $1.290
+                        - generic [ref=e478]: precio actual $1.290
+                        - generic [ref=e479]: $1.290 x un
+                      - generic [ref=e480]: Multi Marca
+                      - generic [ref=e481]: Lechuga Milanesa Bolsa, 1 Un
+                - group [ref=e484]:
+                  - link "Lechuga Bionda Hidropónica Bolsa, 1 Un" [ref=e485] [cursor=pointer]:
+                    - /url: /ip/verduras/00780461085078?from=/search
+                    - generic [ref=e486]: Lechuga Bionda Hidropónica Bolsa, 1 Un
+                  - generic [ref=e488]:
+                    - generic [ref=e491]:
+                      - img "Lechuga Bionda Hidropónica Bolsa, 1 Un" [ref=e493]
+                      - button "Agregar al carro - Lechuga Bionda Hidropónica Bolsa, 1 Un" [ref=e496] [cursor=pointer]:
+                        - generic "agregar" [ref=e497]: 
+                        - generic [ref=e498]: Agregar
+                    - generic [ref=e500]:
+                      - generic [ref=e502]:
+                        - generic [ref=e503]: $1.590
+                        - generic [ref=e504]: precio actual $1.590
+                        - generic [ref=e505]: $1.590 x un
+                      - generic [ref=e506]: Multi Marca
+                      - generic [ref=e507]: Lechuga Bionda Hidropónica Bolsa, 1 Un
+                - group [ref=e510]:
+                  - link "Lechuga Costina Morada Bolsa, 1 Un" [ref=e511] [cursor=pointer]:
+                    - /url: /ip/verduras/00345060913000?from=/search
+                    - generic [ref=e512]: Lechuga Costina Morada Bolsa, 1 Un
+                  - generic [ref=e514]:
+                    - generic [ref=e517]:
+                      - img "Lechuga Costina Morada Bolsa, 1 Un" [ref=e519]
+                      - button "Agregar al carro - Lechuga Costina Morada Bolsa, 1 Un" [ref=e522] [cursor=pointer]:
+                        - generic "agregar" [ref=e523]: 
+                        - generic [ref=e524]: Agregar
+                    - generic [ref=e526]:
+                      - generic [ref=e528]:
+                        - generic [ref=e529]: $1.290
+                        - generic [ref=e530]: precio actual $1.290
+                        - generic [ref=e531]: $1.290 x un
+                      - generic [ref=e532]: Hortinorte
+                      - generic [ref=e533]: Lechuga Costina Morada Bolsa, 1 Un
+                - group [ref=e536]:
+                  - link "Ensalada Lechuga Costina Bolsa, 300 g" [ref=e537] [cursor=pointer]:
+                    - /url: /ip/verduras/00780461085306?from=/search
+                    - generic [ref=e538]: Ensalada Lechuga Costina Bolsa, 300 g
+                  - generic [ref=e540]:
+                    - generic [ref=e543]:
+                      - img "Ensalada Lechuga Costina Bolsa, 300 g" [ref=e545]
+                      - button "Agregar al carro - Ensalada Lechuga Costina Bolsa, 300 g" [ref=e548] [cursor=pointer]:
+                        - generic "agregar" [ref=e549]: 
+                        - generic [ref=e550]: Agregar
+                    - generic [ref=e552]:
+                      - generic [ref=e554]:
+                        - generic [ref=e555]: $1.390
+                        - generic [ref=e556]: precio actual $1.390
+                        - generic [ref=e557]: $4.633 x kg
+                      - generic [ref=e558]: Pro Verde
+                      - generic [ref=e559]: Ensalada Lechuga Costina Bolsa, 300 g
+                - group [ref=e562]:
+                  - link "Lechuga Crispy Verde Bolsa, 1 Un" [ref=e563] [cursor=pointer]:
+                    - /url: /ip/verduras/00780418300021?from=/search
+                    - generic [ref=e564]: Lechuga Crispy Verde Bolsa, 1 Un
+                  - generic [ref=e566]:
+                    - generic [ref=e569]:
+                      - generic [ref=e570]:
+                        - img "Lechuga Crispy Verde Bolsa, 1 Un"
+                      - button "Agregar al carro - Lechuga Crispy Verde Bolsa, 1 Un" [ref=e573] [cursor=pointer]:
+                        - generic "agregar" [ref=e574]: 
+                        - generic [ref=e575]: Agregar
+                    - generic [ref=e577]:
+                      - generic [ref=e579]:
+                        - generic [ref=e580]: $1.290
+                        - generic [ref=e581]: precio actual $1.290
+                        - generic [ref=e582]: $1.290 x un
+                      - generic [ref=e583]: Multi Marca
+                      - generic [ref=e584]: Lechuga Crispy Verde Bolsa, 1 Un
+                - group [ref=e587]:
+                  - link "Lechuga Salanova Hojas Pote, 150 g" [ref=e588] [cursor=pointer]:
+                    - /url: /ip/verduras/00780463617042?from=/search
+                    - generic [ref=e589]: Lechuga Salanova Hojas Pote, 150 g
+                  - generic [ref=e591]:
+                    - generic [ref=e594]:
+                      - generic [ref=e595]:
+                        - img "Lechuga Salanova Hojas Pote, 150 g"
+                      - button "Agregar al carro - Lechuga Salanova Hojas Pote, 150 g" [ref=e598] [cursor=pointer]:
+                        - generic "agregar" [ref=e599]: 
+                        - generic [ref=e600]: Agregar
+                    - generic [ref=e602]:
+                      - generic [ref=e604]:
+                        - generic [ref=e605]: $2.290
+                        - generic [ref=e606]: precio actual $2.290
+                      - generic [ref=e607]: Multi Marca
+                      - generic [ref=e608]: Lechuga Salanova Hojas Pote, 150 g
+                - group [ref=e611]:
+                  - link "Lechuga TRío Hidropónica Bolsa, 1 Un" [ref=e612] [cursor=pointer]:
+                    - /url: /ip/verduras/00780461085076?from=/search
+                    - generic [ref=e613]: Lechuga TRío Hidropónica Bolsa, 1 Un
+                  - generic [ref=e615]:
+                    - generic [ref=e618]:
+                      - generic [ref=e619]:
+                        - img "Lechuga TRío Hidropónica Bolsa, 1 Un"
+                      - button "Agregar al carro - Lechuga TRío Hidropónica Bolsa, 1 Un" [ref=e622] [cursor=pointer]:
+                        - generic "agregar" [ref=e623]: 
+                        - generic [ref=e624]: Agregar
+                    - generic [ref=e626]:
+                      - generic [ref=e628]:
+                        - generic [ref=e629]: $1.590
+                        - generic [ref=e630]: precio actual $1.590
+                        - generic [ref=e631]: $1.590 x un
+                      - generic [ref=e632]: Multi Marca
+                      - generic [ref=e633]: Lechuga TRío Hidropónica Bolsa, 1 Un
+                - group [ref=e636]:
+                  - link "Lechuga Costina Bolsa, 2 Un" [ref=e637] [cursor=pointer]:
+                    - /url: /ip/verduras/00780461085110?from=/search
+                    - generic [ref=e638]: Lechuga Costina Bolsa, 2 Un
+                  - generic [ref=e640]:
+                    - generic [ref=e643]:
+                      - generic [ref=e644]:
+                        - img "Lechuga Costina Bolsa, 2 Un"
+                      - button "Agregar al carro - Lechuga Costina Bolsa, 2 Un" [ref=e647] [cursor=pointer]:
+                        - generic "agregar" [ref=e648]: 
+                        - generic [ref=e649]: Agregar
+                    - generic [ref=e651]:
+                      - generic [ref=e653]:
+                        - generic [ref=e654]: $2.490
+                        - generic [ref=e655]: precio actual $2.490
+                        - generic [ref=e656]: $1.245 x un
+                      - generic [ref=e657]: Multi Marca
+                      - generic [ref=e658]: Lechuga Costina Bolsa, 2 Un
+                - group [ref=e661]:
+                  - link "Lechuga Roble Verde Pote, 150 g" [ref=e662] [cursor=pointer]:
+                    - /url: /ip/verduras/00780463617027?from=/search
+                    - generic [ref=e663]: Lechuga Roble Verde Pote, 150 g
+                  - generic [ref=e665]:
+                    - generic [ref=e668]:
+                      - generic [ref=e669]:
+                        - img "Lechuga Roble Verde Pote, 150 g"
+                      - button "Agregar al carro - Lechuga Roble Verde Pote, 150 g" [ref=e672] [cursor=pointer]:
+                        - generic "agregar" [ref=e673]: 
+                        - generic [ref=e674]: Agregar
+                    - generic [ref=e676]:
+                      - generic [ref=e678]:
+                        - generic [ref=e679]: $2.190
+                        - generic [ref=e680]: precio actual $2.190
+                      - generic [ref=e681]: Multi Marca
+                      - generic [ref=e682]: Lechuga Roble Verde Pote, 150 g
+                - group [ref=e685]:
+                  - link "Lechuga Crispy Roja Bolsa, 1 Un" [ref=e686] [cursor=pointer]:
+                    - /url: /ip/verduras/00780418300022?from=/search
+                    - generic [ref=e687]: Lechuga Crispy Roja Bolsa, 1 Un
+                  - generic [ref=e689]:
+                    - generic [ref=e692]:
+                      - generic [ref=e693]:
+                        - img "Lechuga Crispy Roja Bolsa, 1 Un"
+                      - button "Agregar al carro - Lechuga Crispy Roja Bolsa, 1 Un" [ref=e696] [cursor=pointer]:
+                        - generic "agregar" [ref=e697]: 
+                        - generic [ref=e698]: Agregar
+                    - generic [ref=e700]:
+                      - generic [ref=e702]:
+                        - generic [ref=e703]: $1.290
+                        - generic [ref=e704]: precio actual $1.290
+                        - generic [ref=e705]: $1.290 x un
+                      - generic [ref=e706]: Multi Marca
+                      - generic [ref=e707]: Lechuga Crispy Roja Bolsa, 1 Un
+                - group [ref=e710]:
+                  - link "Lechuga Corazones de Tudela Pote, 600 g" [ref=e711] [cursor=pointer]:
+                    - /url: /ip/verduras/00780463617054?from=/search
+                    - generic [ref=e712]: Lechuga Corazones de Tudela Pote, 600 g
+                  - generic [ref=e714]:
+                    - generic [ref=e717]:
+                      - generic [ref=e718]:
+                        - img "Lechuga Corazones de Tudela Pote, 600 g"
+                      - button "Agregar al carro - Lechuga Corazones de Tudela Pote, 600 g" [ref=e721] [cursor=pointer]:
+                        - generic "agregar" [ref=e722]: 
+                        - generic [ref=e723]: Agregar
+                    - generic [ref=e725]:
+                      - generic [ref=e727]:
+                        - generic [ref=e728]: $2.390
+                        - generic [ref=e729]: precio actual $2.390
+                        - generic [ref=e730]: $3.983 x kg
+                      - generic [ref=e731]: Fresh Cut
+                      - generic [ref=e732]: Lechuga Corazones de Tudela Pote, 600 g
+                - group [ref=e735]:
+                  - link "Lechuga Lollo Rosa Pote, 150 g" [ref=e736] [cursor=pointer]:
+                    - /url: /ip/verduras/00780463617017?from=/search
+                    - generic [ref=e737]: Lechuga Lollo Rosa Pote, 150 g
+                  - generic [ref=e739]:
+                    - generic [ref=e742]:
+                      - generic [ref=e743]:
+                        - img "Lechuga Lollo Rosa Pote, 150 g"
+                      - button "Agregar al carro - Lechuga Lollo Rosa Pote, 150 g" [ref=e746] [cursor=pointer]:
+                        - generic "agregar" [ref=e747]: 
+                        - generic [ref=e748]: Agregar
+                    - generic [ref=e750]:
+                      - generic [ref=e752]:
+                        - generic [ref=e753]: $2.190
+                        - generic [ref=e754]: precio actual $2.190
+                        - generic [ref=e755]: $14.600 x kg
+                      - generic [ref=e756]: Multi Marca
+                      - generic [ref=e757]: Lechuga Lollo Rosa Pote, 150 g
+                - group [ref=e760]:
+                  - link "Crema Corporal Multipropósito Soft, 110 ml" [ref=e761] [cursor=pointer]:
+                    - /url: /ip/rutina-corporal/00780000400093?from=/search
+                    - generic [ref=e762]: Crema Corporal Multipropósito Soft, 110 ml
+                  - generic [ref=e764]:
+                    - generic [ref=e767]:
+                      - generic [ref=e768]:
+                        - img "Crema Corporal Multipropósito Soft, 110 ml"
+                      - button "Agregar al carro - Crema Corporal Multipropósito Soft, 110 ml" [ref=e771] [cursor=pointer]:
+                        - generic "agregar" [ref=e772]: 
+                        - generic [ref=e773]: Agregar
+                    - generic [ref=e775]:
+                      - generic [ref=e777]:
+                        - generic [ref=e778]: $3.390
+                        - generic [ref=e779]: precio actual $3.390
+                        - generic [ref=e780]: $3.082 x 100ml
+                      - generic [ref=e781]: Lechuga
+                      - generic [ref=e782]: Crema Corporal Multipropósito Soft, 110 ml
+                - generic [ref=e784]:
+                  - group [ref=e785]:
+                    - link "Crema De Manos Intensiva, 75 g" [ref=e786] [cursor=pointer]:
+                      - /url: /ip/rutina-corporal/00780000400250?from=/search
+                      - generic [ref=e787]: Crema De Manos Intensiva, 75 g
+                    - generic [ref=e789]:
+                      - generic [ref=e793]:
+                        - img "Crema De Manos Intensiva, 75 g"
+                      - generic [ref=e795]:
+                        - generic [ref=e797]:
+                          - generic [ref=e798]: $1.950
+                          - generic [ref=e799]: precio actual $1.950
+                          - generic [ref=e800]: $2.600 x 100g
+                        - generic [ref=e801]: Lechuga
+                        - generic [ref=e802]: Crema De Manos Intensiva, 75 g
+                        - generic [ref=e803]: Agotado
+                  - button "Revisar productos similares - Crema De Manos Intensiva, 75 g" [ref=e805]: Revisar productos similares
+                - group [ref=e808]:
+                  - link "Crema Corporal Nutrición Intensiva, 800 ml" [ref=e809] [cursor=pointer]:
+                    - /url: /ip/rutina-corporal/00780000400603?from=/search
+                    - generic [ref=e810]: Crema Corporal Nutrición Intensiva, 800 ml
+                  - generic [ref=e812]:
+                    - generic [ref=e815]:
+                      - generic [ref=e816]:
+                        - img "Crema Corporal Nutrición Intensiva, 800 ml"
+                      - button "Agregar al carro - Crema Corporal Nutrición Intensiva, 800 ml" [ref=e819] [cursor=pointer]:
+                        - generic "agregar" [ref=e820]: 
+                        - generic [ref=e821]: Agregar
+                    - generic [ref=e823]:
+                      - generic [ref=e825]:
+                        - generic [ref=e826]: $6.390
+                        - generic [ref=e827]: precio actual $6.390
+                        - generic [ref=e828]: $799 x 100ml
+                      - generic [ref=e829]: Lechuga
+                      - generic [ref=e830]: Crema Corporal Nutrición Intensiva, 800 ml
+                - group [ref=e833]:
+                  - link "Apio Mata Bolsa, 1 Un" [ref=e834] [cursor=pointer]:
+                    - /url: /ip/verduras/00780461085022?from=/search
+                    - generic [ref=e835]: Apio Mata Bolsa, 1 Un
+                  - generic [ref=e837]:
+                    - generic [ref=e840]:
+                      - generic [ref=e841]:
+                        - img "Apio Mata Bolsa, 1 Un"
+                      - button "Agregar al carro - Apio Mata Bolsa, 1 Un" [ref=e844] [cursor=pointer]:
+                        - generic "agregar" [ref=e845]: 
+                        - generic [ref=e846]: Agregar
+                    - generic [ref=e848]:
+                      - generic [ref=e850]:
+                        - generic [ref=e851]: $1.390
+                        - generic [ref=e852]: precio actual $1.390
+                      - generic [ref=e853]: Multi Marca
+                      - generic [ref=e854]: Apio Mata Bolsa, 1 Un
+                - group [ref=e857]:
+                  - link "Apio Bastones Bolsa, 500 g" [ref=e858] [cursor=pointer]:
+                    - /url: /ip/verduras/00780461085144?from=/search
+                    - generic [ref=e859]: Apio Bastones Bolsa, 500 g
+                  - generic [ref=e861]:
+                    - generic [ref=e864]:
+                      - generic [ref=e865]:
+                        - img "Apio Bastones Bolsa, 500 g"
+                      - button "Agregar al carro - Apio Bastones Bolsa, 500 g" [ref=e868] [cursor=pointer]:
+                        - generic "agregar" [ref=e869]: 
+                        - generic [ref=e870]: Agregar
+                    - generic [ref=e872]:
+                      - generic [ref=e874]:
+                        - generic [ref=e875]: $1.990
+                        - generic [ref=e876]: precio actual $1.990
+                        - generic [ref=e877]: $3.980 x kg
+                      - generic [ref=e878]: Multi Marca
+                      - generic [ref=e879]: Apio Bastones Bolsa, 500 g
+                - group [ref=e882]:
+                  - link "Ensalada Apio Media Luna Bolsa, 420 gr" [ref=e883] [cursor=pointer]:
+                    - /url: /ip/verduras/00340198110000?from=/search
+                    - generic [ref=e884]: Ensalada Apio Media Luna Bolsa, 420 gr
+                  - generic [ref=e886]:
+                    - generic [ref=e889]:
+                      - generic [ref=e890]:
+                        - img "Ensalada Apio Media Luna Bolsa, 420 gr"
+                      - button "Agregar al carro - Ensalada Apio Media Luna Bolsa, 420 gr" [ref=e893] [cursor=pointer]:
+                        - generic "agregar" [ref=e894]: 
+                        - generic [ref=e895]: Agregar
+                    - generic [ref=e897]:
+                      - generic [ref=e899]:
+                        - generic [ref=e900]: $2.890
+                        - generic [ref=e901]: precio actual $2.890
+                        - generic [ref=e902]: $5.780 x kg
+                      - generic [ref=e903]: Multi Marca
+                      - generic [ref=e904]: Ensalada Apio Media Luna Bolsa, 420 gr
+                - group [ref=e907]:
+                  - link "Apio Corazones Bolsa, 1 Un" [ref=e908] [cursor=pointer]:
+                    - /url: /ip/verduras/00780461085145?from=/search
+                    - generic [ref=e909]: Apio Corazones Bolsa, 1 Un
+                  - generic [ref=e911]:
+                    - generic [ref=e914]:
+                      - generic [ref=e915]:
+                        - img "Apio Corazones Bolsa, 1 Un"
+                      - button "Agregar al carro - Apio Corazones Bolsa, 1 Un" [ref=e918] [cursor=pointer]:
+                        - generic "agregar" [ref=e919]: 
+                        - generic [ref=e920]: Agregar
+                    - generic [ref=e922]:
+                      - generic [ref=e924]:
+                        - generic [ref=e925]: $2.990
+                        - generic [ref=e926]: precio actual $2.990
+                        - generic [ref=e927]: $2.990 x un
+                      - generic [ref=e928]: Multi Marca
+                      - generic [ref=e929]: Apio Corazones Bolsa, 1 Un
+                - group [ref=e932]:
+                  - link "Achicoria Bolsa, 1 Un" [ref=e933] [cursor=pointer]:
+                    - /url: /ip/verduras/00340037747000?from=/search
+                    - generic [ref=e934]: Achicoria Bolsa, 1 Un
+                  - generic [ref=e936]:
+                    - generic [ref=e939]:
+                      - generic [ref=e940]:
+                        - img "Achicoria Bolsa, 1 Un"
+                      - button "Agregar al carro - Achicoria Bolsa, 1 Un" [ref=e943] [cursor=pointer]:
+                        - generic "agregar" [ref=e944]: 
+                        - generic [ref=e945]: Agregar
+                    - generic [ref=e947]:
+                      - generic [ref=e949]:
+                        - generic [ref=e950]: $990
+                        - generic [ref=e951]: precio actual $990
+                        - generic [ref=e952]: $990 x un
+                      - generic [ref=e953]: Multi Marca
+                      - generic [ref=e954]: Achicoria Bolsa, 1 Un
+                - group [ref=e957]:
+                  - link "Ensalada Apio Juliana Bolsa, 300 gr" [ref=e958] [cursor=pointer]:
+                    - /url: /ip/verduras/00780461085182?from=/search
+                    - generic [ref=e959]: Ensalada Apio Juliana Bolsa, 300 gr
+                  - generic [ref=e961]:
+                    - generic [ref=e962]:
+                      - generic [ref=e964]:
+                        - generic [ref=e966]: 
+                        - text: Rebaja
+                      - generic [ref=e967]:
+                        - generic [ref=e968]:
+                          - img "Ensalada Apio Juliana Bolsa, 300 gr"
+                        - button "Agregar al carro - Ensalada Apio Juliana Bolsa, 300 gr" [ref=e971] [cursor=pointer]:
+                          - generic "agregar" [ref=e972]: 
+                          - generic [ref=e973]: Agregar
+                    - generic [ref=e975]:
+                      - generic [ref=e977]:
+                        - generic [ref=e978]: $2.190
+                        - generic [ref=e979]: precio actual $2.190, Costaba $2.790
+                        - generic [ref=e980]: $7.300 x kg
+                        - generic [ref=e981]: $2.790
+                        - generic [ref=e982]: Ahorra $600
+                      - generic [ref=e983]: Multi Marca
+                      - generic [ref=e984]: Ensalada Apio Juliana Bolsa, 300 gr
+                - group [ref=e987]:
+                  - link "Endibia Bandeja, 500 gr" [ref=e988] [cursor=pointer]:
+                    - /url: /ip/verduras/00780403300001?from=/search
+                    - generic [ref=e989]: Endibia Bandeja, 500 gr
+                  - generic [ref=e991]:
+                    - generic [ref=e994]:
+                      - generic [ref=e995]:
+                        - img "Endibia Bandeja, 500 gr"
+                      - button "Agregar al carro - Endibia Bandeja, 500 gr" [ref=e998] [cursor=pointer]:
+                        - generic "agregar" [ref=e999]: 
+                        - generic [ref=e1000]: Agregar
+                    - generic [ref=e1002]:
+                      - generic [ref=e1004]:
+                        - generic [ref=e1005]: $3.990
+                        - generic [ref=e1006]: precio actual $3.990
+                      - generic [ref=e1007]: Más Vida
+                      - generic [ref=e1008]: Endibia Bandeja, 500 gr
+                - group [ref=e1011]:
+                  - link "Apio juliana bolsa, 300 g" [ref=e1012] [cursor=pointer]:
+                    - /url: /ip/verduras/00780467694071?from=/search
+                    - generic [ref=e1013]: Apio juliana bolsa, 300 g
+                  - generic [ref=e1015]:
+                    - generic [ref=e1016]:
+                      - generic [ref=e1018]:
+                        - generic [ref=e1020]: 
+                        - text: Rebaja
+                      - generic [ref=e1021]:
+                        - generic [ref=e1022]:
+                          - img "Apio juliana bolsa, 300 g"
+                        - button "Agregar al carro - Apio juliana bolsa, 300 g" [ref=e1025] [cursor=pointer]:
+                          - generic "agregar" [ref=e1026]: 
+                          - generic [ref=e1027]: Agregar
+                    - generic [ref=e1029]:
+                      - generic [ref=e1031]:
+                        - generic [ref=e1032]: $2.350
+                        - generic [ref=e1033]: precio actual $2.350, Costaba $2.790
+                        - generic [ref=e1034]: $7.833 x kg
+                        - generic [ref=e1035]: $2.790
+                        - generic [ref=e1036]: Ahorra $440
+                      - generic [ref=e1037]: Dole
+                      - generic [ref=e1038]: Apio juliana bolsa, 300 g
+  - alert [ref=e1047]

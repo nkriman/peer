@@ -1,0 +1,909 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: limon kg
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e80]:
+            - generic [ref=e81]:
+              - generic [ref=e84]:
+                - generic [ref=e85]:
+                  - button "Precio" [ref=e88]:
+                    - generic [ref=e89]: Precio
+                    - img [ref=e90]: 
+                  - separator [ref=e91]
+                - generic [ref=e92]:
+                  - button "Campaña" [ref=e95]:
+                    - generic [ref=e96]: Campaña
+                    - img [ref=e97]: 
+                  - separator [ref=e98]
+                - generic [ref=e99]:
+                  - button "Marca" [ref=e102]:
+                    - generic [ref=e103]: Marca
+                    - img [ref=e104]: 
+                  - separator [ref=e105]
+                - generic [ref=e106]:
+                  - button "Categoría" [ref=e109]:
+                    - generic [ref=e110]: Categoría
+                    - img [ref=e111]: 
+                  - separator [ref=e112]
+              - generic [ref=e115]:
+                - heading "Resultados para limon kg (222)" [level=2] [ref=e123]: Resultados para limon kg(222)
+                - generic [ref=e124]:
+                  - group [ref=e127]:
+                    - link "Limón Sutil Malla, 1 kg" [ref=e128] [cursor=pointer]:
+                      - /url: /ip/frutas/00780463169005?from=/search
+                      - generic [ref=e129]: Limón Sutil Malla, 1 kg
+                    - generic [ref=e131]:
+                      - generic [ref=e134]:
+                        - img "Limón Sutil Malla, 1 kg" [ref=e136]
+                        - button "Agregar al carro - Limón Sutil Malla, 1 kg" [ref=e139] [cursor=pointer]:
+                          - generic "agregar" [ref=e140]: 
+                          - generic [ref=e141]: Agregar
+                      - generic [ref=e143]:
+                        - generic [ref=e145]:
+                          - generic [ref=e146]: $3.790
+                          - generic [ref=e147]: precio actual $3.790
+                          - generic [ref=e148]: $3.790 x kg
+                        - generic [ref=e149]: Multi Marca
+                        - generic [ref=e150]: Limón Sutil Malla, 1 kg
+                  - group [ref=e153]:
+                    - link "Limón Sin Semillas Malla, 900 g" [ref=e154] [cursor=pointer]:
+                      - /url: /ip/frutas/00780460592054?from=/search
+                      - generic [ref=e155]: Limón Sin Semillas Malla, 900 g
+                    - generic [ref=e157]:
+                      - generic [ref=e160]:
+                        - img "Limón Sin Semillas Malla, 900 g" [ref=e162]
+                        - button "Agregar al carro - Limón Sin Semillas Malla, 900 g" [ref=e165] [cursor=pointer]:
+                          - generic "agregar" [ref=e166]: 
+                          - generic [ref=e167]: Agregar
+                      - generic [ref=e169]:
+                        - generic [ref=e171]:
+                          - generic [ref=e172]: $1.990
+                          - generic [ref=e173]: precio actual $1.990
+                          - generic [ref=e174]: $2.211 x kg
+                        - generic [ref=e175]: Pangalillo
+                        - generic [ref=e176]: Limón Sin Semillas Malla, 900 g
+                  - group [ref=e179]:
+                    - link "Limón Organico Malla, 1 Kg" [ref=e180] [cursor=pointer]:
+                      - /url: /ip/frutas/00780460120039?from=/search
+                      - generic [ref=e181]: Limón Organico Malla, 1 Kg
+                    - generic [ref=e183]:
+                      - generic [ref=e186]:
+                        - img "Limón Organico Malla, 1 Kg" [ref=e188]
+                        - button "Agregar al carro - Limón Organico Malla, 1 Kg" [ref=e191] [cursor=pointer]:
+                          - generic "agregar" [ref=e192]: 
+                          - generic [ref=e193]: Agregar
+                      - generic [ref=e195]:
+                        - generic [ref=e197]:
+                          - generic [ref=e198]: $2.390
+                          - generic [ref=e199]: precio actual $2.390
+                          - generic [ref=e200]: $2.390 x kg
+                        - generic [ref=e201]: Multi Marca
+                        - generic [ref=e202]: Limón Organico Malla, 1 Kg
+                  - group [ref=e205]:
+                    - link "Limón Malla, 1 kg" [ref=e206] [cursor=pointer]:
+                      - /url: /ip/frutas/00780465943000?from=/search
+                      - generic [ref=e207]: Limón Malla, 1 kg
+                    - generic [ref=e209]:
+                      - generic [ref=e210]:
+                        - generic [ref=e212]: 2 x $2.000
+                        - generic [ref=e213]:
+                          - img "Limón Malla, 1 kg" [ref=e215]
+                          - button "Agregar al carro - Limón Malla, 1 kg" [ref=e218] [cursor=pointer]:
+                            - generic "agregar" [ref=e219]: 
+                            - generic [ref=e220]: Agregar
+                      - generic [ref=e222]:
+                        - generic [ref=e224]:
+                          - generic [ref=e225]: $1.950
+                          - generic [ref=e226]: precio actual $1.950
+                          - generic [ref=e227]: $1.950 x kg
+                        - generic [ref=e228]: Multi Marca
+                        - generic [ref=e229]: Limón Malla, 1 kg
+                  - group [ref=e232]:
+                    - link "Limón Granel" [ref=e233] [cursor=pointer]:
+                      - /url: /ip/frutas/00202105000000?from=/search
+                      - generic [ref=e234]: Limón Granel
+                    - generic [ref=e236]:
+                      - generic [ref=e239]:
+                        - img "Limón Granel" [ref=e241]
+                        - button "Agregar al carro - Limón Granel" [ref=e244] [cursor=pointer]:
+                          - generic "agregar" [ref=e245]: 
+                          - generic [ref=e246]: Agregar
+                      - generic [ref=e248]:
+                        - generic [ref=e250]:
+                          - generic [ref=e251]: $1.950/kg
+                          - generic [ref=e252]: precio actual $1.950/kg
+                          - generic [ref=e253]: $1.950 x kg
+                        - generic [ref=e254]: Multi Marca
+                        - generic [ref=e255]: Limón Granel
+                  - group [ref=e258]:
+                    - link "Limón Malla, 1 kg" [ref=e259] [cursor=pointer]:
+                      - /url: /ip/frutas/00347354309000?from=/search
+                      - generic [ref=e260]: Limón Malla, 1 kg
+                    - generic [ref=e262]:
+                      - generic [ref=e265]:
+                        - img "Limón Malla, 1 kg" [ref=e267]
+                        - button "Agregar al carro - Limón Malla, 1 kg" [ref=e270] [cursor=pointer]:
+                          - generic "agregar" [ref=e271]: 
+                          - generic [ref=e272]: Agregar
+                      - generic [ref=e274]:
+                        - generic [ref=e276]:
+                          - generic [ref=e277]: $1.990
+                          - generic [ref=e278]: precio actual $1.990
+                          - generic [ref=e279]: $1.990 x kg
+                        - generic [ref=e280]: Sofruco
+                        - generic [ref=e281]: Limón Malla, 1 kg
+                  - group [ref=e284]:
+                    - link "Naranja Malla, 2 kg" [ref=e285] [cursor=pointer]:
+                      - /url: /ip/frutas/00340072168000?from=/search
+                      - generic [ref=e286]: Naranja Malla, 2 kg
+                    - generic [ref=e288]:
+                      - generic [ref=e291]:
+                        - img "Naranja Malla, 2 kg" [ref=e293]
+                        - button "Agregar al carro - Naranja Malla, 2 kg" [ref=e296] [cursor=pointer]:
+                          - generic "agregar" [ref=e297]: 
+                          - generic [ref=e298]: Agregar
+                      - generic [ref=e300]:
+                        - generic [ref=e302]:
+                          - generic [ref=e303]: $3.590
+                          - generic [ref=e304]: precio actual $3.590
+                          - generic [ref=e305]: $1.795 x kg
+                        - generic [ref=e306]: Multimarca
+                        - generic [ref=e307]: Naranja Malla, 2 kg
+                  - group [ref=e310]:
+                    - link "Naranja Importada Granel" [ref=e311] [cursor=pointer]:
+                      - /url: /ip/frutas/00202108000000?from=/search
+                      - generic [ref=e312]: Naranja Importada Granel
+                    - generic [ref=e314]:
+                      - generic [ref=e317]:
+                        - img "Naranja Importada Granel" [ref=e319]
+                        - button "Agregar al carro - Naranja Importada Granel" [ref=e322] [cursor=pointer]:
+                          - generic "agregar" [ref=e323]: 
+                          - generic [ref=e324]: Agregar
+                      - generic [ref=e326]:
+                        - generic [ref=e328]:
+                          - generic [ref=e329]: $2.790/kg
+                          - generic [ref=e330]: precio actual $2.790/kg
+                          - generic [ref=e331]: $2.790 x kg
+                        - generic [ref=e332]: Multi Marca
+                        - generic [ref=e333]: Naranja Importada Granel
+                  - group [ref=e336]:
+                    - link "Mandarina Sofruco Malla, 1,5 kg" [ref=e337] [cursor=pointer]:
+                      - /url: /ip/frutas/00780282101167?from=/search
+                      - generic [ref=e338]: Mandarina Sofruco Malla, 1,5 kg
+                    - generic [ref=e340]:
+                      - generic [ref=e343]:
+                        - img "Mandarina Sofruco Malla, 1,5 kg" [ref=e345]
+                        - button "Agregar al carro - Mandarina Sofruco Malla, 1,5 kg" [ref=e348] [cursor=pointer]:
+                          - generic "agregar" [ref=e349]: 
+                          - generic [ref=e350]: Agregar
+                      - generic [ref=e352]:
+                        - generic [ref=e354]:
+                          - generic [ref=e355]: $4.990
+                          - generic [ref=e356]: precio actual $4.990
+                          - generic [ref=e357]: $3.327 x kg
+                        - generic [ref=e358]: Sofruco
+                        - generic [ref=e359]: Mandarina Sofruco Malla, 1,5 kg
+                  - group [ref=e362]:
+                    - link "Kiwi Granel" [ref=e363] [cursor=pointer]:
+                      - /url: /ip/frutas/00203017000000?from=/search
+                      - generic [ref=e364]: Kiwi Granel
+                    - generic [ref=e366]:
+                      - generic [ref=e369]:
+                        - img "Kiwi Granel" [ref=e371]
+                        - button "Agregar al carro - Kiwi Granel" [ref=e374] [cursor=pointer]:
+                          - generic "agregar" [ref=e375]: 
+                          - generic [ref=e376]: Agregar
+                      - generic [ref=e378]:
+                        - generic [ref=e380]:
+                          - generic [ref=e381]: $4.190/kg
+                          - generic [ref=e382]: precio actual $4.190/kg
+                          - generic [ref=e383]: $4.190 x kg
+                        - generic [ref=e384]: Multi Marca
+                        - generic [ref=e385]: Kiwi Granel
+                  - group [ref=e388]:
+                    - link "Kiwi Amarillo Pote, 500 g" [ref=e389] [cursor=pointer]:
+                      - /url: /ip/frutas/00345065387000?from=/search
+                      - generic [ref=e390]: Kiwi Amarillo Pote, 500 g
+                    - generic [ref=e392]:
+                      - generic [ref=e395]:
+                        - img "Kiwi Amarillo Pote, 500 g" [ref=e397]
+                        - button "Agregar al carro - Kiwi Amarillo Pote, 500 g" [ref=e400] [cursor=pointer]:
+                          - generic "agregar" [ref=e401]: 
+                          - generic [ref=e402]: Agregar
+                      - generic [ref=e404]:
+                        - generic [ref=e406]:
+                          - generic [ref=e407]: $2.490
+                          - generic [ref=e408]: precio actual $2.490
+                          - generic [ref=e409]: $4.980 x kg
+                        - generic [ref=e410]: Multi Marca
+                        - generic [ref=e411]: Kiwi Amarillo Pote, 500 g
+                  - generic [ref=e413]:
+                    - group [ref=e414]:
+                      - link "Naranja Malla Usa, 2 kg" [ref=e415] [cursor=pointer]:
+                        - /url: /ip/frutas/00347572861000?from=/search
+                        - generic [ref=e416]: Naranja Malla Usa, 2 kg
+                      - generic [ref=e418]:
+                        - img "Naranja Malla Usa, 2 kg" [ref=e423]
+                        - generic [ref=e425]:
+                          - generic [ref=e427]:
+                            - generic [ref=e428]: $8.990
+                            - generic [ref=e429]: precio actual $8.990
+                            - generic [ref=e430]: $4.495 x kg
+                          - generic [ref=e431]: Sofruco
+                          - generic [ref=e432]: Naranja Malla Usa, 2 kg
+                          - generic [ref=e433]: Agotado
+                    - button "Revisar productos similares - Naranja Malla Usa, 2 kg" [ref=e435]: Revisar productos similares
+                  - group [ref=e438]:
+                    - link "Pomelo Granel" [ref=e439] [cursor=pointer]:
+                      - /url: /ip/frutas/00200342000000?from=/search
+                      - generic [ref=e440]: Pomelo Granel
+                    - generic [ref=e442]:
+                      - generic [ref=e445]:
+                        - img "Pomelo Granel" [ref=e447]
+                        - button "Agregar al carro - Pomelo Granel" [ref=e450] [cursor=pointer]:
+                          - generic "agregar" [ref=e451]: 
+                          - generic [ref=e452]: Agregar
+                      - generic [ref=e454]:
+                        - generic [ref=e456]:
+                          - generic [ref=e457]: $2.150/kg
+                          - generic [ref=e458]: precio actual $2.150/kg
+                          - generic [ref=e459]: $2.150 x kg
+                        - generic [ref=e460]: Multi Marca
+                        - generic [ref=e461]: Pomelo Granel
+                  - group [ref=e464]:
+                    - link "Pomelo Malla, 2 kg" [ref=e465] [cursor=pointer]:
+                      - /url: /ip/frutas/00040000728344?from=/search
+                      - generic [ref=e466]: Pomelo Malla, 2 kg
+                    - generic [ref=e468]:
+                      - generic [ref=e471]:
+                        - img "Pomelo Malla, 2 kg" [ref=e473]
+                        - button "Agregar al carro - Pomelo Malla, 2 kg" [ref=e476] [cursor=pointer]:
+                          - generic "agregar" [ref=e477]: 
+                          - generic [ref=e478]: Agregar
+                      - generic [ref=e480]:
+                        - generic [ref=e482]:
+                          - generic [ref=e483]: $3.590
+                          - generic [ref=e484]: precio actual $3.590
+                          - generic [ref=e485]: $1.795 x kg
+                        - generic [ref=e486]: Multi Marca
+                        - generic [ref=e487]: Pomelo Malla, 2 kg
+                  - group [ref=e490]:
+                    - link "Mandarina Granel" [ref=e491] [cursor=pointer]:
+                      - /url: /ip/frutas/00200474000000?from=/search
+                      - generic [ref=e492]: Mandarina Granel
+                    - generic [ref=e494]:
+                      - generic [ref=e497]:
+                        - img "Mandarina Granel" [ref=e499]
+                        - button "Agregar al carro - Mandarina Granel" [ref=e502] [cursor=pointer]:
+                          - generic "agregar" [ref=e503]: 
+                          - generic [ref=e504]: Agregar
+                      - generic [ref=e506]:
+                        - generic [ref=e508]:
+                          - generic [ref=e509]: $2.490/kg
+                          - generic [ref=e510]: precio actual $2.490/kg
+                          - generic [ref=e511]: $2.490 x kg
+                        - generic [ref=e512]: Multi Marca
+                        - generic [ref=e513]: Mandarina Granel
+                  - group [ref=e516]:
+                    - link "Mandarina Malla, 1 kg" [ref=e517] [cursor=pointer]:
+                      - /url: /ip/frutas/00340977388000?from=/search
+                      - generic [ref=e518]: Mandarina Malla, 1 kg
+                    - generic [ref=e520]:
+                      - generic [ref=e521]:
+                        - generic [ref=e523]:
+                          - generic [ref=e525]: 
+                          - text: Rebaja
+                        - generic [ref=e526]:
+                          - img "Mandarina Malla, 1 kg" [ref=e528]
+                          - button "Agregar al carro - Mandarina Malla, 1 kg" [ref=e531] [cursor=pointer]:
+                            - generic "agregar" [ref=e532]: 
+                            - generic [ref=e533]: Agregar
+                      - generic [ref=e535]:
+                        - generic [ref=e537]:
+                          - generic [ref=e538]: $2.000
+                          - generic [ref=e539]: precio actual $2.000, Costaba $2.990
+                          - generic [ref=e540]: $2.000 x kg
+                          - generic [ref=e541]: $2.990
+                          - generic [ref=e542]: Ahorra $990
+                        - generic [ref=e543]: Multi Marca
+                        - generic [ref=e544]: Mandarina Malla, 1 kg
+                  - group [ref=e547]:
+                    - link "Sucedáneo de Limón Botella, 500 cc" [ref=e548] [cursor=pointer]:
+                      - /url: /ip/aceites-y-aderezos/00780233780103?from=/search
+                      - generic [ref=e549]: Sucedáneo de Limón Botella, 500 cc
+                    - generic [ref=e551]:
+                      - generic [ref=e552]:
+                        - generic [ref=e554]:
+                          - generic [ref=e556]: 
+                          - text: Rebaja
+                        - generic [ref=e557]:
+                          - img "Sucedáneo de Limón Botella, 500 cc" [ref=e559]
+                          - button "Agregar al carro - Sucedáneo de Limón Botella, 500 cc" [ref=e562] [cursor=pointer]:
+                            - generic "agregar" [ref=e563]: 
+                            - generic [ref=e564]: Agregar
+                      - generic [ref=e566]:
+                        - generic [ref=e568]:
+                          - generic [ref=e569]: $990
+                          - generic [ref=e570]: precio actual $990, Costaba $1.150
+                          - generic [ref=e571]: $1.980 x lt
+                          - generic [ref=e572]: $1.150
+                          - generic [ref=e573]: Ahorra $160
+                        - generic [ref=e574]: Traverso
+                        - generic [ref=e575]: Sucedáneo de Limón Botella, 500 cc
+                  - group [ref=e578]:
+                    - link "Bebida Limón Original Botella Retornable, 3 L" [ref=e579] [cursor=pointer]:
+                      - /url: /ip/bebidas/00780161033352?from=/search
+                      - generic [ref=e580]: Bebida Limón Original Botella Retornable, 3 L
+                    - generic [ref=e582]:
+                      - generic [ref=e585]:
+                        - img "Bebida Limón Original Botella Retornable, 3 L" [ref=e587]
+                        - button "Agregar al carro - Bebida Limón Original Botella Retornable, 3 L" [ref=e590] [cursor=pointer]:
+                          - generic "agregar" [ref=e591]: 
+                          - generic [ref=e592]: Agregar
+                      - generic [ref=e594]:
+                        - generic [ref=e596]:
+                          - generic [ref=e597]: $2.090
+                          - generic [ref=e598]: precio actual $2.090
+                          - generic [ref=e599]: $697 x lt
+                        - generic [ref=e600]: Sprite
+                        - generic [ref=e601]: Bebida Limón Original Botella Retornable, 3 L
+                  - group [ref=e604]:
+                    - link "Bebida Limón Original Botella, 2,5 L" [ref=e605] [cursor=pointer]:
+                      - /url: /ip/bebidas/00780161000552?from=/search
+                      - generic [ref=e606]: Bebida Limón Original Botella, 2,5 L
+                    - generic [ref=e608]:
+                      - generic [ref=e611]:
+                        - img "Bebida Limón Original Botella, 2,5 L" [ref=e613]
+                        - button "Agregar al carro - Bebida Limón Original Botella, 2,5 L" [ref=e616] [cursor=pointer]:
+                          - generic "agregar" [ref=e617]: 
+                          - generic [ref=e618]: Agregar
+                      - generic [ref=e620]:
+                        - generic [ref=e622]:
+                          - generic [ref=e623]: $2.000
+                          - generic [ref=e624]: precio actual $2.000
+                          - generic [ref=e625]: $800 x lt
+                        - generic [ref=e626]: Sprite
+                        - generic [ref=e627]: Bebida Limón Original Botella, 2,5 L
+                  - group [ref=e630]:
+                    - link "Lavalozas Limón Citrus, 1000 ml" [ref=e631] [cursor=pointer]:
+                      - /url: /ip/bano-y-cocina/00780504000213?from=/search
+                      - generic [ref=e632]: Lavalozas Limón Citrus, 1000 ml
+                    - generic [ref=e634]:
+                      - generic [ref=e637]:
+                        - img "Lavalozas Limón Citrus, 1000 ml" [ref=e639]
+                        - button "Agregar al carro - Lavalozas Limón Citrus, 1000 ml" [ref=e642] [cursor=pointer]:
+                          - generic "agregar" [ref=e643]: 
+                          - generic [ref=e644]: Agregar
+                      - generic [ref=e646]:
+                        - generic [ref=e648]:
+                          - generic [ref=e649]: $2.250
+                          - generic [ref=e650]: precio actual $2.250
+                          - generic [ref=e651]: $2.250 x lt
+                        - generic [ref=e652]: Virginia
+                        - generic [ref=e653]: Lavalozas Limón Citrus, 1000 ml
+                  - group [ref=e656]:
+                    - link "Bebida Limón Original Botella, 3 L" [ref=e657] [cursor=pointer]:
+                      - /url: /ip/bebidas/00780162000132?from=/search
+                      - generic [ref=e658]: Bebida Limón Original Botella, 3 L
+                    - generic [ref=e660]:
+                      - generic [ref=e663]:
+                        - generic [ref=e664]:
+                          - img "Bebida Limón Original Botella, 3 L"
+                        - button "Agregar al carro - Bebida Limón Original Botella, 3 L" [ref=e667] [cursor=pointer]:
+                          - generic "agregar" [ref=e668]: 
+                          - generic [ref=e669]: Agregar
+                      - generic [ref=e671]:
+                        - generic [ref=e673]:
+                          - generic [ref=e674]: $2.000
+                          - generic [ref=e675]: precio actual $2.000
+                          - generic [ref=e676]: $667 x lt
+                        - generic [ref=e677]: Seven Up
+                        - generic [ref=e678]: Bebida Limón Original Botella, 3 L
+                  - group [ref=e681]:
+                    - link "Jalea Limón Pote Tradicional, 100 g" [ref=e682] [cursor=pointer]:
+                      - /url: /ip/postres-refrigerados/00000007801330?from=/search
+                      - generic [ref=e683]: Jalea Limón Pote Tradicional, 100 g
+                    - generic [ref=e685]:
+                      - generic [ref=e686]:
+                        - generic [ref=e688]:
+                          - generic [ref=e690]: 
+                          - text: Rebaja
+                        - generic [ref=e691]:
+                          - generic [ref=e692]:
+                            - img "Jalea Limón Pote Tradicional, 100 g"
+                          - button "Agregar al carro - Jalea Limón Pote Tradicional, 100 g" [ref=e695] [cursor=pointer]:
+                            - generic "agregar" [ref=e696]: 
+                            - generic [ref=e697]: Agregar
+                      - generic [ref=e699]:
+                        - generic [ref=e701]:
+                          - generic [ref=e702]: $270
+                          - generic [ref=e703]: precio actual $270, Costaba $310
+                          - generic [ref=e704]: $2.700 x kg
+                          - generic [ref=e705]: $310
+                          - generic [ref=e706]: Ahorra $40
+                        - generic [ref=e707]: Colun
+                        - generic [ref=e708]: Jalea Limón Pote Tradicional, 100 g
+                  - group [ref=e711]:
+                    - link "Galletas Limón Bolsa, 140 g" [ref=e712] [cursor=pointer]:
+                      - /url: /ip/galletas-y-colaciones-dulces/00780221550527?from=/search
+                      - generic [ref=e713]: Galletas Limón Bolsa, 140 g
+                    - generic [ref=e715]:
+                      - generic [ref=e716]:
+                        - generic [ref=e717]:
+                          - generic [ref=e719]: Combina 3 x $2.000
+                          - button "Combina 3 x $2.000. Ver combinaciones aceptadas y coincidir productos." [ref=e720] [cursor=pointer]: Combinar
+                        - generic [ref=e721]:
+                          - generic [ref=e722]:
+                            - img "Galletas Limón Bolsa, 140 g"
+                          - button "Agregar al carro - Galletas Limón Bolsa, 140 g" [ref=e725] [cursor=pointer]:
+                            - generic "agregar" [ref=e726]: 
+                            - generic [ref=e727]: Agregar
+                      - generic [ref=e729]:
+                        - generic [ref=e731]:
+                          - generic [ref=e732]: $890
+                          - generic [ref=e733]: precio actual $890
+                          - generic [ref=e734]: $6.357 x kg
+                        - generic [ref=e735]: Costa
+                        - generic [ref=e736]: Galletas Limón Bolsa, 140 g
+                  - group [ref=e739]:
+                    - link "Sucedáneo de Limón Botella, 500 ml" [ref=e740] [cursor=pointer]:
+                      - /url: /ip/aceites-y-aderezos/00780235100165?from=/search
+                      - generic [ref=e741]: Sucedáneo de Limón Botella, 500 ml
+                    - generic [ref=e743]:
+                      - generic [ref=e746]:
+                        - generic [ref=e747]:
+                          - img "Sucedáneo de Limón Botella, 500 ml"
+                        - button "Agregar al carro - Sucedáneo de Limón Botella, 500 ml" [ref=e750] [cursor=pointer]:
+                          - generic "agregar" [ref=e751]: 
+                          - generic [ref=e752]: Agregar
+                      - generic [ref=e754]:
+                        - generic [ref=e756]:
+                          - generic [ref=e757]: $850
+                          - generic [ref=e758]: precio actual $850
+                          - generic [ref=e759]: $1.700 x lt
+                        - generic [ref=e760]: Lider
+                        - generic [ref=e761]: Sucedáneo de Limón Botella, 500 ml
+                  - group [ref=e764]:
+                    - link "Bebida Limón Sin Azúcar Botella, 3 L" [ref=e765] [cursor=pointer]:
+                      - /url: /ip/bebidas/00780162000678?from=/search
+                      - generic [ref=e766]: Bebida Limón Sin Azúcar Botella, 3 L
+                    - generic [ref=e768]:
+                      - generic [ref=e771]:
+                        - generic [ref=e772]:
+                          - img "Bebida Limón Sin Azúcar Botella, 3 L"
+                        - button "Agregar al carro - Bebida Limón Sin Azúcar Botella, 3 L" [ref=e775] [cursor=pointer]:
+                          - generic "agregar" [ref=e776]: 
+                          - generic [ref=e777]: Agregar
+                      - generic [ref=e779]:
+                        - generic [ref=e781]:
+                          - generic [ref=e782]: $2.000
+                          - generic [ref=e783]: precio actual $2.000
+                          - generic [ref=e784]: $667 x lt
+                        - generic [ref=e785]: Seven Up
+                        - generic [ref=e786]: Bebida Limón Sin Azúcar Botella, 3 L
+                  - group [ref=e789]:
+                    - link "Bebida Limón Sin Azúcar Botella, 1,5 L" [ref=e790] [cursor=pointer]:
+                      - /url: /ip/bebidas/00780161022372?from=/search
+                      - generic [ref=e791]: Bebida Limón Sin Azúcar Botella, 1,5 L
+                    - generic [ref=e793]:
+                      - generic [ref=e796]:
+                        - generic [ref=e797]:
+                          - img "Bebida Limón Sin Azúcar Botella, 1,5 L"
+                        - button "Agregar al carro - Bebida Limón Sin Azúcar Botella, 1,5 L" [ref=e800] [cursor=pointer]:
+                          - generic "agregar" [ref=e801]: 
+                          - generic [ref=e802]: Agregar
+                      - generic [ref=e804]:
+                        - generic [ref=e806]:
+                          - generic [ref=e807]: $2.090
+                          - generic [ref=e808]: precio actual $2.090
+                          - generic [ref=e809]: $1.393 x lt
+                        - generic [ref=e810]: Sprite
+                        - generic [ref=e811]: Bebida Limón Sin Azúcar Botella, 1,5 L
+                  - group [ref=e814]:
+                    - link "Galletas Limón Bolsa, 120 g" [ref=e815] [cursor=pointer]:
+                      - /url: /ip/galletas-y-colaciones-dulces/00761303925733?from=/search
+                      - generic [ref=e816]: Galletas Limón Bolsa, 120 g
+                    - generic [ref=e818]:
+                      - generic [ref=e821]:
+                        - generic [ref=e822]:
+                          - img "Galletas Limón Bolsa, 120 g"
+                        - button "Agregar al carro - Galletas Limón Bolsa, 120 g" [ref=e825] [cursor=pointer]:
+                          - generic "agregar" [ref=e826]: 
+                          - generic [ref=e827]: Agregar
+                      - generic [ref=e829]:
+                        - generic [ref=e831]:
+                          - generic [ref=e832]: $950
+                          - generic [ref=e833]: precio actual $950
+                          - generic [ref=e834]: $7.917 x kg
+                        - generic [ref=e835]: Mckay
+                        - generic [ref=e836]: Galletas Limón Bolsa, 120 g
+                  - group [ref=e839]:
+                    - link "Cerveza Limón 2,5° Pack 6 Lata, 350 ml" [ref=e840] [cursor=pointer]:
+                      - /url: /ip/cervezas/00780210010609?from=/search
+                      - generic [ref=e841]: Cerveza Limón 2,5° Pack 6 Lata, 350 ml
+                    - generic [ref=e843]:
+                      - generic [ref=e846]:
+                        - generic [ref=e847]:
+                          - img "Cerveza Limón 2,5° Pack 6 Lata, 350 ml"
+                        - button "Agregar al carro - Cerveza Limón 2,5° Pack 6 Lata, 350 ml" [ref=e850] [cursor=pointer]:
+                          - generic "agregar" [ref=e851]: 
+                          - generic [ref=e852]: Agregar
+                      - generic [ref=e854]:
+                        - generic [ref=e856]:
+                          - generic [ref=e857]: $4.390
+                          - generic [ref=e858]: precio actual $4.390
+                          - generic [ref=e859]: $2.090 x un
+                        - generic [ref=e860]: Stones
+                        - generic [ref=e861]: Cerveza Limón 2,5° Pack 6 Lata, 350 ml
+                  - group [ref=e864]:
+                    - link "Queque De Limón, 400 g" [ref=e865] [cursor=pointer]:
+                      - /url: /ip/pasteleria/00007934400723?from=/search
+                      - generic [ref=e866]: Queque De Limón, 400 g
+                    - generic [ref=e868]:
+                      - generic [ref=e871]:
+                        - generic [ref=e872]:
+                          - img "Queque De Limón, 400 g"
+                        - button "Agregar al carro - Queque De Limón, 400 g" [ref=e875] [cursor=pointer]:
+                          - generic "agregar" [ref=e876]: 
+                          - generic [ref=e877]: Agregar
+                      - generic [ref=e879]:
+                        - generic [ref=e881]:
+                          - generic [ref=e882]: $4.990
+                          - generic [ref=e883]: precio actual $4.990
+                          - generic [ref=e884]: $4.990 x un
+                        - generic [ref=e885]: Schlunder
+                        - generic [ref=e886]: Queque De Limón, 400 g
+                  - group [ref=e889]:
+                    - link "Gelatina Limón Caja, 22 g" [ref=e890] [cursor=pointer]:
+                      - /url: /ip/postres-para-preparar/00780280056704?from=/search
+                      - generic [ref=e891]: Gelatina Limón Caja, 22 g
+                    - generic [ref=e893]:
+                      - generic [ref=e896]:
+                        - generic [ref=e897]:
+                          - img "Gelatina Limón Caja, 22 g"
+                        - button "Agregar al carro - Gelatina Limón Caja, 22 g" [ref=e900] [cursor=pointer]:
+                          - generic "agregar" [ref=e901]: 
+                          - generic [ref=e902]: Agregar
+                      - generic [ref=e904]:
+                        - generic [ref=e906]:
+                          - generic [ref=e907]: $790
+                          - generic [ref=e908]: precio actual $790
+                        - generic [ref=e909]: Livean
+                        - generic [ref=e910]: Gelatina Limón Caja, 22 g
+                  - group [ref=e913]:
+                    - link "Bebida Limón Botella, 3 L" [ref=e914] [cursor=pointer]:
+                      - /url: /ip/bebidas/00780162000164?from=/search
+                      - generic [ref=e915]: Bebida Limón Botella, 3 L
+                    - generic [ref=e917]:
+                      - generic [ref=e920]:
+                        - generic [ref=e921]:
+                          - img "Bebida Limón Botella, 3 L"
+                        - button "Agregar al carro - Bebida Limón Botella, 3 L" [ref=e924] [cursor=pointer]:
+                          - generic "agregar" [ref=e925]: 
+                          - generic [ref=e926]: Agregar
+                      - generic [ref=e928]:
+                        - generic [ref=e930]:
+                          - generic [ref=e931]: $2.990
+                          - generic [ref=e932]: precio actual $2.990
+                          - generic [ref=e933]: $997 x lt
+                        - generic [ref=e934]: Limón Soda
+                        - generic [ref=e935]: Bebida Limón Botella, 3 L
+                  - group [ref=e938]:
+                    - link "Bebida Limón Sin Azúcar Botella Retornable, 2 L" [ref=e939] [cursor=pointer]:
+                      - /url: /ip/bebidas/00780161022328?from=/search
+                      - generic [ref=e940]: Bebida Limón Sin Azúcar Botella Retornable, 2 L
+                    - generic [ref=e942]:
+                      - generic [ref=e945]:
+                        - generic [ref=e946]:
+                          - img "Bebida Limón Sin Azúcar Botella Retornable, 2 L"
+                        - button "Agregar al carro - Bebida Limón Sin Azúcar Botella Retornable, 2 L" [ref=e949] [cursor=pointer]:
+                          - generic "agregar" [ref=e950]: 
+                          - generic [ref=e951]: Agregar
+                      - generic [ref=e953]:
+                        - generic [ref=e955]:
+                          - generic [ref=e956]: $1.950
+                          - generic [ref=e957]: precio actual $1.950
+                          - generic [ref=e958]: $975 x lt
+                        - generic [ref=e959]: Sprite
+                        - generic [ref=e960]: Bebida Limón Sin Azúcar Botella Retornable, 2 L
+                  - group [ref=e963]:
+                    - link "Bebida Limón Zero Botella, 1,5 L" [ref=e964] [cursor=pointer]:
+                      - /url: /ip/bebidas/00780162000756?from=/search
+                      - generic [ref=e965]: Bebida Limón Zero Botella, 1,5 L
+                    - generic [ref=e967]:
+                      - generic [ref=e970]:
+                        - generic [ref=e971]:
+                          - img "Bebida Limón Zero Botella, 1,5 L"
+                        - button "Agregar al carro - Bebida Limón Zero Botella, 1,5 L" [ref=e974] [cursor=pointer]:
+                          - generic "agregar" [ref=e975]: 
+                          - generic [ref=e976]: Agregar
+                      - generic [ref=e978]:
+                        - generic [ref=e980]:
+                          - generic [ref=e981]: $1.450
+                          - generic [ref=e982]: precio actual $1.450
+                          - generic [ref=e983]: $967 x lt
+                        - generic [ref=e984]: Seven Up
+                        - generic [ref=e985]: Bebida Limón Zero Botella, 1,5 L
+                  - group [ref=e988]:
+                    - link "Bebida Limón Zero Botella, 1,5 L" [ref=e989] [cursor=pointer]:
+                      - /url: /ip/bebidas/00780162000278?from=/search
+                      - generic [ref=e990]: Bebida Limón Zero Botella, 1,5 L
+                    - generic [ref=e992]:
+                      - generic [ref=e995]:
+                        - generic [ref=e996]:
+                          - img "Bebida Limón Zero Botella, 1,5 L"
+                        - button "Agregar al carro - Bebida Limón Zero Botella, 1,5 L" [ref=e999] [cursor=pointer]:
+                          - generic "agregar" [ref=e1000]: 
+                          - generic [ref=e1001]: Agregar
+                      - generic [ref=e1003]:
+                        - generic [ref=e1005]:
+                          - generic [ref=e1006]: $1.990
+                          - generic [ref=e1007]: precio actual $1.990
+                          - generic [ref=e1008]: $1.327 x lt
+                        - generic [ref=e1009]: Limón Soda
+                        - generic [ref=e1010]: Bebida Limón Zero Botella, 1,5 L
+                  - group [ref=e1013]:
+                    - link "Sucedáneo de Limón Bidon, 5 L" [ref=e1014] [cursor=pointer]:
+                      - /url: /ip/aceites-y-aderezos/00780235100156?from=/search
+                      - generic [ref=e1015]: Sucedáneo de Limón Bidon, 5 L
+                    - generic [ref=e1017]:
+                      - generic [ref=e1020]:
+                        - generic [ref=e1021]:
+                          - img "Sucedáneo de Limón Bidon, 5 L"
+                        - button "Agregar al carro - Sucedáneo de Limón Bidon, 5 L" [ref=e1024] [cursor=pointer]:
+                          - generic "agregar" [ref=e1025]: 
+                          - generic [ref=e1026]: Agregar
+                      - generic [ref=e1028]:
+                        - generic [ref=e1030]:
+                          - generic [ref=e1031]: $6.890
+                          - generic [ref=e1032]: precio actual $6.890
+                        - generic [ref=e1033]: Lider
+                        - generic [ref=e1034]: Sucedáneo de Limón Bidon, 5 L
+                  - group [ref=e1037]:
+                    - link "Bebida Limón Pack Lata, 6 Un" [ref=e1038] [cursor=pointer]:
+                      - /url: /ip/bebidas/00780161000520?from=/search
+                      - generic [ref=e1039]: Bebida Limón Pack Lata, 6 Un
+                    - generic [ref=e1041]:
+                      - generic [ref=e1044]:
+                        - generic [ref=e1045]:
+                          - img "Bebida Limón Pack Lata, 6 Un"
+                        - button "Agregar al carro - Bebida Limón Pack Lata, 6 Un" [ref=e1048] [cursor=pointer]:
+                          - generic "agregar" [ref=e1049]: 
+                          - generic [ref=e1050]: Agregar
+                      - generic [ref=e1052]:
+                        - generic [ref=e1054]:
+                          - generic [ref=e1055]: $4.090
+                          - generic [ref=e1056]: precio actual $4.090
+                          - generic [ref=e1057]: $1.948 x un
+                        - generic [ref=e1058]: Sprite
+                        - generic [ref=e1059]: Bebida Limón Pack Lata, 6 Un
+                  - group [ref=e1062]:
+                    - link "Pimienta Limón Frasco, 680 g" [ref=e1063] [cursor=pointer]:
+                      - /url: /ip/aceites-y-aderezos/00003384400617?from=/search
+                      - generic [ref=e1064]: Pimienta Limón Frasco, 680 g
+                    - generic [ref=e1066]:
+                      - generic [ref=e1069]:
+                        - generic [ref=e1070]:
+                          - img "Pimienta Limón Frasco, 680 g"
+                        - button "Agregar al carro - Pimienta Limón Frasco, 680 g" [ref=e1073] [cursor=pointer]:
+                          - generic "agregar" [ref=e1074]: 
+                          - generic [ref=e1075]: Agregar
+                      - generic [ref=e1077]:
+                        - generic [ref=e1079]:
+                          - generic [ref=e1080]: $13.190
+                          - generic [ref=e1081]: precio actual $13.190
+                          - generic [ref=e1082]: $19.397 x kg
+                        - generic [ref=e1083]: Badia
+                        - generic [ref=e1084]: Pimienta Limón Frasco, 680 g
+                  - group [ref=e1087]:
+                    - link "Bebida Limón Original Botella, 1,5 L" [ref=e1088] [cursor=pointer]:
+                      - /url: /ip/bebidas/00780161000526?from=/search
+                      - generic [ref=e1089]: Bebida Limón Original Botella, 1,5 L
+                    - generic [ref=e1091]:
+                      - generic [ref=e1094]:
+                        - generic [ref=e1095]:
+                          - img "Bebida Limón Original Botella, 1,5 L"
+                        - button "Agregar al carro - Bebida Limón Original Botella, 1,5 L" [ref=e1098] [cursor=pointer]:
+                          - generic "agregar" [ref=e1099]: 
+                          - generic [ref=e1100]: Agregar
+                      - generic [ref=e1102]:
+                        - generic [ref=e1104]:
+                          - generic [ref=e1105]: $2.090
+                          - generic [ref=e1106]: precio actual $2.090
+                          - generic [ref=e1107]: $1.393 x lt
+                        - generic [ref=e1108]: Sprite
+                        - generic [ref=e1109]: Bebida Limón Original Botella, 1,5 L
+                  - group [ref=e1112]:
+                    - link "Lavalozas Limón Bidón, 5 L" [ref=e1113] [cursor=pointer]:
+                      - /url: /ip/bano-y-cocina/00780493000187?from=/search
+                      - generic [ref=e1114]: Lavalozas Limón Bidón, 5 L
+                    - generic [ref=e1116]:
+                      - generic [ref=e1119]:
+                        - generic [ref=e1120]:
+                          - img "Lavalozas Limón Bidón, 5 L"
+                        - button "Agregar al carro - Lavalozas Limón Bidón, 5 L" [ref=e1123] [cursor=pointer]:
+                          - generic "agregar" [ref=e1124]: 
+                          - generic [ref=e1125]: Agregar
+                      - generic [ref=e1127]:
+                        - generic [ref=e1129]:
+                          - generic [ref=e1130]: $3.290
+                          - generic [ref=e1131]: precio actual $3.290
+                        - generic [ref=e1132]: Acuenta
+                        - generic [ref=e1133]: Lavalozas Limón Bidón, 5 L
+                  - group [ref=e1136]:
+                    - link "Infusión Limón Jengibre 20 un Caja, 32 g" [ref=e1137] [cursor=pointer]:
+                      - /url: /ip/cafe-te-y-hierbas/00062891566955?from=/search
+                      - generic [ref=e1138]: Infusión Limón Jengibre 20 un Caja, 32 g
+                    - generic [ref=e1140]:
+                      - generic [ref=e1143]:
+                        - generic [ref=e1144]:
+                          - img "Infusión Limón Jengibre 20 un Caja, 32 g"
+                        - button "Agregar al carro - Infusión Limón Jengibre 20 un Caja, 32 g" [ref=e1147] [cursor=pointer]:
+                          - generic "agregar" [ref=e1148]: 
+                          - generic [ref=e1149]: Agregar
+                      - generic [ref=e1151]:
+                        - generic [ref=e1153]:
+                          - generic [ref=e1154]: $1.650
+                          - generic [ref=e1155]: precio actual $1.650
+                          - generic [ref=e1156]: $68.750 x kg
+                        - generic [ref=e1157]: Our Finest
+                        - generic [ref=e1158]: Infusión Limón Jengibre 20 un Caja, 32 g
+                  - group [ref=e1161]:
+                    - link "Pie De Limón 10 Personas, 1000 gr" [ref=e1162] [cursor=pointer]:
+                      - /url: /ip/pasteleria/00780349500278?from=/search
+                      - generic [ref=e1163]: Pie De Limón 10 Personas, 1000 gr
+                    - generic [ref=e1165]:
+                      - generic [ref=e1168]:
+                        - generic [ref=e1169]:
+                          - img "Pie De Limón 10 Personas, 1000 gr"
+                        - button "Agregar al carro - Pie De Limón 10 Personas, 1000 gr" [ref=e1172] [cursor=pointer]:
+                          - generic "agregar" [ref=e1173]: 
+                          - generic [ref=e1174]: Agregar
+                      - generic [ref=e1176]:
+                        - generic [ref=e1178]:
+                          - generic [ref=e1179]: $8.990
+                          - generic [ref=e1180]: precio actual $8.990
+                          - generic [ref=e1181]: $8.990 x un
+                        - generic [ref=e1182]: Pulmahue
+                        - generic [ref=e1183]: Pie De Limón 10 Personas, 1000 gr
+                  - group [ref=e1186]:
+                    - link "Bebida Limón Zero Botella, 3 L" [ref=e1187] [cursor=pointer]:
+                      - /url: /ip/bebidas/00780162000279?from=/search
+                      - generic [ref=e1188]: Bebida Limón Zero Botella, 3 L
+                    - generic [ref=e1190]:
+                      - generic [ref=e1193]:
+                        - generic [ref=e1194]:
+                          - img "Bebida Limón Zero Botella, 3 L"
+                        - button "Agregar al carro - Bebida Limón Zero Botella, 3 L" [ref=e1197] [cursor=pointer]:
+                          - generic "agregar" [ref=e1198]: 
+                          - generic [ref=e1199]: Agregar
+                      - generic [ref=e1201]:
+                        - generic [ref=e1203]:
+                          - generic [ref=e1204]: $2.990
+                          - generic [ref=e1205]: precio actual $2.990
+                          - generic [ref=e1206]: $997 x lt
+                        - generic [ref=e1207]: Limón Soda
+                        - generic [ref=e1208]: Bebida Limón Zero Botella, 3 L
+                  - group [ref=e1211]:
+                    - link "Lavalozas Limon Recarga, 1300 ml" [ref=e1212] [cursor=pointer]:
+                      - /url: /ip/bano-y-cocina/00780493001103?from=/search
+                      - generic [ref=e1213]: Lavalozas Limon Recarga, 1300 ml
+                    - generic [ref=e1215]:
+                      - generic [ref=e1218]:
+                        - generic [ref=e1219]:
+                          - img "Lavalozas Limon Recarga, 1300 ml"
+                        - button "Agregar al carro - Lavalozas Limon Recarga, 1300 ml" [ref=e1222] [cursor=pointer]:
+                          - generic "agregar" [ref=e1223]: 
+                          - generic [ref=e1224]: Agregar
+                      - generic [ref=e1226]:
+                        - generic [ref=e1228]:
+                          - generic [ref=e1229]: $1.990
+                          - generic [ref=e1230]: precio actual $1.990
+                          - generic [ref=e1231]: $1.531 x lt
+                        - generic [ref=e1232]: Lider
+                        - generic [ref=e1233]: Lavalozas Limon Recarga, 1300 ml
+                  - group [ref=e1236]:
+                    - link "Bebida Limón Botella, 1,5 L" [ref=e1237] [cursor=pointer]:
+                      - /url: /ip/bebidas/00780162034018?from=/search
+                      - generic [ref=e1238]: Bebida Limón Botella, 1,5 L
+                    - generic [ref=e1240]:
+                      - generic [ref=e1243]:
+                        - generic [ref=e1244]:
+                          - img "Bebida Limón Botella, 1,5 L"
+                        - button "Agregar al carro - Bebida Limón Botella, 1,5 L" [ref=e1247] [cursor=pointer]:
+                          - generic "agregar" [ref=e1248]: 
+                          - generic [ref=e1249]: Agregar
+                      - generic [ref=e1251]:
+                        - generic [ref=e1253]:
+                          - generic [ref=e1254]: $1.990
+                          - generic [ref=e1255]: precio actual $1.990
+                          - generic [ref=e1256]: $1.327 x lt
+                        - generic [ref=e1257]: Limón Soda
+                        - generic [ref=e1258]: Bebida Limón Botella, 1,5 L
+            - navigation "paginación" [ref=e1261]:
+              - list [ref=e1262]:
+                - listitem [ref=e1263]
+                - listitem [ref=e1265]:
+                  - link "1" [ref=e1266] [cursor=pointer]:
+                    - /url: /search?q=limon+kg
+                - listitem [ref=e1267]:
+                  - link "Ir a la página 2" [ref=e1268] [cursor=pointer]:
+                    - /url: /search?q=limon+kg&page=2
+                    - text: "2"
+                - listitem [ref=e1269]:
+                  - link "Ir a la página 3" [ref=e1270] [cursor=pointer]:
+                    - /url: /search?q=limon+kg&page=3
+                    - text: "3"
+                - listitem [ref=e1271]:
+                  - generic [ref=e1272]: ...
+                - listitem [ref=e1273]:
+                  - generic [ref=e1274]: "6"
+                - listitem [ref=e1275]:
+                  - link "Página siguiente" [ref=e1276] [cursor=pointer]:
+                    - /url: /search?q=limon+kg&page=2
+                    - generic [ref=e1277]: 
+  - alert [ref=e1285]

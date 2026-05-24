@@ -1,0 +1,352 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: brocoli
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e81]:
+            - generic [ref=e84]:
+              - generic [ref=e85]:
+                - button "Precio" [ref=e88]:
+                  - generic [ref=e89]: Precio
+                  - img [ref=e90]: 
+                - separator [ref=e91]
+              - generic [ref=e92]:
+                - button "Campaña" [ref=e95]:
+                  - generic [ref=e96]: Campaña
+                  - img [ref=e97]: 
+                - separator [ref=e98]
+              - generic [ref=e99]:
+                - button "Marca" [ref=e102]:
+                  - generic [ref=e103]: Marca
+                  - img [ref=e104]: 
+                - separator [ref=e105]
+              - generic [ref=e106]:
+                - button "Categoría" [ref=e109]:
+                  - generic [ref=e110]: Categoría
+                  - img [ref=e111]: 
+                - separator [ref=e112]
+            - generic [ref=e115]:
+              - heading "Resultados para brocoli (14)" [level=2] [ref=e123]: Resultados para brocoli(14)
+              - generic [ref=e124]:
+                - group [ref=e127]:
+                  - link "Brotes de Brócoli Pote, 70 g" [ref=e128] [cursor=pointer]:
+                    - /url: /ip/f/00780394600117?from=/search
+                    - generic [ref=e129]: Brotes de Brócoli Pote, 70 g
+                  - generic [ref=e131]:
+                    - generic [ref=e134]:
+                      - img "Brotes de Brócoli Pote, 70 g" [ref=e136]
+                      - button "Agregar al carro - Brotes de Brócoli Pote, 70 g" [ref=e139] [cursor=pointer]:
+                        - generic "agregar" [ref=e140]: 
+                        - generic [ref=e141]: Agregar
+                    - generic [ref=e143]:
+                      - generic [ref=e145]:
+                        - generic [ref=e146]: $1.090
+                        - generic [ref=e147]: precio actual $1.090
+                        - generic [ref=e148]: $15.571 x kg
+                      - generic [ref=e149]: Agrosano
+                      - generic [ref=e150]: Brotes de Brócoli Pote, 70 g
+                - group [ref=e153]:
+                  - link "Brócoli, 1 Un" [ref=e154] [cursor=pointer]:
+                    - /url: /ip/verduras/00780408600001?from=/search
+                    - generic [ref=e155]: Brócoli, 1 Un
+                  - generic [ref=e157]:
+                    - generic [ref=e158]:
+                      - generic [ref=e160]:
+                        - generic [ref=e162]: 
+                        - text: Rebaja
+                      - generic [ref=e163]:
+                        - img "Brócoli, 1 Un" [ref=e165]
+                        - button "Agregar al carro - Brócoli, 1 Un" [ref=e168] [cursor=pointer]:
+                          - generic "agregar" [ref=e169]: 
+                          - generic [ref=e170]: Agregar
+                    - generic [ref=e172]:
+                      - generic [ref=e174]:
+                        - generic [ref=e175]: $1.390
+                        - generic [ref=e176]: precio actual $1.390, Costaba $1.590
+                        - generic [ref=e177]: $1.390 x un
+                        - generic [ref=e178]: $1.590
+                        - generic [ref=e179]: Ahorra $200
+                      - generic [ref=e180]: Multi Marca
+                      - generic [ref=e181]: Brócoli, 1 Un
+                - group [ref=e184]:
+                  - link "Brócoli, 1 Un" [ref=e185] [cursor=pointer]:
+                    - /url: /ip/verduras/00780408600019?from=/search
+                    - generic [ref=e186]: Brócoli, 1 Un
+                  - generic [ref=e188]:
+                    - generic [ref=e191]:
+                      - img "Brócoli, 1 Un" [ref=e193]
+                      - button "Agregar al carro - Brócoli, 1 Un" [ref=e196] [cursor=pointer]:
+                        - generic "agregar" [ref=e197]: 
+                        - generic [ref=e198]: Agregar
+                    - generic [ref=e200]:
+                      - generic [ref=e202]:
+                        - generic [ref=e203]: $1.190
+                        - generic [ref=e204]: precio actual $1.190
+                      - generic [ref=e205]: Hortitec
+                      - generic [ref=e206]: Brócoli, 1 Un
+                - group [ref=e209]:
+                  - link "Brócoli Congelado, 350 g" [ref=e210] [cursor=pointer]:
+                    - /url: /ip/verduras-y-frutas-congeladas/00780122000230?from=/search
+                    - generic [ref=e211]: Brócoli Congelado, 350 g
+                  - generic [ref=e213]:
+                    - generic [ref=e216]:
+                      - img "Brócoli Congelado, 350 g" [ref=e218]
+                      - button "Agregar al carro - Brócoli Congelado, 350 g" [ref=e221] [cursor=pointer]:
+                        - generic "agregar" [ref=e222]: 
+                        - generic [ref=e223]: Agregar
+                    - generic [ref=e225]:
+                      - generic [ref=e227]:
+                        - generic [ref=e228]: $1.490
+                        - generic [ref=e229]: precio actual $1.490
+                        - generic [ref=e230]: $4.257 x kg
+                      - generic [ref=e231]: Lider
+                      - generic [ref=e232]: Brócoli Congelado, 350 g
+                - generic [ref=e234]:
+                  - group [ref=e235]:
+                    - link "Mix de Vegetales Congelados Salteado de Brocolis, 567 g" [ref=e236] [cursor=pointer]:
+                      - /url: /ip/verduras-y-frutas-congeladas/00007874223751?from=/search
+                      - generic [ref=e237]: Mix de Vegetales Congelados Salteado de Brocolis, 567 g
+                    - generic [ref=e239]:
+                      - img "Mix de Vegetales Congelados Salteado de Brocolis, 567 g" [ref=e244]
+                      - generic [ref=e246]:
+                        - generic [ref=e248]:
+                          - generic [ref=e249]: $4.890
+                          - generic [ref=e250]: precio actual $4.890
+                          - generic [ref=e251]: $8.624 x kg
+                        - generic [ref=e252]: Great Value
+                        - generic [ref=e253]: Mix de Vegetales Congelados Salteado de Brocolis, 567 g
+                        - generic [ref=e254]: Agotado
+                  - button "Revisar productos similares - Mix de Vegetales Congelados Salteado de Brocolis, 567 g" [ref=e256]: Revisar productos similares
+                - group [ref=e259]:
+                  - link "Sopa Natural de Brócoli con Colágeno y Vitamina C, 350 g" [ref=e260] [cursor=pointer]:
+                    - /url: /ip/f/00780468689003?from=/search
+                    - generic [ref=e261]: Sopa Natural de Brócoli con Colágeno y Vitamina C, 350 g
+                  - generic [ref=e263]:
+                    - generic [ref=e266]:
+                      - img "Sopa Natural de Brócoli con Colágeno y Vitamina C, 350 g" [ref=e268]
+                      - button "Agregar al carro - Sopa Natural de Brócoli con Colágeno y Vitamina C, 350 g" [ref=e271] [cursor=pointer]:
+                        - generic "agregar" [ref=e272]: 
+                        - generic [ref=e273]: Agregar
+                    - generic [ref=e275]:
+                      - generic [ref=e277]:
+                        - generic [ref=e278]: $5.490
+                        - generic [ref=e279]: precio actual $5.490
+                        - generic [ref=e280]: $1.568 x kg
+                      - generic [ref=e281]: Collagenfans
+                      - generic [ref=e282]: Sopa Natural de Brócoli con Colágeno y Vitamina C, 350 g
+                - group [ref=e285]:
+                  - link "Mix de Vegetales Congelados Salteado Deluxe, 567 g" [ref=e286] [cursor=pointer]:
+                    - /url: /ip/verduras-y-frutas-congeladas/00007874223753?from=/search
+                    - generic [ref=e287]: Mix de Vegetales Congelados Salteado Deluxe, 567 g
+                  - generic [ref=e289]:
+                    - generic [ref=e292]:
+                      - img "Mix de Vegetales Congelados Salteado Deluxe, 567 g" [ref=e294]
+                      - button "Agregar al carro - Mix de Vegetales Congelados Salteado Deluxe, 567 g" [ref=e297] [cursor=pointer]:
+                        - generic "agregar" [ref=e298]: 
+                        - generic [ref=e299]: Agregar
+                    - generic [ref=e301]:
+                      - generic [ref=e303]:
+                        - generic [ref=e304]: $5.390
+                        - generic [ref=e305]: precio actual $5.390
+                        - generic [ref=e306]: $9.506 x kg
+                      - generic [ref=e307]: Great Value
+                      - generic [ref=e308]: Mix de Vegetales Congelados Salteado Deluxe, 567 g
+                - group [ref=e311]:
+                  - link "Mix de Vegetales Congelados Guisantes Dulces, 567 g" [ref=e312] [cursor=pointer]:
+                    - /url: /ip/verduras-y-frutas-congeladas/00007874223752?from=/search
+                    - generic [ref=e313]: Mix de Vegetales Congelados Guisantes Dulces, 567 g
+                  - generic [ref=e315]:
+                    - generic [ref=e318]:
+                      - img "Mix de Vegetales Congelados Guisantes Dulces, 567 g" [ref=e320]
+                      - button "Agregar al carro - Mix de Vegetales Congelados Guisantes Dulces, 567 g" [ref=e323] [cursor=pointer]:
+                        - generic "agregar" [ref=e324]: 
+                        - generic [ref=e325]: Agregar
+                    - generic [ref=e327]:
+                      - generic [ref=e329]:
+                        - generic [ref=e330]: $5.750
+                        - generic [ref=e331]: precio actual $5.750
+                        - generic [ref=e332]: $10.141 x un
+                      - generic [ref=e333]: Great Value
+                      - generic [ref=e334]: Mix de Vegetales Congelados Guisantes Dulces, 567 g
+                - group [ref=e337]:
+                  - link "Coliflor, 1 Un" [ref=e338] [cursor=pointer]:
+                    - /url: /ip/verduras/00780964260001?from=/search
+                    - generic [ref=e339]: Coliflor, 1 Un
+                  - generic [ref=e341]:
+                    - generic [ref=e342]:
+                      - generic [ref=e344]:
+                        - generic [ref=e346]: 
+                        - text: Rebaja
+                      - generic [ref=e347]:
+                        - img "Coliflor, 1 Un" [ref=e349]
+                        - button "Agregar al carro - Coliflor, 1 Un" [ref=e352] [cursor=pointer]:
+                          - generic "agregar" [ref=e353]: 
+                          - generic [ref=e354]: Agregar
+                    - generic [ref=e356]:
+                      - generic [ref=e358]:
+                        - generic [ref=e359]: $1.390
+                        - generic [ref=e360]: precio actual $1.390, Costaba $1.590
+                        - generic [ref=e361]: $1.390 x un
+                        - generic [ref=e362]: $1.590
+                        - generic [ref=e363]: Ahorra $200
+                      - generic [ref=e364]: Multi Marca
+                      - generic [ref=e365]: Coliflor, 1 Un
+                - group [ref=e368]:
+                  - link "Brusela Malla, 500 gr" [ref=e369] [cursor=pointer]:
+                    - /url: /ip/verduras/00780462106000?from=/search
+                    - generic [ref=e370]: Brusela Malla, 500 gr
+                  - generic [ref=e372]:
+                    - generic [ref=e375]:
+                      - img "Brusela Malla, 500 gr" [ref=e377]
+                      - button "Agregar al carro - Brusela Malla, 500 gr" [ref=e380] [cursor=pointer]:
+                        - generic "agregar" [ref=e381]: 
+                        - generic [ref=e382]: Agregar
+                    - generic [ref=e384]:
+                      - generic [ref=e386]:
+                        - generic [ref=e387]: $3.190
+                        - generic [ref=e388]: precio actual $3.190
+                        - generic [ref=e389]: $6.380 x kg
+                      - generic [ref=e390]: Huer-top
+                      - generic [ref=e391]: Brusela Malla, 500 gr
+                - group [ref=e394]:
+                  - link "Repollo Morado, 1 Un" [ref=e395] [cursor=pointer]:
+                    - /url: /ip/verduras/00780466889006?from=/search
+                    - generic [ref=e396]: Repollo Morado, 1 Un
+                  - generic [ref=e398]:
+                    - generic [ref=e401]:
+                      - img "Repollo Morado, 1 Un" [ref=e403]
+                      - button "Agregar al carro - Repollo Morado, 1 Un" [ref=e406] [cursor=pointer]:
+                        - generic "agregar" [ref=e407]: 
+                        - generic [ref=e408]: Agregar
+                    - generic [ref=e410]:
+                      - generic [ref=e412]:
+                        - generic [ref=e413]: $1.590
+                        - generic [ref=e414]: precio actual $1.590
+                        - generic [ref=e415]: $1.590 x un
+                      - generic [ref=e416]: Multi Marca
+                      - generic [ref=e417]: Repollo Morado, 1 Un
+                - generic [ref=e419]:
+                  - group [ref=e420]:
+                    - link "Ensalada Repollo Morado Bolsa, 300 gr" [ref=e421] [cursor=pointer]:
+                      - /url: /ip/verduras/00780461085174?from=/search
+                      - generic [ref=e422]: Ensalada Repollo Morado Bolsa, 300 gr
+                    - generic [ref=e424]:
+                      - generic [ref=e425]:
+                        - generic [ref=e427]:
+                          - generic [ref=e429]: 
+                          - text: Rebaja
+                        - img "Ensalada Repollo Morado Bolsa, 300 gr" [ref=e432]
+                      - generic [ref=e434]:
+                        - generic [ref=e436]:
+                          - generic [ref=e437]: $1.390
+                          - generic [ref=e438]: precio actual $1.390, Costaba $1.790
+                          - generic [ref=e439]: $4.633 x kg
+                          - generic [ref=e440]: $1.790
+                        - generic [ref=e441]: Multi Marca
+                        - generic [ref=e442]: Ensalada Repollo Morado Bolsa, 300 gr
+                        - generic [ref=e443]: Agotado
+                  - button "Revisar productos similares - Ensalada Repollo Morado Bolsa, 300 gr" [ref=e445]: Revisar productos similares
+                - group [ref=e448]:
+                  - link "Ensalada repollo blanco, 300 g" [ref=e449] [cursor=pointer]:
+                    - /url: /ip/verduras/00780467694058?from=/search
+                    - generic [ref=e450]: Ensalada repollo blanco, 300 g
+                  - generic [ref=e452]:
+                    - generic [ref=e453]:
+                      - generic [ref=e455]:
+                        - generic [ref=e457]: 
+                        - text: Rebaja
+                      - generic [ref=e458]:
+                        - img "Ensalada repollo blanco, 300 g" [ref=e460]
+                        - button "Agregar al carro - Ensalada repollo blanco, 300 g" [ref=e463] [cursor=pointer]:
+                          - generic "agregar" [ref=e464]: 
+                          - generic [ref=e465]: Agregar
+                    - generic [ref=e467]:
+                      - generic [ref=e469]:
+                        - generic [ref=e470]: $1.490
+                        - generic [ref=e471]: precio actual $1.490, Costaba $1.790
+                        - generic [ref=e472]: $4.967 x kg
+                        - generic [ref=e473]: $1.790
+                        - generic [ref=e474]: Ahorra $300
+                      - generic [ref=e475]: Dole
+                      - generic [ref=e476]: Ensalada repollo blanco, 300 g
+                - group [ref=e479]:
+                  - link "Brocolini Purpura, 1 Un" [ref=e480] [cursor=pointer]:
+                    - /url: /ip/verduras/00780418300023?from=/search
+                    - generic [ref=e481]: Brocolini Purpura, 1 Un
+                  - generic [ref=e483]:
+                    - generic [ref=e486]:
+                      - img "Brocolini Purpura, 1 Un" [ref=e488]
+                      - button "Agregar al carro - Brocolini Purpura, 1 Un" [ref=e491] [cursor=pointer]:
+                        - generic "agregar" [ref=e492]: 
+                        - generic [ref=e493]: Agregar
+                    - generic [ref=e495]:
+                      - generic [ref=e497]:
+                        - generic [ref=e498]: $1.490
+                        - generic [ref=e499]: precio actual $1.490
+                        - generic [ref=e500]: $1.490 x un
+                      - generic [ref=e501]: Multi Marca
+                      - generic [ref=e502]: Brocolini Purpura, 1 Un
+  - alert [ref=e511]

@@ -1,0 +1,467 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: hummus
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e81]:
+            - generic [ref=e84]:
+              - generic [ref=e85]:
+                - button "Precio" [ref=e88]:
+                  - generic [ref=e89]: Precio
+                  - img [ref=e90]: 
+                - separator [ref=e91]
+              - generic [ref=e92]:
+                - button "Marca" [ref=e95]:
+                  - generic [ref=e96]: Marca
+                  - img [ref=e97]: 
+                - separator [ref=e98]
+              - generic [ref=e99]:
+                - button "Categoría" [ref=e102]:
+                  - generic [ref=e103]: Categoría
+                  - img [ref=e104]: 
+                - separator [ref=e105]
+            - generic [ref=e108]:
+              - heading "Resultados para hummus (22)" [level=2] [ref=e116]: Resultados para hummus(22)
+              - generic [ref=e117]:
+                - group [ref=e120]:
+                  - link "Hummus De Garbanzos Con Tahine Pote, 380 g" [ref=e121] [cursor=pointer]:
+                    - /url: /ip/snacks-y-picoteo/00780223700100?from=/search
+                    - generic [ref=e122]: Hummus De Garbanzos Con Tahine Pote, 380 g
+                  - generic [ref=e124]:
+                    - generic [ref=e127]:
+                      - img "Hummus De Garbanzos Con Tahine Pote, 380 g" [ref=e129]
+                      - button "Agregar al carro - Hummus De Garbanzos Con Tahine Pote, 380 g" [ref=e132] [cursor=pointer]:
+                        - generic "agregar" [ref=e133]: 
+                        - generic [ref=e134]: Agregar
+                    - generic [ref=e136]:
+                      - generic [ref=e138]:
+                        - generic [ref=e139]: $3.790
+                        - generic [ref=e140]: precio actual $3.790
+                        - generic [ref=e141]: $9.974 x kg
+                      - generic [ref=e142]: SUK
+                      - generic [ref=e143]: Hummus De Garbanzos Con Tahine Pote, 380 g
+                - group [ref=e146]:
+                  - link "Dip Hummus Merkén Salsa untable Frasco, 220 g" [ref=e147] [cursor=pointer]:
+                    - /url: /ip/salsas/00780462765025?from=/search
+                    - generic [ref=e148]: Dip Hummus Merkén Salsa untable Frasco, 220 g
+                  - generic [ref=e150]:
+                    - generic [ref=e153]:
+                      - img "Dip Hummus Merkén Salsa untable Frasco, 220 g" [ref=e155]
+                      - button "Agregar al carro - Dip Hummus Merkén Salsa untable Frasco, 220 g" [ref=e158] [cursor=pointer]:
+                        - generic "agregar" [ref=e159]: 
+                        - generic [ref=e160]: Agregar
+                    - generic [ref=e162]:
+                      - generic [ref=e164]:
+                        - generic [ref=e165]: $2.750
+                        - generic [ref=e166]: precio actual $2.750
+                        - generic [ref=e167]: $12.500 x kg
+                      - generic [ref=e168]: Buka
+                      - generic [ref=e169]: Dip Hummus Merkén Salsa untable Frasco, 220 g
+                - group [ref=e172]:
+                  - link "Hummus Con Tomate Y Orégano, 220 g" [ref=e173] [cursor=pointer]:
+                    - /url: /ip/coctel/00061414341545?from=/search
+                    - generic [ref=e174]: Hummus Con Tomate Y Orégano, 220 g
+                  - generic [ref=e176]:
+                    - generic [ref=e179]:
+                      - img "Hummus Con Tomate Y Orégano, 220 g" [ref=e181]
+                      - button "Agregar al carro - Hummus Con Tomate Y Orégano, 220 g" [ref=e184] [cursor=pointer]:
+                        - generic "agregar" [ref=e185]: 
+                        - generic [ref=e186]: Agregar
+                    - generic [ref=e188]:
+                      - generic [ref=e190]:
+                        - generic [ref=e191]: $4.790
+                        - generic [ref=e192]: precio actual $4.790
+                        - generic [ref=e193]: $21.773 x kg
+                      - generic [ref=e194]: Love Co
+                      - generic [ref=e195]: Hummus Con Tomate Y Orégano, 220 g
+                - group [ref=e198]:
+                  - link "Hummus de Betarraga, 105 g" [ref=e199] [cursor=pointer]:
+                    - /url: /ip/coctel/00779837055012?from=/search
+                    - generic [ref=e200]: Hummus de Betarraga, 105 g
+                  - generic [ref=e202]:
+                    - generic [ref=e205]:
+                      - img "Hummus de Betarraga, 105 g" [ref=e207]
+                      - button "Agregar al carro - Hummus de Betarraga, 105 g" [ref=e210] [cursor=pointer]:
+                        - generic "agregar" [ref=e211]: 
+                        - generic [ref=e212]: Agregar
+                    - generic [ref=e214]:
+                      - generic [ref=e216]:
+                        - generic [ref=e217]: $2.490
+                        - generic [ref=e218]: precio actual $2.490
+                        - generic [ref=e219]: $23.714 x kg
+                      - generic [ref=e220]: Nura
+                      - generic [ref=e221]: Hummus de Betarraga, 105 g
+                - group [ref=e224]:
+                  - link "Hummus de garbanzos Tahina Lata, 400 g" [ref=e225] [cursor=pointer]:
+                    - /url: /ip/snacks-y-picoteo/00001588312438?from=/search
+                    - generic [ref=e226]: Hummus de garbanzos Tahina Lata, 400 g
+                  - generic [ref=e228]:
+                    - generic [ref=e231]:
+                      - img "Hummus de garbanzos Tahina Lata, 400 g" [ref=e233]
+                      - button "Agregar al carro - Hummus de garbanzos Tahina Lata, 400 g" [ref=e236] [cursor=pointer]:
+                        - generic "agregar" [ref=e237]: 
+                        - generic [ref=e238]: Agregar
+                    - generic [ref=e240]:
+                      - generic [ref=e242]:
+                        - generic [ref=e243]: $4.590
+                        - generic [ref=e244]: precio actual $4.590
+                        - generic [ref=e245]: $11.475 x kg
+                      - generic [ref=e246]: Alwadi
+                      - generic [ref=e247]: Hummus de garbanzos Tahina Lata, 400 g
+                - group [ref=e250]:
+                  - link "Hummus Poroto Negro Cilantro Frasco, 220 ml" [ref=e251] [cursor=pointer]:
+                    - /url: /ip/coctel/00061414341544?from=/search
+                    - generic [ref=e252]: Hummus Poroto Negro Cilantro Frasco, 220 ml
+                  - generic [ref=e254]:
+                    - generic [ref=e257]:
+                      - img "Hummus Poroto Negro Cilantro Frasco, 220 ml" [ref=e259]
+                      - button "Agregar al carro - Hummus Poroto Negro Cilantro Frasco, 220 ml" [ref=e262] [cursor=pointer]:
+                        - generic "agregar" [ref=e263]: 
+                        - generic [ref=e264]: Agregar
+                    - generic [ref=e266]:
+                      - generic [ref=e268]:
+                        - generic [ref=e269]: $4.790
+                        - generic [ref=e270]: precio actual $4.790
+                        - generic [ref=e271]: $21.773 x kg
+                      - generic [ref=e272]: Love Co
+                      - generic [ref=e273]: Hummus Poroto Negro Cilantro Frasco, 220 ml
+                - group [ref=e276]:
+                  - link "Hummus Ajo Chilote Merkén, 220 L" [ref=e277] [cursor=pointer]:
+                    - /url: /ip/coctel/00061414341552?from=/search
+                    - generic [ref=e278]: Hummus Ajo Chilote Merkén, 220 L
+                  - generic [ref=e280]:
+                    - generic [ref=e283]:
+                      - img "Hummus Ajo Chilote Merkén, 220 L" [ref=e285]
+                      - button "Agregar al carro - Hummus Ajo Chilote Merkén, 220 L" [ref=e288] [cursor=pointer]:
+                        - generic "agregar" [ref=e289]: 
+                        - generic [ref=e290]: Agregar
+                    - generic [ref=e292]:
+                      - generic [ref=e294]:
+                        - generic [ref=e295]: $4.790
+                        - generic [ref=e296]: precio actual $4.790
+                        - generic [ref=e297]: $21.773 x kg
+                      - generic [ref=e298]: Love Co
+                      - generic [ref=e299]: Hummus Ajo Chilote Merkén, 220 L
+                - group [ref=e302]:
+                  - link "Hummus Lenteja Almendra Frasco, 220 L" [ref=e303] [cursor=pointer]:
+                    - /url: /ip/coctel/00061414341547?from=/search
+                    - generic [ref=e304]: Hummus Lenteja Almendra Frasco, 220 L
+                  - generic [ref=e306]:
+                    - generic [ref=e309]:
+                      - img "Hummus Lenteja Almendra Frasco, 220 L" [ref=e311]
+                      - button "Agregar al carro - Hummus Lenteja Almendra Frasco, 220 L" [ref=e314] [cursor=pointer]:
+                        - generic "agregar" [ref=e315]: 
+                        - generic [ref=e316]: Agregar
+                    - generic [ref=e318]:
+                      - generic [ref=e320]:
+                        - generic [ref=e321]: $4.790
+                        - generic [ref=e322]: precio actual $4.790
+                        - generic [ref=e323]: $21.773 x kg
+                      - generic [ref=e324]: Love Co
+                      - generic [ref=e325]: Hummus Lenteja Almendra Frasco, 220 L
+                - group [ref=e328]:
+                  - link "Hummus Con Aceituna Y Pimiento, 220 g" [ref=e329] [cursor=pointer]:
+                    - /url: /ip/coctel/00061414341548?from=/search
+                    - generic [ref=e330]: Hummus Con Aceituna Y Pimiento, 220 g
+                  - generic [ref=e332]:
+                    - generic [ref=e335]:
+                      - img "Hummus Con Aceituna Y Pimiento, 220 g" [ref=e337]
+                      - button "Agregar al carro - Hummus Con Aceituna Y Pimiento, 220 g" [ref=e340] [cursor=pointer]:
+                        - generic "agregar" [ref=e341]: 
+                        - generic [ref=e342]: Agregar
+                    - generic [ref=e344]:
+                      - generic [ref=e346]:
+                        - generic [ref=e347]: $4.790
+                        - generic [ref=e348]: precio actual $4.790
+                        - generic [ref=e349]: $21.773 x kg
+                      - generic [ref=e350]: Love Co
+                      - generic [ref=e351]: Hummus Con Aceituna Y Pimiento, 220 g
+                - group [ref=e354]:
+                  - link "Pasta Coctel Hummus, 250 g" [ref=e355] [cursor=pointer]:
+                    - /url: /ip/comidas-congeladas/00780460893073?from=/search
+                    - generic [ref=e356]: Pasta Coctel Hummus, 250 g
+                  - generic [ref=e358]:
+                    - generic [ref=e361]:
+                      - img "Pasta Coctel Hummus, 250 g" [ref=e363]
+                      - button "Agregar al carro - Pasta Coctel Hummus, 250 g" [ref=e366] [cursor=pointer]:
+                        - generic "agregar" [ref=e367]: 
+                        - generic [ref=e368]: Agregar
+                    - generic [ref=e370]:
+                      - generic [ref=e372]:
+                        - generic [ref=e373]: $2.990
+                        - generic [ref=e374]: precio actual $2.990
+                        - generic [ref=e375]: $11.960 x kg
+                      - generic [ref=e376]: Lider
+                      - generic [ref=e377]: Pasta Coctel Hummus, 250 g
+                - group [ref=e380]:
+                  - link "Dip Hummus, 180 g" [ref=e381] [cursor=pointer]:
+                    - /url: /ip/alimentos-instantaneos/00780223700128?from=/search
+                    - generic [ref=e382]: Dip Hummus, 180 g
+                  - generic [ref=e384]:
+                    - generic [ref=e387]:
+                      - img "Dip Hummus, 180 g" [ref=e389]
+                      - button "Agregar al carro - Dip Hummus, 180 g" [ref=e392] [cursor=pointer]:
+                        - generic "agregar" [ref=e393]: 
+                        - generic [ref=e394]: Agregar
+                    - generic [ref=e396]:
+                      - generic [ref=e398]:
+                        - generic [ref=e399]: $2.390
+                        - generic [ref=e400]: precio actual $2.390
+                      - generic [ref=e401]: SUK
+                      - generic [ref=e402]: Dip Hummus, 180 g
+                - group [ref=e405]:
+                  - link "Hummus Original, 220 g" [ref=e406] [cursor=pointer]:
+                    - /url: /ip/coctel/00061414341551?from=/search
+                    - generic [ref=e407]: Hummus Original, 220 g
+                  - generic [ref=e409]:
+                    - generic [ref=e412]:
+                      - img "Hummus Original, 220 g" [ref=e414]
+                      - button "Agregar al carro - Hummus Original, 220 g" [ref=e417] [cursor=pointer]:
+                        - generic "agregar" [ref=e418]: 
+                        - generic [ref=e419]: Agregar
+                    - generic [ref=e421]:
+                      - generic [ref=e423]:
+                        - generic [ref=e424]: $4.790
+                        - generic [ref=e425]: precio actual $4.790
+                        - generic [ref=e426]: $21.772 x kg
+                      - generic [ref=e427]: Love Co
+                      - generic [ref=e428]: Hummus Original, 220 g
+                - group [ref=e431]:
+                  - link "Hummus Vegano, 105 g" [ref=e432] [cursor=pointer]:
+                    - /url: /ip/alimentos-instantaneos/00779837055013?from=/search
+                    - generic [ref=e433]: Hummus Vegano, 105 g
+                  - generic [ref=e435]:
+                    - generic [ref=e438]:
+                      - img "Hummus Vegano, 105 g" [ref=e440]
+                      - button "Agregar al carro - Hummus Vegano, 105 g" [ref=e443] [cursor=pointer]:
+                        - generic "agregar" [ref=e444]: 
+                        - generic [ref=e445]: Agregar
+                    - generic [ref=e447]:
+                      - generic [ref=e449]:
+                        - generic [ref=e450]: $2.490
+                        - generic [ref=e451]: precio actual $2.490
+                        - generic [ref=e452]: $23.714 x kg
+                      - generic [ref=e453]: Nura
+                      - generic [ref=e454]: Hummus Vegano, 105 g
+                - group [ref=e457]:
+                  - link "Pasta Coctel Ave Pimentón, 250 g" [ref=e458] [cursor=pointer]:
+                    - /url: /ip/platos-preparados/00780460893013?from=/search
+                    - generic [ref=e459]: Pasta Coctel Ave Pimentón, 250 g
+                  - generic [ref=e461]:
+                    - generic [ref=e464]:
+                      - img "Pasta Coctel Ave Pimentón, 250 g" [ref=e466]
+                      - button "Agregar al carro - Pasta Coctel Ave Pimentón, 250 g" [ref=e469] [cursor=pointer]:
+                        - generic "agregar" [ref=e470]: 
+                        - generic [ref=e471]: Agregar
+                    - generic [ref=e473]:
+                      - generic [ref=e475]:
+                        - generic [ref=e476]: $2.990
+                        - generic [ref=e477]: precio actual $2.990
+                        - generic [ref=e478]: $11.960 x kg
+                      - generic [ref=e479]: Lider
+                      - generic [ref=e480]: Pasta Coctel Ave Pimentón, 250 g
+                - group [ref=e483]:
+                  - link "Mantequilla de Maní Creamy, 510 g" [ref=e484] [cursor=pointer]:
+                    - /url: /ip/coctel/00074283286636?from=/search
+                    - generic [ref=e485]: Mantequilla de Maní Creamy, 510 g
+                  - generic [ref=e487]:
+                    - generic [ref=e490]:
+                      - img "Mantequilla de Maní Creamy, 510 g" [ref=e492]
+                      - button "Agregar al carro - Mantequilla de Maní Creamy, 510 g" [ref=e495] [cursor=pointer]:
+                        - generic "agregar" [ref=e496]: 
+                        - generic [ref=e497]: Agregar
+                    - generic [ref=e499]:
+                      - generic [ref=e501]:
+                        - generic [ref=e502]: $3.890
+                        - generic [ref=e503]: precio actual $3.890
+                        - generic [ref=e504]: $7.627 x kg
+                      - generic [ref=e505]: American Classic
+                      - generic [ref=e506]: Mantequilla de Maní Creamy, 510 g
+                - group [ref=e509]:
+                  - link "Pasta De Jamón Coctel, 250 g" [ref=e510] [cursor=pointer]:
+                    - /url: /ip/platos-preparados/00780460893014?from=/search
+                    - generic [ref=e511]: Pasta De Jamón Coctel, 250 g
+                  - generic [ref=e513]:
+                    - generic [ref=e516]:
+                      - img "Pasta De Jamón Coctel, 250 g" [ref=e518]
+                      - button "Agregar al carro - Pasta De Jamón Coctel, 250 g" [ref=e521] [cursor=pointer]:
+                        - generic "agregar" [ref=e522]: 
+                        - generic [ref=e523]: Agregar
+                    - generic [ref=e525]:
+                      - generic [ref=e527]:
+                        - generic [ref=e528]: $2.990
+                        - generic [ref=e529]: precio actual $2.990
+                        - generic [ref=e530]: $11.960 x kg
+                      - generic [ref=e531]: Lider
+                      - generic [ref=e532]: Pasta De Jamón Coctel, 250 g
+                - group [ref=e535]:
+                  - link "Pasta Cocktail Club, 250 g" [ref=e536] [cursor=pointer]:
+                    - /url: /ip/platos-preparados/00780460893015?from=/search
+                    - generic [ref=e537]: Pasta Cocktail Club, 250 g
+                  - generic [ref=e539]:
+                    - generic [ref=e542]:
+                      - generic [ref=e543]:
+                        - img "Pasta Cocktail Club, 250 g"
+                      - button "Agregar al carro - Pasta Cocktail Club, 250 g" [ref=e546] [cursor=pointer]:
+                        - generic "agregar" [ref=e547]: 
+                        - generic [ref=e548]: Agregar
+                    - generic [ref=e550]:
+                      - generic [ref=e552]:
+                        - generic [ref=e553]: $2.990
+                        - generic [ref=e554]: precio actual $2.990
+                        - generic [ref=e555]: $11.960 x kg
+                      - generic [ref=e556]: Lider
+                      - generic [ref=e557]: Pasta Cocktail Club, 250 g
+                - group [ref=e560]:
+                  - link "Pasta Coctel Ave Mayo, 250 g" [ref=e561] [cursor=pointer]:
+                    - /url: /ip/platos-preparados/00780460893037?from=/search
+                    - generic [ref=e562]: Pasta Coctel Ave Mayo, 250 g
+                  - generic [ref=e564]:
+                    - generic [ref=e567]:
+                      - generic [ref=e568]:
+                        - img "Pasta Coctel Ave Mayo, 250 g"
+                      - button "Agregar al carro - Pasta Coctel Ave Mayo, 250 g" [ref=e571] [cursor=pointer]:
+                        - generic "agregar" [ref=e572]: 
+                        - generic [ref=e573]: Agregar
+                    - generic [ref=e575]:
+                      - generic [ref=e577]:
+                        - generic [ref=e578]: $2.990
+                        - generic [ref=e579]: precio actual $2.990
+                        - generic [ref=e580]: $11.960 x kg
+                      - generic [ref=e581]: Lider
+                      - generic [ref=e582]: Pasta Coctel Ave Mayo, 250 g
+                - group [ref=e585]:
+                  - link "Mantequilla de Maní Crunchy, 510 g" [ref=e586] [cursor=pointer]:
+                    - /url: /ip/coctel/00074283286637?from=/search
+                    - generic [ref=e587]: Mantequilla de Maní Crunchy, 510 g
+                  - generic [ref=e589]:
+                    - generic [ref=e592]:
+                      - generic [ref=e593]:
+                        - img "Mantequilla de Maní Crunchy, 510 g"
+                      - button "Agregar al carro - Mantequilla de Maní Crunchy, 510 g" [ref=e596] [cursor=pointer]:
+                        - generic "agregar" [ref=e597]: 
+                        - generic [ref=e598]: Agregar
+                    - generic [ref=e600]:
+                      - generic [ref=e602]:
+                        - generic [ref=e603]: $3.890
+                        - generic [ref=e604]: precio actual $3.890
+                        - generic [ref=e605]: $7.627 x kg
+                      - generic [ref=e606]: American Classic
+                      - generic [ref=e607]: Mantequilla de Maní Crunchy, 510 g
+                - group [ref=e610]:
+                  - link "Dip Pimientos y Jalapeños Caramelizados, 360 gr" [ref=e611] [cursor=pointer]:
+                    - /url: /ip/coctel/00780311100330?from=/search
+                    - generic [ref=e612]: Dip Pimientos y Jalapeños Caramelizados, 360 gr
+                  - generic [ref=e614]:
+                    - generic [ref=e617]:
+                      - generic [ref=e618]:
+                        - img "Dip Pimientos y Jalapeños Caramelizados, 360 gr"
+                      - button "Agregar al carro - Dip Pimientos y Jalapeños Caramelizados, 360 gr" [ref=e621] [cursor=pointer]:
+                        - generic "agregar" [ref=e622]: 
+                        - generic [ref=e623]: Agregar
+                    - generic [ref=e625]:
+                      - generic [ref=e627]:
+                        - generic [ref=e628]: $3.650
+                        - generic [ref=e629]: precio actual $3.650
+                        - generic [ref=e630]: $10.139 x kg
+                      - generic [ref=e631]: Perfect Choice
+                      - generic [ref=e632]: Dip Pimientos y Jalapeños Caramelizados, 360 gr
+                - group [ref=e635]:
+                  - link "Guacamole Pote, 227 g" [ref=e636] [cursor=pointer]:
+                    - /url: /ip/cocina-internacional/00780467073115?from=/search
+                    - generic [ref=e637]: Guacamole Pote, 227 g
+                  - generic [ref=e639]:
+                    - generic [ref=e642]:
+                      - generic [ref=e643]:
+                        - img "Guacamole Pote, 227 g"
+                      - button "Agregar al carro - Guacamole Pote, 227 g" [ref=e646] [cursor=pointer]:
+                        - generic "agregar" [ref=e647]: 
+                        - generic [ref=e648]: Agregar
+                    - generic [ref=e650]:
+                      - generic [ref=e652]:
+                        - generic [ref=e653]: $3.990
+                        - generic [ref=e654]: precio actual $3.990
+                      - generic [ref=e655]: Bagno
+                      - generic [ref=e656]: Guacamole Pote, 227 g
+                - group [ref=e659]:
+                  - link "Mermelada De Rocoto, 160 gr" [ref=e660] [cursor=pointer]:
+                    - /url: /ip/coctel/00780311100249?from=/search
+                    - generic [ref=e661]: Mermelada De Rocoto, 160 gr
+                  - generic [ref=e663]:
+                    - generic [ref=e666]:
+                      - generic [ref=e667]:
+                        - img "Mermelada De Rocoto, 160 gr"
+                      - button "Agregar al carro - Mermelada De Rocoto, 160 gr" [ref=e670] [cursor=pointer]:
+                        - generic "agregar" [ref=e671]: 
+                        - generic [ref=e672]: Agregar
+                    - generic [ref=e674]:
+                      - generic [ref=e676]:
+                        - generic [ref=e677]: $4.890
+                        - generic [ref=e678]: precio actual $4.890
+                        - generic [ref=e679]: $30.563 x kg
+                      - generic [ref=e680]: Perfect Choice
+                      - generic [ref=e681]: Mermelada De Rocoto, 160 gr
+  - alert [ref=e690]

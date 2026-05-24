@@ -1,0 +1,928 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: nectar manzana naranja durazno
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e80]:
+            - generic [ref=e81]:
+              - generic [ref=e84]:
+                - generic [ref=e85]:
+                  - button "Precio" [ref=e88]:
+                    - generic [ref=e89]: Precio
+                    - img [ref=e90]: 
+                  - separator [ref=e91]
+                - generic [ref=e92]:
+                  - button "Campaña" [ref=e95]:
+                    - generic [ref=e96]: Campaña
+                    - img [ref=e97]: 
+                  - separator [ref=e98]
+                - generic [ref=e99]:
+                  - button "Marca" [ref=e102]:
+                    - generic [ref=e103]: Marca
+                    - img [ref=e104]: 
+                  - separator [ref=e105]
+                - generic [ref=e106]:
+                  - button "Categoría" [ref=e109]:
+                    - generic [ref=e110]: Categoría
+                    - img [ref=e111]: 
+                  - separator [ref=e112]
+              - generic [ref=e115]:
+                - heading "Resultados para nectar manzana naranja durazno (142)" [level=2] [ref=e123]: Resultados para nectar manzana naranja durazno(142)
+                - generic [ref=e124]:
+                  - generic [ref=e126]:
+                    - group [ref=e127]:
+                      - link "Jugo Durazno Botella, 1,5 L" [ref=e128] [cursor=pointer]:
+                        - /url: /ip/refrigerados/00780282050003?from=/search
+                        - generic [ref=e129]: Jugo Durazno Botella, 1,5 L
+                      - generic [ref=e131]:
+                        - img "Jugo Durazno Botella, 1,5 L" [ref=e136]
+                        - generic [ref=e138]:
+                          - generic [ref=e140]:
+                            - generic [ref=e141]: $1.650
+                            - generic [ref=e142]: precio actual $1.650
+                            - generic [ref=e143]: $1.100 x lt
+                          - generic [ref=e144]: Del Valle
+                          - generic [ref=e145]: Jugo Durazno Botella, 1,5 L
+                          - generic [ref=e146]: Agotado
+                    - button "Revisar productos similares - Jugo Durazno Botella, 1,5 L" [ref=e148]: Revisar productos similares
+                  - group [ref=e151]:
+                    - link "Néctar Naranja Botella, 1,75 L" [ref=e152] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00780282017501?from=/search
+                      - generic [ref=e153]: Néctar Naranja Botella, 1,75 L
+                    - generic [ref=e155]:
+                      - generic [ref=e156]:
+                        - generic [ref=e157]:
+                          - generic [ref=e159]: Combina 2 x $3.000
+                          - button "Combina 2 x $3.000. Ver combinaciones aceptadas y coincidir productos." [ref=e160] [cursor=pointer]: Combinar
+                        - generic [ref=e161]:
+                          - img "Néctar Naranja Botella, 1,75 L" [ref=e163]
+                          - button "Agregar al carro - Néctar Naranja Botella, 1,75 L" [ref=e166] [cursor=pointer]:
+                            - generic "agregar" [ref=e167]: 
+                            - generic [ref=e168]: Agregar
+                      - generic [ref=e170]:
+                        - generic [ref=e172]:
+                          - generic [ref=e173]: $1.790
+                          - generic [ref=e174]: precio actual $1.790
+                          - generic [ref=e175]: $1.023 x lt
+                        - generic [ref=e176]: Del Valle
+                        - generic [ref=e177]: Néctar Naranja Botella, 1,75 L
+                  - group [ref=e180]:
+                    - link "Néctar Tetra Pack Durazno, 1,75 L" [ref=e181] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00780282017525?from=/search
+                      - generic [ref=e182]: Néctar Tetra Pack Durazno, 1,75 L
+                    - generic [ref=e184]:
+                      - generic [ref=e185]:
+                        - generic [ref=e186]:
+                          - generic [ref=e188]: Combina 2 x $3.000
+                          - button "Combina 2 x $3.000. Ver combinaciones aceptadas y coincidir productos." [ref=e189] [cursor=pointer]: Combinar
+                        - generic [ref=e190]:
+                          - img "Néctar Tetra Pack Durazno, 1,75 L" [ref=e192]
+                          - button "Agregar al carro - Néctar Tetra Pack Durazno, 1,75 L" [ref=e195] [cursor=pointer]:
+                            - generic "agregar" [ref=e196]: 
+                            - generic [ref=e197]: Agregar
+                      - generic [ref=e199]:
+                        - generic [ref=e201]:
+                          - generic [ref=e202]: $1.790
+                          - generic [ref=e203]: precio actual $1.790
+                          - generic [ref=e204]: $1.023 x lt
+                        - generic [ref=e205]: Del Valle
+                        - generic [ref=e206]: Néctar Tetra Pack Durazno, 1,75 L
+                  - group [ref=e209]:
+                    - link "Néctar Tetra Pack Naranja, 1,75 L" [ref=e210] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00780282017523?from=/search
+                      - generic [ref=e211]: Néctar Tetra Pack Naranja, 1,75 L
+                    - generic [ref=e213]:
+                      - generic [ref=e214]:
+                        - generic [ref=e215]:
+                          - generic [ref=e217]: Combina 2 x $3.000
+                          - button "Combina 2 x $3.000. Ver combinaciones aceptadas y coincidir productos." [ref=e218] [cursor=pointer]: Combinar
+                        - generic [ref=e219]:
+                          - img "Néctar Tetra Pack Naranja, 1,75 L" [ref=e221]
+                          - button "Agregar al carro - Néctar Tetra Pack Naranja, 1,75 L" [ref=e224] [cursor=pointer]:
+                            - generic "agregar" [ref=e225]: 
+                            - generic [ref=e226]: Agregar
+                      - generic [ref=e228]:
+                        - generic [ref=e230]:
+                          - generic [ref=e231]: $1.790
+                          - generic [ref=e232]: precio actual $1.790
+                          - generic [ref=e233]: $1.023 x lt
+                        - generic [ref=e234]: Del Valle
+                        - generic [ref=e235]: Néctar Tetra Pack Naranja, 1,75 L
+                  - group [ref=e238]:
+                    - link "Jugo De Durazno Naranja Botella, 1 L" [ref=e239] [cursor=pointer]:
+                      - /url: /ip/jugos/00780390800700?from=/search
+                      - generic [ref=e240]: Jugo De Durazno Naranja Botella, 1 L
+                    - generic [ref=e242]:
+                      - generic [ref=e245]:
+                        - img "Jugo De Durazno Naranja Botella, 1 L" [ref=e247]
+                        - button "Agregar al carro - Jugo De Durazno Naranja Botella, 1 L" [ref=e250] [cursor=pointer]:
+                          - generic "agregar" [ref=e251]: 
+                          - generic [ref=e252]: Agregar
+                      - generic [ref=e254]:
+                        - generic [ref=e256]:
+                          - generic [ref=e257]: $4.390
+                          - generic [ref=e258]: precio actual $4.390
+                          - generic [ref=e259]: $4.390 x lt
+                        - generic [ref=e260]: Guallarauco
+                        - generic [ref=e261]: Jugo De Durazno Naranja Botella, 1 L
+                  - group [ref=e264]:
+                    - link "Néctar Durazno Sin Azúcar Botella, 1,5 L" [ref=e265] [cursor=pointer]:
+                      - /url: /ip/jugos/00780162000073?from=/search
+                      - generic [ref=e266]: Néctar Durazno Sin Azúcar Botella, 1,5 L
+                    - generic [ref=e268]:
+                      - generic [ref=e271]:
+                        - img "Néctar Durazno Sin Azúcar Botella, 1,5 L" [ref=e273]
+                        - button "Agregar al carro - Néctar Durazno Sin Azúcar Botella, 1,5 L" [ref=e276] [cursor=pointer]:
+                          - generic "agregar" [ref=e277]: 
+                          - generic [ref=e278]: Agregar
+                      - generic [ref=e280]:
+                        - generic [ref=e282]:
+                          - generic [ref=e283]: $1.950
+                          - generic [ref=e284]: precio actual $1.950
+                          - generic [ref=e285]: $1.300 x lt
+                        - generic [ref=e286]: Watts
+                        - generic [ref=e287]: Néctar Durazno Sin Azúcar Botella, 1,5 L
+                  - group [ref=e290]:
+                    - link "Néctar de Durazno Botella, 1,5 L" [ref=e291] [cursor=pointer]:
+                      - /url: /ip/jugos/00780162001161?from=/search
+                      - generic [ref=e292]: Néctar de Durazno Botella, 1,5 L
+                    - generic [ref=e294]:
+                      - generic [ref=e297]:
+                        - img "Néctar de Durazno Botella, 1,5 L" [ref=e299]
+                        - button "Agregar al carro - Néctar de Durazno Botella, 1,5 L" [ref=e302] [cursor=pointer]:
+                          - generic "agregar" [ref=e303]: 
+                          - generic [ref=e304]: Agregar
+                      - generic [ref=e306]:
+                        - generic [ref=e308]:
+                          - generic [ref=e309]: $1.950
+                          - generic [ref=e310]: precio actual $1.950
+                          - generic [ref=e311]: $1.300 x lt
+                        - generic [ref=e312]: Watts
+                        - generic [ref=e313]: Néctar de Durazno Botella, 1,5 L
+                  - generic [ref=e315]:
+                    - group [ref=e316]:
+                      - link "Néctar Durazno Sin Azúcar Añadida Botella, 1,5 L" [ref=e317] [cursor=pointer]:
+                        - /url: /ip/jugos/00780282004832?from=/search
+                        - generic [ref=e318]: Néctar Durazno Sin Azúcar Añadida Botella, 1,5 L
+                      - generic [ref=e320]:
+                        - img "Néctar Durazno Sin Azúcar Añadida Botella, 1,5 L" [ref=e325]
+                        - generic [ref=e327]:
+                          - generic [ref=e329]:
+                            - generic [ref=e330]: $1.650
+                            - generic [ref=e331]: precio actual $1.650
+                            - generic [ref=e332]: $1.100 x lt
+                          - generic [ref=e333]: Del Valle
+                          - generic [ref=e334]: Néctar Durazno Sin Azúcar Añadida Botella, 1,5 L
+                          - generic [ref=e335]: Agotado
+                    - button "Revisar productos similares - Néctar Durazno Sin Azúcar Añadida Botella, 1,5 L" [ref=e337]: Revisar productos similares
+                  - group [ref=e340]:
+                    - link "Néctar Durazno Botella, 1,5 Lt" [ref=e341] [cursor=pointer]:
+                      - /url: /ip/jugos/00780280054462?from=/search
+                      - generic [ref=e342]: Néctar Durazno Botella, 1,5 Lt
+                    - generic [ref=e344]:
+                      - generic [ref=e347]:
+                        - img "Néctar Durazno Botella, 1,5 Lt" [ref=e349]
+                        - button "Agregar al carro - Néctar Durazno Botella, 1,5 Lt" [ref=e352] [cursor=pointer]:
+                          - generic "agregar" [ref=e353]: 
+                          - generic [ref=e354]: Agregar
+                      - generic [ref=e356]:
+                        - generic [ref=e358]:
+                          - generic [ref=e359]: $2.290
+                          - generic [ref=e360]: precio actual $2.290
+                          - generic [ref=e361]: $1.527 x lt
+                        - generic [ref=e362]: Livean
+                        - generic [ref=e363]: Néctar Durazno Botella, 1,5 Lt
+                  - group [ref=e366]:
+                    - link "Néctar Durazno Botella, 1,75 L" [ref=e367] [cursor=pointer]:
+                      - /url: /ip/jugos/00780282017503?from=/search
+                      - generic [ref=e368]: Néctar Durazno Botella, 1,75 L
+                    - generic [ref=e370]:
+                      - generic [ref=e371]:
+                        - generic [ref=e372]:
+                          - generic [ref=e374]: Combina 2 x $3.000
+                          - button "Combina 2 x $3.000. Ver combinaciones aceptadas y coincidir productos." [ref=e375] [cursor=pointer]: Combinar
+                        - generic [ref=e376]:
+                          - img "Néctar Durazno Botella, 1,75 L" [ref=e378]
+                          - button "Agregar al carro - Néctar Durazno Botella, 1,75 L" [ref=e381] [cursor=pointer]:
+                            - generic "agregar" [ref=e382]: 
+                            - generic [ref=e383]: Agregar
+                      - generic [ref=e385]:
+                        - generic [ref=e387]:
+                          - generic [ref=e388]: $1.790
+                          - generic [ref=e389]: precio actual $1.790
+                          - generic [ref=e390]: $1.023 x lt
+                        - generic [ref=e391]: Del Valle
+                        - generic [ref=e392]: Néctar Durazno Botella, 1,75 L
+                  - group [ref=e395]:
+                    - link "Néctar Naranja Light 0% Azúcar Añadida Botella, 1,5 L" [ref=e396] [cursor=pointer]:
+                      - /url: /ip/jugos/00780162085339?from=/search
+                      - generic [ref=e397]: Néctar Naranja Light 0% Azúcar Añadida Botella, 1,5 L
+                    - generic [ref=e399]:
+                      - generic [ref=e402]:
+                        - img "Néctar Naranja Light 0% Azúcar Añadida Botella, 1,5 L" [ref=e404]
+                        - button "Agregar al carro - Néctar Naranja Light 0% Azúcar Añadida Botella, 1,5 L" [ref=e407] [cursor=pointer]:
+                          - generic "agregar" [ref=e408]: 
+                          - generic [ref=e409]: Agregar
+                      - generic [ref=e411]:
+                        - generic [ref=e413]:
+                          - generic [ref=e414]: $1.950
+                          - generic [ref=e415]: precio actual $1.950
+                          - generic [ref=e416]: $1.300 x lt
+                        - generic [ref=e417]: Watts
+                        - generic [ref=e418]: Néctar Naranja Light 0% Azúcar Añadida Botella, 1,5 L
+                  - group [ref=e421]:
+                    - link "Néctar de Naranja Botella, 1,5 L" [ref=e422] [cursor=pointer]:
+                      - /url: /ip/jugos/00780162001160?from=/search
+                      - generic [ref=e423]: Néctar de Naranja Botella, 1,5 L
+                    - generic [ref=e425]:
+                      - generic [ref=e428]:
+                        - img "Néctar de Naranja Botella, 1,5 L" [ref=e430]
+                        - button "Agregar al carro - Néctar de Naranja Botella, 1,5 L" [ref=e433] [cursor=pointer]:
+                          - generic "agregar" [ref=e434]: 
+                          - generic [ref=e435]: Agregar
+                      - generic [ref=e437]:
+                        - generic [ref=e439]:
+                          - generic [ref=e440]: $1.950
+                          - generic [ref=e441]: precio actual $1.950
+                          - generic [ref=e442]: $1.300 x lt
+                        - generic [ref=e443]: Watts
+                        - generic [ref=e444]: Néctar de Naranja Botella, 1,5 L
+                  - generic [ref=e446]:
+                    - group [ref=e447]:
+                      - link "Jugo de Naranja, 1,3 L" [ref=e448] [cursor=pointer]:
+                        - /url: /ip/jugos/00040005095170?from=/search
+                        - generic [ref=e449]: Jugo de Naranja, 1,3 L
+                      - generic [ref=e451]:
+                        - img "Jugo de Naranja, 1,3 L" [ref=e456]
+                        - generic [ref=e458]:
+                          - generic [ref=e460]:
+                            - generic [ref=e461]: $4.690
+                            - generic [ref=e462]: precio actual $4.690
+                            - generic [ref=e463]: $3.608 x lt
+                          - generic [ref=e464]: Lider
+                          - generic [ref=e465]: Jugo de Naranja, 1,3 L
+                          - generic [ref=e466]: Agotado
+                    - button "Revisar productos similares - Jugo de Naranja, 1,3 L" [ref=e468]: Revisar productos similares
+                  - group [ref=e471]:
+                    - link "Jugo de Naranja 100% Exprimido, 1,5 L" [ref=e472] [cursor=pointer]:
+                      - /url: /ip/jugos/00779808568184?from=/search
+                      - generic [ref=e473]: Jugo de Naranja 100% Exprimido, 1,5 L
+                    - generic [ref=e475]:
+                      - generic [ref=e478]:
+                        - img "Jugo de Naranja 100% Exprimido, 1,5 L" [ref=e480]
+                        - button "Agregar al carro - Jugo de Naranja 100% Exprimido, 1,5 L" [ref=e483] [cursor=pointer]:
+                          - generic "agregar" [ref=e484]: 
+                          - generic [ref=e485]: Agregar
+                      - generic [ref=e487]:
+                        - generic [ref=e489]:
+                          - generic [ref=e490]: $5.890
+                          - generic [ref=e491]: precio actual $5.890
+                          - generic [ref=e492]: $3.927 x lt
+                        - generic [ref=e493]: Citric
+                        - generic [ref=e494]: Jugo de Naranja 100% Exprimido, 1,5 L
+                  - generic [ref=e496]:
+                    - group [ref=e497]:
+                      - link "Néctar De Naranja 0% Azúcar Añadida Botella, 1,5 L" [ref=e498] [cursor=pointer]:
+                        - /url: /ip/jugos/00780282070063?from=/search
+                        - generic [ref=e499]: Néctar De Naranja 0% Azúcar Añadida Botella, 1,5 L
+                      - generic [ref=e501]:
+                        - img "Néctar De Naranja 0% Azúcar Añadida Botella, 1,5 L" [ref=e506]
+                        - generic [ref=e508]:
+                          - generic [ref=e510]:
+                            - generic [ref=e511]: $1.650
+                            - generic [ref=e512]: precio actual $1.650
+                            - generic [ref=e513]: $1.100 x lt
+                          - generic [ref=e514]: Andina Del Valle
+                          - generic [ref=e515]: Néctar De Naranja 0% Azúcar Añadida Botella, 1,5 L
+                          - generic [ref=e516]: Agotado
+                    - button "Revisar productos similares - Néctar De Naranja 0% Azúcar Añadida Botella, 1,5 L" [ref=e518]: Revisar productos similares
+                  - group [ref=e521]:
+                    - link "Jugo Naranja Mix, 1.6 L" [ref=e522] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00780281001187?from=/search
+                      - generic [ref=e523]: Jugo Naranja Mix, 1.6 L
+                    - generic [ref=e525]:
+                      - generic [ref=e528]:
+                        - img "Jugo Naranja Mix, 1.6 L" [ref=e530]
+                        - button "Agregar al carro - Jugo Naranja Mix, 1.6 L" [ref=e533] [cursor=pointer]:
+                          - generic "agregar" [ref=e534]: 
+                          - generic [ref=e535]: Agregar
+                      - generic [ref=e537]:
+                        - generic [ref=e539]:
+                          - generic [ref=e540]: $5.690
+                          - generic [ref=e541]: precio actual $5.690
+                          - generic [ref=e542]: $3.556 x lt
+                        - generic [ref=e543]: Watts Selección
+                        - generic [ref=e544]: Jugo Naranja Mix, 1.6 L
+                  - group [ref=e547]:
+                    - link "Jugo Naranja Natural One, 900 ml" [ref=e548] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00789991691324?from=/search
+                      - generic [ref=e549]: Jugo Naranja Natural One, 900 ml
+                    - generic [ref=e551]:
+                      - generic [ref=e554]:
+                        - generic [ref=e555]:
+                          - img "Jugo Naranja Natural One, 900 ml"
+                        - button "Agregar al carro - Jugo Naranja Natural One, 900 ml" [ref=e558] [cursor=pointer]:
+                          - generic "agregar" [ref=e559]: 
+                          - generic [ref=e560]: Agregar
+                      - generic [ref=e562]:
+                        - generic [ref=e564]:
+                          - generic [ref=e565]: $3.990
+                          - generic [ref=e566]: precio actual $3.990
+                          - generic [ref=e567]: $4.433 x lt
+                        - generic [ref=e568]: Quillayes
+                        - generic [ref=e569]: Jugo Naranja Natural One, 900 ml
+                  - group [ref=e572]:
+                    - link "Jugo Naranja Mix 1.5 Litros, 1500 ml" [ref=e573] [cursor=pointer]:
+                      - /url: /ip/jugos/00780390800825?from=/search
+                      - generic [ref=e574]: Jugo Naranja Mix 1.5 Litros, 1500 ml
+                    - generic [ref=e576]:
+                      - generic [ref=e579]:
+                        - generic [ref=e580]:
+                          - img "Jugo Naranja Mix 1.5 Litros, 1500 ml"
+                        - button "Agregar al carro - Jugo Naranja Mix 1.5 Litros, 1500 ml" [ref=e583] [cursor=pointer]:
+                          - generic "agregar" [ref=e584]: 
+                          - generic [ref=e585]: Agregar
+                      - generic [ref=e587]:
+                        - generic [ref=e589]:
+                          - generic [ref=e590]: $5.690
+                          - generic [ref=e591]: precio actual $5.690
+                          - generic [ref=e592]: $3.793 x lt
+                        - generic [ref=e593]: Guallarauco
+                        - generic [ref=e594]: Jugo Naranja Mix 1.5 Litros, 1500 ml
+                  - group [ref=e597]:
+                    - link "Jugo Naranja Exprimido Caja, 1,5 L" [ref=e598] [cursor=pointer]:
+                      - /url: /ip/jugos/00780281001196?from=/search
+                      - generic [ref=e599]: Jugo Naranja Exprimido Caja, 1,5 L
+                    - generic [ref=e601]:
+                      - generic [ref=e604]:
+                        - generic [ref=e605]:
+                          - img "Jugo Naranja Exprimido Caja, 1,5 L"
+                        - button "Agregar al carro - Jugo Naranja Exprimido Caja, 1,5 L" [ref=e608] [cursor=pointer]:
+                          - generic "agregar" [ref=e609]: 
+                          - generic [ref=e610]: Agregar
+                      - generic [ref=e612]:
+                        - generic [ref=e614]:
+                          - generic [ref=e615]: $7.990
+                          - generic [ref=e616]: precio actual $7.990
+                          - generic [ref=e617]: $5.327 x lt
+                        - generic [ref=e618]: Watts
+                        - generic [ref=e619]: Jugo Naranja Exprimido Caja, 1,5 L
+                  - group [ref=e622]:
+                    - link "Jugo Naranja 1.5 Litros, 1500 ml" [ref=e623] [cursor=pointer]:
+                      - /url: /ip/jugos/00780390800821?from=/search
+                      - generic [ref=e624]: Jugo Naranja 1.5 Litros, 1500 ml
+                    - generic [ref=e626]:
+                      - generic [ref=e629]:
+                        - generic [ref=e630]:
+                          - img "Jugo Naranja 1.5 Litros, 1500 ml"
+                        - button "Agregar al carro - Jugo Naranja 1.5 Litros, 1500 ml" [ref=e633] [cursor=pointer]:
+                          - generic "agregar" [ref=e634]: 
+                          - generic [ref=e635]: Agregar
+                      - generic [ref=e637]:
+                        - generic [ref=e639]:
+                          - generic [ref=e640]: $7.090
+                          - generic [ref=e641]: precio actual $7.090
+                          - generic [ref=e642]: $4.727 x lt
+                        - generic [ref=e643]: Guallarauco
+                        - generic [ref=e644]: Jugo Naranja 1.5 Litros, 1500 ml
+                  - group [ref=e647]:
+                    - link "Jugo Naranja sin Pulpa Tretra pak, 960 ml" [ref=e648] [cursor=pointer]:
+                      - /url: /ip/jugos/00750101310693?from=/search
+                      - generic [ref=e649]: Jugo Naranja sin Pulpa Tretra pak, 960 ml
+                    - generic [ref=e651]:
+                      - generic [ref=e654]:
+                        - generic [ref=e655]:
+                          - img "Jugo Naranja sin Pulpa Tretra pak, 960 ml"
+                        - button "Agregar al carro - Jugo Naranja sin Pulpa Tretra pak, 960 ml" [ref=e658] [cursor=pointer]:
+                          - generic "agregar" [ref=e659]: 
+                          - generic [ref=e660]: Agregar
+                      - generic [ref=e662]:
+                        - generic [ref=e664]:
+                          - generic [ref=e665]: $3.190
+                          - generic [ref=e666]: precio actual $3.190
+                          - generic [ref=e667]: $3.322 x lt
+                        - generic [ref=e668]: Jumex
+                        - generic [ref=e669]: Jugo Naranja sin Pulpa Tretra pak, 960 ml
+                  - group [ref=e672]:
+                    - link "Jugo Naranja Mango 1.5 Litros, 1500 ml" [ref=e673] [cursor=pointer]:
+                      - /url: /ip/jugos/00780390800820?from=/search
+                      - generic [ref=e674]: Jugo Naranja Mango 1.5 Litros, 1500 ml
+                    - generic [ref=e676]:
+                      - generic [ref=e679]:
+                        - generic [ref=e680]:
+                          - img "Jugo Naranja Mango 1.5 Litros, 1500 ml"
+                        - button "Agregar al carro - Jugo Naranja Mango 1.5 Litros, 1500 ml" [ref=e683] [cursor=pointer]:
+                          - generic "agregar" [ref=e684]: 
+                          - generic [ref=e685]: Agregar
+                      - generic [ref=e687]:
+                        - generic [ref=e689]:
+                          - generic [ref=e690]: $7.090
+                          - generic [ref=e691]: precio actual $7.090
+                          - generic [ref=e692]: $4.727 x lt
+                        - generic [ref=e693]: Guallarauco
+                        - generic [ref=e694]: Jugo Naranja Mango 1.5 Litros, 1500 ml
+                  - group [ref=e697]:
+                    - link "Jugo Naranja Piña 1.5 Litros, 1500 ml" [ref=e698] [cursor=pointer]:
+                      - /url: /ip/jugos/00780390800822?from=/search
+                      - generic [ref=e699]: Jugo Naranja Piña 1.5 Litros, 1500 ml
+                    - generic [ref=e701]:
+                      - generic [ref=e704]:
+                        - generic [ref=e705]:
+                          - img "Jugo Naranja Piña 1.5 Litros, 1500 ml"
+                        - button "Agregar al carro - Jugo Naranja Piña 1.5 Litros, 1500 ml" [ref=e708] [cursor=pointer]:
+                          - generic "agregar" [ref=e709]: 
+                          - generic [ref=e710]: Agregar
+                      - generic [ref=e712]:
+                        - generic [ref=e714]:
+                          - generic [ref=e715]: $7.090
+                          - generic [ref=e716]: precio actual $7.090
+                          - generic [ref=e717]: $4.727 x lt
+                        - generic [ref=e718]: Guallarauco
+                        - generic [ref=e719]: Jugo Naranja Piña 1.5 Litros, 1500 ml
+                  - group [ref=e722]:
+                    - link "Jugo Naranja Zanahoria, 1.6 L" [ref=e723] [cursor=pointer]:
+                      - /url: /ip/jugos/00780281001220?from=/search
+                      - generic [ref=e724]: Jugo Naranja Zanahoria, 1.6 L
+                    - generic [ref=e726]:
+                      - generic [ref=e727]:
+                        - generic [ref=e729]:
+                          - generic [ref=e731]: 
+                          - text: Rebaja
+                        - generic [ref=e732]:
+                          - generic [ref=e733]:
+                            - img "Jugo Naranja Zanahoria, 1.6 L"
+                          - button "Agregar al carro - Jugo Naranja Zanahoria, 1.6 L" [ref=e736] [cursor=pointer]:
+                            - generic "agregar" [ref=e737]: 
+                            - generic [ref=e738]: Agregar
+                      - generic [ref=e740]:
+                        - generic [ref=e742]:
+                          - generic [ref=e743]: $5.590
+                          - generic [ref=e744]: precio actual $5.590, Costaba $6.690
+                          - generic [ref=e745]: $3.494 x lt
+                          - generic [ref=e746]: $6.690
+                          - generic [ref=e747]: Ahorra $1.100
+                        - generic [ref=e748]: Watts
+                        - generic [ref=e749]: Jugo Naranja Zanahoria, 1.6 L
+                  - group [ref=e752]:
+                    - link "Jugo Naranja Plátano Botella, 2 L" [ref=e753] [cursor=pointer]:
+                      - /url: /ip/jugos/00780464382047?from=/search
+                      - generic [ref=e754]: Jugo Naranja Plátano Botella, 2 L
+                    - generic [ref=e756]:
+                      - generic [ref=e757]:
+                        - generic [ref=e759]:
+                          - generic [ref=e761]: 
+                          - text: Rebaja
+                        - generic [ref=e762]:
+                          - generic [ref=e763]:
+                            - img "Jugo Naranja Plátano Botella, 2 L"
+                          - button "Agregar al carro - Jugo Naranja Plátano Botella, 2 L" [ref=e766] [cursor=pointer]:
+                            - generic "agregar" [ref=e767]: 
+                            - generic [ref=e768]: Agregar
+                      - generic [ref=e770]:
+                        - generic [ref=e772]:
+                          - generic [ref=e773]: $3.990
+                          - generic [ref=e774]: precio actual $3.990, Costaba $4.790
+                          - generic [ref=e775]: $1.995 x lt
+                          - generic [ref=e776]: $4.790
+                          - generic [ref=e777]: Ahorra $800
+                        - generic [ref=e778]: Love Orange
+                        - generic [ref=e779]: Jugo Naranja Plátano Botella, 2 L
+                  - group [ref=e782]:
+                    - link "Jugo de Naranja Fruta Natural, 300 ml" [ref=e783] [cursor=pointer]:
+                      - /url: /ip/dulce-momento/00040005118023?from=/search
+                      - generic [ref=e784]: Jugo de Naranja Fruta Natural, 300 ml
+                    - generic [ref=e786]:
+                      - generic [ref=e789]:
+                        - generic [ref=e790]:
+                          - img "Jugo de Naranja Fruta Natural, 300 ml"
+                        - button "Agregar al carro - Jugo de Naranja Fruta Natural, 300 ml" [ref=e793] [cursor=pointer]:
+                          - generic "agregar" [ref=e794]: 
+                          - generic [ref=e795]: Agregar
+                      - generic [ref=e797]:
+                        - generic [ref=e799]:
+                          - generic [ref=e800]: $1.390
+                          - generic [ref=e801]: precio actual $1.390
+                          - generic [ref=e802]: $4.633 x lt
+                        - generic [ref=e803]: Lider
+                        - generic [ref=e804]: Jugo de Naranja Fruta Natural, 300 ml
+                  - group [ref=e807]:
+                    - link "Jugo Naranja Piña 1.6 Litros, 1.6 L" [ref=e808] [cursor=pointer]:
+                      - /url: /ip/jugos/00780281001222?from=/search
+                      - generic [ref=e809]: Jugo Naranja Piña 1.6 Litros, 1.6 L
+                    - generic [ref=e811]:
+                      - generic [ref=e812]:
+                        - generic [ref=e814]:
+                          - generic [ref=e816]: 
+                          - text: Rebaja
+                        - generic [ref=e817]:
+                          - generic [ref=e818]:
+                            - img "Jugo Naranja Piña 1.6 Litros, 1.6 L"
+                          - button "Agregar al carro - Jugo Naranja Piña 1.6 Litros, 1.6 L" [ref=e821] [cursor=pointer]:
+                            - generic "agregar" [ref=e822]: 
+                            - generic [ref=e823]: Agregar
+                      - generic [ref=e825]:
+                        - generic [ref=e827]:
+                          - generic [ref=e828]: $5.590
+                          - generic [ref=e829]: precio actual $5.590, Costaba $6.690
+                          - generic [ref=e830]: $3.494 x lt
+                          - generic [ref=e831]: $6.690
+                          - generic [ref=e832]: Ahorra $1.100
+                        - generic [ref=e833]: Watts
+                        - generic [ref=e834]: Jugo Naranja Piña 1.6 Litros, 1.6 L
+                  - group [ref=e837]:
+                    - link "Néctar De Manzana Caja, 190 ml" [ref=e838] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00780257522051?from=/search
+                      - generic [ref=e839]: Néctar De Manzana Caja, 190 ml
+                    - generic [ref=e841]:
+                      - generic [ref=e844]:
+                        - generic [ref=e845]:
+                          - img "Néctar De Manzana Caja, 190 ml"
+                        - button "Agregar al carro - Néctar De Manzana Caja, 190 ml" [ref=e848] [cursor=pointer]:
+                          - generic "agregar" [ref=e849]: 
+                          - generic [ref=e850]: Agregar
+                      - generic [ref=e852]:
+                        - generic [ref=e854]:
+                          - generic [ref=e855]: $450
+                          - generic [ref=e856]: precio actual $450
+                          - generic [ref=e857]: $2.368 x lt
+                        - generic [ref=e858]: Vivo
+                        - generic [ref=e859]: Néctar De Manzana Caja, 190 ml
+                  - group [ref=e862]:
+                    - link "Jugo Manzana Caja, 200 ml" [ref=e863] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00780466521039?from=/search
+                      - generic [ref=e864]: Jugo Manzana Caja, 200 ml
+                    - generic [ref=e866]:
+                      - generic [ref=e869]:
+                        - generic [ref=e870]:
+                          - img "Jugo Manzana Caja, 200 ml"
+                        - button "Agregar al carro - Jugo Manzana Caja, 200 ml" [ref=e873] [cursor=pointer]:
+                          - generic "agregar" [ref=e874]: 
+                          - generic [ref=e875]: Agregar
+                      - generic [ref=e877]:
+                        - generic [ref=e879]:
+                          - generic [ref=e880]: $880
+                          - generic [ref=e881]: precio actual $880
+                          - generic [ref=e882]: $4.400 x lt
+                        - generic [ref=e883]: Bless
+                        - generic [ref=e884]: Jugo Manzana Caja, 200 ml
+                  - generic [ref=e886]:
+                    - group [ref=e887]:
+                      - link "Néctar Manzana Botella, 1,5 L" [ref=e888] [cursor=pointer]:
+                        - /url: /ip/jugos/00780282070043?from=/search
+                        - generic [ref=e889]: Néctar Manzana Botella, 1,5 L
+                      - generic [ref=e891]:
+                        - generic [ref=e895]:
+                          - img "Néctar Manzana Botella, 1,5 L"
+                        - generic [ref=e897]:
+                          - generic [ref=e899]:
+                            - generic [ref=e900]: $1.650
+                            - generic [ref=e901]: precio actual $1.650
+                            - generic [ref=e902]: $1.100 x lt
+                          - generic [ref=e903]: Del Valle
+                          - generic [ref=e904]: Néctar Manzana Botella, 1,5 L
+                          - generic [ref=e905]: Agotado
+                    - button "Revisar productos similares - Néctar Manzana Botella, 1,5 L" [ref=e907]: Revisar productos similares
+                  - generic [ref=e909]:
+                    - group [ref=e910]:
+                      - link "Jugo de Manzana Caja, 1 L" [ref=e911] [cursor=pointer]:
+                        - /url: /ip/jugos/00060538892645?from=/search
+                        - generic [ref=e912]: Jugo de Manzana Caja, 1 L
+                      - generic [ref=e914]:
+                        - generic [ref=e918]:
+                          - img "Jugo de Manzana Caja, 1 L"
+                        - generic [ref=e920]:
+                          - generic [ref=e922]:
+                            - generic [ref=e923]: $1.450
+                            - generic [ref=e924]: precio actual $1.450
+                            - generic [ref=e925]: $1.450 x lt
+                          - generic [ref=e926]: Great Value
+                          - generic [ref=e927]: Jugo de Manzana Caja, 1 L
+                          - generic [ref=e928]: Agotado
+                    - button "Revisar productos similares - Jugo de Manzana Caja, 1 L" [ref=e930]: Revisar productos similares
+                  - group [ref=e933]:
+                    - link "Jugo Manzana Botella, 1 L" [ref=e934] [cursor=pointer]:
+                      - /url: /ip/jugos/00780283210111?from=/search
+                      - generic [ref=e935]: Jugo Manzana Botella, 1 L
+                    - generic [ref=e937]:
+                      - generic [ref=e940]:
+                        - generic [ref=e941]:
+                          - img "Jugo Manzana Botella, 1 L"
+                        - button "Agregar al carro - Jugo Manzana Botella, 1 L" [ref=e944] [cursor=pointer]:
+                          - generic "agregar" [ref=e945]: 
+                          - generic [ref=e946]: Agregar
+                      - generic [ref=e948]:
+                        - generic [ref=e950]:
+                          - generic [ref=e951]: $3.890
+                          - generic [ref=e952]: precio actual $3.890
+                          - generic [ref=e953]: $3.890 x lt
+                        - generic [ref=e954]: AFE
+                        - generic [ref=e955]: Jugo Manzana Botella, 1 L
+                  - group [ref=e958]:
+                    - link "Jugo De Manzana, 1 L" [ref=e959] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00779808568153?from=/search
+                      - generic [ref=e960]: Jugo De Manzana, 1 L
+                    - generic [ref=e962]:
+                      - generic [ref=e965]:
+                        - generic [ref=e966]:
+                          - img "Jugo De Manzana, 1 L"
+                        - button "Agregar al carro - Jugo De Manzana, 1 L" [ref=e969] [cursor=pointer]:
+                          - generic "agregar" [ref=e970]: 
+                          - generic [ref=e971]: Agregar
+                      - generic [ref=e973]:
+                        - generic [ref=e975]:
+                          - generic [ref=e976]: $4.690
+                          - generic [ref=e977]: precio actual $4.690
+                          - generic [ref=e978]: $4.690 x lt
+                        - generic [ref=e979]: Citric
+                        - generic [ref=e980]: Jugo De Manzana, 1 L
+                  - group [ref=e983]:
+                    - link "Jugo De Manzana Verde 100% Puro Botella, 1000 ml" [ref=e984] [cursor=pointer]:
+                      - /url: /ip/jugos/00780283200014?from=/search
+                      - generic [ref=e985]: Jugo De Manzana Verde 100% Puro Botella, 1000 ml
+                    - generic [ref=e987]:
+                      - generic [ref=e990]:
+                        - generic [ref=e991]:
+                          - img "Jugo De Manzana Verde 100% Puro Botella, 1000 ml"
+                        - button "Agregar al carro - Jugo De Manzana Verde 100% Puro Botella, 1000 ml" [ref=e994] [cursor=pointer]:
+                          - generic "agregar" [ref=e995]: 
+                          - generic [ref=e996]: Agregar
+                      - generic [ref=e998]:
+                        - generic [ref=e1000]:
+                          - generic [ref=e1001]: $3.890
+                          - generic [ref=e1002]: precio actual $3.890
+                          - generic [ref=e1003]: $3.890 x lt
+                        - generic [ref=e1004]: AFE
+                        - generic [ref=e1005]: Jugo De Manzana Verde 100% Puro Botella, 1000 ml
+                  - generic [ref=e1007]:
+                    - group [ref=e1008]:
+                      - link "Jugo Manzana Baja Acidez Botella, 1890 ml" [ref=e1009] [cursor=pointer]:
+                        - /url: /ip/jugos/00068113191120?from=/search
+                        - generic [ref=e1010]: Jugo Manzana Baja Acidez Botella, 1890 ml
+                      - generic [ref=e1012]:
+                        - generic [ref=e1016]:
+                          - img "Jugo Manzana Baja Acidez Botella, 1890 ml"
+                        - generic [ref=e1018]:
+                          - generic [ref=e1020]:
+                            - generic [ref=e1021]: $3.750
+                            - generic [ref=e1022]: precio actual $3.750
+                          - generic [ref=e1023]: Great Value
+                          - generic [ref=e1024]: Jugo Manzana Baja Acidez Botella, 1890 ml
+                          - generic [ref=e1025]: Agotado
+                    - button "Revisar productos similares - Jugo Manzana Baja Acidez Botella, 1890 ml" [ref=e1027]: Revisar productos similares
+                  - group [ref=e1030]:
+                    - link "Jugo de Manzana, 1,3 L" [ref=e1031] [cursor=pointer]:
+                      - /url: /ip/jugos/00040005095171?from=/search
+                      - generic [ref=e1032]: Jugo de Manzana, 1,3 L
+                    - generic [ref=e1034]:
+                      - generic [ref=e1037]:
+                        - generic [ref=e1038]:
+                          - img "Jugo de Manzana, 1,3 L"
+                        - button "Agregar al carro - Jugo de Manzana, 1,3 L" [ref=e1041] [cursor=pointer]:
+                          - generic "agregar" [ref=e1042]: 
+                          - generic [ref=e1043]: Agregar
+                      - generic [ref=e1045]:
+                        - generic [ref=e1047]:
+                          - generic [ref=e1048]: $4.690
+                          - generic [ref=e1049]: precio actual $4.690
+                          - generic [ref=e1050]: $3.607 x lt
+                        - generic [ref=e1051]: Lider
+                        - generic [ref=e1052]: Jugo de Manzana, 1,3 L
+                  - group [ref=e1055]:
+                    - link "Jugo Manzana Caja, 1 L" [ref=e1056] [cursor=pointer]:
+                      - /url: /ip/jugos/00780466521035?from=/search
+                      - generic [ref=e1057]: Jugo Manzana Caja, 1 L
+                    - generic [ref=e1059]:
+                      - generic [ref=e1062]:
+                        - generic [ref=e1063]:
+                          - img "Jugo Manzana Caja, 1 L"
+                        - button "Agregar al carro - Jugo Manzana Caja, 1 L" [ref=e1066] [cursor=pointer]:
+                          - generic "agregar" [ref=e1067]: 
+                          - generic [ref=e1068]: Agregar
+                      - generic [ref=e1070]:
+                        - generic [ref=e1072]:
+                          - generic [ref=e1073]: $2.750
+                          - generic [ref=e1074]: precio actual $2.750
+                          - generic [ref=e1075]: $2.750 x lt
+                        - generic [ref=e1076]: Bless
+                        - generic [ref=e1077]: Jugo Manzana Caja, 1 L
+                  - group [ref=e1080]:
+                    - link "Néctar Sabor Veggie Naranja Zanahoria y Manzana Caja, 190 ml" [ref=e1081] [cursor=pointer]:
+                      - /url: /ip/jugos-colacion/00780257522698?from=/search
+                      - generic [ref=e1082]: Néctar Sabor Veggie Naranja Zanahoria y Manzana Caja, 190 ml
+                    - generic [ref=e1084]:
+                      - generic [ref=e1087]:
+                        - generic [ref=e1088]:
+                          - img "Néctar Sabor Veggie Naranja Zanahoria y Manzana Caja, 190 ml"
+                        - button "Agregar al carro - Néctar Sabor Veggie Naranja Zanahoria y Manzana Caja, 190 ml" [ref=e1091] [cursor=pointer]:
+                          - generic "agregar" [ref=e1092]: 
+                          - generic [ref=e1093]: Agregar
+                      - generic [ref=e1095]:
+                        - generic [ref=e1097]:
+                          - generic [ref=e1098]: $450
+                          - generic [ref=e1099]: precio actual $450
+                          - generic [ref=e1100]: $2.368 x lt
+                        - generic [ref=e1101]: Vivo
+                        - generic [ref=e1102]: Néctar Sabor Veggie Naranja Zanahoria y Manzana Caja, 190 ml
+                  - group [ref=e1105]:
+                    - link "Jugo Naranjada Original Botella, 2 L" [ref=e1106] [cursor=pointer]:
+                      - /url: /ip/jugos/00780464382046?from=/search
+                      - generic [ref=e1107]: Jugo Naranjada Original Botella, 2 L
+                    - generic [ref=e1109]:
+                      - generic [ref=e1110]:
+                        - generic [ref=e1112]:
+                          - generic [ref=e1114]: 
+                          - text: Rebaja
+                        - generic [ref=e1115]:
+                          - generic [ref=e1116]:
+                            - img "Jugo Naranjada Original Botella, 2 L"
+                          - button "Agregar al carro - Jugo Naranjada Original Botella, 2 L" [ref=e1119] [cursor=pointer]:
+                            - generic "agregar" [ref=e1120]: 
+                            - generic [ref=e1121]: Agregar
+                      - generic [ref=e1123]:
+                        - generic [ref=e1125]:
+                          - generic [ref=e1126]: $3.990
+                          - generic [ref=e1127]: precio actual $3.990, Costaba $4.790
+                          - generic [ref=e1128]: $1.995 x lt
+                          - generic [ref=e1129]: $4.790
+                          - generic [ref=e1130]: Ahorra $800
+                        - generic [ref=e1131]: Love Orange
+                        - generic [ref=e1132]: Jugo Naranjada Original Botella, 2 L
+                  - group [ref=e1135]:
+                    - link "Néctar Sabor Durazno Caja, 200 ml" [ref=e1136] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00780290048113?from=/search
+                      - generic [ref=e1137]: Néctar Sabor Durazno Caja, 200 ml
+                    - generic [ref=e1139]:
+                      - generic [ref=e1142]:
+                        - generic [ref=e1143]:
+                          - img "Néctar Sabor Durazno Caja, 200 ml"
+                        - button "Agregar al carro - Néctar Sabor Durazno Caja, 200 ml" [ref=e1146] [cursor=pointer]:
+                          - generic "agregar" [ref=e1147]: 
+                          - generic [ref=e1148]: Agregar
+                      - generic [ref=e1150]:
+                        - generic [ref=e1152]:
+                          - generic [ref=e1153]: $330
+                          - generic [ref=e1154]: precio actual $330
+                          - generic [ref=e1155]: $1.650 x lt
+                        - generic [ref=e1156]: Soprole
+                        - generic [ref=e1157]: Néctar Sabor Durazno Caja, 200 ml
+                  - generic [ref=e1159]:
+                    - group [ref=e1160]:
+                      - link "Nectar Tetra Pack Durazno, 0.2 L" [ref=e1161] [cursor=pointer]:
+                        - /url: /ip/refrigerados/00780281000632?from=/search
+                        - generic [ref=e1162]: Nectar Tetra Pack Durazno, 0.2 L
+                      - generic [ref=e1164]:
+                        - generic [ref=e1168]:
+                          - img "Nectar Tetra Pack Durazno, 0.2 L"
+                        - generic [ref=e1170]:
+                          - generic [ref=e1172]:
+                            - generic [ref=e1173]: $375
+                            - generic [ref=e1174]: precio actual $375
+                            - generic [ref=e1175]: $1.875 x lt
+                          - generic [ref=e1176]: Watts
+                          - generic [ref=e1177]: Nectar Tetra Pack Durazno, 0.2 L
+                          - generic [ref=e1178]: Agotado
+                    - button "Revisar productos similares - Nectar Tetra Pack Durazno, 0.2 L" [ref=e1180]: Revisar productos similares
+                  - group [ref=e1183]:
+                    - link "Néctar Caja durazno, 200 ml" [ref=e1184] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00780282068545?from=/search
+                      - generic [ref=e1185]: Néctar Caja durazno, 200 ml
+                    - generic [ref=e1187]:
+                      - generic [ref=e1188]:
+                        - generic [ref=e1189]:
+                          - generic [ref=e1191]: Combina 6 x $1.850
+                          - button "Combina 6 x $1.850. Ver combinaciones aceptadas y coincidir productos." [ref=e1192] [cursor=pointer]: Combinar
+                        - generic [ref=e1193]:
+                          - generic [ref=e1194]:
+                            - img "Néctar Caja durazno, 200 ml"
+                          - button "Agregar al carro - Néctar Caja durazno, 200 ml" [ref=e1197] [cursor=pointer]:
+                            - generic "agregar" [ref=e1198]: 
+                            - generic [ref=e1199]: Agregar
+                      - generic [ref=e1201]:
+                        - generic [ref=e1203]:
+                          - generic [ref=e1204]: $390
+                          - generic [ref=e1205]: precio actual $390
+                          - generic [ref=e1206]: $1.950 x lt
+                        - generic [ref=e1207]: Del Valle
+                        - generic [ref=e1208]: Néctar Caja durazno, 200 ml
+                  - group [ref=e1211]:
+                    - link "Néctar Sabor Durazno Caja, 1 L" [ref=e1212] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00780257522633?from=/search
+                      - generic [ref=e1213]: Néctar Sabor Durazno Caja, 1 L
+                    - generic [ref=e1215]:
+                      - generic [ref=e1218]:
+                        - generic [ref=e1219]:
+                          - img "Néctar Sabor Durazno Caja, 1 L"
+                        - button "Agregar al carro - Néctar Sabor Durazno Caja, 1 L" [ref=e1222] [cursor=pointer]:
+                          - generic "agregar" [ref=e1223]: 
+                          - generic [ref=e1224]: Agregar
+                      - generic [ref=e1226]:
+                        - generic [ref=e1228]:
+                          - generic [ref=e1229]: $1.250
+                          - generic [ref=e1230]: precio actual $1.250
+                          - generic [ref=e1231]: $1.250 x lt
+                        - generic [ref=e1232]: Vivo
+                        - generic [ref=e1233]: Néctar Sabor Durazno Caja, 1 L
+                  - group [ref=e1236]:
+                    - link "Nectar Botella Jumex Durazno, 460 ml" [ref=e1237] [cursor=pointer]:
+                      - /url: /ip/jugos/00750101311805?from=/search
+                      - generic [ref=e1238]: Nectar Botella Jumex Durazno, 460 ml
+                    - generic [ref=e1240]:
+                      - generic [ref=e1243]:
+                        - generic [ref=e1244]:
+                          - img "Nectar Botella Jumex Durazno, 460 ml"
+                        - button "Agregar al carro - Nectar Botella Jumex Durazno, 460 ml" [ref=e1247] [cursor=pointer]:
+                          - generic "agregar" [ref=e1248]: 
+                          - generic [ref=e1249]: Agregar
+                      - generic [ref=e1251]:
+                        - generic [ref=e1253]:
+                          - generic [ref=e1254]: $1.190
+                          - generic [ref=e1255]: precio actual $1.190
+                          - generic [ref=e1256]: $3.552 x lt
+                        - generic [ref=e1257]: Jumex
+                        - generic [ref=e1258]: Nectar Botella Jumex Durazno, 460 ml
+            - navigation "paginación" [ref=e1261]:
+              - list [ref=e1262]:
+                - listitem [ref=e1263]
+                - listitem [ref=e1265]:
+                  - link "1" [ref=e1266] [cursor=pointer]:
+                    - /url: /search?q=nectar+manzana+naranja+durazno
+                - listitem [ref=e1267]:
+                  - link "Ir a la página 2" [ref=e1268] [cursor=pointer]:
+                    - /url: /search?q=nectar+manzana+naranja+durazno&page=2
+                    - text: "2"
+                - listitem [ref=e1269]:
+                  - link "Ir a la página 3" [ref=e1270] [cursor=pointer]:
+                    - /url: /search?q=nectar+manzana+naranja+durazno&page=3
+                    - text: "3"
+                - listitem [ref=e1271]:
+                  - link "Ir a la página 4" [ref=e1272] [cursor=pointer]:
+                    - /url: /search?q=nectar+manzana+naranja+durazno&page=4
+                    - text: "4"
+                - listitem [ref=e1273]:
+                  - link "Página siguiente" [ref=e1274] [cursor=pointer]:
+                    - /url: /search?q=nectar+manzana+naranja+durazno&page=2
+                    - generic [ref=e1275]: 
+  - alert [ref=e1283]

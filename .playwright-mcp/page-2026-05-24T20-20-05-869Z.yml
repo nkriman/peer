@@ -1,0 +1,912 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: nectar manzana 1.75L
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e80]:
+            - generic [ref=e81]:
+              - generic [ref=e84]:
+                - generic [ref=e85]:
+                  - button "Precio" [ref=e88]:
+                    - generic [ref=e89]: Precio
+                    - img [ref=e90]: 
+                  - separator [ref=e91]
+                - generic [ref=e92]:
+                  - button "Campaña" [ref=e95]:
+                    - generic [ref=e96]: Campaña
+                    - img [ref=e97]: 
+                  - separator [ref=e98]
+                - generic [ref=e99]:
+                  - button "Marca" [ref=e102]:
+                    - generic [ref=e103]: Marca
+                    - img [ref=e104]: 
+                  - separator [ref=e105]
+                - generic [ref=e106]:
+                  - button "Categoría" [ref=e109]:
+                    - generic [ref=e110]: Categoría
+                    - img [ref=e111]: 
+                  - separator [ref=e112]
+              - generic [ref=e115]:
+                - heading "Resultados para nectar manzana 1.75L (58)" [level=2] [ref=e123]: Resultados para nectar manzana 1.75L(58)
+                - generic [ref=e124]:
+                  - group [ref=e127]:
+                    - link "Néctar De Manzana Caja, 190 ml" [ref=e128] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00780257522051?from=/search
+                      - generic [ref=e129]: Néctar De Manzana Caja, 190 ml
+                    - generic [ref=e131]:
+                      - generic [ref=e134]:
+                        - img "Néctar De Manzana Caja, 190 ml" [ref=e136]
+                        - button "Agregar al carro - Néctar De Manzana Caja, 190 ml" [ref=e139] [cursor=pointer]:
+                          - generic "agregar" [ref=e140]: 
+                          - generic [ref=e141]: Agregar
+                      - generic [ref=e143]:
+                        - generic [ref=e145]:
+                          - generic [ref=e146]: $450
+                          - generic [ref=e147]: precio actual $450
+                          - generic [ref=e148]: $2.368 x lt
+                        - generic [ref=e149]: Vivo
+                        - generic [ref=e150]: Néctar De Manzana Caja, 190 ml
+                  - group [ref=e153]:
+                    - link "Jugo Manzana Caja, 200 ml" [ref=e154] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00780466521039?from=/search
+                      - generic [ref=e155]: Jugo Manzana Caja, 200 ml
+                    - generic [ref=e157]:
+                      - generic [ref=e160]:
+                        - img "Jugo Manzana Caja, 200 ml" [ref=e162]
+                        - button "Agregar al carro - Jugo Manzana Caja, 200 ml" [ref=e165] [cursor=pointer]:
+                          - generic "agregar" [ref=e166]: 
+                          - generic [ref=e167]: Agregar
+                      - generic [ref=e169]:
+                        - generic [ref=e171]:
+                          - generic [ref=e172]: $880
+                          - generic [ref=e173]: precio actual $880
+                          - generic [ref=e174]: $4.400 x lt
+                        - generic [ref=e175]: Bless
+                        - generic [ref=e176]: Jugo Manzana Caja, 200 ml
+                  - generic [ref=e178]:
+                    - group [ref=e179]:
+                      - link "Néctar Manzana Botella, 1,5 L" [ref=e180] [cursor=pointer]:
+                        - /url: /ip/jugos/00780282070043?from=/search
+                        - generic [ref=e181]: Néctar Manzana Botella, 1,5 L
+                      - generic [ref=e183]:
+                        - img "Néctar Manzana Botella, 1,5 L" [ref=e188]
+                        - generic [ref=e190]:
+                          - generic [ref=e192]:
+                            - generic [ref=e193]: $1.650
+                            - generic [ref=e194]: precio actual $1.650
+                            - generic [ref=e195]: $1.100 x lt
+                          - generic [ref=e196]: Del Valle
+                          - generic [ref=e197]: Néctar Manzana Botella, 1,5 L
+                          - generic [ref=e198]: Agotado
+                    - button "Revisar productos similares - Néctar Manzana Botella, 1,5 L" [ref=e200]: Revisar productos similares
+                  - generic [ref=e202]:
+                    - group [ref=e203]:
+                      - link "Jugo de Manzana Caja, 1 L" [ref=e204] [cursor=pointer]:
+                        - /url: /ip/jugos/00060538892645?from=/search
+                        - generic [ref=e205]: Jugo de Manzana Caja, 1 L
+                      - generic [ref=e207]:
+                        - img "Jugo de Manzana Caja, 1 L" [ref=e212]
+                        - generic [ref=e214]:
+                          - generic [ref=e216]:
+                            - generic [ref=e217]: $1.450
+                            - generic [ref=e218]: precio actual $1.450
+                            - generic [ref=e219]: $1.450 x lt
+                          - generic [ref=e220]: Great Value
+                          - generic [ref=e221]: Jugo de Manzana Caja, 1 L
+                          - generic [ref=e222]: Agotado
+                    - button "Revisar productos similares - Jugo de Manzana Caja, 1 L" [ref=e224]: Revisar productos similares
+                  - group [ref=e227]:
+                    - link "Jugo Manzana Botella, 1 L" [ref=e228] [cursor=pointer]:
+                      - /url: /ip/jugos/00780283210111?from=/search
+                      - generic [ref=e229]: Jugo Manzana Botella, 1 L
+                    - generic [ref=e231]:
+                      - generic [ref=e234]:
+                        - img "Jugo Manzana Botella, 1 L" [ref=e236]
+                        - button "Agregar al carro - Jugo Manzana Botella, 1 L" [ref=e239] [cursor=pointer]:
+                          - generic "agregar" [ref=e240]: 
+                          - generic [ref=e241]: Agregar
+                      - generic [ref=e243]:
+                        - generic [ref=e245]:
+                          - generic [ref=e246]: $3.890
+                          - generic [ref=e247]: precio actual $3.890
+                          - generic [ref=e248]: $3.890 x lt
+                        - generic [ref=e249]: AFE
+                        - generic [ref=e250]: Jugo Manzana Botella, 1 L
+                  - group [ref=e253]:
+                    - link "Jugo De Manzana, 1 L" [ref=e254] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00779808568153?from=/search
+                      - generic [ref=e255]: Jugo De Manzana, 1 L
+                    - generic [ref=e257]:
+                      - generic [ref=e260]:
+                        - img "Jugo De Manzana, 1 L" [ref=e262]
+                        - button "Agregar al carro - Jugo De Manzana, 1 L" [ref=e265] [cursor=pointer]:
+                          - generic "agregar" [ref=e266]: 
+                          - generic [ref=e267]: Agregar
+                      - generic [ref=e269]:
+                        - generic [ref=e271]:
+                          - generic [ref=e272]: $4.690
+                          - generic [ref=e273]: precio actual $4.690
+                          - generic [ref=e274]: $4.690 x lt
+                        - generic [ref=e275]: Citric
+                        - generic [ref=e276]: Jugo De Manzana, 1 L
+                  - group [ref=e279]:
+                    - link "Jugo De Manzana Verde 100% Puro Botella, 1000 ml" [ref=e280] [cursor=pointer]:
+                      - /url: /ip/jugos/00780283200014?from=/search
+                      - generic [ref=e281]: Jugo De Manzana Verde 100% Puro Botella, 1000 ml
+                    - generic [ref=e283]:
+                      - generic [ref=e286]:
+                        - img "Jugo De Manzana Verde 100% Puro Botella, 1000 ml" [ref=e288]
+                        - button "Agregar al carro - Jugo De Manzana Verde 100% Puro Botella, 1000 ml" [ref=e291] [cursor=pointer]:
+                          - generic "agregar" [ref=e292]: 
+                          - generic [ref=e293]: Agregar
+                      - generic [ref=e295]:
+                        - generic [ref=e297]:
+                          - generic [ref=e298]: $3.890
+                          - generic [ref=e299]: precio actual $3.890
+                          - generic [ref=e300]: $3.890 x lt
+                        - generic [ref=e301]: AFE
+                        - generic [ref=e302]: Jugo De Manzana Verde 100% Puro Botella, 1000 ml
+                  - generic [ref=e304]:
+                    - group [ref=e305]:
+                      - link "Jugo Manzana Baja Acidez Botella, 1890 ml" [ref=e306] [cursor=pointer]:
+                        - /url: /ip/jugos/00068113191120?from=/search
+                        - generic [ref=e307]: Jugo Manzana Baja Acidez Botella, 1890 ml
+                      - generic [ref=e309]:
+                        - img "Jugo Manzana Baja Acidez Botella, 1890 ml" [ref=e314]
+                        - generic [ref=e316]:
+                          - generic [ref=e318]:
+                            - generic [ref=e319]: $3.750
+                            - generic [ref=e320]: precio actual $3.750
+                          - generic [ref=e321]: Great Value
+                          - generic [ref=e322]: Jugo Manzana Baja Acidez Botella, 1890 ml
+                          - generic [ref=e323]: Agotado
+                    - button "Revisar productos similares - Jugo Manzana Baja Acidez Botella, 1890 ml" [ref=e325]: Revisar productos similares
+                  - group [ref=e328]:
+                    - link "Jugo de Manzana, 1,3 L" [ref=e329] [cursor=pointer]:
+                      - /url: /ip/jugos/00040005095171?from=/search
+                      - generic [ref=e330]: Jugo de Manzana, 1,3 L
+                    - generic [ref=e332]:
+                      - generic [ref=e335]:
+                        - img "Jugo de Manzana, 1,3 L" [ref=e337]
+                        - button "Agregar al carro - Jugo de Manzana, 1,3 L" [ref=e340] [cursor=pointer]:
+                          - generic "agregar" [ref=e341]: 
+                          - generic [ref=e342]: Agregar
+                      - generic [ref=e344]:
+                        - generic [ref=e346]:
+                          - generic [ref=e347]: $4.690
+                          - generic [ref=e348]: precio actual $4.690
+                          - generic [ref=e349]: $3.607 x lt
+                        - generic [ref=e350]: Lider
+                        - generic [ref=e351]: Jugo de Manzana, 1,3 L
+                  - group [ref=e354]:
+                    - link "Jugo Manzana Caja, 1 L" [ref=e355] [cursor=pointer]:
+                      - /url: /ip/jugos/00780466521035?from=/search
+                      - generic [ref=e356]: Jugo Manzana Caja, 1 L
+                    - generic [ref=e358]:
+                      - generic [ref=e361]:
+                        - img "Jugo Manzana Caja, 1 L" [ref=e363]
+                        - button "Agregar al carro - Jugo Manzana Caja, 1 L" [ref=e366] [cursor=pointer]:
+                          - generic "agregar" [ref=e367]: 
+                          - generic [ref=e368]: Agregar
+                      - generic [ref=e370]:
+                        - generic [ref=e372]:
+                          - generic [ref=e373]: $2.750
+                          - generic [ref=e374]: precio actual $2.750
+                          - generic [ref=e375]: $2.750 x lt
+                        - generic [ref=e376]: Bless
+                        - generic [ref=e377]: Jugo Manzana Caja, 1 L
+                  - group [ref=e380]:
+                    - link "Néctar Sabor Manzana Caja, 200 ml" [ref=e381] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00780290048116?from=/search
+                      - generic [ref=e382]: Néctar Sabor Manzana Caja, 200 ml
+                    - generic [ref=e384]:
+                      - generic [ref=e387]:
+                        - img "Néctar Sabor Manzana Caja, 200 ml" [ref=e389]
+                        - button "Agregar al carro - Néctar Sabor Manzana Caja, 200 ml" [ref=e392] [cursor=pointer]:
+                          - generic "agregar" [ref=e393]: 
+                          - generic [ref=e394]: Agregar
+                      - generic [ref=e396]:
+                        - generic [ref=e398]:
+                          - generic [ref=e399]: $330
+                          - generic [ref=e400]: precio actual $330
+                          - generic [ref=e401]: $1.650 x lt
+                        - generic [ref=e402]: Soprole
+                        - generic [ref=e403]: Néctar Sabor Manzana Caja, 200 ml
+                  - group [ref=e406]:
+                    - link "Nectar Tetra Pack Manzana, 0.2 L" [ref=e407] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00780281000659?from=/search
+                      - generic [ref=e408]: Nectar Tetra Pack Manzana, 0.2 L
+                    - generic [ref=e410]:
+                      - generic [ref=e413]:
+                        - img "Nectar Tetra Pack Manzana, 0.2 L" [ref=e415]
+                        - button "Agregar al carro - Nectar Tetra Pack Manzana, 0.2 L" [ref=e418] [cursor=pointer]:
+                          - generic "agregar" [ref=e419]: 
+                          - generic [ref=e420]: Agregar
+                      - generic [ref=e422]:
+                        - generic [ref=e424]:
+                          - generic [ref=e425]: $375
+                          - generic [ref=e426]: precio actual $375
+                          - generic [ref=e427]: $1.875 x lt
+                        - generic [ref=e428]: Watts
+                        - generic [ref=e429]: Nectar Tetra Pack Manzana, 0.2 L
+                  - group [ref=e432]:
+                    - link "Jugo Pera Manzana Caja, 200 ml" [ref=e433] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00780466521040?from=/search
+                      - generic [ref=e434]: Jugo Pera Manzana Caja, 200 ml
+                    - generic [ref=e436]:
+                      - generic [ref=e439]:
+                        - img "Jugo Pera Manzana Caja, 200 ml" [ref=e441]
+                        - button "Agregar al carro - Jugo Pera Manzana Caja, 200 ml" [ref=e444] [cursor=pointer]:
+                          - generic "agregar" [ref=e445]: 
+                          - generic [ref=e446]: Agregar
+                      - generic [ref=e448]:
+                        - generic [ref=e450]:
+                          - generic [ref=e451]: $880
+                          - generic [ref=e452]: precio actual $880
+                          - generic [ref=e453]: $4.400 x lt
+                        - generic [ref=e454]: Bless
+                        - generic [ref=e455]: Jugo Pera Manzana Caja, 200 ml
+                  - group [ref=e458]:
+                    - link "Jugo Damasco Manzana Caja, 200 g" [ref=e459] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00780466521041?from=/search
+                      - generic [ref=e460]: Jugo Damasco Manzana Caja, 200 g
+                    - generic [ref=e462]:
+                      - generic [ref=e465]:
+                        - img "Jugo Damasco Manzana Caja, 200 g" [ref=e467]
+                        - button "Agregar al carro - Jugo Damasco Manzana Caja, 200 g" [ref=e470] [cursor=pointer]:
+                          - generic "agregar" [ref=e471]: 
+                          - generic [ref=e472]: Agregar
+                      - generic [ref=e474]:
+                        - generic [ref=e476]:
+                          - generic [ref=e477]: $880
+                          - generic [ref=e478]: precio actual $880
+                          - generic [ref=e479]: $4.400 x lt
+                        - generic [ref=e480]: Bless
+                        - generic [ref=e481]: Jugo Damasco Manzana Caja, 200 g
+                  - group [ref=e484]:
+                    - link "Néctar Sabor Manzana Botella, 1,5 L" [ref=e485] [cursor=pointer]:
+                      - /url: /ip/jugos/00780280054463?from=/search
+                      - generic [ref=e486]: Néctar Sabor Manzana Botella, 1,5 L
+                    - generic [ref=e488]:
+                      - generic [ref=e491]:
+                        - img "Néctar Sabor Manzana Botella, 1,5 L" [ref=e493]
+                        - button "Agregar al carro - Néctar Sabor Manzana Botella, 1,5 L" [ref=e496] [cursor=pointer]:
+                          - generic "agregar" [ref=e497]: 
+                          - generic [ref=e498]: Agregar
+                      - generic [ref=e500]:
+                        - generic [ref=e502]:
+                          - generic [ref=e503]: $2.290
+                          - generic [ref=e504]: precio actual $2.290
+                          - generic [ref=e505]: $1.527 x lt
+                        - generic [ref=e506]: Livean
+                        - generic [ref=e507]: Néctar Sabor Manzana Botella, 1,5 L
+                  - group [ref=e510]:
+                    - link "Néctar Sabor Manzana Caja, 1 L" [ref=e511] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00780257522635?from=/search
+                      - generic [ref=e512]: Néctar Sabor Manzana Caja, 1 L
+                    - generic [ref=e514]:
+                      - generic [ref=e517]:
+                        - img "Néctar Sabor Manzana Caja, 1 L" [ref=e519]
+                        - button "Agregar al carro - Néctar Sabor Manzana Caja, 1 L" [ref=e522] [cursor=pointer]:
+                          - generic "agregar" [ref=e523]: 
+                          - generic [ref=e524]: Agregar
+                      - generic [ref=e526]:
+                        - generic [ref=e528]:
+                          - generic [ref=e529]: $1.250
+                          - generic [ref=e530]: precio actual $1.250
+                          - generic [ref=e531]: $1.250 x lt
+                        - generic [ref=e532]: Vivo
+                        - generic [ref=e533]: Néctar Sabor Manzana Caja, 1 L
+                  - group [ref=e536]:
+                    - link "Néctar Lata Manzana, 335 ml" [ref=e537] [cursor=pointer]:
+                      - /url: /ip/jugos/00750101311819?from=/search
+                      - generic [ref=e538]: Néctar Lata Manzana, 335 ml
+                    - generic [ref=e540]:
+                      - generic [ref=e543]:
+                        - generic [ref=e544]:
+                          - img "Néctar Lata Manzana, 335 ml"
+                        - button "Agregar al carro - Néctar Lata Manzana, 335 ml" [ref=e547] [cursor=pointer]:
+                          - generic "agregar" [ref=e548]: 
+                          - generic [ref=e549]: Agregar
+                      - generic [ref=e551]:
+                        - generic [ref=e553]:
+                          - generic [ref=e554]: $1.190
+                          - generic [ref=e555]: precio actual $1.190
+                          - generic [ref=e556]: $3.552 x lt
+                        - generic [ref=e557]: Jumex
+                        - generic [ref=e558]: Néctar Lata Manzana, 335 ml
+                  - group [ref=e561]:
+                    - link "Néctar Sabor Manzana, Pera y Espinaca Caja, 190 ml" [ref=e562] [cursor=pointer]:
+                      - /url: /ip/jugos-colacion/00780257522697?from=/search
+                      - generic [ref=e563]: Néctar Sabor Manzana, Pera y Espinaca Caja, 190 ml
+                    - generic [ref=e565]:
+                      - generic [ref=e568]:
+                        - generic [ref=e569]:
+                          - img "Néctar Sabor Manzana, Pera y Espinaca Caja, 190 ml"
+                        - button "Agregar al carro - Néctar Sabor Manzana, Pera y Espinaca Caja, 190 ml" [ref=e572] [cursor=pointer]:
+                          - generic "agregar" [ref=e573]: 
+                          - generic [ref=e574]: Agregar
+                      - generic [ref=e576]:
+                        - generic [ref=e578]:
+                          - generic [ref=e579]: $450
+                          - generic [ref=e580]: precio actual $450
+                          - generic [ref=e581]: $2.368 x lt
+                        - generic [ref=e582]: Vivo
+                        - generic [ref=e583]: Néctar Sabor Manzana, Pera y Espinaca Caja, 190 ml
+                  - group [ref=e586]:
+                    - link "Néctar Sabor Veggie Naranja Zanahoria y Manzana Caja, 190 ml" [ref=e587] [cursor=pointer]:
+                      - /url: /ip/jugos-colacion/00780257522698?from=/search
+                      - generic [ref=e588]: Néctar Sabor Veggie Naranja Zanahoria y Manzana Caja, 190 ml
+                    - generic [ref=e590]:
+                      - generic [ref=e593]:
+                        - generic [ref=e594]:
+                          - img "Néctar Sabor Veggie Naranja Zanahoria y Manzana Caja, 190 ml"
+                        - button "Agregar al carro - Néctar Sabor Veggie Naranja Zanahoria y Manzana Caja, 190 ml" [ref=e597] [cursor=pointer]:
+                          - generic "agregar" [ref=e598]: 
+                          - generic [ref=e599]: Agregar
+                      - generic [ref=e601]:
+                        - generic [ref=e603]:
+                          - generic [ref=e604]: $450
+                          - generic [ref=e605]: precio actual $450
+                          - generic [ref=e606]: $2.368 x lt
+                        - generic [ref=e607]: Vivo
+                        - generic [ref=e608]: Néctar Sabor Veggie Naranja Zanahoria y Manzana Caja, 190 ml
+                  - group [ref=e611]:
+                    - link "Jugo Element Bless Damasco Manzana Caja, 1 L" [ref=e612] [cursor=pointer]:
+                      - /url: /ip/jugos/00780466521037?from=/search
+                      - generic [ref=e613]: Jugo Element Bless Damasco Manzana Caja, 1 L
+                    - generic [ref=e615]:
+                      - generic [ref=e618]:
+                        - generic [ref=e619]:
+                          - img "Jugo Element Bless Damasco Manzana Caja, 1 L"
+                        - button "Agregar al carro - Jugo Element Bless Damasco Manzana Caja, 1 L" [ref=e622] [cursor=pointer]:
+                          - generic "agregar" [ref=e623]: 
+                          - generic [ref=e624]: Agregar
+                      - generic [ref=e626]:
+                        - generic [ref=e628]:
+                          - generic [ref=e629]: $2.750
+                          - generic [ref=e630]: precio actual $2.750
+                          - generic [ref=e631]: $2.750 x lt
+                        - generic [ref=e632]: Bless
+                        - generic [ref=e633]: Jugo Element Bless Damasco Manzana Caja, 1 L
+                  - group [ref=e636]:
+                    - link "Jugo Pera Manzana Caja, 1 L" [ref=e637] [cursor=pointer]:
+                      - /url: /ip/jugos/00780466521036?from=/search
+                      - generic [ref=e638]: Jugo Pera Manzana Caja, 1 L
+                    - generic [ref=e640]:
+                      - generic [ref=e643]:
+                        - generic [ref=e644]:
+                          - img "Jugo Pera Manzana Caja, 1 L"
+                        - button "Agregar al carro - Jugo Pera Manzana Caja, 1 L" [ref=e647] [cursor=pointer]:
+                          - generic "agregar" [ref=e648]: 
+                          - generic [ref=e649]: Agregar
+                      - generic [ref=e651]:
+                        - generic [ref=e653]:
+                          - generic [ref=e654]: $2.750
+                          - generic [ref=e655]: precio actual $2.750
+                          - generic [ref=e656]: $2.750 x lt
+                        - generic [ref=e657]: Bless
+                        - generic [ref=e658]: Jugo Pera Manzana Caja, 1 L
+                  - group [ref=e661]:
+                    - link "Jugo Rrfrigerado Manzana Mango Piña Orgánico Botella, 1" [ref=e662] [cursor=pointer]:
+                      - /url: /ip/jugos/00780465802208?from=/search
+                      - generic [ref=e663]: Jugo Rrfrigerado Manzana Mango Piña Orgánico Botella, 1
+                    - generic [ref=e665]:
+                      - generic [ref=e668]:
+                        - generic [ref=e669]:
+                          - img "Jugo Rrfrigerado Manzana Mango Piña Orgánico Botella, 1"
+                        - button "Agregar al carro - Jugo Rrfrigerado Manzana Mango Piña Orgánico Botella, 1" [ref=e672] [cursor=pointer]:
+                          - generic "agregar" [ref=e673]: 
+                          - generic [ref=e674]: Agregar
+                      - generic [ref=e676]:
+                        - generic [ref=e678]:
+                          - generic [ref=e679]: $5.790
+                          - generic [ref=e680]: precio actual $5.790
+                          - generic [ref=e681]: $57.900 x lt
+                        - generic [ref=e682]: Ama Time
+                        - generic [ref=e683]: Jugo Rrfrigerado Manzana Mango Piña Orgánico Botella, 1
+                  - group [ref=e686]:
+                    - link "Jugo Refrigerado Manzana Jengibre Cúrcuma Orgánico Botella, 1" [ref=e687] [cursor=pointer]:
+                      - /url: /ip/jugos/00780465802209?from=/search
+                      - generic [ref=e688]: Jugo Refrigerado Manzana Jengibre Cúrcuma Orgánico Botella, 1
+                    - generic [ref=e690]:
+                      - generic [ref=e693]:
+                        - generic [ref=e694]:
+                          - img "Jugo Refrigerado Manzana Jengibre Cúrcuma Orgánico Botella, 1"
+                        - button "Agregar al carro - Jugo Refrigerado Manzana Jengibre Cúrcuma Orgánico Botella, 1" [ref=e697] [cursor=pointer]:
+                          - generic "agregar" [ref=e698]: 
+                          - generic [ref=e699]: Agregar
+                      - generic [ref=e701]:
+                        - generic [ref=e703]:
+                          - generic [ref=e704]: $5.790
+                          - generic [ref=e705]: precio actual $5.790
+                          - generic [ref=e706]: $57.900 x lt
+                        - generic [ref=e707]: Ama Time
+                        - generic [ref=e708]: Jugo Refrigerado Manzana Jengibre Cúrcuma Orgánico Botella, 1
+                  - group [ref=e711]:
+                    - link "Jugo Refrigerado Manzana Mango Zanahoria Betarraga Orgánico Botella, 1" [ref=e712] [cursor=pointer]:
+                      - /url: /ip/jugos/00780465802210?from=/search
+                      - generic [ref=e713]: Jugo Refrigerado Manzana Mango Zanahoria Betarraga Orgánico Botella, 1
+                    - generic [ref=e715]:
+                      - generic [ref=e718]:
+                        - generic [ref=e719]:
+                          - img "Jugo Refrigerado Manzana Mango Zanahoria Betarraga Orgánico Botella, 1"
+                        - button "Agregar al carro - Jugo Refrigerado Manzana Mango Zanahoria Betarraga Orgánico Botella, 1" [ref=e722] [cursor=pointer]:
+                          - generic "agregar" [ref=e723]: 
+                          - generic [ref=e724]: Agregar
+                      - generic [ref=e726]:
+                        - generic [ref=e728]:
+                          - generic [ref=e729]: $5.790
+                          - generic [ref=e730]: precio actual $5.790
+                          - generic [ref=e731]: $57.900 x lt
+                        - generic [ref=e732]: Ama Time
+                        - generic [ref=e733]: Jugo Refrigerado Manzana Mango Zanahoria Betarraga Orgánico Botella, 1
+                  - group [ref=e736]:
+                    - link "Jugo Orgánico de Manzana Botella, 1 L" [ref=e737] [cursor=pointer]:
+                      - /url: /ip/mas-estilos-de-vida/00780283200009?from=/search
+                      - generic [ref=e738]: Jugo Orgánico de Manzana Botella, 1 L
+                    - generic [ref=e740]:
+                      - generic [ref=e743]:
+                        - generic [ref=e744]:
+                          - img "Jugo Orgánico de Manzana Botella, 1 L"
+                        - button "Agregar al carro - Jugo Orgánico de Manzana Botella, 1 L" [ref=e747] [cursor=pointer]:
+                          - generic "agregar" [ref=e748]: 
+                          - generic [ref=e749]: Agregar
+                      - generic [ref=e751]:
+                        - generic [ref=e753]:
+                          - generic [ref=e754]: $5.190
+                          - generic [ref=e755]: precio actual $5.190
+                          - generic [ref=e756]: $5.190 x lt
+                        - generic [ref=e757]: AFE
+                        - generic [ref=e758]: Jugo Orgánico de Manzana Botella, 1 L
+                  - group [ref=e761]:
+                    - link "Jugo Naranja Manzana Caja, 200 ml" [ref=e762] [cursor=pointer]:
+                      - /url: /ip/jugos/00780281001190?from=/search
+                      - generic [ref=e763]: Jugo Naranja Manzana Caja, 200 ml
+                    - generic [ref=e765]:
+                      - generic [ref=e766]:
+                        - generic [ref=e768]:
+                          - generic [ref=e770]: 
+                          - text: Rebaja
+                        - generic [ref=e771]:
+                          - generic [ref=e772]:
+                            - img "Jugo Naranja Manzana Caja, 200 ml"
+                          - button "Agregar al carro - Jugo Naranja Manzana Caja, 200 ml" [ref=e775] [cursor=pointer]:
+                            - generic "agregar" [ref=e776]: 
+                            - generic [ref=e777]: Agregar
+                      - generic [ref=e779]:
+                        - generic [ref=e781]:
+                          - generic [ref=e782]: $550
+                          - generic [ref=e783]: precio actual $550, Costaba $640
+                          - generic [ref=e784]: $2.750 x lt
+                          - generic [ref=e785]: $640
+                          - generic [ref=e786]: Ahorra $90
+                        - generic [ref=e787]: Watt's
+                        - generic [ref=e788]: Jugo Naranja Manzana Caja, 200 ml
+                  - group [ref=e791]:
+                    - link "Jugo Colación Sabor Manzana Caja, 200 ml" [ref=e792] [cursor=pointer]:
+                      - /url: /ip/jugos/00780283200024?from=/search
+                      - generic [ref=e793]: Jugo Colación Sabor Manzana Caja, 200 ml
+                    - generic [ref=e795]:
+                      - generic [ref=e798]:
+                        - generic [ref=e799]:
+                          - img "Jugo Colación Sabor Manzana Caja, 200 ml"
+                        - button "Agregar al carro - Jugo Colación Sabor Manzana Caja, 200 ml" [ref=e802] [cursor=pointer]:
+                          - generic "agregar" [ref=e803]: 
+                          - generic [ref=e804]: Agregar
+                      - generic [ref=e806]:
+                        - generic [ref=e808]:
+                          - generic [ref=e809]: $860
+                          - generic [ref=e810]: precio actual $860
+                        - generic [ref=e811]: AFE
+                        - generic [ref=e812]: Jugo Colación Sabor Manzana Caja, 200 ml
+                  - group [ref=e815]:
+                    - link "Néctar Lata Manzana Frutas+Vitamin, 340 ml" [ref=e816] [cursor=pointer]:
+                      - /url: /ip/jugos/00750105538663?from=/search
+                      - generic [ref=e817]: Néctar Lata Manzana Frutas+Vitamin, 340 ml
+                    - generic [ref=e819]:
+                      - generic [ref=e822]:
+                        - generic [ref=e823]:
+                          - img "Néctar Lata Manzana Frutas+Vitamin, 340 ml"
+                        - button "Agregar al carro - Néctar Lata Manzana Frutas+Vitamin, 340 ml" [ref=e826] [cursor=pointer]:
+                          - generic "agregar" [ref=e827]: 
+                          - generic [ref=e828]: Agregar
+                      - generic [ref=e830]:
+                        - generic [ref=e832]:
+                          - generic [ref=e833]: $990
+                          - generic [ref=e834]: precio actual $990
+                          - generic [ref=e835]: $2.912 x lt
+                        - generic [ref=e836]: Del Valle
+                        - generic [ref=e837]: Néctar Lata Manzana Frutas+Vitamin, 340 ml
+                  - group [ref=e840]:
+                    - link "Jugo en Polvo Libre de Azúcar Manzana Verde 7g Sobre, 1 Un" [ref=e841] [cursor=pointer]:
+                      - /url: /ip/jugos/00780280057643?from=/search
+                      - generic [ref=e842]: Jugo en Polvo Libre de Azúcar Manzana Verde 7g Sobre, 1 Un
+                    - generic [ref=e844]:
+                      - generic [ref=e845]:
+                        - generic [ref=e846]:
+                          - generic [ref=e848]: Combina 10 x $1.750
+                          - button "Combina 10 x $1.750. Ver combinaciones aceptadas y coincidir productos." [ref=e849] [cursor=pointer]: Combinar
+                        - generic [ref=e850]:
+                          - generic [ref=e851]:
+                            - img "Jugo en Polvo Libre de Azúcar Manzana Verde 7g Sobre, 1 Un"
+                          - button "Agregar al carro - Jugo en Polvo Libre de Azúcar Manzana Verde 7g Sobre, 1 Un" [ref=e854] [cursor=pointer]:
+                            - generic "agregar" [ref=e855]: 
+                            - generic [ref=e856]: Agregar
+                      - generic [ref=e858]:
+                        - generic [ref=e860]:
+                          - generic [ref=e861]: $270
+                          - generic [ref=e862]: precio actual $270
+                          - generic [ref=e863]: $38.571 x kg
+                        - generic [ref=e864]: Livean
+                        - generic [ref=e865]: Jugo en Polvo Libre de Azúcar Manzana Verde 7g Sobre, 1 Un
+                  - group [ref=e868]:
+                    - link "Jugo en Polvo Manzana Sobre, 7 g" [ref=e869] [cursor=pointer]:
+                      - /url: /ip/jugos/00780220026606?from=/search
+                      - generic [ref=e870]: Jugo en Polvo Manzana Sobre, 7 g
+                    - generic [ref=e872]:
+                      - generic [ref=e873]:
+                        - generic [ref=e874]:
+                          - generic [ref=e876]: Combina 10 x $1.750
+                          - button "Combina 10 x $1.750. Ver combinaciones aceptadas y coincidir productos." [ref=e877] [cursor=pointer]: Combinar
+                        - generic [ref=e878]:
+                          - generic [ref=e879]:
+                            - img "Jugo en Polvo Manzana Sobre, 7 g"
+                          - button "Agregar al carro - Jugo en Polvo Manzana Sobre, 7 g" [ref=e882] [cursor=pointer]:
+                            - generic "agregar" [ref=e883]: 
+                            - generic [ref=e884]: Agregar
+                      - generic [ref=e886]:
+                        - generic [ref=e888]:
+                          - generic [ref=e889]: $270
+                          - generic [ref=e890]: precio actual $270
+                          - generic [ref=e891]: $3.214 x kg
+                        - generic [ref=e892]: Vivo
+                        - generic [ref=e893]: Jugo en Polvo Manzana Sobre, 7 g
+                  - group [ref=e896]:
+                    - link "Refresco Sabor Manzana Sobre, 15 g" [ref=e897] [cursor=pointer]:
+                      - /url: /ip/jugos/00780280000185?from=/search
+                      - generic [ref=e898]: Refresco Sabor Manzana Sobre, 15 g
+                    - generic [ref=e900]:
+                      - generic [ref=e903]:
+                        - generic [ref=e904]:
+                          - img "Refresco Sabor Manzana Sobre, 15 g"
+                        - button "Agregar al carro - Refresco Sabor Manzana Sobre, 15 g" [ref=e907] [cursor=pointer]:
+                          - generic "agregar" [ref=e908]: 
+                          - generic [ref=e909]: Agregar
+                      - generic [ref=e911]:
+                        - generic [ref=e913]:
+                          - generic [ref=e914]: $260
+                          - generic [ref=e915]: precio actual $260
+                          - generic [ref=e916]: $17.333 x kg
+                        - generic [ref=e917]: Zuko
+                        - generic [ref=e918]: Refresco Sabor Manzana Sobre, 15 g
+                  - group [ref=e921]:
+                    - link "Refresco Superblends Fibra Manzana Sobre, 7 g" [ref=e922] [cursor=pointer]:
+                      - /url: /ip/jugos/00780280000136?from=/search
+                      - generic [ref=e923]: Refresco Superblends Fibra Manzana Sobre, 7 g
+                    - generic [ref=e925]:
+                      - generic [ref=e928]:
+                        - generic [ref=e929]:
+                          - img "Refresco Superblends Fibra Manzana Sobre, 7 g"
+                        - button "Agregar al carro - Refresco Superblends Fibra Manzana Sobre, 7 g" [ref=e932] [cursor=pointer]:
+                          - generic "agregar" [ref=e933]: 
+                          - generic [ref=e934]: Agregar
+                      - generic [ref=e936]:
+                        - generic [ref=e938]:
+                          - generic [ref=e939]: $330
+                          - generic [ref=e940]: precio actual $330
+                          - generic [ref=e941]: $33.000 x kg
+                        - generic [ref=e942]: Livean
+                        - generic [ref=e943]: Refresco Superblends Fibra Manzana Sobre, 7 g
+                  - group [ref=e946]:
+                    - link "Néctar Manzana Caja, 200 cc" [ref=e947] [cursor=pointer]:
+                      - /url: /ip/jugos-colacion/00780280054433?from=/search
+                      - generic [ref=e948]: Néctar Manzana Caja, 200 cc
+                    - generic [ref=e950]:
+                      - generic [ref=e953]:
+                        - generic [ref=e954]:
+                          - img "Néctar Manzana Caja, 200 cc"
+                        - button "Agregar al carro - Néctar Manzana Caja, 200 cc" [ref=e957] [cursor=pointer]:
+                          - generic "agregar" [ref=e958]: 
+                          - generic [ref=e959]: Agregar
+                      - generic [ref=e961]:
+                        - generic [ref=e963]:
+                          - generic [ref=e964]: $290
+                          - generic [ref=e965]: precio actual $290
+                          - generic [ref=e966]: $1.450 x lt
+                        - generic [ref=e967]: Livean
+                        - generic [ref=e968]: Néctar Manzana Caja, 200 cc
+                  - group [ref=e971]:
+                    - link "Néctar Manzana Caja, 200 ml" [ref=e972] [cursor=pointer]:
+                      - /url: /ip/jugos-colacion/00780282070047?from=/search
+                      - generic [ref=e973]: Néctar Manzana Caja, 200 ml
+                    - generic [ref=e975]:
+                      - generic [ref=e976]:
+                        - generic [ref=e977]:
+                          - generic [ref=e979]: Combina 6 x $1.850
+                          - button "Combina 6 x $1.850. Ver combinaciones aceptadas y coincidir productos." [ref=e980] [cursor=pointer]: Combinar
+                        - generic [ref=e981]:
+                          - generic [ref=e982]:
+                            - img "Néctar Manzana Caja, 200 ml"
+                          - button "Agregar al carro - Néctar Manzana Caja, 200 ml" [ref=e985] [cursor=pointer]:
+                            - generic "agregar" [ref=e986]: 
+                            - generic [ref=e987]: Agregar
+                      - generic [ref=e989]:
+                        - generic [ref=e991]:
+                          - generic [ref=e992]: $390
+                          - generic [ref=e993]: precio actual $390
+                          - generic [ref=e994]: $1.950 x lt
+                        - generic [ref=e995]: Del Valle
+                        - generic [ref=e996]: Néctar Manzana Caja, 200 ml
+                  - group [ref=e999]:
+                    - link "Jugo Manzana Frambuesa, 90 ml" [ref=e1000] [cursor=pointer]:
+                      - /url: /ip/alimentacion-y-lactancia/00780465506080?from=/search
+                      - generic [ref=e1001]: Jugo Manzana Frambuesa, 90 ml
+                    - generic [ref=e1003]:
+                      - generic [ref=e1004]:
+                        - generic [ref=e1005]:
+                          - generic [ref=e1007]: Combina 2 x $1.290
+                          - button "Combina 2 x $1.290. Ver combinaciones aceptadas y coincidir productos." [ref=e1008] [cursor=pointer]: Combinar
+                        - generic [ref=e1009]:
+                          - generic [ref=e1010]:
+                            - img "Jugo Manzana Frambuesa, 90 ml"
+                          - button "Agregar al carro - Jugo Manzana Frambuesa, 90 ml" [ref=e1013] [cursor=pointer]:
+                            - generic "agregar" [ref=e1014]: 
+                            - generic [ref=e1015]: Agregar
+                      - generic [ref=e1017]:
+                        - generic [ref=e1019]:
+                          - generic [ref=e1020]: $790
+                          - generic [ref=e1021]: precio actual $790
+                          - generic [ref=e1022]: $8.778 x kg
+                        - generic [ref=e1023]: Parent's Choice
+                        - generic [ref=e1024]: Jugo Manzana Frambuesa, 90 ml
+                  - group [ref=e1027]:
+                    - link "Jugo 100% Fruta Manzana Caja, 190 ml" [ref=e1028] [cursor=pointer]:
+                      - /url: /ip/jugos-colacion/00780220026303?from=/search
+                      - generic [ref=e1029]: Jugo 100% Fruta Manzana Caja, 190 ml
+                    - generic [ref=e1031]:
+                      - generic [ref=e1032]:
+                        - generic [ref=e1033]:
+                          - generic [ref=e1035]: Combina 3 x $1.650
+                          - button "Combina 3 x $1.650. Ver combinaciones aceptadas y coincidir productos." [ref=e1036] [cursor=pointer]: Combinar
+                        - generic [ref=e1037]:
+                          - generic [ref=e1038]:
+                            - img "Jugo 100% Fruta Manzana Caja, 190 ml"
+                          - button "Agregar al carro - Jugo 100% Fruta Manzana Caja, 190 ml" [ref=e1041] [cursor=pointer]:
+                            - generic "agregar" [ref=e1042]: 
+                            - generic [ref=e1043]: Agregar
+                      - generic [ref=e1045]:
+                        - generic [ref=e1047]:
+                          - generic [ref=e1048]: $690
+                          - generic [ref=e1049]: precio actual $690
+                          - generic [ref=e1050]: $3.632 x lt
+                        - generic [ref=e1051]: Vivo
+                        - generic [ref=e1052]: Jugo 100% Fruta Manzana Caja, 190 ml
+                  - group [ref=e1055]:
+                    - link "Jugo 100% Fruta Sabor Manzana Caja, 200 ml" [ref=e1056] [cursor=pointer]:
+                      - /url: /ip/jugos-colacion/00780281001157?from=/search
+                      - generic [ref=e1057]: Jugo 100% Fruta Sabor Manzana Caja, 200 ml
+                    - generic [ref=e1059]:
+                      - generic [ref=e1060]:
+                        - generic [ref=e1062]:
+                          - generic [ref=e1064]: 
+                          - text: Rebaja
+                        - generic [ref=e1065]:
+                          - generic [ref=e1066]:
+                            - img "Jugo 100% Fruta Sabor Manzana Caja, 200 ml"
+                          - button "Agregar al carro - Jugo 100% Fruta Sabor Manzana Caja, 200 ml" [ref=e1069] [cursor=pointer]:
+                            - generic "agregar" [ref=e1070]: 
+                            - generic [ref=e1071]: Agregar
+                      - generic [ref=e1073]:
+                        - generic [ref=e1075]:
+                          - generic [ref=e1076]: $550
+                          - generic [ref=e1077]: precio actual $550, Costaba $640
+                          - generic [ref=e1078]: $3 x lt
+                          - generic [ref=e1079]: $640
+                          - generic [ref=e1080]: Ahorra $90
+                        - generic [ref=e1081]: Watts
+                        - generic [ref=e1082]: Jugo 100% Fruta Sabor Manzana Caja, 200 ml
+                  - group [ref=e1085]:
+                    - link "Jugo de Fruta Orgánico Manzana 200 ml, 200 ml" [ref=e1086] [cursor=pointer]:
+                      - /url: /ip/alimentacion-y-lactancia/00780465802038?from=/search
+                      - generic [ref=e1087]: Jugo de Fruta Orgánico Manzana 200 ml, 200 ml
+                    - generic [ref=e1089]:
+                      - generic [ref=e1092]:
+                        - generic [ref=e1093]:
+                          - img "Jugo de Fruta Orgánico Manzana 200 ml, 200 ml"
+                        - button "Agregar al carro - Jugo de Fruta Orgánico Manzana 200 ml, 200 ml" [ref=e1096] [cursor=pointer]:
+                          - generic "agregar" [ref=e1097]: 
+                          - generic [ref=e1098]: Agregar
+                      - generic [ref=e1100]:
+                        - generic [ref=e1102]:
+                          - generic [ref=e1103]: $940
+                          - generic [ref=e1104]: precio actual $940
+                          - generic [ref=e1105]: $4.699 x lt
+                        - generic [ref=e1106]: AMA
+                        - generic [ref=e1107]: Jugo de Fruta Orgánico Manzana 200 ml, 200 ml
+                  - group [ref=e1110]:
+                    - link "Jugo de Fruta Orgánico Manzana Durazno 200 ml, 200 ml" [ref=e1111] [cursor=pointer]:
+                      - /url: /ip/alimentacion-y-lactancia/00780465802039?from=/search
+                      - generic [ref=e1112]: Jugo de Fruta Orgánico Manzana Durazno 200 ml, 200 ml
+                    - generic [ref=e1114]:
+                      - generic [ref=e1117]:
+                        - generic [ref=e1118]:
+                          - img "Jugo de Fruta Orgánico Manzana Durazno 200 ml, 200 ml"
+                        - button "Agregar al carro - Jugo de Fruta Orgánico Manzana Durazno 200 ml, 200 ml" [ref=e1121] [cursor=pointer]:
+                          - generic "agregar" [ref=e1122]: 
+                          - generic [ref=e1123]: Agregar
+                      - generic [ref=e1125]:
+                        - generic [ref=e1127]:
+                          - generic [ref=e1128]: $940
+                          - generic [ref=e1129]: precio actual $940
+                          - generic [ref=e1130]: $4.699 x lt
+                        - generic [ref=e1131]: AMA
+                        - generic [ref=e1132]: Jugo de Fruta Orgánico Manzana Durazno 200 ml, 200 ml
+                  - group [ref=e1135]:
+                    - link "Jugo de Fruta Orgánico Manzana Pera 200 ml, 200 ml" [ref=e1136] [cursor=pointer]:
+                      - /url: /ip/alimentacion-y-lactancia/00780465802040?from=/search
+                      - generic [ref=e1137]: Jugo de Fruta Orgánico Manzana Pera 200 ml, 200 ml
+                    - generic [ref=e1139]:
+                      - generic [ref=e1142]:
+                        - generic [ref=e1143]:
+                          - img "Jugo de Fruta Orgánico Manzana Pera 200 ml, 200 ml"
+                        - button "Agregar al carro - Jugo de Fruta Orgánico Manzana Pera 200 ml, 200 ml" [ref=e1146] [cursor=pointer]:
+                          - generic "agregar" [ref=e1147]: 
+                          - generic [ref=e1148]: Agregar
+                      - generic [ref=e1150]:
+                        - generic [ref=e1152]:
+                          - generic [ref=e1153]: $940
+                          - generic [ref=e1154]: precio actual $940
+                          - generic [ref=e1155]: $4.699 x lt
+                        - generic [ref=e1156]: AMA
+                        - generic [ref=e1157]: Jugo de Fruta Orgánico Manzana Pera 200 ml, 200 ml
+                  - group [ref=e1160]:
+                    - link "Jugo Prensado Pepino Manzana, 1000 ml" [ref=e1161] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00780466521010?from=/search
+                      - generic [ref=e1162]: Jugo Prensado Pepino Manzana, 1000 ml
+                    - generic [ref=e1164]:
+                      - generic [ref=e1167]:
+                        - generic [ref=e1168]:
+                          - img "Jugo Prensado Pepino Manzana, 1000 ml"
+                        - button "Agregar al carro - Jugo Prensado Pepino Manzana, 1000 ml" [ref=e1171] [cursor=pointer]:
+                          - generic "agregar" [ref=e1172]: 
+                          - generic [ref=e1173]: Agregar
+                      - generic [ref=e1175]:
+                        - generic [ref=e1177]:
+                          - generic [ref=e1178]: $5.390
+                          - generic [ref=e1179]: precio actual $5.390
+                          - generic [ref=e1180]: $5.390 x lt
+                        - generic [ref=e1181]: Bless
+                        - generic [ref=e1182]: Jugo Prensado Pepino Manzana, 1000 ml
+                  - group [ref=e1185]:
+                    - link "Nectar Tetra Pack zero naranja manzana, 190 ml" [ref=e1186] [cursor=pointer]:
+                      - /url: /ip/jugos-colacion/00780257522082?from=/search
+                      - generic [ref=e1187]: Nectar Tetra Pack zero naranja manzana, 190 ml
+                    - generic [ref=e1189]:
+                      - generic [ref=e1192]:
+                        - generic [ref=e1193]:
+                          - img "Nectar Tetra Pack zero naranja manzana, 190 ml"
+                        - button "Agregar al carro - Nectar Tetra Pack zero naranja manzana, 190 ml" [ref=e1196] [cursor=pointer]:
+                          - generic "agregar" [ref=e1197]: 
+                          - generic [ref=e1198]: Agregar
+                      - generic [ref=e1200]:
+                        - generic [ref=e1202]:
+                          - generic [ref=e1203]: $450
+                          - generic [ref=e1204]: precio actual $450
+                          - generic [ref=e1205]: $2.368 x lt
+                        - generic [ref=e1206]: Sprim
+                        - generic [ref=e1207]: Nectar Tetra Pack zero naranja manzana, 190 ml
+                  - group [ref=e1210]:
+                    - link "Nectar Tetra Pack zero manzana, 190 ml" [ref=e1211] [cursor=pointer]:
+                      - /url: /ip/jugos-colacion/00780257522084?from=/search
+                      - generic [ref=e1212]: Nectar Tetra Pack zero manzana, 190 ml
+                    - generic [ref=e1214]:
+                      - generic [ref=e1217]:
+                        - generic [ref=e1218]:
+                          - img "Nectar Tetra Pack zero manzana, 190 ml"
+                        - button "Agregar al carro - Nectar Tetra Pack zero manzana, 190 ml" [ref=e1221] [cursor=pointer]:
+                          - generic "agregar" [ref=e1222]: 
+                          - generic [ref=e1223]: Agregar
+                      - generic [ref=e1225]:
+                        - generic [ref=e1227]:
+                          - generic [ref=e1228]: $450
+                          - generic [ref=e1229]: precio actual $450
+                          - generic [ref=e1230]: $2.368 x lt
+                        - generic [ref=e1231]: Sprim
+                        - generic [ref=e1232]: Nectar Tetra Pack zero manzana, 190 ml
+                  - group [ref=e1235]:
+                    - link "Jugo Mango Naranja Manzana, 1000 ml" [ref=e1236] [cursor=pointer]:
+                      - /url: /ip/refrigerados/00780466521033?from=/search
+                      - generic [ref=e1237]: Jugo Mango Naranja Manzana, 1000 ml
+                    - generic [ref=e1239]:
+                      - generic [ref=e1242]:
+                        - generic [ref=e1243]:
+                          - img "Jugo Mango Naranja Manzana, 1000 ml"
+                        - button "Agregar al carro - Jugo Mango Naranja Manzana, 1000 ml" [ref=e1246] [cursor=pointer]:
+                          - generic "agregar" [ref=e1247]: 
+                          - generic [ref=e1248]: Agregar
+                      - generic [ref=e1250]:
+                        - generic [ref=e1252]:
+                          - generic [ref=e1253]: $5.390
+                          - generic [ref=e1254]: precio actual $5.390
+                          - generic [ref=e1255]: $5.390 x lt
+                        - generic [ref=e1256]: Bless
+                        - generic [ref=e1257]: Jugo Mango Naranja Manzana, 1000 ml
+            - navigation "paginación" [ref=e1260]:
+              - list [ref=e1261]:
+                - listitem [ref=e1262]
+                - listitem [ref=e1264]:
+                  - link "1" [ref=e1265] [cursor=pointer]:
+                    - /url: /search?q=nectar+manzana+1.75L
+                - listitem [ref=e1266]:
+                  - link "Ir a la página 2" [ref=e1267] [cursor=pointer]:
+                    - /url: /search?q=nectar+manzana+1.75L&page=2
+                    - text: "2"
+                - listitem [ref=e1268]:
+                  - link "Página siguiente" [ref=e1269] [cursor=pointer]:
+                    - /url: /search?q=nectar+manzana+1.75L&page=2
+                    - generic [ref=e1270]: 
+  - alert [ref=e1278]

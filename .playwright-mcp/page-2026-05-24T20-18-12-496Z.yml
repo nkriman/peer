@@ -1,0 +1,378 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: lentejas bolsa 500g
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e81]:
+            - generic [ref=e84]:
+              - generic [ref=e85]:
+                - button "Precio" [ref=e88]:
+                  - generic [ref=e89]: Precio
+                  - img [ref=e90]: 
+                - separator [ref=e91]
+              - generic [ref=e92]:
+                - button "Campaña" [ref=e95]:
+                  - generic [ref=e96]: Campaña
+                  - img [ref=e97]: 
+                - separator [ref=e98]
+              - generic [ref=e99]:
+                - button "Marca" [ref=e102]:
+                  - generic [ref=e103]: Marca
+                  - img [ref=e104]: 
+                - separator [ref=e105]
+              - generic [ref=e106]:
+                - button "Categoría" [ref=e109]:
+                  - generic [ref=e110]: Categoría
+                  - img [ref=e111]: 
+                - separator [ref=e112]
+            - generic [ref=e115]:
+              - heading "Resultados para lentejas bolsa 500g (16)" [level=2] [ref=e123]: Resultados para lentejas bolsa 500g(16)
+              - generic [ref=e124]:
+                - group [ref=e127]:
+                  - link "Lentejas Sazon Casero Listas Para Servir Doypack, 240 g" [ref=e128] [cursor=pointer]:
+                    - /url: /ip/alimentos-instantaneos/00780463883135?from=/search
+                    - generic [ref=e129]: Lentejas Sazon Casero Listas Para Servir Doypack, 240 g
+                  - generic [ref=e131]:
+                    - generic [ref=e134]:
+                      - img "Lentejas Sazon Casero Listas Para Servir Doypack, 240 g" [ref=e136]
+                      - button "Agregar al carro - Lentejas Sazon Casero Listas Para Servir Doypack, 240 g" [ref=e139] [cursor=pointer]:
+                        - generic "agregar" [ref=e140]: 
+                        - generic [ref=e141]: Agregar
+                    - generic [ref=e143]:
+                      - generic [ref=e145]:
+                        - generic [ref=e146]: $2.490
+                        - generic [ref=e147]: precio actual $2.490
+                        - generic [ref=e148]: $10.375 x kg
+                      - generic [ref=e149]: Alcafood
+                      - generic [ref=e150]: Lentejas Sazon Casero Listas Para Servir Doypack, 240 g
+                - group [ref=e153]:
+                  - link "Lentejas 4 mm Bolsa, 1 Kg" [ref=e154] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780874360291?from=/search
+                    - generic [ref=e155]: Lentejas 4 mm Bolsa, 1 Kg
+                  - generic [ref=e157]:
+                    - generic [ref=e160]:
+                      - img "Lentejas 4 mm Bolsa, 1 Kg" [ref=e162]
+                      - button "Agregar al carro - Lentejas 4 mm Bolsa, 1 Kg" [ref=e165] [cursor=pointer]:
+                        - generic "agregar" [ref=e166]: 
+                        - generic [ref=e167]: Agregar
+                    - generic [ref=e169]:
+                      - generic [ref=e171]:
+                        - generic [ref=e172]: $2.990
+                        - generic [ref=e173]: precio actual $2.990
+                        - generic [ref=e174]: $2.990 x kg
+                      - generic [ref=e175]: Lider
+                      - generic [ref=e176]: Lentejas 4 mm Bolsa, 1 Kg
+                - group [ref=e179]:
+                  - link "Lentejas 5mm Bolsa, 1 Kg" [ref=e180] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780311010823?from=/search
+                    - generic [ref=e181]: Lentejas 5mm Bolsa, 1 Kg
+                  - generic [ref=e183]:
+                    - generic [ref=e186]:
+                      - img "Lentejas 5mm Bolsa, 1 Kg" [ref=e188]
+                      - button "Agregar al carro - Lentejas 5mm Bolsa, 1 Kg" [ref=e191] [cursor=pointer]:
+                        - generic "agregar" [ref=e192]: 
+                        - generic [ref=e193]: Agregar
+                    - generic [ref=e195]:
+                      - generic [ref=e197]:
+                        - generic [ref=e198]: $3.990
+                        - generic [ref=e199]: precio actual $3.990
+                        - generic [ref=e200]: $3.990 x kg
+                      - generic [ref=e201]: Banquete
+                      - generic [ref=e202]: Lentejas 5mm Bolsa, 1 Kg
+                - group [ref=e205]:
+                  - link "Lentejas 5 mm Bolsa, 1 Kg" [ref=e206] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780874360292?from=/search
+                    - generic [ref=e207]: Lentejas 5 mm Bolsa, 1 Kg
+                  - generic [ref=e209]:
+                    - generic [ref=e212]:
+                      - img "Lentejas 5 mm Bolsa, 1 Kg" [ref=e214]
+                      - button "Agregar al carro - Lentejas 5 mm Bolsa, 1 Kg" [ref=e217] [cursor=pointer]:
+                        - generic "agregar" [ref=e218]: 
+                        - generic [ref=e219]: Agregar
+                    - generic [ref=e221]:
+                      - generic [ref=e223]:
+                        - generic [ref=e224]: $3.190
+                        - generic [ref=e225]: precio actual $3.190
+                        - generic [ref=e226]: $3.190 x kg
+                      - generic [ref=e227]: Lider
+                      - generic [ref=e228]: Lentejas 5 mm Bolsa, 1 Kg
+                - group [ref=e231]:
+                  - link "Lentejas 4 mm Bolsa, 1 Kg" [ref=e232] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780311010821?from=/search
+                    - generic [ref=e233]: Lentejas 4 mm Bolsa, 1 Kg
+                  - generic [ref=e235]:
+                    - generic [ref=e238]:
+                      - img "Lentejas 4 mm Bolsa, 1 Kg" [ref=e240]
+                      - button "Agregar al carro - Lentejas 4 mm Bolsa, 1 Kg" [ref=e243] [cursor=pointer]:
+                        - generic "agregar" [ref=e244]: 
+                        - generic [ref=e245]: Agregar
+                    - generic [ref=e247]:
+                      - generic [ref=e249]:
+                        - generic [ref=e250]: $3.690
+                        - generic [ref=e251]: precio actual $3.690
+                        - generic [ref=e252]: $3.690 x kg
+                      - generic [ref=e253]: Banquete
+                      - generic [ref=e254]: Lentejas 4 mm Bolsa, 1 Kg
+                - group [ref=e257]:
+                  - link "Lentejas 5mm Bolsa, 1 Kg" [ref=e258] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780150500293?from=/search
+                    - generic [ref=e259]: Lentejas 5mm Bolsa, 1 Kg
+                  - generic [ref=e261]:
+                    - generic [ref=e264]:
+                      - img "Lentejas 5mm Bolsa, 1 Kg" [ref=e266]
+                      - button "Agregar al carro - Lentejas 5mm Bolsa, 1 Kg" [ref=e269] [cursor=pointer]:
+                        - generic "agregar" [ref=e270]: 
+                        - generic [ref=e271]: Agregar
+                    - generic [ref=e273]:
+                      - generic [ref=e275]:
+                        - generic [ref=e276]: $3.990
+                        - generic [ref=e277]: precio actual $3.990
+                        - generic [ref=e278]: $3.990 x kg
+                      - generic [ref=e279]: Iansa Agro
+                      - generic [ref=e280]: Lentejas 5mm Bolsa, 1 Kg
+                - group [ref=e283]:
+                  - link "Lentejas 6mm Bolsa, 1 Kg" [ref=e284] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780150500292?from=/search
+                    - generic [ref=e285]: Lentejas 6mm Bolsa, 1 Kg
+                  - generic [ref=e287]:
+                    - generic [ref=e288]:
+                      - generic [ref=e290]:
+                        - generic [ref=e292]: 
+                        - text: Rebaja
+                      - generic [ref=e293]:
+                        - img "Lentejas 6mm Bolsa, 1 Kg" [ref=e295]
+                        - button "Agregar al carro - Lentejas 6mm Bolsa, 1 Kg" [ref=e298] [cursor=pointer]:
+                          - generic "agregar" [ref=e299]: 
+                          - generic [ref=e300]: Agregar
+                    - generic [ref=e302]:
+                      - generic [ref=e304]:
+                        - generic [ref=e305]: $3.090
+                        - generic [ref=e306]: precio actual $3.090, Costaba $4.090
+                        - generic [ref=e307]: $3.090 x kg
+                        - generic [ref=e308]: $4.090
+                        - generic [ref=e309]: Ahorra $1.000
+                      - generic [ref=e310]: Iansa Agro
+                      - generic [ref=e311]: Lentejas 6mm Bolsa, 1 Kg
+                - group [ref=e314]:
+                  - link "Lentejas 6mm Bolsa, 1 Kg" [ref=e315] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780874360290?from=/search
+                    - generic [ref=e316]: Lentejas 6mm Bolsa, 1 Kg
+                  - generic [ref=e318]:
+                    - generic [ref=e321]:
+                      - img "Lentejas 6mm Bolsa, 1 Kg" [ref=e323]
+                      - button "Agregar al carro - Lentejas 6mm Bolsa, 1 Kg" [ref=e326] [cursor=pointer]:
+                        - generic "agregar" [ref=e327]: 
+                        - generic [ref=e328]: Agregar
+                    - generic [ref=e330]:
+                      - generic [ref=e332]:
+                        - generic [ref=e333]: $2.990
+                        - generic [ref=e334]: precio actual $2.990
+                        - generic [ref=e335]: $2.990 x kg
+                      - generic [ref=e336]: Lider
+                      - generic [ref=e337]: Lentejas 6mm Bolsa, 1 Kg
+                - group [ref=e340]:
+                  - link "Lentejas 6 mm Bolsa, 1 Kg" [ref=e341] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780311010825?from=/search
+                    - generic [ref=e342]: Lentejas 6 mm Bolsa, 1 Kg
+                  - generic [ref=e344]:
+                    - generic [ref=e345]:
+                      - generic [ref=e347]:
+                        - generic [ref=e349]: 
+                        - text: Rebaja
+                      - generic [ref=e350]:
+                        - img "Lentejas 6 mm Bolsa, 1 Kg" [ref=e352]
+                        - button "Agregar al carro - Lentejas 6 mm Bolsa, 1 Kg" [ref=e355] [cursor=pointer]:
+                          - generic "agregar" [ref=e356]: 
+                          - generic [ref=e357]: Agregar
+                    - generic [ref=e359]:
+                      - generic [ref=e361]:
+                        - generic [ref=e362]: $2.950
+                        - generic [ref=e363]: precio actual $2.950, Costaba $4.090
+                        - generic [ref=e364]: $2.950 x kg
+                        - generic [ref=e365]: $4.090
+                        - generic [ref=e366]: Ahorra $1.140
+                      - generic [ref=e367]: Banquete
+                      - generic [ref=e368]: Lentejas 6 mm Bolsa, 1 Kg
+                - group [ref=e371]:
+                  - link "Lentejas 6mm Bolsa, 500 g" [ref=e372] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780874360489?from=/search
+                    - generic [ref=e373]: Lentejas 6mm Bolsa, 500 g
+                  - generic [ref=e375]:
+                    - generic [ref=e378]:
+                      - img "Lentejas 6mm Bolsa, 500 g" [ref=e380]
+                      - button "Agregar al carro - Lentejas 6mm Bolsa, 500 g" [ref=e383] [cursor=pointer]:
+                        - generic "agregar" [ref=e384]: 
+                        - generic [ref=e385]: Agregar
+                    - generic [ref=e387]:
+                      - generic [ref=e389]:
+                        - generic [ref=e390]: $1.890
+                        - generic [ref=e391]: precio actual $1.890
+                        - generic [ref=e392]: $3.780 x kg
+                      - generic [ref=e393]: Lider
+                      - generic [ref=e394]: Lentejas 6mm Bolsa, 500 g
+                - group [ref=e397]:
+                  - link "Lentejas 7mm Bolsa, 500 g" [ref=e398] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780390000049?from=/search
+                    - generic [ref=e399]: Lentejas 7mm Bolsa, 500 g
+                  - generic [ref=e401]:
+                    - generic [ref=e404]:
+                      - img "Lentejas 7mm Bolsa, 500 g" [ref=e406]
+                      - button "Agregar al carro - Lentejas 7mm Bolsa, 500 g" [ref=e409] [cursor=pointer]:
+                        - generic "agregar" [ref=e410]: 
+                        - generic [ref=e411]: Agregar
+                    - generic [ref=e413]:
+                      - generic [ref=e415]:
+                        - generic [ref=e416]: $1.790
+                        - generic [ref=e417]: precio actual $1.790
+                        - generic [ref=e418]: $3.580 x kg
+                      - generic [ref=e419]: Martini
+                      - generic [ref=e420]: Lentejas 7mm Bolsa, 500 g
+                - group [ref=e423]:
+                  - link "Lentejas Rojas Bolsa, 500 g" [ref=e424] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780390000023?from=/search
+                    - generic [ref=e425]: Lentejas Rojas Bolsa, 500 g
+                  - generic [ref=e427]:
+                    - generic [ref=e430]:
+                      - img "Lentejas Rojas Bolsa, 500 g" [ref=e432]
+                      - button "Agregar al carro - Lentejas Rojas Bolsa, 500 g" [ref=e435] [cursor=pointer]:
+                        - generic "agregar" [ref=e436]: 
+                        - generic [ref=e437]: Agregar
+                    - generic [ref=e439]:
+                      - generic [ref=e441]:
+                        - generic [ref=e442]: $1.990
+                        - generic [ref=e443]: precio actual $1.990
+                        - generic [ref=e444]: $3.980 x kg
+                      - generic [ref=e445]: Martini
+                      - generic [ref=e446]: Lentejas Rojas Bolsa, 500 g
+                - group [ref=e449]:
+                  - link "Lentejas 5mm Bolsa, 500 g" [ref=e450] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780390000019?from=/search
+                    - generic [ref=e451]: Lentejas 5mm Bolsa, 500 g
+                  - generic [ref=e453]:
+                    - generic [ref=e456]:
+                      - img "Lentejas 5mm Bolsa, 500 g" [ref=e458]
+                      - button "Agregar al carro - Lentejas 5mm Bolsa, 500 g" [ref=e461] [cursor=pointer]:
+                        - generic "agregar" [ref=e462]: 
+                        - generic [ref=e463]: Agregar
+                    - generic [ref=e465]:
+                      - generic [ref=e467]:
+                        - generic [ref=e468]: $1.790
+                        - generic [ref=e469]: precio actual $1.790
+                        - generic [ref=e470]: $3.580 x kg
+                      - generic [ref=e471]: Martini
+                      - generic [ref=e472]: Lentejas 5mm Bolsa, 500 g
+                - group [ref=e475]:
+                  - link "Lentejas 4mm Bolsa, 1 Kg" [ref=e476] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780150500294?from=/search
+                    - generic [ref=e477]: Lentejas 4mm Bolsa, 1 Kg
+                  - generic [ref=e479]:
+                    - generic [ref=e482]:
+                      - img "Lentejas 4mm Bolsa, 1 Kg" [ref=e484]
+                      - button "Agregar al carro - Lentejas 4mm Bolsa, 1 Kg" [ref=e487] [cursor=pointer]:
+                        - generic "agregar" [ref=e488]: 
+                        - generic [ref=e489]: Agregar
+                    - generic [ref=e491]:
+                      - generic [ref=e493]:
+                        - generic [ref=e494]: $3.790
+                        - generic [ref=e495]: precio actual $3.790
+                        - generic [ref=e496]: $3.790 x kg
+                      - generic [ref=e497]: Iansa Agro
+                      - generic [ref=e498]: Lentejas 4mm Bolsa, 1 Kg
+                - group [ref=e501]:
+                  - link "Lentejas Negras Doypack, 400 g" [ref=e502] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780223700113?from=/search
+                    - generic [ref=e503]: Lentejas Negras Doypack, 400 g
+                  - generic [ref=e505]:
+                    - generic [ref=e508]:
+                      - img "Lentejas Negras Doypack, 400 g" [ref=e510]
+                      - button "Agregar al carro - Lentejas Negras Doypack, 400 g" [ref=e513] [cursor=pointer]:
+                        - generic "agregar" [ref=e514]: 
+                        - generic [ref=e515]: Agregar
+                    - generic [ref=e517]:
+                      - generic [ref=e519]:
+                        - generic [ref=e520]: $2.950
+                        - generic [ref=e521]: precio actual $2.950
+                        - generic [ref=e522]: $7.375 x kg
+                      - generic [ref=e523]: SUK
+                      - generic [ref=e524]: Lentejas Negras Doypack, 400 g
+                - group [ref=e527]:
+                  - link "Lentejas 6mm Bolsa, 500 g" [ref=e528] [cursor=pointer]:
+                    - /url: /ip/arroz-y-legumbres/00780390000048?from=/search
+                    - generic [ref=e529]: Lentejas 6mm Bolsa, 500 g
+                  - generic [ref=e531]:
+                    - generic [ref=e534]:
+                      - img "Lentejas 6mm Bolsa, 500 g" [ref=e536]
+                      - button "Agregar al carro - Lentejas 6mm Bolsa, 500 g" [ref=e539] [cursor=pointer]:
+                        - generic "agregar" [ref=e540]: 
+                        - generic [ref=e541]: Agregar
+                    - generic [ref=e543]:
+                      - generic [ref=e545]:
+                        - generic [ref=e546]: $1.750
+                        - generic [ref=e547]: precio actual $1.750
+                        - generic [ref=e548]: $3.500 x kg
+                      - generic [ref=e549]: Martini
+                      - generic [ref=e550]: Lentejas 6mm Bolsa, 500 g
+  - alert [ref=e559]

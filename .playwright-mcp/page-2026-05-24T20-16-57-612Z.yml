@@ -1,0 +1,252 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: fideos 400g
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e81]:
+            - generic [ref=e84]:
+              - generic [ref=e85]:
+                - button "Precio" [ref=e88]:
+                  - generic [ref=e89]: Precio
+                  - img [ref=e90]: 
+                - separator [ref=e91]
+              - generic [ref=e92]:
+                - button "Campaña" [ref=e95]:
+                  - generic [ref=e96]: Campaña
+                  - img [ref=e97]: 
+                - separator [ref=e98]
+              - generic [ref=e99]:
+                - button "Marca" [ref=e102]:
+                  - generic [ref=e103]: Marca
+                  - img [ref=e104]: 
+                - separator [ref=e105]
+              - generic [ref=e106]:
+                - button "Categoría" [ref=e109]:
+                  - generic [ref=e110]: Categoría
+                  - img [ref=e111]: 
+                - separator [ref=e112]
+            - generic [ref=e115]:
+              - heading "Resultados para fideos 400 g (3)" [level=2] [ref=e123]: Resultados para fideos 400 g(3)
+              - generic [ref=e124]:
+                - group [ref=e127]:
+                  - link "Fideo Pasta Ravioli Ricota y Espinaca Bolsa, 400 g" [ref=e128] [cursor=pointer]:
+                    - /url: https://super.lider.cl/wapcrs/track?bt=1&eventST=click&plmt=sp-search-middle~desktop~&pos=1&tax=&rdf=1&rd=https%3A%2F%2Fsuper.lider.cl%2Fip%2Fpastas-y-salsas%2F00780257504706&adUid=03dc2bb0-5f0a-4e09-b5e6-07c22a508494&mloc=sp-search-middle&pltfm=desktop&pgId=fideos%20400g&pt=search&spQs=AH_vwqKY0ti3yuxO8EbJzsY2J45NXN4SHYms8HmV4qDk0Hc31oopa10ad3mt2PcmUf7RI-roPpDpFurIyF3Bv9vvOttjxZNLLt4TOfCfEvnO9MZJTL34rp4cMHbqeHu1BFUkesH6CM8imeDv-sKSFu__o09yKAxbEnIjcAcH43MnZVsLca0XW-J4NJLd-aLVsu4hVgNCr9vQrcupBsF7erHZ62bAlu3Owwv0mvDb62kiS2hnfUXMn1FVG6QwCyz_z4hlKgd2pYzqvOKaCnHHK2P1HRDVLvI0VJMEejtqs3A&storeId=0000000088&tn=WCL_GR&wtn=kltzop&bkt=ace1_default%7Cace2_default%7Cace3_default%7Csearch_default&/ip/pastas-y-salsas/00780257504706
+                    - generic [ref=e129]: Fideo Pasta Ravioli Ricota y Espinaca Bolsa, 400 g
+                  - generic [ref=e131]:
+                    - generic [ref=e132]:
+                      - generic [ref=e134]:
+                        - img "Fideo Pasta Ravioli Ricota y Espinaca Bolsa, 400 g" [ref=e136]
+                        - button "Agregar al carro - Fideo Pasta Ravioli Ricota y Espinaca Bolsa, 400 g" [ref=e139] [cursor=pointer]:
+                          - generic "agregar" [ref=e140]: 
+                          - generic [ref=e141]: Agregar
+                      - generic [ref=e145]: Patrocinado
+                    - generic [ref=e146]:
+                      - generic [ref=e148]:
+                        - generic [ref=e149]: $2.550
+                        - generic [ref=e150]: precio actual $2.550
+                        - generic [ref=e151]: $6.375 x kg
+                      - generic [ref=e152]: Carozzi
+                      - generic [ref=e153]: Fideo Pasta Ravioli Ricota y Espinaca Bolsa, 400 g
+                - group [ref=e156]:
+                  - link "Fideo Pasta Ravioli Carne Bolsa, 400 g" [ref=e157] [cursor=pointer]:
+                    - /url: https://super.lider.cl/wapcrs/track?bt=1&eventST=click&plmt=sp-search-middle~desktop~&pos=2&tax=&rdf=1&rd=https%3A%2F%2Fsuper.lider.cl%2Fip%2Fpastas-y-salsas%2F00780257504020&adUid=03dc2bb0-5f0a-4e09-b5e6-07c22a508494&mloc=sp-search-middle&pltfm=desktop&pgId=fideos%20400g&pt=search&spQs=AH_vwqKY0ti3yuxO8EbJzjNMDPOXZQgKyZshsXtf1sjMr68AbSdMow9ZRc_qSKrkUf7RI-roPpDpFurIyF3Bv9vvOttjxZNLLt4TOfCfEvnO9MZJTL34rp4cMHbqeHu1BFUkesH6CM8imeDv-sKSFu__o09yKAxbEnIjcAcH43MnZVsLca0XW-J4NJLd-aLVsu4hVgNCr9vQrcupBsF7erHZ62bAlu3Owwv0mvDb62kiS2hnfUXMn1FVG6QwCyz_z4hlKgd2pYzqvOKaCnHHK2P1HRDVLvI0VJMEejtqs3A&storeId=0000000088&tn=WCL_GR&wtn=kltzop&bkt=ace1_default%7Cace2_default%7Cace3_default%7Csearch_default&/ip/pastas-y-salsas/00780257504020
+                    - generic [ref=e158]: Fideo Pasta Ravioli Carne Bolsa, 400 g
+                  - generic [ref=e160]:
+                    - generic [ref=e161]:
+                      - generic [ref=e163]:
+                        - img "Fideo Pasta Ravioli Carne Bolsa, 400 g" [ref=e165]
+                        - button "Agregar al carro - Fideo Pasta Ravioli Carne Bolsa, 400 g" [ref=e168] [cursor=pointer]:
+                          - generic "agregar" [ref=e169]: 
+                          - generic [ref=e170]: Agregar
+                      - generic [ref=e174]: Patrocinado
+                    - generic [ref=e175]:
+                      - generic [ref=e177]:
+                        - generic [ref=e178]: $2.550
+                        - generic [ref=e179]: precio actual $2.550
+                        - generic [ref=e180]: $6.375 x kg
+                      - generic [ref=e181]: Carozzi
+                      - generic [ref=e182]: Fideo Pasta Ravioli Carne Bolsa, 400 g
+                - group [ref=e185]:
+                  - link "Fideo Pasta Caracoquesos Original Caja, 296 g" [ref=e186] [cursor=pointer]:
+                    - /url: https://super.lider.cl/wapcrs/track?bt=1&eventST=click&plmt=sp-search-middle~desktop~&pos=3&tax=&rdf=1&rd=https%3A%2F%2Fsuper.lider.cl%2Fip%2Fpastas-y-salsas%2F00780257500055&adUid=03dc2bb0-5f0a-4e09-b5e6-07c22a508494&mloc=sp-search-middle&pltfm=desktop&pgId=fideos%20400g&pt=search&spQs=AH_vwqKY0ti3yuxO8EbJzuZUU7wITmFIH3-edyNSFuloshBfn6uuA5UGwE2l4jvMUf7RI-roPpDpFurIyF3Bv9vvOttjxZNLLt4TOfCfEvnO9MZJTL34rp4cMHbqeHu1BFUkesH6CM8imeDv-sKSFu__o09yKAxbEnIjcAcH43Pjy_pMbGUydzd9IA1DOFlgXGrZpLY-gNauKJwftgfuxo6yoEwxH7s7mOKL5QSh69ZVBPqekD0JTreQGKEo3VUvPtRWJieyBiEtygWiBll-CIW1J7zGCk2OcC6PjvkXgRw&storeId=0000000088&tn=WCL_GR&wtn=kltzop&bkt=ace1_default%7Cace2_default%7Cace3_default%7Csearch_default&/ip/pastas-y-salsas/00780257500055
+                    - generic [ref=e187]: Fideo Pasta Caracoquesos Original Caja, 296 g
+                  - generic [ref=e189]:
+                    - generic [ref=e190]:
+                      - generic [ref=e192]:
+                        - img "Fideo Pasta Caracoquesos Original Caja, 296 g" [ref=e194]
+                        - button "Agregar al carro - Fideo Pasta Caracoquesos Original Caja, 296 g" [ref=e197] [cursor=pointer]:
+                          - generic "agregar" [ref=e198]: 
+                          - generic [ref=e199]: Agregar
+                      - generic [ref=e203]: Patrocinado
+                    - generic [ref=e204]:
+                      - generic [ref=e206]:
+                        - generic [ref=e207]: $1.890
+                        - generic [ref=e208]: precio actual $1.890
+                        - generic [ref=e209]: $6.385 x kg
+                      - generic [ref=e210]: Carozzi
+                      - generic [ref=e211]: Fideo Pasta Caracoquesos Original Caja, 296 g
+                - group [ref=e214]:
+                  - link "Fideo Pasta de Arroz Bolsa, 250 g" [ref=e215] [cursor=pointer]:
+                    - /url: https://super.lider.cl/wapcrs/track?bt=1&eventST=click&plmt=sp-search-middle~desktop~&pos=4&tax=&rdf=1&rd=https%3A%2F%2Fsuper.lider.cl%2Fip%2Fpastas-y-salsas%2F00780257520123&adUid=03dc2bb0-5f0a-4e09-b5e6-07c22a508494&mloc=sp-search-middle&pltfm=desktop&pgId=fideos%20400g&pt=search&spQs=AH_vwqKY0ti3yuxO8EbJzoQCws7CGrkiThL6SkVvWI2ZN0LQMfYpYgKwrArVk-bUUf7RI-roPpDpFurIyF3Bv9vvOttjxZNLLt4TOfCfEvnO9MZJTL34rp4cMHbqeHu1BFUkesH6CM8imeDv-sKSFu__o09yKAxbEnIjcAcH43Pjy_pMbGUydzd9IA1DOFlgXGrZpLY-gNauKJwftgfuxo6yoEwxH7s7mOKL5QSh69ZVBPqekD0JTreQGKEo3VUvPtRWJieyBiEtygWiBll-CIW1J7zGCk2OcC6PjvkXgRw&storeId=0000000088&tn=WCL_GR&wtn=kltzop&bkt=ace1_default%7Cace2_default%7Cace3_default%7Csearch_default&/ip/pastas-y-salsas/00780257520123
+                    - generic [ref=e216]: Fideo Pasta de Arroz Bolsa, 250 g
+                  - generic [ref=e218]:
+                    - generic [ref=e219]:
+                      - generic [ref=e221]:
+                        - img "Fideo Pasta de Arroz Bolsa, 250 g" [ref=e223]
+                        - button "Agregar al carro - Fideo Pasta de Arroz Bolsa, 250 g" [ref=e226] [cursor=pointer]:
+                          - generic "agregar" [ref=e227]: 
+                          - generic [ref=e228]: Agregar
+                      - generic [ref=e232]: Patrocinado
+                    - generic [ref=e233]:
+                      - generic [ref=e235]:
+                        - generic [ref=e236]: $2.990
+                        - generic [ref=e237]: precio actual $2.990
+                        - generic [ref=e238]: $11.960 x kg
+                      - generic [ref=e239]: Trattoria
+                      - generic [ref=e240]: Fideo Pasta de Arroz Bolsa, 250 g
+                - group [ref=e243]:
+                  - link "Fideo Pasta Caracoquesos 4 Quesos Caja, 296 g" [ref=e244] [cursor=pointer]:
+                    - /url: https://super.lider.cl/wapcrs/track?bt=1&eventST=click&plmt=sp-search-middle~desktop~&pos=5&tax=&rdf=1&rd=https%3A%2F%2Fsuper.lider.cl%2Fip%2Fpastas-y-salsas%2F00780257501574&adUid=03dc2bb0-5f0a-4e09-b5e6-07c22a508494&mloc=sp-search-middle&pltfm=desktop&pgId=fideos%20400g&pt=search&spQs=AH_vwqKY0ti3yuxO8EbJzkwni6YtK7ptkNdQ7D851LV2tPRGOMr876O2IWthsVF0Uf7RI-roPpDpFurIyF3Bv9vvOttjxZNLLt4TOfCfEvnO9MZJTL34rp4cMHbqeHu1BFUkesH6CM8imeDv-sKSFq4o7wozPiwU_amvFFHbj_mTwuSoXvfqqzZWwoiPOztusu4hVgNCr9vQrcupBsF7erHZ62bAlu3Owwv0mvDb62kiS2hnfUXMn1FVG6QwCyz_z4hlKgd2pYzqvOKaCnHHK2P1HRDVLvI0VJMEejtqs3A&storeId=0000000088&tn=WCL_GR&wtn=kltzop&bkt=ace1_default%7Cace2_default%7Cace3_default%7Csearch_default&/ip/pastas-y-salsas/00780257501574
+                    - generic [ref=e245]: Fideo Pasta Caracoquesos 4 Quesos Caja, 296 g
+                  - generic [ref=e247]:
+                    - generic [ref=e248]:
+                      - generic [ref=e250]:
+                        - img "Fideo Pasta Caracoquesos 4 Quesos Caja, 296 g" [ref=e252]
+                        - button "Agregar al carro - Fideo Pasta Caracoquesos 4 Quesos Caja, 296 g" [ref=e255] [cursor=pointer]:
+                          - generic "agregar" [ref=e256]: 
+                          - generic [ref=e257]: Agregar
+                      - generic [ref=e261]: Patrocinado
+                    - generic [ref=e262]:
+                      - generic [ref=e264]:
+                        - generic [ref=e265]: $1.890
+                        - generic [ref=e266]: precio actual $1.890
+                        - generic [ref=e267]: $6.385 x kg
+                      - generic [ref=e268]: Carozzi
+                      - generic [ref=e269]: Fideo Pasta Caracoquesos 4 Quesos Caja, 296 g
+                - group [ref=e272]:
+                  - link "Fideo Pasta Pack Spaghetti N°5 3 Unidades 400 gr + Salsa Tomate 1 Unidad 200 gr, 1 Un" [ref=e273] [cursor=pointer]:
+                    - /url: /ip/pastas-y-salsas/00780257501672?from=/search
+                    - generic [ref=e274]: Fideo Pasta Pack Spaghetti N°5 3 Unidades 400 gr + Salsa Tomate 1 Unidad 200 gr, 1 Un
+                  - generic [ref=e276]:
+                    - generic [ref=e277]:
+                      - generic [ref=e279]:
+                        - generic [ref=e281]: 
+                        - text: Rebaja
+                      - generic [ref=e282]:
+                        - img "Fideo Pasta Pack Spaghetti N°5 3 Unidades 400 gr + Salsa Tomate 1 Unidad 200 gr, 1 Un" [ref=e284]
+                        - button "Agregar al carro - Fideo Pasta Pack Spaghetti N°5 3 Unidades 400 gr + Salsa Tomate 1 Unidad 200 gr, 1 Un" [ref=e287] [cursor=pointer]:
+                          - generic "agregar" [ref=e288]: 
+                          - generic [ref=e289]: Agregar
+                    - generic [ref=e291]:
+                      - generic [ref=e293]:
+                        - generic [ref=e294]: $2.750
+                        - generic [ref=e295]: precio actual $2.750, Costaba $3.290
+                        - generic [ref=e296]: $1.964 x kg
+                        - generic [ref=e297]: $3.290
+                        - generic [ref=e298]: Ahorra $540
+                      - generic [ref=e299]: Carozzi
+                      - generic [ref=e300]: Fideo Pasta Pack Spaghetti N°5 3 Unidades 400 gr + Salsa Tomate 1 Unidad 200 gr, 1 Un
+                - group [ref=e303]:
+                  - link "Crema Huancaína Doypack 400 g, 400 g" [ref=e304] [cursor=pointer]:
+                    - /url: /ip/salsas/00775024307792?from=/search
+                    - generic [ref=e305]: Crema Huancaína Doypack 400 g, 400 g
+                  - generic [ref=e307]:
+                    - generic [ref=e308]:
+                      - generic [ref=e310]:
+                        - generic [ref=e312]: 
+                        - text: Rebaja
+                      - generic [ref=e313]:
+                        - img "Crema Huancaína Doypack 400 g, 400 g" [ref=e315]
+                        - button "Agregar al carro - Crema Huancaína Doypack 400 g, 400 g" [ref=e318] [cursor=pointer]:
+                          - generic "agregar" [ref=e319]: 
+                          - generic [ref=e320]: Agregar
+                    - generic [ref=e322]:
+                      - generic [ref=e324]:
+                        - generic [ref=e325]: $5.850
+                        - generic [ref=e326]: precio actual $5.850, Costaba $7.290
+                        - generic [ref=e327]: $13.000 x kg
+                        - generic [ref=e328]: $7.290
+                        - generic [ref=e329]: Ahorra $1.440
+                      - generic [ref=e330]: Ala Cena
+                      - generic [ref=e331]: Crema Huancaína Doypack 400 g, 400 g
+                - group [ref=e334]:
+                  - link "Tiritas de Vacuno 400 g, 400 g" [ref=e335] [cursor=pointer]:
+                    - /url: /ip/perro/00074674766605?from=/search
+                    - generic [ref=e336]: Tiritas de Vacuno 400 g, 400 g
+                  - generic [ref=e338]:
+                    - generic [ref=e341]:
+                      - img "Tiritas de Vacuno 400 g, 400 g" [ref=e343]
+                      - button "Agregar al carro - Tiritas de Vacuno 400 g, 400 g" [ref=e346] [cursor=pointer]:
+                        - generic "agregar" [ref=e347]: 
+                        - generic [ref=e348]: Agregar
+                    - generic [ref=e350]:
+                      - generic [ref=e352]:
+                        - generic [ref=e353]: $9.690
+                        - generic [ref=e354]: precio actual $9.690
+                        - generic [ref=e355]: $9.690 x un
+                      - generic [ref=e356]: Buddy Pet
+                      - generic [ref=e357]: Tiritas de Vacuno 400 g, 400 g
+  - alert [ref=e366]

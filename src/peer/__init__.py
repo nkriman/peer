@@ -4,6 +4,7 @@ See https://github.com/nkriman/peer
 """
 
 from .agent import Agent
+from .baselines import BareClaudeCodeReviewer
 from .dataset import (
     Curator,
     DefaultTaxonomy,
@@ -61,6 +62,7 @@ __version__ = "0.0.1"
 __all__ = [
     # Agent
     "Agent",
+    "BareClaudeCodeReviewer",
     # Existing types
     "CallSite",
     "CapturedMessage",

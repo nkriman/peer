@@ -1,0 +1,891 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: platano banana kg
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e80]:
+            - generic [ref=e81]:
+              - generic [ref=e84]:
+                - generic [ref=e85]:
+                  - button "Precio" [ref=e88]:
+                    - generic [ref=e89]: Precio
+                    - img [ref=e90]: 
+                  - separator [ref=e91]
+                - generic [ref=e92]:
+                  - button "Campaña" [ref=e95]:
+                    - generic [ref=e96]: Campaña
+                    - img [ref=e97]: 
+                  - separator [ref=e98]
+                - generic [ref=e99]:
+                  - button "Marca" [ref=e102]:
+                    - generic [ref=e103]: Marca
+                    - img [ref=e104]: 
+                  - separator [ref=e105]
+                - generic [ref=e106]:
+                  - button "Categoría" [ref=e109]:
+                    - generic [ref=e110]: Categoría
+                    - img [ref=e111]: 
+                  - separator [ref=e112]
+              - generic [ref=e115]:
+                - heading "Resultados para platano banana kg (56)" [level=2] [ref=e123]: Resultados para platano banana kg(56)
+                - generic [ref=e124]:
+                  - group [ref=e127]:
+                    - link "Plátano Baby Orito Granel" [ref=e128] [cursor=pointer]:
+                      - /url: /ip/frutas/00200040000000?from=/search
+                      - generic [ref=e129]: Plátano Baby Orito Granel
+                    - generic [ref=e131]:
+                      - generic [ref=e134]:
+                        - img "Plátano Baby Orito Granel" [ref=e136]
+                        - button "Agregar al carro - Plátano Baby Orito Granel" [ref=e139] [cursor=pointer]:
+                          - generic "agregar" [ref=e140]: 
+                          - generic [ref=e141]: Agregar
+                      - generic [ref=e143]:
+                        - generic [ref=e145]:
+                          - generic [ref=e146]: $2.490/kg
+                          - generic [ref=e147]: precio actual $2.490/kg
+                          - generic [ref=e148]: $2.490 x kg
+                        - generic [ref=e149]: Multi Marca
+                        - generic [ref=e150]: Plátano Baby Orito Granel
+                  - group [ref=e153]:
+                    - link "Plátano Barraganete Granel" [ref=e154] [cursor=pointer]:
+                      - /url: /ip/frutas/00200208000000?from=/search
+                      - generic [ref=e155]: Plátano Barraganete Granel
+                    - generic [ref=e157]:
+                      - generic [ref=e160]:
+                        - img "Plátano Barraganete Granel" [ref=e162]
+                        - button "Agregar al carro - Plátano Barraganete Granel" [ref=e165] [cursor=pointer]:
+                          - generic "agregar" [ref=e166]: 
+                          - generic [ref=e167]: Agregar
+                      - generic [ref=e169]:
+                        - generic [ref=e171]:
+                          - generic [ref=e172]: $1.950/kg
+                          - generic [ref=e173]: precio actual $1.950/kg
+                          - generic [ref=e174]: $1.950 x kg
+                        - generic [ref=e175]: Multi Marca
+                        - generic [ref=e176]: Plátano Barraganete Granel
+                  - group [ref=e179]:
+                    - link "Plátano Granel" [ref=e180] [cursor=pointer]:
+                      - /url: /ip/frutas/00200014000000?from=/search
+                      - generic [ref=e181]: Plátano Granel
+                    - generic [ref=e183]:
+                      - generic [ref=e186]:
+                        - img "Plátano Granel" [ref=e188]
+                        - button "Agregar al carro - Plátano Granel" [ref=e191] [cursor=pointer]:
+                          - generic "agregar" [ref=e192]: 
+                          - generic [ref=e193]: Agregar
+                      - generic [ref=e195]:
+                        - generic [ref=e197]:
+                          - generic [ref=e198]: $1.450/kg
+                          - generic [ref=e199]: precio actual $1.450/kg
+                          - generic [ref=e200]: $1.450 x kg
+                        - generic [ref=e201]: Multi Marca
+                        - generic [ref=e202]: Plátano Granel
+                  - group [ref=e205]:
+                    - link "Mango Granel" [ref=e206] [cursor=pointer]:
+                      - /url: /ip/frutas/00200835000000?from=/search
+                      - generic [ref=e207]: Mango Granel
+                    - generic [ref=e209]:
+                      - generic [ref=e212]:
+                        - img "Mango Granel" [ref=e214]
+                        - button "Agregar al carro - Mango Granel" [ref=e217] [cursor=pointer]:
+                          - generic "agregar" [ref=e218]: 
+                          - generic [ref=e219]: Agregar
+                      - generic [ref=e221]:
+                        - generic [ref=e223]:
+                          - generic [ref=e224]: $2.890/kg
+                          - generic [ref=e225]: precio actual $2.890/kg
+                          - generic [ref=e226]: $2.890 x kg
+                        - generic [ref=e227]: Multi Marca
+                        - generic [ref=e228]: Mango Granel
+                  - group [ref=e231]:
+                    - link "Piña, 1 Un" [ref=e232] [cursor=pointer]:
+                      - /url: /ip/frutas/00786800076305?from=/search
+                      - generic [ref=e233]: Piña, 1 Un
+                    - generic [ref=e235]:
+                      - generic [ref=e238]:
+                        - img "Piña, 1 Un" [ref=e240]
+                        - button "Agregar al carro - Piña, 1 Un" [ref=e243] [cursor=pointer]:
+                          - generic "agregar" [ref=e244]: 
+                          - generic [ref=e245]: Agregar
+                      - generic [ref=e247]:
+                        - generic [ref=e249]:
+                          - generic [ref=e250]: $2.590
+                          - generic [ref=e251]: precio actual $2.590
+                          - generic [ref=e252]: $2.590 x un
+                        - generic [ref=e253]: Multi Marca
+                        - generic [ref=e254]: Piña, 1 Un
+                  - group [ref=e257]:
+                    - link "Pitahaya" [ref=e258] [cursor=pointer]:
+                      - /url: /ip/frutas/00201018000000?from=/search
+                      - generic [ref=e259]: Pitahaya
+                    - generic [ref=e261]:
+                      - generic [ref=e264]:
+                        - img "Pitahaya" [ref=e266]
+                        - button "Agregar al carro - Pitahaya" [ref=e269] [cursor=pointer]:
+                          - generic "agregar" [ref=e270]: 
+                          - generic [ref=e271]: Agregar
+                      - generic [ref=e273]:
+                        - generic [ref=e275]:
+                          - generic [ref=e276]: $10.290/kg
+                          - generic [ref=e277]: precio actual $10.290/kg
+                          - generic [ref=e278]: $10.290 x kg
+                        - generic [ref=e279]: Multi Marca
+                        - generic [ref=e280]: Pitahaya
+                  - group [ref=e283]:
+                    - link "Maracuyá Granel" [ref=e284] [cursor=pointer]:
+                      - /url: /ip/frutas/00203040000000?from=/search
+                      - generic [ref=e285]: Maracuyá Granel
+                    - generic [ref=e287]:
+                      - generic [ref=e290]:
+                        - img "Maracuyá Granel" [ref=e292]
+                        - button "Agregar al carro - Maracuyá Granel" [ref=e295] [cursor=pointer]:
+                          - generic "agregar" [ref=e296]: 
+                          - generic [ref=e297]: Agregar
+                      - generic [ref=e299]:
+                        - generic [ref=e301]:
+                          - generic [ref=e302]: $4.790/kg
+                          - generic [ref=e303]: precio actual $4.790/kg
+                          - generic [ref=e304]: $4.790 x kg
+                        - generic [ref=e305]: Multi Marca
+                        - generic [ref=e306]: Maracuyá Granel
+                  - group [ref=e309]:
+                    - link "Coco Bolsa, 1 Un" [ref=e310] [cursor=pointer]:
+                      - /url: /ip/frutas/00347267504000?from=/search
+                      - generic [ref=e311]: Coco Bolsa, 1 Un
+                    - generic [ref=e313]:
+                      - generic [ref=e316]:
+                        - img "Coco Bolsa, 1 Un" [ref=e318]
+                        - button "Agregar al carro - Coco Bolsa, 1 Un" [ref=e321] [cursor=pointer]:
+                          - generic "agregar" [ref=e322]: 
+                          - generic [ref=e323]: Agregar
+                      - generic [ref=e325]:
+                        - generic [ref=e327]:
+                          - generic [ref=e328]: $3.790
+                          - generic [ref=e329]: precio actual $3.790
+                          - generic [ref=e330]: $3.790 x un
+                        - generic [ref=e331]: Multi Marca
+                        - generic [ref=e332]: Coco Bolsa, 1 Un
+                  - group [ref=e335]:
+                    - link "Papaya Tropical Granel" [ref=e336] [cursor=pointer]:
+                      - /url: /ip/frutas/00200047000000?from=/search
+                      - generic [ref=e337]: Papaya Tropical Granel
+                    - generic [ref=e339]:
+                      - generic [ref=e342]:
+                        - img "Papaya Tropical Granel" [ref=e344]
+                        - button "Agregar al carro - Papaya Tropical Granel" [ref=e347] [cursor=pointer]:
+                          - generic "agregar" [ref=e348]: 
+                          - generic [ref=e349]: Agregar
+                      - generic [ref=e351]:
+                        - generic [ref=e353]:
+                          - generic [ref=e354]: $5.150/kg
+                          - generic [ref=e355]: precio actual $5.150/kg
+                          - generic [ref=e356]: $5.150 x kg
+                        - generic [ref=e357]: Multi Marca
+                        - generic [ref=e358]: Papaya Tropical Granel
+                  - group [ref=e361]:
+                    - link "Chips Plátano Frito, 240 g" [ref=e362] [cursor=pointer]:
+                      - /url: /ip/frutos-secos/00040005021139?from=/search
+                      - generic [ref=e363]: Chips Plátano Frito, 240 g
+                    - generic [ref=e365]:
+                      - generic [ref=e368]:
+                        - img "Chips Plátano Frito, 240 g" [ref=e370]
+                        - button "Agregar al carro - Chips Plátano Frito, 240 g" [ref=e373] [cursor=pointer]:
+                          - generic "agregar" [ref=e374]: 
+                          - generic [ref=e375]: Agregar
+                      - generic [ref=e377]:
+                        - generic [ref=e379]:
+                          - generic [ref=e380]: $2.250
+                          - generic [ref=e381]: precio actual $2.250
+                          - generic [ref=e382]: $9.375 x kg
+                        - generic [ref=e383]: Selección
+                        - generic [ref=e384]: Chips Plátano Frito, 240 g
+                  - group [ref=e387]:
+                    - link "Leche Plátano Caja, 200 ml" [ref=e388] [cursor=pointer]:
+                      - /url: /ip/leche/00780291000104?from=/search
+                      - generic [ref=e389]: Leche Plátano Caja, 200 ml
+                    - generic [ref=e391]:
+                      - generic [ref=e394]:
+                        - img "Leche Plátano Caja, 200 ml" [ref=e396]
+                        - button "Agregar al carro - Leche Plátano Caja, 200 ml" [ref=e399] [cursor=pointer]:
+                          - generic "agregar" [ref=e400]: 
+                          - generic [ref=e401]: Agregar
+                      - generic [ref=e403]:
+                        - generic [ref=e405]:
+                          - generic [ref=e406]: $570
+                          - generic [ref=e407]: precio actual $570
+                          - generic [ref=e408]: $2.850 x lt
+                        - generic [ref=e409]: Loncoleche
+                        - generic [ref=e410]: Leche Plátano Caja, 200 ml
+                  - group [ref=e413]:
+                    - link "Helado Plátano Manjar Cassata, 1 L" [ref=e414] [cursor=pointer]:
+                      - /url: /ip/helados/00780292600010?from=/search
+                      - generic [ref=e415]: Helado Plátano Manjar Cassata, 1 L
+                    - generic [ref=e417]:
+                      - generic [ref=e420]:
+                        - img "Helado Plátano Manjar Cassata, 1 L" [ref=e422]
+                        - button "Agregar al carro - Helado Plátano Manjar Cassata, 1 L" [ref=e425] [cursor=pointer]:
+                          - generic "agregar" [ref=e426]: 
+                          - generic [ref=e427]: Agregar
+                      - generic [ref=e429]:
+                        - generic [ref=e431]:
+                          - generic [ref=e432]: $6.990
+                          - generic [ref=e433]: precio actual $6.990
+                          - generic [ref=e434]: $6.990 x lt
+                        - generic [ref=e435]: San Francisco
+                        - generic [ref=e436]: Helado Plátano Manjar Cassata, 1 L
+                  - group [ref=e439]:
+                    - link "Queque Plátano 1 Un, 300 g" [ref=e440] [cursor=pointer]:
+                      - /url: /ip/pasteleria/00780462370086?from=/search
+                      - generic [ref=e441]: Queque Plátano 1 Un, 300 g
+                    - generic [ref=e443]:
+                      - generic [ref=e446]:
+                        - img "Queque Plátano 1 Un, 300 g" [ref=e448]
+                        - button "Agregar al carro - Queque Plátano 1 Un, 300 g" [ref=e451] [cursor=pointer]:
+                          - generic "agregar" [ref=e452]: 
+                          - generic [ref=e453]: Agregar
+                      - generic [ref=e455]:
+                        - generic [ref=e457]:
+                          - generic [ref=e458]: $2.190
+                          - generic [ref=e459]: precio actual $2.190
+                          - generic [ref=e460]: $7.300 x un
+                        - generic [ref=e461]: Marketside
+                        - generic [ref=e462]: Queque Plátano 1 Un, 300 g
+                  - group [ref=e465]:
+                    - link "Plátanos Fritos Verdes Tostones, 340 g" [ref=e466] [cursor=pointer]:
+                      - /url: /ip/verduras-y-frutas-congeladas/00005252540285?from=/search
+                      - generic [ref=e467]: Plátanos Fritos Verdes Tostones, 340 g
+                    - generic [ref=e469]:
+                      - generic [ref=e472]:
+                        - img "Plátanos Fritos Verdes Tostones, 340 g" [ref=e474]
+                        - button "Agregar al carro - Plátanos Fritos Verdes Tostones, 340 g" [ref=e477] [cursor=pointer]:
+                          - generic "agregar" [ref=e478]: 
+                          - generic [ref=e479]: Agregar
+                      - generic [ref=e481]:
+                        - generic [ref=e483]:
+                          - generic [ref=e484]: $3.990
+                          - generic [ref=e485]: precio actual $3.990
+                          - generic [ref=e486]: $11.735 x kg
+                        - generic [ref=e487]: Campoverde
+                        - generic [ref=e488]: Plátanos Fritos Verdes Tostones, 340 g
+                  - group [ref=e491]:
+                    - link "Plátanos Fritos Maduros, 340 g" [ref=e492] [cursor=pointer]:
+                      - /url: /ip/verduras-y-frutas-congeladas/00005252540287?from=/search
+                      - generic [ref=e493]: Plátanos Fritos Maduros, 340 g
+                    - generic [ref=e495]:
+                      - generic [ref=e498]:
+                        - img "Plátanos Fritos Maduros, 340 g" [ref=e500]
+                        - button "Agregar al carro - Plátanos Fritos Maduros, 340 g" [ref=e503] [cursor=pointer]:
+                          - generic "agregar" [ref=e504]: 
+                          - generic [ref=e505]: Agregar
+                      - generic [ref=e507]:
+                        - generic [ref=e509]:
+                          - generic [ref=e510]: $3.490
+                          - generic [ref=e511]: precio actual $3.490
+                        - generic [ref=e512]: Campoverde
+                        - generic [ref=e513]: Plátanos Fritos Maduros, 340 g
+                  - group [ref=e516]:
+                    - link "Compota 100% Mix Plátano, 90 g" [ref=e517] [cursor=pointer]:
+                      - /url: /ip/fruta-colacion/00780465506108?from=/search
+                      - generic [ref=e518]: Compota 100% Mix Plátano, 90 g
+                    - generic [ref=e520]:
+                      - generic [ref=e523]:
+                        - img "Compota 100% Mix Plátano, 90 g" [ref=e525]
+                        - button "Agregar al carro - Compota 100% Mix Plátano, 90 g" [ref=e528] [cursor=pointer]:
+                          - generic "agregar" [ref=e529]: 
+                          - generic [ref=e530]: Agregar
+                      - generic [ref=e532]:
+                        - generic [ref=e534]:
+                          - generic [ref=e535]: $450
+                          - generic [ref=e536]: precio actual $450
+                          - generic [ref=e537]: $5.000 x kg
+                        - generic [ref=e538]: Lider
+                        - generic [ref=e539]: Compota 100% Mix Plátano, 90 g
+                  - group [ref=e542]:
+                    - link "Compota Mifrut Plátano, 90 g" [ref=e543] [cursor=pointer]:
+                      - /url: /ip/fruta-colacion/00780220027038?from=/search
+                      - generic [ref=e544]: Compota Mifrut Plátano, 90 g
+                    - generic [ref=e546]:
+                      - generic [ref=e549]:
+                        - img "Compota Mifrut Plátano, 90 g" [ref=e551]
+                        - button "Agregar al carro - Compota Mifrut Plátano, 90 g" [ref=e554] [cursor=pointer]:
+                          - generic "agregar" [ref=e555]: 
+                          - generic [ref=e556]: Agregar
+                      - generic [ref=e558]:
+                        - generic [ref=e560]:
+                          - generic [ref=e561]: $520
+                          - generic [ref=e562]: precio actual $520
+                          - generic [ref=e563]: $5.778 x kg
+                        - generic [ref=e564]: Vivo
+                        - generic [ref=e565]: Compota Mifrut Plátano, 90 g
+                  - group [ref=e568]:
+                    - link "Yoghurt Batido Sabor Plátano Pote, 120 g" [ref=e569] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780290023029?from=/search
+                      - generic [ref=e570]: Yoghurt Batido Sabor Plátano Pote, 120 g
+                    - generic [ref=e572]:
+                      - generic [ref=e575]:
+                        - img "Yoghurt Batido Sabor Plátano Pote, 120 g" [ref=e577]
+                        - button "Agregar al carro - Yoghurt Batido Sabor Plátano Pote, 120 g" [ref=e580] [cursor=pointer]:
+                          - generic "agregar" [ref=e581]: 
+                          - generic [ref=e582]: Agregar
+                      - generic [ref=e584]:
+                        - generic [ref=e586]:
+                          - generic [ref=e587]: $290
+                          - generic [ref=e588]: precio actual $290
+                          - generic [ref=e589]: $2.417 x kg
+                        - generic [ref=e590]: Soprole
+                        - generic [ref=e591]: Yoghurt Batido Sabor Plátano Pote, 120 g
+                  - group [ref=e594]:
+                    - link "Yoghurt Protein Plus Sabor Frutilla Plátano Doypack, 150 gr" [ref=e595] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780292000938?from=/search
+                      - generic [ref=e596]: Yoghurt Protein Plus Sabor Frutilla Plátano Doypack, 150 gr
+                    - generic [ref=e598]:
+                      - generic [ref=e599]:
+                        - generic [ref=e601]:
+                          - generic [ref=e603]: 
+                          - text: Rebaja
+                        - generic [ref=e604]:
+                          - img "Yoghurt Protein Plus Sabor Frutilla Plátano Doypack, 150 gr" [ref=e606]
+                          - button "Agregar al carro - Yoghurt Protein Plus Sabor Frutilla Plátano Doypack, 150 gr" [ref=e609] [cursor=pointer]:
+                            - generic "agregar" [ref=e610]: 
+                            - generic [ref=e611]: Agregar
+                      - generic [ref=e613]:
+                        - generic [ref=e615]:
+                          - generic [ref=e616]: $620
+                          - generic [ref=e617]: precio actual $620, Costaba $690
+                          - generic [ref=e618]: $4.133 x kg
+                          - generic [ref=e619]: $690
+                          - generic [ref=e620]: Ahorra $70
+                        - generic [ref=e621]: Colun
+                        - generic [ref=e622]: Yoghurt Protein Plus Sabor Frutilla Plátano Doypack, 150 gr
+                  - group [ref=e625]:
+                    - link "Galletas Sábor Platano, 58 g" [ref=e626] [cursor=pointer]:
+                      - /url: /ip/alimentacion-y-lactancia/00068635260315?from=/search
+                      - generic [ref=e627]: Galletas Sábor Platano, 58 g
+                    - generic [ref=e629]:
+                      - generic [ref=e632]:
+                        - img "Galletas Sábor Platano, 58 g" [ref=e634]
+                        - button "Agregar al carro - Galletas Sábor Platano, 58 g" [ref=e637] [cursor=pointer]:
+                          - generic "agregar" [ref=e638]: 
+                          - generic [ref=e639]: Agregar
+                      - generic [ref=e641]:
+                        - generic [ref=e643]:
+                          - generic [ref=e644]: $3.490
+                          - generic [ref=e645]: precio actual $3.490
+                          - generic [ref=e646]: $3.490 x un
+                        - generic [ref=e647]: Baby Mum-mum
+                        - generic [ref=e648]: Galletas Sábor Platano, 58 g
+                  - group [ref=e651]:
+                    - link "Compota Orgánica Durazno, Plátano y Arándano, 90 g" [ref=e652] [cursor=pointer]:
+                      - /url: /ip/alimentacion-y-lactancia/00780220027046?from=/search
+                      - generic [ref=e653]: Compota Orgánica Durazno, Plátano y Arándano, 90 g
+                    - generic [ref=e655]:
+                      - generic [ref=e658]:
+                        - generic [ref=e659]:
+                          - img "Compota Orgánica Durazno, Plátano y Arándano, 90 g"
+                        - button "Agregar al carro - Compota Orgánica Durazno, Plátano y Arándano, 90 g" [ref=e662] [cursor=pointer]:
+                          - generic "agregar" [ref=e663]: 
+                          - generic [ref=e664]: Agregar
+                      - generic [ref=e666]:
+                        - generic [ref=e668]:
+                          - generic [ref=e669]: $870
+                          - generic [ref=e670]: precio actual $870
+                          - generic [ref=e671]: $9.667 x kg
+                        - generic [ref=e672]: Vivo
+                        - generic [ref=e673]: Compota Orgánica Durazno, Plátano y Arándano, 90 g
+                  - group [ref=e676]:
+                    - link "Yoghurt Batido Sabor Plátano Bolsa, 1 Kg" [ref=e677] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780292024254?from=/search
+                      - generic [ref=e678]: Yoghurt Batido Sabor Plátano Bolsa, 1 Kg
+                    - generic [ref=e680]:
+                      - generic [ref=e683]:
+                        - generic [ref=e684]:
+                          - img "Yoghurt Batido Sabor Plátano Bolsa, 1 Kg"
+                        - button "Agregar al carro - Yoghurt Batido Sabor Plátano Bolsa, 1 Kg" [ref=e687] [cursor=pointer]:
+                          - generic "agregar" [ref=e688]: 
+                          - generic [ref=e689]: Agregar
+                      - generic [ref=e691]:
+                        - generic [ref=e693]:
+                          - generic [ref=e694]: $1.950
+                          - generic [ref=e695]: precio actual $1.950
+                          - generic [ref=e696]: $1.950 x kg
+                        - generic [ref=e697]: Colun
+                        - generic [ref=e698]: Yoghurt Batido Sabor Plátano Bolsa, 1 Kg
+                  - group [ref=e701]:
+                    - link "Compota Vivo Break Avena Berries Plátano, 90 g" [ref=e702] [cursor=pointer]:
+                      - /url: /ip/fruta-colacion/00780220027061?from=/search
+                      - generic [ref=e703]: Compota Vivo Break Avena Berries Plátano, 90 g
+                    - generic [ref=e705]:
+                      - generic [ref=e708]:
+                        - generic [ref=e709]:
+                          - img "Compota Vivo Break Avena Berries Plátano, 90 g"
+                        - button "Agregar al carro - Compota Vivo Break Avena Berries Plátano, 90 g" [ref=e712] [cursor=pointer]:
+                          - generic "agregar" [ref=e713]: 
+                          - generic [ref=e714]: Agregar
+                      - generic [ref=e716]:
+                        - generic [ref=e718]:
+                          - generic [ref=e719]: $810
+                          - generic [ref=e720]: precio actual $810
+                          - generic [ref=e721]: $9.000 x kg
+                        - generic [ref=e722]: Vivo
+                        - generic [ref=e723]: Compota Vivo Break Avena Berries Plátano, 90 g
+                  - group [ref=e726]:
+                    - link "Postre Petit Suisse Plátano Pote, 45 g g" [ref=e727] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00000007804111?from=/search
+                      - generic [ref=e728]: Postre Petit Suisse Plátano Pote, 45 g g
+                    - generic [ref=e730]:
+                      - generic [ref=e733]:
+                        - generic [ref=e734]:
+                          - img "Postre Petit Suisse Plátano Pote, 45 g g"
+                        - button "Agregar al carro - Postre Petit Suisse Plátano Pote, 45 g g" [ref=e737] [cursor=pointer]:
+                          - generic "agregar" [ref=e738]: 
+                          - generic [ref=e739]: Agregar
+                      - generic [ref=e741]:
+                        - generic [ref=e743]:
+                          - generic [ref=e744]: $340
+                          - generic [ref=e745]: precio actual $340
+                          - generic [ref=e746]: $7.556 x kg
+                        - generic [ref=e747]: Chiquitín
+                        - generic [ref=e748]: Postre Petit Suisse Plátano Pote, 45 g g
+                  - group [ref=e751]:
+                    - link "Refresco Sabor Naranja Plátano Sobre, 15 g" [ref=e752] [cursor=pointer]:
+                      - /url: /ip/jugos/00780280000186?from=/search
+                      - generic [ref=e753]: Refresco Sabor Naranja Plátano Sobre, 15 g
+                    - generic [ref=e755]:
+                      - generic [ref=e758]:
+                        - generic [ref=e759]:
+                          - img "Refresco Sabor Naranja Plátano Sobre, 15 g"
+                        - button "Agregar al carro - Refresco Sabor Naranja Plátano Sobre, 15 g" [ref=e762] [cursor=pointer]:
+                          - generic "agregar" [ref=e763]: 
+                          - generic [ref=e764]: Agregar
+                      - generic [ref=e766]:
+                        - generic [ref=e768]:
+                          - generic [ref=e769]: $270
+                          - generic [ref=e770]: precio actual $270
+                          - generic [ref=e771]: $18.000 x kg
+                        - generic [ref=e772]: Zuko
+                        - generic [ref=e773]: Refresco Sabor Naranja Plátano Sobre, 15 g
+                  - group [ref=e776]:
+                    - link "Plátanos Ruticas, 240 g" [ref=e777] [cursor=pointer]:
+                      - /url: /ip/snacks-y-picoteo/00780242001223?from=/search
+                      - generic [ref=e778]: Plátanos Ruticas, 240 g
+                    - generic [ref=e780]:
+                      - generic [ref=e783]:
+                        - generic [ref=e784]:
+                          - img "Plátanos Ruticas, 240 g"
+                        - button "Agregar al carro - Plátanos Ruticas, 240 g" [ref=e787] [cursor=pointer]:
+                          - generic "agregar" [ref=e788]: 
+                          - generic [ref=e789]: Agregar
+                      - generic [ref=e791]:
+                        - generic [ref=e793]:
+                          - generic [ref=e794]: $2.890
+                          - generic [ref=e795]: precio actual $2.890
+                          - generic [ref=e796]: $12.042 x kg
+                        - generic [ref=e797]: Marco Polo
+                        - generic [ref=e798]: Plátanos Ruticas, 240 g
+                  - group [ref=e801]:
+                    - link "Cereal Puffs Plátano y Zapallo, 50 g" [ref=e802] [cursor=pointer]:
+                      - /url: /ip/a-base-de-plantas/00065952514941?from=/search
+                      - generic [ref=e803]: Cereal Puffs Plátano y Zapallo, 50 g
+                    - generic [ref=e805]:
+                      - generic [ref=e808]:
+                        - generic [ref=e809]:
+                          - img "Cereal Puffs Plátano y Zapallo, 50 g"
+                        - button "Agregar al carro - Cereal Puffs Plátano y Zapallo, 50 g" [ref=e812] [cursor=pointer]:
+                          - generic "agregar" [ref=e813]: 
+                          - generic [ref=e814]: Agregar
+                      - generic [ref=e816]:
+                        - generic [ref=e818]:
+                          - generic [ref=e819]: $3.490
+                          - generic [ref=e820]: precio actual $3.490
+                          - generic [ref=e821]: $69.800 x kg
+                        - generic [ref=e822]: Kuna Foods
+                        - generic [ref=e823]: Cereal Puffs Plátano y Zapallo, 50 g
+                  - group [ref=e826]:
+                    - link "Gomitas Plátanos, 90 g" [ref=e827] [cursor=pointer]:
+                      - /url: /ip/chocolates-y-candy/00789859145330?from=/search
+                      - generic [ref=e828]: Gomitas Plátanos, 90 g
+                    - generic [ref=e830]:
+                      - generic [ref=e833]:
+                        - generic [ref=e834]:
+                          - img "Gomitas Plátanos, 90 g"
+                        - button "Agregar al carro - Gomitas Plátanos, 90 g" [ref=e837] [cursor=pointer]:
+                          - generic "agregar" [ref=e838]: 
+                          - generic [ref=e839]: Agregar
+                      - generic [ref=e841]:
+                        - generic [ref=e843]:
+                          - generic [ref=e844]: $1.290
+                          - generic [ref=e845]: precio actual $1.290
+                          - generic [ref=e846]: $16.125 x kg
+                        - generic [ref=e847]: Fini
+                        - generic [ref=e848]: Gomitas Plátanos, 90 g
+                  - group [ref=e851]:
+                    - link "Cereal Infantil Plátano, 250 g" [ref=e852] [cursor=pointer]:
+                      - /url: /ip/alimentacion-y-lactancia/00844529172378?from=/search
+                      - generic [ref=e853]: Cereal Infantil Plátano, 250 g
+                    - generic [ref=e855]:
+                      - generic [ref=e858]:
+                        - generic [ref=e859]:
+                          - img "Cereal Infantil Plátano, 250 g"
+                        - button "Agregar al carro - Cereal Infantil Plátano, 250 g" [ref=e862] [cursor=pointer]:
+                          - generic "agregar" [ref=e863]: 
+                          - generic [ref=e864]: Agregar
+                      - generic [ref=e866]:
+                        - generic [ref=e868]:
+                          - generic [ref=e869]: $2.690
+                          - generic [ref=e870]: precio actual $2.690
+                          - generic [ref=e871]: $10.760 x kg
+                        - generic [ref=e872]: Nestum
+                        - generic [ref=e873]: Cereal Infantil Plátano, 250 g
+                  - group [ref=e876]:
+                    - link "Compota Vivo Break Avena Naranja Plátano, 90 g" [ref=e877] [cursor=pointer]:
+                      - /url: /ip/fruta-colacion/00780220027060?from=/search
+                      - generic [ref=e878]: Compota Vivo Break Avena Naranja Plátano, 90 g
+                    - generic [ref=e880]:
+                      - generic [ref=e883]:
+                        - generic [ref=e884]:
+                          - img "Compota Vivo Break Avena Naranja Plátano, 90 g"
+                        - button "Agregar al carro - Compota Vivo Break Avena Naranja Plátano, 90 g" [ref=e887] [cursor=pointer]:
+                          - generic "agregar" [ref=e888]: 
+                          - generic [ref=e889]: Agregar
+                      - generic [ref=e891]:
+                        - generic [ref=e893]:
+                          - generic [ref=e894]: $810
+                          - generic [ref=e895]: precio actual $810
+                          - generic [ref=e896]: $9.000 x kg
+                        - generic [ref=e897]: Vivo
+                        - generic [ref=e898]: Compota Vivo Break Avena Naranja Plátano, 90 g
+                  - group [ref=e901]:
+                    - link "Puré de Fruta Manzana, Plátano y Zanahoria Orgánico, 90 gr" [ref=e902] [cursor=pointer]:
+                      - /url: /ip/alimentacion-y-lactancia/00780465802098?from=/search
+                      - generic [ref=e903]: Puré de Fruta Manzana, Plátano y Zanahoria Orgánico, 90 gr
+                    - generic [ref=e905]:
+                      - generic [ref=e908]:
+                        - generic [ref=e909]:
+                          - img "Puré de Fruta Manzana, Plátano y Zanahoria Orgánico, 90 gr"
+                        - button "Agregar al carro - Puré de Fruta Manzana, Plátano y Zanahoria Orgánico, 90 gr" [ref=e912] [cursor=pointer]:
+                          - generic "agregar" [ref=e913]: 
+                          - generic [ref=e914]: Agregar
+                      - generic [ref=e916]:
+                        - generic [ref=e918]:
+                          - generic [ref=e919]: $1.150
+                          - generic [ref=e920]: precio actual $1.150
+                          - generic [ref=e921]: $12.778 x kg
+                        - generic [ref=e922]: AMA
+                        - generic [ref=e923]: Puré de Fruta Manzana, Plátano y Zanahoria Orgánico, 90 gr
+                  - group [ref=e926]:
+                    - link "Puré de Manzana Plátano Mango Orgánico, 90 g" [ref=e927] [cursor=pointer]:
+                      - /url: /ip/alimentacion-y-lactancia/00780465802123?from=/search
+                      - generic [ref=e928]: Puré de Manzana Plátano Mango Orgánico, 90 g
+                    - generic [ref=e930]:
+                      - generic [ref=e933]:
+                        - generic [ref=e934]:
+                          - img "Puré de Manzana Plátano Mango Orgánico, 90 g"
+                        - button "Agregar al carro - Puré de Manzana Plátano Mango Orgánico, 90 g" [ref=e937] [cursor=pointer]:
+                          - generic "agregar" [ref=e938]: 
+                          - generic [ref=e939]: Agregar
+                      - generic [ref=e941]:
+                        - generic [ref=e943]:
+                          - generic [ref=e944]: $1.150
+                          - generic [ref=e945]: precio actual $1.150
+                          - generic [ref=e946]: $12.778 x kg
+                        - generic [ref=e947]: AMA
+                        - generic [ref=e948]: Puré de Manzana Plátano Mango Orgánico, 90 g
+                  - group [ref=e951]:
+                    - link "Compota Orgánica Sabor Zapallo Manzana Plátano, 90 g" [ref=e952] [cursor=pointer]:
+                      - /url: /ip/alimentacion-y-lactancia/00780220027067?from=/search
+                      - generic [ref=e953]: Compota Orgánica Sabor Zapallo Manzana Plátano, 90 g
+                    - generic [ref=e955]:
+                      - generic [ref=e958]:
+                        - generic [ref=e959]:
+                          - img "Compota Orgánica Sabor Zapallo Manzana Plátano, 90 g"
+                        - button "Agregar al carro - Compota Orgánica Sabor Zapallo Manzana Plátano, 90 g" [ref=e962] [cursor=pointer]:
+                          - generic "agregar" [ref=e963]: 
+                          - generic [ref=e964]: Agregar
+                      - generic [ref=e966]:
+                        - generic [ref=e968]:
+                          - generic [ref=e969]: $870
+                          - generic [ref=e970]: precio actual $870
+                          - generic [ref=e971]: $9.667 x kg
+                        - generic [ref=e972]: Vivo
+                        - generic [ref=e973]: Compota Orgánica Sabor Zapallo Manzana Plátano, 90 g
+                  - group [ref=e976]:
+                    - link "Puré Orgánico Manzana Plátano, 90 g" [ref=e977] [cursor=pointer]:
+                      - /url: /ip/alimentacion-y-lactancia/00780465802167?from=/search
+                      - generic [ref=e978]: Puré Orgánico Manzana Plátano, 90 g
+                    - generic [ref=e980]:
+                      - generic [ref=e983]:
+                        - generic [ref=e984]:
+                          - img "Puré Orgánico Manzana Plátano, 90 g"
+                        - button "Agregar al carro - Puré Orgánico Manzana Plátano, 90 g" [ref=e987] [cursor=pointer]:
+                          - generic "agregar" [ref=e988]: 
+                          - generic [ref=e989]: Agregar
+                      - generic [ref=e991]:
+                        - generic [ref=e993]:
+                          - generic [ref=e994]: $1.150
+                          - generic [ref=e995]: precio actual $1.150
+                          - generic [ref=e996]: $12.778 x kg
+                        - generic [ref=e997]: AMA
+                        - generic [ref=e998]: Puré Orgánico Manzana Plátano, 90 g
+                  - group [ref=e1001]:
+                    - link "Compota Orgánica Manzana Plátano Mango, 90 g" [ref=e1002] [cursor=pointer]:
+                      - /url: /ip/alimentacion-y-lactancia/00780220027048?from=/search
+                      - generic [ref=e1003]: Compota Orgánica Manzana Plátano Mango, 90 g
+                    - generic [ref=e1005]:
+                      - generic [ref=e1008]:
+                        - generic [ref=e1009]:
+                          - img "Compota Orgánica Manzana Plátano Mango, 90 g"
+                        - button "Agregar al carro - Compota Orgánica Manzana Plátano Mango, 90 g" [ref=e1012] [cursor=pointer]:
+                          - generic "agregar" [ref=e1013]: 
+                          - generic [ref=e1014]: Agregar
+                      - generic [ref=e1016]:
+                        - generic [ref=e1018]:
+                          - generic [ref=e1019]: $870
+                          - generic [ref=e1020]: precio actual $870
+                          - generic [ref=e1021]: $9.667 x un
+                        - generic [ref=e1022]: Vivo
+                        - generic [ref=e1023]: Compota Orgánica Manzana Plátano Mango, 90 g
+                  - group [ref=e1026]:
+                    - link "Leche Semidescremada Plátano, 1 L" [ref=e1027] [cursor=pointer]:
+                      - /url: /ip/leche/00780291000025?from=/search
+                      - generic [ref=e1028]: Leche Semidescremada Plátano, 1 L
+                    - generic [ref=e1030]:
+                      - generic [ref=e1031]:
+                        - generic [ref=e1033]:
+                          - generic [ref=e1035]: 
+                          - text: Rebaja
+                        - generic [ref=e1036]:
+                          - generic [ref=e1037]:
+                            - img "Leche Semidescremada Plátano, 1 L"
+                          - button "Agregar al carro - Leche Semidescremada Plátano, 1 L" [ref=e1040] [cursor=pointer]:
+                            - generic "agregar" [ref=e1041]: 
+                            - generic [ref=e1042]: Agregar
+                      - generic [ref=e1044]:
+                        - generic [ref=e1046]:
+                          - generic [ref=e1047]: $1.490
+                          - generic [ref=e1048]: precio actual $1.490, Costaba $1.850
+                          - generic [ref=e1049]: $1.490 x lt
+                          - generic [ref=e1050]: $1.850
+                          - generic [ref=e1051]: Ahorra $360
+                        - generic [ref=e1052]: Loncoleche
+                        - generic [ref=e1053]: Leche Semidescremada Plátano, 1 L
+                  - group [ref=e1056]:
+                    - link "Ensure Advance Frutilla Plátano, 850 g" [ref=e1057] [cursor=pointer]:
+                      - /url: /ip/proteina/00842703000800?from=/search
+                      - generic [ref=e1058]: Ensure Advance Frutilla Plátano, 850 g
+                    - generic [ref=e1060]:
+                      - generic [ref=e1063]:
+                        - generic [ref=e1064]:
+                          - img "Ensure Advance Frutilla Plátano, 850 g"
+                        - button "Agregar al carro - Ensure Advance Frutilla Plátano, 850 g" [ref=e1067] [cursor=pointer]:
+                          - generic "agregar" [ref=e1068]: 
+                          - generic [ref=e1069]: Agregar
+                      - generic [ref=e1071]:
+                        - generic [ref=e1073]:
+                          - generic [ref=e1074]: $32.890
+                          - generic [ref=e1075]: precio actual $32.890
+                          - generic [ref=e1076]: $38.694 x kg
+                        - generic [ref=e1077]: Ensure
+                        - generic [ref=e1078]: Ensure Advance Frutilla Plátano, 850 g
+                  - group [ref=e1081]:
+                    - link "Cereal Infantil de Arroz Puffs Sabor Plátano Zapallo, 10 g" [ref=e1082] [cursor=pointer]:
+                      - /url: /ip/alimentacion-y-lactancia/00065952514942?from=/search
+                      - generic [ref=e1083]: Cereal Infantil de Arroz Puffs Sabor Plátano Zapallo, 10 g
+                    - generic [ref=e1085]:
+                      - generic [ref=e1088]:
+                        - generic [ref=e1089]:
+                          - img "Cereal Infantil de Arroz Puffs Sabor Plátano Zapallo, 10 g"
+                        - button "Agregar al carro - Cereal Infantil de Arroz Puffs Sabor Plátano Zapallo, 10 g" [ref=e1092] [cursor=pointer]:
+                          - generic "agregar" [ref=e1093]: 
+                          - generic [ref=e1094]: Agregar
+                      - generic [ref=e1096]:
+                        - generic [ref=e1098]:
+                          - generic [ref=e1099]: $890
+                          - generic [ref=e1100]: precio actual $890
+                          - generic [ref=e1101]: $89.000 x kg
+                        - generic [ref=e1102]: Kuna Foods
+                        - generic [ref=e1103]: Cereal Infantil de Arroz Puffs Sabor Plátano Zapallo, 10 g
+                  - group [ref=e1106]:
+                    - link "Puré Colado Orgánico de Manzana, Plátano y Zapallo, 90 gr" [ref=e1107] [cursor=pointer]:
+                      - /url: /ip/alimentacion-y-lactancia/00780465802046?from=/search
+                      - generic [ref=e1108]: Puré Colado Orgánico de Manzana, Plátano y Zapallo, 90 gr
+                    - generic [ref=e1110]:
+                      - generic [ref=e1113]:
+                        - generic [ref=e1114]:
+                          - img "Puré Colado Orgánico de Manzana, Plátano y Zapallo, 90 gr"
+                        - button "Agregar al carro - Puré Colado Orgánico de Manzana, Plátano y Zapallo, 90 gr" [ref=e1117] [cursor=pointer]:
+                          - generic "agregar" [ref=e1118]: 
+                          - generic [ref=e1119]: Agregar
+                      - generic [ref=e1121]:
+                        - generic [ref=e1123]:
+                          - generic [ref=e1124]: $1.150
+                          - generic [ref=e1125]: precio actual $1.150
+                          - generic [ref=e1126]: $12.778 x kg
+                        - generic [ref=e1127]: AMA
+                        - generic [ref=e1128]: Puré Colado Orgánico de Manzana, Plátano y Zapallo, 90 gr
+                  - group [ref=e1131]:
+                    - link "Yoghurt Protein con Trozos Kiwi,Plátano,Manzana Pote, 155 g" [ref=e1132] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780290000330?from=/search
+                      - generic [ref=e1133]: Yoghurt Protein con Trozos Kiwi,Plátano,Manzana Pote, 155 g
+                    - generic [ref=e1135]:
+                      - generic [ref=e1138]:
+                        - generic [ref=e1139]:
+                          - img "Yoghurt Protein con Trozos Kiwi,Plátano,Manzana Pote, 155 g"
+                        - button "Agregar al carro - Yoghurt Protein con Trozos Kiwi,Plátano,Manzana Pote, 155 g" [ref=e1142] [cursor=pointer]:
+                          - generic "agregar" [ref=e1143]: 
+                          - generic [ref=e1144]: Agregar
+                      - generic [ref=e1146]:
+                        - generic [ref=e1148]:
+                          - generic [ref=e1149]: $790
+                          - generic [ref=e1150]: precio actual $790
+                          - generic [ref=e1151]: $5.097 x kg
+                        - generic [ref=e1152]: Soprole
+                        - generic [ref=e1153]: Yoghurt Protein con Trozos Kiwi,Plátano,Manzana Pote, 155 g
+                  - group [ref=e1156]:
+                    - link "Mix de Frutas Frutilla Plátano Congelados, 454 g" [ref=e1157] [cursor=pointer]:
+                      - /url: /ip/marcas-destacadas/00780468170051?from=/search
+                      - generic [ref=e1158]: Mix de Frutas Frutilla Plátano Congelados, 454 g
+                    - generic [ref=e1160]:
+                      - generic [ref=e1163]:
+                        - generic [ref=e1164]:
+                          - img "Mix de Frutas Frutilla Plátano Congelados, 454 g"
+                        - button "Agregar al carro - Mix de Frutas Frutilla Plátano Congelados, 454 g" [ref=e1167] [cursor=pointer]:
+                          - generic "agregar" [ref=e1168]: 
+                          - generic [ref=e1169]: Agregar
+                      - generic [ref=e1171]:
+                        - generic [ref=e1173]:
+                          - generic [ref=e1174]: $3.590
+                          - generic [ref=e1175]: precio actual $3.590
+                          - generic [ref=e1176]: $7.907 x kg
+                        - generic [ref=e1177]: Great Value
+                        - generic [ref=e1178]: Mix de Frutas Frutilla Plátano Congelados, 454 g
+                  - group [ref=e1181]:
+                    - link "Colado Orgánico Esencial Pera Plátano Gluten Free, 90 gr" [ref=e1182] [cursor=pointer]:
+                      - /url: /ip/alimentacion-y-lactancia/00780465097029?from=/search
+                      - generic [ref=e1183]: Colado Orgánico Esencial Pera Plátano Gluten Free, 90 gr
+                    - generic [ref=e1185]:
+                      - generic [ref=e1188]:
+                        - generic [ref=e1189]:
+                          - img "Colado Orgánico Esencial Pera Plátano Gluten Free, 90 gr"
+                        - button "Agregar al carro - Colado Orgánico Esencial Pera Plátano Gluten Free, 90 gr" [ref=e1192] [cursor=pointer]:
+                          - generic "agregar" [ref=e1193]: 
+                          - generic [ref=e1194]: Agregar
+                      - generic [ref=e1196]:
+                        - generic [ref=e1198]:
+                          - generic [ref=e1199]: $880
+                          - generic [ref=e1200]: precio actual $880
+                        - generic [ref=e1201]: Smiley Kids
+                        - generic [ref=e1202]: Colado Orgánico Esencial Pera Plátano Gluten Free, 90 gr
+                  - group [ref=e1205]:
+                    - link "Cereal Nutripuffs Plátano Naranja, 42 g" [ref=e1206] [cursor=pointer]:
+                      - /url: /ip/alimentacion-y-lactancia/00789100036555?from=/search
+                      - generic [ref=e1207]: Cereal Nutripuffs Plátano Naranja, 42 g
+                    - generic [ref=e1209]:
+                      - generic [ref=e1212]:
+                        - generic [ref=e1213]:
+                          - img "Cereal Nutripuffs Plátano Naranja, 42 g"
+                        - button "Agregar al carro - Cereal Nutripuffs Plátano Naranja, 42 g" [ref=e1216] [cursor=pointer]:
+                          - generic "agregar" [ref=e1217]: 
+                          - generic [ref=e1218]: Agregar
+                      - generic [ref=e1220]:
+                        - generic [ref=e1222]:
+                          - generic [ref=e1223]: $2.890
+                          - generic [ref=e1224]: precio actual $2.890
+                          - generic [ref=e1225]: $68.810 x kg
+                        - generic [ref=e1226]: Nestum
+                        - generic [ref=e1227]: Cereal Nutripuffs Plátano Naranja, 42 g
+                  - group [ref=e1230]:
+                    - link "Compota Orgánica de Plátano y Mango, 90 g" [ref=e1231] [cursor=pointer]:
+                      - /url: /ip/fruta-colacion/00780465506156?from=/search
+                      - generic [ref=e1232]: Compota Orgánica de Plátano y Mango, 90 g
+                    - generic [ref=e1234]:
+                      - generic [ref=e1237]:
+                        - generic [ref=e1238]:
+                          - img "Compota Orgánica de Plátano y Mango, 90 g"
+                        - button "Agregar al carro - Compota Orgánica de Plátano y Mango, 90 g" [ref=e1241] [cursor=pointer]:
+                          - generic "agregar" [ref=e1242]: 
+                          - generic [ref=e1243]: Agregar
+                      - generic [ref=e1245]:
+                        - generic [ref=e1247]:
+                          - generic [ref=e1248]: $680
+                          - generic [ref=e1249]: precio actual $680
+                          - generic [ref=e1250]: $7.556 x kg
+                        - generic [ref=e1251]: Lider
+                        - generic [ref=e1252]: Compota Orgánica de Plátano y Mango, 90 g
+            - navigation "paginación" [ref=e1255]:
+              - list [ref=e1256]:
+                - listitem [ref=e1257]
+                - listitem [ref=e1259]:
+                  - link "1" [ref=e1260] [cursor=pointer]:
+                    - /url: /search?q=platano+banana+kg
+                - listitem [ref=e1261]:
+                  - link "Ir a la página 2" [ref=e1262] [cursor=pointer]:
+                    - /url: /search?q=platano+banana+kg&page=2
+                    - text: "2"
+                - listitem [ref=e1263]:
+                  - link "Página siguiente" [ref=e1264] [cursor=pointer]:
+                    - /url: /search?q=platano+banana+kg&page=2
+                    - generic [ref=e1265]: 
+  - alert [ref=e1273]

@@ -1,0 +1,241 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: pan perfecto
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - generic [ref=e59]:
+              - generic [ref=e62]:
+                - generic [ref=e65]:
+                  - link "FUCHS" [ref=e66] [cursor=pointer]:
+                    - /url: https://super.lider.cl/wapcrs/track?bt=1&eventST=click&plmt=sb-search-top~desktop~&pos=1&tax=73535247_22477361_83966286&rdf=1&rd=https%3A%2F%2Fsuper.lider.cl%2Fbrowse%2Fpanaderia-y-pasteleria%2Fpanaderia-envasada%2F73535247_22477361%3Ffacet%3Dbrand%253AFuchs&adUid=31d78dcf-f8dc-4849-b182-574cc362f0f5&mloc=sb-search-top&pltfm=desktop&pgId=pan%20perfecto&pt=search&spQs=B-0ORuQ6BMVYu5ErviP0wmMPud2Cby730agPVAlZH-INDbDfiVnc_2GrTPTBLVCsqKd9ACvRS8OFQQdh5sgjlcn5_srqIyCc8xJ-6i1fqBaXEnwq4tVSo-i_CxzKG-B6UdxWKvsopWuuC6Lu4SWkuZmgeVwYHRnaxBfCYkAoZ7yF-Za1Lm6-pAqFiL_8u8cU&storeId=0000000088&tn=WCL_GR&wtn=kltzop&bkt=ace1_default%7Cace2_default%7Cace3_default&addlInfo=~sbaItems%7C00780348000139%7C00780348002007%7C00780348000144%7C00780348000143%7C00780348005005%7C00780348000142%7C00780348000141~
+                    - img "FUCHS" [ref=e67]
+                  - generic [ref=e68]:
+                    - link "Fuchs, expertos en granos y semillas Patrocinado por FUCHS" [ref=e69] [cursor=pointer]:
+                      - /url: https://super.lider.cl/wapcrs/track?bt=1&eventST=click&plmt=sb-search-top~desktop~&pos=1&tax=73535247_22477361_83966286&rdf=1&rd=https%3A%2F%2Fsuper.lider.cl%2Fbrowse%2Fpanaderia-y-pasteleria%2Fpanaderia-envasada%2F73535247_22477361%3Ffacet%3Dbrand%253AFuchs&adUid=31d78dcf-f8dc-4849-b182-574cc362f0f5&mloc=sb-search-top&pltfm=desktop&pgId=pan%20perfecto&pt=search&spQs=B-0ORuQ6BMVYu5ErviP0wmMPud2Cby730agPVAlZH-INDbDfiVnc_2GrTPTBLVCsqKd9ACvRS8OFQQdh5sgjlcn5_srqIyCc8xJ-6i1fqBaXEnwq4tVSo-i_CxzKG-B6UdxWKvsopWuuC6Lu4SWkuZmgeVwYHRnaxBfCYkAoZ7yF-Za1Lm6-pAqFiL_8u8cU&storeId=0000000088&tn=WCL_GR&wtn=kltzop&bkt=ace1_default%7Cace2_default%7Cace3_default&addlInfo=~sbaItems%7C00780348000139%7C00780348002007%7C00780348000144%7C00780348000143%7C00780348005005%7C00780348000142%7C00780348000141~
+                      - generic [ref=e70]:
+                        - generic [ref=e72]: Fuchs, expertos en granos y semillas
+                        - generic [ref=e74]: Patrocinado por FUCHS
+                    - link "Mostrar más":
+                      - /url: https://super.lider.cl/wapcrs/track?bt=1&eventST=click&plmt=sb-search-top~desktop~&pos=1&tax=73535247_22477361_83966286&rdf=1&rd=https%3A%2F%2Fsuper.lider.cl%2Fbrowse%2Fpanaderia-y-pasteleria%2Fpanaderia-envasada%2F73535247_22477361%3Ffacet%3Dbrand%253AFuchs&adUid=31d78dcf-f8dc-4849-b182-574cc362f0f5&mloc=sb-search-top&pltfm=desktop&pgId=pan%20perfecto&pt=search&spQs=B-0ORuQ6BMVYu5ErviP0wmMPud2Cby730agPVAlZH-INDbDfiVnc_2GrTPTBLVCsqKd9ACvRS8OFQQdh5sgjlcn5_srqIyCc8xJ-6i1fqBaXEnwq4tVSo-i_CxzKG-B6UdxWKvsopWuuC6Lu4SWkuZmgeVwYHRnaxBfCYkAoZ7yF-Za1Lm6-pAqFiL_8u8cU&storeId=0000000088&tn=WCL_GR&wtn=kltzop&bkt=ace1_default%7Cace2_default%7Cace3_default&addlInfo=~sbaItems%7C00780348000139%7C00780348002007%7C00780348000144%7C00780348000143%7C00780348005005%7C00780348000142%7C00780348000141~
+                      - button "Mostrar más" [ref=e76] [cursor=pointer]
+                - generic [ref=e78]:
+                  - group [ref=e81]:
+                    - generic [ref=e83]:
+                      - link "Pan De Molde Calabaza Nuez, 350 g" [ref=e85] [cursor=pointer]:
+                        - /url: https://super.lider.cl/wapcrs/track?bt=1&eventST=click&plmt=sb-search-top~desktop~&pos=2&tax=73535247_22477361_83966286&rdf=1&rd=https%3A%2F%2Fsuper.lider.cl%2Fip%2Fpanaderia-envasada%2F00780348000139&adUid=31d78dcf-f8dc-4849-b182-574cc362f0f5&mloc=sb-search-top&pltfm=desktop&pgId=pan%20perfecto&pt=search&spQs=MnnYnbQ1goTpt4PqGmrGOTvBnLXoI2DjF4DGmw-6KxgAUXG2zbv9EtHyJZImULtLsDxAKW6hWGaB-kN2-HkINV2BTmgdatx1eyeriQJCHaBYJj4LE2Rn7skaulTJCc0CNOfHqNNqZLeBvsIuIeZKbcDLrCtdmm-DvH_V3qsDuMwtI4y5nVt0Ys5Uh3iRvN9Gtho0w0tj6Sq_VyE90Ft0Yw&storeId=0000000088&tn=WCL_GR&wtn=kltzop&bkt=ace1_default%7Cace2_default%7Cace3_default&/ip/panaderia-envasada/00780348000139
+                        - generic [ref=e86]: Pan De Molde Calabaza Nuez, 350 g
+                      - button "Agregar al carro - Pan De Molde Calabaza Nuez, 350 g" [ref=e91] [cursor=pointer]:
+                        - generic "agregar" [ref=e92]: 
+                        - generic [ref=e93]: Agregar
+                      - generic [ref=e94]:
+                        - generic [ref=e96]:
+                          - generic [ref=e97]: $2.290
+                          - generic [ref=e98]: precio actual $2.290
+                        - generic [ref=e100]: Pan De Molde Calabaza Nuez, 350 g
+                  - group [ref=e103]:
+                    - generic [ref=e105]:
+                      - link "Pan De Molde Integral Stutgart 1 Un, 650 g" [ref=e107] [cursor=pointer]:
+                        - /url: https://super.lider.cl/wapcrs/track?bt=1&eventST=click&plmt=sb-search-top~desktop~&pos=3&tax=73535247_22477361_83966286&rdf=1&rd=https%3A%2F%2Fsuper.lider.cl%2Fip%2Fpanaderia-envasada%2F00780348002007&adUid=31d78dcf-f8dc-4849-b182-574cc362f0f5&mloc=sb-search-top&pltfm=desktop&pgId=pan%20perfecto&pt=search&spQs=MnnYnbQ1goTpt4PqGmrGOc_Icvs83oZSJbWPL_0NX-IAUXG2zbv9EtHyJZImULtLsDxAKW6hWGaB-kN2-HkINV2BTmgdatx1eyeriQJCHaBYJj4LE2Rn7skaulTJCc0CNOfHqNNqZLeBvsIuIeZKbcDLrCtdmm-DvH_V3qsDuMwtI4y5nVt0Ys5Uh3iRvN9Gtho0w0tj6Sq_VyE90Ft0Yw&storeId=0000000088&tn=WCL_GR&wtn=kltzop&bkt=ace1_default%7Cace2_default%7Cace3_default&/ip/panaderia-envasada/00780348002007
+                        - generic [ref=e108]: Pan De Molde Integral Stutgart 1 Un, 650 g
+                      - button "Agregar al carro - Pan De Molde Integral Stutgart 1 Un, 650 g" [ref=e113] [cursor=pointer]:
+                        - generic "agregar" [ref=e114]: 
+                        - generic [ref=e115]: Agregar
+                      - generic [ref=e116]:
+                        - generic [ref=e118]:
+                          - generic [ref=e119]: $2.850
+                          - generic [ref=e120]: precio actual $2.850
+                        - generic [ref=e122]: Pan De Molde Integral Stutgart 1 Un, 650 g
+                  - group [ref=e125]:
+                    - generic [ref=e127]:
+                      - link "Pan de Molde Linaza Chía, 350 g" [ref=e129] [cursor=pointer]:
+                        - /url: https://super.lider.cl/wapcrs/track?bt=1&eventST=click&plmt=sb-search-top~desktop~&pos=4&tax=73535247_22477361_83966286&rdf=1&rd=https%3A%2F%2Fsuper.lider.cl%2Fip%2Fpanaderia-envasada%2F00780348000144&adUid=31d78dcf-f8dc-4849-b182-574cc362f0f5&mloc=sb-search-top&pltfm=desktop&pgId=pan%20perfecto&pt=search&spQs=MnnYnbQ1goTpt4PqGmrGObTab93Qq6RiUxEh7FPNXBUAUXG2zbv9EtHyJZImULtLsDxAKW6hWGaB-kN2-HkINV2BTmgdatx1eyeriQJCHaBYJj4LE2Rn7skaulTJCc0CNOfHqNNqZLeBvsIuIeZKbcDLrCtdmm-DvH_V3qsDuMwtI4y5nVt0Ys5Uh3iRvN9Gtho0w0tj6Sq_VyE90Ft0Yw&storeId=0000000088&tn=WCL_GR&wtn=kltzop&bkt=ace1_default%7Cace2_default%7Cace3_default&/ip/panaderia-envasada/00780348000144
+                        - generic [ref=e130]: Pan de Molde Linaza Chía, 350 g
+                      - button "Agregar al carro - Pan de Molde Linaza Chía, 350 g" [ref=e135] [cursor=pointer]:
+                        - generic "agregar" [ref=e136]: 
+                        - generic [ref=e137]: Agregar
+                      - generic [ref=e138]:
+                        - generic [ref=e140]:
+                          - generic [ref=e141]: $2.290
+                          - generic [ref=e142]: precio actual $2.290
+                        - generic [ref=e144]: Pan de Molde Linaza Chía, 350 g
+                  - group [ref=e147]:
+                    - generic [ref=e150]:
+                      - generic [ref=e152]: 
+                      - text: Rebaja
+                    - generic [ref=e153]:
+                      - link "Pan De Molde Linaza Chía, 600 g" [ref=e155] [cursor=pointer]:
+                        - /url: https://super.lider.cl/wapcrs/track?bt=1&eventST=click&plmt=sb-search-top~desktop~&pos=5&tax=73535247_22477361_83966286&rdf=1&rd=https%3A%2F%2Fsuper.lider.cl%2Fip%2Fpanaderia-envasada%2F00780348000143&adUid=31d78dcf-f8dc-4849-b182-574cc362f0f5&mloc=sb-search-top&pltfm=desktop&pgId=pan%20perfecto&pt=search&spQs=MnnYnbQ1goTpt4PqGmrGOYbnmApinoXxggdtIR3Ej_4AUXG2zbv9EtHyJZImULtLsDxAKW6hWGaB-kN2-HkINV2BTmgdatx1eyeriQJCHaBYJj4LE2Rn7skaulTJCc0CNOfHqNNqZLeBvsIuIeZKbcDLrCtdmm-DvH_V3qsDuMwtI4y5nVt0Ys5Uh3iRvN9Gtho0w0tj6Sq_VyE90Ft0Yw&storeId=0000000088&tn=WCL_GR&wtn=kltzop&bkt=ace1_default%7Cace2_default%7Cace3_default&/ip/panaderia-envasada/00780348000143
+                        - generic [ref=e156]: Pan De Molde Linaza Chía, 600 g
+                      - button "Agregar al carro - Pan De Molde Linaza Chía, 600 g" [ref=e161] [cursor=pointer]:
+                        - generic "agregar" [ref=e162]: 
+                        - generic [ref=e163]: Agregar
+                      - generic [ref=e164]:
+                        - generic [ref=e166]:
+                          - generic [ref=e167]: $2.590
+                          - generic [ref=e168]: precio actual $2.590, Costaba $2.890
+                          - generic [ref=e169]: $2.890
+                        - generic [ref=e171]: Pan De Molde Linaza Chía, 600 g
+              - separator [ref=e172]
+            - region "Sección de ordenar y filtrar" [ref=e174]:
+              - button "Precio" [ref=e177]:
+                - generic [ref=e179]: 
+                - generic [ref=e180]: Precio
+                - generic [ref=e181]: 
+              - button "Marca" [ref=e184]:
+                - generic [ref=e185]: Marca
+                - generic [ref=e186]: 
+              - generic [ref=e187]:
+                - generic [ref=e188]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e190]:
+                  - text: Más relevantes
+                  - generic [ref=e191]: 
+            - separator [ref=e192]
+          - generic [ref=e196]:
+            - generic [ref=e199]:
+              - generic [ref=e200]:
+                - button "Precio" [ref=e203]:
+                  - generic [ref=e204]: Precio
+                  - img [ref=e205]: 
+                - separator [ref=e206]
+              - generic [ref=e207]:
+                - button "Campaña" [ref=e210]:
+                  - generic [ref=e211]: Campaña
+                  - img [ref=e212]: 
+                - separator [ref=e213]
+              - generic [ref=e214]:
+                - button "Marca" [ref=e217]:
+                  - generic [ref=e218]: Marca
+                  - img [ref=e219]: 
+                - separator [ref=e220]
+              - generic [ref=e221]:
+                - button "Categoría" [ref=e224]:
+                  - generic [ref=e225]: Categoría
+                  - img [ref=e226]: 
+                - separator [ref=e227]
+            - generic [ref=e230]:
+              - heading "Resultados para pan perfecto (4)" [level=2] [ref=e238]: Resultados para pan perfecto(4)
+              - generic [ref=e239]:
+                - group [ref=e242]:
+                  - link "Pan De Molde Pan Perfecto Blanco, 580 g" [ref=e243] [cursor=pointer]:
+                    - /url: /ip/panaderia-envasada/00780346800148?from=/search
+                    - generic [ref=e244]: Pan De Molde Pan Perfecto Blanco, 580 g
+                  - generic [ref=e246]:
+                    - generic [ref=e249]:
+                      - img "Pan De Molde Pan Perfecto Blanco, 580 g" [ref=e251]
+                      - button "Agregar al carro - Pan De Molde Pan Perfecto Blanco, 580 g" [ref=e254] [cursor=pointer]:
+                        - generic "agregar" [ref=e255]: 
+                        - generic [ref=e256]: Agregar
+                    - generic [ref=e258]:
+                      - generic [ref=e260]:
+                        - generic [ref=e261]: $3.750
+                        - generic [ref=e262]: precio actual $3.750
+                        - generic [ref=e263]: $6.250 x un
+                      - generic [ref=e264]: Kingsbury
+                      - generic [ref=e265]: Pan De Molde Pan Perfecto Blanco, 580 g
+                - group [ref=e268]:
+                  - link "Pan Pita Perfecto 8 Un, 300 gr" [ref=e269] [cursor=pointer]:
+                    - /url: /ip/panaderia-envasada/00780346800164?from=/search
+                    - generic [ref=e270]: Pan Pita Perfecto 8 Un, 300 gr
+                  - generic [ref=e272]:
+                    - generic [ref=e273]:
+                      - generic [ref=e275]:
+                        - generic [ref=e277]: 
+                        - text: Rebaja
+                      - generic [ref=e278]:
+                        - img "Pan Pita Perfecto 8 Un, 300 gr" [ref=e280]
+                        - button "Agregar al carro - Pan Pita Perfecto 8 Un, 300 gr" [ref=e283] [cursor=pointer]:
+                          - generic "agregar" [ref=e284]: 
+                          - generic [ref=e285]: Agregar
+                    - generic [ref=e287]:
+                      - generic [ref=e289]:
+                        - generic [ref=e290]: $1.890
+                        - generic [ref=e291]: precio actual $1.890, Costaba $2.190
+                        - generic [ref=e292]: $6.300 x kg
+                        - generic [ref=e293]: $2.190
+                        - generic [ref=e294]: Ahorra $300
+                      - generic [ref=e295]: Kingsbury
+                      - generic [ref=e296]: Pan Pita Perfecto 8 Un, 300 gr
+                - group [ref=e299]:
+                  - link "Pan de Molde Familiar Kingsbury Perfecto Integral, 580 g" [ref=e300] [cursor=pointer]:
+                    - /url: /ip/panaderia-envasada/00780346800573?from=/search
+                    - generic [ref=e301]: Pan de Molde Familiar Kingsbury Perfecto Integral, 580 g
+                  - generic [ref=e303]:
+                    - generic [ref=e306]:
+                      - img "Pan de Molde Familiar Kingsbury Perfecto Integral, 580 g" [ref=e308]
+                      - button "Agregar al carro - Pan de Molde Familiar Kingsbury Perfecto Integral, 580 g" [ref=e311] [cursor=pointer]:
+                        - generic "agregar" [ref=e312]: 
+                        - generic [ref=e313]: Agregar
+                    - generic [ref=e315]:
+                      - generic [ref=e317]:
+                        - generic [ref=e318]: $3.750
+                        - generic [ref=e319]: precio actual $3.750
+                        - generic [ref=e320]: $6.466 x kg
+                      - generic [ref=e321]: Kingsbury
+                      - generic [ref=e322]: Pan de Molde Familiar Kingsbury Perfecto Integral, 580 g
+                - group [ref=e325]:
+                  - link "Mix Parrillero Al Vacío 11 Un, 400 g" [ref=e326] [cursor=pointer]:
+                    - /url: /ip/todas-las-carnes/00780193002151?from=/search
+                    - generic [ref=e327]: Mix Parrillero Al Vacío 11 Un, 400 g
+                  - generic [ref=e329]:
+                    - generic [ref=e332]:
+                      - img "Mix Parrillero Al Vacío 11 Un, 400 g" [ref=e334]
+                      - button "Agregar al carro - Mix Parrillero Al Vacío 11 Un, 400 g" [ref=e337] [cursor=pointer]:
+                        - generic "agregar" [ref=e338]: 
+                        - generic [ref=e339]: Agregar
+                    - generic [ref=e341]:
+                      - generic [ref=e343]:
+                        - generic [ref=e344]: $4.390
+                        - generic [ref=e345]: precio actual $4.390
+                        - generic [ref=e346]: $10.975 x kg
+                      - generic [ref=e347]: Receta Del Abuelo
+                      - generic [ref=e348]: Mix Parrillero Al Vacío 11 Un, 400 g
+  - alert [ref=e357]

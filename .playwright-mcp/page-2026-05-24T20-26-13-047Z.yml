@@ -1,0 +1,908 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: atun agua lata
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e80]:
+            - generic [ref=e81]:
+              - generic [ref=e84]:
+                - generic [ref=e85]:
+                  - button "Precio" [ref=e88]:
+                    - generic [ref=e89]: Precio
+                    - img [ref=e90]: 
+                  - separator [ref=e91]
+                - generic [ref=e92]:
+                  - button "Campaña" [ref=e95]:
+                    - generic [ref=e96]: Campaña
+                    - img [ref=e97]: 
+                  - separator [ref=e98]
+                - generic [ref=e99]:
+                  - button "Marca" [ref=e102]:
+                    - generic [ref=e103]: Marca
+                    - img [ref=e104]: 
+                  - separator [ref=e105]
+                - generic [ref=e106]:
+                  - button "Categoría" [ref=e109]:
+                    - generic [ref=e110]: Categoría
+                    - img [ref=e111]: 
+                  - separator [ref=e112]
+              - generic [ref=e115]:
+                - heading "Resultados para atun agua lata (78)" [level=2] [ref=e123]: Resultados para atun agua lata(78)
+                - generic [ref=e124]:
+                  - group [ref=e127]:
+                    - link "Atún Agua Lata, Drenado 104 g - Neto 160 g" [ref=e128] [cursor=pointer]:
+                      - /url: /ip/conservas/00770236700391?from=/search
+                      - generic [ref=e129]: Atún Agua Lata, Drenado 104 g - Neto 160 g
+                    - generic [ref=e131]:
+                      - generic [ref=e134]:
+                        - img "Atún Agua Lata, Drenado 104 g - Neto 160 g" [ref=e136]
+                        - button "Agregar al carro - Atún Agua Lata, Drenado 104 g - Neto 160 g" [ref=e139] [cursor=pointer]:
+                          - generic "agregar" [ref=e140]: 
+                          - generic [ref=e141]: Agregar
+                      - generic [ref=e143]:
+                        - generic [ref=e145]:
+                          - generic [ref=e146]: $1.850
+                          - generic [ref=e147]: precio actual $1.850
+                          - generic [ref=e148]: $17.788 x kg
+                        - generic [ref=e149]: Van Camp's
+                        - generic [ref=e150]: Atún Agua Lata, Drenado 104 g - Neto 160 g
+                  - group [ref=e153]:
+                    - link "Atún Lomitos Agua Lata, Drenado 104 g - Neto 160 g" [ref=e154] [cursor=pointer]:
+                      - /url: /ip/conservas/00885846300345?from=/search
+                      - generic [ref=e155]: Atún Lomitos Agua Lata, Drenado 104 g - Neto 160 g
+                    - generic [ref=e157]:
+                      - generic [ref=e160]:
+                        - img "Atún Lomitos Agua Lata, Drenado 104 g - Neto 160 g" [ref=e162]
+                        - button "Agregar al carro - Atún Lomitos Agua Lata, Drenado 104 g - Neto 160 g" [ref=e165] [cursor=pointer]:
+                          - generic "agregar" [ref=e166]: 
+                          - generic [ref=e167]: Agregar
+                      - generic [ref=e169]:
+                        - generic [ref=e171]:
+                          - generic [ref=e172]: $1.350
+                          - generic [ref=e173]: precio actual $1.350
+                          - generic [ref=e174]: $12.981 x kg
+                        - generic [ref=e175]: Lider
+                        - generic [ref=e176]: Atún Lomitos Agua Lata, Drenado 104 g - Neto 160 g
+                  - group [ref=e179]:
+                    - link "Atún Lomitos Agua Lata, Drenado 91 g - Neto 140 g" [ref=e180] [cursor=pointer]:
+                      - /url: /ip/conservas/00780465140016?from=/search
+                      - generic [ref=e181]: Atún Lomitos Agua Lata, Drenado 91 g - Neto 140 g
+                    - generic [ref=e183]:
+                      - generic [ref=e186]:
+                        - img "Atún Lomitos Agua Lata, Drenado 91 g - Neto 140 g" [ref=e188]
+                        - button "Agregar al carro - Atún Lomitos Agua Lata, Drenado 91 g - Neto 140 g" [ref=e191] [cursor=pointer]:
+                          - generic "agregar" [ref=e192]: 
+                          - generic [ref=e193]: Agregar
+                      - generic [ref=e195]:
+                        - generic [ref=e197]:
+                          - generic [ref=e198]: $1.000
+                          - generic [ref=e199]: precio actual $1.000
+                          - generic [ref=e200]: $10.989 x kg
+                        - generic [ref=e201]: La Romana
+                        - generic [ref=e202]: Atún Lomitos Agua Lata, Drenado 91 g - Neto 140 g
+                  - group [ref=e205]:
+                    - link "Atún Lomitos Agua Lata, Drenado 104 g - Neto 160 g" [ref=e206] [cursor=pointer]:
+                      - /url: /ip/conservas/00780126800204?from=/search
+                      - generic [ref=e207]: Atún Lomitos Agua Lata, Drenado 104 g - Neto 160 g
+                    - generic [ref=e209]:
+                      - generic [ref=e212]:
+                        - img "Atún Lomitos Agua Lata, Drenado 104 g - Neto 160 g" [ref=e214]
+                        - button "Agregar al carro - Atún Lomitos Agua Lata, Drenado 104 g - Neto 160 g" [ref=e217] [cursor=pointer]:
+                          - generic "agregar" [ref=e218]: 
+                          - generic [ref=e219]: Agregar
+                      - generic [ref=e221]:
+                        - generic [ref=e223]:
+                          - generic [ref=e224]: $1.550
+                          - generic [ref=e225]: precio actual $1.550
+                          - generic [ref=e226]: $14.904 x kg
+                        - generic [ref=e227]: Angelmo
+                        - generic [ref=e228]: Atún Lomitos Agua Lata, Drenado 104 g - Neto 160 g
+                  - group [ref=e231]:
+                    - link "Atún Agua Finas HierbasLata, Drenado 100 g- Neto 190 g" [ref=e232] [cursor=pointer]:
+                      - /url: /ip/conservas/00780462147218?from=/search
+                      - generic [ref=e233]: Atún Agua Finas HierbasLata, Drenado 100 g- Neto 190 g
+                    - generic [ref=e235]:
+                      - generic [ref=e238]:
+                        - img "Atún Agua Finas HierbasLata, Drenado 100 g- Neto 190 g" [ref=e240]
+                        - button "Agregar al carro - Atún Agua Finas HierbasLata, Drenado 100 g- Neto 190 g" [ref=e243] [cursor=pointer]:
+                          - generic "agregar" [ref=e244]: 
+                          - generic [ref=e245]: Agregar
+                      - generic [ref=e247]:
+                        - generic [ref=e249]:
+                          - generic [ref=e250]: $1.950
+                          - generic [ref=e251]: precio actual $1.950
+                          - generic [ref=e252]: $21.428 x kg
+                        - generic [ref=e253]: Robinson Crusoe
+                        - generic [ref=e254]: Atún Agua Finas HierbasLata, Drenado 100 g- Neto 190 g
+                  - group [ref=e257]:
+                    - link "Atún Lomitos en Aceite Lata, Drenado 91 g - Neto 140 g" [ref=e258] [cursor=pointer]:
+                      - /url: /ip/conservas/00040000114307?from=/search
+                      - generic [ref=e259]: Atún Lomitos en Aceite Lata, Drenado 91 g - Neto 140 g
+                    - generic [ref=e261]:
+                      - generic [ref=e264]:
+                        - img "Atún Lomitos en Aceite Lata, Drenado 91 g - Neto 140 g" [ref=e266]
+                        - button "Agregar al carro - Atún Lomitos en Aceite Lata, Drenado 91 g - Neto 140 g" [ref=e269] [cursor=pointer]:
+                          - generic "agregar" [ref=e270]: 
+                          - generic [ref=e271]: Agregar
+                      - generic [ref=e273]:
+                        - generic [ref=e275]:
+                          - generic [ref=e276]: $1.000
+                          - generic [ref=e277]: precio actual $1.000
+                          - generic [ref=e278]: $10.989 x kg
+                        - generic [ref=e279]: Lider
+                        - generic [ref=e280]: Atún Lomitos en Aceite Lata, Drenado 91 g - Neto 140 g
+                  - group [ref=e283]:
+                    - link "Atún Lominto Aceite Lata, Drenado 91 g - Neto 140 g" [ref=e284] [cursor=pointer]:
+                      - /url: /ip/conservas/00780465140017?from=/search
+                      - generic [ref=e285]: Atún Lominto Aceite Lata, Drenado 91 g - Neto 140 g
+                    - generic [ref=e287]:
+                      - generic [ref=e290]:
+                        - img "Atún Lominto Aceite Lata, Drenado 91 g - Neto 140 g" [ref=e292]
+                        - button "Agregar al carro - Atún Lominto Aceite Lata, Drenado 91 g - Neto 140 g" [ref=e295] [cursor=pointer]:
+                          - generic "agregar" [ref=e296]: 
+                          - generic [ref=e297]: Agregar
+                      - generic [ref=e299]:
+                        - generic [ref=e301]:
+                          - generic [ref=e302]: $1.000
+                          - generic [ref=e303]: precio actual $1.000
+                          - generic [ref=e304]: $10.989 x kg
+                        - generic [ref=e305]: La Romana
+                        - generic [ref=e306]: Atún Lominto Aceite Lata, Drenado 91 g - Neto 140 g
+                  - group [ref=e309]:
+                    - link "Atún Lomito Aceite Lata, Drenado 104 g - Neto 160 g" [ref=e310] [cursor=pointer]:
+                      - /url: /ip/conservas/00770236700390?from=/search
+                      - generic [ref=e311]: Atún Lomito Aceite Lata, Drenado 104 g - Neto 160 g
+                    - generic [ref=e313]:
+                      - generic [ref=e316]:
+                        - img "Atún Lomito Aceite Lata, Drenado 104 g - Neto 160 g" [ref=e318]
+                        - button "Agregar al carro - Atún Lomito Aceite Lata, Drenado 104 g - Neto 160 g" [ref=e321] [cursor=pointer]:
+                          - generic "agregar" [ref=e322]: 
+                          - generic [ref=e323]: Agregar
+                      - generic [ref=e325]:
+                        - generic [ref=e327]:
+                          - generic [ref=e328]: $1.850
+                          - generic [ref=e329]: precio actual $1.850
+                          - generic [ref=e330]: $17.788 x kg
+                        - generic [ref=e331]: Van Camp's
+                        - generic [ref=e332]: Atún Lomito Aceite Lata, Drenado 104 g - Neto 160 g
+                  - group [ref=e335]:
+                    - link "Atún Lominto Aceite Lata, Drenado 104 g - Neto 160 g" [ref=e336] [cursor=pointer]:
+                      - /url: /ip/conservas/00780126800203?from=/search
+                      - generic [ref=e337]: Atún Lominto Aceite Lata, Drenado 104 g - Neto 160 g
+                    - generic [ref=e339]:
+                      - generic [ref=e342]:
+                        - img "Atún Lominto Aceite Lata, Drenado 104 g - Neto 160 g" [ref=e344]
+                        - button "Agregar al carro - Atún Lominto Aceite Lata, Drenado 104 g - Neto 160 g" [ref=e347] [cursor=pointer]:
+                          - generic "agregar" [ref=e348]: 
+                          - generic [ref=e349]: Agregar
+                      - generic [ref=e351]:
+                        - generic [ref=e353]:
+                          - generic [ref=e354]: $1.550
+                          - generic [ref=e355]: precio actual $1.550
+                          - generic [ref=e356]: $9.118 x kg
+                        - generic [ref=e357]: Angelmo
+                        - generic [ref=e358]: Atún Lominto Aceite Lata, Drenado 104 g - Neto 160 g
+                  - group [ref=e361]:
+                    - link "Atún Ensalada con Cus Cús Lata, Drenado 160 g - Neto 160 g" [ref=e362] [cursor=pointer]:
+                      - /url: /ip/conservas/00780462147122?from=/search
+                      - generic [ref=e363]: Atún Ensalada con Cus Cús Lata, Drenado 160 g - Neto 160 g
+                    - generic [ref=e365]:
+                      - generic [ref=e368]:
+                        - img "Atún Ensalada con Cus Cús Lata, Drenado 160 g - Neto 160 g" [ref=e370]
+                        - button "Agregar al carro - Atún Ensalada con Cus Cús Lata, Drenado 160 g - Neto 160 g" [ref=e373] [cursor=pointer]:
+                          - generic "agregar" [ref=e374]: 
+                          - generic [ref=e375]: Agregar
+                      - generic [ref=e377]:
+                        - generic [ref=e379]:
+                          - generic [ref=e380]: $3.390
+                          - generic [ref=e381]: precio actual $3.390
+                          - generic [ref=e382]: $21.188 x kg
+                        - generic [ref=e383]: Robinson Crusoe
+                        - generic [ref=e384]: Atún Ensalada con Cus Cús Lata, Drenado 160 g - Neto 160 g
+                  - group [ref=e387]:
+                    - link "Atún Ensalada de Quínoa y Cúrcuma Lata, Drenado 160 g - Neto 160 g" [ref=e388] [cursor=pointer]:
+                      - /url: /ip/conservas/00780462147065?from=/search
+                      - generic [ref=e389]: Atún Ensalada de Quínoa y Cúrcuma Lata, Drenado 160 g - Neto 160 g
+                    - generic [ref=e391]:
+                      - generic [ref=e394]:
+                        - img "Atún Ensalada de Quínoa y Cúrcuma Lata, Drenado 160 g - Neto 160 g" [ref=e396]
+                        - button "Agregar al carro - Atún Ensalada de Quínoa y Cúrcuma Lata, Drenado 160 g - Neto 160 g" [ref=e399] [cursor=pointer]:
+                          - generic "agregar" [ref=e400]: 
+                          - generic [ref=e401]: Agregar
+                      - generic [ref=e403]:
+                        - generic [ref=e405]:
+                          - generic [ref=e406]: $3.390
+                          - generic [ref=e407]: precio actual $3.390
+                          - generic [ref=e408]: $21.188 x kg
+                        - generic [ref=e409]: Robinson Crusoe
+                        - generic [ref=e410]: Atún Ensalada de Quínoa y Cúrcuma Lata, Drenado 160 g - Neto 160 g
+                  - group [ref=e413]:
+                    - link "Atún Lominto Aceite de Oliva Extra Viergen Lata, Drenado 104 g - Neto 130 g" [ref=e414] [cursor=pointer]:
+                      - /url: /ip/conservas/00780462147129?from=/search
+                      - generic [ref=e415]: Atún Lominto Aceite de Oliva Extra Viergen Lata, Drenado 104 g - Neto 130 g
+                    - generic [ref=e417]:
+                      - generic [ref=e420]:
+                        - img "Atún Lominto Aceite de Oliva Extra Viergen Lata, Drenado 104 g - Neto 130 g" [ref=e422]
+                        - button "Agregar al carro - Atún Lominto Aceite de Oliva Extra Viergen Lata, Drenado 104 g - Neto 130 g" [ref=e425] [cursor=pointer]:
+                          - generic "agregar" [ref=e426]: 
+                          - generic [ref=e427]: Agregar
+                      - generic [ref=e429]:
+                        - generic [ref=e431]:
+                          - generic [ref=e432]: $2.150
+                          - generic [ref=e433]: precio actual $2.150
+                          - generic [ref=e434]: $20.673 x kg
+                        - generic [ref=e435]: Robinson Crusoe
+                        - generic [ref=e436]: Atún Lominto Aceite de Oliva Extra Viergen Lata, Drenado 104 g - Neto 130 g
+                  - group [ref=e439]:
+                    - link "Atún Ensalada Primavera Lata, Drenado 160 g - Neto 160 g" [ref=e440] [cursor=pointer]:
+                      - /url: /ip/conservas/00780462147028?from=/search
+                      - generic [ref=e441]: Atún Ensalada Primavera Lata, Drenado 160 g - Neto 160 g
+                    - generic [ref=e443]:
+                      - generic [ref=e446]:
+                        - img "Atún Ensalada Primavera Lata, Drenado 160 g - Neto 160 g" [ref=e448]
+                        - button "Agregar al carro - Atún Ensalada Primavera Lata, Drenado 160 g - Neto 160 g" [ref=e451] [cursor=pointer]:
+                          - generic "agregar" [ref=e452]: 
+                          - generic [ref=e453]: Agregar
+                      - generic [ref=e455]:
+                        - generic [ref=e457]:
+                          - generic [ref=e458]: $3.390
+                          - generic [ref=e459]: precio actual $3.390
+                          - generic [ref=e460]: $21.188 x kg
+                        - generic [ref=e461]: Robinson Crusoe
+                        - generic [ref=e462]: Atún Ensalada Primavera Lata, Drenado 160 g - Neto 160 g
+                  - group [ref=e465]:
+                    - link "Atún Ensalada Mexicana Lata, Drenado 160 g - Neto 160 g" [ref=e466] [cursor=pointer]:
+                      - /url: /ip/conservas/00780462147029?from=/search
+                      - generic [ref=e467]: Atún Ensalada Mexicana Lata, Drenado 160 g - Neto 160 g
+                    - generic [ref=e469]:
+                      - generic [ref=e472]:
+                        - img "Atún Ensalada Mexicana Lata, Drenado 160 g - Neto 160 g" [ref=e474]
+                        - button "Agregar al carro - Atún Ensalada Mexicana Lata, Drenado 160 g - Neto 160 g" [ref=e477] [cursor=pointer]:
+                          - generic "agregar" [ref=e478]: 
+                          - generic [ref=e479]: Agregar
+                      - generic [ref=e481]:
+                        - generic [ref=e483]:
+                          - generic [ref=e484]: $3.390
+                          - generic [ref=e485]: precio actual $3.390
+                          - generic [ref=e486]: $21.188 x kg
+                        - generic [ref=e487]: Robinson Crusoe
+                        - generic [ref=e488]: Atún Ensalada Mexicana Lata, Drenado 160 g - Neto 160 g
+                  - group [ref=e491]:
+                    - link "Atún Lomitos Aceite Lata, Drenado 104 g - Neto 160 g" [ref=e492] [cursor=pointer]:
+                      - /url: /ip/conservas/00885846300344?from=/search
+                      - generic [ref=e493]: Atún Lomitos Aceite Lata, Drenado 104 g - Neto 160 g
+                    - generic [ref=e495]:
+                      - generic [ref=e498]:
+                        - img "Atún Lomitos Aceite Lata, Drenado 104 g - Neto 160 g" [ref=e500]
+                        - button "Agregar al carro - Atún Lomitos Aceite Lata, Drenado 104 g - Neto 160 g" [ref=e503] [cursor=pointer]:
+                          - generic "agregar" [ref=e504]: 
+                          - generic [ref=e505]: Agregar
+                      - generic [ref=e507]:
+                        - generic [ref=e509]:
+                          - generic [ref=e510]: $1.350
+                          - generic [ref=e511]: precio actual $1.350
+                          - generic [ref=e512]: $12.981 x kg
+                        - generic [ref=e513]: Lider
+                        - generic [ref=e514]: Atún Lomitos Aceite Lata, Drenado 104 g - Neto 160 g
+                  - group [ref=e517]:
+                    - link "Atún Lomitos en Agua, Drenado 91 g - Neto 140 g" [ref=e518] [cursor=pointer]:
+                      - /url: /ip/conservas/00040000114316?from=/search
+                      - generic [ref=e519]: Atún Lomitos en Agua, Drenado 91 g - Neto 140 g
+                    - generic [ref=e521]:
+                      - generic [ref=e524]:
+                        - img "Atún Lomitos en Agua, Drenado 91 g - Neto 140 g" [ref=e526]
+                        - button "Agregar al carro - Atún Lomitos en Agua, Drenado 91 g - Neto 140 g" [ref=e529] [cursor=pointer]:
+                          - generic "agregar" [ref=e530]: 
+                          - generic [ref=e531]: Agregar
+                      - generic [ref=e533]:
+                        - generic [ref=e535]:
+                          - generic [ref=e536]: $1.000
+                          - generic [ref=e537]: precio actual $1.000
+                          - generic [ref=e538]: $10.989 x kg
+                        - generic [ref=e539]: Lider
+                        - generic [ref=e540]: Atún Lomitos en Agua, Drenado 91 g - Neto 140 g
+                  - group [ref=e543]:
+                    - link "Agua Lata Saborizada Citrus, 310 ml" [ref=e544] [cursor=pointer]:
+                      - /url: /ip/aguas/00780162001051?from=/search
+                      - generic [ref=e545]: Agua Lata Saborizada Citrus, 310 ml
+                    - generic [ref=e547]:
+                      - generic [ref=e550]:
+                        - generic [ref=e551]:
+                          - img "Agua Lata Saborizada Citrus, 310 ml"
+                        - button "Agregar al carro - Agua Lata Saborizada Citrus, 310 ml" [ref=e554] [cursor=pointer]:
+                          - generic "agregar" [ref=e555]: 
+                          - generic [ref=e556]: Agregar
+                      - generic [ref=e558]:
+                        - generic [ref=e560]:
+                          - generic [ref=e561]: $1.290
+                          - generic [ref=e562]: precio actual $1.290
+                          - generic [ref=e563]: $4.161 x lt
+                        - generic [ref=e564]: MAS
+                        - generic [ref=e565]: Agua Lata Saborizada Citrus, 310 ml
+                  - group [ref=e568]:
+                    - link "Sardina Agua Lata, Drenado 75 g - Neto 125 g" [ref=e569] [cursor=pointer]:
+                      - /url: /ip/conservas/00780153400322?from=/search
+                      - generic [ref=e570]: Sardina Agua Lata, Drenado 75 g - Neto 125 g
+                    - generic [ref=e572]:
+                      - generic [ref=e575]:
+                        - generic [ref=e576]:
+                          - img "Sardina Agua Lata, Drenado 75 g - Neto 125 g"
+                        - button "Agregar al carro - Sardina Agua Lata, Drenado 75 g - Neto 125 g" [ref=e579] [cursor=pointer]:
+                          - generic "agregar" [ref=e580]: 
+                          - generic [ref=e581]: Agregar
+                      - generic [ref=e583]:
+                        - generic [ref=e585]:
+                          - generic [ref=e586]: $1.190
+                          - generic [ref=e587]: precio actual $1.190
+                          - generic [ref=e588]: $15.866 x kg
+                        - generic [ref=e589]: Deyco
+                        - generic [ref=e590]: Sardina Agua Lata, Drenado 75 g - Neto 125 g
+                  - group [ref=e593]:
+                    - link "Choritos Agua Lata, Drenado 100 g - Neto 190 g" [ref=e594] [cursor=pointer]:
+                      - /url: /ip/conservas/00008477361150?from=/search
+                      - generic [ref=e595]: Choritos Agua Lata, Drenado 100 g - Neto 190 g
+                    - generic [ref=e597]:
+                      - generic [ref=e600]:
+                        - generic [ref=e601]:
+                          - img "Choritos Agua Lata, Drenado 100 g - Neto 190 g"
+                        - button "Agregar al carro - Choritos Agua Lata, Drenado 100 g - Neto 190 g" [ref=e604] [cursor=pointer]:
+                          - generic "agregar" [ref=e605]: 
+                          - generic [ref=e606]: Agregar
+                      - generic [ref=e608]:
+                        - generic [ref=e610]:
+                          - generic [ref=e611]: $1.950
+                          - generic [ref=e612]: precio actual $1.950
+                          - generic [ref=e613]: $19.500 x kg
+                        - generic [ref=e614]: Robinson Crusoe
+                        - generic [ref=e615]: Choritos Agua Lata, Drenado 100 g - Neto 190 g
+                  - group [ref=e618]:
+                    - link "Mariscos Agua Lata, Drenado 200 g - Neto 425 g" [ref=e619] [cursor=pointer]:
+                      - /url: /ip/conservas/00008477360127?from=/search
+                      - generic [ref=e620]: Mariscos Agua Lata, Drenado 200 g - Neto 425 g
+                    - generic [ref=e622]:
+                      - generic [ref=e625]:
+                        - generic [ref=e626]:
+                          - img "Mariscos Agua Lata, Drenado 200 g - Neto 425 g"
+                        - button "Agregar al carro - Mariscos Agua Lata, Drenado 200 g - Neto 425 g" [ref=e629] [cursor=pointer]:
+                          - generic "agregar" [ref=e630]: 
+                          - generic [ref=e631]: Agregar
+                      - generic [ref=e633]:
+                        - generic [ref=e635]:
+                          - generic [ref=e636]: $4.290
+                          - generic [ref=e637]: precio actual $4.290
+                          - generic [ref=e638]: $21.450 x kg
+                        - generic [ref=e639]: Robinson Crusoe
+                        - generic [ref=e640]: Mariscos Agua Lata, Drenado 200 g - Neto 425 g
+                  - group [ref=e643]:
+                    - link "Choritos Agua Lata, Drenado 100 g - Neto 190 g" [ref=e644] [cursor=pointer]:
+                      - /url: /ip/conservas/00841072107064?from=/search
+                      - generic [ref=e645]: Choritos Agua Lata, Drenado 100 g - Neto 190 g
+                    - generic [ref=e647]:
+                      - generic [ref=e650]:
+                        - generic [ref=e651]:
+                          - img "Choritos Agua Lata, Drenado 100 g - Neto 190 g"
+                        - button "Agregar al carro - Choritos Agua Lata, Drenado 100 g - Neto 190 g" [ref=e654] [cursor=pointer]:
+                          - generic "agregar" [ref=e655]: 
+                          - generic [ref=e656]: Agregar
+                      - generic [ref=e658]:
+                        - generic [ref=e660]:
+                          - generic [ref=e661]: $1.790
+                          - generic [ref=e662]: precio actual $1.790
+                          - generic [ref=e663]: $17.900 x kg
+                        - generic [ref=e664]: Lider
+                        - generic [ref=e665]: Choritos Agua Lata, Drenado 100 g - Neto 190 g
+                  - group [ref=e668]:
+                    - link "Almejas Agua Lata, Drenado 100 g - Neto 190 g" [ref=e669] [cursor=pointer]:
+                      - /url: /ip/conservas/00008477360250?from=/search
+                      - generic [ref=e670]: Almejas Agua Lata, Drenado 100 g - Neto 190 g
+                    - generic [ref=e672]:
+                      - generic [ref=e673]:
+                        - generic [ref=e675]:
+                          - generic [ref=e677]: 
+                          - text: Rebaja
+                        - generic [ref=e678]:
+                          - generic [ref=e679]:
+                            - img "Almejas Agua Lata, Drenado 100 g - Neto 190 g"
+                          - button "Agregar al carro - Almejas Agua Lata, Drenado 100 g - Neto 190 g" [ref=e682] [cursor=pointer]:
+                            - generic "agregar" [ref=e683]: 
+                            - generic [ref=e684]: Agregar
+                      - generic [ref=e686]:
+                        - generic [ref=e688]:
+                          - generic [ref=e689]: $4.190
+                          - generic [ref=e690]: precio actual $4.190, Costaba $4.990
+                          - generic [ref=e691]: $41.900 x kg
+                          - generic [ref=e692]: $4.990
+                          - generic [ref=e693]: Ahorra $800
+                        - generic [ref=e694]: Robinson Crusoe
+                        - generic [ref=e695]: Almejas Agua Lata, Drenado 100 g - Neto 190 g
+                  - group [ref=e698]:
+                    - link "Cholgas Agua Lata, Drenado 100 g - Neto 192 g" [ref=e699] [cursor=pointer]:
+                      - /url: /ip/conservas/00780125000022?from=/search
+                      - generic [ref=e700]: Cholgas Agua Lata, Drenado 100 g - Neto 192 g
+                    - generic [ref=e702]:
+                      - generic [ref=e705]:
+                        - generic [ref=e706]:
+                          - img "Cholgas Agua Lata, Drenado 100 g - Neto 192 g"
+                        - button "Agregar al carro - Cholgas Agua Lata, Drenado 100 g - Neto 192 g" [ref=e709] [cursor=pointer]:
+                          - generic "agregar" [ref=e710]: 
+                          - generic [ref=e711]: Agregar
+                      - generic [ref=e713]:
+                        - generic [ref=e715]:
+                          - generic [ref=e716]: $1.990
+                          - generic [ref=e717]: precio actual $1.990
+                          - generic [ref=e718]: $19.900 x kg
+                        - generic [ref=e719]: Angelmo
+                        - generic [ref=e720]: Cholgas Agua Lata, Drenado 100 g - Neto 192 g
+                  - generic [ref=e722]:
+                    - group [ref=e723]:
+                      - link "Agua Saborizada Manzana Caja, 190 ml" [ref=e724] [cursor=pointer]:
+                        - /url: /ip/jugos-colacion/00780257522641?from=/search
+                        - generic [ref=e725]: Agua Saborizada Manzana Caja, 190 ml
+                      - generic [ref=e727]:
+                        - generic [ref=e728]:
+                          - generic [ref=e729]:
+                            - generic [ref=e731]: Combina 3 x $1.000
+                            - button "Combina 3 x $1.000. Ver combinaciones aceptadas y coincidir productos." [ref=e732] [cursor=pointer]: Combinar
+                          - generic [ref=e734]:
+                            - img "Agua Saborizada Manzana Caja, 190 ml"
+                        - generic [ref=e736]:
+                          - generic [ref=e738]:
+                            - generic [ref=e739]: $450
+                            - generic [ref=e740]: precio actual $450
+                            - generic [ref=e741]: $2.368 x lt
+                          - generic [ref=e742]: Vivo
+                          - generic [ref=e743]: Agua Saborizada Manzana Caja, 190 ml
+                          - generic [ref=e744]: Agotado
+                    - button "Revisar productos similares - Agua Saborizada Manzana Caja, 190 ml" [ref=e746]: Revisar productos similares
+                  - group [ref=e749]:
+                    - link "Agua Saborizada Frambuesa Caja, 190 ml" [ref=e750] [cursor=pointer]:
+                      - /url: /ip/jugos-colacion/00780257522646?from=/search
+                      - generic [ref=e751]: Agua Saborizada Frambuesa Caja, 190 ml
+                    - generic [ref=e753]:
+                      - generic [ref=e754]:
+                        - generic [ref=e755]:
+                          - generic [ref=e757]: Combina 3 x $1.000
+                          - button "Combina 3 x $1.000. Ver combinaciones aceptadas y coincidir productos." [ref=e758] [cursor=pointer]: Combinar
+                        - generic [ref=e759]:
+                          - generic [ref=e760]:
+                            - img "Agua Saborizada Frambuesa Caja, 190 ml"
+                          - button "Agregar al carro - Agua Saborizada Frambuesa Caja, 190 ml" [ref=e763] [cursor=pointer]:
+                            - generic "agregar" [ref=e764]: 
+                            - generic [ref=e765]: Agregar
+                      - generic [ref=e767]:
+                        - generic [ref=e769]:
+                          - generic [ref=e770]: $450
+                          - generic [ref=e771]: precio actual $450
+                          - generic [ref=e772]: $2.368 x lt
+                        - generic [ref=e773]: Vivo
+                        - generic [ref=e774]: Agua Saborizada Frambuesa Caja, 190 ml
+                  - group [ref=e777]:
+                    - link "Agua Tónica Sin Azúcar Pack Lata, 6 Un" [ref=e778] [cursor=pointer]:
+                      - /url: /ip/preparalo-tu-mismo/00780161033368?from=/search
+                      - generic [ref=e779]: Agua Tónica Sin Azúcar Pack Lata, 6 Un
+                    - generic [ref=e781]:
+                      - generic [ref=e784]:
+                        - generic [ref=e785]:
+                          - img "Agua Tónica Sin Azúcar Pack Lata, 6 Un"
+                        - button "Agregar al carro - Agua Tónica Sin Azúcar Pack Lata, 6 Un" [ref=e788] [cursor=pointer]:
+                          - generic "agregar" [ref=e789]: 
+                          - generic [ref=e790]: Agregar
+                      - generic [ref=e792]:
+                        - generic [ref=e794]:
+                          - generic [ref=e795]: $4.090
+                          - generic [ref=e796]: precio actual $4.090
+                          - generic [ref=e797]: $682 x un
+                        - generic [ref=e798]: Schweppes
+                        - generic [ref=e799]: Agua Tónica Sin Azúcar Pack Lata, 6 Un
+                  - group [ref=e802]:
+                    - link "Choritos Agua Lata, Drenado 213 g - Neto 425 g" [ref=e803] [cursor=pointer]:
+                      - /url: /ip/conservas/00841072107048?from=/search
+                      - generic [ref=e804]: Choritos Agua Lata, Drenado 213 g - Neto 425 g
+                    - generic [ref=e806]:
+                      - generic [ref=e809]:
+                        - generic [ref=e810]:
+                          - img "Choritos Agua Lata, Drenado 213 g - Neto 425 g"
+                        - button "Agregar al carro - Choritos Agua Lata, Drenado 213 g - Neto 425 g" [ref=e813] [cursor=pointer]:
+                          - generic "agregar" [ref=e814]: 
+                          - generic [ref=e815]: Agregar
+                      - generic [ref=e817]:
+                        - generic [ref=e819]:
+                          - generic [ref=e820]: $3.390
+                          - generic [ref=e821]: precio actual $3.390
+                          - generic [ref=e822]: $15.915 x kg
+                        - generic [ref=e823]: Lider
+                        - generic [ref=e824]: Choritos Agua Lata, Drenado 213 g - Neto 425 g
+                  - group [ref=e827]:
+                    - link "Agua Tónica Pink Pack Lata, 6 Un" [ref=e828] [cursor=pointer]:
+                      - /url: /ip/preparalo-tu-mismo/00780161031096?from=/search
+                      - generic [ref=e829]: Agua Tónica Pink Pack Lata, 6 Un
+                    - generic [ref=e831]:
+                      - generic [ref=e834]:
+                        - generic [ref=e835]:
+                          - img "Agua Tónica Pink Pack Lata, 6 Un"
+                        - button "Agregar al carro - Agua Tónica Pink Pack Lata, 6 Un" [ref=e838] [cursor=pointer]:
+                          - generic "agregar" [ref=e839]: 
+                          - generic [ref=e840]: Agregar
+                      - generic [ref=e842]:
+                        - generic [ref=e844]:
+                          - generic [ref=e845]: $4.090
+                          - generic [ref=e846]: precio actual $4.090
+                          - generic [ref=e847]: $682 x un
+                        - generic [ref=e848]: Schweppes
+                        - generic [ref=e849]: Agua Tónica Pink Pack Lata, 6 Un
+                  - group [ref=e852]:
+                    - link "Choritos Agua Lata, Drenado 200 g - Neto 425 g" [ref=e853] [cursor=pointer]:
+                      - /url: /ip/conservas/00008477360126?from=/search
+                      - generic [ref=e854]: Choritos Agua Lata, Drenado 200 g - Neto 425 g
+                    - generic [ref=e856]:
+                      - generic [ref=e857]:
+                        - generic [ref=e859]:
+                          - generic [ref=e861]: 
+                          - text: Rebaja
+                        - generic [ref=e862]:
+                          - generic [ref=e863]:
+                            - img "Choritos Agua Lata, Drenado 200 g - Neto 425 g"
+                          - button "Agregar al carro - Choritos Agua Lata, Drenado 200 g - Neto 425 g" [ref=e866] [cursor=pointer]:
+                            - generic "agregar" [ref=e867]: 
+                            - generic [ref=e868]: Agregar
+                      - generic [ref=e870]:
+                        - generic [ref=e872]:
+                          - generic [ref=e873]: $3.550
+                          - generic [ref=e874]: precio actual $3.550, Costaba $4.190
+                          - generic [ref=e875]: $17.750 x kg
+                          - generic [ref=e876]: $4.190
+                          - generic [ref=e877]: Ahorra $640
+                        - generic [ref=e878]: Robinson Crusoe
+                        - generic [ref=e879]: Choritos Agua Lata, Drenado 200 g - Neto 425 g
+                  - group [ref=e882]:
+                    - link "Mariscos Agua Lata, Drenado 100 g - Neto 190 g" [ref=e883] [cursor=pointer]:
+                      - /url: /ip/conservas/00008477361058?from=/search
+                      - generic [ref=e884]: Mariscos Agua Lata, Drenado 100 g - Neto 190 g
+                    - generic [ref=e886]:
+                      - generic [ref=e889]:
+                        - generic [ref=e890]:
+                          - img "Mariscos Agua Lata, Drenado 100 g - Neto 190 g"
+                        - button "Agregar al carro - Mariscos Agua Lata, Drenado 100 g - Neto 190 g" [ref=e893] [cursor=pointer]:
+                          - generic "agregar" [ref=e894]: 
+                          - generic [ref=e895]: Agregar
+                      - generic [ref=e897]:
+                        - generic [ref=e899]:
+                          - generic [ref=e900]: $2.490
+                          - generic [ref=e901]: precio actual $2.490
+                          - generic [ref=e902]: $13.105 x kg
+                        - generic [ref=e903]: Robinson Crusoe
+                        - generic [ref=e904]: Mariscos Agua Lata, Drenado 100 g - Neto 190 g
+                  - group [ref=e907]:
+                    - link "Mariscos Agua Lata, Drenado 213 g - Neto 425 g" [ref=e908] [cursor=pointer]:
+                      - /url: /ip/conservas/00841072107053?from=/search
+                      - generic [ref=e909]: Mariscos Agua Lata, Drenado 213 g - Neto 425 g
+                    - generic [ref=e911]:
+                      - generic [ref=e914]:
+                        - generic [ref=e915]:
+                          - img "Mariscos Agua Lata, Drenado 213 g - Neto 425 g"
+                        - button "Agregar al carro - Mariscos Agua Lata, Drenado 213 g - Neto 425 g" [ref=e918] [cursor=pointer]:
+                          - generic "agregar" [ref=e919]: 
+                          - generic [ref=e920]: Agregar
+                      - generic [ref=e922]:
+                        - generic [ref=e924]:
+                          - generic [ref=e925]: $3.690
+                          - generic [ref=e926]: precio actual $3.690
+                          - generic [ref=e927]: $17.324 x kg
+                        - generic [ref=e928]: Lider
+                        - generic [ref=e929]: Mariscos Agua Lata, Drenado 213 g - Neto 425 g
+                  - group [ref=e932]:
+                    - link "Agua Tónica Ginger Beer Zero Lata, 200 ml" [ref=e933] [cursor=pointer]:
+                      - /url: /ip/preparalo-tu-mismo/00780466588019?from=/search
+                      - generic [ref=e934]: Agua Tónica Ginger Beer Zero Lata, 200 ml
+                    - generic [ref=e936]:
+                      - generic [ref=e939]:
+                        - generic [ref=e940]:
+                          - img "Agua Tónica Ginger Beer Zero Lata, 200 ml"
+                        - button "Agregar al carro - Agua Tónica Ginger Beer Zero Lata, 200 ml" [ref=e943] [cursor=pointer]:
+                          - generic "agregar" [ref=e944]: 
+                          - generic [ref=e945]: Agregar
+                      - generic [ref=e947]:
+                        - generic [ref=e949]:
+                          - generic [ref=e950]: $6.690
+                          - generic [ref=e951]: precio actual $6.690
+                          - generic [ref=e952]: $1.673 x un
+                        - generic [ref=e953]: Corteza Jesuita
+                        - generic [ref=e954]: Agua Tónica Ginger Beer Zero Lata, 200 ml
+                  - group [ref=e957]:
+                    - link "Helado de agua en barra Sabor Lúcuma Manjar Caja, 6 Un" [ref=e958] [cursor=pointer]:
+                      - /url: /ip/helados/00780390800142?from=/search
+                      - generic [ref=e959]: Helado de agua en barra Sabor Lúcuma Manjar Caja, 6 Un
+                    - generic [ref=e961]:
+                      - generic [ref=e964]:
+                        - generic [ref=e965]:
+                          - img "Helado de agua en barra Sabor Lúcuma Manjar Caja, 6 Un"
+                        - button "Agregar al carro - Helado de agua en barra Sabor Lúcuma Manjar Caja, 6 Un" [ref=e968] [cursor=pointer]:
+                          - generic "agregar" [ref=e969]: 
+                          - generic [ref=e970]: Agregar
+                      - generic [ref=e972]:
+                        - generic [ref=e974]:
+                          - generic [ref=e975]: $4.990
+                          - generic [ref=e976]: precio actual $4.990
+                          - generic [ref=e977]: $13.861 x lt
+                        - generic [ref=e978]: Guallarauco
+                        - generic [ref=e979]: Helado de agua en barra Sabor Lúcuma Manjar Caja, 6 Un
+                  - group [ref=e982]:
+                    - link "Agua Tónica Pink Zero Lata, 200 ml" [ref=e983] [cursor=pointer]:
+                      - /url: /ip/bebidas/00780466588021?from=/search
+                      - generic [ref=e984]: Agua Tónica Pink Zero Lata, 200 ml
+                    - generic [ref=e986]:
+                      - generic [ref=e989]:
+                        - generic [ref=e990]:
+                          - img "Agua Tónica Pink Zero Lata, 200 ml"
+                        - button "Agregar al carro - Agua Tónica Pink Zero Lata, 200 ml" [ref=e993] [cursor=pointer]:
+                          - generic "agregar" [ref=e994]: 
+                          - generic [ref=e995]: Agregar
+                      - generic [ref=e997]:
+                        - generic [ref=e999]:
+                          - generic [ref=e1000]: $6.690
+                          - generic [ref=e1001]: precio actual $6.690
+                        - generic [ref=e1002]: Corteza Jesuita
+                        - generic [ref=e1003]: Agua Tónica Pink Zero Lata, 200 ml
+                  - group [ref=e1006]:
+                    - link "Agua Tónica Pack Lata, 6 Un" [ref=e1007] [cursor=pointer]:
+                      - /url: /ip/bebidas/00780162000022?from=/search
+                      - generic [ref=e1008]: Agua Tónica Pack Lata, 6 Un
+                    - generic [ref=e1010]:
+                      - generic [ref=e1013]:
+                        - generic [ref=e1014]:
+                          - img "Agua Tónica Pack Lata, 6 Un"
+                        - button "Agregar al carro - Agua Tónica Pack Lata, 6 Un" [ref=e1017] [cursor=pointer]:
+                          - generic "agregar" [ref=e1018]: 
+                          - generic [ref=e1019]: Agregar
+                      - generic [ref=e1021]:
+                        - generic [ref=e1023]:
+                          - generic [ref=e1024]: $3.890
+                          - generic [ref=e1025]: precio actual $3.890
+                          - generic [ref=e1026]: $648 x un
+                        - generic [ref=e1027]: Canada Dry
+                        - generic [ref=e1028]: Agua Tónica Pack Lata, 6 Un
+                  - group [ref=e1031]:
+                    - link "Agua Tónica Zero Pack 4 Lata, 200 ml" [ref=e1032] [cursor=pointer]:
+                      - /url: /ip/bebidas/00780466588016?from=/search
+                      - generic [ref=e1033]: Agua Tónica Zero Pack 4 Lata, 200 ml
+                    - generic [ref=e1035]:
+                      - generic [ref=e1038]:
+                        - generic [ref=e1039]:
+                          - img "Agua Tónica Zero Pack 4 Lata, 200 ml"
+                        - button "Agregar al carro - Agua Tónica Zero Pack 4 Lata, 200 ml" [ref=e1042] [cursor=pointer]:
+                          - generic "agregar" [ref=e1043]: 
+                          - generic [ref=e1044]: Agregar
+                      - generic [ref=e1046]:
+                        - generic [ref=e1048]:
+                          - generic [ref=e1049]: $6.690
+                          - generic [ref=e1050]: precio actual $6.690
+                          - generic [ref=e1051]: $1.673 x un
+                        - generic [ref=e1052]: Corteza Jesuita
+                        - generic [ref=e1053]: Agua Tónica Zero Pack 4 Lata, 200 ml
+                  - group [ref=e1056]:
+                    - link "Agua Tónica Pack Lata, 6 Un" [ref=e1057] [cursor=pointer]:
+                      - /url: /ip/preparalo-tu-mismo/00780161033466?from=/search
+                      - generic [ref=e1058]: Agua Tónica Pack Lata, 6 Un
+                    - generic [ref=e1060]:
+                      - generic [ref=e1063]:
+                        - generic [ref=e1064]:
+                          - img "Agua Tónica Pack Lata, 6 Un"
+                        - button "Agregar al carro - Agua Tónica Pack Lata, 6 Un" [ref=e1067] [cursor=pointer]:
+                          - generic "agregar" [ref=e1068]: 
+                          - generic [ref=e1069]: Agregar
+                      - generic [ref=e1071]:
+                        - generic [ref=e1073]:
+                          - generic [ref=e1074]: $4.090
+                          - generic [ref=e1075]: precio actual $4.090
+                          - generic [ref=e1076]: $682 x un
+                        - generic [ref=e1077]: Schweppes
+                        - generic [ref=e1078]: Agua Tónica Pack Lata, 6 Un
+                  - group [ref=e1081]:
+                    - link "Berberechos Agua Lata, Drenado 100 g - Neto 190 g" [ref=e1082] [cursor=pointer]:
+                      - /url: /ip/conservas/00008477360550?from=/search
+                      - generic [ref=e1083]: Berberechos Agua Lata, Drenado 100 g - Neto 190 g
+                    - generic [ref=e1085]:
+                      - generic [ref=e1088]:
+                        - generic [ref=e1089]:
+                          - img "Berberechos Agua Lata, Drenado 100 g - Neto 190 g"
+                        - button "Agregar al carro - Berberechos Agua Lata, Drenado 100 g - Neto 190 g" [ref=e1092] [cursor=pointer]:
+                          - generic "agregar" [ref=e1093]: 
+                          - generic [ref=e1094]: Agregar
+                      - generic [ref=e1096]:
+                        - generic [ref=e1098]:
+                          - generic [ref=e1099]: $5.990
+                          - generic [ref=e1100]: precio actual $5.990
+                          - generic [ref=e1101]: $59.900 x kg
+                        - generic [ref=e1102]: Robinson Crusoe
+                        - generic [ref=e1103]: Berberechos Agua Lata, Drenado 100 g - Neto 190 g
+                  - group [ref=e1106]:
+                    - link "Locos Agua Lata, Drenado 200 g - Neto 425 g" [ref=e1107] [cursor=pointer]:
+                      - /url: /ip/conservas/00780142400032?from=/search
+                      - generic [ref=e1108]: Locos Agua Lata, Drenado 200 g - Neto 425 g
+                    - generic [ref=e1110]:
+                      - generic [ref=e1113]:
+                        - generic [ref=e1114]:
+                          - img "Locos Agua Lata, Drenado 200 g - Neto 425 g"
+                        - button "Agregar al carro - Locos Agua Lata, Drenado 200 g - Neto 425 g" [ref=e1117] [cursor=pointer]:
+                          - generic "agregar" [ref=e1118]: 
+                          - generic [ref=e1119]: Agregar
+                      - generic [ref=e1121]:
+                        - generic [ref=e1123]:
+                          - generic [ref=e1124]: $21.190
+                          - generic [ref=e1125]: precio actual $21.190
+                        - generic [ref=e1126]: Geomar
+                        - generic [ref=e1127]: Locos Agua Lata, Drenado 200 g - Neto 425 g
+                  - group [ref=e1130]:
+                    - link "Colonia Hombre Caja, 100 ml" [ref=e1131] [cursor=pointer]:
+                      - /url: /ip/perfumeria-y-cuidado-personal/00841106140170?from=/search
+                      - generic [ref=e1132]: Colonia Hombre Caja, 100 ml
+                    - generic [ref=e1134]:
+                      - generic [ref=e1137]:
+                        - generic [ref=e1138]:
+                          - img "Colonia Hombre Caja, 100 ml"
+                        - button "Agregar al carro - Colonia Hombre Caja, 100 ml" [ref=e1141] [cursor=pointer]:
+                          - generic "agregar" [ref=e1142]: 
+                          - generic [ref=e1143]: Agregar
+                      - generic [ref=e1145]:
+                        - generic [ref=e1147]:
+                          - generic [ref=e1148]: $16.150
+                          - generic [ref=e1149]: precio actual $16.150
+                          - generic [ref=e1150]: $16.150 x 100ml
+                        - generic [ref=e1151]: Agua Brava
+                        - generic [ref=e1152]: Colonia Hombre Caja, 100 ml
+                  - group [ref=e1155]:
+                    - link "Alimento Húmedo Gato Adulto Sabor Atún Lata, 156 g" [ref=e1156] [cursor=pointer]:
+                      - /url: /ip/gato/00005000029059?from=/search
+                      - generic [ref=e1157]: Alimento Húmedo Gato Adulto Sabor Atún Lata, 156 g
+                    - generic [ref=e1159]:
+                      - generic [ref=e1162]:
+                        - generic [ref=e1163]:
+                          - img "Alimento Húmedo Gato Adulto Sabor Atún Lata, 156 g"
+                        - button "Agregar al carro - Alimento Húmedo Gato Adulto Sabor Atún Lata, 156 g" [ref=e1166] [cursor=pointer]:
+                          - generic "agregar" [ref=e1167]: 
+                          - generic [ref=e1168]: Agregar
+                      - generic [ref=e1170]:
+                        - generic [ref=e1172]:
+                          - generic [ref=e1173]: $1.190
+                          - generic [ref=e1174]: precio actual $1.190
+                          - generic [ref=e1175]: $7.628 x kg
+                        - generic [ref=e1176]: Felix
+                        - generic [ref=e1177]: Alimento Húmedo Gato Adulto Sabor Atún Lata, 156 g
+                  - group [ref=e1180]:
+                    - link "Atún Agua, Drenado 91 g - Neto 140 g" [ref=e1181] [cursor=pointer]:
+                      - /url: /ip/conservas/00780462147225?from=/search
+                      - generic [ref=e1182]: Atún Agua, Drenado 91 g - Neto 140 g
+                    - generic [ref=e1184]:
+                      - generic [ref=e1185]:
+                        - generic [ref=e1187]:
+                          - generic [ref=e1189]: 
+                          - text: Rebaja
+                        - generic [ref=e1190]:
+                          - generic [ref=e1191]:
+                            - img "Atún Agua, Drenado 91 g - Neto 140 g"
+                          - button "Agregar al carro - Atún Agua, Drenado 91 g - Neto 140 g" [ref=e1194] [cursor=pointer]:
+                            - generic "agregar" [ref=e1195]: 
+                            - generic [ref=e1196]: Agregar
+                      - generic [ref=e1198]:
+                        - generic [ref=e1200]:
+                          - generic [ref=e1201]: $1.490
+                          - generic [ref=e1202]: precio actual $1.490, Costaba $1.890
+                          - generic [ref=e1203]: $16.374 x kg
+                          - generic [ref=e1204]: $1.890
+                          - generic [ref=e1205]: Ahorra $400
+                        - generic [ref=e1206]: Robinson Crusoe
+                        - generic [ref=e1207]: Atún Agua, Drenado 91 g - Neto 140 g
+                  - group [ref=e1210]:
+                    - link "Néctar Lata Manzana, 335 ml" [ref=e1211] [cursor=pointer]:
+                      - /url: /ip/jugos/00750101311819?from=/search
+                      - generic [ref=e1212]: Néctar Lata Manzana, 335 ml
+                    - generic [ref=e1214]:
+                      - generic [ref=e1217]:
+                        - generic [ref=e1218]:
+                          - img "Néctar Lata Manzana, 335 ml"
+                        - button "Agregar al carro - Néctar Lata Manzana, 335 ml" [ref=e1221] [cursor=pointer]:
+                          - generic "agregar" [ref=e1222]: 
+                          - generic [ref=e1223]: Agregar
+                      - generic [ref=e1225]:
+                        - generic [ref=e1227]:
+                          - generic [ref=e1228]: $1.190
+                          - generic [ref=e1229]: precio actual $1.190
+                          - generic [ref=e1230]: $3.552 x lt
+                        - generic [ref=e1231]: Jumex
+                        - generic [ref=e1232]: Néctar Lata Manzana, 335 ml
+                  - group [ref=e1235]:
+                    - link "Sardina en Agua, 106 g" [ref=e1236] [cursor=pointer]:
+                      - /url: /ip/marcas-destacadas/00007874223785?from=/search
+                      - generic [ref=e1237]: Sardina en Agua, 106 g
+                    - generic [ref=e1239]:
+                      - generic [ref=e1242]:
+                        - generic [ref=e1243]:
+                          - img "Sardina en Agua, 106 g"
+                        - button "Agregar al carro - Sardina en Agua, 106 g" [ref=e1246] [cursor=pointer]:
+                          - generic "agregar" [ref=e1247]: 
+                          - generic [ref=e1248]: Agregar
+                      - generic [ref=e1250]:
+                        - generic [ref=e1252]:
+                          - generic [ref=e1253]: $1.090
+                          - generic [ref=e1254]: precio actual $1.090
+                          - generic [ref=e1255]: $10.283 x kg
+                        - generic [ref=e1256]: Great Value
+                        - generic [ref=e1257]: Sardina en Agua, 106 g
+            - navigation "paginación" [ref=e1260]:
+              - list [ref=e1261]:
+                - listitem [ref=e1262]
+                - listitem [ref=e1264]:
+                  - link "1" [ref=e1265] [cursor=pointer]:
+                    - /url: /search?q=atun+agua+lata
+                - listitem [ref=e1266]:
+                  - link "Ir a la página 2" [ref=e1267] [cursor=pointer]:
+                    - /url: /search?q=atun+agua+lata&page=2
+                    - text: "2"
+                - listitem [ref=e1268]:
+                  - link "Página siguiente" [ref=e1269] [cursor=pointer]:
+                    - /url: /search?q=atun+agua+lata&page=2
+                    - generic [ref=e1270]: 
+  - alert [ref=e1278]

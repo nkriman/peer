@@ -1,0 +1,259 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: papas 2kg bolsa
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e81]:
+            - generic [ref=e84]:
+              - generic [ref=e85]:
+                - button "Precio" [ref=e88]:
+                  - generic [ref=e89]: Precio
+                  - img [ref=e90]: 
+                - separator [ref=e91]
+              - generic [ref=e92]:
+                - button "Marca" [ref=e95]:
+                  - generic [ref=e96]: Marca
+                  - img [ref=e97]: 
+                - separator [ref=e98]
+              - generic [ref=e99]:
+                - button "Categoría" [ref=e102]:
+                  - generic [ref=e103]: Categoría
+                  - img [ref=e104]: 
+                - separator [ref=e105]
+            - generic [ref=e108]:
+              - heading "Resultados para papas 2kg bolsa (10)" [level=2] [ref=e116]: Resultados para papas 2kg bolsa(10)
+              - generic [ref=e117]:
+                - group [ref=e120]:
+                  - link "Puré de Papas Instantáneo Bolsa, 1 Kg" [ref=e121] [cursor=pointer]:
+                    - /url: /ip/alimentos-instantaneos/00780396000035?from=/search
+                    - generic [ref=e122]: Puré de Papas Instantáneo Bolsa, 1 Kg
+                  - generic [ref=e124]:
+                    - generic [ref=e127]:
+                      - img "Puré de Papas Instantáneo Bolsa, 1 Kg" [ref=e129]
+                      - button "Agregar al carro - Puré de Papas Instantáneo Bolsa, 1 Kg" [ref=e132] [cursor=pointer]:
+                        - generic "agregar" [ref=e133]: 
+                        - generic [ref=e134]: Agregar
+                    - generic [ref=e136]:
+                      - generic [ref=e138]:
+                        - generic [ref=e139]: $7.990
+                        - generic [ref=e140]: precio actual $7.990
+                        - generic [ref=e141]: $7.990 x kg
+                      - generic [ref=e142]: Hoffmann
+                      - generic [ref=e143]: Puré de Papas Instantáneo Bolsa, 1 Kg
+                - group [ref=e146]:
+                  - link "Papa Mix Colores Bolsa, 650 gr" [ref=e147] [cursor=pointer]:
+                    - /url: /ip/verduras/00780464799022?from=/search
+                    - generic [ref=e148]: Papa Mix Colores Bolsa, 650 gr
+                  - generic [ref=e150]:
+                    - generic [ref=e153]:
+                      - img "Papa Mix Colores Bolsa, 650 gr" [ref=e155]
+                      - button "Agregar al carro - Papa Mix Colores Bolsa, 650 gr" [ref=e158] [cursor=pointer]:
+                        - generic "agregar" [ref=e159]: 
+                        - generic [ref=e160]: Agregar
+                    - generic [ref=e162]:
+                      - generic [ref=e164]:
+                        - generic [ref=e165]: $1.690
+                        - generic [ref=e166]: precio actual $1.690
+                        - generic [ref=e167]: $2.600 x kg
+                      - generic [ref=e168]: Huertos Del Ranco
+                      - generic [ref=e169]: Papa Mix Colores Bolsa, 650 gr
+                - group [ref=e172]:
+                  - link "Papa Baby Bolsa, 1 Kg" [ref=e173] [cursor=pointer]:
+                    - /url: /ip/verduras/00780464799005?from=/search
+                    - generic [ref=e174]: Papa Baby Bolsa, 1 Kg
+                  - generic [ref=e176]:
+                    - generic [ref=e179]:
+                      - img "Papa Baby Bolsa, 1 Kg" [ref=e181]
+                      - button "Agregar al carro - Papa Baby Bolsa, 1 Kg" [ref=e184] [cursor=pointer]:
+                        - generic "agregar" [ref=e185]: 
+                        - generic [ref=e186]: Agregar
+                    - generic [ref=e188]:
+                      - generic [ref=e190]:
+                        - generic [ref=e191]: $2.590
+                        - generic [ref=e192]: precio actual $2.590
+                        - generic [ref=e193]: $2.590 x kg
+                      - generic [ref=e194]: Huertos Del Ranco
+                      - generic [ref=e195]: Papa Baby Bolsa, 1 Kg
+                - group [ref=e198]:
+                  - link "Puré De Papas Instantáneo Bolsa, 751 g" [ref=e199] [cursor=pointer]:
+                    - /url: /ip/alimentos-instantaneos/00844529126364?from=/search
+                    - generic [ref=e200]: Puré De Papas Instantáneo Bolsa, 751 g
+                  - generic [ref=e202]:
+                    - generic [ref=e205]:
+                      - img "Puré De Papas Instantáneo Bolsa, 751 g" [ref=e207]
+                      - button "Agregar al carro - Puré De Papas Instantáneo Bolsa, 751 g" [ref=e210] [cursor=pointer]:
+                        - generic "agregar" [ref=e211]: 
+                        - generic [ref=e212]: Agregar
+                    - generic [ref=e214]:
+                      - generic [ref=e216]:
+                        - generic [ref=e217]: $7.490
+                        - generic [ref=e218]: precio actual $7.490
+                        - generic [ref=e219]: $9.973 x kg
+                      - generic [ref=e220]: Maggi
+                      - generic [ref=e221]: Puré De Papas Instantáneo Bolsa, 751 g
+                - group [ref=e224]:
+                  - link "Gnocchi de Papa Bolsa, 500 g" [ref=e225] [cursor=pointer]:
+                    - /url: /ip/platos-preparados/00040000692645?from=/search
+                    - generic [ref=e226]: Gnocchi de Papa Bolsa, 500 g
+                  - generic [ref=e228]:
+                    - generic [ref=e231]:
+                      - img "Gnocchi de Papa Bolsa, 500 g" [ref=e233]
+                      - button "Agregar al carro - Gnocchi de Papa Bolsa, 500 g" [ref=e236] [cursor=pointer]:
+                        - generic "agregar" [ref=e237]: 
+                        - generic [ref=e238]: Agregar
+                    - generic [ref=e240]:
+                      - generic [ref=e242]:
+                        - generic [ref=e243]: $2.490
+                        - generic [ref=e244]: precio actual $2.490
+                        - generic [ref=e245]: $4.980 x kg
+                      - generic [ref=e246]: Lider
+                      - generic [ref=e247]: Gnocchi de Papa Bolsa, 500 g
+                - group [ref=e250]:
+                  - link "Papas mini bolsa, 650 g" [ref=e251] [cursor=pointer]:
+                    - /url: /ip/verduras/00780464799038?from=/search
+                    - generic [ref=e252]: Papas mini bolsa, 650 g
+                  - generic [ref=e254]:
+                    - generic [ref=e257]:
+                      - img "Papas mini bolsa, 650 g" [ref=e259]
+                      - button "Agregar al carro - Papas mini bolsa, 650 g" [ref=e262] [cursor=pointer]:
+                        - generic "agregar" [ref=e263]: 
+                        - generic [ref=e264]: Agregar
+                    - generic [ref=e266]:
+                      - generic [ref=e268]:
+                        - generic [ref=e269]: $1.990
+                        - generic [ref=e270]: precio actual $1.990
+                        - generic [ref=e271]: $3.062 x kg
+                      - generic [ref=e272]: Huertos Del Ranco
+                      - generic [ref=e273]: Papas mini bolsa, 650 g
+                - group [ref=e276]:
+                  - link "Bolsa de congelado grande - VC" [ref=e277] [cursor=pointer]:
+                    - /url: /ip/comidas-congeladas/00780465603284?from=/search
+                    - generic [ref=e278]: Bolsa de congelado grande - VC
+                  - generic [ref=e280]:
+                    - generic [ref=e283]:
+                      - img "Bolsa de congelado grande - VC" [ref=e285]
+                      - button "Agregar al carro - Bolsa de congelado grande - VC" [ref=e288] [cursor=pointer]:
+                        - generic "agregar" [ref=e289]: 
+                        - generic [ref=e290]: Agregar
+                    - generic [ref=e292]:
+                      - generic [ref=e294]:
+                        - generic [ref=e295]: $3.490
+                        - generic [ref=e296]: precio actual $3.490
+                        - generic [ref=e297]: $3.490 x un
+                      - generic [ref=e298]: Palms
+                      - generic [ref=e299]: Bolsa de congelado grande - VC
+                - group [ref=e302]:
+                  - link "Bolsa Temica S" [ref=e303] [cursor=pointer]:
+                    - /url: /ip/comidas-congeladas/00040005024742?from=/search
+                    - generic [ref=e304]: Bolsa Temica S
+                  - generic [ref=e306]:
+                    - generic [ref=e309]:
+                      - img "Bolsa Temica S" [ref=e311]
+                      - button "Agregar al carro - Bolsa Temica S" [ref=e314] [cursor=pointer]:
+                        - generic "agregar" [ref=e315]: 
+                        - generic [ref=e316]: Agregar
+                    - generic [ref=e318]:
+                      - generic [ref=e320]:
+                        - generic [ref=e321]: $1.290
+                        - generic [ref=e322]: precio actual $1.290
+                        - generic [ref=e323]: $1.290 x un
+                      - generic [ref=e324]: Otras Marcas
+                      - generic [ref=e325]: Bolsa Temica S
+                - group [ref=e328]:
+                  - link "Bolsa Temica M" [ref=e329] [cursor=pointer]:
+                    - /url: /ip/comidas-congeladas/00040005024743?from=/search
+                    - generic [ref=e330]: Bolsa Temica M
+                  - generic [ref=e332]:
+                    - generic [ref=e335]:
+                      - img "Bolsa Temica M" [ref=e337]
+                      - button "Agregar al carro - Bolsa Temica M" [ref=e340] [cursor=pointer]:
+                        - generic "agregar" [ref=e341]: 
+                        - generic [ref=e342]: Agregar
+                    - generic [ref=e344]:
+                      - generic [ref=e346]:
+                        - generic [ref=e347]: $1.690
+                        - generic [ref=e348]: precio actual $1.690
+                        - generic [ref=e349]: $1.690 x un
+                      - generic [ref=e350]: Otras Marcas
+                      - generic [ref=e351]: Bolsa Temica M
+                - group [ref=e354]:
+                  - link "Cebollín Pack Bolsa, 6 Un" [ref=e355] [cursor=pointer]:
+                    - /url: /ip/verduras/00780394600001?from=/search
+                    - generic [ref=e356]: Cebollín Pack Bolsa, 6 Un
+                  - generic [ref=e358]:
+                    - generic [ref=e361]:
+                      - img "Cebollín Pack Bolsa, 6 Un" [ref=e363]
+                      - button "Agregar al carro - Cebollín Pack Bolsa, 6 Un" [ref=e366] [cursor=pointer]:
+                        - generic "agregar" [ref=e367]: 
+                        - generic [ref=e368]: Agregar
+                    - generic [ref=e370]:
+                      - generic [ref=e372]:
+                        - generic [ref=e373]: $1.550
+                        - generic [ref=e374]: precio actual $1.550
+                        - generic [ref=e375]: $258 x un
+                      - generic [ref=e376]: Multi Marca
+                      - generic [ref=e377]: Cebollín Pack Bolsa, 6 Un
+  - alert [ref=e386]

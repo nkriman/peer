@@ -1,0 +1,407 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: aceite maravilla 900ml
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e81]:
+            - generic [ref=e84]:
+              - generic [ref=e85]:
+                - button "Precio" [ref=e88]:
+                  - generic [ref=e89]: Precio
+                  - img [ref=e90]: 
+                - separator [ref=e91]
+              - generic [ref=e92]:
+                - button "Campaña" [ref=e95]:
+                  - generic [ref=e96]: Campaña
+                  - img [ref=e97]: 
+                - separator [ref=e98]
+              - generic [ref=e99]:
+                - button "Marca" [ref=e102]:
+                  - generic [ref=e103]: Marca
+                  - img [ref=e104]: 
+                - separator [ref=e105]
+              - generic [ref=e106]:
+                - button "Categoría" [ref=e109]:
+                  - generic [ref=e110]: Categoría
+                  - img [ref=e111]: 
+                - separator [ref=e112]
+            - generic [ref=e115]:
+              - heading "Resultados para aceite maravilla 900ml (17)" [level=2] [ref=e123]: Resultados para aceite maravilla 900ml(17)
+              - generic [ref=e124]:
+                - group [ref=e127]:
+                  - link "Aceite Maravilla Botella, 900 ml" [ref=e128] [cursor=pointer]:
+                    - /url: /ip/aceites-y-aderezos/00780132000000?from=/search
+                    - generic [ref=e129]: Aceite Maravilla Botella, 900 ml
+                  - generic [ref=e131]:
+                    - generic [ref=e134]:
+                      - img "Aceite Maravilla Botella, 900 ml" [ref=e136]
+                      - button "Agregar al carro - Aceite Maravilla Botella, 900 ml" [ref=e139] [cursor=pointer]:
+                        - generic "agregar" [ref=e140]: 
+                        - generic [ref=e141]: Agregar
+                    - generic [ref=e143]:
+                      - generic [ref=e145]:
+                        - generic [ref=e146]: $2.890
+                        - generic [ref=e147]: precio actual $2.890
+                        - generic [ref=e148]: $3.211 x lt
+                      - generic [ref=e149]: Miraflores
+                      - generic [ref=e150]: Aceite Maravilla Botella, 900 ml
+                - group [ref=e153]:
+                  - link "Aceite De Maravilla Botella Botella, 1 L" [ref=e154] [cursor=pointer]:
+                    - /url: /ip/aceites-y-aderezos/00780281000209?from=/search
+                    - generic [ref=e155]: Aceite De Maravilla Botella Botella, 1 L
+                  - generic [ref=e157]:
+                    - generic [ref=e158]:
+                      - generic [ref=e160]:
+                        - generic [ref=e162]: 
+                        - text: Rebaja
+                      - generic [ref=e163]:
+                        - img "Aceite De Maravilla Botella Botella, 1 L" [ref=e165]
+                        - button "Agregar al carro - Aceite De Maravilla Botella Botella, 1 L" [ref=e168] [cursor=pointer]:
+                          - generic "agregar" [ref=e169]: 
+                          - generic [ref=e170]: Agregar
+                    - generic [ref=e172]:
+                      - generic [ref=e174]:
+                        - generic [ref=e175]: $2.890
+                        - generic [ref=e176]: precio actual $2.890, Costaba $3.490
+                        - generic [ref=e177]: $2.890 x lt
+                        - generic [ref=e178]: $3.490
+                        - generic [ref=e179]: Ahorra $600
+                      - generic [ref=e180]: Chef
+                      - generic [ref=e181]: Aceite De Maravilla Botella Botella, 1 L
+                - group [ref=e184]:
+                  - link "Aceite de Maravilla Botella, 1 L" [ref=e185] [cursor=pointer]:
+                    - /url: /ip/aceites-y-aderezos/00779027200101?from=/search
+                    - generic [ref=e186]: Aceite de Maravilla Botella, 1 L
+                  - generic [ref=e188]:
+                    - generic [ref=e189]:
+                      - generic [ref=e191]:
+                        - generic [ref=e193]: 
+                        - text: Rebaja
+                      - generic [ref=e194]:
+                        - img "Aceite de Maravilla Botella, 1 L" [ref=e196]
+                        - button "Agregar al carro - Aceite de Maravilla Botella, 1 L" [ref=e199] [cursor=pointer]:
+                          - generic "agregar" [ref=e200]: 
+                          - generic [ref=e201]: Agregar
+                    - generic [ref=e203]:
+                      - generic [ref=e205]:
+                        - generic [ref=e206]: $2.790
+                        - generic [ref=e207]: precio actual $2.790, Costaba $3.790
+                        - generic [ref=e208]: $2.790 x lt
+                        - generic [ref=e209]: $3.790
+                        - generic [ref=e210]: Ahorra $1.000
+                      - generic [ref=e211]: Natura
+                      - generic [ref=e212]: Aceite de Maravilla Botella, 1 L
+                - group [ref=e215]:
+                  - link "Aceite Maravilla Botella, 1 L" [ref=e216] [cursor=pointer]:
+                    - /url: /ip/aceites-y-aderezos/00040005052441?from=/search
+                    - generic [ref=e217]: Aceite Maravilla Botella, 1 L
+                  - generic [ref=e219]:
+                    - generic [ref=e222]:
+                      - img "Aceite Maravilla Botella, 1 L" [ref=e224]
+                      - button "Agregar al carro - Aceite Maravilla Botella, 1 L" [ref=e227] [cursor=pointer]:
+                        - generic "agregar" [ref=e228]: 
+                        - generic [ref=e229]: Agregar
+                    - generic [ref=e231]:
+                      - generic [ref=e233]:
+                        - generic [ref=e234]: $2.490
+                        - generic [ref=e235]: precio actual $2.490
+                        - generic [ref=e236]: $2.490 x lt
+                      - generic [ref=e237]: Lider
+                      - generic [ref=e238]: Aceite Maravilla Botella, 1 L
+                - group [ref=e241]:
+                  - link "Aceite de Maravilla Botella, 5 L" [ref=e242] [cursor=pointer]:
+                    - /url: /ip/aceites-y-aderezos/00779027200411?from=/search
+                    - generic [ref=e243]: Aceite de Maravilla Botella, 5 L
+                  - generic [ref=e245]:
+                    - generic [ref=e248]:
+                      - img "Aceite de Maravilla Botella, 5 L" [ref=e250]
+                      - button "Agregar al carro - Aceite de Maravilla Botella, 5 L" [ref=e253] [cursor=pointer]:
+                        - generic "agregar" [ref=e254]: 
+                        - generic [ref=e255]: Agregar
+                    - generic [ref=e257]:
+                      - generic [ref=e259]:
+                        - generic [ref=e260]: $13.290
+                        - generic [ref=e261]: precio actual $13.290
+                        - generic [ref=e262]: $2.658 x lt
+                      - generic [ref=e263]: Natura
+                      - generic [ref=e264]: Aceite de Maravilla Botella, 5 L
+                - group [ref=e267]:
+                  - link "Aceite de Maravilla Botella, 3 L" [ref=e268] [cursor=pointer]:
+                    - /url: /ip/aceites-y-aderezos/00779027200103?from=/search
+                    - generic [ref=e269]: Aceite de Maravilla Botella, 3 L
+                  - generic [ref=e271]:
+                    - generic [ref=e274]:
+                      - img "Aceite de Maravilla Botella, 3 L" [ref=e276]
+                      - button "Agregar al carro - Aceite de Maravilla Botella, 3 L" [ref=e279] [cursor=pointer]:
+                        - generic "agregar" [ref=e280]: 
+                        - generic [ref=e281]: Agregar
+                    - generic [ref=e283]:
+                      - generic [ref=e285]:
+                        - generic [ref=e286]: $10.590
+                        - generic [ref=e287]: precio actual $10.590
+                        - generic [ref=e288]: $3.530 x lt
+                      - generic [ref=e289]: Natura
+                      - generic [ref=e290]: Aceite de Maravilla Botella, 3 L
+                - group [ref=e293]:
+                  - link "Aceite Maravilla Botella, 180 ml" [ref=e294] [cursor=pointer]:
+                    - /url: /ip/aceites-y-aderezos/00780872580043?from=/search
+                    - generic [ref=e295]: Aceite Maravilla Botella, 180 ml
+                  - generic [ref=e297]:
+                    - generic [ref=e300]:
+                      - img "Aceite Maravilla Botella, 180 ml" [ref=e302]
+                      - button "Agregar al carro - Aceite Maravilla Botella, 180 ml" [ref=e305] [cursor=pointer]:
+                        - generic "agregar" [ref=e306]: 
+                        - generic [ref=e307]: Agregar
+                    - generic [ref=e309]:
+                      - generic [ref=e311]:
+                        - generic [ref=e312]: $5.690
+                        - generic [ref=e313]: precio actual $5.690
+                      - generic [ref=e314]: Kardamili
+                      - generic [ref=e315]: Aceite Maravilla Botella, 180 ml
+                - group [ref=e318]:
+                  - link "Aceite de Maravilla Botella, 1,5 L" [ref=e319] [cursor=pointer]:
+                    - /url: /ip/aceites-y-aderezos/00779027200102?from=/search
+                    - generic [ref=e320]: Aceite de Maravilla Botella, 1,5 L
+                  - generic [ref=e322]:
+                    - generic [ref=e325]:
+                      - img "Aceite de Maravilla Botella, 1,5 L" [ref=e327]
+                      - button "Agregar al carro - Aceite de Maravilla Botella, 1,5 L" [ref=e330] [cursor=pointer]:
+                        - generic "agregar" [ref=e331]: 
+                        - generic [ref=e332]: Agregar
+                    - generic [ref=e334]:
+                      - generic [ref=e336]:
+                        - generic [ref=e337]: $5.490
+                        - generic [ref=e338]: precio actual $5.490
+                        - generic [ref=e339]: $3.660 x lt
+                      - generic [ref=e340]: Natura
+                      - generic [ref=e341]: Aceite de Maravilla Botella, 1,5 L
+                - group [ref=e344]:
+                  - link "Choritos Aceite de Maravilla Lata, Drenado 100 g - Neto 190 g" [ref=e345] [cursor=pointer]:
+                    - /url: /ip/conservas/00780123527711?from=/search
+                    - generic [ref=e346]: Choritos Aceite de Maravilla Lata, Drenado 100 g - Neto 190 g
+                  - generic [ref=e348]:
+                    - generic [ref=e351]:
+                      - img "Choritos Aceite de Maravilla Lata, Drenado 100 g - Neto 190 g" [ref=e353]
+                      - button "Agregar al carro - Choritos Aceite de Maravilla Lata, Drenado 100 g - Neto 190 g" [ref=e356] [cursor=pointer]:
+                        - generic "agregar" [ref=e357]: 
+                        - generic [ref=e358]: Agregar
+                    - generic [ref=e360]:
+                      - generic [ref=e362]:
+                        - generic [ref=e363]: $1.790
+                        - generic [ref=e364]: precio actual $1.790
+                        - generic [ref=e365]: $17.900 x kg
+                      - generic [ref=e366]: San José
+                      - generic [ref=e367]: Choritos Aceite de Maravilla Lata, Drenado 100 g - Neto 190 g
+                - group [ref=e370]:
+                  - link "Mariscos Aceite de Maravilla Lata, Drenado 200 g - Neto 425 g" [ref=e371] [cursor=pointer]:
+                    - /url: /ip/conservas/00008477360220?from=/search
+                    - generic [ref=e372]: Mariscos Aceite de Maravilla Lata, Drenado 200 g - Neto 425 g
+                  - generic [ref=e374]:
+                    - generic [ref=e377]:
+                      - img "Mariscos Aceite de Maravilla Lata, Drenado 200 g - Neto 425 g" [ref=e379]
+                      - button "Agregar al carro - Mariscos Aceite de Maravilla Lata, Drenado 200 g - Neto 425 g" [ref=e382] [cursor=pointer]:
+                        - generic "agregar" [ref=e383]: 
+                        - generic [ref=e384]: Agregar
+                    - generic [ref=e386]:
+                      - generic [ref=e388]:
+                        - generic [ref=e389]: $4.290
+                        - generic [ref=e390]: precio actual $4.290
+                        - generic [ref=e391]: $21.450 x kg
+                      - generic [ref=e392]: Robinson Crusoe
+                      - generic [ref=e393]: Mariscos Aceite de Maravilla Lata, Drenado 200 g - Neto 425 g
+                - group [ref=e396]:
+                  - link "Choritos Aceite de Maravilla Lata, Drenado 100 g - Neto 190 g" [ref=e397] [cursor=pointer]:
+                    - /url: /ip/conservas/00008477361154?from=/search
+                    - generic [ref=e398]: Choritos Aceite de Maravilla Lata, Drenado 100 g - Neto 190 g
+                  - generic [ref=e400]:
+                    - generic [ref=e401]:
+                      - generic [ref=e403]:
+                        - generic [ref=e405]: 
+                        - text: Rebaja
+                      - generic [ref=e406]:
+                        - img "Choritos Aceite de Maravilla Lata, Drenado 100 g - Neto 190 g" [ref=e408]
+                        - button "Agregar al carro - Choritos Aceite de Maravilla Lata, Drenado 100 g - Neto 190 g" [ref=e411] [cursor=pointer]:
+                          - generic "agregar" [ref=e412]: 
+                          - generic [ref=e413]: Agregar
+                    - generic [ref=e415]:
+                      - generic [ref=e417]:
+                        - generic [ref=e418]: $1.650
+                        - generic [ref=e419]: precio actual $1.650, Costaba $1.990
+                        - generic [ref=e420]: $16.500 x kg
+                        - generic [ref=e421]: $1.990
+                        - generic [ref=e422]: Ahorra $340
+                      - generic [ref=e423]: Robinson Crusoe
+                      - generic [ref=e424]: Choritos Aceite de Maravilla Lata, Drenado 100 g - Neto 190 g
+                - group [ref=e427]:
+                  - link "Choritos Aceite de Maravilla Lata, Drenado 200 g - Neto 425 g" [ref=e428] [cursor=pointer]:
+                    - /url: /ip/conservas/00008477360125?from=/search
+                    - generic [ref=e429]: Choritos Aceite de Maravilla Lata, Drenado 200 g - Neto 425 g
+                  - generic [ref=e431]:
+                    - generic [ref=e432]:
+                      - generic [ref=e434]:
+                        - generic [ref=e436]: 
+                        - text: Rebaja
+                      - generic [ref=e437]:
+                        - img "Choritos Aceite de Maravilla Lata, Drenado 200 g - Neto 425 g" [ref=e439]
+                        - button "Agregar al carro - Choritos Aceite de Maravilla Lata, Drenado 200 g - Neto 425 g" [ref=e442] [cursor=pointer]:
+                          - generic "agregar" [ref=e443]: 
+                          - generic [ref=e444]: Agregar
+                    - generic [ref=e446]:
+                      - generic [ref=e448]:
+                        - generic [ref=e449]: $3.550
+                        - generic [ref=e450]: precio actual $3.550, Costaba $4.190
+                        - generic [ref=e451]: $17.750 x kg
+                        - generic [ref=e452]: $4.190
+                        - generic [ref=e453]: Ahorra $640
+                      - generic [ref=e454]: Robinson Crusoe
+                      - generic [ref=e455]: Choritos Aceite de Maravilla Lata, Drenado 200 g - Neto 425 g
+                - group [ref=e458]:
+                  - link "Choritos Aceite de Maravilla Lata, Drenado 200 g - Neto 425 g" [ref=e459] [cursor=pointer]:
+                    - /url: /ip/conservas/00780123500028?from=/search
+                    - generic [ref=e460]: Choritos Aceite de Maravilla Lata, Drenado 200 g - Neto 425 g
+                  - generic [ref=e462]:
+                    - generic [ref=e465]:
+                      - img "Choritos Aceite de Maravilla Lata, Drenado 200 g - Neto 425 g" [ref=e467]
+                      - button "Agregar al carro - Choritos Aceite de Maravilla Lata, Drenado 200 g - Neto 425 g" [ref=e470] [cursor=pointer]:
+                        - generic "agregar" [ref=e471]: 
+                        - generic [ref=e472]: Agregar
+                    - generic [ref=e474]:
+                      - generic [ref=e476]:
+                        - generic [ref=e477]: $3.390
+                        - generic [ref=e478]: precio actual $3.390
+                        - generic [ref=e479]: $16.950 x kg
+                      - generic [ref=e480]: San José
+                      - generic [ref=e481]: Choritos Aceite de Maravilla Lata, Drenado 200 g - Neto 425 g
+                - group [ref=e484]:
+                  - link "Choritos Aceite de Maravilla Lata, Drenado 100 g - Neto 190 g" [ref=e485] [cursor=pointer]:
+                    - /url: /ip/conservas/00841072107067?from=/search
+                    - generic [ref=e486]: Choritos Aceite de Maravilla Lata, Drenado 100 g - Neto 190 g
+                  - generic [ref=e488]:
+                    - generic [ref=e491]:
+                      - img "Choritos Aceite de Maravilla Lata, Drenado 100 g - Neto 190 g" [ref=e493]
+                      - button "Agregar al carro - Choritos Aceite de Maravilla Lata, Drenado 100 g - Neto 190 g" [ref=e496] [cursor=pointer]:
+                        - generic "agregar" [ref=e497]: 
+                        - generic [ref=e498]: Agregar
+                    - generic [ref=e500]:
+                      - generic [ref=e502]:
+                        - generic [ref=e503]: $2.290
+                        - generic [ref=e504]: precio actual $2.290
+                        - generic [ref=e505]: $22.900 x kg
+                      - generic [ref=e506]: Lider
+                      - generic [ref=e507]: Choritos Aceite de Maravilla Lata, Drenado 100 g - Neto 190 g
+                - group [ref=e510]:
+                  - link "Surtido de Mariscos Aceite de Maravilla Lata, Drenado 213 g - Neto 425 g" [ref=e511] [cursor=pointer]:
+                    - /url: /ip/conservas/00841072107054?from=/search
+                    - generic [ref=e512]: Surtido de Mariscos Aceite de Maravilla Lata, Drenado 213 g - Neto 425 g
+                  - generic [ref=e514]:
+                    - generic [ref=e517]:
+                      - img "Surtido de Mariscos Aceite de Maravilla Lata, Drenado 213 g - Neto 425 g" [ref=e519]
+                      - button "Agregar al carro - Surtido de Mariscos Aceite de Maravilla Lata, Drenado 213 g - Neto 425 g" [ref=e522] [cursor=pointer]:
+                        - generic "agregar" [ref=e523]: 
+                        - generic [ref=e524]: Agregar
+                    - generic [ref=e526]:
+                      - generic [ref=e528]:
+                        - generic [ref=e529]: $3.690
+                        - generic [ref=e530]: precio actual $3.690
+                        - generic [ref=e531]: $17.324 x kg
+                      - generic [ref=e532]: Lider
+                      - generic [ref=e533]: Surtido de Mariscos Aceite de Maravilla Lata, Drenado 213 g - Neto 425 g
+                - group [ref=e536]:
+                  - link "Surtido de Mariscos Aceite de Maravilla Lata, Drenado 100 g - Neto 190 g" [ref=e537] [cursor=pointer]:
+                    - /url: /ip/conservas/00841072107070?from=/search
+                    - generic [ref=e538]: Surtido de Mariscos Aceite de Maravilla Lata, Drenado 100 g - Neto 190 g
+                  - generic [ref=e540]:
+                    - generic [ref=e543]:
+                      - img "Surtido de Mariscos Aceite de Maravilla Lata, Drenado 100 g - Neto 190 g" [ref=e545]
+                      - button "Agregar al carro - Surtido de Mariscos Aceite de Maravilla Lata, Drenado 100 g - Neto 190 g" [ref=e548] [cursor=pointer]:
+                        - generic "agregar" [ref=e549]: 
+                        - generic [ref=e550]: Agregar
+                    - generic [ref=e552]:
+                      - generic [ref=e554]:
+                        - generic [ref=e555]: $1.990
+                        - generic [ref=e556]: precio actual $1.990
+                        - generic [ref=e557]: $10.474 x kg
+                      - generic [ref=e558]: Lider
+                      - generic [ref=e559]: Surtido de Mariscos Aceite de Maravilla Lata, Drenado 100 g - Neto 190 g
+                - group [ref=e562]:
+                  - link "Salmón en Trozo Aceite de Maravilla Lata, Drenado 100 g - Neto 170 g" [ref=e563] [cursor=pointer]:
+                    - /url: /ip/conservas/00008477360178?from=/search
+                    - generic [ref=e564]: Salmón en Trozo Aceite de Maravilla Lata, Drenado 100 g - Neto 170 g
+                  - generic [ref=e566]:
+                    - generic [ref=e569]:
+                      - generic [ref=e570]:
+                        - img "Salmón en Trozo Aceite de Maravilla Lata, Drenado 100 g - Neto 170 g"
+                      - button "Agregar al carro - Salmón en Trozo Aceite de Maravilla Lata, Drenado 100 g - Neto 170 g" [ref=e573] [cursor=pointer]:
+                        - generic "agregar" [ref=e574]: 
+                        - generic [ref=e575]: Agregar
+                    - generic [ref=e577]:
+                      - generic [ref=e579]:
+                        - generic [ref=e580]: $3.790
+                        - generic [ref=e581]: precio actual $3.790
+                        - generic [ref=e582]: $37.900 x kg
+                      - generic [ref=e583]: Robinson Crusoe
+                      - generic [ref=e584]: Salmón en Trozo Aceite de Maravilla Lata, Drenado 100 g - Neto 170 g
+  - alert [ref=e593]

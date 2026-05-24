@@ -1,0 +1,919 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: sopa sobre para uno
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e80]:
+            - generic [ref=e81]:
+              - generic [ref=e84]:
+                - generic [ref=e85]:
+                  - button "Precio" [ref=e88]:
+                    - generic [ref=e89]: Precio
+                    - img [ref=e90]: 
+                  - separator [ref=e91]
+                - generic [ref=e92]:
+                  - button "Campaña" [ref=e95]:
+                    - generic [ref=e96]: Campaña
+                    - img [ref=e97]: 
+                  - separator [ref=e98]
+                - generic [ref=e99]:
+                  - button "Marca" [ref=e102]:
+                    - generic [ref=e103]: Marca
+                    - img [ref=e104]: 
+                  - separator [ref=e105]
+                - generic [ref=e106]:
+                  - button "Categoría" [ref=e109]:
+                    - generic [ref=e110]: Categoría
+                    - img [ref=e111]: 
+                  - separator [ref=e112]
+              - generic [ref=e115]:
+                - heading "Resultados para sopa sobre para uno (119)" [level=2] [ref=e123]: Resultados para sopa sobre para uno(119)
+                - generic [ref=e124]:
+                  - group [ref=e127]:
+                    - link "Sopa para Uno Sabor Espárragos Sobre, 14 g" [ref=e128] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00761303360999?from=/search
+                      - generic [ref=e129]: Sopa para Uno Sabor Espárragos Sobre, 14 g
+                    - generic [ref=e131]:
+                      - generic [ref=e132]:
+                        - generic [ref=e133]:
+                          - generic [ref=e135]: Combina 3 x $1.190
+                          - button "Combina 3 x $1.190. Ver combinaciones aceptadas y coincidir productos." [ref=e136] [cursor=pointer]: Combinar
+                        - generic [ref=e137]:
+                          - img "Sopa para Uno Sabor Espárragos Sobre, 14 g" [ref=e139]
+                          - button "Agregar al carro - Sopa para Uno Sabor Espárragos Sobre, 14 g" [ref=e142] [cursor=pointer]:
+                            - generic "agregar" [ref=e143]: 
+                            - generic [ref=e144]: Agregar
+                      - generic [ref=e146]:
+                        - generic [ref=e148]:
+                          - generic [ref=e149]: $510
+                          - generic [ref=e150]: precio actual $510
+                          - generic [ref=e151]: $364 x 10g
+                        - generic [ref=e152]: Maggi
+                        - generic [ref=e153]: Sopa para Uno Sabor Espárragos Sobre, 14 g
+                  - group [ref=e156]:
+                    - link "Sopa para Uno Sabor Pollo Merkén Sobre, 16 g" [ref=e157] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00761303290191?from=/search
+                      - generic [ref=e158]: Sopa para Uno Sabor Pollo Merkén Sobre, 16 g
+                    - generic [ref=e160]:
+                      - generic [ref=e161]:
+                        - generic [ref=e162]:
+                          - generic [ref=e164]: Combina 3 x $1.190
+                          - button "Combina 3 x $1.190. Ver combinaciones aceptadas y coincidir productos." [ref=e165] [cursor=pointer]: Combinar
+                        - generic [ref=e166]:
+                          - img "Sopa para Uno Sabor Pollo Merkén Sobre, 16 g" [ref=e168]
+                          - button "Agregar al carro - Sopa para Uno Sabor Pollo Merkén Sobre, 16 g" [ref=e171] [cursor=pointer]:
+                            - generic "agregar" [ref=e172]: 
+                            - generic [ref=e173]: Agregar
+                      - generic [ref=e175]:
+                        - generic [ref=e177]:
+                          - generic [ref=e178]: $510
+                          - generic [ref=e179]: precio actual $510
+                          - generic [ref=e180]: $319 x 10g
+                        - generic [ref=e181]: Maggi
+                        - generic [ref=e182]: Sopa para Uno Sabor Pollo Merkén Sobre, 16 g
+                  - group [ref=e185]:
+                    - link "Sopa para Uno Consomé de Pollo Sobre, 12 g" [ref=e186] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00844529085532?from=/search
+                      - generic [ref=e187]: Sopa para Uno Consomé de Pollo Sobre, 12 g
+                    - generic [ref=e189]:
+                      - generic [ref=e190]:
+                        - generic [ref=e191]:
+                          - generic [ref=e193]: Combina 3 x $1.190
+                          - button "Combina 3 x $1.190. Ver combinaciones aceptadas y coincidir productos." [ref=e194] [cursor=pointer]: Combinar
+                        - generic [ref=e195]:
+                          - img "Sopa para Uno Consomé de Pollo Sobre, 12 g" [ref=e197]
+                          - button "Agregar al carro - Sopa para Uno Consomé de Pollo Sobre, 12 g" [ref=e200] [cursor=pointer]:
+                            - generic "agregar" [ref=e201]: 
+                            - generic [ref=e202]: Agregar
+                      - generic [ref=e204]:
+                        - generic [ref=e206]:
+                          - generic [ref=e207]: $510
+                          - generic [ref=e208]: precio actual $510
+                          - generic [ref=e209]: $425 x 10g
+                        - generic [ref=e210]: Maggi
+                        - generic [ref=e211]: Sopa para Uno Consomé de Pollo Sobre, 12 g
+                  - group [ref=e214]:
+                    - link "Sopa para Uno Sabor Carne con Crutones Sobre, 12 g" [ref=e215] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00844529124651?from=/search
+                      - generic [ref=e216]: Sopa para Uno Sabor Carne con Crutones Sobre, 12 g
+                    - generic [ref=e218]:
+                      - generic [ref=e219]:
+                        - generic [ref=e220]:
+                          - generic [ref=e222]: Combina 3 x $1.190
+                          - button "Combina 3 x $1.190. Ver combinaciones aceptadas y coincidir productos." [ref=e223] [cursor=pointer]: Combinar
+                        - generic [ref=e224]:
+                          - img "Sopa para Uno Sabor Carne con Crutones Sobre, 12 g" [ref=e226]
+                          - button "Agregar al carro - Sopa para Uno Sabor Carne con Crutones Sobre, 12 g" [ref=e229] [cursor=pointer]:
+                            - generic "agregar" [ref=e230]: 
+                            - generic [ref=e231]: Agregar
+                      - generic [ref=e233]:
+                        - generic [ref=e235]:
+                          - generic [ref=e236]: $510
+                          - generic [ref=e237]: precio actual $510
+                          - generic [ref=e238]: $425 x 10g
+                        - generic [ref=e239]: Maggi
+                        - generic [ref=e240]: Sopa para Uno Sabor Carne con Crutones Sobre, 12 g
+                  - group [ref=e243]:
+                    - link "Sopa para Uno Sabor Pollo con Fideos Sobre, 16 g" [ref=e244] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00761328755227?from=/search
+                      - generic [ref=e245]: Sopa para Uno Sabor Pollo con Fideos Sobre, 16 g
+                    - generic [ref=e247]:
+                      - generic [ref=e248]:
+                        - generic [ref=e249]:
+                          - generic [ref=e251]: Combina 3 x $1.190
+                          - button "Combina 3 x $1.190. Ver combinaciones aceptadas y coincidir productos." [ref=e252] [cursor=pointer]: Combinar
+                        - generic [ref=e253]:
+                          - img "Sopa para Uno Sabor Pollo con Fideos Sobre, 16 g" [ref=e255]
+                          - button "Agregar al carro - Sopa para Uno Sabor Pollo con Fideos Sobre, 16 g" [ref=e258] [cursor=pointer]:
+                            - generic "agregar" [ref=e259]: 
+                            - generic [ref=e260]: Agregar
+                      - generic [ref=e262]:
+                        - generic [ref=e264]:
+                          - generic [ref=e265]: $510
+                          - generic [ref=e266]: precio actual $510
+                          - generic [ref=e267]: $319 x 10g
+                        - generic [ref=e268]: Maggi
+                        - generic [ref=e269]: Sopa para Uno Sabor Pollo con Fideos Sobre, 16 g
+                  - group [ref=e272]:
+                    - link "Sopa Individual Sabor Costilla con Fideos Sobre, 15 g" [ref=e273] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00780241000454?from=/search
+                      - generic [ref=e274]: Sopa Individual Sabor Costilla con Fideos Sobre, 15 g
+                    - generic [ref=e276]:
+                      - generic [ref=e279]:
+                        - img "Sopa Individual Sabor Costilla con Fideos Sobre, 15 g" [ref=e281]
+                        - button "Agregar al carro - Sopa Individual Sabor Costilla con Fideos Sobre, 15 g" [ref=e284] [cursor=pointer]:
+                          - generic "agregar" [ref=e285]: 
+                          - generic [ref=e286]: Agregar
+                      - generic [ref=e288]:
+                        - generic [ref=e290]:
+                          - generic [ref=e291]: $480
+                          - generic [ref=e292]: precio actual $480
+                          - generic [ref=e293]: $320 x 10g
+                        - generic [ref=e294]: Gourmet
+                        - generic [ref=e295]: Sopa Individual Sabor Costilla con Fideos Sobre, 15 g
+                  - group [ref=e298]:
+                    - link "Sopa Individual Sabor Pollo con Fideos Sobre, 15 g" [ref=e299] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00780241000453?from=/search
+                      - generic [ref=e300]: Sopa Individual Sabor Pollo con Fideos Sobre, 15 g
+                    - generic [ref=e302]:
+                      - generic [ref=e305]:
+                        - img "Sopa Individual Sabor Pollo con Fideos Sobre, 15 g" [ref=e307]
+                        - button "Agregar al carro - Sopa Individual Sabor Pollo con Fideos Sobre, 15 g" [ref=e310] [cursor=pointer]:
+                          - generic "agregar" [ref=e311]: 
+                          - generic [ref=e312]: Agregar
+                      - generic [ref=e314]:
+                        - generic [ref=e316]:
+                          - generic [ref=e317]: $480
+                          - generic [ref=e318]: precio actual $480
+                          - generic [ref=e319]: $320 x 10g
+                        - generic [ref=e320]: Gourmet
+                        - generic [ref=e321]: Sopa Individual Sabor Pollo con Fideos Sobre, 15 g
+                  - group [ref=e324]:
+                    - link "Sopa Sabor Pollo con Fideos (5 Porciones) Sobre, 70 g" [ref=e325] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00780295000661?from=/search
+                      - generic [ref=e326]: Sopa Sabor Pollo con Fideos (5 Porciones) Sobre, 70 g
+                    - generic [ref=e328]:
+                      - generic [ref=e331]:
+                        - img "Sopa Sabor Pollo con Fideos (5 Porciones) Sobre, 70 g" [ref=e333]
+                        - button "Agregar al carro - Sopa Sabor Pollo con Fideos (5 Porciones) Sobre, 70 g" [ref=e336] [cursor=pointer]:
+                          - generic "agregar" [ref=e337]: 
+                          - generic [ref=e338]: Agregar
+                      - generic [ref=e340]:
+                        - generic [ref=e342]:
+                          - generic [ref=e343]: $630
+                          - generic [ref=e344]: precio actual $630
+                          - generic [ref=e345]: $90 x 10g
+                        - generic [ref=e346]: Maggi
+                        - generic [ref=e347]: Sopa Sabor Pollo con Fideos (5 Porciones) Sobre, 70 g
+                  - group [ref=e350]:
+                    - link "Sopa Sabor Costilla con Fideos (5 Porciones) Sobre, 60 g" [ref=e351] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00761303061224?from=/search
+                      - generic [ref=e352]: Sopa Sabor Costilla con Fideos (5 Porciones) Sobre, 60 g
+                    - generic [ref=e354]:
+                      - generic [ref=e357]:
+                        - img "Sopa Sabor Costilla con Fideos (5 Porciones) Sobre, 60 g" [ref=e359]
+                        - button "Agregar al carro - Sopa Sabor Costilla con Fideos (5 Porciones) Sobre, 60 g" [ref=e362] [cursor=pointer]:
+                          - generic "agregar" [ref=e363]: 
+                          - generic [ref=e364]: Agregar
+                      - generic [ref=e366]:
+                        - generic [ref=e368]:
+                          - generic [ref=e369]: $630
+                          - generic [ref=e370]: precio actual $630
+                          - generic [ref=e371]: $105 x 10g
+                        - generic [ref=e372]: Maggi
+                        - generic [ref=e373]: Sopa Sabor Costilla con Fideos (5 Porciones) Sobre, 60 g
+                  - group [ref=e376]:
+                    - link "Sopa Individual Consomé de Pollo Sobre, 15 g" [ref=e377] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00780241000034?from=/search
+                      - generic [ref=e378]: Sopa Individual Consomé de Pollo Sobre, 15 g
+                    - generic [ref=e380]:
+                      - generic [ref=e383]:
+                        - img "Sopa Individual Consomé de Pollo Sobre, 15 g" [ref=e385]
+                        - button "Agregar al carro - Sopa Individual Consomé de Pollo Sobre, 15 g" [ref=e388] [cursor=pointer]:
+                          - generic "agregar" [ref=e389]: 
+                          - generic [ref=e390]: Agregar
+                      - generic [ref=e392]:
+                        - generic [ref=e394]:
+                          - generic [ref=e395]: $480
+                          - generic [ref=e396]: precio actual $480
+                          - generic [ref=e397]: $320 x 10g
+                        - generic [ref=e398]: Gourmet
+                        - generic [ref=e399]: Sopa Individual Consomé de Pollo Sobre, 15 g
+                  - group [ref=e402]:
+                    - link "Sopa Individual Sabor Carne con Crutones Sobre, 15 g" [ref=e403] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00780241000035?from=/search
+                      - generic [ref=e404]: Sopa Individual Sabor Carne con Crutones Sobre, 15 g
+                    - generic [ref=e406]:
+                      - generic [ref=e409]:
+                        - img "Sopa Individual Sabor Carne con Crutones Sobre, 15 g" [ref=e411]
+                        - button "Agregar al carro - Sopa Individual Sabor Carne con Crutones Sobre, 15 g" [ref=e414] [cursor=pointer]:
+                          - generic "agregar" [ref=e415]: 
+                          - generic [ref=e416]: Agregar
+                      - generic [ref=e418]:
+                        - generic [ref=e420]:
+                          - generic [ref=e421]: $480
+                          - generic [ref=e422]: precio actual $480
+                          - generic [ref=e423]: $320 x 10g
+                        - generic [ref=e424]: Gourmet
+                        - generic [ref=e425]: Sopa Individual Sabor Carne con Crutones Sobre, 15 g
+                  - group [ref=e428]:
+                    - link "Sopa de Caracolitos (5 Porciones) Sobre, 76 g" [ref=e429] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00780295000663?from=/search
+                      - generic [ref=e430]: Sopa de Caracolitos (5 Porciones) Sobre, 76 g
+                    - generic [ref=e432]:
+                      - generic [ref=e435]:
+                        - img "Sopa de Caracolitos (5 Porciones) Sobre, 76 g" [ref=e437]
+                        - button "Agregar al carro - Sopa de Caracolitos (5 Porciones) Sobre, 76 g" [ref=e440] [cursor=pointer]:
+                          - generic "agregar" [ref=e441]: 
+                          - generic [ref=e442]: Agregar
+                      - generic [ref=e444]:
+                        - generic [ref=e446]:
+                          - generic [ref=e447]: $630
+                          - generic [ref=e448]: precio actual $630
+                          - generic [ref=e449]: $83 x 10g
+                        - generic [ref=e450]: Maggi
+                        - generic [ref=e451]: Sopa de Caracolitos (5 Porciones) Sobre, 76 g
+                  - group [ref=e454]:
+                    - link "Sopa de Caracolitos (5 Porciones) Sobre, 74 g" [ref=e455] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00780241000227?from=/search
+                      - generic [ref=e456]: Sopa de Caracolitos (5 Porciones) Sobre, 74 g
+                    - generic [ref=e458]:
+                      - generic [ref=e461]:
+                        - img "Sopa de Caracolitos (5 Porciones) Sobre, 74 g" [ref=e463]
+                        - button "Agregar al carro - Sopa de Caracolitos (5 Porciones) Sobre, 74 g" [ref=e466] [cursor=pointer]:
+                          - generic "agregar" [ref=e467]: 
+                          - generic [ref=e468]: Agregar
+                      - generic [ref=e470]:
+                        - generic [ref=e472]:
+                          - generic [ref=e473]: $590
+                          - generic [ref=e474]: precio actual $590
+                          - generic [ref=e475]: $80 x 10g
+                        - generic [ref=e476]: Gourmet
+                        - generic [ref=e477]: Sopa de Caracolitos (5 Porciones) Sobre, 74 g
+                  - group [ref=e480]:
+                    - link "Sopa Sabor Pollo con Fideos (5 Porciones) Sobre, 70 g" [ref=e481] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00780241000224?from=/search
+                      - generic [ref=e482]: Sopa Sabor Pollo con Fideos (5 Porciones) Sobre, 70 g
+                    - generic [ref=e484]:
+                      - generic [ref=e487]:
+                        - img "Sopa Sabor Pollo con Fideos (5 Porciones) Sobre, 70 g" [ref=e489]
+                        - button "Agregar al carro - Sopa Sabor Pollo con Fideos (5 Porciones) Sobre, 70 g" [ref=e492] [cursor=pointer]:
+                          - generic "agregar" [ref=e493]: 
+                          - generic [ref=e494]: Agregar
+                      - generic [ref=e496]:
+                        - generic [ref=e498]:
+                          - generic [ref=e499]: $590
+                          - generic [ref=e500]: precio actual $590
+                          - generic [ref=e501]: $84 x 10g
+                        - generic [ref=e502]: Gourmet
+                        - generic [ref=e503]: Sopa Sabor Pollo con Fideos (5 Porciones) Sobre, 70 g
+                  - group [ref=e506]:
+                    - link "Sopa Sabor Pollo con Sémola (5 Porciones) Sobre, 68 g" [ref=e507] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00780295000881?from=/search
+                      - generic [ref=e508]: Sopa Sabor Pollo con Sémola (5 Porciones) Sobre, 68 g
+                    - generic [ref=e510]:
+                      - generic [ref=e513]:
+                        - img "Sopa Sabor Pollo con Sémola (5 Porciones) Sobre, 68 g" [ref=e515]
+                        - button "Agregar al carro - Sopa Sabor Pollo con Sémola (5 Porciones) Sobre, 68 g" [ref=e518] [cursor=pointer]:
+                          - generic "agregar" [ref=e519]: 
+                          - generic [ref=e520]: Agregar
+                      - generic [ref=e522]:
+                        - generic [ref=e524]:
+                          - generic [ref=e525]: $630
+                          - generic [ref=e526]: precio actual $630
+                          - generic [ref=e527]: $93 x 10g
+                        - generic [ref=e528]: Maggi
+                        - generic [ref=e529]: Sopa Sabor Pollo con Sémola (5 Porciones) Sobre, 68 g
+                  - group [ref=e532]:
+                    - link "Sopa de Caracolitos con Verduras (5 Porciones) Sobre, 76 g" [ref=e533] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00780263000373?from=/search
+                      - generic [ref=e534]: Sopa de Caracolitos con Verduras (5 Porciones) Sobre, 76 g
+                    - generic [ref=e536]:
+                      - generic [ref=e539]:
+                        - img "Sopa de Caracolitos con Verduras (5 Porciones) Sobre, 76 g" [ref=e541]
+                        - button "Agregar al carro - Sopa de Caracolitos con Verduras (5 Porciones) Sobre, 76 g" [ref=e544] [cursor=pointer]:
+                          - generic "agregar" [ref=e545]: 
+                          - generic [ref=e546]: Agregar
+                      - generic [ref=e548]:
+                        - generic [ref=e550]:
+                          - generic [ref=e551]: $450
+                          - generic [ref=e552]: precio actual $450
+                          - generic [ref=e553]: $59 x 10g
+                        - generic [ref=e554]: Lider
+                        - generic [ref=e555]: Sopa de Caracolitos con Verduras (5 Porciones) Sobre, 76 g
+                  - group [ref=e558]:
+                    - link "Sopa Sabor Costilla con Fideos (5 Porciones) Sobre, 62 g" [ref=e559] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00780241000225?from=/search
+                      - generic [ref=e560]: Sopa Sabor Costilla con Fideos (5 Porciones) Sobre, 62 g
+                    - generic [ref=e562]:
+                      - generic [ref=e565]:
+                        - generic [ref=e566]:
+                          - img "Sopa Sabor Costilla con Fideos (5 Porciones) Sobre, 62 g"
+                        - button "Agregar al carro - Sopa Sabor Costilla con Fideos (5 Porciones) Sobre, 62 g" [ref=e569] [cursor=pointer]:
+                          - generic "agregar" [ref=e570]: 
+                          - generic [ref=e571]: Agregar
+                      - generic [ref=e573]:
+                        - generic [ref=e575]:
+                          - generic [ref=e576]: $590
+                          - generic [ref=e577]: precio actual $590
+                          - generic [ref=e578]: $95 x 10g
+                        - generic [ref=e579]: Gourmet
+                        - generic [ref=e580]: Sopa Sabor Costilla con Fideos (5 Porciones) Sobre, 62 g
+                  - group [ref=e583]:
+                    - link "Sopa Individual de Tomate Sobre, 14 g" [ref=e584] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00780241037102?from=/search
+                      - generic [ref=e585]: Sopa Individual de Tomate Sobre, 14 g
+                    - generic [ref=e587]:
+                      - generic [ref=e590]:
+                        - generic [ref=e591]:
+                          - img "Sopa Individual de Tomate Sobre, 14 g"
+                        - button "Agregar al carro - Sopa Individual de Tomate Sobre, 14 g" [ref=e594] [cursor=pointer]:
+                          - generic "agregar" [ref=e595]: 
+                          - generic [ref=e596]: Agregar
+                      - generic [ref=e598]:
+                        - generic [ref=e600]:
+                          - generic [ref=e601]: $480
+                          - generic [ref=e602]: precio actual $480
+                          - generic [ref=e603]: $343 x 10g
+                        - generic [ref=e604]: Gourmet
+                        - generic [ref=e605]: Sopa Individual de Tomate Sobre, 14 g
+                  - group [ref=e608]:
+                    - link "Sopa Sabor Carne con Corbatitas (5 Porciones) Sobre, 55 g" [ref=e609] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00780241000521?from=/search
+                      - generic [ref=e610]: Sopa Sabor Carne con Corbatitas (5 Porciones) Sobre, 55 g
+                    - generic [ref=e612]:
+                      - generic [ref=e615]:
+                        - generic [ref=e616]:
+                          - img "Sopa Sabor Carne con Corbatitas (5 Porciones) Sobre, 55 g"
+                        - button "Agregar al carro - Sopa Sabor Carne con Corbatitas (5 Porciones) Sobre, 55 g" [ref=e619] [cursor=pointer]:
+                          - generic "agregar" [ref=e620]: 
+                          - generic [ref=e621]: Agregar
+                      - generic [ref=e623]:
+                        - generic [ref=e625]:
+                          - generic [ref=e626]: $590
+                          - generic [ref=e627]: precio actual $590
+                          - generic [ref=e628]: $107 x 10g
+                        - generic [ref=e629]: Gourmet
+                        - generic [ref=e630]: Sopa Sabor Carne con Corbatitas (5 Porciones) Sobre, 55 g
+                  - group [ref=e633]:
+                    - link "Sopa Individual de Verduras con Crutones Sobre, 15 g" [ref=e634] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00780241000289?from=/search
+                      - generic [ref=e635]: Sopa Individual de Verduras con Crutones Sobre, 15 g
+                    - generic [ref=e637]:
+                      - generic [ref=e640]:
+                        - generic [ref=e641]:
+                          - img "Sopa Individual de Verduras con Crutones Sobre, 15 g"
+                        - button "Agregar al carro - Sopa Individual de Verduras con Crutones Sobre, 15 g" [ref=e644] [cursor=pointer]:
+                          - generic "agregar" [ref=e645]: 
+                          - generic [ref=e646]: Agregar
+                      - generic [ref=e648]:
+                        - generic [ref=e650]:
+                          - generic [ref=e651]: $480
+                          - generic [ref=e652]: precio actual $480
+                          - generic [ref=e653]: $320 x 10g
+                        - generic [ref=e654]: Gourmet
+                        - generic [ref=e655]: Sopa Individual de Verduras con Crutones Sobre, 15 g
+                  - group [ref=e658]:
+                    - link "Sopa Sabor Costilla con Fideos (5 Porciones) Sobre, 60 g" [ref=e659] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00780263000374?from=/search
+                      - generic [ref=e660]: Sopa Sabor Costilla con Fideos (5 Porciones) Sobre, 60 g
+                    - generic [ref=e662]:
+                      - generic [ref=e665]:
+                        - generic [ref=e666]:
+                          - img "Sopa Sabor Costilla con Fideos (5 Porciones) Sobre, 60 g"
+                        - button "Agregar al carro - Sopa Sabor Costilla con Fideos (5 Porciones) Sobre, 60 g" [ref=e669] [cursor=pointer]:
+                          - generic "agregar" [ref=e670]: 
+                          - generic [ref=e671]: Agregar
+                      - generic [ref=e673]:
+                        - generic [ref=e675]:
+                          - generic [ref=e676]: $450
+                          - generic [ref=e677]: precio actual $450
+                          - generic [ref=e678]: $75 x 10g
+                        - generic [ref=e679]: Lider
+                        - generic [ref=e680]: Sopa Sabor Costilla con Fideos (5 Porciones) Sobre, 60 g
+                  - group [ref=e683]:
+                    - link "Sopa Sabor Pollo con Arroz (5 Porciones) Sobre, 70 g" [ref=e684] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00780241000522?from=/search
+                      - generic [ref=e685]: Sopa Sabor Pollo con Arroz (5 Porciones) Sobre, 70 g
+                    - generic [ref=e687]:
+                      - generic [ref=e690]:
+                        - generic [ref=e691]:
+                          - img "Sopa Sabor Pollo con Arroz (5 Porciones) Sobre, 70 g"
+                        - button "Agregar al carro - Sopa Sabor Pollo con Arroz (5 Porciones) Sobre, 70 g" [ref=e694] [cursor=pointer]:
+                          - generic "agregar" [ref=e695]: 
+                          - generic [ref=e696]: Agregar
+                      - generic [ref=e698]:
+                        - generic [ref=e700]:
+                          - generic [ref=e701]: $590
+                          - generic [ref=e702]: precio actual $590
+                          - generic [ref=e703]: $84 x 10g
+                        - generic [ref=e704]: Gourmet
+                        - generic [ref=e705]: Sopa Sabor Pollo con Arroz (5 Porciones) Sobre, 70 g
+                  - group [ref=e708]:
+                    - link "Sopa Sabor Pollo con Arroz (5 Porciones) Sobre, 70 g" [ref=e709] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00780295000662?from=/search
+                      - generic [ref=e710]: Sopa Sabor Pollo con Arroz (5 Porciones) Sobre, 70 g
+                    - generic [ref=e712]:
+                      - generic [ref=e715]:
+                        - generic [ref=e716]:
+                          - img "Sopa Sabor Pollo con Arroz (5 Porciones) Sobre, 70 g"
+                        - button "Agregar al carro - Sopa Sabor Pollo con Arroz (5 Porciones) Sobre, 70 g" [ref=e719] [cursor=pointer]:
+                          - generic "agregar" [ref=e720]: 
+                          - generic [ref=e721]: Agregar
+                      - generic [ref=e723]:
+                        - generic [ref=e725]:
+                          - generic [ref=e726]: $630
+                          - generic [ref=e727]: precio actual $630
+                          - generic [ref=e728]: $90 x 10g
+                        - generic [ref=e729]: Maggi
+                        - generic [ref=e730]: Sopa Sabor Pollo con Arroz (5 Porciones) Sobre, 70 g
+                  - group [ref=e733]:
+                    - link "Sopa Sabor Carne con Fideos (5 Porciones) Sobre, 60 g" [ref=e734] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00844529174236?from=/search
+                      - generic [ref=e735]: Sopa Sabor Carne con Fideos (5 Porciones) Sobre, 60 g
+                    - generic [ref=e737]:
+                      - generic [ref=e740]:
+                        - generic [ref=e741]:
+                          - img "Sopa Sabor Carne con Fideos (5 Porciones) Sobre, 60 g"
+                        - button "Agregar al carro - Sopa Sabor Carne con Fideos (5 Porciones) Sobre, 60 g" [ref=e744] [cursor=pointer]:
+                          - generic "agregar" [ref=e745]: 
+                          - generic [ref=e746]: Agregar
+                      - generic [ref=e748]:
+                        - generic [ref=e750]:
+                          - generic [ref=e751]: $630
+                          - generic [ref=e752]: precio actual $630
+                          - generic [ref=e753]: $105 x 10g
+                        - generic [ref=e754]: Maggi
+                        - generic [ref=e755]: Sopa Sabor Carne con Fideos (5 Porciones) Sobre, 60 g
+                  - group [ref=e758]:
+                    - link "Sopa Sabor Pollo con Fideos (5 Porciones) Sobre, 70 g" [ref=e759] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00780263000371?from=/search
+                      - generic [ref=e760]: Sopa Sabor Pollo con Fideos (5 Porciones) Sobre, 70 g
+                    - generic [ref=e762]:
+                      - generic [ref=e765]:
+                        - generic [ref=e766]:
+                          - img "Sopa Sabor Pollo con Fideos (5 Porciones) Sobre, 70 g"
+                        - button "Agregar al carro - Sopa Sabor Pollo con Fideos (5 Porciones) Sobre, 70 g" [ref=e769] [cursor=pointer]:
+                          - generic "agregar" [ref=e770]: 
+                          - generic [ref=e771]: Agregar
+                      - generic [ref=e773]:
+                        - generic [ref=e775]:
+                          - generic [ref=e776]: $450
+                          - generic [ref=e777]: precio actual $450
+                          - generic [ref=e778]: $64 x 10g
+                        - generic [ref=e779]: Lider
+                        - generic [ref=e780]: Sopa Sabor Pollo con Fideos (5 Porciones) Sobre, 70 g
+                  - group [ref=e783]:
+                    - link "Sopa Sabor Pollo con Arroz (5 Porciones) Sobre, 70 g" [ref=e784] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00780263000370?from=/search
+                      - generic [ref=e785]: Sopa Sabor Pollo con Arroz (5 Porciones) Sobre, 70 g
+                    - generic [ref=e787]:
+                      - generic [ref=e790]:
+                        - generic [ref=e791]:
+                          - img "Sopa Sabor Pollo con Arroz (5 Porciones) Sobre, 70 g"
+                        - button "Agregar al carro - Sopa Sabor Pollo con Arroz (5 Porciones) Sobre, 70 g" [ref=e794] [cursor=pointer]:
+                          - generic "agregar" [ref=e795]: 
+                          - generic [ref=e796]: Agregar
+                      - generic [ref=e798]:
+                        - generic [ref=e800]:
+                          - generic [ref=e801]: $450
+                          - generic [ref=e802]: precio actual $450
+                          - generic [ref=e803]: $64 x 10g
+                        - generic [ref=e804]: Lider
+                        - generic [ref=e805]: Sopa Sabor Pollo con Arroz (5 Porciones) Sobre, 70 g
+                  - group [ref=e808]:
+                    - link "Sopa de Cebolla Premium (2 Porciones) Sobre, 34 g" [ref=e809] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00780241000510?from=/search
+                      - generic [ref=e810]: Sopa de Cebolla Premium (2 Porciones) Sobre, 34 g
+                    - generic [ref=e812]:
+                      - generic [ref=e813]:
+                        - generic [ref=e815]: 2 x $1.490
+                        - generic [ref=e816]:
+                          - generic [ref=e817]:
+                            - img "Sopa de Cebolla Premium (2 Porciones) Sobre, 34 g"
+                          - button "Agregar al carro - Sopa de Cebolla Premium (2 Porciones) Sobre, 34 g" [ref=e820] [cursor=pointer]:
+                            - generic "agregar" [ref=e821]: 
+                            - generic [ref=e822]: Agregar
+                      - generic [ref=e824]:
+                        - generic [ref=e826]:
+                          - generic [ref=e827]: $950
+                          - generic [ref=e828]: precio actual $950
+                          - generic [ref=e829]: $279 x 10g
+                        - generic [ref=e830]: Gourmet
+                        - generic [ref=e831]: Sopa de Cebolla Premium (2 Porciones) Sobre, 34 g
+                  - group [ref=e834]:
+                    - link "Base para Pollo Crispy (6 Porciones) Sobre, 80 g" [ref=e835] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00780241035065?from=/search
+                      - generic [ref=e836]: Base para Pollo Crispy (6 Porciones) Sobre, 80 g
+                    - generic [ref=e838]:
+                      - generic [ref=e841]:
+                        - generic [ref=e842]:
+                          - img "Base para Pollo Crispy (6 Porciones) Sobre, 80 g"
+                        - button "Agregar al carro - Base para Pollo Crispy (6 Porciones) Sobre, 80 g" [ref=e845] [cursor=pointer]:
+                          - generic "agregar" [ref=e846]: 
+                          - generic [ref=e847]: Agregar
+                      - generic [ref=e849]:
+                        - generic [ref=e851]:
+                          - generic [ref=e852]: $830
+                          - generic [ref=e853]: precio actual $830
+                          - generic [ref=e854]: $104 x 10g
+                        - generic [ref=e855]: Gourmet
+                        - generic [ref=e856]: Base para Pollo Crispy (6 Porciones) Sobre, 80 g
+                  - group [ref=e859]:
+                    - link "Base para Pollo Crispy (6 Porciones) Sobre, 80 g" [ref=e860] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00780241000416?from=/search
+                      - generic [ref=e861]: Base para Pollo Crispy (6 Porciones) Sobre, 80 g
+                    - generic [ref=e863]:
+                      - generic [ref=e866]:
+                        - generic [ref=e867]:
+                          - img "Base para Pollo Crispy (6 Porciones) Sobre, 80 g"
+                        - button "Agregar al carro - Base para Pollo Crispy (6 Porciones) Sobre, 80 g" [ref=e870] [cursor=pointer]:
+                          - generic "agregar" [ref=e871]: 
+                          - generic [ref=e872]: Agregar
+                      - generic [ref=e874]:
+                        - generic [ref=e876]:
+                          - generic [ref=e877]: $690
+                          - generic [ref=e878]: precio actual $690
+                          - generic [ref=e879]: $86 x 10g
+                        - generic [ref=e880]: Lider
+                        - generic [ref=e881]: Base para Pollo Crispy (6 Porciones) Sobre, 80 g
+                  - group [ref=e884]:
+                    - link "Base para Carne a la Mexicana (5 Porciones) Sobre, 48 g" [ref=e885] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00780241010079?from=/search
+                      - generic [ref=e886]: Base para Carne a la Mexicana (5 Porciones) Sobre, 48 g
+                    - generic [ref=e888]:
+                      - generic [ref=e891]:
+                        - generic [ref=e892]:
+                          - img "Base para Carne a la Mexicana (5 Porciones) Sobre, 48 g"
+                        - button "Agregar al carro - Base para Carne a la Mexicana (5 Porciones) Sobre, 48 g" [ref=e895] [cursor=pointer]:
+                          - generic "agregar" [ref=e896]: 
+                          - generic [ref=e897]: Agregar
+                      - generic [ref=e899]:
+                        - generic [ref=e901]:
+                          - generic [ref=e902]: $660
+                          - generic [ref=e903]: precio actual $660
+                          - generic [ref=e904]: $137 x 10g
+                        - generic [ref=e905]: Lider
+                        - generic [ref=e906]: Base para Carne a la Mexicana (5 Porciones) Sobre, 48 g
+                  - group [ref=e909]:
+                    - link "Base para Carne a la Cacerola (6 Porciones) Sobre, 36g" [ref=e910] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00780241000475?from=/search
+                      - generic [ref=e911]: Base para Carne a la Cacerola (6 Porciones) Sobre, 36g
+                    - generic [ref=e913]:
+                      - generic [ref=e916]:
+                        - generic [ref=e917]:
+                          - img "Base para Carne a la Cacerola (6 Porciones) Sobre, 36g"
+                        - button "Agregar al carro - Base para Carne a la Cacerola (6 Porciones) Sobre, 36g" [ref=e920] [cursor=pointer]:
+                          - generic "agregar" [ref=e921]: 
+                          - generic [ref=e922]: Agregar
+                      - generic [ref=e924]:
+                        - generic [ref=e926]:
+                          - generic [ref=e927]: $690
+                          - generic [ref=e928]: precio actual $690
+                          - generic [ref=e929]: $192 x 10g
+                        - generic [ref=e930]: Lider
+                        - generic [ref=e931]: Base para Carne a la Cacerola (6 Porciones) Sobre, 36g
+                  - group [ref=e934]:
+                    - link "Arroz Para Sopa, 300 g" [ref=e935] [cursor=pointer]:
+                      - /url: /ip/f/00780012073713?from=/search
+                      - generic [ref=e936]: Arroz Para Sopa, 300 g
+                    - generic [ref=e938]:
+                      - generic [ref=e941]:
+                        - generic [ref=e942]:
+                          - img "Arroz Para Sopa, 300 g"
+                        - button "Agregar al carro - Arroz Para Sopa, 300 g" [ref=e945] [cursor=pointer]:
+                          - generic "agregar" [ref=e946]: 
+                          - generic [ref=e947]: Agregar
+                      - generic [ref=e949]:
+                        - generic [ref=e951]:
+                          - generic [ref=e952]: $500
+                          - generic [ref=e953]: precio actual $500
+                          - generic [ref=e954]: $1.667 x kg
+                        - generic [ref=e955]: Miraflores
+                        - generic [ref=e956]: Arroz Para Sopa, 300 g
+                  - group [ref=e959]:
+                    - link "Polvos para Hornear Sobre, 100 g" [ref=e960] [cursor=pointer]:
+                      - /url: /ip/reposteria/00770205408840?from=/search
+                      - generic [ref=e961]: Polvos para Hornear Sobre, 100 g
+                    - generic [ref=e963]:
+                      - generic [ref=e966]:
+                        - generic [ref=e967]:
+                          - img "Polvos para Hornear Sobre, 100 g"
+                        - button "Agregar al carro - Polvos para Hornear Sobre, 100 g" [ref=e970] [cursor=pointer]:
+                          - generic "agregar" [ref=e971]: 
+                          - generic [ref=e972]: Agregar
+                      - generic [ref=e974]:
+                        - generic [ref=e976]:
+                          - generic [ref=e977]: $1.090
+                          - generic [ref=e978]: precio actual $1.090
+                          - generic [ref=e979]: $10.899 x kg
+                        - generic [ref=e980]: Royal
+                        - generic [ref=e981]: Polvos para Hornear Sobre, 100 g
+                  - group [ref=e984]:
+                    - link "Base para Hamburguesas (10 Porciones) Sobre, 90 g" [ref=e985] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00780295000657?from=/search
+                      - generic [ref=e986]: Base para Hamburguesas (10 Porciones) Sobre, 90 g
+                    - generic [ref=e988]:
+                      - generic [ref=e991]:
+                        - generic [ref=e992]:
+                          - img "Base para Hamburguesas (10 Porciones) Sobre, 90 g"
+                        - button "Agregar al carro - Base para Hamburguesas (10 Porciones) Sobre, 90 g" [ref=e995] [cursor=pointer]:
+                          - generic "agregar" [ref=e996]: 
+                          - generic [ref=e997]: Agregar
+                      - generic [ref=e999]:
+                        - generic [ref=e1001]:
+                          - generic [ref=e1002]: $850
+                          - generic [ref=e1003]: precio actual $850
+                          - generic [ref=e1004]: $94 x 10g
+                        - generic [ref=e1005]: Maggi
+                        - generic [ref=e1006]: Base para Hamburguesas (10 Porciones) Sobre, 90 g
+                  - group [ref=e1009]:
+                    - link "Base para Pollo Crispy (6 Porciones) Sobre, 80 g" [ref=e1010] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00761303001906?from=/search
+                      - generic [ref=e1011]: Base para Pollo Crispy (6 Porciones) Sobre, 80 g
+                    - generic [ref=e1013]:
+                      - generic [ref=e1016]:
+                        - generic [ref=e1017]:
+                          - img "Base para Pollo Crispy (6 Porciones) Sobre, 80 g"
+                        - button "Agregar al carro - Base para Pollo Crispy (6 Porciones) Sobre, 80 g" [ref=e1020] [cursor=pointer]:
+                          - generic "agregar" [ref=e1021]: 
+                          - generic [ref=e1022]: Agregar
+                      - generic [ref=e1024]:
+                        - generic [ref=e1026]:
+                          - generic [ref=e1027]: $850
+                          - generic [ref=e1028]: precio actual $850
+                          - generic [ref=e1029]: $106 x 10g
+                        - generic [ref=e1030]: Maggi
+                        - generic [ref=e1031]: Base para Pollo Crispy (6 Porciones) Sobre, 80 g
+                  - group [ref=e1034]:
+                    - link "Base para Pescado Frito (5 Porciones) Sobre, 85 g" [ref=e1035] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00780295000442?from=/search
+                      - generic [ref=e1036]: Base para Pescado Frito (5 Porciones) Sobre, 85 g
+                    - generic [ref=e1038]:
+                      - generic [ref=e1041]:
+                        - generic [ref=e1042]:
+                          - img "Base para Pescado Frito (5 Porciones) Sobre, 85 g"
+                        - button "Agregar al carro - Base para Pescado Frito (5 Porciones) Sobre, 85 g" [ref=e1045] [cursor=pointer]:
+                          - generic "agregar" [ref=e1046]: 
+                          - generic [ref=e1047]: Agregar
+                      - generic [ref=e1049]:
+                        - generic [ref=e1051]:
+                          - generic [ref=e1052]: $850
+                          - generic [ref=e1053]: precio actual $850
+                          - generic [ref=e1054]: $100 x 10g
+                        - generic [ref=e1055]: Maggi
+                        - generic [ref=e1056]: Base para Pescado Frito (5 Porciones) Sobre, 85 g
+                  - group [ref=e1059]:
+                    - link "Base para Carne a la Cacerola (6 Porciones) Sobre, 36 g" [ref=e1060] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00761303125982?from=/search
+                      - generic [ref=e1061]: Base para Carne a la Cacerola (6 Porciones) Sobre, 36 g
+                    - generic [ref=e1063]:
+                      - generic [ref=e1066]:
+                        - generic [ref=e1067]:
+                          - img "Base para Carne a la Cacerola (6 Porciones) Sobre, 36 g"
+                        - button "Agregar al carro - Base para Carne a la Cacerola (6 Porciones) Sobre, 36 g" [ref=e1070] [cursor=pointer]:
+                          - generic "agregar" [ref=e1071]: 
+                          - generic [ref=e1072]: Agregar
+                      - generic [ref=e1074]:
+                        - generic [ref=e1076]:
+                          - generic [ref=e1077]: $850
+                          - generic [ref=e1078]: precio actual $850
+                          - generic [ref=e1079]: $236 x 10g
+                        - generic [ref=e1080]: Maggi
+                        - generic [ref=e1081]: Base para Carne a la Cacerola (6 Porciones) Sobre, 36 g
+                  - group [ref=e1084]:
+                    - link "Base para Chapsui (5 Porciones) Sobre, 33 g" [ref=e1085] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00780241035120?from=/search
+                      - generic [ref=e1086]: Base para Chapsui (5 Porciones) Sobre, 33 g
+                    - generic [ref=e1088]:
+                      - generic [ref=e1091]:
+                        - generic [ref=e1092]:
+                          - img "Base para Chapsui (5 Porciones) Sobre, 33 g"
+                        - button "Agregar al carro - Base para Chapsui (5 Porciones) Sobre, 33 g" [ref=e1095] [cursor=pointer]:
+                          - generic "agregar" [ref=e1096]: 
+                          - generic [ref=e1097]: Agregar
+                      - generic [ref=e1099]:
+                        - generic [ref=e1101]:
+                          - generic [ref=e1102]: $830
+                          - generic [ref=e1103]: precio actual $830
+                          - generic [ref=e1104]: $252 x 10g
+                        - generic [ref=e1105]: Gourmet
+                        - generic [ref=e1106]: Base para Chapsui (5 Porciones) Sobre, 33 g
+                  - group [ref=e1109]:
+                    - link "Base para Ají de Gallina (5 Porciones) Sobre, 41 g" [ref=e1110] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00844529031138?from=/search
+                      - generic [ref=e1111]: Base para Ají de Gallina (5 Porciones) Sobre, 41 g
+                    - generic [ref=e1113]:
+                      - generic [ref=e1114]:
+                        - generic [ref=e1115]:
+                          - generic [ref=e1117]: Combina 2 x $1.650
+                          - button "Combina 2 x $1.650. Ver combinaciones aceptadas y coincidir productos." [ref=e1118] [cursor=pointer]: Combinar
+                        - generic [ref=e1119]:
+                          - generic [ref=e1120]:
+                            - img "Base para Ají de Gallina (5 Porciones) Sobre, 41 g"
+                          - button "Agregar al carro - Base para Ají de Gallina (5 Porciones) Sobre, 41 g" [ref=e1123] [cursor=pointer]:
+                            - generic "agregar" [ref=e1124]: 
+                            - generic [ref=e1125]: Agregar
+                      - generic [ref=e1127]:
+                        - generic [ref=e1129]:
+                          - generic [ref=e1130]: $1.050
+                          - generic [ref=e1131]: precio actual $1.050
+                          - generic [ref=e1132]: $256 x 10g
+                        - generic [ref=e1133]: Maggi
+                        - generic [ref=e1134]: Base para Ají de Gallina (5 Porciones) Sobre, 41 g
+                  - group [ref=e1137]:
+                    - link "Base para Pollo Teriyaki (4 Porciones) Sobre, 39 g" [ref=e1138] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00780241000502?from=/search
+                      - generic [ref=e1139]: Base para Pollo Teriyaki (4 Porciones) Sobre, 39 g
+                    - generic [ref=e1141]:
+                      - generic [ref=e1144]:
+                        - generic [ref=e1145]:
+                          - img "Base para Pollo Teriyaki (4 Porciones) Sobre, 39 g"
+                        - button "Agregar al carro - Base para Pollo Teriyaki (4 Porciones) Sobre, 39 g" [ref=e1148] [cursor=pointer]:
+                          - generic "agregar" [ref=e1149]: 
+                          - generic [ref=e1150]: Agregar
+                      - generic [ref=e1152]:
+                        - generic [ref=e1154]:
+                          - generic [ref=e1155]: $830
+                          - generic [ref=e1156]: precio actual $830
+                          - generic [ref=e1157]: $213 x 10g
+                        - generic [ref=e1158]: Gourmet
+                        - generic [ref=e1159]: Base para Pollo Teriyaki (4 Porciones) Sobre, 39 g
+                  - group [ref=e1162]:
+                    - link "Base para Carne Mongoliana (5 Porciones) Sobre, 30 g" [ref=e1163] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00780241000097?from=/search
+                      - generic [ref=e1164]: Base para Carne Mongoliana (5 Porciones) Sobre, 30 g
+                    - generic [ref=e1166]:
+                      - generic [ref=e1169]:
+                        - generic [ref=e1170]:
+                          - img "Base para Carne Mongoliana (5 Porciones) Sobre, 30 g"
+                        - button "Agregar al carro - Base para Carne Mongoliana (5 Porciones) Sobre, 30 g" [ref=e1173] [cursor=pointer]:
+                          - generic "agregar" [ref=e1174]: 
+                          - generic [ref=e1175]: Agregar
+                      - generic [ref=e1177]:
+                        - generic [ref=e1179]:
+                          - generic [ref=e1180]: $830
+                          - generic [ref=e1181]: precio actual $830
+                          - generic [ref=e1182]: $277 x 10g
+                        - generic [ref=e1183]: Gourmet
+                        - generic [ref=e1184]: Base para Carne Mongoliana (5 Porciones) Sobre, 30 g
+                  - group [ref=e1187]:
+                    - link "Base para Carne Mongoliana (5 Porciones) Sobre, 30 g" [ref=e1188] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00780241000485?from=/search
+                      - generic [ref=e1189]: Base para Carne Mongoliana (5 Porciones) Sobre, 30 g
+                    - generic [ref=e1191]:
+                      - generic [ref=e1194]:
+                        - generic [ref=e1195]:
+                          - img "Base para Carne Mongoliana (5 Porciones) Sobre, 30 g"
+                        - button "Agregar al carro - Base para Carne Mongoliana (5 Porciones) Sobre, 30 g" [ref=e1198] [cursor=pointer]:
+                          - generic "agregar" [ref=e1199]: 
+                          - generic [ref=e1200]: Agregar
+                      - generic [ref=e1202]:
+                        - generic [ref=e1204]:
+                          - generic [ref=e1205]: $660
+                          - generic [ref=e1206]: precio actual $660
+                          - generic [ref=e1207]: $220 x 10g
+                        - generic [ref=e1208]: Lider
+                        - generic [ref=e1209]: Base para Carne Mongoliana (5 Porciones) Sobre, 30 g
+                  - group [ref=e1212]:
+                    - link "Base para Cazuela (5 Porciones) Sobre, 70 g" [ref=e1213] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00844529079491?from=/search
+                      - generic [ref=e1214]: Base para Cazuela (5 Porciones) Sobre, 70 g
+                    - generic [ref=e1216]:
+                      - generic [ref=e1219]:
+                        - generic [ref=e1220]:
+                          - img "Base para Cazuela (5 Porciones) Sobre, 70 g"
+                        - button "Agregar al carro - Base para Cazuela (5 Porciones) Sobre, 70 g" [ref=e1223] [cursor=pointer]:
+                          - generic "agregar" [ref=e1224]: 
+                          - generic [ref=e1225]: Agregar
+                      - generic [ref=e1227]:
+                        - generic [ref=e1229]:
+                          - generic [ref=e1230]: $850
+                          - generic [ref=e1231]: precio actual $850
+                          - generic [ref=e1232]: $121 x 10g
+                        - generic [ref=e1233]: Maggi
+                        - generic [ref=e1234]: Base para Cazuela (5 Porciones) Sobre, 70 g
+                  - group [ref=e1237]:
+                    - link "Base para Lomo Saltado (5 Porciones) Sobre, 26 g" [ref=e1238] [cursor=pointer]:
+                      - /url: /ip/alimentos-instantaneos/00844529031132?from=/search
+                      - generic [ref=e1239]: Base para Lomo Saltado (5 Porciones) Sobre, 26 g
+                    - generic [ref=e1241]:
+                      - generic [ref=e1242]:
+                        - generic [ref=e1243]:
+                          - generic [ref=e1245]: Combina 2 x $1.650
+                          - button "Combina 2 x $1.650. Ver combinaciones aceptadas y coincidir productos." [ref=e1246] [cursor=pointer]: Combinar
+                        - generic [ref=e1247]:
+                          - generic [ref=e1248]:
+                            - img "Base para Lomo Saltado (5 Porciones) Sobre, 26 g"
+                          - button "Agregar al carro - Base para Lomo Saltado (5 Porciones) Sobre, 26 g" [ref=e1251] [cursor=pointer]:
+                            - generic "agregar" [ref=e1252]: 
+                            - generic [ref=e1253]: Agregar
+                      - generic [ref=e1255]:
+                        - generic [ref=e1257]:
+                          - generic [ref=e1258]: $1.050
+                          - generic [ref=e1259]: precio actual $1.050
+                          - generic [ref=e1260]: $404 x 10g
+                        - generic [ref=e1261]: Maggi
+                        - generic [ref=e1262]: Base para Lomo Saltado (5 Porciones) Sobre, 26 g
+            - navigation "paginación" [ref=e1265]:
+              - list [ref=e1266]:
+                - listitem [ref=e1267]
+                - listitem [ref=e1269]:
+                  - link "1" [ref=e1270] [cursor=pointer]:
+                    - /url: /search?q=sopa+sobre+para+uno
+                - listitem [ref=e1271]:
+                  - link "Ir a la página 2" [ref=e1272] [cursor=pointer]:
+                    - /url: /search?q=sopa+sobre+para+uno&page=2
+                    - text: "2"
+                - listitem [ref=e1273]:
+                  - link "Ir a la página 3" [ref=e1274] [cursor=pointer]:
+                    - /url: /search?q=sopa+sobre+para+uno&page=3
+                    - text: "3"
+                - listitem [ref=e1275]:
+                  - link "Página siguiente" [ref=e1276] [cursor=pointer]:
+                    - /url: /search?q=sopa+sobre+para+uno&page=2
+                    - generic [ref=e1277]: 
+  - alert [ref=e1285]

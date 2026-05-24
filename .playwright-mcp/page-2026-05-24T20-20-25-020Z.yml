@@ -1,0 +1,917 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: bolsas basura mediana
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e80]:
+            - generic [ref=e81]:
+              - generic [ref=e84]:
+                - generic [ref=e85]:
+                  - button "Precio" [ref=e88]:
+                    - generic [ref=e89]: Precio
+                    - img [ref=e90]: 
+                  - separator [ref=e91]
+                - generic [ref=e92]:
+                  - button "Campaña" [ref=e95]:
+                    - generic [ref=e96]: Campaña
+                    - img [ref=e97]: 
+                  - separator [ref=e98]
+                - generic [ref=e99]:
+                  - button "Marca" [ref=e102]:
+                    - generic [ref=e103]: Marca
+                    - img [ref=e104]: 
+                  - separator [ref=e105]
+                - generic [ref=e106]:
+                  - button "Categoría" [ref=e109]:
+                    - generic [ref=e110]: Categoría
+                    - img [ref=e111]: 
+                  - separator [ref=e112]
+              - generic [ref=e115]:
+                - heading "Resultados para bolsas basura mediana (87)" [level=2] [ref=e123]: Resultados para bolsas basura mediana(87)
+                - generic [ref=e124]:
+                  - group [ref=e127]:
+                    - link "Bolsa de Basura Mediana 70x90 cm, 10 Un" [ref=e128] [cursor=pointer]:
+                      - /url: /ip/mas-sustentables/00780681080044?from=/search
+                      - generic [ref=e129]: Bolsa de Basura Mediana 70x90 cm, 10 Un
+                    - generic [ref=e131]:
+                      - generic [ref=e134]:
+                        - img "Bolsa de Basura Mediana 70x90 cm, 10 Un" [ref=e136]
+                        - button "Agregar al carro - Bolsa de Basura Mediana 70x90 cm, 10 Un" [ref=e139] [cursor=pointer]:
+                          - generic "agregar" [ref=e140]: 
+                          - generic [ref=e141]: Agregar
+                      - generic [ref=e143]:
+                        - generic [ref=e145]:
+                          - generic [ref=e146]: $1.190
+                          - generic [ref=e147]: precio actual $1.190
+                          - generic [ref=e148]: $119 x un
+                        - generic [ref=e149]: Virutex
+                        - generic [ref=e150]: Bolsa de Basura Mediana 70x90 cm, 10 Un
+                  - group [ref=e153]:
+                    - link "Bolsa de Basura Mediana 70x90 cm, 10 Un" [ref=e154] [cursor=pointer]:
+                      - /url: /ip/accesorios-aseo/00780187506936?from=/search
+                      - generic [ref=e155]: Bolsa de Basura Mediana 70x90 cm, 10 Un
+                    - generic [ref=e157]:
+                      - generic [ref=e160]:
+                        - img "Bolsa de Basura Mediana 70x90 cm, 10 Un" [ref=e162]
+                        - button "Agregar al carro - Bolsa de Basura Mediana 70x90 cm, 10 Un" [ref=e165] [cursor=pointer]:
+                          - generic "agregar" [ref=e166]: 
+                          - generic [ref=e167]: Agregar
+                      - generic [ref=e169]:
+                        - generic [ref=e171]:
+                          - generic [ref=e172]: $890
+                          - generic [ref=e173]: precio actual $890
+                          - generic [ref=e174]: $89 x un
+                        - generic [ref=e175]: Superior
+                        - generic [ref=e176]: Bolsa de Basura Mediana 70x90 cm, 10 Un
+                  - group [ref=e179]:
+                    - link "Bolsa de Basura Mediana 70x90 cm, 50 Un" [ref=e180] [cursor=pointer]:
+                      - /url: /ip/accesorios-aseo/00040005048630?from=/search
+                      - generic [ref=e181]: Bolsa de Basura Mediana 70x90 cm, 50 Un
+                    - generic [ref=e183]:
+                      - generic [ref=e186]:
+                        - img "Bolsa de Basura Mediana 70x90 cm, 50 Un" [ref=e188]
+                        - button "Agregar al carro - Bolsa de Basura Mediana 70x90 cm, 50 Un" [ref=e191] [cursor=pointer]:
+                          - generic "agregar" [ref=e192]: 
+                          - generic [ref=e193]: Agregar
+                      - generic [ref=e195]:
+                        - generic [ref=e197]:
+                          - generic [ref=e198]: $3.990
+                          - generic [ref=e199]: precio actual $3.990
+                          - generic [ref=e200]: $80 x un
+                        - generic [ref=e201]: Lider
+                        - generic [ref=e202]: Bolsa de Basura Mediana 70x90 cm, 50 Un
+                  - group [ref=e205]:
+                    - link "Bolsa de Basura Mediana con Asas 76x84 cm, 20 Un" [ref=e206] [cursor=pointer]:
+                      - /url: /ip/accesorios-aseo/00062891564391?from=/search
+                      - generic [ref=e207]: Bolsa de Basura Mediana con Asas 76x84 cm, 20 Un
+                    - generic [ref=e209]:
+                      - generic [ref=e212]:
+                        - img "Bolsa de Basura Mediana con Asas 76x84 cm, 20 Un" [ref=e214]
+                        - button "Agregar al carro - Bolsa de Basura Mediana con Asas 76x84 cm, 20 Un" [ref=e217] [cursor=pointer]:
+                          - generic "agregar" [ref=e218]: 
+                          - generic [ref=e219]: Agregar
+                      - generic [ref=e221]:
+                        - generic [ref=e223]:
+                          - generic [ref=e224]: $3.590
+                          - generic [ref=e225]: precio actual $3.590
+                          - generic [ref=e226]: $180 x un
+                        - generic [ref=e227]: Great Value
+                        - generic [ref=e228]: Bolsa de Basura Mediana con Asas 76x84 cm, 20 Un
+                  - group [ref=e231]:
+                    - link "Bolsa de Basura Mediana 70x90 cm, 20 Un" [ref=e232] [cursor=pointer]:
+                      - /url: /ip/accesorios-aseo/00040000706476?from=/search
+                      - generic [ref=e233]: Bolsa de Basura Mediana 70x90 cm, 20 Un
+                    - generic [ref=e235]:
+                      - generic [ref=e238]:
+                        - img "Bolsa de Basura Mediana 70x90 cm, 20 Un" [ref=e240]
+                        - button "Agregar al carro - Bolsa de Basura Mediana 70x90 cm, 20 Un" [ref=e243] [cursor=pointer]:
+                          - generic "agregar" [ref=e244]: 
+                          - generic [ref=e245]: Agregar
+                      - generic [ref=e247]:
+                        - generic [ref=e249]:
+                          - generic [ref=e250]: $1.750
+                          - generic [ref=e251]: precio actual $1.750
+                          - generic [ref=e252]: $88 x un
+                        - generic [ref=e253]: Lider
+                        - generic [ref=e254]: Bolsa de Basura Mediana 70x90 cm, 20 Un
+                  - generic [ref=e256]:
+                    - group [ref=e257]:
+                      - link "Bolsa de Basura Mediana con Asas 70x90 cm, 10 Un" [ref=e258] [cursor=pointer]:
+                        - /url: /ip/accesorios-aseo/00780187500194?from=/search
+                        - generic [ref=e259]: Bolsa de Basura Mediana con Asas 70x90 cm, 10 Un
+                      - generic [ref=e261]:
+                        - img "Bolsa de Basura Mediana con Asas 70x90 cm, 10 Un" [ref=e266]
+                        - generic [ref=e268]:
+                          - generic [ref=e270]:
+                            - generic [ref=e271]: $1.090
+                            - generic [ref=e272]: precio actual $1.090
+                            - generic [ref=e273]: $109 x un
+                          - generic [ref=e274]: Superior
+                          - generic [ref=e275]: Bolsa de Basura Mediana con Asas 70x90 cm, 10 Un
+                          - generic [ref=e276]: Agotado
+                    - button "Revisar productos similares - Bolsa de Basura Mediana con Asas 70x90 cm, 10 Un" [ref=e278]: Revisar productos similares
+                  - group [ref=e281]:
+                    - link "Bolsa de Basura Mediana 70x90 cm, 10 Un" [ref=e282] [cursor=pointer]:
+                      - /url: /ip/accesorios-aseo/00780187515005?from=/search
+                      - generic [ref=e283]: Bolsa de Basura Mediana 70x90 cm, 10 Un
+                    - generic [ref=e285]:
+                      - generic [ref=e286]:
+                        - generic [ref=e288]:
+                          - generic [ref=e290]: 
+                          - text: Rebaja
+                        - generic [ref=e291]:
+                          - img "Bolsa de Basura Mediana 70x90 cm, 10 Un" [ref=e293]
+                          - button "Agregar al carro - Bolsa de Basura Mediana 70x90 cm, 10 Un" [ref=e296] [cursor=pointer]:
+                            - generic "agregar" [ref=e297]: 
+                            - generic [ref=e298]: Agregar
+                      - generic [ref=e300]:
+                        - generic [ref=e302]:
+                          - generic [ref=e303]: $1.290
+                          - generic [ref=e304]: precio actual $1.290, Costaba $1.690
+                          - generic [ref=e305]: $129 x un
+                          - generic [ref=e306]: $1.690
+                          - generic [ref=e307]: Ahorra $400
+                        - generic [ref=e308]: Basulip
+                        - generic [ref=e309]: Bolsa de Basura Mediana 70x90 cm, 10 Un
+                  - group [ref=e312]:
+                    - link "Bolsa de Basura Mediana 70x90 cm, 20 Un" [ref=e313] [cursor=pointer]:
+                      - /url: /ip/accesorios-aseo/00780187500129?from=/search
+                      - generic [ref=e314]: Bolsa de Basura Mediana 70x90 cm, 20 Un
+                    - generic [ref=e316]:
+                      - generic [ref=e319]:
+                        - img "Bolsa de Basura Mediana 70x90 cm, 20 Un" [ref=e321]
+                        - button "Agregar al carro - Bolsa de Basura Mediana 70x90 cm, 20 Un" [ref=e324] [cursor=pointer]:
+                          - generic "agregar" [ref=e325]: 
+                          - generic [ref=e326]: Agregar
+                      - generic [ref=e328]:
+                        - generic [ref=e330]:
+                          - generic [ref=e331]: $2.250
+                          - generic [ref=e332]: precio actual $2.250
+                          - generic [ref=e333]: $112 x un
+                        - generic [ref=e334]: Superior
+                        - generic [ref=e335]: Bolsa de Basura Mediana 70x90 cm, 20 Un
+                  - group [ref=e338]:
+                    - link "Bolsa mediana femenina, producto surtido, 1 un" [ref=e339] [cursor=pointer]:
+                      - /url: /ip/regaleria/00061136781126?from=/search
+                      - generic [ref=e340]: Bolsa mediana femenina, producto surtido, 1 un
+                    - generic [ref=e342]:
+                      - generic [ref=e345]:
+                        - img "Bolsa mediana femenina, producto surtido, 1 un" [ref=e347]
+                        - button "Agregar al carro - Bolsa mediana femenina, producto surtido, 1 un" [ref=e350] [cursor=pointer]:
+                          - generic "agregar" [ref=e351]: 
+                          - generic [ref=e352]: Agregar
+                      - generic [ref=e354]:
+                        - generic [ref=e356]:
+                          - generic [ref=e357]: $1.690
+                          - generic [ref=e358]: precio actual $1.690
+                          - generic [ref=e359]: $1.690 x un
+                        - generic [ref=e360]: Happydays
+                        - generic [ref=e361]: Bolsa mediana femenina, producto surtido, 1 un
+                  - group [ref=e364]:
+                    - link "Bolsa de Basura Pequeña con Asas 50x65 cm, 10 Un" [ref=e365] [cursor=pointer]:
+                      - /url: /ip/accesorios-aseo/00780187500180?from=/search
+                      - generic [ref=e366]: Bolsa de Basura Pequeña con Asas 50x65 cm, 10 Un
+                    - generic [ref=e368]:
+                      - generic [ref=e371]:
+                        - img "Bolsa de Basura Pequeña con Asas 50x65 cm, 10 Un" [ref=e373]
+                        - button "Agregar al carro - Bolsa de Basura Pequeña con Asas 50x65 cm, 10 Un" [ref=e376] [cursor=pointer]:
+                          - generic "agregar" [ref=e377]: 
+                          - generic [ref=e378]: Agregar
+                      - generic [ref=e380]:
+                        - generic [ref=e382]:
+                          - generic [ref=e383]: $520
+                          - generic [ref=e384]: precio actual $520
+                          - generic [ref=e385]: $52 x un
+                        - generic [ref=e386]: Superior
+                        - generic [ref=e387]: Bolsa de Basura Pequeña con Asas 50x65 cm, 10 Un
+                  - group [ref=e390]:
+                    - link "Bolsa de Basura Pequeña 50x70 cm, 10 Un" [ref=e391] [cursor=pointer]:
+                      - /url: /ip/accesorios-aseo/00040000642486?from=/search
+                      - generic [ref=e392]: Bolsa de Basura Pequeña 50x70 cm, 10 Un
+                    - generic [ref=e394]:
+                      - generic [ref=e397]:
+                        - img "Bolsa de Basura Pequeña 50x70 cm, 10 Un" [ref=e399]
+                        - button "Agregar al carro - Bolsa de Basura Pequeña 50x70 cm, 10 Un" [ref=e402] [cursor=pointer]:
+                          - generic "agregar" [ref=e403]: 
+                          - generic [ref=e404]: Agregar
+                      - generic [ref=e406]:
+                        - generic [ref=e408]:
+                          - generic [ref=e409]: $450
+                          - generic [ref=e410]: precio actual $450
+                          - generic [ref=e411]: $45 x un
+                        - generic [ref=e412]: Lider
+                        - generic [ref=e413]: Bolsa de Basura Pequeña 50x70 cm, 10 Un
+                  - group [ref=e416]:
+                    - link "Bolsa de Basura Pequeña 50x70 cm, 50 Un" [ref=e417] [cursor=pointer]:
+                      - /url: /ip/accesorios-aseo/00040005048629?from=/search
+                      - generic [ref=e418]: Bolsa de Basura Pequeña 50x70 cm, 50 Un
+                    - generic [ref=e420]:
+                      - generic [ref=e423]:
+                        - img "Bolsa de Basura Pequeña 50x70 cm, 50 Un" [ref=e425]
+                        - button "Agregar al carro - Bolsa de Basura Pequeña 50x70 cm, 50 Un" [ref=e428] [cursor=pointer]:
+                          - generic "agregar" [ref=e429]: 
+                          - generic [ref=e430]: Agregar
+                      - generic [ref=e432]:
+                        - generic [ref=e434]:
+                          - generic [ref=e435]: $2.000
+                          - generic [ref=e436]: precio actual $2.000
+                          - generic [ref=e437]: $40 x un
+                        - generic [ref=e438]: Lider
+                        - generic [ref=e439]: Bolsa de Basura Pequeña 50x70 cm, 50 Un
+                  - generic [ref=e441]:
+                    - group [ref=e442]:
+                      - link "Bolsa de Basura Grande 80x110 cm, 10 Un" [ref=e443] [cursor=pointer]:
+                        - /url: /ip/mas-sustentables/00780681080045?from=/search
+                        - generic [ref=e444]: Bolsa de Basura Grande 80x110 cm, 10 Un
+                      - generic [ref=e446]:
+                        - generic [ref=e447]:
+                          - generic [ref=e449]:
+                            - generic [ref=e451]: 
+                            - text: Rebaja
+                          - img "Bolsa de Basura Grande 80x110 cm, 10 Un" [ref=e454]
+                        - generic [ref=e456]:
+                          - generic [ref=e458]:
+                            - generic [ref=e459]: $1.250
+                            - generic [ref=e460]: precio actual $1.250, Costaba $1.590
+                            - generic [ref=e461]: $125 x un
+                            - generic [ref=e462]: $1.590
+                          - generic [ref=e463]: Virutex
+                          - generic [ref=e464]: Bolsa de Basura Grande 80x110 cm, 10 Un
+                          - generic [ref=e465]: Agotado
+                    - button "Revisar productos similares - Bolsa de Basura Grande 80x110 cm, 10 Un" [ref=e467]: Revisar productos similares
+                  - group [ref=e470]:
+                    - link "Bolsa de Basura Pequeña Baño 45x55 cm, 20 Un" [ref=e471] [cursor=pointer]:
+                      - /url: /ip/accesorios-aseo/00780187506945?from=/search
+                      - generic [ref=e472]: Bolsa de Basura Pequeña Baño 45x55 cm, 20 Un
+                    - generic [ref=e474]:
+                      - generic [ref=e477]:
+                        - img "Bolsa de Basura Pequeña Baño 45x55 cm, 20 Un" [ref=e479]
+                        - button "Agregar al carro - Bolsa de Basura Pequeña Baño 45x55 cm, 20 Un" [ref=e482] [cursor=pointer]:
+                          - generic "agregar" [ref=e483]: 
+                          - generic [ref=e484]: Agregar
+                      - generic [ref=e486]:
+                        - generic [ref=e488]:
+                          - generic [ref=e489]: $1.350
+                          - generic [ref=e490]: precio actual $1.350
+                          - generic [ref=e491]: $68 x un
+                        - generic [ref=e492]: Superior
+                        - generic [ref=e493]: Bolsa de Basura Pequeña Baño 45x55 cm, 20 Un
+                  - group [ref=e496]:
+                    - link "Bolsa de Basura Aroma Lavanda 50x70 cm Pequeña, 10 Un" [ref=e497] [cursor=pointer]:
+                      - /url: /ip/mas-sustentables/00780681002445?from=/search
+                      - generic [ref=e498]: Bolsa de Basura Aroma Lavanda 50x70 cm Pequeña, 10 Un
+                    - generic [ref=e500]:
+                      - generic [ref=e503]:
+                        - img "Bolsa de Basura Aroma Lavanda 50x70 cm Pequeña, 10 Un" [ref=e505]
+                        - button "Agregar al carro - Bolsa de Basura Aroma Lavanda 50x70 cm Pequeña, 10 Un" [ref=e508] [cursor=pointer]:
+                          - generic "agregar" [ref=e509]: 
+                          - generic [ref=e510]: Agregar
+                      - generic [ref=e512]:
+                        - generic [ref=e514]:
+                          - generic [ref=e515]: $1.250
+                          - generic [ref=e516]: precio actual $1.250
+                          - generic [ref=e517]: $1.250 x un
+                        - generic [ref=e518]: Virutex
+                        - generic [ref=e519]: Bolsa de Basura Aroma Lavanda 50x70 cm Pequeña, 10 Un
+                  - group [ref=e522]:
+                    - link "Bolsa de Basura Aroma Vainilla 50x70 cm Pequeña, 10 Un" [ref=e523] [cursor=pointer]:
+                      - /url: /ip/mas-sustentables/00780681002446?from=/search
+                      - generic [ref=e524]: Bolsa de Basura Aroma Vainilla 50x70 cm Pequeña, 10 Un
+                    - generic [ref=e526]:
+                      - generic [ref=e529]:
+                        - img "Bolsa de Basura Aroma Vainilla 50x70 cm Pequeña, 10 Un" [ref=e531]
+                        - button "Agregar al carro - Bolsa de Basura Aroma Vainilla 50x70 cm Pequeña, 10 Un" [ref=e534] [cursor=pointer]:
+                          - generic "agregar" [ref=e535]: 
+                          - generic [ref=e536]: Agregar
+                      - generic [ref=e538]:
+                        - generic [ref=e540]:
+                          - generic [ref=e541]: $1.250
+                          - generic [ref=e542]: precio actual $1.250
+                          - generic [ref=e543]: $1.250 x un
+                        - generic [ref=e544]: Virutex
+                        - generic [ref=e545]: Bolsa de Basura Aroma Vainilla 50x70 cm Pequeña, 10 Un
+                  - group [ref=e548]:
+                    - link "Bolsa de Basura Pequeña 50x70 cm, 10 Un" [ref=e549] [cursor=pointer]:
+                      - /url: /ip/accesorios-aseo/00780187506935?from=/search
+                      - generic [ref=e550]: Bolsa de Basura Pequeña 50x70 cm, 10 Un
+                    - generic [ref=e552]:
+                      - generic [ref=e553]:
+                        - generic [ref=e555]: 2 x $1.290
+                        - generic [ref=e556]:
+                          - generic [ref=e557]:
+                            - img "Bolsa de Basura Pequeña 50x70 cm, 10 Un"
+                          - button "Agregar al carro - Bolsa de Basura Pequeña 50x70 cm, 10 Un" [ref=e560] [cursor=pointer]:
+                            - generic "agregar" [ref=e561]: 
+                            - generic [ref=e562]: Agregar
+                      - generic [ref=e564]:
+                        - generic [ref=e566]:
+                          - generic [ref=e567]: $750
+                          - generic [ref=e568]: precio actual $750
+                          - generic [ref=e569]: $75 x un
+                        - generic [ref=e570]: Superior
+                        - generic [ref=e571]: Bolsa de Basura Pequeña 50x70 cm, 10 Un
+                  - group [ref=e574]:
+                    - link "Bolsa de Basura Grande 80x110 cm, 10 Un" [ref=e575] [cursor=pointer]:
+                      - /url: /ip/accesorios-aseo/00780187506915?from=/search
+                      - generic [ref=e576]: Bolsa de Basura Grande 80x110 cm, 10 Un
+                    - generic [ref=e578]:
+                      - generic [ref=e579]:
+                        - generic [ref=e581]:
+                          - generic [ref=e583]: 
+                          - text: Rebaja
+                        - generic [ref=e584]:
+                          - generic [ref=e585]:
+                            - img "Bolsa de Basura Grande 80x110 cm, 10 Un"
+                          - button "Agregar al carro - Bolsa de Basura Grande 80x110 cm, 10 Un" [ref=e588] [cursor=pointer]:
+                            - generic "agregar" [ref=e589]: 
+                            - generic [ref=e590]: Agregar
+                      - generic [ref=e592]:
+                        - generic [ref=e594]:
+                          - generic [ref=e595]: $1.250
+                          - generic [ref=e596]: precio actual $1.250, Costaba $1.590
+                          - generic [ref=e597]: $125 x un
+                          - generic [ref=e598]: $1.590
+                          - generic [ref=e599]: Ahorra $340
+                        - generic [ref=e600]: Superior
+                        - generic [ref=e601]: Bolsa de Basura Grande 80x110 cm, 10 Un
+                  - group [ref=e604]:
+                    - link "Bolsa de Basura Pequeña 50x70 cm, 10 Un" [ref=e605] [cursor=pointer]:
+                      - /url: /ip/mas-sustentables/00780681080043?from=/search
+                      - generic [ref=e606]: Bolsa de Basura Pequeña 50x70 cm, 10 Un
+                    - generic [ref=e608]:
+                      - generic [ref=e611]:
+                        - generic [ref=e612]:
+                          - img "Bolsa de Basura Pequeña 50x70 cm, 10 Un"
+                        - button "Agregar al carro - Bolsa de Basura Pequeña 50x70 cm, 10 Un" [ref=e615] [cursor=pointer]:
+                          - generic "agregar" [ref=e616]: 
+                          - generic [ref=e617]: Agregar
+                      - generic [ref=e619]:
+                        - generic [ref=e621]:
+                          - generic [ref=e622]: $790
+                          - generic [ref=e623]: precio actual $790
+                          - generic [ref=e624]: $79 x un
+                        - generic [ref=e625]: Virutex
+                        - generic [ref=e626]: Bolsa de Basura Pequeña 50x70 cm, 10 Un
+                  - group [ref=e629]:
+                    - link "Bolsa de Basura Blanca 50x65 cm Con Asas, 10 Un" [ref=e630] [cursor=pointer]:
+                      - /url: /ip/mas-sustentables/00780681002488?from=/search
+                      - generic [ref=e631]: Bolsa de Basura Blanca 50x65 cm Con Asas, 10 Un
+                    - generic [ref=e633]:
+                      - generic [ref=e636]:
+                        - generic [ref=e637]:
+                          - img "Bolsa de Basura Blanca 50x65 cm Con Asas, 10 Un"
+                        - button "Agregar al carro - Bolsa de Basura Blanca 50x65 cm Con Asas, 10 Un" [ref=e640] [cursor=pointer]:
+                          - generic "agregar" [ref=e641]: 
+                          - generic [ref=e642]: Agregar
+                      - generic [ref=e644]:
+                        - generic [ref=e646]:
+                          - generic [ref=e647]: $530
+                          - generic [ref=e648]: precio actual $530
+                          - generic [ref=e649]: $530 x un
+                        - generic [ref=e650]: Virutex
+                        - generic [ref=e651]: Bolsa de Basura Blanca 50x65 cm Con Asas, 10 Un
+                  - group [ref=e654]:
+                    - link "Bolsa de Basura Pequeña para Papelero 50x55 cm, 30 Un" [ref=e655] [cursor=pointer]:
+                      - /url: /ip/accesorios-aseo/00040000706477?from=/search
+                      - generic [ref=e656]: Bolsa de Basura Pequeña para Papelero 50x55 cm, 30 Un
+                    - generic [ref=e658]:
+                      - generic [ref=e661]:
+                        - generic [ref=e662]:
+                          - img "Bolsa de Basura Pequeña para Papelero 50x55 cm, 30 Un"
+                        - button "Agregar al carro - Bolsa de Basura Pequeña para Papelero 50x55 cm, 30 Un" [ref=e665] [cursor=pointer]:
+                          - generic "agregar" [ref=e666]: 
+                          - generic [ref=e667]: Agregar
+                      - generic [ref=e669]:
+                        - generic [ref=e671]:
+                          - generic [ref=e672]: $1.250
+                          - generic [ref=e673]: precio actual $1.250
+                          - generic [ref=e674]: $42 x un
+                        - generic [ref=e675]: Lider
+                        - generic [ref=e676]: Bolsa de Basura Pequeña para Papelero 50x55 cm, 30 Un
+                  - group [ref=e679]:
+                    - link "Bolsa de Basura Mascota 22x35 cm, 30 Un" [ref=e680] [cursor=pointer]:
+                      - /url: /ip/accesorios-aseo/00780187500250?from=/search
+                      - generic [ref=e681]: Bolsa de Basura Mascota 22x35 cm, 30 Un
+                    - generic [ref=e683]:
+                      - generic [ref=e686]:
+                        - generic [ref=e687]:
+                          - img "Bolsa de Basura Mascota 22x35 cm, 30 Un"
+                        - button "Agregar al carro - Bolsa de Basura Mascota 22x35 cm, 30 Un" [ref=e690] [cursor=pointer]:
+                          - generic "agregar" [ref=e691]: 
+                          - generic [ref=e692]: Agregar
+                      - generic [ref=e694]:
+                        - generic [ref=e696]:
+                          - generic [ref=e697]: $500
+                          - generic [ref=e698]: precio actual $500
+                          - generic [ref=e699]: $17 x un
+                        - generic [ref=e700]: Superior
+                        - generic [ref=e701]: Bolsa de Basura Mascota 22x35 cm, 30 Un
+                  - group [ref=e704]:
+                    - link "Bolsa de Basura Grande Carga Pesada 80x120 cm, 10 Un" [ref=e705] [cursor=pointer]:
+                      - /url: /ip/accesorios-aseo/00780187506917?from=/search
+                      - generic [ref=e706]: Bolsa de Basura Grande Carga Pesada 80x120 cm, 10 Un
+                    - generic [ref=e708]:
+                      - generic [ref=e711]:
+                        - generic [ref=e712]:
+                          - img "Bolsa de Basura Grande Carga Pesada 80x120 cm, 10 Un"
+                        - button "Agregar al carro - Bolsa de Basura Grande Carga Pesada 80x120 cm, 10 Un" [ref=e715] [cursor=pointer]:
+                          - generic "agregar" [ref=e716]: 
+                          - generic [ref=e717]: Agregar
+                      - generic [ref=e719]:
+                        - generic [ref=e721]:
+                          - generic [ref=e722]: $3.190
+                          - generic [ref=e723]: precio actual $3.190
+                          - generic [ref=e724]: $319 x un
+                        - generic [ref=e725]: Superior
+                        - generic [ref=e726]: Bolsa de Basura Grande Carga Pesada 80x120 cm, 10 Un
+                  - group [ref=e729]:
+                    - link "Bolsa de Basura Con Asas 50x65 cm, 10 Un" [ref=e730] [cursor=pointer]:
+                      - /url: /ip/accesorios-aseo/00780681080089?from=/search
+                      - generic [ref=e731]: Bolsa de Basura Con Asas 50x65 cm, 10 Un
+                    - generic [ref=e733]:
+                      - generic [ref=e736]:
+                        - generic [ref=e737]:
+                          - img "Bolsa de Basura Con Asas 50x65 cm, 10 Un"
+                        - button "Agregar al carro - Bolsa de Basura Con Asas 50x65 cm, 10 Un" [ref=e740] [cursor=pointer]:
+                          - generic "agregar" [ref=e741]: 
+                          - generic [ref=e742]: Agregar
+                      - generic [ref=e744]:
+                        - generic [ref=e746]:
+                          - generic [ref=e747]: $480
+                          - generic [ref=e748]: precio actual $480
+                          - generic [ref=e749]: $48 x un
+                        - generic [ref=e750]: Virutex
+                        - generic [ref=e751]: Bolsa de Basura Con Asas 50x65 cm, 10 Un
+                  - generic [ref=e753]:
+                    - group [ref=e754]:
+                      - link "Bolsa de Basura Grande Jardín 80x120 cm, 10 Un" [ref=e755] [cursor=pointer]:
+                        - /url: /ip/mas-sustentables/00780681080047?from=/search
+                        - generic [ref=e756]: Bolsa de Basura Grande Jardín 80x120 cm, 10 Un
+                      - generic [ref=e758]:
+                        - generic [ref=e762]:
+                          - img "Bolsa de Basura Grande Jardín 80x120 cm, 10 Un"
+                        - generic [ref=e764]:
+                          - generic [ref=e766]:
+                            - generic [ref=e767]: $3.390
+                            - generic [ref=e768]: precio actual $3.390
+                            - generic [ref=e769]: $3.390 x un
+                          - generic [ref=e770]: Virutex
+                          - generic [ref=e771]: Bolsa de Basura Grande Jardín 80x120 cm, 10 Un
+                          - generic [ref=e772]: Agotado
+                    - button "Revisar productos similares - Bolsa de Basura Grande Jardín 80x120 cm, 10 Un" [ref=e774]: Revisar productos similares
+                  - group [ref=e777]:
+                    - link "Bolsa de Basura Pequeña Blanca 50x55 cm, 20 Un" [ref=e778] [cursor=pointer]:
+                      - /url: /ip/mas-sustentables/00780681080031?from=/search
+                      - generic [ref=e779]: Bolsa de Basura Pequeña Blanca 50x55 cm, 20 Un
+                    - generic [ref=e781]:
+                      - generic [ref=e784]:
+                        - generic [ref=e785]:
+                          - img "Bolsa de Basura Pequeña Blanca 50x55 cm, 20 Un"
+                        - button "Agregar al carro - Bolsa de Basura Pequeña Blanca 50x55 cm, 20 Un" [ref=e788] [cursor=pointer]:
+                          - generic "agregar" [ref=e789]: 
+                          - generic [ref=e790]: Agregar
+                      - generic [ref=e792]:
+                        - generic [ref=e794]:
+                          - generic [ref=e795]: $1.690
+                          - generic [ref=e796]: precio actual $1.690
+                        - generic [ref=e797]: Virutex
+                        - generic [ref=e798]: Bolsa de Basura Pequeña Blanca 50x55 cm, 20 Un
+                  - group [ref=e801]:
+                    - link "Bolsa de Basura Pequeña Cocina 60x65 cm, 10 Un" [ref=e802] [cursor=pointer]:
+                      - /url: /ip/accesorios-aseo/00780187500137?from=/search
+                      - generic [ref=e803]: Bolsa de Basura Pequeña Cocina 60x65 cm, 10 Un
+                    - generic [ref=e805]:
+                      - generic [ref=e808]:
+                        - generic [ref=e809]:
+                          - img "Bolsa de Basura Pequeña Cocina 60x65 cm, 10 Un"
+                        - button "Agregar al carro - Bolsa de Basura Pequeña Cocina 60x65 cm, 10 Un" [ref=e812] [cursor=pointer]:
+                          - generic "agregar" [ref=e813]: 
+                          - generic [ref=e814]: Agregar
+                      - generic [ref=e816]:
+                        - generic [ref=e818]:
+                          - generic [ref=e819]: $1.390
+                          - generic [ref=e820]: precio actual $1.390
+                          - generic [ref=e821]: $139 x un
+                        - generic [ref=e822]: Superior
+                        - generic [ref=e823]: Bolsa de Basura Pequeña Cocina 60x65 cm, 10 Un
+                  - group [ref=e826]:
+                    - link "Bolsa de Basura Pequeña Blanca 50x70 cm, 10 Un" [ref=e827] [cursor=pointer]:
+                      - /url: /ip/mas-sustentables/00780681080041?from=/search
+                      - generic [ref=e828]: Bolsa de Basura Pequeña Blanca 50x70 cm, 10 Un
+                    - generic [ref=e830]:
+                      - generic [ref=e831]:
+                        - generic [ref=e833]:
+                          - generic [ref=e835]: 
+                          - text: Rebaja
+                        - generic [ref=e836]:
+                          - generic [ref=e837]:
+                            - img "Bolsa de Basura Pequeña Blanca 50x70 cm, 10 Un"
+                          - button "Agregar al carro - Bolsa de Basura Pequeña Blanca 50x70 cm, 10 Un" [ref=e840] [cursor=pointer]:
+                            - generic "agregar" [ref=e841]: 
+                            - generic [ref=e842]: Agregar
+                      - generic [ref=e844]:
+                        - generic [ref=e846]:
+                          - generic [ref=e847]: $1.000
+                          - generic [ref=e848]: precio actual $1.000, Costaba $1.150
+                          - generic [ref=e849]: $100 x un
+                          - generic [ref=e850]: $1.150
+                          - generic [ref=e851]: Ahorra $150
+                        - generic [ref=e852]: Virutex
+                        - generic [ref=e853]: Bolsa de Basura Pequeña Blanca 50x70 cm, 10 Un
+                  - group [ref=e856]:
+                    - link "Bolsa de Basura Pequeña Papelero 50x55 cm, 20 Un" [ref=e857] [cursor=pointer]:
+                      - /url: /ip/accesorios-aseo/00780187506909?from=/search
+                      - generic [ref=e858]: Bolsa de Basura Pequeña Papelero 50x55 cm, 20 Un
+                    - generic [ref=e860]:
+                      - generic [ref=e861]:
+                        - generic [ref=e863]:
+                          - generic [ref=e865]: 
+                          - text: Rebaja
+                        - generic [ref=e866]:
+                          - generic [ref=e867]:
+                            - img "Bolsa de Basura Pequeña Papelero 50x55 cm, 20 Un"
+                          - button "Agregar al carro - Bolsa de Basura Pequeña Papelero 50x55 cm, 20 Un" [ref=e870] [cursor=pointer]:
+                            - generic "agregar" [ref=e871]: 
+                            - generic [ref=e872]: Agregar
+                      - generic [ref=e874]:
+                        - generic [ref=e876]:
+                          - generic [ref=e877]: $1.090
+                          - generic [ref=e878]: precio actual $1.090, Costaba $1.390
+                          - generic [ref=e879]: $55 x un
+                          - generic [ref=e880]: $1.390
+                          - generic [ref=e881]: Ahorra $300
+                        - generic [ref=e882]: Superior
+                        - generic [ref=e883]: Bolsa de Basura Pequeña Papelero 50x55 cm, 20 Un
+                  - group [ref=e886]:
+                    - link "Bolsa de Basura Pequeña 50x70 cm, 20 Un" [ref=e887] [cursor=pointer]:
+                      - /url: /ip/accesorios-aseo/00040000706475?from=/search
+                      - generic [ref=e888]: Bolsa de Basura Pequeña 50x70 cm, 20 Un
+                    - generic [ref=e890]:
+                      - generic [ref=e893]:
+                        - generic [ref=e894]:
+                          - img "Bolsa de Basura Pequeña 50x70 cm, 20 Un"
+                        - button "Agregar al carro - Bolsa de Basura Pequeña 50x70 cm, 20 Un" [ref=e897] [cursor=pointer]:
+                          - generic "agregar" [ref=e898]: 
+                          - generic [ref=e899]: Agregar
+                      - generic [ref=e901]:
+                        - generic [ref=e903]:
+                          - generic [ref=e904]: $850
+                          - generic [ref=e905]: precio actual $850
+                          - generic [ref=e906]: $43 x un
+                        - generic [ref=e907]: Lider
+                        - generic [ref=e908]: Bolsa de Basura Pequeña 50x70 cm, 20 Un
+                  - group [ref=e911]:
+                    - link "Bolsa de Basura Pequeña con Cinta 50x70cm, 20 Un" [ref=e912] [cursor=pointer]:
+                      - /url: /ip/accesorios-aseo/00040000856973?from=/search
+                      - generic [ref=e913]: Bolsa de Basura Pequeña con Cinta 50x70cm, 20 Un
+                    - generic [ref=e915]:
+                      - generic [ref=e918]:
+                        - generic [ref=e919]:
+                          - img "Bolsa de Basura Pequeña con Cinta 50x70cm, 20 Un"
+                        - button "Agregar al carro - Bolsa de Basura Pequeña con Cinta 50x70cm, 20 Un" [ref=e922] [cursor=pointer]:
+                          - generic "agregar" [ref=e923]: 
+                          - generic [ref=e924]: Agregar
+                      - generic [ref=e926]:
+                        - generic [ref=e928]:
+                          - generic [ref=e929]: $2.690
+                          - generic [ref=e930]: precio actual $2.690
+                          - generic [ref=e931]: $135 x un
+                        - generic [ref=e932]: Great Value
+                        - generic [ref=e933]: Bolsa de Basura Pequeña con Cinta 50x70cm, 20 Un
+                  - group [ref=e936]:
+                    - link "Bolsa de Basura Extra Grande con asas transparente 79x106 cm, 20 Un" [ref=e937] [cursor=pointer]:
+                      - /url: /ip/accesorios-aseo/00062891564390?from=/search
+                      - generic [ref=e938]: Bolsa de Basura Extra Grande con asas transparente 79x106 cm, 20 Un
+                    - generic [ref=e940]:
+                      - generic [ref=e943]:
+                        - generic [ref=e944]:
+                          - img "Bolsa de Basura Extra Grande con asas transparente 79x106 cm, 20 Un"
+                        - button "Agregar al carro - Bolsa de Basura Extra Grande con asas transparente 79x106 cm, 20 Un" [ref=e947] [cursor=pointer]:
+                          - generic "agregar" [ref=e948]: 
+                          - generic [ref=e949]: Agregar
+                      - generic [ref=e951]:
+                        - generic [ref=e953]:
+                          - generic [ref=e954]: $3.590
+                          - generic [ref=e955]: precio actual $3.590
+                          - generic [ref=e956]: $180 x un
+                        - generic [ref=e957]: Great Value
+                        - generic [ref=e958]: Bolsa de Basura Extra Grande con asas transparente 79x106 cm, 20 Un
+                  - group [ref=e961]:
+                    - link "Bolsa de Basura Pequeña 50x70 cm, 10 Un" [ref=e962] [cursor=pointer]:
+                      - /url: /ip/accesorios-aseo/00780187515003?from=/search
+                      - generic [ref=e963]: Bolsa de Basura Pequeña 50x70 cm, 10 Un
+                    - generic [ref=e965]:
+                      - generic [ref=e968]:
+                        - generic [ref=e969]:
+                          - img "Bolsa de Basura Pequeña 50x70 cm, 10 Un"
+                        - button "Agregar al carro - Bolsa de Basura Pequeña 50x70 cm, 10 Un" [ref=e972] [cursor=pointer]:
+                          - generic "agregar" [ref=e973]: 
+                          - generic [ref=e974]: Agregar
+                      - generic [ref=e976]:
+                        - generic [ref=e978]:
+                          - generic [ref=e979]: $1.190
+                          - generic [ref=e980]: precio actual $1.190
+                          - generic [ref=e981]: $119 x un
+                        - generic [ref=e982]: Basulip
+                        - generic [ref=e983]: Bolsa de Basura Pequeña 50x70 cm, 10 Un
+                  - generic [ref=e985]:
+                    - group [ref=e986]:
+                      - link "Bolsa de Basura Grande 80x110 cm, 10 Un" [ref=e987] [cursor=pointer]:
+                        - /url: /ip/accesorios-aseo/00780187515007?from=/search
+                        - generic [ref=e988]: Bolsa de Basura Grande 80x110 cm, 10 Un
+                      - generic [ref=e990]:
+                        - generic [ref=e994]:
+                          - img "Bolsa de Basura Grande 80x110 cm, 10 Un"
+                        - generic [ref=e996]:
+                          - generic [ref=e998]:
+                            - generic [ref=e999]: $2.650
+                            - generic [ref=e1000]: precio actual $2.650
+                            - generic [ref=e1001]: $265 x un
+                          - generic [ref=e1002]: Basulip
+                          - generic [ref=e1003]: Bolsa de Basura Grande 80x110 cm, 10 Un
+                          - generic [ref=e1004]: Agotado
+                    - button "Revisar productos similares - Bolsa de Basura Grande 80x110 cm, 10 Un" [ref=e1006]: Revisar productos similares
+                  - group [ref=e1009]:
+                    - link "Bolsa de Basura Grande Carga Pesada 110x120 cm, 5 Un" [ref=e1010] [cursor=pointer]:
+                      - /url: /ip/accesorios-aseo/00780187506919?from=/search
+                      - generic [ref=e1011]: Bolsa de Basura Grande Carga Pesada 110x120 cm, 5 Un
+                    - generic [ref=e1013]:
+                      - generic [ref=e1016]:
+                        - generic [ref=e1017]:
+                          - img "Bolsa de Basura Grande Carga Pesada 110x120 cm, 5 Un"
+                        - button "Agregar al carro - Bolsa de Basura Grande Carga Pesada 110x120 cm, 5 Un" [ref=e1020] [cursor=pointer]:
+                          - generic "agregar" [ref=e1021]: 
+                          - generic [ref=e1022]: Agregar
+                      - generic [ref=e1024]:
+                        - generic [ref=e1026]:
+                          - generic [ref=e1027]: $7.490
+                          - generic [ref=e1028]: precio actual $7.490
+                          - generic [ref=e1029]: $1.498 x un
+                        - generic [ref=e1030]: Superior
+                        - generic [ref=e1031]: Bolsa de Basura Grande Carga Pesada 110x120 cm, 5 Un
+                  - group [ref=e1034]:
+                    - link "Bolsa de Basura Contenedor Domiciliario L 100x20 cm" [ref=e1035] [cursor=pointer]:
+                      - /url: /ip/mas-sustentables/00780681080063?from=/search
+                      - generic [ref=e1036]: Bolsa de Basura Contenedor Domiciliario L 100x20 cm
+                    - generic [ref=e1038]:
+                      - generic [ref=e1041]:
+                        - generic [ref=e1042]:
+                          - img "Bolsa de Basura Contenedor Domiciliario L 100x20 cm"
+                        - button "Agregar al carro - Bolsa de Basura Contenedor Domiciliario L 100x20 cm" [ref=e1045] [cursor=pointer]:
+                          - generic "agregar" [ref=e1046]: 
+                          - generic [ref=e1047]: Agregar
+                      - generic [ref=e1049]:
+                        - generic [ref=e1051]:
+                          - generic [ref=e1052]: $5.890
+                          - generic [ref=e1053]: precio actual $5.890
+                          - generic [ref=e1054]: $1.178 x un
+                        - generic [ref=e1055]: Virutex
+                        - generic [ref=e1056]: Bolsa de Basura Contenedor Domiciliario L 100x20 cm
+                  - group [ref=e1059]:
+                    - link "Bolsa de Basura Pequeña Compostable 45x48 cm, 10 Un" [ref=e1060] [cursor=pointer]:
+                      - /url: /ip/mas-sustentables/00780681080095?from=/search
+                      - generic [ref=e1061]: Bolsa de Basura Pequeña Compostable 45x48 cm, 10 Un
+                    - generic [ref=e1063]:
+                      - generic [ref=e1066]:
+                        - generic [ref=e1067]:
+                          - img "Bolsa de Basura Pequeña Compostable 45x48 cm, 10 Un"
+                        - button "Agregar al carro - Bolsa de Basura Pequeña Compostable 45x48 cm, 10 Un" [ref=e1070] [cursor=pointer]:
+                          - generic "agregar" [ref=e1071]: 
+                          - generic [ref=e1072]: Agregar
+                      - generic [ref=e1074]:
+                        - generic [ref=e1076]:
+                          - generic [ref=e1077]: $1.950
+                          - generic [ref=e1078]: precio actual $1.950
+                          - generic [ref=e1079]: $130 x un
+                        - generic [ref=e1080]: Virutex
+                        - generic [ref=e1081]: Bolsa de Basura Pequeña Compostable 45x48 cm, 10 Un
+                  - group [ref=e1084]:
+                    - link "Bolsa de Basura Grande con Asas 88x99 cm, 16 Un" [ref=e1085] [cursor=pointer]:
+                      - /url: /ip/accesorios-aseo/00062891564394?from=/search
+                      - generic [ref=e1086]: Bolsa de Basura Grande con Asas 88x99 cm, 16 Un
+                    - generic [ref=e1088]:
+                      - generic [ref=e1091]:
+                        - generic [ref=e1092]:
+                          - img "Bolsa de Basura Grande con Asas 88x99 cm, 16 Un"
+                        - button "Agregar al carro - Bolsa de Basura Grande con Asas 88x99 cm, 16 Un" [ref=e1095] [cursor=pointer]:
+                          - generic "agregar" [ref=e1096]: 
+                          - generic [ref=e1097]: Agregar
+                      - generic [ref=e1099]:
+                        - generic [ref=e1101]:
+                          - generic [ref=e1102]: $8.490
+                          - generic [ref=e1103]: precio actual $8.490
+                          - generic [ref=e1104]: $531 x un
+                        - generic [ref=e1105]: Great Value
+                        - generic [ref=e1106]: Bolsa de Basura Grande con Asas 88x99 cm, 16 Un
+                  - group [ref=e1109]:
+                    - link "Bolsas Herméticas con Cierre Mediana 18x20 cm, 1 Un" [ref=e1110] [cursor=pointer]:
+                      - /url: /ip/accesorios-aseo/00780187500226?from=/search
+                      - generic [ref=e1111]: Bolsas Herméticas con Cierre Mediana 18x20 cm, 1 Un
+                    - generic [ref=e1113]:
+                      - generic [ref=e1116]:
+                        - generic [ref=e1117]:
+                          - img "Bolsas Herméticas con Cierre Mediana 18x20 cm, 1 Un"
+                        - button "Agregar al carro - Bolsas Herméticas con Cierre Mediana 18x20 cm, 1 Un" [ref=e1120] [cursor=pointer]:
+                          - generic "agregar" [ref=e1121]: 
+                          - generic [ref=e1122]: Agregar
+                      - generic [ref=e1124]:
+                        - generic [ref=e1126]:
+                          - generic [ref=e1127]: $1.290
+                          - generic [ref=e1128]: precio actual $1.290
+                          - generic [ref=e1129]: $65 x un
+                        - generic [ref=e1130]: La Facilita
+                        - generic [ref=e1131]: Bolsas Herméticas con Cierre Mediana 18x20 cm, 1 Un
+                  - group [ref=e1134]:
+                    - link "Bolsa Multiuso Mediana 25x38 cm, 100 Un" [ref=e1135] [cursor=pointer]:
+                      - /url: /ip/accesorios-aseo/00780187515013?from=/search
+                      - generic [ref=e1136]: Bolsa Multiuso Mediana 25x38 cm, 100 Un
+                    - generic [ref=e1138]:
+                      - generic [ref=e1139]:
+                        - generic [ref=e1141]:
+                          - generic [ref=e1143]: 
+                          - text: Rebaja
+                        - generic [ref=e1144]:
+                          - generic [ref=e1145]:
+                            - img "Bolsa Multiuso Mediana 25x38 cm, 100 Un"
+                          - button "Agregar al carro - Bolsa Multiuso Mediana 25x38 cm, 100 Un" [ref=e1148] [cursor=pointer]:
+                            - generic "agregar" [ref=e1149]: 
+                            - generic [ref=e1150]: Agregar
+                      - generic [ref=e1152]:
+                        - generic [ref=e1154]:
+                          - generic [ref=e1155]: $1.690
+                          - generic [ref=e1156]: precio actual $1.690, Costaba $2.050
+                          - generic [ref=e1157]: $1.690 x 100un
+                          - generic [ref=e1158]: $2.050
+                          - generic [ref=e1159]: Ahorra $360
+                        - generic [ref=e1160]: La Facilita
+                        - generic [ref=e1161]: Bolsa Multiuso Mediana 25x38 cm, 100 Un
+                  - group [ref=e1164]:
+                    - link "Bolsas Herméticas Colación Reutilizable Mediana 18x20 cm, 50 Un" [ref=e1165] [cursor=pointer]:
+                      - /url: /ip/accesorios-aseo/00780681024044?from=/search
+                      - generic [ref=e1166]: Bolsas Herméticas Colación Reutilizable Mediana 18x20 cm, 50 Un
+                    - generic [ref=e1168]:
+                      - generic [ref=e1171]:
+                        - generic [ref=e1172]:
+                          - img "Bolsas Herméticas Colación Reutilizable Mediana 18x20 cm, 50 Un"
+                        - button "Agregar al carro - Bolsas Herméticas Colación Reutilizable Mediana 18x20 cm, 50 Un" [ref=e1175] [cursor=pointer]:
+                          - generic "agregar" [ref=e1176]: 
+                          - generic [ref=e1177]: Agregar
+                      - generic [ref=e1179]:
+                        - generic [ref=e1181]:
+                          - generic [ref=e1182]: $3.090
+                          - generic [ref=e1183]: precio actual $3.090
+                          - generic [ref=e1184]: $62 x un
+                        - generic [ref=e1185]: Ilko
+                        - generic [ref=e1186]: Bolsas Herméticas Colación Reutilizable Mediana 18x20 cm, 50 Un
+                  - group [ref=e1189]:
+                    - link "Bolsas Herméticas Doble Cierre para Conservar Medianas 17,7 cm x 18,8 cm, 24 Un" [ref=e1190] [cursor=pointer]:
+                      - /url: /ip/accesorios-aseo/00779052099139?from=/search
+                      - generic [ref=e1191]: Bolsas Herméticas Doble Cierre para Conservar Medianas 17,7 cm x 18,8 cm, 24 Un
+                    - generic [ref=e1193]:
+                      - generic [ref=e1196]:
+                        - generic [ref=e1197]:
+                          - img "Bolsas Herméticas Doble Cierre para Conservar Medianas 17,7 cm x 18,8 cm, 24 Un"
+                        - button "Agregar al carro - Bolsas Herméticas Doble Cierre para Conservar Medianas 17,7 cm x 18,8 cm, 24 Un" [ref=e1200] [cursor=pointer]:
+                          - generic "agregar" [ref=e1201]: 
+                          - generic [ref=e1202]: Agregar
+                      - generic [ref=e1204]:
+                        - generic [ref=e1206]:
+                          - generic [ref=e1207]: $3.950
+                          - generic [ref=e1208]: precio actual $3.950
+                          - generic [ref=e1209]: $158 x un
+                        - generic [ref=e1210]: Ziploc
+                        - generic [ref=e1211]: Bolsas Herméticas Doble Cierre para Conservar Medianas 17,7 cm x 18,8 cm, 24 Un
+                  - group [ref=e1214]:
+                    - link "Bolsas Herméticas Slider para Organizar Medianas 18x20 cm, 20 Un" [ref=e1215] [cursor=pointer]:
+                      - /url: /ip/accesorios-aseo/00779052099144?from=/search
+                      - generic [ref=e1216]: Bolsas Herméticas Slider para Organizar Medianas 18x20 cm, 20 Un
+                    - generic [ref=e1218]:
+                      - generic [ref=e1221]:
+                        - generic [ref=e1222]:
+                          - img "Bolsas Herméticas Slider para Organizar Medianas 18x20 cm, 20 Un"
+                        - button "Agregar al carro - Bolsas Herméticas Slider para Organizar Medianas 18x20 cm, 20 Un" [ref=e1225] [cursor=pointer]:
+                          - generic "agregar" [ref=e1226]: 
+                          - generic [ref=e1227]: Agregar
+                      - generic [ref=e1229]:
+                        - generic [ref=e1231]:
+                          - generic [ref=e1232]: $5.950
+                          - generic [ref=e1233]: precio actual $5.950
+                          - generic [ref=e1234]: $298 x un
+                        - generic [ref=e1235]: Ziploc
+                        - generic [ref=e1236]: Bolsas Herméticas Slider para Organizar Medianas 18x20 cm, 20 Un
+                  - group [ref=e1239]:
+                    - link "Bolsas Herméticas Freezer 17.7 x 19.5 cm Mediana, 20 Un" [ref=e1240] [cursor=pointer]:
+                      - /url: /ip/accesorios-aseo/00060538818861?from=/search
+                      - generic [ref=e1241]: Bolsas Herméticas Freezer 17.7 x 19.5 cm Mediana, 20 Un
+                    - generic [ref=e1243]:
+                      - generic [ref=e1246]:
+                        - generic [ref=e1247]:
+                          - img "Bolsas Herméticas Freezer 17.7 x 19.5 cm Mediana, 20 Un"
+                        - button "Agregar al carro - Bolsas Herméticas Freezer 17.7 x 19.5 cm Mediana, 20 Un" [ref=e1250] [cursor=pointer]:
+                          - generic "agregar" [ref=e1251]: 
+                          - generic [ref=e1252]: Agregar
+                      - generic [ref=e1254]:
+                        - generic [ref=e1256]:
+                          - generic [ref=e1257]: $1.500
+                          - generic [ref=e1258]: precio actual $1.500
+                          - generic [ref=e1259]: $75 x un
+                        - generic [ref=e1260]: Great Value
+                        - generic [ref=e1261]: Bolsas Herméticas Freezer 17.7 x 19.5 cm Mediana, 20 Un
+            - navigation "paginación" [ref=e1264]:
+              - list [ref=e1265]:
+                - listitem [ref=e1266]
+                - listitem [ref=e1268]:
+                  - link "1" [ref=e1269] [cursor=pointer]:
+                    - /url: /search?q=bolsas+basura+mediana
+                - listitem [ref=e1270]:
+                  - link "Ir a la página 2" [ref=e1271] [cursor=pointer]:
+                    - /url: /search?q=bolsas+basura+mediana&page=2
+                    - text: "2"
+                - listitem [ref=e1272]:
+                  - link "Página siguiente" [ref=e1273] [cursor=pointer]:
+                    - /url: /search?q=bolsas+basura+mediana&page=2
+                    - generic [ref=e1274]: 
+  - alert [ref=e1282]

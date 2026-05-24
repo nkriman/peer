@@ -1,0 +1,292 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: agua bidon 6.5L
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e81]:
+            - generic [ref=e84]:
+              - generic [ref=e85]:
+                - button "Precio" [ref=e88]:
+                  - generic [ref=e89]: Precio
+                  - img [ref=e90]: 
+                - separator [ref=e91]
+              - generic [ref=e92]:
+                - button "Marca" [ref=e95]:
+                  - generic [ref=e96]: Marca
+                  - img [ref=e97]: 
+                - separator [ref=e98]
+              - generic [ref=e99]:
+                - button "Categoría" [ref=e102]:
+                  - generic [ref=e103]: Categoría
+                  - img [ref=e104]: 
+                - separator [ref=e105]
+            - generic [ref=e108]:
+              - heading "Resultados para agua bidon 6.5L (12)" [level=2] [ref=e116]: Resultados para agua bidon 6.5L(12)
+              - generic [ref=e117]:
+                - group [ref=e120]:
+                  - link "Agua Purificada Sin Gas Bidón, 6 L" [ref=e121] [cursor=pointer]:
+                    - /url: /ip/aguas/00780162000604?from=/search
+                    - generic [ref=e122]: Agua Purificada Sin Gas Bidón, 6 L
+                  - generic [ref=e124]:
+                    - generic [ref=e127]:
+                      - img "Agua Purificada Sin Gas Bidón, 6 L" [ref=e129]
+                      - button "Agregar al carro - Agua Purificada Sin Gas Bidón, 6 L" [ref=e132] [cursor=pointer]:
+                        - generic "agregar" [ref=e133]: 
+                        - generic [ref=e134]: Agregar
+                    - generic [ref=e136]:
+                      - generic [ref=e138]:
+                        - generic [ref=e139]: $1.990
+                        - generic [ref=e140]: precio actual $1.990
+                        - generic [ref=e141]: $332 x lt
+                      - generic [ref=e142]: Pura Vida
+                      - generic [ref=e143]: Agua Purificada Sin Gas Bidón, 6 L
+                - group [ref=e146]:
+                  - link "Agua Purificada Con Gas Botella, 3 L" [ref=e147] [cursor=pointer]:
+                    - /url: /ip/aguas/00780162001045?from=/search
+                    - generic [ref=e148]: Agua Purificada Con Gas Botella, 3 L
+                  - generic [ref=e150]:
+                    - generic [ref=e153]:
+                      - img "Agua Purificada Con Gas Botella, 3 L" [ref=e155]
+                      - button "Agregar al carro - Agua Purificada Con Gas Botella, 3 L" [ref=e158] [cursor=pointer]:
+                        - generic "agregar" [ref=e159]: 
+                        - generic [ref=e160]: Agregar
+                    - generic [ref=e162]:
+                      - generic [ref=e164]:
+                        - generic [ref=e165]: $1.350
+                        - generic [ref=e166]: precio actual $1.350
+                        - generic [ref=e167]: $450 x lt
+                      - generic [ref=e168]: Manantial
+                      - generic [ref=e169]: Agua Purificada Con Gas Botella, 3 L
+                - generic [ref=e171]:
+                  - group [ref=e172]:
+                    - link "Agua Purificada Con Gas Botella, 2,5 L" [ref=e173] [cursor=pointer]:
+                      - /url: /ip/aguas/00780282000217?from=/search
+                      - generic [ref=e174]: Agua Purificada Con Gas Botella, 2,5 L
+                    - generic [ref=e176]:
+                      - img "Agua Purificada Con Gas Botella, 2,5 L" [ref=e181]
+                      - generic [ref=e183]:
+                        - generic [ref=e185]:
+                          - generic [ref=e186]: $1.000
+                          - generic [ref=e187]: precio actual $1.000
+                          - generic [ref=e188]: $400 x lt
+                        - generic [ref=e189]: Benedictino
+                        - generic [ref=e190]: Agua Purificada Con Gas Botella, 2,5 L
+                        - generic [ref=e191]: Agotado
+                  - button "Revisar productos similares - Agua Purificada Con Gas Botella, 2,5 L" [ref=e193]: Revisar productos similares
+                - group [ref=e196]:
+                  - link "Agua Purificada Sin Gas Botella, 3 L" [ref=e197] [cursor=pointer]:
+                    - /url: /ip/aguas/00780162001046?from=/search
+                    - generic [ref=e198]: Agua Purificada Sin Gas Botella, 3 L
+                  - generic [ref=e200]:
+                    - generic [ref=e203]:
+                      - img "Agua Purificada Sin Gas Botella, 3 L" [ref=e205]
+                      - button "Agregar al carro - Agua Purificada Sin Gas Botella, 3 L" [ref=e208] [cursor=pointer]:
+                        - generic "agregar" [ref=e209]: 
+                        - generic [ref=e210]: Agregar
+                    - generic [ref=e212]:
+                      - generic [ref=e214]:
+                        - generic [ref=e215]: $1.350
+                        - generic [ref=e216]: precio actual $1.350
+                        - generic [ref=e217]: $450 x lt
+                      - generic [ref=e218]: Manantial
+                      - generic [ref=e219]: Agua Purificada Sin Gas Botella, 3 L
+                - group [ref=e222]:
+                  - link "Agua Purificada sin Gas Botella, 2,5 L" [ref=e223] [cursor=pointer]:
+                    - /url: /ip/aguas/00780282000218?from=/search
+                    - generic [ref=e224]: Agua Purificada sin Gas Botella, 2,5 L
+                  - generic [ref=e226]:
+                    - generic [ref=e229]:
+                      - img "Agua Purificada sin Gas Botella, 2,5 L" [ref=e231]
+                      - button "Agregar al carro - Agua Purificada sin Gas Botella, 2,5 L" [ref=e234] [cursor=pointer]:
+                        - generic "agregar" [ref=e235]: 
+                        - generic [ref=e236]: Agregar
+                    - generic [ref=e238]:
+                      - generic [ref=e240]:
+                        - generic [ref=e241]: $1.000
+                        - generic [ref=e242]: precio actual $1.000
+                        - generic [ref=e243]: $400 x lt
+                      - generic [ref=e244]: Bendictino
+                      - generic [ref=e245]: Agua Purificada sin Gas Botella, 2,5 L
+                - group [ref=e248]:
+                  - link "Agua Bidón purificada sin gas sin Gas, 6.5 L" [ref=e249] [cursor=pointer]:
+                    - /url: /ip/aguas/00780282065001?from=/search
+                    - generic [ref=e250]: Agua Bidón purificada sin gas sin Gas, 6.5 L
+                  - generic [ref=e252]:
+                    - generic [ref=e255]:
+                      - img "Agua Bidón purificada sin gas sin Gas, 6.5 L" [ref=e257]
+                      - button "Agregar al carro - Agua Bidón purificada sin gas sin Gas, 6.5 L" [ref=e260] [cursor=pointer]:
+                        - generic "agregar" [ref=e261]: 
+                        - generic [ref=e262]: Agregar
+                    - generic [ref=e264]:
+                      - generic [ref=e266]:
+                        - generic [ref=e267]: $2.150
+                        - generic [ref=e268]: precio actual $2.150
+                        - generic [ref=e269]: $331 x lt
+                      - generic [ref=e270]: Benedictino
+                      - generic [ref=e271]: Agua Bidón purificada sin gas sin Gas, 6.5 L
+                - group [ref=e274]:
+                  - link "Agua Botella Purificada sin Gas, 500 ml" [ref=e275] [cursor=pointer]:
+                    - /url: /ip/aguas/00040000716160?from=/search
+                    - generic [ref=e276]: Agua Botella Purificada sin Gas, 500 ml
+                  - generic [ref=e278]:
+                    - generic [ref=e281]:
+                      - img "Agua Botella Purificada sin Gas, 500 ml" [ref=e283]
+                      - button "Agregar al carro - Agua Botella Purificada sin Gas, 500 ml" [ref=e286] [cursor=pointer]:
+                        - generic "agregar" [ref=e287]: 
+                        - generic [ref=e288]: Agregar
+                    - generic [ref=e290]:
+                      - generic [ref=e292]:
+                        - generic [ref=e293]: $450
+                        - generic [ref=e294]: precio actual $450
+                        - generic [ref=e295]: $900 x lt
+                      - generic [ref=e296]: Great Value
+                      - generic [ref=e297]: Agua Botella Purificada sin Gas, 500 ml
+                - group [ref=e300]:
+                  - link "Agua Botella Purificada Con Gas, 500 ml" [ref=e301] [cursor=pointer]:
+                    - /url: /ip/aguas/00780282044112?from=/search
+                    - generic [ref=e302]: Agua Botella Purificada Con Gas, 500 ml
+                  - generic [ref=e304]:
+                    - generic [ref=e307]:
+                      - img "Agua Botella Purificada Con Gas, 500 ml" [ref=e309]
+                      - button "Agregar al carro - Agua Botella Purificada Con Gas, 500 ml" [ref=e312] [cursor=pointer]:
+                        - generic "agregar" [ref=e313]: 
+                        - generic [ref=e314]: Agregar
+                    - generic [ref=e316]:
+                      - generic [ref=e318]:
+                        - generic [ref=e319]: $830
+                        - generic [ref=e320]: precio actual $830
+                        - generic [ref=e321]: $1.660 x lt
+                      - generic [ref=e322]: Benedictino
+                      - generic [ref=e323]: Agua Botella Purificada Con Gas, 500 ml
+                - group [ref=e326]:
+                  - link "Agua Botella Purificada Con Gas, 1,5 L" [ref=e327] [cursor=pointer]:
+                    - /url: /ip/aguas/00780162001039?from=/search
+                    - generic [ref=e328]: Agua Botella Purificada Con Gas, 1,5 L
+                  - generic [ref=e330]:
+                    - generic [ref=e333]:
+                      - img "Agua Botella Purificada Con Gas, 1,5 L" [ref=e335]
+                      - button "Agregar al carro - Agua Botella Purificada Con Gas, 1,5 L" [ref=e338] [cursor=pointer]:
+                        - generic "agregar" [ref=e339]: 
+                        - generic [ref=e340]: Agregar
+                    - generic [ref=e342]:
+                      - generic [ref=e344]:
+                        - generic [ref=e345]: $750
+                        - generic [ref=e346]: precio actual $750
+                        - generic [ref=e347]: $500 x lt
+                      - generic [ref=e348]: Manantial
+                      - generic [ref=e349]: Agua Botella Purificada Con Gas, 1,5 L
+                - group [ref=e352]:
+                  - link "Agua Botella Purificada sin Gas, 500 ml" [ref=e353] [cursor=pointer]:
+                    - /url: /ip/aguas/00780282044100?from=/search
+                    - generic [ref=e354]: Agua Botella Purificada sin Gas, 500 ml
+                  - generic [ref=e356]:
+                    - generic [ref=e359]:
+                      - img "Agua Botella Purificada sin Gas, 500 ml" [ref=e361]
+                      - button "Agregar al carro - Agua Botella Purificada sin Gas, 500 ml" [ref=e364] [cursor=pointer]:
+                        - generic "agregar" [ref=e365]: 
+                        - generic [ref=e366]: Agregar
+                    - generic [ref=e368]:
+                      - generic [ref=e370]:
+                        - generic [ref=e371]: $830
+                        - generic [ref=e372]: precio actual $830
+                        - generic [ref=e373]: $1.660 x lt
+                      - generic [ref=e374]: Benedictino
+                      - generic [ref=e375]: Agua Botella Purificada sin Gas, 500 ml
+                - group [ref=e378]:
+                  - link "Agua Botella Purificada sin Gas, 1.5 L" [ref=e379] [cursor=pointer]:
+                    - /url: /ip/aguas/00780162001041?from=/search
+                    - generic [ref=e380]: Agua Botella Purificada sin Gas, 1.5 L
+                  - generic [ref=e382]:
+                    - generic [ref=e385]:
+                      - img "Agua Botella Purificada sin Gas, 1.5 L" [ref=e387]
+                      - button "Agregar al carro - Agua Botella Purificada sin Gas, 1.5 L" [ref=e390] [cursor=pointer]:
+                        - generic "agregar" [ref=e391]: 
+                        - generic [ref=e392]: Agregar
+                    - generic [ref=e394]:
+                      - generic [ref=e396]:
+                        - generic [ref=e397]: $750
+                        - generic [ref=e398]: precio actual $750
+                        - generic [ref=e399]: $500 x lt
+                      - generic [ref=e400]: Manantial
+                      - generic [ref=e401]: Agua Botella Purificada sin Gas, 1.5 L
+                - group [ref=e404]:
+                  - link "Toallitas Húmedas aqua baby 99,9% Agua Purificada, 50 Un" [ref=e405] [cursor=pointer]:
+                    - /url: /ip/panales-y-toallas-humedas/00079919240934?from=/search
+                    - generic [ref=e406]: Toallitas Húmedas aqua baby 99,9% Agua Purificada, 50 Un
+                  - generic [ref=e408]:
+                    - generic [ref=e411]:
+                      - img "Toallitas Húmedas aqua baby 99,9% Agua Purificada, 50 Un" [ref=e413]
+                      - button "Agregar al carro - Toallitas Húmedas aqua baby 99,9% Agua Purificada, 50 Un" [ref=e416] [cursor=pointer]:
+                        - generic "agregar" [ref=e417]: 
+                        - generic [ref=e418]: Agregar
+                    - generic [ref=e420]:
+                      - generic [ref=e422]:
+                        - generic [ref=e423]: $2.990
+                        - generic [ref=e424]: precio actual $2.990
+                        - generic [ref=e425]: $59 x un
+                      - generic [ref=e426]: Aqua Baby
+                      - generic [ref=e427]: Toallitas Húmedas aqua baby 99,9% Agua Purificada, 50 Un
+  - alert [ref=e436]

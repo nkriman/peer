@@ -1,0 +1,444 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: cacao amargo polvo
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e81]:
+            - generic [ref=e84]:
+              - generic [ref=e85]:
+                - button "Precio" [ref=e88]:
+                  - generic [ref=e89]: Precio
+                  - img [ref=e90]: 
+                - separator [ref=e91]
+              - generic [ref=e92]:
+                - button "Campaña" [ref=e95]:
+                  - generic [ref=e96]: Campaña
+                  - img [ref=e97]: 
+                - separator [ref=e98]
+              - generic [ref=e99]:
+                - button "Marca" [ref=e102]:
+                  - generic [ref=e103]: Marca
+                  - img [ref=e104]: 
+                - separator [ref=e105]
+              - generic [ref=e106]:
+                - button "Categoría" [ref=e109]:
+                  - generic [ref=e110]: Categoría
+                  - img [ref=e111]: 
+                - separator [ref=e112]
+            - generic [ref=e115]:
+              - heading "Resultados para cacao amargo polvo (19)" [level=2] [ref=e123]: Resultados para cacao amargo polvo(19)
+              - generic [ref=e124]:
+                - group [ref=e127]:
+                  - link "Cacao Amargo en polvo Bolsa, 150 g" [ref=e128] [cursor=pointer]:
+                    - /url: /ip/f/00780242052001?from=/search
+                    - generic [ref=e129]: Cacao Amargo en polvo Bolsa, 150 g
+                  - generic [ref=e131]:
+                    - generic [ref=e134]:
+                      - img "Cacao Amargo en polvo Bolsa, 150 g" [ref=e136]
+                      - button "Agregar al carro - Cacao Amargo en polvo Bolsa, 150 g" [ref=e139] [cursor=pointer]:
+                        - generic "agregar" [ref=e140]: 
+                        - generic [ref=e141]: Agregar
+                    - generic [ref=e143]:
+                      - generic [ref=e145]:
+                        - generic [ref=e146]: $2.850
+                        - generic [ref=e147]: precio actual $2.850
+                        - generic [ref=e148]: $19.000 x kg
+                      - generic [ref=e149]: Copacabana
+                      - generic [ref=e150]: Cacao Amargo en polvo Bolsa, 150 g
+                - group [ref=e153]:
+                  - link "Cacao Amargo en polvo Bolsa, 150 g" [ref=e154] [cursor=pointer]:
+                    - /url: /ip/f/00780241060502?from=/search
+                    - generic [ref=e155]: Cacao Amargo en polvo Bolsa, 150 g
+                  - generic [ref=e157]:
+                    - generic [ref=e160]:
+                      - img "Cacao Amargo en polvo Bolsa, 150 g" [ref=e162]
+                      - button "Agregar al carro - Cacao Amargo en polvo Bolsa, 150 g" [ref=e165] [cursor=pointer]:
+                        - generic "agregar" [ref=e166]: 
+                        - generic [ref=e167]: Agregar
+                    - generic [ref=e169]:
+                      - generic [ref=e171]:
+                        - generic [ref=e172]: $4.190
+                        - generic [ref=e173]: precio actual $4.190
+                        - generic [ref=e174]: $27.933 x kg
+                      - generic [ref=e175]: Gourmet
+                      - generic [ref=e176]: Cacao Amargo en polvo Bolsa, 150 g
+                - group [ref=e179]:
+                  - link "Cacao Natural En Polvo Amargo, 150 g" [ref=e180] [cursor=pointer]:
+                    - /url: /ip/leche/00780464749147?from=/search
+                    - generic [ref=e181]: Cacao Natural En Polvo Amargo, 150 g
+                  - generic [ref=e183]:
+                    - generic [ref=e186]:
+                      - img "Cacao Natural En Polvo Amargo, 150 g" [ref=e188]
+                      - button "Agregar al carro - Cacao Natural En Polvo Amargo, 150 g" [ref=e191] [cursor=pointer]:
+                        - generic "agregar" [ref=e192]: 
+                        - generic [ref=e193]: Agregar
+                    - generic [ref=e195]:
+                      - generic [ref=e197]:
+                        - generic [ref=e198]: $1.990
+                        - generic [ref=e199]: precio actual $1.990
+                        - generic [ref=e200]: $13.267 x kg
+                      - generic [ref=e201]: Lider
+                      - generic [ref=e202]: Cacao Natural En Polvo Amargo, 150 g
+                - group [ref=e205]:
+                  - link "Chocolate Amargo 65% Cacao, 160 g" [ref=e206] [cursor=pointer]:
+                    - /url: /ip/variedad/00844529048053?from=/search
+                    - generic [ref=e207]: Chocolate Amargo 65% Cacao, 160 g
+                  - generic [ref=e209]:
+                    - generic [ref=e212]:
+                      - img "Chocolate Amargo 65% Cacao, 160 g" [ref=e214]
+                      - button "Agregar al carro - Chocolate Amargo 65% Cacao, 160 g" [ref=e217] [cursor=pointer]:
+                        - generic "agregar" [ref=e218]: 
+                        - generic [ref=e219]: Agregar
+                    - generic [ref=e221]:
+                      - generic [ref=e223]:
+                        - generic [ref=e224]: $3.790
+                        - generic [ref=e225]: precio actual $3.790
+                        - generic [ref=e226]: $23.687 x kg
+                      - generic [ref=e227]: Sahne Nuss
+                      - generic [ref=e228]: Chocolate Amargo 65% Cacao, 160 g
+                - group [ref=e231]:
+                  - link "Chocolate Amargo 90% de Cacao, 100 g" [ref=e232] [cursor=pointer]:
+                    - /url: /ip/tipos/00062891582764?from=/search
+                    - generic [ref=e233]: Chocolate Amargo 90% de Cacao, 100 g
+                  - generic [ref=e235]:
+                    - generic [ref=e238]:
+                      - img "Chocolate Amargo 90% de Cacao, 100 g" [ref=e240]
+                      - button "Agregar al carro - Chocolate Amargo 90% de Cacao, 100 g" [ref=e243] [cursor=pointer]:
+                        - generic "agregar" [ref=e244]: 
+                        - generic [ref=e245]: Agregar
+                    - generic [ref=e247]:
+                      - generic [ref=e249]:
+                        - generic [ref=e250]: $2.990
+                        - generic [ref=e251]: precio actual $2.990
+                        - generic [ref=e252]: $29.900 x kg
+                      - generic [ref=e253]: Our Finest
+                      - generic [ref=e254]: Chocolate Amargo 90% de Cacao, 100 g
+                - group [ref=e257]:
+                  - link "Chocolate Amargo 72% de Cacao, 100 g" [ref=e258] [cursor=pointer]:
+                    - /url: /ip/variedad/00062891501148?from=/search
+                    - generic [ref=e259]: Chocolate Amargo 72% de Cacao, 100 g
+                  - generic [ref=e261]:
+                    - generic [ref=e264]:
+                      - img "Chocolate Amargo 72% de Cacao, 100 g" [ref=e266]
+                      - button "Agregar al carro - Chocolate Amargo 72% de Cacao, 100 g" [ref=e269] [cursor=pointer]:
+                        - generic "agregar" [ref=e270]: 
+                        - generic [ref=e271]: Agregar
+                    - generic [ref=e273]:
+                      - generic [ref=e275]:
+                        - generic [ref=e276]: $2.990
+                        - generic [ref=e277]: precio actual $2.990
+                        - generic [ref=e278]: $29.900 x kg
+                      - generic [ref=e279]: Our Finest
+                      - generic [ref=e280]: Chocolate Amargo 72% de Cacao, 100 g
+                - group [ref=e283]:
+                  - link "Cacao Natural En Polvo con Azúcar Dulce, 200 g" [ref=e284] [cursor=pointer]:
+                    - /url: /ip/leche/00780464749146?from=/search
+                    - generic [ref=e285]: Cacao Natural En Polvo con Azúcar Dulce, 200 g
+                  - generic [ref=e287]:
+                    - generic [ref=e290]:
+                      - img "Cacao Natural En Polvo con Azúcar Dulce, 200 g" [ref=e292]
+                      - button "Agregar al carro - Cacao Natural En Polvo con Azúcar Dulce, 200 g" [ref=e295] [cursor=pointer]:
+                        - generic "agregar" [ref=e296]: 
+                        - generic [ref=e297]: Agregar
+                    - generic [ref=e299]:
+                      - generic [ref=e301]:
+                        - generic [ref=e302]: $1.150
+                        - generic [ref=e303]: precio actual $1.150
+                        - generic [ref=e304]: $5.750 x kg
+                      - generic [ref=e305]: Lider
+                      - generic [ref=e306]: Cacao Natural En Polvo con Azúcar Dulce, 200 g
+                - group [ref=e309]:
+                  - link "Cacao Dulce en polvo Bolsa, 200 g" [ref=e310] [cursor=pointer]:
+                    - /url: /ip/leche/00780242052002?from=/search
+                    - generic [ref=e311]: Cacao Dulce en polvo Bolsa, 200 g
+                  - generic [ref=e313]:
+                    - generic [ref=e316]:
+                      - img "Cacao Dulce en polvo Bolsa, 200 g" [ref=e318]
+                      - button "Agregar al carro - Cacao Dulce en polvo Bolsa, 200 g" [ref=e321] [cursor=pointer]:
+                        - generic "agregar" [ref=e322]: 
+                        - generic [ref=e323]: Agregar
+                    - generic [ref=e325]:
+                      - generic [ref=e327]:
+                        - generic [ref=e328]: $1.490
+                        - generic [ref=e329]: precio actual $1.490
+                        - generic [ref=e330]: $7.450 x kg
+                      - generic [ref=e331]: Copacabana
+                      - generic [ref=e332]: Cacao Dulce en polvo Bolsa, 200 g
+                - group [ref=e335]:
+                  - link "Cacao Dulce en polvo Bolsa, 200 g" [ref=e336] [cursor=pointer]:
+                    - /url: /ip/f/00780241060501?from=/search
+                    - generic [ref=e337]: Cacao Dulce en polvo Bolsa, 200 g
+                  - generic [ref=e339]:
+                    - generic [ref=e342]:
+                      - img "Cacao Dulce en polvo Bolsa, 200 g" [ref=e344]
+                      - button "Agregar al carro - Cacao Dulce en polvo Bolsa, 200 g" [ref=e347] [cursor=pointer]:
+                        - generic "agregar" [ref=e348]: 
+                        - generic [ref=e349]: Agregar
+                    - generic [ref=e351]:
+                      - generic [ref=e353]:
+                        - generic [ref=e354]: $1.650
+                        - generic [ref=e355]: precio actual $1.650
+                        - generic [ref=e356]: $8.250 x kg
+                      - generic [ref=e357]: Gourmet
+                      - generic [ref=e358]: Cacao Dulce en polvo Bolsa, 200 g
+                - group [ref=e361]:
+                  - link "Almendras con cacao 85% En Línea, 100 g" [ref=e362] [cursor=pointer]:
+                    - /url: /ip/tipos/00780400000265?from=/search
+                    - generic [ref=e363]: Almendras con cacao 85% En Línea, 100 g
+                  - generic [ref=e365]:
+                    - generic [ref=e368]:
+                      - img "Almendras con cacao 85% En Línea, 100 g" [ref=e370]
+                      - button "Agregar al carro - Almendras con cacao 85% En Línea, 100 g" [ref=e373] [cursor=pointer]:
+                        - generic "agregar" [ref=e374]: 
+                        - generic [ref=e375]: Agregar
+                    - generic [ref=e377]:
+                      - generic [ref=e379]:
+                        - generic [ref=e380]: $4.190
+                        - generic [ref=e381]: precio actual $4.190
+                        - generic [ref=e382]: $41.900 x kg
+                      - generic [ref=e383]: En Línea
+                      - generic [ref=e384]: Almendras con cacao 85% En Línea, 100 g
+                - group [ref=e387]:
+                  - link "Cacao Amargo, 150 g" [ref=e388] [cursor=pointer]:
+                    - /url: /ip/leche/00780242000729?from=/search
+                    - generic [ref=e389]: Cacao Amargo, 150 g
+                  - generic [ref=e391]:
+                    - generic [ref=e394]:
+                      - img "Cacao Amargo, 150 g" [ref=e396]
+                      - button "Agregar al carro - Cacao Amargo, 150 g" [ref=e399] [cursor=pointer]:
+                        - generic "agregar" [ref=e400]: 
+                        - generic [ref=e401]: Agregar
+                    - generic [ref=e403]:
+                      - generic [ref=e405]:
+                        - generic [ref=e406]: $2.290
+                        - generic [ref=e407]: precio actual $2.290
+                        - generic [ref=e408]: $15.267 x kg
+                      - generic [ref=e409]: Edra
+                      - generic [ref=e410]: Cacao Amargo, 150 g
+                - group [ref=e413]:
+                  - link "Chocolate Costa Cacao 72% Naranja, 80 g" [ref=e414] [cursor=pointer]:
+                    - /url: /ip/variedad/00780221510148?from=/search
+                    - generic [ref=e415]: Chocolate Costa Cacao 72% Naranja, 80 g
+                  - generic [ref=e417]:
+                    - generic [ref=e418]:
+                      - generic [ref=e420]:
+                        - generic [ref=e422]: 
+                        - text: Rebaja
+                      - generic [ref=e423]:
+                        - img "Chocolate Costa Cacao 72% Naranja, 80 g" [ref=e425]
+                        - button "Agregar al carro - Chocolate Costa Cacao 72% Naranja, 80 g" [ref=e428] [cursor=pointer]:
+                          - generic "agregar" [ref=e429]: 
+                          - generic [ref=e430]: Agregar
+                    - generic [ref=e432]:
+                      - generic [ref=e434]:
+                        - generic [ref=e435]: $2.350
+                        - generic [ref=e436]: precio actual $2.350, Costaba $2.790
+                        - generic [ref=e437]: $29.375 x kg
+                        - generic [ref=e438]: $2.790
+                        - generic [ref=e439]: Ahorra $440
+                      - generic [ref=e440]: Costa
+                      - generic [ref=e441]: Chocolate Costa Cacao 72% Naranja, 80 g
+                - group [ref=e444]:
+                  - link "Chocolate Costa Cacao 62%, 80 g" [ref=e445] [cursor=pointer]:
+                    - /url: /ip/variedad/00780221510144?from=/search
+                    - generic [ref=e446]: Chocolate Costa Cacao 62%, 80 g
+                  - generic [ref=e448]:
+                    - generic [ref=e449]:
+                      - generic [ref=e451]:
+                        - generic [ref=e453]: 
+                        - text: Rebaja
+                      - generic [ref=e454]:
+                        - img "Chocolate Costa Cacao 62%, 80 g" [ref=e456]
+                        - button "Agregar al carro - Chocolate Costa Cacao 62%, 80 g" [ref=e459] [cursor=pointer]:
+                          - generic "agregar" [ref=e460]: 
+                          - generic [ref=e461]: Agregar
+                    - generic [ref=e463]:
+                      - generic [ref=e465]:
+                        - generic [ref=e466]: $2.350
+                        - generic [ref=e467]: precio actual $2.350, Costaba $2.790
+                        - generic [ref=e468]: $29.375 x kg
+                        - generic [ref=e469]: $2.790
+                        - generic [ref=e470]: Ahorra $440
+                      - generic [ref=e471]: Costa
+                      - generic [ref=e472]: Chocolate Costa Cacao 62%, 80 g
+                - group [ref=e475]:
+                  - link "Chocolate Tableta Excellence 70% Cacao, 100 g" [ref=e476] [cursor=pointer]:
+                    - /url: /ip/variedad/00304692002800?from=/search
+                    - generic [ref=e477]: Chocolate Tableta Excellence 70% Cacao, 100 g
+                  - generic [ref=e479]:
+                    - generic [ref=e482]:
+                      - img "Chocolate Tableta Excellence 70% Cacao, 100 g" [ref=e484]
+                      - button "Agregar al carro - Chocolate Tableta Excellence 70% Cacao, 100 g" [ref=e487] [cursor=pointer]:
+                        - generic "agregar" [ref=e488]: 
+                        - generic [ref=e489]: Agregar
+                    - generic [ref=e491]:
+                      - generic [ref=e493]:
+                        - generic [ref=e494]: $6.890
+                        - generic [ref=e495]: precio actual $6.890
+                        - generic [ref=e496]: $68.900 x kg
+                      - generic [ref=e497]: Lindt
+                      - generic [ref=e498]: Chocolate Tableta Excellence 70% Cacao, 100 g
+                - group [ref=e501]:
+                  - link "Chocolate Costa Cacao 62% Menta, 100 g" [ref=e502] [cursor=pointer]:
+                    - /url: /ip/variedad/00780221510162?from=/search
+                    - generic [ref=e503]: Chocolate Costa Cacao 62% Menta, 100 g
+                  - generic [ref=e505]:
+                    - generic [ref=e506]:
+                      - generic [ref=e508]:
+                        - generic [ref=e510]: 
+                        - text: Rebaja
+                      - generic [ref=e511]:
+                        - img "Chocolate Costa Cacao 62% Menta, 100 g" [ref=e513]
+                        - button "Agregar al carro - Chocolate Costa Cacao 62% Menta, 100 g" [ref=e516] [cursor=pointer]:
+                          - generic "agregar" [ref=e517]: 
+                          - generic [ref=e518]: Agregar
+                    - generic [ref=e520]:
+                      - generic [ref=e522]:
+                        - generic [ref=e523]: $2.350
+                        - generic [ref=e524]: precio actual $2.350, Costaba $2.790
+                        - generic [ref=e525]: $23.500 x kg
+                        - generic [ref=e526]: $2.790
+                        - generic [ref=e527]: Ahorra $440
+                      - generic [ref=e528]: Costa
+                      - generic [ref=e529]: Chocolate Costa Cacao 62% Menta, 100 g
+                - group [ref=e532]:
+                  - link "Chocolate Excellence 85% Cacao, 100 g" [ref=e533] [cursor=pointer]:
+                    - /url: /ip/variedad/00304692002836?from=/search
+                    - generic [ref=e534]: Chocolate Excellence 85% Cacao, 100 g
+                  - generic [ref=e536]:
+                    - generic [ref=e539]:
+                      - img "Chocolate Excellence 85% Cacao, 100 g" [ref=e541]
+                      - button "Agregar al carro - Chocolate Excellence 85% Cacao, 100 g" [ref=e544] [cursor=pointer]:
+                        - generic "agregar" [ref=e545]: 
+                        - generic [ref=e546]: Agregar
+                    - generic [ref=e548]:
+                      - generic [ref=e550]:
+                        - generic [ref=e551]: $6.890
+                        - generic [ref=e552]: precio actual $6.890
+                        - generic [ref=e553]: $68.900 x kg
+                      - generic [ref=e554]: Lindt
+                      - generic [ref=e555]: Chocolate Excellence 85% Cacao, 100 g
+                - group [ref=e558]:
+                  - link "Chocolate Tableta Excellence 90% Cacao, 100 gr" [ref=e559] [cursor=pointer]:
+                    - /url: /ip/variedad/00304692002975?from=/search
+                    - generic [ref=e560]: Chocolate Tableta Excellence 90% Cacao, 100 gr
+                  - generic [ref=e562]:
+                    - generic [ref=e565]:
+                      - generic [ref=e566]:
+                        - img "Chocolate Tableta Excellence 90% Cacao, 100 gr"
+                      - button "Agregar al carro - Chocolate Tableta Excellence 90% Cacao, 100 gr" [ref=e569] [cursor=pointer]:
+                        - generic "agregar" [ref=e570]: 
+                        - generic [ref=e571]: Agregar
+                    - generic [ref=e573]:
+                      - generic [ref=e575]:
+                        - generic [ref=e576]: $6.890
+                        - generic [ref=e577]: precio actual $6.890
+                        - generic [ref=e578]: $68.900 x kg
+                      - generic [ref=e579]: Lindt
+                      - generic [ref=e580]: Chocolate Tableta Excellence 90% Cacao, 100 gr
+                - group [ref=e583]:
+                  - link "Cacao Dulce, 200 g" [ref=e584] [cursor=pointer]:
+                    - /url: /ip/leche/00780242000730?from=/search
+                    - generic [ref=e585]: Cacao Dulce, 200 g
+                  - generic [ref=e587]:
+                    - generic [ref=e590]:
+                      - generic [ref=e591]:
+                        - img "Cacao Dulce, 200 g"
+                      - button "Agregar al carro - Cacao Dulce, 200 g" [ref=e594] [cursor=pointer]:
+                        - generic "agregar" [ref=e595]: 
+                        - generic [ref=e596]: Agregar
+                    - generic [ref=e598]:
+                      - generic [ref=e600]:
+                        - generic [ref=e601]: $1.350
+                        - generic [ref=e602]: precio actual $1.350
+                        - generic [ref=e603]: $6.749 x kg
+                      - generic [ref=e604]: Edra
+                      - generic [ref=e605]: Cacao Dulce, 200 g
+                - group [ref=e608]:
+                  - link "Saborizante De Leche Tradicional Sabor Cacao Dulce, 230 g" [ref=e609] [cursor=pointer]:
+                    - /url: /ip/leche/00761328700522?from=/search
+                    - generic [ref=e610]: Saborizante De Leche Tradicional Sabor Cacao Dulce, 230 g
+                  - generic [ref=e612]:
+                    - generic [ref=e613]:
+                      - generic [ref=e615]:
+                        - generic [ref=e617]: 
+                        - text: Rebaja
+                      - generic [ref=e618]:
+                        - generic [ref=e619]:
+                          - img "Saborizante De Leche Tradicional Sabor Cacao Dulce, 230 g"
+                        - button "Agregar al carro - Saborizante De Leche Tradicional Sabor Cacao Dulce, 230 g" [ref=e622] [cursor=pointer]:
+                          - generic "agregar" [ref=e623]: 
+                          - generic [ref=e624]: Agregar
+                    - generic [ref=e626]:
+                      - generic [ref=e628]:
+                        - generic [ref=e629]: $2.650
+                        - generic [ref=e630]: precio actual $2.650, Costaba $3.090
+                        - generic [ref=e631]: $11.522 x kg
+                        - generic [ref=e632]: $3.090
+                        - generic [ref=e633]: Ahorra $440
+                      - generic [ref=e634]: Nestlé
+                      - generic [ref=e635]: Saborizante De Leche Tradicional Sabor Cacao Dulce, 230 g
+  - alert [ref=e644]

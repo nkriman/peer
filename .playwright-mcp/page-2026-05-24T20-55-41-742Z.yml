@@ -1,0 +1,979 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e5]:
+      - link "Saltar al contenido principal" [ref=e6] [cursor=pointer]:
+        - /url: "#maincontent"
+      - text: 
+      - link "Página de inicio de Lider" [ref=e7] [cursor=pointer]:
+        - /url: /
+        - img "lider-cl" [ref=e9]
+      - button "Categorías" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: 
+        - text: Categorías
+      - search "En todo el sitio de Lider" [ref=e14]:
+        - generic [ref=e15]:
+          - searchbox "Buscar" [ref=e16]: uno al dia pack
+          - button [ref=e17] [cursor=pointer]:
+            - generic [ref=e18]: 
+          - button "categorías" [ref=e19] [cursor=pointer]:
+            - generic [ref=e20]: 
+      - article [ref=e21]:
+        - link " Ir a Mundo Lider" [ref=e22] [cursor=pointer]:
+          - /url: https://www.lider.cl/inicio/
+          - generic [ref=e23]: 
+          - text: Ir a Mundo Lider
+      - navigation "Mis productos, cuenta y carro" [ref=e24]:
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - button "Vuelve a pedirlos Tus productos" [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: 
+              - generic [ref=e29]:
+                - generic [ref=e30]: Vuelve a pedirlos
+                - generic [ref=e31]: Tus productos
+            - text: 
+          - listitem [ref=e32]:
+            - button "Hola, Nicolas K Cuenta" [ref=e33] [cursor=pointer]:
+              - generic [ref=e34]: 
+              - generic [ref=e35]:
+                - generic [ref=e36]: Hola, Nicolas K
+                - generic [ref=e37]: Cuenta
+            - text:    
+          - listitem [ref=e38]:
+            - button "El carro tiene 0 productos Monto total $0" [ref=e41]:
+              - generic [ref=e42]: 
+              - generic [ref=e43]: $0
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - separator [ref=e46]
+        - generic [ref=e48]:
+          - img "Icono de título de banner" [ref=e49]
+          - generic [ref=e50]: ¿Cómo quieres tus productos?
+      - main [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e57]:
+            - region "Sección de ordenar y filtrar" [ref=e59]:
+              - button "Precio" [ref=e62]:
+                - generic [ref=e64]: 
+                - generic [ref=e65]: Precio
+                - generic [ref=e66]: 
+              - button "Marca" [ref=e69]:
+                - generic [ref=e70]: Marca
+                - generic [ref=e71]: 
+              - generic [ref=e72]:
+                - generic [ref=e73]: Ordenar por
+                - text: "|"
+                - button "Ordenar por Más relevantes" [ref=e75]:
+                  - text: Más relevantes
+                  - generic [ref=e76]: 
+            - separator [ref=e77]
+          - generic [ref=e80]:
+            - generic [ref=e81]:
+              - generic [ref=e84]:
+                - generic [ref=e85]:
+                  - button "Precio" [ref=e88]:
+                    - generic [ref=e89]: Precio
+                    - img [ref=e90]: 
+                  - separator [ref=e91]
+                - generic [ref=e92]:
+                  - button "Campaña" [ref=e95]:
+                    - generic [ref=e96]: Campaña
+                    - img [ref=e97]: 
+                  - separator [ref=e98]
+                - generic [ref=e99]:
+                  - button "Marca" [ref=e102]:
+                    - generic [ref=e103]: Marca
+                    - img [ref=e104]: 
+                  - separator [ref=e105]
+                - generic [ref=e106]:
+                  - button "Categoría" [ref=e109]:
+                    - generic [ref=e110]: Categoría
+                    - img [ref=e111]: 
+                  - separator [ref=e112]
+              - generic [ref=e115]:
+                - heading "Resultados para uno al dia pack (75)" [level=2] [ref=e123]: Resultados para uno al dia pack(75)
+                - generic [ref=e124]:
+                  - group [ref=e127]:
+                    - link "Probiótico Uno Sabor Manzana Pack 12 Botellas, 80 ml" [ref=e128] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780290000405?from=/search
+                      - generic [ref=e129]: Probiótico Uno Sabor Manzana Pack 12 Botellas, 80 ml
+                    - generic [ref=e131]:
+                      - generic [ref=e132]:
+                        - generic [ref=e134]:
+                          - generic [ref=e136]: 
+                          - text: Rebaja
+                        - generic [ref=e137]:
+                          - img "Probiótico Uno Sabor Manzana Pack 12 Botellas, 80 ml" [ref=e139]
+                          - button "Agregar al carro - Probiótico Uno Sabor Manzana Pack 12 Botellas, 80 ml" [ref=e142] [cursor=pointer]:
+                            - generic "agregar" [ref=e143]: 
+                            - generic [ref=e144]: Agregar
+                      - generic [ref=e146]:
+                        - generic [ref=e148]:
+                          - generic [ref=e149]: $3.550
+                          - generic [ref=e150]: precio actual $3.550, Costaba $4.190
+                          - generic [ref=e151]: $44.375 x kg
+                          - generic [ref=e152]: $4.190
+                          - generic [ref=e153]: Ahorra $640
+                        - generic [ref=e154]: Soprole
+                        - generic [ref=e155]: Probiótico Uno Sabor Manzana Pack 12 Botellas, 80 ml
+                  - group [ref=e158]:
+                    - link "Probiótico UNO Multifruta Pack 6 Botellas, 80 ml c/u" [ref=e159] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780290023834?from=/search
+                      - generic [ref=e160]: Probiótico UNO Multifruta Pack 6 Botellas, 80 ml c/u
+                    - generic [ref=e162]:
+                      - generic [ref=e165]:
+                        - img "Probiótico UNO Multifruta Pack 6 Botellas, 80 ml c/u" [ref=e167]
+                        - button "Agregar al carro - Probiótico UNO Multifruta Pack 6 Botellas, 80 ml c/u" [ref=e170] [cursor=pointer]:
+                          - generic "agregar" [ref=e171]: 
+                          - generic [ref=e172]: Agregar
+                      - generic [ref=e174]:
+                        - generic [ref=e176]:
+                          - generic [ref=e177]: $2.190
+                          - generic [ref=e178]: precio actual $2.190
+                          - generic [ref=e179]: $27.375 x lt
+                        - generic [ref=e180]: Soprole
+                        - generic [ref=e181]: Probiótico UNO Multifruta Pack 6 Botellas, 80 ml c/u
+                  - group [ref=e184]:
+                    - link "Probiótico UNO Frutilla Pack 18 Botellas, 80 ml c/u" [ref=e185] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780290023859?from=/search
+                      - generic [ref=e186]: Probiótico UNO Frutilla Pack 18 Botellas, 80 ml c/u
+                    - generic [ref=e188]:
+                      - generic [ref=e189]:
+                        - generic [ref=e191]:
+                          - generic [ref=e193]: 
+                          - text: Rebaja
+                        - generic [ref=e194]:
+                          - img "Probiótico UNO Frutilla Pack 18 Botellas, 80 ml c/u" [ref=e196]
+                          - button "Agregar al carro - Probiótico UNO Frutilla Pack 18 Botellas, 80 ml c/u" [ref=e199] [cursor=pointer]:
+                            - generic "agregar" [ref=e200]: 
+                            - generic [ref=e201]: Agregar
+                      - generic [ref=e203]:
+                        - generic [ref=e205]:
+                          - generic [ref=e206]: $5.250
+                          - generic [ref=e207]: precio actual $5.250, Costaba $6.190
+                          - generic [ref=e208]: $3.646 x lt
+                          - generic [ref=e209]: $6.190
+                          - generic [ref=e210]: Ahorra $940
+                        - generic [ref=e211]: Soprole
+                        - generic [ref=e212]: Probiótico UNO Frutilla Pack 18 Botellas, 80 ml c/u
+                  - group [ref=e215]:
+                    - link "Probiótico Uno Vitamina C Frutilla Pack 6 Botellas, 80 ml" [ref=e216] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780290000415?from=/search
+                      - generic [ref=e217]: Probiótico Uno Vitamina C Frutilla Pack 6 Botellas, 80 ml
+                    - generic [ref=e219]:
+                      - generic [ref=e222]:
+                        - img "Probiótico Uno Vitamina C Frutilla Pack 6 Botellas, 80 ml" [ref=e224]
+                        - button "Agregar al carro - Probiótico Uno Vitamina C Frutilla Pack 6 Botellas, 80 ml" [ref=e227] [cursor=pointer]:
+                          - generic "agregar" [ref=e228]: 
+                          - generic [ref=e229]: Agregar
+                      - generic [ref=e231]:
+                        - generic [ref=e233]:
+                          - generic [ref=e234]: $2.450
+                          - generic [ref=e235]: precio actual $2.450
+                          - generic [ref=e236]: $30.625 x lt
+                        - generic [ref=e237]: Soprole
+                        - generic [ref=e238]: Probiótico Uno Vitamina C Frutilla Pack 6 Botellas, 80 ml
+                  - group [ref=e241]:
+                    - link "Probiótico Uno Vitamina C Mora Pack 12 Botellas, 80 ml" [ref=e242] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780290000414?from=/search
+                      - generic [ref=e243]: Probiótico Uno Vitamina C Mora Pack 12 Botellas, 80 ml
+                    - generic [ref=e245]:
+                      - generic [ref=e248]:
+                        - img "Probiótico Uno Vitamina C Mora Pack 12 Botellas, 80 ml" [ref=e250]
+                        - button "Agregar al carro - Probiótico Uno Vitamina C Mora Pack 12 Botellas, 80 ml" [ref=e253] [cursor=pointer]:
+                          - generic "agregar" [ref=e254]: 
+                          - generic [ref=e255]: Agregar
+                      - generic [ref=e257]:
+                        - generic [ref=e259]:
+                          - generic [ref=e260]: $4.390
+                          - generic [ref=e261]: precio actual $4.390
+                          - generic [ref=e262]: $54.875 x lt
+                        - generic [ref=e263]: Soprole
+                        - generic [ref=e264]: Probiótico Uno Vitamina C Mora Pack 12 Botellas, 80 ml
+                  - group [ref=e267]:
+                    - link "Bebida Láctea Probiótico Defensas con Bombilla Sabor Multifruta Caja, 6 Un" [ref=e268] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780290000145?from=/search
+                      - generic [ref=e269]: Bebida Láctea Probiótico Defensas con Bombilla Sabor Multifruta Caja, 6 Un
+                    - generic [ref=e271]:
+                      - generic [ref=e274]:
+                        - img "Bebida Láctea Probiótico Defensas con Bombilla Sabor Multifruta Caja, 6 Un" [ref=e276]
+                        - button "Agregar al carro - Bebida Láctea Probiótico Defensas con Bombilla Sabor Multifruta Caja, 6 Un" [ref=e279] [cursor=pointer]:
+                          - generic "agregar" [ref=e280]: 
+                          - generic [ref=e281]: Agregar
+                      - generic [ref=e283]:
+                        - generic [ref=e285]:
+                          - generic [ref=e286]: $2.250
+                          - generic [ref=e287]: precio actual $2.250
+                          - generic [ref=e288]: $4.688 x lt
+                        - generic [ref=e289]: Soprole Uno
+                        - generic [ref=e290]: Bebida Láctea Probiótico Defensas con Bombilla Sabor Multifruta Caja, 6 Un
+                  - group [ref=e293]:
+                    - link "Bebida Láctea Probiótico UNO Sabor Frutilla Pack 12 Caja, 80 ml" [ref=e294] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780290000146?from=/search
+                      - generic [ref=e295]: Bebida Láctea Probiótico UNO Sabor Frutilla Pack 12 Caja, 80 ml
+                    - generic [ref=e297]:
+                      - generic [ref=e300]:
+                        - img "Bebida Láctea Probiótico UNO Sabor Frutilla Pack 12 Caja, 80 ml" [ref=e302]
+                        - button "Agregar al carro - Bebida Láctea Probiótico UNO Sabor Frutilla Pack 12 Caja, 80 ml" [ref=e305] [cursor=pointer]:
+                          - generic "agregar" [ref=e306]: 
+                          - generic [ref=e307]: Agregar
+                      - generic [ref=e309]:
+                        - generic [ref=e311]:
+                          - generic [ref=e312]: $4.190
+                          - generic [ref=e313]: precio actual $4.190
+                          - generic [ref=e314]: $4.365 x lt
+                        - generic [ref=e315]: Soprole
+                        - generic [ref=e316]: Bebida Láctea Probiótico UNO Sabor Frutilla Pack 12 Caja, 80 ml
+                  - group [ref=e319]:
+                    - link "Bebida Láctea Probiótico UNO Sabor Frutilla Pack 6 Caja, 6 Un" [ref=e320] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780290000144?from=/search
+                      - generic [ref=e321]: Bebida Láctea Probiótico UNO Sabor Frutilla Pack 6 Caja, 6 Un
+                    - generic [ref=e323]:
+                      - generic [ref=e326]:
+                        - img "Bebida Láctea Probiótico UNO Sabor Frutilla Pack 6 Caja, 6 Un" [ref=e328]
+                        - button "Agregar al carro - Bebida Láctea Probiótico UNO Sabor Frutilla Pack 6 Caja, 6 Un" [ref=e331] [cursor=pointer]:
+                          - generic "agregar" [ref=e332]: 
+                          - generic [ref=e333]: Agregar
+                      - generic [ref=e335]:
+                        - generic [ref=e337]:
+                          - generic [ref=e338]: $2.250
+                          - generic [ref=e339]: precio actual $2.250
+                          - generic [ref=e340]: $4.688 x lt
+                        - generic [ref=e341]: Soprole
+                        - generic [ref=e342]: Bebida Láctea Probiótico UNO Sabor Frutilla Pack 6 Caja, 6 Un
+                  - group [ref=e345]:
+                    - link "Yoghurt Probiótico UNO Multifruta Pack 12 Cajas, 80 ml, 960 ml" [ref=e346] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780290000456?from=/search
+                      - generic [ref=e347]: Yoghurt Probiótico UNO Multifruta Pack 12 Cajas, 80 ml, 960 ml
+                    - generic [ref=e349]:
+                      - generic [ref=e352]:
+                        - img "Yoghurt Probiótico UNO Multifruta Pack 12 Cajas, 80 ml, 960 ml" [ref=e354]
+                        - button "Agregar al carro - Yoghurt Probiótico UNO Multifruta Pack 12 Cajas, 80 ml, 960 ml" [ref=e357] [cursor=pointer]:
+                          - generic "agregar" [ref=e358]: 
+                          - generic [ref=e359]: Agregar
+                      - generic [ref=e361]:
+                        - generic [ref=e363]:
+                          - generic [ref=e364]: $4.190
+                          - generic [ref=e365]: precio actual $4.190
+                          - generic [ref=e366]: $52.375 x lt
+                        - generic [ref=e367]: Soprole
+                        - generic [ref=e368]: Yoghurt Probiótico UNO Multifruta Pack 12 Cajas, 80 ml, 960 ml
+                  - group [ref=e371]:
+                    - link "Bebida Láctea Probiótico UNO Multifruta Pack 12 Botella, 80 ml c/u" [ref=e372] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780290023844?from=/search
+                      - generic [ref=e373]: Bebida Láctea Probiótico UNO Multifruta Pack 12 Botella, 80 ml c/u
+                    - generic [ref=e375]:
+                      - generic [ref=e376]:
+                        - generic [ref=e378]:
+                          - generic [ref=e380]: 
+                          - text: Rebaja
+                        - generic [ref=e381]:
+                          - img "Bebida Láctea Probiótico UNO Multifruta Pack 12 Botella, 80 ml c/u" [ref=e383]
+                          - button "Agregar al carro - Bebida Láctea Probiótico UNO Multifruta Pack 12 Botella, 80 ml c/u" [ref=e386] [cursor=pointer]:
+                            - generic "agregar" [ref=e387]: 
+                            - generic [ref=e388]: Agregar
+                      - generic [ref=e390]:
+                        - generic [ref=e392]:
+                          - generic [ref=e393]: $3.550
+                          - generic [ref=e394]: precio actual $3.550, Costaba $4.190
+                          - generic [ref=e395]: $3.698 x kg
+                          - generic [ref=e396]: $4.190
+                          - generic [ref=e397]: Ahorra $640
+                        - generic [ref=e398]: Soprole
+                        - generic [ref=e399]: Bebida Láctea Probiótico UNO Multifruta Pack 12 Botella, 80 ml c/u
+                  - group [ref=e402]:
+                    - link "Bebida Láctea Probiótico UNO Sabor Frutilla Pack 12 Botella, 80 ml c/u" [ref=e403] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780290023842?from=/search
+                      - generic [ref=e404]: Bebida Láctea Probiótico UNO Sabor Frutilla Pack 12 Botella, 80 ml c/u
+                    - generic [ref=e406]:
+                      - generic [ref=e407]:
+                        - generic [ref=e409]:
+                          - generic [ref=e411]: 
+                          - text: Rebaja
+                        - generic [ref=e412]:
+                          - img "Bebida Láctea Probiótico UNO Sabor Frutilla Pack 12 Botella, 80 ml c/u" [ref=e414]
+                          - button "Agregar al carro - Bebida Láctea Probiótico UNO Sabor Frutilla Pack 12 Botella, 80 ml c/u" [ref=e417] [cursor=pointer]:
+                            - generic "agregar" [ref=e418]: 
+                            - generic [ref=e419]: Agregar
+                      - generic [ref=e421]:
+                        - generic [ref=e423]:
+                          - generic [ref=e424]: $3.550
+                          - generic [ref=e425]: precio actual $3.550, Costaba $4.190
+                          - generic [ref=e426]: $3.698 x lt
+                          - generic [ref=e427]: $4.190
+                          - generic [ref=e428]: Ahorra $640
+                        - generic [ref=e429]: Soprole
+                        - generic [ref=e430]: Bebida Láctea Probiótico UNO Sabor Frutilla Pack 12 Botella, 80 ml c/u
+                  - group [ref=e433]:
+                    - link "Yoghurt Probiótico UNO Manzana Pack 6 Cajas, 80 ml, 480 ml" [ref=e434] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780290000459?from=/search
+                      - generic [ref=e435]: Yoghurt Probiótico UNO Manzana Pack 6 Cajas, 80 ml, 480 ml
+                    - generic [ref=e437]:
+                      - generic [ref=e440]:
+                        - img "Yoghurt Probiótico UNO Manzana Pack 6 Cajas, 80 ml, 480 ml" [ref=e442]
+                        - button "Agregar al carro - Yoghurt Probiótico UNO Manzana Pack 6 Cajas, 80 ml, 480 ml" [ref=e445] [cursor=pointer]:
+                          - generic "agregar" [ref=e446]: 
+                          - generic [ref=e447]: Agregar
+                      - generic [ref=e449]:
+                        - generic [ref=e451]:
+                          - generic [ref=e452]: $2.250
+                          - generic [ref=e453]: precio actual $2.250
+                          - generic [ref=e454]: $28.125 x lt
+                        - generic [ref=e455]: Soprole
+                        - generic [ref=e456]: Yoghurt Probiótico UNO Manzana Pack 6 Cajas, 80 ml, 480 ml
+                  - group [ref=e459]:
+                    - link "Pack 4 Ampolletas LED Bola A60 7W Luz Día Base E27, 4 Un" [ref=e460] [cursor=pointer]:
+                      - /url: /ip/iluminacion-y-electricidad/00780733202676?from=/search
+                      - generic [ref=e461]: Pack 4 Ampolletas LED Bola A60 7W Luz Día Base E27, 4 Un
+                    - generic [ref=e463]:
+                      - generic [ref=e466]:
+                        - img "Pack 4 Ampolletas LED Bola A60 7W Luz Día Base E27, 4 Un" [ref=e468]
+                        - button "Agregar al carro - Pack 4 Ampolletas LED Bola A60 7W Luz Día Base E27, 4 Un" [ref=e471] [cursor=pointer]:
+                          - generic "agregar" [ref=e472]: 
+                          - generic [ref=e473]: Agregar
+                      - generic [ref=e475]:
+                        - generic [ref=e477]:
+                          - generic [ref=e478]: $3.990
+                          - generic [ref=e479]: precio actual $3.990
+                          - generic [ref=e480]: $3.990 x un
+                        - generic [ref=e481]: Great Value
+                        - generic [ref=e482]: Pack 4 Ampolletas LED Bola A60 7W Luz Día Base E27, 4 Un
+                  - group [ref=e485]:
+                    - link "Pack 3 Ampolletas LED Bola A60 11W Luz Día Base E27, 3 Un" [ref=e486] [cursor=pointer]:
+                      - /url: /ip/iluminacion-y-electricidad/00780733203029?from=/search
+                      - generic [ref=e487]: Pack 3 Ampolletas LED Bola A60 11W Luz Día Base E27, 3 Un
+                    - generic [ref=e489]:
+                      - generic [ref=e492]:
+                        - img "Pack 3 Ampolletas LED Bola A60 11W Luz Día Base E27, 3 Un" [ref=e494]
+                        - button "Agregar al carro - Pack 3 Ampolletas LED Bola A60 11W Luz Día Base E27, 3 Un" [ref=e497] [cursor=pointer]:
+                          - generic "agregar" [ref=e498]: 
+                          - generic [ref=e499]: Agregar
+                      - generic [ref=e501]:
+                        - generic [ref=e503]:
+                          - generic [ref=e504]: $4.990
+                          - generic [ref=e505]: precio actual $4.990
+                          - generic [ref=e506]: $1.663 x un
+                        - generic [ref=e507]: Great Value
+                        - generic [ref=e508]: Pack 3 Ampolletas LED Bola A60 11W Luz Día Base E27, 3 Un
+                  - group [ref=e511]:
+                    - link "Pack de Gas Doite 227 Grs, 1 Un" [ref=e512] [cursor=pointer]:
+                      - /url: /ip/terraza/00780013609096?from=/search
+                      - generic [ref=e513]: Pack de Gas Doite 227 Grs, 1 Un
+                    - generic [ref=e515]:
+                      - generic [ref=e518]:
+                        - img "Pack de Gas Doite 227 Grs, 1 Un" [ref=e520]
+                        - button "Agregar al carro - Pack de Gas Doite 227 Grs, 1 Un" [ref=e523] [cursor=pointer]:
+                          - generic "agregar" [ref=e524]: 
+                          - generic [ref=e525]: Agregar
+                      - generic [ref=e527]:
+                        - generic [ref=e529]:
+                          - generic [ref=e530]: $6.490
+                          - generic [ref=e531]: precio actual $6.490
+                          - generic [ref=e532]: $6.490 x un
+                        - generic [ref=e533]: Doite
+                        - generic [ref=e534]: Pack de Gas Doite 227 Grs, 1 Un
+                  - group [ref=e537]:
+                    - link "Destornilladores, Pack 4 Un, 1 Un" [ref=e538] [cursor=pointer]:
+                      - /url: /ip/herramientas/00693968484024?from=/search
+                      - generic [ref=e539]: Destornilladores, Pack 4 Un, 1 Un
+                    - generic [ref=e541]:
+                      - generic [ref=e544]:
+                        - img "Destornilladores, Pack 4 Un, 1 Un" [ref=e546]
+                        - button "Agregar al carro - Destornilladores, Pack 4 Un, 1 Un" [ref=e549] [cursor=pointer]:
+                          - generic "agregar" [ref=e550]: 
+                          - generic [ref=e551]: Agregar
+                      - generic [ref=e553]:
+                        - generic [ref=e555]:
+                          - generic [ref=e556]: $4.490
+                          - generic [ref=e557]: precio actual $4.490
+                          - generic [ref=e558]: $4.490 x un
+                        - generic [ref=e559]: Hyper Tough
+                        - generic [ref=e560]: Destornilladores, Pack 4 Un, 1 Un
+                  - group [ref=e563]:
+                    - link "Carne de Vacuno Asado Carnicero" [ref=e564] [cursor=pointer]:
+                      - /url: /ip/vacuno/00209514000000?from=/search
+                      - generic [ref=e565]: Carne de Vacuno Asado Carnicero
+                    - generic [ref=e567]:
+                      - generic [ref=e570]:
+                        - generic [ref=e571]:
+                          - img "Carne de Vacuno Asado Carnicero"
+                        - button "Agregar al carro - Carne de Vacuno Asado Carnicero" [ref=e574] [cursor=pointer]:
+                          - generic "agregar" [ref=e575]: 
+                          - generic [ref=e576]: Agregar
+                      - generic [ref=e578]:
+                        - generic [ref=e580]:
+                          - generic [ref=e581]: $9.690/kg
+                          - generic [ref=e582]: precio actual $9.690/kg
+                          - generic [ref=e583]: $9.690 x kg
+                        - generic [ref=e584]: Al Vacío
+                        - generic [ref=e585]: Carne de Vacuno Asado Carnicero
+                  - group [ref=e588]:
+                    - link "Carne de Vacuno Filete" [ref=e589] [cursor=pointer]:
+                      - /url: /ip/vacuno/00210154000000?from=/search
+                      - generic [ref=e590]: Carne de Vacuno Filete
+                    - generic [ref=e592]:
+                      - generic [ref=e595]:
+                        - generic [ref=e596]:
+                          - img "Carne de Vacuno Filete"
+                        - button "Agregar al carro - Carne de Vacuno Filete" [ref=e599] [cursor=pointer]:
+                          - generic "agregar" [ref=e600]: 
+                          - generic [ref=e601]: Agregar
+                      - generic [ref=e603]:
+                        - generic [ref=e605]:
+                          - generic [ref=e606]: $17.990/kg
+                          - generic [ref=e607]: precio actual $17.990/kg
+                          - generic [ref=e608]: $17.990 x kg
+                        - generic [ref=e609]: Al Vacío
+                        - generic [ref=e610]: Carne de Vacuno Filete
+                  - group [ref=e613]:
+                    - link "Carne de Vacuno Abastero" [ref=e614] [cursor=pointer]:
+                      - /url: /ip/vacuno/00218103000000?from=/search
+                      - generic [ref=e615]: Carne de Vacuno Abastero
+                    - generic [ref=e617]:
+                      - generic [ref=e618]:
+                        - generic [ref=e620]:
+                          - generic [ref=e622]: 
+                          - text: Rebaja
+                        - generic [ref=e623]:
+                          - generic [ref=e624]:
+                            - img "Carne de Vacuno Abastero"
+                          - button "Agregar al carro - Carne de Vacuno Abastero" [ref=e627] [cursor=pointer]:
+                            - generic "agregar" [ref=e628]: 
+                            - generic [ref=e629]: Agregar
+                      - generic [ref=e631]:
+                        - generic [ref=e633]:
+                          - generic [ref=e634]: $8.290/kg
+                          - generic [ref=e635]: precio actual $8.290/kg, Costaba $9.490/kg
+                          - generic [ref=e636]: $8.290 x kg
+                          - generic [ref=e637]: $9.490/kg
+                          - generic [ref=e638]: Ahorra $1.200
+                        - generic [ref=e639]: Al Vacío
+                        - generic [ref=e640]: Carne de Vacuno Abastero
+                  - group [ref=e643]:
+                    - link "Carne de Vacuno Lomo Liso" [ref=e644] [cursor=pointer]:
+                      - /url: /ip/vacuno/00210916000000?from=/search
+                      - generic [ref=e645]: Carne de Vacuno Lomo Liso
+                    - generic [ref=e647]:
+                      - generic [ref=e650]:
+                        - generic [ref=e651]:
+                          - img "Carne de Vacuno Lomo Liso"
+                        - button "Agregar al carro - Carne de Vacuno Lomo Liso" [ref=e654] [cursor=pointer]:
+                          - generic "agregar" [ref=e655]: 
+                          - generic [ref=e656]: Agregar
+                      - generic [ref=e658]:
+                        - generic [ref=e660]:
+                          - generic [ref=e661]: $16.290/kg
+                          - generic [ref=e662]: precio actual $16.290/kg
+                          - generic [ref=e663]: $16.290 x kg
+                        - generic [ref=e664]: Al Vacío
+                        - generic [ref=e665]: Carne de Vacuno Lomo Liso
+                  - group [ref=e668]:
+                    - link "Carne de Vacuno Lomo Vetado" [ref=e669] [cursor=pointer]:
+                      - /url: /ip/vacuno/00211182000000?from=/search
+                      - generic [ref=e670]: Carne de Vacuno Lomo Vetado
+                    - generic [ref=e672]:
+                      - generic [ref=e675]:
+                        - generic [ref=e676]:
+                          - img "Carne de Vacuno Lomo Vetado"
+                        - button "Agregar al carro - Carne de Vacuno Lomo Vetado" [ref=e679] [cursor=pointer]:
+                          - generic "agregar" [ref=e680]: 
+                          - generic [ref=e681]: Agregar
+                      - generic [ref=e683]:
+                        - generic [ref=e685]:
+                          - generic [ref=e686]: $17.290/kg
+                          - generic [ref=e687]: precio actual $17.290/kg
+                          - generic [ref=e688]: $17.290 x kg
+                        - generic [ref=e689]: Al Vacío
+                        - generic [ref=e690]: Carne de Vacuno Lomo Vetado
+                  - group [ref=e693]:
+                    - link "Carne de Vacuno Posta Paleta" [ref=e694] [cursor=pointer]:
+                      - /url: /ip/vacuno/00212573000000?from=/search
+                      - generic [ref=e695]: Carne de Vacuno Posta Paleta
+                    - generic [ref=e697]:
+                      - generic [ref=e698]:
+                        - generic [ref=e700]:
+                          - generic [ref=e702]: 
+                          - text: Rebaja
+                        - generic [ref=e703]:
+                          - generic [ref=e704]:
+                            - img "Carne de Vacuno Posta Paleta"
+                          - button "Agregar al carro - Carne de Vacuno Posta Paleta" [ref=e707] [cursor=pointer]:
+                            - generic "agregar" [ref=e708]: 
+                            - generic [ref=e709]: Agregar
+                      - generic [ref=e711]:
+                        - generic [ref=e713]:
+                          - generic [ref=e714]: $8.290/kg
+                          - generic [ref=e715]: precio actual $8.290/kg, Costaba $10.390/kg
+                          - generic [ref=e716]: $8.290 x kg
+                          - generic [ref=e717]: $10.390/kg
+                          - generic [ref=e718]: Ahorra $2.100
+                        - generic [ref=e719]: Al Vacío
+                        - generic [ref=e720]: Carne de Vacuno Posta Paleta
+                  - group [ref=e723]:
+                    - link "Carne de Vacuno Punta de Picana" [ref=e724] [cursor=pointer]:
+                      - /url: /ip/vacuno/00213382000000?from=/search
+                      - generic [ref=e725]: Carne de Vacuno Punta de Picana
+                    - generic [ref=e727]:
+                      - generic [ref=e730]:
+                        - generic [ref=e731]:
+                          - img "Carne de Vacuno Punta de Picana"
+                        - button "Agregar al carro - Carne de Vacuno Punta de Picana" [ref=e734] [cursor=pointer]:
+                          - generic "agregar" [ref=e735]: 
+                          - generic [ref=e736]: Agregar
+                      - generic [ref=e738]:
+                        - generic [ref=e740]:
+                          - generic [ref=e741]: $13.390/kg
+                          - generic [ref=e742]: precio actual $13.390/kg
+                          - generic [ref=e743]: $13.390 x kg
+                        - generic [ref=e744]: Al Vacío
+                        - generic [ref=e745]: Carne de Vacuno Punta de Picana
+                  - group [ref=e748]:
+                    - link "Carne de Vacuno Tapapecho" [ref=e749] [cursor=pointer]:
+                      - /url: /ip/vacuno/00213922000000?from=/search
+                      - generic [ref=e750]: Carne de Vacuno Tapapecho
+                    - generic [ref=e752]:
+                      - generic [ref=e753]:
+                        - generic [ref=e755]:
+                          - generic [ref=e757]: 
+                          - text: Rebaja
+                        - generic [ref=e758]:
+                          - generic [ref=e759]:
+                            - img "Carne de Vacuno Tapapecho"
+                          - button "Agregar al carro - Carne de Vacuno Tapapecho" [ref=e762] [cursor=pointer]:
+                            - generic "agregar" [ref=e763]: 
+                            - generic [ref=e764]: Agregar
+                      - generic [ref=e766]:
+                        - generic [ref=e768]:
+                          - generic [ref=e769]: $8.290/kg
+                          - generic [ref=e770]: precio actual $8.290/kg, Costaba $9.690/kg
+                          - generic [ref=e771]: $8.290 x kg
+                          - generic [ref=e772]: $9.690/kg
+                          - generic [ref=e773]: Ahorra $1.400
+                        - generic [ref=e774]: Al Vacío
+                        - generic [ref=e775]: Carne de Vacuno Tapapecho
+                  - group [ref=e778]:
+                    - link "Carne de Vacuno Sobrecostilla" [ref=e779] [cursor=pointer]:
+                      - /url: /ip/vacuno/00213583000000?from=/search
+                      - generic [ref=e780]: Carne de Vacuno Sobrecostilla
+                    - generic [ref=e782]:
+                      - generic [ref=e785]:
+                        - generic [ref=e786]:
+                          - img "Carne de Vacuno Sobrecostilla"
+                        - button "Agregar al carro - Carne de Vacuno Sobrecostilla" [ref=e789] [cursor=pointer]:
+                          - generic "agregar" [ref=e790]: 
+                          - generic [ref=e791]: Agregar
+                      - generic [ref=e793]:
+                        - generic [ref=e795]:
+                          - generic [ref=e796]: $9.690/kg
+                          - generic [ref=e797]: precio actual $9.690/kg
+                          - generic [ref=e798]: $9.690 x kg
+                        - generic [ref=e799]: Al Vacío
+                        - generic [ref=e800]: Carne de Vacuno Sobrecostilla
+                  - group [ref=e803]:
+                    - link "Carne de Vacuno Punta de Paleta" [ref=e804] [cursor=pointer]:
+                      - /url: /ip/vacuno/00213197000000?from=/search
+                      - generic [ref=e805]: Carne de Vacuno Punta de Paleta
+                    - generic [ref=e807]:
+                      - generic [ref=e810]:
+                        - generic [ref=e811]:
+                          - img "Carne de Vacuno Punta de Paleta"
+                        - button "Agregar al carro - Carne de Vacuno Punta de Paleta" [ref=e814] [cursor=pointer]:
+                          - generic "agregar" [ref=e815]: 
+                          - generic [ref=e816]: Agregar
+                      - generic [ref=e818]:
+                        - generic [ref=e820]:
+                          - generic [ref=e821]: $10.390/kg
+                          - generic [ref=e822]: precio actual $10.390/kg
+                          - generic [ref=e823]: $10.390 x kg
+                        - generic [ref=e824]: Al Vacío
+                        - generic [ref=e825]: Carne de Vacuno Punta de Paleta
+                  - group [ref=e828]:
+                    - link "Carne de Vacuno Posta Paleta" [ref=e829] [cursor=pointer]:
+                      - /url: /ip/vacuno/00212572000000?from=/search
+                      - generic [ref=e830]: Carne de Vacuno Posta Paleta
+                    - generic [ref=e832]:
+                      - generic [ref=e833]:
+                        - generic [ref=e835]:
+                          - generic [ref=e837]: 
+                          - text: Rebaja
+                        - generic [ref=e838]:
+                          - generic [ref=e839]:
+                            - img "Carne de Vacuno Posta Paleta"
+                          - button "Agregar al carro - Carne de Vacuno Posta Paleta" [ref=e842] [cursor=pointer]:
+                            - generic "agregar" [ref=e843]: 
+                            - generic [ref=e844]: Agregar
+                      - generic [ref=e846]:
+                        - generic [ref=e848]:
+                          - generic [ref=e849]: $8.290/kg
+                          - generic [ref=e850]: precio actual $8.290/kg, Costaba $10.390/kg
+                          - generic [ref=e851]: $8.290 x kg
+                          - generic [ref=e852]: $10.390/kg
+                          - generic [ref=e853]: Ahorra $2.100
+                        - generic [ref=e854]: Al Vacío
+                        - generic [ref=e855]: Carne de Vacuno Posta Paleta
+                  - group [ref=e858]:
+                    - link "Carne de Vacuno Tapabarriga" [ref=e859] [cursor=pointer]:
+                      - /url: /ip/vacuno/00213780000000?from=/search
+                      - generic [ref=e860]: Carne de Vacuno Tapabarriga
+                    - generic [ref=e862]:
+                      - generic [ref=e863]:
+                        - generic [ref=e865]:
+                          - generic [ref=e867]: 
+                          - text: Rebaja
+                        - generic [ref=e868]:
+                          - generic [ref=e869]:
+                            - img "Carne de Vacuno Tapabarriga"
+                          - button "Agregar al carro - Carne de Vacuno Tapabarriga" [ref=e872] [cursor=pointer]:
+                            - generic "agregar" [ref=e873]: 
+                            - generic [ref=e874]: Agregar
+                      - generic [ref=e876]:
+                        - generic [ref=e878]:
+                          - generic [ref=e879]: $9.990/kg
+                          - generic [ref=e880]: precio actual $9.990/kg, Costaba $11.590/kg
+                          - generic [ref=e881]: $9.990 x kg
+                          - generic [ref=e882]: $11.590/kg
+                          - generic [ref=e883]: Ahorra $1.600
+                        - generic [ref=e884]: Al Vacío
+                        - generic [ref=e885]: Carne de Vacuno Tapabarriga
+                  - group [ref=e888]:
+                    - link "Yoghurt con Cereal 1+1 Pack x5 Zucaritas + Choco Krispis Mix, 5 Potes 150 g c/u" [ref=e889] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780290033701?from=/search
+                      - generic [ref=e890]: Yoghurt con Cereal 1+1 Pack x5 Zucaritas + Choco Krispis Mix, 5 Potes 150 g c/u
+                    - generic [ref=e892]:
+                      - generic [ref=e895]:
+                        - generic [ref=e896]:
+                          - img "Yoghurt con Cereal 1+1 Pack x5 Zucaritas + Choco Krispis Mix, 5 Potes 150 g c/u"
+                        - button "Agregar al carro - Yoghurt con Cereal 1+1 Pack x5 Zucaritas + Choco Krispis Mix, 5 Potes 150 g c/u" [ref=e899] [cursor=pointer]:
+                          - generic "agregar" [ref=e900]: 
+                          - generic [ref=e901]: Agregar
+                      - generic [ref=e903]:
+                        - generic [ref=e905]:
+                          - generic [ref=e906]: $3.590
+                          - generic [ref=e907]: precio actual $3.590
+                          - generic [ref=e908]: $4.787 x kg
+                        - generic [ref=e909]: Soprole
+                        - generic [ref=e910]: Yoghurt con Cereal 1+1 Pack x5 Zucaritas + Choco Krispis Mix, 5 Potes 150 g c/u
+                  - group [ref=e913]:
+                    - link "Yoghurt Con cereal 1+1 Pack X4 Zucaritas, 140 g" [ref=e914] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780290000441?from=/search
+                      - generic [ref=e915]: Yoghurt Con cereal 1+1 Pack X4 Zucaritas, 140 g
+                    - generic [ref=e917]:
+                      - generic [ref=e920]:
+                        - generic [ref=e921]:
+                          - img "Yoghurt Con cereal 1+1 Pack X4 Zucaritas, 140 g"
+                        - button "Agregar al carro - Yoghurt Con cereal 1+1 Pack X4 Zucaritas, 140 g" [ref=e924] [cursor=pointer]:
+                          - generic "agregar" [ref=e925]: 
+                          - generic [ref=e926]: Agregar
+                      - generic [ref=e928]:
+                        - generic [ref=e930]:
+                          - generic [ref=e931]: $2.790
+                          - generic [ref=e932]: precio actual $2.790
+                          - generic [ref=e933]: $4.982 x kg
+                        - generic [ref=e934]: Soprole
+                        - generic [ref=e935]: Yoghurt Con cereal 1+1 Pack X4 Zucaritas, 140 g
+                  - group [ref=e938]:
+                    - link "Yoghurt Con cereal Yogumix Pack, 5 Un" [ref=e939] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780292000681?from=/search
+                      - generic [ref=e940]: Yoghurt Con cereal Yogumix Pack, 5 Un
+                    - generic [ref=e942]:
+                      - generic [ref=e943]:
+                        - generic [ref=e945]:
+                          - generic [ref=e947]: 
+                          - text: Rebaja
+                        - generic [ref=e948]:
+                          - generic [ref=e949]:
+                            - img "Yoghurt Con cereal Yogumix Pack, 5 Un"
+                          - button "Agregar al carro - Yoghurt Con cereal Yogumix Pack, 5 Un" [ref=e952] [cursor=pointer]:
+                            - generic "agregar" [ref=e953]: 
+                            - generic [ref=e954]: Agregar
+                      - generic [ref=e956]:
+                        - generic [ref=e958]:
+                          - generic [ref=e959]: $2.850
+                          - generic [ref=e960]: precio actual $2.850, Costaba $3.390
+                          - generic [ref=e961]: $4.071 x kg
+                          - generic [ref=e962]: $3.390
+                          - generic [ref=e963]: Ahorra $540
+                        - generic [ref=e964]: Colun
+                        - generic [ref=e965]: Yoghurt Con cereal Yogumix Pack, 5 Un
+                  - group [ref=e968]:
+                    - link "Yoghurt con Cereal 1+1 Pack x5 Zucaritas + Mini Cookies Mix, 140 gr" [ref=e969] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00780290000254?from=/search
+                      - generic [ref=e970]: Yoghurt con Cereal 1+1 Pack x5 Zucaritas + Mini Cookies Mix, 140 gr
+                    - generic [ref=e972]:
+                      - generic [ref=e975]:
+                        - generic [ref=e976]:
+                          - img "Yoghurt con Cereal 1+1 Pack x5 Zucaritas + Mini Cookies Mix, 140 gr"
+                        - button "Agregar al carro - Yoghurt con Cereal 1+1 Pack x5 Zucaritas + Mini Cookies Mix, 140 gr" [ref=e979] [cursor=pointer]:
+                          - generic "agregar" [ref=e980]: 
+                          - generic [ref=e981]: Agregar
+                      - generic [ref=e983]:
+                        - generic [ref=e985]:
+                          - generic [ref=e986]: $3.650
+                          - generic [ref=e987]: precio actual $3.650
+                          - generic [ref=e988]: $5.214 x kg
+                        - generic [ref=e989]: Soprole
+                        - generic [ref=e990]: Yoghurt con Cereal 1+1 Pack x5 Zucaritas + Mini Cookies Mix, 140 gr
+                  - group [ref=e993]:
+                    - link "Yoghurt con Cereal Chocapic (3 Un) + Milo (2 Un)Pack, 710 g" [ref=e994] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00761303336538?from=/search
+                      - generic [ref=e995]: Yoghurt con Cereal Chocapic (3 Un) + Milo (2 Un)Pack, 710 g
+                    - generic [ref=e997]:
+                      - generic [ref=e1000]:
+                        - generic [ref=e1001]:
+                          - img "Yoghurt con Cereal Chocapic (3 Un) + Milo (2 Un)Pack, 710 g"
+                        - button "Agregar al carro - Yoghurt con Cereal Chocapic (3 Un) + Milo (2 Un)Pack, 710 g" [ref=e1004] [cursor=pointer]:
+                          - generic "agregar" [ref=e1005]: 
+                          - generic [ref=e1006]: Agregar
+                      - generic [ref=e1008]:
+                        - generic [ref=e1010]:
+                          - generic [ref=e1011]: $3.550
+                          - generic [ref=e1012]: precio actual $3.550
+                          - generic [ref=e1013]: $25.000 x kg
+                        - generic [ref=e1014]: Nestlé
+                        - generic [ref=e1015]: Yoghurt con Cereal Chocapic (3 Un) + Milo (2 Un)Pack, 710 g
+                  - group [ref=e1018]:
+                    - link "Yoghurt + Cereal Nestlé Chocapic Y Trix Pack Multipack 710G (5 X 142), 710 g" [ref=e1019] [cursor=pointer]:
+                      - /url: /ip/yoghurt/00844529097518?from=/search
+                      - generic [ref=e1020]: Yoghurt + Cereal Nestlé Chocapic Y Trix Pack Multipack 710G (5 X 142), 710 g
+                    - generic [ref=e1022]:
+                      - generic [ref=e1025]:
+                        - generic [ref=e1026]:
+                          - img "Yoghurt + Cereal Nestlé Chocapic Y Trix Pack Multipack 710G (5 X 142), 710 g"
+                        - button "Agregar al carro - Yoghurt + Cereal Nestlé Chocapic Y Trix Pack Multipack 710G (5 X 142), 710 g" [ref=e1029] [cursor=pointer]:
+                          - generic "agregar" [ref=e1030]: 
+                          - generic [ref=e1031]: Agregar
+                      - generic [ref=e1033]:
+                        - generic [ref=e1035]:
+                          - generic [ref=e1036]: $3.750
+                          - generic [ref=e1037]: precio actual $3.750
+                          - generic [ref=e1038]: $5.282 x kg
+                        - generic [ref=e1039]: Chocapic/trix
+                        - generic [ref=e1040]: Yoghurt + Cereal Nestlé Chocapic Y Trix Pack Multipack 710G (5 X 142), 710 g
+                  - group [ref=e1043]:
+                    - link "Costillar de Cerdo Tradicional Al Vacío" [ref=e1044] [cursor=pointer]:
+                      - /url: /ip/todas-las-carnes/00218398000000?from=/search
+                      - generic [ref=e1045]: Costillar de Cerdo Tradicional Al Vacío
+                    - generic [ref=e1047]:
+                      - generic [ref=e1048]:
+                        - generic [ref=e1050]:
+                          - generic [ref=e1052]: 
+                          - text: Rebaja
+                        - generic [ref=e1053]:
+                          - generic [ref=e1054]:
+                            - img "Costillar de Cerdo Tradicional Al Vacío"
+                          - button "Agregar al carro - Costillar de Cerdo Tradicional Al Vacío" [ref=e1057] [cursor=pointer]:
+                            - generic "agregar" [ref=e1058]: 
+                            - generic [ref=e1059]: Agregar
+                      - generic [ref=e1061]:
+                        - generic [ref=e1063]:
+                          - generic [ref=e1064]: $6.990/kg
+                          - generic [ref=e1065]: precio actual $6.990/kg, Costaba $10.290/kg
+                          - generic [ref=e1066]: $6.990 x kg
+                          - generic [ref=e1067]: $10.290/kg
+                          - generic [ref=e1068]: Ahorra $3.300
+                        - generic [ref=e1069]: Campo Noble
+                        - generic [ref=e1070]: Costillar de Cerdo Tradicional Al Vacío
+                  - group [ref=e1073]:
+                    - link "Chocolate Bombones Cerezas al Licor, 120 g" [ref=e1074] [cursor=pointer]:
+                      - /url: /ip/tipos/00780220084837?from=/search
+                      - generic [ref=e1075]: Chocolate Bombones Cerezas al Licor, 120 g
+                    - generic [ref=e1077]:
+                      - generic [ref=e1080]:
+                        - generic [ref=e1081]:
+                          - img "Chocolate Bombones Cerezas al Licor, 120 g"
+                        - button "Agregar al carro - Chocolate Bombones Cerezas al Licor, 120 g" [ref=e1084] [cursor=pointer]:
+                          - generic "agregar" [ref=e1085]: 
+                          - generic [ref=e1086]: Agregar
+                      - generic [ref=e1088]:
+                        - generic [ref=e1090]:
+                          - generic [ref=e1091]: $3.790
+                          - generic [ref=e1092]: precio actual $3.790
+                          - generic [ref=e1093]: $31.583 x kg
+                        - generic [ref=e1094]: Ambrosoli
+                        - generic [ref=e1095]: Chocolate Bombones Cerezas al Licor, 120 g
+                  - group [ref=e1098]:
+                    - link "Carne de Vacuno Asado de Tira Al Palo Premium" [ref=e1099] [cursor=pointer]:
+                      - /url: /ip/vacuno/00209256000000?from=/search
+                      - generic [ref=e1100]: Carne de Vacuno Asado de Tira Al Palo Premium
+                    - generic [ref=e1102]:
+                      - generic [ref=e1105]:
+                        - generic [ref=e1106]:
+                          - img "Carne de Vacuno Asado de Tira Al Palo Premium"
+                        - button "Agregar al carro - Carne de Vacuno Asado de Tira Al Palo Premium" [ref=e1109] [cursor=pointer]:
+                          - generic "agregar" [ref=e1110]: 
+                          - generic [ref=e1111]: Agregar
+                      - generic [ref=e1113]:
+                        - generic [ref=e1115]:
+                          - generic [ref=e1116]: $14.690/kg
+                          - generic [ref=e1117]: precio actual $14.690/kg
+                          - generic [ref=e1118]: $14.690 x kg
+                        - generic [ref=e1119]: Nacional
+                        - generic [ref=e1120]: Carne de Vacuno Asado de Tira Al Palo Premium
+                  - group [ref=e1123]:
+                    - link "Cerveza Calafate Ale Botellas Pack, 4 Un" [ref=e1124] [cursor=pointer]:
+                      - /url: /ip/cervezas/00780963410007?from=/search
+                      - generic [ref=e1125]: Cerveza Calafate Ale Botellas Pack, 4 Un
+                    - generic [ref=e1127]:
+                      - generic [ref=e1128]:
+                        - generic [ref=e1130]:
+                          - generic [ref=e1132]: 
+                          - text: Rebaja
+                        - generic [ref=e1133]:
+                          - generic [ref=e1134]:
+                            - img "Cerveza Calafate Ale Botellas Pack, 4 Un"
+                          - button "Agregar al carro - Cerveza Calafate Ale Botellas Pack, 4 Un" [ref=e1137] [cursor=pointer]:
+                            - generic "agregar" [ref=e1138]: 
+                            - generic [ref=e1139]: Agregar
+                      - generic [ref=e1141]:
+                        - generic [ref=e1143]:
+                          - generic [ref=e1144]: $6.290
+                          - generic [ref=e1145]: precio actual $6.290, Costaba $6.890
+                          - generic [ref=e1146]: $1.573 x un
+                          - generic [ref=e1147]: $6.890
+                          - generic [ref=e1148]: Ahorra $600
+                        - generic [ref=e1149]: Austral
+                        - generic [ref=e1150]: Cerveza Calafate Ale Botellas Pack, 4 Un
+                  - group [ref=e1153]:
+                    - link "Cerveza Pils Lager Botellas Pack, 330 ml" [ref=e1154] [cursor=pointer]:
+                      - /url: /ip/cervezas/00780461534005?from=/search
+                      - generic [ref=e1155]: Cerveza Pils Lager Botellas Pack, 330 ml
+                    - generic [ref=e1157]:
+                      - generic [ref=e1160]:
+                        - generic [ref=e1161]:
+                          - img "Cerveza Pils Lager Botellas Pack, 330 ml"
+                        - button "Agregar al carro - Cerveza Pils Lager Botellas Pack, 330 ml" [ref=e1164] [cursor=pointer]:
+                          - generic "agregar" [ref=e1165]: 
+                          - generic [ref=e1166]: Agregar
+                      - generic [ref=e1168]:
+                        - generic [ref=e1170]:
+                          - generic [ref=e1171]: $7.290
+                          - generic [ref=e1172]: precio actual $7.290
+                          - generic [ref=e1173]: $1.823 x un
+                        - generic [ref=e1174]: Kross
+                        - generic [ref=e1175]: Cerveza Pils Lager Botellas Pack, 330 ml
+                  - group [ref=e1178]:
+                    - link "Cerveza Kross Golden Ale Botellas Pack, 330 ml" [ref=e1179] [cursor=pointer]:
+                      - /url: /ip/cervezas/00780461534002?from=/search
+                      - generic [ref=e1180]: Cerveza Kross Golden Ale Botellas Pack, 330 ml
+                    - generic [ref=e1182]:
+                      - generic [ref=e1183]:
+                        - generic [ref=e1185]:
+                          - generic [ref=e1187]: 
+                          - text: Rebaja
+                        - generic [ref=e1188]:
+                          - generic [ref=e1189]:
+                            - img "Cerveza Kross Golden Ale Botellas Pack, 330 ml"
+                          - button "Agregar al carro - Cerveza Kross Golden Ale Botellas Pack, 330 ml" [ref=e1192] [cursor=pointer]:
+                            - generic "agregar" [ref=e1193]: 
+                            - generic [ref=e1194]: Agregar
+                      - generic [ref=e1196]:
+                        - generic [ref=e1198]:
+                          - generic [ref=e1199]: $5.190
+                          - generic [ref=e1200]: precio actual $5.190, Costaba $7.290
+                          - generic [ref=e1201]: $1.298 x un
+                          - generic [ref=e1202]: $7.290
+                          - generic [ref=e1203]: Ahorra $2.100
+                        - generic [ref=e1204]: Kross
+                        - generic [ref=e1205]: Cerveza Kross Golden Ale Botellas Pack, 330 ml
+                  - group [ref=e1208]:
+                    - link "Cerveza Ale Torobayo Botellas Pack, 6 Un x 330 ml c/u" [ref=e1209] [cursor=pointer]:
+                      - /url: /ip/cervezas/00780210700030?from=/search
+                      - generic [ref=e1210]: Cerveza Ale Torobayo Botellas Pack, 6 Un x 330 ml c/u
+                    - generic [ref=e1212]:
+                      - generic [ref=e1213]:
+                        - generic [ref=e1215]:
+                          - generic [ref=e1217]: 
+                          - text: Rebaja
+                        - generic [ref=e1218]:
+                          - generic [ref=e1219]:
+                            - img "Cerveza Ale Torobayo Botellas Pack, 6 Un x 330 ml c/u"
+                          - button "Agregar al carro - Cerveza Ale Torobayo Botellas Pack, 6 Un x 330 ml c/u" [ref=e1222] [cursor=pointer]:
+                            - generic "agregar" [ref=e1223]: 
+                            - generic [ref=e1224]: Agregar
+                      - generic [ref=e1226]:
+                        - generic [ref=e1228]:
+                          - generic [ref=e1229]: $8.490
+                          - generic [ref=e1230]: precio actual $8.490, Costaba $10.390
+                          - generic [ref=e1231]: $1.415 x un
+                          - generic [ref=e1232]: $10.390
+                          - generic [ref=e1233]: Ahorra $1.900
+                        - generic [ref=e1234]: Kunstmann
+                        - generic [ref=e1235]: Cerveza Ale Torobayo Botellas Pack, 6 Un x 330 ml c/u
+                  - group [ref=e1238]:
+                    - link "Cerveza Torres Del Paine Helles Bock 6.1° Pack 4 Botella, 4 Un x 330 c/u" [ref=e1239] [cursor=pointer]:
+                      - /url: /ip/cervezas/00780963410062?from=/search
+                      - generic [ref=e1240]: Cerveza Torres Del Paine Helles Bock 6.1° Pack 4 Botella, 4 Un x 330 c/u
+                    - generic [ref=e1242]:
+                      - generic [ref=e1243]:
+                        - generic [ref=e1245]:
+                          - generic [ref=e1247]: 
+                          - text: Rebaja
+                        - generic [ref=e1248]:
+                          - generic [ref=e1249]:
+                            - img "Cerveza Torres Del Paine Helles Bock 6.1° Pack 4 Botella, 4 Un x 330 c/u"
+                          - button "Agregar al carro - Cerveza Torres Del Paine Helles Bock 6.1° Pack 4 Botella, 4 Un x 330 c/u" [ref=e1252] [cursor=pointer]:
+                            - generic "agregar" [ref=e1253]: 
+                            - generic [ref=e1254]: Agregar
+                      - generic [ref=e1256]:
+                        - generic [ref=e1258]:
+                          - generic [ref=e1259]: $6.290
+                          - generic [ref=e1260]: precio actual $6.290, Costaba $6.890
+                          - generic [ref=e1261]: $1.573 x un
+                          - generic [ref=e1262]: $6.890
+                          - generic [ref=e1263]: Ahorra $600
+                        - generic [ref=e1264]: Austral
+                        - generic [ref=e1265]: Cerveza Torres Del Paine Helles Bock 6.1° Pack 4 Botella, 4 Un x 330 c/u
+                  - generic [ref=e1267]:
+                    - group [ref=e1268]:
+                      - link "Cerveza Ale Maqui 4,8° Pack 4 Botella, 330 ml" [ref=e1269] [cursor=pointer]:
+                        - /url: /ip/cervezas/00780461648008?from=/search
+                        - generic [ref=e1270]: Cerveza Ale Maqui 4,8° Pack 4 Botella, 330 ml
+                      - generic [ref=e1272]:
+                        - generic [ref=e1273]:
+                          - generic [ref=e1275]:
+                            - generic [ref=e1277]: 
+                            - text: Rebaja
+                          - generic [ref=e1279]:
+                            - img "Cerveza Ale Maqui 4,8° Pack 4 Botella, 330 ml"
+                        - generic [ref=e1281]:
+                          - generic [ref=e1283]:
+                            - generic [ref=e1284]: $6.490
+                            - generic [ref=e1285]: precio actual $6.490, Costaba $7.590
+                            - generic [ref=e1286]: $1.623 x un
+                            - generic [ref=e1287]: $7.590
+                          - generic [ref=e1288]: Dolbek
+                          - generic [ref=e1289]: Cerveza Ale Maqui 4,8° Pack 4 Botella, 330 ml
+                          - generic [ref=e1290]: Agotado
+                    - button "Revisar productos similares - Cerveza Ale Maqui 4,8° Pack 4 Botella, 330 ml" [ref=e1292]: Revisar productos similares
+                  - group [ref=e1295]:
+                    - link "Cerveza Valdivia Pale Lager 5,2° Pack 6 Botella, 330 ml" [ref=e1296] [cursor=pointer]:
+                      - /url: /ip/cervezas/00780210700091?from=/search
+                      - generic [ref=e1297]: Cerveza Valdivia Pale Lager 5,2° Pack 6 Botella, 330 ml
+                    - generic [ref=e1299]:
+                      - generic [ref=e1302]:
+                        - generic [ref=e1303]:
+                          - img "Cerveza Valdivia Pale Lager 5,2° Pack 6 Botella, 330 ml"
+                        - button "Agregar al carro - Cerveza Valdivia Pale Lager 5,2° Pack 6 Botella, 330 ml" [ref=e1306] [cursor=pointer]:
+                          - generic "agregar" [ref=e1307]: 
+                          - generic [ref=e1308]: Agregar
+                      - generic [ref=e1310]:
+                        - generic [ref=e1312]:
+                          - generic [ref=e1313]: $6.190
+                          - generic [ref=e1314]: precio actual $6.190
+                          - generic [ref=e1315]: $1.032 x un
+                        - generic [ref=e1316]: Kunstmann
+                        - generic [ref=e1317]: Cerveza Valdivia Pale Lager 5,2° Pack 6 Botella, 330 ml
+            - navigation "paginación" [ref=e1320]:
+              - list [ref=e1321]:
+                - listitem [ref=e1322]
+                - listitem [ref=e1324]:
+                  - link "1" [ref=e1325] [cursor=pointer]:
+                    - /url: /search?q=uno+al+dia+pack
+                - listitem [ref=e1326]:
+                  - link "Ir a la página 2" [ref=e1327] [cursor=pointer]:
+                    - /url: /search?q=uno+al+dia+pack&page=2
+                    - text: "2"
+                - listitem [ref=e1328]:
+                  - link "Página siguiente" [ref=e1329] [cursor=pointer]:
+                    - /url: /search?q=uno+al+dia+pack&page=2
+                    - generic [ref=e1330]: 
+  - alert [ref=e1338]
