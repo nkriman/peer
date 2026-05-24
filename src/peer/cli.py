@@ -254,6 +254,25 @@ def _make_parser() -> argparse.ArgumentParser:
         default=False,
         help="Route every model call through the claude CLI (free, no ANTHROPIC_API_KEY).",
     )
+    p_ar_run.add_argument(
+        "--n-runs",
+        type=int,
+        default=1,
+        help=(
+            "Number of reruns of the same recipe (default 1). When >=2, dispatches "
+            "through CrossRunRunner and writes a MultiRunReport. Required for any "
+            "defensible 'recipe X beats Y' claim — see cross-run-v01."
+        ),
+    )
+    p_ar_run.add_argument(
+        "--baseline-cmp",
+        action="store_true",
+        default=False,
+        help=(
+            "Also run the bare baseline (BareClaudeCodeReviewer) N times and emit a "
+            "ComparisonReport. Requires --n-runs >= 3."
+        ),
+    )
 
     p_ar_loop = ar_sub.add_parser(
         "loop",
@@ -533,28 +552,55 @@ def _cmd_dataset_show(args: argparse.Namespace) -> int:
 
 def _cmd_autoresearch_run(args: argparse.Namespace) -> int:
     _maybe_set_claude_code_env(args)
-    from .autoresearch import run_one_iteration
 
-    row = run_one_iteration(
+    n_runs = int(getattr(args, "n_runs", 1) or 1)
+    baseline_cmp = bool(getattr(args, "baseline_cmp", False))
+
+    # Spec constraint: --baseline-cmp requires --n-runs >= 3
+    if baseline_cmp and n_runs < 3:
+        print(
+            "--baseline-cmp requires --n-runs >= 3 (single-run comparisons aren't defensible).",
+            file=sys.stderr,
+        )
+        return 2
+
+    # Single-run path: back-compat. Unchanged.
+    if n_runs == 1:
+        from .autoresearch import run_one_iteration
+
+        row = run_one_iteration(
+            recipe_path=args.recipe,
+            dataset_path=args.dataset,
+            leaderboard_path=args.leaderboard,
+            description=args.description,
+            program_md_path=args.program_md,
+        )
+        status = row.get("status")
+        print(
+            f"\n=== autoresearch iter ===\n"
+            f"  status:        {status}\n"
+            f"  utility:       {row.get('utility')}\n"
+            f"  detection:     {row.get('detection_rate')}\n"
+            f"  precision:     minor={row.get('precision_minor')} "
+            f"important={row.get('precision_important')} critical={row.get('precision_critical')}\n"
+            f"  cost_usd:      {row.get('cost_usd')}\n"
+            f"  n_comments:    {row.get('n_comments_total')}\n"
+            f"  description:   {row.get('description')}"
+        )
+        return 0 if status == "ok" else 1
+
+    # Multi-run path (cross-run-v01).
+    from .autoresearch.multirun import run_multirun_iteration
+
+    return run_multirun_iteration(
         recipe_path=args.recipe,
         dataset_path=args.dataset,
         leaderboard_path=args.leaderboard,
         description=args.description,
         program_md_path=args.program_md,
+        n_runs=n_runs,
+        baseline_cmp=baseline_cmp,
     )
-    status = row.get("status")
-    print(
-        f"\n=== autoresearch iter ===\n"
-        f"  status:        {status}\n"
-        f"  utility:       {row.get('utility')}\n"
-        f"  detection:     {row.get('detection_rate')}\n"
-        f"  precision:     minor={row.get('precision_minor')} "
-        f"important={row.get('precision_important')} critical={row.get('precision_critical')}\n"
-        f"  cost_usd:      {row.get('cost_usd')}\n"
-        f"  n_comments:    {row.get('n_comments_total')}\n"
-        f"  description:   {row.get('description')}"
-    )
-    return 0 if status == "ok" else 1
 
 
 def _cmd_autoresearch_loop(args: argparse.Namespace) -> int:

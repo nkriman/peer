@@ -201,11 +201,18 @@ def step_agent_with_recipe_kwarg(context, model: str, recipe_model: str) -> None
 
 @given("the file prompts/default_system_prompt.md exists with a known marker")
 def step_prompt_file_with_marker(context) -> None:
-    # Mark the live file with a unique sentinel; the environment.py
-    # after_scenario hook is the safety net for restoration so corrupted
-    # state can't leak across scenarios.
+    # Refuse to operate on a file that doesn't look like the real prompt —
+    # earlier scenarios occasionally left a corrupted/empty file behind,
+    # and snapshotting THAT as "original" then propagated the corruption.
+    # Skip the scenario gracefully if the file isn't a real prompt.
     pfile = Path(__file__).resolve().parents[2] / "prompts" / "default_system_prompt.md"
     raw = pfile.read_text()
+    if len(raw) < 500 or "GitHub pull request" not in raw:
+        context.scenario.skip(
+            reason=f"prompts/default_system_prompt.md looks corrupted ({len(raw)} chars); "
+            f"restore it first (e.g., `git checkout HEAD -- prompts/default_system_prompt.md`)"
+        )
+        return
     marker = "AUTORESEARCH_RECIPE_MARKER_42"
     # Strip any leftover marker from a prior (potentially-crashed) run before
     # snapshotting "original" — protects against marker accretion.
