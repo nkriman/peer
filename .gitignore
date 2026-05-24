@@ -43,3 +43,8 @@ htmlcov/
 
 # Cached PR data (regenerable)
 data/cache/
+
+# Beads / Dolt files (added by bd init)
+.dolt/
+*.db
+.beads-credential-key

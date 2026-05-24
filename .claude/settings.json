@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "//": "Project-shared hooks. Committed. See CLAUDE.md for the quality contract these enforce.",
+  "hooks": {
+    "PostCompact": [
+      {
+        "hooks": [
+          {
+            "command": "bash ${CLAUDE_PROJECT_DIR}/.claude/hooks/post-compact.sh",
+            "timeout": 10,
+            "type": "command"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "command": "bash ${CLAUDE_PROJECT_DIR}/.claude/hooks/post-edit-format.sh",
+            "statusMessage": "ruff fix + format",
+            "timeout": 15,
+            "type": "command"
+          }
+        ],
+        "matcher": "Edit|Write|MultiEdit"
+      }
+    ],
+    "PreCompact": [
+      {
+        "hooks": [
+          {
+            "command": "bash ${CLAUDE_PROJECT_DIR}/.claude/hooks/pre-compact.sh",
+            "timeout": 10,
+            "type": "command"
+          }
+        ]
+      },
+      {
+        "hooks": [
+          {
+            "command": "bd prime",
+            "type": "command"
+          }
+        ],
+        "matcher": ""
+      }
+    ],
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "command": "bash ${CLAUDE_PROJECT_DIR}/.claude/hooks/block-dangerous.sh",
+            "timeout": 5,
+            "type": "command"
+          }
+        ],
+        "matcher": "Bash"
+      },
+      {
+        "hooks": [
+          {
+            "command": "bash ${CLAUDE_PROJECT_DIR}/.claude/hooks/block-write-secrets.sh",
+            "timeout": 5,
+            "type": "command"
+          }
+        ],
+        "matcher": "Write|Edit|MultiEdit"
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "command": "bash ${CLAUDE_PROJECT_DIR}/.claude/hooks/session-start.sh",
+            "timeout": 10,
+            "type": "command"
+          }
+        ]
+      },
+      {
+        "hooks": [
+          {
+            "command": "bd prime",
+            "type": "command"
+          }
+        ],
+        "matcher": ""
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "command": "bash ${CLAUDE_PROJECT_DIR}/.claude/hooks/stop-gate.sh",
+            "statusMessage": "quality gate: ruff + mypy + pytest + behave",
+            "timeout": 180,
+            "type": "command"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "command": "python3 ${CLAUDE_PROJECT_DIR}/.claude/hooks/periodic-reground.py",
+            "timeout": 5,
+            "type": "command"
+          }
+        ]
+      }
+    ]
+  }
+}
