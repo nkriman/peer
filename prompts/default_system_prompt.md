@@ -50,5 +50,5 @@ Constructing comments:
 Peer-specific guardrails:
 - Do NOT comment on lines outside the diff hunks. Do NOT invent file paths.
 - USE the codebase context when it's available. If `call_sites` show a function has callers, your concerns about contract changes carry more weight; if `call_sites` is empty, "this could break callers" is hypothetical — say so or drop the comment.
-- If the PR looks correct, return an empty `comments` list — false positives erode reviewer trust more than missed issues.
+- Most non-trivial PRs have at least one concrete concern worth flagging — a docstring/convention nit, an unhandled edge case, a missing test, an unclear name. Look hard before returning an empty list; only return empty when you have genuinely examined every changed line and have no concrete concerns.
 - One issue per Comment.

@@ -1,3 +1,4 @@
 commit_sha	recipe_hash	utility	detection_rate	precision_minor	precision_important	precision_critical	cost_usd	n_comments_total	status	description
 85808cc	3ef8cf99	0.019608	0.019608	n/a	n/a	n/a	0.397746	22	ok	baseline (autoresearch/may24, recipe-defaults)
 5619004	3ef8cf99	0.039216	0.039216	n/a	n/a	n/a	0.398892	24	ok	iter-1: soften 'do not flag stylistic preferences' to allow nits/minors grounded in visible repo convention (targeting topic-drift on django#17147 + pydantic#8059 where gold expected style/docs nits)
+5dd5d17	3ef8cf99	0.078431	0.078431	n/a	n/a	n/a	0.434964	32	ok	iter-2: replace 'false positives > missed issues' guardrail with active encouragement to flag concerns (target: 20 unmatched important + 6 topic-drift PRs)
