@@ -407,10 +407,18 @@ class ClaudeCodeCLIReviewer:
             )
             envelope = {"result": "", "total_cost_usd": 0.0, "usage": {}}
 
-        result_text = envelope.get("result") or ""
+        # Prefer envelope.structured_output (populated when --json-schema is
+        # honored by the model) over envelope.result. The CLI puts the parsed
+        # object directly there and leaves result empty.
         cli_usage = envelope.get("usage") or {}
         comments: list[Comment] = []
-        payload = _extract_comments_payload(result_text)
+        payload: dict | None = None
+        so = envelope.get("structured_output")
+        if isinstance(so, dict) and "comments" in so:
+            payload = so
+        if payload is None:
+            result_text = envelope.get("result") or ""
+            payload = _extract_comments_payload(result_text)
         if payload is not None:
             for raw in payload.get("comments", []):
                 try:

@@ -209,13 +209,20 @@ class ClaudeCodeShimClient:
         )
 
         # Tool-use synthesis: if tools were passed, try to parse the
-        # response text as the tool's input schema.
+        # response as the tool's input schema. Prefer the structured_output
+        # field (populated when the CLI honored --json-schema) over the
+        # result text — the CLI leaves result empty in that case.
         if tools and tool_choice:
             tool_name = tool_choice.get("name") if isinstance(tool_choice, dict) else None
             if tool_name is None and tools:
                 first = tools[0]
                 tool_name = first.get("name") if isinstance(first, dict) else None
-            payload = _extract_comments_payload(result_text)
+            payload: dict | None = None
+            so = envelope.get("structured_output")
+            if isinstance(so, dict):
+                payload = so
+            if payload is None:
+                payload = _extract_comments_payload(result_text)
             if payload is not None:
                 return ClaudeCodeShimResponse(
                     content=[
