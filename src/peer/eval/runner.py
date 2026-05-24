@@ -10,6 +10,7 @@ in an Agent-like adapter. See design.md Decision 1.
 
 from __future__ import annotations
 
+import asyncio
 import hashlib
 import logging
 import time
@@ -166,6 +167,7 @@ class EvalRunner:
         dataset: list[GoldSample],
         metrics: list[EvalMetric] | None = None,
         dataset_path: str | None = None,
+        concurrency: int = 5,
     ) -> None:
         self.reviewer = reviewer
         self.dataset = list(dataset)
@@ -181,6 +183,8 @@ class EvalRunner:
             ]
         self.metrics = metrics
         self.dataset_path = dataset_path or "in-memory"
+        # Bounded concurrency for run_async. <=1 forces strict sequential.
+        self.concurrency = max(1, int(concurrency))
         # One Anthropic client shared with metrics so judge calls reuse the
         # same connection pool / api key. Lazy-init so EvalRunner can be
         # constructed without ANTHROPIC_API_KEY (e.g., in unit tests).
@@ -191,7 +195,92 @@ class EvalRunner:
             self._client = anthropic.Anthropic()
         return self._client
 
+    def _eval_one_sample(
+        self,
+        sample: GoldSample,
+        agent_config: AgentConfig,
+    ) -> tuple[EvalSampleResult, float | None, float | None, str | None]:
+        """Run reviewer + all metrics on one sample.
+
+        Returns (sample_result, sample_cost_or_None, sample_latency_or_None,
+        unavailable_reason). Both None values denote a sample where the
+        reviewer raised.
+        """
+        sample_result = EvalSampleResult(pr_url=sample.pr_url)
+        t0 = time.monotonic()
+        review: Review | None = None
+        try:
+            review = self.reviewer.review(sample.pr_url)
+        except Exception as exc:
+            latency = time.monotonic() - t0
+            logger.warning("Reviewer failed on %s: %s", sample.pr_url, exc)
+            sample_result.error = str(exc)
+            sample_result.latency_seconds = latency
+            return sample_result, None, None, None
+        latency = time.monotonic() - t0
+        sample_result.latency_seconds = latency
+
+        # Cost
+        usage = review.usage or {}
+        model = usage.get("model") or agent_config.model
+        in_tok = int(usage.get("input_tokens", 0) or 0)
+        out_tok = int(usage.get("output_tokens", 0) or 0)
+        cost = estimate_cost(model, in_tok, out_tok)
+        sample_result.cost_usd = cost
+        unavail = cost_unavailable_reason(model) if cost is None else None
+
+        # Review summary
+        sev_dist: dict[str, int] = {}
+        for c in review.comments:
+            sev_dist[c.severity] = sev_dist.get(c.severity, 0) + 1
+        sample_result.review_summary = {
+            "n_comments": len(review.comments),
+            "severity_distribution": sev_dist,
+            "usage": usage,
+        }
+
+        # Merge dataset-wide + case-specific metrics; case-specific wins on
+        # name collision (eval-v02 design — sample's per-PR rubric overrides).
+        case_specific = list(getattr(sample, "evaluators", []) or [])
+        merged_metrics: dict[str, EvalMetric] = {}
+        for m in self.metrics:
+            merged_metrics[getattr(m, "name", type(m).__name__)] = m
+        for m in case_specific:
+            mname = getattr(m, "name", type(m).__name__)
+            if mname in merged_metrics:
+                logger.debug(
+                    "case-specific evaluator %r overrides dataset-wide on %s",
+                    mname,
+                    sample.pr_url,
+                )
+            merged_metrics[mname] = m
+
+        for metric in merged_metrics.values():
+            try:
+                mr = metric.score(sample, review, client=self._get_client())
+            except Exception as exc:
+                logger.warning(
+                    "Metric %s failed on %s: %s",
+                    getattr(metric, "name", type(metric).__name__),
+                    sample.pr_url,
+                    exc,
+                )
+                mr = MetricResult(
+                    name=getattr(metric, "name", type(metric).__name__),
+                    value=None,
+                    notes=f"metric raised: {exc}",
+                )
+            sample_result.metrics[mr.name] = mr
+
+        return sample_result, cost, latency, unavail
+
     def run(self) -> EvalReport:
+        """Synchronous entry point. Runs `run_async()` under `asyncio.run`."""
+        return asyncio.run(self.run_async())
+
+    async def run_async(self, concurrency: int | None = None) -> EvalReport:
+        """Async entry: per-sample work runs under `asyncio.to_thread` with
+        a `Semaphore(concurrency)`. concurrency=None uses self.concurrency."""
         agent_config = _infer_agent_config(self.reviewer)
         per_sample: list[EvalSampleResult] = []
         sample_costs: list[float] = []
@@ -200,66 +289,33 @@ class EvalRunner:
         unavailable_reason: str | None = None
 
         n = len(self.dataset)
-        for i, sample in enumerate(self.dataset, 1):
-            print(f"[eval] {i}/{n} {sample.pr_url}", flush=True)
-            sample_result = EvalSampleResult(pr_url=sample.pr_url)
-            t0 = time.monotonic()
-            review: Review | None = None
-            try:
-                review = self.reviewer.review(sample.pr_url)
-            except Exception as exc:
-                latency = time.monotonic() - t0
-                logger.warning("Reviewer failed on %s: %s", sample.pr_url, exc)
-                sample_result.error = str(exc)
-                sample_result.latency_seconds = latency
-                per_sample.append(sample_result)
-                continue
-            latency = time.monotonic() - t0
-            sample_result.latency_seconds = latency
-            sample_latencies.append(latency)
+        eff_concurrency = max(1, int(concurrency if concurrency is not None else self.concurrency))
+        sem = asyncio.Semaphore(eff_concurrency)
 
-            # Cost
-            usage = review.usage or {}
-            model = usage.get("model") or agent_config.model
-            in_tok = int(usage.get("input_tokens", 0) or 0)
-            out_tok = int(usage.get("output_tokens", 0) or 0)
-            cost = estimate_cost(model, in_tok, out_tok)
-            sample_result.cost_usd = cost
-            if cost is None:
-                any_cost_unavailable = True
-                unavailable_reason = cost_unavailable_reason(model)
-            else:
-                sample_costs.append(cost)
+        async def _one(
+            idx: int, sample: GoldSample
+        ) -> tuple[int, EvalSampleResult, float | None, float | None, str | None]:
+            async with sem:
+                print(f"[eval] {idx}/{n} {sample.pr_url}", flush=True)
+                # Sync reviewer + sync metrics — defer to a thread so the
+                # event loop can interleave samples up to `eff_concurrency`.
+                res, cost, latency, unavail = await asyncio.to_thread(
+                    self._eval_one_sample, sample, agent_config
+                )
+                return idx, res, cost, latency, unavail
 
-            # Review summary
-            sev_dist: dict[str, int] = {}
-            for c in review.comments:
-                sev_dist[c.severity] = sev_dist.get(c.severity, 0) + 1
-            sample_result.review_summary = {
-                "n_comments": len(review.comments),
-                "severity_distribution": sev_dist,
-                "usage": usage,
-            }
-
-            # Run metrics
-            for metric in self.metrics:
-                try:
-                    mr = metric.score(sample, review, client=self._get_client())
-                except Exception as exc:
-                    logger.warning(
-                        "Metric %s failed on %s: %s",
-                        getattr(metric, "name", type(metric).__name__),
-                        sample.pr_url,
-                        exc,
-                    )
-                    mr = MetricResult(
-                        name=getattr(metric, "name", type(metric).__name__),
-                        value=None,
-                        notes=f"metric raised: {exc}",
-                    )
-                sample_result.metrics[mr.name] = mr
-
+        results = await asyncio.gather(*(_one(i + 1, s) for i, s in enumerate(self.dataset)))
+        # Preserve input order regardless of completion order.
+        results_sorted = sorted(results, key=lambda r: r[0])
+        for _idx, sample_result, cost, latency, unavail in results_sorted:
             per_sample.append(sample_result)
+            if latency is not None:
+                sample_latencies.append(latency)
+            if cost is not None:
+                sample_costs.append(cost)
+            if cost is None and not sample_result.error:
+                any_cost_unavailable = True
+                unavailable_reason = unavail or unavailable_reason
 
         # Aggregate. Per-metric aggregation honors each metric's semantics:
         # - detection_rate: sum-of-sums (Macroscope-style; the headline number)

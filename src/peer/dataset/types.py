@@ -9,9 +9,9 @@ across all default and user-supplied implementations.
 from __future__ import annotations
 
 from datetime import datetime, timezone
-from typing import Literal
+from typing import Any, Literal
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, ConfigDict, Field
 
 from ..types import Severity
 
@@ -125,6 +125,14 @@ class GoldSample(BaseModel):
     gold_defects: list[GoldDefect] = Field(default_factory=list)
     metadata: GoldSampleMetadata = Field(default_factory=GoldSampleMetadata)
     curated_at: datetime = Field(default_factory=lambda: datetime.now(tz=timezone.utc))
+    # eval-v02: case-specific Evaluators that apply only to this sample.
+    # Held as Any so Pydantic doesn't try to schema-validate arbitrary
+    # user-supplied EvalMetric impls; round-trips via MetricSpec is deferred
+    # to a future change (peer doesn't need to serialize case-specific
+    # evaluators in JSONL today — users construct them in code).
+    evaluators: list[Any] = Field(default_factory=list, exclude=True)
+
+    model_config = ConfigDict(arbitrary_types_allowed=True)
 
 
 class ProposedSample(BaseModel):

@@ -79,6 +79,27 @@ def _make_parser() -> argparse.ArgumentParser:
         default=None,
         help="Where to write the new EvalReport JSON (default: data/eval_runs/<run_id>.json)",
     )
+    p_eval.add_argument(
+        "--concurrency",
+        type=int,
+        default=5,
+        help="Number of parallel reviewer runs (default: 5)",
+    )
+    # Opt-in for now per eval-v02 design: ~$0.09 of Haiku calls per 30-PR run
+    # for a metric that rarely fires on well-behaved reviewers.
+    p_eval.add_argument(
+        "--with-rationale-grounding",
+        dest="with_rationale_grounding",
+        action="store_true",
+        default=False,
+        help="Add the RationaleGrounding LLMJudge to the metric set (opt-in).",
+    )
+    p_eval.add_argument(
+        "--no-rationale-grounding",
+        dest="with_rationale_grounding",
+        action="store_false",
+        help="Explicitly disable the RationaleGrounding LLMJudge.",
+    )
 
     # --- peer dataset (parent for subcommands) ------------------------------
     p_ds = sub.add_parser(
@@ -209,7 +230,37 @@ def _cmd_eval(args: argparse.Namespace) -> int:
         return 2
 
     agent = Agent(model=args.model)
-    runner = EvalRunner(reviewer=agent, dataset=samples)
+    metrics: list | None = None
+    if getattr(args, "with_rationale_grounding", False):
+        # Build the default metric set + append RationaleGrounding.
+        from .eval import (
+            CommentsPerPR,
+            DetectionRate,
+            MeanPerPRRecall,
+            NoveltyRate,
+            PrecisionPerSeverity,
+            RationaleGrounding,
+            SeverityCalibration,
+            SuggestionRate,
+        )
+
+        metrics = [
+            DetectionRate(),
+            CommentsPerPR(),
+            PrecisionPerSeverity(),
+            MeanPerPRRecall(),
+            NoveltyRate(),
+            SeverityCalibration(),
+            SuggestionRate(),
+            RationaleGrounding(),
+        ]
+
+    runner = EvalRunner(
+        reviewer=agent,
+        dataset=samples,
+        metrics=metrics,
+        concurrency=getattr(args, "concurrency", 5),
+    )
     report = runner.run()
 
     out_path = args.out
