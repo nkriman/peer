@@ -1,0 +1,425 @@
+INFO peer.autoresearch.multirun: [multirun] running recipe N=3
+INFO peer.eval.cross_run: [cross_run] run 1/3
+[eval] 1/30 https://github.com/pydantic/pydantic/pull/7625
+[eval] 2/30 https://github.com/pydantic/pydantic/pull/7528
+[eval] 3/30 https://github.com/pydantic/pydantic/pull/7677
+[eval] 4/30 https://github.com/pydantic/pydantic/pull/7527
+[eval] 5/30 https://github.com/pydantic/pydantic/pull/7415
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7528: 1 hunks, ~1185 tokens
+INFO peer.agent: Gathered codebase context: 5 symbols, 5 call sites, 3 tests, 0 untested, 0 linter findings, ~4951 tokens
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7527: 1 hunks, ~1216 tokens
+INFO peer.agent: Gathered codebase context: 2 symbols, 2 call sites, 3 tests, 0 untested, 0 linter findings, ~4578 tokens
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7625: 6 hunks, ~3646 tokens
+INFO peer.agent: Gathered codebase context: 11 symbols, 8 call sites, 1 tests, 0 untested, 0 linter findings, ~3122 tokens
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7677: 12 hunks, ~7226 tokens
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7415: 14 hunks, ~6204 tokens
+INFO peer.agent: Gathered codebase context: 16 symbols, 7 call sites, 0 tests, 11 untested, 0 linter findings, ~1467 tokens
+INFO peer.agent: Gathered codebase context: 19 symbols, 16 call sites, 2 tests, 0 untested, 0 linter findings, ~6034 tokens
+[eval] 6/30 https://github.com/pydantic/pydantic/pull/7566
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7566: 2 hunks, ~2236 tokens
+INFO peer.agent: Gathered codebase context: 4 symbols, 0 call sites, 0 tests, 0 untested, 0 linter findings, ~115 tokens
+[eval] 7/30 https://github.com/pydantic/pydantic/pull/7435
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7435: 5 hunks, ~3350 tokens
+INFO peer.agent: Gathered codebase context: 7 symbols, 6 call sites, 4 tests, 0 untested, 0 linter findings, ~7147 tokens
+[eval] 8/30 https://github.com/pydantic/pydantic/pull/7589
+[eval] 9/30 https://github.com/pydantic/pydantic/pull/7979
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7589: 4 hunks, ~2316 tokens
+INFO peer.agent: Gathered codebase context: 4 symbols, 6 call sites, 1 tests, 1 untested, 0 linter findings, ~2077 tokens
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7979: 4 hunks, ~2386 tokens
+INFO peer.agent: Gathered codebase context: 3 symbols, 5 call sites, 1 tests, 0 untested, 0 linter findings, ~2099 tokens
+[eval] 10/30 https://github.com/pydantic/pydantic/pull/8190
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/8190: 4 hunks, ~2155 tokens
+INFO peer.agent: Gathered codebase context: 3 symbols, 5 call sites, 1 tests, 0 untested, 0 linter findings, ~2177 tokens
+[eval] 11/30 https://github.com/pydantic/pydantic/pull/7626
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7626: 6 hunks, ~3950 tokens
+INFO peer.agent: Gathered codebase context: 9 symbols, 23 call sites, 2 tests, 0 untested, 0 linter findings, ~5868 tokens
+[eval] 12/30 https://github.com/pydantic/pydantic/pull/7900
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7900: 3 hunks, ~3046 tokens
+INFO peer.agent: Gathered codebase context: 3 symbols, 10 call sites, 1 tests, 0 untested, 0 linter findings, ~2761 tokens
+[eval] 13/30 https://github.com/pydantic/pydantic/pull/8059
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/8059: 5 hunks, ~4741 tokens
+INFO peer.agent: Gathered codebase context: 0 symbols, 0 call sites, 1 tests, 0 untested, 0 linter findings, ~1812 tokens
+[eval] 14/30 https://github.com/pydantic/pydantic/pull/7889
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7889: 2 hunks, ~1430 tokens
+INFO peer.agent: Gathered codebase context: 4 symbols, 8 call sites, 1 tests, 0 untested, 0 linter findings, ~2707 tokens
+[eval] 15/30 https://github.com/pydantic/pydantic/pull/8012
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/8012: 3 hunks, ~2304 tokens
+INFO peer.agent: Gathered codebase context: 3 symbols, 3 call sites, 1 tests, 0 untested, 0 linter findings, ~1956 tokens
+[eval] 16/30 https://github.com/pydantic/pydantic/pull/8442
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/8442: 4 hunks, ~2288 tokens
+INFO peer.agent: Gathered codebase context: 2 symbols, 10 call sites, 1 tests, 0 untested, 0 linter findings, ~3060 tokens
+[eval] 17/30 https://github.com/django/django/pull/17280
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17280: 3 hunks, ~1294 tokens
+INFO peer.agent: Gathered codebase context: 6 symbols, 5 call sites, 0 tests, 0 untested, 0 linter findings, ~543 tokens
+[eval] 18/30 https://github.com/django/django/pull/17223
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17223: 4 hunks, ~1578 tokens
+INFO peer.agent: Gathered codebase context: 8 symbols, 18 call sites, 5 tests, 0 untested, 0 linter findings, ~9145 tokens
+[eval] 19/30 https://github.com/django/django/pull/17314
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17314: 5 hunks, ~2264 tokens
+[eval] 20/30 https://github.com/django/django/pull/17171
+INFO peer.agent: Gathered codebase context: 14 symbols, 9 call sites, 0 tests, 4 untested, 0 linter findings, ~1404 tokens
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17171: 11 hunks, ~4897 tokens
+INFO peer.agent: Gathered codebase context: 10 symbols, 7 call sites, 3 tests, 0 untested, 0 linter findings, ~5583 tokens
+[eval] 21/30 https://github.com/django/django/pull/17182
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17182: 3 hunks, ~3018 tokens
+[eval] 22/30 https://github.com/django/django/pull/17147
+INFO peer.agent: Gathered codebase context: 7 symbols, 5 call sites, 3 tests, 0 untested, 0 linter findings, ~4381 tokens
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17147: 10 hunks, ~10572 tokens
+INFO peer.agent: Gathered codebase context: 20 symbols, 11 call sites, 2 tests, 7 untested, 0 linter findings, ~3398 tokens
+[eval] 23/30 https://github.com/django/django/pull/17637
+[eval] 24/30 https://github.com/django/django/pull/17312
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17312: 1 hunks, ~696 tokens
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17637: 2 hunks, ~1255 tokens
+INFO peer.agent: Gathered codebase context: 2 symbols, 4 call sites, 1 tests, 0 untested, 0 linter findings, ~991 tokens
+INFO peer.agent: Gathered codebase context: 8 symbols, 17 call sites, 0 tests, 1 untested, 0 linter findings, ~2021 tokens
+[eval] 25/30 https://github.com/django/django/pull/17256
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17256: 6 hunks, ~3687 tokens
+INFO peer.agent: Gathered codebase context: 13 symbols, 7 call sites, 2 tests, 0 untested, 0 linter findings, ~3413 tokens
+[eval] 26/30 https://github.com/django/django/pull/16746
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/16746: 6 hunks, ~4698 tokens
+INFO peer.agent: Gathered codebase context: 9 symbols, 10 call sites, 3 tests, 1 untested, 0 linter findings, ~5213 tokens
+[eval] 27/30 https://github.com/django/django/pull/16603
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/16603: 11 hunks, ~9192 tokens
+INFO peer.agent: Gathered codebase context: 19 symbols, 6 call sites, 2 tests, 7 untested, 0 linter findings, ~2874 tokens
+[eval] 28/30 https://github.com/django/django/pull/16637
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/16637: 2 hunks, ~695 tokens
+INFO peer.agent: Gathered codebase context: 3 symbols, 10 call sites, 0 tests, 2 untested, 0 linter findings, ~1002 tokens
+WARNING peer.eval.runner: Reviewer failed on https://github.com/pydantic/pydantic/pull/7889: Command '['/Users/krilet/.nvm/versions/node/v22.21.0/bin/claude', '--print', '--output-format', 'json', '--model', 'claude-sonnet-4-6', '--system-prompt', 'You are an expert code reviewer reviewing a GitHub pull request. Focus on new code added in the PR (lines starting with \'+\') and on issues introduced by this PR.\n\nYou will be given two kinds of context:\n\n1. PR CONTEXT\n   - The PR title, description, and prior discussion.\n   - Diff hunks for each modified file, presented in a structured format. Each `__new hunk__` line is prepended with its new-file line number; `__old hunk__` shows removed lines for reference.\n   - Surrounding code from the file at the PR head, for context around each hunk.\n\n2. CODEBASE CONTEXT (may be empty if the codebase context module is unavailable)\n   - `modified_symbols`: the function / method / class definitions whose source spans\n     overlap with the PR diff — these are the things the PR is changing.\n   - `call_sites`: where each modified symbol is referenced elsewhere in the repository.\n     Use these to reason about the blast radius of the change. If a function\'s contract\n     changes, check whether the call sites assume the old contract.\n   - `related_tests`: existing test files that map to the modified source files by path\n     convention. Use them to (a) check whether the PR updates the tests for behaviour it\n     changes, and (b) reason about what the existing tests do and do not cover.\n   - `untested_files`: modified source files with no matching test file. A signal that\n     the change may lack test coverage.\n\nFor every non-trivial concern you identify, emit a structured Comment via the `post_review_comments` tool. Each comment has:\n- path: the exact file path from the diff\n- line: the new-file line number, as shown in the `__new hunk__` section\n- end_line: (optional) inclusive upper bound for a multi-line range. Set ONLY when the concern spans multiple lines; otherwise omit it. Must stay within the same hunk and satisfy `end_line >= line`.\n- severity: one of "critical" (likely bug or security issue), "important" (significant correctness or design concern), "minor" (worth fixing but not blocking), "nit" (style or preference)\n- body: a clear, specific comment a human reviewer could action\n- rationale: a short justification grounded in the diff, surrounding code, or codebase context (cite specifically — e.g., "see call_sites for X at path:line"). Do NOT invent supporting evidence; if you don\'t have a citation, don\'t claim one.\n- issue_header: (optional) a 1-3 word categorical label such as "Possible Bug", "Performance Concern", "Test Coverage", or "Security". Surfaced in CLI output and eval reports for grouping. Omit when no short label fits.\n- suggestion: (optional) the proposed replacement text for the lines being commented on. INCLUDE a suggestion ONLY when ALL of the following hold:\n  * the fix is small (≤5 lines of changed code),\n  * the fix is concrete (you can write the exact replacement, not a description),\n  * you are confident the replacement compiles / type-checks / preserves behavior outside the bug.\n  DO NOT include a suggestion for vague guidance like "consider refactoring this", for large rewrites, or when you are uncertain about syntax — the empty `suggestion` field is the right call there.\n\nDetermining what to flag:\n- For clear bugs and security issues, be thorough. Do not skip a genuine problem just because the trigger scenario is narrow.\n- For lower-severity concerns, be certain before flagging. If you cannot confidently explain why something is a problem with a concrete scenario, do not flag it.\n- Each issue must be discrete and actionable, not a vague concern about the codebase in general.\n- Do not speculate that a change might break other code unless you can identify the specific affected code path from the diff context.\n- Style, convention, and documentation departures ARE valid concerns when grounded in a visible repo pattern (e.g. docs wrap width, comment style, naming conventions, type-hint usage in this project). Flag them as nits or minors with a brief citation of the convention. Do NOT flag stylistic preferences that have no repo basis.\n- When confidence is limited but the potential impact is high (e.g., data loss, security), report it with an explicit note on what remains uncertain. Otherwise, prefer not reporting over guessing.\n\nConstructing comments:\n- Be direct about why something is a problem and the realistic scenario where it manifests.\n- Communicate severity accurately. Do not overstate impact. If an issue only arises under specific inputs or environments, say so upfront.\n- Keep each issue description concise. Write so the reader grasps the point immediately without close reading.\n- Use a matter-of-fact, helpful tone. Avoid accusatory language, excessive praise, or filler phrases like \'Great job\', \'Thanks for\'.\n\nPeer-specific guardrails:\n- Do NOT comment on lines outside the diff hunks. Do NOT invent file paths.\n- USE the codebase context when it\'s available. If `call_sites` show a function has callers, your concerns about contract changes carry more weight; if `call_sites` is empty, "this could break callers" is hypothetical — say so or drop the comment.\n- Most non-trivial PRs have at least one concrete concern worth flagging — a docstring/convention nit, an unhandled edge case, a missing test, an unclear name. Look hard before returning an empty list; only return empty when you have genuinely examined every changed line and have no concrete concerns.\n- One issue per Comment.\n', '--disable-slash-commands', '--disallowedTools=Bash,Edit,Write,Read,Grep,Glob,WebFetch,WebSearch', '--json-schema', '{"type": "object", "properties": {"comments": {"type": "array", "items": {"type": "object", "properties": {"path": {"type": "string"}, "line": {"type": ["integer", "null"]}, "end_line": {"type": ["integer", "null"]}, "severity": {"type": "string", "enum": ["critical", "important", "minor", "nit"]}, "body": {"type": "string"}, "rationale": {"type": "string"}, "issue_header": {"type": ["string", "null"]}, "suggestion": {"type": ["string", "null"]}}, "required": ["path", "severity", "body", "rationale"]}}}, "required": ["comments"]}', '# PR #7889: Save return type generated from type annotation in ComputedFieldInfo\nRepo: pydantic/pydantic\nURL: https://github.com/pydantic/pydantic/pull/7889\nHead SHA: f5796cb8dbb4635e9bb460c871f83abe931fdb12\n\n## PR description\n<!-- Thank you for your contribution! -->\r\n<!-- Unless your change is trivial, please create an issue to discuss the change before creating a PR -->\r\n\r\n## Change Summary\r\n\r\n`GenerateSchema._computed_field_schema` already looks at the return type annotation to determine the final return type of a computed field, this just saves that in the `ComputedFieldInfo.return_type`.\r\n\r\n## Related issue number\r\n\r\nCloses https://github.com/pydantic/pydantic/issues/7858\r\n\r\n## Checklist\r\n\r\n* [x] The pull request title is a good summary of the changes - it will be used in the changelog\r\n* [x] Unit tests for the changes exist\r\n* [x] Tests pass on CI\r\n* [x] Documentation reflects the changes where applicable\r\n* [x] My PR is ready to review, **please add a comment including the phrase "please review" to assign reviewers**\r\n\n\nSelected Reviewer: @Kludex\n\n## Prior discussion\n[issue comment by @alexmojaki]\nplease review\n\n[issue comment by @JonAnCla]\nGreat! Thanks all for super fast turn around :)\n\n## PR diff\n\n## File: \'pydantic/_internal/_generate_schema.py\'\n\n@@ ... @@ def _computed_field_schema(\n__new hunk__\n1509              )\n1510  \n1511          return_type = replace_types(return_type, self._typevars_map)\n1512 +        # Create a new ComputedFieldInfo so that different type parametrizations of the same\n1513 +        # generic model\'s computed field can have different return types.\n1514 +        d.info = dataclasses.replace(d.info, return_type=return_type)\n1515          return_type_schema = self.generate_schema(return_type)\n1516          # Apply serializers to computed field if there exist\n1517          return_type_schema = self._apply_field_serializers(\n\nSurrounding code from `pydantic/_internal/_generate_schema.py` at head (for additional context):\n```\n                lambda x, h: h(x), schema=core_schema.any_schema()\n            )\n            return schema\n        else:\n            return core_schema.any_schema()\n\n    def _computed_field_schema(\n        self,\n        d: Decorator[ComputedFieldInfo],\n        field_serializers: dict[str, Decorator[FieldSerializerDecoratorInfo]],\n    ) -> core_schema.ComputedField:\n        try:\n            return_type = _decorators.get_function_return_type(d.func, d.info.return_type, self._types_namespace)\n        except NameError as e:\n            raise PydanticUndefinedAnnotation.from_name_error(e) from e\n        if return_type is PydanticUndefined:\n            raise PydanticUserError(\n                \'Computed field is missing return type annotation or specifying `return_type`\'\n                \' to the `@computed_field` decorator (e.g. `@computed_field(return_type=int|str)`)\',\n                code=\'model-field-missing-annotation\',\n            )\n\n        return_type = replace_types(return_type, self._typevars_map)\n        # Create a new ComputedFieldInfo so that different type parametrizations of the same\n        # generic model\'s computed field can have different return types.\n        d.info = dataclasses.replace(d.info, return_type=return_type)\n        return_type_schema = self.generate_schema(return_type)\n        # Apply serializers to computed field if there exist\n        return_type_schema = self._apply_field_serializers(\n            return_type_schema,\n            filter_field_decorator_info_by_field(field_serializers.values(), d.cls_var_name),\n            computed_field=True,\n        )\n        # Handle alias_generator using similar logic to that from\n        # pydantic._internal._generate_schema.GenerateSchema._common_field_schema,\n        # with field_info -> d.info and name -> d.cls_var_name\n        alias_generator = self._config_wrapper.alias_generator\n        if alias_generator and (d.info.alias_priority is None or d.info.alias_priority <= 1):\n            alias = alias_generator(d.cls_var_name)\n            if not isinstance(alias, str):\n                raise TypeError(f\'alias_generator {alias_generator} must return str, not {alias.__class__}\')\n            d.info.alias = alias\n            d.info.alias_priority = 1\n\n        def set_computed_field_metadata(schema: CoreSchemaOrField, handler: GetJsonSchemaHandler) -> JsonSchemaValue:\n            json_schema = handler(schema)\n\n            json_schema[\'readOnly\'] = True\n```\n\n\n## File: \'tests/test_computed_fields.py\'\n\n@@ ... @@ def double_x(self) -> T:\n__new hunk__\n 736      assert A[int](x=1).model_dump() == {\'x\': 1, \'double_x\': 2}\n 737      assert A[str](x=\'abc\').model_dump() == {\'x\': \'abc\', \'double_x\': \'abcabc\'}\n 738  \n 739 +    assert A(x=\'xxxxxx\').model_computed_fields[\'double_x\'].return_type == T\n 740 +    assert A[int](x=123).model_computed_fields[\'double_x\'].return_type == int\n 741 +    assert A[str](x=\'x\').model_computed_fields[\'double_x\'].return_type == str\n 742 +\n 743      class B(BaseModel, Generic[T]):\n 744          @computed_field\n 745          @property\n\nSurrounding code from `tests/test_computed_fields.py` at head (for additional context):\n```\n            \'comp_1\': {\'allOf\': [{\'$ref\': \'#/$defs/CompModel\'}], \'readOnly\': True},\n            \'comp_2\': {\'allOf\': [{\'$ref\': \'#/$defs/CompModel\'}], \'readOnly\': True},\n        },\n        \'required\': [\'comp_1\', \'comp_2\'],\n        \'title\': \'Model\',\n        \'type\': \'object\',\n    }\n\n\ndef test_generic_computed_field():\n    T = TypeVar(\'T\')\n\n    class A(BaseModel, Generic[T]):\n        x: T\n\n        @computed_field\n        @property\n        def double_x(self) -> T:\n            return self.x * 2\n\n    assert A[int](x=1).model_dump() == {\'x\': 1, \'double_x\': 2}\n    assert A[str](x=\'abc\').model_dump() == {\'x\': \'abc\', \'double_x\': \'abcabc\'}\n\n    assert A(x=\'xxxxxx\').model_computed_fields[\'double_x\'].return_type == T\n    assert A[int](x=123).model_computed_fields[\'double_x\'].return_type == int\n    assert A[str](x=\'x\').model_computed_fields[\'double_x\'].return_type == str\n\n    class B(BaseModel, Generic[T]):\n        @computed_field\n        @property\n        def double_x(self) -> T:\n            return \'abc\'  # this may not match the annotated return type, and will warn if not\n\n    with pytest.warns(UserWarning, match=\'Expected `int` but got `str` - serialized value may not be as expected\'):\n        B[int]().model_dump()\n\n\ndef test_computed_field_override_raises():\n    class Model(BaseModel):\n        name: str = \'foo\'\n\n    with pytest.raises(ValueError, match="you can\'t override a field with a computed field"):\n\n        class SubModel(Model):\n            @computed_field\n            @property\n            def name(self) -> str:\n                return \'bar\'\n```\n\n## Codebase context\n\n### modified_symbols\n- class `GenerateSchema` @ pydantic/_internal/_generate_schema.py:267-1821\n  ```python\n  class GenerateSchema:\n  ```\n- method `GenerateSchema._computed_field_schema` @ pydantic/_internal/_generate_schema.py:1495-1551\n  ```python\n  def _computed_field_schema(\n  ```\n- function `test_generic_computed_field` @ tests/test_computed_fields.py:725-750\n  ```python\n  def test_generic_computed_field():\n  ```\n- class `B` @ tests/test_computed_fields.py:743-747\n  ```python\n  class B(BaseModel, Generic[T]):\n  ```\n\n### call_sites\n- `B` called at tests/test_root_model.py:339\n  ```\n      class B(BaseModel):\n          root: int\n  \n      assert R(42) != B(root=42)\n      assert B(root=42) != R(42)\n  \n  \n  ```\n- `B` called at tests/test_root_model.py:340\n  ```\n          root: int\n  \n      assert R(42) != B(root=42)\n      assert B(root=42) != R(42)\n  \n  \n  @pytest.mark.parametrize(\'extra_value\', [\'ignore\', \'allow\', \'forbid\'])\n  ```\n- `B` called at tests/test_dataclasses.py:356\n  ```\n      class B(A):\n          b: int = None\n  \n      b = B(a=\'a\', b=12)\n      assert b.a == \'a\'\n      assert b.b == 12\n  \n  ```\n- `B` called at tests/test_dataclasses.py:361\n  ```\n      assert b.b == 12\n  \n      with pytest.raises(ValidationError):\n          B(a=\'a\', b=\'b\')\n  \n      a_ = A(a=b\'a\')\n      assert a_.a == \'a\'\n  ```\n- `B` called at tests/test_dataclasses.py:1092\n  ```\n          a: A\n  \n      a = A(\'\')\n      b = B(a=a)\n  \n      assert hash(a) == 123\n      assert hash(b.a) == 123\n  ```\n- `GenerateSchema` called at tests/test_json.py:97\n  ```\n  @pytest.mark.skipif(not email_validator, reason=\'email_validator not installed\')\n  def test_json_serialization_email():\n      config_wrapper = ConfigWrapper({\'arbitrary_types_allowed\': False})\n      gen = GenerateSchema(config_wrapper, None)\n      schema = gen.generate_schema(NameEmail)\n      serializer = SchemaSerializer(schema)\n      assert serializer.to_json(NameEmail(\'foo bar\', \'foobaR@example.com\')) == b\'"foo bar <foobaR@example.com>"\'\n  ```\n- `GenerateSchema` called at pydantic/_internal/_model_construction.py:463\n  ```\n              and `raise_errors=True`.\n      """\n      typevars_map = get_model_typevars_map(cls)\n      gen_schema = GenerateSchema(\n          config_wrapper,\n          types_namespace,\n          typevars_map,\n  ```\n- `GenerateSchema` called at pydantic/_internal/_dataclasses.py:120\n  ```\n      set_dataclass_fields(cls, types_namespace)\n  \n      typevars_map = get_standard_typevars_map(cls)\n      gen_schema = GenerateSchema(\n          config_wrapper,\n          types_namespace,\n          typevars_map,\n  ```\n\n### related_tests\n#### tests/test_json.py — tests for `pydantic/_internal/_generate_schema.py` (truncated)\n```python\nimport json\nimport re\nimport sys\nfrom dataclasses import dataclass as vanilla_dataclass\nfrom datetime import date, datetime, time, timedelta, timezone\nfrom decimal import Decimal\nfrom enum import Enum\nfrom ipaddress import IPv4Address, IPv4Interface, IPv4Network, IPv6Address, IPv6Interface, IPv6Network\nfrom pathlib import Path\nfrom typing import Any, Generator, List, Optional, Pattern, Union\nfrom uuid import UUID\n\nimport pytest\nfrom pydantic_core import CoreSchema, SchemaSerializer, core_schema\nfrom typing_extensions import Annotated\n\nfrom pydantic import (\n    AfterValidator,\n    BaseModel,\n    ConfigDict,\n    GetCoreSchemaHandler,\n    GetJsonSchemaHandler,\n    NameEmail,\n    PlainSerializer,\n)\nfrom pydantic._internal._config import ConfigWrapper\nfrom pydantic._internal._generate_schema import GenerateSchema\nfrom pydantic.color import Color\nfrom pydantic.dataclasses import dataclass as pydantic_dataclass\nfrom pydantic.deprecated.json import pydantic_encoder, timedelta_isoformat\nfrom pydantic.functional_serializers import (\n    field_serializer,\n)\nfrom pydantic.json_schema import JsonSchemaValue\nfrom pydantic.type_adapter import TypeAdapter\nfrom pydantic.types import DirectoryPath, FilePath, SecretBytes, SecretStr, condecimal\n\ntry:\n    import email_validator\nexcept ImportError:\n    email_validator = None\n\n\npytestmark = pytest.mark.filterwarnings(\'ignore::DeprecationWarning\')\n\n\nclass MyEnum(Enum):\n    foo = \'bar\'\n    snap = \'crackle\'\n\n\nclass MyModel(BaseModel):\n    a: str = \'b\'\n    c: str = \'d\'\n\n\n@pytest.mark.parametrize(\n    \'ser_type,gen_value,json_output\',\n    [\n        (UUID, lambda: UUID(\'ebcdab58-6eb8-46fb-a190-d07a33e9eac8\'), b\'"ebcdab58-6eb8-46fb-a190-d07a33e9eac8"\'),\n        (IPv4Address, lambda: \'192.168.0.1\', b\'"192.168.0.1"\'),\n        (Color, lambda: Color(\'#000\'), b\'"black"\'),\n        (Color, lambda: Color((1, 12, 123)), b\'"#010c7b"\'),\n        (SecretStr, lambda: SecretStr(\'abcd\'), b\'"**********"\'),\n        (SecretStr, lambda: SecretStr(\'\'), b\'""\'),\n        (SecretBytes, lambda: SecretBytes(b\'xyz\'), b\'"**********"\'),\n        (SecretBytes, lambda: SecretBytes(b\'\'), b\'""\'),\n        (IPv6Address, lambda: IPv6Address(\'::1:0:1\'), b\'"::1:0:1"\'),\n        (IPv4Interface, lambda: IPv4Interface(\'192.168.0.0/24\'), b\'"192.168.0.0/24"\'),\n        (IPv6Interface, lambda: IPv6Interface(\'2001:db00::/120\'), b\'"2001:db00::/120"\'),\n        (IPv4Network, lambda: IPv4Network(\'192.168.0.0/24\'), b\'"192.168.0.0/24"\'),\n        (IPv6Network, lambda: IPv6Network(\'2001:db00::/120\'), b\'"2001:db00::/120"\'),\n        (datetime, lambda: datetime(2032, 1, 1, 1, 1), b\'"2032-01-01T01:01:00"\'),\n        (datetime, lambda: datetime(2032, 1, 1, 1, 1, tzinfo=timezone.utc), b\'"2032-01-01T01:01:00Z"\'),\n        (datetime, lambda: datetime(2032, 1, 1), b\'"2032-01-01T00:00:00"\'),\n        (time, lambda: time(12, 34, 56), b\'"12:34:56"\'),\n        (timedelta, lambda: timedelta(days=12, seconds=34, microseconds=56), b\'"P12DT34.000056S"\'),\n        (timedelta, lambda: timedelta(seconds=-1), b\'"-PT1S"\'),\n        (set, lambda: {1, 2, 3}, b\'[1,2,3]\'),\n        (frozenset, lambda: frozenset([1, 2, 3]), b\'[1,2,3]\'),\n        (Generator[int, None, None], lambda: (v for v in range(4)), b\'[0,1,2,3]\'),\n        (bytes, lambda: b\'this is bytes\', b\'"this is bytes"\'),\n        (Decimal, lambda: Decimal(\'12.34\'), b\'"12.34"\'),\n        (MyModel, lambda: MyModel(), b\'{"a":"b","c":"d"}\'),\n        (MyEnum, lambda: MyEnum.foo, b\'"bar"\'),\n        (Pattern, lambda: re.compile(\'^regex$\'), b\'"^regex$"\'),\n    ],\n)\ndef test_json_serialization(ser_type, gen_value, json_output):\n    ta: TypeAdapter[Any] = TypeAdapter(ser_type)\n    assert ta.dump_json(gen_value()) == json_output\n\n\n@pytest.mark.skipif(not email_validator, reason=\'email_validator not installed\')\ndef test_json_serialization_email():\n    config_wrapper = ConfigWrapper({\'arbitrary_types_allowed\': False})\n    gen = GenerateSchema(config_wrapper, None)\n    schema = gen.generate_schema(NameEmail)\n    serializer = SchemaSerializer(schema)\n    assert serializer.to_json(NameEmail(\'foo bar\', \'foobaR@example.com\')) == b\'"foo bar <foobaR@example.com>"\'\n\n\n@pytest.mark.skipif(sys.platform.startswith(\'win\'), reason=\'paths look different on windows\')\ndef test_path_encoding(tmpdir):\n    class PathModel(BaseModel):\n        path: Path\n        file_path: FilePath\n        dir_path: DirectoryPath\n\n    tmpdir = Path(tmpdir)\n    file_path = tmpdir / \'bar\'\n    file_path.touch()\n    dir_path = tmpdir / \'baz\'\n    dir_path.mkdir()\n    model = PathModel(path=Path(\'/path/test/example/\'), file_path=file_path, dir_path=dir_path)\n    expected = f\'{{"path": "/path/test/example", "file_path": "{file_path}", "dir_path": "{dir_path}"}}\'\n    assert json.dumps(model, default=pydantic_encoder) == expected\n\n\ndef test_model_encoding():\n    class ModelA(BaseModel):\n        x: int\n        y: str\n\n    class Model(BaseModel):\n        a: float\n        b: bytes\n        c: Decimal\n        d: ModelA\n\n    m = Model(a=10.2, b=\'foobar\', c=\'10.2\', d={\'x\': 123, \'y\': \'1\n... (truncated, 11902 chars)\n```\n\n\nReturn ONLY a JSON object with this shape and nothing else: {"comments": [{"path": str, "line": int|null, "severity": "critical"|"important"|"minor"|"nit", "body": str, "rationale": str, "issue_header": str|null, "suggestion": str|null}, ...]}. Return an empty comments list if the PR has no issues. Do NOT wrap in markdown fences. Do NOT include any prose before or after.']' timed out after 600.0 seconds
+[eval] 29/30 https://github.com/django/django/pull/17218
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17218: 1 hunks, ~514 tokens
+INFO peer.agent: Gathered codebase context: 0 symbols, 0 call sites, 3 tests, 0 untested, 0 linter findings, ~3239 tokens
+[eval] 30/30 https://github.com/django/django/pull/16870
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/16870: 1 hunks, ~412 tokens
+INFO peer.agent: Gathered codebase context: 0 symbols, 0 call sites, 1 tests, 0 untested, 0 linter findings, ~1266 tokens
+INFO peer.eval.cross_run: [cross_run] run 2/3
+[eval] 1/30 https://github.com/pydantic/pydantic/pull/7625
+[eval] 2/30 https://github.com/pydantic/pydantic/pull/7528
+[eval] 3/30 https://github.com/pydantic/pydantic/pull/7677
+[eval] 4/30 https://github.com/pydantic/pydantic/pull/7527
+[eval] 5/30 https://github.com/pydantic/pydantic/pull/7415
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7528: 1 hunks, ~1185 tokens
+INFO peer.agent: Gathered codebase context: 5 symbols, 5 call sites, 3 tests, 0 untested, 0 linter findings, ~4951 tokens
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7527: 1 hunks, ~1216 tokens
+INFO peer.agent: Gathered codebase context: 2 symbols, 2 call sites, 3 tests, 0 untested, 0 linter findings, ~4578 tokens
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7625: 6 hunks, ~3646 tokens
+INFO peer.agent: Gathered codebase context: 11 symbols, 8 call sites, 1 tests, 0 untested, 0 linter findings, ~3122 tokens
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7415: 14 hunks, ~6204 tokens
+INFO peer.agent: Gathered codebase context: 19 symbols, 16 call sites, 2 tests, 0 untested, 0 linter findings, ~6034 tokens
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7677: 12 hunks, ~7226 tokens
+INFO peer.agent: Gathered codebase context: 16 symbols, 7 call sites, 0 tests, 11 untested, 0 linter findings, ~1467 tokens
+[eval] 6/30 https://github.com/pydantic/pydantic/pull/7566
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7566: 2 hunks, ~2236 tokens
+INFO peer.agent: Gathered codebase context: 4 symbols, 0 call sites, 0 tests, 0 untested, 0 linter findings, ~115 tokens
+[eval] 7/30 https://github.com/pydantic/pydantic/pull/7435
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7435: 5 hunks, ~3350 tokens
+INFO peer.agent: Gathered codebase context: 7 symbols, 6 call sites, 4 tests, 0 untested, 0 linter findings, ~7147 tokens
+[eval] 8/30 https://github.com/pydantic/pydantic/pull/7589
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7589: 4 hunks, ~2316 tokens
+INFO peer.agent: Gathered codebase context: 4 symbols, 6 call sites, 1 tests, 1 untested, 0 linter findings, ~2077 tokens
+[eval] 9/30 https://github.com/pydantic/pydantic/pull/7979
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7979: 4 hunks, ~2386 tokens
+INFO peer.agent: Gathered codebase context: 3 symbols, 5 call sites, 1 tests, 0 untested, 0 linter findings, ~2099 tokens
+[eval] 10/30 https://github.com/pydantic/pydantic/pull/8190
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/8190: 4 hunks, ~2155 tokens
+INFO peer.agent: Gathered codebase context: 3 symbols, 5 call sites, 1 tests, 0 untested, 0 linter findings, ~2177 tokens
+[eval] 11/30 https://github.com/pydantic/pydantic/pull/7626
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7626: 6 hunks, ~3950 tokens
+INFO peer.agent: Gathered codebase context: 9 symbols, 23 call sites, 2 tests, 0 untested, 0 linter findings, ~5868 tokens
+[eval] 12/30 https://github.com/pydantic/pydantic/pull/7900
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7900: 3 hunks, ~3046 tokens
+INFO peer.agent: Gathered codebase context: 3 symbols, 10 call sites, 1 tests, 0 untested, 0 linter findings, ~2761 tokens
+[eval] 13/30 https://github.com/pydantic/pydantic/pull/8059
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/8059: 5 hunks, ~4741 tokens
+INFO peer.agent: Gathered codebase context: 0 symbols, 0 call sites, 1 tests, 0 untested, 0 linter findings, ~1812 tokens
+[eval] 14/30 https://github.com/pydantic/pydantic/pull/7889
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7889: 2 hunks, ~1430 tokens
+INFO peer.agent: Gathered codebase context: 4 symbols, 8 call sites, 1 tests, 0 untested, 0 linter findings, ~2707 tokens
+[eval] 15/30 https://github.com/pydantic/pydantic/pull/8012
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/8012: 3 hunks, ~2304 tokens
+INFO peer.agent: Gathered codebase context: 3 symbols, 3 call sites, 1 tests, 0 untested, 0 linter findings, ~1956 tokens
+[eval] 16/30 https://github.com/pydantic/pydantic/pull/8442
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/8442: 4 hunks, ~2288 tokens
+INFO peer.agent: Gathered codebase context: 2 symbols, 10 call sites, 1 tests, 0 untested, 0 linter findings, ~3060 tokens
+[eval] 17/30 https://github.com/django/django/pull/17280
+[eval] 18/30 https://github.com/django/django/pull/17223
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17280: 3 hunks, ~1294 tokens
+INFO peer.agent: Gathered codebase context: 6 symbols, 5 call sites, 0 tests, 0 untested, 0 linter findings, ~543 tokens
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17223: 4 hunks, ~1578 tokens
+INFO peer.agent: Gathered codebase context: 8 symbols, 18 call sites, 5 tests, 0 untested, 0 linter findings, ~9145 tokens
+[eval] 19/30 https://github.com/django/django/pull/17314
+[eval] 20/30 https://github.com/django/django/pull/17171
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17314: 5 hunks, ~2264 tokens
+[eval] 21/30 https://github.com/django/django/pull/17182
+[eval] 22/30 https://github.com/django/django/pull/17147
+INFO peer.agent: Gathered codebase context: 14 symbols, 9 call sites, 0 tests, 4 untested, 0 linter findings, ~1404 tokens
+[eval] 23/30 https://github.com/django/django/pull/17637
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17182: 3 hunks, ~3018 tokens
+INFO peer.agent: Gathered codebase context: 7 symbols, 5 call sites, 3 tests, 0 untested, 0 linter findings, ~4381 tokens
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17171: 11 hunks, ~4897 tokens
+INFO peer.agent: Gathered codebase context: 10 symbols, 7 call sites, 3 tests, 0 untested, 0 linter findings, ~5583 tokens
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17637: 2 hunks, ~1255 tokens
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17147: 10 hunks, ~10572 tokens
+INFO peer.agent: Gathered codebase context: 8 symbols, 17 call sites, 0 tests, 1 untested, 0 linter findings, ~2021 tokens
+INFO peer.agent: Gathered codebase context: 20 symbols, 11 call sites, 2 tests, 7 untested, 0 linter findings, ~3398 tokens
+[eval] 24/30 https://github.com/django/django/pull/17312
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17312: 1 hunks, ~696 tokens
+INFO peer.agent: Gathered codebase context: 2 symbols, 4 call sites, 1 tests, 0 untested, 0 linter findings, ~991 tokens
+[eval] 25/30 https://github.com/django/django/pull/17256
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17256: 6 hunks, ~3687 tokens
+INFO peer.agent: Gathered codebase context: 13 symbols, 7 call sites, 2 tests, 0 untested, 0 linter findings, ~3413 tokens
+[eval] 26/30 https://github.com/django/django/pull/16746
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/16746: 6 hunks, ~4698 tokens
+INFO peer.agent: Gathered codebase context: 9 symbols, 10 call sites, 3 tests, 1 untested, 0 linter findings, ~5213 tokens
+[eval] 27/30 https://github.com/django/django/pull/16603
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/16603: 11 hunks, ~9192 tokens
+[eval] 28/30 https://github.com/django/django/pull/16637
+INFO peer.agent: Gathered codebase context: 19 symbols, 6 call sites, 2 tests, 7 untested, 0 linter findings, ~2874 tokens
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/16637: 2 hunks, ~695 tokens
+INFO peer.agent: Gathered codebase context: 3 symbols, 10 call sites, 0 tests, 2 untested, 0 linter findings, ~1002 tokens
+[eval] 29/30 https://github.com/django/django/pull/17218
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17218: 1 hunks, ~514 tokens
+INFO peer.agent: Gathered codebase context: 0 symbols, 0 call sites, 3 tests, 0 untested, 0 linter findings, ~3239 tokens
+[eval] 30/30 https://github.com/django/django/pull/16870
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/16870: 1 hunks, ~412 tokens
+INFO peer.agent: Gathered codebase context: 0 symbols, 0 call sites, 1 tests, 0 untested, 0 linter findings, ~1266 tokens
+INFO peer.eval.cross_run: [cross_run] run 3/3
+[eval] 1/30 https://github.com/pydantic/pydantic/pull/7625
+[eval] 2/30 https://github.com/pydantic/pydantic/pull/7528
+[eval] 3/30 https://github.com/pydantic/pydantic/pull/7677
+[eval] 4/30 https://github.com/pydantic/pydantic/pull/7527
+[eval] 5/30 https://github.com/pydantic/pydantic/pull/7415
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7528: 1 hunks, ~1185 tokens
+INFO peer.agent: Gathered codebase context: 5 symbols, 5 call sites, 3 tests, 0 untested, 0 linter findings, ~4951 tokens
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7527: 1 hunks, ~1216 tokens
+INFO peer.agent: Gathered codebase context: 2 symbols, 2 call sites, 3 tests, 0 untested, 0 linter findings, ~4578 tokens
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7625: 6 hunks, ~3646 tokens
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7677: 12 hunks, ~7226 tokens
+INFO peer.agent: Gathered codebase context: 11 symbols, 8 call sites, 1 tests, 0 untested, 0 linter findings, ~3122 tokens
+INFO peer.agent: Gathered codebase context: 16 symbols, 7 call sites, 0 tests, 11 untested, 0 linter findings, ~1467 tokens
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7415: 14 hunks, ~6204 tokens
+INFO peer.agent: Gathered codebase context: 19 symbols, 16 call sites, 2 tests, 0 untested, 0 linter findings, ~6034 tokens
+[eval] 6/30 https://github.com/pydantic/pydantic/pull/7566
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7566: 2 hunks, ~2236 tokens
+INFO peer.agent: Gathered codebase context: 4 symbols, 0 call sites, 0 tests, 0 untested, 0 linter findings, ~115 tokens
+[eval] 7/30 https://github.com/pydantic/pydantic/pull/7435
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7435: 5 hunks, ~3350 tokens
+INFO peer.agent: Gathered codebase context: 7 symbols, 6 call sites, 4 tests, 0 untested, 0 linter findings, ~7147 tokens
+[eval] 8/30 https://github.com/pydantic/pydantic/pull/7589
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7589: 4 hunks, ~2316 tokens
+INFO peer.agent: Gathered codebase context: 4 symbols, 6 call sites, 1 tests, 1 untested, 0 linter findings, ~2077 tokens
+[eval] 9/30 https://github.com/pydantic/pydantic/pull/7979
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7979: 4 hunks, ~2386 tokens
+INFO peer.agent: Gathered codebase context: 3 symbols, 5 call sites, 1 tests, 0 untested, 0 linter findings, ~2099 tokens
+[eval] 10/30 https://github.com/pydantic/pydantic/pull/8190
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/8190: 4 hunks, ~2155 tokens
+INFO peer.agent: Gathered codebase context: 3 symbols, 5 call sites, 1 tests, 0 untested, 0 linter findings, ~2177 tokens
+[eval] 11/30 https://github.com/pydantic/pydantic/pull/7626
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7626: 6 hunks, ~3950 tokens
+INFO peer.agent: Gathered codebase context: 9 symbols, 23 call sites, 2 tests, 0 untested, 0 linter findings, ~5868 tokens
+[eval] 12/30 https://github.com/pydantic/pydantic/pull/7900
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7900: 3 hunks, ~3046 tokens
+INFO peer.agent: Gathered codebase context: 3 symbols, 10 call sites, 1 tests, 0 untested, 0 linter findings, ~2761 tokens
+[eval] 13/30 https://github.com/pydantic/pydantic/pull/8059
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/8059: 5 hunks, ~4741 tokens
+INFO peer.agent: Gathered codebase context: 0 symbols, 0 call sites, 1 tests, 0 untested, 0 linter findings, ~1812 tokens
+[eval] 14/30 https://github.com/pydantic/pydantic/pull/7889
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7889: 2 hunks, ~1430 tokens
+[eval] 15/30 https://github.com/pydantic/pydantic/pull/8012
+INFO peer.agent: Gathered codebase context: 4 symbols, 8 call sites, 1 tests, 0 untested, 0 linter findings, ~2707 tokens
+[eval] 16/30 https://github.com/pydantic/pydantic/pull/8442
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/8012: 3 hunks, ~2304 tokens
+INFO peer.agent: Gathered codebase context: 3 symbols, 3 call sites, 1 tests, 0 untested, 0 linter findings, ~1956 tokens
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/8442: 4 hunks, ~2288 tokens
+INFO peer.agent: Gathered codebase context: 2 symbols, 10 call sites, 1 tests, 0 untested, 0 linter findings, ~3060 tokens
+[eval] 17/30 https://github.com/django/django/pull/17280
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17280: 3 hunks, ~1294 tokens
+INFO peer.agent: Gathered codebase context: 6 symbols, 5 call sites, 0 tests, 0 untested, 0 linter findings, ~543 tokens
+[eval] 18/30 https://github.com/django/django/pull/17223
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17223: 4 hunks, ~1578 tokens
+INFO peer.agent: Gathered codebase context: 8 symbols, 18 call sites, 5 tests, 0 untested, 0 linter findings, ~9145 tokens
+[eval] 19/30 https://github.com/django/django/pull/17314
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17314: 5 hunks, ~2264 tokens
+INFO peer.agent: Gathered codebase context: 14 symbols, 9 call sites, 0 tests, 4 untested, 0 linter findings, ~1404 tokens
+[eval] 20/30 https://github.com/django/django/pull/17171
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17171: 11 hunks, ~4897 tokens
+INFO peer.agent: Gathered codebase context: 10 symbols, 7 call sites, 3 tests, 0 untested, 0 linter findings, ~5583 tokens
+[eval] 21/30 https://github.com/django/django/pull/17182
+[eval] 22/30 https://github.com/django/django/pull/17147
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17182: 3 hunks, ~3018 tokens
+INFO peer.agent: Gathered codebase context: 7 symbols, 5 call sites, 3 tests, 0 untested, 0 linter findings, ~4381 tokens
+WARNING peer.eval.runner: Reviewer failed on https://github.com/django/django/pull/17147: gh command failed: api repos/django/django/issues/17147/comments --paginate
+Get "https://api.github.com/repos/django/django/issues/17147/comments?per_page=100": net/http: TLS handshake timeout
+[eval] 23/30 https://github.com/django/django/pull/17637
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17637: 2 hunks, ~1255 tokens
+INFO peer.agent: Gathered codebase context: 8 symbols, 17 call sites, 0 tests, 1 untested, 0 linter findings, ~2021 tokens
+[eval] 24/30 https://github.com/django/django/pull/17312
+WARNING peer.eval.runner: Reviewer failed on https://github.com/django/django/pull/17312: gh command failed: pr view 17312 --repo django/django --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+[eval] 25/30 https://github.com/django/django/pull/17256
+WARNING peer.eval.runner: Reviewer failed on https://github.com/django/django/pull/17256: gh command failed: api repos/django/django/contents/django/db/migrations/serializer.py?ref=f92e68c30a0d38d25486e3f3cfabe5dfb5961ef7
+Get "https://api.github.com/repos/django/django/contents/django/db/migrations/serializer.py?ref=f92e68c30a0d38d25486e3f3cfabe5dfb5961ef7": net/http: TLS handshake timeout
+[eval] 26/30 https://github.com/django/django/pull/16746
+WARNING peer.eval.runner: Reviewer failed on https://github.com/django/django/pull/16746: gh command failed: pr view 16746 --repo django/django --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+[eval] 27/30 https://github.com/django/django/pull/16603
+WARNING peer.eval.runner: Reviewer failed on https://github.com/django/django/pull/16603: gh command failed: pr view 16603 --repo django/django --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+[eval] 28/30 https://github.com/django/django/pull/16637
+WARNING peer.eval.runner: Reviewer failed on https://github.com/django/django/pull/16637: gh command failed: pr diff 16637 --repo django/django
+could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/16637": net/http: TLS handshake timeout
+[eval] 29/30 https://github.com/django/django/pull/17218
+WARNING peer.eval.runner: Reviewer failed on https://github.com/django/django/pull/17218: gh command failed: pr view 17218 --repo django/django --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+[eval] 30/30 https://github.com/django/django/pull/16870
+WARNING peer.eval.runner: Reviewer failed on https://github.com/django/django/pull/16870: gh command failed: pr view 16870 --repo django/django --json title,body,headRefOid
+Post "https://api.github.com/graphql": dial tcp 4.228.31.149:443: i/o timeout
+WARNING peer.claude_code_client: claude CLI exited 1; stderr=
+INFO peer.autoresearch.multirun: [multirun] recipe MultiRunReport -> data/eval_runs/multirun_f7caeb70_1199de6.json
+INFO peer.autoresearch.multirun: [multirun] running bare baseline N=3
+INFO peer.eval.cross_run: [cross_run] run 1/3
+
+# Multi-run report
+
+N runs: 3
+
+## Per-metric bands (across reruns)
+
+| metric | min | median | max | range | n |
+|---|---:|---:|---:|---:|---:|
+| comments_per_pr | 2.0333 | 2.1724 | 2.4545 | 0.4212 | 3 |
+| detection_rate | 0.0635 | 0.0635 | 0.1667 | 0.1032 | 3 |
+| mean_per_pr_recall | 0.0135 | 0.0833 | 0.1107 | 0.0972 | 3 |
+| novelty_rate | 0.9463 | 0.9679 | 0.9719 | 0.0256 | 3 |
+| precision_per_severity | n/a | n/a | n/a | n/a | 0 |
+| severity_calibration | 0.5000 | 0.7500 | 0.8333 | 0.3333 | 3 |
+| suggestion_rate | 0.3481 | 0.4038 | 0.4096 | 0.0615 | 3 |
+
+## Per-run detection_rate
+
+- run 1: detection_rate=0.0635
+- run 2: detection_rate=0.0635
+- run 3: detection_rate=0.1667
+
+[eval] 1/30 https://github.com/pydantic/pydantic/pull/7625
+[eval] 2/30 https://github.com/pydantic/pydantic/pull/7528
+[eval] 3/30 https://github.com/pydantic/pydantic/pull/7677
+[eval] 4/30 https://github.com/pydantic/pydantic/pull/7527
+[eval] 5/30 https://github.com/pydantic/pydantic/pull/7415
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/7415: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/7415": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/7528: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/7528": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/7677: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/7677": net/http: TLS handshake timeout
+
+[eval] 6/30 https://github.com/pydantic/pydantic/pull/7566
+[eval] 7/30 https://github.com/pydantic/pydantic/pull/7435
+[eval] 8/30 https://github.com/pydantic/pydantic/pull/7589
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/7527: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/7527": net/http: TLS handshake timeout
+
+[eval] 9/30 https://github.com/pydantic/pydantic/pull/7979
+[eval] 10/30 https://github.com/pydantic/pydantic/pull/8190
+[eval] 11/30 https://github.com/pydantic/pydantic/pull/7626
+[eval] 12/30 https://github.com/pydantic/pydantic/pull/7900
+[eval] 13/30 https://github.com/pydantic/pydantic/pull/8059
+[eval] 14/30 https://github.com/pydantic/pydantic/pull/7889
+[eval] 15/30 https://github.com/pydantic/pydantic/pull/8012
+[eval] 16/30 https://github.com/pydantic/pydantic/pull/8442
+[eval] 17/30 https://github.com/django/django/pull/17280
+[eval] 18/30 https://github.com/django/django/pull/17223
+[eval] 19/30 https://github.com/django/django/pull/17314
+[eval] 20/30 https://github.com/django/django/pull/17171
+[eval] 21/30 https://github.com/django/django/pull/17182
+[eval] 22/30 https://github.com/django/django/pull/17147
+[eval] 23/30 https://github.com/django/django/pull/17637
+[eval] 24/30 https://github.com/django/django/pull/17312
+[eval] 25/30 https://github.com/django/django/pull/17256
+[eval] 26/30 https://github.com/django/django/pull/16746
+[eval] 27/30 https://github.com/django/django/pull/16603
+[eval] 28/30 https://github.com/django/django/pull/16637
+[eval] 29/30 https://github.com/django/django/pull/17218
+[eval] 30/30 https://github.com/django/django/pull/16870
+INFO peer.eval.cross_run: [cross_run] run 2/3
+[eval] 1/30 https://github.com/pydantic/pydantic/pull/7625
+[eval] 2/30 https://github.com/pydantic/pydantic/pull/7528
+[eval] 3/30 https://github.com/pydantic/pydantic/pull/7677
+[eval] 4/30 https://github.com/pydantic/pydantic/pull/7527
+[eval] 5/30 https://github.com/pydantic/pydantic/pull/7415
+[eval] 6/30 https://github.com/pydantic/pydantic/pull/7566
+[eval] 7/30 https://github.com/pydantic/pydantic/pull/7435
+[eval] 8/30 https://github.com/pydantic/pydantic/pull/7589
+[eval] 9/30 https://github.com/pydantic/pydantic/pull/7979
+[eval] 10/30 https://github.com/pydantic/pydantic/pull/8190
+[eval] 11/30 https://github.com/pydantic/pydantic/pull/7626
+[eval] 12/30 https://github.com/pydantic/pydantic/pull/7900
+[eval] 13/30 https://github.com/pydantic/pydantic/pull/8059
+[eval] 14/30 https://github.com/pydantic/pydantic/pull/7889
+[eval] 15/30 https://github.com/pydantic/pydantic/pull/8012
+[eval] 16/30 https://github.com/pydantic/pydantic/pull/8442
+[eval] 17/30 https://github.com/django/django/pull/17280
+[eval] 18/30 https://github.com/django/django/pull/17223
+[eval] 19/30 https://github.com/django/django/pull/17314
+[eval] 20/30 https://github.com/django/django/pull/17171
+[eval] 21/30 https://github.com/django/django/pull/17182
+[eval] 22/30 https://github.com/django/django/pull/17147
+[eval] 23/30 https://github.com/django/django/pull/17637
+[eval] 24/30 https://github.com/django/django/pull/17312
+[eval] 25/30 https://github.com/django/django/pull/17256
+[eval] 26/30 https://github.com/django/django/pull/16746
+[eval] 27/30 https://github.com/django/django/pull/16603
+[eval] 28/30 https://github.com/django/django/pull/16637
+[eval] 29/30 https://github.com/django/django/pull/17218
+[eval] 30/30 https://github.com/django/django/pull/16870
+INFO peer.eval.cross_run: [cross_run] run 3/3
+[eval] 1/30 https://github.com/pydantic/pydantic/pull/7625
+[eval] 2/30 https://github.com/pydantic/pydantic/pull/7528
+[eval] 3/30 https://github.com/pydantic/pydantic/pull/7677
+[eval] 4/30 https://github.com/pydantic/pydantic/pull/7527
+[eval] 5/30 https://github.com/pydantic/pydantic/pull/7415
+[eval] 6/30 https://github.com/pydantic/pydantic/pull/7566
+[eval] 7/30 https://github.com/pydantic/pydantic/pull/7435
+[eval] 8/30 https://github.com/pydantic/pydantic/pull/7589
+[eval] 9/30 https://github.com/pydantic/pydantic/pull/7979
+[eval] 10/30 https://github.com/pydantic/pydantic/pull/8190
+[eval] 11/30 https://github.com/pydantic/pydantic/pull/7626
+[eval] 12/30 https://github.com/pydantic/pydantic/pull/7900
+[eval] 13/30 https://github.com/pydantic/pydantic/pull/8059
+[eval] 14/30 https://github.com/pydantic/pydantic/pull/7889
+[eval] 15/30 https://github.com/pydantic/pydantic/pull/8012
+[eval] 16/30 https://github.com/pydantic/pydantic/pull/8442
+[eval] 17/30 https://github.com/django/django/pull/17280
+[eval] 18/30 https://github.com/django/django/pull/17223
+[eval] 19/30 https://github.com/django/django/pull/17314
+[eval] 20/30 https://github.com/django/django/pull/17171
+[eval] 21/30 https://github.com/django/django/pull/17182
+[eval] 22/30 https://github.com/django/django/pull/17147
+[eval] 23/30 https://github.com/django/django/pull/17637
+[eval] 24/30 https://github.com/django/django/pull/17312
+[eval] 25/30 https://github.com/django/django/pull/17256
+[eval] 26/30 https://github.com/django/django/pull/16746
+[eval] 27/30 https://github.com/django/django/pull/16603
+[eval] 28/30 https://github.com/django/django/pull/16637
+[eval] 29/30 https://github.com/django/django/pull/17218
+[eval] 30/30 https://github.com/django/django/pull/16870
+INFO peer.autoresearch.multirun: [multirun] baseline MultiRunReport -> data/eval_runs/multirun_baseline_1199de6.json
+
+# Recipe vs Baseline comparison
+
+recipe: N=3 runs; baseline: N=3 runs; noise_floor: 0.06
+
+| metric | recipe_median | baseline_median | delta | verdict |
+|---|---:|---:|---:|:---|
+| comments_per_pr | +2.1724 | +2.5000 | -0.3276 | ✗ below_noise |
+| detection_rate | +0.0635 | +0.0159 | +0.0476 | — in_noise |
+| mean_per_pr_recall | +0.0833 | +0.0024 | +0.0809 | ✓ above_noise |
+| novelty_rate | +0.9679 | +0.9949 | -0.0269 | — in_noise |
+| precision_per_severity | n/a | n/a | n/a | n/a |
+| severity_calibration | +0.7500 | -1.0000 | +1.7500 | ✓ above_noise |
+| suggestion_rate | +0.4038 | 0.0000 | +0.4038 | ✓ above_noise |
+
+
+# RecipeVerdict: ? AMBIGUOUS
+
+above_noise: 3  |  in_noise: 2  |  below_noise: 1  |  unmeasured: 1
+
+Mixed signal: wins on mean_per_pr_recall, severity_calibration, suggestion_rate but regresses on comments_per_pr. Decision requires explicit metric preference.
+

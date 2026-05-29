@@ -17,9 +17,11 @@ from ..baselines import BareClaudeCodeReviewer
 from ..dataset import JSONLStorage
 from ..eval import (
     CrossRunRunner,
+    classify_comparison,
     compare_to_baseline,
     render_comparison_summary,
     render_multirun_summary,
+    render_recipe_verdict,
 )
 from ..recipe import Recipe
 from .leaderboard import append_row
@@ -152,5 +154,9 @@ def run_multirun_iteration(
 
         print()
         print(render_comparison_summary(comparison))
+
+        verdict = classify_comparison(comparison)
+        print()
+        print(render_recipe_verdict(verdict))
 
     return 0

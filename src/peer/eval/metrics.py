@@ -388,6 +388,79 @@ class PrecisionPerSeverity:
         )
 
 
+class SignalToNoiseRatio:
+    """Signal-to-Noise Ratio (peer-k03) per CR-Bench (arxiv 2603.11078, 2026).
+
+    SNR = (Bug Hits + Valid Suggestions) / Noise Count
+
+    Captures the verbose-reviewer-with-high-recall failure mode in one
+    number: a reviewer that catches one extra bug at the cost of ten
+    noise comments has SNR << a reviewer that catches the same bug with
+    one clean comment.
+
+    Per-sample MetricResult.value is the per-sample SNR (or None when the
+    reviewer produced 0 comments OR 0 noise — see edge cases below).
+    The aggregator takes the mean across samples that have a value.
+
+    Edge cases:
+      - 0 comments       -> value=None (no signal AND no noise to ratio)
+      - noise == 0       -> value=None, per_sample_detail records
+                            'noise=0 — SNR undefined; reviewer was perfect
+                            on this sample'. Excluding these from the mean
+                            keeps the headline number from going to inf.
+      - 0 gold defects   -> hits will be 0; SNR is still meaningful
+                            (valid/noise distinguishes useful vs hallucinated).
+
+    Cost: one judge call per comment. With CLI judges via PEER_USE_CLAUDE_CODE
+    this scales with reviewer verbosity — keep an eye on quota.
+    """
+
+    name = "signal_to_noise_ratio"
+
+    def score(
+        self,
+        sample: GoldSample,
+        review: Review,
+        client: anthropic.Anthropic | None = None,
+    ) -> MetricResult:
+        # Lazy import to keep metrics.py importable without the judging module
+        # at unit-test time (matches the existing pattern in MeanPerPRRecall).
+        from .judging import classify_comment
+
+        peer = review.comments
+        if not peer:
+            return MetricResult(
+                name=self.name,
+                value=None,
+                notes="reviewer produced 0 comments on this sample",
+                per_sample_detail={"hits": 0, "valid": 0, "noise": 0},
+            )
+        hits = 0
+        valid = 0
+        noise = 0
+        for c in peer:
+            cls = classify_comment(c, sample.gold_defects, client=client)
+            if cls == "hit":
+                hits += 1
+            elif cls == "valid":
+                valid += 1
+            else:
+                noise += 1
+        detail = {"hits": hits, "valid": valid, "noise": noise, "n_comments": len(peer)}
+        if noise == 0:
+            return MetricResult(
+                name=self.name,
+                value=None,
+                notes="noise=0 — SNR undefined; reviewer was perfect on this sample",
+                per_sample_detail=detail,
+            )
+        return MetricResult(
+            name=self.name,
+            value=(hits + valid) / noise,
+            per_sample_detail=detail,
+        )
+
+
 def _build_defect_recall_alias():
     """Construct a DefectRecall class that subclasses MeanPerPRRecall, keeps
     `name = "defect_recall"` for back-compat, and emits a DeprecationWarning

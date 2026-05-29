@@ -1,0 +1,32 @@
+{
+  "experiment": "multi_sample_v01 (k=5, CLI non-determinism for diversity)",
+  "dataset": "django_pydantic_v2 (30 PRs)",
+  "n_runs_recipe": 3,
+  "k": 5,
+  "status": "RETRACTED — inconclusive. See `retraction` below before citing any numbers from this file.",
+  "retraction": {
+    "summary": "Native baseline phase (multirun_baseline_v2_30_multi_sample.json) collapsed: every PR in every run returned 0 comments / 0 tokens due to silent `gh pr diff` failures masked by BareClaudeCodeReviewer's old fall-through-to-empty-Review behaviour (now fixed in peer-7op). Reconstructing against the 'good' preserved baseline (multirun_baseline_e45fe88.json) was invalid because that baseline was N=5 against only 7 PRs, not 30 — different PR populations. Earlier 'KEEP' and 'mild-keep, poor-bang-for-buck' claims are withdrawn.",
+    "what_changed_under_corrected_primitives": {
+      "polarity_corrected_floor_verdict": {
+        "overall": "ambiguous",
+        "above_noise": 4,
+        "in_noise": 1,
+        "below_noise": 1,
+        "regressed_metric": "comments_per_pr (+6.11 vs baseline 4.0; lower-is-better)"
+      },
+      "bootstrap_ci_verdict_95pct": {
+        "overall": "keep",
+        "above_noise": 3,
+        "in_noise": 3,
+        "below_noise": 0,
+        "detection_rate_ci": "[-0.0588, +0.0756] — straddles zero",
+        "mean_per_pr_recall_ci": "[-0.0634, +0.1290] — straddles zero",
+        "comments_per_pr_ci": "[-4.1429, +6.3929] — straddles zero",
+        "clears_ci": ["novelty_rate", "severity_calibration (format-artifact suspect)", "suggestion_rate (format-artifact suspect)"]
+      },
+      "honest_read": "After polarity + CI corrections, the only quality metric clearing the CI is novelty_rate (+0.063). detection_rate and recall are statistically indistinguishable from zero. The two big 'wins' (sev_calib, suggestion_rate) are structured-output format artifacts. The cpp regression is real. Not a clear keep."
+    }
+  },
+  "do_not_cite_unless_paired_rerun_lands": true,
+  "blocking_followup": "peer-eby (fresh paired K=5 N=5 baseline at same commit)"
+}

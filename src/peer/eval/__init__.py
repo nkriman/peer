@@ -9,10 +9,16 @@ and `openspec/changes/eval-v01/design.md` for rationale.
 # methods to EvalReport. Other importers depend on those methods being present.
 from . import report  # noqa: F401
 from .compare import (
+    LOWER_IS_BETTER,
     ComparisonEntry,
     ComparisonReport,
+    RecipeVerdict,
+    classify_comparison,
     compare_to_baseline,
+    compare_to_baseline_ci,
+    compare_to_baseline_paired_bootstrap,
     render_comparison_summary,
+    render_recipe_verdict,
 )
 from .cross_judge import (
     CrossJudgeReport,
@@ -27,7 +33,15 @@ from .cross_run import (
     compute_run_bands,
     render_multirun_summary,
 )
-from .judging import JUDGE_MODEL, JUDGE_PROMPT, LLMJudge, RationaleGrounding, judge_match
+from .judging import (
+    JUDGE_MODEL,
+    JUDGE_PROMPT,
+    CommentClass,
+    LLMJudge,
+    RationaleGrounding,
+    classify_comment,
+    judge_match,
+)
 from .metrics import (
     CommentsPerPR,
     DefectRecall,  # back-compat alias (DeprecationWarning on use)
@@ -37,6 +51,7 @@ from .metrics import (
     NoveltyRate,
     PrecisionPerSeverity,
     SeverityCalibration,
+    SignalToNoiseRatio,
     SuggestionRate,
 )
 from .pricing import cost_unavailable_reason, estimate_cost
@@ -55,9 +70,11 @@ from .types import (
 __all__ = [
     "JUDGE_MODEL",
     "JUDGE_PROMPT",
+    "LOWER_IS_BETTER",
     "REPORT_SCHEMA_VERSION",
     "AgentConfig",
     "AggregateKind",
+    "CommentClass",
     "CommentsPerPR",
     "ComparisonEntry",
     "ComparisonReport",
@@ -79,9 +96,15 @@ __all__ = [
     "NoveltyRate",
     "PrecisionPerSeverity",
     "RationaleGrounding",
+    "RecipeVerdict",
     "SeverityCalibration",
+    "SignalToNoiseRatio",
     "SuggestionRate",
+    "classify_comment",
+    "classify_comparison",
     "compare_to_baseline",
+    "compare_to_baseline_ci",
+    "compare_to_baseline_paired_bootstrap",
     "compute_run_bands",
     "compute_variance_bands",
     "cost_unavailable_reason",
@@ -91,5 +114,6 @@ __all__ = [
     "render_cross_judge_summary",
     "render_diff",
     "render_multirun_summary",
+    "render_recipe_verdict",
     "render_summary",
 ]

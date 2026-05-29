@@ -9,8 +9,13 @@ post_processing_max_comments_per_pr: null
 post_processing_severity_floor: null
 retries:
   output: 1
-reviewer_dotted_path: null
-reviewer_kwargs: {}
+reviewer_dotted_path: agentic
+reviewer_kwargs:
+  allowed_tools:
+  - Read
+  - Grep
+  - Glob
+  max_turns: 15
 system_prompt_path: prompts/default_system_prompt.md
 team_conventions_path: null
 temperature: 0.0

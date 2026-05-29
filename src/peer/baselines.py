@@ -17,11 +17,18 @@ import json
 import logging
 import shutil
 import subprocess
+import time
 
 from .reviewers import _extract_comments_payload
 from .types import CodebaseContext, Comment, Context, Review
 
 logger = logging.getLogger(__name__)
+
+
+class BaselineInfraError(RuntimeError):
+    """gh/claude subprocess failure that must NOT be silently treated as
+    'reviewer returned zero comments'. EvalRunner records the raised
+    exception as a failed sample, keeping the metric medians honest."""
 
 
 _BARE_PROMPT_INSTRUCTIONS = """You are a code reviewer. Review the following PR diff for bugs, security concerns, design problems, and style/convention departures.
@@ -55,31 +62,56 @@ class BareClaudeCodeReviewer:
         claude_bin: str = "claude",
         gh_bin: str = "gh",
         timeout_seconds: float = 600.0,
+        gh_max_attempts: int = 3,
+        gh_backoff_seconds: float = 2.0,
     ) -> None:
         self.model_id = model_id
         self.model = f"claude-code:{model_id}"
         self.claude_bin = claude_bin
         self.gh_bin = gh_bin
         self.timeout_seconds = timeout_seconds
+        if gh_max_attempts < 1:
+            raise ValueError(f"gh_max_attempts must be >= 1; got {gh_max_attempts}")
+        self.gh_max_attempts = int(gh_max_attempts)
+        self.gh_backoff_seconds = float(gh_backoff_seconds)
+
+    def _fetch_diff_with_retry(self, pr_url: str) -> str:
+        """Run `gh pr diff` with exponential backoff. Raises BaselineInfraError
+        on persistent failure so EvalRunner records it as an errored sample
+        instead of silently averaging in a zero-comment 'success'."""
+        gh = shutil.which(self.gh_bin) or self.gh_bin
+        last_stderr = ""
+        last_rc = 0
+        for attempt in range(1, self.gh_max_attempts + 1):
+            proc = subprocess.run(
+                [gh, "pr", "diff", pr_url],
+                capture_output=True,
+                text=True,
+                check=False,
+                timeout=120,
+            )
+            if proc.returncode == 0:
+                return proc.stdout
+            last_rc = proc.returncode
+            last_stderr = (proc.stderr or "")[:300]
+            logger.warning(
+                "gh pr diff failed (attempt %d/%d) for %s: rc=%d %s",
+                attempt,
+                self.gh_max_attempts,
+                pr_url,
+                last_rc,
+                last_stderr,
+            )
+            if attempt < self.gh_max_attempts:
+                time.sleep(self.gh_backoff_seconds * (2 ** (attempt - 1)))
+        raise BaselineInfraError(
+            f"gh pr diff failed {self.gh_max_attempts}x for {pr_url}: rc={last_rc} stderr={last_stderr!r}"
+        )
 
     def review(self, pr_url: str) -> Review:
         # 1. Fetch the diff via gh CLI (same path peer's context.gather uses).
-        gh = shutil.which(self.gh_bin) or self.gh_bin
-        diff_proc = subprocess.run(
-            [gh, "pr", "diff", pr_url],
-            capture_output=True,
-            text=True,
-            check=False,
-            timeout=120,
-        )
-        if diff_proc.returncode != 0:
-            logger.warning("gh pr diff failed for %s: %s", pr_url, (diff_proc.stderr or "")[:300])
-            return Review(
-                comments=[],
-                reason="gh pr diff failed",
-                usage={"input_tokens": 0, "output_tokens": 0, "model": self.model},
-            )
-        diff = diff_proc.stdout
+        # Subprocess failures raise — see _fetch_diff_with_retry docstring.
+        diff = self._fetch_diff_with_retry(pr_url)
 
         prompt = _BARE_PROMPT_INSTRUCTIONS + diff
 
@@ -105,20 +137,17 @@ class BareClaudeCodeReviewer:
             timeout=self.timeout_seconds,
         )
         if proc.returncode != 0:
-            logger.warning(
-                "claude exit %s on %s; stderr=%s",
-                proc.returncode,
-                pr_url,
-                (proc.stderr or "")[:300],
+            raise BaselineInfraError(
+                f"claude exit={proc.returncode} on {pr_url}; stderr={(proc.stderr or '')[:300]!r}"
             )
 
         try:
             envelope = json.loads(proc.stdout)
-        except json.JSONDecodeError:
-            logger.warning(
-                "claude returned non-JSON envelope; first 300 chars: %r", proc.stdout[:300]
-            )
-            envelope = {"result": "", "usage": {}}
+        except json.JSONDecodeError as exc:
+            raise BaselineInfraError(
+                f"claude returned non-JSON envelope on {pr_url}; "
+                f"first 300 chars: {proc.stdout[:300]!r}"
+            ) from exc
 
         # Prefer structured_output (CLI --json-schema path) — empty here
         # since we didn't pass --json-schema; fall back to result-text parse.
@@ -138,11 +167,24 @@ class BareClaudeCodeReviewer:
                     logger.warning("dropping unparseable comment from bare baseline: %s", e)
 
         cli_usage = envelope.get("usage") or {}
-        usage = {
-            "input_tokens": int(cli_usage.get("input_tokens", 0) or 0)
+        in_tok = (
+            int(cli_usage.get("input_tokens", 0) or 0)
             + int(cli_usage.get("cache_read_input_tokens", 0) or 0)
-            + int(cli_usage.get("cache_creation_input_tokens", 0) or 0),
-            "output_tokens": int(cli_usage.get("output_tokens", 0) or 0),
+            + int(cli_usage.get("cache_creation_input_tokens", 0) or 0)
+        )
+        out_tok = int(cli_usage.get("output_tokens", 0) or 0)
+        # Zero input tokens is impossible — the prompt alone is hundreds of
+        # tokens. This indicates claude never actually executed the call
+        # (auth blip, rate limit, transient CLI failure). Refuse to silently
+        # report it as a clean "no issues" result.
+        if in_tok == 0 and out_tok == 0:
+            raise BaselineInfraError(
+                f"claude returned zero usage on {pr_url}: input_tokens=0 output_tokens=0 "
+                f"(call did not execute); envelope keys={list(envelope.keys())}"
+            )
+        usage = {
+            "input_tokens": in_tok,
+            "output_tokens": out_tok,
             "model": self.model,
             "total_cost_usd": envelope.get("total_cost_usd", 0.0),
         }

@@ -1,0 +1,585 @@
+INFO peer.autoresearch.multirun: [multirun] running recipe N=3
+INFO peer.eval.cross_run: [cross_run] run 1/3
+[eval] 1/30 https://github.com/pydantic/pydantic/pull/7625
+[eval] 2/30 https://github.com/pydantic/pydantic/pull/7528
+[eval] 3/30 https://github.com/pydantic/pydantic/pull/7677
+[eval] 4/30 https://github.com/pydantic/pydantic/pull/7527
+[eval] 5/30 https://github.com/pydantic/pydantic/pull/7415
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7527: 1 hunks, ~1216 tokens
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7528: 1 hunks, ~1185 tokens
+INFO peer.agent: Gathered codebase context: 2 symbols, 2 call sites, 3 tests, 0 untested, 0 linter findings, ~4578 tokens
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7625: 6 hunks, ~3646 tokens
+INFO peer.agent: Gathered codebase context: 11 symbols, 8 call sites, 1 tests, 0 untested, 0 linter findings, ~3122 tokens
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7415: 14 hunks, ~6204 tokens
+INFO peer.agent: Gathered codebase context: 19 symbols, 16 call sites, 2 tests, 0 untested, 0 linter findings, ~6034 tokens
+INFO peer.agent: Gathered codebase context: 5 symbols, 5 call sites, 3 tests, 0 untested, 0 linter findings, ~4951 tokens
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7677: 12 hunks, ~7226 tokens
+INFO peer.agent: Gathered codebase context: 16 symbols, 7 call sites, 0 tests, 11 untested, 0 linter findings, ~1467 tokens
+[eval] 6/30 https://github.com/pydantic/pydantic/pull/7566
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7566: 2 hunks, ~2236 tokens
+INFO peer.agent: Gathered codebase context: 4 symbols, 0 call sites, 0 tests, 0 untested, 0 linter findings, ~115 tokens
+[eval] 7/30 https://github.com/pydantic/pydantic/pull/7435
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7435: 5 hunks, ~3350 tokens
+INFO peer.agent: Gathered codebase context: 7 symbols, 6 call sites, 4 tests, 0 untested, 0 linter findings, ~7147 tokens
+[eval] 8/30 https://github.com/pydantic/pydantic/pull/7589
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7589: 4 hunks, ~2316 tokens
+INFO peer.agent: Gathered codebase context: 4 symbols, 6 call sites, 1 tests, 1 untested, 0 linter findings, ~2077 tokens
+[eval] 9/30 https://github.com/pydantic/pydantic/pull/7979
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7979: 4 hunks, ~2386 tokens
+INFO peer.agent: Gathered codebase context: 3 symbols, 5 call sites, 1 tests, 0 untested, 0 linter findings, ~2099 tokens
+[eval] 10/30 https://github.com/pydantic/pydantic/pull/8190
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/8190: 4 hunks, ~2155 tokens
+INFO peer.agent: Gathered codebase context: 3 symbols, 5 call sites, 1 tests, 0 untested, 0 linter findings, ~2177 tokens
+[eval] 11/30 https://github.com/pydantic/pydantic/pull/7626
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7626: 6 hunks, ~3950 tokens
+INFO peer.agent: Gathered codebase context: 9 symbols, 23 call sites, 2 tests, 0 untested, 0 linter findings, ~5868 tokens
+[eval] 12/30 https://github.com/pydantic/pydantic/pull/7900
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7900: 3 hunks, ~3046 tokens
+INFO peer.agent: Gathered codebase context: 3 symbols, 10 call sites, 1 tests, 0 untested, 0 linter findings, ~2761 tokens
+[eval] 13/30 https://github.com/pydantic/pydantic/pull/8059
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/8059: 5 hunks, ~4741 tokens
+INFO peer.agent: Gathered codebase context: 0 symbols, 0 call sites, 1 tests, 0 untested, 0 linter findings, ~1812 tokens
+[eval] 14/30 https://github.com/pydantic/pydantic/pull/7889
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7889: 2 hunks, ~1430 tokens
+INFO peer.agent: Gathered codebase context: 4 symbols, 8 call sites, 1 tests, 0 untested, 0 linter findings, ~2707 tokens
+[eval] 15/30 https://github.com/pydantic/pydantic/pull/8012
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/8012: 3 hunks, ~2304 tokens
+INFO peer.agent: Gathered codebase context: 3 symbols, 3 call sites, 1 tests, 0 untested, 0 linter findings, ~1956 tokens
+[eval] 16/30 https://github.com/pydantic/pydantic/pull/8442
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/8442: 4 hunks, ~2288 tokens
+[eval] 17/30 https://github.com/django/django/pull/17280
+INFO peer.agent: Gathered codebase context: 2 symbols, 10 call sites, 1 tests, 0 untested, 0 linter findings, ~3060 tokens
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17280: 3 hunks, ~1294 tokens
+INFO peer.agent: Gathered codebase context: 6 symbols, 5 call sites, 0 tests, 0 untested, 0 linter findings, ~543 tokens
+[eval] 18/30 https://github.com/django/django/pull/17223
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17223: 4 hunks, ~1578 tokens
+[eval] 19/30 https://github.com/django/django/pull/17314
+INFO peer.agent: Gathered codebase context: 8 symbols, 18 call sites, 5 tests, 0 untested, 0 linter findings, ~9145 tokens
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17314: 5 hunks, ~2264 tokens
+INFO peer.agent: Gathered codebase context: 14 symbols, 9 call sites, 0 tests, 4 untested, 0 linter findings, ~1404 tokens
+[eval] 20/30 https://github.com/django/django/pull/17171
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17171: 11 hunks, ~4897 tokens
+INFO peer.agent: Gathered codebase context: 10 symbols, 7 call sites, 3 tests, 0 untested, 0 linter findings, ~5583 tokens
+[eval] 21/30 https://github.com/django/django/pull/17182
+WARNING peer.eval.runner: Reviewer failed on https://github.com/django/django/pull/17182: gh command failed: pr view 17182 --repo django/django --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+[eval] 22/30 https://github.com/django/django/pull/17147
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17147: 10 hunks, ~10572 tokens
+INFO peer.agent: Gathered codebase context: 20 symbols, 11 call sites, 2 tests, 7 untested, 0 linter findings, ~3398 tokens
+[eval] 23/30 https://github.com/django/django/pull/17637
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17637: 2 hunks, ~1255 tokens
+INFO peer.agent: Gathered codebase context: 8 symbols, 17 call sites, 0 tests, 1 untested, 0 linter findings, ~2021 tokens
+[eval] 24/30 https://github.com/django/django/pull/17312
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17312: 1 hunks, ~696 tokens
+INFO peer.agent: Gathered codebase context: 2 symbols, 4 call sites, 1 tests, 0 untested, 0 linter findings, ~991 tokens
+[eval] 25/30 https://github.com/django/django/pull/17256
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17256: 6 hunks, ~3687 tokens
+INFO peer.agent: Gathered codebase context: 13 symbols, 7 call sites, 2 tests, 0 untested, 0 linter findings, ~3413 tokens
+[eval] 26/30 https://github.com/django/django/pull/16746
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/16746: 6 hunks, ~4698 tokens
+INFO peer.agent: Gathered codebase context: 9 symbols, 10 call sites, 3 tests, 1 untested, 0 linter findings, ~5213 tokens
+[eval] 27/30 https://github.com/django/django/pull/16603
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/16603: 11 hunks, ~9192 tokens
+INFO peer.agent: Gathered codebase context: 19 symbols, 6 call sites, 2 tests, 7 untested, 0 linter findings, ~2874 tokens
+[eval] 28/30 https://github.com/django/django/pull/16637
+[eval] 29/30 https://github.com/django/django/pull/17218
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/16637: 2 hunks, ~695 tokens
+INFO peer.agent: Gathered codebase context: 3 symbols, 10 call sites, 0 tests, 2 untested, 0 linter findings, ~1002 tokens
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17218: 1 hunks, ~514 tokens
+INFO peer.agent: Gathered codebase context: 0 symbols, 0 call sites, 3 tests, 0 untested, 0 linter findings, ~3239 tokens
+[eval] 30/30 https://github.com/django/django/pull/16870
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/16870: 1 hunks, ~412 tokens
+INFO peer.agent: Gathered codebase context: 0 symbols, 0 call sites, 1 tests, 0 untested, 0 linter findings, ~1266 tokens
+INFO peer.eval.cross_run: [cross_run] run 2/3
+[eval] 1/30 https://github.com/pydantic/pydantic/pull/7625
+[eval] 2/30 https://github.com/pydantic/pydantic/pull/7528
+[eval] 3/30 https://github.com/pydantic/pydantic/pull/7677
+[eval] 4/30 https://github.com/pydantic/pydantic/pull/7527
+[eval] 5/30 https://github.com/pydantic/pydantic/pull/7415
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7528: 1 hunks, ~1185 tokens
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7527: 1 hunks, ~1216 tokens
+INFO peer.agent: Gathered codebase context: 5 symbols, 5 call sites, 3 tests, 0 untested, 0 linter findings, ~4951 tokens
+INFO peer.agent: Gathered codebase context: 2 symbols, 2 call sites, 3 tests, 0 untested, 0 linter findings, ~4578 tokens
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7625: 6 hunks, ~3646 tokens
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7415: 14 hunks, ~6204 tokens
+INFO peer.agent: Gathered codebase context: 11 symbols, 8 call sites, 1 tests, 0 untested, 0 linter findings, ~3122 tokens
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7677: 12 hunks, ~7226 tokens
+INFO peer.agent: Gathered codebase context: 19 symbols, 16 call sites, 2 tests, 0 untested, 0 linter findings, ~6029 tokens
+INFO peer.agent: Gathered codebase context: 16 symbols, 7 call sites, 0 tests, 11 untested, 0 linter findings, ~1467 tokens
+[eval] 6/30 https://github.com/pydantic/pydantic/pull/7566
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7566: 2 hunks, ~2236 tokens
+INFO peer.agent: Gathered codebase context: 4 symbols, 0 call sites, 0 tests, 0 untested, 0 linter findings, ~115 tokens
+[eval] 7/30 https://github.com/pydantic/pydantic/pull/7435
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7435: 5 hunks, ~3350 tokens
+INFO peer.agent: Gathered codebase context: 7 symbols, 6 call sites, 4 tests, 0 untested, 0 linter findings, ~7147 tokens
+[eval] 8/30 https://github.com/pydantic/pydantic/pull/7589
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7589: 4 hunks, ~2316 tokens
+INFO peer.agent: Gathered codebase context: 4 symbols, 6 call sites, 1 tests, 1 untested, 0 linter findings, ~2077 tokens
+[eval] 9/30 https://github.com/pydantic/pydantic/pull/7979
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7979: 4 hunks, ~2386 tokens
+INFO peer.agent: Gathered codebase context: 3 symbols, 5 call sites, 1 tests, 0 untested, 0 linter findings, ~2099 tokens
+[eval] 10/30 https://github.com/pydantic/pydantic/pull/8190
+[eval] 11/30 https://github.com/pydantic/pydantic/pull/7626
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/8190: 4 hunks, ~2155 tokens
+INFO peer.agent: Gathered codebase context: 3 symbols, 5 call sites, 1 tests, 0 untested, 0 linter findings, ~2177 tokens
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7626: 6 hunks, ~3950 tokens
+INFO peer.agent: Gathered codebase context: 9 symbols, 23 call sites, 2 tests, 0 untested, 0 linter findings, ~5868 tokens
+[eval] 12/30 https://github.com/pydantic/pydantic/pull/7900
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7900: 3 hunks, ~3046 tokens
+INFO peer.agent: Gathered codebase context: 3 symbols, 10 call sites, 1 tests, 0 untested, 0 linter findings, ~2761 tokens
+[eval] 13/30 https://github.com/pydantic/pydantic/pull/8059
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/8059: 5 hunks, ~4741 tokens
+INFO peer.agent: Gathered codebase context: 0 symbols, 0 call sites, 1 tests, 0 untested, 0 linter findings, ~1812 tokens
+[eval] 14/30 https://github.com/pydantic/pydantic/pull/7889
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/7889: 2 hunks, ~1430 tokens
+[eval] 15/30 https://github.com/pydantic/pydantic/pull/8012
+INFO peer.agent: Gathered codebase context: 4 symbols, 8 call sites, 1 tests, 0 untested, 0 linter findings, ~2707 tokens
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/8012: 3 hunks, ~2304 tokens
+INFO peer.agent: Gathered codebase context: 3 symbols, 3 call sites, 1 tests, 0 untested, 0 linter findings, ~1956 tokens
+[eval] 16/30 https://github.com/pydantic/pydantic/pull/8442
+[eval] 17/30 https://github.com/django/django/pull/17280
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17280: 3 hunks, ~1294 tokens
+INFO peer.agent: Gathered PR context for https://github.com/pydantic/pydantic/pull/8442: 4 hunks, ~2288 tokens
+INFO peer.agent: Gathered codebase context: 2 symbols, 10 call sites, 1 tests, 0 untested, 0 linter findings, ~3060 tokens
+INFO peer.agent: Gathered codebase context: 6 symbols, 5 call sites, 0 tests, 0 untested, 0 linter findings, ~543 tokens
+[eval] 18/30 https://github.com/django/django/pull/17223
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17223: 4 hunks, ~1578 tokens
+INFO peer.agent: Gathered codebase context: 8 symbols, 18 call sites, 5 tests, 0 untested, 0 linter findings, ~9145 tokens
+[eval] 19/30 https://github.com/django/django/pull/17314
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17314: 5 hunks, ~2264 tokens
+INFO peer.agent: Gathered codebase context: 14 symbols, 9 call sites, 0 tests, 4 untested, 0 linter findings, ~1404 tokens
+[eval] 20/30 https://github.com/django/django/pull/17171
+[eval] 21/30 https://github.com/django/django/pull/17182
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17182: 3 hunks, ~3018 tokens
+INFO peer.agent: Gathered codebase context: 7 symbols, 5 call sites, 3 tests, 0 untested, 0 linter findings, ~4381 tokens
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17171: 11 hunks, ~4897 tokens
+INFO peer.agent: Gathered codebase context: 10 symbols, 7 call sites, 3 tests, 0 untested, 0 linter findings, ~5583 tokens
+[eval] 22/30 https://github.com/django/django/pull/17147
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17147: 10 hunks, ~10572 tokens
+INFO peer.agent: Gathered codebase context: 20 symbols, 11 call sites, 2 tests, 7 untested, 0 linter findings, ~3398 tokens
+[eval] 23/30 https://github.com/django/django/pull/17637
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17637: 2 hunks, ~1255 tokens
+INFO peer.agent: Gathered codebase context: 8 symbols, 17 call sites, 0 tests, 1 untested, 0 linter findings, ~2021 tokens
+[eval] 24/30 https://github.com/django/django/pull/17312
+INFO peer.agent: Gathered PR context for https://github.com/django/django/pull/17312: 1 hunks, ~696 tokens
+INFO peer.agent: Gathered codebase context: 2 symbols, 4 call sites, 1 tests, 0 untested, 0 linter findings, ~991 tokens
+[eval] 25/30 https://github.com/django/django/pull/17256
+WARNING peer.eval.runner: Reviewer failed on https://github.com/django/django/pull/17256: gh command failed: pr diff 17256 --repo django/django
+could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/17256": net/http: TLS handshake timeout
+[eval] 26/30 https://github.com/django/django/pull/16746
+WARNING peer.eval.runner: Reviewer failed on https://github.com/django/django/pull/16746: gh command failed: pr view 16746 --repo django/django --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+[eval] 27/30 https://github.com/django/django/pull/16603
+WARNING peer.eval.runner: Reviewer failed on https://github.com/django/django/pull/16603: gh command failed: pr view 16603 --repo django/django --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+[eval] 28/30 https://github.com/django/django/pull/16637
+[eval] 29/30 https://github.com/django/django/pull/17218
+WARNING peer.eval.runner: Reviewer failed on https://github.com/django/django/pull/16637: gh command failed: pr view 16637 --repo django/django --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+[eval] 30/30 https://github.com/django/django/pull/16870
+WARNING peer.eval.runner: Reviewer failed on https://github.com/django/django/pull/17218: gh command failed: pr view 17218 --repo django/django --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+WARNING peer.eval.runner: Reviewer failed on https://github.com/django/django/pull/16870: gh command failed: pr view 16870 --repo django/django --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+INFO peer.eval.cross_run: [cross_run] run 3/3
+[eval] 1/30 https://github.com/pydantic/pydantic/pull/7625
+[eval] 2/30 https://github.com/pydantic/pydantic/pull/7528
+[eval] 3/30 https://github.com/pydantic/pydantic/pull/7677
+[eval] 4/30 https://github.com/pydantic/pydantic/pull/7527
+[eval] 5/30 https://github.com/pydantic/pydantic/pull/7415
+WARNING peer.eval.runner: Reviewer failed on https://github.com/pydantic/pydantic/pull/7415: gh command failed: pr view 7415 --repo pydantic/pydantic --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+WARNING peer.eval.runner: Reviewer failed on https://github.com/pydantic/pydantic/pull/7677: gh command failed: pr view 7677 --repo pydantic/pydantic --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+WARNING peer.eval.runner: Reviewer failed on https://github.com/pydantic/pydantic/pull/7625: gh command failed: pr view 7625 --repo pydantic/pydantic --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+WARNING peer.eval.runner: Reviewer failed on https://github.com/pydantic/pydantic/pull/7527: gh command failed: pr view 7527 --repo pydantic/pydantic --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+[eval] 6/30 https://github.com/pydantic/pydantic/pull/7566
+WARNING peer.eval.runner: Reviewer failed on https://github.com/pydantic/pydantic/pull/7528: gh command failed: pr view 7528 --repo pydantic/pydantic --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+[eval] 7/30 https://github.com/pydantic/pydantic/pull/7435
+[eval] 8/30 https://github.com/pydantic/pydantic/pull/7589
+[eval] 9/30 https://github.com/pydantic/pydantic/pull/7979
+[eval] 10/30 https://github.com/pydantic/pydantic/pull/8190
+WARNING peer.eval.runner: Reviewer failed on https://github.com/pydantic/pydantic/pull/7566: gh command failed: pr view 7566 --repo pydantic/pydantic --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+WARNING peer.eval.runner: Reviewer failed on https://github.com/pydantic/pydantic/pull/7979: gh command failed: pr view 7979 --repo pydantic/pydantic --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+WARNING peer.eval.runner: Reviewer failed on https://github.com/pydantic/pydantic/pull/8190: gh command failed: pr view 8190 --repo pydantic/pydantic --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+[eval] 11/30 https://github.com/pydantic/pydantic/pull/7626
+WARNING peer.eval.runner: Reviewer failed on https://github.com/pydantic/pydantic/pull/7589: gh command failed: pr view 7589 --repo pydantic/pydantic --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+[eval] 12/30 https://github.com/pydantic/pydantic/pull/7900
+WARNING peer.eval.runner: Reviewer failed on https://github.com/pydantic/pydantic/pull/7435: gh command failed: pr view 7435 --repo pydantic/pydantic --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+[eval] 13/30 https://github.com/pydantic/pydantic/pull/8059
+[eval] 14/30 https://github.com/pydantic/pydantic/pull/7889
+[eval] 15/30 https://github.com/pydantic/pydantic/pull/8012
+WARNING peer.eval.runner: Reviewer failed on https://github.com/pydantic/pydantic/pull/8059: gh command failed: pr view 8059 --repo pydantic/pydantic --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+WARNING peer.eval.runner: Reviewer failed on https://github.com/pydantic/pydantic/pull/7626: gh command failed: pr view 7626 --repo pydantic/pydantic --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+WARNING peer.eval.runner: Reviewer failed on https://github.com/pydantic/pydantic/pull/7889: gh command failed: pr view 7889 --repo pydantic/pydantic --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+[eval] 16/30 https://github.com/pydantic/pydantic/pull/8442
+WARNING peer.eval.runner: Reviewer failed on https://github.com/pydantic/pydantic/pull/8012: gh command failed: pr view 8012 --repo pydantic/pydantic --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+[eval] 17/30 https://github.com/django/django/pull/17280
+WARNING peer.eval.runner: Reviewer failed on https://github.com/pydantic/pydantic/pull/7900: gh command failed: pr view 7900 --repo pydantic/pydantic --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+[eval] 18/30 https://github.com/django/django/pull/17223
+[eval] 19/30 https://github.com/django/django/pull/17314
+[eval] 20/30 https://github.com/django/django/pull/17171
+WARNING peer.eval.runner: Reviewer failed on https://github.com/pydantic/pydantic/pull/8442: gh command failed: pr view 8442 --repo pydantic/pydantic --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+WARNING peer.eval.runner: Reviewer failed on https://github.com/django/django/pull/17280: gh command failed: pr view 17280 --repo django/django --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+WARNING peer.eval.runner: Reviewer failed on https://github.com/django/django/pull/17223: gh command failed: pr view 17223 --repo django/django --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+WARNING peer.eval.runner: Reviewer failed on https://github.com/django/django/pull/17314: gh command failed: pr view 17314 --repo django/django --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+[eval] 21/30 https://github.com/django/django/pull/17182
+[eval] 22/30 https://github.com/django/django/pull/17147
+WARNING peer.eval.runner: Reviewer failed on https://github.com/django/django/pull/17171: gh command failed: pr view 17171 --repo django/django --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+[eval] 23/30 https://github.com/django/django/pull/17637
+[eval] 24/30 https://github.com/django/django/pull/17312
+[eval] 25/30 https://github.com/django/django/pull/17256
+WARNING peer.eval.runner: Reviewer failed on https://github.com/django/django/pull/17256: gh command failed: pr view 17256 --repo django/django --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+WARNING peer.eval.runner: Reviewer failed on https://github.com/django/django/pull/17147: gh command failed: pr view 17147 --repo django/django --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+WARNING peer.eval.runner: Reviewer failed on https://github.com/django/django/pull/17312: gh command failed: pr view 17312 --repo django/django --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+WARNING peer.eval.runner: Reviewer failed on https://github.com/django/django/pull/17637: gh command failed: pr view 17637 --repo django/django --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+WARNING peer.eval.runner: Reviewer failed on https://github.com/django/django/pull/17182: gh command failed: pr view 17182 --repo django/django --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+[eval] 26/30 https://github.com/django/django/pull/16746
+[eval] 27/30 https://github.com/django/django/pull/16603
+[eval] 28/30 https://github.com/django/django/pull/16637
+[eval] 29/30 https://github.com/django/django/pull/17218
+[eval] 30/30 https://github.com/django/django/pull/16870
+WARNING peer.eval.runner: Reviewer failed on https://github.com/django/django/pull/16603: gh command failed: pr view 16603 --repo django/django --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+WARNING peer.eval.runner: Reviewer failed on https://github.com/django/django/pull/16637: gh command failed: pr view 16637 --repo django/django --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+WARNING peer.eval.runner: Reviewer failed on https://github.com/django/django/pull/16746: gh command failed: pr view 16746 --repo django/django --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+WARNING peer.eval.runner: Reviewer failed on https://github.com/django/django/pull/17218: gh command failed: pr view 17218 --repo django/django --json title,body,headRefOid
+Post "https://api.github.com/graphql": net/http: TLS handshake timeout
+WARNING peer.eval.runner: Reviewer failed on https://github.com/django/django/pull/16870: gh command failed: api repos/django/django/issues/16870/comments --paginate
+Get "https://api.github.com/repos/django/django/issues/16870/comments?per_page=100": net/http: TLS handshake timeout
+INFO peer.autoresearch.multirun: [multirun] recipe MultiRunReport -> data/eval_runs/multirun_d269ac1d_1199de6.json
+INFO peer.autoresearch.multirun: [multirun] running bare baseline N=3
+INFO peer.eval.cross_run: [cross_run] run 1/3
+
+# Multi-run report
+
+N runs: 3
+
+## Per-metric bands (across reruns)
+
+| metric | min | median | max | range | n |
+|---|---:|---:|---:|---:|---:|
+| comments_per_pr | 1.8276 | 1.9138 | 2.0000 | 0.1724 | 2 |
+| detection_rate | 0.0159 | 0.0252 | 0.0345 | 0.0186 | 2 |
+| mean_per_pr_recall | 0.0024 | 0.0397 | 0.0769 | 0.0745 | 2 |
+| novelty_rate | 0.9917 | 0.9958 | 1.0000 | 0.0083 | 2 |
+| precision_per_severity | n/a | n/a | n/a | n/a | 0 |
+| severity_calibration | 0.0000 | 1.0000 | 2.0000 | 2.0000 | 2 |
+| suggestion_rate | 0.3150 | 0.3735 | 0.4319 | 0.1169 | 2 |
+
+## Per-run detection_rate
+
+- run 1: detection_rate=0.0159
+- run 2: detection_rate=0.0345
+- run 3: detection_rate=n/a
+
+[eval] 1/30 https://github.com/pydantic/pydantic/pull/7625
+[eval] 2/30 https://github.com/pydantic/pydantic/pull/7528
+[eval] 3/30 https://github.com/pydantic/pydantic/pull/7677
+[eval] 4/30 https://github.com/pydantic/pydantic/pull/7527
+[eval] 5/30 https://github.com/pydantic/pydantic/pull/7415
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/7625: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/7625": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/7677: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/7677": net/http: TLS handshake timeout
+
+[eval] 6/30 https://github.com/pydantic/pydantic/pull/7566
+[eval] 7/30 https://github.com/pydantic/pydantic/pull/7435
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/7527: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/7527": net/http: TLS handshake timeout
+
+[eval] 8/30 https://github.com/pydantic/pydantic/pull/7589
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/7528: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/7528": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/7415: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/7415": net/http: TLS handshake timeout
+
+[eval] 9/30 https://github.com/pydantic/pydantic/pull/7979
+[eval] 10/30 https://github.com/pydantic/pydantic/pull/8190
+[eval] 11/30 https://github.com/pydantic/pydantic/pull/7626
+[eval] 12/30 https://github.com/pydantic/pydantic/pull/7900
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/7626: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/7626": net/http: TLS handshake timeout
+
+[eval] 13/30 https://github.com/pydantic/pydantic/pull/8059
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/7900: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/7900": net/http: TLS handshake timeout
+
+[eval] 14/30 https://github.com/pydantic/pydantic/pull/7889
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/8059: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/8059": net/http: TLS handshake timeout
+
+[eval] 15/30 https://github.com/pydantic/pydantic/pull/8012
+[eval] 16/30 https://github.com/pydantic/pydantic/pull/8442
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/7889: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/7889": net/http: TLS handshake timeout
+
+[eval] 17/30 https://github.com/django/django/pull/17280
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/8012: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/8012": net/http: TLS handshake timeout
+
+[eval] 18/30 https://github.com/django/django/pull/17223
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/8442: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/8442": net/http: TLS handshake timeout
+
+[eval] 19/30 https://github.com/django/django/pull/17314
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/17280: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/17280": net/http: TLS handshake timeout
+
+[eval] 20/30 https://github.com/django/django/pull/17171
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/17223: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/17223": net/http: TLS handshake timeout
+
+[eval] 21/30 https://github.com/django/django/pull/17182
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/17314: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/17314": net/http: TLS handshake timeout
+
+[eval] 22/30 https://github.com/django/django/pull/17147
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/17171: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/17171": net/http: TLS handshake timeout
+
+[eval] 23/30 https://github.com/django/django/pull/17637
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/17182: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/17182": net/http: TLS handshake timeout
+
+[eval] 24/30 https://github.com/django/django/pull/17312
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/17147: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/17147": net/http: TLS handshake timeout
+
+[eval] 25/30 https://github.com/django/django/pull/17256
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/17637: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/17637": net/http: TLS handshake timeout
+
+[eval] 26/30 https://github.com/django/django/pull/16746
+[eval] 27/30 https://github.com/django/django/pull/16603
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/17312: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/17312": net/http: TLS handshake timeout
+
+[eval] 28/30 https://github.com/django/django/pull/16637
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/17256: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/17256": net/http: TLS handshake timeout
+
+[eval] 29/30 https://github.com/django/django/pull/17218
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/16746: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/16746": net/http: TLS handshake timeout
+
+[eval] 30/30 https://github.com/django/django/pull/16870
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/16603: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/16603": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/16637: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/16637": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/17218: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/17218": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/16870: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/16870": net/http: TLS handshake timeout
+
+INFO peer.eval.cross_run: [cross_run] run 2/3
+[eval] 1/30 https://github.com/pydantic/pydantic/pull/7625
+[eval] 2/30 https://github.com/pydantic/pydantic/pull/7528
+[eval] 3/30 https://github.com/pydantic/pydantic/pull/7677
+[eval] 4/30 https://github.com/pydantic/pydantic/pull/7527
+[eval] 5/30 https://github.com/pydantic/pydantic/pull/7415
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/7677: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/7677": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/7527: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/7527": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/7528: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/7528": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/7625: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/7625": net/http: TLS handshake timeout
+
+[eval] 6/30 https://github.com/pydantic/pydantic/pull/7566
+[eval] 7/30 https://github.com/pydantic/pydantic/pull/7435
+[eval] 8/30 https://github.com/pydantic/pydantic/pull/7589
+[eval] 9/30 https://github.com/pydantic/pydantic/pull/7979
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/7415: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/7415": net/http: TLS handshake timeout
+
+[eval] 10/30 https://github.com/pydantic/pydantic/pull/8190
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/7979: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/7979": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/7435: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/7435": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/8190: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/8190": net/http: TLS handshake timeout
+
+[eval] 11/30 https://github.com/pydantic/pydantic/pull/7626
+[eval] 12/30 https://github.com/pydantic/pydantic/pull/7900
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/7589: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/7589": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/7566: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/7566": net/http: TLS handshake timeout
+
+[eval] 13/30 https://github.com/pydantic/pydantic/pull/8059
+[eval] 14/30 https://github.com/pydantic/pydantic/pull/7889
+[eval] 15/30 https://github.com/pydantic/pydantic/pull/8012
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/7626: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/7626": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/7889: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/7889": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/8012: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/8012": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/8059: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/8059": net/http: TLS handshake timeout
+
+[eval] 16/30 https://github.com/pydantic/pydantic/pull/8442
+[eval] 17/30 https://github.com/django/django/pull/17280
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/7900: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/7900": net/http: TLS handshake timeout
+
+[eval] 18/30 https://github.com/django/django/pull/17223
+[eval] 19/30 https://github.com/django/django/pull/17314
+[eval] 20/30 https://github.com/django/django/pull/17171
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/17314: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/17314": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/17223: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/17223": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/8442: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/8442": net/http: TLS handshake timeout
+
+[eval] 21/30 https://github.com/django/django/pull/17182
+[eval] 22/30 https://github.com/django/django/pull/17147
+[eval] 23/30 https://github.com/django/django/pull/17637
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/17171: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/17171": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/17280: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/17280": net/http: TLS handshake timeout
+
+[eval] 24/30 https://github.com/django/django/pull/17312
+[eval] 25/30 https://github.com/django/django/pull/17256
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/17147: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/17147": net/http: TLS handshake timeout
+
+[eval] 26/30 https://github.com/django/django/pull/16746
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/17312: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/17312": net/http: TLS handshake timeout
+
+[eval] 27/30 https://github.com/django/django/pull/16603
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/17182: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/17182": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/17637: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/17637": net/http: TLS handshake timeout
+
+[eval] 28/30 https://github.com/django/django/pull/16637
+[eval] 29/30 https://github.com/django/django/pull/17218
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/17256: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/17256": net/http: TLS handshake timeout
+
+[eval] 30/30 https://github.com/django/django/pull/16870
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/16637: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/16637": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/16603: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/16603": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/17218: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/17218": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/16746: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/16746": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/16870: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/16870": net/http: TLS handshake timeout
+
+INFO peer.eval.cross_run: [cross_run] run 3/3
+[eval] 1/30 https://github.com/pydantic/pydantic/pull/7625
+[eval] 2/30 https://github.com/pydantic/pydantic/pull/7528
+[eval] 3/30 https://github.com/pydantic/pydantic/pull/7677
+[eval] 4/30 https://github.com/pydantic/pydantic/pull/7527
+[eval] 5/30 https://github.com/pydantic/pydantic/pull/7415
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/7527: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/7527": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/7415: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/7415": net/http: TLS handshake timeout
+
+[eval] 6/30 https://github.com/pydantic/pydantic/pull/7566
+[eval] 7/30 https://github.com/pydantic/pydantic/pull/7435
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/7677: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/7677": net/http: TLS handshake timeout
+
+[eval] 8/30 https://github.com/pydantic/pydantic/pull/7589
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/7528: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/7528": net/http: TLS handshake timeout
+
+[eval] 9/30 https://github.com/pydantic/pydantic/pull/7979
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/7625: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/7625": net/http: TLS handshake timeout
+
+[eval] 10/30 https://github.com/pydantic/pydantic/pull/8190
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/7979: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/7979": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/7589: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/7589": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/8190: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/8190": net/http: TLS handshake timeout
+
+[eval] 11/30 https://github.com/pydantic/pydantic/pull/7626
+[eval] 12/30 https://github.com/pydantic/pydantic/pull/7900
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/7435: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/7435": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/7566: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/7566": net/http: TLS handshake timeout
+
+[eval] 13/30 https://github.com/pydantic/pydantic/pull/8059
+[eval] 14/30 https://github.com/pydantic/pydantic/pull/7889
+[eval] 15/30 https://github.com/pydantic/pydantic/pull/8012
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/8012: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/8012": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/7889: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/7889": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/8059: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/8059": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/7626: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/7626": net/http: TLS handshake timeout
+
+[eval] 16/30 https://github.com/pydantic/pydantic/pull/8442
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/7900: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/7900": net/http: TLS handshake timeout
+
+[eval] 17/30 https://github.com/django/django/pull/17280
+[eval] 18/30 https://github.com/django/django/pull/17223
+[eval] 19/30 https://github.com/django/django/pull/17314
+[eval] 20/30 https://github.com/django/django/pull/17171
+WARNING peer.baselines: gh pr diff failed for https://github.com/pydantic/pydantic/pull/8442: could not find pull request diff: Get "https://api.github.com/repos/pydantic/pydantic/pulls/8442": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/17171: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/17171": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/17314: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/17314": net/http: TLS handshake timeout
+
+[eval] 21/30 https://github.com/django/django/pull/17182
+[eval] 22/30 https://github.com/django/django/pull/17147
+[eval] 23/30 https://github.com/django/django/pull/17637
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/17223: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/17223": net/http: TLS handshake timeout
+
+[eval] 24/30 https://github.com/django/django/pull/17312
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/17280: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/17280": net/http: TLS handshake timeout
+
+[eval] 25/30 https://github.com/django/django/pull/17256
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/17147: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/17147": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/17182: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/17182": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/17256: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/17256": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/17312: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/17312": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/17637: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/17637": net/http: TLS handshake timeout
+
+[eval] 26/30 https://github.com/django/django/pull/16746
+[eval] 27/30 https://github.com/django/django/pull/16603
+[eval] 28/30 https://github.com/django/django/pull/16637
+[eval] 29/30 https://github.com/django/django/pull/17218
+[eval] 30/30 https://github.com/django/django/pull/16870
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/16603: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/16603": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/16746: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/16746": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/16637: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/16637": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/16870: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/16870": net/http: TLS handshake timeout
+
+WARNING peer.baselines: gh pr diff failed for https://github.com/django/django/pull/17218: could not find pull request diff: Get "https://api.github.com/repos/django/django/pulls/17218": net/http: TLS handshake timeout
+
+INFO peer.autoresearch.multirun: [multirun] baseline MultiRunReport -> data/eval_runs/multirun_baseline_1199de6.json
+
+# Recipe vs Baseline comparison
+
+recipe: N=3 runs; baseline: N=3 runs; noise_floor: 0.06
+
+| metric | recipe_median | baseline_median | delta | verdict |
+|---|---:|---:|---:|:---|
+| comments_per_pr | +1.9138 | 0.0000 | +1.9138 | ✓ above_noise |
+| detection_rate | +0.0252 | 0.0000 | +0.0252 | — in_noise |
+| mean_per_pr_recall | +0.0397 | 0.0000 | +0.0397 | — in_noise |
+| novelty_rate | +0.9958 | +1.0000 | -0.0042 | — in_noise |
+| precision_per_severity | n/a | n/a | n/a | n/a |
+| severity_calibration | +1.0000 | n/a | n/a | n/a |
+| suggestion_rate | +0.3735 | 0.0000 | +0.3735 | ✓ above_noise |
+
+
+# RecipeVerdict: ✓ KEEP
+
+above_noise: 2  |  in_noise: 3  |  below_noise: 0  |  unmeasured: 2
+
+Strict Pareto improvement over baseline: wins on comments_per_pr, suggestion_rate; no regressions.
+

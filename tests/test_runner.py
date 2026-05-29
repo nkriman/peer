@@ -237,6 +237,88 @@ def test_eval_runner_aggregates_means_across_samples():
     assert report.summary.metric_values["alt"] == pytest.approx(0.5)
 
 
+def test_eval_runner_per_sample_timeout_unblocks_gather():
+    """Regression test for peer-2z2.
+
+    A reviewer that blocks indefinitely inside its synchronous .review()
+    call (the real-world failure mode was a hanging `claude --print`
+    subprocess from a judge metric) must NOT pin asyncio.gather forever.
+    The per-sample timeout converts the hang into a recorded error and
+    the phase still completes for the other samples.
+
+    Note: asyncio.run() waits for default-executor threads to finish at
+    shutdown. We therefore release the hang on a short timer so the
+    leaked worker thread can exit and the test process can finish; the
+    fix being verified is that asyncio.gather returns at the wait_for
+    boundary regardless, which we assert via the errored sample result.
+    """
+    import threading
+    import time as _time
+
+    release = threading.Event()
+
+    class HangingReviewer:
+        model = "test-model"
+        system_prompt = "x"
+
+        def __init__(self, hang_urls: set[str], good_review: Review) -> None:
+            self.hang_urls = hang_urls
+            self.good_review = good_review
+
+        def review(self, pr_url: str) -> Review:
+            if pr_url in self.hang_urls:
+                release.wait(timeout=10.0)
+            return self.good_review
+
+    good_url = "https://github.com/o/r/pull/1"
+    bad_url = "https://github.com/o/r/pull/2"
+    samples = [_sample(good_url), _sample(bad_url)]
+    reviewer = HangingReviewer(
+        hang_urls={bad_url},
+        good_review=_review(),
+    )
+    # Release the hang shortly after the timeout has had time to fire,
+    # so the worker thread can exit and asyncio.run() can shut down.
+    release_timer = threading.Timer(2.0, release.set)
+    release_timer.daemon = True
+    release_timer.start()
+    try:
+        runner = EvalRunner(
+            reviewer=reviewer,
+            dataset=samples,
+            metrics=[FixedMetric("m", 0.5)],
+            per_sample_timeout_seconds=0.5,  # tight; the hang exceeds it
+        )
+        t0 = _time.monotonic()
+        report = runner.run()
+        elapsed = _time.monotonic() - t0
+    finally:
+        release.set()
+        release_timer.cancel()
+
+    # Should finish in ~2s (driven by the release timer + executor join),
+    # NOT 10s, and certainly not forever.
+    assert elapsed < 6.0, f"phase should complete near timeout, took {elapsed:.2f}s"
+    # Good sample succeeded; bad sample was recorded as timed-out.
+    by_url = {s.pr_url: s for s in report.per_sample}
+    assert by_url[good_url].error is None, by_url[good_url].error
+    assert by_url[bad_url].error is not None
+    assert "per-sample timeout" in by_url[bad_url].error
+    assert report.summary.n_samples_total == 2
+    assert report.summary.n_samples_failed == 1
+    assert report.summary.n_samples_succeeded == 1
+
+
+def test_eval_runner_rejects_nonpositive_timeout():
+    with pytest.raises(ValueError, match="per_sample_timeout_seconds must be > 0"):
+        EvalRunner(
+            reviewer=StubReviewer({}),
+            dataset=[],
+            metrics=[FixedMetric("m", 0.5)],
+            per_sample_timeout_seconds=0,
+        )
+
+
 def test_eval_runner_review_summary_records_severity_distribution():
     sample = _sample("https://github.com/o/r/pull/1")
     rev = Review(

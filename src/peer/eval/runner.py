@@ -169,6 +169,7 @@ class EvalRunner:
         dataset_path: str | None = None,
         concurrency: int = 5,
         judge_client_override: Any | None = None,
+        per_sample_timeout_seconds: float = 300.0,
     ) -> None:
         self.reviewer = reviewer
         self.dataset = list(dataset)
@@ -186,6 +187,18 @@ class EvalRunner:
         self.dataset_path = dataset_path or "in-memory"
         # Bounded concurrency for run_async. <=1 forces strict sequential.
         self.concurrency = max(1, int(concurrency))
+        # Per-sample wall-clock cap (peer-2z2). Without this, a stuck judge
+        # subprocess inside the to_thread worker pins the asyncio.gather
+        # forever: the gather has no view into thread health, the work
+        # already returned 0% CPU because the subprocess.run is blocked
+        # waiting for stdout that never arrives, and SIGINT doesn't reach
+        # the thread. wait_for at least frees the coroutine; the leaked
+        # thread is bounded and exits on interpreter shutdown.
+        if per_sample_timeout_seconds <= 0:
+            raise ValueError(
+                f"per_sample_timeout_seconds must be > 0; got {per_sample_timeout_seconds}"
+            )
+        self.per_sample_timeout_seconds = float(per_sample_timeout_seconds)
         # One Anthropic client shared with metrics so judge calls reuse the
         # same connection pool / api key. Lazy-init so EvalRunner can be
         # constructed without ANTHROPIC_API_KEY (e.g., in unit tests).
@@ -309,12 +322,60 @@ class EvalRunner:
                 print(f"[eval] {idx}/{n} {sample.pr_url}", flush=True)
                 # Sync reviewer + sync metrics — defer to a thread so the
                 # event loop can interleave samples up to `eff_concurrency`.
-                res, cost, latency, unavail = await asyncio.to_thread(
-                    self._eval_one_sample, sample, agent_config
-                )
+                t_start = time.monotonic()
+                try:
+                    res, cost, latency, unavail = await asyncio.wait_for(
+                        asyncio.to_thread(self._eval_one_sample, sample, agent_config),
+                        timeout=self.per_sample_timeout_seconds,
+                    )
+                except (TimeoutError, asyncio.TimeoutError):
+                    # peer-2z2: a stuck worker thread (typically a hanging
+                    # judge subprocess) must not be allowed to block the
+                    # gather. Convert the hang into a recorded error so the
+                    # phase still completes.
+                    elapsed = time.monotonic() - t_start
+                    logger.warning(
+                        "Per-sample timeout (%.1fs > %.1fs) on %s — marking errored",
+                        elapsed,
+                        self.per_sample_timeout_seconds,
+                        sample.pr_url,
+                    )
+                    res = EvalSampleResult(
+                        pr_url=sample.pr_url,
+                        error=f"per-sample timeout ({elapsed:.1f}s > "
+                        f"{self.per_sample_timeout_seconds:.1f}s)",
+                        latency_seconds=elapsed,
+                    )
+                    cost, latency, unavail = None, None, None
                 return idx, res, cost, latency, unavail
 
-        results = await asyncio.gather(*(_one(i + 1, s) for i, s in enumerate(self.dataset)))
+        # return_exceptions=True: belt-and-suspenders. _one shouldn't ever
+        # raise (everything inside is caught), but if a future refactor
+        # breaks that, surface the exception in results rather than tank
+        # the whole gather.
+        raw_results = await asyncio.gather(
+            *(_one(i + 1, s) for i, s in enumerate(self.dataset)),
+            return_exceptions=True,
+        )
+        results: list[tuple[int, EvalSampleResult, float | None, float | None, str | None]] = []
+        for idx_or_exc, raw in enumerate(raw_results):
+            if isinstance(raw, BaseException):
+                logger.error("Per-sample coroutine raised unexpectedly: %s", raw)
+                err_idx = idx_or_exc + 1
+                err_sample = self.dataset[idx_or_exc]
+                results.append(
+                    (
+                        err_idx,
+                        EvalSampleResult(
+                            pr_url=err_sample.pr_url, error=f"coroutine raised: {raw!r}"
+                        ),
+                        None,
+                        None,
+                        None,
+                    )
+                )
+            else:
+                results.append(raw)
         # Preserve input order regardless of completion order.
         results_sorted = sorted(results, key=lambda r: r[0])
         for _idx, sample_result, cost, latency, unavail in results_sorted:

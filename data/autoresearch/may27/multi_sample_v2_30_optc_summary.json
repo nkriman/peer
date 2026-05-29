@@ -1,0 +1,88 @@
+{
+  "experiment": "multi_sample_v01 Option C paired (peer-eby)",
+  "dataset": "django_pydantic_v2 (30 PRs)",
+  "n_runs": 1,
+  "k": 3,
+  "fixes_applied": [
+    "peer-7op",
+    "peer-8w1",
+    "peer-4dn"
+  ],
+  "baseline_samples_ok": 26,
+  "baseline_samples_errored": 4,
+  "recipe_medians": {
+    "comments_per_pr": 6.5,
+    "detection_rate": 0.0,
+    "mean_per_pr_recall": 0.0,
+    "novelty_rate": 1.0,
+    "precision_per_severity": null,
+    "severity_calibration": null,
+    "suggestion_rate": 0.2625
+  },
+  "baseline_medians": {
+    "comments_per_pr": 2.6153846153846154,
+    "detection_rate": 0.043478260869565216,
+    "mean_per_pr_recall": 0.0,
+    "novelty_rate": 1.0,
+    "precision_per_severity": null,
+    "severity_calibration": 1.0,
+    "suggestion_rate": 0.0
+  },
+  "paired_bootstrap_verdict": {
+    "overall": "ambiguous",
+    "above": 1,
+    "in": 3,
+    "below": 1,
+    "per_metric": {
+      "comments_per_pr": {
+        "delta": 3.8846153846153846,
+        "ci_lower": 4.0,
+        "ci_upper": 4.0,
+        "verdict": "below_noise",
+        "method": "paired_bootstrap_percentile_95_n2"
+      },
+      "detection_rate": {
+        "delta": -0.043478260869565216,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "verdict": "in_noise",
+        "method": "paired_bootstrap_percentile_95_n2"
+      },
+      "mean_per_pr_recall": {
+        "delta": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "verdict": "in_noise",
+        "method": "paired_bootstrap_percentile_95_n2"
+      },
+      "novelty_rate": {
+        "delta": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "verdict": "in_noise",
+        "method": "paired_bootstrap_percentile_95_n2"
+      },
+      "precision_per_severity": {
+        "delta": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "verdict": null,
+        "method": null
+      },
+      "severity_calibration": {
+        "delta": null,
+        "ci_lower": null,
+        "ci_upper": null,
+        "verdict": null,
+        "method": null
+      },
+      "suggestion_rate": {
+        "delta": 0.2625,
+        "ci_lower": 0.125,
+        "ci_upper": 0.4,
+        "verdict": "above_noise",
+        "method": "paired_bootstrap_percentile_95_n2"
+      }
+    }
+  }
+}

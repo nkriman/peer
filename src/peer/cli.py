@@ -302,6 +302,17 @@ def _make_parser() -> argparse.ArgumentParser:
         help="Route every model call through the claude CLI (free, no ANTHROPIC_API_KEY).",
     )
 
+    p_ar_frontier = ar_sub.add_parser(
+        "frontier",
+        help="Compute + print the Pareto front over comparison_*.json reports",
+    )
+    p_ar_frontier.add_argument(
+        "--reports-dir",
+        type=Path,
+        default=Path("data/eval_runs"),
+        help="Directory containing comparison_*.json reports (default: data/eval_runs)",
+    )
+
     p_ar_diag = ar_sub.add_parser(
         "diagnose",
         help="Render a hypothesis markdown from an EvalReport JSON",
@@ -619,6 +630,30 @@ def _cmd_autoresearch_loop(args: argparse.Namespace) -> int:
     return 0 if iters >= 0 else 1
 
 
+def _cmd_autoresearch_frontier(args: argparse.Namespace) -> int:
+    from .autoresearch.frontier import (
+        compute_pareto_front,
+        read_comparison_reports,
+        render_frontier,
+    )
+
+    paired = read_comparison_reports(args.reports_dir)
+    if not paired:
+        print(
+            f"No comparison_*.json reports found under {args.reports_dir}. "
+            f"Run `peer autoresearch run --baseline-cmp --n-runs N` first.",
+            file=sys.stderr,
+        )
+        return 2
+    reports = [r for _, r in paired]
+    front, _dominated = compute_pareto_front(reports)
+    front_paths = {id(r) for r in front}
+    paired_front = [(p, r) for p, r in paired if id(r) in front_paths]
+    paired_dominated = [(p, r) for p, r in paired if id(r) not in front_paths]
+    print(render_frontier(paired_front, paired_dominated))
+    return 0
+
+
 def _cmd_autoresearch_diagnose(args: argparse.Namespace) -> int:
     from .autoresearch import diagnose_report
 
@@ -736,6 +771,7 @@ _DISPATCH = {
     ("autoresearch", "run"): lambda args: _cmd_autoresearch_run(args),
     ("autoresearch", "loop"): lambda args: _cmd_autoresearch_loop(args),
     ("autoresearch", "diagnose"): lambda args: _cmd_autoresearch_diagnose(args),
+    ("autoresearch", "frontier"): lambda args: _cmd_autoresearch_frontier(args),
 }
 
 

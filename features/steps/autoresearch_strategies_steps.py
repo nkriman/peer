@@ -94,13 +94,14 @@ def step_resolve(context, name: str) -> None:
 
 @then("the returned class is {name}")
 def step_returned_class(context, name: str) -> None:
-    from peer.strategies import AgenticReviewer
+    from peer.strategies import AgenticReviewer, MultiSampleReviewer
 
     expected = {
         "AgenticReviewer": AgenticReviewer,
         "DraftCritiqueReviewer": DraftCritiqueReviewer,
         "TwoModelPipelineReviewer": TwoModelPipelineReviewer,
         "SelfFilterReviewer": SelfFilterReviewer,
+        "MultiSampleReviewer": MultiSampleReviewer,
     }[name]
     got = context.fixtures["resolved"]
     assert got is expected, f"expected {expected}, got {got}"

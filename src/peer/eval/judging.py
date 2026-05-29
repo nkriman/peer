@@ -12,6 +12,7 @@ include_reason` fields. `judge_match` stays as a thin convenience for the
 from __future__ import annotations
 
 from dataclasses import dataclass
+from typing import Literal
 
 import anthropic
 
@@ -31,6 +32,74 @@ Reviewer B (line {human_line}):
 Same issue = the underlying concern is the same, even if phrased differently or focused on slightly different lines of the same code. Different issue = they're about different things entirely (different bugs, different concerns).
 
 Respond with exactly one word: SAME or DIFFERENT."""
+
+
+# peer-ivb: CR-Bench-style 3-way classification (arxiv 2603.11078).
+# Hit / Valid / Noise lets us compute Signal-to-Noise Ratio (peer-k03),
+# which is the standard field control against verbose-reviewer wins.
+CommentClass = Literal["hit", "valid", "noise"]
+
+JUDGE_3WAY_PROMPT = """A code reviewer made a comment on a pull request. You also see the list of GOLD DEFECTS the human reviewers identified for this PR. Classify the comment into exactly one of three categories.
+
+CATEGORIES:
+- HIT: the comment identifies or directly relates to one of the gold defects.
+- VALID: the comment does NOT match a gold defect, but is still a useful, accurate, actionable suggestion about the code (e.g. real style improvement, real bug not in the gold list, useful refactor).
+- NOISE: the comment is unhelpful, hallucinated, off-topic, or just describes what the code does without identifying any issue.
+
+When in doubt between VALID and NOISE, choose NOISE — this rubric is intentionally conservative to penalise verbose reviewers.
+
+COMMENT (line {comment_line}):
+{comment_body}
+
+GOLD DEFECTS for this PR:
+{gold_defects}
+
+Respond with exactly one word: HIT or VALID or NOISE."""
+
+
+def classify_comment(
+    comment: Comment,
+    gold_defects: list[GoldDefect],
+    client: anthropic.Anthropic | None = None,
+    model: str = JUDGE_MODEL,
+) -> CommentClass:
+    """3-way comment classification (Hit / Valid / Noise) per CR-Bench (2026).
+
+    Used by SignalToNoiseRatio (peer-k03) to distinguish 'useful reviewer'
+    from 'verbose reviewer with high recall'. Returns 'noise' on any parse
+    failure (conservative — keeps the SNR honest).
+    """
+    if client is None:
+        client = anthropic.Anthropic()
+    if gold_defects:
+        gold_text = "\n".join(
+            f"- [{g.severity}] {g.path}:{g.line if g.line is not None else (g.line_range[0] if g.line_range else 0)} "
+            f"{g.description[:200]}"
+            for g in gold_defects
+        )
+    else:
+        gold_text = "(no labeled defects for this PR)"
+    prompt = JUDGE_3WAY_PROMPT.format(
+        comment_line=comment.line if comment.line is not None else 0,
+        comment_body=comment.body[:1500],
+        gold_defects=gold_text,
+    )
+    resp = client.messages.create(
+        model=model,
+        max_tokens=10,
+        messages=[{"role": "user", "content": prompt}],
+    )
+    text = ""
+    for block in resp.content:
+        t = getattr(block, "text", None)
+        if t:
+            text = t.strip().upper()
+            break
+    if text.startswith("HIT"):
+        return "hit"
+    if text.startswith("VALID"):
+        return "valid"
+    return "noise"
 
 
 def judge_match(

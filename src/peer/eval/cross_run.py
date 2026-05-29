@@ -2,7 +2,7 @@
 
 Same shape as `cross_judge` but loops the *reviewer* instead of the
 judge. After the noise-floor finding (same recipe + temperature=0
-producing 2.5× different DR across runs), this is the primitive every
+producing 2.5x different DR across runs), this is the primitive every
 "recipe A beats recipe B" claim should be expressed through.
 """
 
@@ -45,7 +45,7 @@ def compute_run_bands(reports: list[EvalReport]) -> dict[str, MetricBand]:
 class CrossRunRunner:
     """Run the same reviewer N times against the same dataset.
 
-    Sequential by default — each run independent. Cost is N× single-run
+    Sequential by default — each run independent. Cost is N times single-run
     cost; on CLI subscription that's $0 either way.
     """
 
