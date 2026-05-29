@@ -112,6 +112,10 @@ class GoldSampleMetadata(BaseModel):
     curation_source: str = "default"  # e.g., "default_pipeline", "manual"
     spot_checked: bool = False
     taxonomy_version: str = ""
+    # benchmark-the-field (peer-4z5): True when the sample's PR merged after the
+    # model training cutoff, so the reviewer cannot have memorized the fix.
+    # None = not assessed (default; back-compat for existing reference datasets).
+    contamination_safe: bool | None = None
 
 
 class GoldSample(BaseModel):
