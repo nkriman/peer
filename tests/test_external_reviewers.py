@@ -184,3 +184,151 @@ def test_flows_through_evalrunner():
         report = runner.run()
     assert report.summary.metric_values["comments_per_pr"] == 2.0
     assert report.summary.n_samples_succeeded == 1
+
+
+# --------------------------------------------------------------------------
+# Issue-level summary extraction (peer-bno)
+# --------------------------------------------------------------------------
+
+from pathlib import Path  # noqa: E402
+
+from peer.external_reviewers import (  # noqa: E402
+    ExtractedFinding,
+    _haiku_summary_extractor,
+    _parse_findings_json,
+    _strip_summary_noise,
+)
+
+_FIXTURES = Path(__file__).parent / "fixtures" / "external_summaries"
+
+
+def _issue(login, body):
+    return {"user": {"login": login}, "body": body}
+
+
+def test_strip_summary_noise_removes_html_comments_and_base64():
+    raw = _FIXTURES.joinpath("coderabbit_with_findings.md").read_text()
+    cleaned = _strip_summary_noise(raw)
+    # The giant base64 internal-state blob lives inside an HTML comment.
+    assert "<!--" not in cleaned
+    assert "internal state" not in cleaned
+    # Real prose survives.
+    assert "Walkthrough" in cleaned
+
+
+def test_parse_findings_json_plain_array():
+    out = _parse_findings_json('[{"path": "a.py", "line": 5, "finding": "bug"}]')
+    assert out == [ExtractedFinding(path="a.py", line=5, finding="bug")]
+
+
+def test_parse_findings_json_tolerates_fence_and_prose():
+    text = 'Here you go:\n```json\n[{"path":"b.py","line":null,"finding":"x"}]\n```\nDone.'
+    out = _parse_findings_json(text)
+    assert out == [ExtractedFinding(path="b.py", line=None, finding="x")]
+
+
+def test_parse_findings_json_garbage_returns_empty():
+    assert _parse_findings_json("not json at all") == []
+    assert _parse_findings_json("") == []
+    assert _parse_findings_json("{not an array}") == []
+
+
+def test_parse_findings_json_skips_malformed_items():
+    text = '[{"path":"a.py","line":1,"finding":"ok"},{"no_path":true},{"path":""}]'
+    out = _parse_findings_json(text)
+    assert out == [ExtractedFinding(path="a.py", line=1, finding="ok")]
+
+
+def test_default_does_not_fetch_summary():
+    # include_issue_summary defaults False → only the inline endpoint is hit.
+    inline = _payload(_c("coderabbitai[bot]", "a.py", 10))
+    with patch("peer.external_reviewers.subprocess.run", return_value=_completed(inline)) as run:
+        review = GitHubAppReviewer(bot_login="coderabbitai[bot]").review(_PR)
+    assert len(review.comments) == 1
+    # exactly one gh call: the inline fetch, no issues/comments fetch
+    assert run.call_count == 1
+
+
+def test_summary_findings_merge_with_inline():
+    inline = _payload(_c("bot[bot]", "a.py", 10, "inline bug"))
+    summary = _payload(_issue("bot[bot]", "summary body"))
+
+    def stub_extractor(_md):
+        return [ExtractedFinding(path="b.py", line=20, finding="summary bug")]
+
+    r = GitHubAppReviewer(
+        bot_login="bot[bot]",
+        include_issue_summary=True,
+        summary_extractor=stub_extractor,
+    )
+    with patch(
+        "peer.external_reviewers.subprocess.run",
+        side_effect=[_completed(inline), _completed(summary)],
+    ):
+        review = r.review(_PR)
+    paths = sorted(c.path for c in review.comments)
+    assert paths == ["a.py", "b.py"]
+    summary_c = next(c for c in review.comments if c.path == "b.py")
+    assert summary_c.line == 20
+    assert "summary" in summary_c.rationale
+
+
+def test_summary_dedups_against_inline():
+    # A summary finding at the same (path, line) as an inline comment is dropped.
+    inline = _payload(_c("bot[bot]", "a.py", 10, "inline bug"))
+    summary = _payload(_issue("bot[bot]", "summary body"))
+
+    def stub_extractor(_md):
+        return [ExtractedFinding(path="a.py", line=10, finding="same bug, restated")]
+
+    r = GitHubAppReviewer(
+        bot_login="bot[bot]",
+        include_issue_summary=True,
+        summary_extractor=stub_extractor,
+    )
+    with patch(
+        "peer.external_reviewers.subprocess.run",
+        side_effect=[_completed(inline), _completed(summary)],
+    ):
+        review = r.review(_PR)
+    assert len(review.comments) == 1  # the duplicate was not double-counted
+
+
+class _StubBlock:
+    def __init__(self, text):
+        self.text = text
+
+
+class _StubResp:
+    def __init__(self, text):
+        self.content = [_StubBlock(text)]
+
+
+class _StubMessages:
+    def __init__(self, text, calls):
+        self._text = text
+        self._calls = calls
+
+    def create(self, **_kwargs):
+        self._calls.append(1)
+        return _StubResp(self._text)
+
+
+class _StubClient:
+    def __init__(self, text, calls=None):
+        self.messages = _StubMessages(text, calls if calls is not None else [])
+
+
+def test_haiku_extractor_empty_summary_skips_llm():
+    # A ratelimited summary that strips to nothing must NOT call the client.
+    calls = []
+    # "<!-- only a comment -->" strips to "" → early return [] before any call.
+    out = _haiku_summary_extractor("<!-- only a comment -->", client=_StubClient("ignored", calls))
+    assert out == []
+    assert calls == []  # client.messages.create never invoked
+
+
+def test_haiku_extractor_parses_stub_client_reply():
+    client = _StubClient('[{"path":"x.py","line":3,"finding":"leak"}]')
+    out = _haiku_summary_extractor("real findings here", client=client)
+    assert out == [ExtractedFinding(path="x.py", line=3, finding="leak")]
