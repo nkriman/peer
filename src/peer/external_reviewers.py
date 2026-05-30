@@ -175,16 +175,28 @@ class GitHubAppReviewer:
         )
 
 
-# Convenience constructors. Bot logins are best-known defaults; VERIFY against
-# real PRs in Phase 2 (peer-2sw) before trusting the numbers. Add config knobs
-# here only when a caller needs them (YAGNI).
+# Convenience constructors. Bot logins VERIFIED against real PRs in Phase 2
+# (peer-2sw, 2026-05-30) by reading actual posted comments — see each note.
+# IMPORTANT (peer-2sw finding): all three tools post the bulk of their review as
+# a single ISSUE-LEVEL summary comment (issues/{n}/comments), and only
+# SOMETIMES add line-anchored inline comments (pulls/{n}/comments). This adapter
+# reads inline only, so on PRs with no inline findings a tool scores as zero
+# here even though it posted a summary. Issue-level handling is tracked
+# separately; until then these numbers are an inline-only lower bound.
 def coderabbit() -> GitHubAppReviewer:
+    # VERIFIED: posts as coderabbitai[bot]; inline comments are line-anchored
+    # (path+line). Org account id=132028505.
     return GitHubAppReviewer(bot_login="coderabbitai[bot]", name="coderabbit")
 
 
 def greptile() -> GitHubAppReviewer:
-    return GitHubAppReviewer(bot_login="greptileai[bot]", name="greptile")
+    # VERIFIED: real login is greptile-apps[bot] (NOT greptileai[bot] — that
+    # org exists but is not the posting account). Inline comments line-anchored.
+    return GitHubAppReviewer(bot_login="greptile-apps[bot]", name="greptile")
 
 
 def qodo_merge() -> GitHubAppReviewer:
-    return GitHubAppReviewer(bot_login="qodo-merge-pro[bot]", name="qodo")
+    # VERIFIED: free tier posts as codiumai-pr-agent-free[bot] (qodo-merge-pro[bot]
+    # is the paid tier and was not observable on public PRs). Qodo posts
+    # issue-level summaries; inline comments were absent on the sampled PRs.
+    return GitHubAppReviewer(bot_login="codiumai-pr-agent-free[bot]", name="qodo")

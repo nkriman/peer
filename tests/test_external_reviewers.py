@@ -156,6 +156,15 @@ def test_convenience_constructors_set_model():
     assert qodo_merge().model == "external:qodo"
 
 
+def test_convenience_constructors_use_verified_bot_logins():
+    # Logins verified against real PRs in Phase 2 (peer-2sw, 2026-05-30).
+    # Regression guard: greptile is greptile-apps[bot] (NOT greptileai[bot]),
+    # qodo free tier is codiumai-pr-agent-free[bot] (NOT qodo-merge-pro[bot]).
+    assert coderabbit().bot_login == "coderabbitai[bot]"
+    assert greptile().bot_login == "greptile-apps[bot]"
+    assert qodo_merge().bot_login == "codiumai-pr-agent-free[bot]"
+
+
 def test_rejects_zero_max_attempts():
     with pytest.raises(ValueError, match="gh_max_attempts"):
         GitHubAppReviewer(bot_login="bot[bot]", gh_max_attempts=0)
