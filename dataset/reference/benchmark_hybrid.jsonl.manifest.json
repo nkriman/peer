@@ -1,0 +1,14 @@
+{
+  "total": 569,
+  "contamination_safe": 62,
+  "contaminated": 507,
+  "contamination_unassessed": 0,
+  "by_source": {
+    "fresh-holdout:revert": 69,
+    "crbench-recon:swe-verified": 500
+  },
+  "duplicates_skipped": 0,
+  "cutoff": "2026-01-01T00:00:00Z",
+  "output_path": "dataset/reference/benchmark_hybrid.jsonl",
+  "created_at": "2026-05-30T04:07:27.283578Z"
+}
