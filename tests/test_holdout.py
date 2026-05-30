@@ -36,6 +36,19 @@ def test_parse_revert_title_with_number():
     assert pair.buggy_pr_number == 42
 
 
+def test_parse_revert_title_canonical_squash_format():
+    # GitHub's canonical squash-revert: the (#N) sits *inside* the closing quote.
+    pr = {
+        "number": 35346,
+        "title": 'Revert "[compiler] Fix VariableDeclarator source location (#35129)"',
+        "body": "This broke main.",
+        "mergedAt": "2026-02-01T00:00:00Z",
+    }
+    pair = parse_revert_pr(pr, "facebook/react")
+    assert pair is not None
+    assert pair.buggy_pr_number == 35129
+
+
 def test_parse_revert_body_commit_sha():
     pr = {
         "number": 51,

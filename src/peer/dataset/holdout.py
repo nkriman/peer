@@ -34,8 +34,10 @@ logger = logging.getLogger(__name__)
 
 GhRunner = Callable[[list[str]], Any]
 
-# "Revert "<original title>" (#1234)" — GitHub's default revert PR title.
-_REVERT_TITLE_NUM_RE = re.compile(r"\(#(?P<num>\d+)\)\s*$")
+# GitHub's canonical revert title is `Revert "<original title> (#1234)"` — the
+# original PR number sits inside the closing quote, so allow an optional trailing
+# quote after `(#N)`. Also matches the bare `... (#1234)` form (no quote).
+_REVERT_TITLE_NUM_RE = re.compile(r"\(#(?P<num>\d+)\)[\"']?\s*$")
 # "This reverts commit <sha>." — git's default revert commit body line.
 _REVERTS_COMMIT_RE = re.compile(r"This reverts commit (?P<sha>[0-9a-f]{7,40})", re.IGNORECASE)
 _IS_REVERT_TITLE_RE = re.compile(r"^\s*revert\b", re.IGNORECASE)
