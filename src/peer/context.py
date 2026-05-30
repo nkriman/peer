@@ -7,15 +7,18 @@ from __future__ import annotations
 
 import base64
 import json
+import logging
 import re
 import shutil
 import subprocess
+import time
 from typing import Any
 
 import tiktoken
 from unidiff import PatchSet
 
 from .exceptions import (
+    ContextGatherError,
     ContextTooLarge,
     GHCLINotAuthenticated,
     GHCLINotAvailable,
@@ -23,6 +26,8 @@ from .exceptions import (
     PRNotAccessible,
 )
 from .types import Context, ContextHunk
+
+logger = logging.getLogger(__name__)
 
 _PR_URL_RE = re.compile(r"^https?://github\.com/([^/]+)/([^/]+)/pull/(\d+)/?")
 _ENCODER: tiktoken.Encoding | None = None
@@ -40,20 +45,58 @@ def _gh_check_available() -> None:
         raise GHCLINotAvailable("`gh` CLI not found on PATH. Install via https://cli.github.com/")
 
 
-def _gh_run(args: list[str], parse_json: bool = True) -> Any:
+# Retry budget for transient `gh` failures (5xx, rate-limit, network blips).
+# Auth errors and 404s are NOT transient — they short-circuit immediately.
+_GH_MAX_ATTEMPTS = 3
+_GH_BACKOFF_SECONDS = 2.0
+
+
+def _gh_run(
+    args: list[str],
+    parse_json: bool = True,
+    *,
+    max_attempts: int = _GH_MAX_ATTEMPTS,
+    backoff_seconds: float = _GH_BACKOFF_SECONDS,
+) -> Any:
+    """Run a `gh` subprocess, retrying transient failures with exponential
+    backoff. Auth failures (GHCLINotAuthenticated) and missing resources
+    (PRNotAccessible) are permanent and raise on the first attempt. Any other
+    non-zero exit is treated as transient and retried; if it persists past
+    `max_attempts`, a ContextGatherError is raised loudly so callers (and the
+    eval runner) record a failed sample rather than proceeding with empty
+    context (peer-d55)."""
     _gh_check_available()
-    result = subprocess.run(["gh", *args], capture_output=True, text=True, check=False)
-    if result.returncode != 0:
+    last_stderr = ""
+    last_rc = 0
+    for attempt in range(1, max_attempts + 1):
+        result = subprocess.run(["gh", *args], capture_output=True, text=True, check=False)
+        if result.returncode == 0:
+            if parse_json:
+                return json.loads(result.stdout)
+            return result.stdout
         stderr = (result.stderr or "").strip()
         low = stderr.lower()
+        # Permanent failures — do not retry.
         if "authentication" in low or "not logged" in low or "gh auth login" in low:
             raise GHCLINotAuthenticated(f"`gh` is not authenticated: {stderr}")
         if "404" in low or "not found" in low or "could not resolve" in low:
             raise PRNotAccessible(f"Resource not accessible: {stderr}")
-        raise RuntimeError(f"gh command failed: {' '.join(args)}\n{stderr}")
-    if parse_json:
-        return json.loads(result.stdout)
-    return result.stdout
+        # Transient — log, back off, retry.
+        last_rc = result.returncode
+        last_stderr = stderr[:300]
+        logger.warning(
+            "gh %s failed (attempt %d/%d): rc=%d %s",
+            " ".join(args[:2]),
+            attempt,
+            max_attempts,
+            last_rc,
+            last_stderr,
+        )
+        if attempt < max_attempts:
+            time.sleep(backoff_seconds * (2 ** (attempt - 1)))
+    raise ContextGatherError(
+        f"gh {' '.join(args)} failed {max_attempts}x: rc={last_rc} stderr={last_stderr!r}"
+    )
 
 
 def _parse_diff(diff_text: str) -> list[ContextHunk]:

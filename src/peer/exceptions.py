@@ -32,6 +32,15 @@ class ContextTooLarge(PeerError):
     """The assembled Context exceeds the configured token budget."""
 
 
+class ContextGatherError(PeerError):
+    """A `gh` subprocess in context-gathering failed transiently and did not
+    recover after retries (e.g. `gh pr view`/`pr diff`/`api` returning a 5xx or
+    network blip). Raised loudly so the eval runner records the sample as
+    errored instead of silently proceeding with empty PR context — the same
+    fail-loud contract as baselines.BaselineInfraError, on peer's own
+    context-gathering path (peer-d55)."""
+
+
 class CodebaseContextTooLarge(PeerError):
     """The assembled CodebaseContext exceeds the configured token budget
     even after dropping all trimmable categories. Raised when
