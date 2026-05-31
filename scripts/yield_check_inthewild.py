@@ -80,7 +80,9 @@ def main() -> None:
 
     if OUT.exists():
         OUT.unlink()
-    classifier = LLMCommentClassifier(cache_dir=CACHE)
+    # Route through the claude-code subscription (PEER_USE_CLAUDE_CODE=1) with
+    # sonnet — $0 marginal cost on the Max plan, stronger model than haiku.
+    classifier = LLMCommentClassifier(model="sonnet", cache_path=CACHE / "classifications.jsonl")
     storage = JSONLStorage(OUT)
     curator = Curator(classifier=classifier, storage=storage)
 
