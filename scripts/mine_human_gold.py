@@ -102,9 +102,14 @@ def select() -> None:
     if not isinstance(nums, list):
         print("NO DATA")
         sys.exit(1)
-    numbers = [d["number"] for d in nums if "number" in d]
+    # Dedup while preserving order — gh pr list can repeat numbers across pages.
+    numbers = list(dict.fromkeys(d["number"] for d in nums if "number" in d))
     dense = []
+    seen: set[int] = set()
     for i, n in enumerate(numbers, 1):
+        if n in seen:
+            continue
+        seen.add(n)
         c = _human_inline_count(REPO, n)
         if c >= MIN_DENSE:
             dense.append({"repo": REPO, "number": n, "human_inline": c})
