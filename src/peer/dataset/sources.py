@@ -7,6 +7,7 @@ issue-comment kinds).
 
 from __future__ import annotations
 
+import re
 from datetime import datetime
 from typing import Protocol
 
@@ -41,6 +42,34 @@ def _is_bot(login: str) -> bool:
     if low in _BOT_DENY_LIST:
         return True
     return bool(any(deny in low for deny in _BOT_DENY_LIST))
+
+
+# AI-orchestration comments: a human author whose comment body is DIRECTING an
+# AI agent (e.g. "@qodo-merge-pro review the following", "@codeant-ai make
+# changes"), rather than reporting a defect. These pass _is_bot (the author is a
+# real human) but their content is not human code review — treating them as gold
+# contaminates the dataset (peer-5u5 yield check found this on AI-tooling repos).
+_AI_AGENT_HANDLE_RE = re.compile(
+    r"@(?:coderabbitai|coderabbit|greptile(?:ai)?|qodo(?:-merge(?:-pro)?|-ai)?"
+    r"|codium(?:ai)?|codeant-ai|codeant|sourcery-ai|sweep-ai|devin-ai|"
+    r"copilot|cursor|graphite-app)\b",
+    re.IGNORECASE,
+)
+# Imperative directed at an agent on the same line as the handle.
+_AI_DIRECTIVE_RE = re.compile(
+    r"@[\w-]+\b[^.\n]{0,80}\b(review|fix|implement|make changes|address|resolve|"
+    r"check if this issue is valid|commit changes)\b",
+    re.IGNORECASE,
+)
+
+
+def _is_ai_orchestration_comment(body: str) -> bool:
+    """True when a human comment is directing an AI agent rather than reporting a
+    defect. Conservative: requires both an agent handle AND an imperative, so a
+    normal mention ("thanks @coderabbitai") is not dropped."""
+    if not body:
+        return False
+    return bool(_AI_AGENT_HANDLE_RE.search(body) and _AI_DIRECTIVE_RE.search(body))
 
 
 def _parse_dt(s: str | None) -> datetime | None:
@@ -101,6 +130,8 @@ class GitHubInlineCommentSource:
             path = c.get("path") or ""
             if not body or not path:
                 continue
+            if _is_ai_orchestration_comment(body):
+                continue
             line_raw = c.get("line") or c.get("original_line") or 0
             try:
                 line = int(line_raw) if line_raw else None
@@ -136,6 +167,8 @@ class GitHubInlineCommentSource:
                     continue
                 body = (c.get("body") or "").strip()
                 if not body:
+                    continue
+                if _is_ai_orchestration_comment(body):
                     continue
                 comments.append(
                     RawComment(

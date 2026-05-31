@@ -242,3 +242,35 @@ def test_review_depth_buckets(raw_sample, fake_classifier):
     curator = _curator(source, fake_classifier)
     proposed = curator.preview(raw_sample.pr_url)
     assert proposed.proposed.metadata.review_depth == "light"
+
+
+# --------------------------------------------------------------------------
+# AI-orchestration comment filter (peer-5u5): a human comment directing an AI
+# agent is not human code review and must not become gold.
+# --------------------------------------------------------------------------
+
+from peer.dataset.sources import _is_ai_orchestration_comment  # noqa: E402
+
+
+def test_ai_orchestration_filter_drops_agent_directives():
+    drop = [
+        "@qodo-merge-pro review the following: check if this issue is valid",
+        "@codeant-ai review the comment below and make changes:",
+        "@codeant-ai review the following and make changes as required:",
+        "@greptile fix this",
+        "@coderabbitai implement the suggestion above",
+    ]
+    for body in drop:
+        assert _is_ai_orchestration_comment(body) is True, body
+
+
+def test_ai_orchestration_filter_keeps_real_review():
+    keep = [
+        "The assertion logic is redundant: `if invalid:` already checks truthiness.",
+        "Consider using a logging framework instead of println! here.",
+        "thanks @coderabbitai, good catch",  # mention without a directive
+        "This will throw a KeyError when the env key is missing.",
+        "",
+    ]
+    for body in keep:
+        assert _is_ai_orchestration_comment(body) is False, body
