@@ -1,0 +1,14 @@
+{
+  "repo": "kubernetes/kubernetes",
+  "source": "human-review-inline",
+  "candidates": 50,
+  "prs_with_defect_gold": 39,
+  "total_defect_gold": 118,
+  "by_category": {
+    "defect-correctness": 45,
+    "defect-test-gap": 26,
+    "defect-api-design": 26,
+    "defect-doc-gap": 16,
+    "defect-performance": 5
+  }
+}
