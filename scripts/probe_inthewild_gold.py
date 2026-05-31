@@ -55,6 +55,20 @@ SEARCH_SLEEP = 6.0  # between search/issues calls
 API_SLEEP = 2.0  # between per-PR REST calls
 PER_BOT_SAMPLE = 30  # PRs sampled per tool (90 total ~ a few minutes paced)
 
+# Repo-maturity filter (peer-5u5): the yield check showed gold contamination
+# concentrates in 0-star, just-created AI-tooling/demo repos, while real human
+# review lives in established repos. Validated 2026-05-31: every contaminated
+# source was <=18 stars created 2025-26; every real-review repo was >=86 stars
+# created <=2024. A stars>=MIN_STARS gate excludes all the contaminated sources.
+MIN_STARS = 50
+
+
+def is_mature_repo(stars: int | None) -> bool:
+    """Pure predicate: a repo is 'mature' enough to expect genuine human review
+    if it clears the star threshold. None (lookup failed) -> not mature
+    (conservative — don't admit a repo we couldn't verify)."""
+    return isinstance(stars, int) and stars >= MIN_STARS
+
 
 def _gh_json(args: list[str], *, max_attempts: int = 4, backoff: float = 10.0):
     """Paced gh call that backs off hard on secondary-rate-limit. Returns parsed
