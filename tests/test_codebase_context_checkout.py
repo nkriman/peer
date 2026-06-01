@@ -149,3 +149,79 @@ def test_gather_skips_cleanly_when_both_unreachable(monkeypatch):
     )
     out = cc.gather_codebase_context(ctx)
     assert len(out.modified_symbols) == 0  # clean empty, no raise
+
+
+# --------------------------------------------------------------------------
+# Go symbol extraction (peer-2sw: multi-language codebase context)
+# --------------------------------------------------------------------------
+
+
+def test_extract_go_symbols(tmp_path):
+    from peer.types import CodebaseContext, Context, ContextHunk
+
+    go_src = (
+        "package main\n"
+        'import "fmt"\n'
+        "type Server struct {\n"
+        "\taddr string\n"
+        "}\n"
+        "func (s *Server) Start() error {\n"
+        "\treturn nil\n"
+        "}\n"
+        "func main() {\n"
+        '\tfmt.Println("hi")\n'
+        "}\n"
+    )
+    f = tmp_path / "server.go"
+    f.write_text(go_src)
+
+    ctx = Context(
+        pr_url="https://github.com/k/k/pull/1",
+        owner="k",
+        repo="k",
+        number=1,
+        title="t",
+        body="",
+        head_sha="h",
+        hunks=[
+            ContextHunk(
+                path="server.go",
+                old_start=1,
+                old_lines=11,
+                new_start=1,
+                new_lines=11,
+                diff_text="",
+            )
+        ],
+    )
+    out = CodebaseContext()
+    cc._extract_modified_symbols(tmp_path, ctx, out)
+    by_name = {s.name: s for s in out.modified_symbols}
+    assert "Server" in by_name and by_name["Server"].kind == "class"
+    assert "Start" in by_name and by_name["Start"].kind == "method"
+    assert "main" in by_name and by_name["main"].kind == "function"
+    assert "server.go" not in out.unsupported_files
+
+
+def test_unsupported_language_recorded(tmp_path):
+    from peer.types import CodebaseContext, Context, ContextHunk
+
+    (tmp_path / "x.rb").write_text("def foo; end\n")
+    ctx = Context(
+        pr_url="https://github.com/k/k/pull/1",
+        owner="k",
+        repo="k",
+        number=1,
+        title="t",
+        body="",
+        head_sha="h",
+        hunks=[
+            ContextHunk(
+                path="x.rb", old_start=1, old_lines=1, new_start=1, new_lines=1, diff_text=""
+            )
+        ],
+    )
+    out = CodebaseContext()
+    cc._extract_modified_symbols(tmp_path, ctx, out)
+    assert "x.rb" in out.unsupported_files
+    assert out.modified_symbols == []

@@ -20,6 +20,7 @@ import re
 import shutil
 import subprocess
 from pathlib import Path
+from typing import Any
 
 import tiktoken
 
@@ -147,11 +148,12 @@ def _ensure_repo_checkout(owner: str, repo: str, pr_number: int, sha: str) -> Pa
 # -- Symbol extraction -------------------------------------------------------
 
 
-def _extract_signature(node, source: bytes) -> str:
-    """First line of the definition (up to the colon)."""
+def _extract_signature(node, source: bytes, lang: str = "python") -> str:
+    """First line of the definition. For Python, trim a trailing body after the
+    def colon; for Go (and others) the first line is already the signature."""
     text = source[node.start_byte : node.end_byte].decode("utf-8", errors="replace")
     first_line = text.split("\n", 1)[0].strip()
-    if not first_line.endswith(":") and ":" in first_line:
+    if lang == "python" and not first_line.endswith(":") and ":" in first_line:
         first_line = first_line.split(":", 1)[0].strip() + ":"
     return first_line
 
@@ -210,30 +212,101 @@ def _walk_symbols(node, source: bytes, path: str, enclosing: str | None) -> list
     return out
 
 
-def _extract_modified_symbols(repo_path: Path, ctx: Context, cc: CodebaseContext) -> None:
-    """Populate cc.modified_symbols / unsupported_files / parse_failures."""
-    import tree_sitter_python
-    from tree_sitter import Language, Parser
+def _walk_symbols_go(node, source: bytes, path: str, enclosing: str | None) -> list[Symbol]:
+    """Extract Go func/method/type declarations (peer-2sw: multi-language).
 
-    lang = Language(tree_sitter_python.language())
-    parser = Parser(lang)
+    Go node types: function_declaration (funcs), method_declaration (methods on
+    a receiver), type_spec (the named type inside a type_declaration — structs,
+    interfaces, aliases)."""
+    out: list[Symbol] = []
+    if node.type in ("function_declaration", "method_declaration"):
+        name_node = node.child_by_field_name("name")
+        if name_node is not None:
+            name = source[name_node.start_byte : name_node.end_byte].decode(
+                "utf-8", errors="replace"
+            )
+            kind: SymbolKind = "method" if node.type == "method_declaration" else "function"
+            out.append(
+                Symbol(
+                    name=name,
+                    path=path,
+                    kind=kind,
+                    signature=_extract_signature(node, source, lang="go"),
+                    enclosing_qualifier=enclosing,
+                    start_line=node.start_point[0] + 1,
+                    end_line=node.end_point[0] + 1,
+                )
+            )
+        return out
+    if node.type == "type_spec":
+        name_node = node.child_by_field_name("name")
+        if name_node is not None:
+            name = source[name_node.start_byte : name_node.end_byte].decode(
+                "utf-8", errors="replace"
+            )
+            out.append(
+                Symbol(
+                    name=name,
+                    path=path,
+                    kind="class",  # Go has no classes; map struct/interface here
+                    signature=_extract_signature(node, source, lang="go"),
+                    enclosing_qualifier=enclosing,
+                    start_line=node.start_point[0] + 1,
+                    end_line=node.end_point[0] + 1,
+                )
+            )
+        return out
+    for child in node.children:
+        out.extend(_walk_symbols_go(child, source, path, enclosing))
+    return out
+
+
+# Per-language symbol extraction: (file suffix) -> (tree-sitter language factory,
+# walker). Adding a language is a one-line registry entry + a walker (peer-2sw).
+def _language_for(path: str):
+    if path.endswith(".py"):
+        import tree_sitter_python
+
+        return tree_sitter_python.language(), _walk_symbols
+    if path.endswith(".go"):
+        import tree_sitter_go
+
+        return tree_sitter_go.language(), _walk_symbols_go
+    return None
+
+
+def _extract_modified_symbols(repo_path: Path, ctx: Context, cc: CodebaseContext) -> None:
+    """Populate cc.modified_symbols / unsupported_files / parse_failures.
+
+    Dispatches per file by language (Python + Go). Parsers are built per
+    language and reused across files of that language within the PR."""
+    from tree_sitter import Language, Parser
 
     by_path: dict[str, list[tuple[int, int]]] = {}
     for h in ctx.hunks:
         rng = (h.new_start, h.new_start + max(h.new_lines - 1, 0))
         by_path.setdefault(h.path, []).append(rng)
 
+    parsers: dict[str, tuple[Parser, Any]] = {}
+
     for path, ranges in by_path.items():
-        if not path.endswith(".py"):
+        lang_info = _language_for(path)
+        if lang_info is None:
             cc.unsupported_files.append(path)
             continue
+        lang_ptr, walker = lang_info
+        suffix = path.rsplit(".", 1)[-1]
+        if suffix not in parsers:
+            parsers[suffix] = (Parser(Language(lang_ptr)), walker)
+        parser, walk = parsers[suffix]
+
         full = repo_path / path
         if not full.exists():
             # File deleted in PR — skip for now (deferred per spec)
             continue
         try:
             source = full.read_bytes()
-            all_symbols = _walk_symbols(parser.parse(source).root_node, source, path, None)
+            all_symbols = walk(parser.parse(source).root_node, source, path, None)
         except Exception as e:
             logger.warning("Parse failure on %s: %s", path, e)
             cc.parse_failures.append(path)
