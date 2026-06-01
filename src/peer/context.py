@@ -207,7 +207,7 @@ def gather(pr_url: str, context_lines: int = 20, max_tokens: int = 100_000) -> C
             "--repo",
             f"{owner}/{repo}",
             "--json",
-            "title,body,headRefOid",
+            "title,body,headRefOid,baseRefOid",
         ]
     )
     diff_text = _gh_run(
@@ -216,6 +216,7 @@ def gather(pr_url: str, context_lines: int = 20, max_tokens: int = 100_000) -> C
     )
 
     head_sha = meta["headRefOid"]
+    base_sha = meta.get("baseRefOid", "") or ""
     hunks = _parse_diff(diff_text)
     _add_surrounding_code(hunks, owner, repo, head_sha, context_lines)
     prior_comments = _fetch_prior_comments(owner, repo, number)
@@ -228,6 +229,7 @@ def gather(pr_url: str, context_lines: int = 20, max_tokens: int = 100_000) -> C
         title=meta.get("title", ""),
         body=meta.get("body") or "",
         head_sha=head_sha,
+        base_sha=base_sha,
         hunks=hunks,
         prior_comments=prior_comments,
     )

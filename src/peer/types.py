@@ -49,6 +49,11 @@ class Context(BaseModel):
     title: str
     body: str
     head_sha: str
+    # Pre-merge parent (PR baseRefOid). For merged PRs the head_sha is often a
+    # squash/rebase commit absent from origin; base_sha is reachable and is the
+    # pre-merge codebase state a reviewer actually sees. Used as the codebase-
+    # context checkout fallback (peer-smz). "" when unknown.
+    base_sha: str = ""
     hunks: list[ContextHunk] = Field(default_factory=list)
     prior_comments: list[str] = Field(default_factory=list)
     token_estimate: int = 0

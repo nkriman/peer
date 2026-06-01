@@ -100,3 +100,52 @@ def test_timeout_during_checkout_yields_none(monkeypatch, tmp_path):
     monkeypatch.setattr(cc.subprocess, "run", fake_run)
     out = cc._ensure_repo_checkout("kubernetes", "kubernetes", 1, "sha")
     assert out is None  # fast, not a hang
+
+
+def test_gather_falls_back_to_base_sha_when_head_unreachable(monkeypatch, tmp_path):
+    # head_sha unreachable (squash-merged), base_sha reachable: context checkout
+    # must try head, then fall back to base (peer-smz).
+    from peer.types import Context
+
+    monkeypatch.setattr(cc, "_have_tree_sitter", lambda: True)
+    attempted: list[str] = []
+
+    def fake_ensure(owner, repo, pr_number, sha):
+        attempted.append(sha)
+        return tmp_path if sha == "basesha" else None  # only base resolves
+
+    monkeypatch.setattr(cc, "_ensure_repo_checkout", fake_ensure)
+    # Stop after checkout: make symbol extraction a no-op so we isolate the path.
+    monkeypatch.setattr(cc, "_extract_modified_symbols", lambda *a, **k: None)
+
+    ctx = Context(
+        pr_url="https://github.com/k/k/pull/1",
+        owner="k",
+        repo="k",
+        number=1,
+        title="t",
+        body="",
+        head_sha="headsha",
+        base_sha="basesha",
+    )
+    cc.gather_codebase_context(ctx)
+    assert attempted == ["headsha", "basesha"]  # head first, then base
+
+
+def test_gather_skips_cleanly_when_both_unreachable(monkeypatch):
+    from peer.types import Context
+
+    monkeypatch.setattr(cc, "_have_tree_sitter", lambda: True)
+    monkeypatch.setattr(cc, "_ensure_repo_checkout", lambda *a, **k: None)
+    ctx = Context(
+        pr_url="https://github.com/k/k/pull/1",
+        owner="k",
+        repo="k",
+        number=1,
+        title="t",
+        body="",
+        head_sha="h",
+        base_sha="b",
+    )
+    out = cc.gather_codebase_context(ctx)
+    assert len(out.modified_symbols) == 0  # clean empty, no raise

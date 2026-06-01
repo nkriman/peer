@@ -548,15 +548,32 @@ def gather_codebase_context(
         # checked out — but we need the checkout helper, so defer.
         return cc
 
+    # Prefer the PR head (the reviewed state). For merged PRs the head is often
+    # a squash/rebase commit absent from origin; fall back to base_sha, the
+    # reachable pre-merge parent — the codebase a reviewer actually sees
+    # (peer-smz). Diff/hunks (the changes under review) come from `pr_context`
+    # regardless; this checkout only supplies surrounding-codebase symbols.
     repo_path = _ensure_repo_checkout(
         pr_context.owner, pr_context.repo, pr_context.number, pr_context.head_sha
     )
+    if repo_path is None and pr_context.base_sha:
+        logger.info(
+            "head %s unreachable for %s/%s; trying base %s",
+            pr_context.head_sha[:12],
+            pr_context.owner,
+            pr_context.repo,
+            pr_context.base_sha[:12],
+        )
+        repo_path = _ensure_repo_checkout(
+            pr_context.owner, pr_context.repo, pr_context.number, pr_context.base_sha
+        )
     if repo_path is None:
         logger.warning(
-            "Could not check out %s/%s @ %s — skipping codebase context",
+            "Could not check out %s/%s @ %s (or base %s) — skipping codebase context",
             pr_context.owner,
             pr_context.repo,
             pr_context.head_sha,
+            pr_context.base_sha or "n/a",
         )
         return cc
 
