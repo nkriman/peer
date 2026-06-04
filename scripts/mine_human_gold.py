@@ -1,7 +1,9 @@
 """Mine the human-review gold benchmark from a mature repo (peer-e94).
 
-Selected repo: kubernetes/kubernetes (peer-7q1) — ~50% of merged PRs carry
-dense, substantive, line-anchored human inline review.
+Selected repo: django/django (peer-y5t) — ~50% of merged PRs carry dense,
+substantive, line-anchored human inline review, AND it full-clones reliably so
+peer's codebase-context feature actually works (unlike the kubernetes monorepo,
+which can't be materialized per-PR). The k8s gold is preserved separately.
 
 Two phases so the expensive step is separable + resumable:
   --select : (cheap, paced gh, no LLM) scan merged PRs, keep DENSE ones
@@ -34,7 +36,7 @@ from peer.dataset.curation import Curator
 from peer.dataset.storage import JSONLStorage
 from peer.dataset.taxonomy import DefaultTaxonomy
 
-REPO = "kubernetes/kubernetes"
+REPO = "django/django"  # peer-y5t: dense review (50%), Python, reliably clonable
 SCAN = 150  # merged PRs to scan in --select
 MIN_DENSE = 2  # human inline comments to qualify a PR as densely reviewed
 TARGET_PRS = 50  # stop selecting once we have this many dense candidates
@@ -42,10 +44,10 @@ API_SLEEP = 1.5
 BACKOFF = 8.0
 MAX_ATTEMPTS = 4
 
-CANDIDATES = Path("data/probes/humangold_candidates.json")
-OUT = Path("dataset/reference/benchmark_humangold.jsonl")
-MANIFEST = Path("dataset/reference/benchmark_humangold.manifest.json")
-CACHE = Path("/tmp/peer_classifier_cache/humangold.jsonl")
+CANDIDATES = Path("data/probes/humangold_candidates_django.json")
+OUT = Path("dataset/reference/benchmark_humangold_django.jsonl")
+MANIFEST = Path("dataset/reference/benchmark_humangold_django.manifest.json")
+CACHE = Path("/tmp/peer_classifier_cache/humangold_django.jsonl")
 
 # Headline gold = real defects; style-nit/discussion stay out of the lead number.
 DEFECT_CATEGORIES = {c.name for c in DefaultTaxonomy.categories if c.is_defect}

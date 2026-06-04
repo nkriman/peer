@@ -20,9 +20,11 @@ from __future__ import annotations
 import json
 import statistics
 import subprocess
+import sys
 import time
 
-CANDIDATES = [
+# Default candidates; override by passing repos as CLI args (peer-y5t).
+CANDIDATES = sys.argv[1:] or [
     "rust-lang/rust",
     "symfony/symfony",
     "kubernetes/kubernetes",

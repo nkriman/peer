@@ -112,8 +112,20 @@ def _ensure_full_clone(owner: str, repo: str) -> Path | None:
     repo_path = CACHE_DIR / f"{owner}__{repo}"
     if not repo_path.exists():
         logger.info("Full-cloning %s/%s to %s (one-time)", owner, repo, repo_path)
+        # Resilient flags (peer-y5t): on flaky/bandwidth-limited networks a large
+        # pack download dies with "fetch-pack: unexpected disconnect". Disabling
+        # client compression + a large postBuffer makes big clones complete.
         result = _git(
-            ["gh", "repo", "clone", f"{owner}/{repo}", str(repo_path)],
+            [
+                "git",
+                "-c",
+                "core.compression=0",
+                "-c",
+                "http.postBuffer=524288000",
+                "clone",
+                f"https://github.com/{owner}/{repo}",
+                str(repo_path),
+            ],
             timeout=_CLONE_TIMEOUT,
         )
         if result is None or result.returncode != 0:
