@@ -40,6 +40,10 @@ def _run(name: str, reviewer, dataset, dataset_path: str) -> dict:
         dataset=dataset,
         dataset_path=dataset_path,
         concurrency=1,  # sequential
+        # peer-with-context reviews on django run ~150s (large context-enriched
+        # prompt); the 300s default tipped over on several PRs. Give generous
+        # headroom so slow-but-valid reviews complete (peer-2sw).
+        per_sample_timeout_seconds=900.0,
     )
     report = runner.run()
     s = report.summary
