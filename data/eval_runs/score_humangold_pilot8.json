@@ -1,0 +1,26 @@
+[
+  {
+    "reviewer": "peer (claude-code:sonnet)",
+    "detection_rate": 0.1,
+    "comments_per_pr": 2.142857142857143,
+    "n_ok": 7,
+    "n_failed": 1,
+    "detection_detail": {
+      "total_matches": 1,
+      "total_gold": 10,
+      "n_samples_with_gold": 7
+    }
+  },
+  {
+    "reviewer": "bare-claude baseline",
+    "detection_rate": 0.1,
+    "comments_per_pr": 3.5714285714285716,
+    "n_ok": 7,
+    "n_failed": 1,
+    "detection_detail": {
+      "total_matches": 1,
+      "total_gold": 10,
+      "n_samples_with_gold": 7
+    }
+  }
+]
