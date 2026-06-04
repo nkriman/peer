@@ -29,7 +29,7 @@ from peer.baselines import BareClaudeCodeReviewer
 from peer.dataset.storage import JSONLStorage
 from peer.eval.runner import EvalRunner
 
-DATASET = Path("dataset/reference/benchmark_humangold.jsonl")
+DEFAULT_DATASET = Path("dataset/reference/benchmark_humangold.jsonl")
 OUT_DIR = Path("data/eval_runs")
 
 
@@ -63,25 +63,32 @@ def _run(name: str, reviewer, dataset, dataset_path: str) -> dict:
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--limit", type=int, default=0, help="pilot on first N PRs (0 = all)")
+    ap.add_argument("--dataset", default=str(DEFAULT_DATASET), help="gold JSONL path")
+    ap.add_argument("--tag", default="", help="output tag suffix (e.g. django)")
     args = ap.parse_args()
 
-    dataset = JSONLStorage(DATASET).load_all()
+    dataset_path = args.dataset
+    dataset = JSONLStorage(Path(dataset_path)).load_all()
     if args.limit:
         dataset = dataset[: args.limit]
-    print(f"Scoring on {len(dataset)} human-gold PRs (kubernetes)")
+    print(f"Scoring on {len(dataset)} human-gold PRs ({dataset_path})")
 
     results = []
     results.append(
-        _run("peer (claude-code:sonnet)", Agent(model="claude-code:sonnet"), dataset, str(DATASET))
+        _run("peer (claude-code:sonnet)", Agent(model="claude-code:sonnet"), dataset, dataset_path)
     )
     results.append(
         _run(
-            "bare-claude baseline", BareClaudeCodeReviewer(model_id="sonnet"), dataset, str(DATASET)
+            "bare-claude baseline",
+            BareClaudeCodeReviewer(model_id="sonnet"),
+            dataset,
+            dataset_path,
         )
     )
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
-    tag = f"humangold_{'pilot' + str(args.limit) if args.limit else 'full'}"
+    suffix = f"_{args.tag}" if args.tag else ""
+    tag = f"humangold{suffix}_{'pilot' + str(args.limit) if args.limit else 'full'}"
     out = OUT_DIR / f"score_{tag}.json"
     out.write_text(json.dumps(results, indent=2))
 
