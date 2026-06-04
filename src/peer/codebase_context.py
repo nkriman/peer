@@ -79,7 +79,14 @@ def _have_ripgrep() -> bool:
 # of failing fast to a clean diff-only fallback. A context miss must cost
 # seconds, not minutes.
 _CLONE_TIMEOUT = 180  # one-time monorepo clone; amortized across all PRs
-_GIT_OP_TIMEOUT = 60  # per fetch / checkout
+_GIT_OP_TIMEOUT = 60  # local checkout (fast; cap guards pathological hangs)
+# Recovery fetches are best-effort (local checkout already missed). A real base
+# fetch on the kubernetes monorepo completes in ~13s, so cap recovery fetches
+# tight: a doomed head-SHA fetch (squash/rebase-merged head absent from origin)
+# then costs ~25s, not 60s, before the base_sha fallback (peer-pqf). Probing the
+# SHA first is not viable — `git ls-remote origin <sha>` matches ref *names*,
+# not commits, so it returns empty even for reachable commits.
+_FETCH_TIMEOUT = 25
 
 
 def _git(args: list[str], timeout: int) -> subprocess.CompletedProcess | None:
@@ -120,11 +127,11 @@ def _ensure_repo_checkout(owner: str, repo: str, pr_number: int, sha: str) -> Pa
         return repo_path
 
     # 2. Fetch the exact commit by SHA (peer-jln: handles squash/rebase-merged
-    #    heads that pull/N/head doesn't contain). Requires the commit to still
-    #    exist on origin; cheap with --depth=1.
+    #    heads that pull/N/head doesn't contain). Cheap with --depth=1; tight
+    #    timeout so a doomed head fetch falls through fast (peer-pqf).
     fetched = _git(
         ["git", "-C", str(repo_path), "fetch", "--depth=1", "origin", sha],
-        timeout=_GIT_OP_TIMEOUT,
+        timeout=_FETCH_TIMEOUT,
     )
     if fetched is not None and fetched.returncode == 0:
         co = _git(["git", "-C", str(repo_path), "checkout", "-q", sha], timeout=_GIT_OP_TIMEOUT)
@@ -135,7 +142,7 @@ def _ensure_repo_checkout(owner: str, repo: str, pr_number: int, sha: str) -> Pa
     #    origin directly).
     _git(
         ["git", "-C", str(repo_path), "fetch", "origin", f"pull/{pr_number}/head", "--depth=100"],
-        timeout=_GIT_OP_TIMEOUT,
+        timeout=_FETCH_TIMEOUT,
     )
     co = _git(["git", "-C", str(repo_path), "checkout", "-q", sha], timeout=_GIT_OP_TIMEOUT)
     if co is None or co.returncode != 0:
