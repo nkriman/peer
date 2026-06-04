@@ -78,15 +78,15 @@ def _have_ripgrep() -> bool:
 # (kubernetes) clone/fetch blocks the per-sample eval timeout (300s) instead
 # of failing fast to a clean diff-only fallback. A context miss must cost
 # seconds, not minutes.
-_CLONE_TIMEOUT = 180  # one-time monorepo clone; amortized across all PRs
-_GIT_OP_TIMEOUT = 60  # local checkout (fast; cap guards pathological hangs)
-# Recovery fetches are best-effort (local checkout already missed). A real base
-# fetch on the kubernetes monorepo completes in ~13s, so cap recovery fetches
-# tight: a doomed head-SHA fetch (squash/rebase-merged head absent from origin)
-# then costs ~25s, not 60s, before the base_sha fallback (peer-pqf). Probing the
-# SHA first is not viable — `git ls-remote origin <sha>` matches ref *names*,
-# not commits, so it returns empty even for reachable commits.
-_FETCH_TIMEOUT = 25
+# peer-2sw: per-PR on-the-fly SHA fetch against a shallow monorepo clone does
+# NOT scale — each benchmark PR needs a different historical base_commit, and a
+# one-off `git fetch <sha>` on a shallow kubernetes clone takes 40s+ and is
+# flaky. Instead clone the FULL history once (no --depth) so every historical
+# commit (base_commit of any PR) is already local; per-PR checkout is then a
+# local, sub-second op with no network. The full clone is the one-time cost.
+_CLONE_TIMEOUT = 1800  # one-time FULL clone of a large monorepo (minutes)
+_UNSHALLOW_TIMEOUT = 1800  # one-time unshallow of a pre-existing shallow clone
+_GIT_OP_TIMEOUT = 60  # local checkout / fetch cap (guards pathological hangs)
 
 
 def _git(args: list[str], timeout: int) -> subprocess.CompletedProcess | None:
@@ -99,57 +99,71 @@ def _git(args: list[str], timeout: int) -> subprocess.CompletedProcess | None:
         return None
 
 
-def _ensure_repo_checkout(owner: str, repo: str, pr_number: int, sha: str) -> Path | None:
-    """Clone (or reuse) the repo under ~/.cache/peer/repos and check out `sha`.
-    Returns the checkout path, or None on failure. All git ops are time-capped
-    (peer-jln) so an unreachable SHA on a large monorepo fails fast to a
-    diff-only fallback rather than blowing the per-sample eval timeout.
+def _is_shallow(repo_path: Path) -> bool:
+    return (repo_path / ".git" / "shallow").exists()
 
-    The clone is cached per repo, so the expensive monorepo fetch is paid once
-    and reused across every PR in a benchmark run.
-    """
+
+def _ensure_full_clone(owner: str, repo: str) -> Path | None:
+    """Ensure a FULL (non-shallow) clone of the repo exists and is cached. Pays
+    the monorepo clone/unshallow once; afterwards every historical commit is
+    local so per-PR checkout needs no network (peer-2sw)."""
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
     repo_path = CACHE_DIR / f"{owner}__{repo}"
     if not repo_path.exists():
-        logger.info("Cloning %s/%s to %s (first use)", owner, repo, repo_path)
+        logger.info("Full-cloning %s/%s to %s (one-time)", owner, repo, repo_path)
         result = _git(
-            ["gh", "repo", "clone", f"{owner}/{repo}", str(repo_path), "--", "--depth=100"],
+            ["gh", "repo", "clone", f"{owner}/{repo}", str(repo_path)],
             timeout=_CLONE_TIMEOUT,
         )
         if result is None or result.returncode != 0:
             stderr = result.stderr.strip() if result is not None else "timeout"
             logger.warning("Clone failed for %s/%s: %s", owner, repo, stderr)
             return None
+        return repo_path
+    # Pre-existing clone: unshallow it once so historical base_commits resolve.
+    if _is_shallow(repo_path):
+        logger.info("Unshallowing cached %s/%s clone (one-time)", owner, repo)
+        res = _git(
+            ["git", "-C", str(repo_path), "fetch", "--unshallow"],
+            timeout=_UNSHALLOW_TIMEOUT,
+        )
+        if res is None or res.returncode != 0:
+            logger.warning(
+                "Unshallow failed for %s/%s; historical commits may be missing", owner, repo
+            )
+    return repo_path
 
-    # 1. Try checking out the SHA directly (cheap if already fetched).
+
+def _ensure_repo_checkout(owner: str, repo: str, pr_number: int, sha: str) -> Path | None:
+    """Check out `sha` in a cached FULL clone. Returns the path, or None if the
+    commit can't be resolved (caller falls back to diff-only). With a full clone
+    the checkout is local + sub-second; the expensive clone/unshallow is paid
+    once (peer-2sw)."""
+    repo_path = _ensure_full_clone(owner, repo)
+    if repo_path is None:
+        return None
+
     co = _git(["git", "-C", str(repo_path), "checkout", "-q", sha], timeout=_GIT_OP_TIMEOUT)
     if co is not None and co.returncode == 0:
         return repo_path
 
-    # 2. Fetch the exact commit by SHA (peer-jln: handles squash/rebase-merged
-    #    heads that pull/N/head doesn't contain). Cheap with --depth=1; tight
-    #    timeout so a doomed head fetch falls through fast (peer-pqf).
-    fetched = _git(
-        ["git", "-C", str(repo_path), "fetch", "--depth=1", "origin", sha],
-        timeout=_FETCH_TIMEOUT,
-    )
-    if fetched is not None and fetched.returncode == 0:
+    # Squash/rebase-merged head commits never landed on the default branch, so
+    # they won't be present even in a full clone. Try the PR head ref, then a
+    # direct SHA fetch (both rare paths; the common case is base_commit, which a
+    # full clone already has).
+    for fetch_args in (
+        ["fetch", "origin", f"pull/{pr_number}/head"],
+        ["fetch", "origin", sha],
+    ):
+        f = _git(["git", "-C", str(repo_path), *fetch_args], timeout=_GIT_OP_TIMEOUT)
+        if f is None or f.returncode != 0:
+            continue
         co = _git(["git", "-C", str(repo_path), "checkout", "-q", sha], timeout=_GIT_OP_TIMEOUT)
         if co is not None and co.returncode == 0:
             return repo_path
 
-    # 3. Fall back to the PR head ref (handles fork PRs where the SHA isn't on
-    #    origin directly).
-    _git(
-        ["git", "-C", str(repo_path), "fetch", "origin", f"pull/{pr_number}/head", "--depth=100"],
-        timeout=_FETCH_TIMEOUT,
-    )
-    co = _git(["git", "-C", str(repo_path), "checkout", "-q", sha], timeout=_GIT_OP_TIMEOUT)
-    if co is None or co.returncode != 0:
-        stderr = co.stderr.strip() if co is not None else "timeout"
-        logger.warning("Could not check out %s in %s: %s", sha, repo_path, stderr)
-        return None
-    return repo_path
+    logger.warning("Could not check out %s in %s", sha, repo_path)
+    return None
 
 
 # -- Symbol extraction -------------------------------------------------------

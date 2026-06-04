@@ -49,7 +49,9 @@ def test_checkout_direct_hit_skips_fetch(monkeypatch, tmp_path):
     assert not any("fetch" in c for c in calls)  # no fetch needed
 
 
-def test_sha_fetch_attempted_before_pr_head(monkeypatch, tmp_path):
+def test_recovers_via_fetch_when_local_checkout_misses(monkeypatch, tmp_path):
+    # Full (non-shallow) clone present; the commit isn't local yet, so the
+    # first checkout misses and a recovery fetch lands it (peer-2sw).
     monkeypatch.setattr(cc, "CACHE_DIR", tmp_path)
     (tmp_path / "kubernetes__kubernetes").mkdir(parents=True)
     seq = []
@@ -57,22 +59,46 @@ def test_sha_fetch_attempted_before_pr_head(monkeypatch, tmp_path):
     def fake_run(args, **_k):
         seq.append(args)
         if "checkout" in args:
-            # checkout succeeds only after the SHA fetch (2nd checkout call).
             n_co = sum(1 for a in seq if "checkout" in a)
-            return _ok() if n_co >= 2 else _ok(returncode=1)
-        if "fetch" in args:
-            return _ok()  # SHA fetch succeeds
-        return _ok()
+            return _ok() if n_co >= 2 else _ok(returncode=1)  # 2nd checkout succeeds
+        return _ok()  # fetches succeed
 
     monkeypatch.setattr(cc.subprocess, "run", fake_run)
     out = cc._ensure_repo_checkout("kubernetes", "kubernetes", 139323, "abc123")
     assert out is not None
-    # The first fetch must be the direct SHA fetch (--depth=1 origin <sha>),
-    # not the pull/N/head ref.
-    fetches = [c for c in seq if "fetch" in c]
-    assert fetches, "expected a fetch"
-    assert "abc123" in fetches[0]
-    assert "--depth=1" in fetches[0]
+    assert any("fetch" in c for c in seq)
+
+
+def test_existing_full_clone_not_unshallowed(monkeypatch, tmp_path):
+    # A non-shallow cached clone (no .git/shallow) must NOT trigger --unshallow.
+    monkeypatch.setattr(cc, "CACHE_DIR", tmp_path)
+    (tmp_path / "kubernetes__kubernetes" / ".git").mkdir(parents=True)
+    seq = []
+
+    def fake_run(args, **_k):
+        seq.append(args)
+        return _ok()  # checkout succeeds immediately
+
+    monkeypatch.setattr(cc.subprocess, "run", fake_run)
+    cc._ensure_repo_checkout("kubernetes", "kubernetes", 1, "sha")
+    assert not any("--unshallow" in c for c in seq)
+
+
+def test_shallow_cached_clone_is_unshallowed(monkeypatch, tmp_path):
+    # A shallow cached clone (.git/shallow present) triggers a one-time unshallow.
+    monkeypatch.setattr(cc, "CACHE_DIR", tmp_path)
+    git_dir = tmp_path / "kubernetes__kubernetes" / ".git"
+    git_dir.mkdir(parents=True)
+    (git_dir / "shallow").write_text("deadbeef\n")
+    seq = []
+
+    def fake_run(args, **_k):
+        seq.append(args)
+        return _ok()
+
+    monkeypatch.setattr(cc.subprocess, "run", fake_run)
+    cc._ensure_repo_checkout("kubernetes", "kubernetes", 1, "sha")
+    assert any("--unshallow" in c for c in seq)
 
 
 def test_returns_none_fast_when_unreachable(monkeypatch, tmp_path):
