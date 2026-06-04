@@ -16,6 +16,7 @@ CodebaseContext + WARNING) rather than blocking the review.
 from __future__ import annotations
 
 import logging
+import os
 import re
 import shutil
 import subprocess
@@ -636,6 +637,14 @@ def gather_codebase_context(
     `gather_git_history`. Runs independently of tree-sitter availability.
     """
     cc = CodebaseContext()
+
+    # Escape hatch (peer-2sw): force diff-only reviews by skipping all codebase
+    # checkout/extraction. Set when the repo can't be materialized per-PR (e.g.
+    # the kubernetes monorepo, where historical base_commit fetch is too slow).
+    # Keeps the benchmark run fast and clearly labels peer's context feature OFF.
+    if os.environ.get("PEER_SKIP_CODEBASE_CONTEXT") == "1":
+        logger.info("PEER_SKIP_CODEBASE_CONTEXT=1 — diff-only review (no codebase context)")
+        return cc
 
     if not _have_tree_sitter():
         # Even without tree-sitter we can still run linters if the repo is

@@ -251,3 +251,26 @@ def test_unsupported_language_recorded(tmp_path):
     cc._extract_modified_symbols(tmp_path, ctx, out)
     assert "x.rb" in out.unsupported_files
     assert out.modified_symbols == []
+
+
+def test_skip_codebase_context_env(monkeypatch):
+    # PEER_SKIP_CODEBASE_CONTEXT=1 returns empty context with no checkout (peer-2sw).
+    from peer.types import Context
+
+    monkeypatch.setenv("PEER_SKIP_CODEBASE_CONTEXT", "1")
+
+    def boom(*_a, **_k):
+        raise AssertionError("checkout must not run when context is skipped")
+
+    monkeypatch.setattr(cc, "_ensure_repo_checkout", boom)
+    ctx = Context(
+        pr_url="https://github.com/k/k/pull/1",
+        owner="k",
+        repo="k",
+        number=1,
+        title="t",
+        body="",
+        head_sha="h",
+    )
+    out = cc.gather_codebase_context(ctx)
+    assert len(out.modified_symbols) == 0
