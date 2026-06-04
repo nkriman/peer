@@ -1,0 +1,16 @@
+{
+  "repo": "django/django",
+  "source": "human-review-inline",
+  "candidates": 50,
+  "prs_with_defect_gold": 35,
+  "total_defect_gold": 112,
+  "defect_categories": [
+    "defect-api-design",
+    "defect-correctness",
+    "defect-doc-gap",
+    "defect-performance",
+    "defect-security",
+    "defect-test-gap"
+  ],
+  "min_dense_inline": 2
+}
