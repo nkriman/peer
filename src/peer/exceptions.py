@@ -100,6 +100,15 @@ class LLMCallsDisabled(PeerError):
         super().__init__(message or self.DEFAULT_MESSAGE)
 
 
+class ReviewerInfraError(PeerError):
+    """A real Reviewer's backend (e.g. the `claude` CLI) failed — non-zero exit,
+    empty/zero-usage response, or unparseable output. Raised (not swallowed) so
+    the eval runner records an errored sample instead of a fake zero-comment
+    'reviewer found nothing'. Same fail-loud contract as
+    baselines.BaselineInfraError; a silent empty review corrupts the leaderboard
+    (peer-2sw)."""
+
+
 class ReviewerRateLimited(PeerError):
     """A Reviewer's HTTP-429 retry budget was exhausted.
 

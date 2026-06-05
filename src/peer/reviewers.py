@@ -17,7 +17,7 @@ from typing import Any, Protocol
 import anthropic
 
 from . import deps as _deps_module
-from .exceptions import LLMCallsDisabled, ReviewerRateLimited
+from .exceptions import LLMCallsDisabled, ReviewerInfraError, ReviewerRateLimited
 from .prompts import DEFAULT_SYSTEM_PROMPT, format_prompt
 from .types import CodebaseContext, Comment, Context, Severity
 
@@ -385,21 +385,24 @@ class ClaudeCodeCLIReviewer:
             timeout=self.timeout_seconds,
             check=False,
         )
+        # Fail loud on a non-zero CLI exit (peer-2sw): previously this only
+        # logged a warning then parsed empty stdout into a 0-comment Review, so
+        # a CLI failure (network drop, transient error) was silently recorded as
+        # "peer found nothing" — a fake zero that corrupts the benchmark. Raise
+        # so EvalRunner marks the sample errored, matching BareClaudeCodeReviewer.
         if proc.returncode != 0:
-            logger.warning(
-                "claude CLI exited %s; stderr=%s",
-                proc.returncode,
-                proc.stderr[:500] if proc.stderr else "(empty)",
+            raise ReviewerInfraError(
+                f"claude CLI exited {proc.returncode} for {self.model}; "
+                f"stderr={(proc.stderr or '')[:300]!r}"
             )
 
         try:
             envelope = json.loads(proc.stdout)
-        except json.JSONDecodeError:
-            logger.warning(
-                "claude CLI returned non-JSON envelope; first 500 chars: %r",
-                proc.stdout[:500],
-            )
-            envelope = {"result": "", "total_cost_usd": 0.0, "usage": {}}
+        except json.JSONDecodeError as exc:
+            raise ReviewerInfraError(
+                f"claude CLI returned non-JSON envelope for {self.model}; "
+                f"first 300 chars: {proc.stdout[:300]!r}"
+            ) from exc
 
         # Prefer envelope.structured_output (populated when --json-schema is
         # honored by the model) over envelope.result. The CLI puts the parsed
